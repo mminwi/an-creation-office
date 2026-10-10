@@ -1,4 +1,5 @@
 AN Creation standard operating procedures. Revision 11 — October 8, 2026.
+License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
 SOP means standard operating procedure: a written way to do one job. Here it is a file an assistant opens when a trigger fires, uses, and then leaves. It is not loaded into every conversation.

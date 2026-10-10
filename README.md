@@ -45,6 +45,7 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 
 | File | What it is | Live |
 |---|---|---|
+| [`LICENSE.txt`](guide/LICENSE.txt) | License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 | [live](https://ancreationoffice.com/LICENSE.txt) |
 | [`standing.txt`](guide/standing.txt) | Soren, the chat the inventor talks to | [live](https://ancreationoffice.com/standing.txt) |
 | [`analyst.txt`](guide/analyst.txt) | The analyst, called by Soren to do the thinking | [live](https://ancreationoffice.com/analyst.txt) |
 | [`advance-now.txt`](guide/advance-now.txt) | The reason behind all of it, from Mike | [live](https://ancreationoffice.com/advance-now.txt) |
