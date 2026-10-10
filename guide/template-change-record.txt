@@ -1,0 +1,11 @@
+Change record. Template. After freeze only. Save as YYMMDD-CR-<number>-<slug>.
+Change no.: CR-
+Date:
+What changes: (part, drawing, process, supplier, tool, fixture, gauge, label)
+From revision: To revision:
+Why: (reason, and the test, report or complaint that started it)
+What it touches: (compliance matrix IDs, FMEA lines, critical features, control plan checks, certifications, tooling, stock on hand)
+What must be re-checked: (tests, inspections, qualifications; tell a lab?)
+Cost and time:
+Decision: (inventor yes/no; buyer approval if required)
+Done: (re-checks passed, date or batch it takes effect)

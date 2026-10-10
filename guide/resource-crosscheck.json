@@ -1,0 +1,339 @@
+{
+  "checked_on": "2026-09-30",
+  "resources": [
+    {
+      "id": "uspto-iac",
+      "title": "USPTO — Inventors Assistance Center and filing checklists",
+      "url": "https://www.uspto.gov/learning-and-resources/support-centers/inventors-assistance-center-iac",
+      "group": "inventor",
+      "roles": [
+        "legal",
+        "project"
+      ],
+      "use": "Procedural filing help, utility-application checklist, filing guides and common-mistake resources.",
+      "check": "Use the checklist for the intended application route and current USPTO instructions. Procedural assistance is separate from legal advice.",
+      "access": "Public government guidance and linked documents.",
+      "kind": "government",
+      "source": "USPTO",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.uspto.gov/learning-and-resources/support-centers/inventors-assistance-center-iac",
+      "verification_note": "Public government guidance and linked documents.",
+      "search_terms": [
+        "larry",
+        "andy",
+        "checklist",
+        "inventor",
+        "product launch"
+      ],
+      "related": [
+        {
+          "title": "USPTO utility patent filing checklist (PDF)",
+          "url": "https://www.uspto.gov/sites/default/files/inventors/Checklist_for_Filing_a_Nonprovisional_Utility.pdf"
+        },
+        {
+          "title": "Optional regional reference: LegalCORPS inventor resources",
+          "url": "https://legalcorps.org/inventor-resources/"
+        }
+      ]
+    },
+    {
+      "id": "uspto-scam-prevention",
+      "title": "USPTO — Invention promotion scam prevention",
+      "url": "https://www.uspto.gov/patents/basics/using-legal-services/scam-prevention",
+      "group": "inventor",
+      "roles": [
+        "legal",
+        "project"
+      ],
+      "use": "Official questions and complaint resources for assessing invention promotion services.",
+      "check": "Check written disclosures, fees, outcomes and complaints before a commitment; cross-reference the existing FTC warning.",
+      "access": "Public government guidance.",
+      "kind": "government",
+      "source": "USPTO",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.uspto.gov/patents/basics/using-legal-services/scam-prevention",
+      "verification_note": "Public government guidance.",
+      "search_terms": [
+        "larry",
+        "andy",
+        "checklist",
+        "inventor",
+        "product launch"
+      ],
+      "related": [
+        {
+          "title": "FTC invention-promotion enforcement background",
+          "url": "https://www.ftc.gov/enforcement/penalty-offenses/inventions"
+        }
+      ]
+    },
+    {
+      "id": "uia-inventors",
+      "title": "United Inventors Association — Education and inventor community",
+      "url": "https://uiausa.org/about/",
+      "group": "inventor",
+      "roles": [
+        "project",
+        "design",
+        "legal"
+      ],
+      "use": "A national nonprofit starting point for inventor education, community and commercialization resources.",
+      "check": "Check current groups, events and terms. Membership or a listing does not qualify a provider or prove commercial success.",
+      "access": "Publisher describes free membership and educational materials; follow current enrollment terms.",
+      "kind": "learning_resource",
+      "source": "United Inventors Association",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://uiausa.org/about/",
+      "verification_note": "Publisher describes free membership and educational materials; follow current enrollment terms.",
+      "search_terms": [
+        "andy",
+        "casey",
+        "larry",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "atlassian-launch-checklist",
+      "title": "Atlassian — Product launch checklist",
+      "url": "https://www.atlassian.com/agile/product-management/product-launch-checklist",
+      "group": "product-management",
+      "roles": [
+        "project",
+        "marketing",
+        "design"
+      ],
+      "use": "Launch preparation from market research and goals through customer feedback.",
+      "check": "Adapt to the product and sales channel; coordinate IP/disclosure decisions and product-specific testing before public claims.",
+      "access": "Public publisher guidance; product/app offers are separate.",
+      "kind": "learning_resource",
+      "source": "Atlassian",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.atlassian.com/agile/product-management/product-launch-checklist",
+      "verification_note": "Public publisher guidance; product/app offers are separate.",
+      "search_terms": [
+        "andy",
+        "maya",
+        "casey",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "product-school-launch",
+      "title": "Product School — Launch readiness checklists and template",
+      "url": "https://productschool.com/blog/product-marketing/product-launch-checklist-for-product-marketers",
+      "group": "product-management",
+      "roles": [
+        "project",
+        "marketing",
+        "design"
+      ],
+      "use": "Separate readiness checks for the product, operations, sales/support, launch and post-launch review.",
+      "check": "Adapt software-oriented items to physical products; retain actual evidence and decision owners. A filled checklist is not approval.",
+      "access": "Public commercial education article with editable-template links; actual downloaded file not examined.",
+      "kind": "learning_resource",
+      "source": "Product School",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://productschool.com/blog/product-marketing/product-launch-checklist-for-product-marketers",
+      "verification_note": "Public commercial education article with editable-template links; actual downloaded file not examined.",
+      "search_terms": [
+        "andy",
+        "maya",
+        "casey",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "cpsc-best-practices",
+      "title": "CPSC — Manufacturing best practices",
+      "url": "https://www.cpsc.gov/business--manufacturing/business-education/business-guidance/BestPractices",
+      "group": "product-management",
+      "roles": [
+        "engineering",
+        "prototype",
+        "manufacturing",
+        "project"
+      ],
+      "use": "Consumer-product safety planning covering hazards, design, suppliers, manufacturing, records and recalls.",
+      "check": "Start safety review during design, including foreseeable use and misuse. Match current rules to the actual product and market.",
+      "access": "Public U.S. government guidance; separate the overview from actual applicable rules and test evidence.",
+      "kind": "government",
+      "source": "CPSC",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.cpsc.gov/business--manufacturing/business-education/business-guidance/BestPractices",
+      "verification_note": "Public U.S. government guidance; separate the overview from actual applicable rules and test evidence.",
+      "search_terms": [
+        "ellis",
+        "peter",
+        "morgan",
+        "andy",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "cpsc-regulatory-robot",
+      "title": "CPSC — Regulatory Robot",
+      "url": "https://www.cpsc.gov/Business--Manufacturing/Regulatory-Robot/Safer-Products-Start-Here",
+      "group": "product-management",
+      "roles": [
+        "engineering",
+        "prototype",
+        "manufacturing"
+      ],
+      "use": "An official question-driven starting point for likely consumer-product safety requirements.",
+      "check": "Verify inputs, applicability and current rules; save the output and remaining questions. Do not treat the tool as certification.",
+      "access": "Public tool; business.cpsc.gov redirects here. Get permission before supplying private project information.",
+      "kind": "government",
+      "source": "CPSC",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.cpsc.gov/Business--Manufacturing/Regulatory-Robot/Safer-Products-Start-Here",
+      "verification_note": "Public tool; business.cpsc.gov redirects here. Get permission before supplying private project information.",
+      "search_terms": [
+        "ellis",
+        "peter",
+        "morgan",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "google-patents",
+      "title": "Google Patents — Patent and prior-art searching",
+      "url": "https://patents.google.com/",
+      "group": "inventor",
+      "roles": [
+        "legal",
+        "design"
+      ],
+      "use": "Search patent publications and related prior-art material across jurisdictions.",
+      "check": "Save queries, dated results and document IDs; verify legal status in official registers. A search is not a patentability or freedom-to-operate opinion.",
+      "access": "Public search tool; overview verified at Google Help, https://support.google.com/faqs/answer/6390996 .",
+      "kind": "learning_resource",
+      "source": "Google Patents",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://patents.google.com/",
+      "verification_note": "Public search tool; overview verified at Google Help, https://support.google.com/faqs/answer/6390996 .",
+      "search_terms": [
+        "larry",
+        "casey",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "epo-espacenet",
+      "title": "EPO — Espacenet patent search and guidance",
+      "url": "https://www.epo.org/en/searching-for-patents/technical/espacenet",
+      "group": "inventor",
+      "roles": [
+        "legal",
+        "design"
+      ],
+      "use": "Official EPO route to international patent publications, search guidance and translations.",
+      "check": "Document search scope and results; verify status in the relevant register. The EPO says Espacenet does not permit automated robot searches or bulk retrieval; use authorized OPS access for automation.",
+      "access": "Public official overview. Direct Espacenet app retrieval was unavailable; official EPO referral verified.",
+      "kind": "government",
+      "source": "EPO",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.epo.org/en/searching-for-patents/technical/espacenet",
+      "verification_note": "Public official overview. Direct Espacenet app retrieval was unavailable; official EPO referral verified.",
+      "search_terms": [
+        "larry",
+        "casey",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "wisconsin-sbdc",
+      "title": "Regional: Wisconsin SBDC — Business consulting and education",
+      "url": "https://wisconsinsbdc.org/",
+      "group": "business-planning",
+      "roles": [
+        "project",
+        "funding",
+        "marketing"
+      ],
+      "use": "Wisconsin business feasibility, planning, finance and education through a statewide university-based network.",
+      "check": "Use when Wisconsin is the relevant location; confirm center, eligibility, current service terms and course fees separately.",
+      "access": "Regional option; publisher describes no-cost confidential consulting. Education may have separate terms.",
+      "kind": "learning_resource",
+      "source": "Regional: Wisconsin SBDC",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://wisconsinsbdc.org/",
+      "verification_note": "Regional option; publisher describes no-cost confidential consulting. Education may have separate terms.",
+      "search_terms": [
+        "andy",
+        "frankie",
+        "maya",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "wedc-wisconsin",
+      "title": "Regional: WEDC — Wisconsin business development programs",
+      "url": "https://wedc.org/",
+      "group": "business-planning",
+      "roles": [
+        "project",
+        "funding",
+        "marketing"
+      ],
+      "use": "Wisconsin economic-development starting point for business programs and resources.",
+      "check": "Check the specific program, geography, eligibility, current availability and costs. Do not assume grant eligibility or free market-research access from the homepage.",
+      "access": "Regional agency resource; program terms vary.",
+      "kind": "learning_resource",
+      "source": "Regional: WEDC",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://wedc.org/",
+      "verification_note": "Regional agency resource; program terms vary.",
+      "search_terms": [
+        "andy",
+        "frankie",
+        "maya",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "wmep-wisconsin",
+      "title": "Regional: WMEP — Wisconsin Manufacturing Solutions",
+      "url": "https://wmep.org/",
+      "group": "business-planning",
+      "roles": [
+        "manufacturing",
+        "engineering",
+        "project"
+      ],
+      "use": "Wisconsin manufacturing improvement and consulting; a local complement to the existing national NIST MEP directory.",
+      "check": "Confirm geography, capabilities, scope, fees and confidentiality before inquiries or sharing designs. Funding announcements do not establish free client services.",
+      "access": "Regional consulting source; service fees and availability need direct confirmation.",
+      "kind": "learning_resource",
+      "source": "Regional: WMEP",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://wmep.org/",
+      "verification_note": "Regional consulting source; service fees and availability need direct confirmation.",
+      "search_terms": [
+        "morgan",
+        "ellis",
+        "andy",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    }
+  ]
+}

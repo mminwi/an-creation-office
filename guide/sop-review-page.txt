@@ -1,0 +1,60 @@
+SOP: Review pages and dated folders. Revision 1 — October 7, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Tool: review.py (Python standard library only)
+
+THE DATED-FOLDER RULE (all work, not only pages)
+Be overly robust with the record. Nothing made for the inventor is ever written over.
+- Every analyst call works in its own dated folder (Soren's files/sessions/YYMMDD-HHMM-slug/). When it finishes, whatever is there stays there.
+- Every web page, graphic, render, drawing or slideshow goes in its own dated folder.
+- An update is a new folder, not an edit. The timeline made at kickoff and the timeline made a month later are two pages in two places. The new one may start from the old one; the old one is never changed.
+- Folders are never renamed or emptied. Old ones may move to archive/, never deleted.
+- It costs disk space. That is the price of letting the inventor go back and look, and they often need to.
+
+WHY REVIEW PAGES EXIST
+Talking is easier with something on the screen. Each invention gets web pages on the inventor's computer: where it stands, the timeline, the risks, pictures, documents, and short slideshows on anything worth talking over. Soren sends a link and says "take a look at this" instead of describing it.
+
+WHEN
+Make the first page right after intake, the same day the folder is made. Do not wait for content. Status and three dates are enough.
+Make a new page whenever the status, timeline, risks or a topic changes, and before any discussion where the inventor should see something.
+
+WHERE
+Your files/Review/
+  index.html                    the history page: Your list (the action log) first, then today's page, every page in the order made, every picture and document ever shown
+  today.txt                     which page is "what we're talking about today"
+  YYMMDD-HHMM-slug/             one folder per page, never changed after it is made
+    index.html                  the page
+    page.json                   copy of what it was made from
+    meta.json                   title, summary, when made
+    files/                      copies of every picture and document the page shows (files over 100 MB are linked instead)
+The index is the only file that is rebuilt, and it only lists. Served on this computer only (127.0.0.1). Nothing goes on the internet.
+
+WHO WRITES WHAT
+The analyst writes page.json inside its own session folder, then runs "new". Soren runs "serve" and "today" and sends links.
+
+COMMANDS
+New page:   python review.py new "AN-Creation/<invention>" "<session folder>/page.json" --slug timeline [--today]
+Set today:  python review.py today "AN-Creation/<invention>" 261107-1430-timeline
+Rebuild index: python review.py index "AN-Creation/<invention>"
+Show:       python review.py serve "AN-Creation/<invention>"   (prints the link; default port 8765)
+Link to one topic: .../Review/<page folder>/index.html#topic-<id>
+
+WHAT GOES IN page.json
+title, summary (one line for the index)
+status: a few lines (stage, project level, business route, next step)
+timeline: date, what, kind (inventor-date, lead-time, milestone), optional risk
+risks: risk, cost, when it bites, time left
+topics: id, title, weight (Follow, Recommend, Mention), summary, slides (title, bullets, optional image path inside Your files, optional links)
+files: "all" (default: every picture and document in Your files) or a list of paths inside Your files
+Every section is optional. A page can be just a timeline, or one topic.
+
+HOW SOREN USES IT
+- After intake: "I've set up a page for your invention. Here's the link."
+- Offering a discussion: "There's this: [one line]. I put a short walkthrough up if you'd like to go over it."
+- Fuller explanation asked for: the analyst researches, makes a new page with the topic, Soren sends the link.
+- "Where's that picture from last month?": send the history page. Every picture and document ever shown is there, newest first.
+
+RULES
+- Plain words. Short slides: a title and three or four bullets.
+- Only real artifacts. A rough sketch is labeled as one. No made-up numbers or quotes.
+- No passwords, account numbers or SSN on any page.
+- Local only. Putting pages online is a separate decision.

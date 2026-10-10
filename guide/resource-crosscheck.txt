@@ -1,0 +1,108 @@
+Resource cross-check, September 30, 2026.
+The supplied research list was compared with the current resource catalog and original publisher pages.
+Existing coverage retained without duplicate entries: USPTO inventor hub, patent pro bono, clinics and patent libraries; SBA planning/counseling; SCORE mentoring; national NIST MEP and CPSC small-business resources; SBIR and FTC invention-marketing warnings.
+Added: USPTO IAC/checklist and scam prevention, United Inventors Association, two launch checklist sources, CPSC manufacturing practices and Regulatory Robot, Google Patents, EPO Espacenet, Wisconsin SBDC, WEDC and WMEP.
+Wisconsin entries are regional options, not universal starting requirements. LegalCORPS is an optional regional reference linked from IAC; confirm eligibility and current clinic arrangements.
+The USPTO checklist PDF is linked directly from its IAC page; actual PDF reviewed online. Other commercial template downloads were not obtained.
+The old PMI Product Lift-Off case study is historical context, not a universal eight-month launch rule. No population counts, club-absence claim or funding-announcement amounts are carried forward.
+Use current publisher pages before decisions. Do not automate Espacenet robot searches or bulk retrieval; EPO identifies OPS as its route for authorized automated access.
+A provisional application is an application route, not a separate IP right. Consider patents, trademarks, copyright and trade secrets as appropriate. Business formation and public launch depend on context and existing disclosure/approval rules. Plan safety and test evidence during definition, before expensive builds. A checklist does not grant permission to disclose, certify, file or spend.
+
+uspto-iac | USPTO — Inventors Assistance Center and filing checklists
+https://www.uspto.gov/learning-and-resources/support-centers/inventors-assistance-center-iac
+Group: inventor. Type: government.
+Roles: legal, project roles. Procedural filing help, utility-application checklist, filing guides and common-mistake resources.
+Check: Use the checklist for the intended application route and current USPTO instructions. Procedural assistance is separate from legal advice.
+Access: Public government guidance and linked documents.
+Checked: 2026-09-30. Source: USPTO.
+Related: USPTO utility patent filing checklist (PDF) — https://www.uspto.gov/sites/default/files/inventors/Checklist_for_Filing_a_Nonprovisional_Utility.pdf
+Related: Optional regional reference: LegalCORPS inventor resources — https://legalcorps.org/inventor-resources/
+
+uspto-scam-prevention | USPTO — Invention promotion scam prevention
+https://www.uspto.gov/patents/basics/using-legal-services/scam-prevention
+Group: inventor. Type: government.
+Roles: legal, project roles. Official questions and complaint resources for assessing invention promotion services.
+Check: Check written disclosures, fees, outcomes and complaints before a commitment; cross-reference the existing FTC warning.
+Access: Public government guidance.
+Checked: 2026-09-30. Source: USPTO.
+Related: FTC invention-promotion enforcement background — https://www.ftc.gov/enforcement/penalty-offenses/inventions
+
+uia-inventors | United Inventors Association — Education and inventor community
+https://uiausa.org/about/
+Group: inventor. Type: learning_resource.
+Roles: project, design, legal roles. A national nonprofit starting point for inventor education, community and commercialization resources.
+Check: Check current groups, events and terms. Membership or a listing does not qualify a provider or prove commercial success.
+Access: Publisher describes free membership and educational materials; follow current enrollment terms.
+Checked: 2026-09-30. Source: United Inventors Association.
+
+atlassian-launch-checklist | Atlassian — Product launch checklist
+https://www.atlassian.com/agile/product-management/product-launch-checklist
+Group: product-management. Type: learning_resource.
+Roles: project, marketing, design roles. Launch preparation from market research and goals through customer feedback.
+Check: Adapt to the product and sales channel; coordinate IP/disclosure decisions and product-specific testing before public claims.
+Access: Public publisher guidance; product/app offers are separate.
+Checked: 2026-09-30. Source: Atlassian.
+
+product-school-launch | Product School — Launch readiness checklists and template
+https://productschool.com/blog/product-marketing/product-launch-checklist-for-product-marketers
+Group: product-management. Type: learning_resource.
+Roles: project, marketing, design roles. Separate readiness checks for the product, operations, sales/support, launch and post-launch review.
+Check: Adapt software-oriented items to physical products; retain actual evidence and decision owners. A filled checklist is not approval.
+Access: Public commercial education article with editable-template links; actual downloaded file not examined.
+Checked: 2026-09-30. Source: Product School.
+
+cpsc-best-practices | CPSC — Manufacturing best practices
+https://www.cpsc.gov/business--manufacturing/business-education/business-guidance/BestPractices
+Group: product-management. Type: government.
+Roles: engineering, prototype, manufacturing, project roles. Consumer-product safety planning covering hazards, design, suppliers, manufacturing, records and recalls.
+Check: Start safety review during design, including foreseeable use and misuse. Match current rules to the actual product and market.
+Access: Public U.S. government guidance; separate the overview from actual applicable rules and test evidence.
+Checked: 2026-09-30. Source: CPSC.
+
+cpsc-regulatory-robot | CPSC — Regulatory Robot
+https://www.cpsc.gov/Business--Manufacturing/Regulatory-Robot/Safer-Products-Start-Here
+Group: product-management. Type: government.
+Roles: engineering, prototype, manufacturing roles. An official question-driven starting point for likely consumer-product safety requirements.
+Check: Verify inputs, applicability and current rules; save the output and remaining questions. Do not treat the tool as certification.
+Access: Public tool; business.cpsc.gov redirects here. Get permission before supplying private project information.
+Checked: 2026-09-30. Source: CPSC.
+
+google-patents | Google Patents — Patent and prior-art searching
+https://patents.google.com/
+Group: inventor. Type: learning_resource.
+Roles: legal, design roles. Search patent publications and related prior-art material across jurisdictions.
+Check: Save queries, dated results and document IDs; verify legal status in official registers. A search is not a patentability or freedom-to-operate opinion.
+Access: Public search tool; overview verified at Google Help, https://support.google.com/faqs/answer/6390996 .
+Checked: 2026-09-30. Source: Google Patents.
+
+epo-espacenet | EPO — Espacenet patent search and guidance
+https://www.epo.org/en/searching-for-patents/technical/espacenet
+Group: inventor. Type: government.
+Roles: legal, design roles. Official EPO route to international patent publications, search guidance and translations.
+Check: Document search scope and results; verify status in the relevant register. The EPO says Espacenet does not permit automated robot searches or bulk retrieval; use authorized OPS access for automation.
+Access: Public official overview. Direct Espacenet app retrieval was unavailable; official EPO referral verified.
+Checked: 2026-09-30. Source: EPO.
+
+wisconsin-sbdc | Regional: Wisconsin SBDC — Business consulting and education
+https://wisconsinsbdc.org/
+Group: business-planning. Type: learning_resource.
+Roles: project, funding, marketing roles. Wisconsin business feasibility, planning, finance and education through a statewide university-based network.
+Check: Use when Wisconsin is the relevant location; confirm center, eligibility, current service terms and course fees separately.
+Access: Regional option; publisher describes no-cost confidential consulting. Education may have separate terms.
+Checked: 2026-09-30. Source: Regional: Wisconsin SBDC.
+
+wedc-wisconsin | Regional: WEDC — Wisconsin business development programs
+https://wedc.org/
+Group: business-planning. Type: learning_resource.
+Roles: project, funding, marketing roles. Wisconsin economic-development starting point for business programs and resources.
+Check: Check the specific program, geography, eligibility, current availability and costs. Do not assume grant eligibility or free market-research access from the homepage.
+Access: Regional agency resource; program terms vary.
+Checked: 2026-09-30. Source: Regional: WEDC.
+
+wmep-wisconsin | Regional: WMEP — Wisconsin Manufacturing Solutions
+https://wmep.org/
+Group: business-planning. Type: learning_resource.
+Roles: manufacturing, engineering, project roles. Wisconsin manufacturing improvement and consulting; a local complement to the existing national NIST MEP directory.
+Check: Confirm geography, capabilities, scope, fees and confidentiality before inquiries or sharing designs. Funding announcements do not establish free client services.
+Access: Regional consulting source; service fees and availability need direct confirmation.
+Checked: 2026-09-30. Source: Regional: WMEP.

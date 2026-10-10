@@ -1,0 +1,25 @@
+AN CREATION — TEST REPORT TEMPLATE — REV 1
+Use after execution; keep separate from the plan and preserve original results.
+Guide: https://ancreationoffice.com/test-planning.html#results
+
+Report ID / revision / author / date / status:
+Project / test ID / requirements / purpose:
+Approved plan ID/revision / actual procedure and edition:
+Operator / lab / dates / witnesses:
+Sample IDs / hardware, firmware, materials and package revisions:
+Prototype differences / previous exposures / sample condition:
+Actual setup, equipment/calibration and environment:
+Actual conditions, settings, sequence and durations:
+Baseline / observations during exposure / recovery / postchecks:
+Raw measurements with units / uncertainty where relevant:
+Photos / logs / raw-data file links and exact revisions:
+Acceptance criteria and source from the plan:
+Outcome: pass / fail / not run / interrupted / inconclusive (with reason):
+Deviations / authorization / impact on validity:
+Failures, damage and anomalies (do not omit unsuccessful samples):
+What this evidence supports / limitations and exclusions:
+Corrective action / owner / root-cause record:
+Retest/regression plan and new sample/revision:
+Technical review / date / disposition:
+Soren handoff / affected CTQ, risk and control-plan items / next decision:
+A report does not automatically establish regulatory authorization or certification.

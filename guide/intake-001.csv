@@ -1,0 +1,40 @@
+Field,Ask it like this,Say first (if any),Required,Order,Answer,Context,Status
+invention,Tell me about your invention.,,yes,1,,,open
+problem,What does it do better than what people use now?,,yes,2,,,open
+customer,Who do you picture buying and using it?,,yes,3,,,open
+where-used,"Where does it get used: home, outdoors, a shop, a vehicle?",,yes,4,,,open
+stage,"How far along are you: an idea, a sketch, a model, something that works?",,yes,5,,,open
+spent-so-far,"About how much have you spent on it so far, if anything?",,no,6,,,open
+goal,"What would you like to happen with it: a few for yourself and friends, sell it, license it to a company?",,yes,7,,,open
+dates,"Are there any dates coming up: when you'd like to see it working, show it, talk to a buyer or supplier, or have it for sale?",A timeline lets us see which risks we have time to deal with.,yes,7,,,open
+quality-bar,"For that first date, how good does it need to be: looks right, works, or ready to sell?",,no,7,,,open
+hold-which,"If a date slips, which do you keep: the date, the money, or how well it works?","Time, money and quality move together; changing one moves another.",yes,8,,,open
+similar,"What's out there now that does the same job, even roughly?",,no,8,,,open
+buyers-said,Has anyone who'd buy it seen it or said they want it?,,no,8,,,open
+budget,What budget can you put into the next few months?,,no,8,,,open
+time,How much time can you give it in a usual week?,,no,8,,,open
+S2-medical,"Does it treat, diagnose or monitor a health problem?",(screening-questions.csv row 2),if not clear,9,,,open
+S3-aircraft,"Does it fly, or go on a drone or aircraft?",(row 3),if not clear,9,,,open
+S4-vehicle,Does it go on a car or truck?,(row 4),if not clear,9,,,open
+S5-government,Would the government or military buy it?,(row 5),if not clear,9,,,open
+S7-wall-power,Does it plug into the wall?,(row 7),if not clear,9,,,open
+S8-electronics,"Does it have a battery, a circuit board or software?",(row 8),if not clear,9,,,open
+S9-wireless,Does it connect to a phone or anything wireless?,(row 9),if not clear,9,,,open
+S10-machine,"Is it a machine, or used in a shop or factory?",(row 10),if not clear,9,,,open
+S11-water,Are you worried about it getting wet?,(row 11),if not clear,9,,,open
+S12-children,Would kids use it?,(row 12),if not clear,9,,,open
+S13-food-skin,"Does it touch food, the mouth, or skin for a long time?",(row 13),if not clear,9,,,open
+S14-hand-use,Do people hold it or use it over and over by hand?,(row 14),if not clear,9,,,open
+S15-hazard,What's the worst thing that could happen with it?,(row 15),yes,9,,,open
+S16-shipping,Will you ship it to people?,(row 16),if not clear,9,,,open
+S17-where-sold,Where would you like to see it sold first?,(row 17),if not clear,9,,,open
+S18-named-standard,Has anyone asked for a certification or standard?,(row 18),if not clear,9,,,open
+S22-other-brand,Is it made to fit or work with someone else's product?,(row 22),if not clear,9,,,open
+S23-industry,"Is it for a particular industry, like railroad, mining, marine or a food plant?",(row 23),if not clear,9,,,open
+S24-materials,"Will it have electronics, or be sold in Europe or California?",(row 24),if not clear,9,,,open
+S25-battery,Does it have a lithium battery?,(row 25),if not clear,9,,,open
+S19-company,Have you thought about starting a company to protect yourself from liability?,(row 19; sop-gateways BUSINESS ENTITY),no,10,,,open
+S20-patent,What are your thoughts on a patent?,(row 20; sop-gateways PATENT),no,10,,,open
+S21-money,Will the next step need someone else's money?,(row 21),no,10,,,open
+other,Anything else you want to talk about on this? Just bring it up.,,no,11,,,open
+said-in-passing,(not asked) Anything worth keeping that doesn't fit a field; used to fill other pending forms,,no,,,,open

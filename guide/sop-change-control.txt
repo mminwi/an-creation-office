@@ -1,0 +1,40 @@
+SOP: Revisions and change control. Revision 1 — October 7, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Goes with: sop-stages.txt, the loops, the compliance matrix, project-folders.txt (dated folders)
+
+WHY THIS EXISTS
+Every loop changes the design, and every change can break something already checked. One rule for naming revisions and one record for changes means anyone can tell which version a part, test or quote belongs to, and what has to be checked again after a change. The AI keeps it; the inventor sees the change and says yes or no.
+
+REVISION NAMES
+- Concepts in industrial design passes: C1, C2, C3.
+- Working revisions in the design and prototype loops: X1, X2, X3. Each loop round that updates the CAD makes the next X.
+- Released revisions, from design freeze on: A, B, C. Freeze releases revision A.
+Every drawing, model, BOM, compliance matrix, test result, quote and review record names the revision it belongs to. Each revision lives in its own dated folder (D-029); an old revision is never edited.
+At an elevated documentation level, follow the buyer's or program's scheme if it has one.
+
+BEFORE FREEZE (C and X revisions)
+Change freely; that's what the loops are for. Each round's review record says what changed and why, and the CAD update makes the next revision. No separate change record needed.
+
+AFTER FREEZE (released revisions)
+Every change gets a change record, in its own dated file:
+- Number and date (CR-001, CR-002).
+- What changes: the part, drawing, process, supplier, tool, fixture, gauge, or label.
+- Why: the reason, the test or report that started it (link to the test, report or complaint).
+- What it touches: compliance matrix lines, FMEA lines, critical features, control plan checks, certifications, tooling, stock on hand.
+- What has to be re-checked: the tests and inspections those lines need, any qualification it affects (vendor, machine, tool, fixture, gauge), and whether a certification lab must be told.
+- Cost and time: what the change costs, and how it moves the timeline.
+- Decision: the inventor's yes or no, and any buyer approval the buyer requires.
+- Done: the new revision letter, the re-checks passed, and the date it takes effect (which batch or serial number).
+
+WHAT A CHANGE MUST RE-CHECK
+- Anything on a compliance matrix line the change touches is re-verified.
+- A change to a critical feature re-runs its check and updates the control plan.
+- A change to the vendor, a machine, a tool, a fixture or a gauge repeats the qualification it touches (sop-qualification.txt).
+- A change that could affect a certification (FCC, UL, CE, medical, aviation) is checked against the tested configuration before it ships; the lab may need to be told.
+- Labels, instructions, the buyer packet and listings are updated when the change shows up there.
+
+SAFETY
+A safety fix is never held back by paperwork. Make the fix and contain the risk first; complete the change record right after.
+
+WHO DOES WHAT
+The analyst writes the change record, works out what it touches and what must be re-checked, and tracks it to done. Soren shows it to the inventor in plain words and records the decision. The inventor approves; the office never approves for them or tells a supplier or lab without them.

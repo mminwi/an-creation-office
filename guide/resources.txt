@@ -1,0 +1,1770 @@
+Resource use for Soren. Same entries as the human shelves linked from https://ancreationoffice.com/resources.html and as resources.json. Directory checked 2026-09-30. Check sources again when used.
+
+Soren is the only project bot. He takes one role at a time: project, design, legal, engineering, prototype, manufacturing, funding, marketing. Older role tags on the entries below name which of those jobs reads the source. Do not create a bot from a name on an entry.
+
+HUMAN SHELVES
+The human directory is split by task. This file remains the full list for assistants.
+Company and government: https://ancreationoffice.com/resources-company.html — Registration, tax IDs, local help, SAM and contracting. Groups: business, contracting.
+Patents and legal help: https://ancreationoffice.com/resources-legal.html — Official directories and firms to interview. Groups: legal.
+Prototypes and hardware: https://ancreationoffice.com/resources-prototype.html — Parts, enclosures, electronics, and hardware catalogs. Groups: prototyping, hardware.
+Electrical and enclosures: https://ancreationoffice.com/resources-electrical.html — UL, IEC, EN, NFPA, and IP ratings. Groups: electrical.
+Manufacturing and testing: https://ancreationoffice.com/resources-making.html — Manufacturing help, laboratories, and test sources. Groups: making.
+Standards and specifications: https://ancreationoffice.com/resources-standards.html — Quality systems and military specifications. Groups: quality, military.
+Customers and selling: https://ancreationoffice.com/resources-customers.html — Market research, marketing guidance, and retail entry. Groups: marketing, retail.
+Funding: https://ancreationoffice.com/resources-funding.html — Angel groups, grants, and crowdfunding. Groups: funding.
+Check sheets: https://ancreationoffice.com/resources-sheets.html — Ten working sheets and the editable worksheet. Groups: check-sheets.
+At the start of a task, match the SOP and project need to relevant entries. Do not load every source into every conversation.
+Explain why a selected source applies. Read its current official information; record the URL, document identifier, edition or revision, date checked, relevant requirement, and saved file location in the project records.
+For military work, start with the contract, customer specification, and document list. Use ASSIST Quick Search to retrieve the required documents and compare them with current revisions and notices. Do not silently replace a contract-specified edition with a newer one. If applicability or edition conflicts are unresolved, flag them for the responsible person.
+Recommend downloading relevant current documents from the official source when permitted. Respect access, copyright, licensing, and restrictions on AI use. If access or permission is missing, link the source and state what remains unread; ask the person to obtain appropriate access. Do not purchase, contact, apply, or transmit project information without their approval.
+This directory links to sources; it is not a copy or authoritative summary of the standards. A catalog entry is not the full standard, and having a document is not evidence of compliance.
+Firm and investor directories are starting points, not vetted shortlists. Check project fit and current facts. Named firms and angel networks are newly researched candidates based on published source information, not Mike’s reviewed or personally endorsed shortlist. Do not invent a reviewed provider or imply a funding guarantee.
+
+Electrical sources. UL, IEC and EN have different roles. IEC and EN are not military standards; military contracts can reference them. Select applicable product and market requirements and national deviations; do not treat this list as a universal compliance checklist. The IP quick guide is https://ancreationoffice.com/ip-ratings.txt and is orientation, not a substitute for IEC 60529 or test evidence.
+
+Hardware workflow. The person may choose any supplier; these catalogs are starting points, not an exclusive purchasing list. Prefer McMaster-Carr as the first design reference when it has the needed part and CAD model, because of the broad selection and saved modeling work. If the person selects a McMaster-Carr item, ask for its link and part number to save the designer a matching exercise. A drawing house may use many McMaster-Carr references; those identify parts, not mandatory purchasing sources. Keep the design catalog reference separate from the purchasing source. Respect an existing supplier choice; use its verified specifications and suitable CAD rather than forcing a McMaster-Carr cross-reference. Later Soren compares Fastenal and other production suppliers. Preserve the source part number, model source/date and required specification in the bill of materials. The engineering role reviews equivalents against dimensions, threads, material/grade, finish, strength and required ratings as applicable. Update approved alternatives and affected revisions; use replacement-source data and permitted models. Respect CAD-use terms; a downloaded catalog model is not permission to manufacture the catalog part.
+
+Prototyping workflow. The person may choose any suitable supplier; these are suggested starting points. Present Xometry, Protolabs and JLC services first; Fictiv and Quickparts are additional options. These are supplier sources, not project-qualified vendors. The prototype role selects the prototype purpose/process, the engineering role reviews technical inputs, and Soren compares the same revision/material/quantity/tolerances/finish/inspection needs. Verify delivered price, lead time, location and shipping/taxes/duties. Get authorization before uploading files, contacting suppliers, requesting quotes or purchasing; do not treat a website visit as a quote.
+
+
+VERIFY GOVERNMENT SITES BEFORE REGISTRATION OR PAYMENT
+- For U.S. government registration, start on the agency’s .gov website. U.S. military agencies also use .mil. Do not start from a sponsored search result or an unsolicited renewal link.
+- SAM registration and renewal are free. An EIN is free when obtained directly from the IRS. State business filing fees can be legitimate; distinguish the government’s fee from an optional service fee.
+- Read the actual hostname, not the logo or the words in a page title. sam.gov.example.com is part of example.com, not sam.gov. HTTPS protects the connection; it does not prove government identity.
+- Some real state portals and official partner programs use .us, .org, .edu or commercial domains. Reach them through the verified agency page or its directory and verify the referral. A non-.gov site is not automatically fraudulent or official.
+- Before entering tax IDs, identity documents, bank details or payment information, verify the agency and exact task. Show the person the official starting URL, final destination and any government versus service fee. Do not rely on a threatening email to verify itself.
+- For international projects, use that country’s official government directory; .gov and .mil here describe U.S. starting points.
+Sources:
+Who can use .gov: https://get.gov/domains/
+Government domains outside .gov and .mil: https://search.gov/about/policy/govt-urls.html
+GSA: SAM registration and renewal are free: https://www.gsa.gov/real-estate/for-businesses-seeking-opportunities/how-to-compete-for-a-gsa-lease
+IRS: get an EIN for free: https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number
+FTC: business and government impersonation: https://www.ftc.gov/business-guidance/resources/scams-your-small-business-guide-business-0
+
+STARTING INDEX
+Start a company: https://ancreationoffice.com/resources-company.html#business — Registration, tax IDs and local help. Roles: project, legal, funding roles.
+Find patent or legal help: https://ancreationoffice.com/resources-legal.html#legal — Official directories and firms to interview. Roles: legal, design roles.
+Make a prototype: https://ancreationoffice.com/resources-prototype.html#prototyping — Parts, enclosures and electronics. Roles: prototype, engineering, manufacturing roles.
+Find your customers: https://ancreationoffice.com/resources-customers.html#marketing — Market research and marketing guidance. Roles: marketing, design roles.
+Explore funding: https://ancreationoffice.com/resources-funding.html#funding — Angel groups, grants and crowdfunding. Roles: funding role.
+Work with government: https://ancreationoffice.com/resources-company.html#contracting — SAM, APEX and military suppliers. Roles: manufacturing, project roles.
+
+PROVIDER SELECTION
+A good match depends on the assigned person’s active registration, relevant technical work, conflicts, communication, written scope and fees. A patent agent’s authority differs from an attorney’s business-law practice. Use USPTO and state licensing records. Named firms are candidates to interview, not a quality ranking.
+Compare quotes against the same drawing/model revision, material, finish, quantity, tolerance, test and inspection requirements. Check who makes the part, where, lead time, delivered cost, confidentiality and applicable data-sharing restrictions. Keep supplier choice open.
+Match geography, sector, stage, traction and founder criteria before applying. Check fees, confidentiality and sharing terms. A directory or network listing is not a funding promise. Rewards crowdfunding is distinct from equity investment.
+Start with the customer and evidence of demand. Choose channels, training and tools for that job. Keep advertising claims supportable; verify current channel and legal rules before publication.
+
+STARTING AND RUNNING A COMPANY
+
+sba-launch | SBA — Launch your business
+https://www.sba.gov/counseling/launch-your-business/
+Group: business. Type: government.
+Roles: project, legal, funding roles. An official roadmap for structure, location, business names, registration, tax IDs, licenses, bank accounts and insurance.
+Check: Use it to identify the steps for your situation, then confirm requirements with the responsible state, local or federal agency. A formation service is optional; it is not the government.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+sba-state-registration | SBA — Find your state registration office
+https://www.sba.gov/counseling/launch-your-business/state-registration-lookup/
+Group: business. Type: government.
+Roles: project, legal roles. Find the state or territory office responsible for business registration without starting from a search advertisement.
+Check: Select the correct jurisdiction, follow the agency link, and verify the filing type, actual government fee and renewals. A registered-agent service and the state filing office are different things.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+usa-state-government | USA.gov — State and territory governments
+https://www.usa.gov/state-governments
+Group: business. Type: government.
+Roles: project, legal, funding roles. A trusted route to state government websites for taxes, licenses and local agency information.
+Check: Continue to the agency for the actual task. Some official portals use a different domain; verify that the government page sends you there before submitting information.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+irs-ein | IRS — Get an EIN directly, for free
+https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number
+Group: business. Type: government.
+Roles: project, legal, funding roles. The official IRS starting point for an employer identification number (EIN). The IRS does not charge for an EIN.
+Check: Check eligibility and the responsible party’s authority. For an LLC or corporation, follow the IRS’s instructions about state formation first. Save the confirmation with company records.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+irs-start-business | IRS — Starting a business and federal taxes
+https://www.irs.gov/businesses/small-businesses-self-employed/starting-a-business
+Group: business. Type: government.
+Roles: funding, legal, project roles. Federal tax starting points for new businesses, including structure, taxes, records and tax-year choices.
+Check: Match the current guidance to the actual entity, activities and tax year; review state and local requirements separately with the appropriate adviser.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+irs-recordkeeping | IRS Publication 583 — Starting a business and keeping records
+https://www.irs.gov/publications/p583
+Group: business. Type: government.
+Roles: funding, project roles. A starting reference for business records and bookkeeping responsibilities.
+Check: Check the publication date and current tax-year guidance. Keep business transactions and supporting records organized; confirm retention rules for the type of record.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+fincen-boi | FinCEN — Check current beneficial ownership rules
+https://www.fincen.gov/boi
+Group: business. Type: government.
+Roles: legal, funding roles. The agency’s current source for beneficial ownership information (BOI) reporting and exemptions.
+Check: Check current applicability before filing or paying anyone. At this review, FinCEN says U.S. companies are exempt; foreign-formed entities registered in the U.S. need a separate applicability check. Avoid old blanket claims that every LLC must file.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+ftc-business-scams | FTC — Scams targeting small businesses
+https://www.ftc.gov/business-guidance/resources/scams-your-small-business-guide-business-0
+Group: business. Type: government.
+Roles: project, legal, funding, marketing roles. Recognize fake invoices, government impersonation, misleading services and other scams aimed at businesses.
+Check: Verify unexpected demands through a known official contact or website. Do not use the payment link or telephone number in a suspicious message to verify that same message.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+nist-small-business-cyber | NIST — Small Business Cybersecurity Corner
+https://www.nist.gov/itl/smallbusinesscyber
+Group: business. Type: government.
+Roles: project, engineering roles. Practical cybersecurity starting points for a small company’s accounts, devices, data and suppliers.
+Check: Choose resources for the actual business and current risks. A guide is not a security certification; keep account permissions, backups and recovery responsibilities explicit.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+score-mentors | SCORE — Find a business mentor
+https://www.score.org/find-mentor/request-mentor
+Group: business. Type: nonprofit_mentoring.
+Roles: project, funding, marketing roles. Find volunteer mentors by expertise, industry and location to discuss business plans, marketing, operations or finance.
+Check: Mentoring is free; some workshops or premium programs cost money. Look for experience relevant to your business and check each program's price.
+Checked: 2026-09-30. Source: SCORE.
+Source details: https://www.score.org/score-faqs-business-mentoring-resources-support/
+
+sba-sbdc | SBA — Local business help and SBDCs
+https://www.sba.gov/counseling/local-assistance/
+Group: business. Type: government_directory.
+Roles: project, funding, marketing roles. Find a nearby Small Business Development Center or other SBA partner for planning, operations, market research and finance guidance.
+Check: Start at SBA.gov and follow its directory to the local center. Confirm service area, appointment process and any training fees.
+Checked: 2026-09-30. Source: U.S. Small Business Administration.
+Source details: https://www.sba.gov/counseling/local-assistance/resource-partners/
+
+sba-business-insurance | SBA — Get business insurance
+https://www.sba.gov/business-guide/launch-your-business/get-business-insurance
+Group: business. Type: primary_guidance.
+Roles: project, funding roles. Plain explanation of business insurance types, including product liability, and how to buy it.
+Check: Use when the inventor declines a company and the liability stays with them, or when a store requires coverage. An agent confirms what a policy covers.
+Checked: 2026-10-06. Source: Government agency’s own website.
+
+hardware-startup-insurance | Upcover — Insurance for hardware startups
+https://www.upcover.com/blog/hardware-startup-insurance-australia
+Group: business. Type: learning_resource.
+Roles: project, funding roles. Plain list of the cover a hardware business usually needs: general and product liability, errors and omissions, recall.
+Check: Australian broker; the types carry over, the terms and prices do not. Confirm with a U.S. agent. Pairs with sba-business-insurance.
+Checked: 2026-10-07. Source: Insurance broker's blog.
+
+PATENTS AND LEGAL HELP
+
+patent-basics | USPTO — Patent basics
+https://www.uspto.gov/patents/basics
+Group: legal. Type: source_directory.
+Roles: legal, design roles. Official patent background and links to the application process.
+Check: Use current official information for the relevant patent question; keep unresolved issues for the legal role’s professional-review packet.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+patent-practitioners | USPTO — Find a patent practitioner
+https://www.uspto.gov/learning-and-resources/patent-and-trademark-practitioners/finding-patent-practitioner
+Group: legal. Type: source_directory.
+Roles: legal role. Official route to the register of active patent attorneys and agents.
+Check: Confirm the assigned practitioner’s active USPTO registration. For an attorney, also check state-bar standing. Ask about technical experience, conflicts, who does the work, and a written scope and fee estimate.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+patent-pro-bono | USPTO — Patent Pro Bono Program
+https://www.uspto.gov/patents/basics/using-legal-services/pro-bono/patent-pro-bono-program
+Group: legal. Type: source_directory.
+Roles: legal, project roles. Find regional programs that match eligible inventors and small businesses with volunteer patent professionals.
+Check: Check your regional program’s income, invention, and training requirements, availability, and any costs you must pay.
+Checked: 2026-09-30. Source: USPTO — official program directory.
+
+patent-law-school-clinics | USPTO — Law school patent and trademark clinics
+https://www.uspto.gov/learning-and-resources/ip-policy/public-information-about-practitioners/law-school-clinic-1
+Group: legal. Type: source_directory.
+Roles: legal, marketing roles. Find supervised law-school clinics offering free patent or trademark legal services to accepted clients.
+Check: Confirm geographic eligibility, patent versus trademark coverage, intake availability, deadlines, and responsibility for filing costs.
+Checked: 2026-09-30. Source: USPTO — official clinic directory.
+
+patent-public-search | USPTO — Patent Public Search
+https://www.uspto.gov/patents/search/patent-public-search
+Group: legal. Type: source_directory.
+Roles: legal, design, engineering roles. Search published U.S. patent applications and patents, with beginner and advanced tools and tutorials.
+Check: Save document numbers and relevant passages for the legal role. A search alone does not establish patentability or freedom to sell; check current access requirements.
+Checked: 2026-09-30. Source: USPTO — official search tools.
+
+patent-resource-centers | USPTO — Patent and Trademark Resource Centers
+https://www.uspto.gov/learning-and-resources/patent-trademark-resource-centers
+Group: legal. Type: source_directory.
+Roles: legal, design, marketing roles. Find a library specialist who can help you learn patent and trademark search tools and locate official information.
+Check: Ask about local appointments and classes. Resource-center staff provide research guidance, not legal advice.
+Checked: 2026-09-30. Source: USPTO — official library network.
+
+trademark-basics | USPTO — Trademark basics
+https://www.uspto.gov/trademarks/basics
+Group: legal. Type: source_directory.
+Roles: legal, marketing roles. Start researching protection for a business name, product name, or logo and follow official registration guidance.
+Check: Review name availability with the legal role before investing in branding; follow the official search and filing links and verify notices directly with USPTO.
+Checked: 2026-09-30. Source: USPTO — official trademark guidance.
+
+aba-find-legal-help | American Bar Association — Find Legal Help
+https://www.americanbar.org/groups/legal_services/flh-home/
+Group: legal. Type: source_directory.
+Roles: legal, project roles. Find state lawyer-referral and licensing resources for company formation, contracts, and other legal questions.
+Check: Use the relevant state licensing authority to check a lawyer’s current standing. Confirm business-law experience, conflicts, scope, and fees directly.
+Checked: 2026-09-30. Source: American Bar Association — professional association.
+
+slw-patent-firm | Schwegman Lundberg & Woessner — Mechanical patents
+https://www.slwip.com/industries/mechanical/
+Group: legal. Type: professional_candidate.
+Roles: legal, design, engineering roles. A patent-firm candidate for mechanical and electromechanical inventions, IP strategy, and patent preparation and prosecution.
+Check: Candidate to interview. Check the assigned practitioner’s USPTO registration, attorney state-bar standing, technical experience, conflicts, and written scope and fees before engagement.
+Checked: 2026-09-30. Source: Firm website — published practice information.
+
+wolf-greenfield-patents | Wolf Greenfield — Mechanical technologies
+https://wolfgreenfield.com/technologies/mechanical-technologies
+Group: legal. Type: professional_candidate.
+Roles: legal, design, engineering roles. A patent-firm candidate for consumer products, industrial equipment, robotics, design protection, and product-clearance questions.
+Check: Candidate to interview. Check the assigned practitioner’s USPTO registration, attorney state-bar standing, technical experience, conflicts, and written scope and fees before engagement.
+Checked: 2026-09-30. Source: Firm website — published practice information.
+
+rocky-mountain-patent | Rocky Mountain Patent / Hall Estill — Inventors and startups
+https://rockymountainpatent.com/
+Group: legal. Type: professional_candidate.
+Roles: legal, project, engineering roles. A patent-firm candidate focused on inventors and startups, with stated mechanical and electrical expertise and patent-prosecution services.
+Check: Candidate to interview. Check the assigned practitioner’s USPTO registration, attorney state-bar standing, technical experience, conflicts, and written scope and fees before engagement.
+Checked: 2026-09-30. Source: Firm website — published practice information.
+
+PROTOTYPING SUPPLIERS
+
+xometry | Xometry
+https://www.xometry.com/
+Group: prototyping. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. CNC machining, 3D printing, sheet metal and molding through an on-demand manufacturing platform.
+Check: Compare the same drawing/model revision, material, finish, quantity, tolerances, inspection needs, delivered price and lead time. Verify current capability for this part; a catalog listing is not a qualified supplier or a quote.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+protolabs | Protolabs
+https://www.protolabs.com/
+Group: prototyping. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. Prototype and production services including injection molding, CNC machining, 3D printing and sheet metal.
+Check: Compare the same drawing/model revision, material, finish, quantity, tolerances, inspection needs, delivered price and lead time. Verify current capability for this part; a catalog listing is not a qualified supplier or a quote.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+jlcpcb | JLCPCB — Circuit boards and assembly
+https://jlcpcb.com/
+Group: prototyping. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. PCB fabrication and assembly for electronic prototypes; choose board specifications and assembly inputs for the actual design.
+Check: Compare the same drawing/model revision, material, finish, quantity, tolerances, inspection needs, delivered price and lead time. Verify current capability for this part; a catalog listing is not a qualified supplier or a quote.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+jlc3dp | JLC3DP — 3D printing
+https://jlc3dp.com/
+Group: prototyping. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. JLC’s 3D-printing service for prototype parts. Check available processes, materials and finishes.
+Check: Compare the same drawing/model revision, material, finish, quantity, tolerances, inspection needs, delivered price and lead time. Verify current capability for this part; a catalog listing is not a qualified supplier or a quote.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+jlccnc | JLCCNC — Machined parts
+https://jlccnc.com/
+Group: prototyping. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. JLC’s CNC-machining service for custom parts. Check dimensions, materials and tolerances.
+Check: Compare the same drawing/model revision, material, finish, quantity, tolerances, inspection needs, delivered price and lead time. Verify current capability for this part; a catalog listing is not a qualified supplier or a quote.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+fictiv | Fictiv
+https://www.fictiv.com/
+Group: prototyping. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. Additional source for custom parts, including machining, molding and 3D printing.
+Check: Compare the same drawing/model revision, material, finish, quantity, tolerances, inspection needs, delivered price and lead time. Verify current capability for this part; a catalog listing is not a qualified supplier or a quote.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+quickparts | Quickparts
+https://quickparts.com/
+Group: prototyping. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. Additional source for prototype and production parts, including 3D printing, machining and molding.
+Check: Compare the same drawing/model revision, material, finish, quantity, tolerances, inspection needs, delivered price and lead time. Verify current capability for this part; a catalog listing is not a qualified supplier or a quote.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+sendcutsend | SendCutSend — Cut and bent sheet parts
+https://sendcutsend.com/
+Group: prototyping. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. Candidate for laser-cut or routed sheet parts, brackets, bending and finishing.
+Check: Match material, thickness, bend radius, hole placement and finish to the shop’s design rules. Quote the same approved revision and ask what inspection is included.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+protocase | Protocase — Custom enclosures and machined parts
+https://www.protocase.com/
+Group: prototyping. Type: supplier.
+Roles: design, engineering, prototype, manufacturing roles. Candidate for prototype electronic enclosures, front panels, sheet-metal assemblies and CNC-machined housings.
+Check: Confirm dimensions, mounting and connector cutouts, ventilation, finish and markings. Specify any required inspection; enclosure fabrication alone does not establish an IP rating or product certification.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+macrofab | MacroFab — Circuit-board assembly
+https://www.macrofab.com/
+Group: prototyping. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. Candidate for sourcing components and assembling electronic circuit boards from prototype through production.
+Check: Supply matching board files, parts list (BOM), placement data and revision. Agree substitutions, test coverage, assembly criteria, programming, factory location and export-data handling before uploading restricted files.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+HARDWARE, ELECTRONICS AND AUTOMATION
+
+mcmaster | McMaster-Carr — Hardware and ready-made CAD
+https://www.mcmaster.com/
+Group: hardware. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. A broad hardware catalog and a convenient first design reference when it has the needed part and CAD model. Existing CAD can save the designer from drawing the part. You may buy from any supplier you choose.
+Check: Send the designer the part link and number when selecting here. Verify dimensions, material/grade, finish, tolerances and model availability. Keep the catalog reference separate from the chosen purchasing source; respect current CAD-use terms.
+Checked: 2026-09-30. Source: Supplier’s own website.
+Related: McMaster-Carr CAD models — https://www.mcmaster.com/cad-models
+
+fastenal | Fastenal — Procurement and production supply
+https://www.fastenal.com/fast/services-and-solutions/global-sourcing
+Group: hardware. Type: supplier.
+Roles: manufacturing, engineering roles. A source for Soren to compare for ongoing fastener/hardware supply, sourcing and inventory needs as quantities grow.
+Check: Compare an exact specification and approved part cross-reference, delivered cost, quantities, lead time and required documentation. Obtain the engineering role’s review of substitutions; a similar appearance is not proof of equivalence.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+digikey | DigiKey — Electronic components and design tools
+https://www.digikey.com/en/resources/design-tools/design-tools
+Group: hardware. Type: supplier.
+Roles: design, engineering, prototype, manufacturing roles. Electronic-component sourcing plus schematic, footprint and 3D-model tools for circuit development.
+Check: Verify the exact manufacturer part number, datasheet, package/footprint, lifecycle and stock. Check CAD models against the datasheet; approve substitutes and compare quantity breaks and delivered cost.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+misumi | MISUMI — Configurable automation components
+https://us.misumi-ec.com/
+Group: hardware. Type: supplier.
+Roles: design, engineering, prototype, manufacturing roles. Candidate for configurable mechanical parts, linear-motion and factory-automation components with downloadable CAD.
+Check: Record the complete configured part number. Check dimensions, material, load, fits, tolerances and delivery; match the CAD configuration to the part being purchased.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+automationdirect | AutomationDirect — Controls, pneumatics and vision
+https://www.automationdirect.com/adc/home/home
+Group: hardware. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. Candidate catalog for PLCs, motor control, sensors, vision devices and lighting, pneumatic tubing, valves, grippers and vacuum parts.
+Check: Check voltage, I/O and communication compatibility, air pressure/flow, fittings and environment. For vision, confirm field of view, lighting and actual sample performance. Have the responsible engineer review safety functions separately.
+Checked: 2026-09-30. Source: Supplier’s own website.
+Related: Pneumatic components — https://www.automationdirect.com/adc/overview/catalog/pneumatic_components
+Related: Vision devices — https://www.automationdirect.com/adc/overview/catalog/barcode_-z-_rfid_-z-_vision/vision
+
+festo-vacuum | Festo — Vacuum handling and suction cups
+https://www.festo.com/us/en/c/products/vacuum-technologies-id_pim20
+Group: hardware. Type: supplier.
+Roles: engineering, prototype, manufacturing roles. Candidate for vacuum generators, suction cups, vacuum grippers and accessories when designing handling equipment.
+Check: Select for workpiece material, surface, shape, mass and motion. Confirm vacuum level, leakage/flow, cup wear and loss-of-vacuum behavior with the application engineer; test on real parts.
+Checked: 2026-09-30. Source: Supplier’s own website.
+
+MARKETING AND CUSTOMER RESEARCH
+
+sba | SBA — Business planning and market research
+https://www.sba.gov/counseling/plan-your-business/
+Group: marketing. Type: government.
+Roles: marketing, design, project, funding roles. Start with the market-research section: define customers, compare competing solutions and test demand, pricing and market size.
+Check: Combine published data with interviews or other direct research. Record assumptions and sources before using market estimates in a funding plan.
+Checked: 2026-09-30. Source: U.S. Small Business Administration.
+
+census-business-builder | Census Business Builder
+https://www.census.gov/data/data-tools/cbb.html
+Group: marketing. Type: government.
+Roles: marketing, design, funding roles. Explore U.S. customer demographics and business activity by location and industry; download maps and reports for market research.
+Check: Record the data year, geography and industry definition. Published statistics support research; confirm demand by speaking with prospective customers.
+Checked: 2026-09-30. Source: U.S. Census Bureau.
+
+google-trends | Google Trends
+https://trends.google.com/trends/
+Group: marketing. Type: commercial_tool.
+Roles: marketing, design roles. Compare search interest in product terms across time and places to explore terminology, seasonality and possible customer questions.
+Check: Scores show relative search interest, not sales, market size or an absolute count of customers. Record region, dates and search terms.
+Checked: 2026-09-30. Source: Google.
+Source details: https://support.google.com/trends/answer/4365533?hl=en
+
+google-seo-starter | Google — Search Engine Optimization Starter Guide
+https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+Group: marketing. Type: commercial_education.
+Roles: marketing role. Learn how to make a website easier for people and search engines to understand and discover.
+Check: Use the guide to improve useful content and site structure. Following it does not guarantee indexing or a particular search position.
+Checked: 2026-09-30. Source: Google Search Central.
+
+hubspot-marketing-course | HubSpot Academy — Digital marketing course
+https://academy.hubspot.com/courses/digital-marketing
+Group: marketing. Type: commercial_education.
+Roles: marketing, project roles. An introductory course covering marketing strategy, content, search, email, social media and advertising.
+Check: The listed course is free and uses a HubSpot Academy account. Distinguish educational material from optional paid HubSpot products.
+Checked: 2026-09-30. Source: HubSpot Academy.
+
+ftc-advertising | FTC — Advertising and marketing guidance
+https://www.ftc.gov/business-guidance/advertising-marketing
+Group: marketing. Type: government.
+Roles: marketing, legal roles. Check product claims, endorsements, reviews, influencers, Made in USA statements and other advertising topics before publishing.
+Check: Choose the guidance matching the product and channel. Keep evidence for claims and review relevant disclosure rules with the responsible specialist.
+Checked: 2026-09-30. Source: Federal Trade Commission.
+
+ftc-email-marketing | FTC — Commercial email (CAN-SPAM) guide
+https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business
+Group: marketing. Type: government.
+Roles: marketing, legal roles. Use the official checklist when planning promotional email, including business-to-business campaigns.
+Check: Review sender information, subject lines, postal-address and unsubscribe requirements. Also check applicable state, international and platform rules.
+Checked: 2026-09-30. Source: Federal Trade Commission.
+
+FUNDING AND INVESTOR NETWORKS
+
+angel-groups | Angel Capital Association — Member directory
+https://angelcapitalassociation.org/directory/
+Group: funding. Type: industry_directory.
+Roles: funding, project roles. Find angel groups and investment platforms, then visit each group's own site to check geography, industry and application process.
+Check: ACA is a directory, not a source of direct funding. Check entrepreneur fees, eligibility and information-sharing terms before applying.
+Checked: 2026-09-30. Source: Angel Capital Association.
+
+sbir | SBIR / STTR — Federal research funding
+https://www.sbir.gov/
+Group: funding. Type: source_directory.
+Roles: funding role. Starting point for participating agencies and research-funding opportunities.
+Check: Check current program availability, the specific agency solicitation, eligibility, and deadline; do not assume an opportunity is open.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+grants-search | Grants.gov — Search federal funding opportunities
+https://www.grants.gov/search-grants
+Group: funding. Type: government.
+Roles: funding, project roles. Search the official federal grant opportunity directory by eligibility and subject.
+Check: Confirm applicant type, purpose, dates and registrations in the actual notice. Not every grant accepts a for-profit startup. Ignore unsolicited messages claiming you have already won a grant.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+golden-seeds | Golden Seeds — Women-led company funding
+https://www.goldenseeds.com/how-to-apply-for-funding
+Group: funding. Type: angel_network.
+Roles: funding, project roles. An angel network to investigate for U.S.-domiciled, early-stage companies in technology, healthcare and consumer sectors with a woman in an operating C-suite role.
+Check: Review leadership/equity, traction and sector criteria. A non-refundable $50 application fee is listed; confirm the current fee and eligibility before submitting.
+Checked: 2026-09-30. Source: Golden Seeds.
+Source details: https://www.goldenseeds.com/investment-criteria-eligibility
+
+tca-venture-group | TCA Venture Group — Funding applications
+https://tcaventuregroup.com/apply-for-funding-now/
+Group: funding. Type: angel_network.
+Roles: funding, project roles. Explore seed and early growth funding across technology-related sectors in the U.S. and Canada, with a strong Southern California focus.
+Check: Choose the relevant chapter and check its location, industry and traction criteria. Fee terms differ: Orange County lists an administrative application fee despite general no-fee wording.
+Checked: 2026-09-30. Source: TCA Venture Group.
+
+band-of-angels | Band of Angels — Seed investment
+https://www.bandangels.com/angel-investment
+Group: funding. Type: angel_network.
+Roles: funding, project roles. A California-based angel network considering U.S.-registered seed technology and life-science companies, including hardware and other technical products.
+Check: Review technology, market and stage fit. Its FAQ allows U.S. companies beyond Silicon Valley and lists no submission or presentation fees; check current terms before applying.
+Checked: 2026-09-30. Source: Band of Angels.
+Source details: https://www.bandangels.com/about
+
+kickstarter-handbook | Kickstarter — Creator Handbook
+https://www.kickstarter.com/help/handbook
+Group: funding. Type: commercial_education.
+Roles: funding, marketing, project, prototype roles. Plan a rewards-based crowdfunding campaign: tell the story, build rewards, promote it, communicate with backers and prepare fulfillment.
+Check: Review current project eligibility, platform fees and delivery responsibilities before choosing crowdfunding. Budget manufacturing, shipping and campaign costs.
+Checked: 2026-09-30. Source: Kickstarter.
+
+GOVERNMENT REGISTRATION AND CONTRACTING
+
+sam-registration | SAM.gov — Entity registration and Unique Entity ID
+https://sam.gov/entity-registration
+Group: contracting. Type: government.
+Roles: project, funding, manufacturing roles. Official registration for organizations pursuing federal awards, or a Unique Entity ID when that alone is appropriate. SAM registration and renewal are free.
+Check: Start by typing sam.gov. Choose the correct registration purpose, follow Login.gov from SAM, and confirm the current record and renewal instructions. Paid third-party help is optional; it is not a government registration fee.
+Checked: 2026-09-30. Source: Government agency’s own website.
+Source details: https://www.gsa.gov/real-estate/for-businesses-seeking-opportunities/how-to-compete-for-a-gsa-lease
+
+apex-help | APEX Accelerators — Government contracting assistance
+https://www.apexaccelerators.us/
+Group: contracting. Type: government_assistance.
+Roles: project, manufacturing, funding roles. Find local assistance for government contracting and SAM registration. SAM.gov links to this program for free registration help.
+Check: Follow the APEX link from SAM.gov to confirm the destination. Check your local center’s service area and what assistance is included; this is an example of a legitimate program on a .us domain.
+Checked: 2026-09-30. Source: Official program linked by SAM.gov.
+Source details: https://sam.gov/entity-registration
+
+dla-business | DLA — Getting started as a supplier
+https://www.dla.mil/Small-Business/Getting-Started/
+Group: contracting. Type: government.
+Roles: manufacturing, engineering, funding roles. The Defense Logistics Agency’s route into supplier registration, SAM/CAGE information and its bidding systems.
+Check: Start on the DLA .mil page and follow its current links. Match registrations, capabilities and documentation to the actual opportunity; registration does not guarantee a contract.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+ELECTRICAL STANDARDS
+
+ul-standards | UL Standards & Engagement — Electrical standards
+https://www.shopulstandards.com/
+Group: electrical. Type: source_directory.
+Roles: engineering, prototype, manufacturing roles. Find UL standards for the product: UL 508A for industrial control panels; UL 50 and UL 50E for electrical enclosures; UL 62368-1 for audio/video and information/communication technology equipment.
+Check: Confirm product scope, market, edition, and certification route. A compliant component or enclosure does not certify the whole product.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+Related: UL industrial control panels — https://www.ul.com/services/industrial-control-panels-and-panel-shop-program
+Related: UL enclosure evaluation — https://www.ul.com/services/electrical-enclosure-and-related-component-certification
+
+iec-electrical | IEC — Electrical product standards
+https://webstore.iec.ch/
+Group: electrical. Type: source_directory.
+Roles: engineering, prototype, manufacturing roles. International standards: IEC 60204-1 for machinery electrical equipment; IEC 61010-1 for measurement, control and laboratory equipment; IEC 62368-1 for AV/ICT equipment; IEC 60335-1 for household appliances; IEC 60601-1 for medical electrical equipment.
+Check: Choose the relevant family, particular parts, amendments and national adoption. These are starting points, not a checklist that applies to every product.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+Related: IEC 60204-1 — https://webstore.iec.ch/en/publication/26037
+Related: IEC 61010-1 — https://webstore.iec.ch/en/publication/4279
+Related: IEC 60335-1 — https://webstore.iec.ch/en/publication/61880
+Related: IEC 60601-1 — https://webstore.iec.ch/en/publication/67497
+Related: IEC 62368-1 background from UL — https://www.ul.com/services/iec-62368-1-testing-certification
+
+cenelec | CENELEC — European electrical standards (EN)
+https://www.cencenelec.eu/about-cenelec/
+Group: electrical. Type: source_directory.
+Roles: engineering, prototype, manufacturing roles. Starting point for European electrotechnical standards. EN identifies a European standard; EN IEC indicates a European adoption of an IEC standard.
+Check: Confirm the actual European/national edition and any deviations for the target market. IEC and EN are not military standards. A military contract may reference them.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+iec-60529 | IEC 60529 — Enclosure protection (IP Code)
+https://webstore.iec.ch/en/publication/2452
+Group: electrical. Type: source_directory.
+Roles: engineering, prototype, manufacturing roles. Publisher’s source for protection against access to hazardous parts, solid objects, dust and harmful water ingress.
+Check: Use the full applicable standard and actual product test evidence for a rating claim. Read the IP quick guide for orientation; distinguish dust protection, jets and immersion.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+nfpa-70 | NFPA 70 — National Electrical Code (NEC)
+https://www.nfpa.org/codes-and-standards/nfpa-70-standard-development/70
+Group: electrical. Type: source_directory.
+Roles: engineering, manufacturing roles. Reference for electrical installations in the United States.
+Check: Check the edition adopted at the installation location and applicable local requirements. Installation rules are distinct from product certification.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+nfpa-79 | NFPA 79 — Electrical Standard for Industrial Machinery
+https://www.nfpa.org/codes-and-standards/nfpa-79-standard-development/79
+Group: electrical. Type: source_directory.
+Roles: engineering, manufacturing roles. Starting point for electrical equipment of industrial machines.
+Check: Confirm machine scope and the required edition; coordinate with the applicable installation and product standards.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+nema-enclosures | NEMA enclosure Types — ANSI catalog
+https://webstore.ansi.org/standards/nema/ansinema2502020
+Group: electrical. Type: source_directory.
+Roles: engineering, prototype, manufacturing roles. Catalog entry for ANSI/NEMA 250 enclosure Type requirements, commonly encountered alongside UL 50E.
+Check: This linked 2020 edition is labeled historical by ANSI. Check current replacement/status and the project-required edition before use. Do not convert an IP code directly into a NEMA Type or a certification claim.
+Checked: 2026-09-30. Source: ANSI catalog; NEMA is the content provider.
+
+MILITARY SPECIFICATIONS
+
+assist | ASSIST Quick Search
+https://quicksearch.dla.mil/qsOverview.aspx
+Group: military. Type: source_directory.
+Roles: engineering, prototype, manufacturing roles. Official starting point for defense and federal specifications, standards, and related documents.
+Check: Search the project’s document numbers. Check revision history, status, amendments, and the edition required by the contract.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+mil-std-810 | MIL-STD-810 — Environmental engineering and laboratory tests
+https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=35978
+Group: military. Type: source_directory.
+Roles: engineering, prototype roles. A source to investigate when environmental conditions and testing are part of a defense project.
+Check: Select relevant methods with the responsible engineer; this is not a universal test checklist for every military product.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+mil-std-2073 | MIL-STD-2073-1 — Military packaging
+https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=37232
+Group: military. Type: source_directory.
+Roles: manufacturing, engineering roles. A source to investigate when the project has military packaging requirements.
+Check: Read the contract’s packaging requirements and confirm the required edition before preparing the package.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+mil-std-129 | MIL-STD-129 — Shipment and storage marking
+https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=35520
+Group: military. Type: source_directory.
+Roles: Soren. A source to investigate for military shipment and storage markings.
+Check: Check the contract and any additional customer marking requirements.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+mil-std-461 | MIL-STD-461 — Electromagnetic interference
+https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=35789
+Group: military. Type: source_directory.
+Roles: engineering, prototype, manufacturing roles. Military requirements for equipment and subsystem electromagnetic emissions and susceptibility.
+Check: Select applicable tests from the contract and equipment/platform requirements; verify the required revision in ASSIST. This is separate from enclosure IP protection.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+QUALITY SYSTEMS
+
+iso-9001 | ISO 9001 — Quality management
+https://www.iso.org/standard/9001
+Group: quality. Type: source_directory.
+Roles: project, engineering, manufacturing roles. Publisher’s page for the general quality-management standard.
+Check: Check the current edition and which edition the customer requires. Obtain authorized access before using the full text; check permission for AI use.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+iaqg | IAQG — Aerospace quality standards
+https://iaqg.org/standards/
+Group: quality. Type: source_directory.
+Roles: engineering, manufacturing roles. Publisher’s directory for the 9100 family and related aerospace quality standards.
+Check: Choose the standard for the work and customer requirement; follow the publisher’s access and licensing instructions.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+iatf | IATF 16949 — Automotive quality
+https://www.iatfglobaloversight.org/iatf-169492016/about/
+Group: quality. Type: source_directory.
+Roles: engineering, manufacturing roles. Official starting point for the automotive quality-management standard.
+Check: Check current publications, interpretations, and customer-specific requirements before applying it.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+iso-13485 | ISO 13485 — Medical-device quality
+https://www.iso.org/standard/59752.html
+Group: quality. Type: source_directory.
+Roles: engineering, manufacturing roles. Publisher’s page for medical-device quality management.
+Check: Check product and market applicability separately. Obtain authorized access and check permission for AI use.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+MANUFACTURING AND TESTING
+
+mep | NIST MEP — Manufacturing assistance centers
+https://www.nist.gov/mep/centers/map
+Group: making. Type: source_directory.
+Roles: manufacturing, prototype roles. Find manufacturing assistance centers by location.
+Check: Ask the relevant center about current services and local supplier resources; a listing is not a quote or supplier qualification.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+nvlap | NIST NVLAP — Accredited laboratory directory
+https://www-s.nist.gov/niws/index.cfm?event=directory.search
+Group: making. Type: source_directory.
+Roles: prototype, engineering roles. Find testing and calibration laboratories and their accreditation scopes.
+Check: Verify the exact test method and current scope. Laboratory accreditation is not a claim that your product is certified.
+Checked: 2026-09-30. Source: Publisher or directory operator.
+
+cpsc-small-business | CPSC — Small business product-safety resources
+https://www.cpsc.gov/Business--Manufacturing/Small-Business-Resources
+Group: making. Type: government.
+Roles: engineering, prototype, manufacturing, legal roles. Starting guidance for consumer-product safety requirements and the Small Business Ombudsman.
+Check: Identify product type and intended users before selecting rules, tests, certificates or labeling. Follow the applicable rule and actual evidence; do not assume one guide covers every product.
+Checked: 2026-09-30. Source: Government agency’s own website.
+
+thomas-suppliers | Thomas — Find manufacturing suppliers
+https://sourcing.thomasnet.com/
+Group: making. Type: source_directory.
+Roles: engineering, prototype, manufacturing roles. Search for machine shops, fabricators and other industrial suppliers by capability and location; useful for building a local shortlist.
+Check: A directory entry or badge is not project qualification. Verify current equipment, materials, tolerance capability, inspection, certification scope, references and willingness to take a small order.
+Checked: 2026-09-30. Source: Directory operator’s own website.
+
+fablabs | FabLabs — Find a local fabrication lab
+https://www.fablabs.io/labs
+Group: making. Type: source_directory.
+Roles: design, prototype roles. Find nearby fabrication labs for early mockups, access to tools, training and hands-on help.
+Check: Confirm the lab is active and ask about public access, equipment, training, fees, commercial work and confidentiality. A shared makerspace is not automatically a production or inspection supplier.
+Checked: 2026-09-30. Source: Directory operator’s own website.
+
+IP reference: https://ancreationoffice.com/ip-ratings.html and https://ancreationoffice.com/ip-ratings.txt . Matching digit tables, examples, notes and sources are in resources.json under ip_reference.
+
+Structured role names: resources.json keeps stable role IDs in resources[].roles; assistant_names maps each ID to its current display name.
+
+BEGIN PRODUCT CHECK SHEETS
+Read https://ancreationoffice.com/check-sheets.txt for ten original working check sheets and their primary references. Human page: https://ancreationoffice.com/check-sheets.html . Editable project worksheet: https://ancreationoffice.com/check-sheets.csv . Use only the relevant sheet; record evidence and unknowns, coordinate through Soren, and recheck current source requirements. These are preparation templates, not approvals.
+
+nist-development | NIST MEP — Product design and development
+https://www.nist.gov/mep/product-design-and-development
+Group: making. Type: primary_guidance.
+Roles: project, engineering, prototype roles. Find help with market validation, prototypes, materials, durability and commercialization.
+Check: AN Creation’s project checkpoints are an original synthesis; NIST does not prescribe these forms.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+niosh-tools | NIOSH — Ergonomic risk factors and checklists
+https://www.cdc.gov/niosh/ergonomics/ergo-programs/risk-factors.html
+Group: making. Type: primary_guidance.
+Roles: design, engineering, prototype roles. Screen posture, force, repetition, handling and task conditions when preparing a user trial.
+Check: Workplace guidance must be adapted to the task and intended users; it is not universal consumer-product clearance.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+niosh-hand-tools | NIOSH — Non-powered hand-tool selection guide
+https://stacks.cdc.gov/view/cdc/5249
+Group: making. Type: primary_guidance.
+Roles: design, engineering roles. Practical hand-tool ergonomics background for grip and task evaluation.
+Check: Scope is non-powered hand tools; do not transfer its dimensions to every product.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+protolabs-dfm | Protolabs — Process-specific design tips
+https://www.protolabs.com/resources/design-tips/
+Group: making. Type: primary_guidance.
+Roles: engineering, manufacturing, prototype roles. Start process-specific DFM research for machining, molding and other manufacturing methods.
+Check: Supplier guidance depends on geometry, material and process. Confirm the selected manufacturer’s capabilities; automated DFM is not full design approval.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+protolabs-walls | Protolabs — Uniform wall thickness in molded parts
+https://www.protolabs.com/resources/design-tips/improving-part-design-with-uniform-wall-thickness/
+Group: making. Type: primary_guidance.
+Roles: engineering, manufacturing roles. Investigate molded-part walls, sink, warpage and geometry tradeoffs.
+Check: Numerical examples are supplier/process guidance, not a universal specification.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+nasa-verification | NASA — Requirements verification matrix
+https://www.nasa.gov/reference/appendix-d-requirements-verification-matrix/
+Group: making. Type: primary_guidance.
+Roles: engineering, prototype roles. A useful model for linking each requirement to a source and verification method.
+Check: Adapt the evidence discipline to project scale; NASA procedures are not mandatory consumer-product certification.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+nasa-validation | NASA — Product realization, verification and validation
+https://www.nasa.gov/reference/5-0-product-realization/
+Group: making. Type: primary_guidance.
+Roles: engineering, prototype roles. Understand checking specified requirements versus intended use.
+Check: Record actual configuration, method, evidence and limits; a single prototype does not establish production consistency.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+nist-supplier | NIST MEP — Supplier scouting inquiry fields
+https://meis.nist.gov/SupplierScouting/Submit
+Group: making. Type: primary_guidance.
+Roles: manufacturing, engineering roles. Examples of technical and commercial information needed to identify manufacturing capability.
+Check: The public form displayed an expired OMB date during this review. Use fields as preparation; confirm the current submission route with a local MEP center before submitting.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+uspto-patent-overview | USPTO — Patent rights, ownership and infringement
+https://www.uspto.gov/patents/basics/manage
+Group: legal. Type: primary_guidance.
+Roles: legal role. Understand exclusion rights, ownership and the separate infringement question.
+Check: Having a patent is not affirmative permission to make or sell a product. Seek a product/territory-specific analysis when freedom to operate matters.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+uspto-design | USPTO — Design patents
+https://www.uspto.gov/patents/basics/apply/design-patent
+Group: legal. Type: primary_guidance.
+Roles: legal, design roles. Compare ornamental-design protection with utility protection for function.
+Check: Identify the actual subject matter and jurisdiction; do not infer patentability from a checklist.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+uspto-provisional | USPTO — Provisional patent applications
+https://www.uspto.gov/patents/basics/apply/provisional-application
+Group: legal. Type: primary_guidance.
+Roles: legal, project roles. Prepare disclosure and filing-timing questions for a patent practitioner.
+Check: A provisional is not an issued patent, is not available for design inventions and normally needs a timely follow-on. Do not assume U.S. disclosure rules protect options abroad.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+uspto-trade-secrets | USPTO — Trade secret toolkit
+https://www.uspto.gov/sites/default/files/documents/tradesecretsiptoolkit.pdf
+Group: legal. Type: primary_guidance.
+Roles: legal role. Consider secrecy, reasonable protection measures and business objectives.
+Check: Account for independent development and lawful reverse engineering; simply calling information secret is insufficient.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+uspto-patent-public-search | USPTO — Patent Public Search
+https://ppubs.uspto.gov/
+Group: legal. Type: government.
+Roles: legal, design roles. The USPTO's own full-text search of U.S. patents and published applications, for a first look at what exists.
+Check: A search is not a patentability or freedom-to-operate opinion. Record queries, dates and document numbers.
+Access: The site blocks automated readers; the inventor opens it in their own browser.
+Not yet checked (site blocks automated readers). Source: Government agency's own website.
+
+patentability-vs-fto | Patentability versus freedom to operate (Mondaq)
+https://www.mondaq.com/unitedstates/patent/1083228/patentability-versus-freedom-to-operate
+Group: legal. Type: learning_resource.
+Roles: legal role. Explains why having a patent does not clear you to sell, and when each search happens.
+Check: Law-firm article, 2021. Background only; an attorney does the clearance search before launch.
+Checked: 2026-10-07. Source: Law firm article.
+
+patent-grace-periods | Patent grace periods and public disclosures (Sterne Kessler)
+https://www.sternekessler.com/news-insights/insights/patent-grace-periods-and-public-disclosures-finding-saving-grace-period/
+Group: legal. Type: learning_resource.
+Roles: legal, marketing roles. Why showing or selling before filing matters: the U.S. one-year grace period and absolute novelty abroad.
+Check: Law-firm article. Confirm dates and foreign plans with a patent attorney before any show.
+Checked: 2026-10-07. Source: Law firm article.
+
+sba-lender | SBA — Lender Match preparation
+https://www.sba.gov/loans/lender-match/
+Group: funding. Type: primary_guidance.
+Roles: funding role. Prepare a plan, funding purpose and evidence for a lender conversation.
+Check: A match is neither an application nor loan approval. Get the actual lender’s current document and repayment requirements.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+sec-ready | SEC — Ready to raise capital
+https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/ready-raise-capital
+Group: funding. Type: primary_guidance.
+Roles: funding, legal roles. Assess financial, ownership, team and investor-readiness questions.
+Check: Preparing a pitch is different from offering securities; establish the relevant legal route before solicitation.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+sec-early-investors | SEC — Early-stage investors
+https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/early-stage-investors
+Group: funding. Type: primary_guidance.
+Roles: funding, legal roles. Understand early investor types and capital-raising considerations.
+Check: Calling a round friends and family does not itself establish a securities-law exemption.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+sba-grants | SBA — Grants and limited funding opportunities
+https://www.sba.gov/loans/additional-funding-opportunities/grants/
+Group: funding. Type: primary_guidance.
+Roles: funding role. Find the scope of SBA-related grant assistance and research-program starting points.
+Check: SBA does not provide general grants to start or expand an ordinary business. Verify a current open solicitation and eligibility.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+sequoia-plan | Sequoia — Writing a business plan
+https://sequoiacap.com/article/writing-a-business-plan
+Group: funding. Type: primary_guidance.
+Roles: funding, marketing roles. An investor’s presentation outline for problem, solution, market, model and team.
+Check: An example of pitch structure, not a universal investment eligibility rule or funding promise.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+amazon-registration | Amazon — Seller registration guide
+https://sell.amazon.com/sell/registration-guide
+Group: retail. Type: primary_guidance.
+Roles: marketing, funding, manufacturing roles. Prepare for the third-party Seller Central route and account verification.
+Check: Seller registration is separate from Amazon buying wholesale through Vendor Central. Check current identity, category, product and brand requirements.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+amazon-pricing | Amazon — Selling fees and calculator
+https://sell.amazon.com/pricing
+Group: retail. Type: primary_guidance.
+Roles: marketing, funding roles. Model selling-plan, referral and fulfillment costs for the actual product.
+Check: Rates vary by category and fulfillment; use current dimensions/weight and fee schedules. Include returns, storage and advertising where relevant.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+walmart-suppliers | Walmart — Apply to be a supplier
+https://corporate.walmart.com/suppliers/apply-to-be-a-supplier
+Group: retail. Type: primary_guidance.
+Roles: marketing, manufacturing, funding roles. Start the wholesale supplier route and check the requested company/product package.
+Check: Separate retailer supply from Marketplace. Registration is consideration, not an agreement or a store order.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+walmart-requirements | Walmart — Supplier requirements
+https://corporate.walmart.com/suppliers/requirements
+Group: retail. Type: primary_guidance.
+Roles: manufacturing, marketing, engineering roles. Check current supplier, product, insurance and operating requirements.
+Check: Product and account-specific documents govern. Obtain actual requirements before accepting a purchase commitment.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+walmart-checklist | Walmart — Supplier checklist
+https://corporate.walmart.com/content/dam/corporate/documents/suppliers/apply-to-be-a-supplier/supplier-checklist.pdf
+Group: retail. Type: primary_guidance.
+Roles: marketing, manufacturing roles. Official checklist to compare against the proposed supplier packet.
+Check: Check current applicability and revision with the supplier application; the AN Creation sheet does not replace this document.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+walmart-marketplace | Walmart — Marketplace qualifications
+https://marketplace.walmart.com/about-walmart-marketplace/
+Group: retail. Type: primary_guidance.
+Roles: marketing, funding, manufacturing roles. Check eligibility for third-party online selling.
+Check: Public qualifications include prior eCommerce success and U.S. fulfillment/returns capability. Marketplace approval does not provide store shelf placement.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+walmart-registration | Walmart — Marketplace registration and payments
+https://marketplace.walmart.com/seller-registration-guide/
+Group: retail. Type: primary_guidance.
+Roles: marketing, funding roles. Prepare business verification and consider new-seller payment holds.
+Check: Confirm current documents, onboarding and payment terms; account-specific conditions were not inspected.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+walmart-open-call | Walmart — Supplier opportunities and Open Call
+https://corporate.walmart.com/suppliers
+Group: retail. Type: primary_guidance.
+Roles: marketing, project roles. Look for current supplier opportunities, including eligible U.S.-made, grown or assembled products.
+Check: Check the current Open Call window and criteria; no open event or acceptance is assumed.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+lowes-suppliers | Lowe’s — Branded and private-brand supplier routes
+https://www.lowes.com/l/about/suppliers
+Group: retail. Type: primary_guidance.
+Roles: marketing, manufacturing roles. Official routing: RangeMe for branded retail proposals; PROVIS for private-brand sourcing.
+Check: Registration is consideration, not a guaranteed review or contract. Follow Lowe’s current links and product requirements.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+lowes-marketplace | Lowe’s — Marketplace application and FAQs
+https://www.lowes.com/l/about/lowes-marketplace
+Group: retail. Type: primary_guidance.
+Roles: marketing, manufacturing, funding roles. Separate curated third-party marketplace route for suitable home-improvement products.
+Check: Check current selection, U.S. inventory/shipping, product data and category conditions. Obtain actual commission and service terms during onboarding.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+lowes-seller-docs | Lowe’s — Marketplace seller documentation
+https://seller.lowes.com/mirakl-seller-documentation/
+Group: retail. Type: primary_guidance.
+Roles: marketing, manufacturing roles. Starting point for operational seller documentation.
+Check: Some legal documentation was marked forthcoming during research; vendor-only terms and contracts were not reviewed. Record missing requirements explicitly.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+gs1-barcodes | GS1 US — Product identifiers and barcodes
+https://www.gs1us.org/upcs-barcodes-prefixes
+Group: retail. Type: primary_guidance.
+Roles: marketing, manufacturing roles. Understand GTIN/UPC, product and packaging identifiers for retail data.
+Check: Confirm the retailer’s identifier requirements and exemptions. A barcode is not a safety approval or sales authorization.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+trade-representatives | Trade.gov — Evaluating representatives
+https://www.trade.gov/choosing-foreign-representative
+Group: retail. Type: primary_guidance.
+Roles: marketing, funding roles. Due-diligence questions about experience, competing lines, service and references.
+Check: The source addresses foreign representatives. Adapt these screening questions; do not present them as domestic retailer rules.
+Checked: 2026-09-30. Source: Primary publisher; public guidance reviewed.
+
+eu-ce-marking | Your Europe — CE marking
+https://europa.eu/youreurope/business/product-rules-compliance/general-product-compliance/ce-marking/index_en.htm
+Group: retail. Type: government.
+Roles: engineering, marketing roles. Official EU starting point: which products need CE marking and the steps to apply it.
+Check: Only when selling into the EU. Identify which EU rules apply to the product type; keep the technical file and declaration.
+Checked: 2026-10-06. Source: European Union official website.
+
+ca-prop-65 | California Proposition 65 — For businesses
+https://www.p65warnings.ca.gov/businesses
+Group: retail. Type: government.
+Roles: manufacturing, marketing roles. Warning-label rules for products sold to California that contain listed chemicals.
+Check: Ask suppliers whether materials contain listed chemicals. Small businesses under the employee threshold may be exempt; retailers may still ask.
+Checked: 2026-10-06. Source: State agency’s own website.
+
+sheet-project | New product development: the project review
+https://ancreationoffice.com/check-sheets.html#project
+Group: check-sheets. Type: working_template.
+Roles: project, design, funding, marketing, engineering roles. Start after hearing the idea; revisit before major spending, tooling, funding or launch.
+Check: A concise project brief, assumptions, milestone plan and recorded review decision. Record answers, evidence, owners and open actions in a dated project copy.
+Checked: 2026-09-30. Source: AN Creation original working template with primary references.
+
+sheet-economics | Sales, price and the money left per unit
+https://ancreationoffice.com/check-sheets.html#economics
+Group: check-sheets. Type: working_template.
+Roles: funding, project, marketing, manufacturing roles. Before choosing a price, requesting production quotes or committing to a sales channel.
+Check: A channel-by-channel low/base/high unit-economics model and cash forecast. Record answers, evidence, owners and open actions in a dated project copy.
+Checked: 2026-09-30. Source: AN Creation original working template with primary references.
+
+sheet-ergonomics | People, use and ergonomic design
+https://ancreationoffice.com/check-sheets.html#ergonomics
+Group: check-sheets. Type: working_template.
+Roles: design, engineering, prototype roles. While comparing concepts and again with representative prototypes.
+Check: Use scenarios, measurable user needs, observed trials and a design-change list. Record answers, evidence, owners and open actions in a dated project copy.
+Checked: 2026-09-30. Source: AN Creation original working template with primary references.
+
+sheet-ip | What to protect, and why
+https://ancreationoffice.com/check-sheets.html#ip
+Group: check-sheets. Type: working_template.
+Roles: legal, project, design, marketing roles. Before public disclosure, a supplier disclosure, investor sharing or a protection decision.
+Check: An invention disclosure, dated disclosure history and focused professional-review brief. Record answers, evidence, owners and open actions in a dated project copy.
+Checked: 2026-09-30. Source: AN Creation original working template with primary references.
+
+sheet-dfm | Design for manufacture and assembly
+https://ancreationoffice.com/check-sheets.html#dfm
+Group: check-sheets. Type: working_template.
+Roles: engineering, design, manufacturing, prototype roles. Before prototype quotes, tooling release and any production design change.
+Check: A reviewed DFM/DFA record, requirements and matched manufacturing package. Record answers, evidence, owners and open actions in a dated project copy.
+Checked: 2026-09-30. Source: AN Creation original working template with primary references.
+
+sheet-prototype | What the prototype needs to prove
+https://ancreationoffice.com/check-sheets.html#prototype
+Group: check-sheets. Type: working_template.
+Roles: prototype, engineering, design roles. Before each prototype build and before reporting a result.
+Check: A test plan, build record and evidence-based test report. Record answers, evidence, owners and open actions in a dated project copy.
+Checked: 2026-09-30. Source: AN Creation original working template with primary references.
+
+sheet-production | Suppliers and production readiness
+https://ancreationoffice.com/check-sheets.html#production
+Group: check-sheets. Type: working_template.
+Roles: manufacturing, engineering, prototype, funding roles. Before comparing quotes, placing production orders or scaling.
+Check: Comparable quotes, supplier evaluation and a production-readiness review. Record answers, evidence, owners and open actions in a dated project copy.
+Checked: 2026-09-30. Source: AN Creation original working template with primary references.
+
+sheet-funding | Prepare for funding and finance conversations
+https://ancreationoffice.com/check-sheets.html#funding
+Group: check-sheets. Type: working_template.
+Roles: funding, project, legal, marketing roles. When a defined milestone needs outside money; tailor to the actual lender, investor or program.
+Check: A dated funding brief with linked evidence, financial model and recipient-specific document list. Record answers, evidence, owners and open actions in a dated project copy.
+Checked: 2026-09-30. Source: AN Creation original working template with primary references.
+
+sheet-launch | Customer evidence, marketing and launch
+https://ancreationoffice.com/check-sheets.html#launch
+Group: check-sheets. Type: working_template.
+Roles: marketing, project, legal, funding, manufacturing roles. While testing demand and before a campaign or launch commitment.
+Check: A channel-specific launch plan, evidence-backed messaging and readiness decision. Record answers, evidence, owners and open actions in a dated project copy.
+Checked: 2026-09-30. Source: AN Creation original working template with primary references.
+
+sheet-retail | Amazon, Walmart and Lowe’s: getting ready for buyers
+https://ancreationoffice.com/check-sheets.html#retail
+Group: check-sheets. Type: working_template.
+Roles: marketing, funding, manufacturing, legal, project roles. After choosing a realistic channel and before applying, pitching or accepting terms.
+Check: A buyer-ready sell sheet, channel economics and route-specific application checklist. Record answers, evidence, owners and open actions in a dated project copy.
+Checked: 2026-09-30. Source: AN Creation original working template with primary references.
+
+DESIGN RISK AND TROUBLESHOOTING RESOURCES
+
+design-risk-guide | AN Creation — Design risk and troubleshooting
+https://ancreationoffice.com/design-risk.html
+Group: quality. Type: guide.
+Roles: project, engineering, prototype, manufacturing, design roles. Soren-led quality planning: critical quality points, FMEA, control plans, troubleshooting, requirements/QFD, tolerances, GD&T and mistake-proofing, with templates.
+Check: Use proportionate analysis and actual evidence; examples and completed forms are not product approval.
+Checked: 2026-09-30. Source: AN Creation.
+
+asq-fmea | ASQ — Failure mode and effects analysis
+https://asq.org/quality-resources/fmea
+Group: quality. Type: source_directory.
+Roles: engineering, prototype, manufacturing, design roles. Understand design and process FMEA and plan actions against failure modes.
+Check: Choose the applicable method and rating definitions; do not use a low RPN to dismiss severe effects.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+asq-qfd | ASQ — Quality function deployment
+https://asq.org/quality-resources/qfd-quality-function-deployment
+Group: quality. Type: source_directory.
+Roles: engineering, prototype, manufacturing, design roles. Connect customer needs to technical characteristics using QFD and the House of Quality.
+Check: Verify customer priorities and technical relationships; a matrix is not test evidence.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+asq-mistake-proofing | ASQ — Mistake-proofing (poka-yoke)
+https://asq.org/quality-resources/mistake-proofing
+Group: quality. Type: source_directory.
+Roles: engineering, prototype, manufacturing, design roles. Prevent incorrect assembly or detect errors where they happen.
+Check: Test correct and incorrect attempts across allowed variation; distinguish physical prevention from warnings.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+asq-root-cause | ASQ — Root cause analysis
+https://asq.org/quality-resources/root-cause-analysis
+Group: quality. Type: source_directory.
+Roles: engineering, prototype, manufacturing, design roles. Investigate observed problems and verify corrective action.
+Check: Preserve evidence, distinguish containment from correction, and test hypotheses before declaring a cause.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+asq-five-whys | ASQ — Five Whys
+https://asq.org/quality-resources/five-whys
+Group: quality. Type: source_directory.
+Roles: engineering, prototype, manufacturing, design roles. Explore contributing causes behind an observed problem.
+Check: Do not stop at operator blame or treat five questions as proof; confirm the causal chain with evidence.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+asq-quality-tools | ASQ — Quality tools directory
+https://asq.org/quality-resources/quality-tools
+Group: quality. Type: source_directory.
+Roles: engineering, prototype, manufacturing, design roles. Find fishbone diagrams, Pareto charts, check sheets and other improvement tools.
+Check: Select tools for the question; frequency is not severity and brainstorming is not verification.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+asme-y14-5 | ASME Y14.5 — Dimensioning and tolerancing
+https://www.asme.org/codes-standards/find-codes-standards/y14-5-dimensioning-tolerancing
+Group: quality. Type: source_directory.
+Roles: engineering, prototype, manufacturing, design roles. Publisher’s catalog for the language of GD&T, geometric controls and datum references.
+Check: Confirm the drawing/contract edition and authorized access to the standard. A catalog page does not provide the complete rules.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+nist-tolerance | NIST — Tolerance synthesis scheme
+https://www.nist.gov/publications/tolerance-synthesis-scheme
+Group: quality. Type: source_directory.
+Roles: engineering, prototype, manufacturing, design roles. Technical background connecting component tolerances to assembly requirements.
+Check: Advanced 2003 reference, not a current product standard. Match assumptions and analysis to the real interface.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+protolabs-draft | Protolabs — Draft angle guidelines
+https://www.protolabs.com/resources/design-tips/improving-part-moldability-with-draft/
+Group: making. Type: source_directory.
+Roles: engineering, prototype, manufacturing, design roles. Explain taper, mold withdrawal and release of molded parts.
+Check: Confirm material, texture, depth, tooling and fit with the actual supplier; do not apply one angle universally.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+protolabs-cores | Protolabs — Wall thickness, thin slots and core features
+https://www.protolabs.com/resources/design-tips/solving-wall-thickness-issues-in-molded-parts/
+Group: making. Type: source_directory.
+Roles: engineering, prototype, manufacturing, design roles. Understand how thin or deep features affect mold tooling and part manufacture.
+Check: Review core strength, tool access, release and remaining part strength; supplier guidance is process-specific.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+Guide for assistants: https://ancreationoffice.com/design-risk.txt
+Short worksheet: https://ancreationoffice.com/design-review.txt
+
+asq-quality-plans | ASQ — Quality plans
+https://asq.org/quality-resources/quality-plans
+Group: quality. Type: source_directory.
+Roles: project, engineering, manufacturing, prototype roles. Understand quality objectives, responsibilities, controls and supporting records.
+Check: Distinguish the planned controls from actual inspection evidence; tailor the plan to the product and process.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+aiag-core-tools | AIAG — Connected quality core tools
+https://www.aiag.org/expertise-areas/quality/quality-core-tools
+Group: quality. Type: source_directory.
+Roles: project, engineering, manufacturing, prototype roles. See how quality planning, FMEA, control plans, measurement and process controls connect.
+Check: Automotive reference: confirm customer requirements and applicable editions rather than imposing the whole system on every invention.
+Checked: 2026-09-30. Source: Publisher’s own guidance.
+
+fda-classify-device | FDA — Classify your medical device
+https://www.fda.gov/medical-devices/overview-device-regulation/classify-your-medical-device
+Group: quality. Type: government.
+Roles: engineering, legal roles. Official first step for anything that diagnoses, treats or monitors a health problem: is it a device, and which class (I, II, III).
+Check: Decide whether the intended use makes it a medical device at all. The class sets how heavy the road is. Confirm with a regulatory professional before relying on it.
+Checked: 2026-10-06. Source: Government agency’s own website.
+
+fda-product-classification | FDA — Product classification database
+https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpcd/classification.cfm
+Group: quality. Type: source_directory.
+Roles: engineering, legal roles. Search similar existing devices to find the likely device class, product code and regulation number.
+Check: Search by what the product does, not its brand name. Record the product code and class found, and that it is a starting point, not a ruling.
+Checked: 2026-10-06. Source: Government agency’s own website.
+
+fda-premarket-submissions | FDA — Premarket submissions (510(k), De Novo, PMA)
+https://www.fda.gov/medical-devices/how-study-and-market-your-device/premarket-submissions-selecting-and-preparing-correct-submission
+Group: quality. Type: primary_guidance.
+Roles: engineering, legal roles. Which submission a device class usually needs before it can be sold.
+Check: Read after the class is known. Note exemptions. This is professional territory; prepare the material, then get help.
+Checked: 2026-10-06. Source: Government agency’s own website.
+
+faa-drones | FAA — Drones (UAS)
+https://www.faa.gov/uas
+Group: quality. Type: government.
+Roles: engineering, legal roles. Official starting point for anything that is, or goes on, a drone.
+Check: Check registration, operating rules and any product requirements that apply to the drone it goes on.
+Checked: 2026-10-06. Source: Government agency’s own website.
+
+faa-aircraft-certification | FAA — Aircraft certification
+https://www.faa.gov/aircraft/air_cert
+Group: quality. Type: government.
+Roles: engineering, legal roles. Starting point for parts installed on certified aircraft.
+Check: Parts on certified aircraft need approval; this is a professional road from the start. Record who would install it and on what.
+Checked: 2026-10-06. Source: Government agency’s own website.
+
+cpsc-recalls | CPSC — Recalls and product safety warnings
+https://www.cpsc.gov/Recalls
+Group: quality. Type: government.
+Roles: project, engineering, design roles. Search recalls on similar products by product type and hazard. What went wrong for others is the cheapest start on the FMEA.
+Check: Search the product category and the hazard. A clean history does not mean a design is safe; CPSC relies on reports, not pre-market review.
+Checked: 2026-10-07. Source: Government agency's own website.
+
+saferproducts | SaferProducts.gov — Consumer incident reports
+https://www.saferproducts.gov/
+Group: quality. Type: government.
+Roles: project, engineering, design roles. Public reports of injuries and hazards with consumer products, often before a recall exists.
+Check: Search similar products; note hazards that recur. Reports are unverified consumer accounts.
+Checked: 2026-10-07. Source: Government agency's own website.
+
+apqp-overview | Quality-One — APQP overview
+https://quality-one.com/apqp/
+Group: quality. Type: learning_resource.
+Roles: project, engineering, manufacturing roles. Plain overview of Advanced Product Quality Planning: what the first planning phase produces (design goals, rough parts list, process flow, special characteristics, timing).
+Check: Automotive method; borrow the first-phase outputs at the project's level, not the whole system. The AIAG manual is the formal source.
+Checked: 2026-10-07. Source: Consultancy's guidance.
+
+Critical quality template: https://ancreationoffice.com/critical-quality.csv
+Control-plan template: https://ancreationoffice.com/control-plan.csv
+
+BEGIN TEST PLANNING
+Test planning: https://ancreationoffice.com/test-planning.html
+Guide for assistants: https://ancreationoffice.com/test-planning.txt
+Templates: test-plan-template.txt, test-matrix.csv and test-report-template.txt at the same /create/ location.
+
+nasa-test-planning | NASA — Product verification planning
+https://www.nasa.gov/reference/5-3-product-verification/
+Group: making. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Plan facilities, samples, methods, instruments, configuration and review before verification.
+Check: Adapt aerospace planning discipline to the product. It is not a mandatory consumer-product test program.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+nasa-plan-outline | NASA — Verification and validation plan outline
+https://www.nasa.gov/reference/system-engineering-handbook-appendix/
+Group: making. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Appendix I provides a plan outline; associated appendices provide requirements matrices.
+Check: Use as a structure reference. The AN Creation template is an original, proportionate adaptation, not a NASA compliance claim.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+ista-procedures | ISTA — Getting started with design and testing
+https://www.ista.org/getting_started_with_design.php
+Group: making. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Select package/distribution tests, representative samples and predetermined damage criteria.
+Check: Public guidance reviewed. Obtain the actual selected procedure with authorized access; bare-product drops and packaged transport tests answer different questions.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+astm-d5276 | ASTM D5276 — Loaded-container free-fall drop testing
+https://store.astm.org/standards/d5276
+Group: making. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Scope-level reference for free-fall drop tests of loaded shipping containers.
+Check: Public catalog only; full paid procedure was not reviewed. Select applicable edition and method with the lab; do not derive heights or sequences from the abstract.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+iec-rough-handling | IEC 60068-2-31 — Rough handling shocks
+https://webstore.iec.ch/en/publication/516
+Group: making. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Scope-level starting point for handling knocks and falls affecting equipment-type specimens.
+Check: Public catalog only; full procedure was not reviewed. Scope differs from installed shock and packaged transport; no universal drop prescription.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+nist-lab-accreditation | NIST — Laboratory accreditation versus certification
+https://www.nist.gov/nvlap/accreditation-vs-certification
+Group: making. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Check the laboratory’s current scope for the exact methods or calibration parameters needed.
+Check: Accreditation is not itself product certification or blanket competence for every test.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+osha-nrtl | OSHA — Nationally Recognized Testing Laboratories
+https://www.osha.gov/nationally-recognized-testing-laboratory-program
+Group: electrical. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Understand applicable U.S. workplace product certification and recognized laboratory scope.
+Check: Applies to specified products and circumstances; not a statement that every consumer electrical product must carry UL certification.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+fcc-measurement | eCFR — 47 CFR 15.31 measurement standards
+https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-A/section-15.31
+Group: electrical. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Review applicable radio/emissions measurement procedures and representative operating configurations.
+Check: Government-maintained eCFR is authoritative but unofficial. Confirm applicability, current rules and incorporated methods with the lab; do not generalize settings to every product.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+fcc-modules | eCFR — 47 CFR 15.212 modular transmitters
+https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-C/section-15.212
+Group: electrical. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Investigate module integration, antennas and RF exposure in the final configuration.
+Check: Module approval has conditions and does not automatically cover every host arrangement; confirm the finished-product route and any further testing.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+iec-esd | IEC 61000-4-2:2025 — ESD immunity test method
+https://webstore.iec.ch/en/publication/68954
+Group: electrical. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Public scope shows what an ESD immunity method addresses and why product-specific requirements matter.
+Check: Public catalog only; full paid procedure was not reviewed. The generic method does not select every product’s required severity, and publication does not imply adoption in every market.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+tek-precompliance | Tektronix — EMI precompliance during development
+https://www.tek.com/en/documents/application-note/low-cost-emi-pre-compliance-testing-using-spectrum-analyzer
+Group: electrical. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Understand the role of early prototype screening in finding interference problems before formal testing.
+Check: Instrument-maker guidance, not a regulatory method or authorization. No unsafe bench procedure is reproduced.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+tuv-emc-planning | TÜV SÜD — EMC test planning and laboratory preparation
+https://www.tuvsud.com/en-us/-/media/regions/us/pdf-files/whitepaper-report-e-books/final-emc-white-paper-2024.pdf
+Group: electrical. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. An automotive example of documenting modes, monitoring, variants, support equipment and acceptance.
+Check: Public 2024 paper; adapt planning fields only. Automotive test requirements and sample counts are not universal consumer-product requirements.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+fcc-equipment-authorization | FCC — Equipment authorization
+https://www.fcc.gov/engineering-technology/laboratory-division/general/equipment-authorization
+Group: electrical. Type: government.
+Roles: engineering role. Plain starting point for selling anything with radio or fast digital electronics in the U.S.: which approval path, labs and FCC ID search.
+Check: Find the approval procedure for the device type. Look up the FCC ID of any radio module used. Pair with the eCFR part 15 entries.
+Checked: 2026-10-06. Source: Government agency’s own website.
+
+eu-rohs | European Commission — RoHS Directive
+https://environment.ec.europa.eu/topics/waste-and-recycling/rohs-directive_en
+Group: electrical. Type: government.
+Roles: engineering, manufacturing roles. EU limits on lead, mercury, cadmium and other restricted substances in electrical and electronic equipment.
+Check: Get supplier declarations for each electronic part before the first production run. Check the current exemptions list.
+Checked: 2026-10-07. Source: Government agency's own website.
+
+tuv-ingress | TÜV SÜD — Ingress-protection testing overview
+https://www.tuvsud.com/en-us/services/testing/ingress-protection-testing
+Group: making. Type: primary_guidance.
+Roles: project, engineering, prototype, manufacturing roles. Distinguish enclosure ingress protection and different water exposures when discussing lab work.
+Check: Public service overview, not a replacement for IEC 60529, its test procedure or an actual report.
+Checked: 2026-09-30. Source: Primary publisher; public guidance or catalog scope reviewed.
+
+test-planning-guide | AN Creation — Test planning and templates
+https://ancreationoffice.com/test-planning.html
+Group: making. Type: working_template.
+Roles: project, engineering, prototype, manufacturing roles. Plan testing while defining requirements, select appropriate prototypes, and prepare electrical/RF, drop or immersion work.
+Check: Original guidance with a test-plan layout, blank matrix and report template. Set criteria before testing; formal methods and claims need product-specific evidence.
+Checked: 2026-09-30. Source: AN Creation original guide with primary references.
+END TEST PLANNING
+
+fda-food-contact | FDA — Packaging and food contact substances
+https://www.fda.gov/food/food-ingredients-packaging/packaging-food-contact-substances-fcs
+Group: making. Type: primary_guidance.
+Roles: engineering, manufacturing roles. What materials touching food or drink must meet.
+Check: Ask the material supplier for its food-contact statement for the exact grade. Keep it with the material record.
+Checked: 2026-10-06. Source: Government agency’s own website.
+
+cpsc-childrens-products | CPSC — Children’s products
+https://www.cpsc.gov/Business--Manufacturing/Business-Education/Childrens-Products
+Group: making. Type: government.
+Roles: engineering, manufacturing, marketing roles. Rules for products made for children 12 and under: third-party testing at an accepted lab, a Children’s Product Certificate, tracking labels.
+Check: Decide first whether it is a children’s product by its intended user. If yes, plan the lab test and certificate before selling. Use with the Regulatory Robot.
+Checked: 2026-10-06. Source: Government agency’s own website.
+
+eu-reach | ECHA — REACH regulation
+https://echa.europa.eu/regulations/reach
+Group: making. Type: government.
+Roles: engineering, manufacturing roles. EU rules on chemicals in products, including substances of very high concern in articles.
+Check: Ask suppliers about substances of very high concern. Importers into the EU carry duties.
+Access: The site blocks automated readers; open it in a browser.
+Not yet checked (site blocks automated readers). Source: EU agency's own website.
+
+BEGIN PLANNING RESOURCES
+Product, startup and project planning. Checked 2026-09-30.
+Human comparison and sources: https://ancreationoffice.com/resources-planning.html
+Worksheet: https://ancreationoffice.com/planning-review.csv
+
+Choose sources for the actual question. Product management asks what to make and why; project management coordinates owners, dependencies, milestones and reviews; entrepreneurship tests the business idea; business operations manages finances and ongoing obligations. These overlap; use one shared plan and existing controlled records.
+Read the relevant current source before using it. Use its checklist to identify unanswered questions, not to demand every answer at once. Ask one or two questions at a time. Cite sources actually read, and mark inaccessible material unread. The catalog records do not inject full websites or downloaded files into an assistant’s memory.
+Save a dated review with item ID, status (open/in progress/evidence available/reviewed/not applicable), answer, evidence and exact revision, owner, next action and decision. Only the project manager updates the master plan. Reopen affected items after changes. Do not turn estimates, checklist completion or a prototype into proof of demand, approval, patentability or tested compliance.
+Preserve all existing sharing, upload and approval rules. Do not enter confidential project data into an external assessment or hosted template without permission. Respect each source’s license and AI-use terms. External files are download candidates only in this pass; inspect actual files before claiming review.
+
+SOURCE COMPARISON
+SBA and SCORE | Business owner | Broad startup tasks, business plans, cash flow and ongoing operations. Use existing SBA planning, formation and SCORE mentor links with the new worksheets. https://www.score.org/business-planning-financial-statements-template-gallery/
+USPTO and WIPO | Inventor | Protection questions, ownership, searches and commercialization. Complements existing patent sources; these guides do not establish patentability. https://www.wipo.int/en/web/business/checklist
+Startup School and NSF I-Corps | Entrepreneur | Customer discovery, learning from users and testing demand. Startup advice must be adapted to physical products; programs have their own access requirements. https://www.startupschool.org/
+Strategyzer | Entrepreneur and product manager | One-page business/customer models and assumption experiments. Keep hypotheses separate from observed evidence; paid playbooks are optional. https://www.strategyzer.com/library/the-business-model-canvas
+PDMA and Stage-Gate | Product manager | New-product development and evidence-based review decisions. Scale professional frameworks to the project; some material is paid or member-only. https://www.stage-gate.com/about/stage-gate-innovation-performance-framework/discovery-to-launch-process/
+Design Council | Inventor and product manager | Understand the problem, explore solutions and learn through trials. A framework needs project-specific requirements and tests alongside it. https://www.designcouncil.org.uk/resources/the-double-diamond/
+PMI | Project manager | Project-management tools and professional background. Check each tool’s current access; no certification is needed to begin. https://www.pmi.org/insights
+Atlassian, Smartsheet and Asana | Product and project manager | Requirements, roadmaps, plans, risk logs and decision records. Readable examples differ from downloadable files and hosted app templates. https://www.atlassian.com/project-management/templates
+
+REVIEW QUESTIONS
+PLAN-01 | Who has the problem, and what do they do today?
+Owner roles: the design role, the marketing role. Source IDs: strategyzer-vpc,sba.
+PLAN-02 | What have we learned directly from prospective customers?
+Owner roles: the marketing role, the design role. Source IDs: nsf-icorps,yc-startup-school.
+PLAN-03 | What assumptions are we testing next, and what result would change our decision?
+Owner roles: Soren, the marketing role. Source IDs: strategyzer-test-card.
+PLAN-04 | Have we recorded contributors, ownership, prior work and disclosure questions?
+Owner roles: the legal role. Source IDs: wipo-ip-checklist,patent-public-search.
+PLAN-05 | What must the first product do, and what is outside this version?
+Owner roles: the design role, the engineering role. Source IDs: atlassian-product-requirements,smartsheet-product-requirements.
+PLAN-06 | How will we prove each important requirement?
+Owner roles: the engineering role, the prototype role. Source IDs: test-planning-guide,sheet-prototype.
+PLAN-07 | What are the price, sales channel, unit costs and expected volume assumptions?
+Owner roles: the funding role, the marketing role, Soren. Source IDs: strategyzer-bmc,sheet-economics.
+PLAN-08 | What startup spending, monthly costs and cash shortfall have we allowed for?
+Owner roles: the funding role. Source IDs: score-financial-projections,score-startup-budget.
+PLAN-09 | Who owns each next task, what does finished mean, and what must happen first?
+Owner roles: Soren. Source IDs: atlassian-project-plan,asana-project-charter.
+PLAN-10 | Which risks could stop the project, and who is reducing them?
+Owner roles: Soren, the engineering role, Soren. Source IDs: asana-risk-register,design-risk-guide.
+PLAN-11 | What evidence justifies go, revise, hold or stop at the next review?
+Owner roles: Soren. Source IDs: stagegate-discovery-launch,atlassian-decision.
+PLAN-12 | What did the last milestone teach us, and which records need revision?
+Owner roles: Soren, the prototype role, Soren. Source IDs: atlassian-retrospective.
+
+DOWNLOAD CANDIDATES
+Business Model Canvas, Value Proposition Canvas, SCORE financial workbook, Smartsheet requirements layouts and relevant SCORE checklists. Save publisher, URL, date, version/license and location; verify actual content before assistant use. Files not downloaded in this pass.
+
+uspto-inventor-hub | USPTO — Inventor and entrepreneur resources
+https://www.uspto.gov/learning-and-resources/inventors-entrepreneurs-resources
+Group: inventor. Type: government.
+Roles: project, design, legal roles. A broad starting map for IP types, searches, training and inventor assistance.
+Check: Identify the current question before selecting a patent, trademark or help route.
+Access: Public government guidance; follow linked services for current eligibility.
+Checked: 2026-09-30. Source: USPTO.
+
+ftc-invention-marketing | FTC — Invention marketing scams
+https://consumer.ftc.gov/articles/invention-marketing-scams
+Group: inventor. Type: government.
+Roles: project, legal, marketing roles. Questions to ask before paying an invention promotion company.
+Check: Check published outcomes, fees, written commitments and complaints before a commitment.
+Access: Public government guidance.
+Checked: 2026-09-30. Source: FTC.
+
+wipo-business | WIPO — Intellectual property for business
+https://www.wipo.int/en/web/business/
+Group: inventor. Type: learning_resource.
+Roles: legal, project, funding roles. Connect invention protection with business strategy and commercialization.
+Check: Choose the relevant rights and markets; keep inventorship, ownership and commercial strategy separate.
+Access: Public guidance; linked publications and tools have their own terms.
+Checked: 2026-09-30. Source: WIPO.
+
+wipo-ip-checklist | WIPO — IP strategy checklist for SMEs
+https://www.wipo.int/en/web/business/checklist
+Group: inventor. Type: learning_resource.
+Roles: legal, design, project roles. An explicit checklist from idea generation through market entry.
+Check: Record unanswered ownership, disclosure, protection and commercialization questions for review.
+Access: Public checklist; jurisdiction and professional review still matter.
+Checked: 2026-09-30. Source: WIPO.
+
+wipo-ip-diagnostics | WIPO — IP Diagnostics
+https://www.wipo.int/en/web/wipo-ip-diagnostics
+Group: inventor. Type: learning_resource.
+Roles: legal, project roles. An interactive questionnaire that identifies possible business IP assets.
+Check: Read the questions and terms; get permission before entering project information into the external tool.
+Access: Free online assessment; reports depend on supplied answers.
+Checked: 2026-09-30. Source: WIPO.
+
+score-startup-roadmap | SCORE — Startup Roadmap
+https://academy.score.org/course/startup-roadmap
+Group: startup. Type: learning_resource.
+Roles: project, funding, marketing roles. A staged startup course with concrete tasks and mentor discussion points.
+Check: Select only modules relevant to the current business; retain open tasks and completion evidence.
+Access: Course access may require registration; verify current enrollment.
+Checked: 2026-09-30. Source: SCORE.
+
+yc-startup-school | Y Combinator — Startup School
+https://www.startupschool.org/
+Group: startup. Type: learning_resource.
+Roles: project, design, marketing, funding roles. Founder education on ideas, customer needs, early products and growth.
+Check: Adapt startup advice to the inventor’s goals; a physical product still needs engineering and safety work.
+Access: Public course overview; participation may require an account.
+Checked: 2026-09-30. Source: Y Combinator.
+
+nsf-icorps | NSF — I-Corps customer discovery
+https://www.nsf.gov/funding/initiatives/i-corps
+Group: startup. Type: government.
+Roles: project, design, marketing roles. Research commercialization through direct customer discovery.
+Check: Separate customer-discovery methods from eligibility for a specific training or funding program.
+Access: Public government overview; participation has eligibility and program requirements.
+Checked: 2026-09-30. Source: NSF.
+
+strategyzer-library | Strategyzer — Business and innovation tools
+https://www.strategyzer.com/library
+Group: startup. Type: learning_resource.
+Roles: project, design, marketing, funding roles. A library of tools for business models, customer value and experiments.
+Check: Select a specific tool and distinguish free downloads from paid playbooks.
+Access: Mixed public resources, free tools and paid offerings; check each item.
+Checked: 2026-09-30. Source: Strategyzer.
+
+strategyzer-bmc | Strategyzer — Business Model Canvas
+https://www.strategyzer.com/library/the-business-model-canvas
+Group: startup. Type: learning_resource.
+Roles: project, funding, marketing roles. A one-page view of customers, delivery, resources, costs and revenues.
+Check: Treat each block as an assumption until supported; date and revise the model.
+Access: Official free template; check the downloaded asset’s attribution and license.
+Checked: 2026-09-30. Source: Strategyzer.
+
+strategyzer-vpc | Strategyzer — Value Proposition Canvas
+https://www.strategyzer.com/library/the-value-proposition-canvas
+Group: startup. Type: learning_resource.
+Roles: design, marketing roles. A worksheet to compare customer needs with the proposed offer.
+Check: Use observed customer problems and existing alternatives; label untested claims.
+Access: Official download route; inspect current access and reuse terms.
+Checked: 2026-09-30. Source: Strategyzer.
+
+strategyzer-test-card | Strategyzer — Test Card
+https://www.strategyzer.com/library/validate-your-ideas-with-the-test-card
+Group: startup. Type: learning_resource.
+Roles: project, design, marketing roles. A compact way to plan a business-assumption experiment.
+Check: Set the hypothesis, method, measure and decision threshold before the experiment; record actual results separately.
+Access: Public explanation with links to tools; business experiments are distinct from engineering verification.
+Checked: 2026-09-30. Source: Strategyzer.
+
+score-planning-gallery | SCORE — Business planning and financial templates
+https://www.score.org/business-planning-financial-statements-template-gallery/
+Group: business-planning. Type: learning_resource.
+Roles: project, funding roles. A collection of business-plan, startup-expense and financial-statement templates.
+Check: Choose the smallest useful worksheet and preserve assumptions and formula provenance.
+Access: Public gallery; download and access conditions vary by template.
+Checked: 2026-09-30. Source: SCORE.
+
+score-checklists | SCORE — Business checklists
+https://www.score.org/checklists/
+Group: business-planning. Type: learning_resource.
+Roles: project, funding, marketing, legal roles. A searchable collection of business, operations and marketing checklists.
+Check: Filter by the current task; record applicability and explain skipped items.
+Access: Public directory; linked checklists may have separate download conditions.
+Checked: 2026-09-30. Source: SCORE.
+
+score-financial-projections | SCORE — Financial Projections Template
+https://www.score.org/templates/financial-projections-template/
+Group: business-planning. Type: learning_resource.
+Roles: funding, project roles. A downloadable workbook covering startup expenses, forecasts, cash flow and break-even.
+Check: Separate estimates from actuals; inspect formulas and test low/base/high sales assumptions.
+Access: Publisher describes a free downloadable template; workbook itself was not reviewed in this pass.
+Checked: 2026-09-30. Source: SCORE.
+
+score-startup-budget | SCORE — Startup budget and projections
+https://www.score.org/startup-budget-projections/
+Group: business-planning. Type: learning_resource.
+Roles: funding, project roles. Guidance for startup spending, revenue assumptions and financial stress tests.
+Check: Include one-time spending, recurring expenses, cash timing and an explicit funding gap.
+Access: Public guidance with linked templates and mentoring.
+Checked: 2026-09-30. Source: SCORE.
+
+sba-manage-business | SBA — Manage your business
+https://www.sba.gov/counseling/manage-your-business/
+Group: business-planning. Type: government.
+Roles: project, funding, legal, marketing roles. An operating-business roadmap for finances, employees, taxes, compliance and selling.
+Check: Use the relevant section and verify actual obligations with the responsible agency.
+Access: Public U.S. government guidance.
+Checked: 2026-09-30. Source: SBA.
+
+bdc-startup-toolkit | BDC — Start a business toolkit
+https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit/templates-business-guides/start-up-toolkit
+Group: business-planning. Type: learning_resource.
+Roles: project, funding roles. A broad entrepreneur toolkit with business-planning materials.
+Check: Use planning structure as background; Canadian lending and legal details need local applicability checks.
+Access: Public Canadian development-bank resources; downloads may request contact information.
+Checked: 2026-09-30. Source: BDC.
+
+pdma | PDMA — Product development knowledge and community
+https://www.pdma.org/
+Group: product-management. Type: learning_resource.
+Roles: project, design, engineering, manufacturing roles. An established professional association focused on new product development.
+Check: Use its knowledge-hub routes for the specific development question; do not treat certification material as required startup paperwork.
+Access: Public association directory verified in search; some learning material is member-only or paid. Direct browser retrieval was unavailable.
+Checked: 2026-09-30. Source: PDMA.
+
+stagegate-discovery-launch | Stage-Gate — Discovery-to-launch process
+https://www.stage-gate.com/about/stage-gate-innovation-performance-framework/discovery-to-launch-process/
+Group: product-management. Type: learning_resource.
+Roles: project, design, engineering, manufacturing roles. A framework for organizing new products into stages and review decisions.
+Check: Scale reviews to the project; decide what evidence justifies go, revise, hold or stop.
+Access: Public process overview; detailed services and training are commercial.
+Checked: 2026-09-30. Source: Stage-Gate.
+
+design-council-double-diamond | Design Council — Double Diamond
+https://www.designcouncil.org.uk/resources/the-double-diamond/
+Group: product-management. Type: learning_resource.
+Roles: design, project, marketing roles. A simple discover, define, develop and deliver framework.
+Check: Check that the problem has evidence before selecting a solution; keep learning and revisions visible.
+Access: Public explanation; the linked Double Diamond is identified as CC BY 4.0.
+Checked: 2026-09-30. Source: Design Council.
+
+atlassian-product-requirements | Atlassian — Product requirements template
+https://www.atlassian.com/software/confluence/templates/product-requirements
+Group: product-management. Type: learning_resource.
+Roles: design, engineering, project roles. A starting structure for scope, requirements and product decisions.
+Check: Adapt software examples to the physical product; add measurable requirements and sources.
+Access: Public guidance; using the hosted template requires the publisher’s app/account.
+Checked: 2026-09-30. Source: Atlassian.
+
+atlassian-product-roadmap | Atlassian — Product roadmap template
+https://www.atlassian.com/software/confluence/templates/product-roadmap
+Group: product-management. Type: learning_resource.
+Roles: project, design, marketing roles. A high-level product direction and priorities worksheet.
+Check: Separate proposed features from agreed scope, and outcomes from task deadlines.
+Access: Public guidance; hosted template requires app/account access.
+Checked: 2026-09-30. Source: Atlassian.
+
+smartsheet-product-requirements | Smartsheet — Product requirements document templates
+https://www.smartsheet.com/content/free-product-requirements-document-template
+Group: product-management. Type: learning_resource.
+Roles: design, engineering roles. A collection of editable product-requirements layouts.
+Check: Choose a simple format; maintain requirement IDs, sources, acceptance criteria and revisions.
+Access: Public download collection; hosted Smartsheet use is separate. Files were not reviewed.
+Checked: 2026-09-30. Source: Smartsheet.
+
+smartsheet-product-roadmaps | Smartsheet — Product roadmap templates
+https://www.smartsheet.com/free-product-roadmap-templates-smartsheet
+Group: product-management. Type: learning_resource.
+Roles: project, design roles. A collection of product roadmap formats.
+Check: Pick a horizon appropriate to the evidence; avoid treating tentative dates as commitments.
+Access: Publisher page found in search; direct browser retrieval unavailable. Recheck download formats and access.
+Checked: 2026-09-30. Source: Smartsheet.
+
+pmi-tools | PMI — Project management templates and tools
+https://www.pmi.org/insights
+Group: project-management. Type: learning_resource.
+Roles: project role. A professional source of project-management tools, guides and templates.
+Check: Select tools for scope, coordination or review; check current availability and access for each item.
+Access: Mixed public templates and offerings; some tools have membership or subscription conditions.
+Checked: 2026-09-30. Source: PMI.
+
+atlassian-project-templates | Atlassian — Project management template library
+https://www.atlassian.com/project-management/templates
+Group: project-management. Type: learning_resource.
+Roles: project role. Broad starting points for project goals, risks, budgets, decisions and team coordination.
+Check: Match each template to an actual unanswered planning question.
+Access: Public library; hosted templates generally require product/account access.
+Checked: 2026-09-30. Source: Atlassian.
+
+atlassian-project-plan | Atlassian — Project plan template
+https://www.atlassian.com/software/confluence/templates/project-plan
+Group: project-management. Type: learning_resource.
+Roles: project role. A plan layout for objectives, scope, owners, milestones and reference links.
+Check: Check exclusions, dependencies, finish conditions and agreed dates against the master plan.
+Access: Public explanation; hosted template requires app/account access.
+Checked: 2026-09-30. Source: Atlassian.
+
+atlassian-decision | Atlassian — DACI decision record
+https://www.atlassian.com/software/confluence/templates/decision/
+Group: project-management. Type: learning_resource.
+Roles: project, design, engineering roles. A record of options, decision responsibility, status and outcome.
+Check: Keep alternatives and evidence; use actual agreed authority and attribution rather than changing team permissions.
+Access: Public template explanation; app/account access needed for hosted use.
+Checked: 2026-09-30. Source: Atlassian.
+
+atlassian-retrospective | Atlassian — Retrospective template
+https://www.atlassian.com/software/confluence/templates/retrospective
+Group: project-management. Type: learning_resource.
+Roles: project, prototype, manufacturing roles. A way to review what worked and what should change after a milestone.
+Check: Save actual lessons and assign agreed follow-ups without overwriting prior evidence.
+Access: Public guidance; hosted use requires app/account access.
+Checked: 2026-09-30. Source: Atlassian.
+
+asana-risk-register | Asana — Risk register template
+https://asana.com/templates/risk-register
+Group: project-management. Type: learning_resource.
+Roles: project, engineering, manufacturing roles. A risk-log structure for concerns, likelihood, consequences and response owners.
+Check: Keep project risks distinct from technical FMEA; review actions as conditions change.
+Access: Public explanation; creating the digital template requires signup.
+Checked: 2026-09-30. Source: Asana.
+
+asana-project-charter | Asana — Project charter template
+https://asana.com/templates/project-charter
+Group: project-management. Type: learning_resource.
+Roles: project, design roles. A compact starting definition of project purpose, scope and responsibilities.
+Check: Reconcile with the existing concept and plan; do not create a competing authority or approval record.
+Access: Public explanation; hosted template requires signup.
+Checked: 2026-09-30. Source: Asana.
+
+planning-review-sheet | AN Creation — Product and business planning review
+https://ancreationoffice.com/resources-planning.html#planning-review
+Group: project-management. Type: working_template.
+Roles: project, design, legal, engineering, prototype, manufacturing, funding, marketing roles. Twelve practical questions connecting the product, startup, business and project reviews.
+Check: Reuse existing answers; save status, evidence, exact revisions, owner and next action. An unanswered question stays open.
+Access: Original CSV worksheet; external resources remain links.
+Checked: 2026-09-30. Source: AN Creation original prompts with linked primary references.
+END PLANNING RESOURCES
+
+BEGIN PRODUCT DEVELOPMENT PROCESS
+product-development-process | AN Creation — Product development: the process behind the conversation
+https://ancreationoffice.com/product-development.html
+Assistant instructions: https://ancreationoffice.com/product-development.txt
+Category: product-management. Roles: project, design, engineering, prototype, manufacturing, marketing roles.
+Connect customer needs, requirements, design risks, prototypes, verification/validation and production controls. Soren keeps the framework in mind and explains the formal approach when asked.
+What to check: Scale the depth to the project. Reuse existing quality/test records, preserve evidence and exact revisions, and reopen affected links after changes. This is adaptable guidance, not a mandatory sequence or certification.
+Source: AN Creation original synthesis of Mike’s direction, with AIAG, ASQ and NASA primary references. Checked 2026-09-30.
+END PRODUCT DEVELOPMENT PROCESS
+
+BEGIN RESOURCE CROSSCHECK
+Resource cross-check, September 30, 2026.
+The supplied research list was compared with the current resource catalog and original publisher pages.
+Existing coverage retained without duplicate entries: USPTO inventor hub, patent pro bono, clinics and patent libraries; SBA planning/counseling; SCORE mentoring; national NIST MEP and CPSC small-business resources; SBIR and FTC invention-marketing warnings.
+Added: USPTO IAC/checklist and scam prevention, United Inventors Association, two launch checklist sources, CPSC manufacturing practices and Regulatory Robot, Google Patents, EPO Espacenet, Wisconsin SBDC, WEDC and WMEP.
+Wisconsin entries are regional options, not universal starting requirements. LegalCORPS is an optional regional reference linked from IAC; confirm eligibility and current clinic arrangements.
+The USPTO checklist PDF is linked directly from its IAC page; actual PDF reviewed online. Other commercial template downloads were not obtained.
+The old PMI Product Lift-Off case study is historical context, not a universal eight-month launch rule. No population counts, club-absence claim or funding-announcement amounts are carried forward.
+Use current publisher pages before decisions. Do not automate Espacenet robot searches or bulk retrieval; EPO identifies OPS as its route for authorized automated access.
+A provisional application is an application route, not a separate IP right. Consider patents, trademarks, copyright and trade secrets as appropriate. Business formation and public launch depend on context and existing disclosure/approval rules. Plan safety and test evidence during definition, before expensive builds. A checklist does not grant permission to disclose, certify, file or spend.
+
+uspto-iac | USPTO — Inventors Assistance Center and filing checklists
+https://www.uspto.gov/learning-and-resources/support-centers/inventors-assistance-center-iac
+Group: inventor. Type: government.
+Roles: legal, project roles. Procedural filing help, utility-application checklist, filing guides and common-mistake resources.
+Check: Use the checklist for the intended application route and current USPTO instructions. Procedural assistance is separate from legal advice.
+Access: Public government guidance and linked documents.
+Checked: 2026-09-30. Source: USPTO.
+Related: USPTO utility patent filing checklist (PDF) — https://www.uspto.gov/sites/default/files/inventors/Checklist_for_Filing_a_Nonprovisional_Utility.pdf
+Related: Optional regional reference: LegalCORPS inventor resources — https://legalcorps.org/inventor-resources/
+
+uspto-scam-prevention | USPTO — Invention promotion scam prevention
+https://www.uspto.gov/patents/basics/using-legal-services/scam-prevention
+Group: inventor. Type: government.
+Roles: legal, project roles. Official questions and complaint resources for assessing invention promotion services.
+Check: Check written disclosures, fees, outcomes and complaints before a commitment; cross-reference the existing FTC warning.
+Access: Public government guidance.
+Checked: 2026-09-30. Source: USPTO.
+Related: FTC invention-promotion enforcement background — https://www.ftc.gov/enforcement/penalty-offenses/inventions
+
+uia-inventors | United Inventors Association — Education and inventor community
+https://uiausa.org/about/
+Group: inventor. Type: learning_resource.
+Roles: project, design, legal roles. A national nonprofit starting point for inventor education, community and commercialization resources.
+Check: Check current groups, events and terms. Membership or a listing does not qualify a provider or prove commercial success.
+Access: Publisher describes free membership and educational materials; follow current enrollment terms.
+Checked: 2026-09-30. Source: United Inventors Association.
+
+atlassian-launch-checklist | Atlassian — Product launch checklist
+https://www.atlassian.com/agile/product-management/product-launch-checklist
+Group: product-management. Type: learning_resource.
+Roles: project, marketing, design roles. Launch preparation from market research and goals through customer feedback.
+Check: Adapt to the product and sales channel; coordinate IP/disclosure decisions and product-specific testing before public claims.
+Access: Public publisher guidance; product/app offers are separate.
+Checked: 2026-09-30. Source: Atlassian.
+
+product-school-launch | Product School — Launch readiness checklists and template
+https://productschool.com/blog/product-marketing/product-launch-checklist-for-product-marketers
+Group: product-management. Type: learning_resource.
+Roles: project, marketing, design roles. Separate readiness checks for the product, operations, sales/support, launch and post-launch review.
+Check: Adapt software-oriented items to physical products; retain actual evidence and decision owners. A filled checklist is not approval.
+Access: Public commercial education article with editable-template links; actual downloaded file not examined.
+Checked: 2026-09-30. Source: Product School.
+
+cpsc-best-practices | CPSC — Manufacturing best practices
+https://www.cpsc.gov/business--manufacturing/business-education/business-guidance/BestPractices
+Group: product-management. Type: government.
+Roles: engineering, prototype, manufacturing, project roles. Consumer-product safety planning covering hazards, design, suppliers, manufacturing, records and recalls.
+Check: Start safety review during design, including foreseeable use and misuse. Match current rules to the actual product and market.
+Access: Public U.S. government guidance; separate the overview from actual applicable rules and test evidence.
+Checked: 2026-09-30. Source: CPSC.
+
+cpsc-regulatory-robot | CPSC — Regulatory Robot
+https://www.cpsc.gov/Business--Manufacturing/Regulatory-Robot/Safer-Products-Start-Here
+Group: product-management. Type: government.
+Roles: engineering, prototype, manufacturing roles. An official question-driven starting point for likely consumer-product safety requirements.
+Check: Verify inputs, applicability and current rules; save the output and remaining questions. Do not treat the tool as certification.
+Access: Public tool; business.cpsc.gov redirects here. Get permission before supplying private project information.
+Checked: 2026-09-30. Source: CPSC.
+
+google-patents | Google Patents — Patent and prior-art searching
+https://patents.google.com/
+Group: inventor. Type: learning_resource.
+Roles: legal, design roles. Search patent publications and related prior-art material across jurisdictions.
+Check: Save queries, dated results and document IDs; verify legal status in official registers. A search is not a patentability or freedom-to-operate opinion.
+Access: Public search tool; overview verified at Google Help, https://support.google.com/faqs/answer/6390996 .
+Checked: 2026-09-30. Source: Google Patents.
+
+epo-espacenet | EPO — Espacenet patent search and guidance
+https://www.epo.org/en/searching-for-patents/technical/espacenet
+Group: inventor. Type: government.
+Roles: legal, design roles. Official EPO route to international patent publications, search guidance and translations.
+Check: Document search scope and results; verify status in the relevant register. The EPO says Espacenet does not permit automated robot searches or bulk retrieval; use authorized OPS access for automation.
+Access: Public official overview. Direct Espacenet app retrieval was unavailable; official EPO referral verified.
+Checked: 2026-09-30. Source: EPO.
+
+wisconsin-sbdc | Regional: Wisconsin SBDC — Business consulting and education
+https://wisconsinsbdc.org/
+Group: business-planning. Type: learning_resource.
+Roles: project, funding, marketing roles. Wisconsin business feasibility, planning, finance and education through a statewide university-based network.
+Check: Use when Wisconsin is the relevant location; confirm center, eligibility, current service terms and course fees separately.
+Access: Regional option; publisher describes no-cost confidential consulting. Education may have separate terms.
+Checked: 2026-09-30. Source: Regional: Wisconsin SBDC.
+
+wedc-wisconsin | Regional: WEDC — Wisconsin business development programs
+https://wedc.org/
+Group: business-planning. Type: learning_resource.
+Roles: project, funding, marketing roles. Wisconsin economic-development starting point for business programs and resources.
+Check: Check the specific program, geography, eligibility, current availability and costs. Do not assume grant eligibility or free market-research access from the homepage.
+Access: Regional agency resource; program terms vary.
+Checked: 2026-09-30. Source: Regional: WEDC.
+
+wmep-wisconsin | Regional: WMEP — Wisconsin Manufacturing Solutions
+https://wmep.org/
+Group: business-planning. Type: learning_resource.
+Roles: manufacturing, engineering, project roles. Wisconsin manufacturing improvement and consulting; a local complement to the existing national NIST MEP directory.
+Check: Confirm geography, capabilities, scope, fees and confidentiality before inquiries or sharing designs. Funding announcements do not establish free client services.
+Access: Regional consulting source; service fees and availability need direct confirmation.
+Checked: 2026-09-30. Source: Regional: WMEP.
+END RESOURCE CROSSCHECK
+
+BEGIN DESIGN PRINCIPLES
+Guide: https://ancreationoffice.com/design-principles.html
+Instructions: https://ancreationoffice.com/design-principles.txt
+Worksheet: https://ancreationoffice.com/design-principles-review.csv
+
+design-principles-guide | AN Creation — Design principles: people, form and use
+https://ancreationoffice.com/design-principles.html
+Use: Practical review of usefulness, clarity, interaction, inclusive use, ergonomics, durability and lifecycle; includes a 16-area editable worksheet.
+What to check: Use relevant prompts quietly, link judgments to evidence, requirements and risks, and plan representative user trials. Scores, population percentiles and medical-device sample counts are not universal proof of success.
+Category: product-management. Checked 2026-09-30.
+
+rams-good-design | Vitsœ — Dieter Rams: good design
+https://www.vitsoe.com/us/about/good-design
+Use: Consider usefulness, clarity, restraint, honest presentation, enduring quality and environmental consequences.
+What to check: Design philosophy prompts, not numerical acceptance criteria or proof of product performance.
+Category: product-management. Checked 2026-09-30.
+
+norman-interaction | Don Norman — Interaction, signifiers and feedback
+https://jnd.org/opportunities-and-challenges-for-touch-and-gesture-based-systems/
+Use: Distinguish possible actions from cues that communicate them; review feedback and the user's mental model.
+What to check: The article discusses touch and gesture systems; adapt the interaction ideas to the actual physical product and test them.
+Category: product-management. Checked 2026-09-30.
+
+idsa-industrial-design | IDSA — What is industrial design?
+https://www.idsa.org/about-idsa/advocacy/what-industrial-design/
+Use: Understand the connection between appearance, function, manufacturability and the user's overall experience.
+What to check: A profession/process overview, not a prescribed six-stage standard or validated engineering package.
+Category: product-management. Checked 2026-09-30.
+
+ncsu-universal-design | NC State — Principles of Universal Design
+https://design.ncsu.edu/wp-content/uploads/2022/11/principles-of-universal-design.pdf
+Use: Review access, flexibility, clarity, perceivable information, error tolerance, effort and space for use.
+What to check: Design guidance from the originating institution; it is not accessibility certification or proof that every user is accommodated.
+Category: product-management. Checked 2026-09-30.
+
+niosh-ergonomics-overview | NIOSH — Ergonomics overview
+https://www.cdc.gov/niosh/ergonomics/about/index.html
+Use: Consider posture, force, repetition and the interaction between a person and the task.
+What to check: Occupational guidance; adapt it to the intended users, product and exposure rather than assuming consumer-product clearance.
+Category: making. Checked 2026-09-30.
+
+ansur2-design-data | Penn State OPEN Design Lab — ANSUR II
+https://www.openlab.psu.edu/ansur2/
+Use: Find anthropometric background and investigate variation when planning physical fit.
+What to check: US Army sample, not a representative civilian population. Read variable definitions, population and dataset terms; validate fit with intended users.
+Category: making. Checked 2026-09-30.
+
+iec-62366-usability | IEC — IEC 62366-1 usability engineering
+https://webstore.iec.ch/en/publication/21863
+Use: Identify the medical-device usability-engineering standard and its safety-related scope.
+What to check: Public catalog summary only; paid full standard not read or reproduced. Confirm applicable edition/amendments; do not impose medical-device compliance on unrelated products.
+Category: quality. Checked 2026-09-30.
+
+fda-human-factors | FDA — Applying Human Factors and Usability Engineering to Medical Devices
+https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-engineering-medical-devices
+Use: Study intended users, environments, critical tasks and evaluation of use-related risks in medical-device work.
+What to check: Medical-device guidance. Its validation participant recommendations are context-specific, not a universal product-testing sample size.
+Category: making. Checked 2026-09-30.
+
+circular-design-guide | Ellen MacArthur Foundation — Circular Design Guide
+https://www.ellenmacarthurfoundation.org/circular-design-guide/overview
+Use: Explore useful life, repair, reuse and material recovery when comparing design directions.
+What to check: Methods to investigate; do not claim circularity, recyclability or sustainability without evidence for the product and its actual recovery route.
+Category: product-management. Checked 2026-09-30.
+
+ideo-design-kit | IDEO.org — Design Kit
+https://www.designkit.org/
+Use: Use human-centered research, concept development and prototyping methods to learn from people.
+What to check: Select methods for the current question. Workshop outputs and positive reactions are not proof of demand, safety or production readiness.
+Category: product-management. Checked 2026-09-30.
+END DESIGN PRINCIPLES
+
+BEGIN ADVANCE NOW
+Advance Now: help the inventor take a useful step today. Treat risk analysis as a list of opportunities to investigate, questions to ask and routes around or through a problem. Ordinary uncertainty, cost, imperfect ergonomics and unanswered checklist items do not automatically stop or slow the whole project. Keep analysis proportionate; do the useful authorized work available now. Look for a smaller experiment, an existing part, a different material or process, a revised design, staged help, a lower-cost route or someone with relevant experience. Keep a short roadblock list using existing issue IDs: concern and uncertainty, affected activity, possible workaround, question to ask, person who could help, owner, what advances now, revisit trigger and evidence/revision. Carry these questions into relevant conversations and handoffs. A later contact may reveal an easy solution or help carry the load; seek that opportunity without guaranteeing it. Do not turn every concern into a stop sign or end with a discouraging wall of risks. End with the next practical action. If one concrete activity needs a safety control, a disclosure decision, permission or a required review, identify that exact activity and keep progressing on other useful work or a safer route. Keep the evidence honest and preserve existing spending, sending, filing and publication authority. Do not insist on paid professional help before every preparation step: investigate available self-help and assistance routes. Do not promise that a later patent review can repair missing disclosure. Respect the person's choice to pause; never invent completion. Supervisors pass this same posture to temporary helpers. Read https://ancreationoffice.com/advance-now.txt for examples and the shared roadblock-list workflow.
+END ADVANCE NOW

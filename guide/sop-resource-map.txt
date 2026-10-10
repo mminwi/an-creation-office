@@ -1,0 +1,86 @@
+SOP: Map the resources to this project. Revision 3 — October 8, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Library: https://ancreationoffice.com/resources.json (about 200 sources in 18 groups)
+Goes with: sop-gateways.txt (the questions), sop-focus.txt (what goes on the list)
+Read this once the inventor has described the product, and again when the product changes in a way that matters (it gets a battery, it will be sold in Europe, a hospital wants it). Then leave it.
+
+WHY THIS EXISTS
+Most of what a project needs to know is already written somewhere: which tests, which certifications, which records, which risks. The library points at the real sources. This procedure decides, in bulk and early, which of them this project touches, which it does not, and what is missing. Then the work reads the current version of the ones that apply.
+Most projects touch a good handful. None touches all of them.
+The point is risk. Every one of these programs (ISO, AS9100, the medical rules, FCC, UL, CE, military testing, patents, a company) exists to check and lower the risk of a product in its intended use, or the business risk around it. A patent is business risk: someone else making and selling the idea. We use the same standards everyone else judges products by, early, so the inventor sees the risks while there is time to react, before they become a crisis.
+Time is part of every risk. A risk with six months to fix is not the same as one due in three weeks, so each "in" source gets a lead time against the inventor's dates.
+The library is a first, cursory look, not the whole list. It gets to the right questions fast. Answering them will often still need a search.
+
+SINGLE-SOURCE FROM THE LIBRARY (D-062)
+The library is a chosen set that represents each area well, picked so the AI can go to one good source and stay in line with how products should be developed. Start from it. Do not go looking for a dozen equivalent standards or guides on a topic the library already covers; use the library's source for that area and read its current page. Search outside the library only for what it doesn't cover: the industry search, a standard a buyer or contract names, or a missing official source (step 4). The inventor does not explain the resources to you; you read and search them yourself and bring back what applies.
+
+1. WRITE THE PRODUCT PROFILE
+From what the inventor already said, fill this short profile. Answer what you can from their words. Mark the rest "unsure". Do not quiz them on every line.
+- What it is, who uses it, where.
+- Medical: does it diagnose, treat, monitor, or go in or on the body for a health reason?
+- Aircraft or space: does it fly, or go on something that does?
+- Vehicle: is it part of, or attached to, a car, truck or other vehicle?
+- Military or government buyer?
+- Power: battery, plug, circuit, software, radio or wireless?
+- Children: made for, or likely used by, kids under 12?
+- Food or skin: touches food, drink, mouth, or skin for long periods?
+- Water and weather: used outdoors, washed, or wet?
+- Machine or tool: moving parts, blades, heat, pressure, or industrial use?
+- Where it will be sold: friends, online, big stores, marketplaces, outside the U.S.?
+- Industry and setting: is it sold into a particular industry (railroad, mining, marine, oil and gas, food plant, hospital) or used somewhere unusual (washdown, hazardous area)?
+- Materials: electronics, or sold in Europe or California (restricted substances)? Lithium battery?
+- Business roads: company, patent, outside money (these are the gateways in sop-gateways.txt).
+Show the inventor the filled profile. Ask them to fix what is wrong and answer only the "unsure" lines that change which shelves open, one at a time.
+
+2. THE PROFILE PICKS THE SYSTEM
+Every product gets our own quality sheets. ISO 9001 is the general background most things can fall under. A yes below adds a stricter system with more testing and records. Name it; do not claim certification.
+- Medical: FDA rules for devices, ISO 13485, IEC 62366 usability. Usually a professional's road early.
+- Aircraft or space: AS9100 (IAQG), plus the aviation authority's rules.
+- Vehicle: IATF 16949 and the AIAG core tools.
+- Military or government: MIL-STD for the environment, EMI, packaging and marking; ASSIST; SAM.gov registration.
+- Power: UL or another recognized test lab (OSHA NRTL list), FCC for anything that radiates, IEC/CENELEC if sold abroad, NEC for wiring.
+- Water: IP or NEMA ratings for the case and controls.
+- Children, food or skin, machines: the consumer safety (CPSC) and matching shelves.
+- Stores and marketplaces: the retailer's supplier requirements.
+
+3. SCREEN THE WHOLE LIBRARY IN ONE PASS
+This is a job for one intern, not a conversation. Give it the profile and resources.json. It writes resource-map.csv, one row per source:
+- in: this project needs it now.
+- later: needed when a trigger happens ("before the first sale", "if it goes to Europe").
+- out: the profile says no. Mark whole groups out at once: no military means the military group is out; no medical means the medical sources are out.
+- ask: depends on an "unsure" line. That line becomes one gateway question.
+Each row gets a one-line reason pointing at the profile line. Most rows will be out. That is the point.
+The inventor does not see two hundred rows. They see the profile, the short "in" list, and one question at a time for "ask".
+
+4. LOOK FOR WHAT THE LIBRARY IS MISSING
+Always run the industry search, every project, once the inventor has said who buys it, where it is used and in what conditions. The library holds the common programs; many industries have their own specs that it does not. Railroad is the known gap: rail buyers have their own rules for electronics, remote controls, enclosures and washdown. Search:
+"Does the [industry] have specifications or requirements that affect [product type]: the electronics, the enclosure, the environment (washdown, vibration, temperature, outdoors), or how buyers approve suppliers?"
+Search the buyer's industry and the setting, not only the product name. A hit becomes a row (found, not yet checked) and a question. No hit: record the search and the date in resource-map.csv, and reopen it if a new buyer or setting turns up.
+Also search recalls and incident reports on similar products (cpsc-recalls, saferproducts). What went wrong for others is the cheapest start on the FMEA.
+For each yes in the profile, ask: is there a source this project needs that we do not have? Search for it. Start from the official body: the government agency (.gov, .mil), the standards body, or the test lab. Add it to resource-map.csv as "found, not yet checked" with the date. Send a note to the library so it can be added for the next person.
+Watch for lookalikes. Many .com sites sell company formation, registrations or "official" forms that the government provides directly. A state business filing starts on that state's .gov site. Read the actual web address, not the logo. The library's government-site guidance has the details.
+
+4b. WEIGH EACH "IN" SOURCE AND OFFER TO DISCUSS IT
+Give every "in" row a weight in resource-map.csv:
+- follow: a rule or official process this product has to meet. It goes on the plan with a risk line and a lead time.
+- recommend: a good program or method, worth using, not required. Tell the inventor what it is in two lines and why it fits.
+- mention: background, or worth a look later. Look at the site briefly and tell the inventor what it is.
+The weight depends on the product: a recall search is recommend for a toolbox and close to follow for a children's product.
+Offer to discuss every one, whatever its weight. The default, through Soren: "There's this: [one line]. Would you like to go over what it's about?" Yes: talk it through, or research it and come back with a fuller explanation, or make a short slideshow on a review page (sop-review-page.txt). Not now: note it and move on; offer again if it comes up. A follow item stays on the plan whether or not they discuss it. Any time they ask for a fuller explanation, give one.
+
+5. READ THE CURRENT COPY OF EACH "IN" SOURCE
+The library is pointers, not copies. Do not download or store the source. For each "in" row, the session for that subject opens the current page when the work needs it, not a memory of it, and saves a few lines in plan.md or the subject folder:
+- the link, the date read, and the edition or revision;
+- what it asks of this product: tests, certifications, records, labels;
+- the risks or questions it raises.
+Next time, open the link again. The page may have changed.
+Those questions go through sop-focus.txt: asked as a question, decided, on Now or Later, or dropped. A source does not dump its whole checklist into the project.
+For a paid standard, record the title, edition and where to get it. Do not copy it. Use the free summary or the official overview until the inventor decides to buy it.
+
+Every "found, not yet checked" source gets its official address, the open question of whether it applies, and a dated check before it is used for design, testing or showing anyone. A search result is a lead, not a source.
+
+6. KEEP IT CURRENT
+When the profile changes, re-screen only the groups that line touches. When a gateway answer or a revisit date changes, update its form, framework, plan and the affected resource-map rows in the same run, and point at the decision rather than copying dates. A changed row is a one-line check with the inventor, as in sop-focus.txt: "Because it now has a battery, the electrical shelf opens: UL and FCC. Is that right?"
+
+DONE WHEN
+The profile is confirmed, every library row has in, later, out or ask with a reason, every "in" row has a weight and was offered for discussion, the industry and recall searches are recorded with dates, each "ask" was asked once, missing sources were searched from official sites, and each "in" source has a dated note of what it asks of this product.

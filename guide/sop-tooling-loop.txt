@@ -1,0 +1,59 @@
+SOP: The tooling loop. Revision 1 — October 7, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Starts from: design freeze at the end of the prototype loop (sop-prototype-loop.txt, sop-stages S2).
+Goes with: sop-stages.txt (S3), the compliance matrix, sop-review-page.txt
+
+WHY THIS EXISTS
+This is where design for manufacturing meets the real thing. The product goes to the people who will make it, and they tool it up. As they do, they find what isn't manufacturable or isn't recommended the way it's drawn. The design changes again, this time to get the tooling right, so the part coming off the tool matches the CAD. More often than not the CAD is updated to match the part that is actually being made.
+It is also where most final specifications get set. The basic tolerance stack-up is done at the end of design. The final specs are usually settled by measuring the first parts off the tool and weighing them against what the process actually holds.
+
+THE LOOP
+Every round has the same shape:
+1. Tooling review. The toolmaker or factory reviews the frozen design for their process: draft angles, wall thickness, undercuts, gate and parting-line locations, bend radii, tolerances they can hold, cost drivers. For molded parts, often a mold-flow study. Their findings go on a review record.
+2. Design changes for tooling. Change what they flagged, or agree a different fix. Keep changes "steel-safe" where possible (cut so that later tweaks remove tool material rather than add it back). Update the CAD, drawings and compliance matrix lines touched.
+3. Build or adjust the tool, and run a tool trial (T-trial): check out the tooling and run sample parts. Usually one or two T-trials (T0, T1, T2 as the tool is tuned). A T-trial asks: does the tool make the part? It is not yet about running at rate.
+4. Measure the parts. First article inspection: every dimension on the drawing measured on sample parts. Check the fit with mating parts and the function. Rerun any compliance matrix tests the change could affect.
+5. Update the CAD to match what the tool makes, where the made part is acceptable. The CAD and drawings describe the real part, not the hoped-for one. Update the BOM and part cost from the factory's real quotes, the tooling cost from the toolmaker's actual figures, and the timeline.
+6. Review and decide. Another tool adjustment, a design change, or release. The inventor decides, with the factory's input.
+A round is done when the CAD is updated to the decision (D-043). Every round is its own dated folder and review page.
+
+TRIALS, WHATEVER THE PROCESS
+Plastics plants call them T-trials (tooling trials: check out the tool) and P-trials (process trials: run it at rate and check quality). Most processes have the same two steps under some name: stamping, casting, machining fixtures, PCB assembly, even a hand-assembly line. T-trials happen in this loop. P-trials happen in qualification (sop-qualification.txt). Use the factory's names for them, and explain them to the inventor.
+
+SETTING THE FINAL SPECIFICATIONS
+At design freeze there is a basic tolerance stack-up: how the tolerances of mating parts add up, and whether the assembly still fits and works at the extremes.
+Final specs are usually set after the tool is running:
+- Measure several sample parts on each critical dimension. How much does the process actually vary? (Process capability, often written Cp or Cpk.)
+- Redo the stack-up with the measured variation.
+- Negotiate the specs across the parts. Where a process holds a dimension tightly and cheaply, tighten it; where holding it is expensive, widen it and take the room from a part that can give it, so the stack still works. Tighten where it costs the least.
+- Write the agreed specs on the drawings and into the compliance matrix as the pass levels for production.
+Critical features carry into the production control plan with their final specs.
+
+WHAT ELSE GETS DONE HERE (APQP's process design step, sized to the project)
+- Supplier choice: request for quote (RFQ) package, quote comparison, the decision. Often happens just before or at the start of this loop.
+- Process flow: the steps from raw material to boxed product.
+- Process FMEA: what can go wrong in making it, and how it is caught or prevented.
+- Production control plan: what gets checked during production, how, how often, and what happens when it is off.
+- Gauges and fixtures for the critical features, and a check that the measuring is trustworthy (measurement system analysis, MSA, at the project's size).
+- Packaging, labeling and the shipping or drop test.
+- Lab and certification samples from production-intent parts, if not done in the prototype loop.
+- A golden sample: an approved part kept as the physical reference.
+(The full first article on production parts, the pilot run, the qualifications and the approval package happen in the next stage, sop-qualification.txt.)
+
+NO TOOLING? (low volume, staying small)
+Some products never get a hard tool: 3D printed, machined, laser-cut, hand-assembled in small batches. The loop still runs on the production process: choose the shop, run sample parts, measure them, set specs from what the process holds, update the CAD, write the control plan. Same exit.
+
+WHEN THE LOOP STOPS: READY TO QUALIFY
+- The tool (or process) makes parts that match the drawings, or the drawings were updated to the accepted parts.
+- Final specs are agreed and on the drawings; the stack-up works with measured variation.
+- Sample-part first article inspection is filed; critical features are within spec and have control plan checks.
+- Compliance matrix lines affected by tooling changes are re-verified.
+- Process FMEA, control plan, gauges, packaging and golden sample are in place.
+- Cost per part and timeline still fit, or the inventor accepted the trade.
+- The inventor agrees it is ready to qualify.
+
+DONE WHEN
+The setup is ready to qualify and the current revision (drawings, specs, control plan) is in its dated folder. Next: qualification and production approval (sop-qualification.txt, sop-stages S4).
+
+WHO DOES WHAT
+The factory or shop makes the tool and the parts and measures them; their findings and reports are filed in the record. The analyst turns tooling feedback into design-change proposals, tracks every changed matrix line, redoes the stack-up with measured data, proposes the spec negotiation, and keeps the PFMEA and control plan. Soren shows each round on a review page and records the inventor's decisions. The office never orders tooling, approves payment, or signs for parts. Specs and acceptance are agreed between the inventor and the factory.

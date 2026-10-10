@@ -1,0 +1,88 @@
+AN CREATION — TEST PLAN TEMPLATE — REV 1
+Guide: https://ancreationoffice.com/test-planning.html
+Matrix: https://ancreationoffice.com/test-matrix.csv
+Original working template; adapt to product, decision and applicable requirements.
+Plan work before the build. Unknown critical fields mean the affected test is not ready.
+This plan records intended work, not a completed test or a product approval.
+
+1. CONTROL AND DECISION
+Project / product / target market / intended use:
+Plan ID / revision / status / date / author:
+Responsible technical reviewer / approvals actually obtained / dates:
+Decision this evidence must support / exclusions:
+Linked concept / CTQ / requirements / FMEA / control-plan revisions:
+Model / drawing / BOM / PCB / firmware / package revisions:
+Changes from prior plan / affected tests:
+
+2. STRATEGY AND REQUIREMENTS
+For each requirement: ID / source / measurable limit / conditions:
+Related risk or proposed product claim:
+Evidence method: inspection / analysis / demonstration / test:
+Purpose: learning / verification / validation / compliance / production acceptance:
+Standard or method / edition / clause / applicability rationale:
+Authorized procedure location / access confirmed / unresolved interpretation:
+Coverage and exclusions across variants / rationale:
+Customer/lab agreement needed / owner / action:
+
+3. TEST ARTICLES AND RESOURCES
+Sample IDs / count / rationale / allocation to each test:
+Construction and manufacturing process / configuration / prior test history:
+Prototype differences from production / effect on conclusions:
+Conditioning / destructive tests / sequence rationale / spares:
+Operator / lab / relevant accreditation or recognition scope / witnesses:
+Fixture and setup drawings/photos / support equipment:
+Instrument IDs / range / resolution / calibration due date / traceability:
+Uncertainty and near-limit decision rule where relevant:
+Site / environment / facilities / schedule / budget / dependencies:
+
+4. REPEAT THIS BLOCK FOR EACH TEST
+Test ID / requirement IDs / sample IDs:
+Objective and decision / exact configuration:
+Procedure reference and revision / authorized adaptations:
+Prechecks and baseline measurements:
+Fixture, orientation, operating modes, loads and support equipment:
+Conditions, levels, units and tolerances / source and justification:
+Sequence / exposure duration / cycles or repetitions / timing:
+Measurements during test / monitoring / recording frequency:
+Recovery and postchecks / inspection timing / sample handling:
+Pass/fail criteria set BEFORE testing, with measurable limits and sources:
+Safety hazards / reviewed controls / operator competence:
+Stop conditions / emergency action / restart authority:
+Expected raw data, logs, photos and report / save locations:
+Unresolved fields / owner / test readiness status:
+
+Electrical / EMC / radio additions where applicable:
+Supply/charging states / ports / cables and routing / grounding / accessories:
+Hardware, firmware and radio/module/antenna details / variants:
+Bands, modes, settings and representative/worst-case selection rationale:
+Functions monitored / allowed degradation, recovery, resets or data loss:
+Applicable safety, emissions, immunity, radio authorization and exposure routes:
+Lab-confirmed setup and methods / outstanding integration questions:
+
+Drop additions where applicable:
+Bare product or shipment / actual contents, mass and packaging revision:
+Height reference / surface / faces, edges or corners / sequence and count:
+Operating state / damage and functional criteria / photos per event:
+Values come from the applicable requirement/method; no default height is implied.
+
+Water additions where applicable:
+Exposure and claim / liquid / temperature / depth reference or pressure:
+Duration / orientation / seals / fasteners / ports, caps and mounting:
+Preconditioning / prior drops or wear / operating state and safe isolation:
+Ingress and functional/safety acceptance criteria / recovery / inspection:
+Do not infer jet resistance from immersion alone or invent an IP pass.
+
+5. READINESS REVIEW — RECORD ACTUAL FINDINGS
+Requirements/methods/limits reviewed:
+Samples, configuration, fixtures and instrumentation ready:
+Safety controls and competent operator confirmed:
+Critical unresolved items / affected tests held:
+Run authorized by / date / plan revision / witness requirements:
+
+6. REPORT AND CHANGE CONTROL
+Report IDs and raw evidence links (blank until work occurs):
+Deviations and approval / failed, interrupted or inconclusive tests:
+Corrective actions / repeat and regression test decisions:
+Changes affecting prior evidence / responsible reviewer:
+Claims supported and limits / remaining risks / next project decision:
+Handoff to Soren with exact plan/report revisions:

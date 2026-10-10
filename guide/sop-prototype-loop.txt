@@ -1,0 +1,53 @@
+SOP: The prototype loop. Revision 1 — October 7, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Starts from: a revision approved to build in the design loop (sop-design-loop.txt, sop-stages S1).
+Goes with: sop-stages.txt (S2), the compliance matrix, sop-review-page.txt
+
+WHY THIS EXISTS
+Paper and CAD only go so far. The prototype loop builds the design, tests it, learns from it, refines the design, and builds again. It can go around two or three times, or a dozen; that depends on the product and who is building it. Each build answers specific questions before more money is spent, and the builds climb toward something close to production.
+
+THE LOOP
+The difference from the design loop is the test: each round builds something, tests it somehow (measure it up, drop it, use it, put it on the bench), and changes the design based on what the test showed. A round is done when the CAD is updated. Then: another prototype round, or on to the tooling loop.
+DFM keeps running (sop-design-loop.txt, D-043): every build is also a check on how it will be made, and every review includes someone with manufacturing in mind.
+Every round has the same shape:
+1. Plan the build. Its level (below), what it must prove, what gets measured, and the pass levels from the compliance matrix. That is the prototype control plan. Written before building.
+2. Build. In-house, a maker space, a prototype shop, a contract builder. Record what was actually built: revision, materials, process, anything changed on the fly.
+3. Test. The tests this build is for: bench checks, measurements, back-parking-lot use, a user trial, a pre-check before a lab. Record results against the compliance matrix lines as evidence.
+4. Review. A recorded review (same record as the design loop): what passed, what didn't, what was learned, what changes.
+5. Refine and update. Redesign or refine the part from the test results and update the CAD, the BOM with estimated part costs, the estimated tooling cost, and the timeline (another round adds time). That update closes the round. A change big enough to need its own concept or layout rethink goes back to the design loop instead.
+6. Decide. Another prototype round (same level or the next), or freeze and on to manufacturing. The inventor decides.
+Every build, test and review is its own dated folder and gets a review page. Nothing from an earlier round is written over.
+
+LEVELS OF PROTOTYPE
+Builds come at different levels, and a project uses only the ones it needs. A simple product may go straight to a works-and-looks-like build. Use the industry names, and explain them (D-040).
+- Bench check (breadboard, proof of concept): one part of it on the bench to prove the idea works. Electronics only on a breadboard, a mechanism in cardboard and screws. Looks don't matter.
+- Works-like: the whole thing functions, but doesn't look like the product.
+- Looks-like: the right size, shape, color and feel, but doesn't work. For ergonomics, photos, buyer and user reactions.
+- Works-and-looks-like (alpha): both together, built with prototype methods (3D printing, machining, hand assembly).
+- Engineering prototype (beta, EVT): built close to the real design with near-production materials; full verification against the compliance matrix.
+- Pre-production (DVT, PVT): built with production-intent parts and processes, often by the factory that will make it. Used for validation, lab and certification samples, and buyer samples.
+The hardware industry's EVT / DVT / PVT (engineering, design and production validation test) are the late levels. Most inventors stop well short of all three; name them when a supplier or buyer uses them.
+
+WHAT EACH ROUND CHECKS
+Verification: does the build meet the compliance matrix lines it was meant to check?
+Validation: does it do the job for real users in real conditions? At least one round must include real use before freeze, usually a works-and-looks-like build or later.
+Lab and certification: a pre-compliance check early (a cheap look at FCC emissions or a drop test) saves a failed lab visit later. Formal lab samples come from a late build that matches the frozen design.
+Update the design FMEA every round with what the build actually showed. Update cost and timeline: another round is time and money, so say which corner moves.
+
+HOW MANY ROUNDS
+As many as it takes, and no more. Each round needs a reason: a question it answers. Stop building when the remaining questions can be answered on paper or in the factory. Signs of drift: builds with no stated question, the same failure twice without a design change, rounds added to delay a decision. Bring these up at the review.
+
+FREEZE: WHEN THE LOOP STOPS
+The design freezes when:
+- every compliance matrix line is met or put off on purpose (with the reason and who agreed);
+- at least one validation with real use is done;
+- the remaining risks are accepted by the inventor;
+- the cost estimate and timeline still fit, or the inventor accepted the trade;
+- the drawings, parts list and material specs are released at one named revision.
+After freeze, a change goes through change control: what changes, why, which lines and tests it touches, the time and money, and the inventor's yes. Safety fixes are never held back by this.
+
+DONE WHEN
+The design is frozen, the compliance matrix shows every line's status with evidence from real builds, the build and review records are filed, and the frozen revision is in its dated folder. Next: the tooling loop (sop-tooling-loop.txt, sop-stages S3).
+
+WHO DOES WHAT
+The analyst writes each prototype control plan, records results against the compliance matrix, updates the FMEA, cost and timeline, and writes the review record. Soren puts each build's results on a review page, walks the inventor through them, and records the decision. The inventor, or the shop they choose, builds; the office never orders or pays for anything. Labs and engineers sign what the office can't.

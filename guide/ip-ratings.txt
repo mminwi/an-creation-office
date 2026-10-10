@@ -1,0 +1,46 @@
+IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and claims. Human guide: https://ancreationoffice.com/ip-ratings.html
+
+First digit: solids/dust
+0 | No rated solid-object protection.
+1 | Objects 50 mm and larger.
+2 | Objects 12.5 mm and larger.
+3 | Objects 2.5 mm and larger.
+4 | Objects 1 mm and larger.
+5 | Dust-protected: limited entry permitted without harmful interference.
+6 | Dust-tight: no dust entry in the test.
+
+Second digit: water
+0 | No rated water protection.
+1 | Vertical drips.
+2 | Drips with enclosure tilted up to 15°.
+3 | Spray up to 60° from vertical.
+4 | Splashes from any direction.
+5 | Water jets.
+6 | Powerful water jets.
+7 | Temporary immersion under specified test conditions.
+8 | Continuous immersion under specified conditions; check depth and duration.
+9 | High-pressure, high-temperature water jets.
+
+Examples
+IP56 | 5: dust-protected | 6: powerful water jets
+IP57 | 5: dust-protected | 7: temporary immersion
+IP67 | 6: dust-tight | 7: temporary immersion
+
+Read the digits separately: first solids/dust, then water. The first digit also addresses access to hazardous parts; this is a simplified ingress table.
+X means no protection level is specified for that digit; it is not the same as 0.
+IPX7 is commonly summarized as a 1 m, 30-minute immersion test. Exact depth/reference points depend on enclosure size and the standard; verify the actual test report. It is not an unlimited underwater-use rating.
+IPX7/IPX8 immersion does not automatically establish IPX5/IPX6 jet protection. Where both are needed, verify both ratings, such as IP66/IP67.
+Use the rating of the final installed assembly: seals, cable entries, connectors, doors and mounting matter. An enclosure rating alone does not prove the finished product has it.
+IP does not establish corrosion, UV, impact, explosion or overall electrical-safety performance. NEMA Types and IP codes are not interchangeable.
+
+Record the intended exposure, applicable standard/edition, exact tested assembly revision, seals/entries/connectors, test conditions and evidence. Do not claim an enclosure rating certifies the whole product.
+
+Sources:
+IEC 60529 catalog: https://webstore.iec.ch/en/publication/2452
+UL comparison of IP digits (PDF): https://latam.ul.com/sites/default/files/2020-09/English%20-%20UL%20Hazardous%20location%20services.pdf
+Getac IP guide: https://www.getac.com/us/certifications/ip-rating/
+ABB on jets, immersion and installed systems: https://new.abb.com/low-voltage/products/conduit-fittings/adaptaflex/news/applying-ip-ratings-to-flexible-conduit
+
+BEGIN TEST PLANNING
+Start the test plan while requirements are forming, before committing to a build. Use https://ancreationoffice.com/test-planning.html for the layout, prototype selection and electrical/RF, drop and submersion guidance. Download the plan, matrix and report templates there.
+END TEST PLANNING

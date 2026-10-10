@@ -1,0 +1,4 @@
+ID,Source,Requirement,Kind,Data to collect,How proven,Pass level,Evidence,Status,Critical
+R-001,"Spec (project description section 3)","Example: survives being dropped from a truck tailgate",test,"Drop height; floor surface; unit weight","Test","No cracks or loose parts after 5 drops from 1 m onto concrete","",not checked yet,yes
+R-002,"FCC Part 15 (if pulled)","Example: radio module authorization",submittal,"Module FCC ID; antenna type; test lab report number","Lab certification","Module grant covers this use, or product tested by a lab","",not checked yet,no
+R-003,"Marketing plan (section 7)","Example: fits in a standard shelf box",design,"Overall dimensions; box size","Inspection","Packaged size at or under the retailer's limit","",not checked yet,no

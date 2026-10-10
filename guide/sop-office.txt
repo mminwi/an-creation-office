@@ -1,0 +1,40 @@
+SOP: Set up Soren and the analyst. Revision 3 — October 6, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Read this when Soren is missing, a new invention is starting, or the project folder is not recorded. Then leave it.
+
+THE SHAPE
+Two assistants. Soren is the friendly front desk the inventor talks to, like texting: he fills the form on the current ticket, calls the analyst, checks the work came back, and says what's next in a line. The analyst does the thinking in the background and writes the next ticket. Soren's memory can be cleared any time; the project lives in the files.
+Which tools, by what the person has:
+- Grok + Claude (recommended): Soren = Grok Bot; analyst = Claude Code, headless.
+- Grok + ChatGPT: Soren = Grok Bot; analyst = Codex, headless.
+- Grok only: Soren = Grok Bot; analyst = Grok Build.
+- Claude or ChatGPT only: try the phone app as the chat; otherwise a simple chat page the analyst builds. Find what the person is comfortable with.
+
+THE FOLDER
+One folder per person: C:\Users\<name>\AN-Creation (or the Mac/Linux home folder). Not a cloud-synced folder unless they want one. Inside it: ideas.txt, All inventions, and one folder per invention, each with "Your files" and "Soren's files". Layout: https://ancreationoffice.com/project-folders.txt
+Confirm both assistants can actually read and write it. A typed path is not a connection.
+
+ONE SOREN FOR ALL, OR ONE PER INVENTION (the inventor's choice)
+The first invention gets one Soren. When the inventor starts a second, Soren asks whether to keep one Soren for all of them or set up a separate Soren for each, and records the answer in AN-Creation/office.txt. Either way works; they can switch later.
+One per invention: create one Grok Bot for each invention, named for it: "Soren: fishing lure". Profile: You are Soren, the project bot for AN Creation, for the invention <name> in <folder>.
+One for all: one Grok Bot named "Soren". Profile: You are Soren, the project bot for AN Creation, for the inventions in <AN-Creation folder>.
+The rest of the profile, either way: Follow https://ancreationoffice.com/standing.txt. That file is your permanent context. Open a procedure only when its trigger matches.
+Confirm Soren could read standing.txt. If the link fails, paste the text.
+A new idea that comes up goes in ideas.txt. When the inventor says to start it, it gets its own folder, and its own Soren only if they chose one per invention.
+
+BACKUPS (recommend strongly at setup)
+Git on their own computer is the default: install it, make AN-Creation one vault, checkpoint after every conversation and analyst run. Without it, something will likely get mixed up and a revision lost. Then offer GitHub (a private repository) for an offsite copy, if they want it. Steps: https://ancreationoffice.com/version-control.txt
+
+THE ANALYST
+Install the command-line tool for the analyst they have (Claude Code, Codex, or Grok Build) and sign in once. On Windows, if a desktop app hides installs under AppData, install to a plain folder such as C:\AN-tools. Soren runs it headless from the invention folder, for example:
+C:\AN-tools\claude.cmd -p --permission-mode acceptEdits --allowedTools "WebFetch WebSearch" "Read Soren's files/sop/analyst.txt and Soren's files/prompts/<prompt>.txt, then do the run."
+Copy the procedures into Soren's files/sop/ and the prompts into Soren's files/prompts/ at setup, or let the analyst read them from the website.
+
+FIRST QUESTIONS AT SETUP
+- "What do you like to read and type in: Word and Excel, Google Docs and Sheets, plain text, or Markdown?" Record it in PROJECT.txt.
+- Privacy, said calmly: "Your chats with these AI apps may be used to train them unless you turn that off in the app's settings. Many people with an invention turn it off. Your choice."
+
+THEN
+Write T-001 (intake-001.csv, then the analyst with analyst-after-intake.txt) and start: "Tell me about your invention."
+
+Done when Soren exists and reads standing.txt, the folder is confirmed for both assistants, the analyst command runs, and T-001 is active.

@@ -1,0 +1,67 @@
+AN CREATION — SHORT DESIGN AND FAILURE REVIEW — TEMPLATE REV 1
+Companion: https://ancreationoffice.com/design-risk.html
+Use one or two pages for a simple product; expand where needed.
+Blank fields are unresolved. This is not product approval or certification.
+
+PART 1 — WHAT MUST WORK, AND WHAT MUST FIT
+Product / intended users and use:
+Product, model and drawing revisions / date:
+Scope, interfaces, exclusions and qualified reviewers:
+
+Soren drafts this review from project records and specialist input.
+Customer needs / requirements (repeat for each significant need):
+ID / customer wording / source:
+Agreed measurable target and use conditions (unknown if not agreed):
+Design feature or characteristic that addresses it:
+Verification method / acceptance criteria:
+Actual evidence and revision / status / owner:
+Validation with intended users / result or remaining work:
+Conflicting or deferred input / reason / agreed decision:
+
+Fit and manufacture:
+Critical interface / functional minimum and maximum clearance:
+Dimensions, geometric controls and datums / units:
+Worst-case tight and loose stack / assumptions / result:
+Allowance for environment, coating, movement and wear:
+General tolerance convention and edition / explicit exceptions:
+Supplier capability and inspection method / evidence:
+Edges, radii, walls, cores, draft, tool access and assembly sequence:
+Wrong-way assembly prevention / incorrect attempts to test:
+
+PART 2 — HOW IT COULD FAIL, AND WHAT WE WILL DO
+Copy this block for each significant failure mode:
+Risk ID / linked CTQ and requirement / design or process scope:
+Function / failure mode:
+Effect on user and system / severity and rationale:
+Possible cause / likelihood and evidence or uncertainty:
+Existing prevention / evidence:
+Existing detection / escape likelihood and evidence:
+Priority and rationale; serious safety effects reviewed explicitly:
+If formal ratings are used: defined scale, S / O / D / required method:
+Possible routes around or through / person or expertise that could help:
+Question to carry into the next relevant conversation:
+What can continue now / affected activity only if a limit applies:
+Action to prevent or reduce the problem:
+Owner / due date / status:
+Planned effectiveness test and acceptance criteria:
+Actual result / exact tested revision / evidence location:
+Remaining risk / revised assessment / reviewer and decision date:
+
+For an observed failure also record:
+Symptom / expected behavior / affected units / containment:
+Conditions where it happens and does not / recent changes:
+Measurement checks / hypotheses / tests / confirmed contributing causes:
+Corrective action / repeat and regression tests / recurrence monitoring:
+
+Linked control plan: process step, characteristic/limit and source, prevention,
+measurement, sampling/frequency, owner, result record and reaction plan.
+Unknown details remain proposed/unresolved; actual evidence is separate.
+Templates: critical-quality.csv and control-plan.csv beside this file.
+
+Review summary:
+Open safety issues and limits on the next activity:
+Roadblock-list links / opportunities to follow up:
+Next useful action that moves the project forward:
+Actions and dependencies to send to Soren:
+Responsible reviewer / next review date and change triggers:
+Do not lower a rating or close an action without supporting evidence.

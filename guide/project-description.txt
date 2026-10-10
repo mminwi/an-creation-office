@@ -1,0 +1,75 @@
+The project description: what fact-finding delivers. Revision 1 — October 7, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Goes with: sop-stages.txt (S0 FACT-FINDING and BASELINE), sop-resource-map.txt
+
+WHAT IT IS
+One written description of the product and the project, in plain words, with the sections below. It is not a form to fill in. It reads like a description someone could hand to a partner, a supplier or a backer and they would understand what this is, what it has to meet, and what happens next.
+When every section meets its "done when", fact-finding is done. The analyst writes it from the intake, screening, resource map, searches and baseline. The inventor reads it on a review page and decides go, hold or drop.
+
+Size it to the project's level. A simple product's description can be two pages. A medical device's will be much longer. Same sections either way.
+
+An honest gap counts as an answer. "Not decided yet, for now, we'll come back to it on <date>" meets "done when". A blank section does not.
+
+Each version is saved as its own dated file and review page. A later version never replaces an earlier one. Every file is the full 12 sections, each with its done-when line, ending in their go, hold, or drop. An addendum is not a version.
+
+THE SECTIONS
+
+1. THE PRODUCT
+What it is, what problem it solves, who uses it, where, and how it works, in a paragraph or two. The stage it's at (idea, sketch, model, working).
+Done when: someone who has never seen it could explain it back.
+
+2. WHAT MAKES IT YOURS
+The half-dozen things that make it this product: the mechanism, the user, the hard limit, what you came up with. Never write that it is new, unique, first or patentable. Write what the inventor came up with, and what a search found (similar products, and how theirs differs, in the inventor's words).
+Done when: the few "yours" items are listed and the similar products found so far are named.
+
+3. SPECIFICATIONS
+The few things that must be right: size, weight, strength, environment (wet, hot, dropped, vibration), performance, life, look. Proposed numbers are marked "proposed"; unknown ones "not set". The quality bar for the first date (looks right, works, or ready to sell).
+Done when: the must-be-right list exists, each with a number, "proposed" or "not set".
+
+4. STANDARDS AND RULES TO MEET
+The project level (simple, moderate, heavy) and why.
+Follow: each standard, rule or certification this product has to meet, with the answer that pulled it in, what it asks of this product (tests, records, labels), and its lead time.
+Recommend and mention: programs worth knowing about, a line each.
+Parked: what was left out, with the reason (no radio, so no FCC).
+The industry search and the recall search: what was searched, the date, what turned up.
+Done when: every follow item has a reason and a lead time, the parked list has reasons, and both searches are recorded.
+
+5. VOLUME AND COST
+How many: the first batch, the first year, and later if they have a guess. Estimated cost to make one at those quantities, from the rough parts list. The price they picture. The money needed to start making it, and where it would come from.
+Done when: each has a number, a range, or "not set" with what would set it.
+
+6. BUSINESS PLAN
+What they plan to do with it: sell the idea (license it) or make and sell it, or both. Company or not, and why (the liability question). Product liability insurance. Money: their own, or someone else's, and what that brings with it. Who does what.
+Done when: the route is chosen or marked "for now", and the company, insurance and money decisions are recorded in their words.
+
+7. MARKETING PLAN
+Who buys it and who uses it, if different. Whether real buyers have seen it or said they want it. What already sells that does the same job. Where it is sold first (friends, own site, marketplaces, stores, an industry buyer, outside the U.S.). How people will hear about it.
+Done when: the first buyer, the first channel and the competitors are named, and what buyers have actually said is recorded (or "nobody has seen it yet").
+
+8. PATENT PLAN
+The decision: file, don't file, or not decided yet. If filing, the route (package for an attorney, free help, file it yourself). What a quick search found: is anything close, and is anyone's live patent in the way of selling it. The disclosure check: every date it will be shown, published, offered or sold, and whether something is filed or an NDA is in place before then.
+Done when: there is a decision or a "for now" with a date, the quick search is recorded, and every disclosure date on the timeline has its check.
+
+9. TIMELINE
+The inventor's dates: see it working, show it, talk to a buyer or supplier, sell it. The rough budget. Ask, in these words: If a date slips, which do you keep: the date, the money, or how well it works? Do not use the word hold for this. Hold already means go, hold, or drop. If another procedure says which to hold, ask this instead. Record the answer. A go, hold, or drop does not answer it. Working backward: each follow item and each next stage with its lead time and latest start. Any lead time that misses a date is flagged.
+Done when: the dates and that keep answer are recorded. If this was not asked, the timeline section is not done. Every follow item has a latest start date.
+
+10. QUALITY AND TEST PLAN
+The first quality plan at the project's level: the simple FMEA (what can fail, how bad, what we do about it, seeded from recalls on similar products), the features that need the closest control, and a simple control plan. The first test plan: at least back-parking-lot testing (use it hard, write down what broke), plus any lab or formal tests a follow item needs.
+Done when: both exist at the project's size, even if they're a page each.
+
+11. RISKS
+One line each: what could go wrong, what it would cost, when it would bite, and how much time is left to act. Product risks and business risks on the same list. Every follow item ends here, even if its line says "nothing to worry about".
+Done when: every follow item and every flagged timeline miss has a risk line.
+
+12. OPEN QUESTIONS AND THE DECISION
+What is still open, each with a revisit date or the event that will answer it. The resources offered for discussion and which ones they took up. Then the inventor's decision: go, hold, or drop, with the date and their reason in their words.
+Done when: the decision is recorded.
+
+WHO DOES WHAT
+The analyst writes it, fills what is known, and turns gaps into questions on tickets. Soren shows it on a review page, walks through any section they want, and records the decision. The inventor reads it and decides. Nothing in it is filed, sent or shown to anyone else without the inventor.
+
+FILES
+Soren's files/project-description/YYMMDD-HHMM-project-description.md (the master, one file per version)
+Your files/Project description/ (the inventor's format, one file per version)
+A review page for each version.

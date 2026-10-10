@@ -1,0 +1,12 @@
+Review record. Template. Save as a dated file: YYMMDD-HHMM-review-<stage>-<revision>.
+Project:
+Stage and round: (S1 industrial design / S1 CAD / S2 prototype / S3 tooling / S4 qualification)
+Revision reviewed: (C1, X3, A...)
+Date:
+Who took part: (the inventor; someone with manufacturing in mind; others and their role)
+What was looked at: (files, parts, test results; compliance matrix lines by ID)
+Results: (passed / not passed / learned, one line each, with the matrix IDs)
+Cost and timeline: (BOM and part cost estimate, tooling estimate, spent so far vs budget, timeline change; which corner moved)
+Actions: (what changes next, who, by when)
+Decision: (loop again / next kind of pass / approve to build / freeze / ready to qualify / approved; at a stage exit: go, hold or drop)
+Reason, in the inventor's words:

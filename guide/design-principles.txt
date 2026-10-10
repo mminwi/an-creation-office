@@ -1,0 +1,166 @@
+DESIGN PRINCIPLES: PEOPLE, FORM AND USE
+Revision 1 — September 30, 2026
+https://ancreationoffice.com/design-principles.html
+
+A DESIGN LENS, USED WHEN IT HELPS
+
+These principles add the human side to the product-development process. The design role uses them when comparing concepts and shaping the experience; the engineering role connects them to requirements, interfaces and risks; the prototype role gathers prototype evidence; Soren coordinates the next useful step. Keep the reasoning in the background and explain what matters to this idea. A person can start with a rough description without completing a design questionnaire.
+
+Design reviews begin while customer needs become concepts and engineering requirements. They continue through refinement, prototype trials and production decisions. Use-error findings feed the risk analysis, including design FMEA where appropriate; foreseeable misuse and combined hazards may need additional analysis. Link existing need, requirement, risk and test IDs rather than creating an isolated scoring exercise.
+
+ESTABLISHED DESIGN FOUNDATIONS
+
+Rams's principles ask whether a design earns its place in someone's life: useful purpose, coherent appearance, understandable operation, restrained complexity, honest presentation, lasting quality, care in the details and attention to environmental effects. Innovation should improve the product rather than merely make it different. These are thoughtful review prompts, not universal formulas or a test certificate.
+
+Norman's interaction ideas help separate what a person can do from the cues that tell them where and how to do it. A signifier communicates an action; an affordance concerns an action that is possible. Review how controls relate to results, how the person knows what happened, and whether they can form a useful understanding of operation. A cue that seems obvious to the designer may still confuse the user.
+
+NC State's universal-design framework considers equitable access, flexible ways to use a product, simple operation, information people can perceive, tolerance of mistakes, manageable effort and enough space to approach and operate it. Use these lenses with intended users and task evidence; the presence of a feature does not establish accessibility for everyone.
+
+Industrial design brings form, function, making and the user's experience together. Research users, explore genuinely different concepts, refine with trials, choose with evidence, and coordinate models and drawings with engineering and suppliers. Return to earlier choices when learning changes them. IDSA provides a professional overview; the sequence here is an AN Creation working synthesis, not a mandatory textbook standard.
+
+Human-centered methods from Design Kit can help organize interviews and prototype learning. Circular-design methods can help investigate repair, reuse, disassembly and material recovery. Record realistic options and tradeoffs, including available recovery systems; a recyclable material alone does not prove that the whole product will be recovered.
+
+ERGONOMICS AND PHYSICAL FIT
+
+Consider the complete task: grip, reach, clearance, posture, operating force, repetition, duration, fatigue, clothing, gloves, assistive devices and the use environment. NIOSH's occupational ergonomics guidance is useful background, particularly for workplace products and tools. It does not set one approved handle size or force for every invention.
+
+State the intended population and the dimension being designed. Reach may be limited by smaller users, clearance by larger users, and an adjustable grip by several interacting dimensions. A person is not at the same percentile for every body measurement. Do not assume a 5th-to-95th-percentile target on one dimension accommodates 90% of users across a whole product.
+
+ANSUR II provides military anthropometric background; it is not a representative general-public dataset. Check the population, measurement definitions, units, clothing assumptions, provenance and access terms before using data. Choose relevant evidence for the people who will actually use this product, then verify fit and effort through suitable prototype trials. Do not invent percentiles, dimensions or measurements.
+
+PRACTICAL DESIGN REVIEW
+
+Reuse the existing People, use and ergonomic design check sheet and project records. The prompts below are a companion, not a second mandatory gate. Review the areas relevant to the current decision; record not applicable with a reason and leave unknown facts open.
+
+For each area, save the concept and exact revision, related need/requirement IDs, status, evidence and its limits, linked risk/test IDs, action, owner and review date. Distinguish a designer's judgment, a source-derived assumption and an observation from a user trial. Keep sketches and concept comparisons in product/concept/; linked requirements, risk reviews and test evidence stay in their assigned subject folders.
+
+If a 1–5 rating helps compare alternatives, define the scale and priorities before scoring, include the supporting evidence, and leave unsupported ratings unresolved. A low rating can flag an action; a high average cannot cancel a serious hazard or failed requirement. Do not present a score below 3 as a universal engineering threshold.
+
+A useful review request is: Compare the concepts against the relevant design areas. For each judgment, cite the actual evidence or mark it untested. Link gaps and use-error scenarios to the existing requirements, risk analysis and prototype/test plan. Identify the next small trial that would resolve an important uncertainty.
+
+DP-01 — Usefulness
+Which user need does each feature serve, and what can be simplified without losing required function?
+Source: https://www.vitsoe.com/us/about/good-design
+
+DP-02 — Simplicity
+Can parts, controls or steps be removed while preserving safety, service and accessibility?
+Source: https://www.vitsoe.com/us/about/good-design
+
+DP-03 — Understandability
+Can intended users recognize what to do from form, cues and a coherent explanation of operation?
+Source: https://jnd.org/opportunities-and-challenges-for-touch-and-gesture-based-systems/
+
+DP-04 — Mapping and feedback
+Do controls relate clearly to their effects, and do users perceive relevant changes or failure to act?
+Source: https://jnd.org/opportunities-and-challenges-for-touch-and-gesture-based-systems/
+
+DP-05 — Constraints
+Can foreseeable incorrect actions be prevented or detected before causing harm, without obstructing correct use?
+Source: https://jnd.org/opportunities-and-challenges-for-touch-and-gesture-based-systems/
+
+DP-06 — Tolerance for error
+What happens after an accidental action, and how can the person recover or reach a safe state?
+Source: https://design.ncsu.edu/wp-content/uploads/2022/11/principles-of-universal-design.pdf
+
+DP-07 — Physical effort
+Are force, posture, sustained holding, repetition and fatigue suitable for the actual task and users?
+Source: https://www.cdc.gov/niosh/ergonomics/about/index.html
+
+DP-08 — Fit and reach
+Are grip, reach, clearance and adjustability justified for the intended population, including clothing and aids?
+Source: https://www.openlab.psu.edu/ansur2/
+
+DP-09 — Perceptible information
+Are essential cues usable with relevant sensory differences, lighting, noise and foreseeable distraction?
+Source: https://design.ncsu.edu/wp-content/uploads/2022/11/principles-of-universal-design.pdf
+
+DP-10 — Users and environment
+Are intended users, experience, tasks, training and use conditions stated rather than assumed?
+Source: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-engineering-medical-devices
+
+DP-11 — Use-error scenarios
+Which interface or task conditions could lead to harmful mistakes, and where are the risks and actions recorded?
+Source: https://webstore.iec.ch/en/publication/21863
+
+DP-12 — Honesty
+Do form, labeling and proposed claims match what the design and evidence actually support?
+Source: https://www.vitsoe.com/us/about/good-design
+
+DP-13 — Durability
+Will function, appearance and useful life hold up under expected wear, cleaning, maintenance and repair?
+Source: https://www.vitsoe.com/us/about/good-design
+
+DP-14 — Lifecycle
+Have materials, replaceable parts, disassembly, reuse and actual end-of-life routes been considered?
+Source: https://www.ellenmacarthurfoundation.org/circular-design-guide/overview
+
+DP-15 — Detail
+Are consequential dimensions, finishes, edge treatments and tolerances justified and coordinated with engineering?
+Source: https://www.idsa.org/about-idsa/advocacy/what-industrial-design/
+
+DP-16 — Validation
+Have representative users tried the relevant tasks on the specified revision, with observations and open issues recorded?
+Source: https://www.designkit.org/
+
+BUILD TO LEARN, THEN VALIDATE THE USE
+
+Use early sketches, mockups and prototypes to investigate a question before expensive refinement. Observe representative users performing real tasks; record confusion, mistakes, workarounds, effort and unsuccessful attempts as well as successful use. A prototype's missing functions or different materials can limit what the trial proves.
+
+Define the intended users, conditions, tasks and acceptance criteria before a final validation. Record configuration, training, participants, methods, observations, deviations and results. Tie findings back to the requirements and use-related risks; redesign and repeat affected checks when necessary. Use safe, appropriate methods and qualified review for tasks with a material hazard.
+
+IEC 62366-1 concerns safety-related usability engineering for medical devices. Its public catalog is not the full licensed procedure, and general inventions do not automatically fall under that standard. FDA's human-factors guidance has medical-device validation participant recommendations; a number such as 15 per distinct user population is not a universal testing rule or proof of adequate coverage. Select and justify the evaluation for the product, risk, users and applicable requirements.
+
+SOURCES AND ACCESS
+
+Original AN Creation synthesis based on Mike's September 30, 2026 design-principles outline. Primary public guidance and catalog scopes checked September 30, 2026. No paid standard, textbook chapter or third-party template was acquired or reproduced.
+
+Read the relevant current source when applying it and save its URL, edition or revision where applicable, checked date and relevance with the project. Catalog scope and a resource listing do not mean the full standard or dataset was read. Keep design philosophy, occupational guidance, population data and regulated medical-device procedures distinct.
+
+Vitsœ — Dieter Rams: good design
+https://www.vitsoe.com/us/about/good-design
+Design philosophy prompts, not numerical acceptance criteria or proof of product performance. Checked 2026-09-30.
+
+Don Norman — Interaction, signifiers and feedback
+https://jnd.org/opportunities-and-challenges-for-touch-and-gesture-based-systems/
+The article discusses touch and gesture systems; adapt the interaction ideas to the actual physical product and test them. Checked 2026-09-30.
+
+IDSA — What is industrial design?
+https://www.idsa.org/about-idsa/advocacy/what-industrial-design/
+A profession/process overview, not a prescribed six-stage standard or validated engineering package. Checked 2026-09-30.
+
+NC State — Principles of Universal Design
+https://design.ncsu.edu/wp-content/uploads/2022/11/principles-of-universal-design.pdf
+Design guidance from the originating institution; it is not accessibility certification or proof that every user is accommodated. Checked 2026-09-30.
+
+NIOSH — Ergonomics overview
+https://www.cdc.gov/niosh/ergonomics/about/index.html
+Occupational guidance; adapt it to the intended users, product and exposure rather than assuming consumer-product clearance. Checked 2026-09-30.
+
+Penn State OPEN Design Lab — ANSUR II
+https://www.openlab.psu.edu/ansur2/
+US Army sample, not a representative civilian population. Read variable definitions, population and dataset terms; validate fit with intended users. Checked 2026-09-30.
+
+IEC — IEC 62366-1 usability engineering
+https://webstore.iec.ch/en/publication/21863
+Public catalog summary only; paid full standard not read or reproduced. Confirm applicable edition/amendments; do not impose medical-device compliance on unrelated products. Checked 2026-09-30.
+
+FDA — Applying Human Factors and Usability Engineering to Medical Devices
+https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-engineering-medical-devices
+Medical-device guidance. Its validation participant recommendations are context-specific, not a universal product-testing sample size. Checked 2026-09-30.
+
+Ellen MacArthur Foundation — Circular Design Guide
+https://www.ellenmacarthurfoundation.org/circular-design-guide/overview
+Methods to investigate; do not claim circularity, recyclability or sustainability without evidence for the product and its actual recovery route. Checked 2026-09-30.
+
+IDEO.org — Design Kit
+https://www.designkit.org/
+Select methods for the current question. Workshop outputs and positive reactions are not proof of demand, safety or production readiness. Checked 2026-09-30.
+
+WORKSHEET
+https://ancreationoffice.com/design-principles-review.csv
+Existing ergonomics sheet: https://ancreationoffice.com/check-sheets.html#ergonomics
+Use alongside https://ancreationoffice.com/product-development.txt and the existing design-risk and test-planning records.
+
+BEGIN ADVANCE NOW
+Advance Now: help the inventor take a useful step today. Treat risk analysis as a list of opportunities to investigate, questions to ask and routes around or through a problem. Ordinary uncertainty, cost, imperfect ergonomics and unanswered checklist items do not automatically stop or slow the whole project. Keep analysis proportionate; do the useful authorized work available now. Look for a smaller experiment, an existing part, a different material or process, a revised design, staged help, a lower-cost route or someone with relevant experience. Keep a short roadblock list using existing issue IDs: concern and uncertainty, affected activity, possible workaround, question to ask, person who could help, owner, what advances now, revisit trigger and evidence/revision. Carry these questions into relevant conversations and handoffs. A later contact may reveal an easy solution or help carry the load; seek that opportunity without guaranteeing it. Do not turn every concern into a stop sign or end with a discouraging wall of risks. End with the next practical action. If one concrete activity needs a safety control, a disclosure decision, permission or a required review, identify that exact activity and keep progressing on other useful work or a safer route. Keep the evidence honest and preserve existing spending, sending, filing and publication authority. Do not insist on paid professional help before every preparation step: investigate available self-help and assistance routes. Do not promise that a later patent review can repair missing disclosure. Respect the person's choice to pause; never invent completion. Supervisors pass this same posture to temporary helpers. Read https://ancreationoffice.com/advance-now.txt for examples and the shared roadblock-list workflow.
+END ADVANCE NOW

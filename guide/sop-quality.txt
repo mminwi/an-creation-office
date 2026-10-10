@@ -1,0 +1,41 @@
+SOP: Quality-planning series. Revision 2 — October 1, 2026.
+NOTE, October 6, 2026: this procedure was written when Soren did the work himself. It is now read by the analyst. Where it says Soren takes a role, calls or forms a Grok Build session, or writes the sheets, read: the analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
+Index: https://ancreationoffice.com/sop.txt
+Read this when the work is customer desires, a specification, failure modes, a control plan, or a test plan. The role is engineering. Soren keeps the inventor conversation and calls the sessions.
+
+This series stays together. One item runs through every sheet. A customer desire that the operator can tell the battery is adequate becomes a battery indicator on the specification, a failure mode that the indicator is wrong, a test that the indicator works, and a control that the indicator is tested. The item id stays the same. Splitting those sheets across sessions makes each session rediscover the item.
+
+Form sessions with https://ancreationoffice.com/sop-hats.txt and record each session id in plan.md.
+
+Create the integrator session when the first specification item exists. It is the mid-level engineering session. It does not replace Soren, and it does not talk to the inventor.
+
+Create an area session when that area has its first real item. Typical areas are separate when their items rarely rewrite each other: device enclosure, control circuit, clamping mechanism, holding mechanism, storage case. About twenty to thirty related items belong in one area session. A new requirement that does not fit an area is a reason to open this procedure again and add or split a session.
+
+All five write on the same official sheets. Each area uses its own item ids. The enclosure session edits enclosure rows. It does not retype the circuit rows.
+
+The integrator owns the rows that exist only because two areas meet. A clamp load that bends the enclosure and unseats a connector is an integrator row. No single area will write it. The integrator reads the edges and the rows that just changed. It adds the interface failure mode and checks that the control plan and the test plan picked up the same item.
+
+This series always opens. Read the depth gate in https://ancreationoffice.com/sop-gateways.txt before the first sheet. A fishing lure may carry about five items and then stop. A power tool or an appliance usually stays near twenty to thirty. A complex machine can run much longer. Do not give a simple product the long sheet.
+
+Run https://ancreationoffice.com/sop-checklists.txt before anyone talks about the sheet. The sheets are what make the assistant look. Without that pass, a problem such as a 100-piece minimum on a part for two dozen lures never gets found.
+
+The intern fills the sheet from the other forms. If every item is already covered and nothing turned up, say that in one sentence and offer to go over it. For example: we did a basic quality plan and an FMEA, and nothing came up. Do you want to go over it? If they say no, stop. The file stays, with the items and the note that nothing turned up. Do not open the sheet after that no.
+
+If something did turn up, mention that one thing in passing and ask what they want to do. For example: the hooks are sold in lots of 100, and this run is two dozen. They may say they are not worried. Then stop. Write on that row that it was brought up, what they decided, and that no further planning was wanted. Do not build a second-source search, a schedule, or a lecture around a concern they dropped.
+
+If they want it looked at, do that next step and no more until they ask. One finding, one sentence, one answer. The sheet keeps the finding either way, so a later pass can see that it was raised and what they chose.
+
+Call an area session when the inventor, or another session, changes that area. Call the integrator when an area changes a boundary, and again before the sheets are treated as current. The integrator sends a disagreement back to the two area sessions with the item ids. Soren tells the inventor only when a person has to choose. A wording fix inside one area stays in the session.
+
+After the integrator exists, leave this setup text. Keep only the standing block below in that session.
+
+STANDING CONTEXT FOR THE QUALITY INTEGRATOR
+
+You compare the area chains on the shared sheets. You add a row when two areas meet. You send a conflict back to those two sessions. You tell Soren only when the inventor must choose. Re-read the current sheets at the start of every return. If a new requirement does not fit an area, or an area is overloaded, read https://ancreationoffice.com/sop-hats.txt before you add or split a session. Do not redo an area’s rows yourself. Do not keep this setup procedure in context while you are only comparing.
+
+An area session’s standing context is the same idea, smaller. You own this area’s items from the desire through the test plan. You re-read your rows before you edit. You work a few items at a time and check them against the neighboring rows in your area. You flag an edge when your change can affect another area. You report the item, the change, and the unknowns to the integrator. If the work in front of you is a different subject, stop and tell Soren. He decides whether it is a new session.
+
+One lookup that will not be revised with the sheets is an intern. Use https://ancreationoffice.com/sop-interns.txt
+If Soren is missing, use https://ancreationoffice.com/sop-office.txt
+
+Done for setup when the integrator row and any area rows are in plan.md, the sheets exist, and each session is keeping its short standing block rather than this whole procedure.

@@ -1,0 +1,17 @@
+﻿Project,Concept / exact revision,Area ID,Review area,Review prompt,Related need / requirement IDs,Status / applicability reason,Evidence / source / exact revision,Optional rating / defined scale,Linked risk / FMEA IDs,Linked test IDs / evidence,Action,Owner,Review date / decision,Source URL
+,,DP-01,Usefulness,"Which user need does each feature serve, and what can be simplified without losing required function?",,,,,,,,,,https://www.vitsoe.com/us/about/good-design
+,,DP-02,Simplicity,"Can parts, controls or steps be removed while preserving safety, service and accessibility?",,,,,,,,,,https://www.vitsoe.com/us/about/good-design
+,,DP-03,Understandability,"Can intended users recognize what to do from form, cues and a coherent explanation of operation?",,,,,,,,,,https://jnd.org/opportunities-and-challenges-for-touch-and-gesture-based-systems/
+,,DP-04,Mapping and feedback,"Do controls relate clearly to their effects, and do users perceive relevant changes or failure to act?",,,,,,,,,,https://jnd.org/opportunities-and-challenges-for-touch-and-gesture-based-systems/
+,,DP-05,Constraints,"Can foreseeable incorrect actions be prevented or detected before causing harm, without obstructing correct use?",,,,,,,,,,https://jnd.org/opportunities-and-challenges-for-touch-and-gesture-based-systems/
+,,DP-06,Tolerance for error,"What happens after an accidental action, and how can the person recover or reach a safe state?",,,,,,,,,,https://design.ncsu.edu/wp-content/uploads/2022/11/principles-of-universal-design.pdf
+,,DP-07,Physical effort,"Are force, posture, sustained holding, repetition and fatigue suitable for the actual task and users?",,,,,,,,,,https://www.cdc.gov/niosh/ergonomics/about/index.html
+,,DP-08,Fit and reach,"Are grip, reach, clearance and adjustability justified for the intended population, including clothing and aids?",,,,,,,,,,https://www.openlab.psu.edu/ansur2/
+,,DP-09,Perceptible information,"Are essential cues usable with relevant sensory differences, lighting, noise and foreseeable distraction?",,,,,,,,,,https://design.ncsu.edu/wp-content/uploads/2022/11/principles-of-universal-design.pdf
+,,DP-10,Users and environment,"Are intended users, experience, tasks, training and use conditions stated rather than assumed?",,,,,,,,,,https://www.fda.gov/regulatory-information/search-fda-guidance-documents/applying-human-factors-and-usability-engineering-medical-devices
+,,DP-11,Use-error scenarios,"Which interface or task conditions could lead to harmful mistakes, and where are the risks and actions recorded?",,,,,,,,,,https://webstore.iec.ch/en/publication/21863
+,,DP-12,Honesty,"Do form, labeling and proposed claims match what the design and evidence actually support?",,,,,,,,,,https://www.vitsoe.com/us/about/good-design
+,,DP-13,Durability,"Will function, appearance and useful life hold up under expected wear, cleaning, maintenance and repair?",,,,,,,,,,https://www.vitsoe.com/us/about/good-design
+,,DP-14,Lifecycle,"Have materials, replaceable parts, disassembly, reuse and actual end-of-life routes been considered?",,,,,,,,,,https://www.ellenmacarthurfoundation.org/circular-design-guide/overview
+,,DP-15,Detail,"Are consequential dimensions, finishes, edge treatments and tolerances justified and coordinated with engineering?",,,,,,,,,,https://www.idsa.org/about-idsa/advocacy/what-industrial-design/
+,,DP-16,Validation,"Have representative users tried the relevant tasks on the specified revision, with observations and open issues recorded?",,,,,,,,,,https://www.designkit.org/

@@ -1,0 +1,10 @@
+Prototype control plan. Template. Write before building. Save as YYMMDD-prototype-plan-<revision>.
+Project:
+Build: (number, revision built, level: bench check / works-like / looks-like / works-and-looks-like / engineering / pre-production)
+The question this build answers:
+How it is built: (process, materials, who builds it, quantity)
+What gets measured or tested: (compliance matrix ID, the feature or test, method, pass level, how many units)
+Critical features on this build:
+What will be decided from the results:
+Estimated cost and time of the build:
+Results: (filled after: each line met / not met, the evidence file)

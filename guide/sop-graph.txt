@@ -1,0 +1,126 @@
+SOP: Which form opens next. The flowchart (a graph). Revision 4 — October 1, 2026.
+NOTE, October 6, 2026: this procedure was written when Soren did the work himself. It is now read by the analyst. Where it says Soren takes a role, calls or forms a Grok Build session, or writes the sheets, read: the analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
+Index: https://ancreationoffice.com/sop.txt
+Human page: https://ancreationoffice.com/sop.html#graph
+Read this when something just happened and a form might be due. Open only the nodes whose trigger is true. Then fill each one with https://ancreationoffice.com/sop-checklists.txt so the inventor sees the carried answers and is asked only what is still open.
+
+Before a side road opens, ask its gateway in https://ancreationoffice.com/sop-gateways.txt. A no, after the one required fact, leaves that whole road off.
+
+Call this the flowchart when you talk with the inventor. In technical terms it is a graph: each form is a node, and each arrow is an edge. It is not a single line everyone must walk. A box on the flowchart opens when its trigger happens. The arrow says which box can open next. A section stays off until its own trigger happens. A product with no circuit never opens the electronics section. Record the active sections in plan.md. Off means leave it alone, not “fill it in as not applicable.”
+
+After an answer is accepted, look at the edges leaving that node. Open the next node only when its trigger is now true and its sheet is not already current. A correction reopens that row and the nodes downstream of that row.
+
+A node is current when the decision it exists for is answered, accepted from an earlier sheet, or written down as unknown. It does not need every box filled. The inventor still sees the whole sheet.
+
+CORE
+
+project. Role: project. Sheet: check-sheets, project.
+Opens when the inventor describes an idea.
+Needs PROJECT-01 and PROJECT-02 answered or marked unknown.
+Edges: ergonomics if someone will handle or use it. quality-needs if something must be right. ip if anyone outside the project is about to be told. economics if price, volume, or a channel is mentioned.
+
+ergonomics. Role: design. Sheet: check-sheets, ergonomics.
+Opens while concepts are compared, and again when a person tries a prototype.
+Needs the user and the use, or an explicit unknown.
+Edges: quality-needs for anything that must change. prototype when a build is the way to learn.
+
+quality-needs. Role: engineering. Record: critical-quality.csv.
+Opens when a desire or a worry should survive onto later sheets.
+Needs one item id, the inventor’s words in the explanation, and who it is for.
+Edges: quality-requirements for each accepted item. An area session forms here when the items split into groups that trade off together. See sop-quality.txt.
+
+quality-requirements. Role: engineering. Record described in product-development.txt. No separate questionnaire yet.
+Opens when a need is accepted.
+Needs the requirement, its item id, and the need it came from. Unknown limits stay unknown.
+Edges: design-review once a concept is being compared with those requirements. quality-dfmea for each item that can fail. quality-test as soon as a requirement should be checked. dfm before anyone prices a prototype of it.
+
+design-review. Role: design. Sheet: design-principles.txt, rows DP-01 through DP-16, and the ergonomics check sheet where the body is involved.
+Opens when concepts are being compared, or a requirement has become a feature someone will see or hold. Same moment as the design loop (sop-stages S1). A later prototype trial opens DP-16 again.
+Needs the concept revision, the related need, and a note on each row that applies. A row that does not apply is marked with a reason. Use errors found here become causes on the design FMEA. Do not score the rows against a fixed cutoff. A serious hazard is not cancelled by the other rows looking fine.
+Edges: quality-dfmea. ergonomics when fit, force, or posture is the issue. quality-test for the trial that would settle an open row.
+If nothing new turns up, one sentence and an offer to look. If a feature serves no need, or a person can do the wrong thing, mention that one finding. A no stops the extra work. The worksheet keeps the review.
+
+quality-dfmea. Role: engineering. Method in design-risk.txt. No separate questionnaire yet.
+Opens when a requirement or a function can fail, or two areas meet.
+Needs the failure, the effect, and the item ids it came from. The integrator writes the row that only exists because two areas meet.
+Edges: quality-test. control-plan once the way of making it is known. Reopen requirements if the fix changes what the product is.
+
+quality-test. Role: prototype. Templates: test-plan-template.txt, test-matrix.csv, test-report-template.txt.
+Opens when a requirement has something to check. Start it while the requirements are forming, not after the build.
+Needs the item id, the method, and what result would count. A missing method stays open.
+Edges: prototype before the build. Reopen dfmea and requirements when a result contradicts them.
+
+dfm. Role: engineering. Sheet: check-sheets, dfm.
+Opens before a prototype quote, tooling, or a production design change.
+Needs the revision being quoted and the manufacturing questions that apply to its process.
+Edges: prototype. production. economics with the new cost. quality-pfmea when the process steps are known.
+
+prototype. Role: prototype. Sheet: check-sheets, prototype.
+Opens before each build, and again before a result is reported.
+Needs the question this build answers, the revision, and how the result will be judged.
+Edges: ergonomics if a person will try it. quality-test for the result. quality-requirements if the result changes the design.
+
+quality-pfmea. Role: engineering. Method in product-development.txt. No separate questionnaire yet.
+Opens when the steps for making or assembling it are known.
+Needs the process step and the way that step can cause a failure already on the design sheet.
+Edges: control-plan.
+
+control-plan. Role: engineering. Record: control-plan.csv.
+Opens when a quality item or a process risk needs a check during making.
+Needs the item id, the check, and what happens when the check fails. A limit that is not known stays proposed.
+Edges: production.
+
+production. Role: manufacturing. Sheet: check-sheets, production.
+Opens before supplier quotes are compared, a production order is placed, or the quantity jumps.
+Needs the revision and what the quotes must cover.
+Edges: economics. control-plan if the supplier changes the process. ip before drawings go out.
+
+economics. Role: funding. Sheet: check-sheets, economics.
+Opens before a price is chosen, a production quote is requested, or a sales channel is committed.
+Needs price, volume, and cost marked as answer, estimate, or unknown.
+Edges: funding if outside money is required. launch if the offer is ready to test. retail if the channel is a store or a marketplace.
+
+launch. Role: marketing. Sheet: check-sheets, launch.
+Opens while demand is being tested, and before a campaign or a launch promise.
+Needs who it is for and what evidence of interest already exists.
+Edges: retail if a named retailer or marketplace is the channel. ip before public claims.
+
+ip. Role: legal. Sheet: check-sheets, ip.
+Opens before a public showing, a supplier seeing the design, an investor packet, or a decision to file or keep a secret.
+Needs what the inventor wants to protect and what is about to be disclosed.
+Edges: none that force a filing. Soren, in the legal role, prepares. The inventor decides.
+
+SECTIONS THAT STAY OFF
+
+electronics. Off until the product has a battery, a circuit, software, wireless, a powered indicator, or anything else electrical.
+No electronics questionnaire exists yet. Until one is written, this section opens an area session under quality-needs and runs that area through requirements, failure modes, tests, and controls. It does not open for a purely mechanical product.
+
+funding. Role: funding. Sheet: check-sheets, funding.
+Off until a milestone needs someone else’s money.
+Needs the milestone, the amount, and who the packet is for.
+
+retail. Role: marketing. Sheet: check-sheets, retail.
+Off until Amazon, Walmart, Lowe’s, or another named store or marketplace is the channel.
+Needs the channel and the revision being offered.
+
+Area sessions for an enclosure, a clamp, a hold, or a case are not sections of their own. They are sessions inside the quality nodes, formed when that area has its first item. sop-quality.txt says when.
+
+NOT WRITTEN YET
+
+These nodes are real steps, and they do not yet have their own question sheet: requirements, design failure modes, process failure modes, and electronics. The records and methods exist. A later pass can add the questions. Do not block the project on a sheet that is not written. Use the record named above and the checklist pass on whatever questions already exist.
+
+WHERE THE LIBRARY SITS
+
+There are about 200 sources on 10 shelves. Do not add a box to the flowchart for each source. A source is not a question the inventor has to answer. The checklist is the question. The shelf is where the assistant looks while that box is open, and only for the item in front of it. One relevant source is enough. The rest of the shelf stays closed. Which branch of a shelf is still alive, and which Grok Build session to resume, is https://ancreationoffice.com/sop-routes.txt.
+
+- Project review. Shelf: Product, startup and project planning. Also the check-sheet shelf, which holds the questions rather than outside sources.
+- How people use it. Planning shelf, the parts about the user and the product. Standards shelf only if a safety rule is already in play.
+- What to protect. Shelf: Patents and legal help. Open it before a disclosure, not on day one.
+- Price, launch, and a store. Shelf: Customers and selling. The retail part of that shelf waits until the retail section of the flowchart is on.
+- Prototype and how it is made. Shelf: Prototypes and hardware, then Manufacturing and testing.
+- Tests, failure modes, and the control plan. Shelf: Manufacturing and testing, and Standards and specifications when a named standard applies. Military specifications stay closed unless the customer or the contract is military.
+- Electronics section. Shelf: Electrical and enclosures. Closed with the rest of that section when the product has no circuit, battery, or software.
+- Funding section. Shelf: Funding. Closed until outside money is the task.
+- Company or government section. Shelf: Company and government. Off until the inventor is forming a company or selling to the government. This section is not on the main flowchart yet.
+
+Done when plan.md names the active sections, every box whose trigger is true has been opened or listed as the next one, and every section whose trigger is false is still off.

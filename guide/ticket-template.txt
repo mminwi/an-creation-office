@@ -1,0 +1,35 @@
+PROJECT: <project name> (folder: <path>)
+TICKET T-<nnn>: <short title>
+Written by: analyst, <date>. Run by: Soren. Status: queued / active / waiting on analyst / closed / held
+Kind: follow-up (analyst writes the next ticket) / one-off (done is done)
+Queue position: <n> (full list in Soren's files/queue/QUEUE.txt)
+
+FILL
+Form: <e.g. Soren's files/forms/intake-001.csv>
+Needed: <field ids that must be answered; the rest are optional>
+Open with: "<the first thing Soren says>"
+Notes for the conversation: <tone, anything the inventor already said not to bring up, decisions to check in a line>
+Record each answer with its context (why, their words, a sentence or short paragraph). Speak from the answer; give the context only if they ask why.
+
+CALL (when the form is filled and confirmed)
+Tool: claude (else codex)
+Command: C:\AN-tools\claude.cmd -p --permission-mode acceptEdits --allowedTools "WebFetch WebSearch" "Read Soren's files/sop/analyst.txt and Soren's files/prompts/<prompt-file>.txt, then do the run."
+Run in: <project folder>
+
+EXPECT
+- <file 1, e.g. framework.md>
+- <file 2>
+- (follow-up only) Soren's files/queue/open/T-<nnn+1>-<slug>.txt with FILL, CALL, EXPECT and CHECK
+- This run's session folder has DONE.txt, every file in EXPECT is there, the promised next ticket exists, and the analyst reported no error or unfinished work. A changed QUEUE.txt alone is not done.
+- Mark any branch output with its condition (if yes / if no / if for now). A declined road never needs a ticket that opens it.
+- When the ticket moves folders, its Status line moves with it.
+- Soren's files/queue/QUEUE.txt updated
+- (one-off: EXPECT is just the result, e.g. "EIN letter saved in company/")
+
+CHECK
+- Every file in EXPECT exists and was changed today.
+- The new ticket has all four parts.
+If not: call once more, naming what is missing. If still not: tell the inventor it is taking longer, write it in plan.md, stop.
+
+TELL THE INVENTOR AFTERWARDS
+<one or two plain lines the analyst wants said, e.g. "It looks like the main things are the battery and keeping it dry. Next I'd like to ask a few questions about how it's used.">

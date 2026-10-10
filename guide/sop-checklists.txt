@@ -1,0 +1,46 @@
+SOP: Fill a checklist from what is already known. Revision 1 — October 1, 2026.
+NOTE, October 6, 2026: this procedure was written when Soren did the work himself. It is now read by the analyst. Where it says Soren takes a role, calls or forms a Grok Build session, or writes the sheets, read: the analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
+Index: https://ancreationoffice.com/sop.txt
+Read this when a checklist, questionnaire, or the next sheet in a series is about to be opened. An intern does the pass. The named assistant asks only what is still open.
+
+The inventor should say a thing once. Later paperwork picks it up. Opening a fresh sheet as thirty blank questions is the failure this procedure exists to prevent.
+
+The question library is https://ancreationoffice.com/check-sheets.txt and the worksheet https://ancreationoffice.com/check-sheets.csv . Use the sheet that matches the decision. Save the filled copy in that sheet’s subject folder. Do not write answers back onto the public blank.
+
+Send an intern across the project, not across one previous page. It reads plan.md, the concept note, earlier sheets, hat reports, and the explanation field on every answered row. Then it tries every question on the new sheet.
+
+Two fields on every row.
+
+Answer. The words that belong on the form. Short enough to read in the box. This is the field the inventor sees.
+
+Explanation. How that answer was reached. Quote the inventor’s words that matter. Name the earlier item id it came from. Say what was inferred. Say what must not be added. This field is kept and is not read back to the inventor unless they ask to see the reasoning. The next intern reads it first. Intent travels in this field. A short answer alone drops it.
+
+Status is one of these.
+
+- Carried. The project already answered it. Copy the answer forward and rewrite the explanation so it applies to this sheet.
+- Needs a look. It carried forward, but this sheet asks something the old wording does not quite cover. Show the carried answer and the one point to confirm.
+- Open. Nothing in the project answers it. This is a question for the inventor.
+- Conflict. Two records disagree. Show both, with their item ids. Do not pick one.
+
+The intern does not invent a customer, a price, a test result, or a limit. A guess stays open.
+
+If a quality sheet is already answered by the other forms and nothing turned up, say so in one sentence and offer to go over it. If the inventor says no, stop. The file remains the record. This is the usual result of a light quality pass.
+
+If the pass finds one practical problem, mention that problem in one sentence and ask what they want to do. A minimum buy, a lead time, or a part that does not match the quantity are that kind of finding. If they drop it, write that it was brought up and that they do not want planning around it. Then stop. If they want it looked at, take the next step they asked for. The sheets are what cause these findings to be looked for.
+
+Show the sheet when something on it still needs them. The filled boxes stay visible with the open ones. They should be able to read the carried answers and say that those are what they said. Accepting a row is enough. Do not ask that row again. Bring up a quality sheet only for the item that alerted.
+
+Report to the owner with the sheet, and no further.
+
+- Where the filled copy was saved.
+- How many rows were carried, how many need a look, and how many are open.
+- The open questions, the rows that need a look, and any conflict. A conflict shows both versions.
+- One line the assistant can say: “Twenty-four match what you already told us. Six still need an answer.”
+
+The named assistant asks one or two of those remaining questions at a time. A carried row the inventor accepts is finished. A carried row they correct is written down, and only the later sheets that use that row are updated. When an answer arrives, write the short answer and the explanation before the next question. The explanation includes the inventor’s words. Then the intern, or the owning hat, may apply that new answer to the rest of the open rows. A later sentence often closes another question. Do not ask it again.
+
+Moving down the series uses the same pass. The desire “the operator can tell the battery is adequate,” with an explanation that they want a glance and did not ask for a percentage, becomes the specification answer “a visible battery indicator.” The explanation on that row still says “adequate” was their word, so nobody turns it into a fuel gauge. The failure-mode sheet, the test sheet, and the control sheet start from that explanation. Each sheet should open with a handful of new questions, not the whole list.
+
+If the same sheet will be revised for weeks, the owning hat keeps it. The intern is the first pass and any later pass that only reads and proposes. Accepted rows belong to the hat. Follow https://ancreationoffice.com/sop-interns.txt for the intern brief, and https://ancreationoffice.com/sop-quality.txt when the sheet is in the quality series.
+
+Done when the filled copy exists, both fields are written on every carried or answered row, and the inventor has been asked only what the project could not answer.

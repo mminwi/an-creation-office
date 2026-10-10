@@ -1,0 +1,42 @@
+SOP: Qualification and production approval. Revision 1 — October 7, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Starts from: the end of the tooling loop (sop-tooling-loop.txt, sop-stages S3): the tool or process makes parts that match the CAD, and final specs are agreed.
+Goes with: sop-stages.txt (S4), the compliance matrix, the production control plan
+
+WHY THIS EXISTS
+Before real production starts, someone has to say: this maker, with this setup, makes good parts, and keeps making them. That is qualification. How much is done depends on what the product is and who is buying it. At the most basic level, you bless the manufacturer so they can go ahead and produce with what they have. At the heavy end (medical, aerospace, automotive) every piece of the setup is qualified and documented.
+This is APQP's product and process validation step. In the auto industry its package is the PPAP (production part approval process). Use the terms and explain them (D-040); size the work to the project.
+
+WHAT GETS DONE
+1. First article inspection (FAI). Parts from the real production setup, measured against every dimension and note on the drawing, with the results recorded. Done in the tooling loop on sample parts; here it is done on parts from the actual production setup, if anything changed since.
+2. First article testing. The compliance matrix tests that need production parts: function, fit with mating parts, drop and shipping, the tests a certification depends on. Sized to what the product is.
+3. Process trials (P-trials, a pilot run). After the T-trials have the tool right, run it at rate with the production people, process and checks. Does it hold quality and the specs run after run, not just on the first few parts? Measure the critical features across the run (process capability). Often one or two P-trials; settings that work are recorded as the production process.
+4. Qualify what needs it. Any and all of these can be qualified, depending on the product and the risk:
+   - the vendor (their quality system, their capacity, their paperwork);
+   - a machine or process (it holds the specs; settings recorded);
+   - a set of tooling (the tool makes good parts across the run);
+   - a manufacturing fixture (it locates and holds the part the same way every time);
+   - a measurement fixture or gauge (it measures right and repeats: gauge R&R, part of MSA).
+   At the basic level, this is one line: the vendor is approved to produce with what they have.
+5. Cost and timeline. Final part cost and tooling cost from the factory's figures, the released BOM, and the launch dates, compared with the estimates from the first round.
+6. Approve. The production approval package, at the project's size: FAI report, test results, pilot-run measurements, the qualifications done, the production control plan, the golden sample, and any certificates. The inventor approves; for a buyer who requires it (a retailer, an auto or aerospace customer), the package goes to them for their approval too.
+
+HOW MUCH, BY PROJECT LEVEL
+- Simple: the vendor is blessed after a first article check and a look at the first batch. One page.
+- Moderate: FAI report, key tests on production parts, a short pilot run with the critical features measured, gauges checked.
+- Heavy (medical, aerospace, automotive, a buyer who requires PPAP): the full package, each element qualified and signed, as the buyer or regulation requires.
+A buyer's requirements win over the default size.
+
+WHEN IT IS DONE: PRODUCTION APPROVED
+- First article inspection and testing are filed, within spec.
+- The pilot run held the critical features within spec.
+- Everything the project level calls for is qualified, and the record says what was qualified and how.
+- The approval package is assembled at the project's size, and the inventor (and any buyer who requires it) has approved.
+- The production control plan is in force and the golden sample is kept.
+After approval, a change to the vendor, a machine, a tool, a fixture, a gauge or a critical feature goes through change control and repeats the qualification it touches.
+
+DONE WHEN
+Production is approved and the approval package is in its dated folder. Next: launch (sop-stages S5).
+
+WHO DOES WHAT
+The manufacturer runs the parts, the measurements and the pilot run, and supplies their reports and qualifications. The analyst builds the checklist for this project's level, checks every report against the drawings, specs and compliance matrix, flags gaps, and assembles the approval package. Soren shows it on a review page and records the inventor's approval. The office never signs for the inventor or the buyer, and never approves payment.

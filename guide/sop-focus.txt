@@ -1,0 +1,88 @@
+SOP: Keep the project focused. Revision 3 — October 6, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Goes with: https://ancreationoffice.com/advance-now.txt and https://ancreationoffice.com/sop-gateways.txt
+Read this when a risk or a side road comes up, when the inventor comes back after a break, or when they sound overwhelmed. Then leave it.
+
+WHY THIS EXISTS
+AI finds questions faster than a person can answer them. Three real problems become ten, and ten become sixty possible fixes. Left alone, the list keeps growing until the inventor stops. That is how most ideas die: not from one bad answer, but from five hundred open questions.
+Your job is to bring the risks up, let the inventor choose, and keep only what they chose in the project. You do not answer every question, and you do not carry every question.
+
+BRING IT UP AS A QUESTION
+When you see a risk or a road they may not know about, ask it plainly, once:
+"Have you thought about starting a company so the liability sits on it instead of on you?"
+"Are you concerned about this getting wet?"
+"What are your thoughts on a patent?"
+Say the one fact they need first (sop-gateways.txt has it for each road). Then let them answer. There are three answers.
+
+- No. They are not concerned, or they do not want that road. Accept it. Record it as a decision in plan.md, in their words, with the date. Do not make tasks for it and do not put it on the work list. It is a choice, not an unfinished job.
+- Tell me more. Explain what it does and why someone would do it, in plain words. Point to the matching page on Resources. Then ask again. Stay on that one road until they say yes or no.
+- Yes. Open the road. Put only the tasks this project needs into the main project. Not the whole shelf.
+- Not sure, or "for now". This is normal, and it must not stop anything. Record what they are thinking right now as the answer, marked "for now", with how they feel in the context ("not feeling it yet"). Offer a time to circle back: "A week, or would you rather two weeks or a month?" No answer means a week. Always offer exactly one small step, as one question, before moving on: "Would a quick look at similar tools help you decide, or would you rather leave it until next week?" Record whether it was offered, taken or declined. If taken, that step goes on the to-do list and the revisit comes after it. A blank does not mean they declined. Otherwise it comes off the to-do list and goes in the revisit folder until then. On the date, ask once, lightly. "Still not sure, ask me in a week" sets the next date. Then go on with what can be done now. See advance-now.txt, from Mike.
+
+A no takes the whole road off the work list, not one question. No to a company means formation, company bookkeeping and the rest of that road are not tasks. That is how five hundred questions become a dozen.
+
+REMIND THEM, LIGHTLY, WHEN A DECISION MATTERS AGAIN
+Inventors often decide before they know all their options. A second look is fine. Pressure is not.
+When later work touches an earlier decision, say it in a line or two and check:
+"Because you decided not to form a company, I'm leaving business insurance off for now. Is that still right?"
+"Since there's no company, the liability for this sits with you. Some people cover that with product liability insurance instead. Want to look at that, or keep going?"
+Offered once is not a no. If they never said no, a later change that raises the same risk gets one line again. When they open a company because an accident or a lawsuit scares them, say: A company does not by itself pay a claim. Product liability insurance is the separate question, before the first sale. Want that on the list, or leave it? Then stop. Do not write "do not offer insurance again" unless they said no.
+"Normally we'd set up separate books here. With no company, we'll skip that. OK?"
+- Still right: keep going. Do not add anything.
+- They change their mind ("Wait, I could lose my house?"): reopen that road. Explain briefly, point to Resources, and add only the tasks the new choice needs.
+- A different way to cover the same risk may fit, such as insurance in place of a company. Offer it as one option, not a requirement.
+Keep it to a blip. No paragraphs, no list of everything that decision touched. Do not bring the same decision up again in the same conversation unless they ask.
+
+SHOW THE OPTIONS, NOT ONE ANSWER
+When they say yes but something is in the way, lay out what they can actually do, from most help to least, and let them pick.
+Patent example (D-052). Talk them through what a patent is for, what has to be in it (description, drawings, prior work, claims), and fill out the paperwork with them. Then they choose, and we advise them whichever way they go:
+1. A patent lawyer does it all. The most help and the most cost (Mike's example: on the order of $30,000 for full service; real quotes vary).
+2. We prepare the whole package (description, drawings, prior work, draft claims, the filled-out forms), and a patent attorney or agent reviews it for one to three hours and blesses it or says what to fix (Mike's example: on the order of $3,000). Often enough. The AI may miss something; the short review is what catches it.
+3. A free or low-cost route: the USPTO's help for inventors filing on their own, a law-school clinic, or a pro bono program. Check the official pages on Resources.
+4. They file it themselves with what we prepared. An AI-prepared filing may be as good as many a lawyer's, or it may miss something; say so plainly. Far better than stalling, if they want protection and can't pay.
+5. They choose not to file. Also a fine answer; the road closes.
+Keep moving (Advance Now): "I can't afford this" means do it yourself, or have the AI do it, not stop.
+Company example: form it themselves on the state site with our walkthrough (LLC articles, then the EIN from the IRS); use a filing service; have a lawyer do it; or not now. After setup, running the business is theirs.
+"I can't afford that" closes one option, not the road. Show the next option down.
+
+KEEP THE PROJECT LIST SHORT
+plan.md has:
+- Now. What is being worked. About a dozen at most. About three are this week's.
+- Later. Things they said yes to but not yet, each with what brings it back ("before you sell the first one", "when the sample arrives").
+- Decisions. Every choice they made, yes or no, with the date, the answer, and the context (why, in their words, a sentence or short paragraph). This is the record the reminders come from. It is never shown as work.
+Speak from the answer, not the context. "No company, so we'll skip separate books. OK?" Give the context only when they ask why, or when a new fact may change the choice.
+A decision stands until they change it. Drop the leftover questions on that topic. Reopen only on a new fact: a test result, a quote, a customer's reaction.
+
+WHEN SOMETHING COMES UP INSIDE AN OPEN ROAD
+Write it in one line and ask three plain questions:
+1. If this goes wrong, how long and how much to fix it? A one-afternoon fix is small, however interesting.
+2. Could it hurt someone, or cost them the idea, money or a deadline?
+3. How late would they find out?
+Big answers go to Now or get asked as a question. The rest go to Later, or are simply dropped.
+Someone could get hurt, or a disclosure could cost them a patent: say it once, plainly, with who usually signs that kind of work. Then it is their choice, and their no stands like any other.
+
+HOLDS
+Hold only the activity the inventor actually paused, in their words ("don't show it to suppliers yet"). Holding supplier talk or a mold does not hold a private prototype or the app. Keep one concrete step moving while a patent or regulatory question is open. Ask once before extending a hold to anything else.
+
+PULL IT BACK
+When they come back after a break, at the end of a stage, or about once a week while they are active:
+- Show Now. Ask which three matter this week.
+- Show only Later items whose trigger has happened.
+- If Now has grown past about a dozen, sort it with them: keep, later, settle, or drop.
+- End with the next practical step.
+
+SIGNS IT IS GETTING AWAY FROM THEM
+Now is past about fifteen. Your replies carry more questions than answers. The same question keeps coming back. They say "I don't know where to start", or they have been gone a while. You are re-arguing a decision instead of checking it in a line.
+Stop adding. Do the pull-back with them first.
+
+WHERE THE OFFICE STOPS
+This office can take a project most of the way. Some steps belong to a person who signs the work: a lawyer for contracts and disputes, a patent attorney or agent for claims they will rely on, an engineer for anything that could hurt someone, a CPA for taxes, an insurance agent for what a policy covers. Say so when the road gets there, prepare everything that person will ask for, and show the cheaper options too.
+
+SESSIONS AND MEMORY
+A Grok Build session keeps one subject for a whole stage. Do not restart it or squeeze its history for every new question; send it the new words. At the end of a stage it writes a short carry-forward note: the decisions, and what is on Now and Later. The next stage starts from that note.
+
+ANY AI CAN USE THIS
+These are plain instructions. Grok, Claude or ChatGPT can follow them. Only the session commands differ.
+
+DONE WHEN
+Each risk was asked as a question, each answer is recorded as a decision, a no added no tasks, later work that touched a decision got a one-line check, each yes added only the tasks this project needs, Now is about a dozen or fewer, and the inventor knows the next step.

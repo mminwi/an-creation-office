@@ -1,0 +1,4 @@
+ID,Opened,Action,Who,Why / from,Due,Status,Done how,Closed,Notes
+A-001,2026-10-08,Example: mail the signed NDA to the molder,You,Ticket T-004 (supplier contact),2026-10-12,open,,,Delete the example rows
+A-002,2026-10-08,Example: send the quote for 500 parts,Acme Molding,Email 261008-O-rfq-acme,,waiting,,,Nudge after a week
+A-003,2026-10-08,Example: draft the RFQ package,the analyst,Review 261007 S3 round 1,,done,RFQ package in Your files/Business,2026-10-08,

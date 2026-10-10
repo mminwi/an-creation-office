@@ -1,0 +1,12 @@
+Trial log (T-trial or P-trial). Template. One per trial. Save as YYMMDD-T1-<tool> or YYMMDD-P1-<process>.
+Project:
+Trial: (T0, T1... tool trial; P1, P2... process trial)
+Revision of part and tool:
+Date and place: (factory, machine)
+Settings used: (from the factory, as they give them)
+What happened, in order: (the narration goes here, written up by the AI; "second shot, the boss on the left is short, bumping pressure")
+Parts made: (how many, which kept for measuring)
+Measurements: (feature, compliance matrix ID, spec, measured values, in or out)
+Problems and what was changed:
+For P-trials: rate achieved, quality across the run, process capability on critical features
+Decision: (adjust tool / change design / another trial / ready)

@@ -1,0 +1,26 @@
+SOP: Launch. Revision 1 — October 8, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Starts from: production approved (sop-qualification.txt, sop-stages S4).
+Goes with: sop-stages.txt (S5), sop-change-control.txt, the compliance matrix, the production control plan
+
+WHY THIS EXISTS
+Approval is not the finish line. Launch puts the product in front of buyers honestly, with the paperwork they ask for. It is the last stage of the process.
+There is no formal feedback loop after launch (D-061). Most inventors make too few products for one to pay off, and the process itself is likely to be reinvented as AI improves before a feedback analysis would mean much. What stays is the duty below: if something goes wrong that could hurt someone, act.
+
+S5 LAUNCH ("Putting it out there")
+Trigger: production approved, and a price, a sale, a show or a store.
+What gets done, sized to the project:
+- First production order: quantity, price, delivery date, the inventor's yes. The office never places or pays for it.
+- Final packaging, labels, instructions and warnings, matching the released revision and every certification's labeling rules.
+- The buyer packet: spec sheet, instructions and warnings, test and certificate list, insurance certificate, tax form (filled by hand), vendor registrations, quote.
+- Listings and marketing from the marketing plan: only true claims, backed by test results and certifications.
+- The disclosure check one last time: anything about the invention still unfiled before it goes public?
+- Final cost and timeline against the first estimates, and what was learned (a short lessons note for the library).
+Gate: first sale or first showing done, with the first batch inspected per the control plan.
+
+IF SOMETHING GOES WRONG AFTER LAUNCH
+A problem that could hurt someone: stop shipping the affected units, say so plainly, and fix it through change control (sop-change-control.txt). Safety first; never delayed for paperwork.
+If a problem could seriously hurt someone, say so plainly and point to the reporting duty that may apply (for consumer products, CPSC; for medical devices, FDA). The inventor decides and reports; the office prepares the facts and never files for them. A professional is usually needed here.
+
+WHO DOES WHAT
+The analyst prepares the launch paperwork and checks it against the released revision and the certifications. Soren walks the inventor through it and records the decisions. The office never places orders, contacts customers, issues refunds, or files reports on the inventor's behalf.

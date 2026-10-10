@@ -1,0 +1,165 @@
+SOP: When a subject comes up. Revision 2 — October 1, 2026.
+NOTE, October 6, 2026: this procedure was written when Soren did the work himself. It is now read by the analyst. Where it says Soren takes a role, calls or forms a Grok Build session, or writes the sheets, read: the analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
+Index: https://ancreationoffice.com/sop.txt
+Human page: https://ancreationoffice.com/sop.html#routes
+Read this when the inventor mentions a subject, or comes back to one. Read "Hear it", "New session or the old one", and "The call" every time. Then read only the road that matched. Leave the other roads in this file.
+
+You are Soren. Take the one role this subject needs, collect what was just said, and ask one question. The Grok Build session does the looking up, the comparison, and the writing. Your chat does not keep that work. A chat that tries to hold every financing, every filing, and every failure line will forget the start and get in the way.
+
+HEAR IT
+
+1. Name the role and the subject. The role is one word: project, design, legal, engineering, prototype, manufacturing, funding, or marketing. The subject is the thing. "Funding, SBIR for the battery test." "Legal, provisional for the plate hinge." "Engineering, enclosure chain."
+2. If that road has a gateway and the gateway is still open, ask the gateway in https://ancreationoffice.com/sop-gateways.txt. Stay there while the answer is not sure. Do not create a session yet.
+3. A gateway no that already has its minimum fact in the explanation is closed. Confirm the row if they brush the subject. Leave the sources behind it closed. Do not resume a session on that road.
+4. They are changing an earlier no when they say they now want that road. Ask the gateway again, with the same minimum fact, and write the new answer.
+5. The road is on. You take that role and call the session. The inventor talks to you. You do not hand them to another bot.
+
+NEW SESSION OR THE OLD ONE
+
+Read the session table in plan.md. The table is the index. Session ids live there because you will not remember them.
+
+Resume the row whose Tracks is this same subject. Same filing, same deal, same area, same build. Use the session id on that row:
+
+grok --resume <uuid>
+
+Create a new session when no open row tracks this subject and the work will come back in a later conversation. The role is the one word. The subject is the thing. Write the row before the first task, status open. Start it with:
+
+grok --session-id <uuid>
+
+A second subject under the same role is a second row. Five financings are five funding sessions. A provisional and a trademark are two legal sessions. You stay Soren for all of them. The quality chain still groups the twenty to thirty items that change one another. One failure line is not a session. All of funding is not a session. Follow https://ancreationoffice.com/sop-hats.txt for the session id and https://ancreationoffice.com/sop-quality.txt when the series is desires through the test plan.
+
+A new session is also the right call when the new work would not change the items already in an open session. A grant does not sit inside an angel round. A wall thickness and a seal do sit together.
+
+One lookup that finishes today is an intern. Follow https://ancreationoffice.com/sop-interns.txt. No session row.
+
+When the inventor shuts a branch that already has a session, set that row to closed. Keep the session id. The papers stay findable. A closed row is not resumed. Setting it back to open is how the same subject returns, after the gateway is asked again. Do not add a second row for the same subject.
+
+THE CALL
+
+Send a short brief and then leave this procedure. The session re-reads its sheets before it writes. The sheets hold the work. A long session can compact and lose its start. The row and the sheets are how the work comes back.
+
+Role: the one word
+Subject: the name on the row
+Session: the uuid
+New words: what the inventor just said
+Rows: the sheet ids that are blank, or that these words contradict
+Next blank: the one to fill
+Source: the one source this chunk allows, or none
+
+The report comes back to you: which item changed, what is written, what is unknown, which other item was touched. You write what belongs in plan.md. You tell the inventor when a person has to choose. After the report, the form that opens next is the flowchart in https://ancreationoffice.com/sop-graph.txt.
+
+A source is a lookup for the session, while that chunk is open. The inventor is not walked through the shelf. One relevant source is enough. About 200 sources sit on 10 shelves. A no closes the bucket named on that road.
+
+TRADITIONAL PASSAGE
+
+Ask the related question at the moment it becomes true. One question. The stages in https://ancreationoffice.com/sop-stages.txt are the backup when the conversation has reached that point and the sheet is still untouched. The inventor does not hear a phase number.
+
+- They are describing the idea. Project sheet. Ergonomics if a person will hold or use it. Quality look at the depth already chosen. Water, if the story has outdoors, rain, washing, or submersion. Power, if they mention a battery, a wire, a circuit, or software.
+- The concept is clear enough to say what it must do. Requirements, the design review, the failure look, and the test look. An area session starts when those items split into groups that change one another.
+- Someone outside the project is about to see it. A supplier, a photograph, a post, a sale, a campaign, or an investor packet. Patent gateway, if that row is not already answered.
+- They talk about making one. Design for manufacture, the prototype sheet, and the test this build must show.
+- Quantity past the first try, tooling, packaging, shipping, or warehousing. Production and economics rows for minimums, packing, freight, storage, and landed cost. Retail packaging rules stay closed unless the store gateway is yes.
+- A price, a buyer, or a public claim. Economics, then launch. The store gateway if the channel is a big store or a marketplace. The funding gateway if the next step needs someone else's money.
+- A yes on outside money. Which deal, then that deal's session only.
+- A yes on a patent. The patent chunks below, one at a time.
+
+PATENT
+Gateway: https://ancreationoffice.com/sop-gateways.txt section PATENT. Role: legal. Sheet: check-sheets, ip. Shelf: legal, and only the chunk that is open.
+
+No, after the disclosure fact: the legal shelf stays closed. No patent session. If they will still show a supplier the design, the disclosure sentence in the gateway is the last thing said on this road.
+
+Yes. Ask the first chunk that is still open.
+
+1. What are they protecting? Rows IP-01 and IP-06.
+A secret they can actually keep: trade secret. Source uspto-trade-secrets. Session name "Trade secret — [thing]". The filing chunks stay closed.
+A name or a logo: trademark. Source trademark-basics. Its own session. A patent session is a different row.
+How it works: utility. Continue.
+How it looks: design. Source uspto-design. Continue. A provisional does not cover a design.
+Not sure: stay on this chunk.
+
+2. Has it already been shown or sold? Row IP-05. Record dates, audience, and revision. Source uspto-patent-overview. This is a fact on the same session. Leave any grace-period conclusion unwritten.
+
+3. Who does the research and the filing?
+Ask when they want to file, or when a lawyer or the cost comes up.
+Say this before a no on hiring can stand: You can file it yourself. Preparing the description, the drawings, and the claims with this office is enough to put a date on file, and that preparation is further along than an inventor used to be able to get alone. It is your filing. It is not an issued patent. If something important is left out, a later attorney cannot add it back as if it had been there.
+They will hire a practitioner: session "Practitioner packet — [thing]". Source patent-practitioners. Pro bono or a clinic if the cost is why they are hesitating and they still want a practitioner: patent-pro-bono, patent-law-school-clinics. The firm candidates on the shelf wait until they ask who to interview. In the legal role, you prepare the disclosure and the questions. You do not engage anyone, and you do not file.
+They will not pay a practitioner, and they still want a date on file: session "Inventor filing — [thing]". The office helps them prepare. They file. Sources uspto-provisional for a utility that needs a date, patent-basics, and patent-public-search for a first look. patent-resource-centers if they want a person who can show the search tools. uspto-inventor-hub is the map of those routes. A first look is not a patentability opinion.
+Not sure: stay on this chunk. One session, not both.
+
+4. On the open filing session, these are blanks in that same session. Ask the one that is in the way.
+What is new. IP-02. Their words. A vague idea stays a vague idea.
+What is already out there. IP-03. Source patent-public-search. Save document numbers. A search is not proof.
+Who contributed. IP-04. Inventorship, ownership, and shares are different facts.
+Drawings. Ask whether this filing has drawings it can use. Missing: the design role's concept revision supplies the figures that exist, and this session lists the views still missing. It does not become the drawing session. Present: record that revision.
+Claims. Ask whether the boundaries are ready to draft. Not yet: the description and the drawings can still be prepared, and the claims row stays open. Ready: this session drafts proposed claims for the inventor to review. A self-filed set is still the inventor's filing. Nothing is filed until they say so.
+
+5. Could making or selling it step on someone else's rights? IP-07. Ask when making, selling, or that question itself is in front of you. Same session if it is the same product. Source uspto-patent-overview. A patent is an exclusion right. It is not permission to make or sell.
+
+FUNDING
+Gateway: OUTSIDE MONEY. Role: funding. Sheet: check-sheets, funding, plus the economics rows the amount depends on. Shelf: funding, one deal's sources.
+
+No: the funding shelf stays closed. Economics can still run. No funding session.
+
+Yes. Rows FUNDING-01 and FUNDING-02. One session per deal. A later deal is a new row, even while the first deal is open.
+
+Their own money: record it on the economics session. The funding shelf stays closed.
+A loan: "Loan — [lender or purpose]". Source sba-lender.
+A grant or SBIR: "Grant — [program]". Sources sbir, grants-search, sba-grants, and the solicitation they named.
+Angels or another seed round: "Angels — [round or group]". Sources angel-groups. A named group only if they named that group. sec-ready and sec-early-investors when the offer may be a security. Take the legal role before an offer is shared. Friends-and-family money is not automatically exempt.
+Rewards crowdfunding: "Rewards — [platform]". Source kickstarter-handbook. A public campaign is also a disclosure, so the patent gateway is answered before the page goes up. Securities crowdfunding is a different session and uses the SEC sources.
+A license: "License — [who]". The legal role if the license grants rights.
+
+A no on one deal closes that row. The other deals stay open. Your chat does not hold the packets. Each return resumes that deal's session id and feeds the new words.
+
+BUSINESS ENTITY
+Gateway: BUSINESS ENTITY. Role: legal. Shelf: business, the formation sources.
+
+No: leave sba-launch, sba-state-registration, usa-state-government, irs-ein, irs-start-business, irs-recordkeeping, and fincen-boi closed.
+
+Yes. One session, "Entity — [state]". Open sba-launch and the state registration page. EIN when they are ready to apply. Tax and recordkeeping sources when the entity exists. fincen-boi when the current page says the rule might apply. The session checks the current page. Insurance is a question you name for a broker. There is no insurance role beyond that question.
+
+GOVERNMENT CUSTOMER
+Gateway: GOVERNMENT CUSTOMER. Role: manufacturing. Take the legal role if the step is a registration. Shelf: contracting.
+
+No: sam-registration, apex-help, and dla-business stay closed.
+
+Yes. One session, "Government customer — [agency or product]". sam-registration and apex-help. dla-business only if that agency is the customer. A military specification opens through the named-standard gateway.
+
+A NAMED STANDARD
+Gateway: A NAMED STANDARD. Role: engineering. Shelf: quality and military, the one they named.
+
+No: ISO, IATF, IAQG, ISO 13485, and the military standards stay closed. The project's own quality sheets still run.
+
+Yes. One session per named standard. "ISO 9001 packet" and "MIL-STD-810 plan" are different sessions. Open only that standard's source.
+
+WATER AND SEALING
+Gateway: WATER AND SEALING. Role: engineering. The enclosure area session, if that row exists.
+
+No: iec-60529 and nema-enclosures stay closed. Buttons can stay simple.
+
+Yes. Carry the rating into the requirements. Source iec-60529 for the duty they named. The rest of the electrical shelf stays closed.
+
+POWER
+Gateway: POWER. Role: engineering. This is an area session under the quality series.
+
+No: the electrical shelf stays closed.
+
+Yes. Session "Electrical — [the part they named]". A battery indicator uses the electrical sources for that indicator. Radio or wireless opens fcc-modules and fcc-measurement. Mains power opens nfpa-70. A certification question opens the UL or IEC product standard they named. The other electrical sources stay closed.
+
+A STORE OR A MARKETPLACE
+Gateway: A STORE OR A MARKETPLACE. Role: marketing. Shelf: retail, that channel.
+
+No: the retail group stays closed. Marketing on the launch sheet can continue.
+
+Yes. One session per channel. Amazon, Walmart, and Lowe's are different sessions. Open that channel's sources only. gs1-barcodes when a barcode is the blank. trade-representatives when they are hiring a rep.
+
+CORE, WHICH IS ALWAYS ON
+These follow the flowchart. The session rules above decide whether the work is a new row or a resume. The shelf slice is the one lookup.
+
+Project, ergonomics, and the quality chain. Planning shelf, the group for that node. The project role keeps the plan. Design covers how a person uses it. Engineering covers the quality chain. Failure-mode method sources, such as asq-fmea and design-risk-guide, open while those rows are being written. Standards stay behind their gateway.
+Prototype. Prototyping and hardware groups, for the process they named. One session for one build question. A different question that will come back is a second prototype session.
+Production, design for manufacture, process failure modes, and the control plan. Making group, for the process they named. One part family is one manufacturing session. An unrelated family is a second session.
+Economics. Business-planning group, for the price or cost question in front of them. Role: funding.
+Launch. Marketing group, for the channel they named. ftc-advertising when a public claim is about to be made. Role: marketing. Retail stays behind the store gateway.
+
+Done when the subject is a resumed session, a new open row, an intern, or a recorded no. The inventor heard one question. Every closed chunk is still closed, and its sources were not opened.

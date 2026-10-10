@@ -1,0 +1,64 @@
+# Project plan
+
+Project: [name]
+Project folder: [full path from PROJECT.txt]
+Maintained by: Soren, project manager
+Last updated: [date]
+
+## Goal
+[What we are trying to achieve.]
+
+## Now
+[The next agreed action, its owner, and what finished means.]
+
+## Next
+[Agreed work to do after the current step.]
+
+## Later / ideas to discuss
+[Capture new ideas here. Mark proposals clearly; mentioning an idea does not approve it.]
+
+## Waiting / open questions
+[What is blocked, what is needed, and who will follow up.]
+
+## Decisions
+[Dated decisions, their reasons, who agreed, and links to supporting files.]
+
+## Done
+[Completed work, completion date, and a link to the result.]
+
+## Resume here
+[Where we stopped, what changed, and the next step.]
+
+## Phase (bots only)
+concept
+The inventor is not told this label. Assistants use it to know which sheets should already be started.
+https://ancreationoffice.com/sop-phases.txt
+
+## Active sections
+electronics: off
+funding: off
+retail: off
+A section stays off until its trigger in the flowchart (a graph) is true.
+https://ancreationoffice.com/sop-graph.txt
+
+## Sessions
+Grok Build sessions. Leave this table empty until a subject needs one.
+Resume with grok --resume and the session id. Do not resume the newest session
+in the folder when more than one session exists.
+
+Soren calls every row. The role is one word: project, design, legal,
+engineering, prototype, manufacturing, funding, or marketing. The subject is
+the thing, such as one grant or one filing. Status is open while that subject
+is live, and closed when the inventor shuts the branch. A closed row keeps its
+session id and is not resumed.
+
+| Role | Subject | Tracks | Session id | Call it when | Status |
+| --- | --- | --- | --- | --- | --- |
+| [one word] | [the thing] | [the series or the deal] | [uuid] | [the words that resume it] | open |
+
+## Task details
+For each task, keep a stable ID, description, owner, status, finish condition,
+and relevant file links. Add a due date only when one is agreed.
+Soren maintains this file. A session sends its report to Soren rather than
+editing it at the same time. Read the current file before making changes.
+Preserve unfinished work, completed evidence, and decision history.

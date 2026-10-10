@@ -1,0 +1,32 @@
+STATUS SHEET: one page, answers only. Rewritten by the analyst every run as "Your files/Status" (inventor's format) and "Soren's files/status.md".
+No stories, no reasons, no quotes. One line per item. The reasons live in the forms (context) and the plan. If it doesn't fit on one page, it doesn't belong here.
+
+<INVENTION NAME>: STATUS            updated <date>
+Stage: Product: <plain stage name>  |  Business: <company / protection / money / selling stages active, or none>  |  Rules: <regulatory stages active, or none>
+Next check-in: <date or "when you're back">
+
+WHERE IT STANDS
+<One or two sentences.>
+
+THIS WEEK (the short list, from the action log: your open actions, then what you're waiting on)
+1. <question or task>
+2.
+3.
+
+DECIDED
+- <topic>: <answer>        (one line each; "for now" items show their revisit date)
+
+MONEY
+Budget <amount> | Spent so far <amount> | Left <amount> | Next spend <what, about how much, or none>
+
+READY FOR YOU TO LOOK AT
+- <document> (<date>)      (drawings, pictures, forms, packets; nothing here has been sent or filed)
+
+COMING UP
+- <date>: <revisit or trigger>
+
+TOP RISKS (scores proposed until someone confirms)
+- <risk>: severity <n>, <status: being worked / parked until <trigger>>
+
+NOT DONE BY THIS OFFICE
+Nothing has been filed, sent, bought, registered or posted. <List anything the inventor said they would do themselves.>

@@ -1,0 +1,128 @@
+SOP: The design stage, a review loop. Revision 1 — October 7, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Starts from: the project description (project-description.txt), the deliverable of fact-finding.
+Goes with: sop-stages.txt, sop-review-page.txt, compliance-matrix-template.csv
+
+WHY THIS EXISTS
+Fact-finding decided what this product has to meet: the standards, the specifications, the marketing needs, the risks. Design is where the product is shaped to meet them, and where the proof is collected. Design is not one pass. It is design, design, design, review, and again, until the people who have to be satisfied are satisfied.
+
+THE AI RUNS AT APQP LEVEL, ALWAYS (D-039)
+The office's minimum internal structure is APQP (Advanced Product Quality Planning, the automotive method). For a team of people it is often overkill. For an AI it is the structure that keeps track of what exists, what has been touched and what hasn't, and how each specification traces through to a good part and to what gets inspected. Project level changes what the inventor sees and how big each document is. It never removes a link in the chain.
+This is the floor, not a ceiling: slightly more formal than people alone would bother with, close to an automotive level of quality, and cheap for an AI to keep (D-047).
+The inventor does not have to work in APQP. They see plain words, reviews and decisions. The analyst keeps the structure underneath.
+
+APQP's five steps (APQP calls them phases) and our stages:
+1. Plan and define: fact-finding. Output: the project description.
+2. Product design and development: this design stage. Outputs below.
+3. Process design and development: ready to make (process flow, process FMEA, production control plan, packaging).
+4. Product and process validation: first production parts checked against the frozen design (a production-approval package sized to the project).
+5. Feedback and improvement. Not used as a stage here (D-061): too few products per inventor for it to pay off.
+
+The trace chain the analyst keeps, every project:
+requirement (matrix ID) → design FMEA line → design feature on the drawing → verification plan and result → critical feature → process FMEA line → control plan check → inspection record.
+Every link carries the compliance matrix ID. A requirement with no verification, a critical feature with no control plan check, or an FMEA action with no owner is a gap, and gaps are listed on every review.
+
+Design-stage outputs the analyst keeps, at the project's size:
+- compliance matrix (requirements, data sheet, check sheet; it doubles as the design verification plan and report, DVP&R)
+- design FMEA, updated every pass
+- drawings, parts list, material specs at a named revision
+- critical feature list
+- prototype control plan for each build (what it must prove, what is measured, how)
+- design for manufacturing and assembly review
+- review records
+- what the next stage will need: tooling, fixtures, gauges, supplier questions
+
+USE THE REAL TERMS, AND EXPLAIN THEM (D-040)
+The inventor will talk to engineers, suppliers, labs, buyers and investors who use these words. Don't shy away from them. The first time a term matters, say it, explain it in a line or two of plain words, and say what the office does with it. After that, use it.
+The usual line: "The AI keeps track of this for you. When you need one, say so and we'll pop it up. We'll already have most of the data."
+On request, produce the document on a review page and as a file in their format, filled from what the office already has, with the gaps marked.
+
+Terms to have ready, plain first:
+- Compliance matrix: one list of everything the product has to meet (each standard, spec and marketing need), what data each one needs, how it's proven, and whether it's met. Also called a requirements or verification matrix.
+- APQP (Advanced Product Quality Planning): the auto industry's step-by-step way of planning a product so it comes out right. The office runs every project this way behind the scenes.
+- FMEA (failure mode and effects analysis): a list of what could fail, how bad it would be, how likely, how we'd catch it, and what we're doing about it. Design FMEA for the product, process FMEA for how it's made.
+- DVP&R (design verification plan and report): the list of tests and checks, and their results. Our compliance matrix covers it.
+- Verification and validation: verification is "did we build it to the spec"; validation is "does it actually do the job for real users".
+- Control plan: what gets checked during making, how, how often, and what happens if it's off.
+- Critical (special) characteristic: a feature that matters most for safety or function, so it gets checked every time.
+- DFM / DFA (design for manufacturing / assembly): making sure it can be made and put together at the target cost.
+- Design review: a recorded meeting where the design is checked and a decision is made.
+- Design freeze: the point where the design stops changing so tooling and testing can start. Changes after it go through change control.
+- Design history file: the full record of how the design got where it is.
+- PPAP (production part approval process): the package that proves the first production parts match the design. Sized to the project.
+
+DESIGN FOR MANUFACTURING FROM THE FIRST PASS (D-043)
+DFM / DFA is not a step that arrives at some point. From the first sketch, every pass is designed with how it will be made and put together in mind: process (printed, machined, molded, sheet metal, cast), materials, tolerances, part count, assembly, cost at the target quantity. An industrial design concept that can't be made at the target cost is not a finished concept.
+Every review includes someone with manufacturing in mind, not only the designer and the inventor: a machinist, molder or sheet-metal shop, a contract manufacturer, a supplier quoting the part, or the office's manufacturing role when no person is available yet. Their comments go on the review record like anyone else's.
+
+THE LOOP
+Every pass has the same shape:
+1. Design. Make or change the thing this pass is about.
+2. Collect. Fill the data the compliance matrix asks for: dimensions, materials, ratings, labels, test numbers, submittal information.
+3. Check. Mark each matrix line this pass touched: met, not met, or not checked yet, with the evidence.
+4. Review. A recorded review (below). The inventor always takes part.
+5. Update. FMEA, the BOM with estimated part costs, estimated tooling cost, and the timeline (another round adds time) against the inventor's budget and dates. Penciled-in estimates; rough is fine, having a number early is the point (D-051). Design changes are where time, cost and quality move; say which corner moved.
+6. Decide. Loop again, move on to the next kind of pass, or approve a revision to build. The inventor decides.
+A round is done when the CAD (or, in industrial design passes, the concept drawings) is updated to the decision. That updated revision is what the next round starts from.
+
+Each pass is a new revision in its own dated folder (D-029). Nothing from an earlier pass is written over.
+
+KINDS OF PASSES
+The loop moves through kinds of passes, usually in this order. A project starts where it needs to: a bracket with no looks to speak of can start at CAD. A later pass can send it back (CAD shows the handle can't be molded the way it was drawn: back to industrial design for that feature).
+
+Industrial design passes (often two or three)
+Design: concept sketches, concept images, renders, rough mock-ups. Form, ergonomics, how it is held and used, how it looks on the shelf.
+Collect: the user needs and marketing specifications this concept answers; rough size and weight.
+Review against: the "yours" items, the user, the marketing plan, the specifications that drive shape. Show the concepts on a review page side by side.
+Move on when: the inventor picks one concept. The others are parked with a reason, not deleted.
+
+CAD passes (always, at some point)
+Design: 3D model, drawings, parts list, material choices, a rough build plan. FEA paint where it needs to bend or carry load (a labeled guess, not a sign-off).
+Collect: everything the compliance matrix asks for from the standards and specifications, filled from the model.
+Check: clearances, critical features, and the DFM / DFA review with the manufacturing reviewer (it started in the first pass; here it gets specific: process, tolerances, part count, assembly steps, cost).
+Review against: the whole matrix.
+Move on when: the inventor approves a revision to build. That starts the prototype loop (sop-prototype-loop.txt, sop-stages S2). Test results come back here when a feature has to change.
+
+THE COMPLIANCE MATRIX (data sheet and check sheet in one)
+One list per project, built from the project description. One line per requirement, from every source: each standard that applies, the design specifications, the marketing specifications, and the risks that need a design answer.
+Columns (compliance-matrix-template.csv):
+- ID: a short number so drawings, tests and changes can point to the line.
+- Source: where it came from (a standard and its clause, the spec, the marketing plan, an FMEA line).
+- Requirement: what it asks, in plain words.
+- Kind: submittal (information a regulator or lab needs), test, or design (something to build in).
+- Data to collect: the facts this line needs. This is the data sheet half.
+- How proven: test, inspection (measure or look), analysis (calculation, FEA), demonstration (show it working), or lab certification.
+- Pass level: what counts as met, written before checking (survives a 1 m drop onto concrete). This is the check sheet half.
+- Evidence: the dated file that shows it.
+- Status: met, not met, not checked yet, or put off (with the reason and who agreed).
+- Critical: yes for the few features that matter most for safety or function. These carry into the production control plan.
+Read each pulled standard's current page to build its lines (sop-resource-map step 5). A standard's whole checklist is not copied in; only the lines that apply to this product.
+
+TWO KINDS OF CHECKING
+Verification: did we build it right? It meets each line's pass level. Mostly the compliance matrix.
+Validation: did we build the right thing? Real users, real conditions: the back-parking-lot test, a user trial, a buyer's hands. A design can pass every line and still fail the user.
+In the design loop, checks are by inspection and analysis of the model and drawings. Tests on real parts, and validation, happen in the prototype loop. Every project gets at least one validation before freeze.
+
+THE REVIEW RECORD
+Every review is written down, in its own dated file, and shown on a review page:
+- Date, who took part: the inventor, someone with manufacturing in mind (always), and the roles that matter for this pass (design, engineering, marketing; a human engineer or lab when a line needs one).
+- Which revision was reviewed.
+- What was looked at, and against which matrix lines.
+- Results: what passed, what did not, what was learned.
+- Actions: what changes next pass, who, by when.
+- Decision: loop again, next kind of pass, or freeze.
+
+HANDING OFF TO THE PROTOTYPE LOOP
+The design loop ends when the inventor approves a revision to build:
+- every compliance matrix line that can be checked on paper (inspection, analysis) has a status;
+- the lines that need a real part are listed with their test and pass level;
+- the drawings, parts list and material specs are at one named revision;
+- the prototype control plan says what the build must prove and what gets measured;
+- the cost estimate and timeline still fit, or the inventor accepted the trade.
+The two loops trade back and forth: a prototype result sends a feature back for a design pass, and the new revision comes back to be built. Freeze is the exit of the prototype loop (sop-prototype-loop.txt).
+
+DONE WHEN
+A revision is approved to build, the compliance matrix shows every line's status or planned test, the review records are filed, and that revision's drawings, parts list and specs are in their dated folder.
+
+WHO DOES WHAT
+The analyst builds the compliance matrix, fills data from the model and documents, proposes the check status, and writes the review record. Soren puts each review on a review page, walks the inventor through it, and records the decision. Human designers, engineers and labs supply what the office can't: CAD by a person when needed, a signed stress check, a lab report. The inventor decides every loop, move-on and freeze.

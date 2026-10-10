@@ -1,0 +1,47 @@
+AN Creation standard operating procedures. Revision 11 — October 8, 2026.
+Human page: https://ancreationoffice.com/sop.html
+
+SOP means standard operating procedure: a written way to do one job. Here it is a file an assistant opens when a trigger fires, uses, and then leaves. It is not loaded into every conversation.
+
+Two assistants, two standing files.
+- Soren, the chat the inventor talks to: https://ancreationoffice.com/standing.txt
+- The analyst, called by Soren to do the thinking: https://ancreationoffice.com/analyst.txt
+
+The reason behind all of it, from Mike: https://ancreationoffice.com/advance-now.txt
+
+FIRST
+0. Set up Soren and the analyst: one Soren for all inventions or one per invention, the inventor's choice. https://ancreationoffice.com/sop-office.txt
+
+FOR SOREN
+1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
+2. The ticket format Soren runs. https://ancreationoffice.com/ticket-template.txt
+3. The first form, always: the invention and the screening questions. https://ancreationoffice.com/intake-001.csv
+
+FOR THE ANALYST
+4. Screening: 25 questions that narrow the standards to the few that matter. https://ancreationoffice.com/screening-questions.csv
+5. Map the library to this project: in, later, out, ask. https://ancreationoffice.com/sop-resource-map.txt
+6. Gateways: the one fact before each side road. https://ancreationoffice.com/sop-gateways.txt
+7. Which form opens next. The flowchart. https://ancreationoffice.com/sop-graph.txt
+7b. What fact-finding delivers: the project description, twelve sections, each with "done when". https://ancreationoffice.com/project-description.txt
+8. Stages and tracks: S0 fact-finding, S1 design loop, S2 prototype loop, S3 tooling loop, S4 qualification, S5 launch. A formal APQP on every project; every stage ends with go, hold or drop. https://ancreationoffice.com/sop-stages.txt
+8a. The design loop: industrial design then CAD, DFM from the first pass, the compliance matrix, recorded reviews. https://ancreationoffice.com/sop-design-loop.txt (compliance matrix template: https://ancreationoffice.com/compliance-matrix-template.csv)
+8b. The prototype loop: build, test, refine, at whatever prototype levels it needs, to design freeze. https://ancreationoffice.com/sop-prototype-loop.txt
+8c. The tooling loop: tool trials, design changes for tooling, final specs from measured parts and the stack-up. https://ancreationoffice.com/sop-tooling-loop.txt
+8d. Qualification and production approval: first article, process trials, qualifying what's needed, the approval package. https://ancreationoffice.com/sop-qualification.txt
+8e. Launch: first order, packaging and labels, the buyer packet, honest listings. https://ancreationoffice.com/sop-launch.txt
+8f. Revisions and change control: C, X and A/B/C revision names; the change record and what a change must re-check. https://ancreationoffice.com/sop-change-control.txt
+8g. Templates the analyst fills: APQP file https://ancreationoffice.com/template-apqp-file.csv ; review record https://ancreationoffice.com/template-review-record.txt ; prototype control plan https://ancreationoffice.com/template-prototype-control-plan.txt ; trial log https://ancreationoffice.com/template-trial-log.txt ; first article report https://ancreationoffice.com/template-fai-report.csv ; change record https://ancreationoffice.com/template-change-record.txt ; cost and time tracker https://ancreationoffice.com/template-cost-tracker.csv
+9. The quality chain. https://ancreationoffice.com/sop-quality.txt
+10. Fill a form from what is already known. https://ancreationoffice.com/sop-checklists.txt
+11. Roads in detail: patent, funding, company, standards, power, stores. https://ancreationoffice.com/sop-routes.txt
+12. Prepared prompts: after intake https://ancreationoffice.com/analyst-after-intake.txt ; refill the queue https://ancreationoffice.com/analyst-refill.txt
+
+12b. Formal forms and documents each road produces. https://ancreationoffice.com/forms-catalog.csv
+
+FOR BOTH
+13. The project folders: Your files and Soren's files. Dated folders; nothing is overwritten. https://ancreationoffice.com/project-folders.txt
+14. Review pages: a local web page per invention for timelines, risks, pictures, documents and short walkthroughs. https://ancreationoffice.com/sop-review-page.txt (tool: https://ancreationoffice.com/review.py)
+15. Terms: the plain-language glossary to explain terms from (about 200, with read-more links). https://ancreationoffice.com/terms.txt
+16. The action log: who owes what, kept for the inventor and shown as Your list on the review page. https://ancreationoffice.com/sop-action-log.txt (template: https://ancreationoffice.com/template-action-log.csv)
+
+If a link cannot be read, say so and ask for the text. Do not invent a procedure.

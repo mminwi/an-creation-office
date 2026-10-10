@@ -1,0 +1,106 @@
+SOP: Gateway questions. Revision 4 — October 6, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Human page: https://ancreationoffice.com/sop.html#gateways
+Read this before opening a side road on the flowchart. A gateway is one question. The answer decides whether the rest of that road is asked at all.
+
+Ask it in ordinary language. Say the one fact they need. Then ask what they want. Record the short answer and the context. The context must include their words and a note that the minimum fact was said. Show them that row with the rest of the sheet so the box is visibly checked.
+
+Three answers.
+
+- Yes. Open that section. Go only as far as this product needs. Do not dump the whole shelf on them.
+- Not sure. That is fine, and it must not stop the project. Explain the minimum fact in plain language. Record what they think right now as a "for now" answer with how they feel, offer a small step that would get closer to the answer, and set a revisit date (a week unless they pick). Do not open the shelf yet. Go on with what can be done now. See https://ancreationoffice.com/sop-focus.txt
+- No. Accept it only after the minimum fact was said and they still do not want that road. Write the no. Leave the section off. Do not ask the questions behind it.
+
+A no that arrived before the minimum fact is not finished. Say the fact, then ask again. A no that is already in the project, with the fact in the context, is a decision. Do not rehash the road. When later work touches it, check it in a line: "Because you decided no company, I'm leaving business insurance off. Still right?" They can change their mind.
+
+A market table, a stand, or a sale touches the closed company road once: "Because you decided no company, a claim still sits with you. Want to look at insurance, or keep going?" One question. Do not ask on the next turn what the stand requires. If they say keep going twice, stop the weekly reminder. Bring it back only if they say they are selling, they name a date, or they later open a company because an accident or a lawsuit scares them.
+
+You are not their lawyer. A gateway is a decision about the project, not legal advice, a filing, or a formed company.
+
+Gates close buckets. The library has about 200 sources. Many sit in the same bucket. One no drops that whole bucket. Do not ask a separate question for each source. Do not ask every gateway today. Ask the one in front of the decision they are actually making.
+
+QUALITY PLANNING IS NOT A GATE
+There is no other place the product gets looked at, so this road always opens. The question is how far.
+
+Say this: We will look at what has to be right. A simple product gets a short list. A power tool or an appliance usually has about twenty to thirty things that matter. Something like a snowmobile can run to hundreds of failure lines. We match the look to the product.
+
+A fishing lure is the short end. Shine of the plate, the paint, and a sharp hook may be the whole list, and five items through the chain is plenty. Take that look and stop. Do not build a long failure sheet for it.
+
+Propose the depth and let them confirm. Light: a handful of items, recorded through the chain, then stop. Ordinary: the twenty to thirty that matter. Deep: separate areas and a long failure sheet. Write the depth on the sheet. The standards shelf is a different gate. Using our own quality sheets does not mean opening ISO manuals or military specifications.
+
+BUSINESS ENTITY
+Ask when the product could hurt someone, cost someone money, or be sold.
+The reason to open a business today is product liability. Other reasons exist, including employees. Those are a later decision, or a business they would already have opened. Do not walk those reasons now.
+Say this before a no can stand: A business entity, set up properly, can put the liability for the product on the business instead of on you personally. That result is not automatic.
+Question: Do you want a business entity so the product’s liability sits on the business instead of on you?
+No: leave the company-formation sources off.
+Not sure: say the one fact if it hasn't been said, record "for now", offer one small step and a revisit date, and carry on with other work.
+An injury or fire hazard is a reason to ask now, even if licensing or a few sales is the plan. If they want to put business talk off, record company "for now" with its own revisit date. Don't leave it open with no date.
+Yes: open the business sources on the company shelf, and only the part about forming the entity. Government contracting stays behind its own gate.
+
+A HEALTH CLAIM
+Ask when the product touches health: it helps pain, posture, sleep, breathing, healing, or any condition, or it is worn for a health reason.
+Say this before the answer can stand: What you say it does decides the road. "Treats back pain" usually makes it a medical device, with FDA rules, more testing and a professional early. "Reminds you to sit up straight" can often stay a general wellness product, which is much lighter. Same clip, different words on the box.
+Question: Which do you want the box to say?
+Options, most help first: keep the medical claim and plan the FDA road with a regulatory professional; use a wellness claim now and keep the medical claim as a later step once there is evidence; not sure yet (for now, with a small step: write both versions of the box text, and revisit).
+Medical: open the medical shelf (fda-classify-device, fda-product-classification, fda-premarket-submissions, iso-13485, iec-62366-usability, fda-human-factors). Say plainly that a regulatory professional is needed before selling.
+Record the exact claim, and that both options were said, with the date. Wellness: record the exact claim wording as a decision. The medical shelf stays off. Every later piece of marketing is checked against that wording in one line.
+If they keep repeating the medical wording without choosing, say the fact once more, plainly, and offer the two box texts side by side. Then accept their choice.
+
+SOMEONE ELSE'S PRODUCT OR BRAND
+Ask when the thing is made to fit, attach to or work with another company's product.
+Say this before a no can stand: Selling something made for another company's product raises their name, their specs and their warranty. Saying what it fits is often fine; using their name as your brand usually isn't.
+Question: How do you plan to name it, and do you have the real sizes for what it fits, or are they guesses?
+Open: a brand line on the launch sheet, a compatibility list marking each spec official or guessed, a warranty question, and the maker's accessory program if one exists. A lawyer before their name goes on the box.
+
+GOVERNMENT CUSTOMER
+Ask only if selling to the government is on the table.
+Say this before a no can stand: Selling to the government uses a separate registration. It is not required to sell to ordinary customers.
+Question: Are you selling this to the government?
+No: leave the contracting sources off.
+Yes: open that part of the company shelf.
+
+A NAMED STANDARD
+Ask when a customer, a contract, or a test names a standard, or when the product is the kind that usually has one.
+Say this before a no can stand: We can still keep our own quality list without signing up to a formal quality system or a military specification.
+Question: Does a customer or a contract require a named quality system, or a military specification?
+No: leave the standards shelf off. Quality planning still happens on our own sheets.
+Yes: open only the standard they named. Military specifications stay off unless the customer or the contract is military.
+
+PATENT
+Ask once they might show it, sell it, or hand it to someone outside the project.
+A "no" or "not sure" they offer before you've said the fact doesn't count as having heard it. Say the fact once, then record their answer, and note in the context that the fact was said and when. Never assume it was said because the form has a "Say first" cell.
+If cost is the worry, offer one small step (look at the free official help for inventors filing on their own) rather than putting it off again with nothing. When they want to explore protection, give the options one at a time: prepared package for an attorney, free or low-cost help, filing it themselves, or not filing.
+Say this before a no can stand: Showing it or selling it can make some protection harder to get later. You can still choose not to file.
+Question: What are your thoughts on a patent for this?
+No, they have thought about it and want to make a few for themselves or friends: leave the patent road off. If they will still show a supplier the design, say that the showing itself is a disclosure, then stop.
+Not sure: explain that one fact and ask what they want to do with the idea. Do not open the patent shelf.
+Yes, or they want to protect it: open the patent road. Soren takes the legal role and prepares. He does not file. The chunks under that yes, including drawings, claims, a practitioner, and an inventor filing their own, are in https://ancreationoffice.com/sop-routes.txt. One chunk at a time.
+
+WATER AND SEALING
+Ask when the thing has a case, buttons, outdoor use, or anything that could get wet.
+Say this before a no can stand: If it has to survive water, the switches and the case have to be sealed. An ordinary spring and contact will not do that.
+Question: Does this ever need to be submerged, rained on, or washed?
+No: leave sealing and IP ratings off. Buttons can stay simple.
+Not sure: ask where it will be used, and stop there until they know.
+Yes: carry it into the requirements. The enclosure and the controls change. Open the electrical and enclosures shelf only for the rating this use needs.
+
+POWER
+Say this before a no can stand: A battery, a wire, or software brings its own questions. A purely mechanical product does not.
+Question: Does this use power, a battery, a circuit, or software?
+No: electronics section stays off.
+Yes or not sure: open that section only as far as the parts they named.
+
+OUTSIDE MONEY
+Say this before a no can stand: You can keep this small and pay for it yourself. Someone else’s money comes with that person’s rules.
+Question: Will the next step need someone else’s money?
+No: funding section stays off.
+Yes: open the funding shelf for the kind of money they named.
+
+A STORE OR A MARKETPLACE
+Say this before a no can stand: Selling a few to people you know is a different path from applying to Amazon, Walmart, Lowe’s, or another big store.
+Question: Are you trying to get this into a big store or onto a marketplace?
+No: leave the retail sources off. That is about a dozen sources. Friends and a few sales do not open them.
+Yes: open the retail part of the customers shelf for the channel they named. The rest of that shelf stays closed.
+
+Done when each gateway that applies has a visible row, a no is backed by the minimum fact, and every section behind a no is still off.
