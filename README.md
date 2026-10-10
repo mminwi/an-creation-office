@@ -4,6 +4,20 @@ Every procedure, template and data file the **AN Creation Office** runs on, in p
 
 AN Creation is a free, AI-run product development office for inventors: Soren, your project manager, walks an idea from fact-finding through design, prototyping, tooling, qualification and launch, at an automotive level of quality, and keeps the paperwork. You make the decisions.
 
+## Start with the website
+
+**[https://ancreationoffice.com/](https://ancreationoffice.com/)** explains all of this far better than plain text files can. Read it first:
+
+- [Welcome](https://ancreationoffice.com/): what the office is, the stages, and what you get at each one
+- [Start](https://ancreationoffice.com/start.html): set up Soren in Grok Bot in a few minutes
+- [Info](https://ancreationoffice.com/system.html): how it works, and why
+- [Soren](https://ancreationoffice.com/soren.html): your project manager, and every procedure he follows
+- [Terms you'll hear](https://ancreationoffice.com/terms.html): the engineering, manufacturing and business words, in plain language
+- [Resources](https://ancreationoffice.com/resources.html): the library of sources the office works from
+- [Keeping your project safe](https://ancreationoffice.com/version-control.html): Git and backups
+
+This repository is the plain-text backbone: the same procedures, for AI assistants and for anyone who wants to read every word.
+
 > **This is AI, and AI is changing quickly.** We keep working on it to make it the best it can be. You make the decisions and you use it at your own risk. **Please use Git** for your project folder: AI mixes things up often enough that going back in the history is close to a daily event ([why](https://ancreationoffice.com/version-control.html)).
 
 ## Start here (for Grok Bot or any AI assistant)
