@@ -130,6 +130,12 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`test-report-template.txt`](guide/test-report-template.txt) | AN CREATION — TEST REPORT TEMPLATE — REV 1 | [live](https://ancreationoffice.com/test-report-template.txt) |
 | [`version-control.txt`](guide/version-control.txt) | AN Creation backups and version control. Revision 2 — October 8, 2026. Human page: https://ancreationoffice.co | [live](https://ancreationoffice.com/version-control.txt) |
 
+## License
+
+© 2026 Advance Now LLC. Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (full text: [LICENSE](LICENSE); explained in plain words at [https://ancreationoffice.com/license.html](https://ancreationoffice.com/license.html)).
+
+**Using AN Creation for your own inventions is free and always welcome, even if you sell the product. What's not allowed is selling these procedures, or a paid program or service built on them.** Share it and adapt it freely; credit Advance Now LLC with a link to the website, and keep anything you build from it under the same license.
+
 ## How this copy is kept
 
 Synced from the live site by a script after each publish. If this copy and https://ancreationoffice.com/ ever differ, the live site is current.
