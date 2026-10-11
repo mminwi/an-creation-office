@@ -50,6 +50,7 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`analyst.txt`](guide/analyst.txt) | The analyst, called by Soren to do the thinking | [live](https://ancreationoffice.com/analyst.txt) |
 | [`advance-now.txt`](guide/advance-now.txt) | The reason behind all of it, from Mike | [live](https://ancreationoffice.com/advance-now.txt) |
 | [`version.txt`](guide/version.txt) | Version check, first in every conversation | [live](https://ancreationoffice.com/version.txt) |
+| [`kasper.txt`](guide/kasper.txt) | Kasper, the business manager (company, website, profiles, promotion) | [live](https://ancreationoffice.com/kasper.txt) |
 | [`sop-office.txt`](guide/sop-office.txt) | Set up Soren and the analyst: one Soren for all inventions or one per invention, the inventor's choice | [live](https://ancreationoffice.com/sop-office.txt) |
 | [`github-setup.txt`](guide/github-setup.txt) | GitHub and the analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting | [live](https://ancreationoffice.com/github-setup.txt) |
 | [`sop-focus.txt`](guide/sop-focus.txt) | Keep the project focused: risks as questions, decisions, "for now" and circling back | [live](https://ancreationoffice.com/sop-focus.txt) |
@@ -112,7 +113,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`planning-resources.txt`](guide/planning-resources.txt) | Product, startup and project planning. Checked 2026-09-30. | [live](https://ancreationoffice.com/planning-resources.txt) |
 | [`planning-review.csv`](guide/planning-review.csv) | Worksheet / table (CSV): Item ID, Question, Suggested roles, Source IDs... | [live](https://ancreationoffice.com/planning-review.csv) |
 | [`product-development.txt`](guide/product-development.txt) | PRODUCT DEVELOPMENT: THE PROCESS BEHIND THE CONVERSATION | [live](https://ancreationoffice.com/product-development.txt) |
-| [`profile.txt`](guide/profile.txt) | AN Creation bot profiles. Profile version: 1 (October 11, 2026). | [live](https://ancreationoffice.com/profile.txt) |
+| [`profile.txt`](guide/profile.txt) | AN Creation bot profiles (October 11, 2026). Soren profile version 1. Kasper profile version 3. | [live](https://ancreationoffice.com/profile.txt) |
 | [`resource-crosscheck.json`](guide/resource-crosscheck.json) | Data behind the resource crosscheck page (JSON) | [live](https://ancreationoffice.com/resource-crosscheck.json) |
 | [`resource-crosscheck.txt`](guide/resource-crosscheck.txt) | Resource cross-check, September 30, 2026. | [live](https://ancreationoffice.com/resource-crosscheck.txt) |
 | [`resources.json`](guide/resources.json) | Data behind the resources page (JSON) | [live](https://ancreationoffice.com/resources.json) |

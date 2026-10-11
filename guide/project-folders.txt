@@ -7,6 +7,7 @@ AN-Creation/
   ideas.txt                     parked ideas, one line each with the date; not projects yet
   office.txt                    one Soren for all inventions, or one per invention (asked when the second invention starts)
   All inventions                one line per invention: where it stands, its next step
+  Business/                     Kasper's side: the company, website, profiles, promotion (kasper.txt). business.txt, plan.md, actions.csv, promo-log.csv, record/, and the hand-off notes for-kasper.txt and for-soren.txt
   Fishing Lure/                 one folder per invention (with its own Soren, if they chose one per invention)
     Your files/                 yours to open, read and change
       READ ME FIRST

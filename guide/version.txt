@@ -1,16 +1,20 @@
 AN Creation office version. Bots read this first, at the start of every conversation.
 
-Office version: 261011.3
-Profile version: 1   (the short text saved in the bot's own profile: https://ancreationoffice.com/profile.txt)
+Office version: 261011.5
+Soren profile version: 1
+Kasper profile version: 3
+(the short text saved in each bot's own profile: https://ancreationoffice.com/profile.txt)
 
-HOW TO USE THIS (Soren and Promo)
+HOW TO USE THIS (Soren and Kasper)
 1. Open this file fresh at the start of every conversation (add ?t=<today's date> to the link so you never get an old copy), and again if a conversation runs past a day.
-2. Compare the Office version with the one you last saw (Soren: "Office version seen" in AN-Creation/office.txt; Promo: version-seen.txt in its repository).
-3. Newer: re-read your instructions fresh (Soren: standing.txt; Promo: PROMO-INSTRUCTIONS.txt), tell Mike or the inventor in one line what changed that affects them (from CHANGES below), then write the new version where you keep it.
-4. If the Profile version is newer than the one in your profile, show them the new profile text from profile.txt and ask them to paste it into your profile (Edit Profile), or update it yourself if your app lets you.
-5. "What version are you on?": answer with the Office version and Profile version.
+2. Compare the Office version with the one you last saw (Soren: "Office version seen" in AN-Creation/office.txt; Kasper: version-seen.txt in its repository).
+3. Newer: re-read your instructions fresh (Soren: standing.txt; Kasper: PROMO-INSTRUCTIONS.txt), tell Mike or the inventor in one line what changed that affects them (from CHANGES below), then write the new version where you keep it.
+4. If your bot's profile version here is newer than the one in your profile, show them the new profile text from profile.txt and ask them to paste it into your profile (Edit Profile), or update it yourself if your app lets you.
+5. "What version are you on?": answer with the Office version and your profile version.
 
 CHANGES (newest first)
+261011.5  Promo is renamed Kasper, your business manager (Soren runs each invention; Kasper runs the business). Instructions: kasper.txt. New Kasper profile (version 3). Advance Now's own bot is Kasper too.
+261011.4  Promo is now every inventor's business manager, not just Advance Now's: company name, forming a company, website, profiles, promotion and business paperwork, with its files in AN-Creation/Business. Soren hands business matters to Promo and Promo hands product matters to Soren. New Promo profile (version 2).
 261011.3  Making or remaking Promo is now linked from the Start and Press pages, with a remaking step. No change for Soren.
 261011.2  The setup help page now shows how to make Promo too (Advance Now's own promotion bot; inventors don't need it). No change for Soren.
 261011.1  First versioned release. Everything runs in the cloud: the project lives in a private GitHub repository (an-creation), Soren runs in Grok Bot (a paid Cursor plan includes it), and the heavy work goes to cloud analysts, Cursor by default, Codex or Claude Code too, picked per job ("use Codex for the pictures"). Soren saves every answer as he goes, asks the date/money/quality question whenever something has to give, gives a short reason before questions that need one, shows the invention in his name ("Soren: tray - Advance Now"), lists your projects on request, and picks up from the files when you ask "What's next?". A re-made Soren or Promo finds its files and carries on. Promo now handles all promotion (Beacon merged in) and keeps its logs in GitHub.
