@@ -1,32 +1,27 @@
-AN Creation backups and version control. Revision 3 — October 11, 2026. Human page: https://ancreationoffice.com/version-control.html
-Replaces revision 2 (Git on the inventor's own computer). The office is cloud only now (D-098): Google Drive by default, GitHub for people comfortable with it.
+AN Creation backups and version control. Revision 4 — October 11, 2026. Human page: https://ancreationoffice.com/version-control.html
+Replaces revision 3 (Google Drive default). The office lives in a private GitHub repository (D-100).
 
 WHY
 AI is new, and it goofs up: a file gets overwritten, two versions get mixed, a chat gets cleared, a bot gets deleted. In practice, going back to an earlier version is close to a daily event. So the office never depends on one copy of anything, and never on the chat.
 
-GOOGLE DRIVE (the default)
-Nothing to install or set up. Three things keep the history:
-- Never overwrite (D-029). Every update is a new dated file or folder: a new status, a new page, a new drawing, a new analyst run. The old one stays exactly as it was.
-- Drive's own version history. Drive keeps earlier versions of each file. Google Docs and Sheets keep theirs for good; other files (text, CSV, images) keep about 30 days or 100 versions. The dated-file rule is what keeps the long history; Drive's versions are the safety net for a slip.
+HOW IT'S KEPT
+- GitHub keeps every version. The project is a private repository (an-creation). Every save is a commit, and GitHub keeps them all: what changed, when, and by whom.
+- Commit often. Soren saves a commit at the end of every conversation and every analyst run (and as he goes, when he writes answers), with a short note: which invention, what changed, who (Soren or the analyst). The analyst commits its own work. The person doesn't have to do anything.
+- Never overwrite (D-029). Every update is a new dated file or folder: a new status, a new page, a new drawing, a new analyst run. The old one stays exactly as it was, so the history is easy to read without digging in GitHub.
 - The record. Every conversation and every analyst run is saved in Soren's files/record/ and sessions/, so what was said and decided is never only in a chat.
-Say it to the inventor once, in a line: "Every change goes in a new dated file, so nothing gets lost, and Drive keeps earlier versions too."
-
-GITHUB (if they're comfortable with it)
-A private GitHub repository is a cloud folder with a full history of every change built in.
-- The person creates the GitHub account themselves; account creation can't be automated. They connect GitHub in their AI app once. Step-by-step for beginners, with troubleshooting: https://ancreationoffice.com/github-setup.txt
-- Create the repository as private (an-creation). Confirm it shows as private before the first save.
-- Save a commit at the end of every conversation and every analyst run, with a short note: which invention, what changed, who (Soren or the analyst). Soren does it; the person doesn't have to.
-- Plain words: repository = the project's online folder, commit = a saved checkpoint. Say the real word once, then use it (D-040).
-- Big CAD and image files: keep them in a dated folder in Google Drive and link them, or use Git LFS (large file storage) if they know it.
+Plain words: repository = the project's online folder, commit = a saved checkpoint. Say the real word once, then use it (D-040). Say it to the inventor once, in a line: "GitHub keeps every version, so nothing gets lost."
+Setup and troubleshooting: https://ancreationoffice.com/github-setup.txt
 
 IF SOMETHING GOES WRONG
-- A file got overwritten, mixed up or deleted: look at the earlier dated files first, then Drive's version history (or the GitHub history), find the last good version, restore it as a new dated file, and say what was restored.
-- A chat got cleared, or Soren was deleted and made again: nothing is lost. The new Soren looks for AN-Creation in My Drive first, reads office.txt, All inventions, PROJECT.txt, plan.md and the latest status, and carries on.
-- They lost their phone: sign in to the same Google account (and AI app) on the new one. The files are in the cloud.
+- A file got overwritten, mixed up or deleted: look at the earlier dated files first, then the file's history on GitHub, find the last good version, restore it as a new commit, and say what was restored.
+- A chat got cleared, or Soren was deleted and made again: nothing is lost. The new Soren looks for the an-creation repository first, reads office.txt, All inventions, PROJECT.txt, plan.md and the latest status, and carries on.
+- They lost their phone: sign in to GitHub and their AI app on the new one. The project is in the cloud.
 
 NEVER
-- Never set the office up on a computer's own drive. It must work from the phone and be findable by a re-made Soren.
-- Never put passwords, keys, an SSN, or bank or card numbers in any project file, note or commit message.
+- Never set the office up on a computer's own drive. It must work from the phone, the analyst must reach it, and a re-made Soren must find it.
+- Never make the repository public.
+- Never put passwords, keys, an SSN, or bank or card numbers in any project file, issue or commit message.
 - A saved version is not an approval. History does not replace the revision and change records (sop-change-control.txt) or the record of what was sent to whom.
+- Big CAD, video and image files (over 50 MB): keep them out of the repository and link to where they are.
 
-Sources: Google Drive version history https://support.google.com/drive/answer/2409045 ; GitHub private repositories https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories ; large files https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage ; GitHub account rules https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-account-requirements .
+Sources: GitHub repositories https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories ; file history https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file ; large files https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github .

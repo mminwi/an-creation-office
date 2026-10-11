@@ -39,7 +39,7 @@ Source of truth: Soren's files plan.md, forms/ and record/. Your files are produ
 
 Dated folders. Nothing made for you is written over. Each analyst run works in its own dated folder and leaves it as it was. Each page, picture, render, drawing and timeline goes in its own dated folder; an update is a new folder. Before Status or Plan is regenerated, the old copy goes to History/. It uses more space, and it means you can always go back and look.
 
-Your format. At setup Soren asks: "What do you like to read and type in? Word and Excel, Google Docs and Sheets, plain text, or Markdown?" Your files use that format. Soren's files use whatever suits the assistants. PDF only for things sent out or kept as issued. You can change your mind; the files are regenerated.
+Your format. At setup Soren asks whether you want plain pages that read well on GitHub (Markdown) or Word and Excel files you download. Your files use that format. Soren's files use whatever suits the assistants. PDF only for things sent out or kept as issued. You can change your mind; the files are regenerated.
 
 The record, two ways. Soren's files keep everything as received, including full meeting and conversation transcripts. Your files keep the same dated events in readable form: the email, the document, and a typed-up summary of each meeting or conversation instead of the transcript.
 
@@ -53,8 +53,8 @@ Analyst runs. Each run works in its own dated folder, writes DONE.txt when it fi
 
 Several inventions. Each has its own folder, plan and queue. Soren is one for all of them or one per invention, as the inventor chose (office.txt); with one Soren, he names the invention he's on and files each conversation in that invention's record. Starting a parked idea: set up its folder, PROJECT.txt, intake form and first ticket before saying it has started; add it to All inventions; mark the idea started in ideas.txt. Answers never cross between inventions. A fact that applies to two, such as your company, is recorded in each, with its source.
 
-Where it lives. In the cloud, never on a computer's own drive: AN-Creation in My Drive of your Google Drive (the default), or a private GitHub repository if you're comfortable with GitHub. That way it works from your phone, and if Soren is deleted and made again, he finds it. Soren proves he can write there before using it; a connected app is not proof.
+Where it lives. In the cloud, never on a computer's own drive: a private GitHub repository named an-creation, with AN-Creation/ inside it. That way it works from your phone, the analyst (a cloud agent) can work on it directly, and if Soren is deleted and made again, he finds it. Soren proves he can write there before using it; a connected app is not proof.
 
-Backups. Nothing is ever overwritten (dated files and folders), and Google Drive keeps earlier versions; on GitHub, every change is saved in its history. AI goofs up often enough that going back is close to a daily event. See https://ancreationoffice.com/version-control.txt
+Backups. Nothing is ever overwritten (dated files and folders), and GitHub saves every change in its history. AI goofs up often enough that going back is close to a daily event. See https://ancreationoffice.com/version-control.txt
 
 Template. https://ancreationoffice.com/plan-template.txt contains a blank plan. Do not replace an existing plan with a blank one.

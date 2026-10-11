@@ -50,7 +50,7 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`analyst.txt`](guide/analyst.txt) | The analyst, called by Soren to do the thinking | [live](https://ancreationoffice.com/analyst.txt) |
 | [`advance-now.txt`](guide/advance-now.txt) | The reason behind all of it, from Mike | [live](https://ancreationoffice.com/advance-now.txt) |
 | [`sop-office.txt`](guide/sop-office.txt) | Set up Soren and the analyst: one Soren for all inventions or one per invention, the inventor's choice | [live](https://ancreationoffice.com/sop-office.txt) |
-| [`github-setup.txt`](guide/github-setup.txt) | GitHub for beginners: account, private repository, connecting it, a cloud analyst, and troubleshooting | [live](https://ancreationoffice.com/github-setup.txt) |
+| [`github-setup.txt`](guide/github-setup.txt) | GitHub and the analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting | [live](https://ancreationoffice.com/github-setup.txt) |
 | [`sop-focus.txt`](guide/sop-focus.txt) | Keep the project focused: risks as questions, decisions, "for now" and circling back | [live](https://ancreationoffice.com/sop-focus.txt) |
 | [`ticket-template.txt`](guide/ticket-template.txt) | The ticket format Soren runs | [live](https://ancreationoffice.com/ticket-template.txt) |
 | [`intake-001.csv`](guide/intake-001.csv) | The first form, always: the invention and the screening questions | [live](https://ancreationoffice.com/intake-001.csv) |
@@ -130,7 +130,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`test-planning.json`](guide/test-planning.json) | Data behind the test planning page (JSON) | [live](https://ancreationoffice.com/test-planning.json) |
 | [`test-planning.txt`](guide/test-planning.txt) | Plan the test before the build — REV 1 — 2026-09-30 | [live](https://ancreationoffice.com/test-planning.txt) |
 | [`test-report-template.txt`](guide/test-report-template.txt) | AN CREATION — TEST REPORT TEMPLATE — REV 1 | [live](https://ancreationoffice.com/test-report-template.txt) |
-| [`version-control.txt`](guide/version-control.txt) | AN Creation backups and version control. Revision 3 — October 11, 2026. Human page: https://ancreationoffice.c | [live](https://ancreationoffice.com/version-control.txt) |
+| [`version-control.txt`](guide/version-control.txt) | AN Creation backups and version control. Revision 4 — October 11, 2026. Human page: https://ancreationoffice.c | [live](https://ancreationoffice.com/version-control.txt) |
 
 ## License
 
