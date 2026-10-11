@@ -1,0 +1,31 @@
+SOP: Kasper. Setting up and keeping the company. Revision 1 — October 11, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Goes with: kasper.txt
+Read this when the business name, forming a company, the tax ID, a bank account, insurance, licenses or the yearly paperwork comes up. Then leave it.
+
+WHY
+A company keeps the inventor's personal money apart from the business's risks, makes them look real to buyers and suppliers, and keeps taxes clean. It's set up once, whether they have one product or twenty. You prepare, explain and keep track; the inventor decides, signs and files, with an accountant or attorney where it matters. You are not their lawyer or accountant; say so when one is needed.
+
+ONE STEP AT A TIME (each is a row in actions.csv until it's done)
+1. Timing. Ask once: "Are you selling, signing with a supplier, or taking money from anyone in the next few months?" No: it can wait; record "for now" with a date. Yes, or a product could hurt someone: forming a company comes first. One fact first: "A company (usually an LLC) can keep a claim against the business away from your house and savings."
+2. The name. Brainstorm a few with them. For each favorite, check, and say what you found in a line:
+   - Their state's business registry (Secretary of State business search): is the name taken?
+   - USPTO trademark search, https://tmsearch.uspto.gov/ : is it, or something close, a trademark for similar goods? Close matches are a question for an attorney.
+   - The domain (.com first) and the handles on LinkedIn and X: free? (sop-kasper-website.txt, sop-kasper-presence.txt)
+   A name that's free in all four is a good sign, not a guarantee. Record the checks in record/ with the date.
+3. The form. Lay out the usual choices in plain words: sole proprietorship (nothing to file, no protection), LLC (the common choice for one person; protection, simple taxes), corporation (for outside investors later). Recommend they confirm with an accountant. Don't decide for them.
+4. Forming an LLC. In their state: Articles of Organization filed with the Secretary of State (a fee, usually $50 to $500), a registered agent (they can be their own, or pay a service), and an operating agreement (a short document even for one owner). Show them the state's own filing page; warn that look-alike sites charge extra for the same filing. Some states require a publication notice or a yearly report; check their state.
+5. The tax ID (EIN). Free from the IRS in minutes, https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online . They apply themselves; it's needed for the bank account. Never pay a site for an EIN.
+6. A business bank account, in the company's name, with the EIN and formation papers. All business money goes through it, never mixed with personal money (mixing can undo the protection).
+7. Bookkeeping. A simple tool or a spreadsheet from day one; keep every receipt (record/). An accountant can set it up in an hour.
+8. Insurance. General liability when they start selling or showing in person; product liability before a product reaches customers (buyers and stores often ask for a certificate). Get two or three quotes. Tie it to the product's risks in Soren's files.
+9. Licenses and sales tax. A local business license if their city or county wants one; a sales tax permit in their state if they sell taxable goods directly. Check the state and city sites.
+10. Trademark (later, when the name is settled and they're selling or about to): a question for an attorney; USPTO filing has its own fees.
+
+KEEPING IT (put each on the calendar in actions.csv)
+Yearly state report and fee, registered agent renewal, the domain renewal, insurance renewal, tax dates their accountant gives them. Remind a month ahead.
+
+RECORD
+business.txt: the company in one page: legal name, form, state, date formed, EIN (last four digits only, never the full number), registered agent, bank (name only), accountant, attorney, insurance carrier and renewal date. Never store full ID numbers, account numbers or passwords.
+
+Sources: SBA business guide https://www.sba.gov/business-guide ; choosing a structure https://www.sba.gov/business-guide/launch-your-business/choose-business-structure ; registering https://www.sba.gov/business-guide/launch-your-business/register-your-business ; EIN https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online ; trademark search https://tmsearch.uspto.gov/ ; free mentoring: SCORE https://www.score.org and Small Business Development Centers https://americassbdc.org .

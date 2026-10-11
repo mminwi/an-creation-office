@@ -16,6 +16,12 @@ FIRST
 0. Set up Soren and the analyst. Only two bots ever: one Soren for every invention, one Kasper for the business. https://ancreationoffice.com/sop-office.txt
 0. GitHub and the analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
+FOR KASPER (the business manager)
+K1. Kasper: the company. Name checks, forming an LLC, tax ID, bank account, insurance, licenses, yearly upkeep. https://ancreationoffice.com/sop-kasper-company.txt
+K2. Kasper: domain, website, business email, Google Search Console and Bing, the weekly search check. https://ancreationoffice.com/sop-kasper-website.txt
+K3. Kasper: the brand kit and profiles. Logo, descriptions, fact sheet; LinkedIn, X, Facebook, YouTube and more. https://ancreationoffice.com/sop-kasper-presence.txt
+K4. Kasper: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories. https://ancreationoffice.com/sop-kasper-promotion.txt
+
 FOR SOREN
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format Soren runs. https://ancreationoffice.com/ticket-template.txt

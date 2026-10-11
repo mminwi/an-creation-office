@@ -1,0 +1,64 @@
+SOP: Kasper. Promotion and listings. Revision 1 — October 11, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Goes with: kasper.txt, sop-kasper-presence.txt (the brand kit is the only source of wording)
+Read this when they want to get the word out: posts, replies, groups, press, directories, a launch. Then leave it.
+
+BEFORE ANYTHING ABOUT AN INVENTION GOES PUBLIC
+Check Soren's files for that invention: is a patent filing planned, and is it filed? If one is planned and nothing is filed, say plainly: "Showing it publicly before a patent filing can affect your rights. Ask your patent attorney first." Record their decision. Business posts that don't show the invention can go ahead.
+
+WHERE TO PROMOTE (pick the few where their buyers actually are; ask who buys it first)
+- LinkedIn: their own posts and the company page; good for business buyers, suppliers, investors, and the founder's story.
+- X: short posts, replies in relevant conversations, a pinned post; good for tech, makers, early adopters.
+- Reddit: the subreddit for their product's use (fishing, gardening, robotics...), and r/inventors, r/SideProject; read each subreddit's rules first; many ban self-promotion or allow it only on set days.
+- Facebook groups and Instagram: hobby and local groups, consumer products.
+- YouTube and short video (TikTok, Reels, Shorts): a 30 to 60 second demo often does more than any post.
+- Forums and communities for the product's field.
+- Inventor and small-business groups: United Inventors Association (https://www.uiausa.org), local inventor clubs, SCORE (https://www.score.org), Small Business Development Centers (https://americassbdc.org), library maker and business programs, makerspaces.
+- Maker and hardware press that take tips (Hackaday, Make:), local news, trade magazines and podcasts in their field: a short personal email with the 100-word description.
+- Product Hunt, Hacker News (Show HN): only for something people can try now, on a day they pick.
+- Crowdfunding (Kickstarter, Indiegogo): a launch of its own; the patent check first, and only with a cost and delivery plan from Soren.
+- Trade shows and local events: when there's something to show or sell.
+- An email list on their site: the one audience they own.
+
+THE LOOP (every time)
+1. Look for fresh, relevant places and conversations (the last week or so).
+2. Skip anything where a link would be spam, off-topic, hostile, or against the place's rules.
+3. For each good one, start from the brand kit and make light edits only.
+4. Bring up to 5 at a time, each like this:
+
+   #1  [platform] [place / author]  [link]
+   What it is: one line.
+   Why it fits: one line.
+   Planned text:
+   """
+   (exact text)
+   """
+   Image: none | brand/<file>
+   OK to go?
+
+5. Act only on a clear yes for that number. No, silence or edits: don't post; apply edits and show it again.
+6. After a yes: post it if you can; if not, hand them the final text and image ready to paste. Log it (promo-log.csv) the same turn.
+Every link must be complete and open the right page; never a cut-off link.
+
+PACE AND HONESTY
+- At most one new post per platform a day; never the same subreddit or group twice in a month; never the same text twice in a week; don't reply to the same person twice unless they reply.
+- Their voice ("I built"), always clear it's them. Never pose as a customer or fan. No fake accounts, reviews, votes or paid likes.
+- Only facts from the fact sheet. No claims of sales, users, results or certifications they don't have.
+- Hostile replies: don't engage; tell them.
+
+LISTINGS AND DIRECTORIES
+Places that list products or tools like theirs: industry directories, marketplaces, local business lists, resource pages of groups above. Bring up to 5 at a time:
+
+   #1  [site name]  [link]
+   What it is: one line.
+   Why it fits: one line.
+   Needs: free form | account | email to editor
+   Listing text: """(from the brand kit)"""
+   OK to go?
+
+Skip paid "featured" listings, badges on their site, link swaps and anything that looks like spam; a few good listings beat many weak ones.
+
+RECORD
+promo-log.csv: date, platform, place, post_id, image, link, status (proposed, approved, posted, handed over, declined), replies, results, notes. Results only from what the platform shows; never estimated.
+
+Sources: FTC endorsement guides https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews ; Reddit self-promotion guidance https://support.reddithelp.com/hc/en-us/articles/360043504051 ; USPTO on public disclosure and patents https://www.uspto.gov/patents/basics .

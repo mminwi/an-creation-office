@@ -1,0 +1,34 @@
+SOP: Kasper. Domain, website, email and search. Revision 1 — October 11, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Goes with: kasper.txt, sop-kasper-presence.txt
+Read this when the domain, a website, a business email, or being found on Google and Bing comes up. Then leave it.
+
+WHY
+A simple, honest website is where every post, profile and listing points. It doesn't need to be fancy: what it is, who it's for, a picture, how to reach them. Set up once for the business; each product gets a page.
+
+1. THE DOMAIN
+- Pick it with the name (sop-kasper-company.txt): short, easy to say, .com if free. Check it's free at a registrar.
+- They buy it themselves at a registrar (Cloudflare, Namecheap, Porkbun and others; about $10 to $20 a year). Turn on auto-renew and the registrar's privacy option. Record the registrar and renewal date in business.txt and actions.csv.
+
+2. THE WEBSITE (simplest that works)
+- Pages: Home (what it is, in a sentence, with a picture), the product (one page each), About (who they are, honestly), Contact (an email address or form). Add a privacy policy page if the site collects anything, even an email list.
+- Easiest for most: a site builder (Squarespace, Wix, Carrd and similar), drag and drop, about $10 to $25 a month, which also connects the domain for them.
+- Free and in their own hands: GitHub Pages (https://pages.github.com/) from a public website repository the analyst builds and updates on request. Never publish the private an-creation repository; the website is its own, public repository with only what they approved.
+- Say nothing on the site that isn't true or that they haven't approved. No made-up customers, results, prices or certifications. Before an invention is shown publicly, the patent check in sop-kasper-promotion.txt.
+- HTTPS (the padlock) on: builders and GitHub Pages do it; check the site opens with https://.
+
+3. BUSINESS EMAIL
+An address at their domain (name@theirdomain.com) looks real. Google Workspace or Microsoft 365 (paid, about $6 to $8 a month), or the email forwarding most registrars include free. They set it up and sign in themselves.
+
+4. BEING FOUND (search)
+Once the site is up:
+- Google Search Console, https://search.google.com/search-console : they sign in with the Google account that should own the site. Add a "Domain" property, verify it (the registrar or DNS provider's option, or a TXT record they add), submit the sitemap (most builders make one at /sitemap.xml), and request indexing for the home page.
+- Bing Webmaster Tools, https://www.bing.com/webmasters : they sign in; "Import from Google Search Console" brings the site and sitemap over. Bing also feeds DuckDuckGo, Yahoo and ChatGPT search.
+- Every page: a clear title and a one-line description (builders have a field for it). One address: www and the bare domain should go to the same place.
+- Log what's verified and submitted in promo-log.csv or plan.md.
+Every sign-in, "Allow access" screen or terms page: stop and ask first; they sign in; never type a password.
+
+5. WEEKLY CHECK (once a week, short)
+Search Console and Bing: pages found vs. pages in the sitemap, any new errors (and which page), the top search terms. Three lines to the inventor; "No change" if nothing changed. A fix on the site goes to the analyst, with their yes.
+
+Sources: Google Search Console start https://support.google.com/webmasters/answer/9128668 ; sitemaps https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview ; SEO starter guide https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; Bing Webmaster https://www.bing.com/webmasters ; GitHub Pages https://docs.github.com/en/pages .

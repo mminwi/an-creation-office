@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this first, at the start of every conversation.
 
-Office version: 261011.6
+Office version: 261011.9
 Soren profile version: 1
 Kasper profile version: 3
 (the short text saved in each bot's own profile: https://ancreationoffice.com/profile.txt)
@@ -13,6 +13,9 @@ HOW TO USE THIS (Soren and Kasper)
 5. "What version are you on?": answer with the Office version and your profile version.
 
 CHANGES (newest first)
+261011.9  Kasper has his own procedures: the company (name, LLC, tax ID, bank, insurance), the website and search (domain, site, email, Google Search Console, Bing), profiles and the brand kit (LinkedIn, X and more), and promotion and listings (where to promote, the approval loop, the patent check). No change for Soren.
+261011.8  Welcome and Start pages explain the two managers: Soren redoes the process for every product; Kasper's business work is set up once and stays the same for one product or twenty. No change for Soren.
+261011.7  Kasper now appears on every page's side menu (Your managers) and on the Welcome page. No change for Soren.
 261011.6  Only two bots, ever: one Soren runs every invention and one Kasper runs the business. The option of a separate Soren per invention is gone; a new invention is just a new folder.
 261011.5  Promo is renamed Kasper, your business manager (Soren runs each invention; Kasper runs the business). Instructions: kasper.txt. New Kasper profile (version 3). Advance Now's own bot is Kasper too.
 261011.4  Promo is now every inventor's business manager, not just Advance Now's: company name, forming a company, website, profiles, promotion and business paperwork, with its files in AN-Creation/Business. Soren hands business matters to Promo and Promo hands product matters to Soren. New Promo profile (version 2).

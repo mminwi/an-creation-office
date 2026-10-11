@@ -1,0 +1,29 @@
+SOP: Kasper. Profiles and the brand kit. Revision 1 — October 11, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Goes with: kasper.txt, sop-kasper-website.txt, sop-kasper-promotion.txt
+Read this when a LinkedIn page, an X account or another profile comes up, or when they need a logo, a tagline or a short description. Then leave it.
+
+THE BRAND KIT FIRST (Business/brand/, made once, used everywhere)
+Everything public is copied from this kit, so it all says the same thing.
+- Logo: a square version (at least 400 x 400; 1200 x 1200 is better) for profile pictures, and a wide one if they want. The analyst can draft concepts; they choose. Keep the original files.
+- Colors and a font or two, written down.
+- Descriptions: one line (under 120 characters, a tagline), 25 words, 50 words, 100 words. Plain, true, no hype.
+- Fact sheet: the only facts anyone may state publicly (what it is, who it's for, price if set, where to get it, contact). Nothing in it they haven't confirmed.
+- About them: a short bio (40 words) and a longer one (120 words), in their words, true.
+- Pictures: the product (real photos once there is one; renders clearly called renders before that), and one of them if they're willing.
+- Banner images sized for each profile (below).
+
+THE PROFILES (one at a time, the ones that fit their buyers)
+For each: they create the account and sign in themselves (never type a password); you give them every field filled in from the kit, and the exact sizes.
+- LinkedIn company page (https://www.linkedin.com/company/setup/new/ ; needs a personal LinkedIn profile first). Name, page address, industry (a product business is often Consumer Goods or the product's own industry; product development services fit Engineering Services), organization type (Privately held, or Self-employed), logo (square, 400 x 400 or more), tagline (120 characters max), cover image (1128 x 191), the 100-word description, website. Their own profile: add the role, e.g. "Founder", under the company.
+- X (https://x.com): handle as close to the business name as possible, profile picture (the square logo), header (1500 x 500), bio (160 characters: the one-liner + the site), the website link, a pinned post.
+- Facebook page and Instagram (Meta): useful for consumer products and local buyers; same picture, banner sized for each, the 50-word description.
+- YouTube: for demo videos; channel name, picture, banner, description.
+- Google Business Profile: only if they have a public location or serve a local area.
+- Places their buyers are: a store page (Amazon, Etsy), an industry directory, a marketplace. Ask who buys it first.
+Same name, picture, one-liner and website link on every one. Record each profile's address and the date in business.txt.
+
+RULES
+Their voice, always clear it's them. Never create accounts or accept terms for them. No fake followers, reviews or likes. A profile that would show an unfiled invention: the patent check first (sop-kasper-promotion.txt).
+
+Sources: LinkedIn pages help https://www.linkedin.com/help/linkedin/topics/6227/6228 ; X help https://help.x.com ; Google Business Profile https://support.google.com/business .

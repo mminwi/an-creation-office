@@ -53,6 +53,10 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`kasper.txt`](guide/kasper.txt) | Kasper, the business manager (company, website, profiles, promotion) | [live](https://ancreationoffice.com/kasper.txt) |
 | [`sop-office.txt`](guide/sop-office.txt) | Set up Soren and the analyst. Only two bots ever: one Soren for every invention, one Kasper for the business | [live](https://ancreationoffice.com/sop-office.txt) |
 | [`github-setup.txt`](guide/github-setup.txt) | GitHub and the analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting | [live](https://ancreationoffice.com/github-setup.txt) |
+| [`sop-kasper-company.txt`](guide/sop-kasper-company.txt) | K1. Kasper: the company. Name checks, forming an LLC, tax ID, bank account, insurance, licenses, yearly upkeep | [live](https://ancreationoffice.com/sop-kasper-company.txt) |
+| [`sop-kasper-website.txt`](guide/sop-kasper-website.txt) | K2. Kasper: domain, website, business email, Google Search Console and Bing, the weekly search check | [live](https://ancreationoffice.com/sop-kasper-website.txt) |
+| [`sop-kasper-presence.txt`](guide/sop-kasper-presence.txt) | K3. Kasper: the brand kit and profiles. Logo, descriptions, fact sheet; LinkedIn, X, Facebook, YouTube and more | [live](https://ancreationoffice.com/sop-kasper-presence.txt) |
+| [`sop-kasper-promotion.txt`](guide/sop-kasper-promotion.txt) | K4. Kasper: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories | [live](https://ancreationoffice.com/sop-kasper-promotion.txt) |
 | [`sop-focus.txt`](guide/sop-focus.txt) | Keep the project focused: risks as questions, decisions, "for now" and circling back | [live](https://ancreationoffice.com/sop-focus.txt) |
 | [`ticket-template.txt`](guide/ticket-template.txt) | The ticket format Soren runs | [live](https://ancreationoffice.com/ticket-template.txt) |
 | [`intake-001.csv`](guide/intake-001.csv) | The first form, always: the invention and the screening questions | [live](https://ancreationoffice.com/intake-001.csv) |
