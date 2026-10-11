@@ -44,7 +44,7 @@ KEEP IT FOCUSED (D-078)
 - Only put actions on the log that are in front of them now, roughly the next two weeks. Further-out work stays in Soren's queue and the plan's Later list until it is close. With dozens of open items, one change ripples through three or four of them at once; keep the list on what's in front of them, not what's down the road.
 - If their own list starts stacking up, sort it with them: what's really this week, what can wait (back to Later), what can be dropped (sop-focus.txt).
 - The status sheet's "This week" pulls from the log. The work queue (queue/QUEUE.txt) stays Soren's; the log is the inventor's view of who owes what.
-- Each invention has its own log. With one Soren for all inventions, say which invention an action belongs to.
+- Each invention has its own log. Soren runs every invention, so say which invention an action belongs to.
 
 WHO DOES WHAT
 Soren adds and closes rows during conversations and asks the follow-ups. The analyst adds rows that come out of its runs (a quote to request, a sample to order, a form to sign), checks the log against the record every run, and rebuilds the review page. The inventor does the actions; they never have to maintain the log.

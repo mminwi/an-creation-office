@@ -51,7 +51,7 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`advance-now.txt`](guide/advance-now.txt) | The reason behind all of it, from Mike | [live](https://ancreationoffice.com/advance-now.txt) |
 | [`version.txt`](guide/version.txt) | Version check, first in every conversation | [live](https://ancreationoffice.com/version.txt) |
 | [`kasper.txt`](guide/kasper.txt) | Kasper, the business manager (company, website, profiles, promotion) | [live](https://ancreationoffice.com/kasper.txt) |
-| [`sop-office.txt`](guide/sop-office.txt) | Set up Soren and the analyst: one Soren for all inventions or one per invention, the inventor's choice | [live](https://ancreationoffice.com/sop-office.txt) |
+| [`sop-office.txt`](guide/sop-office.txt) | Set up Soren and the analyst. Only two bots ever: one Soren for every invention, one Kasper for the business | [live](https://ancreationoffice.com/sop-office.txt) |
 | [`github-setup.txt`](guide/github-setup.txt) | GitHub and the analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting | [live](https://ancreationoffice.com/github-setup.txt) |
 | [`sop-focus.txt`](guide/sop-focus.txt) | Keep the project focused: risks as questions, decisions, "for now" and circling back | [live](https://ancreationoffice.com/sop-focus.txt) |
 | [`ticket-template.txt`](guide/ticket-template.txt) | The ticket format Soren runs | [live](https://ancreationoffice.com/ticket-template.txt) |

@@ -1,4 +1,4 @@
-SOP: Set up Soren and the analyst. Revision 7 — October 11, 2026.
+SOP: Set up Soren and the analyst. Revision 8 — October 11, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Read this when Soren is missing, a new invention is starting, or the project folder is not recorded. Then leave it.
 
@@ -20,12 +20,11 @@ The office is cloud only: never set it up on a computer's own drive, even if the
 Inside the repository: AN-Creation/ with ideas.txt, All inventions, and one folder per invention, each with "Your files" and "Soren's files". Layout: https://ancreationoffice.com/project-folders.txt
 Prove you can use it: write a small test file, read it back, delete it (each is a commit). A connected app is not proof. If you can't write to it, say so plainly and work through the troubleshooting in github-setup.txt; don't go on until it works. Record the home in AN-Creation/office.txt: "Home: GitHub <username>/an-creation".
 
-ONE SOREN FOR ALL, OR ONE PER INVENTION (the inventor's choice)
-The first invention gets one Soren. When the inventor starts a second, Soren asks whether to keep one Soren for all of them or set up a separate Soren for each, and records the answer in AN-Creation/office.txt. Either way works; they can switch later.
-One per invention: create one Grok Bot for each invention, named for it: "Soren: fishing lure - Advance Now". One for all: one Grok Bot, "Soren - Advance Now".
-Profile, either way: the SOREN text in https://ancreationoffice.com/profile.txt (for one per invention, add "for the invention <name>" after the first sentence). It points to version.txt and standing.txt; never copy standing.txt into the profile.
+ONLY TWO BOTS
+There are only ever two bots: Soren for every invention, and Kasper for the business. Never create another bot, and never suggest one, even if they ask for a bot per invention; say why in a line: more bots means scattered files and conversations, and one Soren keeps every invention straight. One Grok Bot, "Soren - Advance Now", handles every invention; one, "Kasper - Advance Now", handles the business (made by the inventor when needed: https://ancreationoffice.com/setup.html#making-kasper).
+Soren's profile: the SOREN text in https://ancreationoffice.com/profile.txt. It points to version.txt and standing.txt; never copy standing.txt into the profile.
 Confirm Soren could read standing.txt. If the link fails, paste the text.
-A new idea that comes up goes in ideas.txt. When the inventor says to start it, it gets its own folder, and its own Soren only if they chose one per invention.
+A new idea that comes up goes in ideas.txt. When the inventor says to start it, it gets its own folder, and the same Soren runs it.
 
 BACKUPS
 Nothing to set up: GitHub keeps every version. Save a commit at the end of every conversation and every analyst run, with a short note (which invention, what changed, who). Nothing is overwritten either: every update is a new dated file or folder. Say it in a line: "GitHub keeps every version, so nothing gets lost."
