@@ -117,6 +117,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`review.py`](guide/review.py) | Tool: builds the inventor's local review pages | [live](https://ancreationoffice.com/review.py) |
 | [`revision-log.csv`](guide/revision-log.csv) | Worksheet / table (CSV): item_id, title, revision, previous_revision... | [live](https://ancreationoffice.com/revision-log.csv) |
 | [`revisions.txt`](guide/revisions.txt) | AN Creation revision control. Human lesson: https://ancreationoffice.com/revisions.html | [live](https://ancreationoffice.com/revisions.txt) |
+| [`robots.txt`](guide/robots.txt) | User-agent: * | [live](https://ancreationoffice.com/robots.txt) |
 | [`sop-hats.txt`](guide/sop-hats.txt) | SOP: Form, record, and call a session. Revision 3 — October 1, 2026. | [live](https://ancreationoffice.com/sop-hats.txt) |
 | [`sop-interns.txt`](guide/sop-interns.txt) | SOP: Use an intern. Revision 1 — October 1, 2026. | [live](https://ancreationoffice.com/sop-interns.txt) |
 | [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 11 — October 8, 2026. | [live](https://ancreationoffice.com/sop.txt) |
@@ -140,4 +141,4 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 
 Synced from the live site by a script after each publish. If this copy and https://ancreationoffice.com/ ever differ, the live site is current.
 
-*Last synced October 10, 2026.*
+*Last synced October 11, 2026.*
