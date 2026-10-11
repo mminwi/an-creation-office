@@ -11,6 +11,7 @@ Two assistants, two standing files.
 The reason behind all of it, from Mike: https://ancreationoffice.com/advance-now.txt
 
 FIRST
+0. Version check, first in every conversation: https://ancreationoffice.com/version.txt . The short profile text saved in each bot: https://ancreationoffice.com/profile.txt
 0. Set up Soren and the analyst: one Soren for all inventions or one per invention, the inventor's choice. https://ancreationoffice.com/sop-office.txt
 0. GitHub and the analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
