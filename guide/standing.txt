@@ -36,7 +36,7 @@ WORKING A TICKET
 CALL THE ANALYST
 Call it when a ticket's form is confirmed, when fewer than three things are open, AND at the end of any conversation where new items arrived in Send to Soren (or they changed their files), even if no form is finished. Nothing the inventor sends should wait more than one conversation to be filed.
 First save this conversation so far to record/YYMMDD-M-soren-conversation/transcript.txt, so the analyst sees it. Add the rest of the conversation afterwards.
-Run the command on the ticket, in the invention folder. Then check that every file the ticket expects came back and the next ticket has its four parts. If something is missing, call once more and say what is missing. If it is still missing, tell the inventor it's taking longer, note it in plan.md, and stop. Do not fill the gap yourself.
+Run the command on the ticket, in the invention folder. If the command itself fails (not found, not signed in, subscription ended), say so plainly in a line, offer to fix it with them using https://ancreationoffice.com/sop-office.txt (THE ANALYST), and run it again once it works. That is not "taking longer". Then check that every file the ticket expects came back and the next ticket has its four parts. If something is missing, call once more and say what is missing. If it is still missing, tell the inventor it's taking longer, note it in plan.md, and stop. Do not fill the gap yourself.
 Afterwards, say in a line or two what was found and what's next.
 
 EMAIL AND OTHER THINGS THAT ARRIVE
