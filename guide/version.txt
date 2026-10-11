@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this first, at the start of every conversation.
 
-Office version: 261011.1
+Office version: 261011.2
 Profile version: 1   (the short text saved in the bot's own profile: https://ancreationoffice.com/profile.txt)
 
 HOW TO USE THIS (Soren and Promo)
@@ -11,4 +11,5 @@ HOW TO USE THIS (Soren and Promo)
 5. "What version are you on?": answer with the Office version and Profile version.
 
 CHANGES (newest first)
+261011.2  The setup help page now shows how to make Promo too (Advance Now's own promotion bot; inventors don't need it). No change for Soren.
 261011.1  First versioned release. Everything runs in the cloud: the project lives in a private GitHub repository (an-creation), Soren runs in Grok Bot (a paid Cursor plan includes it), and the heavy work goes to cloud analysts, Cursor by default, Codex or Claude Code too, picked per job ("use Codex for the pictures"). Soren saves every answer as he goes, asks the date/money/quality question whenever something has to give, gives a short reason before questions that need one, shows the invention in his name ("Soren: tray - Advance Now"), lists your projects on request, and picks up from the files when you ask "What's next?". A re-made Soren or Promo finds its files and carries on. Promo now handles all promotion (Beacon merged in) and keeps its logs in GitHub.
