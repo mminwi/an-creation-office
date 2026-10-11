@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this first, at the start of every conversation.
 
-Office version: 261011.10
+Office version: 261011.11
 Soren profile version: 1
 Kasper profile version: 3
 (the short text saved in each bot's own profile: https://ancreationoffice.com/profile.txt)
@@ -13,6 +13,7 @@ HOW TO USE THIS (Soren and Kasper)
 5. "What version are you on?": answer with the Office version and your profile version.
 
 CHANGES (newest first)
+261011.11  Kasper adds practical tests for a company name (say it out loud, room to grow, not close to a direct competitor) and a domain (no hyphens or numbers, .com doesn't rank better, match the handles).
 261011.10  Kasper's name and domain advice now follows Mike's experience: search the web, LinkedIn and your state; similar names are common and usually fine unless they're in your state or your line of work; the plain .com is usually taken, so pick a sayable alternative and don't sweat it.
 261011.9  Kasper has his own procedures: the company (name, LLC, tax ID, bank, insurance), the website and search (domain, site, email, Google Search Console, Bing), profiles and the brand kit (LinkedIn, X and more), and promotion and listings (where to promote, the approval loop, the patent check). No change for Soren.
 261011.8  Welcome and Start pages explain the two managers: Soren redoes the process for every product; Kasper's business work is set up once and stays the same for one product or twenty. No change for Soren.

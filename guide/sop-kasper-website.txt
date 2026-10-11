@@ -9,6 +9,11 @@ A simple, honest website is where every post, profile and listing points. It doe
 1. THE DOMAIN
 - Pick it with the name (sop-kasper-company.txt). Expect the plain name to be taken; nine times out of ten it is. That's normal; don't sweat it. The choices: another ending (.co, .net, .shop, .us or one that fits the product), or keep .com and add something: "llc", a word like "co" or "shop", the product or the town. It's expected and it happens.
 - What matters: they can say it over the phone without spelling games. People rarely memorize web addresses; they type it once and bookmark it, like a phone number. A decent, sayable address beats a clever one.
+- Prefer an added word over hyphens or numbers; those are the hardest to say over the phone.
+- A .com doesn't rank better in search than other endings; pick on sayability.
+- Same name as the company and the social handles where possible; check all three together.
+- If a close variant is cheap (the .com with and without "llc", a common misspelling), buying it too is optional insurance; it doesn't have to be used.
+- Name the domain for the company, not one product; products get pages.
 - Check it's free at a registrar before falling in love with it.
 - They buy it themselves at a registrar (Cloudflare, Namecheap, Porkbun and others; about $10 to $20 a year). Turn on auto-renew and the registrar's privacy option. Record the registrar and renewal date in business.txt and actions.csv.
 

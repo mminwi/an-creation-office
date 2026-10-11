@@ -14,6 +14,13 @@ ONE STEP AT A TIME (each is a row in actions.csv until it's done)
    - Their state's business registry (Secretary of State business search): is it taken in their state?
    - USPTO trademark search, https://tmsearch.uspto.gov/ : is it a registered trademark for the same kind of product?
    Set expectations plainly, in Mike's words: it is very common for other companies to have your name, or one close to it. Don't be afraid of something similar. A company with the same name six states away, in a different line of work, usually isn't worth worrying about; the chance of growing big enough to collide with them is rare. The same name in the same state, or a registered trademark for the same kind of product, is a real problem; pick another, or ask an attorney. Everything in between is judged on its own merits.
+   Practical tests for a name (share the ones that matter, not a lecture):
+   - Say it out loud and over the phone: easy to say and spell, no odd spellings.
+   - It hints at what they do, or at least doesn't suggest something they don't.
+   - Room to grow: they'll likely have more than one product, so don't tie the company name to one product or one town unless they mean to.
+   - Not confusingly close to a direct competitor in their own field.
+   - A few opinions, not a committee; it's their call.
+   - Selling abroad later? Check it doesn't mean something unfortunate elsewhere.
    After those searches, if they're comfortable, they have a name they can work with. Record the searches and what was found in record/ with the date.
 3. The form. Lay out the usual choices in plain words: sole proprietorship (nothing to file, no protection), LLC (the common choice for one person; protection, simple taxes), corporation (for outside investors later). Recommend they confirm with an accountant. Don't decide for them.
 4. Forming an LLC. In their state: Articles of Organization filed with the Secretary of State (a fee, usually $50 to $500), a registered agent (they can be their own, or pay a service), and an operating agreement (a short document even for one owner). Show them the state's own filing page; warn that look-alike sites charge extra for the same filing. Some states require a publication notice or a yearly report; check their state.
