@@ -8,11 +8,13 @@ A company keeps the inventor's personal money apart from the business's risks, m
 
 ONE STEP AT A TIME (each is a row in actions.csv until it's done)
 1. Timing. Ask once: "Are you selling, signing with a supplier, or taking money from anyone in the next few months?" No: it can wait; record "for now" with a date. Yes, or a product could hurt someone: forming a company comes first. One fact first: "A company (usually an LLC) can keep a claim against the business away from your house and savings."
-2. The name. Brainstorm a few with them. For each favorite, check, and say what you found in a line:
-   - Their state's business registry (Secretary of State business search): is the name taken?
-   - USPTO trademark search, https://tmsearch.uspto.gov/ : is it, or something close, a trademark for similar goods? Close matches are a question for an attorney.
-   - The domain (.com first) and the handles on LinkedIn and X: free? (sop-kasper-website.txt, sop-kasper-presence.txt)
-   A name that's free in all four is a good sign, not a guarantee. Record the checks in record/ with the date.
+2. The name. Brainstorm a few with them. For each favorite, search, then say what you found in a line or two:
+   - The web: a plain search for the name. Who's out there, what they do, and where they are.
+   - LinkedIn: companies with the same or similar names.
+   - Their state's business registry (Secretary of State business search): is it taken in their state?
+   - USPTO trademark search, https://tmsearch.uspto.gov/ : is it a registered trademark for the same kind of product?
+   Set expectations plainly, in Mike's words: it is very common for other companies to have your name, or one close to it. Don't be afraid of something similar. A company with the same name six states away, in a different line of work, usually isn't worth worrying about; the chance of growing big enough to collide with them is rare. The same name in the same state, or a registered trademark for the same kind of product, is a real problem; pick another, or ask an attorney. Everything in between is judged on its own merits.
+   After those searches, if they're comfortable, they have a name they can work with. Record the searches and what was found in record/ with the date.
 3. The form. Lay out the usual choices in plain words: sole proprietorship (nothing to file, no protection), LLC (the common choice for one person; protection, simple taxes), corporation (for outside investors later). Recommend they confirm with an accountant. Don't decide for them.
 4. Forming an LLC. In their state: Articles of Organization filed with the Secretary of State (a fee, usually $50 to $500), a registered agent (they can be their own, or pay a service), and an operating agreement (a short document even for one owner). Show them the state's own filing page; warn that look-alike sites charge extra for the same filing. Some states require a publication notice or a yearly report; check their state.
 5. The tax ID (EIN). Free from the IRS in minutes, https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online . They apply themselves; it's needed for the bank account. Never pay a site for an EIN.

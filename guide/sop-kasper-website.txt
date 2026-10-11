@@ -7,7 +7,9 @@ WHY
 A simple, honest website is where every post, profile and listing points. It doesn't need to be fancy: what it is, who it's for, a picture, how to reach them. Set up once for the business; each product gets a page.
 
 1. THE DOMAIN
-- Pick it with the name (sop-kasper-company.txt): short, easy to say, .com if free. Check it's free at a registrar.
+- Pick it with the name (sop-kasper-company.txt). Expect the plain name to be taken; nine times out of ten it is. That's normal; don't sweat it. The choices: another ending (.co, .net, .shop, .us or one that fits the product), or keep .com and add something: "llc", a word like "co" or "shop", the product or the town. It's expected and it happens.
+- What matters: they can say it over the phone without spelling games. People rarely memorize web addresses; they type it once and bookmark it, like a phone number. A decent, sayable address beats a clever one.
+- Check it's free at a registrar before falling in love with it.
 - They buy it themselves at a registrar (Cloudflare, Namecheap, Porkbun and others; about $10 to $20 a year). Turn on auto-renew and the registrar's privacy option. Record the registrar and renewal date in business.txt and actions.csv.
 
 2. THE WEBSITE (simplest that works)
