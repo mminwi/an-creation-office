@@ -13,7 +13,7 @@ Record each answer with its context (why, their words, a sentence or short parag
 
 CALL (when the form is filled and confirmed)
 Tool: claude (else codex)
-Command: C:\AN-tools\claude.cmd -p --permission-mode acceptEdits --allowedTools "WebFetch WebSearch" "Read Soren's files/sop/analyst.txt and Soren's files/prompts/<prompt-file>.txt, then do the run."
+Command: C:\AN-tools\claude.cmd -p --permission-mode acceptEdits --allowedTools "WebFetch WebSearch" "Read https://ancreationoffice.com/analyst.txt and https://ancreationoffice.com/<prompt-file>.txt, then do the run."
 Run in: <project folder>
 
 EXPECT

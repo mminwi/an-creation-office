@@ -31,7 +31,9 @@ AN-Creation/
       mirror/                   text pulled once from each record item
       sessions/YYMMDD-HHMM-slug/   one per analyst run: prompt, notes, result, DONE.txt
       inventor-copy/            last confirmed copy of Your files
-      prompts/  archive/
+      archive/
+
+Only the project lives here. How Soren and the analyst work (procedures, prompts, instructions) stays on the website and is read from there every time; none of it is copied into this folder. A template copied in to be filled out (a form, the plan) is a project file from then on: dated, committed to Git, and never overwritten by a newer template.
 
 Source of truth: Soren's files plan.md, forms/ and record/. Your files are produced from them, so they can be rebuilt at any time. Nothing you change or delete there is lost.
 
