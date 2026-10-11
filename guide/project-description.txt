@@ -51,7 +51,7 @@ The decision: file, don't file, or not decided yet. If filing, the route (packag
 Done when: there is a decision or a "for now" with a date, the quick search is recorded, and every disclosure date on the timeline has its check.
 
 9. TIMELINE
-The inventor's dates: see it working, show it, talk to a buyer or supplier, sell it. The rough budget. Ask, in these words: If a date slips, which do you keep: the date, the money, or how well it works? Do not use the word hold for this. Hold already means go, hold, or drop. If another procedure says which to hold, ask this instead. Record the answer. A go, hold, or drop does not answer it. Working backward: each follow item and each next stage with its lead time and latest start. Any lead time that misses a date is flagged.
+The inventor's dates: see it working, show it, talk to a buyer or supplier, sell it. The rough budget. Don't ask up front which of date, money and quality to keep. Each time a problem forces a trade-off, ask, in these words: Something has to give here. Which do you keep: the date, the money, or how well it works? Record each answer with the problem it was for. Do not use the word hold for this. Hold already means go, hold, or drop. If another procedure says which to hold, ask this instead. Record the answer. A go, hold, or drop does not answer it. Working backward: each follow item and each next stage with its lead time and latest start. Any lead time that misses a date is flagged.
 Done when: the dates and that keep answer are recorded. If this was not asked, the timeline section is not done. Every follow item has a latest start date.
 
 10. QUALITY AND TEST PLAN

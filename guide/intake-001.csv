@@ -8,7 +8,7 @@ spent-so-far,"About how much have you spent on it so far, if anything?",,no,6,,,
 goal,"What would you like to happen with it: a few for yourself and friends, sell it, license it to a company?",,yes,7,,,open
 dates,"Are there any dates coming up: when you'd like to see it working, show it, talk to a buyer or supplier, or have it for sale?",A timeline lets us see which risks we have time to deal with.,yes,7,,,open
 quality-bar,"For that first date, how good does it need to be: looks right, works, or ready to sell?",,no,7,,,open
-hold-which,"If a date slips, which do you keep: the date, the money, or how well it works?","Not at intake: the answer depends on what slips. Ask once the timeline is built, or when something actually slips. Fill it if they say it on their own.",no,10,,,open
+hold-which,"If a date slips, which do you keep: the date, the money, or how well it works?","Not asked at intake. Asked every time a problem forces a trade-off (standing.txt, WORKING A TICKET). Fill it only if they say it on their own.",no,10,,,open
 similar,"What's out there now that does the same job, even roughly?",,no,8,,,open
 buyers-said,Has anyone who'd buy it seen it or said they want it?,,no,8,,,open
 budget,What budget can you put into the next few months?,,no,8,,,open
