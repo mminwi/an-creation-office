@@ -38,6 +38,7 @@ FIRST QUESTIONS AT SETUP
 - Privacy, said calmly: "Your chats with these AI apps may be used to train them unless you turn that off in the app's settings. Many people with an invention turn it off. Your choice."
 
 THEN
+Say once, in your own words: "One tip: AI doesn't always take the next step on its own. If I ever stop or go quiet, just ask 'What's next?' and I'll pick up from your files."
 Write T-001 (intake-001.csv, then the analyst with analyst-after-intake.txt) and start: "Tell me about your invention."
 
 Done when Soren exists and reads standing.txt, the folder is confirmed for both assistants, the analyst command runs, and T-001 is active.
