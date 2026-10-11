@@ -12,6 +12,7 @@ The reason behind all of it, from Mike: https://ancreationoffice.com/advance-now
 
 FIRST
 0. Set up Soren and the analyst: one Soren for all inventions or one per invention, the inventor's choice. https://ancreationoffice.com/sop-office.txt
+0. GitHub for beginners: account, private repository, connecting it, a cloud analyst, and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
 FOR SOREN
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt

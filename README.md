@@ -50,6 +50,7 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`analyst.txt`](guide/analyst.txt) | The analyst, called by Soren to do the thinking | [live](https://ancreationoffice.com/analyst.txt) |
 | [`advance-now.txt`](guide/advance-now.txt) | The reason behind all of it, from Mike | [live](https://ancreationoffice.com/advance-now.txt) |
 | [`sop-office.txt`](guide/sop-office.txt) | Set up Soren and the analyst: one Soren for all inventions or one per invention, the inventor's choice | [live](https://ancreationoffice.com/sop-office.txt) |
+| [`github-setup.txt`](guide/github-setup.txt) | GitHub for beginners: account, private repository, connecting it, a cloud analyst, and troubleshooting | [live](https://ancreationoffice.com/github-setup.txt) |
 | [`sop-focus.txt`](guide/sop-focus.txt) | Keep the project focused: risks as questions, decisions, "for now" and circling back | [live](https://ancreationoffice.com/sop-focus.txt) |
 | [`ticket-template.txt`](guide/ticket-template.txt) | The ticket format Soren runs | [live](https://ancreationoffice.com/ticket-template.txt) |
 | [`intake-001.csv`](guide/intake-001.csv) | The first form, always: the invention and the screening questions | [live](https://ancreationoffice.com/intake-001.csv) |

@@ -13,7 +13,7 @@ Say it to the inventor once, in a line: "Every change goes in a new dated file, 
 
 GITHUB (if they're comfortable with it)
 A private GitHub repository is a cloud folder with a full history of every change built in.
-- The person creates the GitHub account themselves; account creation can't be automated. They connect GitHub in their AI app once.
+- The person creates the GitHub account themselves; account creation can't be automated. They connect GitHub in their AI app once. Step-by-step for beginners, with troubleshooting: https://ancreationoffice.com/github-setup.txt
 - Create the repository as private (an-creation). Confirm it shows as private before the first save.
 - Save a commit at the end of every conversation and every analyst run, with a short note: which invention, what changed, who (Soren or the analyst). Soren does it; the person doesn't have to.
 - Plain words: repository = the project's online folder, commit = a saved checkpoint. Say the real word once, then use it (D-040).
