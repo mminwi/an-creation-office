@@ -129,7 +129,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`test-planning.json`](guide/test-planning.json) | Data behind the test planning page (JSON) | [live](https://ancreationoffice.com/test-planning.json) |
 | [`test-planning.txt`](guide/test-planning.txt) | Plan the test before the build — REV 1 — 2026-09-30 | [live](https://ancreationoffice.com/test-planning.txt) |
 | [`test-report-template.txt`](guide/test-report-template.txt) | AN CREATION — TEST REPORT TEMPLATE — REV 1 | [live](https://ancreationoffice.com/test-report-template.txt) |
-| [`version-control.txt`](guide/version-control.txt) | AN Creation backups and version control. Revision 2 — October 8, 2026. Human page: https://ancreationoffice.co | [live](https://ancreationoffice.com/version-control.txt) |
+| [`version-control.txt`](guide/version-control.txt) | AN Creation backups and version control. Revision 3 — October 11, 2026. Human page: https://ancreationoffice.c | [live](https://ancreationoffice.com/version-control.txt) |
 
 ## License
 

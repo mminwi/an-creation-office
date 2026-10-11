@@ -1,35 +1,32 @@
-AN Creation backups and version control. Revision 2 — October 8, 2026. Human page: https://ancreationoffice.com/version-control.html
-Replaces revision 1 (the three-vault layout and the old assistant names).
+AN Creation backups and version control. Revision 3 — October 11, 2026. Human page: https://ancreationoffice.com/version-control.html
+Replaces revision 2 (Git on the inventor's own computer). The office is cloud only now (D-098): Google Drive by default, GitHub for people comfortable with it.
 
 WHY
-AI is new, and it goofs up: a file gets overwritten, two versions get mixed, a chat gets cleared, a computer dies. Without Git there is a very good chance that something gets mixed up and a revision is lost. In practice, going back into the Git history to recover something is close to a daily event. So we very, very highly recommend Git. Dated folders (D-029) already keep every page and analyst run; Git keeps a saved history of everything else, and a second copy protects against losing the computer.
+AI is new, and it goofs up: a file gets overwritten, two versions get mixed, a chat gets cleared, a bot gets deleted. In practice, going back to an earlier version is close to a daily event. So the office never depends on one copy of anything, and never on the chat.
 
-THE DEFAULT: GIT ON THEIR OWN COMPUTER (recommend it strongly at setup)
-Git keeps a saved history of the project folder on the person's own computer. No account, no internet, free.
-- Help them install Git from the official site: https://git-scm.com/downloads/ . If you can't run the installer yourself, say exactly what to click.
-- Make the AN-Creation folder one vault (repository). One vault for all their inventions is simplest; each invention is a folder inside it.
-- Before the first checkpoint, add a .gitignore that leaves out passwords, keys, .env files and temporary files. Never commit an SSN, bank or card number, or password.
-- Save a checkpoint (commit) after every conversation and every analyst run, with a short note: which invention, what changed, who (Soren or the analyst). Soren runs it; the person doesn't have to.
-- Before restoring or redoing anything that looks wrong, check the history first: what changed, when, and the last good version.
-- Plain words: vault = repository, checkpoint = commit, send to the online copy = push. Say the real word once, then use it (D-040).
-If they decline, record it as a decision, say once what it risks, and offer again later.
+GOOGLE DRIVE (the default)
+Nothing to install or set up. Three things keep the history:
+- Never overwrite (D-029). Every update is a new dated file or folder: a new status, a new page, a new drawing, a new analyst run. The old one stays exactly as it was.
+- Drive's own version history. Drive keeps earlier versions of each file. Google Docs and Sheets keep theirs for good; other files (text, CSV, images) keep about 30 days or 100 versions. The dated-file rule is what keeps the long history; Drive's versions are the safety net for a slip.
+- The record. Every conversation and every analyst run is saved in Soren's files/record/ and sessions/, so what was said and decided is never only in a chat.
+Say it to the inventor once, in a line: "Every change goes in a new dated file, so nothing gets lost, and Drive keeps earlier versions too."
 
-THE OFFSITE COPY: GITHUB IF THEY WANT IT (offer, don't push)
-Local Git protects versions, not the disk. If the computer is lost, so is the history. Offer a second copy:
-- GitHub, a private repository: an online copy only they (and people they invite) can see. Check current plans and limits when setting up.
-- The person creates the GitHub account themselves; account creation can't be automated. Prefer a browser sign-in (GitHub CLI: https://cli.github.com/manual/gh_auth_login ) over keys.
-- Create the repository as private. Confirm it shows as private before the first push.
-- After that, push after each checkpoint, or at the end of each day, as they choose. Don't ask permission again for every routine push.
-- Big CAD and image files: use Git LFS (large file storage) on GitHub, or keep the largest files out of Git and back them up separately.
-Other ways to keep a second copy are fine: an external drive, a synced cloud folder. Any copy that isn't on the same disk counts.
+GITHUB (if they're comfortable with it)
+A private GitHub repository is a cloud folder with a full history of every change built in.
+- The person creates the GitHub account themselves; account creation can't be automated. They connect GitHub in their AI app once.
+- Create the repository as private (an-creation). Confirm it shows as private before the first save.
+- Save a commit at the end of every conversation and every analyst run, with a short note: which invention, what changed, who (Soren or the analyst). Soren does it; the person doesn't have to.
+- Plain words: repository = the project's online folder, commit = a saved checkpoint. Say the real word once, then use it (D-040).
+- Big CAD and image files: keep them in a dated folder in Google Drive and link them, or use Git LFS (large file storage) if they know it.
 
 IF SOMETHING GOES WRONG
-- A file got overwritten, mixed up or deleted: find the last good checkpoint, restore it, and say what was restored.
-- A chat got cleared: nothing is lost; the project is in the files. Start from PROJECT.txt, plan.md and the latest status.
-- The computer is gone: clone the GitHub copy (or restore the drive copy) onto the new computer, and check the latest checkpoint is there.
-Once, after setup, test it: restore one file from a checkpoint, and if there is an online copy, clone it into a scratch folder and look.
+- A file got overwritten, mixed up or deleted: look at the earlier dated files first, then Drive's version history (or the GitHub history), find the last good version, restore it as a new dated file, and say what was restored.
+- A chat got cleared, or Soren was deleted and made again: nothing is lost. The new Soren looks for AN-Creation in My Drive first, reads office.txt, All inventions, PROJECT.txt, plan.md and the latest status, and carries on.
+- They lost their phone: sign in to the same Google account (and AI app) on the new one. The files are in the cloud.
 
-LIMITS
-A checkpoint is not an approval. Git history does not replace the revision and change records (sop-change-control.txt) or the record of what was sent to whom. Never put passwords or tokens in PROJECT.txt, notes or checkpoint messages.
+NEVER
+- Never set the office up on a computer's own drive. It must work from the phone and be findable by a re-made Soren.
+- Never put passwords, keys, an SSN, or bank or card numbers in any project file, note or commit message.
+- A saved version is not an approval. History does not replace the revision and change records (sop-change-control.txt) or the record of what was sent to whom.
 
-Sources: Git basics https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository ; remotes https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes ; .gitignore https://git-scm.com/docs/gitignore ; GitHub backup https://docs.github.com/en/repositories/archiving-a-github-repository/backing-up-a-repository ; large files https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage ; GitHub account rules https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-account-requirements .
+Sources: Google Drive version history https://support.google.com/drive/answer/2409045 ; GitHub private repositories https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories ; large files https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage ; GitHub account rules https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-account-requirements .
