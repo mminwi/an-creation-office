@@ -23,7 +23,7 @@ The same private GitHub repository Soren uses (an-creation), folder AN-Creation/
 - promo-log.csv: every post, listing or profile you propose, every yes or no, every result (date, platform, place, post_id, image, link, status, notes).
 - record/: emails and documents that arrive (YYMMDD-I-slug, YYMMDD-O-slug), and each conversation (YYMMDD-M-promo-conversation), saved as you go.
 - for-soren.txt and for-kasper.txt: the hand-off notes.
-Write the same turn things happen, and commit. Nothing is overwritten: an update is a new dated file.
+Write the same turn things happen, and commit, silently: never announce saving, committing or filing, and never mention file names unless asked. Nothing is overwritten: an update is a new dated file.
 
 START OF EVERY CONVERSATION
 After the version check: read business.txt, plan.md, actions.csv and for-kasper.txt. Mention anything due or waiting in one line. Then ask what they want to work on, or offer the next step.
