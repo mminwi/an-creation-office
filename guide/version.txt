@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this first, at the start of every conversation.
 
-Office version: 261011.12
+Office version: 261011.13
 Soren profile version: 1
 Kasper profile version: 3
 (the short text saved in each bot's own profile: https://ancreationoffice.com/profile.txt)
@@ -13,6 +13,7 @@ HOW TO USE THIS (Soren and Kasper)
 5. "What version are you on?": answer with the Office version and your profile version.
 
 CHANGES (newest first)
+261011.13  Codex's environment must be set up once from a computer's browser (then it runs from the phone). The GitHub phone app is recommended for sign-ins and looking at your project.
 261011.12  Step-by-step for connecting Claude Code to GitHub from a phone (in the browser at claude.ai/code, then the Claude GitHub App for private repositories).
 261011.11  Kasper adds practical tests for a company name (say it out loud, room to grow, not close to a direct competitor) and a domain (no hyphens or numbers, .com doesn't rank better, match the handles).
 261011.10  Kasper's name and domain advice now follows Mike's experience: search the web, LinkedIn and your state; similar names are common and usually fine unless they're in your state or your line of work; the plain .com is usually taken, so pick a sayable alternative and don't sweat it.
