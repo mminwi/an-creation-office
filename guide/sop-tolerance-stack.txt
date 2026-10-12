@@ -15,7 +15,7 @@ METHOD
 6. Print review: datums that match how the part is located in assembly and in inspection; every feature controlled; GD&T per ASME Y14.5 (ISO 1101 for ISO-system suppliers; Y14.41 for model-based definition).
 
 SOURCES (library)
-asme-y14-5, asme-y14-5-1, asme-y14-41, iso-1101, nist-tolerance; stack method overviews: tolerance-stack-methods.
+Books (the depth): fischer-tolerance-stackup (Fischer, Mechanical Tolerance Stackup and Analysis), drake-tolerancing-handbook (Drake, Dimensioning and Tolerancing Handbook). Standards: asme-y14-5, asme-y14-5-1, asme-y14-41, iso-1101; nist-tolerance; method overviews: tolerance-stack-methods.
 
 PRODUCES
 A stack report per gap: the loop sketch, the dimension table, the three results, the contributors, the decision and its reason. Results are proposed; the designer confirms.

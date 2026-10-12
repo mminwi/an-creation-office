@@ -12,7 +12,7 @@ METHOD
 6. Record the choice with its reasons and its sources; values from data sheets carry the grade and date.
 
 SOURCES (library)
-ul-prospector, resin-design-guides, astm-d543, chemical-resistance-guide, ul-94, ul-746c, cfr-21-177, nsf-51, fda-food-contact, eu-rohs, eu-reach, ca-prop-65, sheet-dfm.
+Selection guides and books: mcam-material-selection, protolabs-material-selection, biron-material-selection (Biron, Material Selection for Thermoplastic Parts), the resin makers' own selection and product guides (DuPont, Dow, Celanese and others; use the maker of the resin family being considered). Data and tests: ul-prospector, resin-design-guides, astm-d543, chemical-resistance-guide, ul-94, ul-746c, cfr-21-177, nsf-51, fda-food-contact, eu-rohs, eu-reach, ca-prop-65, sheet-dfm.
 
 PRODUCES
 A material decision record: requirements, shortlist with data, chemical check per chemical, tests needed, the choice and why.

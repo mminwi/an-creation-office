@@ -6251,6 +6251,103 @@
       "checked_on": "2026-10-12",
       "source": "Engineering web articles (via search)",
       "kind": "learning_resource"
+    },
+    {
+      "id": "fischer-tolerance-stackup",
+      "title": "Bryan R. Fischer — Mechanical Tolerance Stackup and Analysis",
+      "url": "https://eld.bl.uk/catalog/018390235",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "design"
+      ],
+      "b_roles": [
+        "b-tolerance-gdt"
+      ],
+      "use": "The standard book on stacks: worst-case and statistical analysis, GD&T in stackups, floating and fixed fastener formulas, what-if changes to tolerancing schemes. The author worked on ASME Y14.5. Paid.",
+      "edition": "2nd edition, 2011, CRC Press",
+      "check": "Found via search 2026-10-12 (library catalog listing); the office did not open it.",
+      "checked_on": "2026-10-12",
+      "source": "Book (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "drake-tolerancing-handbook",
+      "title": "Paul Drake Jr. — Dimensioning and Tolerancing Handbook",
+      "url": "https://mhprofessional.com/dimensioning-and-tolerancing-handbook-9780070181311-usa",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "design"
+      ],
+      "b_roles": [
+        "b-tolerance-gdt"
+      ],
+      "use": "Practitioner handbook: traditional and statistical stack analysis, multi-dimensional tolerance analysis. Paid.",
+      "edition": "McGraw-Hill, 1st edition (ISBN 9780070181311)",
+      "check": "Found via search 2026-10-12; edition year not confirmed.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher listing (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "biron-material-selection",
+      "title": "Michel Biron — Material Selection for Thermoplastic Parts",
+      "url": "https://cloudpanel.productside.com/book/978005447/material-selection-for-thermoplastic-parts",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "design"
+      ],
+      "b_roles": [
+        "b-plastic-materials"
+      ],
+      "use": "Book on choosing thermoplastics: about 300 subfamilies, 20+ properties each; notes that nearly half of plastic failures trace back to the original material specification and selection. Paid. (Link found via search; use a publisher or library listing to buy.)",
+      "edition": "Not confirmed",
+      "check": "Found via search 2026-10-12; publisher page not found.",
+      "checked_on": "2026-10-12",
+      "source": "Book (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "mcam-material-selection",
+      "title": "MCAM (Mitsubishi Chemical) — Plastic material selection guide",
+      "url": "https://www.mcam.com/support/material-selection-guide/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "design"
+      ],
+      "b_roles": [
+        "b-plastic-materials"
+      ],
+      "use": "Five-step thermoplastic selection guide; chemical resistance depends on concentration, temperature, time and stress, so test under end-use conditions. Free.",
+      "edition": "Web guide",
+      "check": "Found via search 2026-10-12; the office did not open the page itself.",
+      "checked_on": "2026-10-12",
+      "source": "Material maker website (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "protolabs-material-selection",
+      "title": "Protolabs — Thermoplastic material selection for injection molding",
+      "url": "https://www.protolabs.com/resources/guides-and-trend-reports/thermoplastic-material-selection-for-injection-molding/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "design",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-plastic-materials",
+        "b-prototyping"
+      ],
+      "use": "Guide for choosing a resin from loads, stresses and environment; where life safety is involved, engineer every part and select the material accordingly. Free.",
+      "edition": "Web guide",
+      "check": "Found via search 2026-10-12; the office did not open the page itself.",
+      "checked_on": "2026-10-12",
+      "source": "Supplier website (via search)",
+      "kind": "learning_resource"
     }
   ],
   "researched_shortlists": {

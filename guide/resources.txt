@@ -2367,6 +2367,46 @@ Edition: Web articles.
 Check: Found via search 2026-10-12; the office did not open the pages itself.
 Checked: 2026-10-12. Source: Engineering web articles (via search).
 
+fischer-tolerance-stackup | Bryan R. Fischer — Mechanical Tolerance Stackup and Analysis
+https://eld.bl.uk/catalog/018390235
+Group: quality. Type: learning_resource.
+Roles: b-tolerance-gdt. The standard book on stacks: worst-case and statistical analysis, GD&T in stackups, floating and fixed fastener formulas, what-if changes to tolerancing schemes. The author worked on ASME Y14.5. Paid.
+Edition: 2nd edition, 2011, CRC Press.
+Check: Found via search 2026-10-12 (library catalog listing); the office did not open it.
+Checked: 2026-10-12. Source: Book (via search).
+
+drake-tolerancing-handbook | Paul Drake Jr. — Dimensioning and Tolerancing Handbook
+https://mhprofessional.com/dimensioning-and-tolerancing-handbook-9780070181311-usa
+Group: quality. Type: learning_resource.
+Roles: b-tolerance-gdt. Practitioner handbook: traditional and statistical stack analysis, multi-dimensional tolerance analysis. Paid.
+Edition: McGraw-Hill, 1st edition (ISBN 9780070181311).
+Check: Found via search 2026-10-12; edition year not confirmed.
+Checked: 2026-10-12. Source: Publisher listing (via search).
+
+biron-material-selection | Michel Biron — Material Selection for Thermoplastic Parts
+https://cloudpanel.productside.com/book/978005447/material-selection-for-thermoplastic-parts
+Group: making. Type: learning_resource.
+Roles: b-plastic-materials. Book on choosing thermoplastics: about 300 subfamilies, 20+ properties each; notes that nearly half of plastic failures trace back to the original material specification and selection. Paid. (Link found via search; use a publisher or library listing to buy.)
+Edition: Not confirmed.
+Check: Found via search 2026-10-12; publisher page not found.
+Checked: 2026-10-12. Source: Book (via search).
+
+mcam-material-selection | MCAM (Mitsubishi Chemical) — Plastic material selection guide
+https://www.mcam.com/support/material-selection-guide/
+Group: making. Type: learning_resource.
+Roles: b-plastic-materials. Five-step thermoplastic selection guide; chemical resistance depends on concentration, temperature, time and stress, so test under end-use conditions. Free.
+Edition: Web guide.
+Check: Found via search 2026-10-12; the office did not open the page itself.
+Checked: 2026-10-12. Source: Material maker website (via search).
+
+protolabs-material-selection | Protolabs — Thermoplastic material selection for injection molding
+https://www.protolabs.com/resources/guides-and-trend-reports/thermoplastic-material-selection-for-injection-molding/
+Group: making. Type: learning_resource.
+Roles: b-plastic-materials, b-prototyping. Guide for choosing a resin from loads, stresses and environment; where life safety is involved, engineer every part and select the material accordingly. Free.
+Edition: Web guide.
+Check: Found via search 2026-10-12; the office did not open the page itself.
+Checked: 2026-10-12. Source: Supplier website (via search).
+
 BEGIN DESIGN PRINCIPLES
 Guide: https://ancreationoffice.com/design-principles.html
 Instructions: https://ancreationoffice.com/design-principles.txt
