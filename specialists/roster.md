@@ -5,7 +5,7 @@ First drafted in mminwi/an-creation (AN-Creation/Business/specialists.md); this 
 ## The idea
 
 - Stop promoting "help for inventors." Promote **specialists**: a project manager, a design-for-manufacturing specialist, a cooling water specialist, a patent specialist, and so on. Each one gets its own page, its own one-line promise and its own listing.
-- They are called specialists, not engineers, accountants or lawyers. A specialist does the work up to the point where a licensed person must decide, then hands over a clean packet.
+- They are called specialists, never engineers, accountants or lawyers, in names and in promotion. A specialist does the work up to the point where a licensed person must decide, then hands over a clean packet.
 - Behind the doors it is one office: one shared base (library of standards, forms, calculations, rules, the customer's project record) and one front desk (b-project-manager).
 - A visitor can pick one specialist, pick several, or describe the problem and let the front desk pick the team. Every specialist on a job works from the same project record.
 - Build them all together. Most of the work is the same work for every specialist: finding the standards and documents that govern the area, writing short pointers to them, and mapping the forms.
@@ -26,71 +26,79 @@ First drafted in mminwi/an-creation (AN-Creation/Business/specialists.md); this 
 
 The tier sets how the specialist is promoted. Deep: "built from Mike's years in molding." Managed and Documented: "gets you ready for your engineer/attorney, and saves you their hours."
 
-## First roster (32, tiers proposed, Mike confirms)
+## The roster (37 roles; master list is roles.csv)
+
+Generated from roles.csv, which also lists each role's procedures, library sources, new sources and gaps. Edit roles.csv, not this table. Tiers proposed; Mike confirms.
+
 
 ### Project and business
-| # | Specialist | Promise | Tier | Hands off to | Key sources |
-|---|---|---|---|---|---|
-| 1 | New Product Project Manager (b-project-manager) | Stages, gates, schedule and a short to-do list for a new product | Deep | — | Office stages and gates; PMI basics |
-| 2 | Company Setup (b-company-setup) | Entity, EIN, bank, insurance, organized before you pay anyone | Documented | Attorney, accountant, insurance agent | State SOS, IRS, SBA |
-| 3 | Patent Prep (b-patent-prep) | Invention disclosure, prior-art log, provisional package draft | Documented | Patent attorney or agent | USPTO, MPEP, Patent Public Search |
-| 4 | Trademark and Naming (b-trademark) | Name screening and the questions for counsel | Documented | Trademark attorney | USPTO trademark search, TMEP |
-| 5 | Licensing and Funding (b-licensing-funding) | License packet, licensee list, funding worksheet | Documented | Attorney | USPTO/SBA guides |
-| 6 | Launch and Promotion (b-promotion) | Site, listings, posts (b-business-manager) | Managed | — | Platform rules |
+| Specialist | Role | Tier | Does | Hands off to |
+|---|---|---|---|---|
+| Project Manager | b-project-manager | Deep | Stages, gates, plan, queue, action log, status; tracks every job | — |
+| Analyst | b-analyst | Deep | Headless worker: files records, runs the looks and the specialist work, writes tickets | — |
+| Business Manager | b-business-manager | Managed | Everything around the products: company, name, website, profiles, promotion, business paperwork | attorney; accountant; insurance agent |
+| Company Setup Specialist | b-company-setup | Documented | Entity, EIN, bank, insurance, organized before paying anyone | attorney; accountant; insurance agent |
+| Patent Prep Specialist | b-patent-prep | Documented | Invention disclosure, prior-art log, provisional package draft | patent attorney or agent |
+| Trademark and Naming Specialist | b-trademark | Documented | Name screening and the questions for counsel | trademark attorney |
+| Licensing and Funding Specialist | b-licensing-funding | Documented | License packet, licensee list, funding worksheet | attorney |
+| Launch and Promotion Specialist | b-promotion | Managed | Site, listings, posts, all drafted for a yes | — |
+| Retail Selling Specialist | b-retail | Documented | Getting ready for Amazon, Walmart, Lowe's and other buyers: registration, fees, barcodes, supplier requirements | — |
+| Government and Defense Contracting Specialist | b-gov-contracting | Documented | SAM registration, contract specs and military standards, supplier setup for federal and defense buyers | contracting officer (their side); APEX Accelerator |
 
 ### Product design
-| # | Specialist | Promise | Tier | Hands off to | Key sources |
-|---|---|---|---|---|---|
-| 7 | Design for Manufacturing (b-dfm) | Make the part cheaper and easier to build before tooling | Deep | — | Process design guides |
-| 8 | Plastic Part Design (b-plastic-part-design) | Walls, draft, ribs, bosses, gates, sink and warp risk | Deep | — | Resin supplier design guides |
-| 9 | Tolerance Stack and GD&T (b-tolerance-gdt) | Stack studies (worst case, RSS, Monte Carlo) and print reviews | Deep | — | ASME Y14.5-2018, Y14.5.1 |
-| 10 | Plastic Material Selection (b-plastic-materials) | Resin choice by load, heat, chemicals, flame, food/medical | Deep | — | UL 94, FDA 21 CFR 177, supplier data |
-| 11 | Prototyping (b-prototyping) | Right prototype path: print, machine, soft tool | Deep | Prototype shops | Shop capability data |
+| Specialist | Role | Tier | Does | Hands off to |
+|---|---|---|---|---|
+| Product Design Specialist | b-design | Deep | Concepts, structure, loads, mechanisms, ergonomics, fits; metal parts | mechanical engineer (load cases near people) |
+| Design for Manufacturing Specialist | b-dfm | Deep | Make the part cheaper and easier to build before tooling | — |
+| Plastic Part Design Specialist | b-plastic-part-design | Deep | Walls, draft, ribs, bosses, gates, sink and warp risk, joining and sealing | — |
+| Tolerance Stack and GD&T Specialist | b-tolerance-gdt | Deep | Stack studies (worst case, RSS, Monte Carlo) and print reviews | — |
+| Plastic Material Selection Specialist | b-plastic-materials | Deep | Resin by load, heat, chemicals and disinfectants, flame, food or medical contact | — |
+| Prototyping Specialist | b-prototyping | Deep | The right prototype path: print, machine, soft tool, mock-up | prototype shops |
 
 ### Molding and tooling
-| # | Specialist | Promise | Tier | Hands off to | Key sources |
-|---|---|---|---|---|---|
-| 12 | Mold Buying and Qualification (b-mold-buying) | Mold spec, quote package, T1 plan, approval | Deep | Tool shop | PLASTICS (SPI) mold classes, AIAG PPAP |
-| 13 | Scientific Molding (b-scientific-molding) | Viscosity curve, gate seal, cavity balance, process window | Deep | — | Decoupled/scientific molding literature |
-| 14 | Molding Defect Troubleshooting (b-molding-defects) | Short shot, sink, flash, splay, warp: root cause from your data | Deep | — | Resin supplier troubleshooting guides |
-| 15 | Mold and Machine Cooling Water (b-cooling-water) | Heat load, circuit flow, chiller and tower sizing, water treatment | Deep | Mechanical contractor | ASHRAE handbooks, CTI, OEM data |
-| 16 | Material Drying and Handling (b-drying-handling) | Dryer sizing, moisture, regrind rules | Deep | — | Resin supplier drying data |
-| 17 | Automation and Auxiliaries (b-automation) | Robots, conveyors, end-of-arm tooling, specified for a quote | Managed | Integrator | ANSI/RIA R15.06, ISO 10218 |
+| Specialist | Role | Tier | Does | Hands off to |
+|---|---|---|---|---|
+| Mold Buying and Qualification Specialist | b-mold-buying | Deep | Mold spec, quote package, T1 plan, approval | tool shop; molder |
+| Scientific Molding Specialist | b-scientific-molding | Deep | Viscosity curve, gate seal, cavity balance, pressure drop, process window | — |
+| Molding Defect Troubleshooting Specialist | b-molding-defects | Deep | Short shot, sink, flash, splay, warp: root cause from the data | — |
+| Mold and Machine Cooling Water Specialist | b-cooling-water | Deep | Heat load, circuit flow, chiller and tower sizing, water treatment | mechanical contractor; water treatment vendor |
+| Material Drying and Handling Specialist | b-drying-handling | Deep | Dryer sizing, moisture, regrind rules | — |
+| Automation and Auxiliaries Specialist | b-automation | Managed | Robots, conveyors, end-of-arm tooling, specified for a quote | integrator |
 
 ### Quality
-| # | Specialist | Promise | Tier | Hands off to | Key sources |
-|---|---|---|---|---|---|
-| 18 | Quality Planning (b-quality-planning) | APQP, DFMEA, PFMEA, control plan | Deep | — | AIAG-VDA FMEA, AIAG APQP, ISO 9001 |
-| 19 | Measurement and Inspection (b-measurement) | Gauge R&R, inspection plans, first article | Deep | Lab, CMM shop | AIAG MSA, AS9102 |
-| 20 | Lean Six Sigma (b-six-sigma) | DMAIC projects: scrap, OEE, mold change time | Deep | — | ASQ body of knowledge |
-| 21 | Medical Device Quality (b-medical-quality) | Design controls, ISO 13485 readiness | Documented | Regulatory consultant | FDA 21 CFR 820, ISO 13485 |
+| Specialist | Role | Tier | Does | Hands off to |
+|---|---|---|---|---|
+| Quality Planning Specialist | b-quality-planning | Deep | APQP, DFMEA, PFMEA, control plan | — |
+| Measurement and Inspection Specialist | b-measurement | Deep | Gauge R&R, inspection plans, first article | lab; CMM shop |
+| Lean Six Sigma Specialist | b-six-sigma | Deep | DMAIC projects: scrap, OEE, changeover time, capability | — |
+| Medical Device Quality Specialist | b-medical-quality | Documented | Design controls and ISO 13485 readiness | regulatory consultant |
 
 ### Electrical and compliance
-| # | Specialist | Promise | Tier | Hands off to | Key sources |
-|---|---|---|---|---|---|
-| 22 | Electrical Project Prep (b-electrical) | Load list, sequence of operation, code screen, RFQ for your EE | Managed | Electrical engineer, panel shop | NFPA 79, NFPA 70 (NEC), UL 508A |
-| 23 | Controls and PLC Prep (b-controls) | I/O list, sequence, alarms, acceptance test | Managed | Controls integrator | NFPA 79, IEC 61131 |
-| 24 | Battery and Power (b-battery-power) | Battery choice questions, protection, shipping rules | Documented | Electrical engineer | UL 2054, IEC 62133, UN 38.3 |
-| 25 | EMI and FCC (b-emi-fcc) | Design checklist, pre-scan plan, which FCC rules apply | Documented | EMC test lab | FCC Part 15/18, CISPR 32 |
-| 26 | Product Safety and Listing (b-product-safety) | Which UL/NRTL path, hazards, warnings | Documented | NRTL lab | OSHA NRTL list, CPSC |
-| 27 | Machine Safety and Guarding (b-food-equipment) | Risk assessment draft, guarding, lockout | Managed | Safety engineer | ISO 12100, ANSI B11.0, OSHA 1910.212/147 |
-| 28 | Food Equipment (b-machine-safety) | Cleanable design and NSF path | Documented | NSF lab | NSF/ANSI 2, 51; FDA Food Code |
+| Specialist | Role | Tier | Does | Hands off to |
+|---|---|---|---|---|
+| Electrical Project Prep Specialist | b-electrical | Managed | Requirements, load list, sequence of operation, code screen, RFQ for your electrical engineer | electrical engineer; panel shop |
+| Controls and PLC Prep Specialist | b-controls | Managed | I/O list, sequence, alarms, acceptance test | controls integrator |
+| Battery and Power Specialist | b-battery-power | Documented | Battery questions, protection, charging, shipping rules | electrical engineer; battery test lab |
+| EMI and FCC Specialist | b-emi-fcc | Documented | Design checklist, pre-scan plan, which FCC and EMC rules apply | EMC test lab |
+| Product Safety and Listing Specialist | b-product-safety | Documented | Which UL/NRTL path, hazards, warnings, recalls of similar products | NRTL lab |
+| Machine Safety and Guarding Specialist | b-machine-safety | Managed | Risk assessment draft, guarding, lockout, safety circuits | safety engineer |
+| Food Equipment Specialist | b-food-equipment | Documented | Cleanable design and the NSF path | NSF lab |
 
 ### Supply chain and manufacturing
-| # | Specialist | Promise | Tier | Hands off to | Key sources |
-|---|---|---|---|---|---|
-| 29 | Sourcing and RFQ (b-sourcing) | Quote packages and side-by-side supplier comparison | Deep | Suppliers | Office RFQ form |
-| 30 | Cost and BOM (b-cost-bom) | Should-cost, molded part cost from cycle, rate and resin | Deep | — | Office BOM form |
-| 31 | Manufacturing Engineering (b-manufacturing) | Process flow, work instructions, line balance, layout | Deep | — | Office forms |
-| 32 | Packaging and Shipping (b-packaging-shipping) | Package design, drop tests, carrier rules | Documented | Test lab | ISTA, UN 38.3, carrier rules |
+| Specialist | Role | Tier | Does | Hands off to |
+|---|---|---|---|---|
+| Purchasing Specialist | b-purchasing | Deep | Quote packages, supplier comparison, terms, delivered cost | suppliers |
+| Cost and BOM Specialist | b-cost-bom | Deep | Should-cost, molded part cost from cycle, rate and resin, the BOM | — |
+| Manufacturing Specialist | b-manufacturing | Deep | Process flow, PFMEA, work instructions, line balance, layout, launch | — |
+| Packaging and Shipping Specialist | b-packaging-shipping | Documented | Package design, drop tests, carrier and lithium rules | test lab |
 
 ## First-look roles
 
-Seven broad roles do the first and second looks (guide/sop-team.txt): b-project-manager, b-business-manager, b-mechanical, b-electrical, b-plastics, b-manufacturing, b-quality. Each one pulls in the specialists below for its area. b-plastics covers everything plastic and pulls in 8, 10, 12, 13, 14, 15, 16; it was added after the tray test (2026-10-12), where plastics knowledge was split across three roles.
+Seven broad roles do the first and second looks (guide/sop-team.txt): b-project-manager, b-business-manager, b-design, b-electrical, b-plastics, b-manufacturing, b-quality. Each one pulls in the specialists below for its area. b-plastics covers everything plastic and pulls in plastic part design, plastic materials, mold buying, scientific molding, defects, cooling water and drying; it was added after the tray test (2026-10-12), where plastics knowledge was split across three roles.
 
 ## How the front desk teams them up
 
-- One intake. The answers pick the specialists, the same way screening questions already pull in standards (screening-questions.csv). Example: "the mold runs hot and the cycle is long" brings in 15, 13 and 14.
+- One intake. The answers pick the specialists, the same way screening questions already pull in standards (screening-questions.csv). Example: "the mold runs hot and the cycle is long" brings in b-cooling-water, b-scientific-molding and b-molding-defects.
 - One project record. Every specialist writes to the same forms with the same status words; one field owns each fact.
 - One short list. However many specialists are on a job, the customer sees one list of about three items.
 

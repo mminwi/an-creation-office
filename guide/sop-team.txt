@@ -3,7 +3,7 @@ Index: https://ancreationoffice.com/sop.txt
 Read this when setting up the bots, when the inventor wants to add, merge, split or rename a bot, and when a project needs its first look or a second look at a gate.
 
 ROLE NAMES (every procedure)
-- A procedure never uses a personal name for a bot. It names the role: a small b, a dash, and what the role does, all lower case: b-project-manager, b-business-manager, b-analyst, b-mechanical, b-electrical, b-six-sigma.
+- A procedure never uses a personal name for a bot. It names the role: a small b, a dash, and what the role does, all lower case: b-project-manager, b-business-manager, b-analyst, b-design, b-electrical, b-six-sigma.
 - The b-name says what the role is and nothing else. It is not a name to show the inventor.
 - The inventor names their own bots, in the team file. A bot talks under the name the inventor gave it and reads every procedure by its b-names. Renaming a bot changes one cell in the team file and nothing else.
 
@@ -33,7 +33,7 @@ When a project description is finished (end of S0), or a new kind of project com
 The roles
 1. b-project-manager: stages, dates, money, who decides; the size of the project; what drives the schedule.
 2. b-business-manager: company, patent and name, money, licensing or selling.
-3. b-mechanical: structure, loads, mechanisms, fits and tolerances, weight; metal parts.
+3. b-design: product design: concepts, structure, loads, mechanisms, ergonomics, fits and tolerances, weight; metal parts.
 4. b-electrical: electronics, power and batteries, controls, wireless, EMI, electrical certifications.
 5. b-plastics: plastic part design, resin choice (strength, heat, chemicals and disinfectants, food contact, flame rating), molding (warp, gates, cooling, wall and ribs), joining and sealing (welding, gaskets, overmolding), tooling and the molder's view. Runs whenever the product has, or will likely have, a plastic part. It owns everything plastic, so the other roles leave those items to it.
 6. b-manufacturing: processes other than molding (machining, sheet metal, electronics assembly, final assembly), prototype path, sourcing, cost, who makes it.

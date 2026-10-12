@@ -2,6 +2,7 @@
 
 A wider-scoped branch of the AN Creation Office. Instead of one office "for inventors," the office is promoted as a roster of specialists: a project manager, a design-for-manufacturing specialist, a cooling water specialist, a patent prep specialist, and so on. Each one gets its own page and listing. Behind them is one office: the same procedures, library, forms and front desk (b-project-manager) in guide/.
 
+- roles.csv: the master list of roles: procedures, library sources, new sources, links between roles. sources-new.csv: sources still to read. sources.md: what the sources pass did and the gaps.
 - roster.md: the idea, the specialist card format, the first roster of 32, how the front desk teams them up, and the build plan.
 - Next: the sources pass (every card gets its standards and documents, reusing guide/resources.json), then forms and calculations, then routing questions for the front desk.
 
@@ -24,5 +25,6 @@ Before merging to main (the live site):
 - Existing projects (mminwi/an-creation: tray, Business) still use "Soren's files" and the old hand-off file names; they need a one-time rename.
 - The website's HTML pages (soren.html, setup.html#making-kasper, the start page) still use the names; they live outside this repo.
 - The old .txt URLs (soren.txt, kasper.txt, sop-kasper-*.txt) should redirect to the new ones, so bots already set up keep working.
+- guide/resources.json, planning-resources.json and resource-crosscheck.json still key roles by personal names (andy, casey, larry, ellis, peter, morgan, frankie, maya); switch them to b-names with the website.
 - guide/advance-now.json still has a "soren" key; the website may read it, so it was left alone.
 - Version and profile version bump in version.txt.
