@@ -1,4 +1,4 @@
-SOP: Buying a mold (b-mold-buying). Revision 4 (draft, specialists branch) — October 12, 2026. From Mike's notes: offshore risk, substitutions, picking a shop, T1.
+SOP: Buying a mold (b-mold-buying). Revision 5 (draft, specialists branch) — October 12, 2026. From Mike's notes: offshore risk, substitutions, picking a shop, the quote package, T1.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice (specialists/record/261012-M-mold-buying-mike.md). Lines marked "Mike" are his experience and opinion; "office" lines are the office's. Tier: deep.
 Read this when a mold is being quoted or bought, especially offshore. The tooling stage itself (design freeze to T1 and approval) is sop-tooling-loop.txt; qualification is sop-qualification.txt; molds classes and the quote package are in the library (plastics-mold-classes, aiag-ppap).
@@ -27,11 +27,21 @@ Read this when a mold is being quoted or bought, especially offshore. The toolin
   - Who runs the tool project: the best shops let engineers design the tools and promote an experienced toolmaker to project manager. A toolmaker knows what the person at the machine is doing and holds them to it, so the feedback is better. Engineers as project managers can work too (Mike has had good ones), but watch for an engineer who knows the CNC work less well than the machinist and goes easy on him. Ask who will manage your mold.
   - Why it works (Mike): for an engineer, project manager is often a stepping stone on the way to running the floor or the shop, so he tends to play it nice and not be seen as cranky. For a toolmaker who came up from apprentice to setup to programming, project manager is usually the top of his career. He is proud of getting there, takes personal ownership of every tool, and will hold everyone under him to it, because his reputation is what wins the customer who trusts him with the next big project. Ask how the project manager got the job and how long they have done it.
 
-4. THE T1 TRIAL (Mike)
+4. THE QUOTE PACKAGE (Mike)
+- Most quote packages are simple: the part (CAD), plus enough of the part's specifications that the shop understands it. Mike has sent out quotes with little more than the CAD surprisingly often, especially when the shop will also run the parts and you never take the mold.
+- What matters is the plant the mold will run in. Its standards go in the package:
+  - Press platen sizes and ejector (knockout) patterns for the presses it will run on.
+  - Water fittings, so the right ones go on the mold; circuit standards (for example, no long water circuits; sop-cooling-water.txt section 3).
+  - If someone else will mold the parts, ask that molder for their standards and use them.
+- Steel: big tools are usually pre-hardened steel (too big to harden); smaller ones and inserts are hardened, with components at different hardnesses. The mold maker knows this as well as you do; say what you expect and check that you are thinking alike. You usually are.
+- Then hold a mold design review: water circuits, ejection, steel, before steel is cut.
+- Office: the mold class (Class 101-105, Plastics Industry Association guide, library: plastics-mold-classes) is a short way to state expected life and build level.
+
+5. THE T1 TRIAL (Mike)
 - Nine times out of ten, T1 asks: does it move, does it slide, can it run about 100 shots, does anything gall.
 - Measure some parts.
 - After it has run, run your hand over the mold: anything getting hot, anything starting to lock up. (Hot spots and uncooled moving parts: sop-cooling-water.txt.)
 - Office: process development and dimensional approval come after T1 (sop-scientific-molding.txt, sop-qualification.txt, sop-tooling-loop.txt).
 
 OPEN FOR MIKE
-- What goes in the quote package and the purchase order (mold class, steel, hot runner, payment milestones, T1 samples, approval, shipping, spare parts).
+- The purchase order terms, if he wants them in: payment milestones, mold ownership, T1 samples, approval, shipping, spare parts.
