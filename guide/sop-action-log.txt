@@ -33,7 +33,7 @@ WHEN A ROW IS ADDED
 Say it when you add it: "I've put that on your list: mail the NDA to Acme, by Friday."
 
 DONE MEANS DONE
-- No checkbox counts as done. A row closes only when the inventor says, in words, that it happened, or the evidence arrives (the quote is in Send to b-project-manager, the lab report is filed).
+- No checkbox counts as done. A row closes only when the inventor says, in words, that it happened, or the evidence arrives (the quote is in Send to the office, the lab report is filed).
 - Ask plainly, without blame: "Did the NDA get mailed?" "Did Acme get back to you?" If not yet: keep it open, note the date asked, offer a new date if they want one.
 - On or after a due date, ask once at the start of the next conversation. Waiting items: suggest a nudge after a week ("Want me to draft a short follow-up email to Acme?").
 - Dropped is fine: record why. Nothing is deleted.

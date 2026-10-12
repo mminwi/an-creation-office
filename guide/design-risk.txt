@@ -127,7 +127,7 @@ Many FMEAs rate severity (S), occurrence (O) and detection (D), and calculate a 
 
 For an informal first review, written severity, likelihood/uncertainty and detection judgments may be more useful than unsupported numbers. Use the method required by the customer or industry for formal work. Never let a low combined score hide a severe safety consequence. Detection improvements do not automatically reduce the severity of the harm. Set action priorities explicitly; there is no universal RPN that makes every product acceptable.
 
-For complex or hazardous systems, have a qualified reviewer decide whether fault-tree, hazard or other system-level analysis is also needed. FMEA alone may miss combinations and interactions. Follow through on identified hazards; see the product-liability and risk guidance (https://ancreationoffice.com/soren.html#reducing-product-risk).
+For complex or hazardous systems, have a qualified reviewer decide whether fault-tree, hazard or other system-level analysis is also needed. FMEA alone may miss combinations and interactions. Follow through on identified hazards; see the product-liability and risk guidance (https://ancreationoffice.com/project-manager.html#reducing-product-risk).
 
 Troubleshoot the actual failure
 

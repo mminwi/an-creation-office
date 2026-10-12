@@ -19,7 +19,7 @@ AN-Creation/
       Forms/                    filled forms
       Record/                   dated history: emails, documents, meeting summaries
       Product/  CAD/  Business/  Company/
-      Send to b-project-manager/            drop anything here: emails, quotes, photos, notes
+      Send to the office/            drop anything here: emails, quotes, photos, notes
       Review/                   web pages for this invention: index.html lists every page, picture and document ever shown; one dated folder per page, never changed
       History/                  earlier copies of Status and Plan, dated
     Office files/              the assistants' side. Please don't edit; tell b-project-manager instead.
@@ -47,7 +47,7 @@ The record, two ways. Office files keep everything as received, including full m
 
 Your edits. You may edit your forms, plan or spreadsheets in your own program. At the next conversation b-project-manager notices the changes and checks them with you in a line or two before the master copies change.
 
-Send to b-project-manager. Anything dropped there is filed into the record and then cleared. Identical content to something already filed is a duplicate: note where the first copy is, no new task. Changed content is a new version: keep both and check any changed numbers.
+Send to the office. Anything dropped there is filed into the record and then cleared. Identical content to something already filed is a duplicate: note where the first copy is, no new task. Changed content is a new version: keep both and check any changed numbers.
 
 The queue. A ticket is a file. Its folder is its status: open, active, done. revisit/ holds "for now" answers named by the date to ask again (261013-company.txt). On that date the file moves to open/.
 
