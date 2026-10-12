@@ -96,12 +96,13 @@ def plant(m):
     tons = total / 12000
     out = {'plant': m.get('plant', ''), 'note': 'Proposed. Mike\'s method: worst job on every press at once, split over three units, two run typically.',
            'presses': rows, 'worst_case_btu_hr': round(total), 'worst_case_tons': round(tons, 1),
-           'each_of_3_units_tons': round(tons / UNITS, 1), 'typical_load_tons_2_of_3': round(tons * TYPICAL, 1),
-           'chiller_loop_gpm_at_10F': round(total / (500 * CHILLER_DT)),
+           'mold_only_each_of_3_units_tons': round(tons / UNITS, 1),
            'hydraulic_tons_at_0.1_per_hp': round(hyd, 1), 'feed_throat_tons': round(thr, 1),
            'all_loads_tons': round(tons + hyd + thr, 1),
            'all_loads_each_of_3_units_tons': round((tons + hyd + thr) / UNITS, 1),
-           'note_loads': 'mold load is chilled water; hydraulic and throat loads may go on tower water (open for Mike). Hydraulic rule uses nameplate hp unless running hp is given.'}
+           'typical_load_tons_2_of_3': round((tons + hyd + thr) * TYPICAL, 1),
+           'chiller_loop_gpm_at_10F': round((tons + hyd + thr) * 12000 / (500 * CHILLER_DT)),
+           'note_loads': 'Mike: hydraulics on chilled water, so size the chillers on all_loads. Hydraulic rule uses nameplate hp unless running hp is given.'}
     if missing: out['missing_heat_data'] = missing; out['worst_case_incomplete'] = 'totals leave out the presses listed in missing_heat_data'
     return out
 
