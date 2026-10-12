@@ -1,0 +1,9 @@
+{
+  "mold": "EXAMPLE ONLY - made-up numbers to show the format, not a real mold",
+  "plastic": {"shot_lb": 1.2, "cycle_s": 30, "delta_h_btu_per_lb": null, "target_dt_F": 2},
+  "circuits": [
+    {"name": "A side 1", "line_dia_in": 0.4375, "gpm": 3.5, "t_in_F": 60.0, "t_out_F": 61.5, "material": "steel"},
+    {"name": "core cap (looped with lifter bubbler)", "line_dia_in": 0.4375, "gpm": 1.8, "t_in_F": 60.0, "t_out_F": 66.0, "material": "aluminum"},
+    {"name": "B side straight-through", "line_dia_in": 0.4375, "gpm": 9.5, "t_in_F": 60.0, "t_out_F": 60.4, "material": "aluminum"}
+  ]
+}

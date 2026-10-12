@@ -1,0 +1,64 @@
+SOP: Mold cooling water (b-cooling-water). Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Source: Mike's practice from years of building and running injection molds (specialists/record/261012-M-cooling-water-mike.md). Lines marked "Mike" are his practice; lines marked "physics" are standard heat transfer; anything else the office adds is marked "office". Tier: deep.
+Read this when a mold is being designed or quoted, a mold runs hot, cycles long, warps, sticks, binds or galls, or a plant is sizing chillers, towers or pumps. Calculation: specialists/calcs/cooling_water.py (input format: example-cooling-input.json).
+
+WHY IT MATTERS
+Cooling water is usually the biggest factor in molded part cost, and often in part quality (Mike). Most of the cycle is cooling time, and uneven cooling shows up as warp, sink, sticking and dimensional spread. The goal is not "more water"; it is balanced cooling: every area of the mold giving up its heat at the same rate.
+
+WHAT TO ASK FOR (a cooling review needs these; unknowns become questions)
+- The part: resin and grade, wall thickness, shot weight, the corners and deep areas.
+- The mold: steel type, any inserts (beryllium copper such as MoldMax, aluminum), every water circuit with its line size, how circuits are hooked up (single or looped), bubblers and baffles, slides, lifters, cores.
+- The process: cycle time and how much of it is cooling, mold temperature setting.
+- The measurements: flow per circuit (gpm) and water temperature in and out of each circuit. If the plant has no flow meters, that is the first finding.
+- The resin supplier's heat content from melt to ejection (BTU/lb), for the heat load. Never filled from memory.
+
+1. WHERE THE HEAT GOES (mold design)
+- The core side does most of the cooling (Mike). Plastic shrinks onto the core and pulls away from the cavity, so cavity-side cooling is partly cut off. Put the cooling effort, and the conductive materials, on the core.
+- Balance by conductivity, not only by water (Mike). Count how many hot plastic faces feed heat into each area of steel:
+  - One face: steel with normal water.
+  - Two faces meeting (an edge or a corner of a box): a more conductive insert, such as MoldMax (beryllium copper), on the core.
+  - Three faces meeting (the bottom corner of a box or pan): three units of heat into one spot. An aluminum core cap there pulls the most heat out. The gate is often at that spot too, and aluminum's poor wear resistance does not matter on a core cap.
+- Office: beryllium copper dust from grinding or machining is a health hazard; the tool shop follows its beryllium handling rules. Aluminum wears; keep it off shut-offs and sliding faces.
+
+2. WATER INTO EVERYTHING THAT MOVES
+- Get water into every component, especially small cores, slides, lifters and the plates behind them (Mike). If it can't reach the front, water the back end anyway: even a bubbler hitting the back of a lifter, or a line through the back plate, gives the heat a way out.
+- Why: heat does not cross a sliding fit (ways, gibs, slides) well, and a little corrosion on those faces stops it entirely. An uncooled moving part heats up, grows, binds and galls; you see grinding in the ways and splay in the parts (Mike).
+- Ejector pins are the accepted exception: they usually can't be cooled.
+
+3. CIRCUITS
+- Keep circuits short (Mike). Short lines pass water well.
+- Loop where it makes sense; don't single-circuit everything (Mike). A straight-through line, especially in aluminum, moves a lot of heat and can share its water with a second circuit. Watering every line on its own wastes flow.
+- Find the restrictive circuit and give it its own water (Mike). It is usually the one with a bubbler or baffle, and it is the one people loop. That line may only pass about 2 gpm on its own, and the tool needs all of it.
+- Judge each loop by flow through it against heat it must remove (calculation below).
+
+4. FLOW
+- Target about 3 to 4 gpm through a standard line (Mike). That is about as good as cooling gets; more flow adds turbulence but little cooling.
+- Don't swing to the other extreme (Mike). Plants that are starved for water often add big pumps and big hoses; at about 9 to 10 gpm through a standard line the water starts eroding the line, aluminum worst of all.
+- Physics: the flow must be turbulent (Reynolds number above about 4,000) to carry heat well; the calculation reports it for every circuit, with the velocity.
+- Open: the size Mike means by a "standard line" (asked below); the calculation takes the line size as an input.
+
+5. MEASURE
+- Buy flow meters, ideally with temperature sensors, on every circuit (Mike). Put the temperature on the water coming out of the mold.
+- Water out vs water in, per circuit (Mike; degrees F assumed until Mike confirms):
+  - More than about 5 degrees: take a serious look at that circuit.
+  - Within a degree or two on each line: perfect, and usually reachable.
+  - The entire mold running within a degree or two: world class.
+- Physics: heat removed by a circuit = 500 x gpm x (out - in) in BTU/hr. A circuit with a big rise is working hard and is short of water; a circuit with almost no rise may have more water than it needs, which could go to a starved one.
+
+6. THE CALCULATION (specialists/calcs/cooling_water.py)
+Input per mold: shot weight, cycle, the resin's heat content from melt to ejection (from the supplier), and per circuit: line size, gpm, water in and out, insert material.
+Output per circuit: velocity, Reynolds number, temperature rise, heat removed, and flags (below 3-4 gpm, 9+ gpm erosion, not turbulent, over 5 degrees, within 2 degrees). Per mold: heat from the plastic, heat carried by the water, the total gpm needed for a target rise, and chiller tons before margin (BTU/hr / 12,000). Every number is marked proposed.
+
+7. PLANT WATER (open: Mike's method to be added)
+Chiller and tower sizing, pumps, header piping, mold temperature controllers, and water treatment. Library: ASHRAE Handbook (HVAC Systems and Equipment), CTI codes, ASHRAE 188 and Guideline 12 (Legionella, which apply to cooling towers), chiller and controller makers' guides.
+Open questions for Mike:
+- What line size is a "standard line"? (Sets the velocity and the erosion limit.)
+- How do you size a chiller and a tower for a molding plant: what loads go on each (molds, hydraulic oil, feed throats), and what margin?
+- Degrees in F for the 5 and 1-2 degree rules?
+
+HANDS OFF
+A mechanical contractor for plant piping, chillers and towers; a water treatment vendor for chemistry and the Legionella program on towers; the tool shop for inserts and circuit changes. The office prepares the review and the numbers; it does not specify plant equipment for purchase.
+
+WHAT THE REVIEW PRODUCES
+One cooling review per mold, in its own dated folder: the circuit table (flow, in, out, rise, heat, flags), the heat map by face count (one, two, three faces), the list of moving parts with and without water, recommended changes in order (single-circuit the restrictive line, add water to uncooled moving parts, conductive inserts where three faces meet, re-balance loops), and what to measure next. Recommendations are proposals; Mike or the tool shop confirms.
