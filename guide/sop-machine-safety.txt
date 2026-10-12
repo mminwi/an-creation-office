@@ -1,4 +1,4 @@
-SOP: Machine safety (b-machine-safety). Revision 1 (draft, specialists branch) — October 12, 2026.
+SOP: Machine safety (b-machine-safety). Revision 2 (draft, specialists branch) — October 12, 2026. Section 5 rewritten with Mike.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice running molding plants (specialists/record/261012-M-machine-safety-mike.md). Lines marked "Mike" are his; "office" lines are the office's own position. Tier: managed: the office organizes and prepares; a qualified safety professional decides machine safeguarding.
 Read this when a plant adds or moves a press, robot or auxiliary; when someone gets hurt or nearly hurt; when people are found working around a guard; or when a safety fix is being weighed against its cost.
@@ -26,14 +26,15 @@ Read this when a plant adds or moves a press, robot or auxiliary; when someone g
 - When the plant really lives its safety program, invite OSHA in for walk-around audits. Mike found they become very much on your side once they see it. If the rule is "don't let OSHA in without me at the door," the plant is still in a fight with them.
 - Office: OSHA runs a free, confidential On-Site Consultation Program for small and medium businesses, separate from enforcement, which is one way to start that relationship.
 
-5. WHEN THE MONEY ISN'T THERE (Mike's view, and the office's position)
-- Mike's view: sometimes management won't pay to upgrade machinery, and may decide a fine costs less than the fix across all its plants. He sees that as a business decision the company is entitled to make, with the fine as the penalty the system set. Then the person in the plant decides whether to stay or move on, and either way keeps making the plant as safe as possible with the resources there are. He would never lie about safety checks.
-- Office position, for the office's own work:
-  - Always make it as safe as the resources allow (agreed with Mike), and write down the gap: what the standard asks, what is in place, what the fix costs, who decided.
-  - Never falsify a safety record or check, and never help hide a hazard (agreed with Mike).
-  - A hazard that could kill or seriously injure someone now is not a cost trade-off: stop that work until it is guarded, and take it to the top.
-  - Workers may report hazards to OSHA and are protected from retaliation for it (OSH Act section 11(c)); the office never advises anyone against reporting.
-  - For an inventor's own product, the office treats product safety as non-negotiable (sop-quality.txt, product safety and listing); the fine-versus-fix reasoning above applies only to plant equipment, never to what a customer will use.
+5. WHEN THE MONEY ISN'T THERE: REPORT IT UP, EVERY TIME
+- It happens (Mike): management won't pay to upgrade a machine, and may decide a fine costs less than the fix. That is management's decision to make.
+- It never changes your job (Mike): report every hazard up the chain of command, every time. Never skip a report because "I already know they won't fix it"; that is not your decision. Report it fully and honestly, and make sure it is recorded that you reported it. If your superiors choose not to act, that is on them; you have done your job.
+- Keep doing everything you personally can to make it safe with the resources there are (Mike).
+- Never falsify a safety check or record, and never help hide a hazard (Mike and the office).
+- Write down every gap: what the standard asks, what is in place, what the fix costs, who was told, when, and what they decided (office: this is the record of the report).
+- A hazard that could kill or seriously injure someone right now is not a cost trade-off: stop that work until it is guarded, and take it straight to the top (office).
+- The duty in the job is to report up the chain; reporting outside the company is not part of the job (Mike). It does remain every worker's legal right to report hazards to OSHA, with protection from retaliation (OSH Act section 11(c)), and the office never advises anyone against it (office).
+- For an inventor's own product, product safety is not weighed against fines at all (sop-quality.txt; product safety and listing). This section is about plant equipment.
 
 WHAT THE REVIEW PRODUCES
 A machine safety review per machine or cell, in its own dated folder: the standards that apply, a checklist against them, photos, what is missing, the proposed fix and its cost, who decided and when, and the behavior issues found (shortcuts, guards defeated) with how they were handled.
