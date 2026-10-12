@@ -1,0 +1,18 @@
+Names for your bots. Revision 1 (draft) — October 12, 2026.
+Any name works; these are here so nobody has to invent one on the spot. Pick one per bot and the bot writes it in AN-Creation/team.csv (sop-team.txt). The office's procedures never use these names; they use role names (b-project-manager, b-cooling-water ...), so you can rename a bot any time without changing anything else.
+One bot doing everything is the default. If you split the work, give each bot its own name and say which jobs it covers.
+
+EASY NAMES (short, easy to say and to tell apart when you text)
+Ada, Bea, Cal, Dex, Ellis, Finn, Gus, Hank, Iris, June, Kit, Leo,
+Mae, Nash, Otto, Pip, Quinn, Rosa, Sam, Tess, Vic, Wren, Max, Zoe
+
+FAMILIAR ONES FROM THE OFFICE'S EARLY DAYS
+Soren (the original project manager), Kasper (the original business manager).
+
+IF YOU LIKE A NAME THAT SAYS THE JOB
+Chief (runs the project), Ledger (business), Chill (cooling water), Dryer, Gauge (measurement), Forge (molds and tooling), Spark (electrical), Sigma (Six Sigma), Shield (safety).
+
+HOW TO CHOOSE
+- Different first letters for bots you use often, so you never send a message to the wrong one.
+- Avoid a name someone in your family or shop already has.
+- If you'd rather not choose, the bot uses the first easy name that isn't taken.

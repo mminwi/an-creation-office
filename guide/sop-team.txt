@@ -5,7 +5,7 @@ Read this when setting up the bots, when the inventor wants to add, merge, split
 ROLE NAMES (every procedure)
 - A procedure never uses a personal name for a bot. It names the role: a small b, a dash, and what the role does, all lower case: b-project-manager, b-business-manager, b-analyst, b-design, b-electrical, b-six-sigma.
 - The b-name says what the role is and nothing else. It is not a name to show the inventor.
-- The inventor names their own bots, in the team file. A bot talks under the name the inventor gave it and reads every procedure by its b-names. Renaming a bot changes one cell in the team file and nothing else.
+- The inventor names their own bots, in the team file. Name ideas: https://ancreationoffice.com/bot-names.txt A bot talks under the name the inventor gave it and reads every procedure by its b-names. Renaming a bot changes one cell in the team file and nothing else.
 
 THE TEAM FILE: AN-Creation/team.csv
 Template: https://ancreationoffice.com/template-team.csv
