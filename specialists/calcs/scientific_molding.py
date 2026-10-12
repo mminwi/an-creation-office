@@ -22,6 +22,15 @@ def viscosity(v):
     return out
 
 def gate_seal(g):
+    if g.get('method') == 'step_down':
+        # Mike: process established, step hold time down; first lighter part means the gate wasn't sealed
+        pts = sorted(g['points'], key=lambda p: -p['hold_s'])
+        base = pts[0]['weight']; tol = g.get('lighter_pct', 0.1)
+        for a, b in zip(pts, pts[1:]):
+            if (base - b['weight']) / base * 100 > tol:
+                return {'gate_seal_s': a['hold_s'], 'pack_time_s': a['hold_s'],
+                        'note': f'parts got lighter at {b["hold_s"]} s, so the gate was still open; go back to {a["hold_s"]} s (Mike)'}
+        return {'gate_seal_s': None, 'note': 'no lighter part yet: keep stepping down'}
     pts = sorted(g['points'], key=lambda p: p['hold_s'])
     tol = g.get('plateau_pct', 0.1)
     seal = None
@@ -33,8 +42,16 @@ def gate_seal(g):
     return {'gate_seal_s': seal, 'hold_set_s': round(seal * 1.1, 2), 'note': f'seal where weight gain fell under {tol}% per step; hold set 10% past it; keep total cycle constant'}
 
 def balance(c):
-    w = c['cavity_weights']; hi = max(w.values())
-    return {k: round(x / hi * 100, 1) for k, x in w.items()} | {'lowest_pct': round(min(w.values()) / hi * 100, 1)}
+    # Mike: on an end-of-fill short shot every cavity better than 90% complete, no noticeable gap
+    w = c['cavity_weights']; full = c.get('full_part_weight') or max(w.values())
+    pct = {k: round(x / full * 100, 1) for k, x in w.items()}
+    out = {'pct_complete': pct, 'spread_pts': round(max(pct.values()) - min(pct.values()), 1)}
+    if c.get('full_part_weight'):
+        low = [k for k, v in pct.items() if v < 90]
+        if low: out['flag'] = f'cavities under 90% complete: {low}'
+    else:
+        out['note'] = 'percent of heaviest cavity; give full_part_weight to check the 90% rule'
+    return out
 
 def pressure(p):
     pct = p['peak_plastic_psi'] / p['press_max_psi'] * 100
@@ -61,5 +78,5 @@ def speed(s):
 
 if __name__ == '__main__':
     d = json.load(open(sys.argv[1]))
-    fns = {'viscosity': viscosity, 'gate_seal': gate_seal, 'cavity_balance': balance, 'pressure': pressure, 'window': window, 'speed_check': speed}
+    fns = {'viscosity': viscosity, 'gate_seal': gate_seal, 'gate_seal_hot_runner': gate_seal, 'cavity_balance': balance, 'pressure': pressure, 'window': window, 'speed_check': speed}
     print(json.dumps({'note': 'Proposed. ' + d.get('mold', '')} | {k: fns[k](d[k]) for k in fns if k in d}, indent=2))
