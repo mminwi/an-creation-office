@@ -1,6 +1,9 @@
 # Going live: from the specialists work to the websites
 Written 2026-10-12. Main of mminwi/an-creation-office now holds the specialists work (merged 2026-10-12). Nothing below is live until it is done on the server.
 
+## Status, 12 Oct 2026 (evening)
+Built and pushed, waiting for the Beelink: branch `claude/office-golive` of mminwi/creation-office carries sections 2, 3, 4, 5 and 6 below (merged procedures, new pages, redirects, role names on every page, Start and setup rewritten for one Grok account, version 261012.6 and new profile versions) and an updated sync script (section 1: it now keeps role names and the two new pages). Still open: the render scripts' old role names (section 6, JSON keys), section 7 (existing projects: the bot now does the folder renames itself once, from standing.txt OLDER PROJECTS), and section 9 (the phone test).
+
 ## Where the live sites come from (found 2026-10-12)
 - **ancreationoffice.com** is served from `site/create/` in the `creation` project on Mike's Beelink (`/home/mike/projects/creation`, GitHub copy: mminwi/creation-office). nginx: `site/nginx-an-creation-office.conf`.
 - **advancenowllc.com** is served from `site/` in the same project. nginx: `site/nginx-advance-now.conf`.
