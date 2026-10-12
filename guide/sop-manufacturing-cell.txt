@@ -1,0 +1,20 @@
+SOP: Manufacturing cells and work design (b-manufacturing). Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Source: standard lean practice and ergonomics guidance; Mike: cell manufacturing, the horseshoe (U-shaped cell), the work cell rules and ergonomics are well documented (specialists/record/261012-M-documented-roles-mike.md). Tier: deep, book-based. Related: guide/toolbox-improvement.txt; manufacturing.txt.
+Read this when a new product goes into production, an assembly or secondary operation is laid out, or a line can't keep up.
+
+METHOD
+1. Takt time: available working time divided by customer demand in that time. It is the pace the cell must meet.
+2. Check every machine in the cell can meet takt, counting changeovers, load and unload, and downtime.
+3. Work content: time every manual step (several cycles each). Operators needed = total work content / takt; then balance the steps across operators.
+4. Layout: a U-shaped (horseshoe) or C-shaped cell, equipment in process order, so one operator can work both sides with little walking; a straight line where the product is too big or needs access from all sides. Keep the cell at human scale.
+5. Standard work per operator: the steps, their order, the time, and the parts on hand.
+6. Ergonomics: standing or sit-stand work, parts and tools within easy reach, no lifting or reaching that overloads; check repetitive tasks with the NIOSH ergonomics tools. Reducing overburden is part of reducing waste.
+7. Mistake-proof the steps that can go wrong, and set the checks in the control plan (sop-quality.txt).
+8. Measure after start: output per hour against takt, scrap, and where people wait or walk.
+
+SOURCES (library)
+lei-lexicon (takt, cells, standard work), lean-six-sigma-pocket-toolbook, niosh-ergonomics-overview, niosh-tools, niosh-hand-tools, ansur2-design-data, mep, wmep-wisconsin, asq-mistake-proofing.
+
+PRODUCES
+A cell plan: takt, machine check, time study, operator count and balance, layout sketch, standard work sheets, ergonomic checks, and the measures to watch.

@@ -1,0 +1,9 @@
+{
+  "stack": "EXAMPLE ONLY - made-up three-part stack (housing pocket minus two parts = gap), mm",
+  "gap_min": 0.05, "gap_max": 0.60,
+  "dims": [
+    {"name": "housing pocket", "nominal": 30.00, "plus": 0.10, "minus": 0.10, "dir": 1},
+    {"name": "part A", "nominal": 14.80, "plus": 0.08, "minus": 0.08, "dir": -1},
+    {"name": "part B", "nominal": 14.90, "plus": 0.05, "minus": 0.15, "dir": -1}
+  ]
+}

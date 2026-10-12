@@ -6169,6 +6169,88 @@
       "checked_on": "2026-10-12",
       "source": "Publisher listing (via search)",
       "kind": "learning_resource"
+    },
+    {
+      "id": "dupont-design-principles",
+      "title": "DuPont — General Design Principles for Engineering Polymers (Module I)",
+      "url": "https://academic.sun.ac.za/mad/catalogs/dfmguidelines/dupontgeneraldesignprinciples.pdf",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "design",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-plastic-part-design",
+        "b-design",
+        "b-dfm"
+      ],
+      "use": "Classic resin-maker design guide: wall thickness, ribs, bosses, draft, radii, snap and press fits, assembly. One of the guides Mike learned from and still uses. Free PDF (copy hosted by a university; another by Emco Plastics).",
+      "edition": "Module I, undated PDF",
+      "check": "Found via search 2026-10-12; the office saw only the table of contents. Open the PDF for the numbers.",
+      "checked_on": "2026-10-12",
+      "source": "Resin maker guide (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "covestro-part-mold-design",
+      "title": "Covestro — Engineering Polymers: Part and Mold Design, Thermoplastics (a design guide)",
+      "url": "https://solutions.covestro.com/-/media/covestro/solution-center/brands/downloads/imported/1557214249.pdf",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "design",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-plastic-part-design",
+        "b-design",
+        "b-mold-buying"
+      ],
+      "use": "Resin-maker guide to part and mold design for thermoplastics. Its material data are examples only; use the current grade data sheets. Free PDF.",
+      "edition": "Undated PDF",
+      "check": "Found via search 2026-10-12; the office did not open the PDF itself.",
+      "checked_on": "2026-10-12",
+      "source": "Resin maker guide (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "chemical-resistance-guide",
+      "title": "Thermo Fisher — Chemical resistance guide for plastics (labware)",
+      "url": "https://documents.thermofisher.com/TFS-Assets/LCD/posters/LCD-Chemical-Resistance-Guide-GALSPCHEMRESPOSTER-EN.pdf",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "design"
+      ],
+      "b_roles": [
+        "b-plastic-materials"
+      ],
+      "use": "Chemical resistance by resin family and chemical, with an explanation of environmental stress cracking (stress + agent + susceptible resin; detergents, oils and surface-active chemicals are common agents). A starting point; test under your own conditions. Free.",
+      "edition": "Undated poster",
+      "check": "Found via search 2026-10-12; the office did not open the PDF itself. Use the chosen resin maker's own data first.",
+      "checked_on": "2026-10-12",
+      "source": "Labware maker guide (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "tolerance-stack-methods",
+      "title": "Tolerance stack-up methods: worst case, RSS and Monte Carlo (overviews)",
+      "url": "https://www.firgelliauto.com/blogs/engineering-calculators/tolerance-stack-up-calculator-worst-case-and-rss",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "design"
+      ],
+      "b_roles": [
+        "b-tolerance-gdt"
+      ],
+      "use": "Worked worst-case vs RSS example and method trade-offs (worst case guarantees assembly; statistical methods accept a small share out). Also https://www.patsnap.com/fr/resources/blog/rd-blog/tolerance-stack-up-analysis-methods-patsnap-eureka/ and https://richconn.com/tolerance-stacking/. Introductory; ASME Y14.5 and a tolerancing text are the authorities.",
+      "edition": "Web articles",
+      "check": "Found via search 2026-10-12; the office did not open the pages itself.",
+      "checked_on": "2026-10-12",
+      "source": "Engineering web articles (via search)",
+      "kind": "learning_resource"
     }
   ],
   "researched_shortlists": {

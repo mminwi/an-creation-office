@@ -1,0 +1,18 @@
+SOP: Plastic material selection (b-plastic-materials). Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Source: standard practice from resin makers' data and test standards; Mike: it comes down to chemical compatibility, and it is well documented (specialists/record/261012-M-documented-roles-mike.md). Tier: deep, book-based.
+Read this when a resin is being chosen or changed, or a part cracks, crazes, swells or fades in use.
+
+METHOD
+1. List what the part must survive, with numbers where known: load and time under load, temperature (use and peak), every chemical it touches (cleaners, disinfectants, oils, fuels, food, skin), UV and weather, impact, flame rating, food or medical contact, regulations (RoHS, REACH, Prop 65).
+2. Chemical compatibility first: check each chemical in the resin maker's chemical resistance data. Charts are a starting point; resistance depends on concentration, temperature, time and stress. Environmental stress cracking needs stress plus an agent plus a susceptible resin, and common agents include detergents, oils and even surface-active cleaners, so a chemical that looks harmless can crack a stressed part. Test the real chemical on molded parts under stress when it matters (ASTM D543).
+3. Shortlist resins in UL Prospector or the makers' data sheets; compare properties at the use temperature, not room temperature.
+4. Check the rules that apply: flame (UL 94; UL 746C in electrical equipment), food contact (FDA 21 CFR 177; NSF/ANSI 51), restricted substances (RoHS, REACH, Prop 65).
+5. Check processing: drying, shrink, mold temperature, and flow length with the molder (sop-drying.txt; sop-scientific-molding.txt).
+6. Record the choice with its reasons and its sources; values from data sheets carry the grade and date.
+
+SOURCES (library)
+ul-prospector, resin-design-guides, astm-d543, chemical-resistance-guide, ul-94, ul-746c, cfr-21-177, nsf-51, fda-food-contact, eu-rohs, eu-reach, ca-prop-65, sheet-dfm.
+
+PRODUCES
+A material decision record: requirements, shortlist with data, chemical check per chemical, tests needed, the choice and why.

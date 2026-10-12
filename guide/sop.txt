@@ -23,6 +23,10 @@ FIRST
 0. Specialist procedures (specialists branch): machine safety, b-machine-safety. https://ancreationoffice.com/sop-machine-safety.txt
 0. Specialist procedures (specialists branch): Lean Six Sigma projects, b-six-sigma. https://ancreationoffice.com/sop-six-sigma.txt
 0. The improvement toolbox: Lean, 5S, Six Sigma and TPS tools, picked by the problem. https://ancreationoffice.com/toolbox-improvement.txt
+0. Specialist procedures (specialists branch, from the standard sources): Plastic part design (b-plastic-part-design): from the resin makers' design guides. https://ancreationoffice.com/sop-plastic-part-design.txt
+0. Specialist procedures (specialists branch, from the standard sources): Tolerance stacks and print review (b-tolerance-gdt): worst case, RSS, Monte Carlo. https://ancreationoffice.com/sop-tolerance-stack.txt
+0. Specialist procedures (specialists branch, from the standard sources): Plastic material selection (b-plastic-materials): chemical compatibility first. https://ancreationoffice.com/sop-material-selection.txt
+0. Specialist procedures (specialists branch, from the standard sources): Manufacturing cells and work design (b-manufacturing): takt, U-cells, standard work, ergonomics. https://ancreationoffice.com/sop-manufacturing-cell.txt
 0. GitHub and b-analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
 FOR b-business-manager (the business manager)

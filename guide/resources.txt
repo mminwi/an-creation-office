@@ -2335,6 +2335,38 @@ Edition: McGraw-Hill (ISBN 9780071441193).
 Check: Found via search 2026-10-12; the office did not open the page itself.
 Checked: 2026-10-12. Source: Publisher listing (via search).
 
+dupont-design-principles | DuPont — General Design Principles for Engineering Polymers (Module I)
+https://academic.sun.ac.za/mad/catalogs/dfmguidelines/dupontgeneraldesignprinciples.pdf
+Group: making. Type: learning_resource.
+Roles: b-plastic-part-design, b-design, b-dfm. Classic resin-maker design guide: wall thickness, ribs, bosses, draft, radii, snap and press fits, assembly. One of the guides Mike learned from and still uses. Free PDF (copy hosted by a university; another by Emco Plastics).
+Edition: Module I, undated PDF.
+Check: Found via search 2026-10-12; the office saw only the table of contents. Open the PDF for the numbers.
+Checked: 2026-10-12. Source: Resin maker guide (via search).
+
+covestro-part-mold-design | Covestro — Engineering Polymers: Part and Mold Design, Thermoplastics (a design guide)
+https://solutions.covestro.com/-/media/covestro/solution-center/brands/downloads/imported/1557214249.pdf
+Group: making. Type: learning_resource.
+Roles: b-plastic-part-design, b-design, b-mold-buying. Resin-maker guide to part and mold design for thermoplastics. Its material data are examples only; use the current grade data sheets. Free PDF.
+Edition: Undated PDF.
+Check: Found via search 2026-10-12; the office did not open the PDF itself.
+Checked: 2026-10-12. Source: Resin maker guide (via search).
+
+chemical-resistance-guide | Thermo Fisher — Chemical resistance guide for plastics (labware)
+https://documents.thermofisher.com/TFS-Assets/LCD/posters/LCD-Chemical-Resistance-Guide-GALSPCHEMRESPOSTER-EN.pdf
+Group: quality. Type: learning_resource.
+Roles: b-plastic-materials. Chemical resistance by resin family and chemical, with an explanation of environmental stress cracking (stress + agent + susceptible resin; detergents, oils and surface-active chemicals are common agents). A starting point; test under your own conditions. Free.
+Edition: Undated poster.
+Check: Found via search 2026-10-12; the office did not open the PDF itself. Use the chosen resin maker's own data first.
+Checked: 2026-10-12. Source: Labware maker guide (via search).
+
+tolerance-stack-methods | Tolerance stack-up methods: worst case, RSS and Monte Carlo (overviews)
+https://www.firgelliauto.com/blogs/engineering-calculators/tolerance-stack-up-calculator-worst-case-and-rss
+Group: quality. Type: learning_resource.
+Roles: b-tolerance-gdt. Worked worst-case vs RSS example and method trade-offs (worst case guarantees assembly; statistical methods accept a small share out). Also https://www.patsnap.com/fr/resources/blog/rd-blog/tolerance-stack-up-analysis-methods-patsnap-eureka/ and https://richconn.com/tolerance-stacking/. Introductory; ASME Y14.5 and a tolerancing text are the authorities.
+Edition: Web articles.
+Check: Found via search 2026-10-12; the office did not open the pages itself.
+Checked: 2026-10-12. Source: Engineering web articles (via search).
+
 BEGIN DESIGN PRINCIPLES
 Guide: https://ancreationoffice.com/design-principles.html
 Instructions: https://ancreationoffice.com/design-principles.txt

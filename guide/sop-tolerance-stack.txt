@@ -1,0 +1,21 @@
+SOP: Tolerance stacks and print review (b-tolerance-gdt). Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Source: standard practice (ASME Y14.5, stack methods); Mike: each part can be off by its own amount, independent of the others, and the parts must still assemble (specialists/record/261012-M-documented-roles-mike.md). Calculation: specialists/calcs/tolerance_stack.py. Tier: deep, book-based.
+Read this when parts must fit together, a fit problem shows up in assembly, or a print is being reviewed.
+
+METHOD
+1. Draw the loop: start at one side of the gap that matters, walk part to part around to the other side, writing each dimension with its direction (+ or -).
+2. For each dimension: nominal, plus and minus tolerance. For molded parts include shrink and warp variation; ask the molder what a process holds (sop-scientific-molding.txt).
+3. Run the three methods (tolerance_stack.py):
+   - Worst case: everything at its worst limit at once. Guarantees assembly; often too tight to make economically.
+   - RSS (root sum square): assumes independent, roughly normal, centered parts; a small share may fall outside.
+   - Monte Carlo: random parts; reports the share outside the gap limits, and works with uneven tolerances and other distributions.
+4. Read the contributors: the dimensions that carry most of the variance are where to tighten, or to redesign the loop shorter.
+5. Decide: worst case where failure to assemble is unacceptable (safety, field fit); statistical where volume and process control justify it. Write down which, and why.
+6. Print review: datums that match how the part is located in assembly and in inspection; every feature controlled; GD&T per ASME Y14.5 (ISO 1101 for ISO-system suppliers; Y14.41 for model-based definition).
+
+SOURCES (library)
+asme-y14-5, asme-y14-5-1, asme-y14-41, iso-1101, nist-tolerance; stack method overviews: tolerance-stack-methods.
+
+PRODUCES
+A stack report per gap: the loop sketch, the dimension table, the three results, the contributors, the decision and its reason. Results are proposed; the designer confirms.

@@ -1,0 +1,18 @@
+SOP: Plastic part design (b-plastic-part-design). Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Source: the resin makers' design guides, which Mike learned from and still uses ("how much of a boss should I have here?"); he asked the office to work from them (specialists/record/261012-M-documented-roles-mike.md). Tier: deep, book-based.
+Read this when a part is being designed or changed for molding, or a molding defect points back to the design (sop-molding-defects.txt).
+
+METHOD
+1. Use the design guide of the resin maker for the chosen resin; if none is chosen yet, the DuPont and Covestro general guides (library). They cover wall thickness, ribs, bosses, draft, radii, gates, snap fits, press fits, welding and assembly, with the numbers for that resin family.
+2. Design the main features from the guide, in this order: nominal wall (keep it uniform), ribs and gussets for stiffness instead of thicker walls, bosses tied to walls with ribs, radii at every inside corner, draft on every face that moves against steel, gate location and flow length, then assembly features.
+3. Write each value with its source (guide, page): rib thickness as a fraction of the wall, rib height, boss outside diameter and wall, draft per side, radius. Never from memory.
+4. Check with the tool shop and the molder (sop-mold-buying.txt quote and design review), and against the cooling (sop-cooling-water.txt section 1: face count and conductive inserts).
+5. Draft: Mike's working rule, from the conversation, is to be generous ("get it out in three degrees"); the guides give the minimums by resin and texture. Use the larger of the two where the part allows. Office: confirm the figure with Mike before treating it as a rule.
+- Rules of thumb seen in secondary guides (orientation only; the resin guide wins): ribs about half to 60% of the nominal wall, up to about three walls tall, spaced at least two walls apart; bosses tied to ribs and kept away from corners to avoid sink; ribs drafted about 1 to 1.5 degrees, never under about 1/2 degree.
+
+SOURCES (library)
+dupont-design-principles, covestro-part-mold-design, resin-design-guides (the chosen resin's own guide), protolabs-walls, protolabs-draft, protolabs-cores, protolabs-dfm, sheet-dfm.
+
+PRODUCES
+A design check per part: each feature with its value, the guide and page it came from, and the open questions for the molder and tool shop.
