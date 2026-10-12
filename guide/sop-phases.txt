@@ -1,3 +1,0 @@
-SOP: Phases. Retired October 6, 2026.
-Replaced by stages and tracks: https://ancreationoffice.com/sop-stages.txt
-Fact-finding first; then each project gets its own stage plan (product, business and regulatory tracks), with gates at about 90%.
