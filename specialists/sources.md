@@ -19,7 +19,7 @@ When a row is read, it moves into guide/resources.json with the same fields as t
 ## Gaps the map shows
 Roles with no procedure yet (they have sources, but no written way of working):
 - b-cooling-water: written 2026-10-12 from Mike's practice (guide/sop-cooling-water.txt, calcs/cooling_water.py); plant chiller and tower sizing still open.
-- b-drying-handling: dryer sizing, residence time, moisture, regrind.
+- b-drying-handling: written 2026-10-12 from Mike's practice (guide/sop-drying.txt, calcs/drying.py); regrind rules still open.
 - b-six-sigma: a DMAIC procedure with tollgates and the forms (charter, SIPOC, data collection plan, MSA, capability, control plan).
 - b-machine-safety: risk assessment and guarding procedure.
 Roles with nothing in the existing library (only new sources, all unread): b-scientific-molding, b-cooling-water, b-drying-handling.

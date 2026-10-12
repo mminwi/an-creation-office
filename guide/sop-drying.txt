@@ -1,0 +1,42 @@
+SOP: Resin drying and handling (b-drying-handling). Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Source: Mike's practice (specialists/record/261012-M-drying-mike.md). Lines marked "Mike" are his practice; "published" lines cite the library; anything else the office adds is marked "office". Tier: deep.
+Read this when a resin must be dried (nylon, PC, PET, PBT, ABS and other engineered resins), a process drifts or the parts show splay, the nozzle spits, a dryer "isn't keeping up", a plant adds dryers, or regrind goes into a process. Calculation: specialists/calcs/drying.py.
+
+WHY IT MATTERS
+Wet resin makes the process wander (Mike). Water turns to vapor in the barrel: the melt flows easier than it should, the parts show splay, and the nozzle spits and sputters as the gas escapes. Published: nylon must be molded dry; moisture degrades the polymer and costs surface quality and strength (BASF Ultramid brochure, library: resin-design-guides).
+
+1. TEST THE DRYER; DON'T TRUST ITS METER (Mike)
+- The most common problem: plants run dryers nobody has ever tested. A dryer with dead desiccant is only a hot air dryer. Warm air preheats the pellets and helps a lot, but not enough for nylon and many engineered resins.
+- Buy a dew point tester and measure the air going into the hopper yourself.
+- Don't believe the dryer's own dew point display. If it reads -40 seconds after start-up, it is only telling you the machine is on.
+- How a twin-bed desiccant dryer starts: it regenerates (cooks) one bed first, and switches to it after roughly 30 minutes to an hour. Until then it is only heating. Test after the first bed has been regenerated and switched in, not before.
+2. TEST THE RESIN (Mike)
+- Use a moisture analyzer: it heats a resin sample and reports percent water. There is no substitute if you run resin that needs drying.
+- Compare the reading with the resin maker's moisture limit for molding.
+3. CHECK THE PLANT'S POWER: REVERSE PHASE KILLS DRYERS (Mike)
+- Some three-phase outlets get wired with the phases reversed. A dryer plugged into one runs its fans backwards: the air goes over the desiccant without passing the filter first. Resin dust coats the desiccant, the regeneration heat melts it on, and that desiccant is finished; no amount of regenerating brings it back.
+- Dryers get wheeled around and plugged in wherever, and desiccant is often replaced only every five years or so. One or two bad outlets can quietly ruin every dryer in the building. A new dryer plugged into the same outlet goes bad too, so replacing dryers does not fix it.
+- Test every outlet with a plug-in phase rotation tester: phase rotation and ground, on 220 V and 440 V three-phase. Check that dryer fans and blowers turn the right way.
+- Office: fixing wiring is a job for a qualified electrician; testing live outlets follows the plant's electrical safety practice (NFPA 70E in the library).
+4. GRINDERS AND REGRIND (Mike)
+- Reverse phase runs grinders backwards too. A backwards blade pulverizes the regrind into dust; the dust gets conveyed into the dryer and seals the desiccant the same way.
+- Be careful with regrind generally: it brings fines and dust. Open for Mike: his rules on regrind percentage and removing fines.
+5. THEN DRY TO THE RESIN MAKER'S NUMBERS (Mike)
+- With good dryers, good drying hoppers and good hoses, dry to the resin maker's temperature, time and dew point. Nine times out of ten that is all it takes; once the equipment and process are right, drying just works.
+- Published: hopper capacity = drying time x throughput (lb/hr); pick the dryer from its maker's throughput chart for that resin (Conair drying manuals, library: oem-dryer-guides). The calculation does the hopper part.
+
+WHAT THE AUDIT PRODUCES
+A drying audit in its own dated folder:
+- Per dryer: tag, desiccant age, outlet it uses (phase rotation and ground: pass/fail), fan and blower direction, filter condition, the dryer's displayed dew point, the measured dew point after a full regeneration and switch-over, and the hopper size against throughput and drying time.
+- Per resin: the maker's drying temperature, time, dew point and moisture limit; measured moisture at the press.
+- Per grinder: rotation direction, fines in the regrind.
+- Findings in order: wrong-phase outlets (fix first, before any dryer is replaced), dead desiccant, undersized hoppers, resin above its moisture limit, regrind fines. Recommendations are proposals; Mike or the plant confirms.
+
+HANDS OFF
+Electrician for outlet wiring; the dryer maker or service company for desiccant replacement; the resin maker for drying conditions.
+
+OPEN FOR MIKE
+- Regrind: how much is allowed, and how to deal with fines.
+- How often to re-test dryers and replace desiccant.
+- The dew point target he holds as "good" for engineered resins (or always the resin maker's number).
