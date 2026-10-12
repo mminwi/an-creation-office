@@ -1,4 +1,4 @@
-SOP: Resin drying and handling (b-drying-handling). Revision 4 (draft, specialists branch) — October 12, 2026. Hopper sizing, regrind and desiccant added from Mike's notes.
+SOP: Resin drying and handling (b-drying-handling). Revision 5 (draft, specialists branch) — October 12, 2026. Hopper sizing, regrind and desiccant added from Mike's notes.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice (specialists/record/261012-M-drying-mike.md). Lines marked "Mike" are his practice; "published" lines cite the library; anything else the office adds is marked "office". Tier: deep.
 Read this when a resin must be dried (nylon, PC, PET, PBT, ABS and other engineered resins), a process drifts or the parts show splay, the nozzle spits, a dryer "isn't keeping up", a plant adds dryers, or regrind goes into a process. Calculations: specialists/calcs/drying.py (hoppers and dryers), specialists/calcs/regrind.py (regrind generations).
@@ -40,16 +40,19 @@ Levels:
 - Injection molding: about 25% is the normal limit, and the near-universal rule; test the parts at 25%. On engineered resins especially, don't go over 25%. Plants sometimes creep up toward 50% to use regrind up; that is a choice to make knowingly, not the standard.
 - Blow molding: 50% regrind is common, because the process makes so much trim and flash.
 - White, very light colors and clear: zero regrind. It goes from 25% straight to zero; the visual defects aren't worth it.
-- Office: a customer's drawing or spec may limit or forbid regrind; that limit wins.
+- The standard regrind note on most customers' drawings is 25% (Mike). Whatever the drawing or spec says wins.
 Generations: what you are really running (Mike: "a great one for AI"):
 - At steady state, part of the regrind has been through the press two, three, four times. At high regrind the old generations become a big share. Run the table (regrind.py) for the percentage you plan:
   - 25%: virgin 75%; material 3 or more generations old is about 1.6% of the feed.
   - 50%: virgin 50%; 3 or more generations old is 12.5% of the feed (a quarter of the regrind).
   - 60%: virgin 40%; 3 or more generations old is about 21.6% of the feed (over a third of the regrind).
 - Physics of the table: with regrind fraction r fed back continuously, the share that has been through k times before is (1 - r) x r^k; the average pellet has r / (1 - r) earlier heat histories.
-Where the light-colored regrind goes:
+First ask what the color is for (Mike):
+- Coding color: the color tells people what the part is ("red means this size"), or the part is black for UV resistance or just to be black. Mixing regrind across colors, as below, is fine within limits.
+- Matched color: the part has to match something, such as a car's interior red, or it is a critical appearance part. Then don't mix other colors' regrind into it at all, whatever the color, black included.
+Where the light-colored regrind goes (coding colors only):
 - Don't put white regrind back into white. Run it into gray or another color, but only a little: white lightens other colors fast.
-- Black is the best place for it: black covers. Black colorant is usually loaded about three times heavier than needed for color, because it is also there to stop UV degradation (block sunlight within the first few thousandths of a wall), so it hides almost any other color mixed in (Mike).
+- Black (made for UV resistance or plain black, not matched) is the best place for it: black covers. Black colorant is usually loaded about three times heavier than needed for color, because it is also there to stop UV degradation (block sunlight within the first few thousandths of a wall), so it hides almost any other color mixed in (Mike).
 
 WHAT THE AUDIT PRODUCES
 A drying audit in its own dated folder:
