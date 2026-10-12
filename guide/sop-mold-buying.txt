@@ -1,4 +1,4 @@
-SOP: Buying a mold (b-mold-buying). Revision 5 (draft, specialists branch) — October 12, 2026. From Mike's notes: offshore risk, substitutions, picking a shop, the quote package, T1.
+SOP: Buying a mold (b-mold-buying). Revision 6 (draft, specialists branch) — October 12, 2026. From Mike's notes: offshore risk, substitutions, picking a shop, the quote package, T1, the purchase order.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice (specialists/record/261012-M-mold-buying-mike.md). Lines marked "Mike" are his experience and opinion; "office" lines are the office's. Tier: deep.
 Read this when a mold is being quoted or bought, especially offshore. The tooling stage itself (design freeze to T1 and approval) is sop-tooling-loop.txt; qualification is sop-qualification.txt; molds classes and the quote package are in the library (plastics-mold-classes, aiag-ppap).
@@ -37,11 +37,17 @@ Read this when a mold is being quoted or bought, especially offshore. The toolin
 - Then hold a mold design review: water circuits, ejection, steel, before steel is cut.
 - Office: the mold class (Class 101-105, Plastics Industry Association guide, library: plastics-mold-classes) is a short way to state expected life and build level.
 
-5. THE T1 TRIAL (Mike)
+5. THE PURCHASE ORDER (Mike)
+- In a company, purchasing (usually the director of purchasing) already has standard terms for tooling. Follow them; they exist for good reasons. Getting creative with the terms doesn't help.
+- The engineer's job: qualify the vendor (purchasing can't judge a mold shop), and feed concerns to purchasing so they get written into the PO. Otherwise stay out of the paperwork; let purchasing place the PO.
+- Take concerns a couple of rungs up: to the director or senior manager of purchasing, who works with the lawyers and accounting and understands the contract. The buyer who processes the paperwork usually doesn't.
+- Office: an inventor or small company without a purchasing department doesn't have those standard terms. Then the office lists the concerns (mold ownership, who may run the mold, substitutions, payment milestones, T1 samples and approval, shipping, spare parts) for the person's attorney to put into terms (b-purchasing, b-business-manager). The office does not write contract terms.
+
+6. THE T1 TRIAL (Mike)
 - Nine times out of ten, T1 asks: does it move, does it slide, can it run about 100 shots, does anything gall.
 - Measure some parts.
 - After it has run, run your hand over the mold: anything getting hot, anything starting to lock up. (Hot spots and uncooled moving parts: sop-cooling-water.txt.)
 - Office: process development and dimensional approval come after T1 (sop-scientific-molding.txt, sop-qualification.txt, sop-tooling-loop.txt).
 
 OPEN FOR MIKE
-- The purchase order terms, if he wants them in: payment milestones, mold ownership, T1 samples, approval, shipping, spare parts.
+- Nothing open.
