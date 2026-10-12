@@ -33,7 +33,8 @@
         "fill_s": 0.42,
         "hyd_pressure": 1750
       }
-    ]
+    ],
+    "press_max_speed": 5.5
   },
   "gate_seal": {
     "points": [
