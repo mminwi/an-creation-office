@@ -26,7 +26,7 @@ First drafted in mminwi/an-creation (AN-Creation/Business/specialists.md); this 
 
 The tier sets how the specialist is promoted. Deep: "built from Mike's years in molding." Managed and Documented: "gets you ready for your engineer/attorney, and saves you their hours."
 
-## The roster (37 roles; master list is roles.csv)
+## The roster (39 roles; master list is roles.csv)
 
 Generated from roles.csv, which also lists each role's procedures, library sources, new sources and gaps. Edit roles.csv, not this table. Tiers proposed; Mike confirms.
 
@@ -35,12 +35,14 @@ Generated from roles.csv, which also lists each role's procedures, library sourc
 | Specialist | Role | Tier | Does | Hands off to |
 |---|---|---|---|---|
 | Project Manager | b-project-manager | Deep | Stages, gates, plan, queue, action log, status; tracks every job | — |
+| Market Check Specialist | b-market-check | Documented | Before money goes into patents and prototypes: who would buy it, what they use now, what they would pay, and the competition; careful not to disclose before the patent decision | — |
 | Analyst | b-analyst | Deep | Headless worker: files records, runs the looks and the specialist work, writes tickets | — |
 | Business Manager | b-business-manager | Managed | Everything around the products: company, name, website, profiles, promotion, business paperwork | attorney; accountant; insurance agent |
-| Company Setup Specialist | b-company-setup | Documented | Entity, EIN, bank, insurance, organized before paying anyone | attorney; accountant; insurance agent |
+| Company Setup (LLC) Specialist | b-company-setup | Documented | Entity, EIN, bank, insurance, organized before paying anyone | attorney; accountant; insurance agent |
 | Patent Prep Specialist | b-patent-prep | Documented | Invention disclosure, prior-art log, provisional package draft | patent attorney or agent |
 | Trademark and Naming Specialist | b-trademark | Documented | Name screening and the questions for counsel | trademark attorney |
-| Licensing and Funding Specialist | b-licensing-funding | Documented | License packet, licensee list, funding worksheet | attorney |
+| Licensing Specialist | b-licensing | Documented | Sell sheet, licensee list, the pitch and the license packet, organized for your attorney | attorney |
+| Funding Specialist | b-funding | Documented | Grants, SBIR, loans, angels and crowdfunding: what fits, what each asks for, and the worksheet | attorney; accountant |
 | Launch and Promotion Specialist | b-promotion | Managed | Site, listings, posts, all drafted for a yes | — |
 | Retail Selling Specialist | b-retail | Documented | Getting ready for Amazon, Walmart, Lowe's and other buyers: registration, fees, barcodes, supplier requirements | — |
 | Government and Defense Contracting Specialist | b-gov-contracting | Documented | SAM registration, contract specs and military standards, supplier setup for federal and defense buyers | contracting officer (their side); APEX Accelerator |

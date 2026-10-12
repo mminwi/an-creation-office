@@ -1714,7 +1714,7 @@ Checked: 2026-10-12. Source: Publisher page as read via Perplexity.
 wipo-licensing | Technology licensing guides for SMEs
 https://www.wipo.int/publications/en/details.jsp?id=296
 Group: legal. Type: learning_resource.
-Roles: b-licensing-funding. How technology licensing works: preparing to negotiate, key agreement terms, negotiation, competition concerns, living with the signed agreement. Guidance. Free.
+Roles: b-licensing. How technology licensing works: preparing to negotiate, key agreement terms, negotiation, competition concerns, living with the signed agreement. Guidance. Free.
 Edition: Successful Technology Licensing, 2nd ed. 2015; Exchanging Value (licensing negotiation manual), 2005.
 Check: Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.
 Checked: 2026-10-12. Source: Publisher page as read via Perplexity.

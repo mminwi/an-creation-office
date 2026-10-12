@@ -10,7 +10,7 @@ def proc_files(s):
     return [p.strip() for p in re.split(r'[;,]', s) if re.match(r'^\s*[\w.-]+\.(txt|csv|md)\s*$', p)]
 
 MIKE = {'b-cooling-water', 'b-drying-handling', 'b-scientific-molding', 'b-molding-defects', 'b-mold-buying', 'b-machine-safety', 'b-six-sigma'}
-OFFICE = {'b-project-manager', 'b-business-manager', 'b-company-setup', 'b-patent-prep', 'b-trademark', 'b-licensing-funding', 'b-promotion', 'b-prototyping', 'b-quality-planning'}
+OFFICE = {'b-project-manager', 'b-business-manager', 'b-company-setup', 'b-patent-prep', 'b-trademark', 'b-licensing', 'b-funding', 'b-market-check', 'b-promotion', 'b-prototyping', 'b-quality-planning'}
 def basis(r):
     h = r['hands_off_to'].strip()
     tail = (' Hands off to: ' + h.replace(';', ',') + '.') if h and h != '—' else ''
@@ -34,9 +34,9 @@ P = 'b-project-manager'
 packages = [
     {'id': 'one', 'name': 'Just the basics', 'blurb': 'One bot as your project manager. Add specialists any time.',
      'roles': [P]},
-    {'id': 'inventor', 'name': "Inventor's Office", 'blurb': 'Take an idea from first conversation to a working prototype: the plan, the design, and the prototype. Add the helpers below when you need them.',
-     'roles': [P, 'b-design', 'b-dfm', 'b-prototyping'],
-     'addons': ['b-company-setup', 'b-patent-prep', 'b-trademark', 'b-licensing-funding', 'b-business-manager', 'b-promotion', 'b-quality-planning', 'b-product-safety']},
+    {'id': 'inventor', 'name': "Inventor's Office", 'blurb': 'Take an idea from first conversation to a working prototype: the plan, a check that people want it, the design, and the prototype. Add the helpers below when you need them.',
+     'roles': [P, 'b-market-check', 'b-design', 'b-prototyping'],
+     'addons': ['b-company-setup', 'b-patent-prep', 'b-licensing', 'b-funding', 'b-trademark', 'b-dfm', 'b-product-safety', 'b-retail', 'b-promotion', 'b-business-manager', 'b-quality-planning']},
     {'id': 'molding', 'name': 'Molding Plant Office', 'blurb': 'For molders: cooling water, drying and regrind, scientific molding, defects, mold buying, machine safety.',
      'roles': [P, 'b-cooling-water', 'b-drying-handling', 'b-scientific-molding', 'b-molding-defects', 'b-mold-buying', 'b-machine-safety', 'b-plastic-materials']},
     {'id': 'plastic', 'name': 'Plastic Design Office', 'blurb': 'Plastic parts that mold well: part design, tolerance stacks, materials, design for molding.',

@@ -29,3 +29,7 @@ Calculations no role has yet, to be written as code with results marked proposed
 1. Part 2 of the sources pass (read the 73), from a tool that can reach the sites.
 2. The b-cooling-water procedure and its calculation, Mike reviews it against his experience.
 3. b-six-sigma (DMAIC), then b-scientific-molding.
+
+## Inventor side split (2026-10-12)
+Per Mike, the inventor work is broken into specialists people can switch on one at a time. Added b-market-check (Market Check Specialist); split b-licensing-funding into b-licensing (sell sheet, licensee list, pitch, license packet) and b-funding. The Inventor's Office core is now project manager, market check, design and prototyping; company setup (LLC), patent prep, licensing, funding, trademark, DFM, product safety, retail, promotion, business manager and quality planning are helpers to switch on.
+Procedures still to research and write: market check (customer discovery before patents, without public disclosure), licensing (sell sheet contents, licensee search, royalty basics), funding (grants, SBIR, loans, angels, crowdfunding).
