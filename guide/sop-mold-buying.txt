@@ -1,4 +1,4 @@
-SOP: Buying a mold (b-mold-buying). Revision 2 (draft, specialists branch) — October 12, 2026. From Mike's notes: offshore risk, substitutions, picking a shop, T1.
+SOP: Buying a mold (b-mold-buying). Revision 3 (draft, specialists branch) — October 12, 2026. From Mike's notes: offshore risk, substitutions, picking a shop, T1.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice (specialists/record/261012-M-mold-buying-mike.md). Lines marked "Mike" are his experience and opinion; "office" lines are the office's. Tier: deep.
 Read this when a mold is being quoted or bought, especially offshore. The tooling stage itself (design freeze to T1 and approval) is sop-tooling-loop.txt; qualification is sop-qualification.txt; molds classes and the quote package are in the library (plastics-mold-classes, aiag-ppap).
@@ -24,6 +24,7 @@ Read this when a mold is being quoted or bought, especially offshore. The toolin
   - Focus on the floor: is the work getting done right where it happens.
   - Clean, but not too clean. Mostly clean shows good work habits; a floor last painted six months ago, scuffed and used, is what a working shop looks like. Floors repainted for visitors means you pay for that in your mold. A shop that hasn't been cleaned since 1989 is a problem too.
   - Culture: a little friction is good. A shop where people needle each other about mistakes, with a master not afraid to tell a junior "no, that's not right", gets things right because nobody lets a mistake go. A shop where everyone is very polite and a mistake is okay tends to show it in the work: Mike has seen more screws left untorqued in the nicest shops.
+  - Who runs the tool project: the best shops let engineers design the tools and promote an experienced toolmaker to project manager. A toolmaker knows what the person at the machine is doing and holds them to it, so the feedback is better. Engineers as project managers can work too (Mike has had good ones), but watch for an engineer who knows the CNC work less well than the machinist and goes easy on him. Ask who will manage your mold.
 
 4. THE T1 TRIAL (Mike)
 - Nine times out of ten, T1 asks: does it move, does it slide, can it run about 100 shots, does anything gall.
