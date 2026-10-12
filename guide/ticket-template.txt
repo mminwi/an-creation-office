@@ -4,6 +4,11 @@ Written by: analyst, <date>. Run by: b-project-manager. Status: queued / active 
 Kind: follow-up (analyst writes the next ticket) / one-off (done is done)
 Queue position: <n> (full list in Office files/queue/QUEUE.txt)
 
+STEP CHECK (tickets that start a new step; sop-stages.txt)
+Needed now: <what this step can't be done without; with a proposed default where there is one>
+Nice to have: <asked once, skip any>
+Later: <topic: the step that brings it back> (no specific questions; one open door per topic, "any ideas on <topic> you want to get down now?")
+
 FILL
 Form: <e.g. Office files/forms/intake-001.csv>
 Needed: <field ids that must be answered; the rest are optional>
@@ -12,9 +17,11 @@ Notes for the conversation: <tone, anything the inventor already said not to bri
 Record each answer with its context (why, their words, a sentence or short paragraph). Speak from the answer; give the context only if they ask why.
 
 CALL (when the form is filled and confirmed)
-Tool: claude (else codex)
-Command: C:\AN-tools\claude.cmd -p --permission-mode acceptEdits --allowedTools "WebFetch WebSearch" "Read https://ancreationoffice.com/analyst.txt and https://ancreationoffice.com/<prompt-file>.txt, then do the run."
+Tool: <analyst from PROJECT.txt, or the one the inventor picked for this job>
+Instructions: Read https://ancreationoffice.com/analyst.txt and https://ancreationoffice.com/<prompt-file>.txt, then <what this run must do, in full: inputs to read, work to do, where to write>.
 Run in: <project folder>
+One line to start it: Work on <invention> ticket T-<nnn> in the an-creation repository.
+(The ticket must stand on its own: everything b-analyst needs is here or in files it names, never only in the chat. b-analyst finds it from that one line through AGENTS.md at the top of the repository; https://ancreationoffice.com/agents-md.txt)
 
 EXPECT
 - <file 1, e.g. framework.md>

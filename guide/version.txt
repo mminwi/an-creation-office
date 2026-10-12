@@ -1,18 +1,24 @@
 AN Creation office version. Bots read this first, at the start of every conversation.
 
-Office version: 261011.16
-Soren profile version: 1
-Kasper profile version: 3
+Office version: 261012.6
+b-project-manager profile version: 2 (the bot once called Soren)
+b-business-manager profile version: 4 (the bot once called Kasper)
 (the short text saved in each bot's own profile: https://ancreationoffice.com/profile.txt)
 
-HOW TO USE THIS (Soren and Kasper)
+HOW TO USE THIS (every bot)
 1. Open this file fresh at the start of every conversation (add ?t=<today's date> to the link so you never get an old copy), and again if a conversation runs past a day.
-2. Compare the Office version with the one you last saw (Soren: "Office version seen" in AN-Creation/office.txt; Kasper: version-seen.txt in its repository).
-3. Newer: re-read your instructions fresh (Soren: standing.txt; Kasper: PROMO-INSTRUCTIONS.txt), tell Mike or the inventor in one line what changed that affects them (from CHANGES below), then write the new version where you keep it.
+2. Compare the Office version with the one you last saw (b-project-manager: "Office version seen" in AN-Creation/office.txt; b-business-manager: version-seen.txt in AN-Creation/Business).
+3. Newer: re-read your instructions fresh (b-project-manager: standing.txt; b-business-manager: business-manager.txt), tell Mike or the inventor in one line what changed that affects them (from CHANGES below), then write the new version where you keep it.
 4. If your bot's profile version here is newer than the one in your profile, show them the new profile text from profile.txt and ask them to paste it into your profile (Edit Profile), or update it yourself if your app lets you.
 5. "What version are you on?": answer with the Office version and your profile version.
 
 CHANGES (newest first)
+261012.6  The office is now a team of specialists you choose: a project manager, market check, company setup, patent preparation, design, prototyping, sourcing, funding and more, plus plastics and manufacturing specialists. Pick them and name your bots at https://ancreationoffice.com/team-builder.html ; see them all at https://ancreationoffice.com/specialists.html . The procedures now use role names (b-project-manager, b-business-manager, b-analyst) instead of Soren and Kasper; your bot keeps whatever name you gave it, written in AN-Creation/team.csv (if there is no team.csv yet, the bot writes one with its current name). "Soren's files" is now "Office files": the bot renames the folder once, in one commit. The default helper AI is Grok Build, run by the bot itself, so one Grok account and a free GitHub account are all you need; Cursor, Codex and Claude Code still work if you ask. New profile text for both bots (profile.txt).
+261012.5  Topics that don't matter yet (marketing, distribution, pricing) aren't asked as a list of questions. Soren just asks now and then whether you have any ideas on that topic you want to get down. Whatever you say is recorded, and when the topic matters, the office starts from that and asks only what's missing. Always capturing, never barraging: a specific list of questions comes only when the next step needs it.
+261012.4  Step check: before each new step (first sketches, features, drawings, a build, quotes, launch) the analyst sorts the open questions into needed now, nice to have (asked once, skip any), and later (not mentioned until the step where it matters).
+261012.3  Far fewer questions. What can be looked up (standard sizes, dimensions), the office looks up and proposes. What has a sensible default, it proposes. Budget, buyers, the sell sheet and the marketing plan wait until there's a concept. A list of what's open is fine once, as "answer any, skip the rest"; whatever you skip goes quiet until it matters.
+261012.2  Starting an analyst takes one line: "Work on tray ticket T-008 in the an-creation repository." An AGENTS.md (and CLAUDE.md) at the top of your repository tells Cursor, Codex, Claude Code or any other AI where to find the ticket, and the ticket holds everything else. Nothing long to copy on a phone. Soren adds the two files if they're missing.
+261012.1  The to-do is now three or four paths you pick from (the product, where it's going, the business, quick facts), not a fixed list of business questions first. Rough concept sketches can happen during fact-finding. "Don't know" or "skip" is fine on any question. Things that must come first (patent before showing it, company or insurance before selling) are "before" lines on that event only.
 261011.16  From the first real run: company questions go to Kasper (and are skipped when a company already exists), review pages are Markdown so they show on GitHub and the phone, documents are linked instead of copied, and there's no inventor-copy folder on GitHub.
 261011.15  Advance Now's own Kasper keeps his files in AN-Creation/Business like any Kasper (not a separate repository). Promo and Beacon's history is there now.
 261011.14  Kasper saves quietly, like Soren: no more messages about saving or committing.

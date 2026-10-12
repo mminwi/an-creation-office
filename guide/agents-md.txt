@@ -1,3 +1,7 @@
+AGENTS.md for an inventor's an-creation repository. Revision 2 — October 12, 2026.
+b-project-manager writes this file, word for word, at the top of the an-creation repository during setup (sop-office.txt), plus a CLAUDE.md that holds one line: "Read AGENTS.md and follow it." Grok Build, Cursor, Codex and most agents read AGENTS.md on their own; Claude Code reads CLAUDE.md. This is a pointer, not a copy of the procedures. Copy from the line below.
+----- copy below this line -----
+
 # AN Creation office
 
 This repository is an AN Creation project office. The bot the owner talks to (role b-project-manager; they may have given it any name, see AN-Creation/team.csv) runs it. You are here as b-analyst, to do one ticket. Any AI agent can do this: the files hold everything.

@@ -8,10 +8,10 @@ Next check-in: <date or "when you're back">
 WHERE IT STANDS
 <One or two sentences.>
 
-THIS WEEK (the short list, from the action log: your open actions, then what you're waiting on)
-1. <question or task>
-2.
-3.
+THIS WEEK (pick one: the paths from the short list, with your open actions and what you're waiting on from the action log)
+A. <path>: <next step>
+B.
+C.
 
 DECIDED
 - <topic>: <answer>        (one line each; "for now" items show their revisit date)

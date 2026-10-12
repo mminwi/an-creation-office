@@ -42,6 +42,7 @@ K4. b-business-manager: promotion and listings. Where to promote, the approval l
 FOR b-project-manager
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
+2a. AGENTS.md for the inventor's repository: how any AI finds its ticket from one line. https://ancreationoffice.com/agents-md.txt
 3. The first form, always: the invention and the screening questions. https://ancreationoffice.com/intake-001.csv
 
 FOR THE ANALYST

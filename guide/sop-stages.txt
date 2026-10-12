@@ -1,4 +1,4 @@
-SOP: Stages of a project. Revision 7, October 8, 2026. Replaces the silent tripwires in sop-phases.txt once approved.
+SOP: Stages of a project. Revision 9, October 12, 2026. Replaces the silent tripwires in sop-phases.txt once approved.
 For b-analyst. The inventor sees the plain stage names on the status sheet, never numbers or this file.
 
 WHY THIS MUCH PROCESS (from Mike, D-047)
@@ -47,15 +47,30 @@ REVISIONS AND CHANGES
 Revision names and the change record: https://ancreationoffice.com/sop-change-control.txt (C concepts, X working revisions, A/B/C released from freeze on).
 
 HOW IT WORKS
-1. Every project starts with FACT-FINDING. Nothing else is planned until it is done.
+1. Every project starts with FACT-FINDING. Nothing else is planned until it is done. Rough concepts (C sketches to react to, sop-change-control.txt) are part of fact-finding when the inventor picks the product path; they help answer what it is, and they are not a design revision.
 2. At the end of fact-finding b-analyst writes plan-stages.md: which stages this project needs, on which tracks, in what order, each with its trigger, goal, paperwork and exit gate. It is built from the templates below, not invented. Stages that don't apply are left out with a one-line reason (no electronics: no FCC stage).
-3. Tracks run side by side. A stage starts when its trigger happens. The short list draws only from stages that are active now.
+3. Tracks run side by side. A stage starts when its trigger happens. The short list (paths the inventor picks, sop-focus.txt) draws only from stages that are active now, plus rough concepts during fact-finding.
    WITHIN a track, order matters: finish enough of one stage before starting the next (fact-finding before designing, a finished concept design before prototyping, testing before a mold). "Enough" is the gate, not perfection.
    ACROSS tracks, stages are independent: the company can be forming while the design is being worked; protection can run alongside requirements. The only cross-track links are the ones listed under ORDER OF THINGS THAT COMMONLY CATCH PEOPLE; each is a "before" rule on one event, not a reason to stop a whole track.
    Each stage in plan-stages.md lists "Needs before it starts" (stages in its own track, plus any named cross-track rule) and nothing else.
 4. Exit gate = good enough to move on, not perfect. Advance Now: about 90%. The inventor confirms "good enough". Whatever is left is written in the carry-forward note and comes along; it does not hold the next stage.
 5. At each gate b-analyst writes carry-forward/<stage>-<date>.md (one page: decided, still open and carried, risks carried, documents produced) and updates the status sheet's Stage line. The next stage starts from that note.
 6. A stage can be reopened by new evidence (a test fails, a buyer changes the need). Say so in one line; the inventor decides.
+
+STEP CHECK: BEFORE EACH NEW STEP, WHAT DO WE NEED TO KNOW? (D-106)
+Run it whenever the project is about to start a new step, not only at stage gates: first concept sketches, picking a concept and firming up features, CAD and drawings, a prototype build, choosing how it's made and getting quotes, launch. Fact-finding picked which check sheets apply (resource-map.csv); the step check goes through their open items, plus the open fields on the forms, and sorts each one for THIS step:
+- Needed now: the step can't be done properly without it. Look it up or propose a default first (sop-focus.txt ASK LESS); what's left goes to the inventor as the focus of the ticket, and Soren works to get those answered.
+- Nice to have: useful, not crucial. Asked once, together, as "any thoughts on these? Skip any you don't have." A skip is fine; it is not "for now" and gets no revisit date.
+- Later: doesn't matter for this step. Never asked as specific questions yet. Group it by topic (marketing, distribution and shipping, pricing, money, the business route) and, now and then, offer one open door per topic: "Any ideas on marketing you want to get down now? If you want to talk about it, we'll record it; if not, that's fine too." Let them spill as much or as little as they like; nothing is a fine answer and gets no revisit. Each topic names the step that brings it back. (D-107)
+Capture what they say: in the transcript, and on every check-sheet item and form field their words touch, marked "carried" with their words, the date and "early idea". When the step that needs a topic arrives, the analyst first fills that topic's items from everything already said, then asks only what's still empty.
+Write it at the top of the step's ticket as STEP CHECK with the three lists, and keep the Later list in plan.md under "Open questions by step". At the next step, run it again: some Later items become Needed now.
+What usually matters where (a guide, not a rule; the product decides):
+- First concept sketches: what it does, its size, how it's held and used, what goes on or in it, the hazards that shape its form, where it's used and how it's cleaned. Not buyers, price, quantities, shipping or marketing.
+- Picking a concept, firming up features: who uses it, must-haves for version 1 versus later, the standards that shape the design, a rough cost target if one exists.
+- CAD and drawings: dimensions, materials, the interfaces to other things (a robot hand, a cart, a charger), the design rules from the standards that apply.
+- A prototype build: what this build must prove, the quality bar for it, the money for it.
+- How it's made and quotes: how many, the price point, who buys it, where it ships, the budget.
+- Launch: buyers, channel, shipping, labels and certifications, the marketing plan.
 
 S0 FACT-FINDING ("Getting the facts")  ALWAYS
 Trigger: a new project.

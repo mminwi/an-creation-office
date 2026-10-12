@@ -1,4 +1,4 @@
-SOP: Keep the project focused. Revision 3 — October 6, 2026.
+SOP: Keep the project focused. Revision 5 — October 12, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: https://ancreationoffice.com/advance-now.txt and https://ancreationoffice.com/sop-gateways.txt
 Read this when a risk or a side road comes up, when the inventor comes back after a break, or when they sound overwhelmed. Then leave it.
@@ -45,9 +45,27 @@ Keep moving (Advance Now): "I can't afford this" means do it yourself, or have t
 Company example: form it themselves on the state site with our walkthrough (LLC articles, then the EIN from the IRS); use a filing service; have a lawyer do it; or not now. After setup, running the business is theirs.
 "I can't afford that" closes one option, not the road. Show the next option down.
 
+THE SHORT LIST IS PATHS, AND THE INVENTOR PICKS (D-103)
+Some inventors want the business case first. Many want to get into the product first: sketches, what it physically is, where it's going. Some don't have the business answers yet and don't care to. So the short list is not one ordered list of questions. It is three or four paths, each with one next step (a ticket), and the inventor picks which one to work on. Default paths, named for this product:
+- The product: what it physically is. Rough concepts, sizes, how it works, sketches to react to.
+- Where the product goes: version 1 and what waits for later, first market, the product family.
+- The business: patent, license or make it, money. The company and promotion are b-business-manager's; they show here only as a one-line pointer.
+- Facts and rules: the claim wording, quick checks, the standards questions.
+Drop a path that has nothing useful on it; never more than four. Every path has a ticket ready, so whichever they pick, b-project-manager can start. Offer them all at once ("We could work on the product, where it's going, the business side, or a few quick facts. Which one today?"). No preference: suggest the path with the most useful work open, usually the product after intake.
+"I don't know" and "skip for now" are answers on any path: record "for now" with a revisit date and keep going on that path or another. Never hold a path on one unanswered question.
+What costs most if skipped (a disclosure about to happen, someone could get hurt, money about to be spent) is not forced first. It shows on its path as a "before" line on the event it guards ("patent preference before you show it to anyone outside", "company or insurance before the first sale"), and b-project-manager says it in one line when that event comes near. Only the event waits; the other paths keep going.
+
+ASK LESS: LOOK IT UP, PROPOSE IT, OR WAIT FOR IT (D-105)
+Before any question reaches the inventor, it has to pass three filters. Most don't.
+1. Can we look it up? Standard sizes, published dimensions, what a standard requires, what similar products do: the office finds it and proposes a value with its source. "Hospital carts mostly take 14 by 18 or 15 by 20 trays, so we'll draw to those." Never hand the inventor research to do, and never ask them to choose between numbers they have no way to judge.
+2. Is there a sensible default? Propose it and move on; they can correct it. Battery: lithium. Cleaning: wipe-down. Quality bar: as good as it can be, and we say where something has to give when it does. Prototype type: whatever answers the next question. Mark it "proposed" on the form, not asked.
+3. Does it matter yet? (Before each new step b-analyst runs the STEP CHECK in sop-stages.txt, which sorts every open question into needed now, nice to have, and later.) Budget, buyers, the sell sheet, the marketing plan, volumes, cost, prototype type: these mean nothing before there is a concept. Fill them "after the first concept" (or the event that makes them real: a quote, a buyer, a build) and don't ask. They come back on their own when that event comes.
+Always be capturing; never barrage. Anything they say about any topic, at any time, is recorded on the fields it touches. A specific list of questions on a topic comes only when the next step needs that topic (sop-stages.txt STEP CHECK). Before then, a topic gets an open door at most: "Any ideas on marketing you want to get down now?" Take what they give, then let it go quiet: don't ask again, don't keep driving at it. Each skipped item waits for the point where it matters (a concept to pick, features to firm up, a buyer, a quote, a build) and comes back then, once, with a line on why it matters now. Who buys it, how it ships, the price: those wait until we know who we're selling to. Before the first concept, the only questions worth pressing are about what the product is and does.
+Never re-ask what the files already answer (read business.txt, plan.md Decisions and the forms first). If the inventor says "you were supposed to look that up" or "why do you need that?", they're right: look it up or drop it, and say so in a line.
+
 KEEP THE PROJECT LIST SHORT
 plan.md has:
-- Now. What is being worked. About a dozen at most. About three are this week's.
+- Now. What is being worked. About a dozen at most. This week's are the path the inventor picked (see THE SHORT LIST IS PATHS).
 - Later. Things they said yes to but not yet, each with what brings it back ("before you sell the first one", "when the sample arrives").
 - Decisions. Every choice they made, yes or no, with the date, the answer, and the context (why, in their words, a sentence or short paragraph). This is the record the reminders come from. It is never shown as work.
 Speak from the answer, not the context. "No company, so we'll skip separate books. OK?" Give the context only when they ask why, or when a new fact may change the choice.
@@ -66,7 +84,7 @@ Hold only the activity the inventor actually paused, in their words ("don't show
 
 PULL IT BACK
 When they come back after a break, at the end of a stage, or about once a week while they are active:
-- Show Now. Ask which three matter this week.
+- Show the paths and their next steps. Ask which one they want to work on.
 - Show only Later items whose trigger has happened.
 - If Now has grown past about a dozen, sort it with them: keep, later, settle, or drop.
 - End with the next practical step.

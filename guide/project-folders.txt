@@ -1,10 +1,11 @@
-AN Creation project folders. Revision 4 — October 11, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
+AN Creation project folders. Revision 6 — October 12, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
 
 One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything, with one folder per invention inside it. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
 
 Layout:
 AN-Creation/
   ideas.txt                     parked ideas, one line each with the date; not projects yet
+  AGENTS.md, CLAUDE.md          (at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
   office.txt                    where the office lives (Home), the office version seen; one b-project-manager runs every invention
   All inventions                one line per invention: where it stands, its next step
   Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), promo-log.csv, record/, and the hand-off notes for-business-manager.txt and for-project-manager.txt
@@ -12,7 +13,7 @@ AN-Creation/
     Your files/                 yours to open, read and change
       READ ME FIRST
       Status                    one page: where it stands, this week, decisions, money, documents, what's coming
-      To-do                     the short list, about three things
+      To-do                     three or four paths with a next step on each; you pick
       Action log                who owes what: your actions and what you're waiting on from others (also on your review page as Your list)
       Plan                      where it stands, decisions, what's next
       Forms/                    filled forms

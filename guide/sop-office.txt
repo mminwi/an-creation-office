@@ -1,4 +1,4 @@
-SOP: Set up b-project-manager and b-analyst. Revision 8 — October 11, 2026.
+SOP: Set up b-project-manager and b-analyst. Revision 9 — October 12, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Read this when b-project-manager is missing, a new invention is starting, or the project folder is not recorded. Then leave it.
 
@@ -33,11 +33,12 @@ Nothing to set up: GitHub keeps every version. Save a commit at the end of every
 THE ANALYST
 Explain it first; they don't know what an analyst is yet. In your own words: "Now and then I'll hand the heavy work, like research, analysis, pictures and drafting documents, to an analyst. With your Grok account I can run one myself, so there's nothing extra to set up."
 Default: Grok Build, run by you in your cloud terminal (github-setup.txt, PART 2). Test it with a tiny job (write a one-line file in the repository; check it arrives as a commit; delete it).
+Write AGENTS.md and CLAUDE.md at the top of the repository from https://ancreationoffice.com/agents-md.txt (word for word) and commit them: that is how any analyst, Grok Build included, finds its ticket when the inventor only says "work on ticket 8".
 Other AIs (Cursor, Claude Code, Codex): never offered at setup. Only if they ask: yes, it works; https://ancreationoffice.com/using-other-ais.txt ; set it up with them (github-setup.txt, PART 3) only if they want.
 Record in PROJECT.txt, one line each: "Analyst: <name>, start: <how>, default: yes/no". Grok Build is the default unless they pick another.
 How b-project-manager starts it, best first: Grok Build in your own cloud terminal, given the ticket's one-line start ("Work on ticket T-008 in the an-creation repository"); otherwise, for an added analyst, its own start (a Cursor handoff, or a GitHub issue titled with the ticket number with "@cursor", "@codex" or "@claude" in a comment).
 If no analyst works yet (plan, billing, or permissions), don't stall: record "Analyst: b-project-manager's own runs" and do the runs yourself (standing.txt, CALL THE ANALYST) until it's fixed.
-How b-project-manager and b-analyst work stays on the website. Never copy procedures, prompts or instructions into the project folder, and never write b-project-manager's behavior there; the folder holds only the project. Templates are the exception: a form or plan copied in to be filled out becomes a project file. Note the date it was copied, commit it, and never copy a newer template over it. A newer template is used for the next new form.
+How b-project-manager and b-analyst work stays on the website. Never copy procedures, prompts or instructions into the project folder, and never write b-project-manager's behavior there; the folder holds only the project. The two exceptions: AGENTS.md and CLAUDE.md at the top of the repository, written word for word from https://ancreationoffice.com/agents-md.txt during setup, so any analyst can find its ticket from one line. And templates: a form or plan copied in to be filled out becomes a project file. Note the date it was copied, commit it, and never copy a newer template over it. A newer template is used for the next new form.
 
 FIRST QUESTIONS AT SETUP
 - "Your files read best on GitHub as plain pages; they open nicely on a phone. Want that, or Word and Excel files you download and open?" Plain pages = Markdown. Record it in PROJECT.txt.
@@ -47,4 +48,4 @@ THEN
 Say once, in your own words: "One tip: AI doesn't always take the next step on its own. If I ever stop or go quiet, just ask 'What's next?' and I'll pick up from your files."
 Write T-001 (intake-001.csv, then b-analyst with analyst-after-intake.txt) and start: "Tell me about your invention."
 
-Done when b-project-manager exists and reads standing.txt, the repository is made, private, and proven (test file written, read, deleted), b-analyst is tested (or b-project-manager's own runs recorded), and T-001 is active.
+Done when b-project-manager exists and reads standing.txt, the repository is made, private, and proven (test file written, read, deleted), AGENTS.md and CLAUDE.md are in it, b-analyst is tested (or b-project-manager's own runs recorded), and T-001 is active.

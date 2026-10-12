@@ -12,7 +12,7 @@ PART 1: GITHUB
 4. Make the repository. Try to create it yourself: name an-creation, Private, with a README. If you can't, walk them through it: https://github.com/new , Repository name: an-creation, choose Private, tick "Add a README file", Create repository.
 5. Check it's private. The repository page shows "Private" next to the name. If it says Public, stop and fix it first: Settings, scroll to Danger Zone, Change visibility, Private.
 6. Prove you can use it: write a small test file, read it back, delete it. Record "Home: GitHub <username>/an-creation" in AN-Creation/office.txt.
-7. Put the instructions any AI will look for at the top of the repository: AGENTS.md from https://ancreationoffice.com/template-agents.md , and a one-line CLAUDE.md that says "Read AGENTS.md and follow it." Commit them.
+7. Put the instructions any AI will look for at the top of the repository: AGENTS.md from https://ancreationoffice.com/agents-md.txt , and a one-line CLAUDE.md that says "Read AGENTS.md and follow it." Commit them.
 
 PART 2: THE ANALYST, THE DEFAULT WAY: GROK BUILD IN THE BOT'S OWN CLOUD TERMINAL
 Everything stays in the cloud: Grok Build runs in the bot's own terminal in the cloud, never on anyone's computer. Nothing for them to set up beyond their Grok account and GitHub (PART 1).
@@ -24,7 +24,7 @@ Everything stays in the cloud: Grok Build runs in the bot's own terminal in the 
 Draft: this path is new (October 2026) and is being tested on a phone by a first-time user. Check the current Grok Build command and sign-in on its docs page; don't fill command details from memory. If the bot has no cloud terminal on their plan, use PART 3 (a cloud agent) rather than anyone's computer.
 
 PART 3: ADDING MORE AIs (optional, all cloud)
-Any cloud AI agent that can open the repository can do the analyst's work: AGENTS.md at the top of the repository tells it what the office is and how to work a ticket (template: https://ancreationoffice.com/template-agents.md ; copy it in at setup). It may not be as smooth as the bot, but it reads the same files, asks the same questions and writes the same answers. Add one only if they already have it and want it; one is enough. Use the cloud versions (Cursor's cloud agents, Codex in the cloud, Claude Code on the web), not desktop installs.
+Any cloud AI agent that can open the repository can do the analyst's work: AGENTS.md at the top of the repository tells it what the office is and how to work a ticket (template: https://ancreationoffice.com/agents-md.txt ; copy it in at setup). It may not be as smooth as the bot, but it reads the same files, asks the same questions and writes the same answers. Add one only if they already have it and want it; one is enough. Use the cloud versions (Cursor's cloud agents, Codex in the cloud, Claude Code on the web), not desktop installs.
 Cursor (with a Cursor plan):
 1. In Cursor's web dashboard (cursor.com, signed in with the same account as Grok Bot), connect GitHub and allow Cursor the an-creation repository.
 2. Cloud agents bill heavy runs as usage. If Cursor asks to turn on usage-based (on-demand) billing, explain it in a line ("heavy runs cost a little extra, billed by Cursor; you can set a monthly limit") and let them decide and set a limit themselves.

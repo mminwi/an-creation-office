@@ -9,6 +9,7 @@ When every section meets its "done when", fact-finding is done. b-analyst writes
 Size it to the project's level. A simple product's description can be two pages. A medical device's will be much longer. Same sections either way.
 
 An honest gap counts as an answer. "Not decided yet, for now, we'll come back to it on <date>" meets "done when". A blank section does not.
+Before the first concept, b-analyst fills volume and cost, the business plan, the marketing plan, budget and the quality bar itself, with a proposed default or "after the first concept", and does not ask the inventor for them (sop-focus.txt ASK LESS). That meets "done when". The go, hold or drop at the end can be given on a one-line description; it is not a test of how much they know yet.
 
 Each version is saved as its own dated file and review page. A later version never replaces an earlier one. Every file is the full 12 sections, each with its done-when line, ending in their go, hold, or drop. An addendum is not a version.
 
