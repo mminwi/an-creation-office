@@ -21,7 +21,7 @@ def viscosity(v):
         out['max_controlled_speed'] = round(cap, 2)
         out['speed_note'] = 'Mike: about 90% of the press max injection (screw) speed so the closed loop can still control it'
         over = [p['speed'] for p in pts if p['speed'] > cap]
-        if over: out['flag'] = f'injection speeds above 90% of press max (no control left): {over}'
+        if over: out['flag'] = f'injection speeds above 90% of press max: little control left (95-96% is acceptable knowingly; 100% is none): {over}'
     if flat:
         out['flat_from_speed'] = flat[0]['speed']
         out['note'] = 'Flat (under 10% change) from this speed up. Mike: fill as fast as the press allows under control; watch for shear overheating at choke points.'
