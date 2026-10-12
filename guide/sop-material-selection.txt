@@ -1,6 +1,6 @@
 SOP: Plastic material selection (b-plastic-materials). Revision 1 (draft, specialists branch) — October 12, 2026.
 Index: https://ancreationoffice.com/sop.txt
-Source: standard practice from resin makers' data and test standards; Mike: it comes down to chemical compatibility, and it is well documented (specialists/record/261012-M-documented-roles-mike.md). Tier: deep, book-based.
+Source: standard practice from resin makers' data and test standards; Mike: it comes down to chemical compatibility, and it is well documented (https://github.com/mminwi/an-creation-office/blob/main/specialists/record/261012-M-documented-roles-mike.md). Tier: deep, book-based.
 Read this when a resin is being chosen or changed, or a part cracks, crazes, swells or fades in use.
 
 METHOD

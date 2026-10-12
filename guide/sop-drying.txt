@@ -1,7 +1,7 @@
 SOP: Resin drying and handling (b-drying-handling). Revision 5 (draft, specialists branch) — October 12, 2026. Hopper sizing, regrind and desiccant added from Mike's notes.
 Index: https://ancreationoffice.com/sop.txt
-Source: Mike's practice (specialists/record/261012-M-drying-mike.md). Lines marked "Mike" are his practice; "published" lines cite the library; anything else the office adds is marked "office". Tier: deep.
-Read this when a resin must be dried (nylon, PC, PET, PBT, ABS and other engineered resins), a process drifts or the parts show splay, the nozzle spits, a dryer "isn't keeping up", a plant adds dryers, or regrind goes into a process. Calculations: specialists/calcs/drying.py (hoppers and dryers), specialists/calcs/regrind.py (regrind generations).
+Source: Mike's practice (https://github.com/mminwi/an-creation-office/blob/main/specialists/record/261012-M-drying-mike.md). Lines marked "Mike" are his practice; "published" lines cite the library; anything else the office adds is marked "office". Tier: deep.
+Read this when a resin must be dried (nylon, PC, PET, PBT, ABS and other engineered resins), a process drifts or the parts show splay, the nozzle spits, a dryer "isn't keeping up", a plant adds dryers, or regrind goes into a process. Calculations: https://github.com/mminwi/an-creation-office/blob/main/specialists/calcs/drying.py (hoppers and dryers), https://github.com/mminwi/an-creation-office/blob/main/specialists/calcs/regrind.py (regrind generations).
 
 WHY IT MATTERS
 Wet resin makes the process wander (Mike). Water turns to vapor in the barrel: the melt flows easier than it should, the parts show splay, and the nozzle spits and sputters as the gas escapes. Published: nylon must be molded dry; moisture degrades the polymer and costs surface quality and strength (BASF Ultramid brochure, library: resin-design-guides).

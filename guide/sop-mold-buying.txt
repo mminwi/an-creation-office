@@ -1,6 +1,6 @@
 SOP: Buying a mold (b-mold-buying). Revision 6 (draft, specialists branch) — October 12, 2026. From Mike's notes: offshore risk, substitutions, picking a shop, the quote package, T1, the purchase order.
 Index: https://ancreationoffice.com/sop.txt
-Source: Mike's practice (specialists/record/261012-M-mold-buying-mike.md). Lines marked "Mike" are his experience and opinion; "office" lines are the office's. Tier: deep.
+Source: Mike's practice (https://github.com/mminwi/an-creation-office/blob/main/specialists/record/261012-M-mold-buying-mike.md). Lines marked "Mike" are his experience and opinion; "office" lines are the office's. Tier: deep.
 Read this when a mold is being quoted or bought, especially offshore. The tooling stage itself (design freeze to T1 and approval) is sop-tooling-loop.txt; qualification is sop-qualification.txt; molds classes and the quote package are in the library (plastics-mold-classes, aiag-ppap).
 
 1. WHERE TO BUILD IT: CHINA OR THE US (Mike)

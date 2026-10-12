@@ -1,6 +1,6 @@
 SOP: Molding defect troubleshooting (b-molding-defects). Revision 1 (draft, specialists branch) — October 12, 2026.
 Index: https://ancreationoffice.com/sop.txt
-Source: Mike's practice (specialists/record/261012-M-molding-defects-mike.md and the cooling water, drying and scientific molding records). Lines marked "Mike" are his; "published" lines cite the guide; "office" lines are the office's. Tier: deep.
+Source: Mike's practice (https://github.com/mminwi/an-creation-office/blob/main/specialists/record/261012-M-molding-defects-mike.md and the cooling water, drying and scientific molding records). Lines marked "Mike" are his; "published" lines cite the guide; "office" lines are the office's. Tier: deep.
 Read this when parts show a defect, scrap rises, or a customer complains about appearance, dimensions or cracking.
 
 1. START WITH THE STANDARD TROUBLESHOOTING GUIDES (Mike: the number one thing)
