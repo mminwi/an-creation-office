@@ -12,6 +12,7 @@ GPM_SWEET = (3.0, 4.0)      # "about three, four gallon per minute through a sta
 GPM_EROSION = 9.0           # "nine, ten gallons per minute through a standard line ... you'll start eroding"
 DT_LOOK = 5.0               # out vs in "more than about five degrees, you need to take a serious look"
 DT_WORLD = 2.0              # "within a degree or two ... pretty much world class"
+TOWER_X = (1.25, 1.5)       # tower capacity 1.25-1.5 x chiller capacity (Mike)
 CHILLER_DT = 10.0           # chillers run best at about a 10 F rise across the chiller
 UNITS = 3                   # three chillers and three pump sets, each a third of the worst case
 TYPICAL = 2 / 3             # typical load about two thirds: two units run, one backup
@@ -101,6 +102,8 @@ def plant(m):
            'all_loads_tons': round(tons + hyd + thr, 1),
            'all_loads_each_of_3_units_tons': round((tons + hyd + thr) / UNITS, 1),
            'typical_load_tons_2_of_3': round((tons + hyd + thr) * TYPICAL, 1),
+           'tower_tons_1.25_to_1.5x': [round((tons + hyd + thr) * TOWER_X[0], 1), round((tons + hyd + thr) * TOWER_X[1], 1)],
+           'tower_note': 'Mike: towers suit dry climates; near-100% humidity, consider air-cooled chillers sized for local temperatures. Say which ton (chiller or tower) the tower maker rates in.',
            'chiller_loop_gpm_at_10F': round((tons + hyd + thr) * 12000 / (500 * CHILLER_DT)),
            'note_loads': 'Mike: hydraulics on chilled water, so size the chillers on all_loads. Hydraulic rule uses nameplate hp unless running hp is given.'}
     if missing: out['missing_heat_data'] = missing; out['worst_case_incomplete'] = 'totals leave out the presses listed in missing_heat_data'
