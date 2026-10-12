@@ -19,6 +19,7 @@ FIRST
 0. Specialist procedures (specialists branch): resin drying, b-drying-handling. https://ancreationoffice.com/sop-drying.txt
 0. Specialist procedures (specialists branch): scientific molding, b-scientific-molding. https://ancreationoffice.com/sop-scientific-molding.txt
 0. Specialist procedures (specialists branch): molding defect troubleshooting, b-molding-defects. https://ancreationoffice.com/sop-molding-defects.txt
+0. Specialist procedures (specialists branch): buying a mold, b-mold-buying (started). https://ancreationoffice.com/sop-mold-buying.txt
 0. GitHub and b-analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
 FOR b-business-manager (the business manager)

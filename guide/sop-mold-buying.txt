@@ -1,0 +1,17 @@
+SOP: Buying a mold (b-mold-buying). Revision 1 (draft, specialists branch) — October 12, 2026. Started from one note of Mike's; more to come.
+Index: https://ancreationoffice.com/sop.txt
+Source: Mike's practice (specialists/record/261012-M-mold-buying-mike.md). Lines marked "Mike" are his experience and opinion; "office" lines are the office's. Tier: deep.
+Read this when a mold is being quoted or bought, especially offshore. The tooling stage itself (design freeze to T1 and approval) is sop-tooling-loop.txt; qualification is sop-qualification.txt; molds classes and the quote package are in the library (plastics-mold-classes, aiag-ppap).
+
+1. WHERE TO BUILD IT: CHINA OR THE US (Mike)
+- Quality is no longer the dividing line. Every Chinese mold Mike has looked at in about the last ten years was as good as an American one, and he has seen as many cheap molds come out of the US as out of China. Judge the shop and the mold, not the country.
+- The real watch-out with an offshore shop: they may run your mold, or a copy, to sell the part in other markets. In Mike's experience they are careful not to sell against you in your own market (made for the US, it stays out of the US, but may turn up in Australia). Short of a few toys, he can't think of a case where a copy came back into the US against a customer's product.
+- If you could never sell in those other markets anyway, weigh how much that risk really costs you.
+- The "free mold" trade-off: some shops build the mold for free or very cheap and make their money on the parts, and possibly on selling the part elsewhere. That was common in the 1980s and 90s.
+- Pay for the mold and the relationship is usually straight: with many US companies there now, most shops don't play those games any more (Mike).
+- Office: whether selling elsewhere matters depends on what the product's protection covers: a patent protects only in the countries where it is granted. Settle mold ownership, who may run it, and where it lives in the purchase agreement, and have the patent and contract questions looked at by an attorney (b-patent-prep, b-licensing-funding). The office prepares the questions; it does not give legal advice.
+
+OPEN FOR MIKE
+- How he picks and checks a mold shop (visits, references, the mold spec and class, steel, hot runner brand, standards for components).
+- What goes in the quote package and the purchase order (payment milestones, T1 samples, approval, shipping, spare parts).
+- How he runs a T1 and decides the mold is accepted.
