@@ -1,7 +1,7 @@
 """Mold cooling water check (b-cooling-water). Procedure: guide/sop-cooling-water.txt
 
 Run:  python cooling_water.py <input.json>
-Input: see example-cooling-input.json. US units: lb, in, gpm, deg F, BTU.
+Input: see example-cooling-input.json (one mold) or example-plant-input.json (plant sizing). US units: lb, in, gpm, deg F, BTU.
 Every result is proposed; the practice limits are Mike's (record/261012-M-cooling-water-mike.md)
 and the physics is standard (water heat balance, Reynolds number).
 """
@@ -12,6 +12,9 @@ GPM_SWEET = (3.0, 4.0)      # "about three, four gallon per minute through a sta
 GPM_EROSION = 9.0           # "nine, ten gallons per minute through a standard line ... you'll start eroding"
 DT_LOOK = 5.0               # out vs in "more than about five degrees, you need to take a serious look"
 DT_WORLD = 2.0              # "within a degree or two ... pretty much world class"
+CHILLER_DT = 10.0           # chillers run best at about a 10 F rise across the chiller
+UNITS = 3                   # three chillers and three pump sets, each a third of the worst case
+TYPICAL = 2 / 3             # typical load about two thirds: two units run, one backup
 RE_TURBULENT = 4000         # physics: fully turbulent pipe flow above about Re 4000
 
 # Water kinematic viscosity, ft^2/s, from standard property tables (deg F -> value)
@@ -41,27 +44,62 @@ def circuit(c):
     return dict(name=c['name'], gpm=c['gpm'], velocity_ft_s=round(vel, 2), reynolds=round(re), dt_F=round(dt, 1),
                 heat_btu_hr=round(q), flags=flags)
 
-def main(path):
-    m = json.load(open(path))
-    out = {'mold': m.get('mold', ''), 'note': 'Proposed results. Practice limits are Mike\'s; degrees F assumed.'}
+def heat_per_lb(p):
+    """BTU/lb from melt to ejection: an enthalpy number, or specific heat x temperature drop (resin supplier data)."""
+    if p.get('delta_h_btu_per_lb') is not None:
+        return p['delta_h_btu_per_lb'], 'enthalpy from supplier'
+    if p.get('cp_btu_per_lb_F') is not None and p.get('melt_F') is not None and p.get('eject_F') is not None:
+        h = p['cp_btu_per_lb_F'] * (p['melt_F'] - p['eject_F']) + (p.get('latent_btu_per_lb') or 0)
+        return h, 'specific heat x (melt - eject)' + (' + heat of crystallization' if p.get('latent_btu_per_lb') else '')
+    return None, 'not set: need the resin supplier\'s enthalpy, or specific heat with melt and ejection temperatures'
+
+def lb_per_hr(p):
+    if p.get('lb_per_hr') is not None: return p['lb_per_hr']
+    return p['shot_lb'] * 3600 / p['cycle_s']
+
+def mold(m):
+    out = {'mold': m.get('mold', ''), 'note': 'Proposed results. Practice limits are Mike\'s; degrees F.'}
     rows = [circuit(c) for c in m.get('circuits', [])]
     out['circuits'] = rows
     water_q = sum(r['heat_btu_hr'] for r in rows)
     out['water_heat_btu_hr'] = water_q
     p = m.get('plastic')
-    if p and p.get('delta_h_btu_per_lb') is not None:
-        shots_hr = 3600 / p['cycle_s']
-        plastic_q = p['shot_lb'] * shots_hr * p['delta_h_btu_per_lb']
-        out['plastic_heat_btu_hr'] = round(plastic_q)
-        out['water_vs_plastic'] = round(water_q / plastic_q, 2) if plastic_q else None
-        t = p.get('target_dt_F', DT_WORLD)
-        out['gpm_total_for_target_dt'] = round(plastic_q / (500 * t), 1)
-    elif p:
-        out['plastic_heat_btu_hr'] = 'not set: need delta_h_btu_per_lb from the resin supplier (melt to ejection)'
-    load = out.get('plastic_heat_btu_hr') if isinstance(out.get('plastic_heat_btu_hr'), (int, float)) else water_q
-    out['chiller_tons_before_margin'] = round(load / 12000, 2)
-    out['margin'] = 'not set: chiller and tower sizing margin is Mike\'s call (sop-cooling-water.txt, open questions)'
-    print(json.dumps(out, indent=2))
+    load = water_q
+    if p:
+        h, how = heat_per_lb(p)
+        if h is None:
+            out['plastic_heat_btu_hr'] = how
+        else:
+            q = lb_per_hr(p) * h
+            load = q
+            out['plastic_heat_btu_hr'] = round(q); out['heat_per_lb'] = f'{h:.1f} BTU/lb ({how})'
+            out['water_vs_plastic'] = round(water_q / q, 2) if q and rows else None
+            t = p.get('target_dt_F', DT_WORLD)
+            out['gpm_total_for_target_dt'] = round(q / (500 * t), 1)
+    out['tons'] = round(load / 12000, 2)
+    return out
+
+def plant(m):
+    rows, total, missing = [], 0, []
+    for pr in m['presses']:
+        h, how = heat_per_lb(pr)
+        if h is None:
+            missing.append(pr['press']); rows.append({'press': pr['press'], 'worst_job': pr.get('worst_job', ''), 'heat': how}); continue
+        lbh = lb_per_hr(pr); q = lbh * h; total += q
+        rows.append({'press': pr['press'], 'worst_job': pr.get('worst_job', ''), 'lb_per_hr': round(lbh, 1),
+                     'btu_per_lb': round(h, 1), 'heat_btu_hr': round(q)})
+    tons = total / 12000
+    out = {'plant': m.get('plant', ''), 'note': 'Proposed. Mike\'s method: worst job on every press at once, split over three units, two run typically.',
+           'presses': rows, 'worst_case_btu_hr': round(total), 'worst_case_tons': round(tons, 1),
+           'each_of_3_units_tons': round(tons / UNITS, 1), 'typical_load_tons_2_of_3': round(tons * TYPICAL, 1),
+           'chiller_loop_gpm_at_10F': round(total / (500 * CHILLER_DT)),
+           'not_included': 'hydraulic oil cooling and feed throats: take each press maker\'s cooling requirement (rule of thumb open)'}
+    if missing: out['missing_heat_data'] = missing; out['worst_case_incomplete'] = 'totals leave out the presses listed in missing_heat_data'
+    return out
+
+def main(path):
+    m = json.load(open(path))
+    print(json.dumps(plant(m) if 'presses' in m else mold(m), indent=2))
 
 if __name__ == '__main__':
     main(sys.argv[1])

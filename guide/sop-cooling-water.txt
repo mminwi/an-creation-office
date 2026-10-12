@@ -1,4 +1,4 @@
-SOP: Mold cooling water (b-cooling-water). Revision 1 (draft, specialists branch) — October 12, 2026.
+SOP: Mold cooling water (b-cooling-water). Revision 2 (draft, specialists branch) — October 12, 2026. Plant sizing added from Mike's second note.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice from years of building and running injection molds (specialists/record/261012-M-cooling-water-mike.md). Lines marked "Mike" are his practice; lines marked "physics" are standard heat transfer; anything else the office adds is marked "office". Tier: deep.
 Read this when a mold is being designed or quoted, a mold runs hot, cycles long, warps, sticks, binds or galls, or a plant is sizing chillers, towers or pumps. Calculation: specialists/calcs/cooling_water.py (input format: example-cooling-input.json).
@@ -33,14 +33,15 @@ WHAT TO ASK FOR (a cooling review needs these; unknowns become questions)
 - Judge each loop by flow through it against heat it must remove (calculation below).
 
 4. FLOW
+- A standard line, on a 200 to 300 ton mold, is drilled 7/16 in with 3/8 in pipe fittings; some molds use 1/2 in holes (Mike).
 - Target about 3 to 4 gpm through a standard line (Mike). That is about as good as cooling gets; more flow adds turbulence but little cooling.
 - Don't swing to the other extreme (Mike). Plants that are starved for water often add big pumps and big hoses; at about 9 to 10 gpm through a standard line the water starts eroding the line, aluminum worst of all.
 - Physics: the flow must be turbulent (Reynolds number above about 4,000) to carry heat well; the calculation reports it for every circuit, with the velocity.
-- Open: the size Mike means by a "standard line" (asked below); the calculation takes the line size as an input.
+- Physics, for a 7/16 in line: 3.5 gpm is about 7.5 ft/s and well turbulent (Reynolds about 22,000 in 60 F water); 9.5 gpm is about 20 ft/s. So 3 to 4 gpm is already well past the turbulence a line needs, which fits Mike's point that more flow buys little cooling.
 
 5. MEASURE
 - Buy flow meters, ideally with temperature sensors, on every circuit (Mike). Put the temperature on the water coming out of the mold.
-- Water out vs water in, per circuit (Mike; degrees F assumed until Mike confirms):
+- Water out vs water in, per circuit (Mike; degrees F):
   - More than about 5 degrees: take a serious look at that circuit.
   - Within a degree or two on each line: perfect, and usually reachable.
   - The entire mold running within a degree or two: world class.
@@ -48,14 +49,24 @@ WHAT TO ASK FOR (a cooling review needs these; unknowns become questions)
 
 6. THE CALCULATION (specialists/calcs/cooling_water.py)
 Input per mold: shot weight, cycle, the resin's heat content from melt to ejection (from the supplier), and per circuit: line size, gpm, water in and out, insert material.
-Output per circuit: velocity, Reynolds number, temperature rise, heat removed, and flags (below 3-4 gpm, 9+ gpm erosion, not turbulent, over 5 degrees, within 2 degrees). Per mold: heat from the plastic, heat carried by the water, the total gpm needed for a target rise, and chiller tons before margin (BTU/hr / 12,000). Every number is marked proposed.
+Output per circuit: velocity, Reynolds number, temperature rise, heat removed, and flags (below 3-4 gpm, 9+ gpm erosion, not turbulent, over 5 degrees, within 2 degrees). Per mold: heat from the plastic (from an enthalpy number, or specific heat with melt and ejection temperatures), heat carried by the water, the total gpm needed for a target rise, and tons (BTU/hr / 12,000). Plant mode: see section 7. Every number is marked proposed.
 
-7. PLANT WATER (open: Mike's method to be added)
-Chiller and tower sizing, pumps, header piping, mold temperature controllers, and water treatment. Library: ASHRAE Handbook (HVAC Systems and Equipment), CTI codes, ASHRAE 188 and Guideline 12 (Legionella, which apply to cooling towers), chiller and controller makers' guides.
-Open questions for Mike:
-- What line size is a "standard line"? (Sets the velocity and the erosion limit.)
-- How do you size a chiller and a tower for a molding plant: what loads go on each (molds, hydraulic oil, feed throats), and what margin?
-- Degrees in F for the 5 and 1-2 degree rules?
+7. PLANT WATER: SIZING CHILLERS AND PUMPS (Mike)
+Mold heat load, by pounds:
+- For each press, take its worst job: the heaviest pounds per hour (parts per hour x part weight). A packaging plant with a few materials can do this straight from throughput, for example 500 lb/hr.
+- Heat per pound = from melt temperature down to ejection, for example from about 350 F to under 150 F. Office: the heat per pound comes from the resin supplier (specific heat over that range, plus the heat of crystallization for semi-crystalline resins, or one enthalpy number); never from memory.
+- Worst-case plant load = every press running its worst job at once. Size for that worst case (Mike).
+Three units, two running:
+- Split the worst case over three chillers and three pump sets, each about a third (Mike).
+- Typical load is about two thirds, so two units run and the third is the backup. Running everything at once is rare (Mike recalls about two weeks near 100% in his career).
+- Rotate them: when a pump or chiller cycles off and comes back, the next one in line starts (lead rotation), so all three run regularly and you know each one works (Mike).
+- Maintenance: one unit can come off line without shutting the plant down (Mike).
+- Chillers run best with about a 10 F rise across the chiller, even while the molds run at 2 to 5 F rise; the return water is a bit warmer and the chiller runs more efficiently. Two chillers at part load run better than units pushed to their limit (Mike).
+Hydraulic oil cooling:
+- There is an old rule of thumb for tons of cooling per ton of press for the hydraulics (Mike); Mike does not remember the figure, so it is open. Office: get it from the press maker's cooling water requirement for each machine, or have it read from a published source; never fill it from memory.
+The calculation (plant mode) adds up each press's worst-job pounds and heat per pound, then gives the total load in BTU/hr and tons, the size of each of three units, the typical two-thirds load, and the chiller loop flow at a 10 F rise (gpm = BTU/hr / (500 x 10)).
+Library: ASHRAE Handbook (HVAC Systems and Equipment), CTI codes, ASHRAE 188 and Guideline 12 (Legionella; they apply to cooling towers), chiller and controller makers' guides.
+Open for Mike: the hydraulic rule of thumb, if it comes back to him; and towers: when the plant uses a tower (for hydraulics, or ahead of chillers) and how he sizes it.
 
 HANDS OFF
 A mechanical contractor for plant piping, chillers and towers; a water treatment vendor for chemistry and the Legionella program on towers; the tool shop for inserts and circuit changes. The office prepares the review and the numbers; it does not specify plant equipment for purchase.

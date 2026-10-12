@@ -1,0 +1,8 @@
+{
+  "plant": "EXAMPLE ONLY - made-up presses and resin numbers to show the format; real heat data comes from the resin supplier",
+  "presses": [
+    {"press": "P1 300 ton", "worst_job": "lid, 4 cavity", "lb_per_hr": 500, "cp_btu_per_lb_F": 0.5, "melt_F": 350, "eject_F": 150},
+    {"press": "P2 300 ton", "worst_job": "pail", "lb_per_hr": 400, "cp_btu_per_lb_F": 0.5, "melt_F": 350, "eject_F": 150},
+    {"press": "P3 200 ton", "worst_job": "cup", "shot_lb": 0.4, "cycle_s": 8, "delta_h_btu_per_lb": null}
+  ]
+}
