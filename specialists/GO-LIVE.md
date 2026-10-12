@@ -44,7 +44,7 @@ Add nginx redirects in `nginx-an-creation-office.conf`:
   - Inventor's Office: project manager, business, patent prep, design, prototyping (today's office).
   - Molding Plant Office: cooling water, drying and regrind, scientific molding, molding defects, mold buying, machine safety.
   - Quality Office: quality planning (APQP), measurement, Lean Six Sigma, the improvement toolbox.
-  - Product Design Office: part design, tolerance stacks, material selection, DFM.
+  - Plastic Design Office: plastic part design, tolerance stacks, material selection, DFM for molding.
   - Manufacturing Office: manufacturing cells, purchasing, cost and BOM, automation, machine safety.
   - Electrical Prep Office: electrical prep, controls, battery and power, EMI and FCC, product safety.
 - [ ] **Team builder.** A form where the user lists the specialists they want and writes a bot name next to each. Same name on several lines = one bot covering all of them; different names = separate bots. From it the office writes `team.csv` and a short custom instruction block for each bot (its name, the roles it covers, the procedures it reads). Default: one bot, all roles.
