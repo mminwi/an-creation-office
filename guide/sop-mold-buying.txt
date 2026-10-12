@@ -1,4 +1,4 @@
-SOP: Buying a mold (b-mold-buying). Revision 1 (draft, specialists branch) — October 12, 2026. Started from one note of Mike's; more to come.
+SOP: Buying a mold (b-mold-buying). Revision 2 (draft, specialists branch) — October 12, 2026. From Mike's notes: offshore risk, substitutions, picking a shop, T1.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice (specialists/record/261012-M-mold-buying-mike.md). Lines marked "Mike" are his experience and opinion; "office" lines are the office's. Tier: deep.
 Read this when a mold is being quoted or bought, especially offshore. The tooling stage itself (design freeze to T1 and approval) is sop-tooling-loop.txt; qualification is sop-qualification.txt; molds classes and the quote package are in the library (plastics-mold-classes, aiag-ppap).
@@ -11,7 +11,25 @@ Read this when a mold is being quoted or bought, especially offshore. The toolin
 - Pay for the mold and the relationship is usually straight: with many US companies there now, most shops don't play those games any more (Mike).
 - Office: whether selling elsewhere matters depends on what the product's protection covers: a patent protects only in the countries where it is granted. Settle mold ownership, who may run it, and where it lives in the purchase agreement, and have the patent and contract questions looked at by an attorney (b-patent-prep, b-licensing-funding). The office prepares the questions; it does not give legal advice.
 
+2. SUBSTITUTIONS: THE REAL WATCH-OUT (Mike)
+- Shops, offshore especially, use "equivalents": the mold steel may not be the steel you specified; a bearing or bushing you specified arrives as a different one.
+- A steel certification (grade, hardness, specification) can be requested, but certificates are easy to forge, more so now with AI. Treat a certificate as a claim. Office: a hardness check on the delivered mold or inserts, by you or a third party, tests the claim without trusting the paper.
+- A substituted component is usually not a bad one: it is typically a part the shop already buys at a good price, used because yours couldn't be sourced. Ask for substitutions to be declared and approved before they go in (office).
+
+3. PICKING A SHOP (Mike)
+- There is no great way to pick a mold shop on paper. You get comfortable with shops you work with, and you stay away from ones that burned you.
+- With a shop you don't know, especially far away or without easy communication: pick one already making nearly the same product. Many will sign up for anything whether they have done it or not. Making a faucet? Find a shop that makes good faucets (Alibaba sellers of that product are one way to find them) and ask whether they can make yours. That usually finds someone good, and also someone who could sell your faucet in another country without you knowing; weigh that (section 1).
+- Match the shop to the standard the part needs: high appearance and function, an automotive supplier; appliances, an appliance maker; power tools, a power tool maker.
+- In the US, visit. What Mike looks for on a visit:
+  - Focus on the floor: is the work getting done right where it happens.
+  - Clean, but not too clean. Mostly clean shows good work habits; a floor last painted six months ago, scuffed and used, is what a working shop looks like. Floors repainted for visitors means you pay for that in your mold. A shop that hasn't been cleaned since 1989 is a problem too.
+  - Culture: a little friction is good. A shop where people needle each other about mistakes, with a master not afraid to tell a junior "no, that's not right", gets things right because nobody lets a mistake go. A shop where everyone is very polite and a mistake is okay tends to show it in the work: Mike has seen more screws left untorqued in the nicest shops.
+
+4. THE T1 TRIAL (Mike)
+- Nine times out of ten, T1 asks: does it move, does it slide, can it run about 100 shots, does anything gall.
+- Measure some parts.
+- After it has run, run your hand over the mold: anything getting hot, anything starting to lock up. (Hot spots and uncooled moving parts: sop-cooling-water.txt.)
+- Office: process development and dimensional approval come after T1 (sop-scientific-molding.txt, sop-qualification.txt, sop-tooling-loop.txt).
+
 OPEN FOR MIKE
-- How he picks and checks a mold shop (visits, references, the mold spec and class, steel, hot runner brand, standards for components).
-- What goes in the quote package and the purchase order (payment milestones, T1 samples, approval, shipping, spare parts).
-- How he runs a T1 and decides the mold is accepted.
+- What goes in the quote package and the purchase order (mold class, steel, hot runner, payment milestones, T1 samples, approval, shipping, spare parts).
