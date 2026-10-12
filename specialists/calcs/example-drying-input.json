@@ -1,8 +1,25 @@
 {
   "jobs": [
-    {"job": "EXAMPLE ONLY - made-up numbers; real drying time, dew point and moisture limit come from the resin maker",
-     "lb_per_hr": 60, "drying_hours": 4, "hopper_lb": 200, "bulk_density_lb_ft3": null,
-     "target_dew_point_F": -20, "dryer_display_dew_point_F": -40, "measured_dew_point_F": 5,
-     "moisture_pct": null, "moisture_limit_pct": null, "outlet_phase_ok": false}
+    {
+      "job": "EXAMPLE ONLY - made-up numbers; real drying time, dew point and moisture limit come from the resin maker",
+      "lb_per_hr": 60,
+      "drying_hours": 4,
+      "hopper_lb": 200,
+      "bulk_density_lb_ft3": null,
+      "target_dew_point_F": -20,
+      "dryer_display_dew_point_F": -40,
+      "measured_dew_point_F": 5,
+      "moisture_pct": null,
+      "moisture_limit_pct": null,
+      "outlet_phase_ok": false,
+      "hopper_type": "old_center_flow"
+    },
+    {
+      "job": "EXAMPLE ONLY - Mike's numbers: 4 h at 100 lb/hr, new even-flow hopper",
+      "lb_per_hr": 100,
+      "drying_hours": 4,
+      "hopper_lb": 400,
+      "hopper_type": "new_even_flow"
+    }
   ]
 }

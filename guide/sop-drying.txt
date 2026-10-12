@@ -1,4 +1,4 @@
-SOP: Resin drying and handling (b-drying-handling). Revision 1 (draft, specialists branch) — October 12, 2026.
+SOP: Resin drying and handling (b-drying-handling). Revision 2 (draft, specialists branch) — October 12, 2026. Hopper sizing added from Mike's second note.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice (specialists/record/261012-M-drying-mike.md). Lines marked "Mike" are his practice; "published" lines cite the library; anything else the office adds is marked "office". Tier: deep.
 Read this when a resin must be dried (nylon, PC, PET, PBT, ABS and other engineered resins), a process drifts or the parts show splay, the nozzle spits, a dryer "isn't keeping up", a plant adds dryers, or regrind goes into a process. Calculation: specialists/calcs/drying.py.
@@ -23,15 +23,23 @@ Wet resin makes the process wander (Mike). Water turns to vapor in the barrel: t
 - Reverse phase runs grinders backwards too. A backwards blade pulverizes the regrind into dust; the dust gets conveyed into the dryer and seals the desiccant the same way.
 - Be careful with regrind generally: it brings fines and dust. Open for Mike: his rules on regrind percentage and removing fines.
 5. THEN DRY TO THE RESIN MAKER'S NUMBERS (Mike)
-- With good dryers, good drying hoppers and good hoses, dry to the resin maker's temperature, time and dew point. Nine times out of ten that is all it takes; once the equipment and process are right, drying just works.
-- Published: hopper capacity = drying time x throughput (lb/hr); pick the dryer from its maker's throughput chart for that resin (Conair drying manuals, library: oem-dryer-guides). The calculation does the hopper part.
+- Drying temperature, time and dew point: do exactly what the resin maker says. If it says four hours at a given temperature, that is what it is. With good dryers, good drying hoppers and good hoses, nine times out of ten that is all it takes.
+- Dryer and hopper come as a pair: the dryer or hopper maker will size the dryer for you.
+
+6. SIZE THE HOPPER TO THE PRESS (Mike: the more critical part)
+- The resin must stay in the hopper at least as long as its drying time. Hopper capacity = drying time x pounds per hour through the press. Four hours at 100 lb/hr needs a 400 lb hopper; a 30 lb hopper on a 100 lb/hr press empties every 20 minutes and never dries anything. Never less than about an hour in any case.
+- Old hoppers that feed down the center (funnel flow) need about 1.5 to 2 times that: in a 600 lb old hopper often only 300 to 350 lb actually moves; the rest sits on the walls and never cycles. Mike's example: 4 hours at 100 lb/hr is 400 lb in a good hopper, about 600 lb in an old one.
+- Newer hoppers flow down more evenly (all of it moves), so they can be sized at drying time x throughput.
+- The proof is the resin: pull a sample at the throat, test it on the moisture analyzer. That is how you find a hopper that only flows down the center.
+- Published: the same rule, hopper capacity = drying time x throughput (Conair drying manuals, library: oem-dryer-guides). The calculation does this, with the old-hopper factor.
 
 WHAT THE AUDIT PRODUCES
 A drying audit in its own dated folder:
+- Per hopper: capacity, old (center flow) or new (even flow), throughput through it, drying time, and resin moisture at the throat.
 - Per dryer: tag, desiccant age, outlet it uses (phase rotation and ground: pass/fail), fan and blower direction, filter condition, the dryer's displayed dew point, the measured dew point after a full regeneration and switch-over, and the hopper size against throughput and drying time.
 - Per resin: the maker's drying temperature, time, dew point and moisture limit; measured moisture at the press.
 - Per grinder: rotation direction, fines in the regrind.
-- Findings in order: wrong-phase outlets (fix first, before any dryer is replaced), dead desiccant, undersized hoppers, resin above its moisture limit, regrind fines. Recommendations are proposals; Mike or the plant confirms.
+- Findings in order: wrong-phase outlets (fix first, before any dryer is replaced), dead desiccant, undersized or center-flowing hoppers, resin above its moisture limit, regrind fines. Recommendations are proposals; Mike or the plant confirms.
 
 HANDS OFF
 Electrician for outlet wiring; the dryer maker or service company for desiccant replacement; the resin maker for drying conditions.
@@ -39,4 +47,3 @@ Electrician for outlet wiring; the dryer maker or service company for desiccant 
 OPEN FOR MIKE
 - Regrind: how much is allowed, and how to deal with fines.
 - How often to re-test dryers and replace desiccant.
-- The dew point target he holds as "good" for engineered resins (or always the resin maker's number).
