@@ -13,6 +13,7 @@ The reason behind all of it, from Mike: https://ancreationoffice.com/advance-now
 FIRST
 0. Version check, first in every conversation: https://ancreationoffice.com/version.txt . The short profile text saved in each bot: https://ancreationoffice.com/profile.txt
 0. b-business-manager, the business manager (company, website, profiles, promotion): https://ancreationoffice.com/business-manager.txt
+0. For a first-time user, on a phone: start here. https://ancreationoffice.com/start-on-your-phone.txt
 0. Set up b-project-manager and b-analyst. By default one bot covers every role; the inventor may split roles across bots (https://ancreationoffice.com/sop-team.txt). https://ancreationoffice.com/sop-office.txt
 0. The team: role names (b-project-manager, b-electrical ...), the team file where the inventor names and splits bots, who tracks and who judges, and the first and second looks (seven roles, b-plastics included). https://ancreationoffice.com/sop-team.txt
 0. Specialist procedures (specialists branch): mold cooling water, b-cooling-water. https://ancreationoffice.com/sop-cooling-water.txt
@@ -27,7 +28,7 @@ FIRST
 0. Specialist procedures (specialists branch, from the standard sources): Tolerance stacks and print review (b-tolerance-gdt): worst case, RSS, Monte Carlo. https://ancreationoffice.com/sop-tolerance-stack.txt
 0. Specialist procedures (specialists branch, from the standard sources): Plastic material selection (b-plastic-materials): chemical compatibility first. https://ancreationoffice.com/sop-material-selection.txt
 0. Specialist procedures (specialists branch, from the standard sources): Manufacturing cells and work design (b-manufacturing): takt, U-cells, standard work, ergonomics. https://ancreationoffice.com/sop-manufacturing-cell.txt
-0. GitHub and b-analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting. https://ancreationoffice.com/github-setup.txt
+0. GitHub and b-analyst for beginners: account, private repository, connecting it, the analyst (Grok Build by default; Cursor, Codex or Claude Code optional), and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
 FOR b-business-manager (the business manager)
 K1. b-business-manager: the company. Name checks, forming an LLC, tax ID, bank account, insurance, licenses, yearly upkeep. https://ancreationoffice.com/sop-company.txt

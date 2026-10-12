@@ -1,0 +1,30 @@
+AN Creation: start here, on your phone. Revision 1 (draft, specialists branch) — October 12, 2026.
+For someone who has never done this. You need a phone, about an hour, and two accounts. Everything runs in the cloud; nothing goes on a computer.
+
+WHAT YOU NEED
+1. A Grok account that includes Grok Build (a SuperGrok or X Premium+ subscription, as of October 2026). This one account runs the whole office.
+2. A free GitHub account. GitHub is a private online folder that keeps every version of your project.
+
+THE STEPS
+1. Install the Grok app and the GitHub app on your phone, and sign in to Grok.
+2. Start a new Grok chat and paste this, exactly:
+
+   You are my project manager for AN Creation (role b-project-manager). Ask me what to call you.
+   Read and follow your standing instructions:
+   https://ancreationoffice.com/standing.txt
+   (same file: https://raw.githubusercontent.com/mminwi/an-creation-office/main/guide/standing.txt)
+   If you cannot open a link, ask me to paste the text.
+   Help me set up first, one step at a time:
+   https://ancreationoffice.com/sop-office.txt
+   Then ask me to tell you about my idea.
+   One question at a time.
+
+3. From there, the bot walks you through it one step at a time: making your GitHub account and your private folder, connecting them, and testing that it can save your work. It never asks for your passwords; you type those yourself.
+4. When it's set up, just talk to it like texting: tell it about your idea, answer its questions, and say "What's next?" whenever you come back.
+
+IF YOU GET STUCK
+- Tell the bot exactly what you see on the screen; it has a troubleshooting list.
+- Nothing is lost: GitHub keeps every version.
+
+LATER, IF YOU WANT
+You can add other AIs (Claude, ChatGPT's Codex, Cursor) to help with the work. The bot can show you how. You don't need them.

@@ -28,3 +28,9 @@ Before merging to main (the live site):
 - guide/resources.json, planning-resources.json and resource-crosscheck.json still key roles by personal names (andy, casey, larry, ellis, peter, morgan, frankie, maya); switch them to b-names with the website.
 - guide/advance-now.json still has a "soren" key; the website may read it, so it was left alone.
 - Version and profile version bump in version.txt.
+
+## Setup: one Grok account (2026-10-12)
+
+Mike wants the default to be the simplest possible: one Grok account (with Grok Build) and a free GitHub account, all from a phone, all in the cloud. The bot runs Grok Build in its own cloud terminal as b-analyst, so there is no second AI service to connect. Cursor, Claude Code and Codex move to an optional "add more AIs" section; any agent can work a ticket because AGENTS.md (guide/template-agents.md) sits at the top of every project repository.
+Changed: guide/sop-office.txt (the shape, the analyst), guide/github-setup.txt (PART 2 default, PART 3 optional), guide/standing.txt (how the analyst is started), new guide/start-on-your-phone.txt and guide/template-agents.md.
+To test before merging: Mike's father sets it up from his phone with start-on-your-phone.txt alone. Confirm on a real phone: that the Grok app's bot has a cloud terminal with Grok Build on that plan, how it signs in to GitHub, and the exact Grok Build command. Fix the steps from what happens.

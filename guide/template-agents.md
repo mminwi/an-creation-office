@@ -1,0 +1,24 @@
+# AN Creation office
+
+This repository is an AN Creation project office. The bot the owner talks to (role b-project-manager; they may have given it any name, see AN-Creation/team.csv) runs it. You are here as b-analyst, to do one ticket. Any AI agent can do this: the files hold everything.
+
+## You were sent here to work on a ticket
+
+The owner will say something short, like "Work on tray ticket T-008" or just "ticket 8". Find it yourself:
+
+1. Tickets are files: `AN-Creation/<invention>/Office files/queue/open/T-<number>-<slug>.txt` (also look in `queue/active/`). "Ticket 8", "T-8" and "T-008" are the same ticket.
+2. If they named the invention, use that one. If they didn't and the number exists in more than one invention, ask which one in a single line. If you can't find it, say so and list the open tickets you do see.
+3. The ticket has everything: what to do (CALL), what to produce (EXPECT) and how it will be checked (CHECK). Do not ask the owner to paste anything else.
+4. Read the procedure the ticket names, starting with analyst.txt, from https://ancreationoffice.com/<file>. If that site won't open for you, read the same file at https://raw.githubusercontent.com/mminwi/an-creation-office/main/guide/<file>.
+
+## While you work
+
+- Move the ticket to `queue/active/` and set its Status line to active.
+- Work in that invention's folder. Save your run in a new `sessions/YYMMDD-HHMM-<slug>/` folder with `DONE.txt` written last, naming which AI you are.
+- Never file, send, buy, register, post or contact anyone. Never invent customers, prices or test results.
+
+## When you finish
+
+- Move the ticket to `queue/done/` with Status "done <date>", update `queue/QUEUE.txt`, and write the next ticket if the ticket asks for one.
+- Commit and push to the main branch, so the bot sees it. If your tool only lets you push to another branch, merge it into main if you can; if you can't, end by telling the owner the branch name in one line.
+- End with one or two plain lines for the owner: what you did and what's next.

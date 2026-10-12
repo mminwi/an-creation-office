@@ -52,6 +52,8 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`version.txt`](guide/version.txt) | Version check, first in every conversation | [live](https://ancreationoffice.com/version.txt) |
 | [`business-manager.txt`](guide/business-manager.txt) | b-business-manager, the business manager (company, website, profiles, promotion) | [live](https://ancreationoffice.com/business-manager.txt) |
 | [`sop-office.txt`](guide/sop-office.txt) | Set up b-project-manager and b-analyst. By default one bot covers every role; split them if you like | [live](https://ancreationoffice.com/sop-office.txt) |
+| [`start-on-your-phone.txt`](guide/start-on-your-phone.txt) | Start here, on your phone: one Grok account and a free GitHub account, nothing on a computer | [live](https://ancreationoffice.com/start-on-your-phone.txt) |
+| [`template-agents.md`](guide/template-agents.md) | AGENTS.md for the top of every project repository, so any AI can work a ticket | [live](https://ancreationoffice.com/template-agents.md) |
 | [`sop-team.txt`](guide/sop-team.txt) | The team: role names (b-...), the team file where you name and split bots, who tracks and who judges, the first and second looks | [live](https://ancreationoffice.com/sop-team.txt) |
 | [`sop-cooling-water.txt`](guide/sop-cooling-water.txt) | Mold cooling water (b-cooling-water): balance by conductivity, water into everything that moves, circuits, flow, measuring, the calculation | [live](https://ancreationoffice.com/sop-cooling-water.txt) |
 | [`sop-drying.txt`](guide/sop-drying.txt) | Resin drying (b-drying-handling): test the dryer not its meter, test the resin, reverse-phase outlets that kill desiccant, grinders, hopper sizing | [live](https://ancreationoffice.com/sop-drying.txt) |
