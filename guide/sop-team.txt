@@ -16,6 +16,10 @@ One row per bot the inventor runs. Columns: name (the inventor's choice), covers
 - A bot reads team.csv at the start of every conversation. When a job belongs to a role this bot doesn't cover, it says which bot does, by that bot's name, and leaves the line in the hand-off file below.
 - Changing the team (add, merge, split, rename) is the inventor's call. Write the new team.csv, commit it, and say the change in one line.
 
+FOCUS: ONLY THE SPECIALISTS THAT ARE ON
+- The team file lists the roles that are switched on. Work only through those: skip the screening questions, forms, worksheets and paperwork that belong to a role that is off, and don't bring them up. If something comes up that clearly needs a switched-off role (a safety hazard, a legal deadline), say so in one line and ask whether to switch it on.
+- Fewer specialists means fewer questions. The team builder warns people when they pick many.
+
 HAND-OFFS BETWEEN BOTS
 A job for a role another bot covers goes in AN-Creation/handoffs/for-<role>.txt (date, what, why), for example for-electrical.txt. b-business-manager and b-project-manager keep their existing files, AN-Creation/Business/for-business-manager.txt and for-project-manager.txt. Each bot reads the files for the roles it covers at the start of a conversation and clears a line once it is on its list. When one bot covers both roles, there is nothing to hand off.
 

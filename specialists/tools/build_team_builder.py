@@ -34,8 +34,9 @@ P = 'b-project-manager'
 packages = [
     {'id': 'one', 'name': 'Just the basics', 'blurb': 'One bot as your project manager. Add specialists any time.',
      'roles': [P]},
-    {'id': 'inventor', 'name': "Inventor's Office", 'blurb': 'Take an idea from first conversation to a product: plan, business, patent prep, design, prototype.',
-     'roles': [P, 'b-business-manager', 'b-company-setup', 'b-patent-prep', 'b-trademark', 'b-licensing-funding', 'b-promotion', 'b-design', 'b-dfm', 'b-prototyping', 'b-quality-planning', 'b-product-safety']},
+    {'id': 'inventor', 'name': "Inventor's Office", 'blurb': 'Take an idea from first conversation to a working prototype: the plan, the design, and the prototype. Add the helpers below when you need them.',
+     'roles': [P, 'b-design', 'b-dfm', 'b-prototyping'],
+     'addons': ['b-company-setup', 'b-patent-prep', 'b-trademark', 'b-licensing-funding', 'b-business-manager', 'b-promotion', 'b-quality-planning', 'b-product-safety']},
     {'id': 'molding', 'name': 'Molding Plant Office', 'blurb': 'For molders: cooling water, drying and regrind, scientific molding, defects, mold buying, machine safety.',
      'roles': [P, 'b-cooling-water', 'b-drying-handling', 'b-scientific-molding', 'b-molding-defects', 'b-mold-buying', 'b-machine-safety', 'b-plastic-materials']},
     {'id': 'plastic', 'name': 'Plastic Design Office', 'blurb': 'Plastic parts that mold well: part design, tolerance stacks, materials, design for molding.',
@@ -50,7 +51,8 @@ packages = [
 ]
 ids = {r['id'] for r in roles}
 for p in packages:
-    bad = [x for x in p['roles'] if x not in ids]
+    p.setdefault('addons', [])
+    bad = [x for x in p['roles'] + p['addons'] if x not in ids]
     assert not bad, (p['id'], bad)
 
 data = json.dumps({'roles': roles, 'packages': packages, 'names': names}, ensure_ascii=False)

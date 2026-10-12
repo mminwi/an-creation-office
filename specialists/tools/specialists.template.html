@@ -22,6 +22,7 @@
     .sp-office li a{display:block;font-size:11px;line-height:1.4;padding:4px 8px;border:1px solid var(--line);border-radius:4px;background:#f3f5f0;color:#3c4c44;text-decoration:none}
     .sp-office li a:hover{border-color:#8ca28f}
     .sp-office .sees{margin-top:auto;align-self:flex-start}
+    .sp-addons{font-size:11px;font-weight:650;color:#6b5a3a;margin:4px 0 6px}
     .sp-default{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#315f5c;margin-left:6px}
     .sp-group{margin-top:34px}
     .sp-group>h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5c6b62;margin:0 0 10px}
@@ -65,7 +66,7 @@
 
     <section aria-labelledby="all" style="margin-top:40px">
       <h2 id="all">Every specialist</h2>
-      <p>Mix and match: any specialist can join any team. Each one follows written procedures and cites its sources; none of them files, buys, signs or contacts anyone for you.</p>
+      <p>Mix and match: any specialist can join any team. Fewer is easier: each specialist brings its own questions, so start with the few that matter to you now and add others when you get there. Each one follows written procedures and cites its sources; none of them files, buys, signs or contacts anyone for you.</p>
       <div id="specList"></div>
     </section>
 
@@ -78,7 +79,7 @@
   var SITE = 'https://ancreationoffice.com/';
   var byId = {}; DATA.roles.forEach(function (r) { byId[r.id] = r; });
   var inOffices = {};
-  DATA.packages.forEach(function (p) { if (p.id === 'all' || p.id === 'one') return; p.roles.forEach(function (r) { (inOffices[r] = inOffices[r] || []).push(p); }); });
+  DATA.packages.forEach(function (p) { if (p.id === 'all' || p.id === 'one') return; p.roles.concat(p.addons).forEach(function (r) { (inOffices[r] = inOffices[r] || []).push(p); }); });
   function el(tag, attrs, text) { var n = document.createElement(tag); for (var k in (attrs || {})) n.setAttribute(k, attrs[k]); if (text != null) n.textContent = text; return n; }
   function slug(id) { return id.replace(/^b-/, ''); }
 
@@ -94,6 +95,12 @@
       var ul = el('ul');
       p.roles.forEach(function (id) { var li = el('li'); li.appendChild(el('a', { href: '#' + slug(id) }, byId[id].name.replace(/ Specialist$/, ''))); ul.appendChild(li); });
       c.appendChild(ul);
+      if (p.addons.length) {
+        c.appendChild(el('p', { 'class': 'sp-addons' }, 'Helpers to add when you need them:'));
+        var ua = el('ul');
+        p.addons.forEach(function (id) { var li = el('li'); li.appendChild(el('a', { href: '#' + slug(id) }, byId[id].name.replace(/ Specialist$/, ''))); ua.appendChild(li); });
+        c.appendChild(ua);
+      }
     } else {
       c.appendChild(el('p', null, DATA.roles.length + ' specialists.'));
     }

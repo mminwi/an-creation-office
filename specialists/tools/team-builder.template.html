@@ -32,6 +32,7 @@
     .tb-role-text span{display:block;font-size:12px;line-height:1.5;color:#5e6b65}
     .tb-role .tb-input{height:40px;font-size:14px}
     .tb-role.tb-off .tb-input{visibility:hidden}
+    .tb-addon{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#936f3f}
     .tb-required{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#315f5c}
     .tb-summary{list-style:none;padding:0;margin:0;display:grid;gap:8px}
     .tb-summary li{margin:0;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:8px;font-size:14px}
@@ -85,6 +86,7 @@
     <section class="start-step" aria-labelledby="s3">
       <h2 id="s3"><span class="step-number">3.</span> Choose specialists and who does them</h2>
       <p>Tick the specialists you want. Next to each, the name of the bot that does that job. The same name on several lines means one bot does all of those.</p>
+      <p>Fewer is easier: every specialist you add brings its own questions. Start with the few you need now; add others when you get there.</p>
       <div id="roles"></div>
     </section>
 
@@ -163,7 +165,7 @@
   var rolesBox = document.getElementById('roles');
   var groups = [];
   DATA.roles.forEach(function (r) { if (groups.indexOf(r.group) < 0) groups.push(r.group); });
-  var inputs = {}, boxes = {}, rowsEl = {};
+  var inputs = {}, boxes = {}, rowsEl = {}, addTags = {};
   groups.forEach(function (g) {
     var sec = el('div', { 'class': 'tb-group' });
     sec.appendChild(el('h3', null, g));
@@ -176,6 +178,8 @@
       txt.appendChild(el('strong', null, r.name));
       txt.appendChild(el('span', null, r.does));
       if (r.id === PM) txt.appendChild(el('span', { 'class': 'tb-required' }, 'Always included'));
+      var addTag = el('span', { 'class': 'tb-addon', hidden: '' }, 'Add-on: switch on when you need it');
+      txt.appendChild(addTag); addTags[r.id] = addTag;
       var inp = el('input', { 'class': 'tb-input', list: 'botNames', autocomplete: 'off', maxlength: '40', 'aria-label': 'Bot name for ' + r.name, placeholder: 'Bot name' });
       cb.addEventListener('change', function () {
         state.on[r.id] = cb.checked;
@@ -273,6 +277,8 @@
       'When my project folder exists, save this as AN-Creation/team.csv:',
       csv
     ];
+    var onIds = DATA.roles.filter(function (r) { return r.id === PM || state.on[r.id]; }).map(function (r) { return r.id; });
+    lines.push('Only these specialists are switched on in my office: ' + onIds.join(', ') + '. Skip the questions, forms and paperwork that belong to any other specialist; don\'t work through them unless I switch that specialist on. Keep the questions focused on these.');
     if (others.length) lines.push('The other bots (' + others.join(', ') + ') get set up after you, each in its own chat. Jobs for their roles go in their hand-off files (sop-team.txt).');
     var specialist = b.roles.filter(function (r) { return r.id !== PM; });
     if (specialist.length) {
@@ -311,6 +317,8 @@
       rowsEl[r.id].classList.toggle('tb-off', !on);
       if (document.activeElement !== inputs[r.id]) inputs[r.id].value = state.name[r.id] || '';
       inputs[r.id].classList.toggle('tb-missing', on && !clean(state.name[r.id]));
+      var pkgNow = DATA.packages.filter(function (x) { return x.id === state.pkg; })[0];
+      if (addTags[r.id]) addTags[r.id].hidden = !(pkgNow && pkgNow.addons.indexOf(r.id) >= 0 && !on);
     });
     renderOutput(); save();
   }
@@ -334,6 +342,8 @@
       var n = t.list.length;
       sum.appendChild(el('li', null, n === 1 ? 'One bot does everything. You talk to ' + t.pm.name + ' and nothing else.' : n + ' bots. You talk mostly to ' + t.pm.name + '; the others handle their own jobs and work in the same project folder.'));
     }
+    var count = DATA.roles.filter(function (r) { return r.id !== PM && state.on[r.id]; }).length;
+    if (count > 6) warn.appendChild(el('p', { 'class': 'tb-warn' }, 'You have picked ' + count + ' specialists. Each one brings its own questions, so a lot of them means a lot of questions to work through. If you focus on the few that really matter to you now, the questions stay focused on what matters. You can add the others any time.'));
     if (missing.length) warn.appendChild(el('p', { 'class': 'tb-warn' }, 'Still needs a bot name: ' + missing.map(function (r) { return r.name; }).join(', ') + '.'));
 
     var csv = t.pm ? makeCsv(t) : '';
