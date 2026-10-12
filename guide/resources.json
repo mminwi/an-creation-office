@@ -6147,6 +6147,28 @@
       "checked_on": "2026-10-12",
       "source": "Simulation software maker (via search)",
       "kind": "learning_resource"
+    },
+    {
+      "id": "lean-six-sigma-pocket-toolbook",
+      "title": "The Lean Six Sigma Pocket Toolbook — quick reference to nearly 100 tools",
+      "url": "https://oreilly.com/library/view/the-lean-six/9780071441193",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "project"
+      ],
+      "b_roles": [
+        "b-six-sigma",
+        "b-manufacturing",
+        "b-quality-planning"
+      ],
+      "use": "Quick reference to nearly 100 Lean and Six Sigma tools for quality and speed, including SIPOC, value stream maps, value-add analysis, project selection and Kaizen DMAIC. Paid book.",
+      "edition": "McGraw-Hill (ISBN 9780071441193)",
+      "check": "Found via search 2026-10-12; the office did not open the page itself.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher listing (via search)",
+      "kind": "learning_resource"
     }
   ],
   "researched_shortlists": {

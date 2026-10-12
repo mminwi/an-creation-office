@@ -2327,6 +2327,14 @@ Edition: 2011 PDF.
 Check: Found via search 2026-10-12; the office did not open the PDF itself.
 Checked: 2026-10-12. Source: Simulation software maker (via search).
 
+lean-six-sigma-pocket-toolbook | The Lean Six Sigma Pocket Toolbook — quick reference to nearly 100 tools
+https://oreilly.com/library/view/the-lean-six/9780071441193
+Group: quality. Type: learning_resource.
+Roles: b-six-sigma, b-manufacturing, b-quality-planning. Quick reference to nearly 100 Lean and Six Sigma tools for quality and speed, including SIPOC, value stream maps, value-add analysis, project selection and Kaizen DMAIC. Paid book.
+Edition: McGraw-Hill (ISBN 9780071441193).
+Check: Found via search 2026-10-12; the office did not open the page itself.
+Checked: 2026-10-12. Source: Publisher listing (via search).
+
 BEGIN DESIGN PRINCIPLES
 Guide: https://ancreationoffice.com/design-principles.html
 Instructions: https://ancreationoffice.com/design-principles.txt

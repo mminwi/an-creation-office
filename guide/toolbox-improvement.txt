@@ -1,0 +1,46 @@
+The improvement toolbox: Lean, 5S, Six Sigma and the rest. Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Why (Mike): Lean, 5S, Six Sigma, Lean Six Sigma and the Toyota Production System borrow from each other. They are all good problem-solving tools, worth knowing, and all of them belong in the office's arsenal. The names change; the tools are tried and true.
+How to use it: start from the kind of problem (left), pick a tool, then open the source for the method. The one-line descriptions here are orientation only; the method lives in the sources. Projects that are data-heavy and cross departments run as Six Sigma projects (sop-six-sigma.txt).
+
+PICK THE PROGRAM BY THE PROBLEM (Mike)
+- Workplace is disorganized, tools can't be found, no routine: 5S (sort, set in order, shine, standardize, sustain). Usually one department, fixed by that department.
+- Flow is slow, waiting, extra handling, inventory piling up: Lean (value stream, waste, flow, pull).
+- Problem is hard to pin down, needs data, departments disagree: Six Sigma (DMAIC with statistics).
+- A mistake keeps happening: mistake-proofing (poka-yoke), often after root cause.
+- A defect on molded parts: sop-molding-defects.txt first.
+
+TOOLS BY WHAT YOU NEED TO DO
+Define the problem
+- Project charter: the problem, scope, owner, goal; agreed by everyone involved (sop-six-sigma.txt 2).
+- SIPOC: suppliers, inputs, process, outputs, customers on one line; sets the boundaries.
+- Voice of the customer and critical-to-quality (CTQ) measures: what the customer actually needs, in measurable terms. QFD links them to design (asq-qfd).
+- Pareto chart: which few causes or defect types make most of the losses.
+Map the process
+- Process flow chart and value stream map: every step, with time, waiting and inventory; value-adding vs not (lei-lexicon).
+- Spaghetti diagram: walk paths on the floor plan.
+Measure
+- Check sheet and data collection plan: what, where, how often, who.
+- Gauge study (gauge R&R, MSA): can the measurement be trusted (aiag-msa).
+- Run chart and control charts (individuals, p, and others): is the process stable, did it change (aiag-spc, nist-sematech; six_sigma.py).
+- Capability (Cp, Cpk): can a stable process meet the spec (six_sigma.py).
+Find the cause
+- Five whys (asq-five-whys) and root cause analysis (asq-root-cause).
+- Fishbone (cause and effect) diagram: people, method, machine, material, measurement, environment.
+- Stratification and scatter plots: split the data by press, shift, lot, season to see where it differs.
+- Hypothesis tests and regression: is a difference real, and how big (nist-sematech).
+- DOE: structured experiments; use with caution in molding (sop-scientific-molding.txt 6).
+- FMEA: what can fail, how bad, how likely, how detected (asq-fmea, aiag-vda-fmea).
+Fix it
+- Kaizen event: a short, focused team improvement.
+- SMED (quick changeover): shorten mold and material changes by moving work outside the stop.
+- Standard work: the one best known way, written down.
+- Mistake-proofing / poka-yoke (asq-mistake-proofing).
+- 5S for the workplace itself.
+Keep it fixed
+- Control plan (control-plan.csv; aiag-apqp), control charts on the key measure, updated process sheet and PFMEA.
+- Visual management and daily management (lei-lexicon).
+- A3 one-page summary for reporting and for the record (template-a3.txt).
+
+SOURCES (library)
+asq-quality-tools, asq-root-cause, asq-five-whys, asq-mistake-proofing, asq-fmea, asq-qfd, lei-lexicon (Lean Lexicon: 5S, kaizen, SMED, standard work, value stream mapping, A3, hoshin kanri), asq-ssbb-bok, nist-sematech, aiag-spc, aiag-msa, aiag-vda-fmea, aiag-apqp, lean-six-sigma-pocket-toolbook (George et al., nearly 100 tools by phase).
