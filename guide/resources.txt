@@ -2279,6 +2279,22 @@ Edition: AS9102C, 2023-06-28, current.
 Check: Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.
 Checked: 2026-10-12. Source: Publisher page as read via Perplexity.
 
+advantage-chiller-sizing | Advantage Engineering — chiller sizing for plastics processing (FYI 073)
+https://advantageengineering.com/fyi/073/advantageFYI073.php
+Group: making. Type: supplier.
+Roles: b-cooling-water. Chiller maker's sizing sheet: hydraulics about 0.1 ton per hydraulic motor hp on injection molding machines; about 0.5 ton per feed throat; material load by pounds per hour. Equipment-maker guidance, not a standard.
+Edition: Undated web sheet.
+Check: Read through search results and Perplexity on 2026-10-12; the office did not open the page itself. Confirm running vs nameplate hp with the maker before final sizing.
+Checked: 2026-10-12. Source: Equipment maker's own website (via search).
+
+ptonline-plastics-card | Plastics Technology — plastics processing data card (2022)
+https://www.ptonline.com/cdn/cms/PlasticsCard03152022.pdf
+Group: making. Type: learning_resource.
+Roles: b-cooling-water, b-scientific-molding, b-drying-handling. Quick-reference card: hydraulic cooling about 0.1 ton/hp; feed throat about 1 ton on machines 500 tons and up, 0.5 ton below; other processing rules of thumb. Trade magazine reference.
+Edition: Card dated 2022-03-15 (from file name).
+Check: Read through search results on 2026-10-12; the office did not open the PDF itself. Rules of thumb are starting points; confirm with equipment makers.
+Checked: 2026-10-12. Source: Trade publication (via search).
+
 BEGIN DESIGN PRINCIPLES
 Guide: https://ancreationoffice.com/design-principles.html
 Instructions: https://ancreationoffice.com/design-principles.txt

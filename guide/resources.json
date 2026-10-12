@@ -6029,6 +6029,46 @@
       "checked_on": "2026-10-12",
       "source": "Publisher page as read via Perplexity",
       "kind": "primary_guidance"
+    },
+    {
+      "id": "advantage-chiller-sizing",
+      "title": "Advantage Engineering — chiller sizing for plastics processing (FYI 073)",
+      "url": "https://advantageengineering.com/fyi/073/advantageFYI073.php",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-cooling-water"
+      ],
+      "use": "Chiller maker's sizing sheet: hydraulics about 0.1 ton per hydraulic motor hp on injection molding machines; about 0.5 ton per feed throat; material load by pounds per hour. Equipment-maker guidance, not a standard.",
+      "edition": "Undated web sheet",
+      "check": "Read through search results and Perplexity on 2026-10-12; the office did not open the page itself. Confirm running vs nameplate hp with the maker before final sizing.",
+      "checked_on": "2026-10-12",
+      "source": "Equipment maker's own website (via search)",
+      "kind": "supplier"
+    },
+    {
+      "id": "ptonline-plastics-card",
+      "title": "Plastics Technology — plastics processing data card (2022)",
+      "url": "https://www.ptonline.com/cdn/cms/PlasticsCard03152022.pdf",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-cooling-water",
+        "b-scientific-molding",
+        "b-drying-handling"
+      ],
+      "use": "Quick-reference card: hydraulic cooling about 0.1 ton/hp; feed throat about 1 ton on machines 500 tons and up, 0.5 ton below; other processing rules of thumb. Trade magazine reference.",
+      "edition": "Card dated 2022-03-15 (from file name)",
+      "check": "Read through search results on 2026-10-12; the office did not open the PDF itself. Rules of thumb are starting points; confirm with equipment makers.",
+      "checked_on": "2026-10-12",
+      "source": "Trade publication (via search)",
+      "kind": "learning_resource"
     }
   ],
   "researched_shortlists": {

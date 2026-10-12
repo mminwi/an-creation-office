@@ -15,6 +15,9 @@ DT_WORLD = 2.0              # "within a degree or two ... pretty much world clas
 CHILLER_DT = 10.0           # chillers run best at about a 10 F rise across the chiller
 UNITS = 3                   # three chillers and three pump sets, each a third of the worst case
 TYPICAL = 2 / 3             # typical load about two thirds: two units run, one backup
+HYD_TON_PER_HP = 0.10       # published: Advantage Engineering FYI 073, Conair, Plastics Technology card
+def throat_tons(press_tons):  # published: Plastics Technology card (0.5 under 500 t, 1.0 at 500 t and up)
+    return 1.0 if press_tons >= 500 else 0.5
 RE_TURBULENT = 4000         # physics: fully turbulent pipe flow above about Re 4000
 
 # Water kinematic viscosity, ft^2/s, from standard property tables (deg F -> value)
@@ -88,12 +91,17 @@ def plant(m):
         lbh = lb_per_hr(pr); q = lbh * h; total += q
         rows.append({'press': pr['press'], 'worst_job': pr.get('worst_job', ''), 'lb_per_hr': round(lbh, 1),
                      'btu_per_lb': round(h, 1), 'heat_btu_hr': round(q)})
+    hyd = sum(HYD_TON_PER_HP * pr['hydraulic_hp'] for pr in m['presses'] if pr.get('hydraulic_hp'))
+    thr = sum(throat_tons(pr['press_tons']) for pr in m['presses'] if pr.get('press_tons') and pr.get('feed_throat', True))
     tons = total / 12000
     out = {'plant': m.get('plant', ''), 'note': 'Proposed. Mike\'s method: worst job on every press at once, split over three units, two run typically.',
            'presses': rows, 'worst_case_btu_hr': round(total), 'worst_case_tons': round(tons, 1),
            'each_of_3_units_tons': round(tons / UNITS, 1), 'typical_load_tons_2_of_3': round(tons * TYPICAL, 1),
            'chiller_loop_gpm_at_10F': round(total / (500 * CHILLER_DT)),
-           'not_included': 'hydraulic oil cooling and feed throats: take each press maker\'s cooling requirement (rule of thumb open)'}
+           'hydraulic_tons_at_0.1_per_hp': round(hyd, 1), 'feed_throat_tons': round(thr, 1),
+           'all_loads_tons': round(tons + hyd + thr, 1),
+           'all_loads_each_of_3_units_tons': round((tons + hyd + thr) / UNITS, 1),
+           'note_loads': 'mold load is chilled water; hydraulic and throat loads may go on tower water (open for Mike). Hydraulic rule uses nameplate hp unless running hp is given.'}
     if missing: out['missing_heat_data'] = missing; out['worst_case_incomplete'] = 'totals leave out the presses listed in missing_heat_data'
     return out
 
