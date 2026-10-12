@@ -66,7 +66,7 @@ Give every "in" row a weight in resource-map.csv:
 - recommend: a good program or method, worth using, not required. Tell the inventor what it is in two lines and why it fits.
 - mention: background, or worth a look later. Look at the site briefly and tell the inventor what it is.
 The weight depends on the product: a recall search is recommend for a toolbox and close to follow for a children's product.
-Offer to discuss every one, whatever its weight. The default, through Soren: "There's this: [one line]. Would you like to go over what it's about?" Yes: talk it through, or research it and come back with a fuller explanation, or make a short slideshow on a review page (sop-review-page.txt). Not now: note it and move on; offer again if it comes up. A follow item stays on the plan whether or not they discuss it. Any time they ask for a fuller explanation, give one.
+Offer to discuss every one, whatever its weight. The default, through b-project-manager: "There's this: [one line]. Would you like to go over what it's about?" Yes: talk it through, or research it and come back with a fuller explanation, or make a short slideshow on a review page (sop-review-page.txt). Not now: note it and move on; offer again if it comes up. A follow item stays on the plan whether or not they discuss it. Any time they ask for a fuller explanation, give one.
 
 5. READ THE CURRENT COPY OF EACH "IN" SOURCE
 The library is pointers, not copies. Do not download or store the source. For each "in" row, the session for that subject opens the current page when the work needs it, not a memory of it, and saves a few lines in plan.md or the subject folder:

@@ -9,7 +9,7 @@ Fact-finding decided what this product has to meet: the standards, the specifica
 THE AI RUNS AT APQP LEVEL, ALWAYS (D-039)
 The office's minimum internal structure is APQP (Advanced Product Quality Planning, the automotive method). For a team of people it is often overkill. For an AI it is the structure that keeps track of what exists, what has been touched and what hasn't, and how each specification traces through to a good part and to what gets inspected. Project level changes what the inventor sees and how big each document is. It never removes a link in the chain.
 This is the floor, not a ceiling: slightly more formal than people alone would bother with, close to an automotive level of quality, and cheap for an AI to keep (D-047).
-The inventor does not have to work in APQP. They see plain words, reviews and decisions. The analyst keeps the structure underneath.
+The inventor does not have to work in APQP. They see plain words, reviews and decisions. b-analyst keeps the structure underneath.
 
 APQP's five steps (APQP calls them phases) and our stages:
 1. Plan and define: fact-finding. Output: the project description.
@@ -18,11 +18,11 @@ APQP's five steps (APQP calls them phases) and our stages:
 4. Product and process validation: first production parts checked against the frozen design (a production-approval package sized to the project).
 5. Feedback and improvement. Not used as a stage here (D-061): too few products per inventor for it to pay off.
 
-The trace chain the analyst keeps, every project:
+The trace chain b-analyst keeps, every project:
 requirement (matrix ID) → design FMEA line → design feature on the drawing → verification plan and result → critical feature → process FMEA line → control plan check → inspection record.
 Every link carries the compliance matrix ID. A requirement with no verification, a critical feature with no control plan check, or an FMEA action with no owner is a gap, and gaps are listed on every review.
 
-Design-stage outputs the analyst keeps, at the project's size:
+Design-stage outputs b-analyst keeps, at the project's size:
 - compliance matrix (requirements, data sheet, check sheet; it doubles as the design verification plan and report, DVP&R)
 - design FMEA, updated every pass
 - drawings, parts list, material specs at a named revision
@@ -125,4 +125,4 @@ DONE WHEN
 A revision is approved to build, the compliance matrix shows every line's status or planned test, the review records are filed, and that revision's drawings, parts list and specs are in their dated folder.
 
 WHO DOES WHAT
-The analyst builds the compliance matrix, fills data from the model and documents, proposes the check status, and writes the review record. Soren puts each review on a review page, walks the inventor through it, and records the decision. Human designers, engineers and labs supply what the office can't: CAD by a person when needed, a signed stress check, a lab report. The inventor decides every loop, move-on and freeze.
+b-analyst builds the compliance matrix, fills data from the model and documents, proposes the check status, and writes the review record. b-project-manager puts each review on a review page, walks the inventor through it, and records the decision. Human designers, engineers and labs supply what the office can't: CAD by a person when needed, a signed stress check, a lab report. The inventor decides every loop, move-on and freeze.

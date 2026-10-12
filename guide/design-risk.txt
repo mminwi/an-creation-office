@@ -1,9 +1,9 @@
 AN Creation — Design risk and troubleshooting. Revision 1, September 30, 2026.
 Same guidance as https://ancreationoffice.com/design-risk.html with layout removed. Examples are illustrative, not verified project results.
 
-Soren handles the quality-planning paperwork
+b-project-manager handles the quality-planning paperwork
 
-You should be able to say, “I’m worried this cover could come loose,” and have Soren take it from there. You do not need to learn the names of all the forms. Soren’s job is to capture the concern, coordinate the relevant assistants, prepare the records and carry them into the package. He explains the few decisions that need your input in ordinary language.
+You should be able to say, “I’m worried this cover could come loose,” and have b-project-manager take it from there. You do not need to learn the names of all the forms. b-project-manager's job is to capture the concern, coordinate the relevant assistants, prepare the records and carry them into the package. He explains the few decisions that need your input in ordinary language.
 
 The usual chain is customer and team concerns → critical quality points → requirements and failure analysis → control plan → work/inspection instructions and the manufacturing package. Feedback flows back through the chain when tests or manufacturing reveal something new. This is the working method the assistants should follow with the project files and tools available to them.
 
@@ -11,7 +11,7 @@ Start with the things that must be right
 
 A critical-to-quality characteristic, often shortened to CTQ, is something the product or process must get right for the customer or the product’s intended function. Capture safety and regulatory requirements too, even if a customer never mentions them. Keep the original concern, who raised it, its source and revision, and a stable ID. Distinguish a proposed priority from a formally designated safety or special characteristic.
 
-Soren starts the list from existing conversations and records. The design role and the marketing role help clarify customer needs; the engineering role defines the engineering characteristic and justified acceptance limit; Soren adds supplier/process concerns; the prototype role supplies test evidence. If the target is unknown, the document says so. Soren asks “How much weight will it need to hold?” instead of asking the person to fill out a CTQ form.
+b-project-manager starts the list from existing conversations and records. The design role and the marketing role help clarify customer needs; the engineering role defines the engineering characteristic and justified acceptance limit; b-project-manager adds supplier/process concerns; the prototype role supplies test evidence. If the target is unknown, the document says so. b-project-manager asks “How much weight will it need to hold?” instead of asking the person to fill out a CTQ form.
 
 Turn the failure analysis into controls
 
@@ -35,11 +35,11 @@ Do not invent tolerances, sampling frequencies, capability results or inspection
 
 Prepare the package and keep it current
 
-Soren prepares a linked package: critical quality list, requirements, FMEA and actions, control plan, matching drawings, work/inspection instructions, actual evidence and an open-issues list. Its manifest identifies each document, revision, owner and review/release status. Keep one authoritative copy of each record. A review package can include clearly marked proposals; a production release must not present unresolved acceptance criteria as approved.
+b-project-manager prepares a linked package: critical quality list, requirements, FMEA and actions, control plan, matching drawings, work/inspection instructions, actual evidence and an open-issues list. Its manifest identifies each document, revision, owner and review/release status. Keep one authoritative copy of each record. A review package can include clearly marked proposals; a production release must not present unresolved acceptance criteria as approved.
 
-Soren drafts and maintains these records without making the inventor request each form. The analyst checks the technical content, and the responsible people make the required decisions. He prepares the recipient-specific package for the agreed handoff, preserves source permissions and follows the project’s existing authority for sending it. Nothing here claims that a document has been sent or a test performed.
+b-project-manager drafts and maintains these records without making the inventor request each form. b-analyst checks the technical content, and the responsible people make the required decisions. It prepares the recipient-specific package for the agreed handoff, preserves source permissions and follows the project’s existing authority for sending it. Nothing here claims that a document has been sent or a test performed.
 
-When a customer comment, supplier substitution, failed test, drawing revision or process change affects a quality point, Soren coordinates updates to all linked records and flags any superseded package. The person gets a short update: what was captured, what is being handled, and any decision or blocker. Control-plan template (CSV) (https://ancreationoffice.com/control-plan.csv) · Critical quality list (CSV) (https://ancreationoffice.com/critical-quality.csv).
+When a customer comment, supplier substitution, failed test, drawing revision or process change affects a quality point, b-project-manager coordinates updates to all linked records and flags any superseded package. The person gets a short update: what was captured, what is being handled, and any decision or blocker. Control-plan template (CSV) (https://ancreationoffice.com/control-plan.csv) · Critical quality list (CSV) (https://ancreationoffice.com/critical-quality.csv).
 
 A few tools that help the work carry through
 
@@ -117,7 +117,7 @@ A small example, written as one FMEA entry
 
 - Proposed prevention: an asymmetric locating feature that blocks incorrect assembly before the cable is trapped.
 
-- Action: the engineering role revises the geometry; the prototype role plans correct/incorrect-orientation trials; Soren records the agreed due date.
+- Action: the engineering role revises the geometry; the prototype role plans correct/incorrect-orientation trials; b-project-manager records the agreed due date.
 
 - Evidence and remaining risk: pending. Check permitted dimensional variation, cover flex and foreseeable assembly force. Reassess the cable route too. Do not mark the action effective before testing.
 
@@ -213,7 +213,7 @@ Keep the record short, but close the loop
 
 For a simple product, start with the short worksheet (https://ancreationoffice.com/design-review.txt): the main needs and fit checks on one page, then the few significant failure modes and actions on another. Expand if needed; page count never justifies leaving out a serious hazard.
 
-The design role and the marketing role help capture customer input. The engineering role owns requirements, interfaces, tolerances and the design analysis. The prototype role records test plans and actual results. Soren brings manufacturing and assembly evidence. Soren tracks owners, due dates and unresolved decisions. The legal role connects material safety questions to the business and liability review. Use qualified human reviewers when the product requires their expertise.
+The design role and the marketing role help capture customer input. The engineering role owns requirements, interfaces, tolerances and the design analysis. The prototype role records test plans and actual results. b-project-manager brings manufacturing and assembly evidence. b-project-manager tracks owners, due dates and unresolved decisions. The legal role connects material safety questions to the business and liability review. Use qualified human reviewers when the product requires their expertise.
 
 Save requirements in product/requirements/ and engineering reviews in product/engineering/, linking to exact model/drawing revisions and test records. Reopen affected items after a design, supplier, material, process or use change. An action is complete when its effectiveness is supported by evidence and the remaining risk has an accountable review—not when a box is ticked. Continue with the DFM/DFA check sheet (https://ancreationoffice.com/check-sheets.html#dfm).
 

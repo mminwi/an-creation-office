@@ -1,0 +1,45 @@
+SOP: The team. Role names, the team file, who tracks and who judges, and the first look. Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Read this when setting up the bots, when the inventor wants to add, merge, split or rename a bot, and when a project needs its first look.
+
+ROLE NAMES (every procedure)
+- A procedure never uses a personal name for a bot. It names the role: a small b, a dash, and what the role does, all lower case: b-project-manager, b-business-manager, b-analyst, b-mechanical, b-electrical, b-six-sigma.
+- The b-name says what the role is and nothing else. It is not a name to show the inventor.
+- The inventor names their own bots, in the team file. A bot talks under the name the inventor gave it and reads every procedure by its b-names. Renaming a bot changes one cell in the team file and nothing else.
+
+THE TEAM FILE: AN-Creation/team.csv
+Template: https://ancreationoffice.com/template-team.csv
+One row per bot the inventor runs. Columns: name (the inventor's choice), covers (the b-roles this bot does, separated by semicolons), reports_to (the bot it hands its results to; blank for the one the inventor mainly talks to), platform (where it runs), notes.
+- One bot can cover every role. That is the default, and the right choice for most people: one conversation, one bot, all the work.
+- Or the roles can be split across several bots: a project bot and a business bot, or a bot per specialty. Every bot works in the same repository and the same files, so splitting never scatters the project.
+- Every role used on a project is covered by exactly one bot. b-project-manager is always covered.
+- A bot reads team.csv at the start of every conversation. When a job belongs to a role this bot doesn't cover, it says which bot does, by that bot's name, and leaves the line in the hand-off file below.
+- Changing the team (add, merge, split, rename) is the inventor's call. Write the new team.csv, commit it, and say the change in one line.
+
+HAND-OFFS BETWEEN BOTS
+A job for a role another bot covers goes in AN-Creation/handoffs/for-<role>.txt (date, what, why), for example for-electrical.txt. b-business-manager and b-project-manager keep their existing files, AN-Creation/Business/for-business-manager.txt and for-project-manager.txt. Each bot reads the files for the roles it covers at the start of a conversation and clears a line once it is on its list. When one bot covers both roles, there is nothing to hand off.
+
+WHO TRACKS AND WHO JUDGES
+Every job has a tracker and a judge.
+- b-project-manager tracks every project job: it is on the plan, the queue and the status sheet, and the project manager always knows where it stands.
+- The specialist role for that area judges the content: whether the work is right, what it needs, and when a licensed person has to take over.
+- Example: a CE marking. b-project-manager tracks it (stage, dates, what's waiting). b-electrical judges the electrical content and says when the electrical engineer and the test lab come in.
+- When one bot covers both roles it does both, and still writes which role made each call ("b-electrical: needs a lab pre-scan before the design is frozen").
+- Business jobs (company, name, website, promotion) are tracked by b-business-manager.
+
+THE FIRST LOOK (draft, not yet tested)
+When a project description is finished, or a new kind of project comes in, b-analyst runs a first look. Six roles each read the same project description, separately, and say what their area needs. They can run side by side or one after another.
+1. b-project-manager: stages, dates, money, who decides; the size of the project.
+2. b-business-manager: company, patent and name, money, licensing or selling.
+3. b-mechanical: design, materials, fits and tolerances, design for manufacturing.
+4. b-electrical: electronics, power and batteries, controls, wireless, EMI, electrical certifications.
+5. b-manufacturing: process (molding, machining, assembly), tooling, sourcing, cost.
+6. b-quality: quality planning, compliance and safety standards, testing.
+Each role writes one note in the run folder, first-look-<role>.md:
+- What applies in this area, with the answer from the project that pulled it in. "Nothing here" is a valid answer.
+- What it would produce and in what order.
+- Which specialists to bring in (roster: specialists/roster.md on the specialists branch).
+- Where a licensed or hands-on person takes over, and what packet they get.
+- Questions, at most three, each with why it matters.
+Then b-project-manager merges the six notes into one: the roles this project needs, a proposed team (which roles can share one bot and which might want their own), the plan entries, and one short list of about three items. The inventor decides the team; the default stays one bot until they say otherwise.
+The usual rules hold: never invent prices, results or limits; never write that an idea is new or patentable; propose, and the inventor or a professional confirms.

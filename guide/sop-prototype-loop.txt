@@ -50,4 +50,4 @@ DONE WHEN
 The design is frozen, the compliance matrix shows every line's status with evidence from real builds, the build and review records are filed, and the frozen revision is in its dated folder. Next: the tooling loop (sop-tooling-loop.txt, sop-stages S3).
 
 WHO DOES WHAT
-The analyst writes each prototype control plan, records results against the compliance matrix, updates the FMEA, cost and timeline, and writes the review record. Soren puts each build's results on a review page, walks the inventor through them, and records the decision. The inventor, or the shop they choose, builds; the office never orders or pays for anything. Labs and engineers sign what the office can't.
+b-analyst writes each prototype control plan, records results against the compliance matrix, updates the FMEA, cost and timeline, and writes the review record. b-project-manager puts each build's results on a review page, walks the inventor through them, and records the decision. The inventor, or the shop they choose, builds; the office never orders or pays for anything. Labs and engineers sign what the office can't.

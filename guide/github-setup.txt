@@ -1,5 +1,5 @@
-AN Creation: setting up GitHub and the analyst, for a beginner. Revision 2 — October 11, 2026.
-Read this at setup (sop-office.txt, THE FOLDER and THE ANALYST), and whenever GitHub or the analyst isn't working. Then leave it.
+AN Creation: setting up GitHub and b-analyst, for a beginner. Revision 2 — October 11, 2026.
+Read this at setup (sop-office.txt, THE FOLDER and THE ANALYST), and whenever GitHub or b-analyst isn't working. Then leave it.
 
 ASSUME THEY HAVE NEVER USED IT
 Almost everything works from a phone. The one known exception: Codex's environment is set up once from a computer's browser (PART 2). If any other setup page won't work on the phone, the same answer: a computer's browser once, then the phone from there on.
@@ -22,16 +22,16 @@ Cursor (the default; their Cursor plan includes it):
 Codex (with a ChatGPT plan): the Codex environment has to be set up once from a computer's web browser (chatgpt.com/codex); it can't be set up on a phone. There: connect GitHub, allow an-creation, and create the environment for it. After that, start it from the phone: Codex in the ChatGPT app, or "@codex" in an issue comment. No computer at home? A library or a friend's computer for ten minutes is enough; they don't sign anything else in.
 Claude Code (with a Claude plan): connecting is done once in a web browser, even on a phone (the Claude app doesn't do this step). 1) Open claude.ai/code in the phone's browser and sign in. 2) Tap Connect GitHub, sign in to GitHub, approve. 3) Install the Claude GitHub App when offered (required for private repositories); choose "Only select repositories" and pick an-creation (or "All repositories"). 4) In the Claude app, Code tab, the repository selector below the message box now shows an-creation. Start it from the Code tab or claude.ai/code, or with "@claude" in an issue comment. A private repository missing from the list: the Claude GitHub App isn't allowed it (GitHub: Settings, Applications, Installed GitHub Apps, Claude, Configure, add it).
 Test each one: ask it to add a one-line file, AN-Creation/analyst-test.txt, and check it arrives as a commit; then delete it. Record each in PROJECT.txt, one line each: "Analyst: <name>, start: <how>, default: yes/no".
-If none works yet, don't stall: record "Analyst: Soren's own runs" and do the runs yourself until it's fixed.
+If none works yet, don't stall: record "Analyst: b-project-manager's own runs" and do the runs yourself until it's fixed.
 
 TROUBLESHOOTING (what usually goes wrong)
 - No confirmation email: check spam and promotions; ask GitHub to resend; check the email was typed right.
 - Locked out by two-step sign-in: a saved recovery code; otherwise https://github.com/login/two_factor/recovery . You can't get them back in; say so kindly and point them there.
 - Grok Bot can't see the repository: the GitHub connector was allowed only some repositories. GitHub: Settings, Applications, Installed GitHub Apps, the app, Configure, add an-creation.
 - "Repository not found" or a 404: the name or owner is off, or they're signed in to another account. Check the exact <username>/an-creation.
-- You can't create the repository or write files: the connector may be read-only. Have them make the repository by hand (Part 1, step 4). If you still can't write, say so plainly; the analyst can write instead (Part 2), and you tell them what to add.
+- You can't create the repository or write files: the connector may be read-only. Have them make the repository by hand (Part 1, step 4). If you still can't write, say so plainly; b-analyst can write instead (Part 2), and you tell them what to add.
 - "@cursor" (or "@codex", "@claude") does nothing: the service isn't connected to GitHub, isn't allowed the an-creation repository, or (Cursor) usage-based billing is off. Have them open the service's dashboard and look for an error on the agent page. A stuck GitHub connection: revoke the app in GitHub (Settings, Applications), then reconnect in a private browser window.
-- The analyst says it has no permission to push: in GitHub, Settings, Applications, the analyst's app, Configure, and make sure an-creation is allowed with read and write access.
+- b-analyst says it has no permission to push: in GitHub, Settings, Applications, b-analyst's app, Configure, and make sure an-creation is allowed with read and write access.
 - A file is too big: GitHub refuses single files over 100 MB and warns over 50 MB. Keep big CAD, video and image files out of the repository and put a link to where they are.
 - They made it Public by mistake: fix it right away (Part 1, step 5). If the invention was described while it was public, tell them plainly and suggest asking a patent attorney.
 

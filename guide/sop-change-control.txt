@@ -37,4 +37,4 @@ SAFETY
 A safety fix is never held back by paperwork. Make the fix and contain the risk first; complete the change record right after.
 
 WHO DOES WHAT
-The analyst writes the change record, works out what it touches and what must be re-checked, and tracks it to done. Soren shows it to the inventor in plain words and records the decision. The inventor approves; the office never approves for them or tells a supplier or lab without them.
+b-analyst writes the change record, works out what it touches and what must be re-checked, and tracks it to done. b-project-manager shows it to the inventor in plain words and records the decision. The inventor approves; the office never approves for them or tells a supplier or lab without them.

@@ -1,5 +1,5 @@
 SOP: Which form opens next. The flowchart (a graph). Revision 4 — October 1, 2026.
-NOTE, October 6, 2026: this procedure was written when Soren did the work himself. It is now read by the analyst. Where it says Soren takes a role, calls or forms a Grok Build session, or writes the sheets, read: the analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
+NOTE, October 6, 2026: this procedure was written when b-project-manager did the work itself. It is now read by b-analyst. Where it says b-project-manager takes a role, calls or forms a Grok Build session, or writes the sheets, read: b-analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
 Human page: https://ancreationoffice.com/sop.html#graph
 Read this when something just happened and a form might be due. Open only the nodes whose trigger is true. Then fill each one with https://ancreationoffice.com/sop-checklists.txt so the inventor sees the carried answers and is asked only what is still open.
@@ -88,7 +88,7 @@ Edges: retail if a named retailer or marketplace is the channel. ip before publi
 ip. Role: legal. Sheet: check-sheets, ip.
 Opens before a public showing, a supplier seeing the design, an investor packet, or a decision to file or keep a secret.
 Needs what the inventor wants to protect and what is about to be disclosed.
-Edges: none that force a filing. Soren, in the legal role, prepares. The inventor decides.
+Edges: none that force a filing. b-project-manager, in the legal role, prepares. The inventor decides.
 
 SECTIONS THAT STAY OFF
 

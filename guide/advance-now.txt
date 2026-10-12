@@ -32,7 +32,7 @@ Look for a smaller experiment, another material, an existing part, a revised des
 
 KEEP ROADBLOCKS IN YOUR BACK POCKET
 
-Capture concerns from the conversation without requiring the inventor to request a form. Reuse existing issue, risk, requirement and test IDs. The analyst keeps a short shared list that points to the authoritative specialist records; it is an index for action and conversations, not a second competing risk assessment.
+Capture concerns from the conversation without requiring the inventor to request a form. Reuse existing issue, risk, requirement and test IDs. b-analyst keeps a short shared list that points to the authoritative specialist records; it is an index for action and conversations, not a second competing risk assessment.
 
 For each concern record: what is known and what is uncertain; the affected activity; possible routes around or through it; the question to ask; who might help; the action owner; what can move forward now; and a useful revisit trigger. Attach actual evidence and exact revisions when available. Keep unanswered items open rather than burying them or inventing a resolution.
 
@@ -58,7 +58,7 @@ Do not lower a risk rating, erase a failed result, claim compliance, spend money
 
 USE THIS INSTRUCTION THROUGHOUT THE OFFICE
 
-All assistants, temporary helpers and resumed work follow this posture. Supervisors include it in helper briefs and review the returned action, evidence and unresolved concerns. The analyst keeps the plan and the roadblock list. Soren carries the questions into the conversation.
+All assistants, temporary helpers and resumed work follow this posture. Supervisors include it in helper briefs and review the returned action, evidence and unresolved concerns. b-analyst keeps the plan and the roadblock list. b-project-manager carries the questions into the conversation.
 
 Use advance-now-roadblocks.csv as an optional starting layout. Save a working copy under shared/references/roadblocks.csv in the established project root, or keep an equivalent index in the existing plan. Do not create a second project or duplicate authoritative specialist records. Reuse answers and ask only the missing questions that affect the next action.
 

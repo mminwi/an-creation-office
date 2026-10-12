@@ -85,4 +85,4 @@ Deviations and approval / failed, interrupted or inconclusive tests:
 Corrective actions / repeat and regression test decisions:
 Changes affecting prior evidence / responsible reviewer:
 Claims supported and limits / remaining risks / next project decision:
-Handoff to Soren with exact plan/report revisions:
+Handoff to b-project-manager with exact plan/report revisions:

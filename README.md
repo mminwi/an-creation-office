@@ -2,16 +2,16 @@
 
 Every procedure, template and data file the **AN Creation Office** runs on, in plain text. The live office is **https://ancreationoffice.com/** (start at the Welcome page). This repository is a copy of the same files, so an AI assistant such as Grok Bot, or a person, can read everything from one place.
 
-AN Creation is a free, AI-run product development office for inventors: Soren, your project manager, walks an idea from fact-finding through design, prototyping, tooling, qualification and launch, at an automotive level of quality, and keeps the paperwork. You make the decisions.
+AN Creation is a free, AI-run product development office for inventors: b-project-manager, your project manager, walks an idea from fact-finding through design, prototyping, tooling, qualification and launch, at an automotive level of quality, and keeps the paperwork. You make the decisions.
 
 ## Start with the website
 
 **[https://ancreationoffice.com/](https://ancreationoffice.com/)** explains all of this far better than plain text files can. Read it first:
 
 - [Welcome](https://ancreationoffice.com/): what the office is, the stages, and what you get at each one
-- [Start](https://ancreationoffice.com/start.html): set up Soren in Grok Bot in a few minutes
+- [Start](https://ancreationoffice.com/start.html): set up b-project-manager in Grok Bot in a few minutes
 - [Info](https://ancreationoffice.com/system.html): how it works, and why
-- [Soren](https://ancreationoffice.com/soren.html): your project manager, and every procedure he follows
+- [Soren](https://ancreationoffice.com/soren.html): your project manager, and every procedure it follows
 - [Terms you'll hear](https://ancreationoffice.com/terms.html): the engineering, manufacturing and business words, in plain language
 - [Resources](https://ancreationoffice.com/resources.html): the library of sources the office works from
 - [Keeping your project safe](https://ancreationoffice.com/version-control.html): Git and backups
@@ -25,14 +25,14 @@ This repository is the plain-text backbone: the same procedures, for AI assistan
 Paste this into a new Grok Bot conversation:
 
 ```
-You are Soren, my project manager for AN Creation.
+You are my project manager for AN Creation (role b-project-manager). Ask me what to call you.
 Read and follow your standing instructions:
 https://ancreationoffice.com/standing.txt
 (same file: https://raw.githubusercontent.com/mminwi/an-creation-office/main/guide/standing.txt)
 If you cannot open a link, ask me to paste the text.
 Help me set up first, one step at a time:
 https://ancreationoffice.com/sop-office.txt
-(my project folder, the analyst, and Git for backups).
+(my project folder, b-analyst, and Git for backups).
 Then ask me to tell you about my invention.
 One question at a time. Take one role at a time; do not create other named bots.
 ```
@@ -46,19 +46,20 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | File | What it is | Live |
 |---|---|---|
 | [`LICENSE.txt`](guide/LICENSE.txt) | License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 | [live](https://ancreationoffice.com/LICENSE.txt) |
-| [`standing.txt`](guide/standing.txt) | Soren, the chat the inventor talks to | [live](https://ancreationoffice.com/standing.txt) |
-| [`analyst.txt`](guide/analyst.txt) | The analyst, called by Soren to do the thinking | [live](https://ancreationoffice.com/analyst.txt) |
+| [`standing.txt`](guide/standing.txt) | b-project-manager, the chat the inventor talks to | [live](https://ancreationoffice.com/standing.txt) |
+| [`analyst.txt`](guide/analyst.txt) | b-analyst, called by b-project-manager to do the thinking | [live](https://ancreationoffice.com/analyst.txt) |
 | [`advance-now.txt`](guide/advance-now.txt) | The reason behind all of it, from Mike | [live](https://ancreationoffice.com/advance-now.txt) |
 | [`version.txt`](guide/version.txt) | Version check, first in every conversation | [live](https://ancreationoffice.com/version.txt) |
-| [`kasper.txt`](guide/kasper.txt) | Kasper, the business manager (company, website, profiles, promotion) | [live](https://ancreationoffice.com/kasper.txt) |
-| [`sop-office.txt`](guide/sop-office.txt) | Set up Soren and the analyst. Only two bots ever: one Soren for every invention, one Kasper for the business | [live](https://ancreationoffice.com/sop-office.txt) |
-| [`github-setup.txt`](guide/github-setup.txt) | GitHub and the analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting | [live](https://ancreationoffice.com/github-setup.txt) |
-| [`sop-kasper-company.txt`](guide/sop-kasper-company.txt) | K1. Kasper: the company. Name checks, forming an LLC, tax ID, bank account, insurance, licenses, yearly upkeep | [live](https://ancreationoffice.com/sop-kasper-company.txt) |
-| [`sop-kasper-website.txt`](guide/sop-kasper-website.txt) | K2. Kasper: domain, website, business email, Google Search Console and Bing, the weekly search check | [live](https://ancreationoffice.com/sop-kasper-website.txt) |
-| [`sop-kasper-presence.txt`](guide/sop-kasper-presence.txt) | K3. Kasper: the brand kit and profiles. Logo, descriptions, fact sheet; LinkedIn, X, Facebook, YouTube and more | [live](https://ancreationoffice.com/sop-kasper-presence.txt) |
-| [`sop-kasper-promotion.txt`](guide/sop-kasper-promotion.txt) | K4. Kasper: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories | [live](https://ancreationoffice.com/sop-kasper-promotion.txt) |
+| [`business-manager.txt`](guide/business-manager.txt) | b-business-manager, the business manager (company, website, profiles, promotion) | [live](https://ancreationoffice.com/business-manager.txt) |
+| [`sop-office.txt`](guide/sop-office.txt) | Set up b-project-manager and b-analyst. By default one bot covers every role; split them if you like | [live](https://ancreationoffice.com/sop-office.txt) |
+| [`sop-team.txt`](guide/sop-team.txt) | The team: role names (b-...), the team file where you name and split bots, who tracks and who judges, the first look | [live](https://ancreationoffice.com/sop-team.txt) |
+| [`github-setup.txt`](guide/github-setup.txt) | GitHub and b-analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting | [live](https://ancreationoffice.com/github-setup.txt) |
+| [`sop-company.txt`](guide/sop-company.txt) | K1. b-business-manager: the company. Name checks, forming an LLC, tax ID, bank account, insurance, licenses, yearly upkeep | [live](https://ancreationoffice.com/sop-company.txt) |
+| [`sop-website.txt`](guide/sop-website.txt) | K2. b-business-manager: domain, website, business email, Google Search Console and Bing, the weekly search check | [live](https://ancreationoffice.com/sop-website.txt) |
+| [`sop-presence.txt`](guide/sop-presence.txt) | K3. b-business-manager: the brand kit and profiles. Logo, descriptions, fact sheet; LinkedIn, X, Facebook, YouTube and more | [live](https://ancreationoffice.com/sop-presence.txt) |
+| [`sop-promotion.txt`](guide/sop-promotion.txt) | K4. b-business-manager: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories | [live](https://ancreationoffice.com/sop-promotion.txt) |
 | [`sop-focus.txt`](guide/sop-focus.txt) | Keep the project focused: risks as questions, decisions, "for now" and circling back | [live](https://ancreationoffice.com/sop-focus.txt) |
-| [`ticket-template.txt`](guide/ticket-template.txt) | The ticket format Soren runs | [live](https://ancreationoffice.com/ticket-template.txt) |
+| [`ticket-template.txt`](guide/ticket-template.txt) | The ticket format b-project-manager runs | [live](https://ancreationoffice.com/ticket-template.txt) |
 | [`intake-001.csv`](guide/intake-001.csv) | The first form, always: the invention and the screening questions | [live](https://ancreationoffice.com/intake-001.csv) |
 | [`screening-questions.csv`](guide/screening-questions.csv) | Screening: 25 questions that narrow the standards to the few that matter | [live](https://ancreationoffice.com/screening-questions.csv) |
 | [`sop-resource-map.txt`](guide/sop-resource-map.txt) | Map the library to this project: in, later, out, ask | [live](https://ancreationoffice.com/sop-resource-map.txt) |
@@ -72,20 +73,20 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`sop-qualification.txt`](guide/sop-qualification.txt) | Qualification and production approval: first article, process trials, qualifying what's needed, the approval package | [live](https://ancreationoffice.com/sop-qualification.txt) |
 | [`sop-launch.txt`](guide/sop-launch.txt) | Launch: first order, packaging and labels, the buyer packet, honest listings | [live](https://ancreationoffice.com/sop-launch.txt) |
 | [`sop-change-control.txt`](guide/sop-change-control.txt) | Revisions and change control: C, X and A/B/C revision names; the change record and what a change must re-check | [live](https://ancreationoffice.com/sop-change-control.txt) |
-| [`template-apqp-file.csv`](guide/template-apqp-file.csv) | Templates the analyst fills: APQP file | [live](https://ancreationoffice.com/template-apqp-file.csv) |
-| [`template-review-record.txt`](guide/template-review-record.txt) | Templates the analyst fills: review record | [live](https://ancreationoffice.com/template-review-record.txt) |
-| [`template-prototype-control-plan.txt`](guide/template-prototype-control-plan.txt) | Templates the analyst fills: prototype control plan | [live](https://ancreationoffice.com/template-prototype-control-plan.txt) |
-| [`template-trial-log.txt`](guide/template-trial-log.txt) | Templates the analyst fills: trial log | [live](https://ancreationoffice.com/template-trial-log.txt) |
-| [`template-fai-report.csv`](guide/template-fai-report.csv) | Templates the analyst fills: first article report | [live](https://ancreationoffice.com/template-fai-report.csv) |
-| [`template-change-record.txt`](guide/template-change-record.txt) | Templates the analyst fills: change record | [live](https://ancreationoffice.com/template-change-record.txt) |
-| [`template-cost-tracker.csv`](guide/template-cost-tracker.csv) | Templates the analyst fills: cost and time tracker | [live](https://ancreationoffice.com/template-cost-tracker.csv) |
+| [`template-apqp-file.csv`](guide/template-apqp-file.csv) | Templates b-analyst fills: APQP file | [live](https://ancreationoffice.com/template-apqp-file.csv) |
+| [`template-review-record.txt`](guide/template-review-record.txt) | Templates b-analyst fills: review record | [live](https://ancreationoffice.com/template-review-record.txt) |
+| [`template-prototype-control-plan.txt`](guide/template-prototype-control-plan.txt) | Templates b-analyst fills: prototype control plan | [live](https://ancreationoffice.com/template-prototype-control-plan.txt) |
+| [`template-trial-log.txt`](guide/template-trial-log.txt) | Templates b-analyst fills: trial log | [live](https://ancreationoffice.com/template-trial-log.txt) |
+| [`template-fai-report.csv`](guide/template-fai-report.csv) | Templates b-analyst fills: first article report | [live](https://ancreationoffice.com/template-fai-report.csv) |
+| [`template-change-record.txt`](guide/template-change-record.txt) | Templates b-analyst fills: change record | [live](https://ancreationoffice.com/template-change-record.txt) |
+| [`template-cost-tracker.csv`](guide/template-cost-tracker.csv) | Templates b-analyst fills: cost and time tracker | [live](https://ancreationoffice.com/template-cost-tracker.csv) |
 | [`sop-quality.txt`](guide/sop-quality.txt) | The quality chain | [live](https://ancreationoffice.com/sop-quality.txt) |
 | [`sop-checklists.txt`](guide/sop-checklists.txt) | Fill a form from what is already known | [live](https://ancreationoffice.com/sop-checklists.txt) |
 | [`sop-routes.txt`](guide/sop-routes.txt) | Roads in detail: patent, funding, company, standards, power, stores | [live](https://ancreationoffice.com/sop-routes.txt) |
 | [`analyst-after-intake.txt`](guide/analyst-after-intake.txt) | Prepared prompts: after intake | [live](https://ancreationoffice.com/analyst-after-intake.txt) |
 | [`analyst-refill.txt`](guide/analyst-refill.txt) | Prepared prompts: refill the queue | [live](https://ancreationoffice.com/analyst-refill.txt) |
 | [`forms-catalog.csv`](guide/forms-catalog.csv) | Formal forms and documents each road produces | [live](https://ancreationoffice.com/forms-catalog.csv) |
-| [`project-folders.txt`](guide/project-folders.txt) | The project folders: Your files and Soren's files. Dated folders; nothing is overwritten | [live](https://ancreationoffice.com/project-folders.txt) |
+| [`project-folders.txt`](guide/project-folders.txt) | The project folders: Your files and Office files. Dated folders; nothing is overwritten | [live](https://ancreationoffice.com/project-folders.txt) |
 | [`sop-review-page.txt`](guide/sop-review-page.txt) | Review pages: a local web page per invention for timelines, risks, pictures, documents and short walkthroughs | [live](https://ancreationoffice.com/sop-review-page.txt) |
 | [`terms.txt`](guide/terms.txt) | Terms: the plain-language glossary to explain terms from (about 200, with read-more links) | [live](https://ancreationoffice.com/terms.txt) |
 | [`sop-action-log.txt`](guide/sop-action-log.txt) | The action log: who owes what, kept for the inventor and shown as Your list on the review page | [live](https://ancreationoffice.com/sop-action-log.txt) |
@@ -111,17 +112,17 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`design-risk.txt`](guide/design-risk.txt) | AN Creation — Design risk and troubleshooting. Revision 1, September 30, 2026. | [live](https://ancreationoffice.com/design-risk.txt) |
 | [`handoff-log.csv`](guide/handoff-log.csv) | Worksheet / table (CSV): handoff_id, sent_date, sender, recipient... | [live](https://ancreationoffice.com/handoff-log.csv) |
 | [`ip-ratings.txt`](guide/ip-ratings.txt) | IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and  | [live](https://ancreationoffice.com/ip-ratings.txt) |
-| [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for Soren when the manufacturing role is the one in front of him. This is not a  | [live](https://ancreationoffice.com/manufacturing.txt) |
+| [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it.  | [live](https://ancreationoffice.com/manufacturing.txt) |
 | [`plan-template.txt`](guide/plan-template.txt) | Project plan | [live](https://ancreationoffice.com/plan-template.txt) |
 | [`planning-resources.json`](guide/planning-resources.json) | Data behind the planning resources page (JSON) | [live](https://ancreationoffice.com/planning-resources.json) |
 | [`planning-resources.txt`](guide/planning-resources.txt) | Product, startup and project planning. Checked 2026-09-30. | [live](https://ancreationoffice.com/planning-resources.txt) |
 | [`planning-review.csv`](guide/planning-review.csv) | Worksheet / table (CSV): Item ID, Question, Suggested roles, Source IDs... | [live](https://ancreationoffice.com/planning-review.csv) |
 | [`product-development.txt`](guide/product-development.txt) | PRODUCT DEVELOPMENT: THE PROCESS BEHIND THE CONVERSATION | [live](https://ancreationoffice.com/product-development.txt) |
-| [`profile.txt`](guide/profile.txt) | AN Creation bot profiles (October 11, 2026). Soren profile version 1. Kasper profile version 3. | [live](https://ancreationoffice.com/profile.txt) |
+| [`profile.txt`](guide/profile.txt) | AN Creation bot profiles (October 11, 2026). b-project-manager profile version 1. b-business-manager profile version 3. | [live](https://ancreationoffice.com/profile.txt) |
 | [`resource-crosscheck.json`](guide/resource-crosscheck.json) | Data behind the resource crosscheck page (JSON) | [live](https://ancreationoffice.com/resource-crosscheck.json) |
 | [`resource-crosscheck.txt`](guide/resource-crosscheck.txt) | Resource cross-check, September 30, 2026. | [live](https://ancreationoffice.com/resource-crosscheck.txt) |
 | [`resources.json`](guide/resources.json) | Data behind the resources page (JSON) | [live](https://ancreationoffice.com/resources.json) |
-| [`resources.txt`](guide/resources.txt) | Resource use for Soren. Same entries as the human shelves linked from https://ancreationoffice.com/resources.h | [live](https://ancreationoffice.com/resources.txt) |
+| [`resources.txt`](guide/resources.txt) | Resource use for b-project-manager. Same entries as the human shelves linked from https://ancreationoffice.com/resources.h | [live](https://ancreationoffice.com/resources.txt) |
 | [`review.py`](guide/review.py) | Tool: builds the inventor's local review pages | [live](https://ancreationoffice.com/review.py) |
 | [`revision-log.csv`](guide/revision-log.csv) | Worksheet / table (CSV): item_id, title, revision, previous_revision... | [live](https://ancreationoffice.com/revision-log.csv) |
 | [`revisions.txt`](guide/revisions.txt) | AN Creation revision control. Human lesson: https://ancreationoffice.com/revisions.html | [live](https://ancreationoffice.com/revisions.txt) |
@@ -129,9 +130,10 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`sop-hats.txt`](guide/sop-hats.txt) | SOP: Form, record, and call a session. Revision 3 — October 1, 2026. | [live](https://ancreationoffice.com/sop-hats.txt) |
 | [`sop-interns.txt`](guide/sop-interns.txt) | SOP: Use an intern. Revision 1 — October 1, 2026. | [live](https://ancreationoffice.com/sop-interns.txt) |
 | [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 11 — October 8, 2026. | [live](https://ancreationoffice.com/sop.txt) |
-| [`soren.txt`](guide/soren.txt) | Soren. Project manager for AN Creation. | [live](https://ancreationoffice.com/soren.txt) |
-| [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by the analyst every run as "Your files/Status" (inventor's fo | [live](https://ancreationoffice.com/status-template.txt) |
+| [`project-manager.txt`](guide/project-manager.txt) | b-project-manager. Project manager for AN Creation. | [live](https://ancreationoffice.com/project-manager.txt) |
+| [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's fo | [live](https://ancreationoffice.com/status-template.txt) |
 | [`template-action-log.csv`](guide/template-action-log.csv) | Worksheet / table (CSV): ID, Opened, Action, Who... | [live](https://ancreationoffice.com/template-action-log.csv) |
+| [`template-team.csv`](guide/template-team.csv) | The team file: your bot names and which roles each one covers | [live](https://ancreationoffice.com/template-team.csv) |
 | [`test-matrix.csv`](guide/test-matrix.csv) | Worksheet / table (CSV): Project, Plan ID / revision, Test ID, Requirement / CTQ / risk IDs... | [live](https://ancreationoffice.com/test-matrix.csv) |
 | [`test-plan-template.txt`](guide/test-plan-template.txt) | AN CREATION — TEST PLAN TEMPLATE — REV 1 | [live](https://ancreationoffice.com/test-plan-template.txt) |
 | [`test-planning.json`](guide/test-planning.json) | Data behind the test planning page (JSON) | [live](https://ancreationoffice.com/test-planning.json) |

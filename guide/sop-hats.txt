@@ -1,13 +1,13 @@
 SOP: Form, record, and call a session. Revision 3 — October 1, 2026.
-NOTE, October 6, 2026: this procedure was written when Soren did the work himself. It is now read by the analyst. Where it says Soren takes a role, calls or forms a Grok Build session, or writes the sheets, read: the analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
+NOTE, October 6, 2026: this procedure was written when b-project-manager did the work itself. It is now read by b-analyst. Where it says b-project-manager takes a role, calls or forms a Grok Build session, or writes the sheets, read: b-analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
 Read this to create a Grok Build session, or to split one that is overloaded. Which subject deserves a new session is in https://ancreationoffice.com/sop-routes.txt. After the session exists and you are only working it, leave this file.
 
-Older notes called this session a hat. The word now is session. A role is the one-word job Soren is doing. The session is the Grok Build instance that keeps that subject.
+Older notes called this session a hat. The word now is session. A role is the one-word job b-project-manager is doing. The session is the Grok Build instance that keeps that subject.
 
 A session keeps a related series of documents, because each sheet mostly comes from the sheet before it. About twenty to thirty items that trade off against each other belong in one session. One item per session is too small. Those items never see each other’s tradeoffs.
 
-Give the session a new id and write it in plan.md before the first real task. A second filing, a second deal, or a second area is a second row. Soren calls all of them. The role on the row says which job he is doing.
+Give the session a new id and write it in plan.md before the first real task. A second filing, a second deal, or a second area is a second row. b-project-manager calls all of them. The role on the row says which job it is doing.
 
 Role. One word: project, design, legal, engineering, prototype, manufacturing, funding, or marketing.
 Subject. The thing, such as Enclosure chain, or SBIR for the battery test.
@@ -26,7 +26,7 @@ grok --resume <uuid>
 
 Do not use a plain resume when more than one session uses the folder. That opens whichever session ran last.
 
-Soren calls the session. The inventor does not. A call is an inventor update that touches that series, a neighboring session moving a shared edge, or a review before the sheets are treated as current. The session re-reads its sheets, updates the few items in front of it, and reports: which item changed, what is written, what is unknown, and which other items were affected. Soren writes what belongs in plan.md. Soren tells the inventor when a person has to choose.
+b-project-manager calls the session. The inventor does not. A call is an inventor update that touches that series, a neighboring session moving a shared edge, or a review before the sheets are treated as current. The session re-reads its sheets, updates the few items in front of it, and reports: which item changed, what is written, what is unknown, and which other items were affected. b-project-manager writes what belongs in plan.md. b-project-manager tells the inventor when a person has to choose.
 
 Working files stay in the subject folders. The session transcript stays in the Grok home. The session id in plan.md is how you get back.
 
@@ -38,6 +38,6 @@ A cross-area choice gets one short interface note both sessions can read: the it
 
 For customer desires, the specification, failure modes, the control plan, and the test plan, leave this file and follow https://ancreationoffice.com/sop-quality.txt
 For one job that should end, follow https://ancreationoffice.com/sop-interns.txt
-If Soren himself is missing, follow https://ancreationoffice.com/sop-office.txt
+If b-project-manager itself is missing, follow https://ancreationoffice.com/sop-office.txt
 
-Done when plan.md has the row, the session has done one real pass, and Soren has the report. The setup text does not stay in the session’s context. The session keeps the short standing rules for its own series.
+Done when plan.md has the row, the session has done one real pass, and b-project-manager has the report. The setup text does not stay in the session’s context. The session keeps the short standing rules for its own series.

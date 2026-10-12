@@ -1,5 +1,5 @@
 SOP: Stages of a project. Revision 7, October 8, 2026. Replaces the silent tripwires in sop-phases.txt once approved.
-For the analyst. The inventor sees the plain stage names on the status sheet, never numbers or this file.
+For b-analyst. The inventor sees the plain stage names on the status sheet, never numbers or this file.
 
 WHY THIS MUCH PROCESS (from Mike, D-047)
 This is the most basic process we use. It is a little more formal than a small team of people would use on their own, and it gets close to an automotive level of quality (the APQP way of planning). That is on purpose. People get a little lazy and feather their way through; an AI needs the structure to keep track of what has been touched, what hasn't, and how each spec traces to a good part. The documentation that made this painful when people typed it all up is easy for the AI. So the AI always runs at this level. The inventor sees plain words and makes the decisions; the formality lives in the files.
@@ -11,7 +11,7 @@ Every project runs a documented APQP, start to finish, with the AI keeping it:
 - The control plan: every critical feature and spec that matters has a check, and every check traces to a spec.
 - Into manufacturing: specs, control plan and gauges are checked into the tooling loop and qualification, and confirmed on real parts.
 - Assemblies too: every assembly, its parts and its stack-ups, not only single parts.
-- The whole APQP plan: one living APQP file per project (Soren's files/apqp/) listing each APQP element, their status (done, open, not needed at this level, with the reason) and the evidence. Shown on a review page on request.
+- The whole APQP plan: one living APQP file per project (Office files/apqp/) listing each APQP element, their status (done, open, not needed at this level, with the reason) and the evidence. Shown on a review page on request.
 Almost all of it runs without much human effort. People can just describe what they are doing, out loud or in a message, during trials, builds and reviews ("second shot, the boss on the left is short, we're bumping pressure"). The AI files it in the record, fills the APQP paperwork from it (trial logs, FMEA lines, control plan changes, inspection notes), and asks only the few questions needed to fill the holes.
 
 THE WHOLE PROCESS IN ONE PARAGRAPH, AND THE LEVELS ABOVE IT (D-049)
@@ -35,7 +35,7 @@ At every stage exit, whatever else its gate asks:
 
 SPENT SO FAR (D-053)
 Every round also records actual spending against the budget: "spent so far vs budget", from the receipts, invoices and quotes the inventor sends in. Estimates say where it is heading; this says where it is.
-The cost and time tracker (D-058): from fact-finding on, every project keeps a simple spreadsheet in Your files/Business/, in the inventor's format (usually Excel): date, stage, what it was, category, vendor, estimated, actual, paid, receipt file, and optional hours. Template: https://ancreationoffice.com/template-cost-tracker.csv. The analyst adds a row for every receipt, invoice or quote that comes in and every cost the inventor mentions, totals it by stage and category, and shows spent so far against the budget at each review. Hours are optional: most inventors don't care how much time they've put in, but it helps if they ever pay someone or price their own time.
+The cost and time tracker (D-058): from fact-finding on, every project keeps a simple spreadsheet in Your files/Business/, in the inventor's format (usually Excel): date, stage, what it was, category, vendor, estimated, actual, paid, receipt file, and optional hours. Template: https://ancreationoffice.com/template-cost-tracker.csv. b-analyst adds a row for every receipt, invoice or quote that comes in and every cost the inventor mentions, totals it by stage and category, and shows spent so far against the budget at each review. Hours are optional: most inventors don't care how much time they've put in, but it helps if they ever pay someone or price their own time.
 
 WHEN A PERSON HAS TO SIGN OFF (D-053)
 The office prepares; some things need a person who signs the work.
@@ -48,13 +48,13 @@ Revision names and the change record: https://ancreationoffice.com/sop-change-co
 
 HOW IT WORKS
 1. Every project starts with FACT-FINDING. Nothing else is planned until it is done.
-2. At the end of fact-finding the analyst writes plan-stages.md: which stages this project needs, on which tracks, in what order, each with its trigger, goal, paperwork and exit gate. It is built from the templates below, not invented. Stages that don't apply are left out with a one-line reason (no electronics: no FCC stage).
+2. At the end of fact-finding b-analyst writes plan-stages.md: which stages this project needs, on which tracks, in what order, each with its trigger, goal, paperwork and exit gate. It is built from the templates below, not invented. Stages that don't apply are left out with a one-line reason (no electronics: no FCC stage).
 3. Tracks run side by side. A stage starts when its trigger happens. The short list draws only from stages that are active now.
    WITHIN a track, order matters: finish enough of one stage before starting the next (fact-finding before designing, a finished concept design before prototyping, testing before a mold). "Enough" is the gate, not perfection.
    ACROSS tracks, stages are independent: the company can be forming while the design is being worked; protection can run alongside requirements. The only cross-track links are the ones listed under ORDER OF THINGS THAT COMMONLY CATCH PEOPLE; each is a "before" rule on one event, not a reason to stop a whole track.
    Each stage in plan-stages.md lists "Needs before it starts" (stages in its own track, plus any named cross-track rule) and nothing else.
 4. Exit gate = good enough to move on, not perfect. Advance Now: about 90%. The inventor confirms "good enough". Whatever is left is written in the carry-forward note and comes along; it does not hold the next stage.
-5. At each gate the analyst writes carry-forward/<stage>-<date>.md (one page: decided, still open and carried, risks carried, documents produced) and updates the status sheet's Stage line. The next stage starts from that note.
+5. At each gate b-analyst writes carry-forward/<stage>-<date>.md (one page: decided, still open and carried, risks carried, documents produced) and updates the status sheet's Stage line. The next stage starts from that note.
 6. A stage can be reopened by new evidence (a test fails, a buyer changes the need). Say so in one line; the inventor decides.
 
 S0 FACT-FINDING ("Getting the facts")  ALWAYS

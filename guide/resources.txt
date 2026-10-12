@@ -1,6 +1,6 @@
-Resource use for Soren. Same entries as the human shelves linked from https://ancreationoffice.com/resources.html and as resources.json. Directory checked 2026-09-30. Check sources again when used.
+Resource use for b-project-manager. Same entries as the human shelves linked from https://ancreationoffice.com/resources.html and as resources.json. Directory checked 2026-09-30. Check sources again when used.
 
-Soren is the only project bot. He takes one role at a time: project, design, legal, engineering, prototype, manufacturing, funding, marketing. Older role tags on the entries below name which of those jobs reads the source. Do not create a bot from a name on an entry.
+b-project-manager tracks the project; one bot may cover every role, or the inventor may split them (https://ancreationoffice.com/sop-team.txt). Roles: project, design, legal, engineering, prototype, manufacturing, funding, marketing. Older role tags on the entries below name which of those jobs reads the source. Do not create a bot from a name on an entry.
 
 HUMAN SHELVES
 The human directory is split by task. This file remains the full list for assistants.
@@ -22,9 +22,9 @@ Firm and investor directories are starting points, not vetted shortlists. Check 
 
 Electrical sources. UL, IEC and EN have different roles. IEC and EN are not military standards; military contracts can reference them. Select applicable product and market requirements and national deviations; do not treat this list as a universal compliance checklist. The IP quick guide is https://ancreationoffice.com/ip-ratings.txt and is orientation, not a substitute for IEC 60529 or test evidence.
 
-Hardware workflow. The person may choose any supplier; these catalogs are starting points, not an exclusive purchasing list. Prefer McMaster-Carr as the first design reference when it has the needed part and CAD model, because of the broad selection and saved modeling work. If the person selects a McMaster-Carr item, ask for its link and part number to save the designer a matching exercise. A drawing house may use many McMaster-Carr references; those identify parts, not mandatory purchasing sources. Keep the design catalog reference separate from the purchasing source. Respect an existing supplier choice; use its verified specifications and suitable CAD rather than forcing a McMaster-Carr cross-reference. Later Soren compares Fastenal and other production suppliers. Preserve the source part number, model source/date and required specification in the bill of materials. The engineering role reviews equivalents against dimensions, threads, material/grade, finish, strength and required ratings as applicable. Update approved alternatives and affected revisions; use replacement-source data and permitted models. Respect CAD-use terms; a downloaded catalog model is not permission to manufacture the catalog part.
+Hardware workflow. The person may choose any supplier; these catalogs are starting points, not an exclusive purchasing list. Prefer McMaster-Carr as the first design reference when it has the needed part and CAD model, because of the broad selection and saved modeling work. If the person selects a McMaster-Carr item, ask for its link and part number to save the designer a matching exercise. A drawing house may use many McMaster-Carr references; those identify parts, not mandatory purchasing sources. Keep the design catalog reference separate from the purchasing source. Respect an existing supplier choice; use its verified specifications and suitable CAD rather than forcing a McMaster-Carr cross-reference. Later b-project-manager compares Fastenal and other production suppliers. Preserve the source part number, model source/date and required specification in the bill of materials. The engineering role reviews equivalents against dimensions, threads, material/grade, finish, strength and required ratings as applicable. Update approved alternatives and affected revisions; use replacement-source data and permitted models. Respect CAD-use terms; a downloaded catalog model is not permission to manufacture the catalog part.
 
-Prototyping workflow. The person may choose any suitable supplier; these are suggested starting points. Present Xometry, Protolabs and JLC services first; Fictiv and Quickparts are additional options. These are supplier sources, not project-qualified vendors. The prototype role selects the prototype purpose/process, the engineering role reviews technical inputs, and Soren compares the same revision/material/quantity/tolerances/finish/inspection needs. Verify delivered price, lead time, location and shipping/taxes/duties. Get authorization before uploading files, contacting suppliers, requesting quotes or purchasing; do not treat a website visit as a quote.
+Prototyping workflow. The person may choose any suitable supplier; these are suggested starting points. Present Xometry, Protolabs and JLC services first; Fictiv and Quickparts are additional options. These are supplier sources, not project-qualified vendors. The prototype role selects the prototype purpose/process, the engineering role reviews technical inputs, and b-project-manager compares the same revision/material/quantity/tolerances/finish/inspection needs. Verify delivered price, lead time, location and shipping/taxes/duties. Get authorization before uploading files, contacting suppliers, requesting quotes or purchasing; do not treat a website visit as a quote.
 
 
 VERIFY GOVERNMENT SITES BEFORE REGISTRATION OR PAYMENT
@@ -314,7 +314,7 @@ Related: McMaster-Carr CAD models — https://www.mcmaster.com/cad-models
 fastenal | Fastenal — Procurement and production supply
 https://www.fastenal.com/fast/services-and-solutions/global-sourcing
 Group: hardware. Type: supplier.
-Roles: manufacturing, engineering roles. A source for Soren to compare for ongoing fastener/hardware supply, sourcing and inventory needs as quantities grow.
+Roles: manufacturing, engineering roles. A source for b-project-manager to compare for ongoing fastener/hardware supply, sourcing and inventory needs as quantities grow.
 Check: Compare an exact specification and approved part cross-reference, delivered cost, quantities, lead time and required documentation. Obtain the engineering role’s review of substitutions; a similar appearance is not proof of equivalence.
 Checked: 2026-09-30. Source: Supplier’s own website.
 
@@ -562,7 +562,7 @@ Checked: 2026-09-30. Source: Publisher or directory operator.
 mil-std-129 | MIL-STD-129 — Shipment and storage marking
 https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=35520
 Group: military. Type: source_directory.
-Roles: Soren. A source to investigate for military shipment and storage markings.
+Roles: b-project-manager. A source to investigate for military shipment and storage markings.
 Check: Check the contract and any additional customer marking requirements.
 Checked: 2026-09-30. Source: Publisher or directory operator.
 
@@ -645,7 +645,7 @@ IP reference: https://ancreationoffice.com/ip-ratings.html and https://ancreatio
 Structured role names: resources.json keeps stable role IDs in resources[].roles; assistant_names maps each ID to its current display name.
 
 BEGIN PRODUCT CHECK SHEETS
-Read https://ancreationoffice.com/check-sheets.txt for ten original working check sheets and their primary references. Human page: https://ancreationoffice.com/check-sheets.html . Editable project worksheet: https://ancreationoffice.com/check-sheets.csv . Use only the relevant sheet; record evidence and unknowns, coordinate through Soren, and recheck current source requirements. These are preparation templates, not approvals.
+Read https://ancreationoffice.com/check-sheets.txt for ten original working check sheets and their primary references. Human page: https://ancreationoffice.com/check-sheets.html . Editable project worksheet: https://ancreationoffice.com/check-sheets.csv . Use only the relevant sheet; record evidence and unknowns, coordinate through b-project-manager, and recheck current source requirements. These are preparation templates, not approvals.
 
 nist-development | NIST MEP — Product design and development
 https://www.nist.gov/mep/product-design-and-development
@@ -968,7 +968,7 @@ DESIGN RISK AND TROUBLESHOOTING RESOURCES
 design-risk-guide | AN Creation — Design risk and troubleshooting
 https://ancreationoffice.com/design-risk.html
 Group: quality. Type: guide.
-Roles: project, engineering, prototype, manufacturing, design roles. Soren-led quality planning: critical quality points, FMEA, control plans, troubleshooting, requirements/QFD, tolerances, GD&T and mistake-proofing, with templates.
+Roles: project, engineering, prototype, manufacturing, design roles. b-project-manager-led quality planning: critical quality points, FMEA, control plans, troubleshooting, requirements/QFD, tolerances, GD&T and mistake-proofing, with templates.
 Check: Use proportionate analysis and actual evidence; examples and completed forms are not product approval.
 Checked: 2026-09-30. Source: AN Creation.
 
@@ -1284,7 +1284,7 @@ Owner roles: the design role, the marketing role. Source IDs: strategyzer-vpc,sb
 PLAN-02 | What have we learned directly from prospective customers?
 Owner roles: the marketing role, the design role. Source IDs: nsf-icorps,yc-startup-school.
 PLAN-03 | What assumptions are we testing next, and what result would change our decision?
-Owner roles: Soren, the marketing role. Source IDs: strategyzer-test-card.
+Owner roles: b-project-manager, the marketing role. Source IDs: strategyzer-test-card.
 PLAN-04 | Have we recorded contributors, ownership, prior work and disclosure questions?
 Owner roles: the legal role. Source IDs: wipo-ip-checklist,patent-public-search.
 PLAN-05 | What must the first product do, and what is outside this version?
@@ -1292,17 +1292,17 @@ Owner roles: the design role, the engineering role. Source IDs: atlassian-produc
 PLAN-06 | How will we prove each important requirement?
 Owner roles: the engineering role, the prototype role. Source IDs: test-planning-guide,sheet-prototype.
 PLAN-07 | What are the price, sales channel, unit costs and expected volume assumptions?
-Owner roles: the funding role, the marketing role, Soren. Source IDs: strategyzer-bmc,sheet-economics.
+Owner roles: the funding role, the marketing role, b-project-manager. Source IDs: strategyzer-bmc,sheet-economics.
 PLAN-08 | What startup spending, monthly costs and cash shortfall have we allowed for?
 Owner roles: the funding role. Source IDs: score-financial-projections,score-startup-budget.
 PLAN-09 | Who owns each next task, what does finished mean, and what must happen first?
-Owner roles: Soren. Source IDs: atlassian-project-plan,asana-project-charter.
+Owner roles: b-project-manager. Source IDs: atlassian-project-plan,asana-project-charter.
 PLAN-10 | Which risks could stop the project, and who is reducing them?
-Owner roles: Soren, the engineering role, Soren. Source IDs: asana-risk-register,design-risk-guide.
+Owner roles: b-project-manager, the engineering role, b-project-manager. Source IDs: asana-risk-register,design-risk-guide.
 PLAN-11 | What evidence justifies go, revise, hold or stop at the next review?
-Owner roles: Soren. Source IDs: stagegate-discovery-launch,atlassian-decision.
+Owner roles: b-project-manager. Source IDs: stagegate-discovery-launch,atlassian-decision.
 PLAN-12 | What did the last milestone teach us, and which records need revision?
-Owner roles: Soren, the prototype role, Soren. Source IDs: atlassian-retrospective.
+Owner roles: b-project-manager, the prototype role, b-project-manager. Source IDs: atlassian-retrospective.
 
 DOWNLOAD CANDIDATES
 Business Model Canvas, Value Proposition Canvas, SCORE financial workbook, Smartsheet requirements layouts and relevant SCORE checklists. Save publisher, URL, date, version/license and location; verify actual content before assistant use. Files not downloaded in this pass.
@@ -1577,7 +1577,7 @@ product-development-process | AN Creation — Product development: the process b
 https://ancreationoffice.com/product-development.html
 Assistant instructions: https://ancreationoffice.com/product-development.txt
 Category: product-management. Roles: project, design, engineering, prototype, manufacturing, marketing roles.
-Connect customer needs, requirements, design risks, prototypes, verification/validation and production controls. Soren keeps the framework in mind and explains the formal approach when asked.
+Connect customer needs, requirements, design risks, prototypes, verification/validation and production controls. b-project-manager keeps the framework in mind and explains the formal approach when asked.
 What to check: Scale the depth to the project. Reuse existing quality/test records, preserve evidence and exact revisions, and reopen affected links after changes. This is adaptable guidance, not a mandatory sequence or certification.
 Source: AN Creation original synthesis of Mike’s direction, with AIAG, ASQ and NASA primary references. Checked 2026-09-30.
 END PRODUCT DEVELOPMENT PROCESS

@@ -1,4 +1,4 @@
-STATUS SHEET: one page, answers only. Rewritten by the analyst every run as "Your files/Status" (inventor's format) and "Soren's files/status.md".
+STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's format) and "Office files/status.md".
 No stories, no reasons, no quotes. One line per item. The reasons live in the forms (context) and the plan. If it doesn't fit on one page, it doesn't belong here.
 
 <INVENTION NAME>: STATUS            updated <date>

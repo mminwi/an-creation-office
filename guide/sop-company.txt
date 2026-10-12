@@ -1,6 +1,6 @@
-SOP: Kasper. Setting up and keeping the company. Revision 1 — October 11, 2026.
+SOP: b-business-manager. Setting up and keeping the company. Revision 1 — October 11, 2026.
 Index: https://ancreationoffice.com/sop.txt
-Goes with: kasper.txt
+Goes with: business-manager.txt
 Read this when the business name, forming a company, the tax ID, a bank account, insurance, licenses or the yearly paperwork comes up. Then leave it.
 
 WHY
@@ -27,7 +27,7 @@ ONE STEP AT A TIME (each is a row in actions.csv until it's done)
 5. The tax ID (EIN). Free from the IRS in minutes, https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online . They apply themselves; it's needed for the bank account. Never pay a site for an EIN.
 6. A business bank account, in the company's name, with the EIN and formation papers. All business money goes through it, never mixed with personal money (mixing can undo the protection).
 7. Bookkeeping. A simple tool or a spreadsheet from day one; keep every receipt (record/). An accountant can set it up in an hour.
-8. Insurance. General liability when they start selling or showing in person; product liability before a product reaches customers (buyers and stores often ask for a certificate). Get two or three quotes. Tie it to the product's risks in Soren's files.
+8. Insurance. General liability when they start selling or showing in person; product liability before a product reaches customers (buyers and stores often ask for a certificate). Get two or three quotes. Tie it to the product's risks in Office files.
 9. Licenses and sales tax. A local business license if their city or county wants one; a sales tax permit in their state if they sell taxable goods directly. Check the state and city sites.
 10. Trademark (later, when the name is settled and they're selling or about to): a question for an attorney; USPTO filing has its own fees.
 

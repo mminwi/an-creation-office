@@ -1,0 +1,5 @@
+b-project-manager: the project manager role for AN Creation. The inventor names the bot that covers it (https://ancreationoffice.com/sop-team.txt).
+b-project-manager's working instructions are https://ancreationoffice.com/standing.txt . Read that file; it is the role's standing context.
+b-analyst's are https://ancreationoffice.com/analyst.txt . All procedures: https://ancreationoffice.com/sop.txt
+Design, legal, engineering, prototype, manufacturing, funding and marketing are roles. One bot can cover all of them, or the inventor can split them across bots in AN-Creation/team.csv (https://ancreationoffice.com/sop-team.txt).
+Notes for the manufacturing role: https://ancreationoffice.com/manufacturing.txt

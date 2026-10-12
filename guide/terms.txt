@@ -2,7 +2,7 @@ AN CREATION GLOSSARY: TERMS AN INVENTOR WILL HEAR
 Revision 1 — October 8, 2026
 https://ancreationoffice.com/terms.html
 
-For Soren and the analyst: when a term matters, say it, give the plain explanation below in your own words, and offer the read-more link. Keep it to a line or two. If they want more, search the full name.
+For b-project-manager and b-analyst: when a term matters, say it, give the plain explanation below in your own words, and offer the read-more link. Keep it to a line or two. If they want more, search the full name.
 
 PRODUCT DEVELOPMENT AND PROJECT TERMS
 
@@ -23,7 +23,7 @@ Voice of the customer: What real users say they need, in their words. The starti
 MVP (Minimum Viable Product): The simplest version that still does the job well enough to test with real customers.
 Proof of concept: A quick build that shows the core idea can work at all. Looks don't matter.
 Feasibility: Whether something can be done technically, at a cost and in a time that make sense.
-Action log (issue log, action items): One list of who owes what: each action, who it's on, when it's due, and whether it's done. Soren keeps yours, and it shows on your review page.
+Action log (issue log, action items): One list of who owes what: each action, who it's on, when it's due, and whether it's done. b-project-manager keeps yours, and it shows on your review page.
 Risk register: A list of what could go wrong, how likely, how bad, and what is being done about it. Read more: https://asana.com/templates/risk-register
 Go / hold / drop: The decision at the end of every stage: keep going, pause, or stop the project.
 Lessons learned: A short note at the end of a stage on what worked and what didn't, so the next project goes better. Read more: https://www.atlassian.com/software/confluence/templates/retrospective

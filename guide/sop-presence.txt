@@ -1,11 +1,11 @@
-SOP: Kasper. Profiles and the brand kit. Revision 1 — October 11, 2026.
+SOP: b-business-manager. Profiles and the brand kit. Revision 1 — October 11, 2026.
 Index: https://ancreationoffice.com/sop.txt
-Goes with: kasper.txt, sop-kasper-website.txt, sop-kasper-promotion.txt
+Goes with: business-manager.txt, sop-website.txt, sop-promotion.txt
 Read this when a LinkedIn page, an X account or another profile comes up, or when they need a logo, a tagline or a short description. Then leave it.
 
 THE BRAND KIT FIRST (Business/brand/, made once, used everywhere)
 Everything public is copied from this kit, so it all says the same thing.
-- Logo: a square version (at least 400 x 400; 1200 x 1200 is better) for profile pictures, and a wide one if they want. The analyst can draft concepts; they choose. Keep the original files.
+- Logo: a square version (at least 400 x 400; 1200 x 1200 is better) for profile pictures, and a wide one if they want. b-analyst can draft concepts; they choose. Keep the original files.
 - Colors and a font or two, written down.
 - Descriptions: one line (under 120 characters, a tagline), 25 words, 50 words, 100 words. Plain, true, no hype.
 - Fact sheet: the only facts anyone may state publicly (what it is, who it's for, price if set, where to get it, contact). Nothing in it they haven't confirmed.
@@ -24,6 +24,6 @@ For each: they create the account and sign in themselves (never type a password)
 Same name, picture, one-liner and website link on every one. Record each profile's address and the date in business.txt.
 
 RULES
-Their voice, always clear it's them. Never create accounts or accept terms for them. No fake followers, reviews or likes. A profile that would show an unfiled invention: the patent check first (sop-kasper-promotion.txt).
+Their voice, always clear it's them. Never create accounts or accept terms for them. No fake followers, reviews or likes. A profile that would show an unfiled invention: the patent check first (sop-promotion.txt).
 
 Sources: LinkedIn pages help https://www.linkedin.com/help/linkedin/topics/6227/6228 ; X help https://help.x.com ; Google Business Profile https://support.google.com/business .

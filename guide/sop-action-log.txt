@@ -4,10 +4,10 @@ Template: https://ancreationoffice.com/template-action-log.csv
 Goes with: standing.txt, analyst.txt, sop-review-page.txt, project-folders.txt
 
 WHY THIS EXISTS
-Inventors rarely keep their own to-do list, and without one they have no record of what they need to do, what they're waiting on, or what got done. So we keep it for them. Every action anyone owes on the project goes in one log: the inventor's tasks, what a supplier or lab owes back, and what Soren or the analyst promised. It shows on the inventor's review page, always current. Industry calls this an action log, issue log or action item list.
+Inventors rarely keep their own to-do list, and without one they have no record of what they need to do, what they're waiting on, or what got done. So we keep it for them. Every action anyone owes on the project goes in one log: the inventor's tasks, what a supplier or lab owes back, and what b-project-manager or b-analyst promised. It shows on the inventor's review page, always current. Industry calls this an action log, issue log or action item list.
 
 WHERE IT LIVES
-Master: Soren's files/actions.csv (one row per action; rows are never deleted).
+Master: Office files/actions.csv (one row per action; rows are never deleted).
 Inventor's copy: Your files/Action log, in their format (usually Excel), regenerated from the master; the previous copy goes to Your files/History/ first.
 On the review page: the index (Your files/Review/index.html) shows "Your list" at the top: your open actions, then what you're waiting on from others, then what was done recently. Rebuilt with review.py whenever the log changes.
 Git: checkpoint after every change, like everything else.
@@ -16,7 +16,7 @@ ONE ROW PER ACTION
 ID: A-001, A-002 ... never reused.
 Opened: date.
 Action: what has to happen, in plain words, specific enough to know when it's done ("Mail the signed NDA to Acme Molding", not "NDA stuff").
-Who: You (the inventor), Soren, the analyst, or a named outside party (the supplier, the lab, the attorney).
+Who: You (the inventor), b-project-manager, b-analyst, or a named outside party (the supplier, the lab, the attorney).
 Why / from: where it came from: a ticket, a review, a decision, a risk, an email (link the record item).
 Due: a date if one was agreed or a deadline exists; blank otherwise. Never invent one.
 Status: open, waiting (on someone else), done, or dropped.
@@ -27,13 +27,13 @@ Notes: anything else; follow-ups asked, with dates.
 WHEN A ROW IS ADDED
 - Anything the inventor agrees to do, in any conversation.
 - Anything they're waiting on from someone else: a quote, a sample, a lab result, an attorney's review.
-- Anything Soren or the analyst promised to prepare.
+- Anything b-project-manager or b-analyst promised to prepare.
 - Each short-list item that needs the inventor to act outside the conversation.
 - A "for now" with a small step they took on.
 Say it when you add it: "I've put that on your list: mail the NDA to Acme, by Friday."
 
 DONE MEANS DONE
-- No checkbox counts as done. A row closes only when the inventor says, in words, that it happened, or the evidence arrives (the quote is in Send to Soren, the lab report is filed).
+- No checkbox counts as done. A row closes only when the inventor says, in words, that it happened, or the evidence arrives (the quote is in Send to b-project-manager, the lab report is filed).
 - Ask plainly, without blame: "Did the NDA get mailed?" "Did Acme get back to you?" If not yet: keep it open, note the date asked, offer a new date if they want one.
 - On or after a due date, ask once at the start of the next conversation. Waiting items: suggest a nudge after a week ("Want me to draft a short follow-up email to Acme?").
 - Dropped is fine: record why. Nothing is deleted.
@@ -41,10 +41,10 @@ DONE MEANS DONE
 KEEP IT FOCUSED (D-078)
 - One form: the inventor's own actions and everything they're waiting on from other people, together, so they're reminded to chase what's still owed.
 - No hard limit on how many rows. But don't get far ahead of them. Their own open actions are usually two to five. Waiting items can be as many as there really are (six suppliers each owing a quote is six rows).
-- Only put actions on the log that are in front of them now, roughly the next two weeks. Further-out work stays in Soren's queue and the plan's Later list until it is close. With dozens of open items, one change ripples through three or four of them at once; keep the list on what's in front of them, not what's down the road.
+- Only put actions on the log that are in front of them now, roughly the next two weeks. Further-out work stays in b-project-manager's queue and the plan's Later list until it is close. With dozens of open items, one change ripples through three or four of them at once; keep the list on what's in front of them, not what's down the road.
 - If their own list starts stacking up, sort it with them: what's really this week, what can wait (back to Later), what can be dropped (sop-focus.txt).
-- The status sheet's "This week" pulls from the log. The work queue (queue/QUEUE.txt) stays Soren's; the log is the inventor's view of who owes what.
-- Each invention has its own log. Soren runs every invention, so say which invention an action belongs to.
+- The status sheet's "This week" pulls from the log. The work queue (queue/QUEUE.txt) stays b-project-manager's; the log is the inventor's view of who owes what.
+- Each invention has its own log. b-project-manager runs every invention, so say which invention an action belongs to.
 
 WHO DOES WHAT
-Soren adds and closes rows during conversations and asks the follow-ups. The analyst adds rows that come out of its runs (a quote to request, a sample to order, a form to sign), checks the log against the record every run, and rebuilds the review page. The inventor does the actions; they never have to maintain the log.
+b-project-manager adds and closes rows during conversations and asks the follow-ups. b-analyst adds rows that come out of its runs (a quote to request, a sample to order, a form to sign), checks the log against the record every run, and rebuilds the review page. The inventor does the actions; they never have to maintain the log.

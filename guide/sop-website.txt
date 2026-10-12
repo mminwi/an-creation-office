@@ -1,13 +1,13 @@
-SOP: Kasper. Domain, website, email and search. Revision 1 — October 11, 2026.
+SOP: b-business-manager. Domain, website, email and search. Revision 1 — October 11, 2026.
 Index: https://ancreationoffice.com/sop.txt
-Goes with: kasper.txt, sop-kasper-presence.txt
+Goes with: business-manager.txt, sop-presence.txt
 Read this when the domain, a website, a business email, or being found on Google and Bing comes up. Then leave it.
 
 WHY
 A simple, honest website is where every post, profile and listing points. It doesn't need to be fancy: what it is, who it's for, a picture, how to reach them. Set up once for the business; each product gets a page.
 
 1. THE DOMAIN
-- Pick it with the name (sop-kasper-company.txt). Expect the plain name to be taken; nine times out of ten it is. That's normal; don't sweat it. The choices: another ending (.co, .net, .shop, .us or one that fits the product), or keep .com and add something: "llc", a word like "co" or "shop", the product or the town. It's expected and it happens.
+- Pick it with the name (sop-company.txt). Expect the plain name to be taken; nine times out of ten it is. That's normal; don't sweat it. The choices: another ending (.co, .net, .shop, .us or one that fits the product), or keep .com and add something: "llc", a word like "co" or "shop", the product or the town. It's expected and it happens.
 - What matters: they can say it over the phone without spelling games. People rarely memorize web addresses; they type it once and bookmark it, like a phone number. A decent, sayable address beats a clever one.
 - Prefer an added word over hyphens or numbers; those are the hardest to say over the phone.
 - A .com doesn't rank better in search than other endings; pick on sayability.
@@ -20,8 +20,8 @@ A simple, honest website is where every post, profile and listing points. It doe
 2. THE WEBSITE (simplest that works)
 - Pages: Home (what it is, in a sentence, with a picture), the product (one page each), About (who they are, honestly), Contact (an email address or form). Add a privacy policy page if the site collects anything, even an email list.
 - Easiest for most: a site builder (Squarespace, Wix, Carrd and similar), drag and drop, about $10 to $25 a month, which also connects the domain for them.
-- Free and in their own hands: GitHub Pages (https://pages.github.com/) from a public website repository the analyst builds and updates on request. Never publish the private an-creation repository; the website is its own, public repository with only what they approved.
-- Say nothing on the site that isn't true or that they haven't approved. No made-up customers, results, prices or certifications. Before an invention is shown publicly, the patent check in sop-kasper-promotion.txt.
+- Free and in their own hands: GitHub Pages (https://pages.github.com/) from a public website repository b-analyst builds and updates on request. Never publish the private an-creation repository; the website is its own, public repository with only what they approved.
+- Say nothing on the site that isn't true or that they haven't approved. No made-up customers, results, prices or certifications. Before an invention is shown publicly, the patent check in sop-promotion.txt.
 - HTTPS (the padlock) on: builders and GitHub Pages do it; check the site opens with https://.
 
 3. BUSINESS EMAIL
@@ -36,6 +36,6 @@ Once the site is up:
 Every sign-in, "Allow access" screen or terms page: stop and ask first; they sign in; never type a password.
 
 5. WEEKLY CHECK (once a week, short)
-Search Console and Bing: pages found vs. pages in the sitemap, any new errors (and which page), the top search terms. Three lines to the inventor; "No change" if nothing changed. A fix on the site goes to the analyst, with their yes.
+Search Console and Bing: pages found vs. pages in the sitemap, any new errors (and which page), the top search terms. Three lines to the inventor; "No change" if nothing changed. A fix on the site goes to b-analyst, with their yes.
 
 Sources: Google Search Console start https://support.google.com/webmasters/answer/9128668 ; sitemaps https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview ; SEO starter guide https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; Bing Webmaster https://www.bing.com/webmasters ; GitHub Pages https://docs.github.com/en/pages .

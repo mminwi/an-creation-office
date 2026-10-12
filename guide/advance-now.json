@@ -16,7 +16,7 @@
       "roadblocks",
       "Keep roadblocks in your back pocket",
       [
-        "Capture concerns from the conversation without requiring the inventor to request a form. Reuse existing issue, risk, requirement and test IDs. Soren keeps a short shared list that points to the authoritative specialist records; it is an index for action and conversations, not a second competing risk assessment.",
+        "Capture concerns from the conversation without requiring the inventor to request a form. Reuse existing issue, risk, requirement and test IDs. b-project-manager keeps a short shared list that points to the authoritative specialist records; it is an index for action and conversations, not a second competing risk assessment.",
         "For each concern record: what is known and what is uncertain; the affected activity; possible routes around or through it; the question to ask; who might help; the action owner; what can move forward now; and a useful revisit trigger. Attach actual evidence and exact revisions when available. Keep unanswered items open rather than burying them or inventing a resolution.",
         "When a relevant person or opportunity appears, bring the question forward: “How would you get around this?” “Could we use a softer grip?” “Is there an existing process or part that handles this?” A recorded candidate is not a contacted supplier or a confirmed solution. Save the answer and resulting action, then carry the learning back into the design and plan.",
         "End a risk discussion with the next practical action and the concern worth carrying to the next conversation. Do not end every exchange with a catalogue of reasons the idea might fail. Maintain continuity across assistants, handoffs and resumed sessions."
@@ -44,7 +44,7 @@
       "use-it",
       "Use this instruction throughout the office",
       [
-        "All assistants, temporary helpers and resumed work follow this posture. Supervisors include it in helper briefs and review the returned action, evidence and unresolved concerns. Soren coordinates the master plan and the shared roadblock list. The analyst keeps each subject's records and proposes routes forward in its own work.",
+        "All assistants, temporary helpers and resumed work follow this posture. Supervisors include it in helper briefs and review the returned action, evidence and unresolved concerns. b-project-manager coordinates the master plan and the shared roadblock list. b-analyst keeps each subject's records and proposes routes forward in its own work.",
         "Use advance-now-roadblocks.csv as an optional starting layout. Save a working copy under shared/references/roadblocks.csv in the established project root, or keep an equivalent index in the existing plan. Do not create a second project or duplicate authoritative specialist records. Reuse answers and ask only the missing questions that affect the next action."
       ]
     ]

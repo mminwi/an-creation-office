@@ -8,7 +8,7 @@
       "id": "start-early",
       "title": "Start while the requirements are taking shape",
       "paragraphs": [
-        "Soren coordinates the plan with the engineering role and the prototype role as soon as important requirements and failure risks emerge. Do not wait for finished hardware. Early planning can change the enclosure, connectors, materials, power supply, mounting, test access and number of samples that need to be made.",
+        "b-project-manager coordinates the plan with the engineering role and the prototype role as soon as important requirements and failure risks emerge. Do not wait for finished hardware. Early planning can change the enclosure, connectors, materials, power supply, mounting, test access and number of samples that need to be made.",
         "Identify the intended users, environment, target countries, product category, customer requirements and proposed claims. Link each important requirement and risk to an inspection, analysis, demonstration or test. Leave unresolved limits marked unknown, with an owner and action; never fill them with a plausible-looking number.",
         "Use the design-risk review, critical-quality sheet and control plan already in the project. A development test investigates the design; a production control plan describes repeat checks during manufacture. Link them without assuming they serve the same purpose."
       ],
@@ -149,7 +149,7 @@
       "paragraphs": [
         "The prototype role preserves raw results and reports the tested configuration, method and limits. Record failed, interrupted, not-run and inconclusive tests as well as passes. A report is separate from the plan: planned work is not performed work.",
         "The engineering role reviews anomalies, changes and their effect on requirements. Trace corrective action to a repeat test and any necessary regression tests. A change in material, supplier/process, enclosure, PCB, firmware, antenna, cable, seal, packaging or intended use may affect prior evidence. Decide and record the retest scope; do not assume either that everything remains covered or that every test must be repeated.",
-        "Soren links the plan and reports to the quality records and next project decision. Soren carries validated manufacturing/inspection needs into the control plan; the marketing role uses only claims supported by the actual scope of evidence. A laboratory report, accreditation or checked form alone is not approval for every market or product variant."
+        "b-project-manager links the plan and reports to the quality records and next project decision. b-project-manager carries validated manufacturing/inspection needs into the control plan; the marketing role uses only claims supported by the actual scope of evidence. A laboratory report, accreditation or checked form alone is not approval for every market or product variant."
       ],
       "items": [
         "Keep one approved plan revision for each run and document deviations with review; never silently rewrite the plan to match the result.",

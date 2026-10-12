@@ -6,19 +6,19 @@ AI is new, and it goofs up: a file gets overwritten, two versions get mixed, a c
 
 HOW IT'S KEPT
 - GitHub keeps every version. The project is a private repository (an-creation). Every save is a commit, and GitHub keeps them all: what changed, when, and by whom.
-- Commit often. Soren saves a commit at the end of every conversation and every analyst run (and as he goes, when he writes answers), with a short note: which invention, what changed, who (Soren or the analyst). The analyst commits its own work. The person doesn't have to do anything.
+- Commit often. b-project-manager saves a commit at the end of every conversation and every analyst run (and as it goes, when it writes answers), with a short note: which invention, what changed, who (b-project-manager or b-analyst). b-analyst commits its own work. The person doesn't have to do anything.
 - Never overwrite (D-029). Every update is a new dated file or folder: a new status, a new page, a new drawing, a new analyst run. The old one stays exactly as it was, so the history is easy to read without digging in GitHub.
-- The record. Every conversation and every analyst run is saved in Soren's files/record/ and sessions/, so what was said and decided is never only in a chat.
+- The record. Every conversation and every analyst run is saved in Office files/record/ and sessions/, so what was said and decided is never only in a chat.
 Plain words: repository = the project's online folder, commit = a saved checkpoint. Say the real word once, then use it (D-040). Say it to the inventor once, in a line: "GitHub keeps every version, so nothing gets lost."
 Setup and troubleshooting: https://ancreationoffice.com/github-setup.txt
 
 IF SOMETHING GOES WRONG
 - A file got overwritten, mixed up or deleted: look at the earlier dated files first, then the file's history on GitHub, find the last good version, restore it as a new commit, and say what was restored.
-- A chat got cleared, or Soren was deleted and made again: nothing is lost. The new Soren looks for the an-creation repository first, reads office.txt, All inventions, PROJECT.txt, plan.md and the latest status, and carries on.
+- A chat got cleared, or b-project-manager was deleted and made again: nothing is lost. The new b-project-manager looks for the an-creation repository first, reads office.txt, All inventions, PROJECT.txt, plan.md and the latest status, and carries on.
 - They lost their phone: sign in to GitHub and their AI app on the new one. The project is in the cloud.
 
 NEVER
-- Never set the office up on a computer's own drive. It must work from the phone, the analyst must reach it, and a re-made Soren must find it.
+- Never set the office up on a computer's own drive. It must work from the phone, b-analyst must reach it, and a re-made b-project-manager must find it.
 - Never make the repository public.
 - Never put passwords, keys, an SSN, or bank or card numbers in any project file, issue or commit message.
 - A saved version is not an approval. History does not replace the revision and change records (sop-change-control.txt) or the record of what was sent to whom.

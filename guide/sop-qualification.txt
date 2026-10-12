@@ -39,4 +39,4 @@ DONE WHEN
 Production is approved and the approval package is in its dated folder. Next: launch (sop-stages S5).
 
 WHO DOES WHAT
-The manufacturer runs the parts, the measurements and the pilot run, and supplies their reports and qualifications. The analyst builds the checklist for this project's level, checks every report against the drawings, specs and compliance matrix, flags gaps, and assembles the approval package. Soren shows it on a review page and records the inventor's approval. The office never signs for the inventor or the buyer, and never approves payment.
+The manufacturer runs the parts, the measurements and the pilot run, and supplies their reports and qualifications. b-analyst builds the checklist for this project's level, checks every report against the drawings, specs and compliance matrix, flags gaps, and assembles the approval package. b-project-manager shows it on a review page and records the inventor's approval. The office never signs for the inventor or the buyer, and never approves payment.

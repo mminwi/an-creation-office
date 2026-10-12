@@ -1,9 +1,9 @@
 SOP: Use an intern. Revision 1 — October 1, 2026.
-NOTE, October 6, 2026: this procedure was written when Soren did the work himself. It is now read by the analyst. Where it says Soren takes a role, calls or forms a Grok Build session, or writes the sheets, read: the analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
+NOTE, October 6, 2026: this procedure was written when b-project-manager did the work itself. It is now read by b-analyst. Where it says b-project-manager takes a role, calls or forms a Grok Build session, or writes the sheets, read: b-analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
 Read this for one contained job. When the result is saved and reviewed, leave this file. Do not add the intern to the session table.
 
-An intern is a disposable helper. It can be a subagent or a separate conversation. It does not keep the project’s memory. Soren assigns it and stays responsible.
+An intern is a disposable helper. It can be a subagent or a separate conversation. It does not keep the project’s memory. b-project-manager assigns it and stays responsible.
 
 Write a brief the intern can carry without the rest of the office:
 
@@ -14,7 +14,7 @@ Write a brief the intern can carry without the rest of the office:
 - What the intern must not do. Sending, paying, publishing, and filing wait for the inventor.
 - Ask it to list sources it actually used, and anything it could not verify.
 
-The intern saves the result and returns a short handoff. Soren checks it against the sources. Accepted facts go into the project sheet or the owning session’s documents. A draft is not a decision until Soren accepts it.
+The intern saves the result and returns a short handoff. b-project-manager checks it against the sources. Accepted facts go into the project sheet or the owning session’s documents. A draft is not a decision until b-project-manager accepts it.
 
 Do not resume the intern for next month’s version of the job. Save the brief with the result. Next time, start a new intern and give it the saved brief plus the current files.
 
@@ -22,4 +22,4 @@ If the job is to fill a checklist or the next sheet from what the project alread
 If the same documents will be revised for weeks, this is a session, not an intern. Leave this file and read https://ancreationoffice.com/sop-hats.txt
 If those documents are the quality chain, read https://ancreationoffice.com/sop-quality.txt
 
-Done when the reviewed result is in the project folder and Soren has written anything plan.md must remember. The intern’s session is finished.
+Done when the reviewed result is in the project folder and b-project-manager has written anything plan.md must remember. The intern’s session is finished.

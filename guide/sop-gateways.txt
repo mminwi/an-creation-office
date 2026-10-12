@@ -29,7 +29,7 @@ A fishing lure is the short end. Shine of the plate, the paint, and a sharp hook
 Propose the depth and let them confirm. Light: a handful of items, recorded through the chain, then stop. Ordinary: the twenty to thirty that matter. Deep: separate areas and a long failure sheet. Write the depth on the sheet. The standards shelf is a different gate. Using our own quality sheets does not mean opening ISO manuals or military specifications.
 
 BUSINESS ENTITY
-The company is Kasper's, not a ticket for Soren (https://ancreationoffice.com/kasper.txt). First read AN-Creation/Business/business.txt. If a company already exists, record S19-company as carried ("Advance Now LLC, Wisconsin LLC, from Business/business.txt") and don't ask. If none exists, add a dated line to AN-Creation/Business/for-kasper.txt with the reason (e.g. "tray: fire and burn hazards; liability gateway"), record S19-company as "with Kasper", and don't open a Soren ticket for it. Kasper asks it, using the wording below.
+The company is b-business-manager's, not a ticket for b-project-manager (https://ancreationoffice.com/business-manager.txt). First read AN-Creation/Business/business.txt. If a company already exists, record S19-company as carried ("Advance Now LLC, Wisconsin LLC, from Business/business.txt") and don't ask. If none exists, add a dated line to AN-Creation/Business/for-business-manager.txt with the reason (e.g. "tray: fire and burn hazards; liability gateway"), record S19-company as "with b-business-manager", and don't open a b-project-manager ticket for it. b-business-manager asks it, using the wording below.
 Ask when the product could hurt someone, cost someone money, or be sold.
 The reason to open a business today is product liability. Other reasons exist, including employees. Those are a later decision, or a business they would already have opened. Do not walk those reasons now.
 Say this before a no can stand: A business entity, set up properly, can put the liability for the product on the business instead of on you personally. That result is not automatic.
@@ -76,7 +76,7 @@ Say this before a no can stand: Showing it or selling it can make some protectio
 Question: What are your thoughts on a patent for this?
 No, they have thought about it and want to make a few for themselves or friends: leave the patent road off. If they will still show a supplier the design, say that the showing itself is a disclosure, then stop.
 Not sure: explain that one fact and ask what they want to do with the idea. Do not open the patent shelf.
-Yes, or they want to protect it: open the patent road. Soren takes the legal role and prepares. He does not file. The chunks under that yes, including drawings, claims, a practitioner, and an inventor filing their own, are in https://ancreationoffice.com/sop-routes.txt. One chunk at a time.
+Yes, or they want to protect it: open the patent road. b-project-manager takes the legal role and prepares. It does not file. The chunks under that yes, including drawings, claims, a practitioner, and an inventor filing their own, are in https://ancreationoffice.com/sop-routes.txt. One chunk at a time.
 
 WATER AND SEALING
 Ask when the thing has a case, buttons, outdoor use, or anything that could get wet.

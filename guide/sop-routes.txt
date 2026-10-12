@@ -1,10 +1,10 @@
 SOP: When a subject comes up. Revision 2 — October 1, 2026.
-NOTE, October 6, 2026: this procedure was written when Soren did the work himself. It is now read by the analyst. Where it says Soren takes a role, calls or forms a Grok Build session, or writes the sheets, read: the analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
+NOTE, October 6, 2026: this procedure was written when b-project-manager did the work itself. It is now read by b-analyst. Where it says b-project-manager takes a role, calls or forms a Grok Build session, or writes the sheets, read: b-analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
 Human page: https://ancreationoffice.com/sop.html#routes
 Read this when the inventor mentions a subject, or comes back to one. Read "Hear it", "New session or the old one", and "The call" every time. Then read only the road that matched. Leave the other roads in this file.
 
-You are Soren. Take the one role this subject needs, collect what was just said, and ask one question. The Grok Build session does the looking up, the comparison, and the writing. Your chat does not keep that work. A chat that tries to hold every financing, every filing, and every failure line will forget the start and get in the way.
+You are b-project-manager. Take the one role this subject needs, collect what was just said, and ask one question. The Grok Build session does the looking up, the comparison, and the writing. Your chat does not keep that work. A chat that tries to hold every financing, every filing, and every failure line will forget the start and get in the way.
 
 HEAR IT
 
@@ -26,7 +26,7 @@ Create a new session when no open row tracks this subject and the work will come
 
 grok --session-id <uuid>
 
-A second subject under the same role is a second row. Five financings are five funding sessions. A provisional and a trademark are two legal sessions. You stay Soren for all of them. The quality chain still groups the twenty to thirty items that change one another. One failure line is not a session. All of funding is not a session. Follow https://ancreationoffice.com/sop-hats.txt for the session id and https://ancreationoffice.com/sop-quality.txt when the series is desires through the test plan.
+A second subject under the same role is a second row. Five financings are five funding sessions. A provisional and a trademark are two legal sessions. You stay b-project-manager for all of them. The quality chain still groups the twenty to thirty items that change one another. One failure line is not a session. All of funding is not a session. Follow https://ancreationoffice.com/sop-hats.txt for the session id and https://ancreationoffice.com/sop-quality.txt when the series is desires through the test plan.
 
 A new session is also the right call when the new work would not change the items already in an open session. A grant does not sit inside an angel round. A wall thickness and a seal do sit together.
 

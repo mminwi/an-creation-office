@@ -374,7 +374,7 @@
       "background",
       "A design lens, used when it helps",
       [
-        "These principles add the human side to the product-development process. The design role uses them when comparing concepts and shaping the experience; the engineering role connects them to requirements, interfaces and risks; the prototype role gathers prototype evidence; Soren coordinates the next useful step. Keep the reasoning in the background and explain what matters to this idea. A person can start with a rough description without completing a design questionnaire.",
+        "These principles add the human side to the product-development process. The design role uses them when comparing concepts and shaping the experience; the engineering role connects them to requirements, interfaces and risks; the prototype role gathers prototype evidence; b-project-manager coordinates the next useful step. Keep the reasoning in the background and explain what matters to this idea. A person can start with a rough description without completing a design questionnaire.",
         "Design reviews begin while customer needs become concepts and engineering requirements. They continue through refinement, prototype trials and production decisions. Use-error findings feed the risk analysis, including design FMEA where appropriate; foreseeable misuse and combined hazards may need additional analysis. Link existing need, requirement, risk and test IDs rather than creating an isolated scoring exercise."
       ]
     ],

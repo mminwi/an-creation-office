@@ -1,13 +1,13 @@
 SOP: Quality-planning series. Revision 2 — October 1, 2026.
-NOTE, October 6, 2026: this procedure was written when Soren did the work himself. It is now read by the analyst. Where it says Soren takes a role, calls or forms a Grok Build session, or writes the sheets, read: the analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
+NOTE, October 6, 2026: this procedure was written when b-project-manager did the work itself. It is now read by b-analyst. Where it says b-project-manager takes a role, calls or forms a Grok Build session, or writes the sheets, read: b-analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
-Read this when the work is customer desires, a specification, failure modes, a control plan, or a test plan. The role is engineering. Soren keeps the inventor conversation and calls the sessions.
+Read this when the work is customer desires, a specification, failure modes, a control plan, or a test plan. The role is engineering. b-project-manager keeps the inventor conversation and calls the sessions.
 
 This series stays together. One item runs through every sheet. A customer desire that the operator can tell the battery is adequate becomes a battery indicator on the specification, a failure mode that the indicator is wrong, a test that the indicator works, and a control that the indicator is tested. The item id stays the same. Splitting those sheets across sessions makes each session rediscover the item.
 
 Form sessions with https://ancreationoffice.com/sop-hats.txt and record each session id in plan.md.
 
-Create the integrator session when the first specification item exists. It is the mid-level engineering session. It does not replace Soren, and it does not talk to the inventor.
+Create the integrator session when the first specification item exists. It is the mid-level engineering session. It does not replace b-project-manager, and it does not talk to the inventor.
 
 Create an area session when that area has its first real item. Typical areas are separate when their items rarely rewrite each other: device enclosure, control circuit, clamping mechanism, holding mechanism, storage case. About twenty to thirty related items belong in one area session. A new requirement that does not fit an area is a reason to open this procedure again and add or split a session.
 
@@ -25,17 +25,17 @@ If something did turn up, mention that one thing in passing and ask what they wa
 
 If they want it looked at, do that next step and no more until they ask. One finding, one sentence, one answer. The sheet keeps the finding either way, so a later pass can see that it was raised and what they chose.
 
-Call an area session when the inventor, or another session, changes that area. Call the integrator when an area changes a boundary, and again before the sheets are treated as current. The integrator sends a disagreement back to the two area sessions with the item ids. Soren tells the inventor only when a person has to choose. A wording fix inside one area stays in the session.
+Call an area session when the inventor, or another session, changes that area. Call the integrator when an area changes a boundary, and again before the sheets are treated as current. The integrator sends a disagreement back to the two area sessions with the item ids. b-project-manager tells the inventor only when a person has to choose. A wording fix inside one area stays in the session.
 
 After the integrator exists, leave this setup text. Keep only the standing block below in that session.
 
 STANDING CONTEXT FOR THE QUALITY INTEGRATOR
 
-You compare the area chains on the shared sheets. You add a row when two areas meet. You send a conflict back to those two sessions. You tell Soren only when the inventor must choose. Re-read the current sheets at the start of every return. If a new requirement does not fit an area, or an area is overloaded, read https://ancreationoffice.com/sop-hats.txt before you add or split a session. Do not redo an area’s rows yourself. Do not keep this setup procedure in context while you are only comparing.
+You compare the area chains on the shared sheets. You add a row when two areas meet. You send a conflict back to those two sessions. You tell b-project-manager only when the inventor must choose. Re-read the current sheets at the start of every return. If a new requirement does not fit an area, or an area is overloaded, read https://ancreationoffice.com/sop-hats.txt before you add or split a session. Do not redo an area’s rows yourself. Do not keep this setup procedure in context while you are only comparing.
 
-An area session’s standing context is the same idea, smaller. You own this area’s items from the desire through the test plan. You re-read your rows before you edit. You work a few items at a time and check them against the neighboring rows in your area. You flag an edge when your change can affect another area. You report the item, the change, and the unknowns to the integrator. If the work in front of you is a different subject, stop and tell Soren. He decides whether it is a new session.
+An area session’s standing context is the same idea, smaller. You own this area’s items from the desire through the test plan. You re-read your rows before you edit. You work a few items at a time and check them against the neighboring rows in your area. You flag an edge when your change can affect another area. You report the item, the change, and the unknowns to the integrator. If the work in front of you is a different subject, stop and tell b-project-manager. He decides whether it is a new session.
 
 One lookup that will not be revised with the sheets is an intern. Use https://ancreationoffice.com/sop-interns.txt
-If Soren is missing, use https://ancreationoffice.com/sop-office.txt
+If b-project-manager is missing, use https://ancreationoffice.com/sop-office.txt
 
 Done for setup when the integrator row and any area rows are in plan.md, the sheets exist, and each session is keeping its short standing block rather than this whole procedure.

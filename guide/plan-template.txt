@@ -2,7 +2,7 @@
 
 Project: [name]
 Project folder: [full path from PROJECT.txt]
-Maintained by: Soren, project manager
+Maintained by: b-project-manager, project manager
 Last updated: [date]
 
 ## Goal
@@ -46,7 +46,7 @@ Grok Build sessions. Leave this table empty until a subject needs one.
 Resume with grok --resume and the session id. Do not resume the newest session
 in the folder when more than one session exists.
 
-Soren calls every row. The role is one word: project, design, legal,
+b-project-manager calls every row. The role is one word: project, design, legal,
 engineering, prototype, manufacturing, funding, or marketing. The subject is
 the thing, such as one grant or one filing. Status is open while that subject
 is live, and closed when the inventor shuts the branch. A closed row keeps its
@@ -59,6 +59,6 @@ session id and is not resumed.
 ## Task details
 For each task, keep a stable ID, description, owner, status, finish condition,
 and relevant file links. Add a due date only when one is agreed.
-Soren maintains this file. A session sends its report to Soren rather than
+b-project-manager maintains this file. A session sends its report to b-project-manager rather than
 editing it at the same time. Read the current file before making changes.
 Preserve unfinished work, completed evidence, and decision history.

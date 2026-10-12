@@ -527,7 +527,7 @@
         "manufacturing",
         "engineering"
       ],
-      "use": "A source for Soren to compare for ongoing fastener/hardware supply, sourcing and inventory needs as quantities grow.",
+      "use": "A source for b-project-manager to compare for ongoing fastener/hardware supply, sourcing and inventory needs as quantities grow.",
       "check": "Compare an exact specification and approved part cross-reference, delivered cost, quantities, lead time and required documentation. Obtain the engineering role’s review of substitutions; a similar appearance is not proof of equivalence.",
       "checked_on": "2026-09-30",
       "source": "Supplier’s own website",
@@ -1939,7 +1939,7 @@
       "search_terms": [
         "check sheet",
         "checklist",
-        "Soren",
+        "b-project-manager",
         "project"
       ]
     },
@@ -2075,7 +2075,7 @@
       "search_terms": [
         "check sheet",
         "checklist",
-        "Soren",
+        "b-project-manager",
         "production"
       ]
     },
@@ -2162,7 +2162,7 @@
         "manufacturing",
         "design"
       ],
-      "use": "Soren-led quality planning: critical quality points, FMEA, control plans, troubleshooting, requirements/QFD, tolerances, GD&T and mistake-proofing, with templates.",
+      "use": "b-project-manager-led quality planning: critical quality points, FMEA, control plans, troubleshooting, requirements/QFD, tolerances, GD&T and mistake-proofing, with templates.",
       "check": "Use proportionate analysis and actual evidence; examples and completed forms are not product approval.",
       "checked_on": "2026-09-30",
       "source": "AN Creation",
@@ -3608,7 +3608,7 @@
         "manufacturing",
         "marketing"
       ],
-      "use": "Connect customer needs, requirements, design risks, prototypes, verification/validation and production controls. Soren keeps the framework in mind and explains the formal approach when asked.",
+      "use": "Connect customer needs, requirements, design risks, prototypes, verification/validation and production controls. b-project-manager keeps the framework in mind and explains the formal approach when asked.",
       "check": "Scale the depth to the project. Reuse existing quality/test records, preserve evidence and exact revisions, and reopen affected links after changes. This is adaptable guidance, not a mandatory sequence or certification.",
       "checked_on": "2026-09-30",
       "source": "AN Creation original synthesis of Mike’s direction, with AIAG, ASQ and NASA primary references",
@@ -4729,12 +4729,12 @@
     ]
   },
   "assistant_names": {
-    "andy": "Soren",
+    "andy": "b-project-manager",
     "casey": "The design role",
     "larry": "The legal role",
     "ellis": "The engineering role",
     "peter": "The prototype role",
-    "morgan": "Soren",
+    "morgan": "b-project-manager",
     "frankie": "The funding role",
     "maya": "The marketing role"
   },
@@ -4901,7 +4901,7 @@
     "sheets": [
       {
         "id": "project",
-        "lead": "Soren",
+        "lead": "b-project-manager",
         "title": "New product development: the project review"
       },
       {
@@ -4931,7 +4931,7 @@
       },
       {
         "id": "production",
-        "lead": "Soren",
+        "lead": "b-project-manager",
         "title": "Suppliers and production readiness"
       },
       {

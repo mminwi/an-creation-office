@@ -5,7 +5,7 @@ Decide what the next build must prove, how you will check it, and what result is
 
 START WHILE THE REQUIREMENTS ARE TAKING SHAPE
 
-Soren coordinates the plan with the engineering role and the prototype role as soon as important requirements and failure risks emerge. Do not wait for finished hardware. Early planning can change the enclosure, connectors, materials, power supply, mounting, test access and number of samples that need to be made.
+b-project-manager coordinates the plan with the engineering role and the prototype role as soon as important requirements and failure risks emerge. Do not wait for finished hardware. Early planning can change the enclosure, connectors, materials, power supply, mounting, test access and number of samples that need to be made.
 
 Identify the intended users, environment, target countries, product category, customer requirements and proposed claims. Link each important requirement and risk to an inspection, analysis, demonstration or test. Leave unresolved limits marked unknown, with an owner and action; never fill them with a plausible-looking number.
 
@@ -91,7 +91,7 @@ The prototype role preserves raw results and reports the tested configuration, m
 
 The engineering role reviews anomalies, changes and their effect on requirements. Trace corrective action to a repeat test and any necessary regression tests. A change in material, supplier/process, enclosure, PCB, firmware, antenna, cable, seal, packaging or intended use may affect prior evidence. Decide and record the retest scope; do not assume either that everything remains covered or that every test must be repeated.
 
-Soren links the plan and reports to the quality records and next project decision. Soren carries validated manufacturing/inspection needs into the control plan; the marketing role uses only claims supported by the actual scope of evidence. A laboratory report, accreditation or checked form alone is not approval for every market or product variant.
+b-project-manager links the plan and reports to the quality records and next project decision. b-project-manager carries validated manufacturing/inspection needs into the control plan; the marketing role uses only claims supported by the actual scope of evidence. A laboratory report, accreditation or checked form alone is not approval for every market or product variant.
 - Keep one approved plan revision for each run and document deviations with review; never silently rewrite the plan to match the result.
 - For an external lab, confirm the exact method and accreditation/recognition scope, sample preparation/count, destructive tests, fixtures, lead time, cost, deliverables and treatment of failures before booking.
 Sources: https://www.nist.gov/nvlap/accreditation-vs-certification

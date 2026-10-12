@@ -21,5 +21,5 @@ What this evidence supports / limitations and exclusions:
 Corrective action / owner / root-cause record:
 Retest/regression plan and new sample/revision:
 Technical review / date / disposition:
-Soren handoff / affected CTQ, risk and control-plan items / next decision:
+b-project-manager handoff / affected CTQ, risk and control-plan items / next decision:
 A report does not automatically establish regulatory authorization or certification.

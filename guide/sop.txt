@@ -5,26 +5,27 @@ Human page: https://ancreationoffice.com/sop.html
 SOP means standard operating procedure: a written way to do one job. Here it is a file an assistant opens when a trigger fires, uses, and then leaves. It is not loaded into every conversation.
 
 Two assistants, two standing files.
-- Soren, the chat the inventor talks to: https://ancreationoffice.com/standing.txt
-- The analyst, called by Soren to do the thinking: https://ancreationoffice.com/analyst.txt
+- b-project-manager, the chat the inventor talks to: https://ancreationoffice.com/standing.txt
+- b-analyst, called by b-project-manager to do the thinking: https://ancreationoffice.com/analyst.txt
 
 The reason behind all of it, from Mike: https://ancreationoffice.com/advance-now.txt
 
 FIRST
 0. Version check, first in every conversation: https://ancreationoffice.com/version.txt . The short profile text saved in each bot: https://ancreationoffice.com/profile.txt
-0. Kasper, the business manager (company, website, profiles, promotion): https://ancreationoffice.com/kasper.txt
-0. Set up Soren and the analyst. Only two bots ever: one Soren for every invention, one Kasper for the business. https://ancreationoffice.com/sop-office.txt
-0. GitHub and the analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting. https://ancreationoffice.com/github-setup.txt
+0. b-business-manager, the business manager (company, website, profiles, promotion): https://ancreationoffice.com/business-manager.txt
+0. Set up b-project-manager and b-analyst. By default one bot covers every role; the inventor may split roles across bots (https://ancreationoffice.com/sop-team.txt). https://ancreationoffice.com/sop-office.txt
+0. The team: role names (b-project-manager, b-electrical ...), the team file where the inventor names and splits bots, who tracks and who judges, and the first look. https://ancreationoffice.com/sop-team.txt
+0. GitHub and b-analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
-FOR KASPER (the business manager)
-K1. Kasper: the company. Name checks, forming an LLC, tax ID, bank account, insurance, licenses, yearly upkeep. https://ancreationoffice.com/sop-kasper-company.txt
-K2. Kasper: domain, website, business email, Google Search Console and Bing, the weekly search check. https://ancreationoffice.com/sop-kasper-website.txt
-K3. Kasper: the brand kit and profiles. Logo, descriptions, fact sheet; LinkedIn, X, Facebook, YouTube and more. https://ancreationoffice.com/sop-kasper-presence.txt
-K4. Kasper: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories. https://ancreationoffice.com/sop-kasper-promotion.txt
+FOR b-business-manager (the business manager)
+K1. b-business-manager: the company. Name checks, forming an LLC, tax ID, bank account, insurance, licenses, yearly upkeep. https://ancreationoffice.com/sop-company.txt
+K2. b-business-manager: domain, website, business email, Google Search Console and Bing, the weekly search check. https://ancreationoffice.com/sop-website.txt
+K3. b-business-manager: the brand kit and profiles. Logo, descriptions, fact sheet; LinkedIn, X, Facebook, YouTube and more. https://ancreationoffice.com/sop-presence.txt
+K4. b-business-manager: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories. https://ancreationoffice.com/sop-promotion.txt
 
-FOR SOREN
+FOR b-project-manager
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
-2. The ticket format Soren runs. https://ancreationoffice.com/ticket-template.txt
+2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
 3. The first form, always: the invention and the screening questions. https://ancreationoffice.com/intake-001.csv
 
 FOR THE ANALYST
@@ -40,7 +41,7 @@ FOR THE ANALYST
 8d. Qualification and production approval: first article, process trials, qualifying what's needed, the approval package. https://ancreationoffice.com/sop-qualification.txt
 8e. Launch: first order, packaging and labels, the buyer packet, honest listings. https://ancreationoffice.com/sop-launch.txt
 8f. Revisions and change control: C, X and A/B/C revision names; the change record and what a change must re-check. https://ancreationoffice.com/sop-change-control.txt
-8g. Templates the analyst fills: APQP file https://ancreationoffice.com/template-apqp-file.csv ; review record https://ancreationoffice.com/template-review-record.txt ; prototype control plan https://ancreationoffice.com/template-prototype-control-plan.txt ; trial log https://ancreationoffice.com/template-trial-log.txt ; first article report https://ancreationoffice.com/template-fai-report.csv ; change record https://ancreationoffice.com/template-change-record.txt ; cost and time tracker https://ancreationoffice.com/template-cost-tracker.csv
+8g. Templates b-analyst fills: APQP file https://ancreationoffice.com/template-apqp-file.csv ; review record https://ancreationoffice.com/template-review-record.txt ; prototype control plan https://ancreationoffice.com/template-prototype-control-plan.txt ; trial log https://ancreationoffice.com/template-trial-log.txt ; first article report https://ancreationoffice.com/template-fai-report.csv ; change record https://ancreationoffice.com/template-change-record.txt ; cost and time tracker https://ancreationoffice.com/template-cost-tracker.csv
 9. The quality chain. https://ancreationoffice.com/sop-quality.txt
 10. Fill a form from what is already known. https://ancreationoffice.com/sop-checklists.txt
 11. Roads in detail: patent, funding, company, standards, power, stores. https://ancreationoffice.com/sop-routes.txt
@@ -49,7 +50,7 @@ FOR THE ANALYST
 12b. Formal forms and documents each road produces. https://ancreationoffice.com/forms-catalog.csv
 
 FOR BOTH
-13. The project folders: Your files and Soren's files. Dated folders; nothing is overwritten. https://ancreationoffice.com/project-folders.txt
+13. The project folders: Your files and Office files. Dated folders; nothing is overwritten. https://ancreationoffice.com/project-folders.txt
 14. Review pages: a local web page per invention for timelines, risks, pictures, documents and short walkthroughs. https://ancreationoffice.com/sop-review-page.txt (tool: https://ancreationoffice.com/review.py)
 15. Terms: the plain-language glossary to explain terms from (about 200, with read-more links). https://ancreationoffice.com/terms.txt
 16. The action log: who owes what, kept for the inventor and shown as Your list on the review page. https://ancreationoffice.com/sop-action-log.txt (template: https://ancreationoffice.com/template-action-log.csv)

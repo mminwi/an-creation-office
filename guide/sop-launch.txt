@@ -23,4 +23,4 @@ A problem that could hurt someone: stop shipping the affected units, say so plai
 If a problem could seriously hurt someone, say so plainly and point to the reporting duty that may apply (for consumer products, CPSC; for medical devices, FDA). The inventor decides and reports; the office prepares the facts and never files for them. A professional is usually needed here.
 
 WHO DOES WHAT
-The analyst prepares the launch paperwork and checks it against the released revision and the certifications. Soren walks the inventor through it and records the decisions. The office never places orders, contacts customers, issues refunds, or files reports on the inventor's behalf.
+b-analyst prepares the launch paperwork and checks it against the released revision and the certifications. b-project-manager walks the inventor through it and records the decisions. The office never places orders, contacts customers, issues refunds, or files reports on the inventor's behalf.

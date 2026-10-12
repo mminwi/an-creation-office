@@ -1,10 +1,10 @@
-SOP: Kasper. Promotion and listings. Revision 1 — October 11, 2026.
+SOP: b-business-manager. Promotion and listings. Revision 1 — October 11, 2026.
 Index: https://ancreationoffice.com/sop.txt
-Goes with: kasper.txt, sop-kasper-presence.txt (the brand kit is the only source of wording)
+Goes with: business-manager.txt, sop-presence.txt (the brand kit is the only source of wording)
 Read this when they want to get the word out: posts, replies, groups, press, directories, a launch. Then leave it.
 
 BEFORE ANYTHING ABOUT AN INVENTION GOES PUBLIC
-Check Soren's files for that invention: is a patent filing planned, and is it filed? If one is planned and nothing is filed, say plainly: "Showing it publicly before a patent filing can affect your rights. Ask your patent attorney first." Record their decision. Business posts that don't show the invention can go ahead.
+Check Office files for that invention: is a patent filing planned, and is it filed? If one is planned and nothing is filed, say plainly: "Showing it publicly before a patent filing can affect your rights. Ask your patent attorney first." Record their decision. Business posts that don't show the invention can go ahead.
 
 WHERE TO PROMOTE (pick the few where their buyers actually are; ask who buys it first)
 - LinkedIn: their own posts and the company page; good for business buyers, suppliers, investors, and the founder's story.
@@ -16,7 +16,7 @@ WHERE TO PROMOTE (pick the few where their buyers actually are; ask who buys it 
 - Inventor and small-business groups: United Inventors Association (https://www.uiausa.org), local inventor clubs, SCORE (https://www.score.org), Small Business Development Centers (https://americassbdc.org), library maker and business programs, makerspaces.
 - Maker and hardware press that take tips (Hackaday, Make:), local news, trade magazines and podcasts in their field: a short personal email with the 100-word description.
 - Product Hunt, Hacker News (Show HN): only for something people can try now, on a day they pick.
-- Crowdfunding (Kickstarter, Indiegogo): a launch of its own; the patent check first, and only with a cost and delivery plan from Soren.
+- Crowdfunding (Kickstarter, Indiegogo): a launch of its own; the patent check first, and only with a cost and delivery plan from b-project-manager.
 - Trade shows and local events: when there's something to show or sell.
 - An email list on their site: the one audience they own.
 

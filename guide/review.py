@@ -259,7 +259,7 @@ def md_page(page, copier, made, shown):
 
 def md_index(invention, root, pages, metas, today):
     out = [f"# {invention.name}: review pages", "", "_Everything we've put up for you. Old pages are kept as they were._", ""]
-    path = invention / "Soren's files" / "actions.csv"
+    path = invention / "Office files" / "actions.csv"
     if path.exists():
         with path.open(encoding="utf-8-sig", newline="") as fh:
             rows = [r for r in csv.DictReader(fh) if (r.get("ID") or "").strip()]
@@ -338,7 +338,7 @@ def set_today(invention, folder_name):
 
 def actions_section(invention):
     """Your list: the inventor's open actions, what they're waiting on, and what was done recently (sop-action-log.txt)."""
-    path = Path(invention) / "Soren's files" / "actions.csv"
+    path = Path(invention) / "Office files" / "actions.csv"
     if not path.exists():
         return ""
     with path.open(encoding="utf-8-sig", newline="") as fh:

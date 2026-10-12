@@ -8,7 +8,7 @@ Product / intended users and use:
 Product, model and drawing revisions / date:
 Scope, interfaces, exclusions and qualified reviewers:
 
-Soren drafts this review from project records and specialist input.
+b-project-manager drafts this review from project records and specialist input.
 Customer needs / requirements (repeat for each significant need):
 ID / customer wording / source:
 Agreed measurable target and use conditions (unknown if not agreed):
@@ -62,6 +62,6 @@ Review summary:
 Open safety issues and limits on the next activity:
 Roadblock-list links / opportunities to follow up:
 Next useful action that moves the project forward:
-Actions and dependencies to send to Soren:
+Actions and dependencies to send to b-project-manager:
 Responsible reviewer / next review date and change triggers:
 Do not lower a rating or close an action without supporting evidence.

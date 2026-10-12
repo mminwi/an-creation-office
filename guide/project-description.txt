@@ -4,7 +4,7 @@ Goes with: sop-stages.txt (S0 FACT-FINDING and BASELINE), sop-resource-map.txt
 
 WHAT IT IS
 One written description of the product and the project, in plain words, with the sections below. It is not a form to fill in. It reads like a description someone could hand to a partner, a supplier or a backer and they would understand what this is, what it has to meet, and what happens next.
-When every section meets its "done when", fact-finding is done. The analyst writes it from the intake, screening, resource map, searches and baseline. The inventor reads it on a review page and decides go, hold or drop.
+When every section meets its "done when", fact-finding is done. b-analyst writes it from the intake, screening, resource map, searches and baseline. The inventor reads it on a review page and decides go, hold or drop.
 
 Size it to the project's level. A simple product's description can be two pages. A medical device's will be much longer. Same sections either way.
 
@@ -67,9 +67,9 @@ What is still open, each with a revisit date or the event that will answer it. T
 Done when: the decision is recorded.
 
 WHO DOES WHAT
-The analyst writes it, fills what is known, and turns gaps into questions on tickets. Soren shows it on a review page, walks through any section they want, and records the decision. The inventor reads it and decides. Nothing in it is filed, sent or shown to anyone else without the inventor.
+b-analyst writes it, fills what is known, and turns gaps into questions on tickets. b-project-manager shows it on a review page, walks through any section they want, and records the decision. The inventor reads it and decides. Nothing in it is filed, sent or shown to anyone else without the inventor.
 
 FILES
-Soren's files/project-description/YYMMDD-HHMM-project-description.md (the master, one file per version)
+Office files/project-description/YYMMDD-HHMM-project-description.md (the master, one file per version)
 Your files/Project description/ (the inventor's format, one file per version)
 A review page for each version.

@@ -23,7 +23,7 @@ Owner roles: the design role, the marketing role. Source IDs: strategyzer-vpc,sb
 PLAN-02 | What have we learned directly from prospective customers?
 Owner roles: the marketing role, the design role. Source IDs: nsf-icorps,yc-startup-school.
 PLAN-03 | What assumptions are we testing next, and what result would change our decision?
-Owner roles: Soren, the marketing role. Source IDs: strategyzer-test-card.
+Owner roles: b-project-manager, the marketing role. Source IDs: strategyzer-test-card.
 PLAN-04 | Have we recorded contributors, ownership, prior work and disclosure questions?
 Owner roles: the legal role. Source IDs: wipo-ip-checklist,patent-public-search.
 PLAN-05 | What must the first product do, and what is outside this version?
@@ -31,17 +31,17 @@ Owner roles: the design role, the engineering role. Source IDs: atlassian-produc
 PLAN-06 | How will we prove each important requirement?
 Owner roles: the engineering role, the prototype role. Source IDs: test-planning-guide,sheet-prototype.
 PLAN-07 | What are the price, sales channel, unit costs and expected volume assumptions?
-Owner roles: the funding role, the marketing role, Soren. Source IDs: strategyzer-bmc,sheet-economics.
+Owner roles: the funding role, the marketing role, b-project-manager. Source IDs: strategyzer-bmc,sheet-economics.
 PLAN-08 | What startup spending, monthly costs and cash shortfall have we allowed for?
 Owner roles: the funding role. Source IDs: score-financial-projections,score-startup-budget.
 PLAN-09 | Who owns each next task, what does finished mean, and what must happen first?
-Owner roles: Soren. Source IDs: atlassian-project-plan,asana-project-charter.
+Owner roles: b-project-manager. Source IDs: atlassian-project-plan,asana-project-charter.
 PLAN-10 | Which risks could stop the project, and who is reducing them?
-Owner roles: Soren, the engineering role, Soren. Source IDs: asana-risk-register,design-risk-guide.
+Owner roles: b-project-manager, the engineering role, b-project-manager. Source IDs: asana-risk-register,design-risk-guide.
 PLAN-11 | What evidence justifies go, revise, hold or stop at the next review?
-Owner roles: Soren. Source IDs: stagegate-discovery-launch,atlassian-decision.
+Owner roles: b-project-manager. Source IDs: stagegate-discovery-launch,atlassian-decision.
 PLAN-12 | What did the last milestone teach us, and which records need revision?
-Owner roles: Soren, the prototype role, Soren. Source IDs: atlassian-retrospective.
+Owner roles: b-project-manager, the prototype role, b-project-manager. Source IDs: atlassian-retrospective.
 
 DOWNLOAD CANDIDATES
 Business Model Canvas, Value Proposition Canvas, SCORE financial workbook, Smartsheet requirements layouts and relevant SCORE checklists. Save publisher, URL, date, version/license and location; verify actual content before assistant use. Files not downloaded in this pass.
