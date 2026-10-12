@@ -4585,6 +4585,1450 @@
       "checked_on": "2026-10-07",
       "source": "Insurance broker's blog",
       "kind": "learning_resource"
+    },
+    {
+      "id": "mpep",
+      "title": "Manual of Patent Examining Procedure (MPEP)",
+      "url": "https://www.uspto.gov/web/offices/pac/mpep/index.html",
+      "group": "legal",
+      "roles": [
+        "legal"
+      ],
+      "b_roles": [
+        "b-patent-prep"
+      ],
+      "use": "USPTO patent examination policy and procedure: application contents, examination, prior art, patentability, appeals, issue. Free.",
+      "edition": "Ninth Edition, Revision 01.2024, published 2024-11 (current to 2024-01-31; later updates listed separately)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "tmep",
+      "title": "Trademark Manual of Examining Procedure (TMEP)",
+      "url": "https://www.uspto.gov/trademarks/guides-and-manuals/tmep-archives",
+      "group": "legal",
+      "roles": [
+        "legal"
+      ],
+      "b_roles": [
+        "b-trademark"
+      ],
+      "use": "USPTO trademark examination law, practice and procedure. Free.",
+      "edition": "May 2026 version (announced 2026-05-29)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "wipo-licensing",
+      "title": "Technology licensing guides for SMEs",
+      "url": "https://www.wipo.int/publications/en/details.jsp?id=296",
+      "group": "legal",
+      "roles": [
+        "legal"
+      ],
+      "b_roles": [
+        "b-licensing-funding"
+      ],
+      "use": "How technology licensing works: preparing to negotiate, key agreement terms, negotiation, competition concerns, living with the signed agreement. Guidance. Free.",
+      "edition": "Successful Technology Licensing, 2nd ed. 2015; Exchanging Value (licensing negotiation manual), 2005",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "dfma",
+      "title": "Design for Manufacture and Assembly method",
+      "url": "https://www.dfma.com/resources/what-is-dfma.asp",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-dfm",
+        "b-cost-bom"
+      ],
+      "use": "Design for assembly first (is each part needed; handling and insertion difficulty), then design for manufacture of the remaining parts (material, process, geometry, tolerances, tooling, cost at target volume). A method, not a standard. Free to read; software paid.",
+      "edition": "Method page, no edition (page update labels conflict: May and July 2026)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "resin-design-guides",
+      "title": "Resin supplier part design, processing and drying guides",
+      "url": "https://plastics-rubber.basf.com/global/en/performance_polymers/products/ultramid",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-plastic-part-design",
+        "b-drying-handling"
+      ],
+      "use": "Supplier guides cover properties for design (moisture, dimensional stability, chemical resistance), molding, joining and conditioning; nylon must be molded dry. Grade-specific settings are on each grade's processing data sheet. Use the guide from the supplier of the chosen resin.",
+      "edition": "Category, not one document. Example read: BASF Ultramid (PA) product brochure, undated",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Low confidence: example only; edition not confirmed. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "supplier"
+    },
+    {
+      "id": "astm-d955",
+      "title": "ASTM D955 — measuring mold shrinkage of thermoplastics",
+      "url": "https://store.astm.org/d0955-21.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-plastic-part-design"
+      ],
+      "use": "Mold shrinkage of thermoplastics: cavity vs molded dimensions at 24 and 48 h on standard specimens. Comparable data only; does not predict shrink in real parts with different flow, wall and process. Paid; scope free.",
+      "edition": "D955-21, active (page shows last updated 2021-05-27)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "asme-y14-5-1",
+      "title": "ASME Y14.5.1 — mathematical definition of dimensioning and tolerancing",
+      "url": "https://www.asme.org/codes-standards/find-codes-standards/y14-5-1-mathematical-definition-dimensioning-tolerancing-principles",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-tolerance-gdt"
+      ],
+      "use": "Mathematical definitions of GD&T so actual values can be determined, for drawings, exchange formats and databases. Defines the math behind Y14.5; does not replace Y14.5 drawing practice. Paid.",
+      "edition": "ASME Y14.5.1-2019 (ASME page shows publish date 2020)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "asme-y14-41",
+      "title": "ASME Y14.41 — digital product definition data practices",
+      "url": "https://www.asme.org/codes-standards/find-codes-standards/y14-41-digital-product-definition-data-practices",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-tolerance-gdt"
+      ],
+      "use": "Requirements for preparing and revising digital product definition data (model-based data sets and digital drawings): exceptions and additions to the other ASME Y14 standards; where it is silent, those apply. Paid.",
+      "edition": "ASME Y14.41-2026 (Accuristech lists 2026-06-30; replaces 2019)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-1101",
+      "title": "ISO 1101 — geometrical tolerancing (ISO GPS), for prints that leave the US",
+      "url": "https://www.iso.org/standard/66777.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-tolerance-gdt"
+      ],
+      "use": "ISO GPS symbol language for geometrical tolerances and the rules to read it; direct annotation, with model-based equivalents under ISO 16792. For prints that go to ISO-system suppliers. Paid.",
+      "edition": "ISO 1101:2017, edition 4, published 2017-02, confirmed",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ul-94",
+      "title": "UL 94 — flammability of plastic materials",
+      "url": "https://www.shopulstandards.com/ProductDetail.aspx?productId=UL94_7_S_20230228",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-plastic-materials"
+      ],
+      "use": "Lab flammability tests of plastics (small flame, radiant heat) on standard specimens. A preliminary indication only: the end product and its own standard decide the required rating. Not fire resistance, smoke or heat release. Free Digital View for registered users; PDF paid.",
+      "edition": "Edition 7, published 2023-02-28, last revision 2026-07-02; ANSI webstore lists UL 94 Ed. 7-2023 with published date 2024-01-05 (office search; likely ANSI approval date)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ul-746c",
+      "title": "UL 746C — polymeric materials in electrical equipment",
+      "url": "https://www.shopulstandards.com/ProductDetail.aspx?UniqueKey=33942",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-plastic-materials"
+      ],
+      "use": "Polymeric parts in electrical equipment: tests for the parts and the equipment containing them, using small-scale property data; excludes insulation systems (UL 1446). 3D-printed parts evaluated from the end part. Free Digital View; PDF paid.",
+      "edition": "Edition 7, published 2018-02-05, last revision 2026-07-28",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "cfr-21-177",
+      "title": "21 CFR Part 177 — indirect food additives, polymers",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-177",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-plastic-materials"
+      ],
+      "use": "Which polymers may be used in food-contact articles and under what conditions: composition, permitted substances, use limits, extraction limits and tests, per polymer and use; not a blanket approval. Free.",
+      "edition": "eCFR current to 2026-10-08; Part 177 last changed 2022-05-20",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "nsf-51",
+      "title": "NSF/ANSI 51 — food equipment materials",
+      "url": "https://www.nsf.org/nsf-standards/standards-portfolio/food-equipment-standards",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-plastic-materials",
+        "b-food-equipment"
+      ],
+      "use": "Public health and sanitation for materials and finishes used in commercial foodservice equipment, including components such as tubing, sealants, gaskets and valves. Paid; scope free.",
+      "edition": "Not verified",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Low confidence: edition not verified. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "nsf-2",
+      "title": "NSF/ANSI 2 — food equipment",
+      "url": "https://www.nsf.org/nsf-standards/standards-portfolio/food-equipment-standards",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-food-equipment"
+      ],
+      "use": "Minimum food protection and sanitation for food handling equipment: materials, design, fabrication, construction, performance (kitchen, cafeteria, pantry units, tables, counters, shelves, sinks). Paid; scope free.",
+      "edition": "Not stated by NSF. Office search: NSF/ANSI 2-2025 (revises 2022; adds glass and glass-like coatings section)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Low confidence: edition from ANSI blog, not NSF. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "nsf-4",
+      "title": "NSF/ANSI 4 — commercial cooking, rethermalization and powered hot food holding",
+      "url": "https://www.nsf.org/nsf-standards/standards-portfolio/food-equipment-standards",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-food-equipment"
+      ],
+      "use": "Food protection and sanitation for commercial cooking, rethermalization and powered hot food holding and transport equipment: materials, design, construction, performance (ovens, kettles, hot beverage makers, hot food holding and transport cabinets). Paid; scope free.",
+      "edition": "Not verified",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Low confidence: edition not verified. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "fda-food-code",
+      "title": "FDA Food Code",
+      "url": "https://www.fda.gov/food/fda-food-code/food-code-2026",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-food-equipment"
+      ],
+      "use": "Model food safety code for retail and foodservice (illness policies, cooling, sanitizer temperatures, allergen cross-contact, cleaning of food-contact surfaces). Binding only where a jurisdiction adopts it. Free.",
+      "edition": "2026 Food Code, issued 2026-09-17",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "astm-d543",
+      "title": "ASTM D543 — resistance of plastics to chemical reagents",
+      "url": "https://store.astm.org/d0543-21.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-plastic-materials"
+      ],
+      "use": "Chemical resistance of plastics: immersion, and reagent exposure under strain; measure weight, size, appearance and strength before and after. For a real application, match reagent, concentration, time, temperature and stress. Paid; scope free.",
+      "edition": "D543-21, active (page shows last updated 2021-12-07)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ul-prospector",
+      "title": "UL Prospector — plastic material data sheets",
+      "url": "https://www.ul.com/software/ultrus/prospector-material-discovery",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-plastic-materials"
+      ],
+      "use": "Search and compare resin data sheets by keyword, maker or product; request samples; includes UL Yellow Cards. Free membership for documents; advanced plastics search is paid. A research tool, not a requirement.",
+      "edition": "Database, updated daily; no edition",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "supplier"
+    },
+    {
+      "id": "iso-1043",
+      "title": "ISO 1043 / ISO 11469 — plastic symbols and part marking",
+      "url": "https://www.iso.org/standard/50590.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-plastic-materials"
+      ],
+      "use": "ISO 1043: standard abbreviations for polymers, fillers and reinforcements, plasticizers, flame retardants. ISO 11469: the marking on plastic parts (e.g. >PC<) using those abbreviations, for recovery and disposal; does not set the marking method. Paid.",
+      "edition": "ISO 1043-1:2011 +Amd1:2016; 1043-2:2011; 1043-3:2016; 1043-4:2021 (an Amd 1:2026 listing is unresolved); ISO 11469:2016",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Low confidence: 1043-4 amendment status unresolved. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "plastics-mold-classes",
+      "title": "Mold classifications (Class 101-105)",
+      "url": "https://www.plasticsindustry.org/data-report/customs-and-practices-of-the-moldmaking-industry/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-mold-buying"
+      ],
+      "use": "The mold buyer's guide: mold classifications (101-105) and expected life for quoting and ordering, plus sample progress-report and mold-data quote forms. Class details are not public. Paid for non-members; free for PLASTICS members.",
+      "edition": "Customs & Practices of the Moldmaking Industry (AR-101), 2023 guide; exact date not stated",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "rjg-articles",
+      "title": "Scientific/decoupled molding articles and training outlines",
+      "url": "https://rjginc.com/training/registration/decoupled-molding-workshop/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-scientific-molding"
+      ],
+      "use": "Decoupled molding workshop: machine qualification, mold evaluation and process development in a set order (injection speed linearity, check-ring repeatability, melt temperature, cavity imbalance, gate seal, cooling). Training, not a standard. Articles free; workshop paid.",
+      "edition": "Undated workshop outline; individual articles",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "kulkarni-robust-process",
+      "title": "Robust Process Development and Scientific Molding (book)",
+      "url": "https://www.hanserpublications.com/Robust-Process-Development-and-Scientific-Molding/978-1-56990-908-9",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-scientific-molding"
+      ],
+      "use": "Scientific molding and processing for robust, repeatable processes: polymer behavior, drying and rheology tied to cosmetic and dimensional process development; procedures, DOE, mold release planning, troubleshooting (cooling, venting, regrind). Method book, not a standard. Paid.",
+      "edition": "3rd edition, released 08/2024 (Hanser)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "bozzelli-articles",
+      "title": "Scientific molding and troubleshooting articles (John Bozzelli)",
+      "url": "https://www.scientificmolding.com/index.php/publications",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-scientific-molding"
+      ],
+      "use": "Machine evaluation, velocity control and consistent fill times, gate seal studies, regrind, molding safety; practical problem solving and cycle reduction. Free to read.",
+      "edition": "Article collection, undated (200+ articles at Plastics Technology)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "resin-troubleshooting-guides",
+      "title": "Molding troubleshooting guides",
+      "url": "https://plastics-rubber.basf.com/global/en/performance_polymers/services/product_support_troubleshooting/injection_moulding_troubleshooter",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-molding-defects"
+      ],
+      "use": "Defects with photos and fixes for engineering thermoplastics: weld lines, delamination, burning, streaks, stress cracking, unmelt, short shots, warp, mold deposits. Nonbinding supplier advice. Free. Use the guide from the chosen resin's supplier.",
+      "edition": "Category. Example read: BASF Injection Molding Troubleshooter (online, undated)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "supplier"
+    },
+    {
+      "id": "ashrae-handbook",
+      "title": "ASHRAE Handbook — HVAC Systems and Equipment (chillers, cooling towers, pumps, piping)",
+      "url": "https://www.ashrae.org/technical-resources/ashrae-handbook/description-ashrae-handbook-hvac-systems-and-equipment",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-cooling-water"
+      ],
+      "use": "Design and equipment reference: central cooling plants, hydronic and condenser water systems, cooling towers, liquid chillers, centrifugal pumps, valves, heat exchangers. Paid; contents free. I-P and SI versions.",
+      "edition": "2024 ASHRAE Handbook, HVAC Systems and Equipment",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "cti-codes",
+      "title": "Cooling tower codes and guidelines",
+      "url": "https://www.cti.org/cti-certification",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-cooling-water"
+      ],
+      "use": "Cooling tower acceptance testing, sound, performance, water treatment and materials. STD-201: certified tower lines must perform to published ratings, verified by a CTI-licensed test agency. Paid publications.",
+      "edition": "Separate documents (STD-201, ATC-105, water treatment guidelines); current revisions not stated",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Low confidence: revisions not verified. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ashrae-188",
+      "title": "ASHRAE 188 — Legionellosis risk management for building water systems",
+      "url": "https://www.ashrae.org/technical-resources/bookstore/ansi-ashrae-standard-188-2021-legionellosis-risk-management-for-building-water-systems",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-cooling-water"
+      ],
+      "use": "Minimum Legionella risk management for building water systems, cooling towers included: building survey, water management program, preventive measures, design, commissioning. Enforceable language for code adoption; an addendum adds Legionella testing requirements. Free read-only view; copy paid.",
+      "edition": "ANSI/ASHRAE 188-2021 (continuous maintenance; addenda possible). Office search found no later edition",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ashrae-g12",
+      "title": "ASHRAE Guideline 12 — managing Legionella risk in water systems",
+      "url": "https://www.ashrae.org/technical-resources/standards-and-guidelines/guidance-for-water-system-risk-management",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-cooling-water"
+      ],
+      "use": "How to comply with Standard 188: what spreads Legionella; covers potable water, cooling towers and condensers, coolers, misters; testing and PPE appendices. Guidance, not requirements. Free read-only view.",
+      "edition": "ASHRAE Guideline 12-2023",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "oem-chiller-guides",
+      "title": "Process chiller and mold temperature controller sizing guides",
+      "url": "https://www.conairgroup.com/products/heat-transfer/temperature-control-units/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-cooling-water"
+      ],
+      "use": "Mold temperature controllers (water and oil): selection data for temperature range, pump, flow, pressure, heater, power, connections. No non-blog process chiller sizing guide found yet. Free.",
+      "edition": "Category. Example read: Conair temperature control units and TW-B spec sheet (TPHX063-1022)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Low confidence: no chiller sizing guide found. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "supplier"
+    },
+    {
+      "id": "oem-dryer-guides",
+      "title": "Resin dryer and conveying sizing guides",
+      "url": "https://www.conairgroup.com/support/product-support-literature/manuals/drying/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-drying-handling"
+      ],
+      "use": "Dryer sizing: find resin and throughput, pick the dryer from the throughput chart, hopper capacity = drying time x throughput. Conveying sized by throughput, distance and line size. Equipment selection, not a standard. Free.",
+      "edition": "Category. Example read: Conair drying and conveying manuals (undated)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Low confidence: sizing PDFs not fully retrieved. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "supplier"
+    },
+    {
+      "id": "ansi-r15-06",
+      "title": "ANSI/A3 R15.06 — industrial robot safety",
+      "url": "https://www.automate.org/store/products/ansi-a3-r15-06-2025-american-national-standard-for-industrial-robots-and-robot-systems-safety-requirements-pdf-download",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-automation"
+      ],
+      "use": "US adoption of ISO 10218-1/-2:2025: industrial robots (Part 1) and robot applications and cells (Part 2), risk assessment and safe use; Part 3 is guidance for cell users. Paid ($769; members $655).",
+      "edition": "ANSI/A3 R15.06-2025 Parts 1-2 and R15.06-3-2025 Part 3, published 2025-10-29",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-10218",
+      "title": "ISO 10218-1/-2 — robots and robot systems safety",
+      "url": "https://www.iso.org/standard/73933.html",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-automation"
+      ],
+      "use": "Part 1: safe design and information for use of industrial robots as machines. Part 2: integrating robot applications and cells, from design and commissioning to decommissioning. Paid.",
+      "edition": "ISO 10218-1:2025 ed. 3 and ISO 10218-2:2025 ed. 2, both 2025-02",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-ts-15066",
+      "title": "ISO/TS 15066 — collaborative robots",
+      "url": "https://www.iso.org/standard/62996.html",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-automation"
+      ],
+      "use": "Collaborative industrial robot systems and their workspaces, supplementing ISO 10218. Not for non-industrial robots; principles may still help elsewhere. Paid.",
+      "edition": "ISO/TS 15066:2016, edition 1, 2016-02; replacement in development",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "cfr-21-820",
+      "title": "21 CFR Part 820 — quality management system regulation",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-820",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-medical-quality"
+      ],
+      "use": "FDA quality system for finished medical devices: a documented QMS meeting ISO 13485:2016 plus FDA additions (records, labeling and packaging controls). Free.",
+      "edition": "QMSR, effective 2026-02-02 (final rule 2024-02-02, correction 2024-10-15)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "iso-14971",
+      "title": "ISO 14971 — medical device risk management",
+      "url": "https://www.iso.org/standard/72704.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-medical-quality"
+      ],
+      "use": "Medical device risk management through the life cycle: identify hazards, estimate, evaluate, control and monitor risk; manufacturer sets risk acceptability criteria. Paid.",
+      "edition": "ISO 14971:2019, edition 3, 2019-12, confirmed",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iec-60601-1",
+      "title": "IEC 60601-1 — medical electrical equipment safety",
+      "url": "https://webstore.iec.ch/en/publication/67497",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-medical-quality"
+      ],
+      "use": "General basic safety and essential performance of medical electrical equipment; used with collateral and particular standards, never alone where a particular exists. Paid.",
+      "edition": "IEC 60601-1:2005+AMD1:2012+AMD2:2020 CSV, ed. 3.2, 2020-08-20 (corrigenda to 2022)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ul-508a",
+      "title": "UL 508A — industrial control panels",
+      "url": "https://www.shopulstandards.com/ProductDetail.aspx?UniqueKey=48543",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-electrical",
+        "b-controls"
+      ],
+      "use": "Industrial control panels for general industrial use up to 1000 V: assemblies of power and control components, wiring, terminals and enclosures, for ordinary locations installed per the NEC. Does not evaluate the loads or whether the controls supervise the whole machine. Free Digital View; copies paid.",
+      "edition": "Edition 3, revision 2025-06-26 (ANSI approved same day)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "nfpa-70e",
+      "title": "NFPA 70E — electrical safety in the workplace",
+      "url": "https://www.nfpa.org/codes-and-standards/nfpa-70e-standard-development/70e",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-electrical"
+      ],
+      "use": "Safe electrical work practices: protection from shock, electrocution, arc flash and arc blast; helps meet OSHA electrical safety rules. A workplace standard, not a product standard. Free to view with an account (no download).",
+      "edition": "2027 edition, current per NFPA; publication date not stated",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iec-61131-3",
+      "title": "IEC 61131-3 — PLC programming languages",
+      "url": "https://webstore.iec.ch/en/publication/68533",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-controls"
+      ],
+      "use": "PLC programming languages: syntax and meaning of structured text, ladder, function block diagram; sequential function chart elements; configuration elements and communication features. Paid (CHF 475).",
+      "edition": "IEC 61131-3:2025, edition 4.0, 2025-05-22",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-13849-1",
+      "title": "ISO 13849-1 — safety-related parts of control systems",
+      "url": "https://www.iso.org/standard/73481.html",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-controls",
+        "b-machine-safety"
+      ],
+      "use": "Method and requirements for designing safety-related parts of machine control systems (software included), any technology, high-demand or continuous use. Does not choose the safety functions or required performance levels for a given machine. Paid.",
+      "edition": "ISO 13849-1:2023, edition 4, 2023-04",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ul-2054",
+      "title": "UL 2054 — household and commercial batteries",
+      "url": "https://www.shopulstandards.com/ProductDetail.aspx?productId=UL2054_3_S_20211117",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-battery-power"
+      ],
+      "use": "Portable primary and rechargeable batteries (single cells and packs) as product power sources: reduce fire, explosion and injury in use and when removed for transport, storage or disposal. Does not cover the battery in its host product; the product needs its own standard. Free Digital View; PDF paid.",
+      "edition": "Edition 3, published 2021-11-17, last revision 2022-03-10",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iec-62133-2",
+      "title": "IEC 62133-2 — lithium cells and batteries, portable applications",
+      "url": "https://webstore.iec.ch/en/publication/70017",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-battery-power"
+      ],
+      "use": "Safety requirements and tests for portable sealed rechargeable lithium cells and batteries, for intended use and foreseeable misuse; includes coin cells, assembly of cells into batteries, vibration and shock. Paid.",
+      "edition": "IEC 62133-2:2017+AMD1:2021 CSV, edition 1.1, published 2021-07-15",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ul-1642",
+      "title": "UL 1642 — lithium cells",
+      "url": "https://www.shopulstandards.com/ProductDetail.aspx?UniqueKey=37777",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-battery-power"
+      ],
+      "use": "Lithium cells and multicell batteries, primary and rechargeable, technician- or user-replaceable: reduce fire, explosion and injury; host product must meet its own standard. 2022 revision: round-bar crush replaces impact for pouch cells. Free Digital View; PDF paid.",
+      "edition": "Edition 6, published 2020-09-29, last revision 2022-10-12 (a 2025-09-25 certification decision is not a new edition)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "un-38-3",
+      "title": "UN Manual of Tests and Criteria, section 38.3 — lithium battery transport tests",
+      "url": "https://unece.org/transport/dangerous-goods/rev8-files",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-battery-power",
+        "b-packaging-shipping"
+      ],
+      "use": "Section 38.3: the transport tests every lithium cell and battery type must pass before it can ship under the transport rules. Amendment 1 changes 38.3 and the definition of rupture. Supplements, does not replace, the transport regulations. Free to read online.",
+      "edition": "Manual of Tests and Criteria, Rev. 8 (2023) with Amendment 1 (2025; files from Sept 2025)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "iata-lithium",
+      "title": "Lithium battery shipping guidance",
+      "url": "https://www.iata.org/en/programs/cargo/dangerous-goods/lithium-batteries/",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-battery-power",
+        "b-packaging-shipping"
+      ],
+      "use": "Air shipping of lithium metal, lithium-ion and sodium-ion batteries: classification, UN 38.3 test summary, packaging, marks, labels, documents, training, state-of-charge limits; separate rules for batteries alone, packed with equipment, and in equipment. Guidance only, not a compliance source. Free.",
+      "edition": "Battery Guidance Document dated 2026-01-01, based on IATA DGR 67th edition (2026) and ICAO TI 2025-2026",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "cfr-49-173-185",
+      "title": "49 CFR 173.185 — lithium cells and batteries in transport",
+      "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-I/subchapter-C/part-173/subpart-E/section-173.185",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-battery-power"
+      ],
+      "use": "US transport rules for lithium cells and batteries, alone, packed with or in equipment: tested types, test records and summaries, protection and packaging against short circuit and damage; exceptions for small batteries, prototypes and low production runs, recycling, damaged batteries. Free.",
+      "edition": "eCFR current to 2026-10-08; section last amended 2024-04-10 (89 FR 25478)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "fcc-part-15",
+      "title": "47 CFR Part 15 — radio frequency devices",
+      "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-emi-fcc"
+      ],
+      "use": "Radio frequency devices: unintentional radiators (most electronics) and intentional transmitters. Equipment authorization, conducted and radiated emission limits, measurement, labels, user information; which rules apply depends on device type and frequency. Free.",
+      "edition": "eCFR, current to 2026-10-08 (title-wide dates)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "fcc-part-18",
+      "title": "47 CFR Part 18 — industrial, scientific and medical equipment (includes induction heating)",
+      "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-18",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-emi-fcc"
+      ],
+      "use": "Industrial, scientific and medical (ISM) RF equipment, induction heating included: good engineering practice, shielding and filtering to control emissions; the operator must fix harmful interference. Free.",
+      "edition": "eCFR, current to 2026-10-08 (title-wide dates)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Low confidence: page mostly navigation; full text not read. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "fcc-kdb-680106",
+      "title": "KDB 680106 — wireless power transfer devices",
+      "url": "https://www.fcc.gov/general/equipment-authorization-measurement-procedures",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-emi-fcc"
+      ],
+      "use": "FCC guidance on equipment authorization and RF exposure for wireless power transfer. Third-party sources report a section 5.2 exclusion (under 1 MHz, 15 W or less per transmitting element); outside it, an FCC inquiry (KDB) is needed. Unconfirmed: read on apps.fcc.gov before relying on it.",
+      "edition": "Perplexity: not found. Office search: v04, 2023-10-24 (FCC TCB workshop deck), possibly a 01/2024 revision; not confirmed on apps.fcc.gov",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Low confidence: KDB record itself not read. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "cispr-32",
+      "title": "CISPR 32 / CISPR 35 — emissions and immunity of multimedia equipment",
+      "url": "https://webstore.iec.ch/en/publication/65836",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-emi-fcc"
+      ],
+      "use": "Multimedia equipment up to 600 V: CISPR 32 sets Class A/B emission limits and measurement; CISPR 35 sets immunity requirements and tests. Paid.",
+      "edition": "CISPR 32:2015+AMD1:2019 CSV, ed. 2.1, 2019-10-01; CISPR 35:2016, ed. 1.0, 2016-08-16",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "eu-emc-directive",
+      "title": "EMC Directive 2014/30/EU",
+      "url": "https://single-market-economy.ec.europa.eu/sectors/electrical-and-electronic-engineering-industries-eei/electromagnetic-compatibility-emc-directive_en",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-emi-fcc"
+      ],
+      "use": "EU: apparatus must limit disturbances and be immune enough to work in its environment. Manufacturer does conformity assessment, technical file, EU declaration of conformity and CE mark. Free.",
+      "edition": "Directive 2014/30/EU (OJ L 96, 2014-03-29); consolidated 2026-05-30",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "iec-62368-1",
+      "title": "IEC/UL 62368-1 — audio/video and ICT equipment safety",
+      "url": "https://webstore.iec.ch/en/publication/69308",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-product-safety"
+      ],
+      "use": "Safety of audio/video, IT and communication equipment (and office machines up to 600 V, UL): classify energy sources and provide safeguards against pain, injury and fire. Paid; UL Digital View free when registered.",
+      "edition": "IEC 62368-1:2023 ed. 4.0 (corrected 2025-08); ANSI/UL 62368-1 4th ed. 2025-07-31 with US differences",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iec-60335-1",
+      "title": "IEC/UL 60335-1 — household appliance safety",
+      "url": "https://webstore.iec.ch/en/publication/110266",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-product-safety"
+      ],
+      "use": "General safety of household and similar appliances, battery-operated included; always used with the matching IEC 60335-2-x part. UL changes voltage scope (250 V single-phase and battery; 600 V other). Paid; UL Digital View shows national differences only.",
+      "edition": "IEC 60335-1:2020+AMD1:2025 CSV ed. 6.1, 2025-10-31; ANSI/UL 60335-1 7th ed. 2025-12-11 (adopts IEC ed. 6.0)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "eu-lvd",
+      "title": "Low Voltage Directive 2014/35/EU",
+      "url": "https://single-market-economy.ec.europa.eu/sectors/electrical-and-electronic-engineering-industries-eei/low-voltage-directive-lvd_en",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-product-safety"
+      ],
+      "use": "EU: electrical equipment 50-1000 V AC or 75-1500 V DC must protect people, animals and property; technical file, conformity assessment, declaration, CE mark. Battery products below 75 V DC fall outside it (GPSR then applies). Free.",
+      "edition": "Directive 2014/35/EU (OJ L 96, 2014-03-29); consolidated 2026-05-30",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "eu-gpsr",
+      "title": "General Product Safety Regulation (EU) 2023/988",
+      "url": "https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/harmonised-standards/general-product-safety_en",
+      "group": "electrical",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-product-safety"
+      ],
+      "use": "EU consumer product safety where no other EU law covers the risk: only safe products; manufacturer risk analysis, technical documentation, identification and safety information, corrective action; duties for importers, distributors, EU responsible person and online marketplaces. Free.",
+      "edition": "Regulation (EU) 2023/988 (OJ L 135, 2023-05-23); consolidated 2026-05-29 (amended by 2024/2748)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "iso-12100",
+      "title": "ISO 12100 — machinery risk assessment",
+      "url": "https://www.iso.org/standard/51528.html",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-machine-safety"
+      ],
+      "use": "Machinery safety basics: terms, design principles, and the risk assessment and risk reduction method that the specific machine standards build on. Paid.",
+      "edition": "ISO 12100:2010, edition 1, 2010-11; replacement in development",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ansi-b11-0",
+      "title": "ANSI B11.0 — safety of machinery",
+      "url": "https://www.b11standards.org/b11scopes",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-machine-safety"
+      ],
+      "use": "Power-driven machines not hand-portable, new, existing, modified or rebuilt, with controls and sensors: identify hazards, estimate and evaluate risk, reduce it through the life cycle. Deviations need a documented risk assessment. Paid.",
+      "edition": "ANSI B11.0-2023 (ANSI approved 2023-06-27)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ansi-b11-19",
+      "title": "ANSI B11.19 — risk reduction measures (guarding)",
+      "url": "https://www.b11standards.org/b11scopes",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-machine-safety"
+      ],
+      "use": "Performance requirements for risk reduction measures: inherently safe design, guards, safety control functions, protective devices, administrative controls; design, install, operate, maintain. Does not pick the measure for an application. Paid.",
+      "edition": "ANSI B11.19-2019 (R2024)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "osha-1910-212",
+      "title": "29 CFR 1910.212 — machine guarding",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.212",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-machine-safety"
+      ],
+      "use": "US workplace law: guard point of operation, nip points, rotating parts, chips and sparks; guards secured and not hazards themselves; anchor fixed machinery. Free.",
+      "edition": "Current regulation text (no edition)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "osha-1910-147",
+      "title": "29 CFR 1910.147 — lockout/tagout",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-machine-safety"
+      ],
+      "use": "US workplace law, lockout/tagout: written energy control procedures, training, periodic inspections; isolate, release stored energy and verify before servicing; lockout unless tagout is equivalent. Free.",
+      "edition": "Current regulation text; last amendment cited 2011-05-02",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "ansi-b151-1",
+      "title": "ANSI/PLASTICS B151.1 — injection molding machine safety (horizontal and vertical)",
+      "url": "https://access.plasticsindustry.org/plasticsindustry/PLASTICS/Item_Detail.aspx?iProductCode=AN151-1&Category=PUBLICATIO",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-machine-safety"
+      ],
+      "use": "Safety of injection molding machines for people working on or near them. The 2017 edition merged the horizontal (B151.1) and vertical (B151.29) standards; the mechanical jam bar became optional on horizontal machines built to it. Paid ($225; members less).",
+      "edition": "ANSI/PLASTICS B151.1-2017 (ANSI approved 2017-01-06). Perplexity reports a revision in draft review Sep-Oct 2026: not confirmed by the office's own search",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "astm-d4169",
+      "title": "ASTM D4169 — performance testing of shipping containers",
+      "url": "https://store.astm.org/d4169-23e01.html",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "b_roles": [
+        "b-packaging-shipping"
+      ],
+      "use": "Lab performance test for shipping containers and units: a sequence of distribution hazards (handling, vibration, compression and others) at representative levels on the same unopened packages. Not evaluated for hazardous materials. Paid.",
+      "edition": "ASTM D4169-23e1, active (last updated 2024-03-27)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "incoterms",
+      "title": "Incoterms 2020",
+      "url": "https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/",
+      "group": "business",
+      "roles": [
+        "project",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-purchasing"
+      ],
+      "use": "11 trade terms that split cost, risk and duties (delivery, carriage, export/import clearance, insurance) between seller and buyer. Rules paid; explanations free.",
+      "edition": "Incoterms 2020 (in force 2020-01-01), most recent per ICC",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "usitc-hts",
+      "title": "Harmonized Tariff Schedule",
+      "url": "https://www.usitc.gov/harmonized_tariff_information",
+      "group": "business",
+      "roles": [
+        "project",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-purchasing"
+      ],
+      "use": "US import tariff classifications and duty rates on the Harmonized System. Free.",
+      "edition": "HTS 2026 Revision 21, published 2026-10-09",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "government"
+    },
+    {
+      "id": "aiag-ppap",
+      "title": "PPAP manual",
+      "url": "https://www.aiag.org/training-and-resources/manuals/details/PPAP-4",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-mold-buying"
+      ],
+      "use": "Production part approval: show from a real production run at rate that the process makes parts meeting the design record and specifications, consistently. Paid.",
+      "edition": "4th edition (2nd printing), 2009-11",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "aiag-apqp",
+      "title": "AIAG APQP manual and Control Plan manual",
+      "url": "https://www.aiag.org/training-and-resources/manuals/details/APQP-3",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-quality-planning",
+        "b-manufacturing"
+      ],
+      "use": "APQP: launch planning, sourcing, change management, metrics, risk, gated management. Control Plan: building and using control plans, linked to APQP; adds a Safe Launch phase and guidance for highly automated lines. Paid.",
+      "edition": "APQP 3rd edition, 2024-03; Control Plan 1st edition, 2024-03 (now two separate manuals)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "aiag-vda-fmea",
+      "title": "AIAG-VDA FMEA handbook",
+      "url": "https://www.aiag.org/training-and-resources/manuals/details/FMEAAV-1",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-quality-planning"
+      ],
+      "use": "Harmonized AIAG and VDA FMEA method: design FMEA, process FMEA, and FMEA for monitoring and system response. Paid.",
+      "edition": "1st edition (2nd printing), 2022-08",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "aiag-msa",
+      "title": "Measurement Systems Analysis (MSA) manual",
+      "url": "https://www.aiag.org/training-and-resources/manuals/details/MSA-4",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-measurement",
+        "b-six-sigma"
+      ],
+      "use": "How to assess measurement systems (gauge studies) so the data supports decisions. Paid.",
+      "edition": "4th edition, 2010-06",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "aiag-spc",
+      "title": "Statistical Process Control (SPC) manual",
+      "url": "https://www.aiag.org/training-and-resources/manuals/details/SPCAV-1",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-six-sigma"
+      ],
+      "use": "Harmonized statistical process control for the automotive supply chain: approving, monitoring and controlling processes; supports production readiness, APQP, PPAP and control plans. Paid.",
+      "edition": "AIAG & VDA SPC Manual, 1st edition, available 2026-07-01 (replaces SPC 2nd edition)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "asq-ssbb-bok",
+      "title": "Six Sigma Black Belt and Green Belt bodies of knowledge",
+      "url": "https://www.asq.org/cert/six-sigma-black-belt",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-six-sigma"
+      ],
+      "use": "Black Belt and Green Belt exam topics and depth: Six Sigma principles, team leadership, DMAIC, tools, data-driven problem solving. Competency frameworks, not product standards. BoKs free; exams and handbooks paid.",
+      "edition": "2022 bodies of knowledge (per ASQ handbook pages)",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Low confidence: BoK version labels not read directly. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "nist-sematech",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods",
+      "url": "https://www.itl.nist.gov/div898/handbook/",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-measurement",
+        "b-six-sigma"
+      ],
+      "use": "Practical statistics for engineers: exploratory analysis, measurement and process characterization, modeling, improvement (DOE), monitoring (SPC), comparisons, reliability, with worked examples. Free.",
+      "edition": "Online handbook, released 2003-06; no edition",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "lei-lexicon",
+      "title": "Lean Lexicon and lean tools",
+      "url": "https://www.lean.org/store/book/lean-lexicon-6th-edition/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-six-sigma",
+        "b-manufacturing"
+      ],
+      "use": "Illustrated glossary of 207 lean terms (kanban, kaizen, standardized work, takt, pull, value stream mapping; new: hoshin kanri, daily management, lean product development). Book paid; online lexicon terms free.",
+      "edition": "Lean Lexicon 6th edition, 2026-04-15",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "as9102",
+      "title": "AS9102 — first article inspection",
+      "url": "https://www.sae.org/standards/as9102c-aerospace-series-first-article-inspection-requirements",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-measurement"
+      ],
+      "use": "Requirements for doing and documenting first article inspection (aerospace), alongside customer and legal requirements; rev C strengthens planning, evaluation and redoing FAI, aligned with 9100. Paid.",
+      "edition": "AS9102C, 2023-06-28, current",
+      "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
     }
   ],
   "researched_shortlists": {
