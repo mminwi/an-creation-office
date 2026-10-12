@@ -1,6 +1,6 @@
-SOP: The team. Role names, the team file, who tracks and who judges, and the first look. Revision 1 (draft, specialists branch) — October 12, 2026.
+SOP: The team. Role names, the team file, who tracks and who judges, and the first and second looks. Revision 2 (draft, specialists branch) — October 12, 2026. First look revised after its first test (tray, 2026-10-12).
 Index: https://ancreationoffice.com/sop.txt
-Read this when setting up the bots, when the inventor wants to add, merge, split or rename a bot, and when a project needs its first look.
+Read this when setting up the bots, when the inventor wants to add, merge, split or rename a bot, and when a project needs its first look or a second look at a gate.
 
 ROLE NAMES (every procedure)
 - A procedure never uses a personal name for a bot. It names the role: a small b, a dash, and what the role does, all lower case: b-project-manager, b-business-manager, b-analyst, b-mechanical, b-electrical, b-six-sigma.
@@ -27,19 +27,43 @@ Every job has a tracker and a judge.
 - When one bot covers both roles it does both, and still writes which role made each call ("b-electrical: needs a lab pre-scan before the design is frozen").
 - Business jobs (company, name, website, promotion) are tracked by b-business-manager.
 
-THE FIRST LOOK (draft, not yet tested)
-When a project description is finished, or a new kind of project comes in, b-analyst runs a first look. Six roles each read the same project description, separately, and say what their area needs. They can run side by side or one after another.
-1. b-project-manager: stages, dates, money, who decides; the size of the project.
+THE FIRST LOOK
+When a project description is finished (end of S0), or a new kind of project comes in, b-analyst runs a first look: each role reads the same project and says what its area needs.
+
+The roles
+1. b-project-manager: stages, dates, money, who decides; the size of the project; what drives the schedule.
 2. b-business-manager: company, patent and name, money, licensing or selling.
-3. b-mechanical: design, materials, fits and tolerances, design for manufacturing.
+3. b-mechanical: structure, loads, mechanisms, fits and tolerances, weight; metal parts.
 4. b-electrical: electronics, power and batteries, controls, wireless, EMI, electrical certifications.
-5. b-manufacturing: process (molding, machining, assembly), tooling, sourcing, cost.
-6. b-quality: quality planning, compliance and safety standards, testing.
-Each role writes one note in the run folder, first-look-<role>.md:
-- What applies in this area, with the answer from the project that pulled it in. "Nothing here" is a valid answer.
+5. b-plastics: plastic part design, resin choice (strength, heat, chemicals and disinfectants, food contact, flame rating), molding (warp, gates, cooling, wall and ribs), joining and sealing (welding, gaskets, overmolding), tooling and the molder's view. Runs whenever the product has, or will likely have, a plastic part. It owns everything plastic, so the other roles leave those items to it.
+6. b-manufacturing: processes other than molding (machining, sheet metal, electronics assembly, final assembly), prototype path, sourcing, cost, who makes it.
+7. b-quality: quality planning (DFMEA, control plan), compliance and safety standards, testing.
+A role with nothing to say writes "Nothing here" in one line. b-plastics is skipped only when the product has no plastic parts at all; say so in the merged note.
+
+Each role's note: first-look-<role>.md in the run folder
+- What applies in this area, with the answer from the project that pulled it in.
+- What it found that the project doesn't already have (on a project with masters, compare with them first).
 - What it would produce and in what order.
 - Which specialists to bring in (roster: specialists/roster.md on the specialists branch).
 - Where a licensed or hands-on person takes over, and what packet they get.
-- Questions, at most three, each with why it matters.
-Then b-project-manager merges the six notes into one: the roles this project needs, a proposed team (which roles can share one bot and which might want their own), the plan entries, and one short list of about three items. The inventor decides the team; the default stays one bot until they say otherwise.
+- At most one question, with why it matters. Prefer a proposed default to a question: write "Default: <what the office will assume>" and ask only what the inventor alone can answer.
+
+Run them separately
+Each role should look without seeing the others' notes. Where the tool can, run each role as its own session or agent and merge afterwards. Where it can't, run the roles one after another and write each note before starting the next; say which way it ran in DONE.txt.
+
+The merge (b-project-manager)
+first-look-merged.md:
+- Roles this project needs, and a proposed team (which roles can share one bot, which might want their own). The default stays one bot until the inventor says otherwise.
+- Specialists to bring in: now, at the next gate, later.
+- What was found that the project didn't have. One line per item. When two roles raised the same thing, keep one line and name both roles ("battery heat: b-electrical, b-quality").
+- Proposed changes to the masters: plan and stage lines, DFMEA rows (with proposed scores), ticket additions.
+- The short list, about three items, from active stages.
+- Questions: at most three in total, each placed on an existing or new ticket. Everything else becomes a stated default.
+
+What a look may write
+Notes and proposals only. A first or second look writes its run folder and nothing else: no change to plan.md, forms, queue or status. The proposals go into the masters through the next normal run, after the inventor's yes where a decision is involved (one line on the ticket: "The first look proposed these; OK to add them?").
+
+THE SECOND LOOK
+The same roles, notes and merge, on a project that is already past S0: at a stage gate, after a big scope change (version 1 decided, a new market, a new material), or when the inventor asks. It is mostly a gap check against the masters, so each note leads with what the project doesn't already have. Name the run folder YYMMDD-HHMM-second-look.
+
 The usual rules hold: never invent prices, results or limits; never write that an idea is new or patentable; propose, and the inventor or a professional confirms.

@@ -52,7 +52,7 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`version.txt`](guide/version.txt) | Version check, first in every conversation | [live](https://ancreationoffice.com/version.txt) |
 | [`business-manager.txt`](guide/business-manager.txt) | b-business-manager, the business manager (company, website, profiles, promotion) | [live](https://ancreationoffice.com/business-manager.txt) |
 | [`sop-office.txt`](guide/sop-office.txt) | Set up b-project-manager and b-analyst. By default one bot covers every role; split them if you like | [live](https://ancreationoffice.com/sop-office.txt) |
-| [`sop-team.txt`](guide/sop-team.txt) | The team: role names (b-...), the team file where you name and split bots, who tracks and who judges, the first look | [live](https://ancreationoffice.com/sop-team.txt) |
+| [`sop-team.txt`](guide/sop-team.txt) | The team: role names (b-...), the team file where you name and split bots, who tracks and who judges, the first and second looks | [live](https://ancreationoffice.com/sop-team.txt) |
 | [`github-setup.txt`](guide/github-setup.txt) | GitHub and b-analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting | [live](https://ancreationoffice.com/github-setup.txt) |
 | [`sop-company.txt`](guide/sop-company.txt) | K1. b-business-manager: the company. Name checks, forming an LLC, tax ID, bank account, insurance, licenses, yearly upkeep | [live](https://ancreationoffice.com/sop-company.txt) |
 | [`sop-website.txt`](guide/sop-website.txt) | K2. b-business-manager: domain, website, business email, Google Search Console and Bing, the weekly search check | [live](https://ancreationoffice.com/sop-website.txt) |

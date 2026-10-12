@@ -84,6 +84,10 @@ The tier sets how the specialist is promoted. Deep: "built from Mike's years in 
 | 31 | Manufacturing Engineering (b-manufacturing) | Process flow, work instructions, line balance, layout | Deep | — | Office forms |
 | 32 | Packaging and Shipping (b-packaging-shipping) | Package design, drop tests, carrier rules | Documented | Test lab | ISTA, UN 38.3, carrier rules |
 
+## First-look roles
+
+Seven broad roles do the first and second looks (guide/sop-team.txt): b-project-manager, b-business-manager, b-mechanical, b-electrical, b-plastics, b-manufacturing, b-quality. Each one pulls in the specialists below for its area. b-plastics covers everything plastic and pulls in 8, 10, 12, 13, 14, 15, 16; it was added after the tray test (2026-10-12), where plastics knowledge was split across three roles.
+
 ## How the front desk teams them up
 
 - One intake. The answers pick the specialists, the same way screening questions already pull in standards (screening-questions.csv). Example: "the mold runs hot and the cycle is long" brings in 15, 13 and 14.

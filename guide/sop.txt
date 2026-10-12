@@ -14,7 +14,7 @@ FIRST
 0. Version check, first in every conversation: https://ancreationoffice.com/version.txt . The short profile text saved in each bot: https://ancreationoffice.com/profile.txt
 0. b-business-manager, the business manager (company, website, profiles, promotion): https://ancreationoffice.com/business-manager.txt
 0. Set up b-project-manager and b-analyst. By default one bot covers every role; the inventor may split roles across bots (https://ancreationoffice.com/sop-team.txt). https://ancreationoffice.com/sop-office.txt
-0. The team: role names (b-project-manager, b-electrical ...), the team file where the inventor names and splits bots, who tracks and who judges, and the first look. https://ancreationoffice.com/sop-team.txt
+0. The team: role names (b-project-manager, b-electrical ...), the team file where the inventor names and splits bots, who tracks and who judges, and the first and second looks (seven roles, b-plastics included). https://ancreationoffice.com/sop-team.txt
 0. GitHub and b-analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
 FOR b-business-manager (the business manager)
