@@ -102,8 +102,9 @@ def plant(m):
            'all_loads_tons': round(tons + hyd + thr, 1),
            'all_loads_each_of_3_units_tons': round((tons + hyd + thr) / UNITS, 1),
            'typical_load_tons_2_of_3': round((tons + hyd + thr) * TYPICAL, 1),
-           'tower_tons_1.25_to_1.5x': [round((tons + hyd + thr) * TOWER_X[0], 1), round((tons + hyd + thr) * TOWER_X[1], 1)],
-           'tower_note': 'Mike: towers suit dry climates; near-100% humidity, consider air-cooled chillers sized for local temperatures. Say which ton (chiller or tower) the tower maker rates in.',
+           'tower_heat_rejection_btu_hr': [round((tons + hyd + thr) * 12000 * x) for x in TOWER_X],
+           'tower_nominal_tons_15000': [round((tons + hyd + thr) * 12000 * x / 15000, 1) for x in TOWER_X],
+           'tower_note': 'Mike: 1.25-1.5x chiller capacity in chiller tons = 1.0-1.2 nominal tower tons (15,000 BTU/hr, compressor heat already included); do not add 1.25 again. Towers suit dry climates; near-100% humidity, consider air-cooled chillers. Final size from the chiller condenser rejection at site wet-bulb.',
            'chiller_loop_gpm_at_10F': round((tons + hyd + thr) * 12000 / (500 * CHILLER_DT)),
            'note_loads': 'Mike: hydraulics on chilled water, so size the chillers on all_loads. Hydraulic rule uses nameplate hp unless running hp is given.'}
     if missing: out['missing_heat_data'] = missing; out['worst_case_incomplete'] = 'totals leave out the presses listed in missing_heat_data'
