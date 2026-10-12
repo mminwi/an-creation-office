@@ -26,5 +26,4 @@ IF YOU GET STUCK
 - Tell the bot exactly what you see on the screen; it has a troubleshooting list.
 - Nothing is lost: GitHub keeps every version.
 
-LATER, IF YOU WANT
-You can add other AIs (Claude, ChatGPT's Codex, Cursor) to help with the work. The bot can show you how. You don't need them.
+Already use Claude, ChatGPT or Cursor and want to use them instead? That works too: https://ancreationoffice.com/using-other-ais.txt . You don't need them.

@@ -1,0 +1,17 @@
+AN Creation: using Claude, ChatGPT (Codex), Cursor or another AI. Revision 1 (draft, specialists branch) — October 12, 2026.
+The office is built for one Grok account and a free GitHub account (https://ancreationoffice.com/start-on-your-phone.txt). That is the path we design for and test. If you already use another AI and are comfortable setting it up, it works too.
+
+WHY IT WORKS
+Everything lives in your private GitHub repository (an-creation) as plain files: the tickets, the forms, the record, and AGENTS.md at the top, which tells any AI what the office is and how to work a ticket. Any AI agent that can open the repository can read the same files, ask the same questions and write the same answers. It may not be as smooth as the Grok bot; it still works.
+
+HOW
+1. Set up the office the normal way first (start-on-your-phone.txt), so the repository exists with AGENTS.md in it.
+2. Connect your other AI to GitHub and allow it the an-creation repository. Use its cloud version, not a desktop install:
+   - Claude: Claude Code on the web (claude.ai/code), or "@claude" in a GitHub issue.
+   - ChatGPT: Codex in the cloud (chatgpt.com/codex; its environment is set up once from a computer's browser).
+   - Cursor: Cursor's cloud agents (cursor.com).
+   Step by step, with troubleshooting: https://ancreationoffice.com/github-setup.txt , PART 3.
+3. Give it a ticket: "Work on ticket T-008 in the an-creation repository." It does the work and saves it to GitHub; your Grok bot sees the result next time you talk to it.
+4. To have it be the main analyst instead of Grok Build, tell your bot; it records the choice in your project.
+
+Any other AI agent that can open a GitHub repository can do the same: point it at an-creation and give it the ticket.
