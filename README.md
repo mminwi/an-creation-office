@@ -151,6 +151,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`template-action-log.csv`](guide/template-action-log.csv) | Worksheet / table (CSV): ID, Opened, Action, Who... | [live](https://ancreationoffice.com/template-action-log.csv) |
 | [`template-team.csv`](guide/template-team.csv) | The team file: your bot names and which roles each one covers | [live](https://ancreationoffice.com/template-team.csv) |
 | [`bot-names.txt`](guide/bot-names.txt) | Names to choose from for your bots | [live](https://ancreationoffice.com/bot-names.txt) |
+| [`team-builder.html`](guide/team-builder.html) | Team builder: pick a starting team and specialists, name your bots, get the team file and the message to paste for each bot | [live](https://ancreationoffice.com/team-builder.html) |
 | [`test-matrix.csv`](guide/test-matrix.csv) | Worksheet / table (CSV): Project, Plan ID / revision, Test ID, Requirement / CTQ / risk IDs... | [live](https://ancreationoffice.com/test-matrix.csv) |
 | [`test-plan-template.txt`](guide/test-plan-template.txt) | AN CREATION — TEST PLAN TEMPLATE — REV 1 | [live](https://ancreationoffice.com/test-plan-template.txt) |
 | [`test-planning.json`](guide/test-planning.json) | Data behind the test planning page (JSON) | [live](https://ancreationoffice.com/test-planning.json) |

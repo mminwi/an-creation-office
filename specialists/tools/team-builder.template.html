@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Build Your Team</title>
+  <meta name="description" content="Pick the specialists you want in your AN Creation office and name your bots. One name for everything gives you one bot; different names give you separate bots.">
+  <link rel="icon" href="../assets/an-chevron.png">
+  <link rel="stylesheet" href="guide.css">
+  <link rel="canonical" href="https://ancreationoffice.com/team-builder.html">
+  <style>
+    .tb-packages{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin:0}
+    .tb-package{display:block;text-align:left;width:100%;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:8px;cursor:pointer;color:var(--ink);font:inherit}
+    .tb-package:hover{border-color:#8ca28f}
+    .tb-package[aria-pressed=true]{border-color:#315f5c;box-shadow:0 0 0 2px #315f5c inset;background:#f4f8f5}
+    .tb-package strong{display:block;font-size:15px;line-height:1.35}
+    .tb-package span{display:block;font-size:12px;line-height:1.55;color:#5e6b65;margin-top:5px}
+    .tb-main{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:end}
+    .tb-field label{display:block;font-size:12px;font-weight:650;margin-bottom:6px;color:#46564e}
+    .tb-input{width:100%;min-width:0;height:44px;border:1px solid #c8cfc7;border-radius:5px;background:#f9faf7;color:var(--ink);font-size:15px;padding:8px 12px}
+    .tb-input:invalid,.tb-input.tb-missing{border-color:#b5653b;background:#fdf3ec}
+    .tb-quick{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .tb-btn{min-height:44px;padding:9px 14px;border:1px solid #c8cfc7;border-radius:5px;background:#f5f6f2;color:#35463d;font-size:13px;font-weight:600;cursor:pointer}
+    .tb-btn:hover{border-color:#8ca28f;background:#fff}
+    .tb-group{margin:22px 0 0}
+    .tb-group>h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5c6b62;margin:0 0 8px}
+    .tb-role{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(120px,170px);gap:10px 14px;align-items:center;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:8px;margin-bottom:8px}
+    .tb-role.tb-off{background:#f7f7f4}
+    .tb-role.tb-off .tb-role-text{opacity:.6}
+    .tb-role input[type=checkbox]{width:22px;height:22px;accent-color:#315f5c;margin:0}
+    .tb-role-text strong{display:block;font-size:14px;line-height:1.4}
+    .tb-role-text span{display:block;font-size:12px;line-height:1.5;color:#5e6b65}
+    .tb-role .tb-input{height:40px;font-size:14px}
+    .tb-role.tb-off .tb-input{visibility:hidden}
+    .tb-required{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#315f5c}
+    .tb-summary{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+    .tb-summary li{margin:0;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:8px;font-size:14px}
+    .tb-summary b{font-size:15px}
+    .tb-summary span{display:block;font-size:12px;color:#5e6b65;line-height:1.55}
+    .tb-warn{padding:14px 16px;border:1px solid #ccbf9e;background:#f6efdf;border-radius:8px;font-size:14px;margin:12px 0 0}
+    .tb-out h3{margin:26px 0 6px}
+    .tb-out .paste{margin-top:10px}
+    .tb-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    .tb-actions .copy{margin-top:16px}
+    @media(max-width:620px){
+      .tb-main{grid-template-columns:minmax(0,1fr)}
+      .tb-role{grid-template-columns:auto minmax(0,1fr)}
+      .tb-role .tb-input{grid-column:2}
+      .tb-role.tb-off .tb-input{display:none}
+    }
+  </style>
+</head>
+<body class="page-start">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="workspace">
+  <main id="main" class="wrap">
+    <header class="page-intro">
+      <p class="kicker">Build your team</p>
+      <h1>Pick your specialists. Name your bots.</h1>
+      <p class="lede">Choose a starting team, add or remove specialists, and give each one a bot name. Use one name for everything and you get one bot that does it all, which is the easiest way to start. Use different names and you get separate bots, each with its own jobs.</p>
+    </header>
+    <div class="reading-layout"><div class="article-body"><div class="start-steps">
+
+    <section class="start-step" aria-labelledby="s1">
+      <h2 id="s1"><span class="step-number">1.</span> Start from a team</h2>
+      <p>Pick the one closest to what you do. You can change everything in the next step.</p>
+      <div class="tb-packages" id="packages" role="group" aria-label="Starting teams"></div>
+    </section>
+
+    <section class="start-step" aria-labelledby="s2">
+      <h2 id="s2"><span class="step-number">2.</span> Name your main bot</h2>
+      <p>This is the bot you talk to. It is always your project manager and keeps track of everything. Any name works; there are ideas in the box, or see <a href="bot-names.txt">the names list</a>.</p>
+      <div class="tb-main">
+        <div class="tb-field">
+          <label for="mainName">Main bot name</label>
+          <input class="tb-input" id="mainName" list="botNames" autocomplete="off" placeholder="For example, Ellis" maxlength="40">
+        </div>
+      </div>
+      <div class="tb-quick">
+        <button type="button" class="tb-btn" id="allOne">One bot does it all (recommended)</button>
+        <button type="button" class="tb-btn" id="eachOwn">Give each specialist its own bot</button>
+      </div>
+    </section>
+
+    <section class="start-step" aria-labelledby="s3">
+      <h2 id="s3"><span class="step-number">3.</span> Choose specialists and who does them</h2>
+      <p>Tick the specialists you want. Next to each, the name of the bot that does that job. The same name on several lines means one bot does all of those.</p>
+      <div id="roles"></div>
+    </section>
+
+    <section class="start-step" aria-labelledby="s4">
+      <h2 id="s4"><span class="step-number">4.</span> Your team</h2>
+      <ul class="tb-summary" id="summary" aria-live="polite"></ul>
+      <div id="warnings"></div>
+    </section>
+
+    <section class="start-step tb-out" aria-labelledby="s5">
+      <h2 id="s5"><span class="step-number">5.</span> Set it up</h2>
+      <p>Set up your main bot first: start a new Grok chat and paste its message. It walks you through the rest, makes your private project folder, and saves your team file. Set up any other bots after that, each in its own new chat. New to this? Read <a href="start-on-your-phone.txt">Start here, on your phone</a> first.</p>
+      <div id="blocks"></div>
+      <h3>Your team file</h3>
+      <p>Your main bot saves this as <code>AN-Creation/team.csv</code>. It is here so you can keep a copy.</p>
+      <div class="paste"><p>team.csv</p><pre id="csv"></pre></div>
+      <div class="tb-actions">
+        <button type="button" class="copy" data-copy="csv">Copy team file</button>
+        <button type="button" class="tb-btn" id="download" style="margin-top:16px">Download team.csv</button>
+      </div>
+      <span class="copy-status" id="csvStatus" role="status"></span>
+    </section>
+
+    </div></div></div>
+  </main>
+  </div>
+  <datalist id="botNames"></datalist>
+
+<script>
+(function () {
+  var DATA = /*DATA*/null;
+  var SITE = 'https://ancreationoffice.com/';
+  var PM = 'b-project-manager';
+  var roleById = {};
+  DATA.roles.forEach(function (r) { roleById[r.id] = r; });
+
+  // state: which roles are on, and the bot name for each
+  var state = { pkg: 'one', on: {}, name: {} };
+  var KEY = 'an-team-builder-v1';
+  try { var saved = JSON.parse(localStorage.getItem(KEY) || 'null'); if (saved && saved.on) state = saved; } catch (e) {}
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+
+  function el(tag, attrs, text) {
+    var n = document.createElement(tag);
+    for (var k in (attrs || {})) n.setAttribute(k, attrs[k]);
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function clean(s) { return (s || '').replace(/\s+/g, ' ').trim(); }
+  function key(s) { return clean(s).toLowerCase(); }
+
+  var dl = document.getElementById('botNames');
+  DATA.names.forEach(function (n) { dl.appendChild(el('option', { value: n })); });
+
+  var mainInput = document.getElementById('mainName');
+
+  // 1. packages
+  var pk = document.getElementById('packages');
+  DATA.packages.forEach(function (p) {
+    var b = el('button', { type: 'button', 'class': 'tb-package', 'data-id': p.id, 'aria-pressed': 'false' });
+    b.appendChild(el('strong', null, p.name));
+    b.appendChild(el('span', null, p.blurb));
+    b.addEventListener('click', function () { choosePackage(p.id); });
+    pk.appendChild(b);
+  });
+  function choosePackage(id) {
+    var p = DATA.packages.filter(function (x) { return x.id === id; })[0];
+    state.pkg = id; state.on = {};
+    p.roles.forEach(function (r) { state.on[r] = true; });
+    var m = clean(mainInput.value);
+    p.roles.forEach(function (r) { if (!state.name[r]) state.name[r] = m; });
+    render();
+  }
+
+  // 3. roles, grouped
+  var rolesBox = document.getElementById('roles');
+  var groups = [];
+  DATA.roles.forEach(function (r) { if (groups.indexOf(r.group) < 0) groups.push(r.group); });
+  var inputs = {}, boxes = {}, rowsEl = {};
+  groups.forEach(function (g) {
+    var sec = el('div', { 'class': 'tb-group' });
+    sec.appendChild(el('h3', null, g));
+    DATA.roles.filter(function (r) { return r.group === g; }).forEach(function (r) {
+      var row = el('div', { 'class': 'tb-role' });
+      var id = 'cb-' + r.id;
+      var cb = el('input', { type: 'checkbox', id: id });
+      if (r.id === PM) { cb.checked = true; cb.disabled = true; }
+      var txt = el('label', { 'class': 'tb-role-text', 'for': id });
+      txt.appendChild(el('strong', null, r.name));
+      txt.appendChild(el('span', null, r.does));
+      if (r.id === PM) txt.appendChild(el('span', { 'class': 'tb-required' }, 'Always included'));
+      var inp = el('input', { 'class': 'tb-input', list: 'botNames', autocomplete: 'off', maxlength: '40', 'aria-label': 'Bot name for ' + r.name, placeholder: 'Bot name' });
+      cb.addEventListener('change', function () {
+        state.on[r.id] = cb.checked;
+        if (cb.checked && !clean(state.name[r.id])) state.name[r.id] = clean(mainInput.value);
+        state.pkg = null; render();
+      });
+      inp.addEventListener('input', function () {
+        state.name[r.id] = inp.value;
+        if (r.id === PM) mainInput.value = inp.value;
+        renderOutput(); save();
+      });
+      row.appendChild(cb); row.appendChild(txt); row.appendChild(inp);
+      sec.appendChild(row);
+      inputs[r.id] = inp; boxes[r.id] = cb; rowsEl[r.id] = row;
+    });
+    rolesBox.appendChild(sec);
+  });
+
+  // 2. main name and quick buttons
+  mainInput.addEventListener('input', function () {
+    var old = clean(state.name[PM]);
+    var now = mainInput.value;
+    DATA.roles.forEach(function (r) {
+      if (state.on[r.id] && (key(state.name[r.id]) === key(old) || !clean(state.name[r.id]))) state.name[r.id] = now;
+    });
+    state.name[PM] = now; render();
+  });
+  document.getElementById('allOne').addEventListener('click', function () {
+    var m = clean(mainInput.value) || pickFree([]);
+    mainInput.value = m;
+    DATA.roles.forEach(function (r) { if (state.on[r.id]) state.name[r.id] = m; });
+    render();
+  });
+  document.getElementById('eachOwn').addEventListener('click', function () {
+    var m = clean(mainInput.value) || pickFree([]);
+    mainInput.value = m; state.name[PM] = m;
+    var used = [key(m)];
+    DATA.roles.forEach(function (r) {
+      if (r.id === PM || !state.on[r.id]) return;
+      var n = pickFree(used); used.push(key(n)); state.name[r.id] = n;
+    });
+    render();
+  });
+  function pickFree(used) {
+    for (var i = 0; i < DATA.names.length; i++) if (used.indexOf(key(DATA.names[i])) < 0) return DATA.names[i];
+    return 'Bot ' + (used.length + 1);
+  }
+
+  // build the team from state
+  function team() {
+    var bots = {}, order = [];
+    DATA.roles.forEach(function (r) {
+      if (!state.on[r.id] && r.id !== PM) return;
+      var n = clean(state.name[r.id]);
+      if (!n) return;
+      var k = key(n);
+      if (!bots[k]) { bots[k] = { name: n, roles: [] }; order.push(k); }
+      bots[k].roles.push(r);
+    });
+    var pmKey = key(state.name[PM]);
+    order.sort(function (a, b) { return (a === pmKey ? -1 : 0) - (b === pmKey ? -1 : 0); });
+    return { list: order.map(function (k) { return bots[k]; }), pm: bots[pmKey] };
+  }
+
+  function csvCell(s) { return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; }
+  function makeCsv(t) {
+    var pmName = t.pm ? t.pm.name : '';
+    var lines = ['name,covers,reports_to,platform,notes'];
+    t.list.forEach(function (b) {
+      var isPm = t.pm && b === t.pm;
+      lines.push([b.name, b.roles.map(function (r) { return r.id; }).join(';'), isPm ? '' : pmName, 'Grok',
+        isPm ? 'Main bot; the one you talk to. Tracks every job.' : 'Specialist bot; ' + b.roles.map(function (r) { return r.name; }).join(', ')].map(csvCell).join(','));
+    });
+    if (pmName) lines.push(['Grok Build', 'b-analyst', pmName, "Grok Build in " + pmName + "'s cloud terminal", 'Does the heavy work on the repository; run by the main bot.'].map(csvCell).join(','));
+    return lines.join('\n');
+  }
+
+  function procLinks(b) {
+    var seen = {}, out = [];
+    b.roles.forEach(function (r) { r.procs.forEach(function (p) { if (!seen[p]) { seen[p] = 1; out.push(SITE + p); } }); });
+    return out;
+  }
+
+  function pmBlock(b, csv, others) {
+    var roles = b.roles.map(function (r) { return r.id; }).join(', ');
+    var lines = [
+      'You are ' + b.name + ', my bot for AN Creation. Your roles: ' + roles + '.',
+      'Read and follow your standing instructions:',
+      SITE + 'standing.txt',
+      '(same file: https://raw.githubusercontent.com/mminwi/an-creation-office/main/guide/standing.txt)',
+      'The team rules: ' + SITE + 'sop-team.txt',
+      'If you cannot open a link, ask me to paste the text.',
+      'Help me set up first, one step at a time:',
+      SITE + 'sop-office.txt',
+      'When my project folder exists, save this as AN-Creation/team.csv:',
+      csv
+    ];
+    if (others.length) lines.push('The other bots (' + others.join(', ') + ') get set up after you, each in its own chat. Jobs for their roles go in their hand-off files (sop-team.txt).');
+    var specialist = b.roles.filter(function (r) { return r.id !== PM; });
+    if (specialist.length) {
+      lines.push('For your specialist roles, read the procedures when that work comes up:');
+      procLinks({ roles: specialist }).forEach(function (u) { lines.push(u); });
+    }
+    lines.push('Then ask me to tell you about my project.', 'One question at a time.');
+    return lines.join('\n');
+  }
+
+  function specBlock(b, pmName) {
+    var lines = [
+      'You are ' + b.name + ', a specialist bot in my AN Creation office.',
+      'Your roles: ' + b.roles.map(function (r) { return r.id + ' (' + r.name + ')'; }).join('; ') + '.',
+      pmName + ' is my main bot and project manager; it tracks every job and you report your results to it through the files.',
+      'How the office works: ' + SITE + 'standing.txt',
+      'The team rules: ' + SITE + 'sop-team.txt',
+      'Your procedures:'
+    ];
+    procLinks(b).forEach(function (u) { lines.push(u); });
+    lines.push(
+      'Use my private GitHub repository an-creation, the same one ' + pmName + ' set up. At the start of every conversation read AN-Creation/team.csv and the hand-off files for your roles in AN-Creation/handoffs/.',
+      'Do only your roles. Anything else goes in the hand-off file of the bot that covers it.',
+      'If you cannot open a link, ask me to paste the text.',
+      'One question at a time.'
+    );
+    return lines.join('\n');
+  }
+
+  function render() {
+    Array.prototype.forEach.call(pk.children, function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-id') === state.pkg)); });
+    if (!mainInput.value && state.name[PM]) mainInput.value = state.name[PM];
+    DATA.roles.forEach(function (r) {
+      var on = r.id === PM || !!state.on[r.id];
+      boxes[r.id].checked = on;
+      rowsEl[r.id].classList.toggle('tb-off', !on);
+      if (document.activeElement !== inputs[r.id]) inputs[r.id].value = state.name[r.id] || '';
+      inputs[r.id].classList.toggle('tb-missing', on && !clean(state.name[r.id]));
+    });
+    renderOutput(); save();
+  }
+
+  var blocksBox = document.getElementById('blocks');
+  var csvBox = document.getElementById('csv');
+  function renderOutput() {
+    var t = team();
+    var sum = document.getElementById('summary'); sum.textContent = '';
+    var warn = document.getElementById('warnings'); warn.textContent = '';
+    var missing = DATA.roles.filter(function (r) { return (r.id === PM || state.on[r.id]) && !clean(state.name[r.id]); });
+    if (!t.pm) {
+      sum.appendChild(el('li', null, 'Give your main bot a name in step 2 to see your team.'));
+    } else {
+      t.list.forEach(function (b) {
+        var li = el('li');
+        li.appendChild(el('b', null, b.name + (b === t.pm ? ' (main bot)' : '')));
+        li.appendChild(el('span', null, b.roles.map(function (r) { return r.name; }).join(', ')));
+        sum.appendChild(li);
+      });
+      var n = t.list.length;
+      sum.appendChild(el('li', null, n === 1 ? 'One bot does everything. You talk to ' + t.pm.name + ' and nothing else.' : n + ' bots. You talk mostly to ' + t.pm.name + '; the others handle their own jobs and work in the same project folder.'));
+    }
+    if (missing.length) warn.appendChild(el('p', { 'class': 'tb-warn' }, 'Still needs a bot name: ' + missing.map(function (r) { return r.name; }).join(', ') + '.'));
+
+    var csv = t.pm ? makeCsv(t) : '';
+    csvBox.textContent = csv || 'Name your main bot first.';
+    blocksBox.textContent = '';
+    if (!t.pm) return;
+    var others = t.list.filter(function (b) { return b !== t.pm; }).map(function (b) { return b.name; });
+    t.list.forEach(function (b, i) {
+      var isPm = b === t.pm;
+      var h = el('h3', null, (isPm ? 'First: ' : 'Then: ') + b.name + (isPm ? ', your main bot' : ''));
+      var box = el('div', { 'class': 'paste' });
+      box.appendChild(el('p', null, 'Paste into a new Grok chat'));
+      var pre = el('pre', { id: 'block-' + i });
+      pre.textContent = isPm ? pmBlock(b, csv, others) : specBlock(b, t.pm.name);
+      box.appendChild(pre);
+      var btn = el('button', { type: 'button', 'class': 'copy', 'data-copy': 'block-' + i }, 'Copy message for ' + b.name);
+      var st = el('span', { 'class': 'copy-status', role: 'status', id: 'st-block-' + i });
+      box.appendChild(btn); box.appendChild(st);
+      blocksBox.appendChild(h); blocksBox.appendChild(box);
+    });
+  }
+
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest && e.target.closest('[data-copy]');
+    if (!b) return;
+    var id = b.getAttribute('data-copy');
+    var text = document.getElementById(id).textContent;
+    var status = document.getElementById(id === 'csv' ? 'csvStatus' : 'st-' + id);
+    function done(ok) { if (status) status.textContent = ok ? 'Copied.' : 'Select the text above and copy it.'; }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+    else done(false);
+  });
+  document.getElementById('download').addEventListener('click', function () {
+    var t = team(); if (!t.pm) return;
+    var a = el('a', { href: URL.createObjectURL(new Blob([makeCsv(t) + '\n'], { type: 'text/csv' })), download: 'team.csv' });
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+
+  if (!state.on || !Object.keys(state.on).length) choosePackage('one'); else render();
+})();
+</script>
+</body>
+</html>

@@ -8,7 +8,7 @@ ROLE NAMES (every procedure)
 - The inventor names their own bots, in the team file. Name ideas: https://ancreationoffice.com/bot-names.txt A bot talks under the name the inventor gave it and reads every procedure by its b-names. Renaming a bot changes one cell in the team file and nothing else.
 
 THE TEAM FILE: AN-Creation/team.csv
-Template: https://ancreationoffice.com/template-team.csv
+Template: https://ancreationoffice.com/template-team.csv . The team builder page writes it for you: https://ancreationoffice.com/team-builder.html
 One row per bot the inventor runs. Columns: name (the inventor's choice), covers (the b-roles this bot does, separated by semicolons), reports_to (the bot it hands its results to; blank for the one the inventor mainly talks to), platform (where it runs), notes.
 - One bot can cover every role. That is the default, and the right choice for most people: one conversation, one bot, all the work.
 - Or the roles can be split across several bots: a project bot and a business bot, or a bot per specialty. Every bot works in the same repository and the same files, so splitting never scatters the project.
