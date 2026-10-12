@@ -122,7 +122,7 @@
   DATA.roles.forEach(function (r) { roleById[r.id] = r; });
 
   // state: which roles are on, and the bot name for each
-  var state = { pkg: 'one', on: {}, name: {} };
+  var state = { pkg: 'inventor', on: {}, name: {} };
   var KEY = 'an-team-builder-v1';
   try { var saved = JSON.parse(localStorage.getItem(KEY) || 'null'); if (saved && saved.on) state = saved; } catch (e) {}
   function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
@@ -372,7 +372,7 @@
     document.body.appendChild(a); a.click(); a.remove();
   });
 
-  if (!state.on || !Object.keys(state.on).length) choosePackage('one'); else render();
+  if (!state.on || !Object.keys(state.on).length) choosePackage('inventor'); else render();
 })();
 </script>
 </body>
