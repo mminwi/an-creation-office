@@ -1,0 +1,34 @@
+SOP: Funding a project (b-funding). Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Source: the programs' own pages and published guidance (below, read through search 2026-10-12). Tier: documented; an accountant and an attorney advise before money is taken. The office never applies, files, signs or contacts a funder.
+Read this when the project needs money it doesn't have, before a big spend (tooling, certification, first inventory), or when someone offers to invest.
+
+1. HOW MUCH, FOR WHAT, AND WHEN
+- List the next spends from the plan and the cost tracker: prototype, patent, certification and testing, tooling, first inventory. Each with an amount (quote or "not set") and the stage it belongs to.
+- Smallest next step first: often the market check and a cheap prototype need almost nothing.
+
+2. THE OPTIONS, BY FIT
+- Your own money and early sales: keeps control; pre-orders show demand.
+- Licensing: the licensee pays to make and sell it (sop-licensing.txt); often the least money needed.
+- Grants and SBIR/STTR: federal research money for small for-profit companies developing technology. SBIR rules: a small business (500 employees or fewer including affiliates), mostly owned by US citizens or permanent residents (rules on investor ownership differ by agency), and the principal investigator employed by the company (NASA: at least 50%). Award sizes and topics change with each agency's solicitation; read the current one. Good fit for technical projects with research risk; not for a finished consumer product.
+- Loans: SBA programs and local lenders; check sba.gov for current amounts and terms (the office does not quote loan limits from memory).
+- Rewards crowdfunding (Kickstarter and similar): pre-sells the product; needs a working prototype, a cost and delivery plan, and the patent decision first (it is a public disclosure).
+- Equity crowdfunding (SEC Regulation Crowdfunding): selling small stakes to the public through a registered platform; the SEC's page gives a limit of $5 million in 12 months (checked through search 2026-10-12; confirm the current figure). Disclosure and filing duties apply.
+- Angel investors: individuals or groups investing for a share, usually once there is evidence (customers, a prototype, a team). They own part of the company.
+
+3. WHAT EACH ASKS FOR (prepare from the files)
+- Grants and SBIR: the topic it answers, technical objectives, the team, the budget, the commercial potential.
+- Lenders: the plan, financial projections, collateral, personal guarantee.
+- Investors and equity crowdfunding: the problem, the market evidence, the product, the business model, the team, the money needed and what it buys.
+- Office: the funding worksheet (forms-catalog.csv) is filled from what the project already knows; unknowns become questions.
+
+4. WATCH-OUTS
+- Equity means sharing ownership and decisions; read every term with an attorney.
+- Public campaigns are public disclosures: patent decision first.
+- Invention promotion companies that charge up front to fund or market an idea: FTC and USPTO warnings (library).
+
+SOURCES (library)
+sheet-funding, sbir, sbir-eligibility, grants-search, sba-grants, sba-lender, sec-reg-cf, sec-ready, sec-early-investors, angel-groups, kickstarter-handbook, score-financial-projections, score-startup-budget, ftc-invention-marketing, uspto-scam-prevention.
+
+HANDS OFF
+Accountant (tax and structure), attorney (securities, investment terms, loan documents), the funder's own program staff (the inventor contacts them).

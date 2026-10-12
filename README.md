@@ -65,6 +65,9 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`sop-six-sigma.txt`](guide/sop-six-sigma.txt) | Lean Six Sigma (b-six-sigma): the right kind of project, the charter everyone agrees to, clean data, statistics with assumptions shown, controls before closing, one page on top | [live](https://ancreationoffice.com/sop-six-sigma.txt) |
 | [`template-a3.txt`](guide/template-a3.txt) | One-page project summary (A3), four sections | [live](https://ancreationoffice.com/template-a3.txt) |
 | [`toolbox-improvement.txt`](guide/toolbox-improvement.txt) | The improvement toolbox: Lean, 5S, Six Sigma and TPS tools by what you need to do | [live](https://ancreationoffice.com/toolbox-improvement.txt) |
+| [`sop-market-check.txt`](guide/sop-market-check.txt) | Market check (b-market-check): who would buy it, asked without disclosing the idea | [live](https://ancreationoffice.com/sop-market-check.txt) |
+| [`sop-licensing.txt`](guide/sop-licensing.txt) | Licensing (b-licensing): sell sheet, licensees, the approach, the deal with an attorney | [live](https://ancreationoffice.com/sop-licensing.txt) |
+| [`sop-funding.txt`](guide/sop-funding.txt) | Funding (b-funding): the options by fit, what each asks for, watch-outs | [live](https://ancreationoffice.com/sop-funding.txt) |
 | [`sop-plastic-part-design.txt`](guide/sop-plastic-part-design.txt) | Plastic part design (b-plastic-part-design): from the resin makers' design guides | [live](https://ancreationoffice.com/sop-plastic-part-design.txt) |
 | [`sop-tolerance-stack.txt`](guide/sop-tolerance-stack.txt) | Tolerance stacks and print review (b-tolerance-gdt): worst case, RSS, Monte Carlo | [live](https://ancreationoffice.com/sop-tolerance-stack.txt) |
 | [`sop-material-selection.txt`](guide/sop-material-selection.txt) | Plastic material selection (b-plastic-materials): chemical compatibility first | [live](https://ancreationoffice.com/sop-material-selection.txt) |

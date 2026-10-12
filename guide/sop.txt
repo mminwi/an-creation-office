@@ -24,6 +24,9 @@ FIRST
 0. Specialist procedures (specialists branch): machine safety, b-machine-safety. https://ancreationoffice.com/sop-machine-safety.txt
 0. Specialist procedures (specialists branch): Lean Six Sigma projects, b-six-sigma. https://ancreationoffice.com/sop-six-sigma.txt
 0. The improvement toolbox: Lean, 5S, Six Sigma and TPS tools, picked by the problem. https://ancreationoffice.com/toolbox-improvement.txt
+0. Specialist procedures (specialists branch, from published sources): Market check (b-market-check): who would buy it, asked without disclosing the idea. https://ancreationoffice.com/sop-market-check.txt
+0. Specialist procedures (specialists branch, from published sources): Licensing (b-licensing): sell sheet, licensees, the approach, the deal with an attorney. https://ancreationoffice.com/sop-licensing.txt
+0. Specialist procedures (specialists branch, from published sources): Funding (b-funding): the options by fit, what each asks for, watch-outs. https://ancreationoffice.com/sop-funding.txt
 0. Specialist procedures (specialists branch, from the standard sources): Plastic part design (b-plastic-part-design): from the resin makers' design guides. https://ancreationoffice.com/sop-plastic-part-design.txt
 0. Specialist procedures (specialists branch, from the standard sources): Tolerance stacks and print review (b-tolerance-gdt): worst case, RSS, Monte Carlo. https://ancreationoffice.com/sop-tolerance-stack.txt
 0. Specialist procedures (specialists branch, from the standard sources): Plastic material selection (b-plastic-materials): chemical compatibility first. https://ancreationoffice.com/sop-material-selection.txt

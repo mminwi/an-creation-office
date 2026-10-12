@@ -6348,6 +6348,118 @@
       "checked_on": "2026-10-12",
       "source": "Supplier website (via search)",
       "kind": "learning_resource"
+    },
+    {
+      "id": "customer-discovery-method",
+      "title": "Customer discovery interviews: asking about past behavior (the Mom Test approach)",
+      "url": "https://www.koji.so/docs/mom-test-user-interviews",
+      "group": "business-planning",
+      "roles": [
+        "marketing",
+        "project"
+      ],
+      "b_roles": [
+        "b-market-check"
+      ],
+      "use": "Ask about specific past events, not hypotheticals (\"Would you use...?\" is worthless); listen far more than talk; about 10-20 interviews per customer segment as a common guide. Vendor blog summarizing Rob Fitzpatrick's The Mom Test; the book is the original.",
+      "edition": "Web article",
+      "check": "Found via search 2026-10-12; the office did not open the page. Interview counts vary by source.",
+      "checked_on": "2026-10-12",
+      "source": "Vendor article (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "absolute-novelty",
+      "title": "Grace periods and absolute novelty in Europe (EPO and practitioner notes)",
+      "url": "https://www.barkerbrettell.co.uk/saving-grace-possibilities-for-patent-protection-after-disclosure/",
+      "group": "legal",
+      "roles": [
+        "legal"
+      ],
+      "b_roles": [
+        "b-market-check",
+        "b-patent-prep"
+      ],
+      "use": "Europe requires absolute novelty: a public disclosure before filing, even by the inventor, can end patent rights; the US has a one-year grace period for the inventor's own disclosure (35 USC 102(b)(1)(A), MPEP 2153.01). Also https://www.epo.org/en/news-events/news/epo-consults-users-grace-periods-patents and https://www.uspto.gov/web/offices/pac/mpep/s2153.html .",
+      "edition": "Articles and MPEP section",
+      "check": "Found via search 2026-10-12; the office did not open the pages. Legal questions go to a patent attorney.",
+      "checked_on": "2026-10-12",
+      "source": "Patent firm article, EPO and USPTO (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "sell-sheet-primer",
+      "title": "Inventors Digest — A sell sheet primer",
+      "url": "https://www.inventorsdigest.com/articles/a-sell-sheet-primer/",
+      "group": "legal",
+      "roles": [
+        "marketing",
+        "legal"
+      ],
+      "b_roles": [
+        "b-licensing"
+      ],
+      "use": "Keep the sell sheet simple and show the big benefit: one page, headline, benefit statement, image, a few features, patent pending if filed, contact. Free.",
+      "edition": "Web article",
+      "check": "Found via search 2026-10-12; the office did not open the page.",
+      "checked_on": "2026-10-12",
+      "source": "Trade magazine (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "stephen-key-licensing",
+      "title": "Stephen Key — licensing ideas (interviews and columns)",
+      "url": "https://www.inc.com/stephen-key/how-to-commercialize-your-patent.html",
+      "group": "legal",
+      "roles": [
+        "marketing",
+        "legal"
+      ],
+      "b_roles": [
+        "b-licensing"
+      ],
+      "use": "A licensed inventor's practice: royalty around 5% of net sales is the standard he has seen, higher possible; issued patent, working prototype and retailer interest raise it; provisional for \"patent pending\"; low-cost sell sheet. Also https://tim.blog/2007/11/27/how-to-rent-your-ideas-to-fortune-500-companies-part-ii-plus-hacking-japan-tips/ . One practitioner's experience; Key also sells coaching.",
+      "edition": "Articles, 2007 onward",
+      "check": "Found via search 2026-10-12; the office did not open the pages. Rates vary widely; never promise one.",
+      "checked_on": "2026-10-12",
+      "source": "Practitioner articles (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "sec-reg-cf",
+      "title": "SEC — Regulation Crowdfunding",
+      "url": "https://www.sec.gov/smallbusiness/RegCrowdfunding",
+      "group": "funding",
+      "roles": [
+        "funding"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Rules for selling securities to the public through a registered crowdfunding platform; the page gives a maximum of $5 million in 12 months (amended 2020). Disclosure and filing duties apply. Free.",
+      "edition": "SEC page dated 2024-06-21",
+      "check": "Found via search 2026-10-12; the office did not open the page. Confirm the current limit.",
+      "checked_on": "2026-10-12",
+      "source": "Government agency (via search)",
+      "kind": "government"
+    },
+    {
+      "id": "sbir-eligibility",
+      "title": "NIH/NIMH — SBIR eligibility criteria",
+      "url": "https://www.nimh.nih.gov/funding/sbir/eligibility-criteria",
+      "group": "funding",
+      "roles": [
+        "funding"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "SBIR eligibility: for-profit small business of 500 or fewer employees including affiliates, majority owned by US citizens or permanent residents (investor ownership rules differ by agency), principal investigator employed by the company. Award sizes vary by agency solicitation.",
+      "edition": "Web page",
+      "check": "Found via search 2026-10-12; the office did not open the page. Read the current solicitation of the agency you apply to.",
+      "checked_on": "2026-10-12",
+      "source": "Government agency (via search)",
+      "kind": "government"
     }
   ],
   "researched_shortlists": {

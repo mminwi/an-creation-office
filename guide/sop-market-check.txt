@@ -1,0 +1,40 @@
+SOP: Market check: does anyone want it? (b-market-check). Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Source: standard customer discovery practice and patent disclosure law (sources below, read through search 2026-10-12); written at Mike's request so inventors check the market before spending on patents and prototypes. Tier: documented; the patent questions go to a patent attorney.
+Read this when an idea is new, before money goes into a patent, a prototype or tooling, and whenever the inventor isn't sure who would buy it.
+
+WHY
+A common inventor story: years in secrecy, an overbuilt prototype, a full patent, and then no market. Check first that people have the problem, how they solve it now, and what they would pay. It costs little and can save the most.
+
+1. PROTECT THE IDEA WHILE YOU ASK (do this first)
+- Talking about how the invention works, outside a confidentiality agreement and before a patent application is filed, can be a public disclosure.
+- United States: the inventor's own disclosure is not prior art if the application is filed within one year after it (35 U.S.C. 102(b)(1)(A); MPEP 2153.01). That is a narrow safe harbor, not an extension, and a sale or offer to sell can start other clocks.
+- Most other countries (Europe included) require absolute novelty: a disclosure before filing can end patent rights there, even the inventor's own.
+- So: ask about the problem, not the solution. Talk about what people do today, what bothers them, what they've tried and paid. Don't show or describe how your invention works.
+- If you need to show the idea: settle the patent question first (b-patent-prep, the patent conversation ticket), or use a confidentiality agreement, and have a patent attorney look at the plan. The office records every outside conversation with its date and what was shown (record/).
+
+2. WHO TO ASK
+- The people who would use it, and separately the people who would buy it (in a hospital the user and the buyer are different people). Write each group down.
+- Not friends and family: they are kind, not informative.
+
+3. HOW TO ASK (past behavior, not opinions)
+- Ask about the last time it happened: "Tell me about the last time you dealt with this." "What did you do?" "What did it cost you?" "What have you tried?"
+- Don't ask "Would you buy this?" or "Would you use a tool that does X?": people overestimate what they will do.
+- Listen far more than you talk. Look for evidence the idea is wrong, not for agreement.
+- Price: what they pay now for the current way, and what the problem costs them.
+- How many: about 10 to 20 conversations per group usually shows the pattern (five is a bare minimum); programs like NSF I-Corps run far more across many groups.
+
+4. DESK CHECKS (no disclosure)
+- Competitors and substitutes: what people use today; search the stores and catalogs they buy from.
+- Demand signals: search trends, industry size (Census Business Builder), recall and complaint records for similar products (CPSC, SaferProducts).
+- Price ladder: the retail price of similar products; what a retailer or distributor takes; what that leaves for the product cost (b-cost-bom).
+
+5. WRITE IT UP
+- One page: the problem in the customers' words, who has it, what they do now, what it costs them, what they would pay, the competitors, and the go/hold/drop signal. Mark each point with how many people said it.
+- It feeds the project description (section 7, marketing) and the patent and licensing decisions.
+
+SOURCES (library)
+nsf-icorps, strategyzer-vpc, strategyzer-test-card, census-business-builder, google-trends, cpsc-recalls, saferproducts, sheet-launch, sheet-economics, patent-grace-periods, patentability-vs-fto, mpep (MPEP 2153.01, grace period), customer-discovery-method, absolute-novelty.
+
+HANDS OFF
+Patent attorney or agent: before any conversation that shows how the invention works.

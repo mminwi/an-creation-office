@@ -2407,6 +2407,54 @@ Edition: Web guide.
 Check: Found via search 2026-10-12; the office did not open the page itself.
 Checked: 2026-10-12. Source: Supplier website (via search).
 
+customer-discovery-method | Customer discovery interviews: asking about past behavior (the Mom Test approach)
+https://www.koji.so/docs/mom-test-user-interviews
+Group: business-planning. Type: learning_resource.
+Roles: b-market-check. Ask about specific past events, not hypotheticals ("Would you use...?" is worthless); listen far more than talk; about 10-20 interviews per customer segment as a common guide. Vendor blog summarizing Rob Fitzpatrick's The Mom Test; the book is the original.
+Edition: Web article.
+Check: Found via search 2026-10-12; the office did not open the page. Interview counts vary by source.
+Checked: 2026-10-12. Source: Vendor article (via search).
+
+absolute-novelty | Grace periods and absolute novelty in Europe (EPO and practitioner notes)
+https://www.barkerbrettell.co.uk/saving-grace-possibilities-for-patent-protection-after-disclosure/
+Group: legal. Type: learning_resource.
+Roles: b-market-check, b-patent-prep. Europe requires absolute novelty: a public disclosure before filing, even by the inventor, can end patent rights; the US has a one-year grace period for the inventor's own disclosure (35 USC 102(b)(1)(A), MPEP 2153.01). Also https://www.epo.org/en/news-events/news/epo-consults-users-grace-periods-patents and https://www.uspto.gov/web/offices/pac/mpep/s2153.html .
+Edition: Articles and MPEP section.
+Check: Found via search 2026-10-12; the office did not open the pages. Legal questions go to a patent attorney.
+Checked: 2026-10-12. Source: Patent firm article, EPO and USPTO (via search).
+
+sell-sheet-primer | Inventors Digest — A sell sheet primer
+https://www.inventorsdigest.com/articles/a-sell-sheet-primer/
+Group: legal. Type: learning_resource.
+Roles: b-licensing. Keep the sell sheet simple and show the big benefit: one page, headline, benefit statement, image, a few features, patent pending if filed, contact. Free.
+Edition: Web article.
+Check: Found via search 2026-10-12; the office did not open the page.
+Checked: 2026-10-12. Source: Trade magazine (via search).
+
+stephen-key-licensing | Stephen Key — licensing ideas (interviews and columns)
+https://www.inc.com/stephen-key/how-to-commercialize-your-patent.html
+Group: legal. Type: learning_resource.
+Roles: b-licensing. A licensed inventor's practice: royalty around 5% of net sales is the standard he has seen, higher possible; issued patent, working prototype and retailer interest raise it; provisional for "patent pending"; low-cost sell sheet. Also https://tim.blog/2007/11/27/how-to-rent-your-ideas-to-fortune-500-companies-part-ii-plus-hacking-japan-tips/ . One practitioner's experience; Key also sells coaching.
+Edition: Articles, 2007 onward.
+Check: Found via search 2026-10-12; the office did not open the pages. Rates vary widely; never promise one.
+Checked: 2026-10-12. Source: Practitioner articles (via search).
+
+sec-reg-cf | SEC — Regulation Crowdfunding
+https://www.sec.gov/smallbusiness/RegCrowdfunding
+Group: funding. Type: government.
+Roles: b-funding. Rules for selling securities to the public through a registered crowdfunding platform; the page gives a maximum of $5 million in 12 months (amended 2020). Disclosure and filing duties apply. Free.
+Edition: SEC page dated 2024-06-21.
+Check: Found via search 2026-10-12; the office did not open the page. Confirm the current limit.
+Checked: 2026-10-12. Source: Government agency (via search).
+
+sbir-eligibility | NIH/NIMH — SBIR eligibility criteria
+https://www.nimh.nih.gov/funding/sbir/eligibility-criteria
+Group: funding. Type: government.
+Roles: b-funding. SBIR eligibility: for-profit small business of 500 or fewer employees including affiliates, majority owned by US citizens or permanent residents (investor ownership rules differ by agency), principal investigator employed by the company. Award sizes vary by agency solicitation.
+Edition: Web page.
+Check: Found via search 2026-10-12; the office did not open the page. Read the current solicitation of the agency you apply to.
+Checked: 2026-10-12. Source: Government agency (via search).
+
 BEGIN DESIGN PRINCIPLES
 Guide: https://ancreationoffice.com/design-principles.html
 Instructions: https://ancreationoffice.com/design-principles.txt
