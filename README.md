@@ -149,4 +149,4 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 
 Synced from the live site by a script after each publish. If this copy and https://ancreationoffice.com/ ever differ, the live site is current.
 
-*Last synced October 11, 2026.*
+*Last synced October 12, 2026.*

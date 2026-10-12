@@ -28,6 +28,9 @@ Your files/Review/
     files/                      copies of every picture and document the page shows (files over 100 MB are linked instead)
 The index is the only file that is rebuilt, and it only lists. Served on this computer only (127.0.0.1). Nothing goes on the internet.
 
+ON GITHUB (the cloud office)
+GitHub shows Markdown, not HTML, so review.py also writes each page as README.md and the list as Your files/Review/README.md (it notices it is in a Git repository). Documents and pictures are linked where they are, not copied into files/: Git keeps every version. Send the inventor the GitHub link to Your files/Review/ (the folder opens to the list) or to a page's folder. There is no "serve" step on GitHub. Never copy the same document into several folders; link to the one dated copy.
+
 WHO WRITES WHAT
 The analyst writes page.json inside its own session folder, then runs "new". Soren runs "serve" and "today" and sends links.
 

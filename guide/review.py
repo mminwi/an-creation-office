@@ -10,7 +10,11 @@ with "today" on top, and a history of every picture and document ever shown.
   python review.py index "AN-Creation/Fishing Lure"
   python review.py serve "AN-Creation/Fishing Lure" [--port 8765]
 
-Standard library only. Local computer only.
+In a GitHub repository (the cloud office), pages are also written as Markdown
+(README.md in each page folder, and Review/README.md as the index) because GitHub shows
+Markdown but not HTML, and documents are linked instead of copied: Git keeps every version.
+
+Standard library only.
 """
 import argparse
 import csv
@@ -18,6 +22,7 @@ import datetime as dt
 import html
 import http.server
 import json
+import os
 import re
 import shutil
 import socketserver
@@ -78,12 +83,21 @@ def shell(title, subtitle, nav, body, script=True):
 
 # ---------- copying files into the dated folder ----------
 
-class Copier:
-    """Copies each source file once into <page>/files/ and returns the link to use."""
+def in_git(path):
+    """True when the folder is inside a Git repository (the cloud office on GitHub)."""
+    here = Path(path).resolve()
+    return any((p / ".git").exists() for p in [here, *here.parents])
 
-    def __init__(self, page_dir, your_files):
+
+class Copier:
+    """Copies each source file once into <page>/files/ and returns the link to use.
+    In a Git repository it links to the file where it is instead (Git keeps every version)."""
+
+    def __init__(self, page_dir, your_files, link_only=False):
+        self.page_dir = page_dir
         self.files_dir = page_dir / "files"
         self.your_files = your_files
+        self.link_only = link_only
         self.done = {}
 
     def link(self, src):
@@ -92,6 +106,8 @@ class Copier:
             return self.done[src]
         if not src.exists():
             self.done[src] = ""
+        elif self.link_only:
+            self.done[src] = quote(os.path.relpath(src, self.page_dir).replace(os.sep, "/"))
         elif src.stat().st_size > MAX_COPY_MB * 1024 * 1024:
             self.done[src] = "../../" + quote(str(src.relative_to(self.your_files)).replace("\\", "/"))
         else:
@@ -182,6 +198,91 @@ def section_files(page, copier):
     return out
 
 
+# ---------- Markdown (for GitHub) ----------
+
+def md_cell(text):
+    return str(text or "").replace("|", "/").replace("\n", " ")
+
+
+def md_page(page, copier, made, shown):
+    out = [f"# {page.get('title') or 'Review'}", "", f"_Made {made}. This page is never changed. [All pages](../README.md)_", ""]
+    if page.get("summary"):
+        out += [page["summary"], ""]
+    if page.get("status"):
+        out += ["## Where it stands", "", "| | |", "|---|---|"]
+        out += [f"| **{md_cell(k)}** | {md_cell(v)} |" for k, v in page["status"].items()] + [""]
+    items = sorted(page.get("timeline", []), key=lambda i: i.get("date", ""))
+    if items:
+        out += ["## Timeline", ""]
+        for i in items:
+            line = f"- **{i.get('date', '')}** {i.get('what', '')} _({str(i.get('kind', 'step')).replace('-', ' ')})_"
+            out.append(line + (f" Risk: {i['risk']}" if i.get("risk") else ""))
+        out.append("")
+    if page.get("risks"):
+        out += ["## Risks so far", "", "| What could go wrong | Cost | When it bites | Time left |", "|---|---|---|---|"]
+        out += [f"| {md_cell(r.get('risk'))} | {md_cell(r.get('cost'))} | {md_cell(r.get('when'))} | {md_cell(r.get('time_left'))} |"
+                for r in page["risks"]] + [""]
+    for tp in page.get("topics", []):
+        out += [f"## {tp.get('title', '')}" + (f" ({tp['weight']})" if tp.get("weight") else ""), ""]
+        if tp.get("summary"):
+            out += [tp["summary"], ""]
+        for sl in tp.get("slides", []):
+            if sl.get("title"):
+                out += [f"### {sl['title']}", ""]
+            if sl.get("image"):
+                href = copier.link(copier.your_files / sl["image"])
+                if href:
+                    out += [f"![{sl.get('title', '')}]({href})", ""]
+            out += [f"- {b}" for b in sl.get("bullets", [])]
+            out += [f"- [{lk['label']}]({lk['url']})" for lk in sl.get("links", [])]
+            out.append("")
+    wanted = page.get("files", "all")
+    if wanted == "all":
+        paths = [p for p in sorted(copier.your_files.rglob("*")) if p.is_file()
+                 and "Review" not in p.relative_to(copier.your_files).parts]
+    else:
+        paths = [copier.your_files / f for f in wanted]
+    pics, docs = [], []
+    for p in paths:
+        ext = p.suffix.lower()
+        if ext in PICTURES or ext in DOCUMENTS:
+            href = copier.link(p)
+            if href:
+                (pics if ext in PICTURES else docs).append((p.name, href))
+    if pics:
+        out += ["## Pictures", ""] + [f"![{n}]({h})" for n, h in pics] + [""]
+    if docs:
+        out += ["## Documents", ""] + [f"- [{n}]({h})" for n, h in docs] + [""]
+    shown.extend(pics + docs)
+    return "\n".join(out)
+
+
+def md_index(invention, root, pages, metas, today):
+    out = [f"# {invention.name}: review pages", "", "_Everything we've put up for you. Old pages are kept as they were._", ""]
+    path = invention / "Soren's files" / "actions.csv"
+    if path.exists():
+        with path.open(encoding="utf-8-sig", newline="") as fh:
+            rows = [r for r in csv.DictReader(fh) if (r.get("ID") or "").strip()]
+        mine = [r for r in rows if (r.get("Status") or "").strip().lower() == "open"
+                and (r.get("Who") or "").strip().lower() in ("you", "inventor", "the inventor")]
+        out += ["## Your list", ""]
+        out += [f"- **{r['ID']}** {r.get('Action', '')}" + (f" (due {r['Due']})" if r.get("Due") else "") for r in mine] or ["Nothing on your list right now."]
+        out.append("")
+    if today:
+        m = metas[today]
+        out += ["## What we're talking about today", "", f"**[{m.get('title')}]({quote(today)}/README.md)**", "", m.get("summary", ""), ""]
+    if pages:
+        out += ["## Every page, in the order made", ""]
+        out += [f"1. [{metas[p.name].get('title')}]({quote(p.name)}/README.md) _{metas[p.name].get('made', p.name)}_" for p in pages] + [""]
+    shown = []
+    for p in reversed(pages):
+        for n, h in metas[p.name].get("shown", []):
+            shown.append(f"- [{n}]({quote(p.name)}/{h}) _{metas[p.name].get('made', p.name)}_")
+    if shown:
+        out += ["## Every picture and document shown", ""] + shown + [""]
+    (root / "README.md").write_text("\n".join(out), encoding="utf-8")
+
+
 # ---------- commands ----------
 
 def review_root(invention):
@@ -201,7 +302,8 @@ def new_page(invention, page_json, slug=None, today=False):
         n += 1
     page_dir.mkdir(parents=True)
     shutil.copy2(page_json, page_dir / "page.json")
-    copier = Copier(page_dir, your_files)
+    git = in_git(invention)
+    copier = Copier(page_dir, your_files, link_only=git)
     topic_nav, topics = section_topics(page, copier)
     body = (section_status(page) + section_timeline(page) + section_risks(page)
             + topics + section_files(page, copier))
@@ -213,8 +315,12 @@ def new_page(invention, page_json, slug=None, today=False):
     (page_dir / "index.html").write_text(
         shell(page.get("title") or invention.name, f"Made {made}. This page is never changed.", nav,
               body or "<p>Nothing to show yet.</p>"), encoding="utf-8")
-    (page_dir / "meta.json").write_text(json.dumps(
-        {"title": page.get("title") or name, "summary": page.get("summary", ""), "made": made}), encoding="utf-8")
+    meta = {"title": page.get("title") or name, "summary": page.get("summary", ""), "made": made}
+    if git:
+        shown = []
+        (page_dir / "README.md").write_text(md_page(page, copier, made, shown), encoding="utf-8")
+        meta["shown"] = shown
+    (page_dir / "meta.json").write_text(json.dumps(meta), encoding="utf-8")
     if today:
         set_today(invention, page_dir.name)
     else:
@@ -313,6 +419,8 @@ def build_index(invention):
             f'<li><a href="{h}" target="_blank">{esc(n)}</a> <span class="muted">{esc(l)}</span></li>'
             for n, h, l in docs) + "</ul></section>")
 
+    if in_git(invention):
+        md_index(invention, root, pages, metas, today)
     nav = '<a href="#your-list">Your list</a> <a href="#pages">Pages</a> <a href="#pictures">Pictures</a> <a href="#documents">Documents</a>'
     (root / "index.html").write_text(
         shell(invention.name, "Everything we've put up for you. Old pages are kept as they were.", nav, body,

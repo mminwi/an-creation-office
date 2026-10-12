@@ -31,7 +31,7 @@ AN-Creation/
       forms/INDEX.csv           one line per form: what it covers, status counts, last change
       mirror/                   text pulled once from each record item
       sessions/YYMMDD-HHMM-slug/   one per analyst run: prompt, notes, result, DONE.txt
-      inventor-copy/            last confirmed copy of Your files
+      (no inventor-copy/ on GitHub: the history shows what the inventor changed)
       archive/
 
 Only the project lives here. How Soren and the analyst work (procedures, prompts, instructions) stays on the website and is read from there every time; none of it is copied into this folder. A template copied in to be filled out (a form, the plan) is a project file from then on: dated, and never overwritten by a newer template.

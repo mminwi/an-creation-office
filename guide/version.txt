@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this first, at the start of every conversation.
 
-Office version: 261011.15
+Office version: 261011.16
 Soren profile version: 1
 Kasper profile version: 3
 (the short text saved in each bot's own profile: https://ancreationoffice.com/profile.txt)
@@ -13,6 +13,7 @@ HOW TO USE THIS (Soren and Kasper)
 5. "What version are you on?": answer with the Office version and your profile version.
 
 CHANGES (newest first)
+261011.16  From the first real run: company questions go to Kasper (and are skipped when a company already exists), review pages are Markdown so they show on GitHub and the phone, documents are linked instead of copied, and there's no inventor-copy folder on GitHub.
 261011.15  Advance Now's own Kasper keeps his files in AN-Creation/Business like any Kasper (not a separate repository). Promo and Beacon's history is there now.
 261011.14  Kasper saves quietly, like Soren: no more messages about saving or committing.
 261011.13  Codex's environment must be set up once from a computer's browser (then it runs from the phone). The GitHub phone app is recommended for sign-ins and looking at your project.
