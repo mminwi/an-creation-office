@@ -21,6 +21,7 @@ FIRST
 0. Specialist procedures (specialists branch): molding defect troubleshooting, b-molding-defects. https://ancreationoffice.com/sop-molding-defects.txt
 0. Specialist procedures (specialists branch): buying a mold, b-mold-buying (started). https://ancreationoffice.com/sop-mold-buying.txt
 0. Specialist procedures (specialists branch): machine safety, b-machine-safety. https://ancreationoffice.com/sop-machine-safety.txt
+0. Specialist procedures (specialists branch): Lean Six Sigma projects, b-six-sigma. https://ancreationoffice.com/sop-six-sigma.txt
 0. GitHub and b-analyst for beginners: account, private repository, connecting it, the cloud analyst (Cursor, Codex or Claude Code), and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
 FOR b-business-manager (the business manager)

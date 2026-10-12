@@ -1,0 +1,17 @@
+One-page project summary (A3). Template, from Mike's practice (sop-six-sigma.txt section 6). Copy into the project's dated folder and fill in; the data packet goes behind it.
+
+PROJECT: <name>                       DATE: <yyyy-mm-dd>        REPORT-OUT: <number>
+CHARTERED BY: <name, role>            PROCESS OWNER: <name, role>          TEAM: <names>
+
++-------------------------------------------+-------------------------------------------+
+| 1. THE PROCESS AND THE PROBLEM            | 2. WHAT WE'RE LOOKING AT                  |
+| The problem in one or two sentences, as   | The data being collected (what, where,    |
+| the charter states it. Where it happens.  | how long), the measures, the baseline     |
+| What it costs (scrap, time, complaints).  | number, and the goal.                     |
++-------------------------------------------+-------------------------------------------+
+| 3. WHAT WE FOUND                          | 4. WHERE WE'RE GOING                      |
+| The one chart that tells the story.       | Next steps with owners and dates. The     |
+| The causes found so far, with how sure.   | DMAIC phase now. Controls planned so it   |
+| What has been ruled out.                  | can't come back. Decisions needed.        |
++-------------------------------------------+-------------------------------------------+
+Data packet: <folder or file list>, one section per study.

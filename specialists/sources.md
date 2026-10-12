@@ -20,7 +20,7 @@ When a row is read, it moves into guide/resources.json with the same fields as t
 Roles with no procedure yet (they have sources, but no written way of working):
 - b-cooling-water: written 2026-10-12 from Mike's practice (guide/sop-cooling-water.txt, calcs/cooling_water.py); plant chiller and tower sizing still open.
 - b-drying-handling: written 2026-10-12 from Mike's practice (guide/sop-drying.txt, calcs/drying.py); regrind rules still open.
-- b-six-sigma: a DMAIC procedure with tollgates and the forms (charter, SIPOC, data collection plan, MSA, capability, control plan).
+- b-six-sigma: written 2026-10-12 from Mike's practice (guide/sop-six-sigma.txt, template-a3.txt, calcs/six_sigma.py).
 - b-machine-safety: written 2026-10-12 from Mike's practice (guide/sop-machine-safety.txt).
 Roles with nothing in the existing library (only new sources, all unread): b-scientific-molding, b-cooling-water, b-drying-handling.
 Calculations no role has yet, to be written as code with results marked proposed: tolerance stack (worst case, RSS, Monte Carlo); mold cooling heat load and flow; molded part cost (cycle, press rate, resin, scrap); battery energy from a power budget; process capability (Cp, Cpk).

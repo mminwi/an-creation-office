@@ -1,0 +1,49 @@
+SOP: Lean Six Sigma projects (b-six-sigma). Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Source: Mike's practice (specialists/record/261012-M-six-sigma-mike.md). Lines marked "Mike" are his; "published" lines cite the library; "office" lines are the office's. Tier: deep.
+Read this when a problem keeps coming back, scrap or cost won't come down, the causes are hard to pin down, or two departments disagree on the fix. Statistics: specialists/calcs/six_sigma.py. One-page summary: guide/template-a3.txt.
+
+WHAT IT IS (Mike)
+- High-level, data-heavy troubleshooting: good engineering and math tools to analyze clean data, then decisions that stick.
+- The toolkit is old and keeps getting renamed: the Toyota Production System, Six Sigma, Lean Six Sigma. The tools are timeless and tried and true.
+
+1. IS IT REALLY A SIX SIGMA PROJECT? (Mike)
+- A Six Sigma project is data-driven and hard to put your finger on: what's right and what's wrong isn't obvious, and often two people in two departments see the problem, and the fix, differently.
+- An organizing project is not Six Sigma; it is 5S: straighten up, set a routine, put everything away so the tools for the job can be found. 5S usually lives inside one department, which can fix it on its own without negotiating with anyone.
+- Pick the right kind before starting.
+
+2. DEFINE: THE CHARTER (Mike)
+- Write a project charter, and get it from upper management: usually the process owner's boss (for example, the director of manufacturing charters it, and the production manager is the process owner).
+- Everyone involved reads it and confirms: is this the problem we're having? If someone says "you covered your side but not mine," the charter isn't finished. Get the whole problem on paper, across both departments, before measuring anything.
+
+3. MEASURE: GET CLEAN DATA (Mike)
+- Collecting data is usually not fancy: writing numbers down, maybe a sensor here or there. What matters is that it is clear, clean and the right data.
+- Office: check the measurement before trusting it (gauge study: AIAG MSA, library: aiag-msa; sop for measurement: b-measurement).
+
+4. ANALYZE: THE STATISTICS (Mike: where AI helps most)
+- There are dozens of tools (control charts such as p-charts, tests, capability), and each has assumptions. Mike's experience: every time, you have to break them out and make sure you follow the assumptions; it's the part most people find painful. Statistics is rule-based math, which is where AI is strong: explain the data, and it can take the analysis far, fast.
+- Long studies on real production beat lab tweaks here: scrap with this colorant against that one, this batch mix against that, over six months. It is DOE-flavored, but with material and method changes rather than many press settings (sop-scientific-molding.txt 6 on DOE noise).
+- Natural variation can run an experiment for you: seasons, lots, colorants already vary in the history. Tell the analysis what else was going on, so it can point out co-factors and things happening at once.
+- Office rules for the analysis (b-analyst, six_sigma.py):
+  - State the question, the data source and its dates before any number.
+  - Plot the data first (run chart in time order).
+  - For every method, list its assumptions and show the check (in control, independence, normality where needed, enough data); if one fails, say so and use a method that fits.
+  - Report how big the effect is and how sure, not only "significant or not".
+  - Name the possible co-factors (season, lot, shift, press, colorant) and whether the data can separate them.
+  - Never invent or fill data. Results are proposed; the team and the process owner decide.
+
+5. IMPROVE, THEN CONTROL: DON'T STOP EARLY (Mike)
+- DMAIC (define, measure, analyze, improve, control) is there to cover every base. The common mistake: the cause is found and the project stops. It isn't done until controls are in place so the problem can't come back.
+- Office: control means the change is in the process sheet, the control plan and the PFMEA, with a chart or check that shows it holding (sop-quality.txt, control-plan.csv).
+
+6. REPORTING: ONE PAGE ON TOP (Mike)
+- Report every week or two to upper management and anyone interested.
+- Put the whole project on one page (the A3 idea), divided into sections: the process and the problem, what we're looking at, what we found, where we're going. Template: guide/template-a3.txt.
+- Under it, the data packet (it may run 30 pages) for anyone who wants to dig into a study.
+- Don't bury managers in data: when they can't follow it, they start questioning, and that stops projects.
+
+LIBRARY
+ASQ Six Sigma Black and Green Belt bodies of knowledge (asq-ssbb-bok), NIST/SEMATECH e-Handbook of Statistical Methods (nist-sematech), AIAG & VDA SPC manual (aiag-spc), AIAG MSA (aiag-msa), Lean Lexicon (lei-lexicon; A3, 5S), ASQ quality tools, root cause and five whys.
+
+WHAT IT PRODUCES
+Per project, in its own dated folder: the charter (with everyone's confirmation), the data with its source, the analyses with assumptions shown, the one-page A3 for each report-out, and the control record (what changed in the process sheet, control plan and PFMEA).
