@@ -1,4 +1,4 @@
-SOP: Mold cooling water (b-cooling-water). Revision 2 (draft, specialists branch) — October 12, 2026. Plant sizing added from Mike's second note.
+SOP: Mold cooling water (b-cooling-water). Revision 3 (draft, specialists branch) — October 12, 2026. Plant sizing and the looped header added from Mike's notes.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice from years of building and running injection molds (specialists/record/261012-M-cooling-water-mike.md). Lines marked "Mike" are his practice; lines marked "physics" are standard heat transfer; anything else the office adds is marked "office". Tier: deep.
 Read this when a mold is being designed or quoted, a mold runs hot, cycles long, warps, sticks, binds or galls, or a plant is sizing chillers, towers or pumps. Calculation: specialists/calcs/cooling_water.py (input format: example-cooling-input.json).
@@ -62,6 +62,10 @@ Three units, two running:
 - Rotate them: when a pump or chiller cycles off and comes back, the next one in line starts (lead rotation), so all three run regularly and you know each one works (Mike).
 - Maintenance: one unit can come off line without shutting the plant down (Mike).
 - Chillers run best with about a 10 F rise across the chiller, even while the molds run at 2 to 5 F rise; the return water is a bit warmer and the chiller runs more efficiently. Two chillers at part load run better than units pushed to their limit (Mike).
+Header piping: run it in a loop (Mike, highly recommended):
+- From the pump tank, take the supply out to the floor, tee it, and run one branch each way around the plant so the two meet on the far side. The split can be right after the pumps or where the header reaches the production floor; the loop around the floor is the part that matters.
+- Why: demand is never even. Some areas are shut down, one side pulls more than the other. A dead-end header has to be oversized to get enough water to the far end; a loop feeds every press from both directions, so the pressure stays steady and the last press in the row does not see the drop.
+- It also lets you close off one section of the loop to add a press, clean a line or repair it, while the rest of the plant keeps running. Office: that needs isolation valves between sections of the loop; place them so any one section can be closed with both directions still feeding the rest.
 Hydraulic oil cooling:
 - There is an old rule of thumb for tons of cooling per ton of press for the hydraulics (Mike); Mike does not remember the figure, so it is open. Office: get it from the press maker's cooling water requirement for each machine, or have it read from a published source; never fill it from memory.
 The calculation (plant mode) adds up each press's worst-job pounds and heat per pound, then gives the total load in BTU/hr and tons, the size of each of three units, the typical two-thirds load, and the chiller loop flow at a 10 F rise (gpm = BTU/hr / (500 x 10)).
