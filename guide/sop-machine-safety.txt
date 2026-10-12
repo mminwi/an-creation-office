@@ -1,4 +1,4 @@
-SOP: Machine safety (b-machine-safety). Revision 2 (draft, specialists branch) — October 12, 2026. Section 5 rewritten with Mike.
+SOP: Machine safety (b-machine-safety). Revision 3 (draft, specialists branch) — October 12, 2026. Section 5 rewritten with Mike.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice running molding plants (specialists/record/261012-M-machine-safety-mike.md). Lines marked "Mike" are his; "office" lines are the office's own position. Tier: managed: the office organizes and prepares; a qualified safety professional decides machine safeguarding.
 Read this when a plant adds or moves a press, robot or auxiliary; when someone gets hurt or nearly hurt; when people are found working around a guard; or when a safety fix is being weighed against its cost.
@@ -29,6 +29,7 @@ Read this when a plant adds or moves a press, robot or auxiliary; when someone g
 5. WHEN THE MONEY ISN'T THERE: REPORT IT UP, EVERY TIME
 - It happens (Mike): management won't pay to upgrade a machine, and may decide a fine costs less than the fix. That is management's decision to make.
 - It never changes your job (Mike): report every hazard up the chain of command, every time. Never skip a report because "I already know they won't fix it"; that is not your decision. Report it fully and honestly, and make sure it is recorded that you reported it. If your superiors choose not to act, that is on them; you have done your job.
+- How Mike puts it to the manager: what is good there, what the hazard is, and "I'll live by your decision, but I need to make sure you have all the information."
 - Keep doing everything you personally can to make it safe with the resources there are (Mike).
 - Never falsify a safety check or record, and never help hide a hazard (Mike and the office).
 - Write down every gap: what the standard asks, what is in place, what the fix costs, who was told, when, and what they decided (office: this is the record of the report).
