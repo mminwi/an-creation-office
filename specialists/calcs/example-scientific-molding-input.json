@@ -1,0 +1,17 @@
+{
+  "mold": "EXAMPLE ONLY - made-up numbers to show the format, not a real mold or press",
+  "viscosity": {"intensification_ratio": 10, "points": [
+    {"speed": 0.5, "fill_s": 4.0, "hyd_pressure": 500},
+    {"speed": 1, "fill_s": 2.0, "hyd_pressure": 700},
+    {"speed": 2, "fill_s": 1.0, "hyd_pressure": 1000},
+    {"speed": 3, "fill_s": 0.68, "hyd_pressure": 1250},
+    {"speed": 4, "fill_s": 0.52, "hyd_pressure": 1500},
+    {"speed": 5, "fill_s": 0.42, "hyd_pressure": 1750}]},
+  "gate_seal": {"points": [
+    {"hold_s": 2, "weight": 50.10}, {"hold_s": 3, "weight": 50.60}, {"hold_s": 4, "weight": 50.90},
+    {"hold_s": 5, "weight": 51.02}, {"hold_s": 6, "weight": 51.04}, {"hold_s": 7, "weight": 51.05}]},
+  "cavity_balance": {"cavity_weights": {"1": 12.4, "2": 12.1, "3": 11.6, "4": 12.3}},
+  "pressure": {"peak_plastic_psi": 17500, "press_max_psi": 20000, "gate_psi": 9000, "end_of_fill_psi": 8800},
+  "window": {"low_good": 600, "high_good": 1000, "running": 950},
+  "speed_check": {"stroke_in": 3.0, "points": [{"set": 1, "fill_s": 1.5}, {"set": 3, "fill_s": 1.5}]}
+}

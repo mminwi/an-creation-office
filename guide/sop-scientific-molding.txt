@@ -1,0 +1,80 @@
+SOP: Scientific molding: setting a robust process (b-scientific-molding). Revision 7 (draft, specialists branch) — October 12, 2026. Cavity balance, process sheet, gate seal step-down, speed limits and DOE added from Mike's notes.
+Index: https://ancreationoffice.com/sop.txt
+Source: Mike's practice (Mike's notes, kept private), with the published methods as background (specialists/research/261012-scientific-molding-search.md). Lines marked "Mike" are his practice; "published" lines cite their source; "office" lines are the office's. Tier: deep.
+Read this when a new mold is being sampled or qualified, a process drifts or makes scrap, parts crack or warp, a mold moves to another press, or someone wants to buy process monitoring. Calculations: https://github.com/mminwi/an-creation-office/blob/main/specialists/calcs/scientific_molding.py. Related: sop-cooling-water.txt (cooling, hot spots), sop-drying.txt (wet resin makes every study wrong).
+
+WHAT IT IS, AND WHAT IT ISN'T (Mike)
+- Scientific molding, decoupled molding and the other names are good molding practice with principles behind each setting. It is not difficult, and it does not need new equipment or monitoring on every press.
+- Much of what is sold under these names is equipment or consulting. Monitoring can help management see what is going on, and it raises alarms; it is not needed to run a good process. Weigh that before recommending a purchase.
+- What is needed: people who are taught the principles, not the loudest person in the plant passing on what he made up. Teach the techs why each setting is what it is, and give them feedback: what is good, what is bad, and how we are getting there.
+- None of it is new (Mike). The methods came out of the resin makers in the 1950s and 60s, working out how to process their new resins; the courses and books since teach the same principles in different ways. Devices that rotate the melt where a runner splits have their place, but molders balanced runners by layout before they existed; weigh the cost before adding one to a mold.
+- "Non-Newtonian" just means shear thinning: the harder you push the plastic, the thinner it gets and the easier it pushes. Nothing magic.
+
+0. BEFORE ANY STUDY
+- Dry resin, tested (sop-drying.txt). Balanced cooling with flow and temperatures checked (sop-cooling-water.txt). A study on wet resin or an unbalanced mold measures the wrong thing.
+
+1. THE PRESS: DOES IT DO WHAT IT IS TOLD? (Mike)
+- Modern presses are much better than the bad ones of the 1980s and 90s, so this is less of an issue than it was. Old, unmaintained presses still fail it.
+- Speed: set 3 in/s, does it run 3 in/s? Watch for maintenance that "fixed" a press by dialing the pots back, so it never reaches the set speed (set 3 runs 2; Mike has seen set 1 run 2). Check: fill time at several set speeds; actual speed = screw travel / fill time (published: RJG, the injection speed linearity test).
+- Pressure: set 900 psi pack, does it hold 900 psi?
+- Check ring: dirt or gunk keeps it from seating, resin pushes back past it during injection, and shot-to-shot repeatability is gone (published: check ring repeatability, RJG).
+- Office: RJG's "load sensitivity" test is a press test: how well the press holds its set speed when the load (melt viscosity) changes. Mike uses the phrase for finding the insensitive middle of the process window (section 6); both are kept, with their names.
+
+2. FILL SPEED AND THE VISCOSITY CURVE (Mike)
+- Fill as fast as the press allows, in a controlled way. The faster it goes in, the thinner the melt, the more even the pressure across the part, and the less strain left in the resin. Mike has very rarely seen "too fast"; the real limit is being able to stop (transfer) under control.
+- "As fast as the press allows" means about 90% of the press's maximum injection speed (the screw's forward speed), not 100% (Mike). At 100% the valves are wide open and the closed loop has nothing left to control with; speed then varies at the mercy of the plastic. At about 90% the press can open and close its valving to hold the set speed. Running wide open is the old-school way, and wrong on a servo machine. Going up to 95-96% is fine if you know the trade: the press has little left to open, so if the speed sags it can barely react.
+- On almost any typical press, as fast as it will run (up to about 90%) is simply fine (Mike).
+- Where too fast shows up: high-speed presses with lots of accumulator bottles. Watch for burning and venting problems (the air can't get out fast enough), and color burns where shear heating at one point in the mold burns out a color (Mike's example: an orange that burns out past a certain point). Too fast shows up as heat.
+- The other limit: overheating the plastic with shear, especially through a choke point (small gate, restriction). The viscosity curve shows how fast this press can fill to get most of the shear-thinning benefit without that.
+- Published method: fill to about 95% with no hold, at a series of speeds from fastest down until fill time passes about 10 s; relative shear rate = 1 / fill time; relative viscosity = hydraulic pressure at transfer x intensification ratio x fill time; pick a speed on the flat part of the curve, where pressure changes less than about 10% (Plastics Technology; Entec Polymers). Hold fill time steady once set, about +/-0.04 s (Bozzelli).
+- Office: the intensification ratio is the press's ratio of plastic pressure to hydraulic pressure, from the press maker (electric presses read plastic pressure directly; use ratio 1).
+
+3. PRESSURE DROP ACROSS THE PART (Mike)
+- Measure the drop from where the plastic enters the cavity to the last place to fill. Fast fill keeps it small (Mike's example: about 200 psi gate to edge); slow fill can double or triple it.
+- Why it matters: a big drop means the part is packed hard at the gate and barely packed at the far edges. The lightly packed areas shrink much more than the gate area, and that difference is built-in stress and warp. Minimize the drop.
+- Hot spots in the mold act the same way: a hotter area holds expanded plastic when the gate freezes, then shrinks more than the area around it. Run the whole mold at one temperature (sop-cooling-water.txt).
+- Published: the peak pressure the process needs should stay under about 80% of the press's maximum, lower for thick parts that need more pack; otherwise the process is pressure-limited and fill becomes inconsistent (Kulkarni, FIMMTECH).
+
+4. CAVITY BALANCE (Mike)
+- Molds should be built naturally balanced (H runners, geometrically balanced runner systems). A mold that isn't naturally balanced will have problems.
+- The common real cause: a hot runner drop where one heater is off: a cold tip with a hot base, so that gate freezes off early. Raising that drop about 5 F during a run can rebalance the fill. That is a fix for the run, not the cure.
+- After the run: maintain the heaters. Swap heaters between drops: if the problem moves with the heater, it is the heater; if it stays with the mold, check that every cavity and gate has the same geometry.
+- Be ready to tear down the manifold, measure everything with calipers, micrometers and pin gauges, and be exacting.
+- Long runner systems: when gates on one runner system are more than about 3 feet apart (runners over 2-3 feet), the hot runner maker's standard tolerances may be too loose. Specify tighter ones up front.
+- What good balance looks like (Mike): almost perfect. On an end-of-fill short shot every cavity is better than 90% complete, with no noticeable gap between them, and all of them a little light at their last place to fill. The system can't build pressure until the whole mold is full, so if one cavity is short they should all be just underpacked at the end of fill. If they are, you're okay.
+- Measure it with short-shot weights per cavity against a full part's weight (the calculation flags any cavity under 90%, and a noticeable spread).
+
+5. GATE SEAL AND HOLD (Mike)
+- Hold pressure until the gate freezes. If pressure comes off while the gate is open, plastic flows back out, the hot gate area sits at low pressure and shrinks, and the plastic around the gate is stretched. Parts used outdoors crack around the gate after a couple of years of heat and cold cycles.
+- Hold pressure does not have to be injection pressure; it is often lower. Adjust it and see what works.
+- Gate seal time sets when the pressure can come off, when screw recovery for the next shot can start, and, by most people's count, when cooling time begins.
+- Mike's method, and the one to use on hot runners and valve gates (where the weight curve may never level off): establish the whole process first. Keep pack pressure, then step the pack/hold time down (10 s, 9 s, 8 s, ...). The first step where the part comes out lighter means the gate wasn't sealed yet; go back to the previous time. That is the gate seal time, and it sets the pack time.
+- Published method: fix hold pressure; step hold time up from about 2 s; weigh 3-5 shots per step; plot weight against hold time; the knee is gate seal; set hold about 10% longer (Bozzelli) or 0.5-1 s longer; keep total cycle constant by taking the change out of cooling time. Hot runners, valve gates and soft resins (polyolefins, TPE, TPU) may never level off. Redo after changes to melt or mold temperature, gate size, back pressure, screw speed or a big change in hold pressure.
+
+6. THE PROCESS WINDOW: RUN IN THE MIDDLE (Mike)
+- Find the range that makes good parts and run in the middle of it, where ordinary variation can't push you out. Mike's example: good parts from 600 to 1000 psi pack. At 950 you are one swing from overpacking; at about 800 you are insensitive to both over- and underpacking.
+- Published: windows are typically mapped as hold pressure against melt temperature (amorphous resins) or against mold temperature (semi-crystalline), with DOE to catch interactions (PlasticsToday, Robust processing).
+- DOE, with caution (Mike): he has run many and rarely uses them for this. They are a tool with a place, but in a molding plant the noise often drowns the answer: resin lot to lot, humidity, seasonal temperature, plants that aren't air conditioned, sun on one side of a silo. A DOE is often too fine a magnifying glass for real-world molding: a 20 psi pack change either way is hard to read through that noise, and it is easy to load in too many factors. DOE suits machining and simpler processes better. Before trusting one: have the process under control and look hard at everything else that could be moving it.
+- Seasons move the process (Mike): resin from an outside silo can arrive at the press at about 120 F in summer sun and 32 F in winter, and humidity adds moisture that thins the melt, worse if the dryers aren't good. Expect a summer process and a winter process; a setpoint in the middle of the window is what survives both.
+
+7. COOLING TIME (Mike)
+- Keep checking it. Cool the part below the temperature where it takes a set: above it, any warp from ejection stays. Mike's numbers: polypropylene about 180 F, polyethylene about 160 F. Office: confirm each resin's number with its maker (heat deflection data).
+- With uniform cooling (lots of water, evenly) parts can come out fairly warm: 120 to 140 F is good for polyolefins. PVC, nylons and some engineered resins often eject that warm or warmer.
+- Part cost is set by how fast you can melt the plastic, get the heat out of the mold and the part, and make the next shot. That is where you make money or don't.
+- Published: the cooling time study plots key dimensions against cooling time and takes the shortest time before they move.
+
+8. THE PROCESS SHEET: LOCK THE CYCLE THE RESIN SEES (Mike)
+- The process sheet (setup sheet) carries the entire setup: every setpoint. More and more presses save it; keep the sheet anyway.
+- Lock everything the plastic sees: screw speed and injection speeds, all heats, pack and hold pressures and times, cooling time, valve gate open and close timing. If the resin sat still for this long last time, it sits still this long next time; if it saw this pack pressure, it sees it again.
+- Change the cycle for the press if you must, never the cycle for the resin. Clamp moves can be a little faster here and slower there as long as total clamp open and closed time stays the same. Mold slowdown position belongs on the safe setup but rarely matters to the part.
+- Monitoring checks actuals, not setpoints: actual cycle time, actual injection (fill) time, actual cooling, against the sheet. Checking a setpoint you typed tells you nothing.
+- This works with one good resin. With several approved resins for one grade (Mike: e.g. six approved polyethylenes), or resin fed from silos where batches stack, expect some tweaking: the process sheet loosens, and checks lean more on part quality and part measurements than on the process numbers.
+
+WHAT THE WORK PRODUCES
+A process development record per mold and press, in its own dated folder: press checks (speed, pressure, check ring), viscosity curve and the chosen fill time, pressure drop by section, cavity balance with causes and fixes, gate seal curve and the chosen hold, the process window and where the setpoint sits in it, cooling time and ejection temperature, and the process sheet. Every setting carries its reason.
+
+HANDS OFF
+Hot runner maker (heaters, tolerances), tool shop (gates, geometry), press maker or service (speed, pressure, check ring), resin maker (temperatures, set temperature).
+
+OPEN FOR MIKE
+- Nothing open. (Window width: no fixed number from Mike; the rule is to run in the middle so seasonal and resin variation can't push the process out.)
