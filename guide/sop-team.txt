@@ -33,7 +33,7 @@ When a project description is finished (end of S0), or a new kind of project com
 The roles
 1. b-project-manager: stages, dates, money, who decides; the size of the project; what drives the schedule.
 2. b-business-manager: company, patent and name, money, licensing or selling.
-3. b-design: product design: concepts, structure, loads, mechanisms, ergonomics, fits and tolerances, weight; metal parts.
+3. b-design: design: concepts, structure, loads, mechanisms, ergonomics, fits and tolerances, weight; metal parts.
 4. b-electrical: electronics, power and batteries, controls, wireless, EMI, electrical certifications.
 5. b-plastics: plastic part design, resin choice (strength, heat, chemicals and disinfectants, food contact, flame rating), molding (warp, gates, cooling, wall and ribs), joining and sealing (welding, gaskets, overmolding), tooling and the molder's view. Runs whenever the product has, or will likely have, a plastic part. It owns everything plastic, so the other roles leave those items to it.
 6. b-manufacturing: processes other than molding (machining, sheet metal, electronics assembly, final assembly), prototype path, sourcing, cost, who makes it.

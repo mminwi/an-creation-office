@@ -45,10 +45,10 @@ Generated from roles.csv, which also lists each role's procedures, library sourc
 | Retail Selling Specialist | b-retail | Documented | Getting ready for Amazon, Walmart, Lowe's and other buyers: registration, fees, barcodes, supplier requirements | — |
 | Government and Defense Contracting Specialist | b-gov-contracting | Documented | SAM registration, contract specs and military standards, supplier setup for federal and defense buyers | contracting officer (their side); APEX Accelerator |
 
-### Product design
+### Design
 | Specialist | Role | Tier | Does | Hands off to |
 |---|---|---|---|---|
-| Product Design Specialist | b-design | Deep | Concepts, structure, loads, mechanisms, ergonomics, fits; metal parts | mechanical engineer (load cases near people) |
+| Design Specialist | b-design | Deep | Concepts, structure, loads, mechanisms, ergonomics, fits; metal parts | mechanical engineer (load cases near people) |
 | Design for Manufacturing Specialist | b-dfm | Deep | Make the part cheaper and easier to build before tooling | — |
 | Plastic Part Design Specialist | b-plastic-part-design | Deep | Walls, draft, ribs, bosses, gates, sink and warp risk, joining and sealing | — |
 | Tolerance Stack and GD&T Specialist | b-tolerance-gdt | Deep | Stack studies (worst case, RSS, Monte Carlo) and print reviews | — |

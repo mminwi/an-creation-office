@@ -3,7 +3,7 @@
 ## What was done
 - roles.csv: every role (37) with its specialist name, tier, first-look role, what it does, the procedures it uses (guide/ files), the library sources it uses (ids in guide/resources.json), new sources it needs, who it works with and who it hands off to.
 - All 220 entries in the existing library are mapped to at least one role. Two roles were added because the library already had sources nobody owned: b-retail (Amazon, Walmart, Lowe's) and b-gov-contracting (SAM, military standards, DLA).
-- Renamed, per Mike: no "engineer" anywhere in names. Sourcing is now b-purchasing (Purchasing Specialist); Manufacturing Engineering is b-manufacturing (Manufacturing Specialist); the first-look role b-mechanical is now b-design (Product Design Specialist).
+- Renamed, per Mike: no "engineer" anywhere in names. Sourcing is now b-purchasing (Purchasing Specialist); Manufacturing Engineering is b-manufacturing (Manufacturing Specialist); the first-look role b-mechanical is now b-design (Design Specialist).
 - sources-new.csv: 73 sources the roles need that the library doesn't have (standards, regulations, handbooks), each with publisher, where to find it, and which roles use it.
 
 ## Part 2: reading the 73 (done 2026-10-12)
