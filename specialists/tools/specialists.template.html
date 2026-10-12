@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Specialists</title>
+  <meta name="description" content="Every specialist in the AN Creation Office, what each one does, and the starting teams. Pick the ones you want and put them in one bot or several.">
+  <link rel="icon" href="../assets/an-chevron.png">
+  <link rel="stylesheet" href="guide.css">
+  <link rel="canonical" href="https://ancreationoffice.com/specialists.html">
+  <style>
+    .sp-how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0}
+    .sp-how div{padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:8px}
+    .sp-how b{display:block;font-size:15px;margin-bottom:4px}
+    .sp-how span{font-size:13px;color:#5e6b65;line-height:1.6;display:block}
+    .sp-offices{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+    .sp-office{padding:20px 22px;background:#fff;border:1px solid var(--line);border-radius:10px;display:flex;flex-direction:column}
+    .sp-office h3{font-size:17px;margin:0 0 6px}
+    .sp-office p{font-size:13px;color:#5e6b65;line-height:1.6;margin:0 0 10px}
+    .sp-office ul{list-style:none;padding:0;margin:0 0 14px;display:flex;flex-wrap:wrap;gap:6px}
+    .sp-office li{margin:0}
+    .sp-office li a{display:block;font-size:11px;line-height:1.4;padding:4px 8px;border:1px solid var(--line);border-radius:4px;background:#f3f5f0;color:#3c4c44;text-decoration:none}
+    .sp-office li a:hover{border-color:#8ca28f}
+    .sp-office .sees{margin-top:auto;align-self:flex-start}
+    .sp-default{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#315f5c;margin-left:6px}
+    .sp-group{margin-top:34px}
+    .sp-group>h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5c6b62;margin:0 0 10px}
+    .sp-card{padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:8px;margin-bottom:10px;scroll-margin-top:24px}
+    .sp-card h4{font-size:16px;margin:0 0 4px;line-height:1.35}
+    .sp-card .sp-does{font-size:14px;margin:0 0 8px;color:var(--ink)}
+    .sp-card .sp-basis{font-size:12px;color:#5e6b65;line-height:1.6;margin:0 0 8px}
+    .sp-card .sp-in{font-size:11px;color:#6b776e;line-height:1.6;margin:0}
+    .sp-card .sp-in a{color:#3c5a54}
+    .sp-card details{margin-top:8px;font-size:12px}
+    .sp-card summary{cursor:pointer;color:#3c5a54}
+    .sp-card details a{display:block;margin-top:4px;overflow-wrap:anywhere}
+    @media(max-width:720px){.sp-how{grid-template-columns:minmax(0,1fr)}}
+  </style>
+</head>
+<body class="page-start">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="workspace">
+  <main id="main" class="wrap">
+    <header class="page-intro">
+      <p class="kicker">The specialists</p>
+      <h1>One office. Many specialists. Your choice of bots.</h1>
+      <p class="lede">The AN Creation Office is a set of specialists, each with its own job, procedures and sources. Start from one of the offices below, turn specialists on or off, and decide whether one bot does it all or several bots share the work.</p>
+      <p><a class="sees" href="team-builder.html">Build your team</a></p>
+    </header>
+    <div class="reading-layout"><div class="article-body">
+
+    <section aria-labelledby="how">
+      <h2 id="how">How it fits together</h2>
+      <div class="sp-how">
+        <div><b>Specialists</b><span>The skills. Each does one area of work, from project management to cooling water to Six Sigma, and hands off to a licensed professional where one has to decide.</span></div>
+        <div><b>Offices</b><span>Ready-made sets of specialists for a kind of work. Pick the closest one; it is only a starting point.</span></div>
+        <div><b>Your bots</b><span>You name them. One name for everything gives you one bot that does it all, the easiest way to start. Different names give you separate bots, each with its own jobs.</span></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="offices" style="margin-top:40px">
+      <h2 id="offices">The offices</h2>
+      <div class="sp-offices" id="officeList"></div>
+    </section>
+
+    <section aria-labelledby="all" style="margin-top:40px">
+      <h2 id="all">Every specialist</h2>
+      <p>Mix and match: any specialist can join any team. Each one follows written procedures and cites its sources; none of them files, buys, signs or contacts anyone for you.</p>
+      <div id="specList"></div>
+    </section>
+
+    </div></div>
+  </main>
+  </div>
+<script>
+(function () {
+  var DATA = /*DATA*/null;
+  var SITE = 'https://ancreationoffice.com/';
+  var byId = {}; DATA.roles.forEach(function (r) { byId[r.id] = r; });
+  var inOffices = {};
+  DATA.packages.forEach(function (p) { if (p.id === 'all' || p.id === 'one') return; p.roles.forEach(function (r) { (inOffices[r] = inOffices[r] || []).push(p); }); });
+  function el(tag, attrs, text) { var n = document.createElement(tag); for (var k in (attrs || {})) n.setAttribute(k, attrs[k]); if (text != null) n.textContent = text; return n; }
+  function slug(id) { return id.replace(/^b-/, ''); }
+
+  var ol = document.getElementById('officeList');
+  DATA.packages.forEach(function (p) {
+    if (p.id === 'one') return;
+    var c = el('article', { 'class': 'sp-office', id: 'office-' + p.id });
+    var h = el('h3', null, p.name);
+    if (p.id === 'inventor') h.appendChild(el('span', { 'class': 'sp-default' }, 'Default'));
+    c.appendChild(h);
+    c.appendChild(el('p', null, p.blurb));
+    if (p.id !== 'all') {
+      var ul = el('ul');
+      p.roles.forEach(function (id) { var li = el('li'); li.appendChild(el('a', { href: '#' + slug(id) }, byId[id].name.replace(/ Specialist$/, ''))); ul.appendChild(li); });
+      c.appendChild(ul);
+    } else {
+      c.appendChild(el('p', null, DATA.roles.length + ' specialists.'));
+    }
+    c.appendChild(el('a', { 'class': 'sees', href: 'team-builder.html?pkg=' + p.id }, 'Start from this office'));
+    ol.appendChild(c);
+  });
+
+  var sl = document.getElementById('specList');
+  var groups = []; DATA.roles.forEach(function (r) { if (groups.indexOf(r.group) < 0) groups.push(r.group); });
+  groups.forEach(function (g) {
+    var sec = el('div', { 'class': 'sp-group' });
+    sec.appendChild(el('h3', null, g));
+    DATA.roles.filter(function (r) { return r.group === g; }).forEach(function (r) {
+      var c = el('article', { 'class': 'sp-card', id: slug(r.id) });
+      c.appendChild(el('h4', null, r.name));
+      c.appendChild(el('p', { 'class': 'sp-does' }, r.does + '.'));
+      c.appendChild(el('p', { 'class': 'sp-basis' }, r.basis));
+      var offs = inOffices[r.id] || [];
+      var inP = el('p', { 'class': 'sp-in' });
+      if (r.id === 'b-project-manager') inP.textContent = 'In every team: your main bot is always the project manager.';
+      else if (offs.length) {
+        inP.appendChild(document.createTextNode('In: '));
+        offs.forEach(function (p, i) { if (i) inP.appendChild(document.createTextNode(', ')); inP.appendChild(el('a', { href: '#office-' + p.id }, p.name)); });
+        inP.appendChild(document.createTextNode('. Can join any team.'));
+      } else inP.textContent = 'Not in a starting office; add it to any team.';
+      c.appendChild(inP);
+      if (r.procs.length) {
+        var d = el('details'); d.appendChild(el('summary', null, 'Its procedures'));
+        r.procs.forEach(function (f) { d.appendChild(el('a', { href: f }, f)); });
+        c.appendChild(d);
+      }
+      sec.appendChild(c);
+    });
+    sl.appendChild(sec);
+  });
+})();
+</script>
+</body>
+</html>

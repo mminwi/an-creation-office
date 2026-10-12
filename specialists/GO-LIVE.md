@@ -27,7 +27,7 @@ Add nginx redirects in `nginx-an-creation-office.conf`:
 ## 5. The HTML pages
 - [ ] All 34 pages in `site/create/` mention Soren or Kasper. Change them to "your bot" / the role names, with the bot's own name chosen by the user (bot-names.txt).
 - [ ] `start.html`: make the one-Grok-account path the start (from `start-on-your-phone.txt`); other AIs only as the one link (`using-other-ais.txt`).
-- [ ] New pages: the specialists (one page per specialist or per group; see 9), the team builder (see 8), cooling water, drying, scientific molding and the other procedures, the improvement toolbox.
+- [ ] New pages: the specialists catalog (drafted 2026-10-12: `guide/specialists.html`, generated with the team builder; every specialist described on its own, the offices, "Start from this office" links into the team builder), the team builder (see 8), cooling water, drying, scientific molding and the other procedures, the improvement toolbox.
 - [ ] `sitemap.xml` and the navigation updated.
 
 ## 6. Version and profiles

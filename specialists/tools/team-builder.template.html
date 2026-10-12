@@ -372,7 +372,9 @@
     document.body.appendChild(a); a.click(); a.remove();
   });
 
-  if (!state.on || !Object.keys(state.on).length) choosePackage('inventor'); else render();
+  var want = (location.search.match(/[?&]pkg=([\w-]+)/) || [])[1];
+  if (want && DATA.packages.some(function (x) { return x.id === want; })) choosePackage(want);
+  else if (!state.on || !Object.keys(state.on).length) choosePackage('inventor'); else render();
 })();
 </script>
 </body>

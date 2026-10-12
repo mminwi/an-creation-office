@@ -9,12 +9,26 @@ names = re.findall(r'[A-Z][a-z]+', (ROOT / 'guide/bot-names.txt').read_text().sp
 def proc_files(s):
     return [p.strip() for p in re.split(r'[;,]', s) if re.match(r'^\s*[\w.-]+\.(txt|csv|md)\s*$', p)]
 
+MIKE = {'b-cooling-water', 'b-drying-handling', 'b-scientific-molding', 'b-molding-defects', 'b-mold-buying', 'b-machine-safety', 'b-six-sigma'}
+OFFICE = {'b-project-manager', 'b-business-manager', 'b-company-setup', 'b-patent-prep', 'b-trademark', 'b-licensing-funding', 'b-promotion', 'b-prototyping', 'b-quality-planning'}
+def basis(r):
+    h = r['hands_off_to'].strip()
+    tail = (' Hands off to: ' + h.replace(';', ',') + '.') if h and h != '—' else ''
+    if r['role'] in MIKE:
+        return "Built from Mike Maier's own plant and molding practice." + tail
+    if r['tier'] in ('Managed', 'Documented') and tail:
+        return 'Organizes the work and prepares the packet; a licensed or hands-on professional decides.' + tail
+    if r['role'] in OFFICE:
+        return 'Runs on the AN Creation office procedures.' + tail
+    return 'Built from the standard references for this area.' + tail
+
 roles = []
 for r in rows:
     if r['role'] == 'b-analyst':
         continue
     roles.append({'id': r['role'], 'name': r['promo_name'], 'group': r['group'], 'does': r['does'],
-                  'procs': proc_files(r['procedures'])[:4]})
+                  'procs': proc_files(r['procedures'])[:4], 'tier': r['tier'], 'handoff': r['hands_off_to'],
+                  'basis': basis(r)})
 
 P = 'b-project-manager'
 packages = [
@@ -42,4 +56,7 @@ for p in packages:
 data = json.dumps({'roles': roles, 'packages': packages, 'names': names}, ensure_ascii=False)
 tpl = (ROOT / 'specialists/tools/team-builder.template.html').read_text()
 (ROOT / 'guide/team-builder.html').write_text(tpl.replace('/*DATA*/null', data))
+cat = (ROOT / 'specialists/tools/specialists.template.html').read_text()
+(ROOT / 'guide/specialists.html').write_text(cat.replace('/*DATA*/null', data))
+print('wrote guide/specialists.html')
 print('wrote guide/team-builder.html:', len(roles), 'roles,', len(packages), 'packages,', len(names), 'names')
