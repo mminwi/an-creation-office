@@ -6069,6 +6069,84 @@
       "checked_on": "2026-10-12",
       "source": "Trade publication (via search)",
       "kind": "learning_resource"
+    },
+    {
+      "id": "entec-troubleshooting",
+      "title": "Entec Polymers — Troubleshooting Guide for Injection Molding",
+      "url": "https://entecpolymers.com/resources/product-guides/troubleshooting-guide-for-injection-molding",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-molding-defects",
+        "b-scientific-molding"
+      ],
+      "use": "Free guide organized by defect, cause and solution.",
+      "edition": "Undated web guide",
+      "check": "Found via search 2026-10-12; the office did not open the page itself.",
+      "checked_on": "2026-10-12",
+      "source": "Resin distributor's website (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "bryce-troubleshooting",
+      "title": "Douglas M. Bryce — Troubleshooting: A Guide for Injection Molders",
+      "url": "https://www.scribd.com/document/482279786/TroubleGuide",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-molding-defects"
+      ],
+      "use": "Defect-by-defect guide (black specks, blisters, burns, flash, flow lines, sink, splay, short shots, warp) with causes and remedies. Author has 40+ years in thermoplastic injection molding. Link is a user upload; buy or find the publisher's copy for use.",
+      "edition": "IPLAS, about 2003-2005",
+      "check": "Found via search 2026-10-12; publisher page not found; current availability not verified.",
+      "checked_on": "2026-10-12",
+      "source": "Book (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "kerkstra-troubleshooting",
+      "title": "Kerkstra and Brammer — Injection Molding Advanced Troubleshooting Guide",
+      "url": "https://shop.elsevier.com/books/injection-molding-advanced-troubleshooting-guide/kerkstra/978-1-56990-835-8",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-molding-defects",
+        "b-scientific-molding"
+      ],
+      "use": "Book organized by problem and solution; covers splay, sink, short shot, flash, jetting and more. Paid.",
+      "edition": "2nd edition, 2021-06-22 (Hanser; ISBN 9781569906460 per one listing)",
+      "check": "Found via search 2026-10-12; the office did not open the page itself.",
+      "checked_on": "2026-10-12",
+      "source": "Publisher listing (via search)",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "moldex3d-defects",
+      "title": "Moldex3D — injection molded part problems and solutions",
+      "url": "https://ch.moldex3d.com/assets/2011/11/InjMldPrt-ProbSol.pdf",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-molding-defects"
+      ],
+      "use": "Short defect definitions with mechanisms (example: burn marks from trapped air overheating). Free PDF.",
+      "edition": "2011 PDF",
+      "check": "Found via search 2026-10-12; the office did not open the PDF itself.",
+      "checked_on": "2026-10-12",
+      "source": "Simulation software maker (via search)",
+      "kind": "learning_resource"
     }
   ],
   "researched_shortlists": {

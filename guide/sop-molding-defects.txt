@@ -1,0 +1,40 @@
+SOP: Molding defect troubleshooting (b-molding-defects). Revision 1 (draft, specialists branch) — October 12, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Source: Mike's practice (specialists/record/261012-M-molding-defects-mike.md and the cooling water, drying and scientific molding records). Lines marked "Mike" are his; "published" lines cite the guide; "office" lines are the office's. Tier: deep.
+Read this when parts show a defect, scrap rises, or a customer complains about appearance, dimensions or cracking.
+
+1. START WITH THE STANDARD TROUBLESHOOTING GUIDES (Mike: the number one thing)
+- The old defect guides are excellent and people don't use them: look up the defect ("burn here"), and the guide lists the likely causes and what to try. Seventy to eighty years of molding knowledge are in them. Use them first.
+- Guides in the library (office searches, 2026-10-12; read through search results):
+  - Resin supplier troubleshooters, for the resin you are running (example: BASF Injection Molding Troubleshooter, library: resin-troubleshooting-guides). Free.
+  - Entec Polymers, Troubleshooting Guide for Injection Molding (by defect, cause and solution). Free download.
+  - Douglas M. Bryce, Troubleshooting: A Guide for Injection Molders (IPLAS; defect by defect: black specks, blisters, burns, flash, flow lines, sink, splay, short shots, warp).
+  - Randy Kerkstra and Steve Brammer, Injection Molding Advanced Troubleshooting Guide (Hanser, 2nd edition 2021).
+  - Moldex3D defect definitions (short, with the mechanism of each defect).
+- Published: change one remedy at a time; process variables interact (Husky PET troubleshooting guide).
+
+2. THEN CHECK THE PLANT CAUSES THE GUIDES DON'T SEE (Mike, from the specialist procedures)
+The guides list process remedies. Many defects Mike finds in plants start upstream, in the water, the dryers, the power or the press. Check these too:
+| What you see | Look at | Procedure |
+| Splay, nozzle spitting, process that won't settle | Wet resin: untested dryer, dead desiccant, reverse-phase outlet running the dryer fans backwards, resin over its moisture limit | sop-drying.txt |
+| Burns, venting trouble | Filling too fast on high-speed (accumulator) presses: air can't get out | sop-scientific-molding.txt 2 |
+| A color burning out at one spot | Shear heating at a choke point from filling too fast | sop-scientific-molding.txt 2 |
+| Warp, uneven shrink, built-in stress | Big pressure drop across the part (slow fill), hot spots in the mold, ejecting above the set temperature, unbalanced cooling | sop-scientific-molding.txt 3, 7; sop-cooling-water.txt |
+| One cavity short, cavities uneven | Hot drop heater with a cold tip and hot base; cavity or gate geometry; hot runner tolerances too loose on long runners | sop-scientific-molding.txt 4 |
+| Cracking around the gate after a couple of years outdoors | Hold pressure released before the gate sealed | sop-scientific-molding.txt 5 |
+| Slides, lifters or cores binding, galling, grinding in the ways; splay near them | No water in the moving parts: they heat, grow and bind | sop-cooling-water.txt 2 |
+| Long cycle, high part cost | Cooling: unbalanced circuits, starved restrictive line, no water in moving parts | sop-cooling-water.txt |
+| Fill time or shot weight wandering | Press not doing what it's told (speed pots dialed back, pressure), check ring not seating, process over 80% of press pressure, running at 100% injection speed with no control left | sop-scientific-molding.txt 1, 2, 3 |
+| The process changes with the seasons | Resin temperature from outside silos (about 120 F in summer sun, 32 F in winter), humidity, weak dryers | sop-scientific-molding.txt 6; sop-drying.txt |
+| Specks and visual defects in white, light or clear parts | Regrind in them (run zero there), or dust from a grinder running backwards | sop-drying.txt 4, 7 |
+
+3. FIX, CONFIRM, RECORD (office)
+- One change at a time, against the process sheet; record what changed and what the parts did.
+- When the cause is upstream (water, dryer, power, press, heater), fix it there; a process tweak that hides it is a fix for the run, not the cure (Mike's words on hot drops, sop-scientific-molding.txt 4).
+- Write the result back: the process sheet if a setpoint changed, the PFMEA if a new cause was found.
+
+WHAT IT PRODUCES
+A troubleshooting record per defect, in its own dated folder: the defect with photos, what the guide suggested, which plant causes were checked (table above), the change made, the result, and the cause found.
+
+HANDS OFF
+Resin maker's technical service (material-specific defects), tool shop and hot runner maker, press service, electrician (outlets), dryer service.

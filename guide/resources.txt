@@ -2295,6 +2295,38 @@ Edition: Card dated 2022-03-15 (from file name).
 Check: Read through search results on 2026-10-12; the office did not open the PDF itself. Rules of thumb are starting points; confirm with equipment makers.
 Checked: 2026-10-12. Source: Trade publication (via search).
 
+entec-troubleshooting | Entec Polymers — Troubleshooting Guide for Injection Molding
+https://entecpolymers.com/resources/product-guides/troubleshooting-guide-for-injection-molding
+Group: making. Type: learning_resource.
+Roles: b-molding-defects, b-scientific-molding. Free guide organized by defect, cause and solution.
+Edition: Undated web guide.
+Check: Found via search 2026-10-12; the office did not open the page itself.
+Checked: 2026-10-12. Source: Resin distributor's website (via search).
+
+bryce-troubleshooting | Douglas M. Bryce — Troubleshooting: A Guide for Injection Molders
+https://www.scribd.com/document/482279786/TroubleGuide
+Group: making. Type: learning_resource.
+Roles: b-molding-defects. Defect-by-defect guide (black specks, blisters, burns, flash, flow lines, sink, splay, short shots, warp) with causes and remedies. Author has 40+ years in thermoplastic injection molding. Link is a user upload; buy or find the publisher's copy for use.
+Edition: IPLAS, about 2003-2005.
+Check: Found via search 2026-10-12; publisher page not found; current availability not verified.
+Checked: 2026-10-12. Source: Book (via search).
+
+kerkstra-troubleshooting | Kerkstra and Brammer — Injection Molding Advanced Troubleshooting Guide
+https://shop.elsevier.com/books/injection-molding-advanced-troubleshooting-guide/kerkstra/978-1-56990-835-8
+Group: making. Type: learning_resource.
+Roles: b-molding-defects, b-scientific-molding. Book organized by problem and solution; covers splay, sink, short shot, flash, jetting and more. Paid.
+Edition: 2nd edition, 2021-06-22 (Hanser; ISBN 9781569906460 per one listing).
+Check: Found via search 2026-10-12; the office did not open the page itself.
+Checked: 2026-10-12. Source: Publisher listing (via search).
+
+moldex3d-defects | Moldex3D — injection molded part problems and solutions
+https://ch.moldex3d.com/assets/2011/11/InjMldPrt-ProbSol.pdf
+Group: making. Type: learning_resource.
+Roles: b-molding-defects. Short defect definitions with mechanisms (example: burn marks from trapped air overheating). Free PDF.
+Edition: 2011 PDF.
+Check: Found via search 2026-10-12; the office did not open the PDF itself.
+Checked: 2026-10-12. Source: Simulation software maker (via search).
+
 BEGIN DESIGN PRINCIPLES
 Guide: https://ancreationoffice.com/design-principles.html
 Instructions: https://ancreationoffice.com/design-principles.txt
