@@ -21,6 +21,7 @@ ADHESIVE DISPENSING (published: dispensing equipment and adhesive makers' applic
 - Cure: if light-cure, the lamp's intensity and exposure time at the station, the lamp's aging, and shielding operators from the light.
 - Dot control: dot size and position checked by the vision system after dispensing; trend the size and alarm on drift.
 - Keep it running: nozzle clogging (especially with fast-cure adhesives), purging at start-up and after stops, reservoir level, pot life and temperature, cleaning procedure.
+- Bridge coating (a part's tip passed through a bridge of adhesive held between two dispense points): the bridge's size depends on the gap between the points, the volume fed, the adhesive's viscosity and surface tension, and temperature. The time the bridge needs to re-form after each part sets a ceiling on the rate, especially with irregular part spacing (two parts close together may arrive before the bridge has recovered). Have we measured re-form time at the target rate and at the closest part spacing? What happens to excess adhesive (drips, build-up on the points), and how often must the points be cleaned? How is the feed controlled so the bridge doesn't grow or starve over a shift? A camera watching the bridge (sop-automation-vision.txt) is the early warning.
 - Ask the adhesive and dispensing makers for a sample run on real parts; they usually offer it.
 
 FRAMING AND MACHINE BASE (office)

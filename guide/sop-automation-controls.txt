@@ -15,6 +15,12 @@ MOTION: THE INDEXING WHEEL (office)
 - Tuning: tune with the real wheel and parts; check settling time at the dwell before the camera fires.
 - Jams: torque or following-error monitoring to stop on a jam before damage.
 
+PART TRACKING BY NEST (office)
+- When parts land in an irregular pattern of nests, the PLC keeps a record per nest (a shift register indexed by nest number, or a data table that moves with the wheel): occupied or empty, coated, bridge status at coating, inspection result, and where it went.
+- Each station reads and writes its own nest's record as the wheel indexes; the dispenser acts only on occupied nests, the inspection writes good or bad, the sorter acts on the result.
+- The record must survive a stop and recover correctly at restart (or the machine must clear the wheel and start fresh); a tracking error sends the wrong part down the wrong line. Test it on purpose: random patterns of empty and full nests, stops mid-cycle, power loss.
+- Variable spacing also affects timing: if two parts can be one station apart, every station must handle back-to-back parts.
+
 THE CONTROL PANEL (published: UL 508A for industrial control panels; NFPA 79 for machine wiring; NFPA 70 (NEC); confirm the plant's requirements)
 - Enclosure: steel, with a NEMA/UL type rating for the environment (Type 12 is common indoors on a plant floor); size it for the parts, wiring room, heat and future additions.
 - DIN rail layout: incoming power and disconnect, protection (breakers, fuses), power supply, PLC and I/O, safety relay or safety PLC, motor drives, terminal blocks, with wire duct and space to work.
