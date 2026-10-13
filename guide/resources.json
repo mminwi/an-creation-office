@@ -7255,6 +7255,93 @@
       "checked_on": "2026-10-13",
       "source": "Publisher page",
       "kind": "primary_guidance"
+    },
+    {
+      "id": "iec-61010-1",
+      "title": "IEC 61010-1 — safety of electrical equipment for measurement, control and lab use",
+      "url": "https://webstore.iec.ch/en/publication/4279",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-rugged-cots"
+      ],
+      "use": "Safety requirements for measuring equipment: insulation, creepage and clearance, enclosures, flammability; IEC 61010-2-030 adds measuring circuits and measurement categories (CAT II, III, IV). UL 61010-1 is the U.S. version. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-20653",
+      "title": "ISO 20653 — degrees of protection (IP code) including IPX9K",
+      "url": "https://www.iso.org/standard/58048.html",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-rugged-cots"
+      ],
+      "use": "Protection ratings for vehicle electrical equipment, including high-pressure, high-temperature water jets (IPX9K) used for washdown. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "mil-dtl-38999",
+      "title": "MIL-DTL-38999 — high-density circular connectors",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-rugged-cots",
+        "b-mil-electronics-build"
+      ],
+      "use": "The common military circular connector family: environmental sealing, shell sizes, inserts, sealing caps. Free from ASSIST.",
+      "check": "Confirm the current revision in ASSIST; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "mil-dtl-26482",
+      "title": "MIL-DTL-26482 — miniature circular connectors",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-rugged-cots"
+      ],
+      "use": "Bayonet-coupled miniature circular connectors, sealed versions available; a lower-cost military choice. Free from ASSIST.",
+      "check": "Confirm the current revision in ASSIST; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "gore-protective-vents",
+      "title": "Gore protective vents (expanded PTFE membrane vents)",
+      "url": "https://www.gore.com/products/categories/venting",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-rugged-cots",
+        "b-mil-enclosure"
+      ],
+      "use": "Pressure-equalizing vents that let air through and keep water and dust out of sealed enclosures; ratings by immersion depth. Free product data.",
+      "check": "Supplier data; choose a vent rated to the required immersion.",
+      "checked_on": "2026-10-13",
+      "source": "Supplier’s own website",
+      "kind": "supplier"
     }
   ],
   "researched_shortlists": {
