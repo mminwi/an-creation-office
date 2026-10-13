@@ -1,4 +1,4 @@
-SOP: The design stage, a review loop. Revision 1 — October 7, 2026.
+SOP: The design stage, a review loop. Revision 2 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Starts from: the project description (project-description.txt), the deliverable of fact-finding.
 Goes with: sop-stages.txt, sop-review-page.txt, compliance-matrix-template.csv
@@ -6,9 +6,8 @@ Goes with: sop-stages.txt, sop-review-page.txt, compliance-matrix-template.csv
 WHY THIS EXISTS
 Fact-finding decided what this product has to meet: the standards, the specifications, the marketing needs, the risks. Design is where the product is shaped to meet them, and where the proof is collected. Design is not one pass. It is design, design, design, review, and again, until the people who have to be satisfied are satisfied.
 
-THE AI RUNS AT APQP LEVEL, ALWAYS (D-039)
-The office's minimum internal structure is APQP (Advanced Product Quality Planning, the automotive method). For a team of people it is often overkill. For an AI it is the structure that keeps track of what exists, what has been touched and what hasn't, and how each specification traces through to a good part and to what gets inspected. Project level changes what the inventor sees and how big each document is. It never removes a link in the chain.
-This is the floor, not a ceiling: slightly more formal than people alone would bother with, close to an automotive level of quality, and cheap for an AI to keep (D-047).
+THE OFFICE UNDERSTANDS APQP (D-039, as changed by Mike: formal APQP is not run on every project)
+The office understands APQP (Advanced Product Quality Planning, the automotive method) and uses its logic to keep track of what exists, what has been touched and what hasn't, and how each specification traces through to a good part and to what gets inspected. Keeping those links is cheap for an AI. How formal the documents get is the inventor's call and what the product and its customer require (sop-stages.txt); offer the formal level, don't impose it. Project level changes what the inventor sees and how big each document is.
 The inventor does not have to work in APQP. They see plain words, reviews and decisions. b-analyst keeps the structure underneath.
 
 APQP's five steps (APQP calls them phases) and our stages:

@@ -1,21 +1,22 @@
-SOP: Stages of a project. Revision 9, October 12, 2026. Replaces the silent tripwires in sop-phases.txt once approved.
+SOP: Stages of a project. Revision 10, October 13, 2026. Replaces the silent tripwires in sop-phases.txt once approved.
 For b-analyst. The inventor sees the plain stage names on the status sheet, never numbers or this file.
 
 WHY THIS MUCH PROCESS (from Mike, D-047)
-This is the most basic process we use. It is a little more formal than a small team of people would use on their own, and it gets close to an automotive level of quality (the APQP way of planning). That is on purpose. People get a little lazy and feather their way through; an AI needs the structure to keep track of what has been touched, what hasn't, and how each spec traces to a good part. The documentation that made this painful when people typed it all up is easy for the AI. So the AI always runs at this level. The inventor sees plain words and makes the decisions; the formality lives in the files.
+This is the basic process. An AI needs some structure to keep track of what has been touched, what hasn't, and how each spec traces to a good part, and the documentation that made this painful when people typed it all up is easy for the AI. The inventor sees plain words and makes the decisions; the structure lives in the files.
 
-A FORMAL APQP ON EVERY PROJECT, RUN BY THE AI (D-048)
-Every project runs a documented APQP, start to finish, with the AI keeping it:
+THE OFFICE UNDERSTANDS APQP; THE OWNER SETS HOW FORMAL (Mike, replaces D-048)
+Formal APQP is not run on every project. The office understands APQP (Advanced Product Quality Planning) and uses its logic to keep the project straight:
 - Specifications first: the project description and the compliance matrix.
-- Through design and prototyping: every spec is checked as present and addressed in the design, the design FMEA and the tests.
-- The control plan: every critical feature and spec that matters has a check, and every check traces to a spec.
+- Through design and prototyping: each spec that matters is addressed in the design and the tests (and the design FMEA, when there is one).
+- The control plan: critical features get a check, and each check traces to a spec.
 - Into manufacturing: specs, control plan and gauges are checked into the tooling loop and qualification, and confirmed on real parts.
 - Assemblies too: every assembly, its parts and its stack-ups, not only single parts.
-- The whole APQP plan: one living APQP file per project (Office files/apqp/) listing each APQP element, their status (done, open, not needed at this level, with the reason) and the evidence. Shown on a review page on request.
-Almost all of it runs without much human effort. People can just describe what they are doing, out loud or in a message, during trials, builds and reviews ("second shot, the boss on the left is short, we're bumping pressure"). The AI files it in the record, fills the APQP paperwork from it (trial logs, FMEA lines, control plan changes, inspection notes), and asks only the few questions needed to fill the holes.
+How far the formal paperwork goes is the inventor's call, and what the product, its risks and its customer require: an automotive or medical customer may require the full formal set; a simple consumer product usually doesn't. Because it's AI, it will be as formal as the person wants the project to be. Offer the formal level once, in plain words, when it would help or when a customer or program requires it; don't impose it.
+- If the inventor wants the formal set: one living APQP file per project (Office files/apqp/) listing each APQP element, its status (done, open, not needed at this level, with the reason) and the evidence. Shown on a review page on request.
+Almost all of it can run without much human effort. People can just describe what they are doing, out loud or in a message, during trials, builds and reviews ("second shot, the boss on the left is short, we're bumping pressure"). The AI files it in the record, fills the APQP paperwork from it (trial logs, FMEA lines, control plan changes, inspection notes), and asks only the few questions needed to fill the holes.
 
 THE WHOLE PROCESS IN ONE PARAGRAPH, AND THE LEVELS ABOVE IT (D-049)
-Across every stage the AI runs the specifications and collects the test results that any certification, test or validation needs for the programs this product falls under. It sets up the level of quality the product calls for (electronics, medical, aviation, whatever it is), keeps track of all of it, and runs at least a basic APQP. The base is that basic APQP and the stage loops: walk the design through the stages and iterate as many times as needed, with the timeline, budget and quality bar in view.
+Across every stage the AI runs the specifications and collects the test results that any certification, test or validation needs for the programs this product falls under. It sets up the level of quality the product calls for (electronics, medical, aviation, whatever it is), keeps track of all of it, and keeps the basic spec-to-part traceability. The base is that traceability and the stage loops: walk the design through the stages and iterate as many times as needed, with the timeline, budget and quality bar in view.
 Some programs raise the documentation. The screening and resource map tell the AI which; it then documents to that level and tells the inventor why, in plain words:
 - Medical (FDA design controls, ISO 13485): design inputs and outputs, every design review, verification and validation, and the reasons behind decisions and improvements: what was tried, what was found, what changed and why (the design history file). Risk management to ISO 14971. Usability records.
 - Aviation (AS9100, the aviation authority): configuration control on every revision, first article inspection to AS9102, traceability of parts and materials, the customer's flow-down requirements.
