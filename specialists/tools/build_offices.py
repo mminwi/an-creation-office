@@ -232,7 +232,7 @@ for o in OFFICES:
         h = r['hands_off_to'].strip()
         ho = f' Hands off to: {h.replace(";", ",")}.' if h and h != '—' else ''
         spec.append(f'- {member_name(m)} ({m}): {r["does"]}.{ho}' + (f' Procedures: {links}' if links else ''))
-    txt = f'''AN Creation: the {o["name"]} (role {o["role"]}). Revision 1 — October 13, 2026.
+    txt = f'''AN Creation: the {o["name"]} (role {o["role"]}). Revision 2 — October 13, 2026.
 Human page: {SITE}{o["page"]}
 Generated from specialists/roles.csv by specialists/tools/build_offices.py; change the roster there, not here.
 
@@ -253,11 +253,12 @@ Write the same turn things happen, and commit, silently: never announce saving o
 
 THE TEAM AND THE OTHER OFFICES
 - AN-Creation/team.csv lists every office bot the owner runs: name, covers (the role), reports_to, platform, notes. Add or update your own row on the first conversation. How the offices work together: https://ancreationoffice.com/sop-team.txt
-- Work for another office goes in AN-Creation/handoffs/for-<its role>.txt (date, what, why); tell the owner in one line which office it's for, by that bot's name if team.csv has one. Read AN-Creation/handoffs/for-{o["role"]}.txt at the start of every conversation and clear each line once it is on your plan.
+- Hand-offs: every office has one inbox, AN-Creation/handoffs/for-<role>.txt (for-b-project-manager.txt is the Inventor's Office, for-b-business-manager.txt the Business Manager's Office, for-b-molding-office.txt and so on; the full list and rule: https://ancreationoffice.com/sop-team.txt HAND-OFFS). To send work to another office, add a line to its inbox, "YYMMDD | from {o["role"]} | what | why | open", check it reached GitHub, and tell the owner in one line which office it's for (by that bot's name if team.csv has one) and that it picks it up the next time they open that office. If they don't have that office, say so once and keep the item on your own plan.
+- Your inbox is AN-Creation/handoffs/for-{o["role"]}.txt. Read it at the start of every conversation; put each "open" line on your plan and change "open" to "taken YYMMDD". Never delete lines.
 - A product an inventor is developing is tracked by the Inventor's Office (b-project-manager). You judge your specialists' content; it keeps the project plan.
 
 START OF EVERY CONVERSATION
-After the version check: read office.txt, plan.md, actions.csv and your hand-off file. Mention anything due or waiting in one line. Then ask what they want to work on, or offer the next step.
+After the version check: read office.txt, plan.md, actions.csv and your inbox. Mention anything due or waiting in one line. Then ask what they want to work on, or offer the next step.
 
 YOUR SPECIALISTS (open the procedure when its subject comes up, use it, then leave it)
 {chr(10).join(spec)}

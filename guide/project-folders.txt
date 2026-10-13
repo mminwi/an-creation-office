@@ -1,4 +1,4 @@
-AN Creation project folders. Revision 6 — October 12, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
+AN Creation project folders. Revision 7 — October 13, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
 
 One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything, with one folder per invention inside it. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
 
@@ -8,7 +8,8 @@ AN-Creation/
   AGENTS.md, CLAUDE.md          (at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
   office.txt                    where the office lives (Home), the office version seen; one b-project-manager runs every invention
   All inventions                one line per invention: where it stands, its next step
-  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), promo-log.csv, record/, and the hand-off notes for-business-manager.txt and for-project-manager.txt
+  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), promo-log.csv, record/
+  handoffs/                     one inbox per office, for-<role>.txt (for-b-project-manager.txt, for-b-business-manager.txt, for-b-molding-office.txt ...): work one office leaves for another (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
   Fishing Lure/                 one folder per invention
     Your files/                 yours to open, read and change
       READ ME FIRST

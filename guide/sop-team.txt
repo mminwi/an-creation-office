@@ -1,4 +1,4 @@
-SOP: The offices. Role names, the team file, how the offices work together, who tracks and who judges, and the first and second looks. Revision 3 — October 13, 2026. The office is now six offices, one bot each; specialists come with their office.
+SOP: The offices. Role names, the team file, how the offices work together, who tracks and who judges, and the first and second looks. Revision 4 — October 13, 2026. Hand-offs: one inbox per office, all in AN-Creation/handoffs/. The office is now six offices, one bot each; specialists come with their office.
 Index: https://ancreationoffice.com/sop.txt
 Read this when setting up an office, when the owner adds, renames or removes an office, when work belongs to another office, and when a project needs its first look or a second look at a gate.
 
@@ -24,7 +24,16 @@ Template: https://ancreationoffice.com/template-team.csv . One row per office bo
 - Adding, renaming or removing an office is the owner's call. Never create a bot on your own; when work clearly needs an office they don't have, say so once, with its page, and record the item.
 
 HAND-OFFS BETWEEN OFFICES
-Work for another office goes in AN-Creation/handoffs/for-<its role>.txt (date, what, why), for example for-b-molding-office.txt. The Inventor's Office and the Business Manager's Office keep their existing files, AN-Creation/Business/for-business-manager.txt and for-project-manager.txt. Each office reads its own file at the start of a conversation and clears a line once it is on its plan. Tell the owner in one line which office a job went to, by that bot's name.
+Every office has exactly one inbox, all in one folder: AN-Creation/handoffs/for-<role>.txt, the role exactly as it is written in team.csv. Nothing else is an inbox.
+  Inventor's Office            AN-Creation/handoffs/for-b-project-manager.txt
+  Business Manager's Office    AN-Creation/handoffs/for-b-business-manager.txt
+  Molding Plant Office         AN-Creation/handoffs/for-b-molding-office.txt
+  Plastic Design Office        AN-Creation/handoffs/for-b-plastic-design-office.txt
+  Quality Office               AN-Creation/handoffs/for-b-quality-office.txt
+  Manufacturing Office         AN-Creation/handoffs/for-b-manufacturing-office.txt
+Sending: add one line to the other office's inbox: YYMMDD | from <your role> | what | why | open. Save it and check it reached GitHub (the push worked, not just a local commit). Then tell the owner in one line which office it's for, by that bot's name from team.csv, and that it picks the item up the next time they open that office. Offices don't start each other: the owner opening the other office is what moves the job. If the owner doesn't have that office, say so once, with its page, and keep the item on your own plan instead of writing to an inbox nobody reads.
+Receiving: at the start of every conversation, read your own inbox. Put each line ending "open" on your plan, change "open" to "taken YYMMDD", and mention new items to the owner in one line. Never delete lines: "taken" is how the sender and the owner see that it arrived.
+Older projects (once, whichever office finds them first): if AN-Creation/Business still has any of for-project-manager.txt, for-business-manager.txt, for-soren.txt or for-kasper.txt, move every line into the matching inbox (for-project-manager and for-soren into AN-Creation/handoffs/for-b-project-manager.txt; for-business-manager and for-kasper into AN-Creation/handoffs/for-b-business-manager.txt), ending each moved line with "| open" unless it is already on a plan, then delete the old file. One commit, one line to the owner saying the hand-offs were moved.
 
 WHO TRACKS AND WHO JUDGES
 Every job has a tracker and a judge.
