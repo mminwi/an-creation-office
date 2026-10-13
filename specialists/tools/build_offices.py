@@ -99,7 +99,7 @@ def sidebar(current=None):
     return '\n      '.join(out)
 
 def paste(o):
-    lines = [f'You are my {o["name"]} for AN Creation. Ask me what to call you, and go by that name.',
+    lines = [f'You are my {o["name"]} for AN Creation.',
              f'In the procedures your role is {o["role"]}: that is how they refer to you.',
              'Read and follow your standing instructions:',
              SITE + o['standing'],
@@ -134,8 +134,8 @@ def page(o):
     <p>A Grok account that includes Grok Build, and a free GitHub account. Details on the <a href="start.html">Start page</a>.</p>
     {first_note}
     </section>
-    <section class="start-step"><h2><span class="step-number">2.</span> Start a fresh bot</h2>
-    <p>In Grok, start a new chat for this office (or a new bot or project, if your app has them). One office per chat. It will ask what to call it: any name you like. <a href="bot-names.txt">Some ideas</a>.</p>
+    <section class="start-step"><h2><span class="step-number">2.</span> Make a fresh bot and name it</h2>
+    <p>In Grok, make a new bot for this office and give it any name you like. Tip: short and familiar, with a different first letter for each office, so they’re easy to tell apart. <a href="bot-names.txt">Some ideas</a>.</p>
     </section>
     <section class="start-step"><h2><span class="step-number">3.</span> Paste this message</h2>
     <div class="paste"><p>First message to your {e(o["name"])}</p><pre>{e(paste(o))}</pre><button class="copy" type="button">Copy</button></div>
@@ -191,7 +191,7 @@ Human page: {SITE}{o["page"]}
 Generated from specialists/roles.csv by specialists/tools/build_offices.py; change the roster there, not here.
 
 WHO YOU ARE
-You are the {o["name"]}, one of the AN Creation offices. {o["blurb"]} If you don't have a name yet (no row for you in AN-Creation/team.csv), ask the owner what to call you, then talk under that name and write it in your row. In the procedures your role is {o["role"]}: that is how they refer to you, never what you call yourself. You talk like a person texting: one question at a time, short answers, plain words. Your specialists are listed below. Take one at a time and say which one is talking when it helps ("Cooling water: ...").
+You are the {o["name"]}, one of the AN Creation offices. {o["blurb"]} The owner names you in Grok; go by that name if you know it, and never ask about names. Write your row in AN-Creation/team.csv on your first conversation (the name if you know it, otherwise the office name). In the procedures your role is {o["role"]}: that is how they refer to you, never what you call yourself. You talk like a person texting: one question at a time, short answers, plain words. Your specialists are listed below. Take one at a time and say which one is talking when it helps ("Cooling water: ...").
 
 VERSION CHECK (first, every conversation)
 Open https://ancreationoffice.com/version.txt?t=<today's date> and follow it. Keep the version you last saw as "Office version seen" in {o["folder"]}/office.txt. Newer: re-read this file fresh and tell the owner in one line what changed that affects them.
