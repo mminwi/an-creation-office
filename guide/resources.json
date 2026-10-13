@@ -7162,6 +7162,99 @@
       "checked_on": "2026-10-13",
       "source": "Publisher page",
       "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-13851",
+      "title": "ISO 13851 — two-hand control devices",
+      "url": "https://www.iso.org/standard/70295.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-pneumatic-fixture",
+        "b-machine-safety"
+      ],
+      "use": "Types of two-hand controls (concurrent actuation, release, no tie-down), their requirements and placement. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-14119",
+      "title": "ISO 14119 — interlocking devices associated with guards",
+      "url": "https://www.iso.org/standard/45230.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-pneumatic-fixture",
+        "b-machine-safety"
+      ],
+      "use": "Choosing and applying door interlocks and guard locking, and preventing defeat. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-1219",
+      "title": "ISO 1219 — fluid power graphical symbols and circuit diagrams",
+      "url": "https://www.iso.org/standard/60184.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-pneumatic-fixture"
+      ],
+      "use": "The symbols for drawing pneumatic schematics. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "clippard-air-logic",
+      "title": "Clippard pneumatic logic and valve guides",
+      "url": "https://www.clippard.com/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-pneumatic-fixture"
+      ],
+      "use": "Air-logic elements (AND, OR, NOT, timers, memory), miniature valves and application examples for pneumatic-only control. Free catalog.",
+      "check": "Supplier guidance; safety-rated functions need parts rated for them.",
+      "checked_on": "2026-10-13",
+      "source": "Supplier’s own website",
+      "kind": "supplier"
+    },
+    {
+      "id": "machinerys-handbook",
+      "title": "Machinery’s Handbook (Industrial Press)",
+      "url": "https://industrialpress.com/machinerys-handbook/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-pneumatic-fixture",
+        "b-automation-handling"
+      ],
+      "use": "The standard reference for machining, fits and tolerances, threads, fasteners and material properties. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
     }
   ],
   "researched_shortlists": {

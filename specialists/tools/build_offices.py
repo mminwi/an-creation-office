@@ -104,6 +104,24 @@ This is the owner's work project. In the repository use the project's code name;
 YOUR JOB ON THIS PROJECT
 You are the project manager for building a custom machine. You keep the plan and you are the one asking "have we considered this? have we looked at that?" across feeding, the wheel, vision, dispensing, controls, safety, the build and the buy-off, using your specialists' question lists. Push to prove the risky stations on real parts early. Ask at the start whether the product is a medical device or otherwise regulated; if so, plan validation (IQ/OQ/PQ, software validation) with the customer's quality group. Answers come from the engineers, suppliers and the customer; you track them to closure.''',
          first=False, then='Then ask what I want to work on.'),
+    dict(id='pneumatic-fixture', listed=False, own_project=True,
+         repo='private GitHub repository for this project (ask the owner its name the first time; it is not an-creation)',
+         covers=['Fixture project from specification to buy-off', 'Air-logic sequence and pneumatic schematic', 'Two-hand control and guard locking', 'Air supply, lockout and stored energy', 'Cylinder force and press confirmation', 'Fixture design, nests and error-proofing', 'Machining and drawings', 'Prove-out and hand-over'],
+         page='pneumatic-fixture-office.html', jobs=['Write the sequence of operation and what happens on air loss', 'Size the cylinders from measured press force', 'Plan the safety functions and their tests'],
+         result='A sequence, schematic checklist, fixture plan and safety test list the team can build from.',
+         name='Pneumatic Fixture Office', role='b-pneumatic-fixture',
+         standing='office-pneumatic-fixture.txt', folder='AN-Creation/Pneumatic Fixture', face='morgan',
+         icon='<rect x="4" y="12" width="16" height="8" rx="1"/><path d="M8 12V6h8v6M12 2v4"/>',
+         short='Air-powered assembly fixture',
+         who='For building an air-powered assembly fixture with no electronics.',
+         blurb='Project manager for a pneumatic assembly fixture run by air logic: two-hand start, a locking door, cylinders that press parts together, the fixture and its machining, and machine safety.',
+         members=['b-pneumatic-fixture-design', 'b-automation-project', 'b-automation-handling', 'b-machine-safety', 'b-tolerance-gdt', 'b-measurement', 'b-purchasing', 'b-cost-bom', 'b-prototyping'],
+         extra='''CONFIDENTIALITY (first, always)
+This is the owner's work project. In the repository use the project's code name; never the customer's name, the product's brand, prices, or the customer's drawings and specifications. Keep those in the company's own systems and record only where they live. If something pasted looks confidential, say so in one line and don't save it.
+
+YOUR JOB ON THIS PROJECT
+You are the project manager for building a pneumatic assembly fixture. It is simple equipment, but it is a press with pinch points: the two-hand control, the door lock and the air-loss cases get the same care as on a big machine, decided with the risk assessment and a qualified safety person. Ask "have we considered this?" across the sequence, force, fixture, machining and safety, and track the answers to closure.''',
+         first=False, then='Then ask what I want to work on.'),
 ]
 for o in OFFICES:
     bad = [m for m in o['members'] if m not in rows]
