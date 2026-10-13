@@ -1,6 +1,7 @@
 """Builds the AN Creation offices from specialists/roles.csv (run after any roster or office change).
 Run from the repository root:  python specialists/tools/build_offices.py
 Writes into guide/:
+  welcome.html                      the site's front page: pick an office
   offices.html                      the overview of the six offices
   <office page>.html                one page per office: what's inside, how to start it, the paste message
   office-<id>.txt                   standing instructions for the four specialty offices
@@ -18,15 +19,15 @@ shell = (ROOT / 'specialists/tools/office-shell.template.html').read_text(encodi
 e = lambda s: html.escape(s, quote=False)
 
 OFFICES = [
-    dict(id='inventor', covers=['Planning the project and keeping it on track', "Whether people want it, and what they'd pay", 'Design', 'Prototypes', 'Making it easier and cheaper to build', 'Product safety and listings'], page='inventors-office.html', name="Inventor's Office", role='b-project-manager',
+    dict(id='inventor', covers=['Planning the project and keeping it on track', "Whether people want it, and what they'd pay", 'Design', 'Prototypes', 'Making it easier and cheaper to build', 'Product safety and listings'], page='inventors-office.html', jobs=['Tell it your idea in a few sentences and see what it asks', 'Find out what your product will have to meet: safety rules, standards, a patent search', 'Plan your first prototype'], result="A short summary of your idea: what's known, what isn't yet, and the next useful question or experiment.", name="Inventor's Office", role='b-project-manager',
          standing='standing.txt', folder='(one folder per invention)', face='andy',
          icon='<circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/>',
          short='Your idea, from first talk to prototype',
-         who='For anyone with an idea. Start here.',
+         who='For anyone with an idea for a product.',
          blurb="Your project manager for every invention. It takes an idea from the first conversation through design, prototypes, tooling, testing and launch, keeps the paperwork, and tells you what's next.",
          members=['b-project-manager', 'b-market-check', 'b-design', 'b-prototyping', 'b-dfm', 'b-product-safety'],
          first=True, then='Then ask me to tell you about my invention.'),
-    dict(id='business', covers=['The company', 'Patent preparation', 'A name and trademark', 'Licensing', 'Funding', 'Your website and promotion', 'Getting into stores'], page='business-office.html', name="Business Manager's Office", role='b-business-manager',
+    dict(id='business', covers=['The company', 'Patent preparation', 'A name and trademark', 'Licensing', 'Funding', 'Your website and promotion', 'Getting into stores'], page='business-office.html', jobs=['Decide whether, and when, to form a company', 'Get ready for a first talk with a patent attorney', 'Plan the money for your next step'], result='A short list of the business decisions in front of you, and a draft packet for the first one.', name="Business Manager's Office", role='b-business-manager',
          standing='business-manager.txt', folder='AN-Creation/Business', face='larry',
          icon='<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/>',
          short='Company, patent, money, selling',
@@ -34,7 +35,7 @@ OFFICES = [
          blurb='The business around your products: the company, patent preparation, a name and trademark, licensing, funding, your website, promotion, and getting into stores.',
          members=['b-business-manager', 'b-company-setup', 'b-patent-prep', 'b-trademark', 'b-licensing', 'b-funding', 'b-promotion', 'b-retail'],
          first=False, then='Then ask what I want to work on.'),
-    dict(id='molding', covers=['Setting up a solid molding process', 'Molding defects', 'Mold and machine cooling water', 'Drying and regrind', 'Buying a mold', 'Plastic materials', 'Machine safety'], page='molding-office.html', name='Molding Plant Office', role='b-molding-office',
+    dict(id='molding', covers=['Setting up a solid molding process', 'Molding defects', 'Mold and machine cooling water', 'Drying and regrind', 'Buying a mold', 'Plastic materials', 'Machine safety'], page='molding-office.html', jobs=['Work through a molding defect: short shots, sink, flash, splay', 'Check a cooling water or drying problem', 'Get ready to buy a mold'], result='An investigation record: the readings you gave it, the likely causes, and the next checks to run at the press.', name='Molding Plant Office', role='b-molding-office',
          standing='office-molding.txt', folder='AN-Creation/Molding Plant', face='peter',
          icon='<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h10M7 13h6"/>',
          short='Molding, cooling, drying, molds',
@@ -42,7 +43,7 @@ OFFICES = [
          blurb="Built from Mike Maier's years running molding plants: cooling water, drying and regrind, scientific molding, molding defects, buying molds, materials and machine safety.",
          members=['b-scientific-molding', 'b-molding-defects', 'b-cooling-water', 'b-drying-handling', 'b-mold-buying', 'b-plastic-materials', 'b-machine-safety'],
          first=False, then='Then ask what I want to work on.'),
-    dict(id='plastic', covers=['Plastic part design', 'Tolerances: will the parts fit together', 'Choosing the plastic', 'Designing for molding', 'Prototypes', 'Buying a mold'], page='plastic-design-office.html', name='Plastic Design Office', role='b-plastic-design-office',
+    dict(id='plastic', covers=['Plastic part design', 'Tolerances: will the parts fit together', 'Choosing the plastic', 'Designing for molding', 'Prototypes', 'Buying a mold'], page='plastic-design-office.html', jobs=['Review a part for molding: walls, draft, ribs, gates', 'Check whether parts will fit together (a tolerance stack)', 'Choose a plastic for the job'], result='A design-for-molding review tied to your drawing revision, with open questions for the molder.', name='Plastic Design Office', role='b-plastic-design-office',
          standing='office-plastic-design.txt', folder='AN-Creation/Plastic Design', face='morgan',
          icon='<path d="M4 18 12 4l8 14z"/><path d="M8 18h8"/>',
          short='Plastic parts that mold well',
@@ -50,7 +51,7 @@ OFFICES = [
          blurb='Plastic parts that mold well: part design, tolerance stacks, material choice, design for molding, prototypes and the mold.',
          members=['b-plastic-part-design', 'b-tolerance-gdt', 'b-plastic-materials', 'b-dfm', 'b-prototyping', 'b-mold-buying'],
          first=False, then='Then ask what I want to work on.'),
-    dict(id='quality', covers=['Quality planning', 'Measurement and inspection', 'Lean Six Sigma and improvement'], page='quality-office.html', name='Quality Office', role='b-quality-office',
+    dict(id='quality', covers=['Quality planning', 'Measurement and inspection', 'Lean Six Sigma and improvement'], page='quality-office.html', jobs=['Draft a control plan from your requirements', 'Make sense of measurement or scrap data', 'Outline a corrective action'], result='A draft quality record, linked to the evidence you gave it, for your team to review.', name='Quality Office', role='b-quality-office',
          standing='office-quality.txt', folder='AN-Creation/Quality', face='maya',
          icon='<path d="M5 12l4 4 10-10"/>',
          short='APQP, measurement, Six Sigma',
@@ -58,7 +59,7 @@ OFFICES = [
          blurb='Quality planning (APQP, FMEA, control plans), measurement and inspection, and Lean Six Sigma with the improvement toolbox.',
          members=['b-quality-planning', 'b-measurement', 'b-six-sigma'],
          first=False, then='Then ask what I want to work on.'),
-    dict(id='manufacturing', covers=['Manufacturing cells and standard work', 'Purchasing', 'Cost and the parts list', 'Automation', 'Machine safety', 'Lean Six Sigma and improvement'], page='manufacturing-office.html', name='Manufacturing Office', role='b-manufacturing-office',
+    dict(id='manufacturing', covers=['Manufacturing cells and standard work', 'Purchasing', 'Cost and the parts list', 'Automation', 'Machine safety', 'Lean Six Sigma and improvement'], page='manufacturing-office.html', jobs=['Compare supplier quotes like for like', 'Draft standard work for a cell', 'Plan a bottleneck investigation'], result='A side-by-side quote comparison, a standard-work draft or an investigation plan.', name='Manufacturing Office', role='b-manufacturing-office',
          standing='office-manufacturing.txt', folder='AN-Creation/Manufacturing', face='frankie',
          icon='<path d="M3 20V10l6 4V10l6 4V6l6 4v10z"/>',
          short='Cells, purchasing, cost, automation',
@@ -116,44 +117,67 @@ def paste(o):
 STYLE = '''<style>
 .of-list .team-list{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:720px){.of-list .team-list{grid-template-columns:minmax(0,1fr)}}
+.of-pick .team-try{display:block;margin-top:.35rem;font-size:13px;line-height:1.45;opacity:.8}
+.of-need{margin:1rem 0 0;padding:.7rem 1rem;border-left:4px solid currentColor;background:rgba(127,127,127,.08)}
+.of-need p{margin:0}
+.paste .copy{margin:0 0 16px}
+.of-need p+p{margin-top:.4rem}
 </style>'''
 
+NEED = ('<div class="of-need"><p><strong>What you need:</strong> a Grok subscription (<a href="start.html#need">which one</a>). '
+        'The offices are free; Grok’s own charges apply. Your office helps you make a free GitHub account to save your work.</p></div>')
+
+
+def picker():
+    """The six offices as cards: who it's for, and one job to try."""
+    return ('<div class="of-list of-pick"><ul class="team-list">' + ''.join(
+        f'<li><a href="{x["page"]}">{face(x)}<span><strong>{e(x["name"])}</strong>'
+        f'<span class="team-role">{e(x["who"])}</span>'
+        f'<span class="team-try">Try: {e(x["jobs"][0])}</span></span>'
+        f'<span class="card-arrow" aria-hidden="true">↗</span></a></li>' for x in OFFICES) + '</ul></div>')
+
+HOW = '''<ol class="plain">
+    <li><p><strong>Pick the office that fits your work.</strong> You don’t need the others to start.</p></li>
+    <li><p><strong>Make a new bot in Grok and paste one message.</strong> The office page has it, with a Copy button.</p></li>
+    <li><p><strong>Answer its questions.</strong> One at a time, like texting. It walks you through setup, then asks what you’re working on.</p></li>
+    </ol>'''
 
 
 def page(o):
     others = [x for x in OFFICES if x is not o]
-    first_note = ('<p>This is the office to start with. If it\'s your first one, it also sets up your accounts and project folder with you.</p>'
-                  if o['first'] else
-                  '<p>Already have the Inventor\'s Office? This one joins the same project folder. Starting with this office alone? It sets up the folder with you first.</p>')
     main = f'''<header class="page-intro">
     <p class="kicker">{e(o["who"])}</p>
     <h1>{e(o["name"])}</h1>
     <p class="lede">{e(o["blurb"])}</p>
     </header><div class="reading-layout"><div class="article-body"><div class="start-steps">
-    <section class="start-step"><h2><span class="step-number">1.</span> Have your two accounts</h2>
-    <p>A Grok account that includes Grok Build, and a free GitHub account. Details on the <a href="start.html">Start page</a>.</p>
-    {first_note}
+    <section class="start-step"><h2><span class="step-number">1.</span> Make a new bot in Grok</h2>
+    <p>Give it any name you like. Short and familiar is easiest (<a href="bot-names.txt">some ideas</a>).</p>
     </section>
-    <section class="start-step"><h2><span class="step-number">2.</span> Make a fresh bot and name it</h2>
-    <p>In Grok, make a new bot for this office and give it any name you like. Tip: short and familiar, with a different first letter for each office, so they’re easy to tell apart. <a href="bot-names.txt">Some ideas</a>.</p>
+    <section class="start-step"><h2><span class="step-number">2.</span> Paste this message</h2>
+    <div class="paste"><p>First message to your {e(o["name"])}</p><button class="copy" type="button">Copy the message</button><pre>{e(paste(o))}</pre></div>
     </section>
-    <section class="start-step"><h2><span class="step-number">3.</span> Paste this message</h2>
-    <div class="paste"><p>First message to your {e(o["name"])}</p><pre>{e(paste(o))}</pre><button class="copy" type="button">Copy</button></div>
-    <p>It asks one question at a time from there. If it ever stops or goes quiet, ask “What’s next?”</p>
+    <section class="start-step"><h2><span class="step-number">3.</span> Answer its questions</h2>
+    <p>It asks one question at a time. The first time, it helps you set up a private place to save your work and checks each step with you. Then it asks what you’re working on. If it ever goes quiet, ask “What’s next?”</p>
+    <p>Already have another office? This one joins the same project folder.</p>
     </section></div>
+    {NEED}
+    <h2 style="margin-top:40px">Good first jobs</h2>
+    <ul class="plain">{''.join(f'<li>{e(j)}</li>' for j in o['jobs'])}</ul>
+    <p><strong>What you get back:</strong> {e(o["result"])}</p>
     <h2 id="inside" style="margin-top:40px">What it covers</h2>
     <ul class="plain">{''.join(f'<li>{e(c)}</li>' for c in o['covers'])}</ul>
-    <h2 style="margin-top:40px">What it won’t do</h2>
-    <p>It never sends, pays for, files, signs, publishes or orders anything without you. It never invents customers, prices, test results or limits. Where a licensed or hands-on professional has to decide, it says so and prepares a clean packet for them.</p>
+    <h2 style="margin-top:40px">You stay in charge</h2>
+    <p>The office prepares the work; you make the decisions. Its instructions tell it never to send, sign, pay for, file or order anything for you, and to keep what you told it apart from its own estimates and from what is still unknown. Check important results before you use them. Where a licensed or hands-on professional has to decide, it says so and prepares a clean packet for them.</p>
     <h2 style="margin-top:40px">The other offices</h2>
-    <p>Each office is its own bot. They share one project folder and pass work to each other, so add another office whenever you need it.</p>
+    <p>Each office is its own bot. They share one project folder, so add another whenever you need it.</p>
     <div class="of-list"><ul class="team-list">{''.join(f'<li><a href="{x["page"]}">{face(x)}<span><strong>{e(x["name"])}</strong><span class="team-role">{e(x["short"])}</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>' for x in others)}</ul></div>
     </div></div>'''
     return main
 
-def build_page(fname, title, desc, main, current):
+def build_page(fname, title, desc, main, current, canonical=None, head='', body='page-start'):
     out = shell
-    for k, v in {'TITLE': e(title), 'DESC': e(desc), 'PAGE': fname, 'SIDEBAR': sidebar(current), 'MAIN': main, 'STYLE': STYLE}.items():
+    for k, v in {'TITLE': e(title), 'DESC': e(desc), 'PAGE': fname if canonical is None else canonical, 'SIDEBAR': sidebar(current),
+                 'MAIN': main, 'STYLE': STYLE + head, 'BODY': body}.items():
         out = out.replace('{{' + k + '}}', v)
     (GUIDE / fname).write_text(out, encoding='utf-8')
 
@@ -162,17 +186,39 @@ for o in OFFICES:
 
 overview = f'''<header class="page-intro">
     <p class="kicker">The offices</p>
-    <h1>Pick the offices you need.</h1>
-    <p class="lede">AN Creation is a set of offices. Each one is a bot you name, and each covers one area of work. Start with the Inventor’s Office, then add another office whenever your project needs it. They all share one project folder.</p>
+    <h1>Start with the office that fits your work.</h1>
+    <p class="lede">Each office is an AI assistant you set up in Grok, and each covers one area of work. Pick one to start. Add another whenever you need it; they all share one project folder.</p>
     </header><div class="reading-layout"><div class="article-body">
-    <div class="of-list"><ul class="team-list">{''.join(f'<li><a href="{x["page"]}">{face(x)}<span><strong>{e(x["name"])}</strong><span class="team-role">{e(x["blurb"])}</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>' for x in OFFICES)}</ul></div>
+    {picker()}
     <h2 style="margin-top:36px">How it works</h2>
-    <ul class="plain"><li><strong>One bot per office.</strong> Each office page has the message to paste into a new bot. You give each bot its own name.</li>
-    <li><strong>Each office covers one area.</strong> Pick the ones you need; nothing else to set up.</li>
-    <li><strong>One project folder.</strong> Every office works in the same private GitHub repository and passes work to the others.</li>
-    <li><strong>Start small.</strong> Most people start with the Inventor’s Office and add the Business Manager’s Office when business questions come up.</li></ul>
+    {HOW}
+    {NEED}
     </div></div>'''
-build_page('offices.html', 'The offices', 'Six AN Creation offices, each a bot you name, each covering one area of work. Start with the Inventor’s Office.', overview, 'offices.html')
+build_page('offices.html', 'The offices', 'Six AN Creation offices, each an AI assistant you set up in Grok. Start with the one that fits your work.', overview, 'offices.html')
+
+WELCOME_DESC = ('Free AI assistants for engineering and manufacturing work: inventing, molding, plastic design, quality and manufacturing. '
+                'Pick an office, paste one message into Grok, and it walks you through the rest.')
+WELCOME_LD = ('\n  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://advancenowllc.com/#org", '
+              '"name": "Advance Now LLC", "url": "https://advancenowllc.com/", "logo": "https://advancenowllc.com/assets/an-chevron.png", "email": "mike@advancenowllc.com", '
+              '"founder": {"@type": "Person", "name": "Mike Maier", "url": "https://advancenowllc.com/about.html"}, '
+              '"sameAs": ["https://ancreationoffice.com/", "https://github.com/mminwi/an-creation-office"]}, '
+              '{"@type": "WebSite", "name": "AN Creation Office", "alternateName": "AN Creation", "url": "https://ancreationoffice.com/", '
+              '"description": "' + WELCOME_DESC + '", "publisher": {"@id": "https://advancenowllc.com/#org"}, '
+              '"sameAs": ["https://github.com/mminwi/an-creation-office"]}]}</script>')
+welcome = f'''<header class="page-intro">
+    <p class="kicker">AN Creation Office</p>
+    <h1>Choose your office. Tell it what you’re working on.</h1>
+    <p class="lede">Each office is an AI assistant you set up in Grok, built from Mike Maier’s years in product development, injection molding, quality and manufacturing. Pick the one that fits your work, copy one message, and it walks you through the rest.</p>
+    </header><div class="reading-layout"><div class="article-body">
+    {picker()}
+    <h2 style="margin-top:36px">How it works</h2>
+    {HOW}
+    {NEED}
+    <h2 style="margin-top:36px">Who made this</h2>
+    <p>Mike Maier, an engineer who has spent his career developing products and running molding and manufacturing plants. The offices put that experience into instructions anyone can use. <a href="https://advancenowllc.com/">More about Mike and Advance Now</a>.</p>
+    <p class="muted">Want the details first? <a href="system.html">How it works</a> explains the thinking behind the offices, and the <a href="resources.html">resources</a> are the library they work from. Neither is needed to start.</p>
+    </div></div>'''
+build_page('welcome.html', 'Welcome', WELCOME_DESC, welcome, None, canonical='', head=WELCOME_LD, body='page-welcome')
 (ROOT / 'specialists/tools/sidebar.html').write_text(sidebar() + '\n', encoding='utf-8')
 
 # standing instructions for the four specialty offices

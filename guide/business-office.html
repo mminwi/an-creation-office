@@ -23,6 +23,11 @@
 <style>
 .of-list .team-list{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:720px){.of-list .team-list{grid-template-columns:minmax(0,1fr)}}
+.of-pick .team-try{display:block;margin-top:.35rem;font-size:13px;line-height:1.45;opacity:.8}
+.of-need{margin:1rem 0 0;padding:.7rem 1rem;border-left:4px solid currentColor;background:rgba(127,127,127,.08)}
+.of-need p{margin:0}
+.paste .copy{margin:0 0 16px}
+.of-need p+p{margin-top:.4rem}
 </style>
 </head>
 <body class="page-start">
@@ -32,7 +37,7 @@
     <nav class="nav" aria-label="AN Creation">
       <a href="welcome.html">Welcome</a>
       <a href="start.html">Start</a>
-      <a href="system.html">Info</a>
+      <a href="system.html">How it works</a>
       <a href="resources.html">Resources</a>
       <a href="index.html">About</a>
       <a href="https://advancenowllc.com/" class="nav-site">Advance Now</a>
@@ -53,7 +58,7 @@
       <a href="manufacturing-office.html"><i class="face face-frankie" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10l6 4V10l6 4V6l6 4v10z"/></svg></i><span class="who"><b>Manufacturing Office</b><span>Cells, purchasing, cost, automation</span></span></a>
       <a href="offices.html">All offices</a>
       <p class="side-label">Office library</p>
-      <a href="system.html">Info</a>
+      <a href="system.html">How it works</a>
       <a href="resources.html">Resources</a>
       <a href="index.html">About AN Creation ↗</a>
           </div></details>
@@ -64,15 +69,11 @@
     <h1>Business Manager's Office</h1>
     <p class="lede">The business around your products: the company, patent preparation, a name and trademark, licensing, funding, your website, promotion, and getting into stores.</p>
     </header><div class="reading-layout"><div class="article-body"><div class="start-steps">
-    <section class="start-step"><h2><span class="step-number">1.</span> Have your two accounts</h2>
-    <p>A Grok account that includes Grok Build, and a free GitHub account. Details on the <a href="start.html">Start page</a>.</p>
-    <p>Already have the Inventor's Office? This one joins the same project folder. Starting with this office alone? It sets up the folder with you first.</p>
+    <section class="start-step"><h2><span class="step-number">1.</span> Make a new bot in Grok</h2>
+    <p>Give it any name you like. Short and familiar is easiest (<a href="bot-names.txt">some ideas</a>).</p>
     </section>
-    <section class="start-step"><h2><span class="step-number">2.</span> Make a fresh bot and name it</h2>
-    <p>In Grok, make a new bot for this office and give it any name you like. Tip: short and familiar, with a different first letter for each office, so they’re easy to tell apart. <a href="bot-names.txt">Some ideas</a>.</p>
-    </section>
-    <section class="start-step"><h2><span class="step-number">3.</span> Paste this message</h2>
-    <div class="paste"><p>First message to your Business Manager's Office</p><pre>You are my Business Manager's Office for AN Creation.
+    <section class="start-step"><h2><span class="step-number">2.</span> Paste this message</h2>
+    <div class="paste"><p>First message to your Business Manager's Office</p><button class="copy" type="button">Copy the message</button><pre>You are my Business Manager's Office for AN Creation.
 In the procedures your role is b-business-manager: that is how they refer to you.
 Read and follow your standing instructions:
 https://ancreationoffice.com/business-manager.txt
@@ -81,15 +82,22 @@ Use my an-creation repository on GitHub and add yourself to AN-Creation/team.csv
 If I don't have one yet, help me set it up first, one step at a time:
 https://ancreationoffice.com/github-setup.txt
 Then ask what I want to work on.
-One question at a time.</pre><button class="copy" type="button">Copy</button></div>
-    <p>It asks one question at a time from there. If it ever stops or goes quiet, ask “What’s next?”</p>
+One question at a time.</pre></div>
+    </section>
+    <section class="start-step"><h2><span class="step-number">3.</span> Answer its questions</h2>
+    <p>It asks one question at a time. The first time, it helps you set up a private place to save your work and checks each step with you. Then it asks what you’re working on. If it ever goes quiet, ask “What’s next?”</p>
+    <p>Already have another office? This one joins the same project folder.</p>
     </section></div>
+    <div class="of-need"><p><strong>What you need:</strong> a Grok subscription (<a href="start.html#need">which one</a>). The offices are free; Grok’s own charges apply. Your office helps you make a free GitHub account to save your work.</p></div>
+    <h2 style="margin-top:40px">Good first jobs</h2>
+    <ul class="plain"><li>Decide whether, and when, to form a company</li><li>Get ready for a first talk with a patent attorney</li><li>Plan the money for your next step</li></ul>
+    <p><strong>What you get back:</strong> A short list of the business decisions in front of you, and a draft packet for the first one.</p>
     <h2 id="inside" style="margin-top:40px">What it covers</h2>
     <ul class="plain"><li>The company</li><li>Patent preparation</li><li>A name and trademark</li><li>Licensing</li><li>Funding</li><li>Your website and promotion</li><li>Getting into stores</li></ul>
-    <h2 style="margin-top:40px">What it won’t do</h2>
-    <p>It never sends, pays for, files, signs, publishes or orders anything without you. It never invents customers, prices, test results or limits. Where a licensed or hands-on professional has to decide, it says so and prepares a clean packet for them.</p>
+    <h2 style="margin-top:40px">You stay in charge</h2>
+    <p>The office prepares the work; you make the decisions. Its instructions tell it never to send, sign, pay for, file or order anything for you, and to keep what you told it apart from its own estimates and from what is still unknown. Check important results before you use them. Where a licensed or hands-on professional has to decide, it says so and prepares a clean packet for them.</p>
     <h2 style="margin-top:40px">The other offices</h2>
-    <p>Each office is its own bot. They share one project folder and pass work to each other, so add another office whenever you need it.</p>
+    <p>Each office is its own bot. They share one project folder, so add another whenever you need it.</p>
     <div class="of-list"><ul class="team-list"><li><a href="inventors-office.html"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span><strong>Inventor's Office</strong><span class="team-role">Your idea, from first talk to prototype</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li><li><a href="molding-office.html"><i class="face face-peter" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h10M7 13h6"/></svg></i><span><strong>Molding Plant Office</strong><span class="team-role">Molding, cooling, drying, molds</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li><li><a href="plastic-design-office.html"><i class="face face-morgan" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 12 4l8 14z"/><path d="M8 18h8"/></svg></i><span><strong>Plastic Design Office</strong><span class="team-role">Plastic parts that mold well</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li><li><a href="quality-office.html"><i class="face face-maya" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></i><span><strong>Quality Office</strong><span class="team-role">APQP, measurement, Six Sigma</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li><li><a href="manufacturing-office.html"><i class="face face-frankie" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10l6 4V10l6 4V6l6 4v10z"/></svg></i><span><strong>Manufacturing Office</strong><span class="team-role">Cells, purchasing, cost, automation</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li></ul></div>
     </div></div></main>
   <footer><p>AN Creation is a free guide from <a href="index.html">Advance Now LLC</a>. Your AI provider’s account and usage charges apply.</p><div class="footer-bottom"><p class="copyright">© 2026 Advance Now LLC</p><a class="brand footer-brand" href="https://advancenowllc.com/" aria-label="Advance Now website"><img src="../assets/an-chevron.png" alt="" width="43" height="43"><span>ADVANCE<span class="brand-now">NOW</span></span></a></div><p class="license-note">© 2026 Advance Now LLC. Free to use, share and adapt, not to sell: <a href="license.html">CC BY-NC-SA 4.0</a>. Use it for your own inventions, even ones you sell. Every procedure is also on <a href="https://github.com/mminwi/an-creation-office">GitHub</a>.</p></footer>
