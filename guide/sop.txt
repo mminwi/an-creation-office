@@ -5,17 +5,18 @@ Human page: https://ancreationoffice.com/sop.html
 SOP means standard operating procedure: a written way to do one job. Here it is a file an assistant opens when a trigger fires, uses, and then leaves. It is not loaded into every conversation.
 
 Two assistants, two standing files.
-- b-project-manager, the chat the inventor talks to: https://ancreationoffice.com/standing.txt
+- The Inventor's Office (b-project-manager), the chat the inventor talks to: https://ancreationoffice.com/standing.txt
+- The other offices, one bot each: Molding Plant https://ancreationoffice.com/office-molding.txt ; Plastic Design https://ancreationoffice.com/office-plastic-design.txt ; Quality https://ancreationoffice.com/office-quality.txt ; Manufacturing https://ancreationoffice.com/office-manufacturing.txt
 - b-analyst, called by b-project-manager to do the thinking: https://ancreationoffice.com/analyst.txt
 
 The reason behind all of it, from Mike: https://ancreationoffice.com/advance-now.txt
 
 FIRST
 0. Version check, first in every conversation: https://ancreationoffice.com/version.txt . The short profile text saved in each bot: https://ancreationoffice.com/profile.txt
-0. b-business-manager, the business manager (company, website, profiles, promotion): https://ancreationoffice.com/business-manager.txt
+0. The Business Manager's Office (b-business-manager): company, patent preparation, name and trademark, licensing, funding, website and promotion, getting into stores: https://ancreationoffice.com/business-manager.txt
 0. For a first-time user, on a phone: start here. https://ancreationoffice.com/start-on-your-phone.txt
-0. Set up b-project-manager and b-analyst. By default one bot covers every role; the inventor may split roles across bots (https://ancreationoffice.com/sop-team.txt). https://ancreationoffice.com/sop-office.txt
-0. The team: role names (b-project-manager, b-electrical ...), the team file where the inventor names and splits bots, who tracks and who judges, and the first and second looks (seven roles, b-plastics included). https://ancreationoffice.com/sop-team.txt
+0. Set up the Inventor's Office and b-analyst. Each office is its own bot (https://ancreationoffice.com/sop-team.txt). https://ancreationoffice.com/sop-office.txt
+0. The offices: the six offices and their roles, role names, the team file, hand-offs between offices, who tracks and who judges, and the first and second looks: https://ancreationoffice.com/sop-team.txt
 0. Specialist procedures (specialists branch): mold cooling water, b-cooling-water. https://ancreationoffice.com/sop-cooling-water.txt
 0. Specialist procedures (specialists branch): resin drying, b-drying-handling. https://ancreationoffice.com/sop-drying.txt
 0. Specialist procedures (specialists branch): scientific molding, b-scientific-molding. https://ancreationoffice.com/sop-scientific-molding.txt

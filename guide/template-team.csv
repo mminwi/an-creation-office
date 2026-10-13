@@ -1,3 +1,4 @@
 name,covers,reports_to,platform,notes
-Your project bot,b-project-manager;b-business-manager;every specialist role,,Grok Bot,Default: one bot you talk to does every job. Name it anything you like; renaming changes only this cell.
-Your analyst,b-analyst,Your project bot,Cursor cloud agent,Works headless on the repository. Codex or Claude Code can be added as more rows.
+Your Inventor's Office bot,b-project-manager,,Grok,The office you start with. Name it anything you like; renaming changes only this cell.
+Your Business Manager's Office bot,b-business-manager,,Grok,Optional: add it when business questions come up (company patent licensing funding promotion).
+Your analyst,b-analyst,,Grok Build,The helper any office runs for heavy work.
