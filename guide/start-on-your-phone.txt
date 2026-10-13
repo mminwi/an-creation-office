@@ -2,7 +2,7 @@ AN Creation: start here, on your phone. Revision 1 (draft, specialists branch) â
 For someone who has never done this. You need a phone, about an hour, and two accounts. Everything runs in the cloud; nothing goes on a computer.
 
 WHAT YOU NEED
-1. A Grok account that includes Grok Build (a SuperGrok or X Premium+ subscription, as of October 2026). This one account runs the whole office.
+1. A SuperGrok subscription, the $30-a-month Grok plan, which includes Grok bots and Grok Build (as of October 2026). This one account runs the whole office.
 2. A free GitHub account. GitHub is a private online folder that keeps every version of your project.
 
 THE STEPS

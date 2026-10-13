@@ -7,7 +7,7 @@ Three pieces, all in the cloud, all usable from a phone:
 - b-project-manager, in Grok Bot: the friendly front desk the inventor talks to, like texting. It fills the form on the current ticket, hands the heavy work to b-analyst, checks it came back, and says what's next in a line.
 - The project, in a private GitHub repository (an-creation): every file, with a full history of every change. b-project-manager's memory can be cleared, and b-project-manager can be deleted and made again; the project stays in the repository.
 - b-analyst, the AI that does the heavy work on that repository. By default it is Grok Build, run by the bot itself in its own cloud terminal: no second service to set up, and nothing on anyone's computer. It does the thinking and writes the next ticket.
-What they need (the default, easy path): one Grok account with Grok Build included (a SuperGrok or X Premium+ subscription, as of October 2026), and a free GitHub account. That is all. Everything works from a phone.
+What they need (the default, easy path): one SuperGrok subscription, the $30-a-month Grok plan, which includes Grok bots and Grok Build (as of October 2026), and a free GitHub account. That is all. Everything works from a phone.
 This is the only path setup takes people down. It is built for someone who has never used GitHub, Grok or anything like it. Other AIs work too, but setup never offers them: only if the person asks ("Can I use Claude?") answer yes in a line and give them https://ancreationoffice.com/using-other-ais.txt ; don't walk them through it unless they want to.
 
 NAME (first step of setup)

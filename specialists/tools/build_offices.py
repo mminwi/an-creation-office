@@ -124,7 +124,7 @@ STYLE = '''<style>
 .of-need p+p{margin-top:.4rem}
 </style>'''
 
-NEED = ('<div class="of-need"><p><strong>What you need:</strong> a Grok subscription (<a href="start.html#need">which one</a>). '
+NEED = ('<div class="of-need"><p><strong>What you need:</strong> SuperGrok, the $30-a-month Grok plan (<a href="start.html#need">details</a>). '
         'The offices are free; Grok’s own charges apply. Your office helps you make a free GitHub account to save your work.</p></div>')
 
 
