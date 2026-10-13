@@ -2,7 +2,7 @@
 
 Run:  python cooling_water.py <input.json>
 Input: see example-cooling-input.json (one mold) or example-plant-input.json (plant sizing). US units: lb, in, gpm, deg F, BTU.
-Every result is proposed; the practice limits are Mike's (record/261012-M-cooling-water-mike.md)
+Every result is proposed; the practice limits are Mike's (his own notes, kept private)
 and the physics is standard (water heat balance, Reynolds number).
 """
 import json, math, sys

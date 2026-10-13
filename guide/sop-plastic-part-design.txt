@@ -1,6 +1,6 @@
 SOP: Plastic part design (b-plastic-part-design). Revision 1 (draft, specialists branch) — October 12, 2026.
 Index: https://ancreationoffice.com/sop.txt
-Source: the resin makers' design guides, which Mike learned from and still uses ("how much of a boss should I have here?"); he asked the office to work from them (https://github.com/mminwi/an-creation-office/blob/main/specialists/record/261012-M-documented-roles-mike.md). Tier: deep, book-based.
+Source: the resin makers' design guides, which Mike learned from and still uses ("how much of a boss should I have here?"); he asked the office to work from them (Mike's notes, kept private). Tier: deep, book-based.
 Read this when a part is being designed or changed for molding, or a molding defect points back to the design (sop-molding-defects.txt).
 
 METHOD
