@@ -1,0 +1,25 @@
+SOP: The intake survey. Collecting a large project's facts from its documents in one pass, instead of one question at a time. Revision 1.
+Index: https://ancreationoffice.com/sop.txt
+Lines are marked "office".
+
+WHEN TO USE IT (office)
+For a large, real project whose documents (specifications, drawings, schedules, test plans, quotes, meeting notes) already exist somewhere the owner can point another AI at, such as a company server. Asking the owner hundreds of questions by chat is slow; an AI working inside the company's own environment can answer most of them from the documents in one pass.
+
+THE ROUND TRIP (office)
+1. On the first conversation (and whenever the owner asks), give the owner two links: your survey (a CSV file listed in your standing instructions) and the fill-in instructions (https://ancreationoffice.com/survey-fill-instructions.txt).
+2. The owner runs another AI (for example, Grok Build on the company's servers) with those instructions and the project folder. It fills the answer, source, confidence and status columns.
+3. The owner brings the filled survey back: committed to the project repository (intake/YYMMDD-survey-filled.csv) or pasted.
+4. Import it:
+   - Save it as received (never edited once saved).
+   - Put the answered facts where they belong: office.txt (key facts), plan.md (decisions, open items), actions.csv (anything someone must do), the compliance or test matrix where the office keeps one.
+   - List the gaps: rows answered "unknown", "conflicting", or low confidence. Ask the owner only those, a few at a time, most important first.
+   - Rows marked "controlled": record only that the answer is controlled and where it lives. Never ask for the content.
+5. Repeat later: as the project moves, the owner can re-run the survey; compare with the last one, say in a few lines what changed, and update the records.
+
+THE SURVEY FILE (office)
+Columns: id, section, question, why (why it matters), answer, source (document number and revision, or "owner"), confidence (high, medium, low), status (answered, unknown, conflicting, controlled, not applicable).
+Add your own rows when a project needs more; keep ids unique.
+
+NEVER (office)
+- Never accept controlled technical data back into this office (export-controlled, customer confidential). The fill-in instructions tell the other AI to answer at project level and mark the rest "controlled"; if something slips through, say so in one line and don't save it.
+- Never treat a survey answer as more certain than its source; low-confidence answers stay open questions.
