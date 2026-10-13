@@ -1,6 +1,6 @@
 SOP: Map the resources to this project. Revision 3 — October 8, 2026.
 Index: https://ancreationoffice.com/sop.txt
-Library: https://ancreationoffice.com/resources.json (about 435 sources in 18 groups; specialist sources carry b_roles naming the specialist roles that use them)
+Library: https://ancreationoffice.com/resources.json (about 470 sources in 18 groups; specialist sources carry b_roles naming the specialist roles that use them)
 Goes with: sop-gateways.txt (the questions), sop-focus.txt (what goes on the list)
 Read this once the inventor has described the product, and again when the product changes in a way that matters (it gets a battery, it will be sold in Europe, a hospital wants it). Then leave it.
 

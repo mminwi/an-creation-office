@@ -1,4 +1,4 @@
-SOP: b-business-manager. Setting up and keeping the company. Revision 1 — October 11, 2026.
+SOP: b-business-manager. Setting up and keeping the company. Revision 2 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: business-manager.txt
 Read this when the business name, forming a company, the tax ID, a bank account, insurance, licenses or the yearly paperwork comes up. Then leave it.
@@ -25,11 +25,23 @@ ONE STEP AT A TIME (each is a row in actions.csv until it's done)
 3. The form. Lay out the usual choices in plain words: sole proprietorship (nothing to file, no protection), LLC (the common choice for one person; protection, simple taxes), corporation (for outside investors later). Recommend they confirm with an accountant. Don't decide for them.
 4. Forming an LLC. In their state: Articles of Organization filed with the Secretary of State (a fee, usually $50 to $500), a registered agent (they can be their own, or pay a service), and an operating agreement (a short document even for one owner). Show them the state's own filing page; warn that look-alike sites charge extra for the same filing. Some states require a publication notice or a yearly report; check their state.
 5. The tax ID (EIN). Free from the IRS in minutes, https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online . They apply themselves; it's needed for the bank account. Never pay a site for an EIN.
-6. A business bank account, in the company's name, with the EIN and formation papers. All business money goes through it, never mixed with personal money (mixing can undo the protection).
+6. A business bank account, in the company's name, with the EIN and formation papers. All business money goes through it, never mixed with personal money (mixing can undo the protection). Compare two or three: a local bank or credit union (often helpful later for a loan), and an online bank. Check fees, minimum balances, how deposits and transfers work, and that it is FDIC- or NCUA-insured (FDIC BankFind, NCUA locator; an app is often a front end for a partner bank). A business credit card from the same bank keeps business spending separate and builds the company's credit.
 7. Bookkeeping. A simple tool or a spreadsheet from day one; keep every receipt (record/). An accountant can set it up in an hour.
 8. Insurance. General liability when they start selling or showing in person; product liability before a product reaches customers (buyers and stores often ask for a certificate). Get two or three quotes. Tie it to the product's risks in Office files.
-9. Licenses and sales tax. A local business license if their city or county wants one; a sales tax permit in their state if they sell taxable goods directly. Check the state and city sites.
+9. Licenses and sales tax. A local business license if their city or county wants one; a sales tax permit in their state if they sell taxable goods directly. Check the state and city sites (SBA licenses and permits page). Many states have one portal that forms the company and registers it for state taxes at once (in Wisconsin, the One Stop Business Portal; the Department of Revenue issues the seller's permit).
 10. Trademark (later, when the name is settled and they're selling or about to): a question for an attorney; USPTO filing has its own fees.
+
+TAXES ONCE IT'S RUNNING (an accountant sets this up; you keep the dates)
+- A one-owner LLC is taxed through the owner's personal return by default; the owner usually pays self-employment tax and quarterly estimated taxes once there is profit (IRS estimated taxes page; IRS Publication 334 is the plain guide).
+- Keep receipts and mileage from day one; product development spending can count toward the federal research credit, which a young company can use against payroll taxes (https://ancreationoffice.com/sop-funding.txt).
+- Sales tax: collect and file on the state's schedule if registered.
+
+THE FIRST EMPLOYEE (when it comes up)
+Before anyone is paid wages: register as an employer with the state, set up withholding and payroll (a payroll service is usually worth it), Form I-9 for every hire, state new-hire reporting, unemployment insurance, and workers' compensation insurance. Contractors (a 1099, not wages) are different; the test is how the work is controlled, and an accountant should confirm it (SBA hire and manage employees).
+
+OTHER IDS THAT COME UP
+- D-U-N-S number: some retailers and large customers ask for one; it's free from Dun & Bradstreet (paid "expedited" offers are optional).
+- SAM.gov registration and Unique Entity ID: needed for federal grants, SBIR and government contracts; free. Never pay a site to register in SAM.
 
 KEEPING IT (put each on the calendar in actions.csv)
 Yearly state report and fee, registered agent renewal, the domain renewal, insurance renewal, tax dates their accountant gives them. Remind a month ahead.
@@ -37,4 +49,4 @@ Yearly state report and fee, registered agent renewal, the domain renewal, insur
 RECORD
 business.txt: the company in one page: legal name, form, state, date formed, EIN (last four digits only, never the full number), registered agent, bank (name only), accountant, attorney, insurance carrier and renewal date. Never store full ID numbers, account numbers or passwords.
 
-Sources: SBA business guide https://www.sba.gov/business-guide ; choosing a structure https://www.sba.gov/business-guide/launch-your-business/choose-business-structure ; registering https://www.sba.gov/business-guide/launch-your-business/register-your-business ; EIN https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online ; trademark search https://tmsearch.uspto.gov/ ; free mentoring: SCORE https://www.score.org and Small Business Development Centers https://americassbdc.org .
+Sources: SBA business guide https://www.sba.gov/business-guide ; choosing a structure https://www.sba.gov/business-guide/launch-your-business/choose-business-structure ; registering https://www.sba.gov/business-guide/launch-your-business/register-your-business ; EIN https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online ; trademark search https://tmsearch.uspto.gov/ ; free mentoring: SCORE https://www.score.org , Small Business Development Centers https://americassbdc.org , Women's Business Centers and Veterans Business Outreach Centers (SBA resource partners); banking: FDIC BankFind https://banks.data.fdic.gov/bankfind-suite/bankfind ; taxes: IRS small business center https://www.irs.gov/businesses/small-businesses-self-employed ; Wisconsin: One Stop Business Portal https://openforbusiness.wi.gov/ . Library ids: sba-bank-account, fdic-bankfind, ncua-locator, sba-licenses-permits, irs-sbse-center, irs-pub-334, irs-estimated-taxes, sba-hire-employees, uscis-i9, duns-number, sam-registration, wi-onestop, wi-dfi, wi-dor-btr.

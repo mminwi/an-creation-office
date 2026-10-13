@@ -2455,7 +2455,7 @@ Edition: Web page.
 Check: Found via search 2026-10-12; the office did not open the page. Read the current solicitation of the agency you apply to.
 Checked: 2026-10-12. Source: Government agency (via search).
 
-MORE SPECIALIST SOURCES (military programs, power and batteries, EMI, environmental testing, enclosures, electronics build, automation, machine vision, pneumatics and fixtures, AI-assisted CAD, circuit boards, promotion and social media). b-roles name the specialist roles that use each one (specialists/roles.csv). Many standards are paid; the publisher page is a catalog, not the full text.
+MORE SPECIALIST SOURCES (military programs, power and batteries, EMI, environmental testing, enclosures, electronics build, automation, machine vision, pneumatics and fixtures, AI-assisted CAD, circuit boards, promotion and social media, company setup, banking, taxes and government money). b-roles name the specialist roles that use each one (specialists/roles.csv). Many standards are paid; the publisher page is a catalog, not the full text.
 
 as9100 | AS9100 — quality management systems for aviation, space and defense
 https://www.sae.org/standards/content/as9100d/
@@ -3307,6 +3307,243 @@ Group: marketing. Type: learning_resource.
 Roles: b-promo-audience, b-promo-voice. A short book on sharing your process in public so people find you: building in public, without bragging. Paid.
 Check: A book of principles, not platform rules.
 Checked: 2026-10-13. Source: Publisher page.
+sba-bank-account | SBA — Open a business bank account
+https://www.sba.gov/business-guide/launch-your-business/open-business-bank-account
+Group: business. Type: government.
+Roles: b-company-setup. What a business bank account protects, what the bank asks for (EIN, formation papers, ownership documents), and merchant services. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+fdic-bankfind | FDIC BankFind — check a bank is FDIC-insured
+https://banks.data.fdic.gov/bankfind-suite/bankfind
+Group: business. Type: government.
+Roles: b-company-setup. Confirms a bank is a real, FDIC-insured bank before opening an account; fintech apps often hold money through a partner bank. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+ncua-locator | NCUA — find and check a credit union
+https://mapping.ncua.gov/
+Group: business. Type: government.
+Roles: b-company-setup. Finds federally insured credit unions, many of which offer business accounts and small loans. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+sba-licenses-permits | SBA — Apply for licenses and permits
+https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits
+Group: business. Type: government.
+Roles: b-company-setup. Federal, state and local licenses and permits a business may need, and where to check. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+irs-sbse-center | IRS — Small Business and Self-Employed Tax Center
+https://www.irs.gov/businesses/small-businesses-self-employed
+Group: business. Type: government.
+Roles: b-company-setup. The IRS hub for small business taxes: self-employment tax, estimated taxes, deductions, employment taxes, forms and calendars. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+irs-pub-334 | IRS Publication 334 — Tax Guide for Small Business
+https://www.irs.gov/publications/p334
+Group: business. Type: government.
+Roles: b-company-setup. The plain guide to income, expenses, deductions and records for sole proprietors and single-member LLCs. Free.
+Check: Use the edition for the tax year.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+irs-estimated-taxes | IRS — Estimated taxes
+https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes
+Group: business. Type: government.
+Roles: b-company-setup. Who pays quarterly estimated tax (most owners of a profitable LLC), the due dates, and how to pay. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+sba-hire-employees | SBA — Hire and manage employees
+https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees
+Group: business. Type: government.
+Roles: b-company-setup. The steps before the first hire: employer registration, withholding, I-9, state new-hire reporting, unemployment tax, workers’ compensation. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+uscis-i9 | USCIS — Form I-9 and E-Verify
+https://www.uscis.gov/i-9
+Group: business. Type: government.
+Roles: b-company-setup. Employment eligibility verification required for every employee hired in the US. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+duns-number | Dun & Bradstreet — get a D-U-N-S number (free)
+https://www.dnb.com/duns/get-a-duns.html
+Group: business. Type: source_directory.
+Roles: b-company-setup, b-business-manager. A free business identifier some large customers, retailers and app stores ask for; the free route can take longer than paid “expedited” offers.
+Check: Don’t pay for expedited service unless a deadline needs it; federal contracts now use SAM.gov’s Unique Entity ID instead.
+Checked: 2026-10-13. Source: Publisher or directory operator.
+
+wi-onestop | Regional: Wisconsin One Stop Business Portal
+https://openforbusiness.wi.gov/
+Group: business. Type: government.
+Roles: b-company-setup. Wisconsin’s single application to form an LLC or corporation (Department of Financial Institutions), register for state business taxes (Department of Revenue) and get an unemployment insurance assessment (Workforce Development). Free to use; state filing fees apply.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+wi-dfi | Regional: Wisconsin Department of Financial Institutions — corporations
+https://dfi.wi.gov/
+Group: business. Type: government.
+Roles: b-company-setup. Wisconsin’s business registry: forming an LLC, name search, annual reports, registered agent changes. Fees apply.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+wi-dor-btr | Regional: Wisconsin Department of Revenue — business tax registration
+https://www.revenue.wi.gov/Pages/FAQS/pcs-btr.aspx
+Group: business. Type: government.
+Roles: b-company-setup. Seller’s permit, use tax and withholding registration for Wisconsin businesses (Form BTR-101, online at tap.revenue.wi.gov/btr); a small registration fee renews every two years.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+sba-microloans | SBA — Microloans
+https://www.sba.gov/funding-programs/loans/microloans
+Group: funding. Type: government.
+Roles: b-funding. Small loans through nonprofit intermediaries for starting or growing a small business, often with training attached. Free to read.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+sba-7a | SBA — 7(a) loans
+https://www.sba.gov/funding-programs/loans/7a-loans
+Group: funding. Type: government.
+Roles: b-funding. SBA’s main loan program, made by banks with an SBA guarantee: working capital, equipment, real estate. Free to read.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+sba-504 | SBA — 504 loans
+https://www.sba.gov/funding-programs/loans/504-loans
+Group: funding. Type: government.
+Roles: b-funding. Long-term fixed-rate loans for major equipment and buildings, through Certified Development Companies. Free to read.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+treasury-ssbci | Treasury — State Small Business Credit Initiative (SSBCI)
+https://home.treasury.gov/policy-issues/small-business-programs/state-small-business-credit-initiative-ssbci
+Group: funding. Type: government.
+Roles: b-funding. Federal money given to states for small business loan, guarantee and investment programs; each state runs its own (in Wisconsin, through WEDC). Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+cdfi-fund | CDFI Fund — Community Development Financial Institutions
+https://www.cdfifund.gov/
+Group: funding. Type: government.
+Roles: b-funding. Mission lenders (community loan funds, some credit unions and banks) that lend to small businesses banks often turn down. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+kiva-us | Kiva US — crowdfunded 0% small business loans
+https://www.kiva.org/borrow
+Group: funding. Type: source_directory.
+Roles: b-funding. Small 0%-interest loans to US small businesses, funded by many individual lenders; social underwriting instead of credit scores.
+Check: Check current loan limits and terms.
+Checked: 2026-10-13. Source: Publisher or directory operator.
+
+irs-research-credit-payroll | IRS — Research credit against payroll tax for small businesses
+https://www.irs.gov/credits-deductions/research-credit-against-payroll-tax-for-small-businesses
+Group: funding. Type: government.
+Roles: b-funding, b-company-setup. A young company with qualifying research (product and process development often qualifies) can apply up to $500,000 a year of its research credit against payroll taxes, even with no income tax to offset (Forms 6765 and 8974). Free.
+Check: An accountant decides what qualifies and files it; the election is made on the original return.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+nsf-seed-fund | NSF — America’s Seed Fund (SBIR/STTR)
+https://seedfund.nsf.gov/
+Group: funding. Type: government.
+Roles: b-funding. NSF’s SBIR/STTR program for technology startups, open to many topics, starting with a short Project Pitch. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+dod-sbir | DoD SBIR/STTR (DSIP)
+https://www.dodsbirsttr.mil/
+Group: funding. Type: government.
+Roles: b-funding. Where Defense Department SBIR/STTR topics are posted and proposals submitted (Army, Navy, Air Force and others). Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+afwerx | AFWERX — Air Force SBIR/STTR and innovation
+https://afwerx.com/
+Group: funding. Type: government.
+Roles: b-funding. The Air Force’s innovation arm, running a large share of its SBIR/STTR awards, including open topics. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+usda-rural-business | USDA Rural Development — business programs
+https://www.rd.usda.gov/programs-services/business-programs
+Group: funding. Type: government.
+Roles: b-funding. Loans, guarantees and grants for businesses in rural areas, including energy programs. Free.
+Check: Eligibility depends on location; check the program’s rural map.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+wi-ctc | Regional: Wisconsin Center for Technology Commercialization (CTC)
+https://wisconsinctc.org/
+Group: funding. Type: government_assistance.
+Roles: b-funding. Free one-on-one help for Wisconsin technology startups with SBIR/STTR proposals and commercialization; micro-grants toward proposal and plan consultants; works with WEDC on SBIR Advance.
+Check: Confirm current micro-grant amounts and rounds with CTC.
+Checked: 2026-10-13. Source: Publisher page.
+
+wi-tech-council | Regional: Wisconsin Technology Council and Wisconsin Angel Network
+https://wisconsintechnologycouncil.com/
+Group: funding. Type: source_directory.
+Roles: b-funding. Wisconsin’s tech and investor network: angel groups, the Wisconsin Entrepreneurs’ Conference and Early Stage Symposium, and investor introductions.
+Check: Investment terms need an attorney.
+Checked: 2026-10-13. Source: Publisher page.
+
+sba-veterans | SBA — Veteran-owned businesses
+https://www.sba.gov/business-guide/grow-your-business/veteran-owned-businesses
+Group: funding. Type: government.
+Roles: b-funding, b-business-manager. SBA programs for veteran entrepreneurs: Boots to Business training, Veterans Business Outreach Centers, lending and contracting help. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+sba-vetcert | SBA — Veteran Small Business Certification (VetCert)
+https://veterans.certify.sba.gov/
+Group: contracting. Type: government.
+Roles: b-funding, b-business-manager. Certification as a veteran-owned (VOSB) or service-disabled veteran-owned (SDVOSB) small business, needed to compete for federal set-aside and sole-source contracts; at least 51% owned and controlled by veterans. Free.
+Check: The portal may have moved under MySBA Certifications; check sba.gov.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+sba-vboc | SBA — Veterans Business Outreach Centers
+https://www.sba.gov/local-assistance/resource-partners/veterans-business-outreach-centers-vboc
+Group: business. Type: government.
+Roles: b-business-manager. Free training, counseling and mentoring for veteran-owned businesses and military spouses. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+sba-certifications | SBA — Certifications (8(a), HUBZone, women-owned, veteran-owned)
+https://certify.sba.gov/
+Group: contracting. Type: government.
+Roles: b-funding, b-business-manager. Federal small business certifications that open set-aside contracts. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+sba-womens-business-centers | SBA — Women’s Business Centers
+https://www.sba.gov/local-assistance/resource-partners/womens-business-centers
+Group: business. Type: government.
+Roles: b-business-manager. Free and low-cost training and counseling, open to all entrepreneurs, with a focus on women. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+trade-export-help | Trade.gov — U.S. Commercial Service export help
+https://www.trade.gov/export-solutions
+Group: business. Type: government.
+Roles: b-business-manager. Free and low-cost help to start exporting: market research, finding buyers, trade events, local export assistance centers. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+sba-step | SBA — State Trade Expansion Program (STEP)
+https://www.sba.gov/funding-programs/grants/state-trade-expansion-program-step
+Group: funding. Type: government.
+Roles: b-funding. Federal money given to states to help small businesses export: trade shows, missions, website translation; run by each state (in Wisconsin, WEDC). Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+ftc-grant-scams | FTC — Government grant scams
+https://consumer.ftc.gov/articles/government-grant-scams
+Group: funding. Type: government.
+Roles: b-funding. Why “free government grants to start your business” offers are usually scams: federal grants rarely fund starting a business, and real ones never charge a fee. Free.
+Check: Programs, amounts and rules change; read the current page before relying on it.
+Checked: 2026-10-13. Source: Government agency’s own website.
 BEGIN DESIGN PRINCIPLES
 Guide: https://ancreationoffice.com/design-principles.html
 Instructions: https://ancreationoffice.com/design-principles.txt

@@ -8598,6 +8598,589 @@
       "checked_on": "2026-10-13",
       "source": "Publisher page",
       "kind": "learning_resource"
+    },
+    {
+      "id": "sba-bank-account",
+      "title": "SBA — Open a business bank account",
+      "url": "https://www.sba.gov/business-guide/launch-your-business/open-business-bank-account",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "What a business bank account protects, what the bank asks for (EIN, formation papers, ownership documents), and merchant services. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "fdic-bankfind",
+      "title": "FDIC BankFind — check a bank is FDIC-insured",
+      "url": "https://banks.data.fdic.gov/bankfind-suite/bankfind",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "Confirms a bank is a real, FDIC-insured bank before opening an account; fintech apps often hold money through a partner bank. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "ncua-locator",
+      "title": "NCUA — find and check a credit union",
+      "url": "https://mapping.ncua.gov/",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "Finds federally insured credit unions, many of which offer business accounts and small loans. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "sba-licenses-permits",
+      "title": "SBA — Apply for licenses and permits",
+      "url": "https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "Federal, state and local licenses and permits a business may need, and where to check. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "irs-sbse-center",
+      "title": "IRS — Small Business and Self-Employed Tax Center",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "The IRS hub for small business taxes: self-employment tax, estimated taxes, deductions, employment taxes, forms and calendars. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "irs-pub-334",
+      "title": "IRS Publication 334 — Tax Guide for Small Business",
+      "url": "https://www.irs.gov/publications/p334",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "The plain guide to income, expenses, deductions and records for sole proprietors and single-member LLCs. Free.",
+      "check": "Use the edition for the tax year.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "irs-estimated-taxes",
+      "title": "IRS — Estimated taxes",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/estimated-taxes",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "Who pays quarterly estimated tax (most owners of a profitable LLC), the due dates, and how to pay. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "sba-hire-employees",
+      "title": "SBA — Hire and manage employees",
+      "url": "https://www.sba.gov/business-guide/manage-your-business/hire-manage-employees",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "The steps before the first hire: employer registration, withholding, I-9, state new-hire reporting, unemployment tax, workers’ compensation. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "uscis-i9",
+      "title": "USCIS — Form I-9 and E-Verify",
+      "url": "https://www.uscis.gov/i-9",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "Employment eligibility verification required for every employee hired in the US. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "duns-number",
+      "title": "Dun & Bradstreet — get a D-U-N-S number (free)",
+      "url": "https://www.dnb.com/duns/get-a-duns.html",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup",
+        "b-business-manager"
+      ],
+      "use": "A free business identifier some large customers, retailers and app stores ask for; the free route can take longer than paid “expedited” offers.",
+      "check": "Don’t pay for expedited service unless a deadline needs it; federal contracts now use SAM.gov’s Unique Entity ID instead.",
+      "checked_on": "2026-10-13",
+      "kind": "source_directory",
+      "source": "Publisher or directory operator"
+    },
+    {
+      "id": "wi-onestop",
+      "title": "Regional: Wisconsin One Stop Business Portal",
+      "url": "https://openforbusiness.wi.gov/",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "Wisconsin’s single application to form an LLC or corporation (Department of Financial Institutions), register for state business taxes (Department of Revenue) and get an unemployment insurance assessment (Workforce Development). Free to use; state filing fees apply.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "wi-dfi",
+      "title": "Regional: Wisconsin Department of Financial Institutions — corporations",
+      "url": "https://dfi.wi.gov/",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "Wisconsin’s business registry: forming an LLC, name search, annual reports, registered agent changes. Fees apply.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "wi-dor-btr",
+      "title": "Regional: Wisconsin Department of Revenue — business tax registration",
+      "url": "https://www.revenue.wi.gov/Pages/FAQS/pcs-btr.aspx",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup"
+      ],
+      "use": "Seller’s permit, use tax and withholding registration for Wisconsin businesses (Form BTR-101, online at tap.revenue.wi.gov/btr); a small registration fee renews every two years.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "sba-microloans",
+      "title": "SBA — Microloans",
+      "url": "https://www.sba.gov/funding-programs/loans/microloans",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Small loans through nonprofit intermediaries for starting or growing a small business, often with training attached. Free to read.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "sba-7a",
+      "title": "SBA — 7(a) loans",
+      "url": "https://www.sba.gov/funding-programs/loans/7a-loans",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "SBA’s main loan program, made by banks with an SBA guarantee: working capital, equipment, real estate. Free to read.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "sba-504",
+      "title": "SBA — 504 loans",
+      "url": "https://www.sba.gov/funding-programs/loans/504-loans",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Long-term fixed-rate loans for major equipment and buildings, through Certified Development Companies. Free to read.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "treasury-ssbci",
+      "title": "Treasury — State Small Business Credit Initiative (SSBCI)",
+      "url": "https://home.treasury.gov/policy-issues/small-business-programs/state-small-business-credit-initiative-ssbci",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Federal money given to states for small business loan, guarantee and investment programs; each state runs its own (in Wisconsin, through WEDC). Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "cdfi-fund",
+      "title": "CDFI Fund — Community Development Financial Institutions",
+      "url": "https://www.cdfifund.gov/",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Mission lenders (community loan funds, some credit unions and banks) that lend to small businesses banks often turn down. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "kiva-us",
+      "title": "Kiva US — crowdfunded 0% small business loans",
+      "url": "https://www.kiva.org/borrow",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Small 0%-interest loans to US small businesses, funded by many individual lenders; social underwriting instead of credit scores.",
+      "check": "Check current loan limits and terms.",
+      "checked_on": "2026-10-13",
+      "kind": "source_directory",
+      "source": "Publisher or directory operator"
+    },
+    {
+      "id": "irs-research-credit-payroll",
+      "title": "IRS — Research credit against payroll tax for small businesses",
+      "url": "https://www.irs.gov/credits-deductions/research-credit-against-payroll-tax-for-small-businesses",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding",
+        "b-company-setup"
+      ],
+      "use": "A young company with qualifying research (product and process development often qualifies) can apply up to $500,000 a year of its research credit against payroll taxes, even with no income tax to offset (Forms 6765 and 8974). Free.",
+      "check": "An accountant decides what qualifies and files it; the election is made on the original return.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "nsf-seed-fund",
+      "title": "NSF — America’s Seed Fund (SBIR/STTR)",
+      "url": "https://seedfund.nsf.gov/",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "NSF’s SBIR/STTR program for technology startups, open to many topics, starting with a short Project Pitch. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "dod-sbir",
+      "title": "DoD SBIR/STTR (DSIP)",
+      "url": "https://www.dodsbirsttr.mil/",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Where Defense Department SBIR/STTR topics are posted and proposals submitted (Army, Navy, Air Force and others). Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "afwerx",
+      "title": "AFWERX — Air Force SBIR/STTR and innovation",
+      "url": "https://afwerx.com/",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "The Air Force’s innovation arm, running a large share of its SBIR/STTR awards, including open topics. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "usda-rural-business",
+      "title": "USDA Rural Development — business programs",
+      "url": "https://www.rd.usda.gov/programs-services/business-programs",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Loans, guarantees and grants for businesses in rural areas, including energy programs. Free.",
+      "check": "Eligibility depends on location; check the program’s rural map.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "wi-ctc",
+      "title": "Regional: Wisconsin Center for Technology Commercialization (CTC)",
+      "url": "https://wisconsinctc.org/",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Free one-on-one help for Wisconsin technology startups with SBIR/STTR proposals and commercialization; micro-grants toward proposal and plan consultants; works with WEDC on SBIR Advance.",
+      "check": "Confirm current micro-grant amounts and rounds with CTC.",
+      "checked_on": "2026-10-13",
+      "kind": "government_assistance",
+      "source": "Publisher page"
+    },
+    {
+      "id": "wi-tech-council",
+      "title": "Regional: Wisconsin Technology Council and Wisconsin Angel Network",
+      "url": "https://wisconsintechnologycouncil.com/",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Wisconsin’s tech and investor network: angel groups, the Wisconsin Entrepreneurs’ Conference and Early Stage Symposium, and investor introductions.",
+      "check": "Investment terms need an attorney.",
+      "checked_on": "2026-10-13",
+      "kind": "source_directory",
+      "source": "Publisher page"
+    },
+    {
+      "id": "sba-veterans",
+      "title": "SBA — Veteran-owned businesses",
+      "url": "https://www.sba.gov/business-guide/grow-your-business/veteran-owned-businesses",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding",
+        "b-business-manager"
+      ],
+      "use": "SBA programs for veteran entrepreneurs: Boots to Business training, Veterans Business Outreach Centers, lending and contracting help. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "sba-vetcert",
+      "title": "SBA — Veteran Small Business Certification (VetCert)",
+      "url": "https://veterans.certify.sba.gov/",
+      "group": "contracting",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding",
+        "b-business-manager"
+      ],
+      "use": "Certification as a veteran-owned (VOSB) or service-disabled veteran-owned (SDVOSB) small business, needed to compete for federal set-aside and sole-source contracts; at least 51% owned and controlled by veterans. Free.",
+      "check": "The portal may have moved under MySBA Certifications; check sba.gov.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "sba-vboc",
+      "title": "SBA — Veterans Business Outreach Centers",
+      "url": "https://www.sba.gov/local-assistance/resource-partners/veterans-business-outreach-centers-vboc",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-business-manager"
+      ],
+      "use": "Free training, counseling and mentoring for veteran-owned businesses and military spouses. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "sba-certifications",
+      "title": "SBA — Certifications (8(a), HUBZone, women-owned, veteran-owned)",
+      "url": "https://certify.sba.gov/",
+      "group": "contracting",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding",
+        "b-business-manager"
+      ],
+      "use": "Federal small business certifications that open set-aside contracts. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "sba-womens-business-centers",
+      "title": "SBA — Women’s Business Centers",
+      "url": "https://www.sba.gov/local-assistance/resource-partners/womens-business-centers",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-business-manager"
+      ],
+      "use": "Free and low-cost training and counseling, open to all entrepreneurs, with a focus on women. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "trade-export-help",
+      "title": "Trade.gov — U.S. Commercial Service export help",
+      "url": "https://www.trade.gov/export-solutions",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-business-manager"
+      ],
+      "use": "Free and low-cost help to start exporting: market research, finding buyers, trade events, local export assistance centers. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "sba-step",
+      "title": "SBA — State Trade Expansion Program (STEP)",
+      "url": "https://www.sba.gov/funding-programs/grants/state-trade-expansion-program-step",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Federal money given to states to help small businesses export: trade shows, missions, website translation; run by each state (in Wisconsin, WEDC). Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "ftc-grant-scams",
+      "title": "FTC — Government grant scams",
+      "url": "https://consumer.ftc.gov/articles/government-grant-scams",
+      "group": "funding",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-funding"
+      ],
+      "use": "Why “free government grants to start your business” offers are usually scams: federal grants rarely fund starting a business, and real ones never charge a fee. Free.",
+      "check": "Programs, amounts and rules change; read the current page before relying on it.",
+      "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
     }
   ],
   "researched_shortlists": {

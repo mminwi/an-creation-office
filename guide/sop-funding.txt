@@ -1,4 +1,4 @@
-SOP: Funding a project (b-funding). Revision 1 (draft, specialists branch) — October 12, 2026.
+SOP: Funding a project (b-funding). Revision 2 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Source: the programs' own pages and published guidance (below, read through search 2026-10-12). Tier: documented; an accountant and an attorney advise before money is taken. The office never applies, files, signs or contacts a funder.
 Read this when the project needs money it doesn't have, before a big spend (tooling, certification, first inventory), or when someone offers to invest.
@@ -16,6 +16,19 @@ Read this when the project needs money it doesn't have, before a big spend (tool
 - Equity crowdfunding (SEC Regulation Crowdfunding): selling small stakes to the public through a registered platform; the SEC's page gives a limit of $5 million in 12 months (checked through search 2026-10-12; confirm the current figure). Disclosure and filing duties apply.
 - Angel investors: individuals or groups investing for a share, usually once there is evidence (customers, a prototype, a team). They own part of the company.
 
+2b. GOVERNMENT MONEY AND FREE HELP: THE MAP (check each program's current page; amounts change)
+- Grants that fund starting a business are rare. Federal grants mostly fund research (SBIR/STTR), and a few fund specific places or purposes (rural, export, energy). Offers of "free government grants" for a fee are scams (FTC).
+- SBIR/STTR by agency: each agency runs its own. NSF (America's Seed Fund: broad topics, starts with a short Project Pitch); Defense (DSIP portal; the Air Force's AFWERX runs open topics); NIH, DOE, NASA, USDA and others. Find topics on sbir.gov. Register in SAM.gov first (free; it takes time).
+- State help for SBIR: many states pay part of a consultant to write a first proposal and match awards (in Wisconsin: the Center for Technology Commercialization, with WEDC's SBIR Advance). Ask the state SBDC.
+- Loans: SBA microloans (small, through nonprofits, often with coaching), 7(a) through banks, 504 for equipment and buildings; the state's own loan and guarantee programs (funded through the federal SSBCI; in Wisconsin, WEDC); community lenders (CDFIs) and credit unions; Kiva US 0% crowdfunded loans for small amounts.
+- Tax credit: product and process development often counts as research. A young company (under $5 million in gross receipts, within its first five years of receipts) can elect to apply up to $500,000 a year of the federal research credit against its payroll taxes (Forms 6765 and 8974), so it helps even before there's a profit. Many states have their own research credit. The accountant decides what qualifies.
+- Veterans: SBA's veteran programs (Boots to Business training, Veterans Business Outreach Centers), and VetCert certification as a veteran-owned or service-disabled veteran-owned small business, which opens federal set-aside contracts. Ask once whether the owner is a veteran.
+- Other certifications that open government work: 8(a), HUBZone, women-owned (SBA certifications).
+- Selling to the government: SAM.gov registration, APEX Accelerators (free help bidding on government contracts), the agency's own supplier pages (for example DLA).
+- Exporting: the U.S. Commercial Service (trade.gov) and the state's STEP program (help with trade shows and export costs).
+- Rural: USDA Rural Development business programs, where the business is in an eligible area.
+- Free help with all of it: SBDC, SCORE, Women's Business Centers, Veterans Business Outreach Centers, the state's manufacturing extension partnership (in Wisconsin, WMEP), the state economic development agency (WEDC), and in Wisconsin the Technology Council's angel network for investors.
+
 3. WHAT EACH ASKS FOR (prepare from the files)
 - Grants and SBIR: the topic it answers, technical objectives, the team, the budget, the commercial potential.
 - Lenders: the plan, financial projections, collateral, personal guarantee.
@@ -28,7 +41,7 @@ Read this when the project needs money it doesn't have, before a big spend (tool
 - Invention promotion companies that charge up front to fund or market an idea: FTC and USPTO warnings (library).
 
 SOURCES (library)
-sheet-funding, sbir, sbir-eligibility, grants-search, sba-grants, sba-lender, sec-reg-cf, sec-ready, sec-early-investors, angel-groups, kickstarter-handbook, score-financial-projections, score-startup-budget, ftc-invention-marketing, uspto-scam-prevention.
+sheet-funding, sbir, sbir-eligibility, grants-search, sba-grants, sba-lender, sec-reg-cf, sec-ready, sec-early-investors, angel-groups, kickstarter-handbook, score-financial-projections, score-startup-budget, ftc-invention-marketing, uspto-scam-prevention, ftc-grant-scams, nsf-seed-fund, dod-sbir, afwerx, sba-microloans, sba-7a, sba-504, treasury-ssbci, cdfi-fund, kiva-us, irs-research-credit-payroll, sba-veterans, sba-vetcert, sba-certifications, sam-registration, apex-help, dla-business, trade-export-help, sba-step, usda-rural-business, wi-ctc, wedc-wisconsin, wi-tech-council.
 
 HANDS OFF
 Accountant (tax and structure), attorney (securities, investment terms, loan documents), the funder's own program staff (the inventor contacts them).
