@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this first, at the start of every conversation.
 
-Office version: 261013.6
+Office version: 261013.7
 b-project-manager profile version: 3 (the Inventor's Office; the bot once called Soren)
 b-business-manager profile version: 5 (the Business Manager's Office; the bot once called Kasper)
 Other offices profile version: 1 (Molding Plant, Plastic Design, Quality, Manufacturing)
@@ -14,6 +14,7 @@ HOW TO USE THIS (every bot)
 5. "What version are you on?": answer with the Office version and your profile version.
 
 CHANGES (newest first)
+261013.7  The library is in your instructions. Every office's standing file now has a YOUR LIBRARY section listing the reference sources its specialists use, with links; the Inventor's and Business Manager's instructions point to the library too. The library (resources.txt and resources.json) gained engineering sources: military specifications, electronics build, batteries and charging, EMI, enclosures, leak testing, machine safety, machine vision and validation. When a question touches a source, open it and cite it; never quote a standard from memory. No new profile text.
 261013.6  Formal APQP is no longer run on every project. The office understands APQP and keeps its logic (each spec traced through design and tests to a good part, critical features checked), but how formal the paperwork gets is the owner's call and what the product and its customers require. Offer the formal level once when it would help or a customer requires it; don't impose it. b-project-manager: re-read sop-stages.txt (THE OFFICE UNDERSTANDS APQP) and sop-design-loop.txt. If a project already has an APQP file, keep it; ask once whether the owner wants to keep it at that level. No new profile text.
 261013.5  Library tidy-up. sop.txt lists the six offices and their procedures without old labels. terms.txt fixes four definitions: CE marking applies only where a product's EU rules call for it; a provisional patent application only holds a date for what it describes and needs a full application within 12 months; a critical characteristic gets extra control, at the frequency the control plan sets; Git keeps only what was committed. When you explain these terms, use the new wording. No change to how your bots work, and no new profile text.
 261013.4  Saving is checked. A save counts only once it is on GitHub: after each save, confirm the commit is there (a commit in a cloud terminal must be pushed). Saving stays quiet when it works, but a failed save is never quiet: tell the owner in one plain line, try again, and keep track of what isn't saved. Keep a "Last saved" line (time, commit, what) in your one-page file at the end of every conversation, and check it at the start of the next. Working files (office.txt, plan.md, actions.csv, Status, Plan) are updated in place; records and outputs are never edited once saved. The rule: https://ancreationoffice.com/version-control.txt SAVING. Tell the owner in one line that saves are now checked. No new profile text.

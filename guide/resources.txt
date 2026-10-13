@@ -2455,6 +2455,496 @@ Edition: Web page.
 Check: Found via search 2026-10-12; the office did not open the page. Read the current solicitation of the agency you apply to.
 Checked: 2026-10-12. Source: Government agency (via search).
 
+MORE SPECIALIST SOURCES (military programs, power and batteries, EMI, environmental testing, enclosures, electronics build, automation, machine vision, pneumatics and fixtures). b-roles name the specialist roles that use each one (specialists/roles.csv). Many standards are paid; the publisher page is a catalog, not the full text.
+
+as9100 | AS9100 — quality management systems for aviation, space and defense
+https://www.sae.org/standards/content/as9100d/
+Group: quality. Type: primary_guidance.
+Roles: b-mil-program. ISO 9001 plus aviation, space and defense requirements: operational risk, configuration management, product safety, counterfeit-part prevention, supplier flow-down, first article. A limited revision is being published as IA9100. Paid.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+as9145 | AS9145 — aerospace APQP and PPAP
+https://www.sae.org/standards/content/as9145/
+Group: quality. Type: primary_guidance.
+Roles: b-mil-program, b-quality-planning. Advanced product quality planning and production part approval for aviation, space and defense; applies when the customer invokes it. Paid.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+as5553 | AS5553 — counterfeit electronic parts: avoidance, detection, mitigation
+https://www.sae.org/standards/content/as5553/
+Group: quality. Type: primary_guidance.
+Roles: b-mil-program, b-mil-electronics-build. Buying electronic parts from authorized sources, detecting suspect parts, and reporting. Often flowed down with DFARS 252.246-7007/7008. Paid.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+eia-649 | EIA-649 — configuration management standard
+https://www.sae.org/standards/content/eia649/
+Group: quality. Type: primary_guidance.
+Roles: b-mil-program. Configuration identification, change control, status accounting and audits; MIL-HDBK-61 is the defense handbook companion. Paid.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+itar-22-cfr | ITAR — 22 CFR parts 120-130
+https://www.ecfr.gov/current/title-22/chapter-I/subchapter-M
+Group: contracting. Type: government.
+Roles: b-mil-program. The International Traffic in Arms Regulations: defense articles, technical data, the U.S. Munitions List (military electronics are commonly Category XI), and the cloud-storage carve-out for encrypted data (120.54). Free.
+Check: The company’s export-control officer decides what is controlled; this is background, not a determination.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+ear-600-series | EAR — Export Administration Regulations (600-series military items)
+https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C
+Group: contracting. Type: government.
+Roles: b-mil-program. Commerce Department export controls, including 600-series items moved from the U.S. Munitions List. Free.
+Check: The company’s export-control officer decides classification; background only.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+nist-800-171 | NIST SP 800-171 — protecting Controlled Unclassified Information
+https://csrc.nist.gov/pubs/sp/800/171/r3/final
+Group: contracting. Type: government.
+Roles: b-mil-program. Security requirements for CUI in contractor systems; required by DFARS 252.204-7012 and assessed under CMMC. Free.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+army-cwb | Conformal Wearable Battery — U.S. Army battery site
+https://battery.army.mil/warfighter-hub/conformal-wearable-battery/
+Group: electrical. Type: government.
+Roles: b-mil-power. Vest-worn lithium-ion battery: output about 10–20 V by version and charge, Nett Warrior connector (STANAG 4695) and bottom contacts; version 3.6.2 and later add a USB-A port. Free.
+Check: Interface control documents come through the program and may be controlled; use this for background only.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+glenair-nett-warrior | Glenair Series 807 Nett Warrior connector
+https://cdn.glenair.com/catalogs/mighty-mouse-807-nw-connector.pdf
+Group: electrical. Type: supplier.
+Roles: b-mil-power. The 6-pin Nett Warrior connector and the 7-pin version with USB-C power; adopted as NATO STANAG 4695; STAR-PAN hubs distribute soldier power and data. Free catalog.
+Check: Catalog data, not an interface control document; confirm pinout and ratings against the program ICD.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+l3harris-rf-7912 | L3Harris RF-7912 handheld power adapter
+https://www.l3harris.com/sites/default/files/2020-12/cs-tcom-rf-7912-ps00x-power-adapter-spec-sheet.pdf
+Group: electrical. Type: supplier.
+Roles: b-mil-power. Runs AN/PRC-152A and AN/PRC-163 handheld radios from external DC and charges the radio battery; a benchmark for switch-over and charging behavior. Free spec sheet.
+Check: Spec sheet only; confirm current models and behavior with the maker.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+usb-specs | USB-IF specifications: USB 2.0, USB Type-C, USB Power Delivery
+https://www.usb.org/documents
+Group: electrical. Type: primary_guidance.
+Roles: b-mil-power. The USB data, connector and power specifications: legacy 5 V/500 mA, Type-C current advertisement, and Power Delivery negotiation. Free.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher or directory operator.
+
+smbus-sbs | Smart Battery Data Specification and SMBus
+http://sbs-forum.org/specs/
+Group: electrical. Type: primary_guidance.
+Roles: b-mil-power. How smart batteries report state of charge, temperature, voltage, current and requested charge settings over SMBus. Free.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher or directory operator.
+
+mil-std-464 | MIL-STD-464 — electromagnetic environmental effects for systems
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-mil-emi, b-mil-enclosure. System-level E3 requirements: platform compatibility, lightning, electrical bonding and others; companion to MIL-STD-461 for subsystems. Free from ASSIST (search the number).
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+chomerics-handbook | Parker Chomerics Conductive Elastomer Engineering Handbook
+https://www.parker.com/Literature/Chomerics/Parker%20Chomerics%20Conductive%20Elastomer%20Engineering%20Handbook.pdf
+Group: electrical. Type: supplier.
+Roles: b-mil-enclosure. Conductive gasket design guide: materials and fillers, profiles, deflection ranges, compression stops, flange design, corrosion and galvanic compatibility, form-in-place gaskets. Free.
+Check: Maker’s guidance; use its data for its products and confirm with the gasket supplier.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+mil-dtl-83528 | MIL-DTL-83528 — conductive elastomer gasket material
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-mil-enclosure. Electrically conductive elastomer shielding gasket materials, by type and filler. Free from ASSIST (search the number).
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs. Check whether it is inactive for new design.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+mil-dtl-5541 | MIL-DTL-5541 — chemical conversion coatings on aluminum
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-mil-enclosure. Conversion coating on aluminum; Type II has no hexavalent chromium; Class 3 is for low electrical resistance (gasket lands, bonding points). Free from ASSIST.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+mil-prf-8625 | MIL-PRF-8625 — anodic coatings for aluminum
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-mil-enclosure. Anodize types and classes; anodize insulates, so gasket and bonding surfaces are masked. Free from ASSIST.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+mil-std-889 | MIL-STD-889 — dissimilar metals and galvanic compatibility
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-mil-enclosure. Which metals can touch without galvanic corrosion, and how to protect couples that must; key for gaskets, fasteners and connectors in salt fog. Free from ASSIST.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+mil-dtl-27500 | MIL-DTL-27500 — shielded and jacketed cable
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-mil-electronics-build. Multi-conductor shielded, jacketed cable built from qualified wire; the usual military shielded cable. Free from ASSIST.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+ipc-a-610 | IPC-A-610 — acceptability of electronic assemblies
+https://www.ipc.org/ipc-standards
+Group: making. Type: primary_guidance.
+Roles: b-mil-electronics-build. What acceptable solder joints and assemblies look like, by class; Class 3 for military and harsh environments. Paid.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+j-std-001 | J-STD-001 — requirements for soldered electrical and electronic assemblies
+https://www.ipc.org/ipc-standards
+Group: making. Type: primary_guidance.
+Roles: b-mil-electronics-build. Soldering materials, processes and training requirements, by class; a space addendum covers space hardware. Paid.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+ipc-6012 | IPC-6012 — rigid printed board qualification and performance
+https://www.ipc.org/ipc-standards
+Group: making. Type: primary_guidance.
+Roles: b-mil-electronics-build. Board fabrication requirements by class; Class 3 for military products. Paid.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+ipc-cc-830 | IPC-CC-830 — conformal coating qualification
+https://www.ipc.org/ipc-standards
+Group: making. Type: primary_guidance.
+Roles: b-mil-electronics-build. Qualification of conformal coating materials (acrylic, urethane, silicone, epoxy, parylene and newer types); replaced MIL-I-46058C. IPC-HDBK-830 is the guide. Paid.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+ipc-whma-a-620 | IPC/WHMA-A-620 — cable and wire harness assemblies
+https://www.ipc.org/ipc-standards
+Group: making. Type: primary_guidance.
+Roles: b-mil-electronics-build. Acceptance requirements for cables and harnesses, by class. Paid.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+ansi-esd-s20-20 | ANSI/ESD S20.20 — ESD control program
+https://www.esda.org/standards/
+Group: making. Type: primary_guidance.
+Roles: b-mil-electronics-build. Requirements for an electrostatic discharge control program in a factory handling sensitive parts. Paid.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+mil-std-130 | MIL-STD-130 — identification marking of U.S. military property
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-mil-program. Nameplates and part marking, including the 2D data-matrix Unique Item Identifier (UID) when required. Free from ASSIST.
+Check: Confirm the current revision in ASSIST before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+mil-std-882 | MIL-STD-882 — system safety
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-mil-program. Hazard identification, risk assessment and mitigation through the life of a system. Free from ASSIST.
+Check: Confirm the current revision in ASSIST before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+mil-std-1472 | MIL-STD-1472 — human engineering
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-mil-program, b-mil-environmental. Design criteria for equipment people wear and handle: weight, size, edges, gloved operation, connectors and labels. Free from ASSIST.
+Check: Confirm the current revision in ASSIST before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+dmsms-sd-22 | DoD SD-22 — Diminishing Manufacturing Sources and Material Shortages guidebook
+https://www.dsp.dla.mil/Programs/DMSMS/
+Group: military. Type: government.
+Roles: b-mil-program, b-mil-electronics-build. Managing parts obsolescence: monitoring, last-time buys, alternates, redesign. Free.
+Check: Confirm the current revision in ASSIST before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+iris-vulture | Iris Technology Vulture Power Scavenger
+https://www.iristechnology.com/tactical/man-portable/vulture-power-scavenger
+Group: electrical. Type: supplier.
+Roles: b-mil-power. In-line soldier power scavenger: 5–46 V DC input (solar included), offsets system-battery drain and charges a CWB or 2590 as an SMBus charger; built for Nett Warrior. A benchmark for soldier power devices.
+Check: Iris documents disagree on maximum output (5 A or 10 A at 16.8 V); check the current datasheet.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+iris-merlin-hh | Iris Technology Merlin HH+ radio power and data adapter
+https://www.militaryaerospace.com/communications/product/55378085/iris-technology-introduces-rugged-power-management-adapter-for-an-prc-163-radio
+Group: electrical. Type: supplier.
+Roles: b-mil-power. Power and data adapter for the AN/PRC-163 that runs the radio from external power while charging its battery. A benchmark for radio charging behavior.
+Check: Trade-press description; ask the maker for specifications.
+Checked: 2026-10-13. Source: Publisher or directory operator.
+
+isa-packml | ISA-TR88.00.02 — PackML machine states
+https://www.isa.org/standards-and-publications/isa-standards/isa-88-standards
+Group: quality. Type: primary_guidance.
+Roles: b-automation-controls. A standard state model (stopped, idle, execute, held, aborted and others) and tag naming that many plants expect from automated machines. Paid; OMAC publishes overviews free.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher page.
+
+iso-13849-2 | ISO 13849-2 — validation of safety-related control functions
+https://www.iso.org/standard/53640.html
+Group: quality. Type: primary_guidance.
+Roles: b-automation-controls, b-machine-safety. How to validate that each safety function meets its required performance level, with fault lists and tests. Paid.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher page.
+
+iso-4414 | ISO 4414 — pneumatic fluid power: safety rules for systems
+https://www.iso.org/standard/43706.html
+Group: quality. Type: primary_guidance.
+Roles: b-automation-handling. General rules and safety requirements for pneumatic systems on machinery: energy isolation, pressure control, component selection. Paid.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher page.
+
+iso-8573-1 | ISO 8573-1 — compressed air purity classes
+https://www.iso.org/standard/46418.html
+Group: quality. Type: primary_guidance.
+Roles: b-automation-handling. Classes for particles, water and oil in compressed air; used to specify air that touches the product. Paid.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher page.
+
+odva-ethernet-ip | ODVA — EtherNet/IP
+https://www.odva.org/technology-standards/key-technologies/ethernet-ip/
+Group: making. Type: primary_guidance.
+Roles: b-automation-controls. The industrial Ethernet protocol used by many PLCs, drives and cameras in North American plants. Overview free.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher or directory operator.
+
+extrusion-framing-8020 | 80/20 aluminum extrusion framing catalog and design guide
+https://8020.net/
+Group: making. Type: supplier.
+Roles: b-automation-handling. Aluminum T-slot extrusion, fasteners and accessories for machine frames, guarding and fixtures; the catalog has load and deflection data. Free.
+Check: Supplier data; check deflection for precision mounts.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+edmund-imaging-guide | Edmund Optics imaging resource guide
+https://www.edmundoptics.com/knowledge-center/application-notes/imaging/
+Group: making. Type: supplier.
+Roles: b-machine-vision. Application notes on lenses, field of view, resolution, depth of field and lighting for machine vision. Free.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+nordson-efd-dispensing | Nordson EFD fluid dispensing guides
+https://www.nordson.com/en/divisions/efd
+Group: making. Type: supplier.
+Roles: b-automation-handling. Dispensing methods (time-pressure, positive displacement, jetting), dot control and maintenance for adhesives and fluids. Free.
+Check: Supplier guidance; confirm with a sample run on real parts.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+iso-10993 | ISO 10993 — biological evaluation of medical devices
+https://www.iso.org/standard/68936.html
+Group: quality. Type: primary_guidance.
+Roles: b-automation-project, b-automation-handling. The series used to evaluate the biocompatibility of materials, including adhesives, that touch the body; adhesive makers sell grades tested to parts of it. Paid.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher page.
+
+iso-13851 | ISO 13851 — two-hand control devices
+https://www.iso.org/standard/70295.html
+Group: quality. Type: primary_guidance.
+Roles: b-pneumatic-fixture, b-machine-safety. Types of two-hand controls (concurrent actuation, release, no tie-down), their requirements and placement. Paid.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher page.
+
+iso-14119 | ISO 14119 — interlocking devices associated with guards
+https://www.iso.org/standard/45230.html
+Group: quality. Type: primary_guidance.
+Roles: b-pneumatic-fixture, b-machine-safety. Choosing and applying door interlocks and guard locking, and preventing defeat. Paid.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher page.
+
+iso-1219 | ISO 1219 — fluid power graphical symbols and circuit diagrams
+https://www.iso.org/standard/60184.html
+Group: quality. Type: primary_guidance.
+Roles: b-pneumatic-fixture. The symbols for drawing pneumatic schematics. Paid.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher page.
+
+clippard-air-logic | Clippard pneumatic logic and valve guides
+https://www.clippard.com/
+Group: making. Type: supplier.
+Roles: b-pneumatic-fixture. Air-logic elements (AND, OR, NOT, timers, memory), miniature valves and application examples for pneumatic-only control. Free catalog.
+Check: Supplier guidance; safety-rated functions need parts rated for them.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+machinerys-handbook | Machinery’s Handbook (Industrial Press)
+https://industrialpress.com/machinerys-handbook/
+Group: making. Type: primary_guidance.
+Roles: b-pneumatic-fixture, b-automation-handling. The standard reference for machining, fits and tolerances, threads, fasteners and material properties. Paid.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher page.
+
+iec-61010-1 | IEC 61010-1 — safety of electrical equipment for measurement, control and lab use
+https://webstore.iec.ch/en/publication/4279
+Group: electrical. Type: primary_guidance.
+Roles: b-rugged-cots. Safety requirements for measuring equipment: insulation, creepage and clearance, enclosures, flammability; IEC 61010-2-030 adds measuring circuits and measurement categories (CAT II, III, IV). UL 61010-1 is the U.S. version. Paid.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher page.
+
+iso-20653 | ISO 20653 — degrees of protection (IP code) including IPX9K
+https://www.iso.org/standard/58048.html
+Group: electrical. Type: primary_guidance.
+Roles: b-rugged-cots. Protection ratings for vehicle electrical equipment, including high-pressure, high-temperature water jets (IPX9K) used for washdown. Paid.
+Check: Confirm the current edition with the publisher before relying on it.
+Checked: 2026-10-13. Source: Publisher page.
+
+mil-dtl-38999 | MIL-DTL-38999 — high-density circular connectors
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-rugged-cots, b-mil-electronics-build. The common military circular connector family: environmental sealing, shell sizes, inserts, sealing caps. Free from ASSIST.
+Check: Confirm the current revision in ASSIST; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+mil-dtl-26482 | MIL-DTL-26482 — miniature circular connectors
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-rugged-cots. Bayonet-coupled miniature circular connectors, sealed versions available; a lower-cost military choice. Free from ASSIST.
+Check: Confirm the current revision in ASSIST; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+gore-protective-vents | Gore protective vents (expanded PTFE membrane vents)
+https://www.gore.com/products/categories/venting
+Group: electrical. Type: supplier.
+Roles: b-rugged-cots, b-mil-enclosure. Pressure-equalizing vents that let air through and keep water and dust out of sealed enclosures; ratings by immersion depth. Free product data.
+Check: Supplier data; choose a vent rated to the required immersion.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+mil-hdbk-454 | MIL-HDBK-454 — general guidelines for electronic equipment
+https://quicksearch.dla.mil/
+Group: military. Type: government.
+Roles: b-mil-program, b-mil-electronics-build, b-rugged-cots. Common design guidelines for military electronic equipment: parts, materials, processes, safety, marking, workmanship. Free from ASSIST.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+iso-iec-17025 | ISO/IEC 17025 — competence of testing and calibration laboratories
+https://www.iso.org/ISO-IEC-17025-testing-and-calibration-laboratories.html
+Group: quality. Type: primary_guidance.
+Roles: b-mil-environmental, b-mil-emi, b-rugged-cots. What lab accreditation means; check that a test lab is accredited with the exact methods in its scope. Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+ipc-2221 | IPC-2221 — generic standard on printed board design
+https://www.ipc.org/ipc-standards
+Group: making. Type: primary_guidance.
+Roles: b-mil-electronics-build, b-mil-power. Board design rules: conductor spacing for voltage, current capacity, vias, lands; the basis for creepage and clearance on boards. Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+ipc-7711-7721 | IPC-7711/7721 — rework, modification and repair of electronic assemblies
+https://www.ipc.org/ipc-standards
+Group: making. Type: primary_guidance.
+Roles: b-mil-electronics-build. Approved methods for reworking and repairing boards and assemblies. Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+j-std-033 | J-STD-033 — handling moisture-sensitive devices
+https://www.ipc.org/ipc-standards
+Group: making. Type: primary_guidance.
+Roles: b-mil-electronics-build. Storage, baking and floor-life rules for moisture-sensitive parts before reflow (with J-STD-020 classification). Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+as6174 | AS6174 — counterfeit materiel: assuring acquisition of authentic materiel
+https://www.sae.org/standards/content/as6174/
+Group: quality. Type: primary_guidance.
+Roles: b-mil-program. Counterfeit prevention for materiel other than electronic parts; companion to AS5553. Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+ieee-299 | IEEE 299 — measuring shielding effectiveness of enclosures
+https://standards.ieee.org/
+Group: electrical. Type: primary_guidance.
+Roles: b-mil-enclosure, b-mil-emi. The standard method for measuring how well an enclosure shields; useful when a customer asks for shielding numbers. Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+battery-university | Battery University — lithium-ion charging basics
+https://batteryuniversity.com/
+Group: electrical. Type: learning_resource.
+Roles: b-mil-power. Plain-language articles on lithium-ion charging (CC/CV, termination, temperature limits), aging and safety; good for the project manager’s questions. Free.
+Check: Educational overview; the cell maker’s data sheet governs.
+Checked: 2026-10-13. Source: Publisher or directory operator.
+
+ti-battery-charger-guides | Texas Instruments battery management application notes
+https://www.ti.com/power-management/battery-management/overview.html
+Group: electrical. Type: supplier.
+Roles: b-mil-power. Charger and fuel-gauge application notes: charge profiles, JEITA temperature control, power-path management, SMBus gauges. Free.
+Check: Maker’s guidance for its parts; principles transfer, part values don’t.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+iec-61010-2-030 | IEC 61010-2-030 — particular requirements for testing and measuring circuits
+https://webstore.iec.ch/
+Group: electrical. Type: primary_guidance.
+Roles: b-rugged-cots. Measuring circuits and measurement categories (CAT II, III, IV) for equipment that measures mains; works with IEC 61010-1. Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+ul-50e | UL 50E — enclosures for electrical equipment, environmental considerations
+https://www.shopulstandards.com/
+Group: electrical. Type: primary_guidance.
+Roles: b-rugged-cots, b-automation-controls. Environmental ratings for enclosures (the UL side of NEMA types 4, 4X, 6, 6P, 12 and others). Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+iec-60204-1 | IEC 60204-1 — electrical equipment of machines
+https://webstore.iec.ch/
+Group: electrical. Type: primary_guidance.
+Roles: b-automation-controls. The international counterpart of NFPA 79 for machine electrical equipment; often required for export machines. Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+iso-13855 | ISO 13855 — positioning of safeguards with respect to approach speed
+https://www.iso.org/search.html?q=13855
+Group: quality. Type: primary_guidance.
+Roles: b-machine-safety, b-pneumatic-fixture-design, b-automation-controls. Safety distance calculations for light curtains, two-hand controls and interlocked guards. Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+iso-13850 | ISO 13850 — emergency stop function
+https://www.iso.org/search.html?q=13850
+Group: quality. Type: primary_guidance.
+Roles: b-machine-safety, b-automation-controls. Design principles for emergency stop devices and functions. Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+ispe-gamp-5 | ISPE GAMP 5 — risk-based approach to computerized system validation
+https://ispe.org/publications/guidance-documents/gamp-5-guide-2nd-edition
+Group: quality. Type: primary_guidance.
+Roles: b-automation-project. How regulated manufacturers validate computerized systems, including machine controls and vision; used when the customer requires software validation. Paid.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+fda-software-validation | FDA — General Principles of Software Validation
+https://www.fda.gov/regulatory-information/search-fda-guidance-documents/general-principles-software-validation
+Group: quality. Type: government.
+Roles: b-automation-project. FDA guidance on validating software, including production and quality-system software; background for vision and controls validation on medical device lines. Free.
+Check: Confirm the current edition with the publisher before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Government agency’s own website.
+mil-prf-32383 | MIL-PRF-32383 — rechargeable sealed batteries for portable military electronics
+https://quicksearch.dla.mil/
+Group: military. Type: primary_guidance.
+Roles: b-mil-power, b-mil-program. General performance specification for sealed rechargeable batteries that power portable military communications electronics; individual batteries are defined on slash sheets (several are lithium-ion). Free from ASSIST.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+mil-std-1275 | MIL-STD-1275 — 28 volt DC input power to military vehicles
+https://quicksearch.dla.mil/
+Group: military. Type: primary_guidance.
+Roles: b-mil-power, b-rugged-cots. Steady-state range, starting disturbances, surges, spikes, ripple and reverse polarity at the input of equipment powered from a ground vehicle; applies only if the equipment runs or charges from vehicle power. Free from ASSIST.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+emva-1288 | EMVA 1288 — measuring and presenting machine vision camera specifications
+https://www.emva.org/standards-technology/emva-1288/
+Group: electrical. Type: primary_guidance.
+Roles: b-machine-vision. Vendor-neutral camera data (sensitivity, noise, dark current, uniformity, defective pixels) for comparing cameras on equal terms before picking one. Free.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
+
+astm-e2930 | ASTM E2930 — pressure decay leak test method
+https://store.astm.org/e2930-26.html
+Group: quality. Type: primary_guidance.
+Roles: b-rugged-cots, b-mil-enclosure, b-mil-environmental. How to set up and calculate a pressure decay leak test on a rigid sealed part (a fast, objective production leak check for sealed enclosures). Paid.
+Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
+Checked: 2026-10-13. Source: Publisher page.
 BEGIN DESIGN PRINCIPLES
 Guide: https://ancreationoffice.com/design-principles.html
 Instructions: https://ancreationoffice.com/design-principles.txt

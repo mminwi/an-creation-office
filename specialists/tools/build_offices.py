@@ -9,13 +9,14 @@ Writes into guide/:
                                     (the Inventor's Office reads standing.txt; the Business Manager's Office reads business-manager.txt)
   specialists/tools/sidebar.html    the "Your offices" sidebar block, for pasting into the other site pages
 Each office is one bot. The owner names it; the procedures call it by its role name."""
-import csv, html, pathlib, re
+import csv, html, json, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 GUIDE = ROOT / 'guide'
 SITE = 'https://ancreationoffice.com/'
 GH = 'https://github.com/mminwi/an-creation-office/blob/main/'
 rows = {r['role']: r for r in csv.DictReader(open(ROOT / 'specialists/roles.csv', encoding='utf-8'))}
+LIB = {r['id']: r for r in json.load(open(GUIDE / 'resources.json', encoding='utf-8'))['resources']}
 shell = (ROOT / 'specialists/tools/office-shell.template.html').read_text(encoding='utf-8')
 e = lambda s: html.escape(s, quote=False)
 
@@ -156,6 +157,18 @@ def procs(role):
         elif re.match(r'^specialists/calcs/[\w.-]+\.py$', p):
             out.append((p.split('/')[-1], GH + p))
     return out
+
+def library(o):
+    """The library sources an office's specialists use: roles.csv library_sources, then resources.json b_roles."""
+    out = []
+    for m in o['members']:
+        ids = [x.strip() for x in rows[m]['library_sources'].split(';') if x.strip()]
+        ids += [i for i, r in LIB.items() if m in r.get('b_roles', [])]
+        for i in ids:
+            if i in LIB and i not in out:
+                out.append(i)
+    return [f'- {LIB[i]["title"]}: {LIB[i]["url"]} ({i})' for i in out]
+
 
 def member_name(role):
     n = rows[role]['promo_name']
@@ -404,6 +417,10 @@ After the version check: check your "Last saved" commit is on GitHub (say in a l
 
 YOUR SPECIALISTS (open the procedure when its subject comes up, use it, then leave it)
 {chr(10).join(spec)}
+
+YOUR LIBRARY (reference sources your specialists use)
+{chr(10).join(library(o))}
+Each source's use and what to check is in the library: https://ancreationoffice.com/resources.txt (search for the id in brackets; the whole library, with every specialist's sources: https://ancreationoffice.com/resources.json). When a question touches one of these, open the source or its library entry, and cite it as "published" with the source. Don't quote a standard's text or numbers from memory: many are paid documents, so say which one to get, and on a contract the edition the contract names governs. If you need a source that isn't here, say so and suggest one; the owner adds it to the library.
 
 HOW YOU WORK
 - Ask for data, not opinions: measurements, settings, readings, drawings, photos. Propose a default when one is sensible, and ask only what the owner alone can answer.

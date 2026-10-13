@@ -7342,6 +7342,360 @@
       "checked_on": "2026-10-13",
       "source": "Supplier’s own website",
       "kind": "supplier"
+    },
+    {
+      "id": "mil-hdbk-454",
+      "title": "MIL-HDBK-454 — general guidelines for electronic equipment",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program",
+        "b-mil-electronics-build",
+        "b-rugged-cots"
+      ],
+      "use": "Common design guidelines for military electronic equipment: parts, materials, processes, safety, marking, workmanship. Free from ASSIST.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "iso-iec-17025",
+      "title": "ISO/IEC 17025 — competence of testing and calibration laboratories",
+      "url": "https://www.iso.org/ISO-IEC-17025-testing-and-calibration-laboratories.html",
+      "group": "quality",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-environmental",
+        "b-mil-emi",
+        "b-rugged-cots"
+      ],
+      "use": "What lab accreditation means; check that a test lab is accredited with the exact methods in its scope. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ipc-2221",
+      "title": "IPC-2221 — generic standard on printed board design",
+      "url": "https://www.ipc.org/ipc-standards",
+      "group": "making",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-electronics-build",
+        "b-mil-power"
+      ],
+      "use": "Board design rules: conductor spacing for voltage, current capacity, vias, lands; the basis for creepage and clearance on boards. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ipc-7711-7721",
+      "title": "IPC-7711/7721 — rework, modification and repair of electronic assemblies",
+      "url": "https://www.ipc.org/ipc-standards",
+      "group": "making",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-electronics-build"
+      ],
+      "use": "Approved methods for reworking and repairing boards and assemblies. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "j-std-033",
+      "title": "J-STD-033 — handling moisture-sensitive devices",
+      "url": "https://www.ipc.org/ipc-standards",
+      "group": "making",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-electronics-build"
+      ],
+      "use": "Storage, baking and floor-life rules for moisture-sensitive parts before reflow (with J-STD-020 classification). Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "as6174",
+      "title": "AS6174 — counterfeit materiel: assuring acquisition of authentic materiel",
+      "url": "https://www.sae.org/standards/content/as6174/",
+      "group": "quality",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program"
+      ],
+      "use": "Counterfeit prevention for materiel other than electronic parts; companion to AS5553. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ieee-299",
+      "title": "IEEE 299 — measuring shielding effectiveness of enclosures",
+      "url": "https://standards.ieee.org/",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-enclosure",
+        "b-mil-emi"
+      ],
+      "use": "The standard method for measuring how well an enclosure shields; useful when a customer asks for shielding numbers. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "battery-university",
+      "title": "Battery University — lithium-ion charging basics",
+      "url": "https://batteryuniversity.com/",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-power"
+      ],
+      "use": "Plain-language articles on lithium-ion charging (CC/CV, termination, temperature limits), aging and safety; good for the project manager’s questions. Free.",
+      "check": "Educational overview; the cell maker’s data sheet governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher or directory operator",
+      "kind": "learning_resource"
+    },
+    {
+      "id": "ti-battery-charger-guides",
+      "title": "Texas Instruments battery management application notes",
+      "url": "https://www.ti.com/power-management/battery-management/overview.html",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-power"
+      ],
+      "use": "Charger and fuel-gauge application notes: charge profiles, JEITA temperature control, power-path management, SMBus gauges. Free.",
+      "check": "Maker’s guidance for its parts; principles transfer, part values don’t.",
+      "checked_on": "2026-10-13",
+      "source": "Supplier’s own website",
+      "kind": "supplier"
+    },
+    {
+      "id": "iec-61010-2-030",
+      "title": "IEC 61010-2-030 — particular requirements for testing and measuring circuits",
+      "url": "https://webstore.iec.ch/",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-rugged-cots"
+      ],
+      "use": "Measuring circuits and measurement categories (CAT II, III, IV) for equipment that measures mains; works with IEC 61010-1. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ul-50e",
+      "title": "UL 50E — enclosures for electrical equipment, environmental considerations",
+      "url": "https://www.shopulstandards.com/",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-rugged-cots",
+        "b-automation-controls"
+      ],
+      "use": "Environmental ratings for enclosures (the UL side of NEMA types 4, 4X, 6, 6P, 12 and others). Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iec-60204-1",
+      "title": "IEC 60204-1 — electrical equipment of machines",
+      "url": "https://webstore.iec.ch/",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-automation-controls"
+      ],
+      "use": "The international counterpart of NFPA 79 for machine electrical equipment; often required for export machines. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-13855",
+      "title": "ISO 13855 — positioning of safeguards with respect to approach speed",
+      "url": "https://www.iso.org/search.html?q=13855",
+      "group": "quality",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-machine-safety",
+        "b-pneumatic-fixture-design",
+        "b-automation-controls"
+      ],
+      "use": "Safety distance calculations for light curtains, two-hand controls and interlocked guards. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-13850",
+      "title": "ISO 13850 — emergency stop function",
+      "url": "https://www.iso.org/search.html?q=13850",
+      "group": "quality",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-machine-safety",
+        "b-automation-controls"
+      ],
+      "use": "Design principles for emergency stop devices and functions. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ispe-gamp-5",
+      "title": "ISPE GAMP 5 — risk-based approach to computerized system validation",
+      "url": "https://ispe.org/publications/guidance-documents/gamp-5-guide-2nd-edition",
+      "group": "quality",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-automation-project"
+      ],
+      "use": "How regulated manufacturers validate computerized systems, including machine controls and vision; used when the customer requires software validation. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "fda-software-validation",
+      "title": "FDA — General Principles of Software Validation",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/general-principles-software-validation",
+      "group": "quality",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-automation-project"
+      ],
+      "use": "FDA guidance on validating software, including production and quality-system software; background for vision and controls validation on medical device lines. Free.",
+      "check": "Confirm the current edition with the publisher before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "mil-prf-32383",
+      "title": "MIL-PRF-32383 — rechargeable sealed batteries for portable military electronics",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-power",
+        "b-mil-program"
+      ],
+      "use": "General performance specification for sealed rechargeable batteries that power portable military communications electronics; individual batteries are defined on slash sheets (several are lithium-ion). Free from ASSIST.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "mil-std-1275",
+      "title": "MIL-STD-1275 — 28 volt DC input power to military vehicles",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-power",
+        "b-rugged-cots"
+      ],
+      "use": "Steady-state range, starting disturbances, surges, spikes, ripple and reverse polarity at the input of equipment powered from a ground vehicle; applies only if the equipment runs or charges from vehicle power. Free from ASSIST.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "emva-1288",
+      "title": "EMVA 1288 — measuring and presenting machine vision camera specifications",
+      "url": "https://www.emva.org/standards-technology/emva-1288/",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-machine-vision"
+      ],
+      "use": "Vendor-neutral camera data (sensitivity, noise, dark current, uniformity, defective pixels) for comparing cameras on equal terms before picking one. Free.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "astm-e2930",
+      "title": "ASTM E2930 — pressure decay leak test method",
+      "url": "https://store.astm.org/e2930-26.html",
+      "group": "quality",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-rugged-cots",
+        "b-mil-enclosure",
+        "b-mil-environmental"
+      ],
+      "use": "How to set up and calculate a pressure decay leak test on a rigid sealed part (a fast, objective production leak check for sealed enclosures). Paid.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
     }
   ],
   "researched_shortlists": {
