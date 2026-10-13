@@ -51,4 +51,4 @@ PROVE IT OUT (office)
 - Hand-over: the pneumatic schematic, drawings, regulator settings, spare parts list, the risk assessment and an operator instruction with pictures.
 
 QUESTIONS TO ASK (office)
-What force does each part need, and what is the plant air pressure at its worst? One cylinder or five? How is a complete press confirmed? What two-hand type and door locking does the risk assessment require? What happens on air loss with the cylinder down? How does the operator load five tips and five mixers quickly and correctly every time?
+What force does each part need, and what is the plant air pressure at its worst? One cylinder or five? How is a complete press confirmed? What two-hand type and door locking does the risk assessment require? What happens on air loss with the cylinder down? How does the operator load all the parts (five of each) quickly and correctly every time?
