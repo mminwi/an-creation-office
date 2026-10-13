@@ -2,6 +2,7 @@
 Run from the repository root:  python specialists/tools/build_offices.py
 Writes into guide/:
   welcome.html                      the site's front page: pick an office
+  sop.html                          every procedure, by office (counts generated)
   offices.html                      the overview of the six offices
   <office page>.html                one page per office: what's inside, how to start it, the paste message
   office-<id>.txt                   standing instructions for the four specialty offices
@@ -220,6 +221,68 @@ welcome = f'''<header class="page-intro">
     <p class="muted">Want the details first? <a href="system.html">How it works</a> explains the thinking behind the offices, and the <a href="resources.html">resources</a> are the library they work from. Neither is needed to start.</p>
     </div></div>'''
 build_page('welcome.html', 'Welcome', WELCOME_DESC, welcome, None, canonical='', head=WELCOME_LD, body='page-welcome')
+
+# The procedures page: every file the offices work from, grouped by office, from the same lists as the office pages
+# and from guide/sop.txt (the index the bots read). Counts are generated, never typed.
+def sop_page():
+    lines = (GUIDE / 'sop.txt').read_text(encoding='utf-8').replace('\r\n', '\n').split('\n')
+    office_files = set()
+    blocks = []
+    for o in OFFICES:
+        items = [('Standing instructions', [(o['standing'], SITE + o['standing'])])]
+        office_files.add(o['standing'])
+        for m in o['members']:
+            files = procs(m)
+            office_files |= {f for f, _ in files}
+            if files:
+                items.append((member_name(m), files))
+        blocks.append((o['name'], o['page'], items))
+    head = {'FIRST': 'Getting started', 'FOR b-business-manager': "More for the Business Manager's Office",
+            'FOR b-project-manager': "More for the Inventor's Office", 'FOR THE ANALYST': 'For the analyst (the heavier work)',
+            'FOR BOTH': 'Shared by every office'}
+    shared, cur = [], None
+    for ln in lines:
+        key = next((k for k in head if ln.startswith(k)), None)
+        if key:
+            cur = head[key]; shared.append((cur, [])); continue
+        m = re.match(r'^(?:\d+[a-z]?|K\d+)\.\s+(.*)$', ln)
+        if not (cur and m) or 'Specialist procedure:' in ln:
+            continue
+        text = m.group(1)
+        files = list(dict.fromkeys(re.findall(r'https://ancreationoffice\.com/([\w./-]+\.(?:txt|csv|py))', text)))
+        desc = re.split(r'\s*\(?https://', text)[0].strip(' .;:(')
+        desc = re.sub(r'\s*\(\s*$', '', desc)
+        head_, _, tail_ = desc.partition(': ')
+        if len(files) > 1 and tail_ and len(tail_.split()) <= 3:   # "Templates b-analyst fills: APQP file" names only the first of several
+            desc = head_
+        desc += '.'
+        if files:
+            shared[-1][1].append((files, desc))
+    shared = [(h, it) for h, it in shared if it]
+    total = len(office_files | {f for _, it in shared for fs, _ in it for f in fs})  # distinct files
+    out = ['<header class="page-intro"><p class="kicker">How it works / Procedures</p><h1>Standard operating procedures</h1>'
+           f'<p class="lede">Every written procedure the offices work from: {total} plain-text files. Nothing hidden: click any file to read exactly what the offices are told to do. '
+           'You don’t need any of this to start; your office opens what it needs.</p></header>'
+           '<div class="reading-layout"><div class="article-body">'
+           '<section class="rule"><h2 id="how">How procedures work here</h2>'
+           '<p>A standard operating procedure (SOP) is a written way to do one job. An office doesn’t carry every procedure in memory. '
+           'Each one keeps a short standing file and opens a procedure only when its subject comes up, then leaves it. '
+           'Lines in the procedures are marked “Mike” (his practice), “published” (with the source) or “office”.</p>'
+           '<p>The index the bots read is <a href="sop.txt">sop.txt</a>. Every file is plain text, linked to the others, so any AI that can read a web link can follow it.</p></section>'
+           '<section class="rule"><h2 id="procedures">By office</h2>']
+    for name, page, items in blocks:
+        out.append(f'<h3><a href="{page}">{e(name)}</a></h3><ul class="plain">'
+                   + ''.join(f'<li><strong>{e(d)}:</strong> ' + ' · '.join(f'<a href="{u}">{f}</a>' for f, u in fs) + '</li>' for d, fs in items) + '</ul>')
+    out.append('</section><section class="rule"><h2 id="shared">Shared and supporting procedures</h2>')
+    for h, items in shared:
+        out.append(f'<h3>{e(h)}</h3><ul class="plain">' + ''.join(
+            '<li>' + ' · '.join(f'<a href="{f}">{f}</a>' for f in fs) + f' <span class="muted">{e(d)}</span></li>' for fs, d in items) + '</ul>')
+    out.append('</section></div></div>')
+    return '\n    '.join(out), total
+
+sop_main, sop_total = sop_page()
+build_page('sop.html', 'Procedures', f'Every written procedure the AN Creation offices work from, by office: {sop_total} plain-text files.', sop_main, None)
+
 (ROOT / 'specialists/tools/sidebar.html').write_text(sidebar() + '\n', encoding='utf-8')
 
 # standing instructions for the four specialty offices

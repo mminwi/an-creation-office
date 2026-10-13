@@ -27,12 +27,12 @@ Action log (issue log, action items): One list of who owes what: each action, wh
 Risk register: A list of what could go wrong, how likely, how bad, and what is being done about it. Read more: https://asana.com/templates/risk-register
 Go / hold / drop: The decision at the end of every stage: keep going, pause, or stop the project.
 Lessons learned: A short note at the end of a stage on what worked and what didn't, so the next project goes better. Read more: https://www.atlassian.com/software/confluence/templates/retrospective
-Git: A free tool that keeps a saved history of every file in a folder, so you can see what changed and go back to any earlier version. It is traditionally used for software because it is so good at version control, and version control is exactly what project records need too. We very highly recommend it.
+Git: A free tool that keeps a saved history of the files in a folder, so you can see what changed and go back to an earlier version. It keeps only what was saved to it (committed); very large files are usually kept elsewhere and linked. It is traditionally used for software because it is so good at version control, and version control is exactly what project records need too. We very highly recommend it.
 Version control: Keeping track of every version of a file: what changed, when, by whom, and being able to go back. Git does this automatically.
 Repository (repo): A folder Git keeps history for. Your AN-Creation folder can be one.
 Commit (checkpoint): A saved snapshot of the files at one moment, with a short note about what changed.
 Push / clone: Push sends your commits to an online copy; clone makes a full copy of a repository somewhere else, like a new computer.
-GitHub: An online service that holds a copy of a Git repository. A private repository is an offsite backup only you and people you invite can see.
+GitHub: An online service that holds a copy of a Git repository. A private repository is an offsite copy that only you, the people you invite and the services you connect can see.
 
 DESIGN AND ENGINEERING TERMS
 
@@ -72,7 +72,7 @@ FMEA (Failure Mode and Effects Analysis): A table of what could fail, how bad it
 DFMEA / PFMEA (Design FMEA / Process FMEA): A DFMEA looks at failures from the design; a PFMEA looks at failures from how the product is made. Read more: https://asq.org/quality-resources/fmea
 RPN (Risk Priority Number): Severity times occurrence times detection, each scored 1 to 10, used to rank FMEA rows. Severe safety items get attention whatever the number. Read more: https://asq.org/quality-resources/fmea
 Control plan: What gets checked during production, how, how often, and what happens when it is off. Read more: https://www.aiag.org/expertise-areas/quality/quality-core-tools
-Critical characteristic: A feature that matters most for safety or function, so it is checked every time. Also called special or key characteristic.
+Critical characteristic: A feature that matters most for safety, regulations or function, so it gets extra control: a defined check, how often, and what to do if it fails. The control plan sets the frequency; not every part is always checked. Also called special or key characteristic.
 CTQ (Critical to Quality): A feature the customer cares about enough that it must be controlled.
 DVP&R (Design Verification Plan and Report): The list of tests and checks for a design, with their results. Our compliance matrix covers it.
 Verification: Checking that the product was built to the spec: did we build it right? Read more: https://www.nasa.gov/reference/5-0-product-realization/
@@ -105,7 +105,7 @@ FCC Part 15: The FCC rules for devices that emit radio energy, intentionally (ra
 Pre-certified module: A radio module that already has FCC approval, which saves a lot of testing when it is used as approved. Read more: https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-C/section-15.212
 EMC / EMI (Electromagnetic Compatibility / Interference): Whether electronics give off radio noise or are upset by it. Read more: https://www.tuvsud.com/en-us/-/media/regions/us/pdf-files/whitepaper-report-e-books/final-emc-white-paper-2024.pdf
 Pre-compliance testing: A cheap early test before the formal lab, to find problems while they are still easy to fix. Read more: https://www.tek.com/en/documents/application-note/low-cost-emi-pre-compliance-testing-using-spectrum-analyzer
-CE marking: The mark showing a product meets EU safety, health and environmental rules. Needed to sell in the European Union. Read more: https://europa.eu/youreurope/business/product-rules-compliance/general-product-compliance/ce-marking/index_en.htm
+CE marking: The mark showing a product meets the EU rules that apply to it. Required only for product types whose EU rules call for it (toys, electrical equipment, machinery and others); many products don't carry it. The rules for your product decide. Read more: https://europa.eu/youreurope/business/product-rules-compliance/general-product-compliance/ce-marking/index_en.htm
 RoHS (Restriction of Hazardous Substances): EU limits on lead, mercury, cadmium and similar substances in electronics. Read more: https://environment.ec.europa.eu/topics/waste-and-recycling/rohs-directive_en
 REACH: EU rules on chemicals in products, including substances of very high concern. Read more: https://echa.europa.eu/regulations/reach
 Prop 65 (California Proposition 65): California's rule requiring warnings on products that expose people to listed chemicals. Read more: https://www.p65warnings.ca.gov/businesses
@@ -170,7 +170,7 @@ PATENT AND LEGAL TERMS
 Patent: A government grant that lets you stop others from making, using or selling your invention for a limited time, in return for publishing how it works. Read more: https://www.uspto.gov/patents/basics
 Utility patent: The usual patent, covering how something works or is made. Lasts about 20 years from filing. Read more: https://www.uspto.gov/patents/basics
 Design patent: A patent on how a product looks, not how it works. Read more: https://www.uspto.gov/patents/basics/apply/design-patent
-Provisional patent application: A lower-cost filing that holds your filing date for 12 months while you decide on a full application. Read more: https://www.uspto.gov/patents/basics/apply/provisional-application
+Provisional patent application: A lower-cost U.S. filing that sets an early filing date, but only for what it actually describes. To keep that date you must file a full (non-provisional) application within 12 months. It is never examined and never becomes a patent by itself. Read more: https://www.uspto.gov/patents/basics/apply/provisional-application
 Non-provisional application: The full patent application that gets examined. Read more: https://www.uspto.gov/learning-and-resources/support-centers/inventors-assistance-center-iac
 Claims: The numbered sentences at the end of a patent that define exactly what is protected. The most important part.
 Prior art: Anything public before your filing date that shows the same idea: patents, products, articles, videos. Read more: https://patents.google.com/
