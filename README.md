@@ -2,20 +2,19 @@
 
 Every procedure, template and data file the **AN Creation Office** runs on, in plain text. The live office is **https://ancreationoffice.com/** (start at the Welcome page). This repository is a copy of the same files, so an AI assistant such as Grok Bot, or a person, can read everything from one place.
 
-AN Creation is a free, AI-run product development office for inventors: a team of specialists you choose, led by your project manager bot, walks an idea from fact-finding through design, prototyping, tooling, qualification and launch, at an automotive level of quality, and keeps the paperwork. You make the decisions.
+AN Creation is a free, AI-run product development office for inventors: six offices, each a bot you name with its specialists built in. The Inventor's Office walks an idea from fact-finding through design, prototyping, tooling, qualification and launch, at an automotive level of quality, and keeps the paperwork. You make the decisions.
 
-The procedures use role names (b-project-manager, b-business-manager, b-analyst, b-plastics and so on). You name your own bots; the names go in `AN-Creation/team.csv`. One bot can cover every role, or several bots can share them.
+The procedures use role names (b-project-manager for the Inventor's Office, b-business-manager, b-molding-office and so on). You name your own bots; the names go in `AN-Creation/team.csv`. Each office is its own bot.
 
 ## Start with the website
 
 **[https://ancreationoffice.com/](https://ancreationoffice.com/)** explains all of this far better than plain text files can. Read it first:
 
 - [Welcome](https://ancreationoffice.com/): what the office is, the stages, and what you get at each one
-- [Start](https://ancreationoffice.com/start.html): set up your bot in Grok in a few minutes, from your phone
-- [The specialists](https://ancreationoffice.com/specialists.html): every specialist, and the starting offices
-- [Build your team](https://ancreationoffice.com/team-builder.html): pick specialists and name your bots
+- [Start](https://ancreationoffice.com/start.html): set up your first office in Grok, from your phone
+- [The offices](https://ancreationoffice.com/offices.html): the six offices; each page has the message that starts it
 - [Info](https://ancreationoffice.com/system.html): how it works, and why
-- [Project manager](https://ancreationoffice.com/project-manager.html): your main bot, and every procedure it follows
+- [Inventor's Office](https://ancreationoffice.com/inventors-office.html): your project manager for every invention
 - [Terms you'll hear](https://ancreationoffice.com/terms.html): the engineering, manufacturing and business words, in plain language
 - [Resources](https://ancreationoffice.com/resources.html): the library of sources the office works from
 - [Keeping your project safe](https://ancreationoffice.com/version-control.html): Git and backups
@@ -29,7 +28,8 @@ This repository is the plain-text backbone: the same procedures, for AI assistan
 Paste this into a new Grok Bot conversation:
 
 ```
-You are my project manager for AN Creation (role b-project-manager). Your name is <the name I chose>.
+You are my Inventor's Office for AN Creation. Your name is <the name I chose>.
+In the procedures your role is b-project-manager: that is how they refer to you.
 Read and follow your standing instructions:
 https://ancreationoffice.com/standing.txt
 (same file: https://raw.githubusercontent.com/mminwi/an-creation-office/main/guide/standing.txt)
@@ -50,13 +50,17 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | File | What it is | Live |
 |---|---|---|
 | [`LICENSE.txt`](guide/LICENSE.txt) | License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 | [live](https://ancreationoffice.com/LICENSE.txt) |
-| [`standing.txt`](guide/standing.txt) | b-project-manager, the chat the inventor talks to | [live](https://ancreationoffice.com/standing.txt) |
+| [`standing.txt`](guide/standing.txt) | The Inventor's Office (b-project-manager), the chat the inventor talks to | [live](https://ancreationoffice.com/standing.txt) |
+| [`office-molding.txt`](guide/office-molding.txt) | The other offices, one bot each: Molding Plant | [live](https://ancreationoffice.com/office-molding.txt) |
+| [`office-plastic-design.txt`](guide/office-plastic-design.txt) | The other offices, one bot each: Plastic Design | [live](https://ancreationoffice.com/office-plastic-design.txt) |
+| [`office-quality.txt`](guide/office-quality.txt) | The other offices, one bot each: Quality | [live](https://ancreationoffice.com/office-quality.txt) |
+| [`office-manufacturing.txt`](guide/office-manufacturing.txt) | The other offices, one bot each: Manufacturing | [live](https://ancreationoffice.com/office-manufacturing.txt) |
 | [`analyst.txt`](guide/analyst.txt) | b-analyst, called by b-project-manager to do the thinking | [live](https://ancreationoffice.com/analyst.txt) |
 | [`advance-now.txt`](guide/advance-now.txt) | The reason behind all of it, from Mike | [live](https://ancreationoffice.com/advance-now.txt) |
 | [`version.txt`](guide/version.txt) | Version check, first in every conversation | [live](https://ancreationoffice.com/version.txt) |
-| [`business-manager.txt`](guide/business-manager.txt) | b-business-manager, the business manager (company, website, profiles, promotion) | [live](https://ancreationoffice.com/business-manager.txt) |
+| [`business-manager.txt`](guide/business-manager.txt) | The Business Manager's Office (b-business-manager): company, patent preparation, name and trademark, licensing, funding, website and promotion, getting into stores | [live](https://ancreationoffice.com/business-manager.txt) |
 | [`start-on-your-phone.txt`](guide/start-on-your-phone.txt) | For a first-time user, on a phone: start here | [live](https://ancreationoffice.com/start-on-your-phone.txt) |
-| [`sop-team.txt`](guide/sop-team.txt) | Set up b-project-manager and b-analyst. By default one bot covers every role; the inventor may split roles across bots | [live](https://ancreationoffice.com/sop-team.txt) |
+| [`sop-team.txt`](guide/sop-team.txt) | Set up the Inventor's Office and b-analyst. Each office is its own bot | [live](https://ancreationoffice.com/sop-team.txt) |
 | [`sop-cooling-water.txt`](guide/sop-cooling-water.txt) | Specialist procedures (specialists branch): mold cooling water, b-cooling-water | [live](https://ancreationoffice.com/sop-cooling-water.txt) |
 | [`sop-drying.txt`](guide/sop-drying.txt) | Specialist procedures (specialists branch): resin drying, b-drying-handling | [live](https://ancreationoffice.com/sop-drying.txt) |
 | [`sop-scientific-molding.txt`](guide/sop-scientific-molding.txt) | Specialist procedures (specialists branch): scientific molding, b-scientific-molding | [live](https://ancreationoffice.com/sop-scientific-molding.txt) |
@@ -121,6 +125,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`advance-now.json`](guide/advance-now.json) | Data behind the advance now page (JSON) | [live](https://ancreationoffice.com/advance-now.json) |
 | [`blender-template.py`](guide/blender-template.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/blender-template.py) |
 | [`bot-names.txt`](guide/bot-names.txt) | Names for your bots. Revision 1 (draft) — October 12, 2026. | [live](https://ancreationoffice.com/bot-names.txt) |
+| [`business-office.html`](guide/business-office.html) | Page: the Business Office: what's inside and the message to start it | [live](https://ancreationoffice.com/business-office.html) |
 | [`check-sheets.csv`](guide/check-sheets.csv) | Worksheet / table (CSV): Project, Product revision, Sheet revision, Prepared by... | [live](https://ancreationoffice.com/check-sheets.csv) |
 | [`check-sheets.json`](guide/check-sheets.json) | Data behind the check sheets page (JSON) | [live](https://ancreationoffice.com/check-sheets.json) |
 | [`check-sheets.txt`](guide/check-sheets.txt) | Product development check sheets — Revision 1 — 2026-09-30 | [live](https://ancreationoffice.com/check-sheets.txt) |
@@ -133,15 +138,21 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`design-review.txt`](guide/design-review.txt) | AN CREATION — SHORT DESIGN AND FAILURE REVIEW — TEMPLATE REV 1 | [live](https://ancreationoffice.com/design-review.txt) |
 | [`design-risk.txt`](guide/design-risk.txt) | AN Creation — Design risk and troubleshooting. Revision 1, September 30, 2026. | [live](https://ancreationoffice.com/design-risk.txt) |
 | [`handoff-log.csv`](guide/handoff-log.csv) | Worksheet / table (CSV): handoff_id, sent_date, sender, recipient... | [live](https://ancreationoffice.com/handoff-log.csv) |
+| [`inventors-office.html`](guide/inventors-office.html) | Page: the Inventor'S Office: what's inside and the message to start it | [live](https://ancreationoffice.com/inventors-office.html) |
 | [`ip-ratings.txt`](guide/ip-ratings.txt) | IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and  | [live](https://ancreationoffice.com/ip-ratings.txt) |
+| [`manufacturing-office.html`](guide/manufacturing-office.html) | Page: the Manufacturing Office: what's inside and the message to start it | [live](https://ancreationoffice.com/manufacturing-office.html) |
 | [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The | [live](https://ancreationoffice.com/manufacturing.txt) |
+| [`molding-office.html`](guide/molding-office.html) | Page: the Molding Office: what's inside and the message to start it | [live](https://ancreationoffice.com/molding-office.html) |
+| [`offices.html`](guide/offices.html) | Page: the six offices | [live](https://ancreationoffice.com/offices.html) |
 | [`plan-template.txt`](guide/plan-template.txt) | Project plan | [live](https://ancreationoffice.com/plan-template.txt) |
 | [`planning-resources.json`](guide/planning-resources.json) | Data behind the planning resources page (JSON) | [live](https://ancreationoffice.com/planning-resources.json) |
 | [`planning-resources.txt`](guide/planning-resources.txt) | Product, startup and project planning. Checked 2026-09-30. | [live](https://ancreationoffice.com/planning-resources.txt) |
 | [`planning-review.csv`](guide/planning-review.csv) | Worksheet / table (CSV): Item ID, Question, Suggested roles, Source IDs... | [live](https://ancreationoffice.com/planning-review.csv) |
+| [`plastic-design-office.html`](guide/plastic-design-office.html) | Page: the Plastic Design Office: what's inside and the message to start it | [live](https://ancreationoffice.com/plastic-design-office.html) |
 | [`product-development.txt`](guide/product-development.txt) | PRODUCT DEVELOPMENT: THE PROCESS BEHIND THE CONVERSATION | [live](https://ancreationoffice.com/product-development.txt) |
-| [`profile.txt`](guide/profile.txt) | AN Creation bot profiles (October 12, 2026). b-project-manager profile version 2. b-business-manager profile v | [live](https://ancreationoffice.com/profile.txt) |
+| [`profile.txt`](guide/profile.txt) | AN Creation bot profiles (October 13, 2026). b-project-manager profile version 3. b-business-manager profile v | [live](https://ancreationoffice.com/profile.txt) |
 | [`project-manager.txt`](guide/project-manager.txt) | b-project-manager: the project manager role for AN Creation. The inventor names the bot that covers it (https: | [live](https://ancreationoffice.com/project-manager.txt) |
+| [`quality-office.html`](guide/quality-office.html) | Page: the Quality Office: what's inside and the message to start it | [live](https://ancreationoffice.com/quality-office.html) |
 | [`resource-crosscheck.json`](guide/resource-crosscheck.json) | Data behind the resource crosscheck page (JSON) | [live](https://ancreationoffice.com/resource-crosscheck.json) |
 | [`resource-crosscheck.txt`](guide/resource-crosscheck.txt) | Resource cross-check, September 30, 2026. | [live](https://ancreationoffice.com/resource-crosscheck.txt) |
 | [`resources.json`](guide/resources.json) | Data behind the resources page (JSON) | [live](https://ancreationoffice.com/resources.json) |
@@ -154,9 +165,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`sop-interns.txt`](guide/sop-interns.txt) | SOP: Use an intern. Revision 1 — October 1, 2026. | [live](https://ancreationoffice.com/sop-interns.txt) |
 | [`sop-office.txt`](guide/sop-office.txt) | SOP: Set up b-project-manager and b-analyst. Revision 9 — October 12, 2026. | [live](https://ancreationoffice.com/sop-office.txt) |
 | [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 11 — October 8, 2026. | [live](https://ancreationoffice.com/sop.txt) |
-| [`specialists.html`](guide/specialists.html) | Page: every specialist and the starting offices | [live](https://ancreationoffice.com/specialists.html) |
 | [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's form | [live](https://ancreationoffice.com/status-template.txt) |
-| [`team-builder.html`](guide/team-builder.html) | Page: pick specialists and name your bots | [live](https://ancreationoffice.com/team-builder.html) |
 | [`template-a3.txt`](guide/template-a3.txt) | One-page project summary (A3). Template, from Mike's practice (sop-six-sigma.txt section 6). Copy into the pro | [live](https://ancreationoffice.com/template-a3.txt) |
 | [`template-action-log.csv`](guide/template-action-log.csv) | Worksheet / table (CSV): ID, Opened, Action, Who... | [live](https://ancreationoffice.com/template-action-log.csv) |
 | [`template-team.csv`](guide/template-team.csv) | Worksheet / table (CSV): name, covers, reports_to, platform... | [live](https://ancreationoffice.com/template-team.csv) |
@@ -170,7 +179,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 
 ## The specialists
 
-The [`specialists/`](specialists/) folder (kept in this repository, not synced) holds the roster, the role map ([`specialists/roles.csv`](specialists/roles.csv)), the calculations the analyst runs ([`specialists/calcs/`](specialists/calcs/)), and the tool that builds the specialists and team builder pages.
+The [`specialists/`](specialists/) folder (kept in this repository, not synced) holds the roster, the role map ([`specialists/roles.csv`](specialists/roles.csv)), the calculations the analyst runs ([`specialists/calcs/`](specialists/calcs/)), and the tool that builds the office pages ([`specialists/tools/build_offices.py`](specialists/tools/build_offices.py)).
 
 
 ## License
