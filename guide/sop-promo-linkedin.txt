@@ -1,0 +1,54 @@
+SOP: LinkedIn for Mike. The profile, the company page, posts that get read, comments, the newsletter, and measuring it. Revision 1.
+Index: https://ancreationoffice.com/sop.txt
+Lines are marked "office" or "published" (with the source to check). LinkedIn changes often and most "algorithm" advice comes from marketing blogs that disagree; treat numbers as directional and test on Mike's own account.
+
+WHY LINKEDIN (office)
+It's where engineers, plant managers, quality people, purchasing and manufacturing leaders are, under their real names. For Mike's goal (being known as the engineer who puts manufacturing know-how into practical AI), it's the home base. X is the second home: faster, more AI and tech people.
+
+WHAT LINKEDIN SAYS IT RANKS ON (published: LinkedIn Help on the feed; LinkedIn engineering posts; secondhand summaries)
+- LinkedIn says its feed weighs hundreds of signals in three groups: who you are (identity: the author's experience, skills and what's on the profile), what the post is, and what people do with it.
+- Since 2026 LinkedIn describes an AI system that first picks which posts to consider for each member and then ranks them. Posts it judges low quality (engagement bait, repetitive templates, content that looks automated) are held back.
+- Marketing studies agree on the direction, not the numbers: time spent reading (dwell), thoughtful comments and replies, saves and shares count for much more than likes; posts that send people off LinkedIn through a link often get less reach. Whether a link in the first comment avoids that is disputed.
+What this means for Mike: write things engineers stop and read, ask real questions people want to answer, reply to every comment, keep his profile clearly about engineering, manufacturing and AI.
+
+THE PROFILE (office)
+Check it once, then each quarter. Bring Mike drafts; he edits on LinkedIn himself.
+- Photo: his real portrait (press kit). Banner: the AN Creation Office card or a clean shop-floor image with the two site names.
+- Headline (what shows under his name everywhere): what he does for whom, plainly. For example: "Engineer, 30+ years in manufacturing | Putting AI to work in engineering and manufacturing | Built the AN Creation Office (free)". Offer 3 options.
+- About: 3 short paragraphs in his voice: who he helps, what he's built, what he posts about; the two links; business inquiries email.
+- Featured: the AN Creation Office site, the Advance Now site, the press page, the best post, and the newsletter once it exists.
+- Experience: Advance Now LLC (founder) with the one-line description; past roles as Mike keeps them (no customers named in new text).
+- Custom profile URL, contact info with both websites, skills that match the posts (manufacturing engineering, injection molding, quality, AI).
+
+THE ADVANCE NOW COMPANY PAGE (office; published: LinkedIn Pages help)
+A page for Advance Now LLC with logo, tagline, website and the boilerplate. It grows slowly; Mike's personal profile does the heavy lifting. Share the best personal posts to the page now and then. A page can also run a newsletter once it meets LinkedIn's criteria.
+
+POST FORMATS (office; published: LinkedIn Help; marketing studies, directional)
+- Text post, 120 to 250 words, a strong first two lines (the part above "see more"), short paragraphs, one idea. The everyday format.
+- Text with one image: a real photo from Mike's bench or shop (no confidential parts), a press-kit card, or a clearly AI-made illustration.
+- Document (PDF) post: 5 to 10 pages, one point per page, big type, like a short slide deck: "How a molder finds the cause of short shots", "Six stages from idea to launch". Studies often rank these at the top for engagement.
+- Native video: under about 90 seconds, captions on, the point in the first few seconds. A screen recording of an office conversation, or Mike at the bench explaining one thing.
+- Polls: rarely, and only when Mike wants the answer.
+- Articles and the newsletter: longer pieces.
+
+THE NEWSLETTER (published: LinkedIn Help, newsletters)
+When Mike is ready to publish something longer about every two weeks: a LinkedIn newsletter. Subscribers get a notification and an email for each edition, and LinkedIn invites his network when it launches, so it's the closest thing on LinkedIn to his own mailing list. Propose a name and a one-line promise with him (for example, practical AI for engineering and manufacturing, from someone who's run plants). Feature it on his profile. Each edition: one topic, 600 to 1,200 words, a picture, one link.
+
+LINKS (office)
+When the post's whole point is "go try this", put the link in the post. Otherwise, make the post useful on its own and put the link in the first comment, or leave it out and let people find it on his profile. Record which way each post went and compare the reach over a month or two; keep whichever works for Mike.
+
+COMMENTING (office: the part most people skip)
+Spending 15 to 20 minutes a day leaving useful comments on other people's posts (manufacturing, molding, quality, AI in engineering, inventors) brings people to Mike's profile. A useful comment adds an experience, a number, a question or a different view, in 2 to 5 lines; never "great post". Find 5 good posts a day for Mike to comment on, with a draft for each; he edits and posts.
+Reply to every comment on Mike's posts, ideally within the first hour or two after posting. Ask a follow-up question when it fits.
+
+CADENCE (office)
+Start with 3 posts a week Mike can keep up, at times his audience is at work (weekday mornings, US Central). Consistency matters more than volume. Batch: draft the week's posts on Monday and bring them for a yes.
+
+CONNECTIONS AND MESSAGES (office)
+Connect with people who engage, and with engineers, plant managers and quality people in his fields, with a short personal note. Never automated mass requests or messages.
+
+MEASURE (office)
+Monthly, from LinkedIn's analytics (Mike reads them to you or pastes a screenshot): followers, impressions, profile views, comments per post, link clicks, newsletter subscribers. Note the 3 best and 3 worst posts and what they had in common. Adjust next month's plan.
+
+NEVER (office)
+Pods or groups that trade likes, bought followers, automation tools that post, like or message for Mike, scraped contact lists, tagging people who weren't involved, or posting anything Mike hasn't approved.

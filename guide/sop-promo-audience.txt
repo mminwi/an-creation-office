@@ -1,0 +1,45 @@
+SOP: Building Mike's audience. Positioning, the topics he's known for, a weekly rhythm, the numbers to watch, and an honest view of the long goal. Revision 1.
+Index: https://ancreationoffice.com/sop.txt
+Lines are marked "Mike", "office" or "published" (with the source to check).
+
+THE GOAL (Mike)
+Mike wants a large audience (his marker: about 100,000 people following him across LinkedIn, X and the rest) so that his name and his work earn their own opportunities, and so that the AN Creation Office reaches as many people as possible. He's an engineer, not a marketer: explain the why of each step, plainly.
+
+AN HONEST VIEW OF THE TIMELINE (office)
+Audiences that size usually take years of steady, useful posting, plus help from other people's audiences (podcasts, press, talks, collaborations). There's no shortcut that holds up. Set milestones Mike controls (posts, replies, appearances) and track the results (followers, reach, inquiries), and adjust every month. Say plainly when something isn't working.
+
+POSITIONING: WHAT MIKE IS KNOWN FOR (office; Mike to confirm)
+One line people can repeat: the engineer who has run plants and developed products for 30+ years, and now puts that know-how into practical AI anyone in engineering and manufacturing can use, for free.
+Why people follow: they get practical, tested advice on using AI in real engineering and manufacturing work, from someone who has done the work, without hype.
+
+THE TOPICS (pillars) (office)
+Keep to a few, so people know what they'll get:
+1. Practical AI in engineering and manufacturing: what works and what doesn't with Grok, Claude, Codex; AI doing CAD in SOLIDWORKS; AI for quality records, troubleshooting, project management. Experiments with honest results.
+2. Shop-floor know-how: molding defects, cooling and drying, tolerance stacks, control plans, running a plant, automation, safety. Short lessons and stories (no company names).
+3. Building the AN Creation Office in public: what changed and why, what the simulations found, what users ask, the next step.
+4. Inventors and the future of work: getting a product made, the costs that surprise people, and Mike's view that more people will build their own things as AI changes jobs.
+Rough mix: about 40% pillar 1, 30% pillar 2, 20% pillar 3, 10% pillar 4. Adjust from what gets read.
+
+THE WEEKLY RHYTHM (office)
+- Monday: plan the week with Mike in one message: 3 LinkedIn posts, 5 X posts (or what he can keep up), the topics, any video, any outreach (a podcast pitch, a group). Bring the drafts for a yes.
+- Every weekday: up to 5 conversations to reply to on X and 5 posts to comment on LinkedIn, with drafts. Replies to comments on Mike's posts.
+- Each week: one outreach to another audience (a podcast, a newsletter, a group, a talk).
+- Monthly: the numbers, the best and worst posts and why, next month's plan.
+Mike may set a lighter pace; consistency at a pace he keeps beats a burst followed by silence.
+
+THE IDEAS BANK (office)
+Keep ideas.csv in your folder: date, idea, where it came from (Mike's day, a question someone asked, the office's change log, an article), pillar, status (new, drafted, posted, where). Fill it from:
+- What Mike is working on this week (ask: "What did you work on, fix or learn this week?").
+- Questions people ask in comments and replies.
+- The AN Creation Office's change notes (https://ancreationoffice.com/version.txt) and its procedures (each one has lessons in it).
+- What engineers are discussing on X and LinkedIn this week.
+- Mike's stories: the first automated line, a launch that went sideways, an ISO certification, a defect that took weeks to find (no companies, no dates).
+
+MEASURING (office)
+Keep metrics.csv: month, platform, followers, impressions or views, comments, profile visits, clicks to the two websites, newsletter subscribers, inquiries. Mike reads the numbers from each platform (or sends a screenshot); never ask for his passwords. If the websites have analytics, tag links per platform (for example ?utm_source=linkedin) so clicks can be counted; ask Mike first.
+
+THE OWNED AUDIENCE (office)
+Followers belong to the platform; a mailing list belongs to Mike. A LinkedIn newsletter emails its subscribers and is the easiest start. Later, a newsletter on Mike's own site or a newsletter service: propose it when there are enough readers to make it worth it.
+
+WHAT TURNS AN AUDIENCE INTO OPPORTUNITY (office)
+Being clearly the person for one thing; a profile and websites that say what Mike does and how to reach him (business inquiries email); appearing on others' platforms; answering every serious inquiry quickly (flag them to Mike the same day). No sales pitch in posts: the posts earn trust; the profile and the inquiries do the rest.

@@ -8197,6 +8197,407 @@
       "checked_on": "2026-10-13",
       "source": "Supplier’s own website",
       "kind": "supplier"
+    },
+    {
+      "id": "an-press-kit",
+      "title": "AN Creation Office press kit",
+      "url": "https://ancreationoffice.com/press",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-voice",
+        "b-linkedin",
+        "b-x",
+        "b-promo-channels"
+      ],
+      "use": "The approved facts, key messages and never-say list, boilerplate descriptions, Mike’s bio, ready posts and replies, social cards and PDFs. The source of truth for anything said about the AN Creation Office or Advance Now. Free.",
+      "check": "The fact sheet governs; nothing outside it is stated as fact.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "working_template"
+    },
+    {
+      "id": "linkedin-community-policies",
+      "title": "LinkedIn Professional Community Policies",
+      "url": "https://www.linkedin.com/legal/professional-community-policies",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-linkedin"
+      ],
+      "use": "What LinkedIn allows and removes: authenticity, spam, fake engagement, automation. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "linkedin-engineering-blog",
+      "title": "LinkedIn Engineering blog (feed ranking posts)",
+      "url": "https://www.linkedin.com/blog/engineering",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-linkedin",
+        "b-promo-audience"
+      ],
+      "use": "LinkedIn’s own engineers on how the feed retrieves and ranks posts; the primary source behind most “LinkedIn algorithm” articles. Free.",
+      "check": "Marketing blogs summarize these posts with numbers LinkedIn never published; read the original.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "linkedin-newsletters",
+      "title": "LinkedIn Help — newsletters",
+      "url": "https://www.linkedin.com/help/linkedin/answer/111414",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-linkedin",
+        "b-promo-audience"
+      ],
+      "use": "How LinkedIn newsletters work: who can create one, subscriber notifications and email, up to five per account or page. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "linkedin-page-newsletter",
+      "title": "LinkedIn Help — create a LinkedIn Page newsletter",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a596833",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-linkedin"
+      ],
+      "use": "Newsletters from a company page (Advance Now): admin rights, access criteria, steps. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "linkedin-content-credentials",
+      "title": "LinkedIn Help — Content Credentials (AI labels)",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a6282984",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-images",
+        "b-promo-voice"
+      ],
+      "use": "LinkedIn labels images and video carrying C2PA Content Credentials, showing whether AI made or edited them. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "c2pa",
+      "title": "C2PA — Content Credentials standard",
+      "url": "https://c2pa.org/",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-images"
+      ],
+      "use": "The open standard for marking how an image or video was made (including by AI), used by LinkedIn and many image tools. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "x-algorithm",
+      "title": "X For You algorithm (open source, xai-org/x-algorithm)",
+      "url": "https://github.com/xai-org/x-algorithm",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-x",
+        "b-promo-audience"
+      ],
+      "use": "X’s published ranking code: candidates from follows and predicted interests, ranked by a Grok-based model predicting replies, reposts, likes, bookmarks, follows, reports and blocks. Free.",
+      "check": "Code and live settings can differ; X updates it. Read the README and current notes.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "x-rules",
+      "title": "The X Rules",
+      "url": "https://help.x.com/en/rules-and-policies/x-rules",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-x"
+      ],
+      "use": "What X allows: safety, privacy, authenticity, spam. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "x-platform-manipulation",
+      "title": "X — platform manipulation and spam policy",
+      "url": "https://help.x.com/en/rules-and-policies/platform-manipulation",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-x",
+        "b-promo-channels"
+      ],
+      "use": "What counts as fake engagement, follow churn, multiple accounts and automation on X; what gets accounts limited. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "x-premium",
+      "title": "X Help — X Premium",
+      "url": "https://help.x.com/en/using-x/x-premium",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-x"
+      ],
+      "use": "What the paid tiers include (longer posts, editing, reply placement and more). Free to read.",
+      "check": "Tiers and features change often.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "hn-guidelines",
+      "title": "Hacker News guidelines",
+      "url": "https://news.ycombinator.com/newsguidelines.html",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-channels"
+      ],
+      "use": "What belongs on Hacker News, titles, and the rule against using it mainly for promotion. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "hn-show-hn",
+      "title": "Show HN guidelines",
+      "url": "https://news.ycombinator.com/showhn.html",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-channels"
+      ],
+      "use": "Show HN is for things people can try that the poster made; title format, no vote requests; moderators have asked for posts written by hand, not by AI. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "reddit-content-policy",
+      "title": "Reddit Content Policy",
+      "url": "https://redditinc.com/policies/content-policy",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-channels"
+      ],
+      "use": "Rule 2: post authentic content in communities where you have a personal interest; no spam or vote manipulation. Each subreddit adds its own rules. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "reddiquette",
+      "title": "Reddiquette",
+      "url": "https://support.reddithelp.com/hc/en-us/articles/205926439",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-channels"
+      ],
+      "use": "Reddit’s informal etiquette, including the spirit behind the common “mostly participate, rarely self-promote” rule of thumb. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "product-hunt-launch",
+      "title": "Product Hunt — launch guide",
+      "url": "https://www.producthunt.com/launch",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-channels"
+      ],
+      "use": "Product Hunt’s own guidance for makers launching a product: preparation, launch day, the maker comment; no vote solicitation. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "youtube-creators",
+      "title": "YouTube Creators",
+      "url": "https://www.youtube.com/creators/",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-channels",
+        "b-promo-audience"
+      ],
+      "use": "YouTube’s official help for creators: channel setup, Shorts, titles and thumbnails, analytics. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "matchmaker-fm",
+      "title": "Matchmaker.fm — podcast guest matching",
+      "url": "https://www.matchmaker.fm/",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-channels"
+      ],
+      "use": "A directory that matches podcast hosts with guests; one way to find shows looking for guests. Free tier.",
+      "check": "Check each show yourself; a listing is not a booking.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher or directory operator",
+      "kind": "source_directory"
+    },
+    {
+      "id": "podcastguests",
+      "title": "PodcastGuests.com",
+      "url": "https://podcastguests.com/",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-channels"
+      ],
+      "use": "A directory and newsletter of podcasts seeking guests. Free tier.",
+      "check": "Check each show yourself; a listing is not a booking.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher or directory operator",
+      "kind": "source_directory"
+    },
+    {
+      "id": "utm-builder",
+      "title": "Google Analytics — Campaign URL Builder",
+      "url": "https://ga-dev-tools.google/campaign-url-builder/",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-audience"
+      ],
+      "use": "Builds tagged links (utm_source, utm_medium, utm_campaign) so site analytics can count visits from each platform and post. Free.",
+      "check": "Only useful if the websites run analytics that read the tags.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "commercial_tool"
+    },
+    {
+      "id": "xai-docs",
+      "title": "xAI documentation (Grok models, including image generation)",
+      "url": "https://docs.x.ai/",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-images"
+      ],
+      "use": "xAI’s official documentation for Grok, including the image generation models behind Grok Imagine. Free.",
+      "check": "Platform rules and features change; read the current page.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "canva",
+      "title": "Canva",
+      "url": "https://www.canva.com/",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-images"
+      ],
+      "use": "Free design tool for social cards, carousels (LinkedIn document posts) and thumbnails with exact text. Free tier.",
+      "check": "Check image and template licenses for commercial use.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "commercial_tool"
+    },
+    {
+      "id": "show-your-work",
+      "title": "Austin Kleon — Show Your Work!",
+      "url": "https://austinkleon.com/show-your-work/",
+      "group": "marketing",
+      "roles": [
+        "marketing"
+      ],
+      "b_roles": [
+        "b-promo-audience",
+        "b-promo-voice"
+      ],
+      "use": "A short book on sharing your process in public so people find you: building in public, without bragging. Paid.",
+      "check": "A book of principles, not platform rules.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "learning_resource"
     }
   ],
   "researched_shortlists": {

@@ -2455,7 +2455,7 @@ Edition: Web page.
 Check: Found via search 2026-10-12; the office did not open the page. Read the current solicitation of the agency you apply to.
 Checked: 2026-10-12. Source: Government agency (via search).
 
-MORE SPECIALIST SOURCES (military programs, power and batteries, EMI, environmental testing, enclosures, electronics build, automation, machine vision, pneumatics and fixtures). b-roles name the specialist roles that use each one (specialists/roles.csv). Many standards are paid; the publisher page is a catalog, not the full text.
+MORE SPECIALIST SOURCES (military programs, power and batteries, EMI, environmental testing, enclosures, electronics build, automation, machine vision, pneumatics and fixtures, AI-assisted CAD, circuit boards, promotion and social media). b-roles name the specialist roles that use each one (specialists/roles.csv). Many standards are paid; the publisher page is a catalog, not the full text.
 
 as9100 | AS9100 — quality management systems for aviation, space and defense
 https://www.sae.org/standards/content/as9100d/
@@ -3147,6 +3147,166 @@ Group: electrical. Type: supplier.
 Roles: b-charger-design. Measures each cell of a 3 to 5 cell lithium-ion pack, with hardware over- and under-voltage protection and a thermistor input; the basis of an independent per-cell cut-off in a charger. Free.
 Check: Maker’s data sheet and evaluation board guide govern; confirm stock and the current revision.
 Checked: 2026-10-13. Source: Supplier’s own website.
+an-press-kit | AN Creation Office press kit
+https://ancreationoffice.com/press
+Group: marketing. Type: working_template.
+Roles: b-promo-voice, b-linkedin, b-x, b-promo-channels. The approved facts, key messages and never-say list, boilerplate descriptions, Mike’s bio, ready posts and replies, social cards and PDFs. The source of truth for anything said about the AN Creation Office or Advance Now. Free.
+Check: The fact sheet governs; nothing outside it is stated as fact.
+Checked: 2026-10-13. Source: Publisher page.
+
+linkedin-community-policies | LinkedIn Professional Community Policies
+https://www.linkedin.com/legal/professional-community-policies
+Group: marketing. Type: primary_guidance.
+Roles: b-linkedin. What LinkedIn allows and removes: authenticity, spam, fake engagement, automation. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+linkedin-engineering-blog | LinkedIn Engineering blog (feed ranking posts)
+https://www.linkedin.com/blog/engineering
+Group: marketing. Type: primary_guidance.
+Roles: b-linkedin, b-promo-audience. LinkedIn’s own engineers on how the feed retrieves and ranks posts; the primary source behind most “LinkedIn algorithm” articles. Free.
+Check: Marketing blogs summarize these posts with numbers LinkedIn never published; read the original.
+Checked: 2026-10-13. Source: Publisher page.
+
+linkedin-newsletters | LinkedIn Help — newsletters
+https://www.linkedin.com/help/linkedin/answer/111414
+Group: marketing. Type: primary_guidance.
+Roles: b-linkedin, b-promo-audience. How LinkedIn newsletters work: who can create one, subscriber notifications and email, up to five per account or page. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+linkedin-page-newsletter | LinkedIn Help — create a LinkedIn Page newsletter
+https://www.linkedin.com/help/linkedin/answer/a596833
+Group: marketing. Type: primary_guidance.
+Roles: b-linkedin. Newsletters from a company page (Advance Now): admin rights, access criteria, steps. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+linkedin-content-credentials | LinkedIn Help — Content Credentials (AI labels)
+https://www.linkedin.com/help/linkedin/answer/a6282984
+Group: marketing. Type: primary_guidance.
+Roles: b-promo-images, b-promo-voice. LinkedIn labels images and video carrying C2PA Content Credentials, showing whether AI made or edited them. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+c2pa | C2PA — Content Credentials standard
+https://c2pa.org/
+Group: marketing. Type: primary_guidance.
+Roles: b-promo-images. The open standard for marking how an image or video was made (including by AI), used by LinkedIn and many image tools. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+x-algorithm | X For You algorithm (open source, xai-org/x-algorithm)
+https://github.com/xai-org/x-algorithm
+Group: marketing. Type: primary_guidance.
+Roles: b-x, b-promo-audience. X’s published ranking code: candidates from follows and predicted interests, ranked by a Grok-based model predicting replies, reposts, likes, bookmarks, follows, reports and blocks. Free.
+Check: Code and live settings can differ; X updates it. Read the README and current notes.
+Checked: 2026-10-13. Source: Publisher page.
+
+x-rules | The X Rules
+https://help.x.com/en/rules-and-policies/x-rules
+Group: marketing. Type: primary_guidance.
+Roles: b-x. What X allows: safety, privacy, authenticity, spam. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+x-platform-manipulation | X — platform manipulation and spam policy
+https://help.x.com/en/rules-and-policies/platform-manipulation
+Group: marketing. Type: primary_guidance.
+Roles: b-x, b-promo-channels. What counts as fake engagement, follow churn, multiple accounts and automation on X; what gets accounts limited. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+x-premium | X Help — X Premium
+https://help.x.com/en/using-x/x-premium
+Group: marketing. Type: primary_guidance.
+Roles: b-x. What the paid tiers include (longer posts, editing, reply placement and more). Free to read.
+Check: Tiers and features change often.
+Checked: 2026-10-13. Source: Publisher page.
+
+hn-guidelines | Hacker News guidelines
+https://news.ycombinator.com/newsguidelines.html
+Group: marketing. Type: primary_guidance.
+Roles: b-promo-channels. What belongs on Hacker News, titles, and the rule against using it mainly for promotion. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+hn-show-hn | Show HN guidelines
+https://news.ycombinator.com/showhn.html
+Group: marketing. Type: primary_guidance.
+Roles: b-promo-channels. Show HN is for things people can try that the poster made; title format, no vote requests; moderators have asked for posts written by hand, not by AI. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+reddit-content-policy | Reddit Content Policy
+https://redditinc.com/policies/content-policy
+Group: marketing. Type: primary_guidance.
+Roles: b-promo-channels. Rule 2: post authentic content in communities where you have a personal interest; no spam or vote manipulation. Each subreddit adds its own rules. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+reddiquette | Reddiquette
+https://support.reddithelp.com/hc/en-us/articles/205926439
+Group: marketing. Type: primary_guidance.
+Roles: b-promo-channels. Reddit’s informal etiquette, including the spirit behind the common “mostly participate, rarely self-promote” rule of thumb. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+product-hunt-launch | Product Hunt — launch guide
+https://www.producthunt.com/launch
+Group: marketing. Type: primary_guidance.
+Roles: b-promo-channels. Product Hunt’s own guidance for makers launching a product: preparation, launch day, the maker comment; no vote solicitation. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+youtube-creators | YouTube Creators
+https://www.youtube.com/creators/
+Group: marketing. Type: primary_guidance.
+Roles: b-promo-channels, b-promo-audience. YouTube’s official help for creators: channel setup, Shorts, titles and thumbnails, analytics. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+matchmaker-fm | Matchmaker.fm — podcast guest matching
+https://www.matchmaker.fm/
+Group: marketing. Type: source_directory.
+Roles: b-promo-channels. A directory that matches podcast hosts with guests; one way to find shows looking for guests. Free tier.
+Check: Check each show yourself; a listing is not a booking.
+Checked: 2026-10-13. Source: Publisher or directory operator.
+
+podcastguests | PodcastGuests.com
+https://podcastguests.com/
+Group: marketing. Type: source_directory.
+Roles: b-promo-channels. A directory and newsletter of podcasts seeking guests. Free tier.
+Check: Check each show yourself; a listing is not a booking.
+Checked: 2026-10-13. Source: Publisher or directory operator.
+
+utm-builder | Google Analytics — Campaign URL Builder
+https://ga-dev-tools.google/campaign-url-builder/
+Group: marketing. Type: commercial_tool.
+Roles: b-promo-audience. Builds tagged links (utm_source, utm_medium, utm_campaign) so site analytics can count visits from each platform and post. Free.
+Check: Only useful if the websites run analytics that read the tags.
+Checked: 2026-10-13. Source: Publisher page.
+
+xai-docs | xAI documentation (Grok models, including image generation)
+https://docs.x.ai/
+Group: marketing. Type: primary_guidance.
+Roles: b-promo-images. xAI’s official documentation for Grok, including the image generation models behind Grok Imagine. Free.
+Check: Platform rules and features change; read the current page.
+Checked: 2026-10-13. Source: Publisher page.
+
+canva | Canva
+https://www.canva.com/
+Group: marketing. Type: commercial_tool.
+Roles: b-promo-images. Free design tool for social cards, carousels (LinkedIn document posts) and thumbnails with exact text. Free tier.
+Check: Check image and template licenses for commercial use.
+Checked: 2026-10-13. Source: Publisher page.
+
+show-your-work | Austin Kleon — Show Your Work!
+https://austinkleon.com/show-your-work/
+Group: marketing. Type: learning_resource.
+Roles: b-promo-audience, b-promo-voice. A short book on sharing your process in public so people find you: building in public, without bragging. Paid.
+Check: A book of principles, not platform rules.
+Checked: 2026-10-13. Source: Publisher page.
 BEGIN DESIGN PRINCIPLES
 Guide: https://ancreationoffice.com/design-principles.html
 Instructions: https://ancreationoffice.com/design-principles.txt

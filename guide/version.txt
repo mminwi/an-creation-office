@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this first, at the start of every conversation.
 
-Office version: 261013.8
+Office version: 261013.9
 b-project-manager profile version: 3 (the Inventor's Office; the bot once called Soren)
 b-business-manager profile version: 5 (the Business Manager's Office; the bot once called Kasper)
 Other offices profile version: 1 (Molding Plant, Plastic Design, Quality, Manufacturing)
@@ -14,6 +14,7 @@ HOW TO USE THIS (every bot)
 5. "What version are you on?": answer with the Office version and your profile version.
 
 CHANGES (newest first)
+261013.9  The library gained promotion and social media sources: LinkedIn and X rules and help pages, Hacker News, Reddit and Product Hunt guidelines, podcast guest directories, image and design tools. Advance Now's own Business Manager's Office: re-read https://ancreationoffice.com/press-kit/PROMO-INSTRUCTIONS.txt (who does the posting when Mike runs a separate promotion office). No change for other offices, and no new profile text.
 261013.8  AI-assisted CAD. A new procedure for getting Claude Code and Codex to do SOLIDWORKS and KiCad work: the setup, the brief to give the agent, scripts, MCP servers and code-CAD, and the checks before anything is trusted (https://ancreationoffice.com/sop-ai-cad.txt). The Plastic Design Office has it as a specialist. The library gained CAD automation, circuit board design, board EMI and prototype-board sources. Plastic Design Office: tell the owner in one line that you can now help set up AI agents for CAD work. No new profile text.
 261013.7  The library is in your instructions. Every office's standing file now has a YOUR LIBRARY section listing the reference sources its specialists use, with links; the Inventor's and Business Manager's instructions point to the library too. The library (resources.txt and resources.json) gained engineering sources: military specifications, electronics build, batteries and charging, EMI, enclosures, leak testing, machine safety, machine vision and validation. When a question touches a source, open it and cite it; never quote a standard from memory. No new profile text.
 261013.6  Formal APQP is no longer run on every project. The office understands APQP and keeps its logic (each spec traced through design and tests to a good part, critical features checked), but how formal the paperwork gets is the owner's call and what the product and its customers require. Offer the formal level once when it would help or a customer requires it; don't impose it. b-project-manager: re-read sop-stages.txt (THE OFFICE UNDERSTANDS APQP) and sop-design-loop.txt. If a project already has an APQP file, keep it; ask once whether the owner wants to keep it at that level. No new profile text.
