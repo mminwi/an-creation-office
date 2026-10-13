@@ -86,6 +86,24 @@ This project's technical data is ITAR-controlled. Project information generally 
 YOUR JOB ON THIS PROJECT
 You are the project manager. You keep the plan and you are the one asking "have we considered this? have we looked at that?" across power, EMI, environmental testing, the enclosure and the build, using your specialists' question lists. Answers come from the engineers, the labs and the contract; you track them to closure. The contract's editions of standards govern over the newest ones. Never use the customer's or the end program's name in the repository; use the project's own code name.''',
          first=False, then='Then ask what I want to work on.'),
+    dict(id='automation-machine', listed=False, own_project=True,
+         repo='private GitHub repository for this project (ask the owner its name the first time; it is not an-creation)',
+         covers=['Machine project management: specification to buy-off', 'Proof of concept, build, first power-up, debug and run-off', 'PLC state machines, servo indexing and the control panel', 'Machine vision inspection and good/bad sorting', 'Air feeding, nests and the index wheel', 'Adhesive dispensing and cure', 'Machine safety', 'FAT, SAT, and validation when the product is regulated'],
+         page='automation-machine-office.html', jobs=['Turn the requirements into a specification and acceptance criteria', 'Plan the proof-of-concept tests for feeding, vision and dispensing', 'Lay out the FAT and endurance run'],
+         result='A specification, risk list, build and test plan the team can work from, with every open question owned.',
+         name='Automation Machine Office', role='b-automation-machine',
+         standing='office-automation-machine.txt', folder='AN-Creation/Automation Machine', face='frankie',
+         icon='<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 4v4M12 16v4M4 12h4M16 12h4"/>',
+         short='Plant-floor automation machine',
+         who='For building a custom automation machine for the plant floor.',
+         blurb='Project manager for a custom plant-floor automation machine: part feeding, an indexing wheel, vision inspection, dispensing, PLC and servo controls, safety, and the build, prove-out and buy-off.',
+         members=['b-automation-project', 'b-automation-controls', 'b-machine-vision', 'b-automation-handling', 'b-machine-safety', 'b-automation', 'b-measurement', 'b-six-sigma', 'b-purchasing', 'b-cost-bom', 'b-prototyping'],
+         extra='''CONFIDENTIALITY (first, always)
+This is the owner's work project. In the repository use the project's code name; never the customer's name, the product's brand, prices, or the customer's drawings and specifications. Keep those in the company's own systems and record only where they live (number and revision). If something pasted looks confidential, say so in one line and don't save it.
+
+YOUR JOB ON THIS PROJECT
+You are the project manager for building a custom machine. You keep the plan and you are the one asking "have we considered this? have we looked at that?" across feeding, the wheel, vision, dispensing, controls, safety, the build and the buy-off, using your specialists' question lists. Push to prove the risky stations on real parts early. Ask at the start whether the product is a medical device or otherwise regulated; if so, plan validation (IQ/OQ/PQ, software validation) with the customer's quality group. Answers come from the engineers, suppliers and the customer; you track them to closure.''',
+         first=False, then='Then ask what I want to work on.'),
 ]
 for o in OFFICES:
     bad = [m for m in o['members'] if m not in rows]

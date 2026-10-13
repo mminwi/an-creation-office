@@ -1,0 +1,34 @@
+SOP: Controls for an automation machine. PLC, servo motion, the control panel, machine states, networks. Revision 1.
+Index: https://ancreationoffice.com/sop.txt
+Lines are marked "office", "published" (with the source to check) or "Mike".
+
+MACHINE STATES FIRST (Mike; published: ISA-TR88.00.02 / PackML for a standard state model; IEC 61131-3 for PLC languages)
+- Program the machine as a state machine: each mode (stopped, homing, idle, running, held, stopping, aborted/faulted, manual) has its own rules, and moving between them is an explicit transition with its conditions. A homing routine should never start because an unrelated rung happened to go true.
+- Define the sequence of operation in words before code: for each station, what happens, in what order, what it waits for, and what happens on a fault, a missing part or an e-stop.
+- Recovery matters as much as running: what the machine does with parts in process after a stop, a jam or a power loss, and how the operator clears it safely.
+- PackML gives a common set of states and tags many plants expect; ask whether the plant uses it.
+
+MOTION: THE INDEXING WHEEL (office)
+- A rotary index (dial or star wheel) is driven by a servo for programmable positions and gentle profiles, or by a mechanical indexer for speed and simplicity. With a servo: size the motor for the wheel's inertia (a motor-to-load inertia ratio the drive maker recommends), the move time and the dwell, and add a gearbox where needed.
+- Homing and position: an absolute encoder, or a home sensor, so the wheel knows where every nest is after power-up.
+- Registration: cameras and the dispenser are triggered from position (the encoder or a PLC event at the dwell), not from timers.
+- Tuning: tune with the real wheel and parts; check settling time at the dwell before the camera fires.
+- Jams: torque or following-error monitoring to stop on a jam before damage.
+
+THE CONTROL PANEL (published: UL 508A for industrial control panels; NFPA 79 for machine wiring; NFPA 70 (NEC); confirm the plant's requirements)
+- Enclosure: steel, with a NEMA/UL type rating for the environment (Type 12 is common indoors on a plant floor); size it for the parts, wiring room, heat and future additions.
+- DIN rail layout: incoming power and disconnect, protection (breakers, fuses), power supply, PLC and I/O, safety relay or safety PLC, motor drives, terminal blocks, with wire duct and space to work.
+- Short-circuit current rating (SCCR) marked on the panel, required by UL 508A and the NEC; the plant's available fault current must not exceed it.
+- Heat: add up the losses (drives, power supply, PLC) and check the enclosure temperature; add a fan with filter or an air conditioner if needed.
+- Wiring: wire sizes and colors per NFPA 79, labeled both ends, separate power and signal, shielded cables for encoders and cameras with proper shield termination, grounding to a ground bar.
+- Documentation: schematics, a panel layout, a bill of materials and terminal lists that match the wiring.
+
+SAFETY CONTROLS (published: ISO 13849-1, NFPA 79; procedure: https://ancreationoffice.com/sop-machine-safety.txt)
+The risk assessment sets the required performance level for each safety function (e-stop, guard door interlock, light curtain). Use a safety relay or safety PLC rated for it, and validate each function (ISO 13849-2) before buy-off. A qualified safety professional decides.
+
+NETWORKS AND DATA (office)
+- The PLC, drives, cameras and HMI usually talk on an industrial Ethernet (EtherNet/IP, PROFINET, EtherCAT). Use what the plant supports.
+- Decide what the machine reports: counts (good, rejected, by reason), rate, downtime by cause, alarms. Ask whether it connects to the plant's systems.
+
+QUESTIONS TO ASK (office)
+Which PLC and HMI brand does the plant require? Safety relay or safety PLC? Servo or mechanical indexer, and what dwell does the camera and dispenser need? What happens on power loss with parts on the wheel? Is the panel UL 508A listed, and what SCCR does the plant need? Who keeps the program backups and the change log?

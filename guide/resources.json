@@ -6998,6 +6998,170 @@
       "checked_on": "2026-10-13",
       "source": "Publisher or directory operator",
       "kind": "supplier"
+    },
+    {
+      "id": "isa-packml",
+      "title": "ISA-TR88.00.02 — PackML machine states",
+      "url": "https://www.isa.org/standards-and-publications/isa-standards/isa-88-standards",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-automation-controls"
+      ],
+      "use": "A standard state model (stopped, idle, execute, held, aborted and others) and tag naming that many plants expect from automated machines. Paid; OMAC publishes overviews free.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-13849-2",
+      "title": "ISO 13849-2 — validation of safety-related control functions",
+      "url": "https://www.iso.org/standard/53640.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-automation-controls",
+        "b-machine-safety"
+      ],
+      "use": "How to validate that each safety function meets its required performance level, with fault lists and tests. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-4414",
+      "title": "ISO 4414 — pneumatic fluid power: safety rules for systems",
+      "url": "https://www.iso.org/standard/43706.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-automation-handling"
+      ],
+      "use": "General rules and safety requirements for pneumatic systems on machinery: energy isolation, pressure control, component selection. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "iso-8573-1",
+      "title": "ISO 8573-1 — compressed air purity classes",
+      "url": "https://www.iso.org/standard/46418.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-automation-handling"
+      ],
+      "use": "Classes for particles, water and oil in compressed air; used to specify air that touches the product. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "odva-ethernet-ip",
+      "title": "ODVA — EtherNet/IP",
+      "url": "https://www.odva.org/technology-standards/key-technologies/ethernet-ip/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-automation-controls"
+      ],
+      "use": "The industrial Ethernet protocol used by many PLCs, drives and cameras in North American plants. Overview free.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher or directory operator",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "extrusion-framing-8020",
+      "title": "80/20 aluminum extrusion framing catalog and design guide",
+      "url": "https://8020.net/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-automation-handling"
+      ],
+      "use": "Aluminum T-slot extrusion, fasteners and accessories for machine frames, guarding and fixtures; the catalog has load and deflection data. Free.",
+      "check": "Supplier data; check deflection for precision mounts.",
+      "checked_on": "2026-10-13",
+      "source": "Supplier’s own website",
+      "kind": "supplier"
+    },
+    {
+      "id": "edmund-imaging-guide",
+      "title": "Edmund Optics imaging resource guide",
+      "url": "https://www.edmundoptics.com/knowledge-center/application-notes/imaging/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-machine-vision"
+      ],
+      "use": "Application notes on lenses, field of view, resolution, depth of field and lighting for machine vision. Free.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Supplier’s own website",
+      "kind": "supplier"
+    },
+    {
+      "id": "nordson-efd-dispensing",
+      "title": "Nordson EFD fluid dispensing guides",
+      "url": "https://www.nordson.com/en/divisions/efd",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-automation-handling"
+      ],
+      "use": "Dispensing methods (time-pressure, positive displacement, jetting), dot control and maintenance for adhesives and fluids. Free.",
+      "check": "Supplier guidance; confirm with a sample run on real parts.",
+      "checked_on": "2026-10-13",
+      "source": "Supplier’s own website",
+      "kind": "supplier"
+    },
+    {
+      "id": "iso-10993",
+      "title": "ISO 10993 — biological evaluation of medical devices",
+      "url": "https://www.iso.org/standard/68936.html",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "b_roles": [
+        "b-automation-project",
+        "b-automation-handling"
+      ],
+      "use": "The series used to evaluate the biocompatibility of materials, including adhesives, that touch the body; adhesive makers sell grades tested to parts of it. Paid.",
+      "check": "Confirm the current edition with the publisher before relying on it.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
     }
   ],
   "researched_shortlists": {
