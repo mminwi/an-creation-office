@@ -58,6 +58,6 @@ Several inventions. Each has its own folder, plan and queue. One b-project-manag
 
 Where it lives. In the cloud, never on a computer's own drive: a private GitHub repository named an-creation, with AN-Creation/ inside it. That way it works from your phone, b-analyst (a cloud agent) can work on it directly, and if b-project-manager is deleted and made again, it finds it. b-project-manager proves it can write there before using it; a connected app is not proof.
 
-Backups. Nothing is ever overwritten (dated files and folders), and GitHub saves every change in its history. AI goofs up often enough that going back is close to a daily event. See https://ancreationoffice.com/version-control.txt
+Backups. Records and outputs are never edited once saved (a change is a new dated file or folder); working files like plan.md and Status are updated in place. GitHub keeps every earlier version of both, once a save is confirmed on GitHub. Going back to an earlier version is a normal part of working with AI. See https://ancreationoffice.com/version-control.txt
 
 Template. https://ancreationoffice.com/plan-template.txt contains a blank plan. Do not replace an existing plan with a blank one.

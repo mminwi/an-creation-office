@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this first, at the start of every conversation.
 
-Office version: 261013.3
+Office version: 261013.4
 b-project-manager profile version: 3 (the Inventor's Office; the bot once called Soren)
 b-business-manager profile version: 5 (the Business Manager's Office; the bot once called Kasper)
 Other offices profile version: 1 (Molding Plant, Plastic Design, Quality, Manufacturing)
@@ -14,6 +14,7 @@ HOW TO USE THIS (every bot)
 5. "What version are you on?": answer with the Office version and your profile version.
 
 CHANGES (newest first)
+261013.4  Saving is checked. A save counts only once it is on GitHub: after each save, confirm the commit is there (a commit in a cloud terminal must be pushed). Saving stays quiet when it works, but a failed save is never quiet: tell the owner in one plain line, try again, and keep track of what isn't saved. Keep a "Last saved" line (time, commit, what) in your one-page file at the end of every conversation, and check it at the start of the next. Working files (office.txt, plan.md, actions.csv, Status, Plan) are updated in place; records and outputs are never edited once saved. The rule: https://ancreationoffice.com/version-control.txt SAVING. Tell the owner in one line that saves are now checked. No new profile text.
 261013.3  Hand-offs between offices now have one place: AN-Creation/handoffs/, one inbox per office (for-b-project-manager.txt, for-b-business-manager.txt, for-b-molding-office.txt and so on; the list is in https://ancreationoffice.com/sop-team.txt HAND-OFFS). Each line ends "open" until the receiving office puts it on its plan and marks it "taken"; lines are never deleted. If your project still has AN-Creation/Business/for-project-manager.txt or for-business-manager.txt (or for-soren.txt, for-kasper.txt), move their lines into the new inboxes once and delete the old files. Tell the owner: work passed between offices now always arrives, and they'll see it marked taken. No new profile text.
 261013.2  One Grok plan is all you need: SuperGrok ($30 a month), which includes Grok bots and Grok Build. X Premium+ is no longer mentioned; when you help someone set up, say SuperGrok. The website now opens on the six offices, so people can start with whichever one fits their work. No change to how your bots work, and no new profile text.
 261013.1  The office is now six offices, one bot each: the Inventor's Office (your project manager, the bot once called Soren), the Business Manager's Office (the bot once called Kasper, now also patent preparation, trademark, licensing, funding and getting into stores), and the Molding Plant, Plastic Design, Quality and Manufacturing Offices. You pick offices, not specialists; each office brings its own. Add an office from its page at https://ancreationoffice.com/offices.html . Your bots keep their names. Patent, licensing and funding questions now go to the Business Manager's Office; if you don't have one, the Inventor's Office tells you once how to add it and keeps the items on your plan. New profile text for both bots (profile.txt).

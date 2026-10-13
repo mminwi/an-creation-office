@@ -1,4 +1,4 @@
-AN Creation backups and version control. Revision 4 — October 11, 2026. Human page: https://ancreationoffice.com/version-control.html
+AN Creation backups and version control. Revision 5 — October 13, 2026. Human page: https://ancreationoffice.com/version-control.html
 Replaces revision 3 (Google Drive default). The office lives in a private GitHub repository (D-100).
 
 WHY
@@ -6,15 +6,24 @@ AI is new, and it goofs up: a file gets overwritten, two versions get mixed, a c
 
 HOW IT'S KEPT
 - GitHub keeps every version. The project is a private repository (an-creation). Every save is a commit, and GitHub keeps them all: what changed, when, and by whom.
-- Commit often. b-project-manager saves a commit at the end of every conversation and every analyst run (and as it goes, when it writes answers), with a short note: which invention, what changed, who (b-project-manager or b-analyst). b-analyst commits its own work. The person doesn't have to do anything.
-- Never overwrite (D-029). Every update is a new dated file or folder: a new status, a new page, a new drawing, a new analyst run. The old one stays exactly as it was, so the history is easy to read without digging in GitHub.
-- The record. Every conversation and every analyst run is saved in Office files/record/ and sessions/, so what was said and decided is never only in a chat.
-Plain words: repository = the project's online folder, commit = a saved checkpoint. Say the real word once, then use it (D-040). Say it to the inventor once, in a line: "GitHub keeps every version, so nothing gets lost."
+- Save as you go. Every office saves the same turn things happen, and again at the end of every conversation and every analyst run, with a short note: which invention or job, what changed, who (the office's role, or b-analyst). b-analyst saves its own work. The person doesn't have to do anything.
+- Two kinds of files (D-029). Working files stay current by design and are updated in place: office.txt, business.txt, plan.md, actions.csv, team.csv, the hand-off inboxes, Status and Plan (earlier Status and Plan copies also go to History/). GitHub's history keeps every earlier version of them. Records and outputs are never edited once saved: documents, drawings, pages, analyst runs, record/ entries, released revisions. A change to one is a new dated file or a new revision, and the old one stays exactly as it was.
+- The record. Every conversation and every analyst run is saved in record/ and sessions/, so what was said and decided is not only in a chat. Anything not yet saved is only in the chat.
+Plain words: repository = the project's online folder, commit = a saved checkpoint. Say the real word once, then use it (D-040). Say it to the owner once, in a line: "Your work is saved to GitHub as we go, and GitHub keeps every earlier version."
+
+SAVING (every office and b-analyst, every save)
+1. A save counts only when it is on GitHub. Writing through the GitHub connection saves to GitHub directly. In a cloud terminal, commit and then push; a commit that wasn't pushed is not saved.
+2. Check it. After saving, look on GitHub (main branch) and confirm the new commit is there and the file reads as you wrote it. Do this every time; it is quick.
+3. Quiet when it works. Don't announce saving or committing, and don't mention file names unless asked.
+4. Never quiet when it fails. If a save fails or you can't confirm it, say so in one plain line right away ("That last save didn't reach GitHub. What you told me is still in this chat; I'm trying again."). Try again once. If it still fails, work through https://ancreationoffice.com/github-setup.txt with them, and keep a list in the chat of what isn't saved yet. Never say or suggest something is saved when you haven't confirmed it.
+5. Checkpoint. At the end of every conversation (and before a long analyst run), write one line in your one-page file (office.txt; business.txt for the Business Manager's Office): "Last saved: YYMMDD HH:MM, commit <short id>, <what>". Then confirm it the same way. That line is where a new chat or a re-made bot picks up.
+6. Start of every conversation: check that your "Last saved" commit is on GitHub. If it isn't, or recent work you remember is missing, tell the owner in one line what is missing before going on.
+7. Large files (CAD, video, big photo sets; anything over about 50 MB) stay out of the repository. Record where the original lives (the link, the drive or the supplier) and who holds it, in the job or record folder. A link is not a backup: ask the owner to keep the original safe.
 Setup and troubleshooting: https://ancreationoffice.com/github-setup.txt
 
 IF SOMETHING GOES WRONG
 - A file got overwritten, mixed up or deleted: look at the earlier dated files first, then the file's history on GitHub, find the last good version, restore it as a new commit, and say what was restored.
-- A chat got cleared, or b-project-manager was deleted and made again: nothing is lost. The new b-project-manager looks for the an-creation repository first, reads office.txt, All inventions, PROJECT.txt, plan.md and the latest status, and carries on.
+- A chat got cleared, or a bot was deleted and made again: everything that was saved is still there. The new bot looks for the an-creation repository first, reads office.txt (its "Last saved" line), All inventions, PROJECT.txt, plan.md and the latest status, and carries on from the last saved checkpoint. Anything said after the last save was only in the old chat: ask the owner about it.
 - They lost their phone: sign in to GitHub and their AI app on the new one. The project is in the cloud.
 
 NEVER
@@ -22,6 +31,6 @@ NEVER
 - Never make the repository public.
 - Never put passwords, keys, an SSN, or bank or card numbers in any project file, issue or commit message.
 - A saved version is not an approval. History does not replace the revision and change records (sop-change-control.txt) or the record of what was sent to whom.
-- Big CAD, video and image files (over 50 MB): keep them out of the repository and link to where they are.
+- Big CAD, video and image files (over about 50 MB): keep them out of the repository and record where they are (SAVING 7).
 
 Sources: GitHub repositories https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories ; file history https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file ; large files https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github .

@@ -68,7 +68,7 @@ FOR THE ANALYST
 12b. Formal forms and documents each road produces. https://ancreationoffice.com/forms-catalog.csv
 
 FOR BOTH
-13. The project folders: Your files and Office files. Dated folders; nothing is overwritten. https://ancreationoffice.com/project-folders.txt
+13. The project folders: Your files and Office files. Dated folders; records are never edited once saved. https://ancreationoffice.com/project-folders.txt
 14. Review pages: a local web page per invention for timelines, risks, pictures, documents and short walkthroughs. https://ancreationoffice.com/sop-review-page.txt (tool: https://ancreationoffice.com/review.py)
 15. Terms: the plain-language glossary to explain terms from (about 200, with read-more links). https://ancreationoffice.com/terms.txt
 16. The action log: who owes what, kept for the inventor and shown as Your list on the review page. https://ancreationoffice.com/sop-action-log.txt (template: https://ancreationoffice.com/template-action-log.csv)
