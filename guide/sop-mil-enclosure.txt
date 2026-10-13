@@ -1,0 +1,37 @@
+SOP: A sealed, shielded aluminum enclosure. Conductive gaskets, compression and stack-up, finishes, galvanic compatibility, and bonding. Revision 1.
+Index: https://ancreationoffice.com/sop.txt
+Lines are marked "office", "published" (with the source to check) or "Mike".
+
+ONE FLANGE, TWO JOBS (office)
+On a small soldier-worn box the same joint usually has to keep water out (immersion, rain, salt fog) and keep EMI in and out. Design the seal and the EMI gasket together: either one gasket that does both (a conductive elastomer that also seals) or two side by side (an environmental seal and an EMI gasket). Decide early; it sets the groove, the flange width and the fasteners.
+
+CHOOSING THE CONDUCTIVE GASKET (published: Parker Chomerics Conductive Elastomer Engineering Handbook, Section 1 design guide; MIL-DTL-83528 covers conductive elastomer gasket materials, check its status in ASSIST)
+- Material: conductive elastomers are silicone or fluorosilicone filled with conductive particles (silver, silver-plated aluminum, nickel-graphite and others). Choose by shielding need, galvanic compatibility with the flange (aluminum here), fluid exposure, temperature and cost. Use the handbook's corrosion section to match filler to an aluminum flange in salt fog.
+- Form: molded or extruded profile in a groove, die-cut flat gasket, or form-in-place bead dispensed on the part. Small enclosures often use form-in-place or a profile in a groove.
+- Deflection: every profile has a recommended compression range from the manufacturer. Too little loses contact and sealing; too much overstresses it and can crack the flange or take a set. Design to stay inside that range across all tolerances.
+- Compression set and closure force: check the force the fasteners must supply at maximum compression, and that the lid doesn't bow between fasteners.
+
+COMPRESSION STOPS AND THE STACK-UP (office; uses the tolerance stack calculation)
+- Use a positive compression stop: the lid lands metal-to-metal (or on a stop feature) so the gasket compression is set by geometry, not by how tight the screws are.
+- Stack-up: groove depth (or stop height) minus gasket height, through every dimension in the chain (groove depth, gasket cross-section tolerance, flange flatness, lid flatness, stop height, any coating thickness). Run worst case and RSS, and check both ends land inside the gasket's recommended deflection range. Script: https://github.com/mminwi/an-creation-office/blob/main/specialists/calcs/tolerance_stack.py ; procedure: https://ancreationoffice.com/sop-tolerance-stack.txt
+- Groove fill: the gasket's compressed cross-section must fit the groove volume with room to spare (elastomers don't compress in volume; they move).
+- Flatness and fastener spacing: a stiff flange and closely spaced fasteners keep the gap even. Between fasteners the lid can lift; check deflection, or add fasteners or stiffness. A common rule of thumb keeps any seam gap or opening well below a twentieth of the shortest wavelength of concern; use the EMI requirements to set the frequency.
+
+FINISHES: WHERE CONDUCTIVE, WHERE NOT (published: MIL-DTL-5541 chemical conversion coating, Class 3 for low electrical resistance; MIL-PRF-8625 anodize; MIL-STD-889 dissimilar metals; confirm current revisions in ASSIST)
+- Anodize is an electrical insulator. A gasket on anodized aluminum doesn't make contact. Mask the gasket lands, connector mounting faces and bonding points from anodize (and from paint), and give those surfaces a conductive chemical conversion coating (MIL-DTL-5541 Type II (no hexavalent chromium), Class 3) or another conductive finish the design specifies.
+- Paint and CARC: mask the same areas. Confirm the customer's paint and marking requirements early.
+- Galvanic compatibility: the gasket filler, the flange finish, connector shells and fasteners must be compatible in salt fog. Use MIL-STD-889 and the gasket maker's corrosion data; avoid a bare silver-filled gasket on bare aluminum in a marine environment without checking.
+- Fasteners: material and plating compatible with the housing; consider thread inserts in aluminum for repeated assembly.
+
+BONDING AND CONNECTORS (published: MIL-STD-464 sets electrical bonding requirements at system level; the contract may set a bonding resistance)
+- Connector shells bond to the enclosure through a conductive, masked mounting face (and a conductive gasket under the flange if sealed).
+- Cable shields terminate 360 degrees in the backshell, not with pigtails.
+- Measure bonding resistance with a milliohm meter at the points the drawing or contract specifies, and record it at first article.
+
+SEALING FOR IMMERSION (office)
+- Every opening needs a seal: lid, connectors (sealed receptacles or a panel seal), cable entries (overmold or sealed backshell), any vent or button.
+- If the enclosure is sealed, think about pressure change (altitude, temperature): some designs use a vent membrane; that is a new opening to seal and shield.
+- Test it: leak test on every unit or a sample, as the drawing specifies, before the formal immersion test.
+
+WHAT THE OFFICE KEEPS (office)
+Gasket choice and its data sheet, the stack-up result and its assumptions, finish callouts and masking areas in words, bonding measurements, and leak test results by serial number. Drawings and models stay in the company's controlled system (sop-mil-program.txt).

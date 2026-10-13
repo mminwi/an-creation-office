@@ -68,10 +68,30 @@ OFFICES = [
          blurb='Manufacturing cells and standard work, purchasing, cost and the bill of materials, automation, machine safety and Lean Six Sigma.',
          members=['b-manufacturing', 'b-purchasing', 'b-cost-bom', 'b-automation', 'b-machine-safety', 'b-six-sigma'],
          first=False, then='Then ask what I want to work on.'),
+    dict(id='mil-battery', listed=False, own_project=True,
+         repo='private GitHub repository for this project (ask the owner its name the first time; it is not an-creation)',
+         covers=['Program management under AS9100', 'Export control: what may and may not be kept here', 'Military environmental testing (MIL-STD-810)', 'EMI/EMC (MIL-STD-461)', 'Sealed, shielded enclosure: gaskets, stack-up, finishes', 'Lithium-ion charging and battery-powered electronics', 'Soldier power and radio interfaces', 'Military electronics build quality'],
+         page='mil-battery-office.html', jobs=['Lay out the qualification test plan and sequence', 'Walk the power design through the charging question list', 'Check the gasket compression stack-up'],
+         result='A program plan, test matrix and question list the team can work from, with controlled data kept where it belongs.',
+         name='MIL Battery Office', role='b-mil-battery',
+         standing='office-mil-battery.txt', folder='AN-Creation/MIL Battery', face='peter',
+         icon='<rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 10v4M7 10v4M11 10v4"/>',
+         short='Soldier-worn power, MIL testing',
+         who='For a soldier-worn battery power device on a defense program.',
+         blurb='Project manager for a soldier-worn battery power device: AS9100 program management, MIL-STD-810 and MIL-STD-461 testing, sealed and shielded enclosures, and lithium-ion charging, with export-controlled data kept out.',
+         members=['b-mil-program', 'b-mil-power', 'b-mil-emi', 'b-mil-environmental', 'b-mil-enclosure', 'b-tolerance-gdt', 'b-mil-electronics-build', 'b-quality-planning', 'b-measurement', 'b-purchasing', 'b-cost-bom', 'b-prototyping'],
+         extra='''EXPORT CONTROL (first, always)
+This project's technical data is ITAR-controlled. Project information generally is not. You run the project here: schedule, actions, decisions in plain words, test planning, suppliers, quality records, and the questions to ask. Never store or repeat controlled technical data (schematics, layouts, drawings, models, interface control documents, controlled test data, firmware); record only that it exists, its number and revision, and where it lives in the company's controlled system. Design analysis happens in the company's controlled environment, not here. If something pasted looks controlled, say so in one line and don't save it. Full rule: https://ancreationoffice.com/sop-mil-program.txt (EXPORT CONTROL FIRST).
+
+YOUR JOB ON THIS PROJECT
+You are the project manager. You keep the plan and you are the one asking "have we considered this? have we looked at that?" across power, EMI, environmental testing, the enclosure and the build, using your specialists' question lists. Answers come from the engineers, the labs and the contract; you track them to closure. The contract's editions of standards govern over the newest ones. Never use the customer's or the end program's name in the repository; use the project's own code name.''',
+         first=False, then='Then ask what I want to work on.'),
 ]
 for o in OFFICES:
     bad = [m for m in o['members'] if m not in rows]
     assert not bad, (o['id'], bad)
+
+LISTED = [o for o in OFFICES if o.get('listed', True)]   # unlisted offices: page and standing file exist, linked nowhere
 
 def procs(role):
     out = []
@@ -93,7 +113,7 @@ def face(o, size=''):
 
 def sidebar(current=None):
     out = ['<p class="side-label">Your offices</p>']
-    for o in OFFICES:
+    for o in LISTED:
         cur = ' aria-current="page"' if current == o['page'] else ''
         out.append(f'<a href="{o["page"]}"{cur}>{face(o)}<span class="who"><b>{e(o["name"])}</b><span>{e(o["short"])}</span></span></a>')
     cur = ' aria-current="page"' if current == 'offices.html' else ''
@@ -109,6 +129,9 @@ def paste(o):
     if o['first']:
         lines += ['If this is my first office, help me set up first, one step at a time:', SITE + 'sop-office.txt',
                   'If I already have an an-creation repository on GitHub, use it and add yourself to AN-Creation/team.csv.']
+    elif o.get('repo'):
+        lines += ['Use the private GitHub repository for this project (ask me its name the first time) and add yourself to AN-Creation/team.csv there.',
+                  'If it isn\'t set up yet, help me set it up first, one step at a time:', SITE + 'github-setup.txt']
     else:
         lines += ['Use my an-creation repository on GitHub and add yourself to AN-Creation/team.csv.',
                   'If I don\'t have one yet, help me set it up first, one step at a time:', SITE + 'github-setup.txt']
@@ -136,7 +159,7 @@ def picker():
         f'<li><a href="{x["page"]}">{face(x)}<span><strong>{e(x["name"])}</strong>'
         f'<span class="team-role">{e(x["who"])}</span>'
         f'<span class="team-try">Try: {e(x["jobs"][0])}</span></span>'
-        f'<span class="card-arrow" aria-hidden="true">↗</span></a></li>' for x in OFFICES) + '</ul></div>')
+        f'<span class="card-arrow" aria-hidden="true">↗</span></a></li>' for x in LISTED) + '</ul></div>')
 
 HOW = '''<ol class="plain">
     <li><p><strong>Pick the office that fits your work.</strong> You don’t need the others to start.</p></li>
@@ -146,7 +169,7 @@ HOW = '''<ol class="plain">
 
 
 def page(o):
-    others = [x for x in OFFICES if x is not o]
+    others = [x for x in LISTED if x is not o]
     main = f'''<header class="page-intro">
     <p class="kicker">{e(o["who"])}</p>
     <h1>{e(o["name"])}</h1>
@@ -184,7 +207,8 @@ def build_page(fname, title, desc, main, current, canonical=None, head='', body=
     (GUIDE / fname).write_text(out, encoding='utf-8')
 
 for o in OFFICES:
-    build_page(o['page'], o['name'], o['blurb'], page(o), o['page'])
+    build_page(o['page'], o['name'], o['blurb'], page(o), o['page'],
+               head='' if o.get('listed', True) else '\n<meta name="robots" content="noindex, nofollow">')
 
 overview = f'''<header class="page-intro">
     <p class="kicker">The offices</p>
@@ -228,7 +252,7 @@ def sop_page():
     lines = (GUIDE / 'sop.txt').read_text(encoding='utf-8').replace('\r\n', '\n').split('\n')
     office_files = set()
     blocks = []
-    for o in OFFICES:
+    for o in LISTED:
         items = [('Standing instructions', [(o['standing'], SITE + o['standing'])])]
         office_files.add(o['standing'])
         for m in o['members']:
@@ -302,12 +326,12 @@ Generated from specialists/roles.csv by specialists/tools/build_offices.py; chan
 
 WHO YOU ARE
 You are the {o["name"]}, one of the AN Creation offices. {o["blurb"]} The owner names you in Grok; go by that name if you know it, and never ask about names. Write your row in AN-Creation/team.csv on your first conversation (the name if you know it, otherwise the office name). In the procedures your role is {o["role"]}: that is how they refer to you, never what you call yourself. You talk like a person texting: one question at a time, short answers, plain words. Your specialists are listed below. Take one at a time and say which one is talking when it helps ("Cooling water: ...").
-
+{(chr(10) + o['extra'] + chr(10)) if o.get('extra') else ''}
 VERSION CHECK (first, every conversation)
 Open https://ancreationoffice.com/version.txt?t=<today's date> and follow it. Keep the version you last saw as "Office version seen" in {o["folder"]}/office.txt. Newer: re-read this file fresh and tell the owner in one line what changed that affects them.
 
 YOUR FILES (the chat is not the record)
-The owner's private GitHub repository an-creation, folder {o["folder"]}/. Look there first; a re-made office carries on from its files and never starts over. If there is no repository yet, set it up with them first, one step at a time: https://ancreationoffice.com/github-setup.txt
+The owner's {o.get('repo', 'private GitHub repository an-creation')}, folder {o["folder"]}/. Look there first; a re-made office carries on from its files and never starts over. If there is no repository yet, set it up with them first, one step at a time: https://ancreationoffice.com/github-setup.txt
 - office.txt: one page: what this office is working on, the plant or product it serves, key facts, "Office version seen", "Last saved".
 - plan.md: what's open, decided, waiting, next.
 - actions.csv: who owes what (columns and rules: https://ancreationoffice.com/sop-action-log.txt).
@@ -319,7 +343,7 @@ THE TEAM AND THE OTHER OFFICES
 - AN-Creation/team.csv lists every office bot the owner runs: name, covers (the role), reports_to, platform, notes. Add or update your own row on the first conversation. How the offices work together: https://ancreationoffice.com/sop-team.txt
 - Hand-offs: every office has one inbox, AN-Creation/handoffs/for-<role>.txt (for-b-project-manager.txt is the Inventor's Office, for-b-business-manager.txt the Business Manager's Office, for-b-molding-office.txt and so on; the full list and rule: https://ancreationoffice.com/sop-team.txt HAND-OFFS). To send work to another office, add a line to its inbox, "YYMMDD | from {o["role"]} | what | why | open", check it reached GitHub, and tell the owner in one line which office it's for (by that bot's name if team.csv has one) and that it picks it up the next time they open that office. If they don't have that office, say so once and keep the item on your own plan.
 - Your inbox is AN-Creation/handoffs/for-{o["role"]}.txt. Read it at the start of every conversation; put each "open" line on your plan and change "open" to "taken YYMMDD". Never delete lines.
-- A product an inventor is developing is tracked by the Inventor's Office (b-project-manager). You judge your specialists' content; it keeps the project plan.
+{'- You keep this project' + chr(39) + 's plan yourself; other offices may help on request.' if o.get('own_project') else '- A product an inventor is developing is tracked by the Inventor' + chr(39) + 's Office (b-project-manager). You judge your specialists' + chr(39) + ' content; it keeps the project plan.'}
 
 START OF EVERY CONVERSATION
 After the version check: check your "Last saved" commit is on GitHub (say in a line if anything is missing), then read office.txt, plan.md, actions.csv and your inbox. Mention anything due or waiting in one line. Then ask what they want to work on, or offer the next step.

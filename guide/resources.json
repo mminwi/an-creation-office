@@ -130,7 +130,10 @@
       "check": "Select relevant methods with the responsible engineer; this is not a universal test checklist for every military product.",
       "checked_on": "2026-09-30",
       "source": "Publisher or directory operator",
-      "kind": "source_directory"
+      "kind": "source_directory",
+      "b_roles": [
+        "b-mil-environmental"
+      ]
     },
     {
       "id": "mil-std-2073",
@@ -351,7 +354,10 @@
       "check": "Select applicable tests from the contract and equipment/platform requirements; verify the required revision in ASSIST. This is separate from enclosure IP protection.",
       "checked_on": "2026-09-30",
       "source": "Publisher or directory operator",
-      "kind": "source_directory"
+      "kind": "source_directory",
+      "b_roles": [
+        "b-mil-emi"
+      ]
     },
     {
       "id": "ul-standards",
@@ -6460,6 +6466,538 @@
       "checked_on": "2026-10-12",
       "source": "Government agency (via search)",
       "kind": "government"
+    },
+    {
+      "id": "as9100",
+      "title": "AS9100 — quality management systems for aviation, space and defense",
+      "url": "https://www.sae.org/standards/content/as9100d/",
+      "group": "quality",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program"
+      ],
+      "use": "ISO 9001 plus aviation, space and defense requirements: operational risk, configuration management, product safety, counterfeit-part prevention, supplier flow-down, first article. A limited revision is being published as IA9100. Paid.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "as9145",
+      "title": "AS9145 — aerospace APQP and PPAP",
+      "url": "https://www.sae.org/standards/content/as9145/",
+      "group": "quality",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program",
+        "b-quality-planning"
+      ],
+      "use": "Advanced product quality planning and production part approval for aviation, space and defense; applies when the customer invokes it. Paid.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "as5553",
+      "title": "AS5553 — counterfeit electronic parts: avoidance, detection, mitigation",
+      "url": "https://www.sae.org/standards/content/as5553/",
+      "group": "quality",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program",
+        "b-mil-electronics-build"
+      ],
+      "use": "Buying electronic parts from authorized sources, detecting suspect parts, and reporting. Often flowed down with DFARS 252.246-7007/7008. Paid.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "eia-649",
+      "title": "EIA-649 — configuration management standard",
+      "url": "https://www.sae.org/standards/content/eia649/",
+      "group": "quality",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program"
+      ],
+      "use": "Configuration identification, change control, status accounting and audits; MIL-HDBK-61 is the defense handbook companion. Paid.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "itar-22-cfr",
+      "title": "ITAR — 22 CFR parts 120-130",
+      "url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-M",
+      "group": "contracting",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program"
+      ],
+      "use": "The International Traffic in Arms Regulations: defense articles, technical data, the U.S. Munitions List (military electronics are commonly Category XI), and the cloud-storage carve-out for encrypted data (120.54). Free.",
+      "check": "The company’s export-control officer decides what is controlled; this is background, not a determination.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "ear-600-series",
+      "title": "EAR — Export Administration Regulations (600-series military items)",
+      "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C",
+      "group": "contracting",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program"
+      ],
+      "use": "Commerce Department export controls, including 600-series items moved from the U.S. Munitions List. Free.",
+      "check": "The company’s export-control officer decides classification; background only.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "nist-800-171",
+      "title": "NIST SP 800-171 — protecting Controlled Unclassified Information",
+      "url": "https://csrc.nist.gov/pubs/sp/800/171/r3/final",
+      "group": "contracting",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program"
+      ],
+      "use": "Security requirements for CUI in contractor systems; required by DFARS 252.204-7012 and assessed under CMMC. Free.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "army-cwb",
+      "title": "Conformal Wearable Battery — U.S. Army battery site",
+      "url": "https://battery.army.mil/warfighter-hub/conformal-wearable-battery/",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-power"
+      ],
+      "use": "Vest-worn lithium-ion battery: output about 10–20 V by version and charge, Nett Warrior connector (STANAG 4695) and bottom contacts; version 3.6.2 and later add a USB-A port. Free.",
+      "check": "Interface control documents come through the program and may be controlled; use this for background only.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "glenair-nett-warrior",
+      "title": "Glenair Series 807 Nett Warrior connector",
+      "url": "https://cdn.glenair.com/catalogs/mighty-mouse-807-nw-connector.pdf",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-power"
+      ],
+      "use": "The 6-pin Nett Warrior connector and the 7-pin version with USB-C power; adopted as NATO STANAG 4695; STAR-PAN hubs distribute soldier power and data. Free catalog.",
+      "check": "Catalog data, not an interface control document; confirm pinout and ratings against the program ICD.",
+      "checked_on": "2026-10-13",
+      "source": "Supplier’s own website",
+      "kind": "supplier"
+    },
+    {
+      "id": "l3harris-rf-7912",
+      "title": "L3Harris RF-7912 handheld power adapter",
+      "url": "https://www.l3harris.com/sites/default/files/2020-12/cs-tcom-rf-7912-ps00x-power-adapter-spec-sheet.pdf",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-power"
+      ],
+      "use": "Runs AN/PRC-152A and AN/PRC-163 handheld radios from external DC and charges the radio battery; a benchmark for switch-over and charging behavior. Free spec sheet.",
+      "check": "Spec sheet only; confirm current models and behavior with the maker.",
+      "checked_on": "2026-10-13",
+      "source": "Supplier’s own website",
+      "kind": "supplier"
+    },
+    {
+      "id": "usb-specs",
+      "title": "USB-IF specifications: USB 2.0, USB Type-C, USB Power Delivery",
+      "url": "https://www.usb.org/documents",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-power"
+      ],
+      "use": "The USB data, connector and power specifications: legacy 5 V/500 mA, Type-C current advertisement, and Power Delivery negotiation. Free.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher or directory operator",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "smbus-sbs",
+      "title": "Smart Battery Data Specification and SMBus",
+      "url": "http://sbs-forum.org/specs/",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-power"
+      ],
+      "use": "How smart batteries report state of charge, temperature, voltage, current and requested charge settings over SMBus. Free.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher or directory operator",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "mil-std-464",
+      "title": "MIL-STD-464 — electromagnetic environmental effects for systems",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-emi",
+        "b-mil-enclosure"
+      ],
+      "use": "System-level E3 requirements: platform compatibility, lightning, electrical bonding and others; companion to MIL-STD-461 for subsystems. Free from ASSIST (search the number).",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "chomerics-handbook",
+      "title": "Parker Chomerics Conductive Elastomer Engineering Handbook",
+      "url": "https://www.parker.com/Literature/Chomerics/Parker%20Chomerics%20Conductive%20Elastomer%20Engineering%20Handbook.pdf",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-enclosure"
+      ],
+      "use": "Conductive gasket design guide: materials and fillers, profiles, deflection ranges, compression stops, flange design, corrosion and galvanic compatibility, form-in-place gaskets. Free.",
+      "check": "Maker’s guidance; use its data for its products and confirm with the gasket supplier.",
+      "checked_on": "2026-10-13",
+      "source": "Supplier’s own website",
+      "kind": "supplier"
+    },
+    {
+      "id": "mil-dtl-83528",
+      "title": "MIL-DTL-83528 — conductive elastomer gasket material",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-enclosure"
+      ],
+      "use": "Electrically conductive elastomer shielding gasket materials, by type and filler. Free from ASSIST (search the number).",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs. Check whether it is inactive for new design.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "mil-dtl-5541",
+      "title": "MIL-DTL-5541 — chemical conversion coatings on aluminum",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-enclosure"
+      ],
+      "use": "Conversion coating on aluminum; Type II has no hexavalent chromium; Class 3 is for low electrical resistance (gasket lands, bonding points). Free from ASSIST.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "mil-prf-8625",
+      "title": "MIL-PRF-8625 — anodic coatings for aluminum",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-enclosure"
+      ],
+      "use": "Anodize types and classes; anodize insulates, so gasket and bonding surfaces are masked. Free from ASSIST.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "mil-std-889",
+      "title": "MIL-STD-889 — dissimilar metals and galvanic compatibility",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-enclosure"
+      ],
+      "use": "Which metals can touch without galvanic corrosion, and how to protect couples that must; key for gaskets, fasteners and connectors in salt fog. Free from ASSIST.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "mil-dtl-27500",
+      "title": "MIL-DTL-27500 — shielded and jacketed cable",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-electronics-build"
+      ],
+      "use": "Multi-conductor shielded, jacketed cable built from qualified wire; the usual military shielded cable. Free from ASSIST.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "ipc-a-610",
+      "title": "IPC-A-610 — acceptability of electronic assemblies",
+      "url": "https://www.ipc.org/ipc-standards",
+      "group": "making",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-electronics-build"
+      ],
+      "use": "What acceptable solder joints and assemblies look like, by class; Class 3 for military and harsh environments. Paid.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "j-std-001",
+      "title": "J-STD-001 — requirements for soldered electrical and electronic assemblies",
+      "url": "https://www.ipc.org/ipc-standards",
+      "group": "making",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-electronics-build"
+      ],
+      "use": "Soldering materials, processes and training requirements, by class; a space addendum covers space hardware. Paid.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ipc-6012",
+      "title": "IPC-6012 — rigid printed board qualification and performance",
+      "url": "https://www.ipc.org/ipc-standards",
+      "group": "making",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-electronics-build"
+      ],
+      "use": "Board fabrication requirements by class; Class 3 for military products. Paid.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ipc-cc-830",
+      "title": "IPC-CC-830 — conformal coating qualification",
+      "url": "https://www.ipc.org/ipc-standards",
+      "group": "making",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-electronics-build"
+      ],
+      "use": "Qualification of conformal coating materials (acrylic, urethane, silicone, epoxy, parylene and newer types); replaced MIL-I-46058C. IPC-HDBK-830 is the guide. Paid.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ipc-whma-a-620",
+      "title": "IPC/WHMA-A-620 — cable and wire harness assemblies",
+      "url": "https://www.ipc.org/ipc-standards",
+      "group": "making",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-electronics-build"
+      ],
+      "use": "Acceptance requirements for cables and harnesses, by class. Paid.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "ansi-esd-s20-20",
+      "title": "ANSI/ESD S20.20 — ESD control program",
+      "url": "https://www.esda.org/standards/",
+      "group": "making",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-electronics-build"
+      ],
+      "use": "Requirements for an electrostatic discharge control program in a factory handling sensitive parts. Paid.",
+      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher page",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "mil-std-130",
+      "title": "MIL-STD-130 — identification marking of U.S. military property",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program"
+      ],
+      "use": "Nameplates and part marking, including the 2D data-matrix Unique Item Identifier (UID) when required. Free from ASSIST.",
+      "check": "Confirm the current revision in ASSIST before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "mil-std-882",
+      "title": "MIL-STD-882 — system safety",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program"
+      ],
+      "use": "Hazard identification, risk assessment and mitigation through the life of a system. Free from ASSIST.",
+      "check": "Confirm the current revision in ASSIST before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "mil-std-1472",
+      "title": "MIL-STD-1472 — human engineering",
+      "url": "https://quicksearch.dla.mil/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program",
+        "b-mil-environmental"
+      ],
+      "use": "Design criteria for equipment people wear and handle: weight, size, edges, gloved operation, connectors and labels. Free from ASSIST.",
+      "check": "Confirm the current revision in ASSIST before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "dmsms-sd-22",
+      "title": "DoD SD-22 — Diminishing Manufacturing Sources and Material Shortages guidebook",
+      "url": "https://www.dsp.dla.mil/Programs/DMSMS/",
+      "group": "military",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-program",
+        "b-mil-electronics-build"
+      ],
+      "use": "Managing parts obsolescence: monitoring, last-time buys, alternates, redesign. Free.",
+      "check": "Confirm the current revision in ASSIST before relying on it; the contract's edition governs.",
+      "checked_on": "2026-10-13",
+      "source": "Government agency’s own website",
+      "kind": "government"
+    },
+    {
+      "id": "iris-vulture",
+      "title": "Iris Technology Vulture Power Scavenger",
+      "url": "https://www.iristechnology.com/tactical/man-portable/vulture-power-scavenger",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-power"
+      ],
+      "use": "In-line soldier power scavenger: 5–46 V DC input (solar included), offsets system-battery drain and charges a CWB or 2590 as an SMBus charger; built for Nett Warrior. A benchmark for soldier power devices.",
+      "check": "Iris documents disagree on maximum output (5 A or 10 A at 16.8 V); check the current datasheet.",
+      "checked_on": "2026-10-13",
+      "source": "Supplier’s own website",
+      "kind": "supplier"
+    },
+    {
+      "id": "iris-merlin-hh",
+      "title": "Iris Technology Merlin HH+ radio power and data adapter",
+      "url": "https://www.militaryaerospace.com/communications/product/55378085/iris-technology-introduces-rugged-power-management-adapter-for-an-prc-163-radio",
+      "group": "electrical",
+      "roles": [
+        "engineering"
+      ],
+      "b_roles": [
+        "b-mil-power"
+      ],
+      "use": "Power and data adapter for the AN/PRC-163 that runs the radio from external power while charging its battery. A benchmark for radio charging behavior.",
+      "check": "Trade-press description; ask the maker for specifications.",
+      "checked_on": "2026-10-13",
+      "source": "Publisher or directory operator",
+      "kind": "supplier"
     }
   ],
   "researched_shortlists": {
