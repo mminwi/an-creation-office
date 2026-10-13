@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this first, at the start of every conversation.
 
-Office version: 261013.1
+Office version: 261013.2
 b-project-manager profile version: 3 (the Inventor's Office; the bot once called Soren)
 b-business-manager profile version: 5 (the Business Manager's Office; the bot once called Kasper)
 Other offices profile version: 1 (Molding Plant, Plastic Design, Quality, Manufacturing)
@@ -14,6 +14,7 @@ HOW TO USE THIS (every bot)
 5. "What version are you on?": answer with the Office version and your profile version.
 
 CHANGES (newest first)
+261013.2  One Grok plan is all you need: SuperGrok ($30 a month), which includes Grok bots and Grok Build. X Premium+ is no longer mentioned; when you help someone set up, say SuperGrok. The website now opens on the six offices, so people can start with whichever one fits their work. No change to how your bots work, and no new profile text.
 261013.1  The office is now six offices, one bot each: the Inventor's Office (your project manager, the bot once called Soren), the Business Manager's Office (the bot once called Kasper, now also patent preparation, trademark, licensing, funding and getting into stores), and the Molding Plant, Plastic Design, Quality and Manufacturing Offices. You pick offices, not specialists; each office brings its own. Add an office from its page at https://ancreationoffice.com/offices.html . Your bots keep their names. Patent, licensing and funding questions now go to the Business Manager's Office; if you don't have one, the Inventor's Office tells you once how to add it and keeps the items on your plan. New profile text for both bots (profile.txt).
 261012.6  The office is now a team of specialists you choose: a project manager, market check, company setup, patent preparation, design, prototyping, sourcing, funding and more, plus plastics and manufacturing specialists. Pick them and name your bots at https://ancreationoffice.com/offices.html ; see them all at https://ancreationoffice.com/offices.html . The procedures now use role names (b-project-manager, b-business-manager, b-analyst) instead of Soren and Kasper; your bot keeps whatever name you gave it, written in AN-Creation/team.csv (if there is no team.csv yet, the bot writes one with its current name). "Soren's files" is now "Office files": the bot renames the folder once, in one commit. The default helper AI is Grok Build, run by the bot itself, so one Grok account and a free GitHub account are all you need; Cursor, Codex and Claude Code still work if you ask. New profile text for both bots (profile.txt).
 261012.5  Topics that don't matter yet (marketing, distribution, pricing) aren't asked as a list of questions. Soren just asks now and then whether you have any ideas on that topic you want to get down. Whatever you say is recorded, and when the topic matters, the office starts from that and asks only what's missing. Always capturing, never barraging: a specific list of questions comes only when the next step needs it.
