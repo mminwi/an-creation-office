@@ -22,6 +22,15 @@ ADHESIVE DISPENSING (published: dispensing equipment and adhesive makers' applic
 - Dot control: dot size and position checked by the vision system after dispensing; trend the size and alarm on drift.
 - Keep it running: nozzle clogging (especially with fast-cure adhesives), purging at start-up and after stops, reservoir level, pot life and temperature, cleaning procedure.
 - Bridge coating (a part's tip passed through a bridge of adhesive held between two dispense points): the bridge's size depends on the gap between the points, the volume fed, the adhesive's viscosity and surface tension, and temperature. The time the bridge needs to re-form after each part sets a ceiling on the rate, especially with irregular part spacing (two parts close together may arrive before the bridge has recovered). Have we measured re-form time at the target rate and at the closest part spacing? What happens to excess adhesive (drips, build-up on the points), and how often must the points be cleaned? How is the feed controlled so the bridge doesn't grow or starve over a shift? A camera watching the bridge (sop-automation-vision.txt) is the early warning.
+- Time-pressure from a syringe (air pressure pushes adhesive out of a barrel, such as a 20 cc syringe changed daily; releasing the pressure stops it): simple and common, but the amount per pulse drifts. Questions to ask:
+  - Fill level: as the syringe empties, the air space behind the adhesive grows, so pressure builds and falls more slowly and the amount per pulse changes through the day. Is the output measured at full, half and nearly empty? Does the controller compensate (some adjust time or pressure as the barrel empties), or does the vision feedback correct it?
+  - Stopping cleanly: does the controller have vacuum suck-back to stop drool between pulses? Drool feeds the bridge between parts and lets it grow.
+  - Syringe hardware: a piston or wiper in the barrel keeps air from tunneling through the adhesive and makes output steadier. Light-cure adhesives need light-blocking (amber or black) barrels and tubing.
+  - Temperature: viscosity changes with temperature, so does the output; is the syringe near a heat source or a light, or in a cold morning plant?
+  - Pressure and time resolution: is the regulator precise enough at the small pressures used, and the pulse timing fine enough for the small amounts?
+  - Syringe change: a written procedure (purge, no air bubbles, needle primed, bridge re-established and checked by the camera before production restarts); does one syringe reliably last the shift, and what is the adhesive's working life once loaded?
+  - Closing the loop: the camera that watches the bridge can measure its size; using that to trim the pulse (more when the bridge is small, less when large) holds it steadier than a fixed setting.
+  - If time-pressure can't hold it: positive-displacement syringe pumps keep volume constant regardless of fill level, at higher cost.
 - Ask the adhesive and dispensing makers for a sample run on real parts; they usually offer it.
 
 FRAMING AND MACHINE BASE (office)
