@@ -124,7 +124,8 @@ STYLE = '''<style>
 .of-need p+p{margin-top:.4rem}
 </style>'''
 
-NEED = ('<div class="of-need"><p><strong>What you need:</strong> SuperGrok, the $30-a-month Grok plan (<a href="start.html#need">details</a>). '
+NEED = ('<div class="of-need"><p><strong>Written for Grok, readable by any AI.</strong> The offices are plain written procedures, linked to each other, so any AI model that can read a web link can follow them (<a href="using-other-ais.txt">other AIs</a>). They’re written for Grok bots, so that’s where they fit best.</p>'
+        '<p><strong>What you need:</strong> SuperGrok, the $30-a-month Grok plan (<a href="start.html#need">details</a>). '
         'The offices are free; Grok’s own charges apply. Your office helps you make a free GitHub account to save your work.</p></div>')
 
 
