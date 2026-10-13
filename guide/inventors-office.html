@@ -21,8 +21,6 @@
   <meta name="twitter:card" content="summary_large_image">
   <!-- seo:end -->
 <style>
-.name-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:6px 0 0}
-.name-row input{font:inherit;font-size:15px;padding:9px 12px;border:1px solid var(--line);border-radius:6px;min-width:0;width:16rem;max-width:100%}
 .of-list .team-list{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:720px){.of-list .team-list{grid-template-columns:minmax(0,1fr)}}
 </style>
@@ -70,12 +68,11 @@
     <p>A Grok account that includes Grok Build, and a free GitHub account. Details on the <a href="start.html">Start page</a>.</p>
     <p>This is the office to start with. If it's your first one, it also sets up your accounts and project folder with you.</p>
     </section>
-    <section class="start-step"><h2><span class="step-number">2.</span> Make a new bot and name it</h2>
-    <p>In Grok, start a new chat for this office (or a new bot or project, if your app has them). One office per chat. Give it a name: anything you like. <a href="bot-names.txt">Some ideas</a>.</p>
-    <div class="name-row"><label for="botName"><strong>Its name:</strong></label><input id="botName" type="text" placeholder="for example, Ada" autocomplete="off"></div>
+    <section class="start-step"><h2><span class="step-number">2.</span> Start a fresh bot</h2>
+    <p>In Grok, start a new chat for this office (or a new bot or project, if your app has them). One office per chat. It will ask what to call it: any name you like. <a href="bot-names.txt">Some ideas</a>.</p>
     </section>
     <section class="start-step"><h2><span class="step-number">3.</span> Paste this message</h2>
-    <div class="paste"><p>First message to your Inventor's Office</p><pre id="pasteText">You are my Inventor's Office for AN Creation. Your name is NAME.
+    <div class="paste"><p>First message to your Inventor's Office</p><pre>You are my Inventor's Office for AN Creation. Ask me what to call you, and go by that name.
 In the procedures your role is b-project-manager: that is how they refer to you.
 Read and follow your standing instructions:
 https://ancreationoffice.com/standing.txt
@@ -94,13 +91,7 @@ One question at a time.</pre><button class="copy" type="button">Copy</button></d
     <h2 style="margin-top:40px">The other offices</h2>
     <p>Each office is its own bot. They share one project folder and pass work to each other, so add another office whenever you need it.</p>
     <div class="of-list"><ul class="team-list"><li><a href="business-office.html"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span><strong>Business Manager's Office</strong><span class="team-role">Company, patent, money, selling</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li><li><a href="molding-office.html"><i class="face face-peter" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h10M7 13h6"/></svg></i><span><strong>Molding Plant Office</strong><span class="team-role">Molding, cooling, drying, molds</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li><li><a href="plastic-design-office.html"><i class="face face-morgan" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18 12 4l8 14z"/><path d="M8 18h8"/></svg></i><span><strong>Plastic Design Office</strong><span class="team-role">Plastic parts that mold well</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li><li><a href="quality-office.html"><i class="face face-maya" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4 10-10"/></svg></i><span><strong>Quality Office</strong><span class="team-role">APQP, measurement, Six Sigma</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li><li><a href="manufacturing-office.html"><i class="face face-frankie" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V10l6 4V10l6 4V6l6 4v10z"/></svg></i><span><strong>Manufacturing Office</strong><span class="team-role">Cells, purchasing, cost, automation</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li></ul></div>
-    </div></div>
-    <script>
-(function(){var i=document.getElementById('botName'),p=document.getElementById('pasteText');if(!i||!p)return;var t=p.textContent;
-function up(){var n=(i.value||'').trim();p.textContent=t.replace('NAME',n||'NAME');try{localStorage.setItem('anc-name-'+location.pathname,n)}catch(x){}}
-try{var s=localStorage.getItem('anc-name-'+location.pathname);if(s){i.value=s}}catch(x){}
-i.addEventListener('input',up);up();})();
-</script></main>
+    </div></div></main>
   <footer><p>AN Creation is a free guide from <a href="index.html">Advance Now LLC</a>. Your AI provider’s account and usage charges apply.</p><div class="footer-bottom"><p class="copyright">© 2026 Advance Now LLC</p><a class="brand footer-brand" href="https://advancenowllc.com/" aria-label="Advance Now website"><img src="../assets/an-chevron.png" alt="" width="43" height="43"><span>ADVANCE<span class="brand-now">NOW</span></span></a></div><p class="license-note">© 2026 Advance Now LLC. Free to use, share and adapt, not to sell: <a href="license.html">CC BY-NC-SA 4.0</a>. Use it for your own inventions, even ones you sell. Every procedure is also on <a href="https://github.com/mminwi/an-creation-office">GitHub</a>.</p></footer>
     </div>
   </div>

@@ -99,7 +99,7 @@ def sidebar(current=None):
     return '\n      '.join(out)
 
 def paste(o):
-    lines = [f'You are my {o["name"]} for AN Creation. Your name is NAME.',
+    lines = [f'You are my {o["name"]} for AN Creation. Ask me what to call you, and go by that name.',
              f'In the procedures your role is {o["role"]}: that is how they refer to you.',
              'Read and follow your standing instructions:',
              SITE + o['standing'],
@@ -114,18 +114,11 @@ def paste(o):
     return '\n'.join(lines)
 
 STYLE = '''<style>
-.name-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:6px 0 0}
-.name-row input{font:inherit;font-size:15px;padding:9px 12px;border:1px solid var(--line);border-radius:6px;min-width:0;width:16rem;max-width:100%}
 .of-list .team-list{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:720px){.of-list .team-list{grid-template-columns:minmax(0,1fr)}}
 </style>'''
 
-NAMEJS = '''<script>
-(function(){var i=document.getElementById('botName'),p=document.getElementById('pasteText');if(!i||!p)return;var t=p.textContent;
-function up(){var n=(i.value||'').trim();p.textContent=t.replace('NAME',n||'NAME');try{localStorage.setItem('anc-name-'+location.pathname,n)}catch(x){}}
-try{var s=localStorage.getItem('anc-name-'+location.pathname);if(s){i.value=s}}catch(x){}
-i.addEventListener('input',up);up();})();
-</script>'''
+
 
 def page(o):
     others = [x for x in OFFICES if x is not o]
@@ -141,12 +134,11 @@ def page(o):
     <p>A Grok account that includes Grok Build, and a free GitHub account. Details on the <a href="start.html">Start page</a>.</p>
     {first_note}
     </section>
-    <section class="start-step"><h2><span class="step-number">2.</span> Make a new bot and name it</h2>
-    <p>In Grok, start a new chat for this office (or a new bot or project, if your app has them). One office per chat. Give it a name: anything you like. <a href="bot-names.txt">Some ideas</a>.</p>
-    <div class="name-row"><label for="botName"><strong>Its name:</strong></label><input id="botName" type="text" placeholder="for example, Ada" autocomplete="off"></div>
+    <section class="start-step"><h2><span class="step-number">2.</span> Start a fresh bot</h2>
+    <p>In Grok, start a new chat for this office (or a new bot or project, if your app has them). One office per chat. It will ask what to call it: any name you like. <a href="bot-names.txt">Some ideas</a>.</p>
     </section>
     <section class="start-step"><h2><span class="step-number">3.</span> Paste this message</h2>
-    <div class="paste"><p>First message to your {e(o["name"])}</p><pre id="pasteText">{e(paste(o))}</pre><button class="copy" type="button">Copy</button></div>
+    <div class="paste"><p>First message to your {e(o["name"])}</p><pre>{e(paste(o))}</pre><button class="copy" type="button">Copy</button></div>
     <p>It asks one question at a time from there. If it ever stops or goes quiet, ask “What’s next?”</p>
     </section></div>
     <h2 id="inside" style="margin-top:40px">What it covers</h2>
@@ -156,8 +148,7 @@ def page(o):
     <h2 style="margin-top:40px">The other offices</h2>
     <p>Each office is its own bot. They share one project folder and pass work to each other, so add another office whenever you need it.</p>
     <div class="of-list"><ul class="team-list">{''.join(f'<li><a href="{x["page"]}">{face(x)}<span><strong>{e(x["name"])}</strong><span class="team-role">{e(x["short"])}</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>' for x in others)}</ul></div>
-    </div></div>
-    {NAMEJS}'''
+    </div></div>'''
     return main
 
 def build_page(fname, title, desc, main, current):
@@ -200,7 +191,7 @@ Human page: {SITE}{o["page"]}
 Generated from specialists/roles.csv by specialists/tools/build_offices.py; change the roster there, not here.
 
 WHO YOU ARE
-You are the {o["name"]}, one of the AN Creation offices. {o["blurb"]} The owner named you in their first message; talk under that name, and write it in your row of AN-Creation/team.csv. In the procedures your role is {o["role"]}: that is how they refer to you, never what you call yourself. You talk like a person texting: one question at a time, short answers, plain words. Your specialists are listed below. Take one at a time and say which one is talking when it helps ("Cooling water: ...").
+You are the {o["name"]}, one of the AN Creation offices. {o["blurb"]} If you don't have a name yet (no row for you in AN-Creation/team.csv), ask the owner what to call you, then talk under that name and write it in your row. In the procedures your role is {o["role"]}: that is how they refer to you, never what you call yourself. You talk like a person texting: one question at a time, short answers, plain words. Your specialists are listed below. Take one at a time and say which one is talking when it helps ("Cooling water: ...").
 
 VERSION CHECK (first, every conversation)
 Open https://ancreationoffice.com/version.txt?t=<today's date> and follow it. Keep the version you last saw as "Office version seen" in {o["folder"]}/office.txt. Newer: re-read this file fresh and tell the owner in one line what changed that affects them.

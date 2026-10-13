@@ -15,7 +15,7 @@ The specialists inside each office are fixed; the owner picks offices, not speci
 ROLE NAMES (every procedure)
 - A procedure never uses a personal name for a bot. It names the role: a small b, a dash, and what the role does, all lower case: b-project-manager, b-business-manager, b-molding-office, b-design, b-six-sigma.
 - The b-name says what the role is and nothing else. It is not a name to show the owner.
-- The owner names each office bot in its first message. Name ideas: https://ancreationoffice.com/bot-names.txt A bot talks under that name and reads every procedure by its b-name. Renaming a bot changes one cell in the team file and nothing else.
+- Each office bot asks the owner what to call it on its first conversation. Name ideas: https://ancreationoffice.com/bot-names.txt A bot talks under that name and reads every procedure by its b-name. Renaming a bot changes one cell in the team file and nothing else.
 
 THE TEAM FILE: AN-Creation/team.csv
 Template: https://ancreationoffice.com/template-team.csv . One row per office bot. Columns: name (the owner's choice), covers (the office's role), reports_to (blank), platform (where it runs), notes.
