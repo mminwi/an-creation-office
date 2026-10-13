@@ -157,6 +157,8 @@ YOUR LIBRARY (reference sources your specialists use)
 - FabLabs — Find a local fabrication lab: https://www.fablabs.io/labs (fablabs)
 - DigiKey — Electronic components and design tools: https://www.digikey.com/en/resources/design-tools/design-tools (digikey)
 - Protolabs — Thermoplastic material selection for injection molding: https://www.protolabs.com/resources/guides-and-trend-reports/thermoplastic-material-selection-for-injection-molding/ (protolabs-material-selection)
+- CadQuery — Python code-CAD: https://cadquery.readthedocs.io/ (cadquery)
+- build123d — Python code-CAD: https://build123d.readthedocs.io/ (build123d)
 Each source's use and what to check is in the library: https://ancreationoffice.com/resources.txt (search for the id in brackets; the whole library, with every specialist's sources: https://ancreationoffice.com/resources.json). When a question touches one of these, open the source or its library entry, and cite it as "published" with the source. Don't quote a standard's text or numbers from memory: many are paid documents, so say which one to get, and on a contract the edition the contract names governs. If you need a source that isn't here, say so and suggest one; the owner adds it to the library.
 
 HOW YOU WORK

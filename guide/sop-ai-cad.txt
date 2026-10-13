@@ -1,0 +1,62 @@
+SOP: Getting the most out of Claude and Codex on CAD work. Driving SOLIDWORKS (and KiCad) with an AI coding agent: the setup, the brief, and the checks. Revision 1.
+Index: https://ancreationoffice.com/sop.txt
+Lines are marked "office" or "published" (with the source to check).
+
+WHAT THIS IS (office)
+AI coding agents such as Claude Code and Codex can run SOLIDWORKS through its programming interface (the SOLIDWORKS API, a COM interface on Windows). They write and run macros and scripts that build parts from a written specification, change dimensions and equations, fill custom properties, make drawings from a template, and export STEP, PDF and DXF files in batches. Today they are fair at it, not good. They are dependable on repetitive, well-specified, parametric work. They are unreliable on free-form modeling, on picking the right face or edge, and on judging whether a model looks right.
+The job of this office is to set the work up so the agent succeeds: you (the Grok office) plan the work and write the brief; the agent on the owner's CAD computer does the CAD; the owner checks the result. You never touch SOLIDWORKS yourself.
+
+WHERE EACH PIECE RUNS (office)
+- This office (Grok): the specification, the brief for the agent, the check list, and the record in the project repository.
+- The CAD computer: Windows with a licensed SOLIDWORKS; Claude Code or Codex in a terminal; Python with pywin32 (or VBA, or C#/VB.NET) to reach the API; optionally an MCP server that gives the agent SOLIDWORKS tools directly.
+- The project repository: the brief, the scripts the agent wrote, exported STEP and PDF files, pictures of the model, and the check results. SOLIDWORKS files are binary; keep the working models in the vault (PDM) or a backed-up folder, and commit the exports and scripts.
+- Confidential or export-controlled CAD: an AI coding agent sends what it reads to its model provider's cloud. Use it on customer-confidential or controlled models only if the company's rules approve that service for that data (some companies have an approved enterprise account; ITAR technical data needs an environment approved for it). When unsure, don't: use it on the owner's own parts or on generic test parts.
+
+THREE WAYS TO DRIVE SOLIDWORKS, MOST RELIABLE FIRST (office)
+1. A parametric template plus a script. The owner models the part family once by hand, with named global variables, equations and a design table. The agent only changes values, rebuilds, checks and exports. This is the most reliable use and the one to steer toward for anything done more than twice.
+2. The agent writes and runs API scripts from a written specification: sketches on named planes, features named as it goes, then measurement and export. Good for simple prismatic parts, batch jobs, custom properties and drawings. Python (pywin32), VBA macros, and C# or VB.NET (VSTA or the free xCAD.NET framework) all work; use whichever the owner's existing macros use.
+3. An MCP server. Several community servers on GitHub expose SOLIDWORKS operations as tools an agent calls directly (from read-only API documentation lookup to modeling and drawings; Claude Code and Codex both connect to MCP servers). Fastest to try; maturity varies a lot. It runs on the CAD computer with the owner's rights, so read its code (or have the agent review it) before installing, try it on test parts first, and keep the version that works.
+A fourth route for new, simple parts (brackets, plates, 3D-printed enclosures): code-CAD. The agent models the part in CadQuery or build123d (free Python libraries), exports STEP, and the owner imports it into SOLIDWORKS. Agents write these more reliably than SOLIDWORKS API calls, and the script itself is the design record. The imported STEP is a plain solid: if the part must be edited in SOLIDWORKS later, rebuild its features there, or keep editing the script.
+
+THE BRIEF: WHAT TO GIVE THE AGENT (office)
+Write it in the job folder (jobs/YYMMDD-<slug>/brief.md) and have the owner hand it to the agent.
+- The goal in one line, and the units.
+- A dimensioned sketch or table: every dimension, which ones drive and which are derived, the datums, what sits at the origin, which plane is the front.
+- Names: file name, feature and sketch names, variable names. Ask it to name every feature and sketch.
+- Material and custom properties (part number, description, revision, material).
+- The outputs: where the SLDPRT is saved, STEP (AP214 or AP242), PDF drawing, DXF flat pattern.
+- What "done" means: the checks below, with the numbers to hit.
+- Rules: the SOLIDWORKS version; use only documented API calls (look each one up in the API help for that version rather than guessing); rebuild with zero errors and warnings; fully define every sketch; work on a copy; ask before deleting or overwriting any file.
+- One step at a time: one feature, rebuild, check, then the next. Commit the script after each step that works.
+
+SETTING UP THE AGENT (office)
+- Start the agent in the project folder with a short instructions file it reads every session (CLAUDE.md for Claude Code, AGENTS.md for Codex): the SOLIDWORKS version, the API language, where the API help and the working example scripts are, the naming rules, the check list, and "ask before deleting or overwriting files".
+- Give it a tiny working script first: connect to SOLIDWORKS, open a part, read one dimension, print it. Build everything from what already works.
+- Keep a folder of scripts that worked. Reusing a proven script beats generating a new one.
+- Tell it to select geometry by name or by reference planes, axes and points, never by "the face at x, y, z", which breaks as soon as the model changes.
+
+CHECKING (office: never accept "done" on the agent's word)
+- Rebuild: zero errors and warnings.
+- Numbers: volume, mass, center of mass and bounding box from mass properties, against values worked out from the brief.
+- Key dimensions measured by script between named faces or reference geometry, reported as a table: wanted, got, difference.
+- Every sketch fully defined; features named as asked; custom properties filled.
+- Pictures: the agent saves standard views (isometric, front, top, right) as images in the job folder, and the owner looks at them. An AI checking its own pictures misses things.
+- Assemblies: interference detection. Drawings: views and dimensions against the model.
+- Export STEP and open it in a viewer to confirm it is the right part at the right size.
+Record the check table in the job folder with the script's commit.
+
+WHEN IT GOES ROUND IN CIRCLES (office)
+Stop it. Write down what was tried and what failed. Make the step smaller, or have the owner do that one step by hand, and let the agent carry on from there. Two failed tries at the same step is the signal.
+
+GOOD JOBS TO GIVE IT (office)
+Custom properties across a folder of parts; batch export of STEP, PDF and DXF; a configurator for a part family from a table; drawings from a template with standard views; renaming, copying and Pack and Go; checking a folder of parts for missing materials or properties; BOM export; simple plates, brackets, spacers and fixture blocks; a 3D-printed enclosure built around a circuit board's STEP model.
+
+CIRCUIT BOARDS (office; https://ancreationoffice.com/sop-board-design.txt)
+KiCad's files are text, so agents can read them, and its command-line tool (kicad-cli) runs the electrical and design rule checks and every export from a script. Community MCP servers for KiCad exist too. Use the agent to check, export, compare against data sheets and document; keep the schematic's intent and the layout of the power parts under the owner's eye.
+
+NEVER (office)
+- Never let an agent overwrite or delete the only copy of a model: work on copies or under version control.
+- Never send customer-confidential or controlled CAD to an AI service the company hasn't approved for it.
+- Never release a part an agent made without the checks above and a person looking at it.
+
+SOURCES (published; ids in your library): SOLIDWORKS API Help for your version (solidworks-api-help); recording and editing macros (solidworks-macros); CodeStack examples (codestack); xCAD.NET (xcad-net); community MCP servers (solidworks-mcp-servers); Model Context Protocol (mcp-protocol); Claude Code docs (claude-code-docs); Codex docs (openai-codex-docs); CadQuery (cadquery); build123d (build123d); KiCad docs (kicad-docs).

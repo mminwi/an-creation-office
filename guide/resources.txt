@@ -2945,6 +2945,208 @@ Group: quality. Type: primary_guidance.
 Roles: b-rugged-cots, b-mil-enclosure, b-mil-environmental. How to set up and calculate a pressure decay leak test on a rigid sealed part (a fast, objective production leak check for sealed enclosures). Paid.
 Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
 Checked: 2026-10-13. Source: Publisher page.
+solidworks-api-help | SOLIDWORKS API Help
+https://help.solidworks.com/2024/English/api/sldworksapiprogguide/Welcome.htm
+Group: making. Type: primary_guidance.
+Roles: b-ai-cad. The official reference for every SOLIDWORKS API interface and call, with examples in VBA, VB.NET and C#; pick the help for your SOLIDWORKS version (also under Help, API Help Topics). Tell an AI agent to look up each call here instead of guessing. Free.
+Check: Use the help for your installed version; undocumented API calls are unsupported.
+Checked: 2026-10-13. Source: Publisher page.
+
+solidworks-macros | SOLIDWORKS — recording and running macros
+https://help.solidworks.com/2024/English/api/sldworksapiprogguide/GettingStarted/Run_SolidWorks_Macro.htm
+Group: making. Type: primary_guidance.
+Roles: b-ai-cad. Recording a macro is the quickest way to see the API calls behind a manual step; record, clean up, then hand the code to the agent as a working example. Free.
+Check: Use the help for your installed version.
+Checked: 2026-10-13. Source: Publisher page.
+
+codestack | CodeStack — SOLIDWORKS API examples and macros
+https://www.codestack.net/
+Group: making. Type: learning_resource.
+Roles: b-ai-cad. A large free library of SOLIDWORKS API, PDM API and VBA examples, macros and tutorials (xarial/codestack on GitHub); good working examples to give an AI agent. Free.
+Check: Check the version that matches your software; community and vendor material, not a standard.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+xcad-net | xCAD.NET — framework for SOLIDWORKS add-ins and scripts
+https://github.com/xarial/xcad
+Group: making. Type: learning_resource.
+Roles: b-ai-cad. A free, open-source .NET framework that simplifies the SOLIDWORKS API for C# and VB.NET add-ins and stand-alone tools.
+Check: Check the version that matches your software; community and vendor material, not a standard.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+solidworks-mcp-servers | SOLIDWORKS MCP servers (community, on GitHub)
+https://github.com/topics/solidworks-api
+Group: making. Type: learning_resource.
+Roles: b-ai-cad. Community MCP servers let Claude Code, Codex and other agents call SOLIDWORKS directly through its COM API: some read the API documentation only, some build parts, sketches and features, some make drawings. Examples: haunchen/solidworks-mcp (drawings; works with Claude Code and Codex), Eduardof0nt/Solidworks-MCP-Server (modeling, assemblies, drawings), arthurle3210/swapi-pilot-solidworks-mcp (API documentation lookup). Free.
+Check: Community software of varying maturity that runs with your rights on the CAD computer: read the code before installing, check the SOLIDWORKS versions it supports, test on generic parts.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+mcp-protocol | Model Context Protocol
+https://modelcontextprotocol.io/
+Group: making. Type: learning_resource.
+Roles: b-ai-cad. The open standard AI agents use to connect to tools such as SOLIDWORKS or KiCad servers; explains servers, clients and how to connect one. Free.
+Check: Check the version that matches your software; community and vendor material, not a standard.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+claude-code-docs | Claude Code documentation
+https://code.claude.com/docs/en/overview
+Group: making. Type: learning_resource.
+Roles: b-ai-cad. How to install and run Claude Code, write its CLAUDE.md instructions file, and connect MCP servers. Free.
+Check: Check the version that matches your software; community and vendor material, not a standard.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+openai-codex-docs | OpenAI Codex documentation
+https://developers.openai.com/codex
+Group: making. Type: learning_resource.
+Roles: b-ai-cad. How to install and run Codex, write its AGENTS.md instructions file, and connect MCP servers. Free.
+Check: Check the version that matches your software; community and vendor material, not a standard.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+cadquery | CadQuery — Python code-CAD
+https://cadquery.readthedocs.io/
+Group: making. Type: learning_resource.
+Roles: b-ai-cad, b-prototyping. Free Python library for parametric 3D models written as code, exported as STEP or STL; AI agents write it more reliably than SOLIDWORKS API calls, for simple parts and 3D-printed enclosures.
+Check: Check the version that matches your software; community and vendor material, not a standard.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+build123d | build123d — Python code-CAD
+https://build123d.readthedocs.io/
+Group: making. Type: learning_resource.
+Roles: b-ai-cad, b-prototyping. Free Python CAD library on the same kernel as CadQuery, with a more readable style; exports STEP and STL.
+Check: Check the version that matches your software; community and vendor material, not a standard.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+kicad-docs | KiCad documentation
+https://docs.kicad.org/
+Group: electrical. Type: learning_resource.
+Roles: b-board-design, b-board-prototype, b-ai-cad. Free, open-source schematic and board design suite: the manual for schematic, layout, rule checks, fabrication outputs, and kicad-cli for scripted checks and exports (what an AI agent uses). Free.
+Check: Use the manual for your KiCad version.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+snapmagic | SnapMagic (formerly SnapEDA) — symbols, footprints and 3D models
+https://www.snapeda.com/
+Group: electrical. Type: source_directory.
+Roles: b-board-design. Free symbols, footprints and 3D models for KiCad and other tools, for parts KiCad’s libraries lack.
+Check: Check every footprint against the data sheet’s land pattern and pin numbering before use.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+ultra-librarian | Ultra Librarian — symbols, footprints and 3D models
+https://www.ultralibrarian.com/
+Group: electrical. Type: source_directory.
+Roles: b-board-design. Free part models for KiCad and other tools, often linked from chip makers’ product pages.
+Check: Check every footprint against the data sheet’s land pattern and pin numbering before use.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+ltspice | LTspice — circuit simulator
+https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html
+Group: electrical. Type: supplier.
+Roles: b-board-design, b-charger-design. Free circuit simulator from Analog Devices, with models for many power parts; try a circuit before building it. Free.
+Check: A simulation is only as good as its models; confirm on the bench.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+ti-power-designer | TI Power Designer (WEBENCH)
+https://webench.ti.com/power-designer/
+Group: electrical. Type: supplier.
+Roles: b-board-design, b-charger-design. Free online tool that designs a power supply around a TI chip: part values, efficiency, a schematic and a parts list.
+Check: Check the results against the chip’s data sheet design procedure.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+interactive-html-bom | Interactive HTML BOM (KiCad plugin)
+https://github.com/openscopeproject/InteractiveHtmlBom
+Group: electrical. Type: learning_resource.
+Roles: b-board-prototype. Free KiCad plugin that makes a clickable placement map from the board, for hand assembly and inspection.
+Check: Check the version that matches your software; community and vendor material, not a standard.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+kibot | KiBot — automated KiCad outputs
+https://kibot.readthedocs.io/
+Group: electrical. Type: learning_resource.
+Roles: b-board-prototype. Free tool that makes every fabrication and documentation output (Gerbers, drill, BOM, placement, PDFs, IPC-2581) from one configuration file, in one command.
+Check: Check the version that matches your software; community and vendor material, not a standard.
+Checked: 2026-10-13. Source: Publisher or project page.
+
+altium-kicad-import | Altium Designer — importing a design from KiCad
+https://www.altium.com/documentation/altium-designer/kicad-import
+Group: electrical. Type: supplier.
+Roles: b-board-prototype. How Altium’s KiCad importer turns a KiCad project into an Altium project (File, Import Wizard); which KiCad versions it supports. For a prototype shop that works in Altium.
+Check: Confirm the KiCad versions the shop’s importer supports before sending a design.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+gerber-format | Ucamco — Gerber format specification
+https://www.ucamco.com/downloads
+Group: electrical. Type: primary_guidance.
+Roles: b-board-prototype. The free specification of the Gerber file format that board shops build from, and a free online viewer.
+Check: Shops accept RS-274X and X2; confirm what yours wants.
+Checked: 2026-10-13. Source: Publisher page.
+
+ipc-2581 | IPC-2581 (IPC-DPMX) — open manufacturing data exchange format
+https://www.ipc2581.com/
+Group: electrical. Type: primary_guidance.
+Roles: b-board-prototype. One XML file carrying layers, drills, stack-up, netlist and parts for fabrication and assembly; KiCad exports it. Free.
+Check: Ask whether your shop accepts it; many still prefer Gerbers.
+Checked: 2026-10-13. Source: Publisher page.
+
+ipc-2152 | IPC-2152 — current-carrying capacity of printed board traces
+https://www.ipc.org/ipc-standards
+Group: electrical. Type: primary_guidance.
+Roles: b-board-design. Trace width and copper weight for a given current and temperature rise; KiCad’s calculator applies the older IPC-2221 rule. Paid.
+Check: Confirm the current revision with IPC.
+Checked: 2026-10-13. Source: Publisher page.
+
+ti-switching-layout | TI — Layout Guidelines for Switching Power Supplies (AN-1149)
+https://www.ti.com/lit/an/snva021c/snva021c.pdf
+Group: electrical. Type: supplier.
+Roles: b-board-emi, b-board-design. The classic free note on switching power supply layout: current loops, ground planes, component placement. Free.
+Check: Maker’s data sheet and evaluation board guide govern; confirm stock and the current revision.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+adi-an-1119 | Analog Devices AN-1119 — low-noise layout for switching regulators
+https://www.analog.com/en/resources/app-notes/an-1119
+Group: electrical. Type: supplier.
+Roles: b-board-emi. Find the switching current paths first, then place parts to keep them small; avoiding noise problems by layout. Free.
+Check: Maker’s data sheet and evaluation board guide govern; confirm stock and the current revision.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+ott-emc | Henry Ott — Electromagnetic Compatibility Engineering (Wiley)
+https://gov.wiley.com/WileyCDA/WileyTitle/productCd-0470189304.html
+Group: electrical. Type: learning_resource.
+Roles: b-board-emi. The standard practical book on EMC: grounding, filtering, shielding, board layout and stack-up, with little math. Paid.
+Check: Book; principles, not limits. Limits come from the rules that apply.
+Checked: 2026-10-13. Source: Publisher page.
+
+fcc-15-23 | 47 CFR 15.23 — home-built devices
+https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-A/section-15.23
+Group: electrical. Type: government.
+Roles: b-board-emi, b-charger-design. A device built for personal use, not sold, not from a kit, five or fewer, needs no FCC equipment authorization, but must not cause harmful interference and should meet the Part 15 limits as closely as practical. Free.
+Check: Read the current text on eCFR.
+Checked: 2026-10-13. Source: Government agency’s own website.
+
+ti-bq25756 | TI BQ25756 — buck-boost charge controller, 1 to 14 cells
+https://www.ti.com/product/BQ25756
+Group: electrical. Type: supplier.
+Roles: b-charger-design. Charges 1 to 14 lithium-ion cells from 4.2 to 70 V input (so a 5-cell tool pack from USB-C 20 V), standalone with resistors or over I2C, thermistor input, reverse mode that can supply USB-C power from the battery; evaluation board and USB-C application note. Free.
+Check: Maker’s data sheet and evaluation board guide govern; confirm stock and the current revision.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+st-stusb4500 | ST STUSB4500 — standalone USB-C Power Delivery sink controller
+https://www.st.com/en/interfaces-and-transceivers/stusb4500.html
+Group: electrical. Type: supplier.
+Roles: b-charger-design. Negotiates up to 20 V and 5 A (100 W) from a USB-C PD charger without a microcontroller, with settings stored in its memory. Free.
+Check: Maker’s data sheet and evaluation board guide govern; confirm stock and the current revision.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+ti-tps25750 | TI TPS25750 — USB-C Power Delivery controller with power switches
+https://www.ti.com/product/TPS25750
+Group: electrical. Type: supplier.
+Roles: b-charger-design. USB-C PD controller that can be configured as a sink (or source) without writing firmware; TI pairs it with its battery chargers in reference designs. Free.
+Check: Maker’s data sheet and evaluation board guide govern; confirm stock and the current revision.
+Checked: 2026-10-13. Source: Supplier’s own website.
+
+ti-bq76920 | TI BQ76920 — 3 to 5 cell battery monitor
+https://www.ti.com/product/BQ76920
+Group: electrical. Type: supplier.
+Roles: b-charger-design. Measures each cell of a 3 to 5 cell lithium-ion pack, with hardware over- and under-voltage protection and a thermistor input; the basis of an independent per-cell cut-off in a charger. Free.
+Check: Maker’s data sheet and evaluation board guide govern; confirm stock and the current revision.
+Checked: 2026-10-13. Source: Supplier’s own website.
 BEGIN DESIGN PRINCIPLES
 Guide: https://ancreationoffice.com/design-principles.html
 Instructions: https://ancreationoffice.com/design-principles.txt

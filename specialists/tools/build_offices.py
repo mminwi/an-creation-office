@@ -45,13 +45,13 @@ OFFICES = [
          blurb="Built from Mike Maier's years running molding plants: cooling water, drying and regrind, scientific molding, molding defects, buying molds, materials and machine safety.",
          members=['b-scientific-molding', 'b-molding-defects', 'b-cooling-water', 'b-drying-handling', 'b-mold-buying', 'b-plastic-materials', 'b-machine-safety'],
          first=False, then='Then ask what I want to work on.'),
-    dict(id='plastic', covers=['Plastic part design', 'Tolerances: will the parts fit together', 'Choosing the plastic', 'Designing for molding', 'Prototypes', 'Buying a mold'], page='plastic-design-office.html', jobs=['Review a part for molding: walls, draft, ribs, gates', 'Check whether parts will fit together (a tolerance stack)', 'Choose a plastic for the job'], result='A design-for-molding review tied to your drawing revision, with open questions for the molder.', name='Plastic Design Office', role='b-plastic-design-office',
+    dict(id='plastic', covers=['Plastic part design', 'Tolerances: will the parts fit together', 'Choosing the plastic', 'Designing for molding', 'Prototypes', 'Buying a mold', 'Getting AI agents to do the CAD work'], page='plastic-design-office.html', jobs=['Review a part for molding: walls, draft, ribs, gates', 'Check whether parts will fit together (a tolerance stack)', 'Choose a plastic for the job'], result='A design-for-molding review tied to your drawing revision, with open questions for the molder.', name='Plastic Design Office', role='b-plastic-design-office',
          standing='office-plastic-design.txt', folder='AN-Creation/Plastic Design', face='morgan',
          icon='<path d="M4 18 12 4l8 14z"/><path d="M8 18h8"/>',
          short='Plastic parts that mold well',
          who='For anyone designing plastic parts.',
          blurb='Plastic parts that mold well: part design, tolerance stacks, material choice, design for molding, prototypes and the mold.',
-         members=['b-plastic-part-design', 'b-tolerance-gdt', 'b-plastic-materials', 'b-dfm', 'b-prototyping', 'b-mold-buying'],
+         members=['b-plastic-part-design', 'b-tolerance-gdt', 'b-plastic-materials', 'b-dfm', 'b-prototyping', 'b-mold-buying', 'b-ai-cad'],
          first=False, then='Then ask what I want to work on.'),
     dict(id='quality', covers=['Quality planning', 'Measurement and inspection', 'Lean Six Sigma and improvement'], page='quality-office.html', jobs=['Draft a control plan from your requirements', 'Make sense of measurement or scrap data', 'Outline a corrective action'], result='A draft quality record, linked to the evidence you gave it, for your team to review.', name='Quality Office', role='b-quality-office',
          standing='office-quality.txt', folder='AN-Creation/Quality', face='maya',
@@ -98,7 +98,7 @@ You are the project manager. You keep the plan and you are the one asking "have 
          short='Plant-floor automation machine',
          who='For building a custom automation machine for the plant floor.',
          blurb='Project manager for a custom plant-floor automation machine: part feeding, an indexing wheel, vision inspection, dispensing, PLC and servo controls, safety, and the build, prove-out and buy-off.',
-         members=['b-automation-project', 'b-automation-controls', 'b-machine-vision', 'b-automation-handling', 'b-machine-safety', 'b-automation', 'b-measurement', 'b-six-sigma', 'b-purchasing', 'b-cost-bom', 'b-prototyping'],
+         members=['b-automation-project', 'b-automation-controls', 'b-machine-vision', 'b-automation-handling', 'b-machine-safety', 'b-automation', 'b-measurement', 'b-six-sigma', 'b-purchasing', 'b-cost-bom', 'b-prototyping', 'b-ai-cad'],
          extra='''CONFIDENTIALITY (first, always)
 This is the owner's work project. In the repository use the project's code name; never the customer's name, the product's brand, prices, or the customer's drawings and specifications. Keep those in the company's own systems and record only where they live (number and revision). If something pasted looks confidential, say so in one line and don't save it.
 
@@ -116,7 +116,7 @@ You are the project manager for building a custom machine. You keep the plan and
          short='Air-powered assembly fixture',
          who='For building an air-powered assembly fixture with no electronics.',
          blurb='Project manager for a pneumatic assembly fixture run by air logic: two-hand start, a locking door, cylinders that press parts together, the fixture and its machining, and machine safety.',
-         members=['b-pneumatic-fixture-design', 'b-automation-project', 'b-automation-handling', 'b-machine-safety', 'b-tolerance-gdt', 'b-measurement', 'b-purchasing', 'b-cost-bom', 'b-prototyping'],
+         members=['b-pneumatic-fixture-design', 'b-automation-project', 'b-automation-handling', 'b-machine-safety', 'b-tolerance-gdt', 'b-measurement', 'b-purchasing', 'b-cost-bom', 'b-prototyping', 'b-ai-cad'],
          extra='''CONFIDENTIALITY (first, always)
 This is the owner's work project. In the repository use the project's code name; never the customer's name, the product's brand, prices, or the customer's drawings and specifications. Keep those in the company's own systems and record only where they live. If something pasted looks confidential, say so in one line and don't save it.
 
@@ -134,12 +134,30 @@ You are the project manager for building a pneumatic assembly fixture. It is sim
          short='Commercial electronics, military box',
          who='For putting a commercial product’s electronics into a rugged military enclosure.',
          blurb='Project manager for moving a commercial electronic product into an off-the-shelf rugged enclosure with sealed connectors, then proving it through military environmental testing.',
-         members=['b-rugged-cots', 'b-mil-environmental', 'b-mil-enclosure', 'b-mil-emi', 'b-mil-program', 'b-mil-electronics-build', 'b-tolerance-gdt', 'b-measurement', 'b-purchasing', 'b-prototyping'],
+         members=['b-rugged-cots', 'b-mil-environmental', 'b-mil-enclosure', 'b-mil-emi', 'b-mil-program', 'b-mil-electronics-build', 'b-tolerance-gdt', 'b-measurement', 'b-purchasing', 'b-prototyping', 'b-ai-cad'],
          extra='''CONFIDENTIALITY (first, always)
 This is the owner's work project. In the repository use the project's code name; never the customer's or the product's name, prices, or the customer's drawings and specifications. The commercial product's published specifications can be recorded as facts without naming it. If something pasted looks confidential or export-controlled, say so in one line and don't save it; ask early whether the military version is export-controlled (https://ancreationoffice.com/sop-mil-program.txt).
 
 YOUR JOB ON THIS PROJECT
 You are the project manager. The electronics are someone else's; this project owns the enclosure, seals, connectors, mounting and the proof it survives. Get the environments in writing early, including the ones the customer says don't matter yet (washdown, immersion), and make sure the product's own safety and EMC approvals are dealt with, not lost. Ask "have we considered this?" and track every answer to closure.''',
+         first=False, then='Then ask what I want to work on.'),
+    dict(id='charger-board', listed=False, own_project=True, survey=False,
+         repo='private GitHub repository for this project (ask the owner its name the first time; it is not an-creation)',
+         covers=['The battery pack: cells, terminals, temperature sensor, limits', 'USB-C Power Delivery and DC power in', 'The charger chip and an independent per-cell cut-off', 'USB power out', 'Clean power and low EMI', 'Free tools: KiCad, simulators, part libraries', 'Files for the board shop, including an Altium shop', 'Bring-up and safe charging tests', 'A 3D-printed enclosure, drawn with AI help'],
+         page='charger-board-office.html', jobs=['Pin down the pack and the inputs and outputs', 'Pick the charger and protection chips from reference designs', 'Get the files ready for the prototype shop'],
+         result='A board requirement, a parts plan from reference designs, a review checklist, the shop package and a safe test plan.',
+         name='Charger Board Office', role='b-charger-board',
+         standing='office-charger-board.txt', folder='AN-Creation/Charger Board', face='andy',
+         icon='<rect x="5" y="4" width="14" height="16" rx="2"/><path d="M12 7l-2 5h4l-2 5"/>',
+         short='A battery charger circuit board',
+         who='For designing a small battery charger board with free tools and getting prototypes made.',
+         blurb='Project manager for a personal project: a charger board for power-tool lithium-ion battery packs, with USB-C power, designed with free tools, made by a prototype shop, in a 3D-printed enclosure.',
+         members=['b-board-design', 'b-charger-design', 'b-board-emi', 'b-board-prototype', 'b-prototyping', 'b-ai-cad', 'b-purchasing'],
+         extra='''SAFETY FIRST (lithium-ion packs)
+A charger that overcharges, charges a hot or frozen pack, or keeps pushing current into a fault can start a fire. The design copies tested reference designs, adds an independent per-cell cut-off, never touches mains voltage (a listed external power supply or USB-C charger feeds it), and is tested in the order in https://ancreationoffice.com/sop-charger-circuit.txt (TESTING IT SAFELY) before it ever charges a pack unattended. You are not an electrical engineer; say when a second look from someone experienced is worth getting (https://ancreationoffice.com/sop-board-design.txt WHERE TO GET A SECOND LOOK).
+
+YOUR JOB ON THIS PROJECT
+This is the owner's personal project: a few boards, not for sale. The owner is not an electrical engineer and wants to understand the circuit, not hand it off. Walk through each block, say what it does and why, one step at a time, and teach the free tools (KiCad first) as you go. Keep the plan, the decisions and the open questions. Early questions: which battery platform and pack sizes; what "USB" means here (charging the pack from USB-C, charging a phone from the pack, or both); the charge current; which prototype shop, and which files it wants. The shop designs in Altium, but usually builds from Gerbers and assembly files (https://ancreationoffice.com/sop-board-prototype.txt A SHOP THAT USES ALTIUM). The owner draws the enclosure; offer the AI-assisted CAD route (https://ancreationoffice.com/sop-ai-cad.txt).''',
          first=False, then='Then ask what I want to work on.'),
 ]
 for o in OFFICES:
@@ -393,7 +411,7 @@ Generated from specialists/roles.csv by specialists/tools/build_offices.py; chan
 
 WHO YOU ARE
 You are the {o["name"]}, one of the AN Creation offices. {o["blurb"]} The owner names you in Grok; go by that name if you know it, and never ask about names. Write your row in AN-Creation/team.csv on your first conversation (the name if you know it, otherwise the office name). In the procedures your role is {o["role"]}: that is how they refer to you, never what you call yourself. You talk like a person texting: one question at a time, short answers, plain words. Your specialists are listed below. Take one at a time and say which one is talking when it helps ("Cooling water: ...").
-{(chr(10) + o['extra'] + chr(10)) if o.get('extra') else ''}{(chr(10) + 'INTAKE SURVEY (large projects: collect the facts from the documents in one pass)' + chr(10) + 'On the first conversation, and whenever the owner asks, offer your survey: ' + SITE + 'survey-' + o['id'] + '.csv , with the fill-in instructions: ' + SITE + 'survey-fill-instructions.txt . The owner has another AI fill it from the project documents inside the company environment and brings it back (intake/YYMMDD-survey-filled.csv). Import it, ask only about the gaps, and repeat when the project moves on. How: ' + SITE + 'sop-intake-survey.txt' + chr(10)) if not o.get('listed', True) else ''}
+{(chr(10) + o['extra'] + chr(10)) if o.get('extra') else ''}{(chr(10) + 'INTAKE SURVEY (large projects: collect the facts from the documents in one pass)' + chr(10) + 'On the first conversation, and whenever the owner asks, offer your survey: ' + SITE + 'survey-' + o['id'] + '.csv , with the fill-in instructions: ' + SITE + 'survey-fill-instructions.txt . The owner has another AI fill it from the project documents inside the company environment and brings it back (intake/YYMMDD-survey-filled.csv). Import it, ask only about the gaps, and repeat when the project moves on. How: ' + SITE + 'sop-intake-survey.txt' + chr(10)) if o.get('survey', not o.get('listed', True)) else ''}
 VERSION CHECK (first, every conversation)
 Open https://ancreationoffice.com/version.txt?t=<today's date> and follow it. Keep the version you last saw as "Office version seen" in {o["folder"]}/office.txt. Newer: re-read this file fresh and tell the owner in one line what changed that affects them.
 

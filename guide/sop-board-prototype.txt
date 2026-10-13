@@ -1,0 +1,43 @@
+SOP: Getting prototype boards made from a free-tools design. What to send the shop, handing a KiCad design to a shop that uses Altium, and bringing the boards up. Revision 1.
+Index: https://ancreationoffice.com/sop.txt
+Lines are marked "office" or "published" (with the source to check).
+
+ASK THE SHOP FIRST (office)
+Before the layout is finished, ask the prototype shop:
+- Which files do they build from (Gerber RS-274X or X2 with Excellon drill files, IPC-2581, ODB++), and in what form do they want the parts list and the placement file?
+- Their design rules: minimum trace and space, minimum drill and annular ring, the layer stack-ups they offer, copper weights, board thickness. Set them in KiCad before routing.
+- Do they assemble too? Do they buy the parts, or do you send them (consigned)? Lead times.
+- Do they run a design-for-manufacturing (DFM) check, and will they send the questions back before building?
+- Do they need the design itself, in their CAD (see below), or only the manufacturing files?
+
+A SHOP THAT USES ALTIUM (office; published: Altium's KiCad importer documentation)
+- Most shops build from manufacturing files, not from the design: Gerbers (or IPC-2581), drill files, the parts list and the placement file are the same whatever CAD drew them. A shop that designs in Altium can usually build a KiCad board without ever opening it in Altium. Ask them.
+- If they do want it in Altium (to edit it, or for their records): Altium Designer has a KiCad importer (File, Import Wizard, KiCad design files) that turns a KiCad project into an Altium project. Check first which KiCad version their importer supports; KiCad can't save in older formats, so if their importer is older than your KiCad, they need to update it, or you send manufacturing files only.
+- Imports aren't perfect (copper pours, design rules, some footprint details). Ask them to run their rule checks after importing and to compare against your Gerbers.
+- Decide which copy is the master. The simplest rule: your KiCad project stays the master; any change the shop wants comes back to you to make in KiCad, and a new revision goes out. If the shop takes the design over in Altium, record that, and from then on changes go through them.
+
+THE PACKAGE TO SEND (office)
+One zip file named with the board name and revision, containing:
+- Gerbers: every copper layer, solder mask, paste, silkscreen and the board outline (Edge.Cuts), and the drill files (plated and non-plated). Optionally IPC-2581 as well.
+- Parts list (BOM): designator, quantity, maker, maker's part number, description, and which parts are not fitted (DNP).
+- Placement file (pick and place, centroid) for assembly; ask the shop if their rotation convention differs from KiCad's.
+- Assembly drawing as PDF: top and bottom, with designators and polarity marks.
+- Schematic as PDF.
+- Fabrication notes: layers and stack-up, thickness (commonly 1.6 mm), copper weight (2 oz on outer layers helps high-current boards), finish (ENIG is a good default for fine-pitch parts), mask and silkscreen colors, IPC class (class 2 is normal).
+- The board's STEP model.
+- A short readme: board name, revision, what changed since the last revision.
+Before sending, open the Gerbers in a viewer (KiCad's GerbView or the shop's online viewer) and look at every layer. What you see there is what gets made.
+
+HOW MANY (office)
+For a three-board project: order five bare boards (often the minimum, and spares are cheap), assemble three, and keep the spares for rework or a fourth try. Order extra of the small parts.
+
+BRINGING THE BOARDS UP (office)
+1. Look: solder bridges, missing or rotated parts, polarity.
+2. Meter: resistance between each power rail and ground (no short) before applying power.
+3. Bench supply with the current limit set low: power up, check each rail, check nothing gets hot (a finger or an infrared thermometer).
+4. One block at a time, using the jumpers or zero-ohm resistors to bring blocks in.
+5. Then the functional tests of the project (for a charger: https://ancreationoffice.com/sop-charger-circuit.txt TESTING IT SAFELY).
+6. Record each board's results by serial number in the job folder. Fixes on the board (bodge wires, changed values) go in a change list for the next revision.
+
+REVISIONS (office)
+Revision letter on the silkscreen. Each revision: a new zip, a short list of what changed and why, and the old files kept. Never change a released revision in place.

@@ -1,0 +1,72 @@
+SOP: Designing a small circuit board with free tools. From the idea to a checked design ready for a prototype shop, for an owner who is not an electrical engineer. Revision 1.
+Index: https://ancreationoffice.com/sop.txt
+Lines are marked "office" or "published" (with the source to check).
+
+HOW TO USE THIS (office)
+Walk the owner through it a step at a time, in order, and keep each step's result in the project repository. Explain each term once, plainly. The method that makes this safe for a non-engineer: copy what already works. Every chip maker publishes an evaluation board for its chips, with a tested schematic, parts list and layout; the design starts from that, and changes as little as possible.
+Related: the charger circuit (https://ancreationoffice.com/sop-charger-circuit.txt), clean power and EMI (https://ancreationoffice.com/sop-board-emi.txt), getting it made (https://ancreationoffice.com/sop-board-prototype.txt), AI help with the CAD (https://ancreationoffice.com/sop-ai-cad.txt).
+
+THE FREE TOOLS (published: each tool's own site)
+- KiCad: schematic, board layout, 3D view, rule checks, and every manufacturing file. Free, open source, Windows, Mac and Linux. Its command-line tool (kicad-cli) lets an AI agent run checks and exports.
+- Part symbols, footprints and 3D models: KiCad's own libraries first; SnapMagic (formerly SnapEDA) and Ultra Librarian (free accounts) for parts KiCad lacks; the chip maker's site often links its own.
+- Power design and simulation: TI's Power Designer (WEBENCH) and the chip makers' calculators for power stages; LTspice (free, Analog Devices) for simulating a circuit.
+- Parts and stock: DigiKey, Mouser, LCSC (prices, stock and data sheets).
+- Interactive HTML BOM (a free KiCad plugin): a clickable placement map for hand assembly and inspection.
+- KiBot (free) if the owner wants every output made by one command.
+- The enclosure: KiCad exports the board as STEP for SOLIDWORKS; SOLIDWORKS exports the outline as DXF for KiCad.
+
+STEP 1. WRITE DOWN WHAT THE BOARD DOES (office)
+One page in plan.md: what goes in (voltage range, current, connector), what comes out, what it must never do (the safety cases), the size limit and where it mounts, how the user sees what it's doing (LEDs), how many boards, and the target cost. Then a block diagram in words or a simple sketch: input and protection, then power conversion, then control, then output, with the connectors named.
+
+STEP 2. PICK THE MAIN PARTS FROM REFERENCE DESIGNS (office)
+- For each main function, find a chip whose data sheet matches the requirement with margin, that is in stock in quantity at two distributors, in a package a prototype shop can assemble (avoid tiny parts like 0201s; most shops handle QFN fine).
+- Get its evaluation board (EVM) user's guide: the schematic, parts list and layout pictures (often the layout files too). That is the starting design.
+- Read the data sheet's "application" and "layout" sections end to end. Most chips include a step-by-step design procedure for picking the parts around them (inductor, capacitors, resistors that set voltage and current).
+- Record each choice in plan.md with the reason.
+
+STEP 3. WORK OUT THE PART VALUES AND RATINGS (office; published: the chip's data sheet)
+Use the data sheet's procedure or the maker's calculator, and show the arithmetic in the job folder. Then check ratings with margin:
+- Capacitors: voltage rating at least 1.5 to 2 times the working voltage; ceramic capacitors (X5R, X7R) lose much of their capacitance at DC voltage, so check the maker's DC-bias curve.
+- Inductors: saturation current above the peak current with margin; heating current above the average.
+- MOSFETs and diodes: voltage rating with margin over the worst spike; power and temperature.
+- Resistors that carry current (current sense): power rating with margin.
+- Traces: width for current (KiCad's built-in calculator, IPC-2221 or IPC-2152).
+- Fuses: rated for the voltage and the fault current; time-current curve checked.
+
+STEP 4. THE SCHEMATIC IN KICAD (office)
+- Draw it from the reference design, one page per block. Name every net that matters (VIN, VBAT, 5V, GND).
+- Assign footprints, and check each footprint against the data sheet's recommended land pattern and the pin numbering (pin 1, the exposed pad). This is where most first boards fail.
+- Add what makes a prototype easy to debug: test points on every rail and key signal, LEDs for power and status, a jumper or zero-ohm resistor to separate blocks, a programming header if there is a microcontroller, and mounting holes.
+- Run the electrical rules check (ERC) until it is clean, and explain every warning you leave.
+- Make the parts list (BOM) with the maker's part number for every part, and check stock and a second source.
+
+STEP 5. THE BOARD LAYOUT (office; published: the chip's layout guidance)
+- Board outline and mounting holes from the enclosure plan (DXF from SOLIDWORKS), or design the enclosure around the board's STEP.
+- Layers: four layers for a board with a switching converter or charger (signal, solid ground, ground or power, signal). At prototype quantities it costs little more than two, and it makes clean power and low EMI much easier.
+- Place the power parts first, copying the evaluation board's arrangement as closely as possible; then everything else. Keep the high-current loops tiny (https://ancreationoffice.com/sop-board-emi.txt).
+- Trace widths for current, copper pours for power, thermal vias under hot parts as the data sheet shows.
+- Connectors at the board edge; polarity and pin 1 marked on the silkscreen; a board name, revision letter and date code on the silkscreen.
+- Get the prototype shop's design rules (minimum trace and space, drill, annular ring, stack-up) and set them in KiCad before routing. Run the design rules check (DRC) until clean.
+- Look at the 3D view: parts that collide, connectors that face the wrong way, tall parts under the lid.
+
+STEP 6. REVIEW BEFORE ORDERING (office)
+Go through this with the owner and record each answer:
+- Every chip's pins checked against its data sheet, one by one, including the exposed pad and unused pins.
+- Values match the calculations; ratings have margin.
+- Polarity of diodes, LEDs, electrolytic capacitors and connectors checked.
+- Input protection: fuse, reverse polarity, surge (TVS), and the connectors' current rating.
+- Every fault you can think of (short on the output, input plugged in backwards, a part fails) ends safely.
+- Layout matches the reference design in the power stage; no plane splits under switching parts.
+- Footprints checked against real parts, ideally by printing the layout at 1:1 and laying the parts on it.
+- Test points reachable; mounting holes match the enclosure.
+An AI agent can help: give it the schematic (or the KiCad files) and the data sheets, and ask it to check each pin against the data sheet and list anything that doesn't match. Treat its list as questions to check, not answers.
+
+STEP 7. FILES FOR THE SHOP (https://ancreationoffice.com/sop-board-prototype.txt)
+
+WHERE TO GET A SECOND LOOK (office)
+For a personal, low-voltage board, a careful review against the reference design is usually enough. Get an experienced person to look (a local makerspace, an online electronics forum with the schematic posted, or a paid hour with an electrical engineer) when the board touches mains voltage, charges lithium batteries in a way the reference design doesn't cover, or will be sold.
+
+NEVER (office)
+- Never design anything that connects to mains (wall) voltage on this path: use a listed external power supply and keep the board low voltage.
+- Never guess a part's pinout or rating; read the data sheet.
+- Never skip the review because the rule checks passed: the checks find drawing mistakes, not design mistakes.
