@@ -18,7 +18,7 @@ shell = (ROOT / 'specialists/tools/office-shell.template.html').read_text(encodi
 e = lambda s: html.escape(s, quote=False)
 
 OFFICES = [
-    dict(id='inventor', page='inventors-office.html', name="Inventor's Office", role='b-project-manager',
+    dict(id='inventor', covers=['Planning the project and keeping it on track', "Whether people want it, and what they'd pay", 'Design', 'Prototypes', 'Making it easier and cheaper to build', 'Product safety and listings'], page='inventors-office.html', name="Inventor's Office", role='b-project-manager',
          standing='standing.txt', folder='(one folder per invention)', face='andy',
          icon='<circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/>',
          short='Your idea, from first talk to prototype',
@@ -26,7 +26,7 @@ OFFICES = [
          blurb="Your project manager for every invention. It takes an idea from the first conversation through design, prototypes, tooling, testing and launch, keeps the paperwork, and tells you what's next.",
          members=['b-project-manager', 'b-market-check', 'b-design', 'b-prototyping', 'b-dfm', 'b-product-safety'],
          first=True, then='Then ask me to tell you about my invention.'),
-    dict(id='business', page='business-office.html', name="Business Manager's Office", role='b-business-manager',
+    dict(id='business', covers=['The company', 'Patent preparation', 'A name and trademark', 'Licensing', 'Funding', 'Your website and promotion', 'Getting into stores'], page='business-office.html', name="Business Manager's Office", role='b-business-manager',
          standing='business-manager.txt', folder='AN-Creation/Business', face='larry',
          icon='<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/>',
          short='Company, patent, money, selling',
@@ -34,7 +34,7 @@ OFFICES = [
          blurb='The business around your products: the company, patent preparation, a name and trademark, licensing, funding, your website, promotion, and getting into stores.',
          members=['b-business-manager', 'b-company-setup', 'b-patent-prep', 'b-trademark', 'b-licensing', 'b-funding', 'b-promotion', 'b-retail'],
          first=False, then='Then ask what I want to work on.'),
-    dict(id='molding', page='molding-office.html', name='Molding Plant Office', role='b-molding-office',
+    dict(id='molding', covers=['Setting up a solid molding process', 'Molding defects', 'Mold and machine cooling water', 'Drying and regrind', 'Buying a mold', 'Plastic materials', 'Machine safety'], page='molding-office.html', name='Molding Plant Office', role='b-molding-office',
          standing='office-molding.txt', folder='AN-Creation/Molding Plant', face='peter',
          icon='<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 9h10M7 13h6"/>',
          short='Molding, cooling, drying, molds',
@@ -42,7 +42,7 @@ OFFICES = [
          blurb="Built from Mike Maier's years running molding plants: cooling water, drying and regrind, scientific molding, molding defects, buying molds, materials and machine safety.",
          members=['b-scientific-molding', 'b-molding-defects', 'b-cooling-water', 'b-drying-handling', 'b-mold-buying', 'b-plastic-materials', 'b-machine-safety'],
          first=False, then='Then ask what I want to work on.'),
-    dict(id='plastic', page='plastic-design-office.html', name='Plastic Design Office', role='b-plastic-design-office',
+    dict(id='plastic', covers=['Plastic part design', 'Tolerances: will the parts fit together', 'Choosing the plastic', 'Designing for molding', 'Prototypes', 'Buying a mold'], page='plastic-design-office.html', name='Plastic Design Office', role='b-plastic-design-office',
          standing='office-plastic-design.txt', folder='AN-Creation/Plastic Design', face='morgan',
          icon='<path d="M4 18 12 4l8 14z"/><path d="M8 18h8"/>',
          short='Plastic parts that mold well',
@@ -50,7 +50,7 @@ OFFICES = [
          blurb='Plastic parts that mold well: part design, tolerance stacks, material choice, design for molding, prototypes and the mold.',
          members=['b-plastic-part-design', 'b-tolerance-gdt', 'b-plastic-materials', 'b-dfm', 'b-prototyping', 'b-mold-buying'],
          first=False, then='Then ask what I want to work on.'),
-    dict(id='quality', page='quality-office.html', name='Quality Office', role='b-quality-office',
+    dict(id='quality', covers=['Quality planning', 'Measurement and inspection', 'Lean Six Sigma and improvement'], page='quality-office.html', name='Quality Office', role='b-quality-office',
          standing='office-quality.txt', folder='AN-Creation/Quality', face='maya',
          icon='<path d="M5 12l4 4 10-10"/>',
          short='APQP, measurement, Six Sigma',
@@ -58,7 +58,7 @@ OFFICES = [
          blurb='Quality planning (APQP, FMEA, control plans), measurement and inspection, and Lean Six Sigma with the improvement toolbox.',
          members=['b-quality-planning', 'b-measurement', 'b-six-sigma'],
          first=False, then='Then ask what I want to work on.'),
-    dict(id='manufacturing', page='manufacturing-office.html', name='Manufacturing Office', role='b-manufacturing-office',
+    dict(id='manufacturing', covers=['Manufacturing cells and standard work', 'Purchasing', 'Cost and the parts list', 'Automation', 'Machine safety', 'Lean Six Sigma and improvement'], page='manufacturing-office.html', name='Manufacturing Office', role='b-manufacturing-office',
          standing='office-manufacturing.txt', folder='AN-Creation/Manufacturing', face='frankie',
          icon='<path d="M3 20V10l6 4V10l6 4V6l6 4v10z"/>',
          short='Cells, purchasing, cost, automation',
@@ -114,14 +114,10 @@ def paste(o):
     return '\n'.join(lines)
 
 STYLE = '''<style>
-.of-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0}
-.of-card{padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:8px}
-.of-card h3{font-size:15px;margin:0 0 4px}.of-card p{font-size:13px;color:#5e6b65;line-height:1.6;margin:0}
-.of-card .of-procs{font-size:11px;margin-top:8px;color:#6b776e}.of-card .of-procs a{color:#3c5a54}
 .name-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:6px 0 0}
 .name-row input{font:inherit;font-size:15px;padding:9px 12px;border:1px solid var(--line);border-radius:6px;min-width:0;width:16rem;max-width:100%}
 .of-list .team-list{grid-template-columns:repeat(2,minmax(0,1fr))}
-@media(max-width:720px){.of-grid,.of-list .team-list{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:720px){.of-list .team-list{grid-template-columns:minmax(0,1fr)}}
 </style>'''
 
 NAMEJS = '''<script>
@@ -133,14 +129,6 @@ i.addEventListener('input',up);up();})();
 
 def page(o):
     others = [x for x in OFFICES if x is not o]
-    cards = []
-    for m in o['members']:
-        r = rows[m]
-        pl = ' · '.join(f'<a href="{u}">{e(n)}</a>' for n, u in procs(m)[:4])
-        h = r['hands_off_to'].strip()
-        ho = f' Hands off to: {e(h.replace(";", ","))}.' if h and h != '—' else ''
-        cards.append(f'<article class="of-card"><h3>{e(member_name(m))}</h3><p>{e(r["does"])}.{ho}</p>'
-                     + (f'<p class="of-procs">{pl}</p>' if pl else '') + '</article>')
     first_note = ('<p>This is the office to start with. If it\'s your first one, it also sets up your accounts and project folder with you.</p>'
                   if o['first'] else
                   '<p>Already have the Inventor\'s Office? This one joins the same project folder. Starting with this office alone? It sets up the folder with you first.</p>')
@@ -161,15 +149,13 @@ def page(o):
     <div class="paste"><p>First message to your {e(o["name"])}</p><pre id="pasteText">{e(paste(o))}</pre><button class="copy" type="button">Copy</button></div>
     <p>It asks one question at a time from there. If it ever stops or goes quiet, ask “What’s next?”</p>
     </section></div>
-    <h2 id="inside" style="margin-top:40px">What’s inside</h2>
-    <p>The specialists this office brings. You don’t pick them; they come with the office, and it uses each one when the work needs it.</p>
-    <div class="of-grid">{''.join(cards)}</div>
+    <h2 id="inside" style="margin-top:40px">What it covers</h2>
+    <ul class="plain">{''.join(f'<li>{e(c)}</li>' for c in o['covers'])}</ul>
     <h2 style="margin-top:40px">What it won’t do</h2>
     <p>It never sends, pays for, files, signs, publishes or orders anything without you. It never invents customers, prices, test results or limits. Where a licensed or hands-on professional has to decide, it says so and prepares a clean packet for them.</p>
     <h2 style="margin-top:40px">The other offices</h2>
     <p>Each office is its own bot. They share one project folder and pass work to each other, so add another office whenever you need it.</p>
     <div class="of-list"><ul class="team-list">{''.join(f'<li><a href="{x["page"]}">{face(x)}<span><strong>{e(x["name"])}</strong><span class="team-role">{e(x["short"])}</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>' for x in others)}</ul></div>
-    <p><a href="{o["standing"]}">Its standing instructions</a> · <a href="sop-team.txt">How the offices work together</a></p>
     </div></div>
     {NAMEJS}'''
     return main
@@ -186,16 +172,16 @@ for o in OFFICES:
 overview = f'''<header class="page-intro">
     <p class="kicker">The offices</p>
     <h1>Pick the offices you need.</h1>
-    <p class="lede">AN Creation is a set of offices. Each one is a bot you name, with its own specialists built in. Start with the Inventor’s Office, then add another office whenever your project needs it. They all share one project folder.</p>
+    <p class="lede">AN Creation is a set of offices. Each one is a bot you name, and each covers one area of work. Start with the Inventor’s Office, then add another office whenever your project needs it. They all share one project folder.</p>
     </header><div class="reading-layout"><div class="article-body">
     <div class="of-list"><ul class="team-list">{''.join(f'<li><a href="{x["page"]}">{face(x)}<span><strong>{e(x["name"])}</strong><span class="team-role">{e(x["blurb"])}</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>' for x in OFFICES)}</ul></div>
     <h2 style="margin-top:36px">How it works</h2>
     <ul class="plain"><li><strong>One bot per office.</strong> Each office page has the message to paste into a new bot. You give each bot its own name.</li>
-    <li><strong>The specialists come with the office.</strong> Nothing to pick or switch on; each office uses its specialists when the work needs them.</li>
+    <li><strong>Each office covers one area.</strong> Pick the ones you need; nothing else to set up.</li>
     <li><strong>One project folder.</strong> Every office works in the same private GitHub repository and passes work to the others.</li>
     <li><strong>Start small.</strong> Most people start with the Inventor’s Office and add the Business Manager’s Office when business questions come up.</li></ul>
     </div></div>'''
-build_page('offices.html', 'The offices', 'Six AN Creation offices, each a bot you name with its specialists built in. Start with the Inventor’s Office.', overview, 'offices.html')
+build_page('offices.html', 'The offices', 'Six AN Creation offices, each a bot you name, each covering one area of work. Start with the Inventor’s Office.', overview, 'offices.html')
 (ROOT / 'specialists/tools/sidebar.html').write_text(sidebar() + '\n', encoding='utf-8')
 
 # standing instructions for the four specialty offices
