@@ -1,6 +1,11 @@
 """Builds the AN Creation offices from specialists/roles.csv (run after any roster or office change).
-Run from the repository root:  python specialists/tools/build_offices.py
-Writes into guide/:
+Run from this repository's root, pointing at a creation-office checkout:
+  python specialists/tools/build_offices.py --site ../creation-office/site/create
+Writes into that site/create/ folder (the source of truth). sync-public-repo.py then copies it into guide/ here;
+anything written only into guide/ is overwritten by the next sync. --site defaults to $CREATION_SITE, then
+../creation-office/site/create. Review the diff in creation-office before committing: the generated office pages
+and office-*.txt replace hand edits made there since the last build.
+Writes:
   welcome.html                      the site's front page: pick an office
   sop.html                          every procedure, by office (counts generated)
   offices.html                      the overview of the six offices
@@ -9,10 +14,15 @@ Writes into guide/:
                                     (the Inventor's Office reads standing.txt; the Business Manager's Office reads business-manager.txt)
   specialists/tools/sidebar.html    the "Your offices" sidebar block, for pasting into the other site pages
 Each office is one bot. The owner names it; the procedures call it by its role name."""
-import csv, html, json, pathlib, re
+import argparse, csv, html, json, os, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-GUIDE = ROOT / 'guide'
+_ap = argparse.ArgumentParser(description='Build the AN Creation office pages into creation-office site/create/.')
+_ap.add_argument('--site', default=os.environ.get('CREATION_SITE') or str(ROOT.parent / 'creation-office' / 'site' / 'create'),
+                 help='path to creation-office site/create (default: $CREATION_SITE or ../creation-office/site/create)')
+GUIDE = pathlib.Path(_ap.parse_args().site).resolve()   # output folder (name kept for the code below)
+if not (GUIDE / 'version.txt').is_file():
+    sys.exit(f'{GUIDE} is not a creation-office site/create folder (no version.txt). Pass --site.')
 SITE = 'https://ancreationoffice.com/'
 GH = 'https://github.com/mminwi/an-creation-office/blob/main/'
 rows = {r['role']: r for r in csv.DictReader(open(ROOT / 'specialists/roles.csv', encoding='utf-8'))}
@@ -459,7 +469,7 @@ Write the same turn things happen and save to GitHub quietly: never announce sav
 
 THE TEAM AND THE OTHER OFFICES
 - AN-Creation/team.csv lists every office bot the owner runs: name, covers (the role), reports_to, platform, notes. Add or update your own row on the first conversation. How the offices work together: https://ancreationoffice.com/sop-team.txt
-- Hand-offs: every office has one inbox, AN-Creation/handoffs/for-<role>.txt (for-b-project-manager.txt is the Inventor's Office, for-b-business-manager.txt the Business Manager's Office, for-b-molding-office.txt and so on; the full list and rule: https://ancreationoffice.com/sop-team.txt HAND-OFFS). To send work to another office, add a line to its inbox, "YYMMDD | from {o["role"]} | what | why | open", check it reached GitHub, and tell the owner in one line which office it's for (by that bot's name if team.csv has one) and that it picks it up the next time they open that office. If they don't have that office, say so once and keep the item on your own plan.
+- Hand-offs: every office has one inbox, AN-Creation/handoffs/for-<role>.txt (for-b-project-manager.txt is the Inventor's Office, for-b-business-manager.txt the Business Manager's Office, for-b-molding-office.txt and so on; the full list and rule: https://ancreationoffice.com/sop-team.txt HAND-OFFS). To send work to another office, add a line to its inbox, "YYMMDD | from {o["role"]} | what | why | open", save it with office-save (it reads the save back), message that office, and tell the owner in one line which office it's for (by that bot's name if team.csv has one) and that it picks it up the next time they open that office. If they don't have that office, say so once and keep the item on your own plan.
 - Your inbox is AN-Creation/handoffs/for-{o["role"]}.txt. Read it at the start of every conversation; put each "open" line on your plan and change "open" to "taken YYMMDD". Never delete lines.
 {'- You keep this project' + chr(39) + 's plan yourself; other offices may help on request.' if o.get('own_project') else '- A product an inventor is developing is tracked by the Inventor' + chr(39) + 's Office (b-project-manager). You judge your specialists' + chr(39) + ' content; it keeps the project plan.'}
 
