@@ -1,6 +1,11 @@
 """Builds the AN Creation offices from specialists/roles.csv (run after any roster or office change).
-Run from the repository root:  python specialists/tools/build_offices.py
-Writes into guide/:
+Run from this repository's root, pointing at a creation-office checkout:
+  python specialists/tools/build_offices.py --site ../creation-office/site/create
+Writes into that site/create/ folder (the source of truth). sync-public-repo.py then copies it into guide/ here;
+anything written only into guide/ is overwritten by the next sync. --site defaults to $CREATION_SITE, then
+../creation-office/site/create. Review the diff in creation-office before committing: the generated office pages
+and office-*.txt replace hand edits made there since the last build.
+Writes:
   welcome.html                      the site's front page: pick an office
   sop.html                          every procedure, by office (counts generated)
   offices.html                      the overview of the six offices
@@ -9,10 +14,15 @@ Writes into guide/:
                                     (the Inventor's Office reads standing.txt; the Business Manager's Office reads business-manager.txt)
   specialists/tools/sidebar.html    the "Your offices" sidebar block, for pasting into the other site pages
 Each office is one bot. The owner names it; the procedures call it by its role name."""
-import csv, html, json, pathlib, re
+import argparse, csv, html, json, os, pathlib, re, sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-GUIDE = ROOT / 'guide'
+_ap = argparse.ArgumentParser(description='Build the AN Creation office pages into creation-office site/create/.')
+_ap.add_argument('--site', default=os.environ.get('CREATION_SITE') or str(ROOT.parent / 'creation-office' / 'site' / 'create'),
+                 help='path to creation-office site/create (default: $CREATION_SITE or ../creation-office/site/create)')
+GUIDE = pathlib.Path(_ap.parse_args().site).resolve()   # output folder (name kept for the code below)
+if not (GUIDE / 'version.txt').is_file():
+    sys.exit(f'{GUIDE} is not a creation-office site/create folder (no version.txt). Pass --site.')
 SITE = 'https://ancreationoffice.com/'
 GH = 'https://github.com/mminwi/an-creation-office/blob/main/'
 rows = {r['role']: r for r in csv.DictReader(open(ROOT / 'specialists/roles.csv', encoding='utf-8'))}
@@ -159,6 +169,21 @@ A charger that overcharges, charges a hot or frozen pack, or keeps pushing curre
 YOUR JOB ON THIS PROJECT
 This is the owner's personal project: a few boards, not for sale. The owner is not an electrical engineer and wants to understand the circuit, not hand it off. Walk through each block, say what it does and why, one step at a time, and teach the free tools (KiCad first) as you go. Keep the plan, the decisions and the open questions. Early questions: which battery platform and pack sizes; what "USB" means here (charging the pack from USB-C, charging a phone from the pack, or both); the charge current; which prototype shop, and which files it wants. The shop designs in Altium, but usually builds from Gerbers and assembly files (https://ancreationoffice.com/sop-board-prototype.txt A SHOP THAT USES ALTIUM). The owner draws the enclosure; offer the AI-assisted CAD route (https://ancreationoffice.com/sop-ai-cad.txt).''',
          first=False, then='Then ask what I want to work on.'),
+    dict(id='spacex', listed=False, own_project=True, survey=False, standing_custom=True,
+         covers=['Grok, Grok Bot, Grok Build, and Cursor', 'Posts from those teams on X', 'Connectors: email, Google, and Microsoft are the ones you have; it looks for the next one worth adding', 'Anthropic and OpenAI, only when something is big', 'A record of what you tried and what you turned down'],
+         page='spacex-office.html', jobs=['What’s new from the Grok and Cursor teams', 'Which connectors I don’t have that would actually help', 'One technique I could try on an office I already run'],
+         result='Up to three items. Each one says what changed, whether the team said it or someone else did, whether it works with Grok, and one try you can say yes or no to.',
+         name='SpaceX Office', role='b-spacex-office',
+         standing='office-spacex.txt', folder='AN-Creation/SpaceX', face='andy',
+         icon='<circle cx="12" cy="12" r="9"/>',
+         short='Keeping up with Grok and Cursor',
+         who='For keeping up with Grok, Cursor, and the SpaceX side of AI.',
+         blurb='Watches Grok, Grok Bot, Grok Build, and Cursor for what you can use. Anthropic and OpenAI only when something big shows up. The brief is short: what changed, who said it, and one thing to try.',
+         desc='Mike’s watcher for the SpaceX side of AI: Grok, Grok Bot, Grok Build, and Cursor, plus a one-line note when Anthropic or OpenAI ships something big.',
+         asks='what you want to watch',
+         need='<div class="of-need"><p><strong>Written for Grok.</strong> It searches X first, then the official page a post points at. A trick that only works in Claude or ChatGPT gets one line, not a project.</p><p><strong>What you need:</strong> SuperGrok (<a href="start.html#need">the plan and price</a>) (<a href="start.html#need">details</a>). The office is free; Grok’s own charges apply.</p></div>',
+         charge='The office prepares the brief. You decide. It does not connect an account, post, send, or change another office unless you say yes to that item. Read and draft are the ask. Sending is a separate yes.',
+         members=[], first=False, then='Then ask what I want to work on.'),
     dict(id='promotion', listed=False, own_project=True, survey=False,
          covers=['Writing as Mike: posts, replies, emails, messages', 'LinkedIn: profile, posts, comments, newsletter', 'X: replies, posts, threads, finding conversations', 'Reddit, Hacker News, Product Hunt, YouTube', 'Podcasts, press, groups and talks', 'Pictures and AI image prompts', 'The weekly plan, ideas bank and the numbers'],
          page='promotion-office.html', jobs=['Plan this week: posts, replies and one outreach', 'Draft a LinkedIn post and an X post from what I worked on', 'Rewrite my LinkedIn headline and About'],
@@ -182,15 +207,21 @@ NOTHING GOES OUT WITHOUT MIKE'S YES
 You draft; Mike edits, approves and posts or sends it himself from his own accounts. Bring drafts in numbered batches (up to 5), each with: the platform and place, the full link if it's a reply, why it fits, the exact text, the picture or image prompt, and "OK?". Act only on a clear yes for that number ("yes 1, 3"); apply edits and show it again. Never ask for or type his passwords. Business inquiries, press and podcast replies: flag to Mike the same day.
 
 THE OTHER PROMOTION WORK
-Advance Now's Business Manager's Office keeps search setup and directory listings (https://ancreationoffice.com/press-kit/PROMO-INSTRUCTIONS.txt SEARCH SETUP, LISTINGS, WEEKLY CHECK). Everything about Mike's voice and audience is yours: posts, replies, comments, LinkedIn, X, other channels, outreach to podcasts, press and groups, pictures, correspondence. On your first conversation, read AN-Creation/Business/promo-log.csv if it exists and carry its open items over; hand anything about listings or search to that office's inbox.
+Advance Now's Business Manager's Office keeps search setup and directory listings (https://ancreationoffice.com/press-kit/PROMO-INSTRUCTIONS.txt SEARCH SETUP, LISTINGS, WEEKLY CHECK). Everything about Mike's voice and audience is yours: posts, replies, comments, LinkedIn, X, other channels, outreach to podcasts, press and groups, pictures, correspondence. On your first conversation, read AN-Creation/Business/promo-log.csv if it exists and carry its open items over. Listings and search belong to the Business Manager's Office: hand them off with the office-handoff skill. You own posts, replies, and audience. press-kit/PROMO-INSTRUCTIONS.txt is notes for you; it does not override business-manager.txt.
 
 YOUR RECORDS (in AN-Creation/Promotion/, besides the usual files)
 - promo-log.csv: every batch proposed, each yes or no, each post (date, platform, place, post_link, image, status, replies, traction, notes).
 - voice-notes.md: Mike's edits and the rules they suggest.
 - ideas.csv: the ideas bank. metrics.csv: the monthly numbers.
 
-THE WEEK
-Monday: plan the week with Mike in one message and bring the drafts. Weekdays: up to 5 X conversations and 5 LinkedIn posts to comment on, with drafts, found with your own search of X and the web; replies to comments on Mike's posts. Each week: one outreach to another audience. Monthly: the numbers and what to change. Mike sets the pace; a pace he keeps beats a burst.''',
+THE WEEK AND THE ROUTINES
+Create these routines at setup. Do not create a routine for the version check; office-startup does that. Times are America/Chicago. Mike posts. You draft.
+- Monday 8:00: the week plan and the draft batch (up to 5), in one message.
+- Weekdays 12:00: find replies. Up to 5 X conversations, with drafts. LinkedIn comments are drafted in the same pass. LinkedIn has no access path today: do not try to open LinkedIn.
+- Write the posting time on each draft for Mike: LinkedIn 8:30, X 12:15 and 17:00. He can change the times in one line.
+- Each week: one outreach to another audience.
+- First Monday of the month, with the week plan: the numbers and what to change.
+Mike sets the pace; a pace he keeps beats a burst.''',
          first=False, then='Then ask what I want to work on.'),
 ]
 for o in OFFICES:
@@ -239,21 +270,18 @@ def sidebar(current=None):
     return '\n      '.join(out)
 
 def paste(o):
-    lines = [f'You are my {o["name"]} for AN Creation.',
-             f'In the procedures your role is {o["role"]}: that is how they refer to you.',
-             'Read and follow your standing instructions:',
-             SITE + o['standing'],
-             'If you cannot open a link, ask me to paste the text.']
-    if o['first']:
-        lines += ['If this is my first office, help me set up first, one step at a time:', SITE + 'sop-office.txt',
-                  'If I already have an an-creation repository on GitHub, use it and add yourself to AN-Creation/team.csv.']
-    elif o.get('repo'):
-        lines += ['Use the private GitHub repository for this project (ask me its name the first time) and add yourself to AN-Creation/team.csv there.',
-                  'If it isn\'t set up yet, help me set it up first, one step at a time:', SITE + 'github-setup.txt']
-    else:
-        lines += ['Use my an-creation repository on GitHub and add yourself to AN-Creation/team.csv.',
-                  'If I don\'t have one yet, help me set it up first, one step at a time:', SITE + 'github-setup.txt']
-    lines += [o['then'], 'One question at a time.']
+    title = o.get('title', o['name'])
+    setup = 'sop-office.txt' if o['first'] else 'drive-setup.txt'
+    lines = [f'You are my {title} for AN Creation (role: {o["role"]}).',
+             'First, set up your own profile. Open https://ancreationoffice.com/profile.txt,',
+             f'find the {title} block, and use your profile tool to set your description',
+             f'to that block exactly as written and your title to "{title}".',
+             'Read your profile back to me to confirm.',
+             f'Then read and follow your office file: {SITE}{o["standing"]}',
+             'If you cannot open a link, ask me to paste the text.',
+             f'If I have no project folder yet, help me set it up in my Google Drive, one step at a time: {SITE}{setup}',
+             'Then run office-setup-check and tell me the results.',
+             'Then ask what I want to work on. One question at a time.']
     return '\n'.join(lines)
 
 STYLE = '''<style>
@@ -267,8 +295,8 @@ STYLE = '''<style>
 </style>'''
 
 NEED = ('<div class="of-need"><p><strong>Written for Grok, readable by any AI.</strong> The offices are plain written procedures, linked to each other, so any AI model that can read a web link can follow them (<a href="using-other-ais.txt">other AIs</a>). They’re written for Grok bots, so that’s where they fit best.</p>'
-        '<p><strong>What you need:</strong> SuperGrok, the $30-a-month Grok plan (<a href="start.html#need">details</a>). '
-        'The offices are free; Grok’s own charges apply. Your office helps you make a free GitHub account to save your work.</p></div>')
+        '<p><strong>What you need:</strong> SuperGrok (<a href="start.html#need">the plan and price</a>) (<a href="start.html#need">details</a>). '
+        'The offices are free; Grok’s own charges apply. Your work is saved to a private folder in your Google Drive; your office helps you connect it.</p></div>')
 
 
 def picker():
@@ -300,17 +328,17 @@ def page(o):
     <div class="paste"><p>First message to your {e(o["name"])}</p><button class="copy" type="button">Copy the message</button><pre>{e(paste(o))}</pre></div>
     </section>
     <section class="start-step"><h2><span class="step-number">3.</span> Answer its questions</h2>
-    <p>It asks one question at a time. The first time, it helps you set up a private place to save your work and checks each step with you. Then it asks what you’re working on. If it ever goes quiet, ask “What’s next?”</p>
+    <p>It asks one question at a time. The first time, it helps you set up a private place to save your work and checks each step with you. Then it asks {o.get('asks', 'what you’re working on')}. If it ever goes quiet, ask “What’s next?”</p>
     <p>Already have another office? This one joins the same project folder.</p>
     </section></div>
-    {NEED}
+    {o.get('need', NEED)}
     <h2 style="margin-top:40px">Good first jobs</h2>
     <ul class="plain">{''.join(f'<li>{e(j)}</li>' for j in o['jobs'])}</ul>
     <p><strong>What you get back:</strong> {e(o["result"])}</p>
     <h2 id="inside" style="margin-top:40px">What it covers</h2>
     <ul class="plain">{''.join(f'<li>{e(c)}</li>' for c in o['covers'])}</ul>
     <h2 style="margin-top:40px">You stay in charge</h2>
-    <p>The office prepares the work; you make the decisions. Its instructions tell it never to send, sign, pay for, file or order anything for you, and to keep what you told it apart from its own estimates and from what is still unknown. Check important results before you use them. Where a licensed or hands-on professional has to decide, it says so and prepares a clean packet for them.</p>
+    <p>{e(o.get('charge', 'The office prepares the work; you make the decisions. Its instructions tell it never to send, sign, pay for, file or order anything for you, and to keep what you told it apart from its own estimates and from what is still unknown. Check important results before you use them. Where a licensed or hands-on professional has to decide, it says so and prepares a clean packet for them.'))}</p>
     <h2 style="margin-top:40px">The other offices</h2>
     <p>Each office is its own bot. They share one project folder, so add another whenever you need it.</p>
     <div class="of-list"><ul class="team-list">{''.join(f'<li><a href="{x["page"]}">{face(x)}<span><strong>{e(x["name"])}</strong><span class="team-role">{e(x["short"])}</span></span><span class="card-arrow" aria-hidden="true">↗</span></a></li>' for x in others)}</ul></div>
@@ -325,8 +353,8 @@ def build_page(fname, title, desc, main, current, canonical=None, head='', body=
     (GUIDE / fname).write_text(out, encoding='utf-8')
 
 for o in OFFICES:
-    build_page(o['page'], o['name'], o['blurb'], page(o), o['page'],
-               head='' if o.get('listed', True) else '\n<meta name="robots" content="noindex, nofollow">')
+    build_page(o['page'], o['name'], o.get('desc', o['blurb']), page(o), o['page'],
+               head='')  # unlisted: not linked anywhere, but no noindex (Mike: not hidden, not promoted)
 
 overview = f'''<header class="page-intro">
     <p class="kicker">The offices</p>
@@ -338,7 +366,7 @@ overview = f'''<header class="page-intro">
     {HOW}
     {NEED}
     </div></div>'''
-build_page('offices.html', 'The offices', 'Six AN Creation offices, each an AI assistant you set up in Grok. Start with the one that fits your work.', overview, 'offices.html')
+build_page('offices.html', 'The offices', 'AN Creation offices, each an AI assistant you set up in Grok. Start with the one that fits your work.', overview, 'offices.html')
 
 WELCOME_DESC = ('Free AI assistants for engineering and manufacturing work: inventing, molding, plastic design, quality and manufacturing. '
                 'Pick an office, paste one message into Grok, and it walks you through the rest.')
@@ -429,8 +457,8 @@ build_page('sop.html', 'Procedures', f'Every written procedure the AN Creation o
 
 # standing instructions for the four specialty offices
 for o in OFFICES:
-    if o['id'] in ('inventor', 'business'):
-        continue
+    if o['id'] in ('inventor', 'business') or o.get('standing_custom'):
+        continue  # hand-maintained office files (standing.txt, business-manager.txt, office-spacex.txt)
     spec = []
     for m in o['members']:
         r = rows[m]
@@ -438,7 +466,7 @@ for o in OFFICES:
         h = r['hands_off_to'].strip()
         ho = f' Hands off to: {h.replace(";", ",")}.' if h and h != '—' else ''
         spec.append(f'- {member_name(m)} ({m}): {r["does"]}.{ho}' + (f' Procedures: {links}' if links else ''))
-    txt = f'''AN Creation: the {o["name"]} (role {o["role"]}). Revision 2 — October 13, 2026.
+    txt = f'''AN Creation: the {o["name"]} (role {o["role"]}). Revision 3 — October 14, 2026.
 Human page: {SITE}{o["page"]}
 Generated from specialists/roles.csv by specialists/tools/build_offices.py; change the roster there, not here.
 
@@ -449,22 +477,22 @@ VERSION CHECK (first, every conversation)
 Open https://ancreationoffice.com/version.txt?t=<today's date> and follow it. Keep the version you last saw as "Office version seen" in {o["folder"]}/office.txt. Newer: re-read this file fresh and tell the owner in one line what changed that affects them.
 
 YOUR FILES (the chat is not the record)
-The owner's {o.get('repo', 'private GitHub repository an-creation')}, folder {o["folder"]}/. Look there first; a re-made office carries on from its files and never starts over. If there is no repository yet, set it up with them first, one step at a time: https://ancreationoffice.com/github-setup.txt
+{"The owner's project folder for this project (ask the owner its name the first time; it is not the shared AN-Creation folder)" if o.get('repo') else "The owner's AN-Creation project folder"}, folder {o["folder"]}/, on Google Drive by default (https://ancreationoffice.com/drive-setup.txt) or on GitHub if office.txt says "Home: GitHub" (https://ancreationoffice.com/github-setup.txt). Look there first; a re-made office carries on from its files and never starts over. If there is {"none" if o.get('repo') else "no project folder"} yet, set it up with them first, one step at a time: https://ancreationoffice.com/drive-setup.txt
 - office.txt: one page: what this office is working on, the plant or product it serves, key facts, "Office version seen", "Last saved".
 - plan.md: what's open, decided, waiting, next.
 - actions.csv: who owes what (columns and rules: https://ancreationoffice.com/sop-action-log.txt).
 - jobs/YYMMDD-<slug>/: one folder per job (a mold that runs hot, a dryer to size, a capability study): the data you were given, the calculation, the result, what was decided.
 - record/: emails, documents and photos that arrive (YYMMDD-I-slug), what goes out (YYMMDD-O-slug), and each conversation (YYMMDD-M-conversation), saved as you go.
-Write the same turn things happen and save to GitHub quietly: never announce saving or committing. Confirm every save is on GitHub, keep a "Last saved" line in office.txt, and if a save fails say so in one plain line (how to save and check: https://ancreationoffice.com/version-control.txt SAVING). office.txt, plan.md and actions.csv are working files, updated in place; a job folder's data, calculations and results are never edited once saved (a change is a new dated file).
+Write the same turn things happen and save quietly: never announce saving. Confirm every save (office-save reads it back), keep a "Last saved" line in office.txt, and if a save fails say so in one plain line (how to save and check: https://ancreationoffice.com/version-control.txt SAVING). office.txt, plan.md and actions.csv are working files, updated in place; a job folder's data, calculations and results are never edited once saved (a change is a new dated file).
 
 THE TEAM AND THE OTHER OFFICES
 - AN-Creation/team.csv lists every office bot the owner runs: name, covers (the role), reports_to, platform, notes. Add or update your own row on the first conversation. How the offices work together: https://ancreationoffice.com/sop-team.txt
-- Hand-offs: every office has one inbox, AN-Creation/handoffs/for-<role>.txt (for-b-project-manager.txt is the Inventor's Office, for-b-business-manager.txt the Business Manager's Office, for-b-molding-office.txt and so on; the full list and rule: https://ancreationoffice.com/sop-team.txt HAND-OFFS). To send work to another office, add a line to its inbox, "YYMMDD | from {o["role"]} | what | why | open", check it reached GitHub, and tell the owner in one line which office it's for (by that bot's name if team.csv has one) and that it picks it up the next time they open that office. If they don't have that office, say so once and keep the item on your own plan.
-- Your inbox is AN-Creation/handoffs/for-{o["role"]}.txt. Read it at the start of every conversation; put each "open" line on your plan and change "open" to "taken YYMMDD". Never delete lines.
+- Hand-offs: every office has one inbox, AN-Creation/handoffs/for-<role>.txt (for-b-project-manager.txt is the Inventor's Office, for-b-business-manager.txt the Business Manager's Office, for-b-molding-office.txt and so on; the full list and rule: https://ancreationoffice.com/sop-team.txt HAND-OFFS). To send work, follow the office-handoff skill: one line in that inbox, then a SendToAgent ping. The other office marks it taken, then done. If they don't have that office, say so once and keep the item on your own plan.
+- Your inbox is AN-Creation/handoffs/for-{o["role"]}.txt. Read it at the start of every conversation; follow the office-handoff skill: mark the line taken when it is on your plan, and done when it is finished. Never delete lines.
 {'- You keep this project' + chr(39) + 's plan yourself; other offices may help on request.' if o.get('own_project') else '- A product an inventor is developing is tracked by the Inventor' + chr(39) + 's Office (b-project-manager). You judge your specialists' + chr(39) + ' content; it keeps the project plan.'}
 
 START OF EVERY CONVERSATION
-After the version check: check your "Last saved" commit is on GitHub (say in a line if anything is missing), then read office.txt, plan.md, actions.csv and your inbox. Mention anything due or waiting in one line. Then ask what they want to work on, or offer the next step.
+After the version check: check your "Last saved" save is in the project folder (say in a line if anything is missing), then read office.txt, plan.md, actions.csv and your inbox. Mention anything due or waiting in one line. Then ask what they want to work on, or offer the next step.
 
 YOUR SPECIALISTS (open the procedure when its subject comes up, use it, then leave it)
 {chr(10).join(spec)}
@@ -475,9 +503,9 @@ Each source's use and what to check is in the library: https://ancreationoffice.
 
 HOW YOU WORK
 - Ask for data, not opinions: measurements, settings, readings, drawings, photos. Propose a default when one is sensible, and ask only what the owner alone can answer.
-- Show the arithmetic. Where a procedure has a calculation script, run it (Grok Build in your cloud terminal) or work it through in the job folder, and say the inputs you assumed.
+- Show the arithmetic. Where a procedure has a calculation script, run it with the grok command in your own Shell (drive-setup.txt GROK BUILD) or work it through in the job folder, and say the inputs you assumed.
 - Lines in the procedures are marked "Mike" (his practice), "published" (with the source) or "office". Say which one a recommendation comes from when it matters.
-- Heavy work (research, long calculations, documents): write a short brief in the job folder and run it as its own step with Grok Build in your cloud terminal (b-analyst's role), then check what came back. If that isn't working, do it yourself as a separate step.
+- Heavy work (research, long calculations, documents): write a short brief in the job folder and run it as its own step with the grok command in your own Shell (drive-setup.txt GROK BUILD). Saving the result is office-save. If grok isn't working, do it yourself as a separate step.
 - When something has to give, ask: "Which do you keep: the date, the money, or how well it works?"
 
 NEVER
@@ -489,4 +517,4 @@ NEVER
     (GUIDE / o['standing']).write_text(txt, encoding='utf-8')
 
 print('wrote', len(OFFICES), 'office pages, offices.html, sidebar.html and',
-      sum(1 for o in OFFICES if o['id'] not in ('inventor', 'business')), 'office standing files')
+      sum(1 for o in OFFICES if o['id'] not in ('inventor', 'business') and not o.get('standing_custom')), 'office standing files')
