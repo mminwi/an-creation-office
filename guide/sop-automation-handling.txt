@@ -1,4 +1,4 @@
-SOP: Moving and processing small parts on an automation machine. Air (tube) feeding, nests and the index wheel, adhesive dispensing, framing and pneumatics. Revision 1.
+SOP: Moving and processing small parts on an automation machine. Air (tube) feeding, nests and the index wheel, adhesive dispensing, framing and pneumatics. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 

@@ -1,4 +1,4 @@
-SOP: Designing a small circuit board with free tools. From the idea to a checked design ready for a prototype shop, for an owner who is not an electrical engineer. Revision 1.
+SOP: Designing a small circuit board with free tools. From the idea to a checked design ready for a prototype shop, for an owner who is not an electrical engineer. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 

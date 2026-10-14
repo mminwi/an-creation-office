@@ -1,52 +1,36 @@
-AN Creation: setting up GitHub and b-analyst, for a beginner. Revision 3 (draft, specialists branch) — October 12, 2026. The default is now one Grok account plus a free GitHub account; other AIs are optional (PART 3).
-Read this at setup (sop-office.txt, THE FOLDER and THE ANALYST), and whenever GitHub or b-analyst isn't working. Then leave it.
+AN Creation: GitHub and b-analyst. Revision 4 — October 14, 2026.
+Read this at setup, and whenever GitHub or b-analyst isn't working. Then leave it. The steps for starting, saving, and handing work off are the skills office-startup, office-save, and office-handoff. This file is the office rule those skills follow. After install, run office-setup-check.
 
-ASSUME THEY HAVE NEVER USED IT
-Everything on the default path works from a phone. The one known exception is optional: Codex's environment is set up once from a computer's browser (PART 3). If any other setup page won't work on the phone, the same answer: a computer's browser once, then the phone from there on.
-Most inventors have never seen GitHub. Go one step at a time, one question at a time, and say what each step is for in a line. Use the real words once, then use them: a repository (repo) is the project's online folder; a commit is a saved checkpoint; an issue is a note or task on the repository; private means only they and people they invite can see it. Every step works from a phone's web browser. Keep it calm: "This part is a little fiddly the first time. We do it once."
+WORDS, ONCE
+A repository is the project's online folder. A commit is a saved checkpoint. Private means only the people invited can see it. On the shared computer the tools are already installed and signed in. Do not start a device login, and do not walk through a paid upgrade.
 
-PART 1: GITHUB
-1. Account. They make it themselves at https://github.com/signup (you can't make accounts for anyone). Free is fine. Username, email, password; GitHub emails a code to confirm. Never ask for or type their password.
-2. Two-step sign-in, and the GitHub app. GitHub will ask them to turn on two-factor authentication. Recommend installing the GitHub Mobile app on their phone: it approves sign-ins with a tap, and lets them look at the project's files, history and issues anywhere. Save the recovery codes somewhere safe (not in the project).
-3. Connect GitHub in Grok Bot: the connectors (plugins), GitHub, sign in, allow. If it asks which repositories to allow, choose "All repositories", or come back after step 4 and add an-creation.
-4. Make the repository. Try to create it yourself: name an-creation, Private, with a README. If you can't, walk them through it: https://github.com/new , Repository name: an-creation, choose Private, tick "Add a README file", Create repository.
-5. Check it's private. The repository page shows "Private" next to the name. If it says Public, stop and fix it first: Settings, scroll to Danger Zone, Change visibility, Private.
-6. Prove you can use it: write a small test file, read it back, delete it. Record "Home: GitHub <username>/an-creation" in AN-Creation/office.txt.
-7. Put the instructions any AI will look for at the top of the repository: AGENTS.md from https://ancreationoffice.com/agents-md.txt , and a one-line CLAUDE.md that says "Read AGENTS.md and follow it." Commit them.
+GITHUB
+The Cursor GitHub connector is read-only. The Grok GitHub connector is read-only. There is no GitHub-xai connector and no token-based GitHub plugin. Looking can use a connector. Saving cannot. Saves follow office-save (git and gh in the bot's own Shell).
+On the shared computer, git and gh are already logged in as mminwi. Hal did that once for the whole computer. Do not run gh auth login. You can see your own connectors; do not ask the owner to list them.
+An inventor who is not on this computer makes their own free account at https://github.com/signup and turns on two-step sign-in. Never ask for or type a password.
+The repository is an-creation, Private, with a README. If it is missing, create it private. If it says Public, stop and make it private before anything else.
+One clone per office: /workspace/offices/<your role>/an-creation. Never /workspace/repo, and never another office's clone. office-startup uses that clone. office-save is how you prove a write. Record "Home: GitHub <username>/an-creation" and "Clone: /workspace/offices/<your role>/an-creation" in your office.txt.
+AGENTS.md at the top of the repository is https://ancreationoffice.com/agents-md.txt (or AN-Creation/sops/agents-md.txt), plus a one-line CLAUDE.md: "Read AGENTS.md and follow it."
+The shared SOP library is AN-Creation/sops/library.txt in that same repository, plus VERSION. One copy, one version, every office. An update is one download and one commit. The rule is https://ancreationoffice.com/version.txt. office-startup reads one section at a time.
 
-PART 2: THE ANALYST, THE DEFAULT WAY: GROK BUILD IN THE BOT'S OWN CLOUD TERMINAL
-Everything stays in the cloud: Grok Build runs in the bot's own terminal in the cloud, never on anyone's computer. Nothing for them to set up beyond their Grok account and GitHub (PART 1).
-1. In your cloud terminal, check Grok Build is there and signed in with their Grok account (xAI's Grok Build, also called the Grok CLI; docs: https://x.ai/cli ; source: https://github.com/xai-org/grok-build). If it asks them to sign in, they do it themselves.
-2. Give it access to the repository: it works on a copy of an-creation in that cloud terminal, using the GitHub connection from PART 1 (or a GitHub sign-in they approve). It must be able to pull and push.
-3. Test: run it headless on a tiny job ("add a one-line file AN-Creation/analyst-test.txt, commit and push"), check the commit arrives on GitHub, then delete the file the same way.
-4. Record in PROJECT.txt: "Analyst: Grok Build, start: b-project-manager's cloud terminal, default: yes".
-5. To run a ticket later: start Grok Build in the repository with the ticket's one-line start ("Work on ticket T-008 in the an-creation repository"); it reads AGENTS.md at the top of the repository and the ticket, does the work, commits and pushes. Long jobs: use a session id and resume it (sop-hats.txt).
-Draft: this path is new (October 2026) and is being tested on a phone by a first-time user. Check the current Grok Build command and sign-in on its docs page; don't fill command details from memory. If the bot has no cloud terminal on their plan, use PART 3 (a cloud agent) rather than anyone's computer.
+GROK BUILD
+Grok Build is the `grok` command, in the bot's own Shell, with the working directory set to that office's clone. `grok`, `claude`, and `codex` are in /usr/local/bin and are already signed in as mike.maier@gmail.com. Do not install them again, do not sign in again, and do not turn on a paid upgrade or usage billing.
+`command -v grok` should print /usr/local/bin/grok. If `grok` asks to sign in or to upgrade, stop and tell the owner. Do not complete that prompt.
+Run a ticket from that clone: `grok` with one line, "Work on ticket T-008 in the an-creation repository." It reads AGENTS.md. The commit is office-save. Record in PROJECT.txt: "Analyst: Grok Build, start: grok in /workspace/offices/<role>/an-creation, default: yes".
+Docs if a command has changed: https://x.ai/cli . Don't fill command details from memory.
 
-PART 3: ADDING MORE AIs (optional, all cloud)
-Any cloud AI agent that can open the repository can do the analyst's work: AGENTS.md at the top of the repository tells it what the office is and how to work a ticket (template: https://ancreationoffice.com/agents-md.txt ; copy it in at setup). It may not be as smooth as the bot, but it reads the same files, asks the same questions and writes the same answers. Add one only if they already have it and want it; one is enough. Use the cloud versions (Cursor's cloud agents, Codex in the cloud, Claude Code on the web), not desktop installs.
-Cursor (with a Cursor plan):
-1. In Cursor's web dashboard (cursor.com, signed in with the same account as Grok Bot), connect GitHub and allow Cursor the an-creation repository.
-2. Cloud agents bill heavy runs as usage. If Cursor asks to turn on usage-based (on-demand) billing, explain it in a line ("heavy runs cost a little extra, billed by Cursor; you can set a monthly limit") and let them decide and set a limit themselves.
-3. Start it from Grok Bot with a Cursor handoff, or by opening an issue in an-creation and commenting "@cursor" with the job.
-Codex (with a ChatGPT plan): the Codex environment has to be set up once from a computer's web browser (chatgpt.com/codex); it can't be set up on a phone. There: connect GitHub, allow an-creation, and create the environment for it. After that, start it from the phone: Codex in the ChatGPT app, or "@codex" in an issue comment. No computer at home? A library or a friend's computer for ten minutes is enough; they don't sign anything else in.
-Claude Code (with a Claude plan): connecting is done once in a web browser, even on a phone (the Claude app doesn't do this step). 1) Open claude.ai/code in the phone's browser and sign in. 2) Tap Connect GitHub, sign in to GitHub, approve. 3) Install the Claude GitHub App when offered (required for private repositories); choose "Only select repositories" and pick an-creation (or "All repositories"). 4) In the Claude app, Code tab, the repository selector below the message box now shows an-creation. Start it from the Code tab or claude.ai/code, or with "@claude" in an issue comment. A private repository missing from the list: the Claude GitHub App isn't allowed it (GitHub: Settings, Applications, Installed GitHub Apps, Claude, Configure, add it).
-Any other agent: point it at the repository and say "Work on ticket T-<number> in the an-creation repository"; AGENTS.md does the rest.
-Test each one: ask it to add a one-line file, AN-Creation/analyst-test.txt, and check it arrives as a commit; then delete it. Record each in PROJECT.txt, one line each: "Analyst: <name>, start: <how>, default: yes/no".
-If none works yet, don't stall: record "Analyst: b-project-manager's own runs" and do the runs yourself until it's fixed.
+CLAUDE AND CODEX
+`claude` and `codex` are the same kind of command, already signed in. Use one only when the owner asks for that job. Same clone, same office-save. Do not set up Cursor cloud agents, Codex on the web, or Claude Code on the web during setup, and do not turn on usage billing. Record "Analyst: <name>, start: <command> in /workspace/offices/<role>/an-creation, default: no" unless they make it the default.
+If `grok` will not run, say so and do the analyst run yourself until it is fixed. Don't send them to a paid setup.
 
-TROUBLESHOOTING (what usually goes wrong)
-- No confirmation email: check spam and promotions; ask GitHub to resend; check the email was typed right.
-- Locked out by two-step sign-in: a saved recovery code; otherwise https://github.com/login/two_factor/recovery . You can't get them back in; say so kindly and point them there.
-- Grok Bot can't see the repository: the GitHub connector was allowed only some repositories. GitHub: Settings, Applications, Installed GitHub Apps, the app, Configure, add an-creation.
-- "Repository not found" or a 404: the name or owner is off, or they're signed in to another account. Check the exact <username>/an-creation.
-- You can't create the repository or write files: the connector may be read-only. Have them make the repository by hand (Part 1, step 4). If you still can't write, say so plainly; b-analyst can write instead (Part 2), and you tell them what to add.
-- "@cursor" (or "@codex", "@claude") does nothing: the service isn't connected to GitHub, isn't allowed the an-creation repository, or (Cursor) usage-based billing is off. Have them open the service's dashboard and look for an error on the agent page. A stuck GitHub connection: revoke the app in GitHub (Settings, Applications), then reconnect in a private browser window.
-- b-analyst says it has no permission to push: in GitHub, Settings, Applications, b-analyst's app, Configure, and make sure an-creation is allowed with read and write access.
-- A file is too big: GitHub refuses single files over 100 MB and warns over 50 MB. Keep big CAD, video and image files out of the repository and put a link to where they are.
-- They made it Public by mistake: fix it right away (Part 1, step 5). If the invention was described while it was public, tell them plainly and suggest asking a patent attorney.
+WHEN IT FAILS
+- git or gh is not logged in on the shared computer: stop. Tell the owner. Do not start a device login.
+- A write through the GitHub connector fails: that is expected. office-save.
+- Push rejected: office-save retries with pull --rebase. Never force-push main. GitHub cannot enforce that on this free private repository (branch protection needs GitHub Pro).
+- A file over about 50 MB: keep it out of the repository and record where it lives.
+- The repository was made public: make it private before going on. If the invention was described while it was public, say so and suggest a patent attorney.
 
 NEVER
-Never type a password, code or key for them. Never make the repository public. Never put passwords, keys, an SSN, or bank or card numbers in any file, issue or commit message. Never turn on billing for them; they decide and set the limit.
+Never type a password, code, or key. Never make the repository public. Never put passwords, keys, an SSN, or bank or card numbers in a file or a commit message. Never force-push main. Never start a device login on the shared computer. Never turn on billing for them.
 
-Sources: GitHub sign-up https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github ; two-factor https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa ; creating a repository https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository ; visibility https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility ; large files https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github ; Cursor cloud agents https://cursor.com/docs/cloud-agent .
+Sources: GitHub sign-up https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github ; two-factor https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa ; creating a repository https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository ; visibility https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility ; large files https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github ; Grok CLI https://x.ai/cli .

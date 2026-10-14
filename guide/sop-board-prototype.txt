@@ -1,4 +1,4 @@
-SOP: Getting prototype boards made from a free-tools design. What to send the shop, handing a KiCad design to a shop that uses Altium, and bringing the boards up. Revision 1.
+SOP: Getting prototype boards made from a free-tools design. What to send the shop, handing a KiCad design to a shop that uses Altium, and bringing the boards up. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 

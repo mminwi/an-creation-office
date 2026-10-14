@@ -1,4 +1,4 @@
-SOP: The intake survey. Collecting a large project's facts from its documents in one pass, instead of one question at a time. Revision 1.
+SOP: The intake survey. Collecting a large project's facts from its documents in one pass, instead of one question at a time. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office".
 

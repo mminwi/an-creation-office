@@ -1,4 +1,4 @@
-SOP: Market check: does anyone want it? (b-market-check). Revision 1 (draft, specialists branch) — October 12, 2026.
+SOP: Market check: does anyone want it? (b-market-check). Revision 1 — October 12, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Source: standard customer discovery practice and patent disclosure law (sources below, read through search 2026-10-12); written at Mike's request so inventors check the market before spending on patents and prototypes. Tier: documented; the patent questions go to a patent attorney.
 Read this when an idea is new, before money goes into a patent, a prototype or tooling, and whenever the inventor isn't sure who would buy it.

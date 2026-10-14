@@ -1,25 +1,30 @@
-AN Creation backups and version control. Revision 5 — October 13, 2026. Human page: https://ancreationoffice.com/version-control.html
+AN Creation backups and version control. Revision 6 — October 14, 2026. Human page: https://ancreationoffice.com/version-control.html
 Replaces revision 3 (Google Drive default). The office lives in a private GitHub repository (D-100).
 
 WHY
 AI is new, and it goofs up: a file gets overwritten, two versions get mixed, a chat gets cleared, a bot gets deleted. In practice, going back to an earlier version is close to a daily event. So the office never depends on one copy of anything, and never on the chat.
 
 HOW IT'S KEPT
-- GitHub keeps every version. The project is a private repository (an-creation). Every save is a commit, and GitHub keeps them all: what changed, when, and by whom.
-- Save as you go. Every office saves the same turn things happen, and again at the end of every conversation and every analyst run, with a short note: which invention or job, what changed, who (the office's role, or b-analyst). b-analyst saves its own work. The person doesn't have to do anything.
+- GitHub keeps every committed version. The project is a private repository (an-creation). Each office has its own clone and follows the office-save skill: one commit per turn.
+- The shared procedure library is AN-Creation/sops/library.txt in that repository (mminwi/an-creation), plus AN-Creation/sops/VERSION. One version for every office. library.txt is about 2 MB. Its first line is the Office version. Each file follows on its own, in full, after a marker line `=== FILE: <path> ===`. That includes the resource library (resources.json, resources.txt, planning-resources.*, resource-crosscheck.*, sop-resource-map.txt, and every resources-*.html shelf). Read one section by its marker. To pull standing.txt: awk '$0=="=== FILE: standing.txt ==="{p=1;next} /^=== FILE: /{p=0} p' AN-Creation/sops/library.txt. Use the path you need in place of standing.txt. office-startup reads the library this way. A refresh is one download of https://ancreationoffice.com/library.txt and one commit, with VERSION rewritten beside it. The separate pages stay on the site for people. The rule is https://ancreationoffice.com/version.txt
 - Two kinds of files (D-029). Working files stay current by design and are updated in place: office.txt, business.txt, plan.md, actions.csv, team.csv, the hand-off inboxes, Status and Plan (earlier Status and Plan copies also go to History/). GitHub's history keeps every earlier version of them. Records and outputs are never edited once saved: documents, drawings, pages, analyst runs, record/ entries, released revisions. A change to one is a new dated file or a new revision, and the old one stays exactly as it was.
 - The record. Every conversation and every analyst run is saved in record/ and sessions/, so what was said and decided is not only in a chat. Anything not yet saved is only in the chat.
 Plain words: repository = the project's online folder, commit = a saved checkpoint. Say the real word once, then use it (D-040). Say it to the owner once, in a line: "Your work is saved to GitHub as we go, and GitHub keeps every earlier version."
 
-SAVING (every office and b-analyst, every save)
-1. A save counts only when it is on GitHub. Writing through the GitHub connection saves to GitHub directly. In a cloud terminal, commit and then push; a commit that wasn't pushed is not saved.
-2. Check it. After saving, look on GitHub (main branch) and confirm the new commit is there and the file reads as you wrote it. Do this every time; it is quick.
-3. Quiet when it works. Don't announce saving or committing, and don't mention file names unless asked.
-4. Never quiet when it fails. If a save fails or you can't confirm it, say so in one plain line right away ("That last save didn't reach GitHub. What you told me is still in this chat; I'm trying again."). Try again once. If it still fails, work through https://ancreationoffice.com/github-setup.txt with them, and keep a list in the chat of what isn't saved yet. Never say or suggest something is saved when you haven't confirmed it.
-5. Checkpoint. At the end of every conversation (and before a long analyst run), write one line in your one-page file (office.txt; business.txt for the Business Manager's Office): "Last saved: YYMMDD HH:MM, commit <short id>, <what>". Then confirm it the same way. That line is where a new chat or a re-made bot picks up.
-6. Start of every conversation: check that your "Last saved" commit is on GitHub. If it isn't, or recent work you remember is missing, tell the owner in one line what is missing before going on.
-7. Large files (CAD, video, big photo sets; anything over about 50 MB) stay out of the repository. Record where the original lives (the link, the drive or the supplier) and who holds it, in the job or record folder. A link is not a backup: ask the owner to keep the original safe.
-Setup and troubleshooting: https://ancreationoffice.com/github-setup.txt
+SAVING (every office and b-analyst)
+Follow the office-save skill. This is the office rule it carries out.
+- Your own clone: /workspace/offices/<your role>/an-creation. Never a shared clone, and never /workspace/repo.
+- The GitHub connector is read-only. Looking can use it. Saving cannot.
+- One commit per turn, not one commit per answer. The note says which job, what changed, and the role.
+- pull --rebase before the commit. If the push is rejected, pull --rebase and push again.
+- After the push, read the file back with gh and confirm it matches. Unpushed work is not saved. A push you did not read back is not confirmed.
+- Quiet when it works. A failed save is one plain line to the owner. Never call it saved when the read-back failed.
+- Never force-push main. This free private repository cannot turn on branch protection (that needs GitHub Pro), so you keep the rule.
+- A work branch is named by role, for example b-project-manager/<topic>, and deleted after it merges. Do not open a claude/* or cursor/* branch.
+- End of a conversation: one "Last saved" line in your office.txt (time, commit, what). office-save confirms it.
+- Files over about 50 MB stay out of the repository. Record where the original lives.
+Refreshing the library downloads https://ancreationoffice.com/library.txt once, writes it to AN-Creation/sops/library.txt, and rewrites VERSION (Library version and SOP updates). That is one commit for that library version. office-startup decides whether to refresh. office-save makes the commit. Read a section with the awk line above. The file is about 2 MB, so read one section.
+Setup: https://ancreationoffice.com/github-setup.txt
 
 IF SOMETHING GOES WRONG
 - A file got overwritten, mixed up or deleted: look at the earlier dated files first, then the file's history on GitHub, find the last good version, restore it as a new commit, and say what was restored.
@@ -27,7 +32,7 @@ IF SOMETHING GOES WRONG
 - They lost their phone: sign in to GitHub and their AI app on the new one. The project is in the cloud.
 
 NEVER
-- Never set the office up on a computer's own drive. It must work from the phone, b-analyst must reach it, and a re-made b-project-manager must find it.
+- The record is the private GitHub repository. Each office's working copy is its own clone, /workspace/offices/<role>/an-creation, on the shared computer. Never /workspace/repo, and never a clone shared with another office.
 - Never make the repository public.
 - Never put passwords, keys, an SSN, or bank or card numbers in any project file, issue or commit message.
 - A saved version is not an approval. History does not replace the revision and change records (sop-change-control.txt) or the record of what was sent to whom.

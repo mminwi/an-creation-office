@@ -1,4 +1,4 @@
-AN Creation project folders. Revision 7 — October 13, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
+AN Creation project folders. Revision 8 — October 14, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
 
 One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything, with one folder per invention inside it. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
 
@@ -6,10 +6,11 @@ Layout:
 AN-Creation/
   ideas.txt                     parked ideas, one line each with the date; not projects yet
   AGENTS.md, CLAUDE.md          (at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
-  office.txt                    where the office lives (Home), the office version seen; one b-project-manager runs every invention
+  office.txt                    where the Inventor's Office lives (Home), and its "Office version seen" line. Other offices keep that line in their own office.txt. One b-project-manager runs every invention
   All inventions                one line per invention: where it stands, its next step
   Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), promo-log.csv, record/
-  handoffs/                     one inbox per office, for-<role>.txt (for-b-project-manager.txt, for-b-business-manager.txt, for-b-molding-office.txt ...): work one office leaves for another (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
+  handoffs/                     one inbox per office, for-<role>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
+  sops/                         the bot's procedure library: library.txt (one file, about 2 MB) and VERSION (Library version and SOP updates: auto, ask, or pinned). A refresh is one download of library.txt and one commit. Read one section by its marker. Keep this folder once, shared, not copied into an office folder (https://ancreationoffice.com/version.txt)
   Fishing Lure/                 one folder per invention
     Your files/                 yours to open, read and change
       READ ME FIRST
@@ -56,7 +57,7 @@ Analyst runs. Each run works in its own dated folder, writes DONE.txt when it fi
 
 Several inventions. Each has its own folder, plan and queue. One b-project-manager runs them all (inventions are folders, not bots; https://ancreationoffice.com/sop-team.txt); it names the invention it's on and files each conversation in that invention's record. Starting a parked idea: set up its folder, PROJECT.txt, intake form and first ticket before saying it has started; add it to All inventions; mark the idea started in ideas.txt. Answers never cross between inventions. A fact that applies to two, such as your company, is recorded in each, with its source.
 
-Where it lives. In the cloud, never on a computer's own drive: a private GitHub repository named an-creation, with AN-Creation/ inside it. That way it works from your phone, b-analyst (a cloud agent) can work on it directly, and if b-project-manager is deleted and made again, it finds it. b-project-manager proves it can write there before using it; a connected app is not proof.
+Where it lives. A private GitHub repository named an-creation, with AN-Creation/ inside it. Each office's clone is /workspace/offices/<role>/an-creation. office-save proves a write. The GitHub connector is read-only and is not that proof.
 
 Backups. Records and outputs are never edited once saved (a change is a new dated file or folder); working files like plan.md and Status are updated in place. GitHub keeps every earlier version of both, once a save is confirmed on GitHub. Going back to an earlier version is a normal part of working with AI. See https://ancreationoffice.com/version-control.txt
 

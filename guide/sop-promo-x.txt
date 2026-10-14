@@ -1,4 +1,4 @@
-SOP: X for Mike. How the feed picks posts, replies that build an audience, posts and threads, and using Grok's view of X to find the conversations worth joining. Revision 1.
+SOP: X for Mike. How the feed picks posts, replies that build an audience, posts and threads, and using Grok's view of X to find the conversations worth joining. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check). X changes its ranking and limits often; check the current state before relying on any number.
 

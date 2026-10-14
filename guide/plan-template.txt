@@ -32,7 +32,7 @@ Last updated: [date]
 ## Phase (bots only)
 concept
 The inventor is not told this label. Assistants use it to know which sheets should already be started.
-https://ancreationoffice.com/sop-phases.txt
+https://ancreationoffice.com/sop-stages.txt
 
 ## Active sections
 electronics: off

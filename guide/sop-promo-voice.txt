@@ -1,4 +1,4 @@
-SOP: Writing as Mike Maier. His voice, the rules about what to say and not say, and how to learn from his edits. For posts, replies, comments, emails and messages. Revision 1.
+SOP: Writing as Mike Maier. His voice, the rules about what to say and not say, and how to learn from his edits. For posts, replies, comments, emails and messages. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "Mike" (his stated preference), "office" or "published" (with the source to check).
 
@@ -31,7 +31,7 @@ WHAT NEVER GOES IN (published: press kit key-messages.txt "Never say"; Mike)
 - No user counts, testimonials or success stories: there are none to cite yet. No invented statistics.
 - Not "finished" or "perfect": it's a starting point that keeps improving. AI can be wrong; important results get reviewed.
 - APQP: the offices understand APQP; how formal the paperwork gets is the user's call and what the product requires. Never "APQP on every project".
-- Which AI: written for Grok and Grok bots, so it fits best there; plain written procedures any AI that can read a link can follow. Cost: the offices are free; a SuperGrok subscription (the $30-a-month plan) and a free GitHub account are needed.
+- Which AI: written for Grok and Grok bots, so it fits best there; plain written procedures any AI that can read a link can follow. Cost: the offices are free. The plan and price are on https://ancreationoffice.com/start.html . A free GitHub account is needed.
 - No sales pitch, no "book a call", no services menu. Contact is "business inquiries: mike@advancenowllc.com".
 - No old bot names (Soren, Kasper, Andy and the rest).
 

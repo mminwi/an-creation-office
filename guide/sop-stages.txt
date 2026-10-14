@@ -1,4 +1,4 @@
-SOP: Stages of a project. Revision 10, October 13, 2026. Replaces the silent tripwires in sop-phases.txt once approved.
+SOP: Stages of a project. Revision 10 — October 13, 2026. Replaces the retired phases file (https://ancreationoffice.com/sop-phases.txt).
 For b-analyst. The inventor sees the plain stage names on the status sheet, never numbers or this file.
 
 WHY THIS MUCH PROCESS (from Mike, D-047)

@@ -1,4 +1,4 @@
-SOP: A pneumatic assembly fixture with air-logic controls. Two-hand start, guard locking, cylinders, the fixture itself, machining, and prove-out. Revision 1.
+SOP: A pneumatic assembly fixture with air-logic controls. Two-hand start, guard locking, cylinders, the fixture itself, machining, and prove-out. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office", "published" (with the source to check) or "Mike".
 

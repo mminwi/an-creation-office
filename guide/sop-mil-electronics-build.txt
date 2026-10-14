@@ -1,4 +1,4 @@
-SOP: Building military electronics. Workmanship classes, boards, conformal coating, cables and shielding. Revision 1.
+SOP: Building military electronics. Workmanship classes, boards, conformal coating, cables and shielding. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check; confirm current revisions with IPC and in the contract).
 

@@ -1,4 +1,4 @@
-SOP: Manufacturing cells and work design (b-manufacturing). Revision 1 (draft, specialists branch) — October 12, 2026.
+SOP: Manufacturing cells and work design (b-manufacturing). Revision 1 — October 12, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Source: standard lean practice and ergonomics guidance; Mike: cell manufacturing, the horseshoe (U-shaped cell), the work cell rules and ergonomics are well documented (Mike's notes, kept private). Tier: deep, book-based. Related: guide/toolbox-improvement.txt; manufacturing.txt.
 Read this when a new product goes into production, an assembly or secondary operation is laid out, or a line can't keep up.

@@ -1,4 +1,4 @@
-SOP: Clean power and low EMI on a small board with a switching converter. Layout rules, filtering, measuring ripple, and finding noise without a test lab. Revision 1.
+SOP: Clean power and low EMI on a small board with a switching converter. Layout rules, filtering, measuring ripple, and finding noise without a test lab. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 

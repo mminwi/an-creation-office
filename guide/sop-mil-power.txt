@@ -1,4 +1,4 @@
-SOP: Battery-powered electronics for the project manager. Lithium-ion charging, power paths, USB power, and the questions to ask. Revision 1.
+SOP: Battery-powered electronics for the project manager. Lithium-ion charging, power paths, USB power, and the questions to ask. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 

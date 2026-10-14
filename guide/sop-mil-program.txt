@@ -1,4 +1,4 @@
-SOP: Running a defense hardware project. Program management, AS9100, configuration, first article, qualification, and export control. Revision 1.
+SOP: Running a defense hardware project. Program management, AS9100, configuration, first article, qualification, and export control. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" (how the office works), "published" (with the source to check) or "Mike" (his practice).
 

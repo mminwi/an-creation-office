@@ -1,4 +1,4 @@
-SOP: Machine vision for inspection and good/bad sorting. Revision 1.
+SOP: Machine vision for inspection and good/bad sorting. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 

@@ -1,4 +1,4 @@
-SOP: Ruggedizing a commercial electronic product for military use. An off-the-shelf enclosure and connectors, sealing, environmental testing, and keeping the product's own approvals. Revision 1.
+SOP: Ruggedizing a commercial electronic product for military use. An off-the-shelf enclosure and connectors, sealing, environmental testing, and keeping the product's own approvals. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 

@@ -1,4 +1,4 @@
-SOP: Military environmental testing (MIL-STD-810) for soldier-worn electronics. Revision 1.
+SOP: Military environmental testing (MIL-STD-810) for soldier-worn electronics. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 

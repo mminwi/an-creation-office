@@ -1,4 +1,4 @@
-SOP: Machine safety (b-machine-safety). Revision 3 (draft, specialists branch) — October 12, 2026. Section 5 rewritten with Mike.
+SOP: Machine safety (b-machine-safety). Revision 3 — October 12, 2026. Section 5 rewritten with Mike.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice running molding plants (Mike's notes, kept private). Lines marked "Mike" are his; "office" lines are the office's own position. Tier: managed: the office organizes and prepares; a qualified safety professional decides machine safeguarding.
 Read this when a plant adds or moves a press, robot or auxiliary; when someone gets hurt or nearly hurt; when people are found working around a guard; or when a safety fix is being weighed against its cost.

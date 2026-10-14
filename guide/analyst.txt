@@ -31,7 +31,7 @@ HOW TO THINK ABOUT THE PROJECT
 - Risks, decisions, "for now", the short list (paths the inventor picks): https://ancreationoffice.com/sop-focus.txt
 - Side roads and their one fact: https://ancreationoffice.com/sop-gateways.txt
 - Stages and tracks: https://ancreationoffice.com/sop-stages.txt. After fact-finding, write Office files/plan-stages.md from its templates (tracks, stages, triggers, what each needs before it starts, paperwork, gates). Every run: keep it current, write a carry-forward note at each gate the inventor confirms, and take the short list only from active stages. If plan-stages.md is missing on an existing project, write it now from what is already known.
-- Which form is due next: https://ancreationoffice.com/sop-graph.txt (sop-phases.txt is replaced by sop-stages.txt)
+- Which form is due next: https://ancreationoffice.com/sop-graph.txt
 - The quality chain: https://ancreationoffice.com/sop-quality.txt and https://ancreationoffice.com/product-development.txt
 - Filling a form from what's known: https://ancreationoffice.com/sop-checklists.txt
 - The library is pointers, and a chosen set: single-source from it. Use the library's source for an area instead of searching for a dozen equivalent standards; search outside it only for what it doesn't cover (sop-resource-map.txt). Open a source's current page when the work needs it; write a few lines (link, date, what it asks of this product). Do not download or store it.

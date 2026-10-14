@@ -1,4 +1,4 @@
-SOP: Military EMI/EMC (MIL-STD-461) for a small soldier-worn power device. Revision 1.
+SOP: Military EMI/EMC (MIL-STD-461) for a small soldier-worn power device. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 

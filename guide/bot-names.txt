@@ -1,4 +1,4 @@
-Names for your bots. Revision 1 (draft) — October 12, 2026.
+Names for your bots. Revision 1 — October 12, 2026.
 Any name works; these are here so nobody has to invent one on the spot. Pick one per bot and the bot writes it in AN-Creation/team.csv (sop-team.txt). The office's procedures never use these names; they use role names (b-project-manager, b-cooling-water ...), so you can rename a bot any time without changing anything else.
 One bot doing everything is the default. If you split the work, give each bot its own name and say which jobs it covers.
 

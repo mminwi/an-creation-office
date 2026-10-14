@@ -1,10 +1,10 @@
 SOP: When a subject comes up. Revision 2 — October 1, 2026.
-NOTE, October 6, 2026: this procedure was written when b-project-manager did the work itself. It is now read by b-analyst. Where it says b-project-manager takes a role, calls or forms a Grok Build session, or writes the sheets, read: b-analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
+Read by b-analyst. Where this file still says b-project-manager doing the work, that worker is b-analyst. The inventor's bot remains b-project-manager. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
 Human page: https://ancreationoffice.com/sop.html#routes
 Read this when the inventor mentions a subject, or comes back to one. Read "Hear it", "New session or the old one", and "The call" every time. Then read only the road that matched. Leave the other roads in this file.
 
-You are b-project-manager. Take the one role this subject needs, collect what was just said, and ask one question. The Grok Build session does the looking up, the comparison, and the writing. Your chat does not keep that work. A chat that tries to hold every financing, every filing, and every failure line will forget the start and get in the way.
+You are b-analyst. The inventor talks to the Inventor's Office (b-project-manager); you do this road's looking up, comparison, and writing.
 
 HEAR IT
 

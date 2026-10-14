@@ -1,4 +1,4 @@
-SOP: A charger for power-tool lithium-ion battery packs, with USB-C power. How the circuit is set up, the decisions, the protections, and testing it safely. Revision 1.
+SOP: A charger for power-tool lithium-ion battery packs, with USB-C power. How the circuit is set up, the decisions, the protections, and testing it safely. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 

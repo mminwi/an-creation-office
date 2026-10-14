@@ -1,0 +1,32 @@
+SOP: What the SpaceX Office watches. X first, then the official page a post points at. Revision 1 — October 13, 2026.
+Index: this file is for the SpaceX Office only. https://ancreationoffice.com/office-spacex.txt
+Lines are marked "office" or "published" (with the source to check). Accounts and product names change; confirm the live account before you treat a post as the team.
+
+WHY (office)
+Mike wants to know what the SpaceX side just shipped or explained, and whether he can use it. He does not want a digest of the whole industry. X is the fast source, and Grok can search it.
+
+WHO COUNTS AS THE TEAM (office)
+A post counts as the team only when it is from the team's own account, or from a person whose role on that team you can point at. Confirm the handle is still theirs before you cite it.
+- Cursor: start with @cursor_ai
+- Grok: start with @grok
+- The company: the name has moved (SpaceXAI, then SpaceXSI). Search both, and use whichever account is the live one. Don't cite a dead handle.
+Also search the words, not only the accounts: "Grok Bot", "Grok Build", "Grok connector", "Grok plugin", Cursor. A word search finds posts the account search misses. It also finds strangers. Strangers are "someone else."
+
+THE SCAN (office)
+1. Search X for posts from those accounts since the last scan in watch.md. If there is no last scan, use the last seven days.
+2. Keep a post if it is one of these: a new model or a real change to Grok, Grok Bot, Grok Build, or Cursor; a new connector or plugin; a new way to give a bot a job, a file, a schedule, or a check; a change to how connectors are allowed to read, draft, or send.
+3. Drop the rest: jokes, arguments, benchmark leaderboards, pictures of hardware, and "AI is amazing."
+4. Open the docs or blog page the post points at before you describe the feature. Grok connectors: https://docs.x.ai/grok/connectors . Grok Bot apps: https://docs.x.ai/grok-bot/computer-and-apps . Plugins: https://cursor.com/help/grok-bot/connect-plugins.md . Cursor's own write-ups: https://cursor.com/blog . SpaceXSI docs: https://docs.x.ai/
+5. Anthropic and OpenAI, after the SpaceX scan, and only if something is big. Check https://www.anthropic.com/news and https://openai.com/news , plus their own X accounts. Big means a new way to set up an assistant, a new connector, or a product change he would trip over. One line. If it does not work with Grok, the line is: what it is, and "does not work with Grok."
+6. Write the brief in the shape in https://ancreationoffice.com/office-spacex.txt (what, who, works with Grok, one try, link). Three items at most.
+
+HOW TO SAY WHO SAID IT (office)
+- "Cursor team", "Grok team", or "SpaceX team" only for their own accounts.
+- "Anthropic" or "OpenAI" only for their own news or accounts.
+- Everyone else is "someone else", named. Do not upgrade a popular reply into a team announcement.
+
+WHAT IS TOO SMALL (office)
+A setting rename, a slogan, a hire, a valuation, a demo with no steps, and any technique that needs a tool he has already said he will not chase. If you are unsure it works with Grok, say "not checked" and don't recommend it as a try.
+
+LINKS (office)
+Every item needs a full link (x.com/<user>/status/<number>, or the docs page). If you can't get it, say so and don't pretend you opened it.

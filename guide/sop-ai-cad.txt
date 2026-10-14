@@ -1,4 +1,4 @@
-SOP: Getting the most out of Claude and Codex on CAD work. Driving SOLIDWORKS (and KiCad) with an AI coding agent: the setup, the brief, and the checks. Revision 1.
+SOP: Getting the most out of Claude and Codex on CAD work. Driving SOLIDWORKS (and KiCad) with an AI coding agent: the setup, the brief, and the checks. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 

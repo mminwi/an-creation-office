@@ -1,4 +1,4 @@
-The improvement toolbox: Lean, 5S, Six Sigma and the rest. Revision 1 (draft, specialists branch) — October 12, 2026.
+The improvement toolbox: Lean, 5S, Six Sigma and the rest. Revision 1 — October 12, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Why (Mike): Lean, 5S, Six Sigma, Lean Six Sigma and the Toyota Production System borrow from each other. They are all good problem-solving tools, worth knowing, and all of them belong in the office's arsenal. The names change; the tools are tried and true.
 How to use it: start from the kind of problem (left), pick a tool, then open the source for the method. The one-line descriptions here are orientation only; the method lives in the sources. Projects that are data-heavy and cross departments run as Six Sigma projects (sop-six-sigma.txt).

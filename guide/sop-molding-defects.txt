@@ -1,4 +1,4 @@
-SOP: Molding defect troubleshooting (b-molding-defects). Revision 1 (draft, specialists branch) — October 12, 2026.
+SOP: Molding defect troubleshooting (b-molding-defects). Revision 1 — October 12, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice (his own notes on defects, cooling water, drying and scientific molding, kept private). Lines marked "Mike" are his; "published" lines cite the guide; "office" lines are the office's. Tier: deep.
 Read this when parts show a defect, scrap rises, or a customer complains about appearance, dimensions or cracking.

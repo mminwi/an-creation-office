@@ -1,4 +1,4 @@
-SOP: A sealed, shielded aluminum enclosure. Conductive gaskets, compression and stack-up, finishes, galvanic compatibility, and bonding. Revision 1.
+SOP: A sealed, shielded aluminum enclosure. Conductive gaskets, compression and stack-up, finishes, galvanic compatibility, and bonding. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office", "published" (with the source to check) or "Mike".
 

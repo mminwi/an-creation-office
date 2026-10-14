@@ -1,4 +1,4 @@
-SOP: Controls for an automation machine. PLC, servo motion, the control panel, machine states, networks. Revision 1.
+SOP: Controls for an automation machine. PLC, servo motion, the control panel, machine states, networks. Revision 1 — October 13, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office", "published" (with the source to check) or "Mike".
 

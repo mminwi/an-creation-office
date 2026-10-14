@@ -1,4 +1,4 @@
-SOP: Lean Six Sigma projects (b-six-sigma). Revision 1 (draft, specialists branch) — October 12, 2026.
+SOP: Lean Six Sigma projects (b-six-sigma). Revision 1 — October 12, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice (Mike's notes, kept private). Lines marked "Mike" are his; "published" lines cite the library; "office" lines are the office's. Tier: deep.
 Read this when a problem keeps coming back, scrap or cost won't come down, the causes are hard to pin down, or two departments disagree on the fix. Statistics: https://github.com/mminwi/an-creation-office/blob/main/specialists/calcs/six_sigma.py. One-page summary: guide/template-a3.txt. The wider toolbox (Lean, 5S, Six Sigma, TPS tools by need): guide/toolbox-improvement.txt.

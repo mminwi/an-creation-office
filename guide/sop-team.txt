@@ -1,39 +1,65 @@
-SOP: The offices. Role names, the team file, how the offices work together, who tracks and who judges, and the first and second looks. Revision 4 — October 13, 2026. Hand-offs: one inbox per office, all in AN-Creation/handoffs/. The office is now six offices, one bot each; specialists come with their office.
+SOP: The offices. Role names, the team file, how the offices work together, who tracks and who judges, and the first and second looks. Revision 5 — October 14, 2026. Each office is one bot. Specialists come with their office. Hand-offs follow the office-handoff skill.
 Index: https://ancreationoffice.com/sop.txt
 Read this when setting up an office, when the owner adds, renames or removes an office, when work belongs to another office, and when a project needs its first look or a second look at a gate.
 
 THE OFFICES (one bot each; the owner names each bot)
-- Inventor's Office (role b-project-manager): every invention, from first conversation through launch; market check, design, prototyping, design for manufacturing, product safety. https://ancreationoffice.com/standing.txt
-- Business Manager's Office (role b-business-manager): the company, patent preparation, name and trademark, licensing, funding, website and promotion, getting into stores. https://ancreationoffice.com/business-manager.txt
+The public pages link the offices anyone can start. Those pages are offices.html, the nav, sop.txt, the sitemap, and the press kit. Do not add the other offices there, and do not send a stranger to one.
+- Inventor's Office (role b-project-manager): every invention, from first conversation through launch. https://ancreationoffice.com/standing.txt
+- Business Manager's Office (role b-business-manager): the company, patent preparation, name and trademark, licensing, funding, the website, search, and listings. Posts and audience are not this office. https://ancreationoffice.com/business-manager.txt
 - Molding Plant Office (role b-molding-office): scientific molding, defects, cooling water, drying and regrind, mold buying, materials, machine safety. https://ancreationoffice.com/office-molding.txt
 - Plastic Design Office (role b-plastic-design-office): plastic part design, tolerance stacks, materials, design for molding, prototypes, the mold. https://ancreationoffice.com/office-plastic-design.txt
-- Quality Office (role b-quality-office): quality planning (APQP, FMEA, control plans), measurement and inspection, Lean Six Sigma. https://ancreationoffice.com/office-quality.txt
-- Manufacturing Office (role b-manufacturing-office): cells and standard work, purchasing, cost and BOM, automation, machine safety, Lean Six Sigma. https://ancreationoffice.com/office-manufacturing.txt
-- b-analyst is not an office: it is the helper any office runs for heavy work (Grok Build by default).
-The specialists inside each office are fixed; the owner picks offices, not specialists. Each office page shows what it brings: https://ancreationoffice.com/offices.html
+- Quality Office (role b-quality-office): quality planning, measurement and inspection, Lean Six Sigma. https://ancreationoffice.com/office-quality.txt
+- Manufacturing Office (role b-manufacturing-office): cells and standard work, purchasing, cost and BOM, automation, machine safety. https://ancreationoffice.com/office-manufacturing.txt
+These offices are documented the same way and are not on those public pages:
+- Promotion Office (role b-promotion-office): posts, replies, and audience. https://ancreationoffice.com/office-promotion.txt
+- SpaceX Office (role b-spacex-office): the SpaceX watch. Scout is retired. https://ancreationoffice.com/office-spacex.txt
+- Automation Machine Office (role b-automation-machine). https://ancreationoffice.com/office-automation-machine.txt
+- Charger Board Office (role b-charger-board). https://ancreationoffice.com/office-charger-board.txt
+- MIL Battery Office (role b-mil-battery). https://ancreationoffice.com/office-mil-battery.txt
+- Pneumatic Fixture Office (role b-pneumatic-fixture). https://ancreationoffice.com/office-pneumatic-fixture.txt
+- Rugged Enclosure Office (role b-rugged-enclosure). https://ancreationoffice.com/office-rugged-enclosure.txt
+- b-analyst is not an office. It is the helper any office runs for heavy work, with the grok command in that office's Shell (github-setup.txt).
+The owner picks offices, not specialists. Never create a bot on your own.
+
+ONE OWNER
+The owner column of team.csv names one owner for a job.
+- Posts, replies, and audience: b-promotion-office.
+- Website, search, and listings: b-business-manager.
+- The SpaceX watch: b-spacex-office.
+Do not give one of those jobs to a second office.
 
 ROLE NAMES (every procedure)
-- A procedure never uses a personal name for a bot. It names the role: a small b, a dash, and what the role does, all lower case: b-project-manager, b-business-manager, b-molding-office, b-design, b-six-sigma.
-- The b-name says what the role is and nothing else. It is not a name to show the owner.
-- The owner names each office bot in Grok. Bots never ask about names; a bot that doesn't know its name writes the office name in its team.csv row. Name ideas: https://ancreationoffice.com/bot-names.txt A bot talks under that name and reads every procedure by its b-name. Renaming a bot changes one cell in the team file and nothing else.
+- A procedure never uses a personal name for a bot. It names the role: a small b, a dash, and what the role does, all lower case.
+- The owner names each office bot in Grok. Bots never ask about names. A bot that doesn't know its name writes the office name in its team.csv row. Name ideas: https://ancreationoffice.com/bot-names.txt
+- Renaming a bot changes one cell in the team file. The bot does not rename itself.
 
 THE TEAM FILE: AN-Creation/team.csv
-Template: https://ancreationoffice.com/template-team.csv . One row per office bot. Columns: name (the owner's choice), covers (the office's role), reports_to (blank), platform (where it runs), notes.
-- Each office adds or updates its own row on its first conversation. The analyst gets a row too.
+Template: https://ancreationoffice.com/template-team.csv . One row per office bot. Columns: name, covers (the role), reports_to, platform, owner, notes.
+- platform is Grok for an office bot.
+- Each office adds or updates its own row on its first conversation, by the office-startup skill. The analyst gets a row too.
 - A bot reads team.csv at the start of every conversation, so it knows which other offices exist and what they're called.
-- Adding, renaming or removing an office is the owner's call. Never create a bot on your own; when work clearly needs an office they don't have, say so once, with its page, and record the item.
+- Adding, renaming, or removing an office is the owner's call.
 
 HAND-OFFS BETWEEN OFFICES
-Every office has exactly one inbox, all in one folder: AN-Creation/handoffs/for-<role>.txt, the role exactly as it is written in team.csv. Nothing else is an inbox.
+Follow the office-handoff skill. This is the office rule it carries out.
+Every office has one inbox: AN-Creation/handoffs/for-<role>.txt
   Inventor's Office            AN-Creation/handoffs/for-b-project-manager.txt
   Business Manager's Office    AN-Creation/handoffs/for-b-business-manager.txt
   Molding Plant Office         AN-Creation/handoffs/for-b-molding-office.txt
   Plastic Design Office        AN-Creation/handoffs/for-b-plastic-design-office.txt
   Quality Office               AN-Creation/handoffs/for-b-quality-office.txt
   Manufacturing Office         AN-Creation/handoffs/for-b-manufacturing-office.txt
-Sending: add one line to the other office's inbox: YYMMDD | from <your role> | what | why | open. Save it and check it reached GitHub (the push worked, not just a local commit). Then tell the owner in one line which office it's for, by that bot's name from team.csv, and that it picks the item up the next time they open that office. Offices don't start each other: the owner opening the other office is what moves the job. If the owner doesn't have that office, say so once, with its page, and keep the item on your own plan instead of writing to an inbox nobody reads.
-Receiving: at the start of every conversation, read your own inbox. Put each line ending "open" on your plan, change "open" to "taken YYMMDD", and mention new items to the owner in one line. Never delete lines: "taken" is how the sender and the owner see that it arrived.
-Older projects (once, whichever office finds them first): if AN-Creation/Business still has any of for-project-manager.txt, for-business-manager.txt, for-soren.txt or for-kasper.txt, move every line into the matching inbox (for-project-manager and for-soren into AN-Creation/handoffs/for-b-project-manager.txt; for-business-manager and for-kasper into AN-Creation/handoffs/for-b-business-manager.txt), ending each moved line with "| open" unless it is already on a plan, then delete the old file. One commit, one line to the owner saying the hand-offs were moved.
+  Promotion Office             AN-Creation/handoffs/for-b-promotion-office.txt
+  SpaceX Office                AN-Creation/handoffs/for-b-spacex-office.txt
+  Automation Machine Office    AN-Creation/handoffs/for-b-automation-machine.txt
+  Charger Board Office         AN-Creation/handoffs/for-b-charger-board.txt
+  MIL Battery Office           AN-Creation/handoffs/for-b-mil-battery.txt
+  Pneumatic Fixture Office     AN-Creation/handoffs/for-b-pneumatic-fixture.txt
+  Rugged Enclosure Office      AN-Creation/handoffs/for-b-rugged-enclosure.txt
+On the first conversation, if your inbox file is missing, create it (one header line, then the hand-off lines) and let office-save commit it.
+Sending is one inbox line plus a SendToAgent ping to that bot, so the work is not waiting until someone opens it. The receiving office marks the line taken when it is on the plan, and done when it is finished. Lines are never deleted. If you cannot ping that bot, tell the owner the line and the bot's name. If the owner doesn't have that office, say so once and keep the item on your own plan.
+Receiving: office-startup reads your inbox. Put new lines on your plan and mark them.
+Legacy names, once, whichever office finds them first: for-project-manager.txt, for-business-manager.txt, for-soren.txt, and for-kasper.txt (those last two are legacy filenames). Move their lines into for-b-project-manager.txt or for-b-business-manager.txt, then delete the old file. One commit.
 
 WHO TRACKS AND WHO JUDGES
 Every job has a tracker and a judge.

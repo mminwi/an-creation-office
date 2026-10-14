@@ -1,4 +1,4 @@
-SOP: Mold cooling water (b-cooling-water). Revision 9 (draft, specialists branch) — October 12, 2026. Plant sizing, the looped header, and towers and outdoor units added from Mike's notes; hydraulic and feed throat allowances from published chiller-maker guidance.
+SOP: Mold cooling water (b-cooling-water). Revision 9 — October 12, 2026. Plant sizing, the looped header, and towers and outdoor units added from Mike's notes; hydraulic and feed throat allowances from published chiller-maker guidance.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice from years of building and running injection molds (Mike's notes, kept private). Lines marked "Mike" are his practice; lines marked "physics" are standard heat transfer; anything else the office adds is marked "office". Tier: deep.
 Read this when a mold is being designed or quoted, a mold runs hot, cycles long, warps, sticks, binds or galls, or a plant is sizing chillers, towers or pumps. Calculation: https://github.com/mminwi/an-creation-office/blob/main/specialists/calcs/cooling_water.py (input format: example-cooling-input.json).
