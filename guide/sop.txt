@@ -34,7 +34,8 @@ FIRST
 0. Specialist procedure: AI-assisted CAD (b-ai-cad): getting Claude Code and Codex to do SOLIDWORKS and KiCad work, the brief, and the checks. https://ancreationoffice.com/sop-ai-cad.txt
 0. Specialist procedure: Plastic material selection (b-plastic-materials): chemical compatibility first. https://ancreationoffice.com/sop-material-selection.txt
 0. Specialist procedure: Manufacturing cells and work design (b-manufacturing): takt, U-cells, standard work, ergonomics. https://ancreationoffice.com/sop-manufacturing-cell.txt
-0. GitHub and b-analyst for beginners: account, private repository, connecting it, the analyst (Grok Build by default; Cursor, Codex or Claude Code optional), and troubleshooting. https://ancreationoffice.com/github-setup.txt
+0. The default project home: connecting Google Drive, the AN-Creation folder, saving and read-back, and the analyst (Grok Build). https://ancreationoffice.com/drive-setup.txt
+0. Optional add-on for people who write code: private GitHub repository, clones, the analyst, and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
 FOR b-business-manager (the business manager)
 K1. b-business-manager: the company. Name checks, forming an LLC, tax ID, bank account, insurance, licenses, yearly upkeep. https://ancreationoffice.com/sop-company.txt
