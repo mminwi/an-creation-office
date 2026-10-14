@@ -138,10 +138,11 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`design-principles.txt`](guide/design-principles.txt) | DESIGN PRINCIPLES: PEOPLE, FORM AND USE | [live](https://ancreationoffice.com/design-principles.txt) |
 | [`design-review.txt`](guide/design-review.txt) | AN CREATION — SHORT DESIGN AND FAILURE REVIEW — TEMPLATE REV 1 | [live](https://ancreationoffice.com/design-review.txt) |
 | [`design-risk.txt`](guide/design-risk.txt) | AN Creation — Design risk and troubleshooting. Revision 1, September 30, 2026. | [live](https://ancreationoffice.com/design-risk.txt) |
+| [`drive-setup.txt`](guide/drive-setup.txt) | AN Creation: Google Drive setup. Revision 1 — October 14, 2026. | [live](https://ancreationoffice.com/drive-setup.txt) |
 | [`handoff-log.csv`](guide/handoff-log.csv) | Worksheet / table (CSV): handoff_id, sent_date, sender, recipient... | [live](https://ancreationoffice.com/handoff-log.csv) |
 | [`inventors-office.html`](guide/inventors-office.html) | Page: the Inventor'S Office: what's inside and the message to start it | [live](https://ancreationoffice.com/inventors-office.html) |
 | [`ip-ratings.txt`](guide/ip-ratings.txt) | IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and  | [live](https://ancreationoffice.com/ip-ratings.txt) |
-| [`library.txt`](guide/library.txt) | 261014.1 | [live](https://ancreationoffice.com/library.txt) |
+| [`library.txt`](guide/library.txt) | 261014.2 | [live](https://ancreationoffice.com/library.txt) |
 | [`manufacturing-office.html`](guide/manufacturing-office.html) | Page: the Manufacturing Office: what's inside and the message to start it | [live](https://ancreationoffice.com/manufacturing-office.html) |
 | [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The | [live](https://ancreationoffice.com/manufacturing.txt) |
 | [`molding-office.html`](guide/molding-office.html) | Page: the Molding Office: what's inside and the message to start it | [live](https://ancreationoffice.com/molding-office.html) |
@@ -188,7 +189,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`sop-mil-environmental.txt`](guide/sop-mil-environmental.txt) | SOP: Military environmental testing (MIL-STD-810) for soldier-worn electronics. Revision 1 — October 13, 2026. | [live](https://ancreationoffice.com/sop-mil-environmental.txt) |
 | [`sop-mil-power.txt`](guide/sop-mil-power.txt) | SOP: Battery-powered electronics for the project manager. Lithium-ion charging, power paths, USB power, and th | [live](https://ancreationoffice.com/sop-mil-power.txt) |
 | [`sop-mil-program.txt`](guide/sop-mil-program.txt) | SOP: Running a defense hardware project. Program management, AS9100, configuration, first article, qualificati | [live](https://ancreationoffice.com/sop-mil-program.txt) |
-| [`sop-office.txt`](guide/sop-office.txt) | SOP: Set up b-project-manager and b-analyst. Revision 11 — October 14, 2026. | [live](https://ancreationoffice.com/sop-office.txt) |
+| [`sop-office.txt`](guide/sop-office.txt) | SOP: Set up b-project-manager and b-analyst. Revision 12 — October 14, 2026. | [live](https://ancreationoffice.com/sop-office.txt) |
 | [`sop-pneumatic-fixture.txt`](guide/sop-pneumatic-fixture.txt) | SOP: A pneumatic assembly fixture with air-logic controls. Two-hand start, guard locking, cylinders, the fixtu | [live](https://ancreationoffice.com/sop-pneumatic-fixture.txt) |
 | [`sop-promo-audience.txt`](guide/sop-promo-audience.txt) | SOP: Building Mike's audience. Positioning, the topics he's known for, a weekly rhythm, the numbers to watch,  | [live](https://ancreationoffice.com/sop-promo-audience.txt) |
 | [`sop-promo-channels.txt`](guide/sop-promo-channels.txt) | SOP: Other ways to get the word out. Reddit, Hacker News, Product Hunt, YouTube, podcasts, press, newsletters, | [live](https://ancreationoffice.com/sop-promo-channels.txt) |
@@ -200,7 +201,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`sop-spacex-practice.txt`](guide/sop-spacex-practice.txt) | SOP: Turning one finding into something Mike can use. Revision 1 — October 13, 2026. | [live](https://ancreationoffice.com/sop-spacex-practice.txt) |
 | [`sop-spacex-watch.txt`](guide/sop-spacex-watch.txt) | SOP: What the SpaceX Office watches. X first, then the official page a post points at. Revision 1 — October 13 | [live](https://ancreationoffice.com/sop-spacex-watch.txt) |
 | [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 12 — October 13, 2026. | [live](https://ancreationoffice.com/sop.txt) |
-| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261014.1 | [live](https://ancreationoffice.com/sops-manifest.txt) |
+| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261014.2 | [live](https://ancreationoffice.com/sops-manifest.txt) |
 | [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's form | [live](https://ancreationoffice.com/status-template.txt) |
 | [`survey-automation-machine.csv`](guide/survey-automation-machine.csv) | Worksheet / table (CSV): id, section, question, why... | [live](https://ancreationoffice.com/survey-automation-machine.csv) |
 | [`survey-fill-instructions.txt`](guide/survey-fill-instructions.txt) | Instructions for the AI filling an AN Creation intake survey. Give these to the AI along with the survey file  | [live](https://ancreationoffice.com/survey-fill-instructions.txt) |
@@ -216,7 +217,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`test-planning.txt`](guide/test-planning.txt) | Plan the test before the build — REV 1 — 2026-09-30 | [live](https://ancreationoffice.com/test-planning.txt) |
 | [`test-report-template.txt`](guide/test-report-template.txt) | AN CREATION — TEST REPORT TEMPLATE — REV 1 | [live](https://ancreationoffice.com/test-report-template.txt) |
 | [`using-other-ais.txt`](guide/using-other-ais.txt) | AN Creation: using Claude, ChatGPT (Codex), Cursor, or another AI. Revision 2 — October 14, 2026. | [live](https://ancreationoffice.com/using-other-ais.txt) |
-| [`version-control.txt`](guide/version-control.txt) | AN Creation backups and version control. Revision 6 — October 14, 2026. Human page: https://ancreationoffice.c | [live](https://ancreationoffice.com/version-control.txt) |
+| [`version-control.txt`](guide/version-control.txt) | AN Creation backups and version control. Revision 7 — October 14, 2026. Human page: https://ancreationoffice.c | [live](https://ancreationoffice.com/version-control.txt) |
 
 ## The specialists
 

@@ -3,10 +3,10 @@ For someone who has never done this. You need a phone, about an hour, and two ac
 
 WHAT YOU NEED
 1. A SuperGrok subscription (the plan and price: https://ancreationoffice.com/start.html). It includes Grok bots and Grok Build. This one account runs the whole office.
-2. A free GitHub account. GitHub is a private online folder that keeps every version of your project.
+2. A Google account (most people have one). Your project lives in a private folder in your Google Drive.
 
 THE STEPS
-1. Install the Grok app and the GitHub app on your phone, and sign in to Grok.
+1. Install the Grok app on your phone and sign in.
 2. Make a new Grok bot and name it anything you like (short and familiar is easiest). Then paste this, exactly:
 
    You are my Inventor's Office for AN Creation (role: b-project-manager).
@@ -16,15 +16,15 @@ THE STEPS
    Read your profile back to me to confirm.
    Then read and follow your office file: https://ancreationoffice.com/standing.txt
    If you cannot open a link, ask me to paste the text.
-   If I have no project folder yet, help me set it up, one step at a time: https://ancreationoffice.com/sop-office.txt
+   If I have no project folder yet, help me set it up in my Google Drive, one step at a time: https://ancreationoffice.com/sop-office.txt
    Then run office-setup-check and tell me the results.
    Then ask what I want to work on. One question at a time.
 
-3. From there, the bot walks you through it one step at a time: making your GitHub account and your private folder, connecting them, and testing that it can save your work. It never asks for your passwords; you type those yourself.
+3. From there, the bot walks you through it one step at a time: connecting your Google Drive, making your private project folder, and testing that it can save your work. It never asks for your passwords; you type those yourself.
 4. When it's set up, just talk to it like texting: tell it about your idea, answer its questions, and say "What's next?" whenever you come back.
 
 IF YOU GET STUCK
 - Tell the bot exactly what you see on the screen; it has a troubleshooting list.
-- Nothing is lost: GitHub keeps every version.
+- Nothing is lost: your office keeps a dated copy before any big change, and Google Drive keeps earlier versions.
 
 Already use Claude, ChatGPT or Cursor and want to use them instead? That works too: https://ancreationoffice.com/using-other-ais.txt . You don't need them.

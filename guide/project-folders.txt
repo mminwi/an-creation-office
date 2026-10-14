@@ -1,16 +1,16 @@
-AN Creation project folders. Revision 8 — October 14, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
+AN Creation project folders. Revision 9 — October 14, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
 
 One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything, with one folder per invention inside it. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
 
 Layout:
 AN-Creation/
   ideas.txt                     parked ideas, one line each with the date; not projects yet
-  AGENTS.md, CLAUDE.md          (at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
+  AGENTS.md, CLAUDE.md          (GitHub add-on only, at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
   office.txt                    where the Inventor's Office lives (Home), and its "Office version seen" line. Other offices keep that line in their own office.txt. One b-project-manager runs every invention
   All inventions                one line per invention: where it stands, its next step
   Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), promo-log.csv, record/
   handoffs/                     one inbox per office, for-<role>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
-  sops/                         the bot's procedure library: library.txt (one file, about 2 MB) and VERSION (Library version and SOP updates: auto, ask, or pinned). A refresh is one download of library.txt and one commit. Read one section by its marker. Keep this folder once, shared, not copied into an office folder (https://ancreationoffice.com/version.txt)
+  sops/                         the bot's procedure library: library.txt (one file, about 2 MB) and VERSION (Library version and SOP updates: auto, ask, or pinned). A refresh is one download of library.txt, saved over the old one. Read one section by its marker. Keep this folder once, shared, not copied into an office folder (https://ancreationoffice.com/version.txt)
   Fishing Lure/                 one folder per invention
     Your files/                 yours to open, read and change
       READ ME FIRST
@@ -34,7 +34,7 @@ AN-Creation/
       forms/INDEX.csv           one line per form: what it covers, status counts, last change
       mirror/                   text pulled once from each record item
       sessions/YYMMDD-HHMM-slug/   one per analyst run: prompt, notes, result, DONE.txt
-      (no inventor-copy/ on GitHub: the history shows what the inventor changed)
+      (no inventor-copy/: Drive version history, or GitHub history, shows what the inventor changed)
       archive/
 
 Only the project lives here. How b-project-manager and b-analyst work (procedures, prompts, instructions) stays on the website and is read from there every time; none of it is copied into this folder. A template copied in to be filled out (a form, the plan) is a project file from then on: dated, and never overwritten by a newer template.
@@ -43,7 +43,7 @@ Source of truth: Office files plan.md, forms/ and record/. Your files are produc
 
 Dated folders. Nothing made for you is written over. Each analyst run works in its own dated folder and leaves it as it was. Each page, picture, render, drawing and timeline goes in its own dated folder; an update is a new folder. Before Status or Plan is regenerated, the old copy goes to History/. It uses more space, and it means you can always go back and look.
 
-Your format. At setup b-project-manager asks whether you want plain pages that read well on GitHub (Markdown) or Word and Excel files you download. Your files use that format. Office files use whatever suits the assistants. PDF only for things sent out or kept as issued. You can change your mind; the files are regenerated.
+Your format. At setup b-project-manager asks whether you want plain pages (Markdown, readable on a phone) or Word and Excel files you download. Your files use that format. Office files use whatever suits the assistants. PDF only for things sent out or kept as issued. You can change your mind; the files are regenerated.
 
 The record, two ways. Office files keep everything as received, including full meeting and conversation transcripts. Your files keep the same dated events in readable form: the email, the document, and a typed-up summary of each meeting or conversation instead of the transcript.
 
@@ -57,8 +57,8 @@ Analyst runs. Each run works in its own dated folder, writes DONE.txt when it fi
 
 Several inventions. Each has its own folder, plan and queue. One b-project-manager runs them all (inventions are folders, not bots; https://ancreationoffice.com/sop-team.txt); it names the invention it's on and files each conversation in that invention's record. Starting a parked idea: set up its folder, PROJECT.txt, intake form and first ticket before saying it has started; add it to All inventions; mark the idea started in ideas.txt. Answers never cross between inventions. A fact that applies to two, such as your company, is recorded in each, with its source.
 
-Where it lives. A private GitHub repository named an-creation, with AN-Creation/ inside it. Each office's clone is /workspace/offices/<role>/an-creation. office-save proves a write. The GitHub connector is read-only and is not that proof.
+Where it lives. By default, one private Google Drive folder named AN-Creation, with this layout inside (https://ancreationoffice.com/drive-setup.txt). Each office keeps a working copy of the library at /workspace/offices/<role>/sops/library.txt. office-save proves a write by reading it back. For offices or people who write code, the same AN-Creation/ can live in a private GitHub repository named an-creation instead, with one clone per office at /workspace/offices/<role>/an-creation (https://ancreationoffice.com/github-setup.txt). office.txt says which: "Home: Google Drive AN-Creation" or "Home: GitHub <username>/an-creation". No Home: line: GitHub if /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive.
 
-Backups. Records and outputs are never edited once saved (a change is a new dated file or folder); working files like plan.md and Status are updated in place. GitHub keeps every earlier version of both, once a save is confirmed on GitHub. Going back to an earlier version is a normal part of working with AI. See https://ancreationoffice.com/version-control.txt
+Backups. Records and outputs are never edited once saved (a change is a new dated file or folder); working files like plan.md and Status are updated in place. Google Drive keeps earlier versions of each file for a while, and a dated copy goes to History/ before any major change (on GitHub, every commit is kept). Going back to an earlier version is a normal part of working with AI. See https://ancreationoffice.com/version-control.txt
 
 Template. https://ancreationoffice.com/plan-template.txt contains a blank plan. Do not replace an existing plan with a blank one.

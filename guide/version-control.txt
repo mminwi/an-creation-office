@@ -1,41 +1,43 @@
-AN Creation backups and version control. Revision 6 — October 14, 2026. Human page: https://ancreationoffice.com/version-control.html
-Replaces revision 3 (Google Drive default). The office lives in a private GitHub repository (D-100).
+AN Creation backups and version control. Revision 7 — October 14, 2026. Human page: https://ancreationoffice.com/version-control.html
+Google Drive is the default home again (Office version 261014.2). GitHub stays a full, supported option for offices or people who write code; offices already on GitHub keep working as written under IF THIS OFFICE USES GITHUB.
 
 WHY
 AI is new, and it goofs up: a file gets overwritten, two versions get mixed, a chat gets cleared, a bot gets deleted. In practice, going back to an earlier version is close to a daily event. So the office never depends on one copy of anything, and never on the chat.
 
 HOW IT'S KEPT
-- GitHub keeps every committed version. The project is a private repository (an-creation). Each office has its own clone and follows the office-save skill: one commit per turn.
-- The shared procedure library is AN-Creation/sops/library.txt in that repository (mminwi/an-creation), plus AN-Creation/sops/VERSION. One version for every office. library.txt is about 2 MB. Its first line is the Office version. Each file follows on its own, in full, after a marker line `=== FILE: <path> ===`. That includes the resource library (resources.json, resources.txt, planning-resources.*, resource-crosscheck.*, sop-resource-map.txt, and every resources-*.html shelf). Read one section by its marker. To pull standing.txt: awk '$0=="=== FILE: standing.txt ==="{p=1;next} /^=== FILE: /{p=0} p' AN-Creation/sops/library.txt. Use the path you need in place of standing.txt. office-startup reads the library this way. A refresh is one download of https://ancreationoffice.com/library.txt and one commit, with VERSION rewritten beside it. The separate pages stay on the site for people. The rule is https://ancreationoffice.com/version.txt
-- Two kinds of files (D-029). Working files stay current by design and are updated in place: office.txt, business.txt, plan.md, actions.csv, team.csv, the hand-off inboxes, Status and Plan (earlier Status and Plan copies also go to History/). GitHub's history keeps every earlier version of them. Records and outputs are never edited once saved: documents, drawings, pages, analyst runs, record/ entries, released revisions. A change to one is a new dated file or a new revision, and the old one stays exactly as it was.
-- The record. Every conversation and every analyst run is saved in record/ and sessions/, so what was said and decided is not only in a chat. Anything not yet saved is only in the chat.
-Plain words: repository = the project's online folder, commit = a saved checkpoint. Say the real word once, then use it (D-040). Say it to the owner once, in a line: "Your work is saved to GitHub as we go, and GitHub keeps every earlier version."
+- The project is one private Google Drive folder, AN-Creation (https://ancreationoffice.com/drive-setup.txt). office.txt says "Home: Google Drive AN-Creation". If it says "Home: GitHub", follow IF THIS OFFICE USES GITHUB below instead. No Home: line yet (offices set up before 261014.2): GitHub if /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive; write the Home: line at the next save.
+- The shared procedure library is AN-Creation/sops/library.txt plus AN-Creation/sops/VERSION. One version for every office. library.txt is about 2 MB. Its first line is the Office version. Each file follows after a marker line `=== FILE: <path> ===`, including the resource library. Each office reads it from its working copy, /workspace/offices/<role>/sops/library.txt (downloaded from the Drive folder, or from https://ancreationoffice.com/library.txt), one section at a time: awk '$0=="=== FILE: standing.txt ==="{p=1;next} /^=== FILE: /{p=0} p' library.txt. A refresh downloads https://ancreationoffice.com/library.txt once, uploads it over AN-Creation/sops/library.txt and rewrites VERSION beside it. The rule is https://ancreationoffice.com/version.txt
+- Two kinds of files (D-029). Working files are updated in place: office.txt, business.txt, plan.md, actions.csv, team.csv, the hand-off inboxes, Status and Plan. Before a major change to one, a dated copy goes to History/ ("<name> YYMMDD-HHMM"). Records and outputs are never edited once saved: documents, drawings, pages, analyst runs, record/ entries, released revisions. A change is a new dated file.
+- The record. Every conversation and every analyst run is saved in record/ and sessions/. Anything not yet saved is only in the chat.
+Say it to the owner once, in a line: "Your work is saved to your Google Drive as we go, and I keep a dated copy before any big change."
 
 SAVING (every office and b-analyst)
 Follow the office-save skill. This is the office rule it carries out.
-- Your own clone: /workspace/offices/<your role>/an-creation. Never a shared clone, and never /workspace/repo.
-- The GitHub connector is read-only. Looking can use it. Saving cannot.
-- One commit per turn, not one commit per answer. The note says which job, what changed, and the role.
-- pull --rebase before the commit. If the push is rejected, pull --rebase and push again.
-- After the push, read the file back with gh and confirm it matches. Unpushed work is not saved. A push you did not read back is not confirmed.
+- Read a working file fresh just before you change it, then write it in place (same name, same folder).
+- Before a major change, keep a dated copy in History/.
+- After every write, read the file back and check it matches. A write you did not read back is not confirmed.
 - Quiet when it works. A failed save is one plain line to the owner. Never call it saved when the read-back failed.
-- Never force-push main. This free private repository cannot turn on branch protection (that needs GitHub Pro), so you keep the rule.
-- A work branch is named by role, for example b-project-manager/<topic>, and deleted after it merges. Do not open a claude/* or cursor/* branch.
-- End of a conversation: one "Last saved" line in your office.txt (time, commit, what). office-save confirms it.
-- Files over about 50 MB stay out of the repository. Record where the original lives.
-Refreshing the library downloads https://ancreationoffice.com/library.txt once, writes it to AN-Creation/sops/library.txt, and rewrites VERSION (Library version and SOP updates). That is one commit for that library version. office-startup decides whether to refresh. office-save makes the commit. Read a section with the awk line above. The file is about 2 MB, so read one section.
+- End of a conversation: one "Last saved" line in your office.txt (time, what).
+- Files over about 50 MB: leave them where they are and record where the original lives.
+Setup: https://ancreationoffice.com/drive-setup.txt
+
+IF THIS OFFICE USES GITHUB (code offices, and offices already set up on GitHub)
+- Your own clone: /workspace/offices/<your role>/an-creation. Never a shared clone, and never /workspace/repo. The GitHub connector is read-only; saving is git and gh in your Shell.
+- One commit per turn. pull --rebase before the commit; if the push is rejected, pull --rebase and push again. After the push, read the file back with gh. Unpushed work is not saved.
+- Never force-push main. A work branch is named by role (b-project-manager/<topic>) and deleted after it merges.
+- The library is AN-Creation/sops/library.txt in the repository; a refresh is one download and one commit.
+- "Last saved" includes the commit. Files over about 50 MB stay out of the repository.
 Setup: https://ancreationoffice.com/github-setup.txt
 
 IF SOMETHING GOES WRONG
-- A file got overwritten, mixed up or deleted: look at the earlier dated files first, then the file's history on GitHub, find the last good version, restore it as a new commit, and say what was restored.
-- A chat got cleared, or a bot was deleted and made again: everything that was saved is still there. The new bot looks for the an-creation repository first, reads office.txt (its "Last saved" line), All inventions, PROJECT.txt, plan.md and the latest status, and carries on from the last saved checkpoint. Anything said after the last save was only in the old chat: ask the owner about it.
-- They lost their phone: sign in to GitHub and their AI app on the new one. The project is in the cloud.
+- A file got overwritten, mixed up or deleted: look at the earlier dated files and History/ first, then the file's version history in Google Drive (or on GitHub), find the last good version, restore it as a new save, and say what was restored.
+- A chat got cleared, or a bot was deleted and made again: everything that was saved is still there. The new bot looks for the AN-Creation folder first, reads office.txt (its "Last saved" line), All inventions, PROJECT.txt, plan.md and the latest status, and carries on from the last saved checkpoint. Anything said after the last save was only in the old chat: ask the owner about it.
+- They lost their phone: sign in to Google (and GitHub, if used) and their AI app on the new one. The project is in the cloud.
 
 NEVER
-- The record is the private GitHub repository. Each office's working copy is its own clone, /workspace/offices/<role>/an-creation, on the shared computer. Never /workspace/repo, and never a clone shared with another office.
-- Never make the repository public.
+- Never share the AN-Creation folder publicly or with "anyone with the link". Never make a GitHub repository public.
 - Never put passwords, keys, an SSN, or bank or card numbers in any project file, issue or commit message.
 - A saved version is not an approval. History does not replace the revision and change records (sop-change-control.txt) or the record of what was sent to whom.
-- Big CAD, video and image files (over about 50 MB): keep them out of the repository and record where they are (SAVING 7).
+- Big CAD, video and image files (over about 50 MB): record where they are.
 
-Sources: GitHub repositories https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories ; file history https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file ; large files https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github .
+Sources: Google Drive version history https://support.google.com/drive/answer/2409045 ; GitHub repositories https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories ; file history https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file ; large files https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github .

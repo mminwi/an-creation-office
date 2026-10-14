@@ -1,4 +1,5 @@
-AN Creation: GitHub and b-analyst. Revision 4 — October 14, 2026.
+AN Creation: GitHub, the optional add-on for code. Revision 5 — October 14, 2026.
+OPTIONAL. Google Drive is the default home for project files (https://ancreationoffice.com/drive-setup.txt). Use this file only when the office or the owner writes code and wants GitHub, or when the office already lives on GitHub (record "Home: GitHub <username>/an-creation" in office.txt). Offices already on GitHub keep working exactly as below; nothing needs to move. An office.txt with no Home: line counts as GitHub when /workspace/offices/<role>/an-creation is a git clone.
 Read this at setup, and whenever GitHub or b-analyst isn't working. Then leave it. The steps for starting, saving, and handing work off are the skills office-startup, office-save, and office-handoff. This file is the office rule those skills follow. After install, run office-setup-check.
 
 WORDS, ONCE
@@ -14,7 +15,7 @@ AGENTS.md at the top of the repository is https://ancreationoffice.com/agents-md
 The shared SOP library is AN-Creation/sops/library.txt in that same repository, plus VERSION. One copy, one version, every office. An update is one download and one commit. The rule is https://ancreationoffice.com/version.txt. office-startup reads one section at a time.
 
 GROK BUILD
-Grok Build is the `grok` command, in the bot's own Shell, with the working directory set to that office's clone. `grok`, `claude`, and `codex` are in /usr/local/bin and are already signed in as mike.maier@gmail.com. Do not install them again, do not sign in again, and do not turn on a paid upgrade or usage billing.
+Grok Build is the `grok` command, in the bot's own Shell, with the working directory set to that office's clone (Drive offices: a work folder, see drive-setup.txt GROK BUILD). `grok`, `claude`, and `codex` are in /usr/local/bin and are already signed in as mike.maier@gmail.com. Do not install them again, do not sign in again, and do not turn on a paid upgrade or usage billing.
 `command -v grok` should print /usr/local/bin/grok. If `grok` asks to sign in or to upgrade, stop and tell the owner. Do not complete that prompt.
 Run a ticket from that clone: `grok` with one line, "Work on ticket T-008 in the an-creation repository." It reads AGENTS.md. The commit is office-save. Record in PROJECT.txt: "Analyst: Grok Build, start: grok in /workspace/offices/<role>/an-creation, default: yes".
 Docs if a command has changed: https://x.ai/cli . Don't fill command details from memory.
