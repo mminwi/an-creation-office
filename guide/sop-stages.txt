@@ -73,6 +73,22 @@ What usually matters where (a guide, not a rule; the product decides):
 - How it's made and quotes: how many, the price point, who buys it, where it ships, the budget.
 - Launch: buyers, channel, shipping, labels and certifications, the marketing plan.
 
+MAY WRITE
+During fact-finding, this procedure may write these project files.
+- intake-001
+- screening answers
+- framework.md
+- resource-map.csv
+- plan-stages.md
+- the status sheet
+- the baseline at the project's level
+- the first review page (sop-review-page.txt)
+- the project description (project-description.txt)
+- Your files/Business/ for the cost tracker. Leave the hours column blank unless the inventor asks to record time.
+- carry-forward/<stage>-<date>.md at the fact-finding gate
+
+Leave the compliance matrix for the design stage. Do not create a stakeholder register.
+
 S0 FACT-FINDING ("Getting the facts")  ALWAYS
 Trigger: a new project.
 Goal: decide what level the project runs at. Which standards apply, the timeline, the quality planning and the testing, and the business route. Levels run from dead simple (a rolling toolbox: a one-page quality plan and a parking-lot test) to heavy (a medical device: a full quality system, lab and regulatory testing). Name the level, so every later stage is sized to it.

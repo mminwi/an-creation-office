@@ -142,7 +142,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`handoff-log.csv`](guide/handoff-log.csv) | Worksheet / table (CSV): handoff_id, sent_date, sender, recipient... | [live](https://ancreationoffice.com/handoff-log.csv) |
 | [`inventors-office.html`](guide/inventors-office.html) | Page: the Inventor'S Office: what's inside and the message to start it | [live](https://ancreationoffice.com/inventors-office.html) |
 | [`ip-ratings.txt`](guide/ip-ratings.txt) | IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and  | [live](https://ancreationoffice.com/ip-ratings.txt) |
-| [`library.txt`](guide/library.txt) | 261014.2 | [live](https://ancreationoffice.com/library.txt) |
+| [`library.txt`](guide/library.txt) | 261015.1 | [live](https://ancreationoffice.com/library.txt) |
 | [`manufacturing-office.html`](guide/manufacturing-office.html) | Page: the Manufacturing Office: what's inside and the message to start it | [live](https://ancreationoffice.com/manufacturing-office.html) |
 | [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The | [live](https://ancreationoffice.com/manufacturing.txt) |
 | [`molding-office.html`](guide/molding-office.html) | Page: the Molding Office: what's inside and the message to start it | [live](https://ancreationoffice.com/molding-office.html) |
@@ -201,7 +201,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`sop-spacex-practice.txt`](guide/sop-spacex-practice.txt) | SOP: Turning one finding into something Mike can use. Revision 1 — October 13, 2026. | [live](https://ancreationoffice.com/sop-spacex-practice.txt) |
 | [`sop-spacex-watch.txt`](guide/sop-spacex-watch.txt) | SOP: What the SpaceX Office watches. X first, then the official page a post points at. Revision 1 — October 13 | [live](https://ancreationoffice.com/sop-spacex-watch.txt) |
 | [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 12 — October 13, 2026. | [live](https://ancreationoffice.com/sop.txt) |
-| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261014.2 | [live](https://ancreationoffice.com/sops-manifest.txt) |
+| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261015.1 | [live](https://ancreationoffice.com/sops-manifest.txt) |
 | [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's form | [live](https://ancreationoffice.com/status-template.txt) |
 | [`survey-automation-machine.csv`](guide/survey-automation-machine.csv) | Worksheet / table (CSV): id, section, question, why... | [live](https://ancreationoffice.com/survey-automation-machine.csv) |
 | [`survey-fill-instructions.txt`](guide/survey-fill-instructions.txt) | Instructions for the AI filling an AN Creation intake survey. Give these to the AI along with the survey file  | [live](https://ancreationoffice.com/survey-fill-instructions.txt) |
@@ -234,4 +234,4 @@ The [`specialists/`](specialists/) folder (kept in this repository, not synced) 
 
 Synced from the live site by a script after each publish. If this copy and https://ancreationoffice.com/ ever differ, the live site is current.
 
-*Last synced October 14, 2026.*
+*Last synced October 15, 2026.*

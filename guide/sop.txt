@@ -2,7 +2,7 @@ AN Creation standard operating procedures. Revision 12 — October 13, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
-SOP means standard operating procedure: a written way to do one job. Here it is a file an assistant opens when a trigger fires, uses, and then leaves. It is not loaded into every conversation.
+SOP means standard operating procedure: a written way to do one job. A procedure opens only when a trigger or a ticket names it. The assistant uses that file, then leaves it. It is not loaded into every conversation. This index may write no project file.
 
 Each office is one bot with one short standing file; b-analyst does the heavier work.
 - The Inventor's Office (b-project-manager), the chat the inventor talks to: https://ancreationoffice.com/standing.txt
@@ -46,6 +46,7 @@ K4. b-business-manager: promotion and listings. Where to promote, the approval l
 FOR b-project-manager
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
+The ticket template may write the form named in the ticket, Office files/queue/QUEUE.txt, the ticket file, Office files/record/ for the conversation, Office files/sessions/ for the analyst run, and Office files/plan.md for a taking-longer note.
 2a. AGENTS.md for the inventor's repository: how any AI finds its ticket from one line. https://ancreationoffice.com/agents-md.txt
 3. The first form, always: the invention and the screening questions. https://ancreationoffice.com/intake-001.csv
 
@@ -75,5 +76,6 @@ FOR BOTH
 14. Review pages: a local web page per invention for timelines, risks, pictures, documents and short walkthroughs. https://ancreationoffice.com/sop-review-page.txt (tool: https://ancreationoffice.com/review.py)
 15. Terms: the plain-language glossary to explain terms from (about 200, with read-more links). https://ancreationoffice.com/terms.txt
 16. The action log: who owes what, kept for the inventor and shown as Your list on the review page. https://ancreationoffice.com/sop-action-log.txt (template: https://ancreationoffice.com/template-action-log.csv)
+The action log updates Office files/actions.csv. It may also write Your files/Action log, the previous copy in Your files/History/, and Your files/Review/index.html.
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.

@@ -1,4 +1,4 @@
-261014.2
+261015.1
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -23387,6 +23387,8 @@ WHY THIS EXISTS
 Inventors rarely keep their own to-do list, and without one they have no record of what they need to do, what they're waiting on, or what got done. So we keep it for them. Every action anyone owes on the project goes in one log: the inventor's tasks, what a supplier or lab owes back, and what b-project-manager or b-analyst promised. It shows on the inventor's review page, always current. Industry calls this an action log, issue log or action item list.
 
 WHERE IT LIVES
+This procedure updates Office files/actions.csv.
+It may also write Your files/Action log, the previous copy in Your files/History/, and Your files/Review/index.html.
 Master: Office files/actions.csv (one row per action; rows are never deleted).
 Inventor's copy: Your files/Action log, in their format (usually Excel), regenerated from the master; the previous copy goes to Your files/History/ first.
 On the review page: the index (Your files/Review/index.html) shows "Your list" at the top: your open actions, then what you're waiting on from others, then what was done recently. Rebuilt with review.py whenever the log changes.
@@ -26649,6 +26651,22 @@ What usually matters where (a guide, not a rule; the product decides):
 - How it's made and quotes: how many, the price point, who buys it, where it ships, the budget.
 - Launch: buyers, channel, shipping, labels and certifications, the marketing plan.
 
+MAY WRITE
+During fact-finding, this procedure may write these project files.
+- intake-001
+- screening answers
+- framework.md
+- resource-map.csv
+- plan-stages.md
+- the status sheet
+- the baseline at the project's level
+- the first review page (sop-review-page.txt)
+- the project description (project-description.txt)
+- Your files/Business/ for the cost tracker. Leave the hours column blank unless the inventor asks to record time.
+- carry-forward/<stage>-<date>.md at the fact-finding gate
+
+Leave the compliance matrix for the design stage. Do not create a stakeholder register.
+
 S0 FACT-FINDING ("Getting the facts")  ALWAYS
 Trigger: a new project.
 Goal: decide what level the project runs at. Which standards apply, the timeline, the quality planning and the testing, and the business route. Levels run from dead simple (a rolling toolbox: a one-page quality plan and a parking-lot test) to heavy (a medical device: a full quality system, lab and regulatory testing). Name the level, so every later stage is sized to it.
@@ -26926,7 +26944,7 @@ AN Creation standard operating procedures. Revision 12 — October 13, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
-SOP means standard operating procedure: a written way to do one job. Here it is a file an assistant opens when a trigger fires, uses, and then leaves. It is not loaded into every conversation.
+SOP means standard operating procedure: a written way to do one job. A procedure opens only when a trigger or a ticket names it. The assistant uses that file, then leaves it. It is not loaded into every conversation. This index may write no project file.
 
 Each office is one bot with one short standing file; b-analyst does the heavier work.
 - The Inventor's Office (b-project-manager), the chat the inventor talks to: https://ancreationoffice.com/standing.txt
@@ -26970,6 +26988,7 @@ K4. b-business-manager: promotion and listings. Where to promote, the approval l
 FOR b-project-manager
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
+The ticket template may write the form named in the ticket, Office files/queue/QUEUE.txt, the ticket file, Office files/record/ for the conversation, Office files/sessions/ for the analyst run, and Office files/plan.md for a taking-longer note.
 2a. AGENTS.md for the inventor's repository: how any AI finds its ticket from one line. https://ancreationoffice.com/agents-md.txt
 3. The first form, always: the invention and the screening questions. https://ancreationoffice.com/intake-001.csv
 
@@ -26999,10 +27018,11 @@ FOR BOTH
 14. Review pages: a local web page per invention for timelines, risks, pictures, documents and short walkthroughs. https://ancreationoffice.com/sop-review-page.txt (tool: https://ancreationoffice.com/review.py)
 15. Terms: the plain-language glossary to explain terms from (about 200, with read-more links). https://ancreationoffice.com/terms.txt
 16. The action log: who owes what, kept for the inventor and shown as Your list on the review page. https://ancreationoffice.com/sop-action-log.txt (template: https://ancreationoffice.com/template-action-log.csv)
+The action log updates Office files/actions.csv. It may also write Your files/Action log, the previous copy in Your files/History/, and Your files/Review/index.html.
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261014.2
+261015.1
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -28945,6 +28965,15 @@ Written by: analyst, <date>. Run by: b-project-manager. Status: queued / active 
 Kind: follow-up (analyst writes the next ticket) / one-off (done is done)
 Queue position: <n> (full list in Office files/queue/QUEUE.txt)
 
+MAY WRITE
+The ticket may write the files named under EXPECT, and only these other project files.
+- The form named under FILL.
+- Office files/queue/QUEUE.txt
+- This ticket file, in open/, active/, done/, or revisit/
+- Office files/record/ for the conversation transcript
+- Office files/sessions/ for the analyst run, including DONE.txt
+- Office files/plan.md for the taking-longer note only. A scope or acceptance change waits for an explicit yes.
+
 STEP CHECK (tickets that start a new step; sop-stages.txt)
 Needed now: <what this step can't be done without; with a proposed default where there is one>
 Nice to have: <asked once, skip any>
@@ -29090,7 +29119,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this at the start of every conversation because the profile says to follow the office-startup skill. Not from memory.
 
-Office version: 261014.2
+Office version: 261015.1
 b-project-manager profile version: 5 (Inventor's Office; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 7 (Business Manager's Office; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt: b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office, b-promotion-office, b-spacex-office, b-automation-machine, b-charger-board, b-mil-battery, b-pneumatic-fixture, b-rugged-enclosure
@@ -29119,6 +29148,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version, the library version, and your profile version.
 
 CHANGES (newest first)
+261015.1  Project files a procedure may write are now named. A ticket may write the form it names, Office files/queue/QUEUE.txt, the ticket file, Office files/record/ for the conversation, Office files/sessions/ for the analyst run, and a taking-longer note in Office files/plan.md. A scope or acceptance change still waits for an explicit yes. Fact-finding may write the intake, screening answers, framework, resource map, stage plan, status sheet, baseline, first review page, project description, the cost tracker in Your files/Business/, and the carry-forward note. It leaves the compliance matrix for the design stage and does not create a stakeholder register. The action log updates Office files/actions.csv and may refresh Your files/Action log, the previous copy in Your files/History/, and the review page. No new profile text. Re-read your office file.
 261014.2  Google Drive is the default home for project files: one private AN-Creation folder with the same layout (team.csv, handoffs/for-<role>.txt, office folders, sops/library.txt and VERSION). Setup: https://ancreationoffice.com/drive-setup.txt. Saving on Drive: read fresh, write in place, keep a dated copy in History/ before a major change, read back after every write. Hand-off lines are unchanged. GitHub is now an optional add-on for offices or people who write code (github-setup.txt). Offices already on GitHub keep working exactly as before; nothing moves. An office.txt with no Home: line counts as GitHub when /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive. New bots set their own profile from profile.txt in their first message. Re-read your office file. No new profile text.
 261014.1  Setup matches how the office actually runs. Profile text is short (name, role, office file) and tells the bot to follow three skills: office-startup, office-save, and office-handoff. After install, run office-setup-check. The version a bot has seen is only the "Office version seen" line in that office's office.txt. Procedures are read from one shared library, AN-Creation/sops/, on one version. The bot's copy is AN-Creation/sops/library.txt (about 2 MB: version on the first line, then every manifest file in full under `=== FILE: <path> ===`, including the resource library and every resources-*.html shelf). Read one section by its marker. A refresh is one download of library.txt plus VERSION (SOP updates: auto, ask, or pinned; default ask), and one commit. The separate pages stay on the site for people. Profile versions: b-project-manager 5, b-business-manager 7, every other office 3. If ancreationoffice.com does not open, keep working from that library. Grok Build is the grok command in the bot's own Shell (grok, claude, and codex are already in /usr/local/bin). The GitHub connector is read-only. Saves follow office-save: one clone per office at /workspace/offices/<role>/an-creation, one commit per turn, pull --rebase, retry, gh read-back, never force-push main. A hand-off follows office-handoff: an inbox line plus a SendToAgent ping, then taken and done. Promotion (posts, replies, audience) is the Promotion Office's; PROMO-INSTRUCTIONS.txt does not override the Business Manager's Office. Re-read your office file. New profile text for every office.
 261013.10  Business Manager's Office: more on setting up and funding a company. sop-company.txt (revision 2) adds choosing and checking a bank, taxes once the company is running, the first employee, and the IDs that come up (D-U-N-S, SAM.gov). sop-funding.txt (revision 2) adds a map of government money and free help: SBIR by agency and state SBIR help, SBA microloans, 7(a) and 504, state loan programs, community lenders, the research tax credit against payroll taxes, veteran programs and certification, government contracting, export help, rural programs, and grant scams. 34 new library sources, with Wisconsin specifics. b-business-manager: re-read both procedures when company setup or money comes up; ask once whether the owner is a veteran. No new profile text.

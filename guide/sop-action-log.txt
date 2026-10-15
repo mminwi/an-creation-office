@@ -7,6 +7,8 @@ WHY THIS EXISTS
 Inventors rarely keep their own to-do list, and without one they have no record of what they need to do, what they're waiting on, or what got done. So we keep it for them. Every action anyone owes on the project goes in one log: the inventor's tasks, what a supplier or lab owes back, and what b-project-manager or b-analyst promised. It shows on the inventor's review page, always current. Industry calls this an action log, issue log or action item list.
 
 WHERE IT LIVES
+This procedure updates Office files/actions.csv.
+It may also write Your files/Action log, the previous copy in Your files/History/, and Your files/Review/index.html.
 Master: Office files/actions.csv (one row per action; rows are never deleted).
 Inventor's copy: Your files/Action log, in their format (usually Excel), regenerated from the master; the previous copy goes to Your files/History/ first.
 On the review page: the index (Your files/Review/index.html) shows "Your list" at the top: your open actions, then what you're waiting on from others, then what was done recently. Rebuilt with review.py whenever the log changes.

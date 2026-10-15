@@ -4,6 +4,15 @@ Written by: analyst, <date>. Run by: b-project-manager. Status: queued / active 
 Kind: follow-up (analyst writes the next ticket) / one-off (done is done)
 Queue position: <n> (full list in Office files/queue/QUEUE.txt)
 
+MAY WRITE
+The ticket may write the files named under EXPECT, and only these other project files.
+- The form named under FILL.
+- Office files/queue/QUEUE.txt
+- This ticket file, in open/, active/, done/, or revisit/
+- Office files/record/ for the conversation transcript
+- Office files/sessions/ for the analyst run, including DONE.txt
+- Office files/plan.md for the taking-longer note only. A scope or acceptance change waits for an explicit yes.
+
 STEP CHECK (tickets that start a new step; sop-stages.txt)
 Needed now: <what this step can't be done without; with a proposed default where there is one>
 Nice to have: <asked once, skip any>
