@@ -1,7 +1,7 @@
-SOP: The accountant packet. Revision 1 — October 18, 2026.
+SOP: The accountant packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each meeting with an accountant, a tax preparer or a bookkeeper (sop-meeting-prep.txt). b-analyst builds it.
-May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; nothing in the ledger, the trip log or the company record (the packet reads them; the gaps are closed in the record itself).
+May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; nothing in the ledger, the trip log or the company record (the packet reads them; the gaps are closed in the record itself).
 Example: https://ancreationoffice.com/example-mousetrap/correspondence/261208-01-M-accountant-year-end/accountant-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (the rows marked Accountant only)
 Goes with: https://ancreationoffice.com/sop-business-record.txt (the ledger, trip log, deadlines and TAX TIME), https://ancreationoffice.com/tax-year.py
 

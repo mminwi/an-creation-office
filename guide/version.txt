@@ -1,8 +1,8 @@
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.31
-b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
-b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
+Office version: 261018.32
+b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
+b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
 (the text saved in each bot's profile: the profile.txt section of AN-Creation/sops/library.txt, also https://ancreationoffice.com/profile.txt)
 
@@ -11,7 +11,7 @@ The Office version is the pin for the whole SOP library. Every office uses that 
 HOW TO USE THIS (every bot)
 Follow the office-startup skill. This file is the office rule that skill carries out. Do not keep a second copy of the skill's steps here.
 
-Each bot stays on its own version. AN-Creation/sops/ keeps every version ever installed, one file each, never written over: library-<version>.txt (for example library-261018.29.txt). library.txt is a copy of the newest one, for older setups. A bot's office.txt says which version it works from ("Office version seen"), and the bot reads that version's file through its working copy (/workspace/offices/<your role>/sops/, or the clone on GitHub offices), one section at a time. One bot updating never changes another bot: each moves only when the owner tells that bot to update. A bot you know is better than a new bot you don't.
+Each bot stays on its own version. AN-Creation/sops/ keeps every version ever installed, one file each, never written over: library-<version>.txt (for example library-261018.29.txt). library.txt is a copy of the newest one, for older setups. A bot's office.txt says which version it works from ("Office version seen"), and the bot reads that version's file through its working copy (/workspace/offices/<your bot id>/sops/, or the clone on GitHub offices), one section at a time. One bot updating never changes another bot: each moves only when the owner tells that bot to update. A bot you know is better than a new bot you don't.
 
 LINKS ARE SECTIONS
 A link such as https://ancreationoffice.com/sop-cost-sheet.txt in a procedure names a section of library.txt: the lines after === FILE: sop-cost-sheet.txt ===. Read it there, not on the website. Open the website only at first setup, when the owner asks to update, or when a section is missing from library.txt (say so in a line). The separate pages stay on the site for people.
@@ -29,7 +29,7 @@ The bots never update on their own and never check the website for a newer versi
 If the site does not open, say so and carry on with the version you have.
 An older VERSION file may still have an "SOP updates" line (auto, ask or pinned). It is no longer used. Replace it at the next update. An older folder may have only library.txt: at the next update, save its version as library-<version>.txt first, so nothing is lost.
 
-The only place a bot records a version it has seen is the "Office version seen" line in its office.txt. That line is this file's "Office version:" value, format YYMMDD.N, not a file revision. Project Manager Bot: AN-Creation/office.txt. Office Manager Bot: AN-Creation/Business/office.txt. Every other office: office.txt in that office's folder. Do not write version-seen.txt, and do not put that line in business.txt. If AN-Creation/Business/version-seen.txt still exists, copy its number into AN-Creation/Business/office.txt once when that line is empty, then delete version-seen.txt.
+The only place a bot records a version it has seen is the "Office version seen" line in its office.txt. That line is this file's "Office version:" value, format YYMMDD.N, not a file revision. Project Manager Bot: AN-Creation/offices/<bot id>/office.txt (AN-Creation/office.txt in a folder not yet moved, sop-folder-move.txt). Office Manager Bot: its business folder's office.txt, AN-Creation/Business/office.txt for the default business. Every other office: office.txt in that office's folder. Do not write version-seen.txt, and do not put that line in business.txt. If AN-Creation/Business/version-seen.txt still exists, copy its number into AN-Creation/Business/office.txt once when that line is empty, then delete version-seen.txt.
 
 When a newer version is in the folder than your "Office version seen" (another bot was updated), tell the owner once, in one line, and stay on yours: "There's a newer office version in your folder (<version>, from your other bot). I'm staying on mine until you say 'update'." Write "Newer version mentioned: <version>" in your office.txt so you don't repeat it.
 
@@ -38,6 +38,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.32  The business layout. Inside AN-Creation/ there is now one folder per business, and each invention sits inside its business. Everyone has the default business, AN-Creation/Business/, even with only a Project Manager Bot; an invention not assigned to another business goes there. A Project Manager Bot's office.txt is AN-Creation/offices/<bot id>/office.txt. Each business has its own correspondence log and All inventions. ideas.txt, team.csv, handoffs/ and sops/ stay at the top, shared by every bot. More than one Project Manager Bot can share the folder, each running its own inventions; each business has one Office Manager Bot (sop-team.txt SEVERAL BOTS; team.csv gains bot_id, business and runs). An older folder moves once, only with the owner's yes (sop-folder-move.txt, new); until then bots work with it as it is, and old meeting files still build. Re-read your office file. No new profile text.
 261018.31  Credit wording: the office's structure and methodology are heavily based on Lauren Tan's pstack. No change to how the bots work. No new profile text.
 261018.30  Credit: the office's structure follows Lauren Tan's pstack (credits.html; a credit line in principles-pm.txt, principles-bm.txt and playbooks.txt). No change to how the bots work. Re-read your office file. No new profile text.
 261018.29  Each bot stays on its own version. AN-Creation/sops/ keeps every installed version (library-<version>.txt, never written over); each bot works from the version its office.txt names. Telling one bot to update moves only that bot: it takes the newer version already in the folder or downloads one. Another bot mentions the newer version once and stays where it is until the owner tells it to update. A bot you know is better than a new bot you don't. Re-read your office file. No new profile text.

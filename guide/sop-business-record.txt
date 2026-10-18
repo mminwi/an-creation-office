@@ -1,7 +1,7 @@
-SOP: The business record. Revision 5 — October 18, 2026.
+SOP: The business record. Revision 6 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one set for the business (all inventions). b-analyst fills and updates them, and runs tax-year.py.
-May write: the files named below in AN-Creation/Business/, their readable copies in Your files/Business record/, and hand-off lines to b-project-manager.
+May write: the files named below in AN-Creation/<business>/, their readable copies in Your files/Business record/, and hand-off lines to b-project-manager.
 Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-project-record.txt (the Project Manager Bot's seven)
 Builder: https://ancreationoffice.com/tax-year.py . Example: https://ancreationoffice.com/example-mousetrap/ (expenses.csv, trips.csv, correspondence.csv and correspondence/, deadlines.csv, business-decision-log.csv)
 

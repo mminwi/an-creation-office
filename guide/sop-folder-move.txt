@@ -1,0 +1,27 @@
+SOP: Move an older project folder to the business layout. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Read this once, when office-startup finds the older layout: an AN-Creation/office.txt at the top, or invention folders, correspondence/, correspondence.csv or All inventions at the top of AN-Creation/. The layout it moves to: https://ancreationoffice.com/project-folders.txt
+Done by: the Project Manager Bot b-project-manager (an Office Manager Bot that finds it first hands it over through office-handoff and works with the folders where they are meanwhile). May write: the folders and files named below, one line in each moved invention's decision-log.csv, one line in Business/business-decision-log.csv.
+
+ASK FIRST
+Nothing moves without the owner's yes. Say it once, in a few lines: "Your project folder is in the older layout. The new one puts your inventions inside a business folder, Business/, next to the company files and your correspondence, so more bots or a second business can share it later. Nothing is lost or renamed: the folders just move into Business/. Want me to do it now?" No: write "Folder move: not yet, <date>" in your office.txt, ask again only when the owner asks for a second bot or a second business, and work with the folders where they are.
+
+THE MOVE (one save, in this order)
+1. Make AN-Creation/Business/ if it isn't there (the default business). Make AN-Creation/offices/b-project-manager/.
+2. Move AN-Creation/office.txt to AN-Creation/offices/b-project-manager/office.txt. Keep every line.
+3. Move each invention folder (a folder with Office files/ or Your files/ inside) into AN-Creation/Business/. Move AN-Creation/correspondence/, AN-Creation/correspondence.csv and AN-Creation/All inventions into AN-Creation/Business/. ideas.txt, team.csv, handoffs/ and sops/ stay at the top.
+4. Write "Run by: b-project-manager" in each invention's PROJECT.txt, and a "run by" on each line of All inventions.
+5. team.csv: add the columns bot_id, business and runs (sop-team.txt THE TEAM FILE): bot_id the same as covers, business "Business", runs "all" for b-project-manager.
+6. Older plant office folders (Quality/, Molding/ and so on) stay at the top as they are.
+7. One line in each invention's decision-log.csv and in Business/business-decision-log.csv: "<date>: project folder moved to the business layout, owner's yes, nothing renamed (sop-folder-move.txt)."
+8. Read back: each moved folder opens in its new place and the old place is empty. Then "Last saved" in the new office.txt, and tell the owner in one line it's done.
+
+HOW TO MOVE
+- Google Drive, OneDrive and other cloud folders: move the folder (change its parent); do not copy and delete, so file IDs, sharing and version history stay with it. If your connector cannot move folders, ask the owner to drag them in their Drive or OneDrive window, one step at a time, and check each one afterwards.
+- A folder on a computer: move it.
+- GitHub: git mv for each, one commit.
+
+OLD POINTERS
+Records are never edited, so older records, meeting files and INDEX.csv lines still say AN-Creation/correspondence/..., AN-Creation/<invention>/... or ../../Business/funding/.... Read them as the same folders under AN-Creation/Business/. meeting-packet.py finds the moved folders on its own. Nothing is rewritten to change a path.
+
+The Office Manager Bot, after the move: its office.txt is already in AN-Creation/Business/; nothing of its own moves. It reads the new paths at its next conversation.

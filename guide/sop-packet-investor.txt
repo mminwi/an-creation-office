@@ -1,7 +1,7 @@
-SOP: The investor packet. Revision 1 — October 18, 2026.
+SOP: The investor packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each investor meeting (sop-meeting-prep.txt). b-analyst builds it.
-May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; funding.csv and company.csv in AN-Creation/Business/funding/<invention>/.
+May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; funding.csv and company.csv in AN-Creation/<business>/funding/<invention>/.
 Example: https://ancreationoffice.com/example-mousetrap/correspondence/261112-01-M-family-investor-meeting/investor-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (the rows marked Investor only)
 Goes with: https://ancreationoffice.com/sop-funding.txt (which kind of money fits), https://ancreationoffice.com/sop-funding-packet.txt (the packet for an advisor or a grant reviewer, built from the same sheets), https://ancreationoffice.com/principle-money-fits-the-stage.txt
 

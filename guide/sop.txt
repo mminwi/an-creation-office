@@ -17,7 +17,8 @@ FIRST
 0. The Office Manager Bot (b-business-manager): company, patent preparation, name and trademark, licensing, funding, website and promotion, getting into stores: https://ancreationoffice.com/business-manager.txt
 0. For a first-time user, on a phone: start here. https://ancreationoffice.com/start-on-your-phone.txt
 0. Set up the Project Manager Bot and b-analyst. Each one is its own bot (https://ancreationoffice.com/sop-team.txt). https://ancreationoffice.com/sop-office.txt
-0. The bots: roles, role names, the team file, hand-offs between bots, who tracks and who judges, and the first and second looks: https://ancreationoffice.com/sop-team.txt
+0. The bots: roles, role names, the team file, hand-offs between bots, several bots and businesses in one folder, who tracks and who judges, and the first and second looks: https://ancreationoffice.com/sop-team.txt
+0. Moving an older project folder to the business layout, once, with the owner's yes: https://ancreationoffice.com/sop-folder-move.txt
 0. Specialist procedure: mold cooling water, b-cooling-water. https://ancreationoffice.com/sop-cooling-water.txt
 0. Specialist procedure: resin drying, b-drying-handling. https://ancreationoffice.com/sop-drying.txt
 0. Specialist procedure: scientific molding, b-scientific-molding. https://ancreationoffice.com/sop-scientific-molding.txt

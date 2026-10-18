@@ -1,4 +1,4 @@
-SOP: Gateway questions. Revision 5 — October 13, 2026.
+SOP: Gateway questions. Revision 6 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Human page: https://ancreationoffice.com/sop.html#gateways
 Read this before opening a side road on the flowchart. A gateway is one question. The answer decides whether the rest of that road is asked at all.
@@ -29,7 +29,7 @@ A fishing lure is the short end. Shine of the plate, the paint, and a sharp hook
 Propose the depth and let them confirm. Light: a handful of items, recorded through the chain, then stop. Ordinary: the twenty to thirty that matter. Deep: separate areas and a long failure sheet. Write the depth on the sheet. The standards shelf is a different gate. Using our own quality sheets does not mean opening ISO manuals or military specifications.
 
 BUSINESS ENTITY
-The company is b-business-manager's, not a ticket for b-project-manager (https://ancreationoffice.com/business-manager.txt). First read AN-Creation/Business/business.txt. If a company already exists, record S19-company as carried ("Advance Now LLC, Wisconsin LLC, from Business/business.txt") and don't ask. If none exists, add a line to the Office Manager Bot's inbox, AN-Creation/handoffs/for-b-business-manager.txt with the reason (e.g. "tray: fire and burn hazards; liability gateway"), record S19-company as "with b-business-manager", and don't open a b-project-manager ticket for it. b-business-manager asks it, using the wording below.
+The company is b-business-manager's, not a ticket for b-project-manager (https://ancreationoffice.com/business-manager.txt). First read AN-Creation/<business>/business.txt. If a company already exists, record S19-company as carried ("Advance Now LLC, Wisconsin LLC, from the business.txt") and don't ask. If none exists, add a line to the Office Manager Bot's inbox, AN-Creation/handoffs/for-b-business-manager.txt with the reason (e.g. "tray: fire and burn hazards; liability gateway"), record S19-company as "with b-business-manager", and don't open a b-project-manager ticket for it. b-business-manager asks it, using the wording below.
 Ask when the product could hurt someone, cost someone money, or be sold.
 The reason to open a business today is product liability. Other reasons exist, including employees. Those are a later decision, or a business they would already have opened. Do not walk those reasons now.
 Say this before a no can stand: A business entity, set up properly, can put the liability for the product on the business instead of on you personally. That result is not automatic.

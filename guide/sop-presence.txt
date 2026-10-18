@@ -1,9 +1,9 @@
-SOP: b-business-manager. Profiles and the brand kit. Revision 1 — October 11, 2026.
+SOP: b-business-manager. Profiles and the brand kit. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: business-manager.txt, sop-website.txt, sop-promotion.txt
 Read this when a LinkedIn page, an X account or another profile comes up, or when they need a logo, a tagline or a short description. Then leave it.
 
-THE BRAND KIT FIRST (Business/brand/, made once, used everywhere)
+THE BRAND KIT FIRST (brand/ in the business folder, made once, used everywhere)
 Everything public is copied from this kit, so it all says the same thing.
 - Logo: a square version (at least 400 x 400; 1200 x 1200 is better) for profile pictures, and a wide one if they want. b-analyst can draft concepts; they choose. Keep the original files.
 - Colors and a font or two, written down.

@@ -1,4 +1,4 @@
-SOP: Review pages and dated folders. Revision 1 — October 7, 2026.
+SOP: Review pages and dated folders. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Tool: review.py (Python standard library only)
 
@@ -35,10 +35,10 @@ WHO WRITES WHAT
 b-analyst writes page.json inside its own session folder, then runs "new". b-project-manager runs "serve" and "today" and sends links.
 
 COMMANDS
-New page:   python review.py new "AN-Creation/<invention>" "<session folder>/page.json" --slug timeline [--today]
-Set today:  python review.py today "AN-Creation/<invention>" 261107-1430-timeline
-Rebuild index: python review.py index "AN-Creation/<invention>"
-Show:       python review.py serve "AN-Creation/<invention>"   (prints the link; default port 8765)
+New page:   python review.py new "AN-Creation/<business>/<invention>" "<session folder>/page.json" --slug timeline [--today]
+Set today:  python review.py today "AN-Creation/<business>/<invention>" 261107-1430-timeline
+Rebuild index: python review.py index "AN-Creation/<business>/<invention>"
+Show:       python review.py serve "AN-Creation/<business>/<invention>"   (prints the link; default port 8765)
 Link to one topic: .../Review/<page folder>/index.html#topic-<id>
 
 WHAT GOES IN page.json

@@ -1,7 +1,7 @@
-SOP: The correspondence log. Revision 2 — October 18, 2026.
+SOP: The correspondence log. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: both bots, one log for the whole company. b-business-manager keeps the index tidy; b-project-manager files what goes out about an invention (quote packages, CAD, drawings). b-analyst files what arrives.
-May write: AN-Creation/correspondence/ (one folder per correspondence) and AN-Creation/correspondence.csv (the index).
+May write: AN-Creation/<business>/correspondence/ (one folder per correspondence) and AN-Creation/<business>/correspondence.csv (the index).
 Template: https://ancreationoffice.com/template-correspondence.csv . Example: https://ancreationoffice.com/example-mousetrap/correspondence.csv and https://ancreationoffice.com/example-mousetrap/correspondence/
 Goes with: https://ancreationoffice.com/sop-document-life.txt , https://ancreationoffice.com/sop-meeting-prep.txt
 
@@ -17,7 +17,7 @@ Anything between the company (the inventor, or a bot on their behalf) and someon
 Not in it: the inventor's own conversations with the bots and the analysts' runs. Those are internal and stay in record/ and sessions/.
 
 ONE FOLDER PER CORRESPONDENCE
-AN-Creation/correspondence/YYMMDD-NN-X-slug/
+AN-Creation/<business>/correspondence/YYMMDD-NN-X-slug/
 - YYMMDD: the date code, the day it was sent, received or held.
 - NN: its place in that day, 01, 02, 03 and on, in the order things happened. Two digits, so a busy day still sorts right.
 - X: S for sent (from us to them), R for received (from them to us), M for a meeting or call (both ways; the notes are ours). Letters, not I and O, so they are never mistaken for 1 and 0.

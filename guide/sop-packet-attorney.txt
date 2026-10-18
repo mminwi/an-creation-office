@@ -1,7 +1,7 @@
-SOP: The business attorney packet. Revision 1 — October 18, 2026.
+SOP: The business attorney packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each meeting with a business attorney (sop-meeting-prep.txt). b-analyst builds it.
-May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv.
+May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv.
 Example: https://ancreationoffice.com/example-mousetrap/correspondence/261105-01-M-business-attorney-consult/attorney-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Attorney only; this meeting.csv has three more columns: from, by, status)
 Goes with: https://ancreationoffice.com/sop-company.txt (forming and keeping the company), https://ancreationoffice.com/principle-rigor-scales-with-money.txt
 

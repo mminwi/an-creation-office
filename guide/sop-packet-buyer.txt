@@ -1,7 +1,7 @@
-SOP: The buyer packet. Revision 2 — October 18, 2026.
+SOP: The buyer packet. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each buyer meeting (sop-meeting-prep.txt). b-analyst builds it.
-May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/, and pricing-terms.csv and company.csv in AN-Creation/Business/funding/<invention>/.
+May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-X-slug/, and pricing-terms.csv and company.csv in AN-Creation/<business>/funding/<invention>/.
 Example: https://ancreationoffice.com/example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/buyer-packet.html . Templates: https://ancreationoffice.com/template-pricing-terms.csv , https://ancreationoffice.com/template-company.csv , https://ancreationoffice.com/template-meeting.csv
 
 WHO IT IS FOR

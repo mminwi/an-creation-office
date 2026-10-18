@@ -1,7 +1,7 @@
 """Build the funding packet: the pages an inventor hands a lender, an SBDC advisor or a partner.
 Procedure: https://ancreationoffice.com/sop-funding-packet.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 funding-packet.py AN-Creation/Business/funding/<invention>
+  python3 funding-packet.py AN-Creation/<business>/funding/<invention>
 
 The folder holds copies of b-project-manager's sheets (intake-001.csv, cost-sheet.csv, risk-table.csv,
 decision-log.csv, actions.csv) and b-business-manager's own (funding.csv, business-risks.csv).

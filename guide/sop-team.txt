@@ -1,6 +1,6 @@
-SOP: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 7 — October 18, 2026. Two bots for everyone: the Project Manager Bot and the Office Manager Bot. Specialists come with their bot. Hand-offs follow the office-handoff skill.
+SOP: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 8 — October 18, 2026. Two kinds of bot: the Project Manager Bot and the Office Manager Bot. Most people have one of each; more are possible (SEVERAL BOTS). Specialists come with their bot. Hand-offs follow the office-handoff skill.
 Index: https://ancreationoffice.com/sop.txt
-Read this when setting up a bot, when the owner adds, renames or removes a bot, when work belongs to another bot, and when a project needs its first look or a second look at a gate.
+Read this when setting up a bot, when the owner adds, renames or removes a bot, moves an invention to another bot or adds a business, when work belongs to another bot, and when a project needs its first look or a second look at a gate.
 
 THE BOTS (two for everyone; the owner names each bot)
 The public pages offer two bots: the start page (https://ancreationoffice.com/), the nav, sop.txt, the sitemap, and the press kit. Do not add any other bot there, and do not send a stranger to one.
@@ -26,7 +26,7 @@ ROLE NAMES (every procedure)
 - Renaming a bot changes one cell in the team file. The bot does not rename itself.
 
 THE TEAM FILE: AN-Creation/team.csv
-Template: https://ancreationoffice.com/template-team.csv . One row per office bot. Columns: name, covers (the role), reports_to, platform, owner, notes.
+Template: https://ancreationoffice.com/template-team.csv . One row per office bot. Columns: name, covers (the role), bot_id (SEVERAL BOTS), business (its business folder), runs (for a Project Manager Bot: "all", or the inventions it runs, separated by ;), reports_to, platform, owner, notes. A team.csv without the new columns gets them on the first write: bot_id the same as covers, business "Business", runs "all".
 - platform is Grok for an office bot.
 - Each office adds or updates its own row on its first conversation, by the office-startup skill. The analyst gets a row too.
 - A bot reads team.csv at the start of every conversation, so it knows which other offices exist and what they're called.
@@ -34,7 +34,7 @@ Template: https://ancreationoffice.com/template-team.csv . One row per office bo
 
 HAND-OFFS BETWEEN OFFICES
 Follow the office-handoff skill. This is the office rule it carries out.
-Every office has one inbox: AN-Creation/handoffs/for-<role>.txt
+Every bot has one inbox: AN-Creation/handoffs/for-<bot id>.txt. For the first bot of each kind the bot id is the role, so the names below hold; a second bot's inbox carries its own id (for-b-project-manager-marine.txt). Send work about an invention to the bot that runs it (team.csv runs, or Run by in its PROJECT.txt), and business work to the Office Manager Bot of that invention's business.
   Project Manager Bot          AN-Creation/handoffs/for-b-project-manager.txt
   Office Manager Bot           AN-Creation/handoffs/for-b-business-manager.txt
   Molding Plant Office (older) AN-Creation/handoffs/for-b-molding-office.txt
@@ -45,6 +45,26 @@ On the first conversation, if your inbox file is missing, create it (one header 
 Sending is one inbox line plus a SendToAgent ping to that bot, so the work is not waiting until someone opens it. The receiving office marks the line taken when it is on the plan, and done when it is finished. Lines are never deleted. If you cannot ping that bot, tell the owner the line and the bot's name. If the owner doesn't have that bot, say so once and keep the item on your own plan. Plant and product work with no office bot in team.csv goes on b-project-manager's plan, not to an inbox.
 Receiving: office-startup reads your inbox. Put new lines on your plan and mark them.
 Legacy names, once, whichever office finds them first: for-project-manager.txt, for-business-manager.txt, for-soren.txt, and for-kasper.txt (those last two are legacy filenames). Move their lines into for-b-project-manager.txt or for-b-business-manager.txt, then delete the old file. One commit.
+
+SEVERAL BOTS (one folder, shared)
+The owner may run more than one Project Manager Bot, for example one for garden tools and one for marine, or one Project Manager Bot across every invention. Each business has one Office Manager Bot: the ledger, the trip log, the tax records and the correspondence log belong to a company, and two bots writing them would collide. Layout: https://ancreationoffice.com/project-folders.txt
+- The default business. Every folder has one, AN-Creation/<business>/, made at setup even when there is only a Project Manager Bot. An invention not assigned to another business goes there.
+- Bot ids. The first bot of each kind uses its role as its id: b-project-manager, b-business-manager. Each further bot gets the role plus a short word the owner picks, lower case with dashes: b-project-manager-marine, b-business-manager-acme. The id names its inbox, its office folder and its working folder (/workspace/offices/<bot id>/). The owner still names the bot in Grok as they like.
+- Office folders. A Project Manager Bot's office.txt is AN-Creation/offices/<bot id>/office.txt. An Office Manager Bot's is its business folder's office.txt.
+- Shared by every bot: sops/ (each bot on its own version), team.csv, handoffs/, ideas.txt. Shared within a business: its correspondence log and its business record.
+- Who runs which invention: team.csv runs, the "Run by: <bot id>" line in the invention's PROJECT.txt, and its line in All inventions. They agree; if they don't, PROJECT.txt wins and the bot fixes the other two in one save. A PROJECT.txt with no Run by line belongs to b-project-manager.
+- A Project Manager Bot changes only its own inventions. It can read any other ("That one is run by your Marine Project Manager Bot; it's in prototype, waiting on parts."), and sends anything for it through office-handoff. "What projects do I have going?" lists its own first, then the others in one line with who runs each.
+- An Office Manager Bot changes only its own business folder. Work for another business goes to that business's Office Manager Bot.
+
+ADDING A BOT
+Only the owner adds a bot; never create one. The new bot follows drive-setup.txt JOINING AN EXISTING FOLDER: it asks the owner for its short word if a bot of its kind already exists, takes its bot id, makes its office folder and inbox, and adds its row to team.csv.
+- A second Project Manager Bot starts with no inventions. The owner says which to give it (MOVING AN INVENTION) or starts a new one with it.
+- A second Office Manager Bot means a second business: it makes AN-Creation/<company name>/ with the same layout as Business/ (business.txt, its record, correspondence/, All inventions) and runs only that folder.
+
+MOVING AN INVENTION
+Only on the owner's word, in one save:
+- To another Project Manager Bot: change Run by in its PROJECT.txt, runs in team.csv for both bots, and its line in All inventions. One line in the invention's decision-log.csv (date, from, to, the owner's reason), and a hand-off line to the bot that takes it, so it reads the invention before the next conversation.
+- To another business: move the invention's folder into that business's folder and its funding/ and patent/ folders into that business's. Correspondence already filed stays where it was filed (records never move); the business-decision-log.csv of both businesses gets a line, and its line moves to the other All inventions.
 
 WHO TRACKS AND WHO JUDGES
 Every job has a tracker and a judge.

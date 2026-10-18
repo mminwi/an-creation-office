@@ -1,4 +1,4 @@
-SOP: The source check. Revision 1 — October 18, 2026.
+SOP: The source check. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: both bots. b-analyst does the second-pass check and runs check-sources.py.
 May write: the source columns of any sheet that carries specs or rules (the compliance matrix, deadlines.csv, resource-map.csv, and any sheet that has the columns), and project procedures in procedures/ of the invention or Business folder.
@@ -39,7 +39,7 @@ The office's procedures cover the common work. Everything else (good drawings, a
 1. Name the subject in plain words ("production drawings a molder can quote from").
 2. Look in the library for the authoritative source: the standards body, the agency, the publisher. Example: drawings follow the ASME Y14 series: Y14.100 for drawing practices, Y14.5 for dimensioning and tolerancing, Y14.41 for 3D model-based definitions.
 3. Not in the library: search the official bodies (.gov, .mil, the standards body, the test lab) and add it to resource-map.csv as "found, not yet checked" with the date (sop-resource-map.txt step 4).
-4. Write the project's own short procedure from it in procedures/<subject>.txt in the invention's folder (or Business/procedures/): each step names the source, edition and clause it comes from. Mark the procedure "from <source>, <edition>". Steps you could not trace are marked "to find".
+4. Write the project's own short procedure from it in procedures/<subject>.txt in the invention's folder (or procedures/ in the business folder): each step names the source, edition and clause it comes from. Mark the procedure "from <source>, <edition>". Steps you could not trace are marked "to find".
 5. Tell the inventor in one line, and if the subject will come up for other inventors, send Mike a note so it can join the office's procedures.
 
 RULES

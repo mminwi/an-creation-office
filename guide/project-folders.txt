@@ -1,51 +1,54 @@
-AN Creation project folders. Revision 16 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
+AN Creation project folders. Revision 17 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
 
-One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything, with one folder per invention inside it. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
+One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything. Inside it, one folder per business, and inside each business, one folder per invention. Everyone starts with one, the default business (Business/); an invention not assigned to another business goes there. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
 
 Layout:
-AN-Creation/
-  ideas.txt                     parked ideas, one line each with the date; not projects yet
+AN-Creation/                    shared by every bot
+  sops/                         the procedure library: one file per installed version, library-<version>.txt (about 3 MB each, never written over), library.txt (a copy of the newest) and VERSION. Each bot works from the version its office.txt names and moves only when the owner tells that bot to update (https://ancreationoffice.com/version.txt UPDATING). Kept once, shared, never copied into an office folder
+  team.csv                      every bot: its name, its bot id, its business, and the inventions it runs (https://ancreationoffice.com/sop-team.txt)
+  handoffs/                     one inbox per bot, for-<bot id>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
+  offices/<bot id>/             one small folder per Project Manager Bot: its office.txt (Home, "Office version seen", "Last saved", "Working on") and its notes. offices/b-project-manager/ for the first
+  ideas.txt                     parked ideas for every business, one line each with the date; not projects yet
   AGENTS.md, CLAUDE.md          (GitHub add-on only, at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
-  office.txt                    where the Project Manager Bot lives (Home), and its "Office version seen" line. Other bots keep that line in their own office.txt. One b-project-manager runs every invention
-  All inventions                one line per invention: where it stands, its next step
-  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), funding/<invention>/ (the funding packet, sop-funding-packet.txt), company.csv, contacts.csv, market-evidence.csv, promo-log.csv, business-decision-log.csv, trips.csv, expenses.csv, deadlines.csv (sop-business-record.txt), record/
-  correspondence/               the correspondence log, one for the company: a folder per email, file sent, meeting or call, YYMMDD-NN-X-slug (sop-correspondence.txt)
-  correspondence.csv            its index, a row per folder
-  handoffs/                     one inbox per office, for-<role>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
-  sops/                         the procedure library: one file per installed version, library-<version>.txt (about 3 MB each, never written over), library.txt (a copy of the newest) and VERSION. Each bot works from the version its office.txt names and moves only when the owner tells that bot to update (https://ancreationoffice.com/version.txt UPDATING). Keep this folder once, shared, not copied into an office folder
-  Fishing Lure/                 one folder per invention
-    Your files/                 yours to open, read and change
-      READ ME FIRST
-      Status                    one page: where it stands, this week, decisions, money, documents, what's coming
-      To-do                     three or four paths with a next step on each; you pick
-      Project record/           readable copies of the seven required documents: charter and schedule, decisions, actions, cost sheet, spending, risks, change notices (sop-project-record.txt)
-      Action log                who owes what: your actions and what you're waiting on from others (also on your review page as Your list)
-      Plan                      where it stands, decisions, what's next
-      Forms/                    filled forms
-      Record/                   readable copies of the conversations with the bots; emails, files sent and meeting notes are in AN-Creation/correspondence/
-      Product/  CAD/  Business/  Company/
-      Send to the office/            drop anything here: emails, quotes, photos, notes
-      Review/                   web pages for this invention: index.html lists every page, picture and document ever shown; one dated folder per page, never changed
-      History/                  earlier copies of Status and Plan, dated
-    Office files/              the assistants' side. Please don't edit; tell b-project-manager instead.
-      README.txt  PROJECT.txt  plan.md
-      actions.csv               the action log master: one row per action or suggestion, never deleted (sop-action-log.txt, sop-suggestions.txt)
-      cost-sheet.csv            what one unit should cost, every component, tooling separate (sop-cost-sheet.txt)
-      risk-table.csv            how it could fail, scored down to the residual (sop-risk-table.txt)
-      decision-log.csv          everyday calls, dated, with the reason (sop-decision-log.txt)
-      project-charter.txt       scope, success criteria, milestones, budget; changed only by ECN (sop-project-charter.txt)
-      schedule.csv  schedule.html   the charter's dates, forecasts and slips, and the critical path (sop-schedule.txt)
-      spending.csv              what the project has spent, and whose money (sop-spending-register.txt)
-      ecn-log.csv  ecn/         engineering change notices (sop-change-control.txt)
-      forms/                    master forms: answer, context, status for every field
-      queue/QUEUE.txt  open/  active/  done/  revisit/
-      record/                   the bots' conversations and items dropped in Send to the office that are not correspondence: YYMMDD-NN-R-slug (received), YYMMDD-NN-S-slug (sent), YYMMDD-NN-M-slug (conversation, full text); anything to or from someone outside the company goes in AN-Creation/correspondence/; NN is its number in that day, 01, 02... Folders already named the old way (I, O) stay as they are; never rename a record.
-      record/INDEX.csv          one line per record item: date, type, summary, fields touched, status
-      forms/INDEX.csv           one line per form: what it covers, status counts, last change
-      mirror/                   text pulled once from each record item
-      sessions/YYMMDD-HHMM-slug/   one per analyst run: prompt, notes, result, DONE.txt
-      (no inventor-copy/: Drive version history, or GitHub history, shows what the inventor changed)
-      archive/
+  Business/                     the default business, made at setup even when there is only a Project Manager Bot. Every invention not assigned to another business goes here. A second business gets its own folder beside it, named for that company. Each business's Office Manager Bot works in its folder (business-manager.txt). In the procedures, AN-Creation/<business>/ is the folder of the business at hand, Business/ unless the invention is in another
+    office.txt                  that Office Manager Bot's office file
+    business.txt, plan.md, actions.csv, brand/ (the brand kit), funding/<invention>/ (the funding packet, sop-funding-packet.txt), patent/<invention>/, company.csv, contacts.csv, market-evidence.csv, promo-log.csv, business-decision-log.csv, trips.csv, expenses.csv, deadlines.csv (sop-business-record.txt), procedures/, record/
+    correspondence/             the business's correspondence log: a folder per email, file sent, meeting or call, YYMMDD-NN-X-slug (sop-correspondence.txt)
+    correspondence.csv          its index, a row per folder
+    All inventions              one line per invention in this business: where it stands, its next step, and which bot runs it
+    Fishing Lure/               one folder per invention, inside its business
+      Your files/               yours to open, read and change
+        READ ME FIRST
+        Status                  one page: where it stands, this week, decisions, money, documents, what's coming
+        To-do                   three or four paths with a next step on each; you pick
+        Project record/         readable copies of the seven required documents: charter and schedule, decisions, actions, cost sheet, spending, risks, change notices (sop-project-record.txt)
+        Action log              who owes what: your actions and what you're waiting on from others (also on your review page as Your list)
+        Plan                    where it stands, decisions, what's next
+        Forms/                  filled forms
+        Record/                 readable copies of the conversations with the bots; emails, files sent and meeting notes are in the business's correspondence/
+        Product/  CAD/  Business/  Company/
+        Send to the office/            drop anything here: emails, quotes, photos, notes
+        Review/                   web pages for this invention: index.html lists every page, picture and document ever shown; one dated folder per page, never changed
+        History/                  earlier copies of Status and Plan, dated
+      Office files/              the assistants' side. Please don't edit; tell b-project-manager instead.
+        README.txt  PROJECT.txt  plan.md
+        actions.csv               the action log master: one row per action or suggestion, never deleted (sop-action-log.txt, sop-suggestions.txt)
+        cost-sheet.csv            what one unit should cost, every component, tooling separate (sop-cost-sheet.txt)
+        risk-table.csv            how it could fail, scored down to the residual (sop-risk-table.txt)
+        decision-log.csv          everyday calls, dated, with the reason (sop-decision-log.txt)
+        project-charter.txt       scope, success criteria, milestones, budget; changed only by ECN (sop-project-charter.txt)
+        schedule.csv  schedule.html   the charter's dates, forecasts and slips, and the critical path (sop-schedule.txt)
+        spending.csv              what the project has spent, and whose money (sop-spending-register.txt)
+        ecn-log.csv  ecn/         engineering change notices (sop-change-control.txt)
+        forms/                    master forms: answer, context, status for every field
+        queue/QUEUE.txt  open/  active/  done/  revisit/
+        record/                   the bots' conversations and items dropped in Send to the office that are not correspondence: YYMMDD-NN-R-slug (received), YYMMDD-NN-S-slug (sent), YYMMDD-NN-M-slug (conversation, full text); anything to or from someone outside the company goes in the business's correspondence/; NN is its number in that day, 01, 02... Folders already named the old way (I, O) stay as they are; never rename a record.
+        record/INDEX.csv          one line per record item: date, type, summary, fields touched, status
+        forms/INDEX.csv           one line per form: what it covers, status counts, last change
+        mirror/                   text pulled once from each record item
+        sessions/YYMMDD-HHMM-slug/   one per analyst run: prompt, notes, result, DONE.txt
+        (no inventor-copy/: Drive version history, or GitHub history, shows what the inventor changed)
+        archive/
 
 Only the project lives here, plus the procedures: sops/, one file per installed version, each bot on its own until the owner tells it to update (version.txt UPDATING). The bots read their procedures from it, not from the website. A template copied in to be filled out (a form, the plan) is a project file from then on: dated, and never overwritten by a newer template.
 
@@ -65,9 +68,13 @@ The queue. A ticket is a file. Its folder is its status: open, active, done. rev
 
 Analyst runs. Each run works in its own dated folder, writes DONE.txt when it finishes, and is never renamed. Finished runs older than a month move to archive/.
 
-Several inventions. Each has its own folder, plan and queue. One b-project-manager runs them all (inventions are folders, not bots; https://ancreationoffice.com/sop-team.txt); it names the invention it's on and files each conversation in that invention's record. Starting a parked idea: set up its folder, PROJECT.txt, intake form and first ticket before saying it has started; add it to All inventions; mark the idea started in ideas.txt. Answers never cross between inventions. A fact that applies to two, such as your company, is recorded in each, with its source.
+Several inventions. Each has its own folder, plan and queue, inside its business. One b-project-manager can run them all (inventions are folders, not bots); it names the invention it's on and files each conversation in that invention's record. Starting a parked idea: it goes in the default business (Business/) unless the owner names another (and which Project Manager Bot runs it, if there is more than one), set up its folder, PROJECT.txt ("Run by: <bot id>"), intake form and first ticket before saying it has started; add it to that business's All inventions with who runs it; mark the idea started in ideas.txt. Answers never cross between inventions. A fact that applies to two, such as your company, is recorded in each, with its source.
 
-Where it lives. One private folder named AN-Creation, wherever the owner wants it, with this layout inside (https://ancreationoffice.com/drive-setup.txt). A cloud folder (Google Drive, OneDrive, Dropbox) is recommended: it works from a phone, keeps earlier versions, and survives a lost computer. Google Drive is the default when they have no preference. Each office keeps a working copy of the library at /workspace/offices/<role>/sops/library.txt. office-save proves a write by reading it back. For offices or people who write code, the same AN-Creation/ can live in a private GitHub repository named an-creation instead, with one clone per office at /workspace/offices/<role>/an-creation (https://ancreationoffice.com/github-setup.txt). office.txt says which: "Home: Google Drive AN-Creation" or "Home: GitHub <username>/an-creation". No Home: line: GitHub if /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive.
+Several bots. More than one Project Manager Bot can share the folder, each with its own inventions (for example one for garden tools, one for marine), and each business has one Office Manager Bot. Who runs what is in team.csv, each PROJECT.txt and All inventions. A bot changes only its own inventions; it can read the others. Adding a bot, moving an invention between bots, and adding a second business: https://ancreationoffice.com/sop-team.txt SEVERAL BOTS.
+
+The older layout. Folders made before October 18, 2026 had the inventions, correspondence/, correspondence.csv, All inventions and the Project Manager Bot's office.txt at the top of AN-Creation/. They move once, with the owner's yes: https://ancreationoffice.com/sop-folder-move.txt . Until then the bot works with them where they are.
+
+Where it lives. One private folder named AN-Creation, wherever the owner wants it, with this layout inside (https://ancreationoffice.com/drive-setup.txt). A cloud folder (Google Drive, OneDrive, Dropbox) is recommended: it works from a phone, keeps earlier versions, and survives a lost computer. Google Drive is the default when they have no preference. Each bot keeps a working copy of its library version at /workspace/offices/<bot id>/sops/. office-save proves a write by reading it back. For offices or people who write code, the same AN-Creation/ can live in a private GitHub repository named an-creation instead, with one clone per bot at /workspace/offices/<bot id>/an-creation (https://ancreationoffice.com/github-setup.txt). office.txt says which: "Home: Google Drive AN-Creation" or "Home: GitHub <username>/an-creation". Every office.txt carries the same Home line. No Home: line: GitHub if /workspace/offices/<bot id>/an-creation is a git clone, otherwise Google Drive.
 
 Backups. Records and outputs are never edited once saved (a change is a new dated file or folder); working files like plan.md and Status are updated in place. Cloud folders like Google Drive and OneDrive keep earlier versions of each file for a while (a plain folder does not, so History/ and the owner's own backup matter more), and a dated copy goes to History/ before any major change (on GitHub, every commit is kept). Going back to an earlier version is a normal part of working with AI. See https://ancreationoffice.com/version-control.txt
 

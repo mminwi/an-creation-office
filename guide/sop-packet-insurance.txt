@@ -1,7 +1,7 @@
-SOP: The insurance packet. Revision 1 — October 18, 2026.
+SOP: The insurance packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each meeting with an insurance agent or broker (sop-meeting-prep.txt). b-analyst builds it.
-May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; company.csv (the insurance line) after the meeting.
+May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; company.csv (the insurance line) after the meeting.
 Example: https://ancreationoffice.com/example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/insurance-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Insurance only)
 Goes with: https://ancreationoffice.com/sop-company.txt (8. Insurance), https://ancreationoffice.com/sop-risk-table.txt , https://ancreationoffice.com/sop-packet-buyer.txt (what buyers ask for)
 

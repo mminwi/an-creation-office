@@ -1,7 +1,7 @@
-SOP: The partner packet. Revision 1 — October 18, 2026.
+SOP: The partner packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each meeting with someone who might join the project or the business (sop-meeting-prep.txt). b-analyst builds it.
-May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; a planned row in disclosure-history.csv when they will see how it is made.
+May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; a planned row in disclosure-history.csv when they will see how it is made.
 Example: https://ancreationoffice.com/example-mousetrap/correspondence/261102-01-M-partner-tool-and-die-maker/partner-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Partner only)
 Goes with: https://ancreationoffice.com/sop-packet-attorney.txt (where any arrangement gets written), https://ancreationoffice.com/sop-team.txt
 

@@ -1,6 +1,6 @@
-SOP: Decision log. Revision 3 — October 18, 2026.
+SOP: Decision log. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
-Kept by: b-project-manager, one per invention (b-business-manager keeps its own in AN-Creation/Business/). May write: Office files/decision-log.csv.
+Kept by: b-project-manager, one per invention (b-business-manager keeps its own in AN-Creation/<business>/). May write: Office files/decision-log.csv.
 Template: https://ancreationoffice.com/template-decision-log.csv
 Goes with the Decisions section of the project plan. The plan still holds the choice in the inventor's words. This log is the list you look up.
 

@@ -1,7 +1,7 @@
-SOP: The patent attorney packet. Revision 1 — October 18, 2026.
+SOP: The patent attorney packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each meeting with a patent attorney or agent, a law school clinic or the USPTO's free help (sop-meeting-prep.txt). b-analyst builds it.
-May write: AN-Creation/Business/patent/<invention>/ (invention-disclosure.csv, prior-art.csv, disclosure-history.csv), the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv.
+May write: AN-Creation/<business>/patent/<invention>/ (invention-disclosure.csv, prior-art.csv, disclosure-history.csv), the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv.
 Templates: https://ancreationoffice.com/template-invention-disclosure.csv , https://ancreationoffice.com/template-prior-art.csv , https://ancreationoffice.com/template-disclosure-history.csv , https://ancreationoffice.com/template-meeting.csv (rows marked Patent only)
 Example: https://ancreationoffice.com/example-mousetrap/correspondence/261023-01-M-patent-agent-consult/patent-packet.html
 Goes with: https://ancreationoffice.com/sop-routes.txt (the patent road: what is new IP-02, what is already out there IP-03, who contributed IP-04, has it been shown IP-05), https://ancreationoffice.com/principle-patent-before-public.txt

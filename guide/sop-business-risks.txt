@@ -1,7 +1,7 @@
-SOP: The business risk register. Revision 2 — October 18, 2026.
+SOP: The business risk register. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one per invention. Template: https://ancreationoffice.com/template-business-risks.csv
-May write: AN-Creation/Business/funding/<invention>/business-risks.csv and its rows on the Business action log.
+May write: AN-Creation/<business>/funding/<invention>/business-risks.csv and its rows on the Business action log.
 Goes with: https://ancreationoffice.com/sop-funding-packet.txt (page 5 of the packet). The product's own failure modes are b-project-manager's risk table (https://ancreationoffice.com/sop-risk-table.txt); this register is the risks to the business.
 
 WHAT GOES IN IT

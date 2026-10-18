@@ -1,9 +1,9 @@
-SOP: The funding packet. Revision 2 — October 18, 2026.
+SOP: The funding packet. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one packet per invention. b-analyst builds it.
 Templates: https://ancreationoffice.com/template-funding.csv and https://ancreationoffice.com/template-business-risks.csv . Builder: https://ancreationoffice.com/funding-packet.py
 Example: https://ancreationoffice.com/example-mousetrap/funding-packet.html (its sheets are in the same folder).
-May write: everything in AN-Creation/Business/funding/<invention>/, one line on the Business action log, and a hand-off line to b-project-manager.
+May write: everything in AN-Creation/<business>/funding/<invention>/, one line on the Business action log, and a hand-off line to b-project-manager.
 Goes with: https://ancreationoffice.com/sop-funding.txt (which kind of money fits), https://ancreationoffice.com/sop-business-risks.txt , https://ancreationoffice.com/sop-cost-sheet.txt , https://ancreationoffice.com/sop-risk-table.txt
 
 WHAT IT IS
@@ -13,7 +13,7 @@ WHO OWNS WHAT
 b-business-manager owns the packet: the price, the funding request, the use of funds, the business risk register, and the call on when it is ready to show anyone.
 b-project-manager owns the product numbers: the cost sheet, the risk table, the decision log, the action log and the milestone dates. b-business-manager never retypes or edits them. It asks for current copies (office-handoff: one line in AN-Creation/handoffs/for-b-project-manager.txt, "copies of cost-sheet, risk-table, decision-log, actions and intake for the funding packet") and uses what comes back.
 
-THE FOLDER: AN-Creation/Business/funding/<invention>/
+THE FOLDER: AN-Creation/<business>/funding/<invention>/
   intake-001.csv      copy of the invention's intake form, from b-project-manager
   cost-sheet.csv      copy, from b-project-manager
   risk-table.csv      copy, from b-project-manager
@@ -25,7 +25,7 @@ THE FOLDER: AN-Creation/Business/funding/<invention>/
 The copies are dated by the hand-off line that brought them. Before a build, check that none is older than the last change b-project-manager logged; if one is, ask for it again.
 
 BUILDING IT
-b-analyst runs: python3 funding-packet.py AN-Creation/Business/funding/<invention>
+b-analyst runs: python3 funding-packet.py AN-Creation/<business>/funding/<invention>
 Every figure is computed from the sheets: piece cost (material plus process, all rows), tooling (all rows, once), what each unit clears at the price, gross margin, the units it takes to pay back the tooling, the price that pays it back over the plan volume, and the tooling the price can carry. Nothing on the packet is typed in by hand.
 In funding.csv, a value with source "illustrative" prints with a small i mark. A real packet has none. Remove the marks by replacing the values, never by changing the source.
 

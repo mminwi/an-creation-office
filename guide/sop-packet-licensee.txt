@@ -1,7 +1,7 @@
-SOP: The licensee packet. Revision 1 — October 18, 2026.
+SOP: The licensee packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each meeting with a company that might license the invention (sop-meeting-prep.txt). b-analyst builds it.
-May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; a planned row in disclosure-history.csv as soon as the meeting is set.
+May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; a planned row in disclosure-history.csv as soon as the meeting is set.
 Example: https://ancreationoffice.com/example-mousetrap/correspondence/261119-01-M-pest-control-company-licensing/licensee-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Licensee only)
 Goes with: https://ancreationoffice.com/sop-licensing.txt (the licensing route: before approaching anyone, the sell sheet, finding licensees, the approach, the deal), https://ancreationoffice.com/sop-packet-patent.txt (the patent sheets this packet reads)
 

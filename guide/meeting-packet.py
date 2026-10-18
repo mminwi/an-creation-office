@@ -1,7 +1,7 @@
 """Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor, an accountant, a patent attorney, a licensee, an insurance agent, a business attorney or a possible partner.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney|partner
+  python3 meeting-packet.py AN-Creation/<business>/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney|partner
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" rows name the folders with the sheets (relative to the meeting folder; one row each, first match wins): the copies of
@@ -36,8 +36,19 @@ for r in meeting:
     M.setdefault(r["key"], r["value"])
     MULTI.setdefault(r["key"], []).append(r)
 # "record" rows name the folders that hold the sheets, relative to the meeting folder; one row each
-# (in a real project: ../../Business/funding/<invention> and ../../<invention>/Office files). First match wins.
-RECS = [(MEET / r["value"]).resolve() for r in MULTI.get("record", []) if (r.get("value") or "").strip()] or [MEET]
+# (in a real project, from AN-Creation/<business>/correspondence/<slug>/: ../../funding/<invention> and
+# ../../<invention>/Office files). First match wins. A meeting file written before the folder move
+# (sop-folder-move.txt) says ../../funding/<invention>; that folder is now ../../funding/<invention>.
+def record_folder(value):
+    p = (MEET / value).resolve()
+    if not p.exists() and value.replace("\\", "/").startswith("../../Business/"):
+        moved = (MEET / ("../../" + value[len("../../Business/"):])).resolve()
+        if moved.exists():
+            return moved
+    return p
+
+
+RECS = [record_folder(r["value"].strip()) for r in MULTI.get("record", []) if (r.get("value") or "").strip()] or [MEET]
 
 
 def sheet(name):

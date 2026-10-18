@@ -1,4 +1,4 @@
-261018.31
+261018.32
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -192,6 +192,7 @@ sop-design-loop.txt
 sop-document-life.txt
 sop-drying.txt
 sop-focus.txt
+sop-folder-move.txt
 sop-funding-packet.txt
 sop-funding.txt
 sop-gateways.txt
