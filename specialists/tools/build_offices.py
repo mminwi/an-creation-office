@@ -1,4 +1,9 @@
-"""Builds the AN Creation offices from specialists/roles.csv (run after any roster or office change).
+"""RETIRED 18 Oct 2026. The site has two bots (Project Manager Bot, Office Manager Bot; decision D-108), its start page
+welcome.html is written by hand, and office-molding/plastic-design/quality/manufacturing.txt carry two-bot notes this
+script does not know about. Running it would put the six-office pages back and overwrite those files, so it stops.
+Kept for its history. Original description:
+
+Builds the AN Creation offices from specialists/roles.csv (run after any roster or office change).
 Run from this repository's root, pointing at a creation-office checkout:
   python specialists/tools/build_offices.py --site ../creation-office/site/create
 Writes into that site/create/ folder (the source of truth). sync-public-repo.py then copies it into guide/ here;
@@ -15,6 +20,8 @@ Writes:
   specialists/tools/sidebar.html    the "Your offices" sidebar block, for pasting into the other site pages
 Each office is one bot. The owner names it; the procedures call it by its role name."""
 import argparse, csv, html, json, os, pathlib, re, sys
+
+sys.exit("build_offices.py is retired (two bots since 18 Oct 2026). It would overwrite welcome.html and the office files; edit those in creation-office site/create by hand.")
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 _ap = argparse.ArgumentParser(description='Build the AN Creation office pages into creation-office site/create/.')

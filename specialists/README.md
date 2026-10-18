@@ -1,5 +1,7 @@
 # Specialists (branch)
 
+> **Status, 18 Oct 2026: history.** The public site now has two bots: the Project Manager Bot (b-project-manager) and the Office Manager Bot (b-business-manager). The six offices are retired; molding, plastic design, quality and manufacturing are work the Project Manager Bot does from `guide/office-*.txt`. This folder is the planning record from before that (the roster, the role map, the sources pass, the go-live checklist). `roles.csv` and `calcs/` are still accurate; `offices.csv` is updated; `tools/build_offices.py` is retired and stops if run. The current rules are in [`guide/sop-team.txt`](../guide/sop-team.txt).
+
 A wider-scoped branch of the AN Creation Office. Instead of one office "for inventors," the office is promoted as a roster of specialists: a project manager, a design-for-manufacturing specialist, a cooling water specialist, a patent prep specialist, and so on. Each one gets its own page and listing. Behind them is one office: the same procedures, library, forms and front desk (b-project-manager) in guide/.
 
 - roles.csv: the master list of roles: procedures, library sources, new sources, links between roles. sources-new.csv: sources still to read. sources.md: what the sources pass did and the gaps.

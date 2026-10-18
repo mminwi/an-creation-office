@@ -1,4 +1,7 @@
 # Going live: from the specialists work to the websites
+
+> **Status, 18 Oct 2026: history.** The public site now has two bots: the Project Manager Bot (b-project-manager) and the Office Manager Bot (b-business-manager). The six offices are retired; molding, plastic design, quality and manufacturing are work the Project Manager Bot does from `guide/office-*.txt`. This folder is the planning record from before that (the roster, the role map, the sources pass, the go-live checklist). `roles.csv` and `calcs/` are still accurate; `offices.csv` is updated; `tools/build_offices.py` is retired and stops if run. The current rules are in [`guide/sop-team.txt`](../guide/sop-team.txt).
+
 Written 2026-10-12. Main of mminwi/an-creation-office now holds the specialists work (merged 2026-10-12). Nothing below is live until it is done on the server.
 
 ## Status, 12 Oct 2026 (evening)
