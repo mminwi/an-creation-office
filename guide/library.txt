@@ -3947,7 +3947,7 @@ The seven required documents (b-project-manager)
 - actions.csv           who owes what; S- rows are suggestions waiting for an owner and a date (sop-action-log.txt, sop-suggestions.txt)
 - cost-sheet.csv        the costed bill of materials: cost to manufacture one packed trap, tooling amortized (sop-cost-sheet.txt)
 - spending.csv          what the project has spent, and whose money (sop-spending-register.txt)
-- risk-table.csv        the simplified FMEA, for this trap's own parts and steps (sop-risk-table.txt)
+- risk-table.csv        the risk analysis table, for this trap's own parts and steps (sop-risk-table.txt)
 - ecn-log.csv and ecn/  engineering change notices; ECN-001 proposes a charter change (sop-change-control.txt)
 
 Also here
@@ -9571,7 +9571,7 @@ SHEETS = {
                        ["part number", "part", "qty", "make or buy", "what it is", "material cost", "process cost",
                         "tooling", "amortization", "unit cost", "running total", "share of total"],
                        ("qty", "material cost", "process cost", "tooling", "amortization", "unit cost", "running total", "share of total")),
-    "risk-table.csv": ("Risk table: simplified FMEA, severity first", "Project record", None, ("S", "O", "D", "RPN")),
+    "risk-table.csv": ("Risk analysis table", "Project record", None, ("S", "O", "D", "RPN")),
     "actions.csv": ("Action log", "Project record", ["ID", "Opened", "Action", "Who", "Due", "Status"], ()),
     "decision-log.csv": ("Decision log", "Project record", None, ()),
     "spending.csv": ("Spending register", "Project record", ["date", "stage", "what it was", "vendor or who", "amount", "committed or paid", "paid from", "running total"], ("amount", "running total")),
@@ -9676,7 +9676,7 @@ def main(argv):
                 rows = list(csv.reader(fh))
             body = table(rows, cols, right, risk=name == "risk-table.csv")
             if name == "risk-table.csv":
-                body = "<p class='sub'>Each failure mode with its first scores; indented lines are the actions taken and the new scores. Severity 8 and up is shaded.</p>" + body
+                body = "<p class='sub'>Each way it could fail, scored 1 to 10 for how bad it would be (S), how likely (O) and how hard to catch (D); RPN is the three multiplied. Indented lines are the actions taken and the new scores. The most severe are shaded.</p>" + body
         out = dst / (pathlib.Path(name).stem + ".html")
         out.write_text(page(title, kind, project, body, note), encoding="utf-8")
         made.append((out.name, title, kind))
@@ -26083,7 +26083,7 @@ Three pieces, all usable from a phone when the project folder is in the cloud:
 - b-project-manager, in Grok Bot: the friendly front desk the inventor talks to, like texting. It fills the form on the current ticket, hands the heavy work to b-analyst, checks it came back, and says what's next in a line.
 - The project, in one private folder (AN-Creation) wherever the owner wants it; a cloud folder like Google Drive or OneDrive is best: every file, with dated copies before big changes. b-project-manager's memory can be cleared, and b-project-manager can be deleted and made again; the project stays in the folder. People who write code can use a private GitHub repository instead (github-setup.txt).
 - b-analyst, the heavy work. By default it is the grok command in the bot's own Shell (drive-setup.txt GROK BUILD). It does the thinking and writes the next ticket.
-What they need: a SuperGrok subscription (the price is on https://ancreationoffice.com/start.html) and somewhere to keep the project folder: a cloud folder is best (a Google account for Google Drive, which most people already have, or OneDrive or Dropbox), but any folder this bot can write to works. On the shared computer, grok, claude, and codex are already installed. Do not walk through a paid upgrade.
+What they need: at minimum a SuperGrok subscription (the price is on https://ancreationoffice.com/start.html; heavy use may call for a larger Grok plan) and somewhere to keep the project folder: a cloud folder is best (a Google account for Google Drive, which most people already have, or OneDrive or Dropbox), but any folder this bot can write to works. On the shared computer, grok, claude, and codex are already installed. Do not walk through a paid upgrade.
 This is the only path setup takes people down. It is built for someone who has never used Grok or anything like it. Other AIs work too, but setup never offers them: only if the person asks ("Can I use Claude?") answer yes in a line and give them https://ancreationoffice.com/using-other-ais.txt ; don't walk them through it unless they want to.
 
 NAME (first step of setup)
@@ -26331,7 +26331,7 @@ THE SEVEN (every invention has all of them; none is optional)
    Office files/cost-sheet.csv . Skill: https://ancreationoffice.com/sop-cost-sheet.txt
 5. Spending register: every dollar spent or committed on the project, and whose money it was.
    Office files/spending.csv . Skill: https://ancreationoffice.com/sop-spending-register.txt
-6. Risk table: the simplified FMEA, done for real for this product and its processes.
+6. Risk analysis table: a simplified FMEA, done for real for this product and its processes. To the inventor it is the risk analysis table.
    Office files/risk-table.csv . Skill: https://ancreationoffice.com/sop-risk-table.txt
 7. Engineering change notices: every change to the charter's scope, budget or dates, and every change to a frozen design, as a numbered ECN with its log.
    Office files/ecn-log.csv and Office files/ecn/ . Skill: https://ancreationoffice.com/sop-change-control.txt
@@ -26346,7 +26346,7 @@ THE HARD LINES
 - Specs trace to their source. A requirement, rating, tolerance, material property or test level on any sheet carries its source, edition, clause, quoted text and source status, and is checked against the document before it is built, bought or tested on (https://ancreationoffice.com/sop-source-check.txt, principle-trace-to-source.txt). Run check-sources.py before every review and every quote package.
 - They are done for real. No pasted standard FMEA, no copied BOM from another product, no round-number cost guesses presented as figures (https://ancreationoffice.com/principle-never-invent-facts.txt).
 - The inventor can see all seven at any time: b-analyst keeps a readable copy of each in Your files/Project record/, in the format the inventor chose, and the review page links them. For web pages: python3 record-view.py "<Office files folder>" "<Your files>/Project record" (https://ancreationoffice.com/record-view.py; example: https://ancreationoffice.com/example-mousetrap/views/index.html). The inventor is the decision-maker; they review what the bot has thought through.
-- A document the inventor has not seen yet is mentioned in one line when it first exists: "Your risk table is up: nine ways it could fail, two worth working now."
+- A document the inventor has not seen yet is mentioned in one line when it first exists: "Your risk analysis table is up: nine ways it could fail, two worth working now."
 - Other working documents (control plan, compliance matrix, test plans, the resource map) are kept as the stages call for them. These seven are the minimum.
 
 FOR b-business-manager
@@ -27947,7 +27947,7 @@ Every invention keeps seven documents in Office files/, done for real and visibl
 - actions.csv: who owes what; suggestions sit there until they get an owner and a date or expire (sop-action-log.txt, sop-suggestions.txt).
 - cost-sheet.csv: the costed bill of materials and the cost to manufacture (sop-cost-sheet.txt).
 - spending.csv: what the project has spent, and whose money (sop-spending-register.txt). Every row is also sent to b-business-manager for the expense ledger, the business's tax record. When the inventor mentions a cost, a trip or a meeting with a supplier, get the date, amount and receipt (or the miles) right then, and hand it off; b-business-manager keeps trips and conversations.
-- risk-table.csv: the simplified FMEA for this product's own parts and steps, never boilerplate (sop-risk-table.txt).
+- risk-table.csv: the risk analysis table for this product's own parts and steps, never boilerplate (sop-risk-table.txt). Call it the risk analysis table when you talk to the inventor.
 - ecn-log.csv and ecn/: engineering change notices for any change to the charter, or to a frozen design (sop-change-control.txt).
 Every requirement, rating, tolerance, material property or test level on a sheet traces to an actual document (source, edition, clause, quoted text, source status) and is checked against it before anyone builds, buys or tests on it; b-analyst runs check-sources.py before each review and quote package (https://ancreationoffice.com/sop-source-check.txt).
 b-analyst fills them; you keep the living ones current, dust off the parked ones when a trigger happens, and tell the inventor in one line when one changes in a way that matters. When b-business-manager asks for them for a funding packet, send current copies through office-handoff.
@@ -27985,7 +27985,7 @@ AN Creation: start here, on your phone. Revision 3 — October 18, 2026.
 For someone who has never done this. You need a phone, about an hour, and two accounts. Everything runs in the cloud; nothing goes on a computer.
 
 WHAT YOU NEED
-1. A SuperGrok subscription (the plan and price: https://ancreationoffice.com/start.html). It includes Grok bots and Grok Build. This one account runs both bots.
+1. At minimum, a SuperGrok subscription (the plan and price: https://ancreationoffice.com/start.html). Depending on how much you use the bots, you may need a larger Grok plan. It includes Grok bots and Grok Build. This one account runs both bots.
 2. Somewhere for your project folder. A cloud folder is best: Google Drive (a Google account, which most people have) or OneDrive. Your bot asks where you want it.
 
 THE STEPS

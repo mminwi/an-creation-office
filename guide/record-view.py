@@ -24,7 +24,7 @@ SHEETS = {
                        ["part number", "part", "qty", "make or buy", "what it is", "material cost", "process cost",
                         "tooling", "amortization", "unit cost", "running total", "share of total"],
                        ("qty", "material cost", "process cost", "tooling", "amortization", "unit cost", "running total", "share of total")),
-    "risk-table.csv": ("Risk table: simplified FMEA, severity first", "Project record", None, ("S", "O", "D", "RPN")),
+    "risk-table.csv": ("Risk analysis table", "Project record", None, ("S", "O", "D", "RPN")),
     "actions.csv": ("Action log", "Project record", ["ID", "Opened", "Action", "Who", "Due", "Status"], ()),
     "decision-log.csv": ("Decision log", "Project record", None, ()),
     "spending.csv": ("Spending register", "Project record", ["date", "stage", "what it was", "vendor or who", "amount", "committed or paid", "paid from", "running total"], ("amount", "running total")),
@@ -129,7 +129,7 @@ def main(argv):
                 rows = list(csv.reader(fh))
             body = table(rows, cols, right, risk=name == "risk-table.csv")
             if name == "risk-table.csv":
-                body = "<p class='sub'>Each failure mode with its first scores; indented lines are the actions taken and the new scores. Severity 8 and up is shaded.</p>" + body
+                body = "<p class='sub'>Each way it could fail, scored 1 to 10 for how bad it would be (S), how likely (O) and how hard to catch (D); RPN is the three multiplied. Indented lines are the actions taken and the new scores. The most severe are shaded.</p>" + body
         out = dst / (pathlib.Path(name).stem + ".html")
         out.write_text(page(title, kind, project, body, note), encoding="utf-8")
         made.append((out.name, title, kind))

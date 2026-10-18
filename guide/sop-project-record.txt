@@ -18,7 +18,7 @@ THE SEVEN (every invention has all of them; none is optional)
    Office files/cost-sheet.csv . Skill: https://ancreationoffice.com/sop-cost-sheet.txt
 5. Spending register: every dollar spent or committed on the project, and whose money it was.
    Office files/spending.csv . Skill: https://ancreationoffice.com/sop-spending-register.txt
-6. Risk table: the simplified FMEA, done for real for this product and its processes.
+6. Risk analysis table: a simplified FMEA, done for real for this product and its processes. To the inventor it is the risk analysis table.
    Office files/risk-table.csv . Skill: https://ancreationoffice.com/sop-risk-table.txt
 7. Engineering change notices: every change to the charter's scope, budget or dates, and every change to a frozen design, as a numbered ECN with its log.
    Office files/ecn-log.csv and Office files/ecn/ . Skill: https://ancreationoffice.com/sop-change-control.txt
@@ -33,7 +33,7 @@ THE HARD LINES
 - Specs trace to their source. A requirement, rating, tolerance, material property or test level on any sheet carries its source, edition, clause, quoted text and source status, and is checked against the document before it is built, bought or tested on (https://ancreationoffice.com/sop-source-check.txt, principle-trace-to-source.txt). Run check-sources.py before every review and every quote package.
 - They are done for real. No pasted standard FMEA, no copied BOM from another product, no round-number cost guesses presented as figures (https://ancreationoffice.com/principle-never-invent-facts.txt).
 - The inventor can see all seven at any time: b-analyst keeps a readable copy of each in Your files/Project record/, in the format the inventor chose, and the review page links them. For web pages: python3 record-view.py "<Office files folder>" "<Your files>/Project record" (https://ancreationoffice.com/record-view.py; example: https://ancreationoffice.com/example-mousetrap/views/index.html). The inventor is the decision-maker; they review what the bot has thought through.
-- A document the inventor has not seen yet is mentioned in one line when it first exists: "Your risk table is up: nine ways it could fail, two worth working now."
+- A document the inventor has not seen yet is mentioned in one line when it first exists: "Your risk analysis table is up: nine ways it could fail, two worth working now."
 - Other working documents (control plan, compliance matrix, test plans, the resource map) are kept as the stages call for them. These seven are the minimum.
 
 FOR b-business-manager

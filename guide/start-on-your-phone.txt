@@ -2,7 +2,7 @@ AN Creation: start here, on your phone. Revision 3 — October 18, 2026.
 For someone who has never done this. You need a phone, about an hour, and two accounts. Everything runs in the cloud; nothing goes on a computer.
 
 WHAT YOU NEED
-1. A SuperGrok subscription (the plan and price: https://ancreationoffice.com/start.html). It includes Grok bots and Grok Build. This one account runs both bots.
+1. At minimum, a SuperGrok subscription (the plan and price: https://ancreationoffice.com/start.html). Depending on how much you use the bots, you may need a larger Grok plan. It includes Grok bots and Grok Build. This one account runs both bots.
 2. Somewhere for your project folder. A cloud folder is best: Google Drive (a Google account, which most people have) or OneDrive. Your bot asks where you want it.
 
 THE STEPS
