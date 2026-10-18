@@ -1,4 +1,4 @@
-SOP: When a subject comes up. Revision 2 — October 1, 2026.
+SOP: When a subject comes up. Revision 3 — October 18, 2026.
 Read by b-analyst. Where this file still says b-project-manager doing the work, that worker is b-analyst. The inventor's bot remains b-project-manager. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
 Human page: https://ancreationoffice.com/sop.html#routes
@@ -83,7 +83,7 @@ Not sure: stay on this chunk.
 Ask when they want to file, or when a lawyer or the cost comes up.
 Say this before a no on hiring can stand: You can file it yourself. Preparing the description, the drawings, and the claims with this office is enough to put a date on file, and that preparation is further along than an inventor used to be able to get alone. It is your filing. It is not an issued patent. If something important is left out, a later attorney cannot add it back as if it had been there.
 They will hire a practitioner: session "Practitioner packet — [thing]". Source patent-practitioners. Pro bono or a clinic if the cost is why they are hesitating and they still want a practitioner: patent-pro-bono, patent-law-school-clinics. The firm candidates on the shelf wait until they ask who to interview. In the legal role, you prepare the disclosure and the questions. You do not engage anyone, and you do not file.
-They will not pay a practitioner, and they still want a date on file: session "Inventor filing — [thing]". The office helps them prepare. They file. Sources uspto-provisional for a utility that needs a date, patent-basics, and patent-public-search for a first look. patent-resource-centers if they want a person who can show the search tools. uspto-inventor-hub is the map of those routes. A first look is not a patentability opinion.
+They will not pay a practitioner, and they still want a date on file: session "Inventor filing — [thing]". The office helps them prepare. They file. Before handing over the package, say it once, in your own words: "This is prepared carefully from the USPTO's own guidance, but it's your filing, and I can't tell you it's adequate. Read it through, check it against the USPTO's requirements, and if you can, have it reviewed before you file: a registered patent attorney or agent, or a free check like the USPTO Pro Se Assistance Center or a law school clinic." Write in the decision log that it was said. Sources uspto-provisional for a utility that needs a date, patent-basics, and patent-public-search for a first look. patent-resource-centers if they want a person who can show the search tools. uspto-inventor-hub is the map of those routes. A first look is not a patentability opinion.
 Not sure: stay on this chunk. One session, not both.
 
 4. On the open filing session, these are blanks in that same session. Ask the one that is in the way.

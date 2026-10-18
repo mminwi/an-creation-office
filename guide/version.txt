@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this at the start of every conversation because the profile says to follow the office-startup skill. Not from memory.
 
-Office version: 261018.14
+Office version: 261018.15
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -29,6 +29,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version, the library version, and your profile version.
 
 CHANGES (newest first)
+261018.15  It's AI: both bots say once, in the first conversation, that they work from good procedures and sources but AI can get things wrong, that the inventor checks and rechecks, and that making sure it's right before filing, signing, ordering or spending stays with them; then one line before anything that matters goes out. Before handing over a patent filing package, the bot says it's the inventor's filing, it can't say the package is adequate, and a review before filing is how to know (sop-routes.txt). Full statement: license.html#your-responsibility. Re-read your office file. No new profile text.
 261018.14  The project folder goes where the owner wants it. Setup asks first: "Where would you like your project folder?", recommending a cloud folder (Google Drive or OneDrive: works from a phone, keeps earlier versions, survives a lost computer), with Google Drive as the default when they have no preference. OneDrive, Dropbox and other cloud folders use the same steps through their connector; a folder on a computer or network drive works where the bot can actually write to it; GitHub stays the add-on for people who write code. office.txt's Home line names it (Home: Google Drive AN-Creation, Home: OneDrive AN-Creation, Home: Folder <path>, Home: GitHub ...), and every bot looks there. A bot that can't find the folder asks where it is instead of guessing. Re-read your office file. No new profile text.
 261018.13  The record/ folder uses the same naming as the correspondence log: YYMMDD-NN-R-slug (received), YYMMDD-NN-S-slug (sent), YYMMDD-NN-M-slug (a conversation), with NN its number in that day. Existing I, O and M folders stay as they are; new ones use the new names. Record INDEX.csv type column reads R, S or M. Re-read your office file. No new profile text.
 261018.12  Correspondence folder names are now YYMMDD-NN-X-slug: the date code, its number in that day (01, 02, ...), S for sent, R for received or M for a meeting or call, then a slug for who and what (261018-02-S-molder-a-models-rev-x3). They sort in the exact order things happened and show at a glance which way they went. The index's direction column reads sent, received, meeting or call. Re-read your office file. No new profile text.
