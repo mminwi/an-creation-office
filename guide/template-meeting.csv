@@ -1,5 +1,5 @@
 key,value,note
-type,buyer,"buyer, manufacturer, lender, investor, accountant, patent, licensee, insurance or attorney"
+type,buyer,"buyer, manufacturer, lender, investor, accountant, patent, licensee, insurance, attorney or partner"
 who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
 date,2026-10-28,YYYY-MM-DD
 record,../../funding/<invention>,Folder with the sheets; relative to this meeting folder
@@ -39,7 +39,7 @@ tax_year,2026,Accountant only: the year the packet covers
 question,A question for the accountant,Accountant only: one row each; the note says what the record shows
 budget,,"Patent and attorney: what the inventor will spend now, and on what"
 development_short,Prototype,Licensee only: a few words for the sell sheet
-development,,Licensee only: how far along it is
+development,,"Licensee and partner: how far along it is"
 picture_note,,Licensee only: what picture goes on the sell sheet
 contact,,Licensee only
 royalty_pct_example,,"Licensee only: an illustrative rate, with its source in the note"
@@ -55,3 +55,9 @@ incidents,,"Insurance only: what the recall and incident search found, with the 
 claims,None. New business.,Insurance only
 document,Name of the agreement or form,"Attorney only: one row each; for an attorney meeting, meeting.csv adds columns from, by and status"
 outside_money,,Attorney only: any outside money being discussed; the note says how much and on what terms
+sales,None yet,Partner only
+need,What the project needs,"Partner only: one row each; the note says why, from the record"
+brings,What they would bring,"Partner only: one row each, in their words"
+option,A way it could be set up,"Partner only: one row each, as a topic, not an offer"
+keeps,What stays the same until it is written,Partner only
+fit,A question to ask them,Partner only: one row each

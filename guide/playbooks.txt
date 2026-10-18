@@ -1,0 +1,12 @@
+Playbooks: the Project Manager Bot. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+
+A playbook strings procedures together into one job that comes up again and again: when it runs, what done looks like, the principles that drive it, the steps with who does each and which procedure each uses, the inventor's decisions, what to do when it goes wrong, and what it leaves in the record. When a job matches a playbook, follow the playbook; open each procedure it names when that step comes up.
+
+THE PLAYBOOKS
+- The first tooling quote (https://ancreationoffice.com/playbook-first-tooling-quote.txt). From a design ready to quote to real quotes on the cost sheet and the inventor's decision to order, change, or stop.
+
+COMING
+- The design loop: from the first concept to design freeze.
+
+How a playbook relates to the rest: principles (principles-pm.txt) say how to decide; a playbook says what to do, in what order, for a whole job; a procedure (sop-*.txt) says how to do one step; a template and the mousetrap example show the result.

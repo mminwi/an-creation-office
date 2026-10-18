@@ -1,4 +1,4 @@
-SOP: The manufacturer packet (request for quote). Revision 2 — October 18, 2026.
+SOP: The manufacturer packet (request for quote). Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager for the meeting; the technical content is b-project-manager's (cost sheet, drawings list, specifications, risk table), sent as copies through office-handoff. b-analyst builds it.
 May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/, and a hand-off line to b-project-manager for the quote when it arrives (it goes on the cost sheet).
@@ -22,7 +22,7 @@ WHAT GOES IN IT (meeting-packet.py builds these pages from the sheets)
 5. Prep sheet, for the inventor only: the goal, the questions the supplier will ask with answers, what to ask them, the walk-away, and how the quote will be compared like for like.
 
 COMPARING QUOTES
-Put every quote on the same basis before comparing: piece price at the same quantity, tooling, tooling life and ownership, lead time, terms, what is included (inspection, packaging, freight). Write each into the cost sheet as a quote with its date, replacing the placeholder (sop-cost-sheet.txt). Ask at least two or three suppliers for anything with tooling.
+Put every quote on the same basis before comparing, one row per part per supplier on quote-comparison.csv (https://ancreationoffice.com/template-quote-comparison.csv; the whole job: https://ancreationoffice.com/playbook-first-tooling-quote.txt): piece price at the same quantity, tooling, tooling life and ownership, lead time, terms, what is included (inspection, packaging, freight). Write each into the cost sheet as a quote with its date, replacing the placeholder (sop-cost-sheet.txt). Ask at least two or three suppliers for anything with tooling.
 
 RULES
 - An NDA before sending drawings that show how the invention works, unless the patent filing is in (principle-patent-before-public.txt).

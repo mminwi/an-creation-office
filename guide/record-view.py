@@ -24,6 +24,7 @@ SHEETS = {
                        ["part number", "part", "qty", "make or buy", "what it is", "material cost", "process cost",
                         "tooling", "amortization", "unit cost", "running total", "share of total"],
                        ("qty", "material cost", "process cost", "tooling", "amortization", "unit cost", "running total", "share of total")),
+    "quote-comparison.csv": ("Quote comparison", "Project record", ["supplier", "quote ref", "part number", "part", "tool type", "cavities", "tooling cost", "piece price at volume", "tool lead time", "notes"], ("tooling cost", "piece price at volume")),
     "risk-table.csv": ("Risk analysis table", "Project record", None, ("S", "O", "D", "RPN")),
     "actions.csv": ("Action log", "Project record", ["ID", "Opened", "Action", "Who", "Due", "Status"], ()),
     "decision-log.csv": ("Decision log", "Project record", None, ()),

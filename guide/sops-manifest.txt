@@ -1,4 +1,4 @@
-261018.23
+261018.25
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -44,6 +44,7 @@ example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/email.txt
 example-mousetrap/correspondence/261023-01-M-patent-agent-consult/meeting.csv
 example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/meeting.csv
 example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/meeting.csv
+example-mousetrap/correspondence/261102-01-M-partner-tool-and-die-maker/meeting.csv
 example-mousetrap/correspondence/261104-01-M-community-lender-meeting/meeting.csv
 example-mousetrap/correspondence/261105-01-M-business-attorney-consult/meeting.csv
 example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/meeting.csv
@@ -64,6 +65,7 @@ example-mousetrap/market-evidence.csv
 example-mousetrap/pricing-terms.csv
 example-mousetrap/prior-art.csv
 example-mousetrap/project-charter.txt
+example-mousetrap/quote-comparison.csv
 example-mousetrap/risk-table.csv
 example-mousetrap/spending.csv
 example-mousetrap/tax-year-2026.txt
@@ -89,6 +91,8 @@ plan-template.txt
 planning-resources.json
 planning-resources.txt
 planning-review.csv
+playbook-first-tooling-quote.txt
+playbooks.txt
 press-kit/PROMO-INSTRUCTIONS.txt
 press-kit/backgrounder.txt
 press-kit/boilerplate.txt
@@ -210,6 +214,7 @@ sop-packet-investor.txt
 sop-packet-lender.txt
 sop-packet-licensee.txt
 sop-packet-manufacturer.txt
+sop-packet-partner.txt
 sop-packet-patent.txt
 sop-phases.txt
 sop-plastic-part-design.txt
@@ -265,6 +270,7 @@ template-pricing-terms.csv
 template-prior-art.csv
 template-project-charter.txt
 template-prototype-control-plan.txt
+template-quote-comparison.csv
 template-review-record.txt
 template-risk-table.csv
 template-spending-register.csv

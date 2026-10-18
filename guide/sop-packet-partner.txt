@@ -1,0 +1,33 @@
+SOP: The partner packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with someone who might join the project or the business (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; a planned row in disclosure-history.csv when they will see how it is made.
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261102-01-M-partner-tool-and-die-maker/partner-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Partner only)
+Goes with: https://ancreationoffice.com/sop-packet-attorney.txt (where any arrangement gets written), https://ancreationoffice.com/sop-team.txt
+
+WHO IT IS FOR
+Someone who wants to join: a co-founder, a skilled friend or neighbor, a shop or a company offering help, time or money in exchange for a share, a royalty or a role.
+
+WHAT WORRIES THEM
+- Is this real? What it is, where it stands, and whether the numbers work.
+- What would I do, and what would I get?
+- Who decides, and who owns what?
+
+WHAT WORRIES THE INVENTOR (the prep sheet)
+- Promising a share in the room, by word or handshake, that is hard to take back.
+- Showing how it is made before an NDA.
+- A partner who wants more than they bring, or who leaves halfway.
+
+WHAT GOES IN IT (meeting-packet.py builds it: partner)
+1. The project in brief: the headline, who it is for, where it stands, the numbers honestly (the same math as the other packets: what each unit clears, the tooling, whether it pays back), the owner's money in, sales so far, the next milestones.
+2. What the project needs: each need with why, from the record; and the work on the action log that has no one on it.
+3. How working together could look: what they would bring, the ways it could be set up as topics (paid by the job, a royalty, a share once the company exists), who owns what today, and what stays the same until it is written.
+4. Prep sheet, for the inventor only: an NDA before drawings, ask for a reference and call them, the goal, the ask, the walk-away, their likely questions, and the questions to ask them.
+
+RULES
+- Topics, not offers. No share, royalty or role is promised in the meeting, by word or handshake; the inventor decides afterward, and any arrangement is written and read by an attorney before anyone relies on it (principle-rigor-scales-with-money.txt, sop-packet-attorney.txt).
+- A share of a company needs the company formed first.
+- The simplest arrangement that works comes first: paying for the work changes no ownership.
+- An NDA before they see drawings or CAD (principle-patent-before-public.txt); a planned row in the disclosure history.
+- Never overstate the project to win someone over (principle-no-claims-you-cant-back.txt): the numbers on page 1 are the same as in every other packet.
+- After the meeting: what they said in the meeting's folder; any decision in the business decision log; if they will work on the project, their row in team.csv only once it is agreed in writing.

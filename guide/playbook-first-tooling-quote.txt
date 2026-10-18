@@ -1,0 +1,59 @@
+PLAYBOOK: The first tooling quote. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/playbooks.txt
+Runs it: b-project-manager. b-business-manager prepares the supplier meeting and the money side; b-analyst does the sheets.
+Example: the mousetrap (https://ancreationoffice.com/example-mousetrap/README.txt): action A-001, the request for quote to Molder A, quote-comparison.csv.
+
+WHEN IT RUNS
+- The design is frozen, or close enough to quote: the parts that need tooling have CAD at a named revision and their materials are chosen.
+- The cost sheet still carries tooling placeholders, and the numbers can't be trusted until they are real (the funding packet's verdict depends on them).
+- Or the inventor says "get the molds quoted".
+
+DONE WHEN
+At least two comparable quotes (three is better) are on quote-comparison.csv, the chosen basis has replaced the placeholders on the cost sheet, the numbers have been rerun, and the inventor has made the call: order the tooling, change the design, change the price or volume, start with a prototype tool, or stop. The call is in the decision log with the principle that drove it.
+
+PRINCIPLES THAT DRIVE IT
+- Proof over estimate: a quote replaces a placeholder; nothing else does (principle-proof-over-estimate.txt).
+- Two-way doors go fast: asking for quotes is two-way, so do it early and in parallel; ordering tooling is one-way, so it waits for the comparison and the inventor (principle-two-way-doors.txt).
+- Find surprises early: the toolmaker's review is the cheapest place to learn the part can't be molded as drawn (principle-find-surprises-early.txt, principle-design-for-manufacture.txt).
+- Know the unit economics before tooling (principle-unit-economics-first.txt).
+- 90% and go: quote on the planning quantities and say they are planning numbers; don't wait for a perfect forecast (principle-ninety-percent-and-go.txt).
+- Decide on the patent before showing it: an NDA before CAD leaves the project (principle-patent-before-public.txt).
+- Trace every spec to its source: a quote is a source; a remembered price is not (principle-trace-to-source.txt).
+
+THE STEPS
+1. Check it is ready to quote. (b-project-manager)
+   For each part that needs tooling: CAD and a drawing at a named revision, the material from the decision log, the critical features from the risk analysis table (severity 8 and up) and the compliance matrix. Run python3 check-sources.py on the project: nothing critical goes out unchecked. Anything missing goes on the action log, and the playbook waits for it.
+   Uses: sop-design-loop.txt (freeze), sop-cost-sheet.txt, sop-risk-table.txt, sop-source-check.txt. Drawings a shop can quote from follow the drawing standard named for the project (sop-source-check.txt WHEN NO PROCEDURE COVERS IT).
+2. Decide what to ask for. (b-project-manager proposes, the inventor decides)
+   Quantities: the first order and the annual volume from the charter and funding.csv, marked as planning numbers. Options worth pricing at the same time: cavities, a family mold, aluminum or steel, a prototype tool for the first few thousand parts. Who owns the tool: the inventor. Write the call in the decision log.
+3. Pick two or three suppliers. (b-business-manager, with b-project-manager)
+   From the library's manufacturing shelf, referrals, or suppliers already known. Each goes in contacts.csv. A molder that won't sign an NDA is a reason to pick another, not to send CAD anyway.
+4. NDA, then CAD. (b-business-manager)
+   A mutual NDA, signed, in the correspondence log. Then the CAD and drawings go out, each in its own dated S folder with the exact files and revision (sop-correspondence.txt), and a row in the disclosure history.
+5. The request for quote. (b-business-manager builds it from b-project-manager's copies)
+   python3 meeting-packet.py <the meeting's correspondence folder> manufacturer: the parts, quantities, requirements, critical features and terms. The prep sheet lists what to compare like for like (sop-packet-manufacturer.txt).
+6. The tooling review. (the inventor attends; b-project-manager takes the findings)
+   Ask what they would change to make it cheaper or more reliable to mold. Their findings go in the meeting's notes; each one that changes the design goes on the action log and, after freeze, through a change notice (sop-change-control.txt). A finding that changes a risk goes on the risk analysis table.
+7. Log each quote as it arrives. (b-analyst)
+   The quote itself in its dated R folder. One row per part per supplier on quote-comparison.csv (template-quote-comparison.csv): tooling cost and type, cavities, tool life, piece price at the first order and at volume, lead times, what is included, payment terms, tool ownership, how long the quote is valid. A quote that leaves something out gets a question back, not a guess. Its expiry goes in deadlines.csv.
+8. Put the chosen basis on the cost sheet. (b-project-manager)
+   Replace each placeholder with the quote's figure; "how the cost was figured" names the quote and its date. Recalculate amortization and the cost to make one. Hand the new cost sheet to b-business-manager.
+9. Rerun the numbers. (b-business-manager)
+   python3 funding-packet.py on the funding folder: does the tooling pay back within the plan volume now? Say it to the inventor in one line before anything else (for example, with made-up figures: "With the real quotes, each trap clears $0.07 and the molds pay back in 1.5 million traps").
+10. The inventor decides. (one-way door)
+   - Order the tooling: the supplier's purchase order states tool ownership; the spending register gets a committed row; a change notice if the charter's budget moves; the cost sheet and the quote comparison are parked.
+   - Change the design to cut the cost: back to the design loop with the toolmaker's suggestions, then requote the changed parts.
+   - Change the price or the volume: b-business-manager reruns the market check and the buyer conversations first.
+   - A prototype or aluminum tool first: smaller money, real parts, a real signal.
+   - Stop: fail forward faster. Write down what was learned, and what would make it worth reopening.
+   The decision log names the principle that drove the call.
+
+WHEN IT GOES WRONG
+- The quotes come in far above the placeholder: believe reality over the plan (principle-believe-reality.txt). Say it plainly, rerun the numbers, and take it to step 10; don't shop for a quote that agrees with the plan.
+- The quotes can't be compared: send each supplier the same questions and ask again on the same basis.
+- A supplier wants full drawings before quoting: make them, from the drawing standard, rather than sending CAD alone.
+- Nobody will quote: ask why. The answer is usually the volume, the drawings, or the part itself, and each is a finding.
+- A quote expires before the decision: ask for it to be extended in writing, or requote.
+
+WHAT IT LEAVES IN THE RECORD
+quote-comparison.csv; the quotes in the correspondence log; updated cost-sheet.csv; decision-log.csv lines for steps 2 and 10; action log rows for each finding; deadlines for quote expiry; spending register and a change notice if tooling is ordered.

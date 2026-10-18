@@ -1,7 +1,7 @@
-"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor, an accountant, a patent attorney, a licensee, an insurance agent or a business attorney.
+"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor, an accountant, a patent attorney, a licensee, an insurance agent, a business attorney or a possible partner.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney
+  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney|partner
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
@@ -16,8 +16,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
-if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant", "patent", "licensee", "insurance", "attorney"):
-    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney")
+if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant", "patent", "licensee", "insurance", "attorney", "partner"):
+    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney|partner")
 MEET = Path(sys.argv[1]).resolve()
 KIND = sys.argv[2]
 
@@ -102,7 +102,7 @@ U = first(funding, "unit", "unit")
 US = first(funding, "units", U + "s")
 piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
 tooling = sum(num(r["tooling"]) for r in cost)
-TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet", "licensee": "Licensee packet", "insurance": "Insurance packet", "attorney": "Business attorney packet"}[KIND]
+TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet", "licensee": "Licensee packet", "insurance": "Insurance packet", "attorney": "Business attorney packet", "partner": "Partner packet"}[KIND]
 
 
 def table(head, body, cls=""):
@@ -650,6 +650,46 @@ if KIND == "attorney":
 {table(['Question', 'What the record shows'], qs, 'compact')}
 <h2>Budget</h2><p>{esc(M.get('budget'))}</p>""", "Page 4"))
     pages.append(prep_sheet(show_open=False))
+
+# ---------------- possible partner ----------------
+if KIND == "partner":
+    price = num(first(funding, "price"))
+    annual = num(first(funding, "annual_units"))
+    years = num(first(funding, "years")) or 1
+    plan_units = annual * years
+    clears = price - piece
+    payback_units = tooling / clears if clears > 0 else float("inf")
+    closes = payback_units <= plan_units
+    owner_spent = sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    owner_funds = num(first(funding, "owner_funds"))
+    ms = sorted((r for k, v in funding.items() if k.startswith("milestone:") for r in v), key=lambda r: r["value"])
+    upcoming = [r for r in ms if r["value"] >= M.get("date", "")][:4]
+    verdict = (f"At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost to make, and the {money(tooling, False)} of tooling "
+               + (f"pays back within the plan of {plan_units:,.0f} {US}." if closes else f"would take {payback_units:,.0f} {US} to pay back, against a plan of {plan_units:,.0f}. The numbers do not close yet; that is the work in front of the project."))
+    pages.append(page("The project in brief", f"""
+<p class="lede-big">{esc(first(pricing, 'headline') or PRODUCT)}</p>
+<h2>Who it's for</h2><p>{esc(first(pricing, 'who_for'))}</p>
+<h2>Where it stands</h2><p>{esc(M.get('development'))}</p>
+<h2>The numbers, honestly</h2><div class="verdict {'ok' if closes else 'warn'}">{verdict}</div>
+<div class="stats">{stat("Owner's money in", money(owner_spent, False), f'plus {money(owner_funds, False)} committed')}{stat(f'Clears per {U}', money(clears))}{stat('Tooling', money(tooling, False), 'placeholders until quoted')}{stat('Sales so far', esc(M.get('sales', 'None yet')))}</div>
+<h2>Coming up</h2>{table(['By', 'Milestone'], [[fdate(r['value']), esc(r['key'][10:])] for r in upcoming], 'compact')}""", "Page 1"))
+    unowned = [r for r in actions if r.get("Status") in ("open", "waiting") and not (r.get("Who") or "").strip()]
+    needs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("need", [])]
+    pages.append(page("What the project needs", f"""
+{table(['Need', 'Why, from the record'], needs, 'compact')}
+<h2>Work waiting for someone</h2><p>{len(unowned)} open items on the action log have no one on them yet, for example:</p>
+<ul class="levers">{''.join(f"<li>{esc(r['Action'])}</li>" for r in unowned[:6])}</ul>""", "Page 2"))
+    opts = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("option", [])]
+    brings = "".join(f"<li>{esc(r['value'])} <span class='small'>({esc(r['note'])})</span></li>" for r in MULTI.get("brings", []))
+    pages.append(page("How working together could look", f"""
+<h2>What you would bring</h2><ul class="levers">{brings}</ul>
+<h2>Ways it could be set up</h2>{table(['', ''], opts, 'kv')}
+<h2>Who owns what today</h2>{table(['', ''], [['The invention', esc(first(disclosure, 'owner', 'Not recorded'))], ['The company', esc(next((r['value'] for r in company if r['key'].lower() == 'legal name'), 'Not formed'))], ['Patent filings', esc(first(disclosure, 'filed', 'Nothing yet'))]], 'kv')}
+<h2>What stays the same until it's written</h2><p>{esc(M.get('keeps'))}</p>
+<p class="small">Topics to talk about, not offers. Any arrangement is written down and read by an attorney before anyone relies on it; a share of a company needs the company formed first.</p>""", "Page 3"))
+    fit = "".join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get("fit", []))
+    pages.append(prep_sheet(f"<h2>Questions to ask them</h2><ul class='levers'>{fit}</ul>", show_open=False,
+                            top="<p class='small'>An NDA is signed before drawings or CAD are shown (principle-patent-before-public.txt). Ask for someone they have done this kind of work for, and call them.</p>"))
 
 css = CSS
 doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: {TITLE.lower()}</title>

@@ -1,4 +1,4 @@
-261018.23
+261018.25
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -878,7 +878,7 @@ HOW TO CHOOSE
 - Avoid a name someone in your family or shop already has.
 - If you'd rather not choose, the bot uses the first easy name that isn't taken.
 === FILE: business-manager.txt ===
-AN Creation: the Office Manager Bot (role b-business-manager). Revision 23 — October 18, 2026.
+AN Creation: the Office Manager Bot (role b-business-manager). Revision 24 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Office Manager Bot)
 
 WHO YOU ARE
@@ -932,7 +932,7 @@ YOUR PROCEDURES (open one when its subject comes up, use it, then leave it)
 - Domain, website, business email, Google Search Console and Bing. https://ancreationoffice.com/sop-website.txt
 - The brand kit and profiles (LinkedIn, X and others). https://ancreationoffice.com/sop-presence.txt
 - Listings and the website: https://ancreationoffice.com/sop-website.txt . Posts, replies, listings and the approval loop: https://ancreationoffice.com/sop-promotion.txt
-- Meetings: whenever the inventor is going to meet or approach someone (a buyer, a manufacturer, a lender, an investor), follow https://ancreationoffice.com/sop-meeting-prep.txt : who, when, what they want out of it; then the packet that person needs, built from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor. Packets so far: buyer (sop-packet-buyer.txt), manufacturer (sop-packet-manufacturer.txt), lender (sop-packet-lender.txt), investor (sop-packet-investor.txt), accountant (sop-packet-accountant.txt), patent attorney or agent (sop-packet-patent.txt, with the invention disclosure, prior-art log and disclosure history kept during patent preparation), licensee (sop-packet-licensee.txt), insurance agent (sop-packet-insurance.txt), business attorney (sop-packet-attorney.txt); an advisor or grant reviewer gets the funding packet.
+- Meetings: whenever the inventor is going to meet or approach someone (a buyer, a manufacturer, a lender, an investor), follow https://ancreationoffice.com/sop-meeting-prep.txt : who, when, what they want out of it; then the packet that person needs, built from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor. Packets so far: buyer (sop-packet-buyer.txt), manufacturer (sop-packet-manufacturer.txt), lender (sop-packet-lender.txt), investor (sop-packet-investor.txt), accountant (sop-packet-accountant.txt), patent attorney or agent (sop-packet-patent.txt, with the invention disclosure, prior-art log and disclosure history kept during patent preparation), licensee (sop-packet-licensee.txt), insurance agent (sop-packet-insurance.txt), business attorney (sop-packet-attorney.txt), possible partner (sop-packet-partner.txt); an advisor or grant reviewer gets the funding packet.
 - Funding: which kind of money fits, https://ancreationoffice.com/sop-funding.txt ; the funding packet a lender or advisor reads, https://ancreationoffice.com/sop-funding-packet.txt ; the business risk register, https://ancreationoffice.com/sop-business-risks.txt . The product numbers in a packet are b-project-manager's: ask for current copies through office-handoff, never retype them.
 - The business record and tax time: https://ancreationoffice.com/sop-business-record.txt . A cost for an invention goes on the expense ledger and, by hand-off, on that invention's spending register; never two different amounts.
 - Specs, rules, rates, fees and deadlines: from the actual document, checked when they go into a sheet (https://ancreationoffice.com/sop-source-check.txt). When no procedure covers something, find the authoritative source in the library and write the business's procedure from it.
@@ -3957,7 +3957,7 @@ b-business-manager's record and packets
 - funding.csv, business-risks.csv, funding-packet.html: the funding packet for an investor or advisor (sop-funding-packet.txt)
 - correspondence/ and correspondence.csv: the correspondence log (sop-correspondence.txt), one folder per email, meeting or call, named YYMMDD-NN-X-slug.
   Three meetings have their meeting.csv and the packet built for them (sop-meeting-prep.txt): 261028-01-M-distributor-buyer-meeting/buyer-packet.html,
-  261024-01-M-molder-a-quote-meeting/manufacturer-packet.html, 261104-01-M-community-lender-meeting/lender-packet.html, and an investor meeting with family: 261112-01-M-family-investor-meeting/investor-packet.html, and a year-end meeting with an accountant: 261208-01-M-accountant-year-end/accountant-packet.html, and a consult with a patent agent: 261023-01-M-patent-agent-consult/patent-packet.html, and a licensing meeting with a pest-control company: 261119-01-M-pest-control-company-licensing/licensee-packet.html, and a quote meeting with an insurance agent: 261109-01-M-insurance-agent-quote/insurance-packet.html, and a first consult with a business attorney: 261105-01-M-business-attorney-consult/attorney-packet.html. 261017-01-S-molder-a-meeting-request is an email out with its attachment list.
+  261024-01-M-molder-a-quote-meeting/manufacturer-packet.html, 261104-01-M-community-lender-meeting/lender-packet.html, and an investor meeting with family: 261112-01-M-family-investor-meeting/investor-packet.html, and a year-end meeting with an accountant: 261208-01-M-accountant-year-end/accountant-packet.html, and a consult with a patent agent: 261023-01-M-patent-agent-consult/patent-packet.html, and a licensing meeting with a pest-control company: 261119-01-M-pest-control-company-licensing/licensee-packet.html, and a quote meeting with an insurance agent: 261109-01-M-insurance-agent-quote/insurance-packet.html, and a first consult with a business attorney: 261105-01-M-business-attorney-consult/attorney-packet.html, and a possible partner: 261102-01-M-partner-tool-and-die-maker/partner-packet.html. 261017-01-S-molder-a-meeting-request is an email out with its attachment list.
 
 b-business-manager's required business record (https://ancreationoffice.com/sop-business-record.txt)
 - company.csv (with business.txt), business-decision-log.csv, actions.csv (shared columns), contacts.csv
@@ -3979,6 +3979,9 @@ Patent preparation (https://ancreationoffice.com/sop-packet-patent.txt)
 - invention-disclosure.csv  the invention, what the inventor believes is new, drawings, inventors, owner
 - prior-art.csv             documents found by a first search; claims not read yet, so "from a summary"
 - disclosure-history.csv    every showing outside the project, done and planned, with NDA or not
+
+Playbooks (https://ancreationoffice.com/playbooks.txt)
+- quote-comparison.csv   the first tooling quote, under way: Molder A's quotes awaited (A-001), a second molder still to pick
 === FILE: example-mousetrap/actions.csv ===
 ID,Opened,Action,Who,Why / from,Due,Status,Done how,Closed,Notes
 A-001,2026-10-15,"Get a quote for a 1-cavity nylon base mold, hot runner, gate at the rear, draft 1 degree, wall 1.8 mm, with a short rib at the spring seat, the set-from-the-side mark, the finger guard, the bait spike, and radiused pivot holes.",You,"Cost sheet base row is an $85,000 placeholder. Decision 2026-10-12 and 2026-10-13. Risk table F1.",2026-10-29,open,,,"Done when the quote replaces the 85000 on the cost sheet. The quote covers the mold changes under F1, F11, F13, and F14. The three-month budget is 8000 to 12000, so the quote may not fit."
@@ -4063,6 +4066,7 @@ date,folder,direction,with,organization,subject,what was conveyed,sent or receiv
 2026-10-23,261023-01-M-patent-agent-consult,meeting,A registered patent agent,,Free first consult,(prep built; notes after the meeting),patent-packet.html to hand over,,2026-10-23,Snap mousetrap,,2026-10-18
 2026-10-24,261024-01-M-molder-a-quote-meeting,meeting,Sales engineer,Molder A,Quote meeting,(prep built; notes after the meeting),manufacturer-packet.html to hand over,,2026-10-24,Snap mousetrap,,2026-10-18
 2026-10-28,261028-01-M-distributor-buyer-meeting,meeting,Purchasing manager,Regional hardware distributor,Buyer meeting,(prep built; notes after the meeting),buyer-packet.html to hand over,,2026-10-28,Snap mousetrap,,2026-10-18
+2026-11-02,261102-01-M-partner-tool-and-die-maker,meeting,A retired tool-and-die maker,,Possible partner,(prep built; notes after the meeting),partner-packet.html to hand over,,2026-11-02,Snap mousetrap,,2026-10-18
 2026-11-04,261104-01-M-community-lender-meeting,meeting,Loan officer,Community lender,Loan meeting,(prep built; notes after the meeting),lender-packet.html to hand over,,2026-11-04,Snap mousetrap,,2026-10-18
 2026-11-05,261105-01-M-business-attorney-consult,meeting,A small-business attorney,,First consult,(prep built; notes after the meeting),attorney-packet.html to hand over,,2026-11-05,Snap mousetrap,,2026-10-18
 2026-11-09,261109-01-M-insurance-agent-quote,meeting,An independent insurance agent,,Product liability quote,(prep built; notes after the meeting),insurance-packet.html to hand over,,2026-11-09,Snap mousetrap,,2026-10-18
@@ -4205,6 +4209,36 @@ q,When can you ship?,"About six weeks after the molds are approved; we'll know t
 q,Do you have insurance and a UPC?,"Insurance quotes are being gathered and it will be in place before the first shipment; we'll license GS1 barcodes before packaging is printed."
 q,Is it patented?,"We've made our patent decision; today we show what it does, not how it's made."
 q,What's your minimum order?,"Ten cases of 72, and we'd start smaller for a store test."
+=== FILE: example-mousetrap/correspondence/261102-01-M-partner-tool-and-die-maker/meeting.csv ===
+key,value,note
+type,partner,
+who,A retired tool-and-die maker who has offered to help in exchange for a share,Illustrative
+date,2026-11-02,
+record,../..,Where the sheets are
+goal,"Find out what he would bring and what he wants, without promising anything in the room",
+development,"Printed prototypes from revision X3 CAD, tested in barns by two users. A molder is quoting the base and trigger plate molds, and three distributors are giving feedback.",
+sales,None yet,
+ask,"Help with the mold quotes and the test fixtures, starting now",
+ask,"What you would want in return, in your own words",
+need,Tooling and molding know-how,"The mold quotes, the 2-cavity family-mold question and aluminum prototype tooling (action A-001; business risks B1 and B2)"
+need,Hands for assembly and the field test,"Hand assembly at 12 seconds a trap (cost sheet MT-900); 200 field-test traps (investor packet)"
+need,Fixtures for the barn and drop tests,"Risk table F1 and F3: the base cracking at the spring seat and on concrete"
+brings,Many years of tool and die work,"In his words; to hear in the meeting. Illustrative."
+brings,A shop with a lathe and a mill,Illustrative
+option,Paid by the hour or by the job,"The simplest: no ownership changes, and it goes on the spending register like any other cost."
+option,A royalty on parts he helps bring to production,"Smaller and simpler than a share of the company."
+option,A share of the company,"Only once the LLC exists, earned as agreed milestones are met, written with an attorney (business attorney packet)."
+keeps,"Until something is written and signed, the inventor owns the invention, decides the design, and pays for what is done.",
+fit,What do you want out of it?,
+fit,"How many hours a week, and for how long?",
+fit,Who have you done this kind of work for? Can I call them?,
+fit,What happens if we disagree on the design?,
+fit,What if one of us wants out?,
+q,What is it worth?,"The numbers don't close yet; page 1 shows why, and what would change it."
+q,How much of the company would I get?,"Not offered in the room. If a share is the way, it is written with an attorney after the LLC is formed."
+q,Who decides?,"The inventor, until an agreement says otherwise."
+walk_away,"No share promised in the room, by word or handshake. An NDA signed before he sees drawings. Nothing relied on until it is written and an attorney has read it.",
+leave_behind,Pages 1 to 3. Not this prep sheet.,
 === FILE: example-mousetrap/correspondence/261104-01-M-community-lender-meeting/meeting.csv ===
 key,value,note
 type,lender,
@@ -4391,6 +4425,7 @@ date,to whom,what was shown,revision,under NDA,setting,correspondence,status,not
 2026-10-18,Sales engineer at Molder A,"3D models of the base and trigger plate",X3,yes,Email after the signed NDA,261018-02-S-molder-a-models-rev-x3,done,
 2026-10-24,Sales engineer at Molder A,The request for quote and the drawings,X3,yes,Meeting,261024-01-M-molder-a-quote-meeting,planned,
 2026-10-28,Purchasing manager at a regional distributor,"What it does, the price and samples; not how it is made",X3,no,Meeting,261028-01-M-distributor-buyer-meeting,planned,The buyer packet shows what it does only (sop-packet-buyer.txt)
+2026-11-02,A retired tool-and-die maker,"The prototype, the CAD and how it is made",X3,yes,Meeting,261102-01-M-partner-tool-and-die-maker,planned,NDA to be signed before drawings are shown
 2026-11-19,Product development manager at a pest-control products company,"What it does, the price, the sell sheet; not how it is made",X3,no,Meeting,261119-01-M-pest-control-company-licensing,planned,"Read their idea submission terms first (sop-licensing.txt 3)"
 === FILE: example-mousetrap/ecn-log.csv ===
 number,date,what changes,why,from revision,to revision,cost and time,decision,status,file
@@ -4589,6 +4624,11 @@ The inventor decides everything. A distributor's approval is needed only for its
 
 11. REVISIONS
 A 2026-10-15 first issue.
+=== FILE: example-mousetrap/quote-comparison.csv ===
+supplier,quote ref,quote date,valid until,part number,part,tool type,cavities,tool life (shots),tooling cost,piece price at first order,first order qty,piece price at volume,annual qty,tool lead time,parts lead time,included,payment terms,tool owner,correspondence,notes
+Molder A,awaiting,,,MT-001,Plastic base,"steel; aluminum option asked",1 and 2 (family) asked,,,,5000,,50000,,,,,inventor,261018-02-S-molder-a-models-rev-x3,"Requested; quote due 2026-10-29 (A-001). Cost sheet still carries the $85,000 placeholder."
+Molder A,awaiting,,,MT-002,Trigger plate,steel,1 asked,,,,5000,,50000,,,,,inventor,261018-02-S-molder-a-models-rev-x3,"Requested; quote due 2026-10-29. Cost sheet placeholder $22,000."
+Second molder,not asked yet,,,MT-001 and MT-002,,,,,,,,,,,,,,,,"Step 3: pick a second and a third molder (the playbook asks for at least two)."
 === FILE: example-mousetrap/risk-table.csv ===
 id,Failure mode / actions,effect,S,O,D,RPN,status
 F1,Base cracks at the spring seat,"As proposed, the trap fails. A user can be hurt.",8,4,5,,
@@ -5205,10 +5245,10 @@ END PLANNING RESOURCE REVIEW
 
 Resource cross-check. Read https://ancreationoffice.com/resource-crosscheck.txt for the additional filing, safety, search, launch and regional sources. Use matched sources only. Wisconsin resources are regional; follow source automation restrictions and existing disclosure/approval rules.
 === FILE: meeting-packet.py ===
-"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor, an accountant, a patent attorney, a licensee, an insurance agent or a business attorney.
+"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor, an accountant, a patent attorney, a licensee, an insurance agent, a business attorney or a possible partner.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney
+  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney|partner
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
@@ -5223,8 +5263,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
-if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant", "patent", "licensee", "insurance", "attorney"):
-    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney")
+if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant", "patent", "licensee", "insurance", "attorney", "partner"):
+    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney|partner")
 MEET = Path(sys.argv[1]).resolve()
 KIND = sys.argv[2]
 
@@ -5309,7 +5349,7 @@ U = first(funding, "unit", "unit")
 US = first(funding, "units", U + "s")
 piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
 tooling = sum(num(r["tooling"]) for r in cost)
-TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet", "licensee": "Licensee packet", "insurance": "Insurance packet", "attorney": "Business attorney packet"}[KIND]
+TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet", "licensee": "Licensee packet", "insurance": "Insurance packet", "attorney": "Business attorney packet", "partner": "Partner packet"}[KIND]
 
 
 def table(head, body, cls=""):
@@ -5857,6 +5897,46 @@ if KIND == "attorney":
 {table(['Question', 'What the record shows'], qs, 'compact')}
 <h2>Budget</h2><p>{esc(M.get('budget'))}</p>""", "Page 4"))
     pages.append(prep_sheet(show_open=False))
+
+# ---------------- possible partner ----------------
+if KIND == "partner":
+    price = num(first(funding, "price"))
+    annual = num(first(funding, "annual_units"))
+    years = num(first(funding, "years")) or 1
+    plan_units = annual * years
+    clears = price - piece
+    payback_units = tooling / clears if clears > 0 else float("inf")
+    closes = payback_units <= plan_units
+    owner_spent = sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    owner_funds = num(first(funding, "owner_funds"))
+    ms = sorted((r for k, v in funding.items() if k.startswith("milestone:") for r in v), key=lambda r: r["value"])
+    upcoming = [r for r in ms if r["value"] >= M.get("date", "")][:4]
+    verdict = (f"At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost to make, and the {money(tooling, False)} of tooling "
+               + (f"pays back within the plan of {plan_units:,.0f} {US}." if closes else f"would take {payback_units:,.0f} {US} to pay back, against a plan of {plan_units:,.0f}. The numbers do not close yet; that is the work in front of the project."))
+    pages.append(page("The project in brief", f"""
+<p class="lede-big">{esc(first(pricing, 'headline') or PRODUCT)}</p>
+<h2>Who it's for</h2><p>{esc(first(pricing, 'who_for'))}</p>
+<h2>Where it stands</h2><p>{esc(M.get('development'))}</p>
+<h2>The numbers, honestly</h2><div class="verdict {'ok' if closes else 'warn'}">{verdict}</div>
+<div class="stats">{stat("Owner's money in", money(owner_spent, False), f'plus {money(owner_funds, False)} committed')}{stat(f'Clears per {U}', money(clears))}{stat('Tooling', money(tooling, False), 'placeholders until quoted')}{stat('Sales so far', esc(M.get('sales', 'None yet')))}</div>
+<h2>Coming up</h2>{table(['By', 'Milestone'], [[fdate(r['value']), esc(r['key'][10:])] for r in upcoming], 'compact')}""", "Page 1"))
+    unowned = [r for r in actions if r.get("Status") in ("open", "waiting") and not (r.get("Who") or "").strip()]
+    needs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("need", [])]
+    pages.append(page("What the project needs", f"""
+{table(['Need', 'Why, from the record'], needs, 'compact')}
+<h2>Work waiting for someone</h2><p>{len(unowned)} open items on the action log have no one on them yet, for example:</p>
+<ul class="levers">{''.join(f"<li>{esc(r['Action'])}</li>" for r in unowned[:6])}</ul>""", "Page 2"))
+    opts = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("option", [])]
+    brings = "".join(f"<li>{esc(r['value'])} <span class='small'>({esc(r['note'])})</span></li>" for r in MULTI.get("brings", []))
+    pages.append(page("How working together could look", f"""
+<h2>What you would bring</h2><ul class="levers">{brings}</ul>
+<h2>Ways it could be set up</h2>{table(['', ''], opts, 'kv')}
+<h2>Who owns what today</h2>{table(['', ''], [['The invention', esc(first(disclosure, 'owner', 'Not recorded'))], ['The company', esc(next((r['value'] for r in company if r['key'].lower() == 'legal name'), 'Not formed'))], ['Patent filings', esc(first(disclosure, 'filed', 'Nothing yet'))]], 'kv')}
+<h2>What stays the same until it's written</h2><p>{esc(M.get('keeps'))}</p>
+<p class="small">Topics to talk about, not offers. Any arrangement is written down and read by an attorney before anyone relies on it; a share of a company needs the company formed first.</p>""", "Page 3"))
+    fit = "".join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get("fit", []))
+    pages.append(prep_sheet(f"<h2>Questions to ask them</h2><ul class='levers'>{fit}</ul>", show_open=False,
+                            top="<p class='small'>An NDA is signed before drawings or CAD are shown (principle-patent-before-public.txt). Ask for someone they have done this kind of work for, and call them.</p>"))
 
 css = CSS
 doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: {TITLE.lower()}</title>
@@ -8144,6 +8224,79 @@ PLAN-09,"Who owns each next task, what does finished mean, and what must happen 
 PLAN-10,"Which risks could stop the project, and who is reducing them?","b-project-manager, the engineering role, b-project-manager","asana-risk-register,design-risk-guide",open,,,,,
 PLAN-11,"What evidence justifies go, revise, hold or stop at the next review?",b-project-manager,"stagegate-discovery-launch,atlassian-decision",open,,,,,
 PLAN-12,"What did the last milestone teach us, and which records need revision?","b-project-manager, the prototype role, b-project-manager",atlassian-retrospective,open,,,,,
+=== FILE: playbook-first-tooling-quote.txt ===
+PLAYBOOK: The first tooling quote. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/playbooks.txt
+Runs it: b-project-manager. b-business-manager prepares the supplier meeting and the money side; b-analyst does the sheets.
+Example: the mousetrap (https://ancreationoffice.com/example-mousetrap/README.txt): action A-001, the request for quote to Molder A, quote-comparison.csv.
+
+WHEN IT RUNS
+- The design is frozen, or close enough to quote: the parts that need tooling have CAD at a named revision and their materials are chosen.
+- The cost sheet still carries tooling placeholders, and the numbers can't be trusted until they are real (the funding packet's verdict depends on them).
+- Or the inventor says "get the molds quoted".
+
+DONE WHEN
+At least two comparable quotes (three is better) are on quote-comparison.csv, the chosen basis has replaced the placeholders on the cost sheet, the numbers have been rerun, and the inventor has made the call: order the tooling, change the design, change the price or volume, start with a prototype tool, or stop. The call is in the decision log with the principle that drove it.
+
+PRINCIPLES THAT DRIVE IT
+- Proof over estimate: a quote replaces a placeholder; nothing else does (principle-proof-over-estimate.txt).
+- Two-way doors go fast: asking for quotes is two-way, so do it early and in parallel; ordering tooling is one-way, so it waits for the comparison and the inventor (principle-two-way-doors.txt).
+- Find surprises early: the toolmaker's review is the cheapest place to learn the part can't be molded as drawn (principle-find-surprises-early.txt, principle-design-for-manufacture.txt).
+- Know the unit economics before tooling (principle-unit-economics-first.txt).
+- 90% and go: quote on the planning quantities and say they are planning numbers; don't wait for a perfect forecast (principle-ninety-percent-and-go.txt).
+- Decide on the patent before showing it: an NDA before CAD leaves the project (principle-patent-before-public.txt).
+- Trace every spec to its source: a quote is a source; a remembered price is not (principle-trace-to-source.txt).
+
+THE STEPS
+1. Check it is ready to quote. (b-project-manager)
+   For each part that needs tooling: CAD and a drawing at a named revision, the material from the decision log, the critical features from the risk analysis table (severity 8 and up) and the compliance matrix. Run python3 check-sources.py on the project: nothing critical goes out unchecked. Anything missing goes on the action log, and the playbook waits for it.
+   Uses: sop-design-loop.txt (freeze), sop-cost-sheet.txt, sop-risk-table.txt, sop-source-check.txt. Drawings a shop can quote from follow the drawing standard named for the project (sop-source-check.txt WHEN NO PROCEDURE COVERS IT).
+2. Decide what to ask for. (b-project-manager proposes, the inventor decides)
+   Quantities: the first order and the annual volume from the charter and funding.csv, marked as planning numbers. Options worth pricing at the same time: cavities, a family mold, aluminum or steel, a prototype tool for the first few thousand parts. Who owns the tool: the inventor. Write the call in the decision log.
+3. Pick two or three suppliers. (b-business-manager, with b-project-manager)
+   From the library's manufacturing shelf, referrals, or suppliers already known. Each goes in contacts.csv. A molder that won't sign an NDA is a reason to pick another, not to send CAD anyway.
+4. NDA, then CAD. (b-business-manager)
+   A mutual NDA, signed, in the correspondence log. Then the CAD and drawings go out, each in its own dated S folder with the exact files and revision (sop-correspondence.txt), and a row in the disclosure history.
+5. The request for quote. (b-business-manager builds it from b-project-manager's copies)
+   python3 meeting-packet.py <the meeting's correspondence folder> manufacturer: the parts, quantities, requirements, critical features and terms. The prep sheet lists what to compare like for like (sop-packet-manufacturer.txt).
+6. The tooling review. (the inventor attends; b-project-manager takes the findings)
+   Ask what they would change to make it cheaper or more reliable to mold. Their findings go in the meeting's notes; each one that changes the design goes on the action log and, after freeze, through a change notice (sop-change-control.txt). A finding that changes a risk goes on the risk analysis table.
+7. Log each quote as it arrives. (b-analyst)
+   The quote itself in its dated R folder. One row per part per supplier on quote-comparison.csv (template-quote-comparison.csv): tooling cost and type, cavities, tool life, piece price at the first order and at volume, lead times, what is included, payment terms, tool ownership, how long the quote is valid. A quote that leaves something out gets a question back, not a guess. Its expiry goes in deadlines.csv.
+8. Put the chosen basis on the cost sheet. (b-project-manager)
+   Replace each placeholder with the quote's figure; "how the cost was figured" names the quote and its date. Recalculate amortization and the cost to make one. Hand the new cost sheet to b-business-manager.
+9. Rerun the numbers. (b-business-manager)
+   python3 funding-packet.py on the funding folder: does the tooling pay back within the plan volume now? Say it to the inventor in one line before anything else (for example, with made-up figures: "With the real quotes, each trap clears $0.07 and the molds pay back in 1.5 million traps").
+10. The inventor decides. (one-way door)
+   - Order the tooling: the supplier's purchase order states tool ownership; the spending register gets a committed row; a change notice if the charter's budget moves; the cost sheet and the quote comparison are parked.
+   - Change the design to cut the cost: back to the design loop with the toolmaker's suggestions, then requote the changed parts.
+   - Change the price or the volume: b-business-manager reruns the market check and the buyer conversations first.
+   - A prototype or aluminum tool first: smaller money, real parts, a real signal.
+   - Stop: fail forward faster. Write down what was learned, and what would make it worth reopening.
+   The decision log names the principle that drove the call.
+
+WHEN IT GOES WRONG
+- The quotes come in far above the placeholder: believe reality over the plan (principle-believe-reality.txt). Say it plainly, rerun the numbers, and take it to step 10; don't shop for a quote that agrees with the plan.
+- The quotes can't be compared: send each supplier the same questions and ask again on the same basis.
+- A supplier wants full drawings before quoting: make them, from the drawing standard, rather than sending CAD alone.
+- Nobody will quote: ask why. The answer is usually the volume, the drawings, or the part itself, and each is a finding.
+- A quote expires before the decision: ask for it to be extended in writing, or requote.
+
+WHAT IT LEAVES IN THE RECORD
+quote-comparison.csv; the quotes in the correspondence log; updated cost-sheet.csv; decision-log.csv lines for steps 2 and 10; action log rows for each finding; deadlines for quote expiry; spending register and a change notice if tooling is ordered.
+=== FILE: playbooks.txt ===
+Playbooks: the Project Manager Bot. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+
+A playbook strings procedures together into one job that comes up again and again: when it runs, what done looks like, the principles that drive it, the steps with who does each and which procedure each uses, the inventor's decisions, what to do when it goes wrong, and what it leaves in the record. When a job matches a playbook, follow the playbook; open each procedure it names when that step comes up.
+
+THE PLAYBOOKS
+- The first tooling quote (https://ancreationoffice.com/playbook-first-tooling-quote.txt). From a design ready to quote to real quotes on the cost sheet and the inventor's decision to order, change, or stop.
+
+COMING
+- The design loop: from the first concept to design freeze.
+
+How a playbook relates to the rest: principles (principles-pm.txt) say how to decide; a playbook says what to do, in what order, for a whole job; a procedure (sop-*.txt) says how to do one step; a template and the mousetrap example show the result.
 === FILE: press-kit/PROMO-INSTRUCTIONS.txt ===
 You are Advance Now's own Office Manager Bot (role b-business-manager; Mike may have given you any name). Everything general about that bot is in https://ancreationoffice.com/business-manager.txt ; read it too. This file adds Advance Now's specifics and wins where they differ (your files are AN-Creation/Business in the an-creation repository, like any Office Manager Bot). You are the business and promotion manager for Advance Now LLC, which integrates AI into engineering and manufacturing, and its first project, the AN Creation Office: six free AI assistants for engineering and manufacturing work (https://ancreationoffice.com), built by Mike Maier. You work for Mike. The Inventor's Office runs inventions; you run the business side. What to say and never say: press-kit/key-messages.txt and fact-sheet.txt.
 
@@ -10102,6 +10255,7 @@ SHEETS = {
                        ["part number", "part", "qty", "make or buy", "what it is", "material cost", "process cost",
                         "tooling", "amortization", "unit cost", "running total", "share of total"],
                        ("qty", "material cost", "process cost", "tooling", "amortization", "unit cost", "running total", "share of total")),
+    "quote-comparison.csv": ("Quote comparison", "Project record", ["supplier", "quote ref", "part number", "part", "tool type", "cavities", "tooling cost", "piece price at volume", "tool lead time", "notes"], ("tooling cost", "piece price at volume")),
     "risk-table.csv": ("Risk analysis table", "Project record", None, ("S", "O", "D", "RPN")),
     "actions.csv": ("Action log", "Project record", ["ID", "Opened", "Action", "Who", "Due", "Status"], ()),
     "decision-log.csv": ("Decision log", "Project record", None, ()),
@@ -26476,11 +26630,11 @@ Selection guides and books: mcam-material-selection, protolabs-material-selectio
 PRODUCES
 A material decision record: requirements, shortlist with data, chemical check per chemical, tests needed, the choice and why.
 === FILE: sop-meeting-prep.txt ===
-SOP: Meeting prep. Revision 10 — October 18, 2026.
+SOP: Meeting prep. Revision 11 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst drafts the documents and builds the packet.
 May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/ (the meeting file, the packet, the notes; https://ancreationoffice.com/sop-correspondence.txt) and its row in correspondence.csv, rows in the Business action log, decision log, contacts.csv and market-evidence.csv, and hand-off lines to b-project-manager.
-Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261104-01-M-community-lender-meeting/lender-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261112-01-M-family-investor-meeting/investor-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261208-01-M-accountant-year-end/accountant-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261023-01-M-patent-agent-consult/patent-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261119-01-M-pest-control-company-licensing/licensee-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/insurance-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261105-01-M-business-attorney-consult/attorney-packet.html (each folder has its meeting.csv)
+Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261104-01-M-community-lender-meeting/lender-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261112-01-M-family-investor-meeting/investor-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261208-01-M-accountant-year-end/accountant-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261023-01-M-patent-agent-consult/patent-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261119-01-M-pest-control-company-licensing/licensee-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/insurance-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261105-01-M-business-attorney-consult/attorney-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261102-01-M-partner-tool-and-die-maker/partner-packet.html (each folder has its meeting.csv)
 Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-funding-packet.txt
 
 WHY THIS EXISTS
@@ -26500,7 +26654,7 @@ WHO'S ACROSS THE TABLE, AND WHAT THEY WANT TO SEE
 - Patent attorney or agent, a patent clinic or the USPTO's free help. Worries: what exactly is new, what is out there, who has seen it and when, who owns it. Packet: https://ancreationoffice.com/sop-packet-patent.txt
 - Insurance agent or broker. Worries: how could it hurt someone, what has been done about it, how much will sell and through whom. Packet: https://ancreationoffice.com/sop-packet-insurance.txt
 - Business attorney. Worries: what needs their eyes and by when, who owns what, what has been signed. Packet: https://ancreationoffice.com/sop-packet-attorney.txt
-- Partner. A packet for this comes later; until then, build the meeting file below with the documents the record already has.
+- Possible partner (a co-founder, a skilled friend, a shop offering help for a share). Worries: is this real, what would I do and get, who decides. Packet: https://ancreationoffice.com/sop-packet-partner.txt
 
 THE STEPS
 1. Who, when, what they want out of it. Name the counterpart type from the list.
@@ -26508,7 +26662,7 @@ THE STEPS
 3. Dust off what exists (parked documents come out for this meeting and go back after, https://ancreationoffice.com/sop-document-life.txt DUSTING ONE OFF). Check what exists: the business record (AN-Creation/Business/) and copies of b-project-manager's project record. Ask b-project-manager for current copies of anything product-side through office-handoff (the cost sheet, specs, drawings list, risk table, charter); never retype them.
 4. Draft what is missing, honestly. A pre-revenue company has no sales history, no credit and maybe no insurance yet: the packet says so, says what is being done about it, and puts it on the action log. Never invent a fact to fill a gap (principle-never-invent-facts.txt).
 5. Write the meeting file, meeting.csv: who, when, the goal, the ask, the walk-away (principle-walk-away-number.txt), the questions they will likely ask with the answers, and what to leave behind.
-6. Build the packet: python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug <buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
+6. Build the packet: python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug <buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney|partner>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
 7. Before the meeting, tell the inventor in a few lines: what is in the packet, the two or three questions most likely to come up, the ask, and anything still missing.
 8. After the meeting, before anything else: the meeting notes in the meeting's folder and its row in correspondence.csv, the trip row with the miles if they drove (trips.csv), and every cost with its receipt (expenses.csv), per https://ancreationoffice.com/sop-business-record.txt . Then add what they said or did to market-evidence.csv when it is a signal; update contacts.csv with the next step and date; put every promise on the action log; write any decision to the decision log.
 
@@ -26909,7 +27063,7 @@ RULES
 - The inventor sends, signs and attends. The bot prepares.
 - After the meeting: the notes in the meeting's folder, what they said in market-evidence.csv, the showing marked done in disclosure-history.csv, the next step on the action log.
 === FILE: sop-packet-manufacturer.txt ===
-SOP: The manufacturer packet (request for quote). Revision 2 — October 18, 2026.
+SOP: The manufacturer packet (request for quote). Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager for the meeting; the technical content is b-project-manager's (cost sheet, drawings list, specifications, risk table), sent as copies through office-handoff. b-analyst builds it.
 May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/, and a hand-off line to b-project-manager for the quote when it arrives (it goes on the cost sheet).
@@ -26933,13 +27087,47 @@ WHAT GOES IN IT (meeting-packet.py builds these pages from the sheets)
 5. Prep sheet, for the inventor only: the goal, the questions the supplier will ask with answers, what to ask them, the walk-away, and how the quote will be compared like for like.
 
 COMPARING QUOTES
-Put every quote on the same basis before comparing: piece price at the same quantity, tooling, tooling life and ownership, lead time, terms, what is included (inspection, packaging, freight). Write each into the cost sheet as a quote with its date, replacing the placeholder (sop-cost-sheet.txt). Ask at least two or three suppliers for anything with tooling.
+Put every quote on the same basis before comparing, one row per part per supplier on quote-comparison.csv (https://ancreationoffice.com/template-quote-comparison.csv; the whole job: https://ancreationoffice.com/playbook-first-tooling-quote.txt): piece price at the same quantity, tooling, tooling life and ownership, lead time, terms, what is included (inspection, packaging, freight). Write each into the cost sheet as a quote with its date, replacing the placeholder (sop-cost-sheet.txt). Ask at least two or three suppliers for anything with tooling.
 
 RULES
 - An NDA before sending drawings that show how the invention works, unless the patent filing is in (principle-patent-before-public.txt).
 - Quantities are the charter's and the funding plan's; never inflate them to get a better price.
 - The inventor owns the tooling they pay for; say so in the request and get it in writing in the purchase order.
 - Accepting a quote or placing a tooling order is a one-way door: it goes to the inventor with the comparison, and the spending register gets a committed row when they say yes.
+=== FILE: sop-packet-partner.txt ===
+SOP: The partner packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with someone who might join the project or the business (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; a planned row in disclosure-history.csv when they will see how it is made.
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261102-01-M-partner-tool-and-die-maker/partner-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Partner only)
+Goes with: https://ancreationoffice.com/sop-packet-attorney.txt (where any arrangement gets written), https://ancreationoffice.com/sop-team.txt
+
+WHO IT IS FOR
+Someone who wants to join: a co-founder, a skilled friend or neighbor, a shop or a company offering help, time or money in exchange for a share, a royalty or a role.
+
+WHAT WORRIES THEM
+- Is this real? What it is, where it stands, and whether the numbers work.
+- What would I do, and what would I get?
+- Who decides, and who owns what?
+
+WHAT WORRIES THE INVENTOR (the prep sheet)
+- Promising a share in the room, by word or handshake, that is hard to take back.
+- Showing how it is made before an NDA.
+- A partner who wants more than they bring, or who leaves halfway.
+
+WHAT GOES IN IT (meeting-packet.py builds it: partner)
+1. The project in brief: the headline, who it is for, where it stands, the numbers honestly (the same math as the other packets: what each unit clears, the tooling, whether it pays back), the owner's money in, sales so far, the next milestones.
+2. What the project needs: each need with why, from the record; and the work on the action log that has no one on it.
+3. How working together could look: what they would bring, the ways it could be set up as topics (paid by the job, a royalty, a share once the company exists), who owns what today, and what stays the same until it is written.
+4. Prep sheet, for the inventor only: an NDA before drawings, ask for a reference and call them, the goal, the ask, the walk-away, their likely questions, and the questions to ask them.
+
+RULES
+- Topics, not offers. No share, royalty or role is promised in the meeting, by word or handshake; the inventor decides afterward, and any arrangement is written and read by an attorney before anyone relies on it (principle-rigor-scales-with-money.txt, sop-packet-attorney.txt).
+- A share of a company needs the company formed first.
+- The simplest arrangement that works comes first: paying for the work changes no ownership.
+- An NDA before they see drawings or CAD (principle-patent-before-public.txt); a planned row in the disclosure history.
+- Never overstate the project to win someone over (principle-no-claims-you-cant-back.txt): the numbers on page 1 are the same as in every other packet.
+- After the meeting: what they said in the meeting's folder; any decision in the business decision log; if they will work on the project, their row in team.csv only once it is agreed in writing.
 === FILE: sop-packet-patent.txt ===
 SOP: The patent attorney packet. Revision 1 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
@@ -28254,7 +28442,7 @@ Search Console and Bing: pages found vs. pages in the sitemap, any new errors (a
 
 Sources: Google Search Console start https://support.google.com/webmasters/answer/9128668 ; sitemaps https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview ; SEO starter guide https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; Bing Webmaster https://www.bing.com/webmasters ; GitHub Pages https://docs.github.com/en/pages .
 === FILE: sop.txt ===
-AN Creation standard operating procedures. Revision 24 — October 18, 2026.
+AN Creation standard operating procedures. Revision 26 — October 18, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
@@ -28301,7 +28489,7 @@ K3. b-business-manager: the brand kit and profiles. Logo, descriptions, fact she
 K4. b-business-manager: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories. https://ancreationoffice.com/sop-promotion.txt
 K5. b-business-manager: the funding packet a lender or advisor reads: executive summary, unit economics, use of funds, milestones, risk register. https://ancreationoffice.com/sop-funding-packet.txt (builder: https://ancreationoffice.com/funding-packet.py ; example: https://ancreationoffice.com/example-mousetrap/funding-packet.html)
 K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
-K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt , accountant https://ancreationoffice.com/sop-packet-accountant.txt , patent attorney https://ancreationoffice.com/sop-packet-patent.txt , licensee https://ancreationoffice.com/sop-packet-licensee.txt , insurance agent https://ancreationoffice.com/sop-packet-insurance.txt , business attorney https://ancreationoffice.com/sop-packet-attorney.txt ; builder https://ancreationoffice.com/meeting-packet.py
+K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt , accountant https://ancreationoffice.com/sop-packet-accountant.txt , patent attorney https://ancreationoffice.com/sop-packet-patent.txt , licensee https://ancreationoffice.com/sop-packet-licensee.txt , insurance agent https://ancreationoffice.com/sop-packet-insurance.txt , business attorney https://ancreationoffice.com/sop-packet-attorney.txt , partner https://ancreationoffice.com/sop-packet-partner.txt ; builder https://ancreationoffice.com/meeting-packet.py
 K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and the correspondence log, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py. https://ancreationoffice.com/sop-business-record.txt (templates: template-expenses.csv, template-trips.csv, template-correspondence.csv, template-deadlines.csv, template-business-decision-log.csv)
 
 FOR b-project-manager
@@ -28310,6 +28498,7 @@ FOR b-project-manager
 1c. The source check, both bots: every spec traces to an actual document, never AI memory, and is checked against it when it goes into a sheet; when no procedure covers something, write the project's procedure from the authoritative source in the library. https://ancreationoffice.com/sop-source-check.txt (principle: https://ancreationoffice.com/principle-trace-to-source.txt ; checker: https://ancreationoffice.com/check-sources.py)
 1d. Living and parked documents, both bots: which documents are updated every time something happens (action logs, decision logs, spending, trips, expenses, the correspondence index, deadlines) and which are done for a purpose and parked until a trigger (charter, cost sheet, risk table, compliance matrix, packets, company record), and how to dust one off. https://ancreationoffice.com/sop-document-life.txt
 1e. The correspondence log, both bots, one for the company: a folder per email, file sent (CAD, drawings), meeting or call, named YYMMDD-NN-X-slug (date code, its number in the day, S sent, R received or M meeting or call, a slug) so they stay in order, never changed once filed, with its index correspondence.csv. https://ancreationoffice.com/sop-correspondence.txt (template: https://ancreationoffice.com/template-correspondence.csv)
+1f. Playbooks, b-project-manager: whole jobs strung from the procedures, with the inventor's decisions marked. https://ancreationoffice.com/playbooks.txt ; first: the first tooling quote https://ancreationoffice.com/playbook-first-tooling-quote.txt (template: https://ancreationoffice.com/template-quote-comparison.csv)
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
 The ticket template may write the form named in the ticket, Office files/queue/QUEUE.txt, the ticket file, Office files/record/ for the conversation, Office files/sessions/ for the analyst run, and Office files/plan.md for a taking-longer note.
@@ -28346,7 +28535,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.23
+261018.25
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -28392,6 +28581,7 @@ example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/email.txt
 example-mousetrap/correspondence/261023-01-M-patent-agent-consult/meeting.csv
 example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/meeting.csv
 example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/meeting.csv
+example-mousetrap/correspondence/261102-01-M-partner-tool-and-die-maker/meeting.csv
 example-mousetrap/correspondence/261104-01-M-community-lender-meeting/meeting.csv
 example-mousetrap/correspondence/261105-01-M-business-attorney-consult/meeting.csv
 example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/meeting.csv
@@ -28412,6 +28602,7 @@ example-mousetrap/market-evidence.csv
 example-mousetrap/pricing-terms.csv
 example-mousetrap/prior-art.csv
 example-mousetrap/project-charter.txt
+example-mousetrap/quote-comparison.csv
 example-mousetrap/risk-table.csv
 example-mousetrap/spending.csv
 example-mousetrap/tax-year-2026.txt
@@ -28437,6 +28628,8 @@ plan-template.txt
 planning-resources.json
 planning-resources.txt
 planning-review.csv
+playbook-first-tooling-quote.txt
+playbooks.txt
 press-kit/PROMO-INSTRUCTIONS.txt
 press-kit/backgrounder.txt
 press-kit/boilerplate.txt
@@ -28558,6 +28751,7 @@ sop-packet-investor.txt
 sop-packet-lender.txt
 sop-packet-licensee.txt
 sop-packet-manufacturer.txt
+sop-packet-partner.txt
 sop-packet-patent.txt
 sop-phases.txt
 sop-plastic-part-design.txt
@@ -28613,6 +28807,7 @@ template-pricing-terms.csv
 template-prior-art.csv
 template-project-charter.txt
 template-prototype-control-plan.txt
+template-quote-comparison.csv
 template-review-record.txt
 template-risk-table.csv
 template-spending-register.csv
@@ -28631,7 +28826,7 @@ using-other-ais.txt
 version-control.txt
 version.txt
 === FILE: standing.txt ===
-AN Creation standing context for the Project Manager Bot (role b-project-manager). Revision 38 — October 18, 2026.
+AN Creation standing context for the Project Manager Bot (role b-project-manager). Revision 39 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Project Manager Bot)
 This is b-project-manager's permanent context. It is short on purpose. Your memory may be cleared at any time. That is normal. The project lives in the files, not in this chat.
 
@@ -28645,6 +28840,9 @@ OLDER PROJECTS (once): if an invention still has a "Soren's files" folder, renam
 
 YOUR PRINCIPLES (read first, every conversation)
 Read https://ancreationoffice.com/principles-pm.txt and let it shape every decision. The core ones come first: fail forward faster, 90% and go, two-way doors go fast, rigor scales with whose money is at risk, believe reality over the plan, always a next step, start with what you have. Three are never relaxed for speed: never invent facts, trace every spec to its source (an actual document, never AI memory; https://ancreationoffice.com/principle-trace-to-source.txt), and severity first. When one drives a decision, the decision log names it.
+
+YOUR PLAYBOOKS
+When a job matches one of the playbooks (https://ancreationoffice.com/playbooks.txt), follow it: its steps, who does each, the inventor's decisions, and what it leaves in the record. Open each procedure it names when that step comes up. The first: getting the first tooling quotes (playbook-first-tooling-quote.txt).
 
 START OF EVERY CONVERSATION
 0. Look in the usual place first. A b-project-manager can be deleted and made again; the office stays in the files. Before anything else, find the project folder (office-startup): the AN-Creation folder in the home office.txt names ("Home:" Google Drive, OneDrive or another cloud folder, a folder path, or GitHub with your clone /workspace/offices/b-project-manager/an-creation). If you don't know the home yet, look in the cloud folders you're connected to; if it isn't there, ask the inventor where their project folder is. If it is there, read AN-Creation/office.txt and All inventions and carry on from them: greet them, say which inventions you found, and pick up where the files leave off. Never start over or make a second AN-Creation. Only if there is none, or you can't open it: never guess a location. Ask where they want it (a cloud folder like Google Drive or OneDrive is best; anywhere you can write to works) and set up first, one step at a time, with https://ancreationoffice.com/sop-office.txt, then come back here. A typed path is not a connection: confirm you can read and write the folder before you use it.
@@ -29084,7 +29282,7 @@ date,who,what they saw,what they said,what they did or would pay,strength,source
 2026-10-14,Example: owner of a local store,A sample and the price,What they said,What they did or would pay,medium,where it is recorded
 === FILE: template-meeting.csv ===
 key,value,note
-type,buyer,"buyer, manufacturer, lender, investor, accountant, patent, licensee, insurance or attorney"
+type,buyer,"buyer, manufacturer, lender, investor, accountant, patent, licensee, insurance, attorney or partner"
 who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
 date,2026-10-28,YYYY-MM-DD
 record,../../funding/<invention>,Folder with the sheets; relative to this meeting folder
@@ -29124,7 +29322,7 @@ tax_year,2026,Accountant only: the year the packet covers
 question,A question for the accountant,Accountant only: one row each; the note says what the record shows
 budget,,"Patent and attorney: what the inventor will spend now, and on what"
 development_short,Prototype,Licensee only: a few words for the sell sheet
-development,,Licensee only: how far along it is
+development,,"Licensee and partner: how far along it is"
 picture_note,,Licensee only: what picture goes on the sell sheet
 contact,,Licensee only
 royalty_pct_example,,"Licensee only: an illustrative rate, with its source in the note"
@@ -29140,6 +29338,12 @@ incidents,,"Insurance only: what the recall and incident search found, with the 
 claims,None. New business.,Insurance only
 document,Name of the agreement or form,"Attorney only: one row each; for an attorney meeting, meeting.csv adds columns from, by and status"
 outside_money,,Attorney only: any outside money being discussed; the note says how much and on what terms
+sales,None yet,Partner only
+need,What the project needs,"Partner only: one row each; the note says why, from the record"
+brings,What they would bring,"Partner only: one row each, in their words"
+option,A way it could be set up,"Partner only: one row each, as a topic, not an offer"
+keeps,What stays the same until it is written,Partner only
+fit,A question to ask them,Partner only: one row each
 === FILE: template-pricing-terms.csv ===
 key,value,source,note
 headline,,,The product in one line a buyer remembers
@@ -29219,6 +29423,9 @@ Critical features on this build:
 What will be decided from the results:
 Estimated cost and time of the build:
 Results: (filled after: each line met / not met, the evidence file)
+=== FILE: template-quote-comparison.csv ===
+supplier,quote ref,quote date,valid until,part number,part,tool type,cavities,tool life (shots),tooling cost,piece price at first order,first order qty,piece price at volume,annual qty,tool lead time,parts lead time,included,payment terms,tool owner,correspondence,notes
+Example: Molder A,Q-1234,2026-10-29,2026-12-29,MT-001,Plastic base,steel,1,to ask,0.00,0.00,5000,0.00,50000,to ask,to ask,"inspection, packaging; freight?",50% on order,inventor,261029-01-R-molder-a-quote,Example row; every figure from the quote itself
 === FILE: template-review-record.txt ===
 Review record. Template. Save as a dated file: YYMMDD-HHMM-review-<stage>-<revision>.
 Project:
@@ -30471,7 +30678,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.23
+Office version: 261018.25
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -30509,6 +30716,8 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.25  Playbooks for the Project Manager Bot (playbooks.txt): whole jobs strung from the procedures, with when each runs, what done looks like, the principles that drive it, the steps with who does each, the inventor's decisions, what to do when it goes wrong, and what it leaves in the record. The first: the first tooling quote (playbook-first-tooling-quote.txt), from a design ready to quote to real quotes on the cost sheet and the inventor's call to order, change, or stop; with a quote comparison sheet (template-quote-comparison.csv). Re-read your office file. No new profile text.
+261018.24  The partner packet (sop-packet-partner.txt), for someone who might join the project or the business: the project in brief with the numbers honestly, what the project needs and the work no one is on, how working together could look as topics (paid by the job, a royalty, a share once the company exists), who owns what, and a prep sheet: an NDA before drawings, a reference to call, no share promised in the room. With it, the Office Manager Bot has a packet for each counterpart: buyer, manufacturer, lender, investor, accountant, patent attorney, licensee, insurance agent, business attorney and partner. Example: example-mousetrap/correspondence/261102-01-M-partner-tool-and-die-maker/. Re-read your office file. No new profile text.
 261018.23  The business attorney packet (sop-packet-attorney.txt): whether the company is formed, the documents to look at earliest first (signed, to draft, expected, to prepare) with who they are from and what worries us, ownership of the company and the invention, outside money being discussed, questions, budget, and a prep sheet. The bot gathers facts and questions; it never drafts an agreement for signing or calls a document safe to sign. Example: example-mousetrap/correspondence/261105-01-M-business-attorney-consult/. Re-read your office file. No new profile text.
 261018.22  The insurance packet (sop-packet-insurance.txt), for an insurance agent or broker: new business, planned first-year sales, where and how it sells, what buyers require; the product, its parts and who makes each, instructions and warnings; every failure from the risk analysis that could hurt someone with what was done and the severity before and after, the requirements with their source status, recalls on similar products, claims history; questions for the agent; and a prep sheet. Questions, never assumptions about coverage. Example: example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/. Re-read your office file. No new profile text.
 261018.21  The licensee packet (sop-packet-licensee.txt), for a company that might license the invention: a sell sheet that shows what it does and not how it is made, why it sells, where it stands and the terms to discuss as topics, and a prep sheet with an illustrative royalty calculation (a cited rate, never quoted in the room) and a warning when nothing is filed. "Patent pending" only when an application exists. Example: example-mousetrap/correspondence/261119-01-M-pest-control-company-licensing/. Re-read your office file. No new profile text.
