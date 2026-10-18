@@ -38,7 +38,8 @@ for r in meeting:
 # "record" rows name the folders that hold the sheets, relative to the meeting folder; one row each
 # (in a real project, from AN-Creation/<business>/correspondence/<slug>/: ../../funding/<invention> and
 # ../../<invention>/Office files). First match wins. A meeting file written before the folder move
-# (sop-folder-move.txt) says ../../funding/<invention>; that folder is now ../../funding/<invention>.
+# (sop-folder-move.txt) says ../../Business/funding/<invention>; after the move (Business renamed
+# Default-org, correspondence moved inside it) that folder is ../../funding/<invention>.
 def record_folder(value):
     p = (MEET / value).resolve()
     if not p.exists() and value.replace("\\", "/").startswith("../../Business/"):

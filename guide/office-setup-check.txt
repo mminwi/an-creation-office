@@ -1,6 +1,6 @@
 AN Creation skill: office-setup-check. Run once after setup (https://ancreationoffice.com/drive-setup.txt), and report pass or fail in one line. It is the one save test at setup.
 
-Your office folder: a Project Manager Bot uses AN-Creation/offices/<your bot id>/; an Office Manager Bot uses its business folder (AN-Creation/Business/ for the default business); an older plant office uses its own folder.
+Your office folder: a Project Manager Bot uses AN-Creation/offices/<your bot id>/; an Office Manager Bot uses its business folder (AN-Creation/Default-org/ for the default business); an older plant office uses its own folder.
 
 1. Create setup-check.txt in your office folder with today's date.
 2. Read it back. Pass only if the text matches. A connected app is not proof.

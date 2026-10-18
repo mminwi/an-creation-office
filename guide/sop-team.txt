@@ -26,7 +26,7 @@ ROLE NAMES (every procedure)
 - Renaming a bot changes one cell in the team file. The bot does not rename itself.
 
 THE TEAM FILE: AN-Creation/team.csv
-Template: https://ancreationoffice.com/template-team.csv . One row per office bot. Columns: name, covers (the role), bot_id (SEVERAL BOTS), business (its business folder), runs (for a Project Manager Bot: "all", or the inventions it runs, separated by ;), reports_to, platform, owner, notes. A team.csv without the new columns gets them on the first write: bot_id the same as covers, business "Business", runs "all".
+Template: https://ancreationoffice.com/template-team.csv . One row per office bot. Columns: name, covers (the role), bot_id (SEVERAL BOTS), business (its business folder), runs (for a Project Manager Bot: "all", or the inventions it runs, separated by ;), reports_to, platform, owner, notes. A team.csv without the new columns gets them on the first write: bot_id the same as covers, business "Default-org", runs "all".
 - platform is Grok for an office bot.
 - Each office adds or updates its own row on its first conversation, by the office-startup skill. The analyst gets a row too.
 - A bot reads team.csv at the start of every conversation, so it knows which other offices exist and what they're called.
@@ -59,7 +59,7 @@ The owner may run more than one Project Manager Bot, for example one for garden 
 ADDING A BOT
 Only the owner adds a bot; never create one. The new bot follows drive-setup.txt JOINING AN EXISTING FOLDER: it asks the owner for its short word if a bot of its kind already exists, takes its bot id, makes its office folder and inbox, and adds its row to team.csv.
 - A second Project Manager Bot starts with no inventions. The owner says which to give it (MOVING AN INVENTION) or starts a new one with it.
-- A second Office Manager Bot means a second business: it makes AN-Creation/<company name>/ with the same layout as Business/ (business.txt, its record, correspondence/, All inventions) and runs only that folder.
+- A second Office Manager Bot means a second business: it makes AN-Creation/<company name>/ with the same layout as Default-org/ (business.txt, its record, correspondence/, All inventions) and runs only that folder.
 
 MOVING AN INVENTION
 Only on the owner's word, in one save:

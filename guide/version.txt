@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.32
+Office version: 261018.33
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -38,6 +38,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.33  The default business folder is AN-Creation/Default-org/ (was Business/). Every invention not assigned to another business goes there. In an older folder, the move renames Business/ to Default-org/ with everything in it, only with the owner's yes (sop-folder-move.txt). Re-read your office file. No new profile text.
 261018.32  The business layout. Inside AN-Creation/ there is now one folder per business, and each invention sits inside its business. Everyone has the default business, AN-Creation/Business/, even with only a Project Manager Bot; an invention not assigned to another business goes there. A Project Manager Bot's office.txt is AN-Creation/offices/<bot id>/office.txt. Each business has its own correspondence log and All inventions. ideas.txt, team.csv, handoffs/ and sops/ stay at the top, shared by every bot. More than one Project Manager Bot can share the folder, each running its own inventions; each business has one Office Manager Bot (sop-team.txt SEVERAL BOTS; team.csv gains bot_id, business and runs). An older folder moves once, only with the owner's yes (sop-folder-move.txt, new); until then bots work with it as it is, and old meeting files still build. Re-read your office file. No new profile text.
 261018.31  Credit wording: the office's structure and methodology are heavily based on Lauren Tan's pstack. No change to how the bots work. No new profile text.
 261018.30  Credit: the office's structure follows Lauren Tan's pstack (credits.html; a credit line in principles-pm.txt, principles-bm.txt and playbooks.txt). No change to how the bots work. Re-read your office file. No new profile text.
