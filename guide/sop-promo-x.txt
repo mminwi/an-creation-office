@@ -19,7 +19,7 @@ Bring them in a batch: the post's full link, what it is, why it fits, the reply 
 MIKE'S OWN POSTS (office)
 - One idea per post, the point in the first line. Short (under 280 characters) for most; longer posts or a thread for a story or a how-to.
 - Threads: a strong first post that stands alone, then 4 to 8 posts each with one point, the link at the end.
-- Pictures help: a real photo from the bench or shop (nothing confidential), a press-kit card, a short screen recording of an office conversation, an AI image clearly not pretending to be a photo.
+- Pictures help: a real photo from the bench or shop, a press-kit card, a short screen recording of an office conversation, an AI image clearly not pretending to be a photo.
 - Mix: practical AI-in-engineering notes (what worked, what didn't, with Grok, Claude, Codex, SOLIDWORKS); shop-floor lessons; building the AN Creation Office in public (what changed and why); inventors and the future of work. See https://ancreationoffice.com/sop-promo-audience.txt
 - Cadence: start with 1 post a day on weekdays plus the replies, if Mike can keep that up; fewer is fine. Consistency beats bursts.
 - Reply to replies on Mike's posts the same day.

@@ -3,7 +3,7 @@ Read by b-analyst. Where this file still says b-project-manager doing the work, 
 Index: https://ancreationoffice.com/sop.txt
 Read this for one contained job. When the result is saved and reviewed, leave this file. Do not add the intern to the session table.
 
-You are b-analyst. An intern is a disposable helper you assign. The Inventor's Office stays the bot the inventor talks to. It can be a subagent or a separate conversation. It does not keep the project’s memory.
+You are b-analyst. An intern is a disposable helper you assign. The Project Manager Bot stays the bot the inventor talks to. It can be a subagent or a separate conversation. It does not keep the project’s memory.
 
 Write a brief the intern can carry without the rest of the office:
 

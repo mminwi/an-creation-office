@@ -1,18 +1,18 @@
-AN Creation: start here, on your phone. Revision 1 — October 12, 2026.
+AN Creation: start here, on your phone. Revision 2 — October 18, 2026.
 For someone who has never done this. You need a phone, about an hour, and two accounts. Everything runs in the cloud; nothing goes on a computer.
 
 WHAT YOU NEED
-1. A SuperGrok subscription (the plan and price: https://ancreationoffice.com/start.html). It includes Grok bots and Grok Build. This one account runs the whole office.
+1. A SuperGrok subscription (the plan and price: https://ancreationoffice.com/start.html). It includes Grok bots and Grok Build. This one account runs both bots.
 2. A Google account (most people have one). Your project lives in a private folder in your Google Drive.
 
 THE STEPS
 1. Install the Grok app on your phone and sign in.
 2. Make a new Grok bot and name it anything you like (short and familiar is easiest). Then paste this, exactly:
 
-   You are my Inventor's Office for AN Creation (role: b-project-manager).
+   You are my Project Manager Bot for AN Creation (role: b-project-manager).
    First, set up your own profile. Open https://ancreationoffice.com/profile.txt,
-   find the Inventor's Office block, and use your profile tool to set your description
-   to that block exactly as written and your title to "Inventor's Office".
+   find the Project Manager Bot block, and use your profile tool to set your description
+   to that block exactly as written and your title to "Project Manager Bot".
    Read your profile back to me to confirm.
    Then read and follow your office file: https://ancreationoffice.com/standing.txt
    If you cannot open a link, ask me to paste the text.
@@ -25,6 +25,6 @@ THE STEPS
 
 IF YOU GET STUCK
 - Tell the bot exactly what you see on the screen; it has a troubleshooting list.
-- Nothing is lost: your office keeps a dated copy before any big change, and Google Drive keeps earlier versions.
+- Nothing is lost: your bot keeps a dated copy before any big change, and Google Drive keeps earlier versions.
 
 Already use Claude, ChatGPT or Cursor and want to use them instead? That works too: https://ancreationoffice.com/using-other-ais.txt . You don't need them.

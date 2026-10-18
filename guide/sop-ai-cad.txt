@@ -10,7 +10,6 @@ WHERE EACH PIECE RUNS (office)
 - This office (Grok): the specification, the brief for the agent, the check list, and the record in the project repository.
 - The CAD computer: Windows with a licensed SOLIDWORKS; Claude Code or Codex in a terminal; Python with pywin32 (or VBA, or C#/VB.NET) to reach the API; optionally an MCP server that gives the agent SOLIDWORKS tools directly.
 - The project repository: the brief, the scripts the agent wrote, exported STEP and PDF files, pictures of the model, and the check results. SOLIDWORKS files are binary; keep the working models in the vault (PDM) or a backed-up folder, and commit the exports and scripts.
-- Confidential or export-controlled CAD: an AI coding agent sends what it reads to its model provider's cloud. Use it on customer-confidential or controlled models only if the company's rules approve that service for that data (some companies have an approved enterprise account; ITAR technical data needs an environment approved for it). When unsure, don't: use it on the owner's own parts or on generic test parts.
 
 THREE WAYS TO DRIVE SOLIDWORKS, MOST RELIABLE FIRST (office)
 1. A parametric template plus a script. The owner models the part family once by hand, with named global variables, equations and a design table. The agent only changes values, rebuilds, checks and exports. This is the most reliable use and the one to steer toward for anything done more than twice.
@@ -56,7 +55,6 @@ KiCad's files are text, so agents can read them, and its command-line tool (kica
 
 NEVER (office)
 - Never let an agent overwrite or delete the only copy of a model: work on copies or under version control.
-- Never send customer-confidential or controlled CAD to an AI service the company hasn't approved for it.
 - Never release a part an agent made without the checks above and a person looking at it.
 
 SOURCES (published; ids in your library): SOLIDWORKS API Help for your version (solidworks-api-help); recording and editing macros (solidworks-macros); CodeStack examples (codestack); xCAD.NET (xcad-net); community MCP servers (solidworks-mcp-servers); Model Context Protocol (mcp-protocol); Claude Code docs (claude-code-docs); Codex docs (openai-codex-docs); CadQuery (cadquery); build123d (build123d); KiCad docs (kicad-docs).

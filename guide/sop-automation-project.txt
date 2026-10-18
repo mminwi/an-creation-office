@@ -2,9 +2,6 @@ SOP: Running a custom automation machine project, from specification to buy-off.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office", "published" (with the source to check) or "Mike".
 
-CONFIDENTIALITY FIRST (office)
-Plant equipment projects carry the customer's product and process details. In the project repository use the project's code name, never the customer's or the product's name; keep drawings, the customer's specifications and prices in the company's own systems and record only where they are.
-
 THE PATH OF A MACHINE PROJECT (office)
 1. Requirements: a user requirement specification (URS) or machine specification: what parts, what rate (parts per minute, cycle time), what it must check and reject, accuracy, changeover, utilities (power, air), floor space, the plant's standards (PLC brand, HMI, safety, networking, guarding color, labeling), and acceptance criteria. Every later argument is settled by this document; get it signed.
 2. Concept and risk: layout, the sequence of operation, a first machine risk assessment (https://ancreationoffice.com/sop-machine-safety.txt), and the hard problems listed early (part feeding, vision, dispensing are usually the hardest).

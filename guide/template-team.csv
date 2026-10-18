@@ -1,6 +1,6 @@
 name,covers,reports_to,platform,owner,notes
-,b-project-manager,,Grok,,Inventor's Office. The owner names the bot. One bot runs every invention. Weekday routine: revisit folder and actions.csv. No routine for the version check.
-,b-business-manager,,Grok,,Business Manager's Office. Owns the company, patent preparation, name and trademark, licensing, funding, the website, search, and listings. Does not own posts or audience.
+,b-project-manager,,Grok,,Project Manager Bot. The owner names the bot. One bot runs every invention. Weekday routine: revisit folder and actions.csv. No routine for the version check.
+,b-business-manager,,Grok,,Office Manager Bot. Owns the company, patent preparation, name and trademark, licensing, funding, the website, search, and listings. Does not own posts or audience.
 ,b-molding-office,,Grok,,Molding Plant Office.
 ,b-plastic-design-office,,Grok,,Plastic Design Office.
 ,b-quality-office,,Grok,,Quality Office.

@@ -24,5 +24,5 @@ The owner will say something short, like "Work on tray ticket T-008" or just "ti
 ## When you finish
 
 - Move the ticket to `queue/done/` with Status "done <date>", update `queue/QUEUE.txt`, and write the next ticket if the ticket asks for one.
-- Save with the office-save skill: your own clone, pull --rebase, one commit, push, and an gh read-back. Never force-push main. If the push fails, say so plainly; never report work as saved when it isn't.
+- Save with the office-save skill (https://ancreationoffice.com/office-save.txt). This repository is the GitHub variant: your own clone, pull --rebase, one commit, push, and a gh read-back. Never force-push main. If the push fails, say so plainly; never report work as saved when it isn't.
 - End with one or two plain lines for the owner: what you did and what's next.

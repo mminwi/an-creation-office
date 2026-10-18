@@ -33,7 +33,7 @@ THE PATH TO PASSING (office)
 5. If it fails, find the source (conducted or radiated, which cable, which frequency), fix one thing at a time, and record each change against the configuration (sop-mil-program.txt).
 
 WHAT THE OFFICE KEEPS (office)
-The requirement list and status, the pre-scan and test dates, which units and configurations were tested, pass/fail by requirement and the report number. The detailed test data and design specifics may be controlled; keep them in the company's system (sop-mil-program.txt, EXPORT CONTROL FIRST).
+The requirement list and status, the pre-scan and test dates, which units and configurations were tested, pass/fail by requirement, the report number, and the test data and design notes the owner gives you.
 
 HANDS OFF TO (office)
 The electrical engineer for circuit, layout and filter design; the EMI test lab for procedures and testing; sop-mil-enclosure.txt for the mechanical shielding.

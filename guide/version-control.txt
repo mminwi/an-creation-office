@@ -17,7 +17,8 @@ Follow the office-save skill. This is the office rule it carries out.
 - Before a major change, keep a dated copy in History/.
 - After every write, read the file back and check it matches. A write you did not read back is not confirmed.
 - Quiet when it works. A failed save is one plain line to the owner. Never call it saved when the read-back failed.
-- End of a conversation: one "Last saved" line in your office.txt (time, what).
+- If the save changed plan.md or actions.csv, rewrite office.txt "Working on" in one line in that same save.
+- "Last saved", only after the read-back matches: <date time CT>, <file name> (<Drive file id>), read back OK. On GitHub the id is the commit. Never write that line when the read-back failed.
 - Files over about 50 MB: leave them where they are and record where the original lives.
 Setup: https://ancreationoffice.com/drive-setup.txt
 
@@ -26,7 +27,7 @@ IF THIS OFFICE USES GITHUB (code offices, and offices already set up on GitHub)
 - One commit per turn. pull --rebase before the commit; if the push is rejected, pull --rebase and push again. After the push, read the file back with gh. Unpushed work is not saved.
 - Never force-push main. A work branch is named by role (b-project-manager/<topic>) and deleted after it merges.
 - The library is AN-Creation/sops/library.txt in the repository; a refresh is one download and one commit.
-- "Last saved" includes the commit. Files over about 50 MB stay out of the repository.
+- "Last saved" uses the commit in place of a Drive file id, and only after the gh read-back matches. Files over about 50 MB stay out of the repository.
 Setup: https://ancreationoffice.com/github-setup.txt
 
 IF SOMETHING GOES WRONG

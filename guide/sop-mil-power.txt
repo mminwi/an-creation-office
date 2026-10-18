@@ -3,7 +3,7 @@ Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 
 HOW TO USE THIS (office)
-This is for asking the right questions, not designing the board. Work through the checklists with the owner: "Have we considered this? Have we looked at that?" Record each answer as answered, open (who owns it), or not applicable (why). Circuit design, schematics and analysis happen with the electrical engineer in the company's controlled environment; here keep only the question, its status and where the answer lives (sop-mil-program.txt, EXPORT CONTROL FIRST).
+Work through the checklists with the owner: "Have we considered this? Have we looked at that?" Record each answer in full, including the design facts, schematics notes, and numbers they give you. Mark each item answered, open (who owns it), or not applicable (why).
 
 LITHIUM-ION CHARGING, THE BASICS (published: battery and charger IC makers' application notes, IEC 62133-2, UL 2054; office for the summary)
 - Charge profile is constant current, then constant voltage (CC/CV). The charger delivers a set current until the cell reaches its charge voltage, then holds that voltage while the current tapers; charging ends when the current falls to a termination level or a timer expires.
@@ -53,7 +53,7 @@ SOLDIER POWER AND RADIO INTERFACES (published; confirm against the program's int
 - BB-2590: the common rechargeable lithium-ion military battery; also a power source on some systems.
 - Handheld radios such as the L3Harris AN/PRC-152A and AN/PRC-163 use their own lithium-ion batteries; L3Harris and others sell power adapters that run the radio from external DC and charge its battery (for example, the L3Harris RF-7912 power adapter). Those products are a useful benchmark for behaviors (switch-over, charge, priority). Source: https://www.l3harris.com/sites/default/files/2020-12/cs-tcom-rf-7912-ps00x-power-adapter-spec-sheet.pdf
 - Power scavengers: Iris Technology's Vulture Power Scavenger sits in-line between the soldier's system battery (a CWB or 2590) and the rest of the kit. It takes any DC source from 5 to 46 V (solar included), uses it to offset the system battery's discharge, and charges the battery with any excess as an SMBus Level 3 charger; built for Nett Warrior, -40 to +55 C operating, MOLLE-mounted. Iris documents disagree on maximum output (5 A or 10 A at 16.8 V); check the current datasheet. Iris's Merlin HH+ does the same job at the AN/PRC-163 radio: runs it from external power and charges its battery. Both are close benchmarks for this kind of device: their priority rules, charge behavior, connectors and size. Sources: https://www.iristechnology.com/tactical/man-portable/vulture-power-scavenger ; https://www.militaryaerospace.com/communications/product/55378085/iris-technology-introduces-rugged-power-management-adapter-for-an-prc-163-radio
-- Interface control documents for these come through the program or the prime contractor and may be controlled; record that they exist and where they are, not their content.
+- Record the interface documents the program or the prime contractor provides: pinout, voltage, current, and sequencing.
 
 HANDS OFF TO (office)
 The electrical engineer for every design answer; the battery maker for cell limits; the EMI and environmental labs for test questions.

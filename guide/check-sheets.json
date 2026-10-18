@@ -8,7 +8,7 @@
     "Listen to the idea first. Select the sheet for the next decision and ask one or two useful questions at a time. Reuse answers already in project records; do not make a new inventor complete the whole library.",
     "For each applicable item record the answer, the explanation, status (unknown, estimate, evidence recorded, reviewed, or not applicable with reason), evidence file and revision or source URL/date, owner, next action and reviewer. The answer is the short form field. The explanation keeps how it was reached and the inventor's words, for the next sheet to read. Do not recite the explanation back unless the person asks. A filled box is not evidence that a test, search, filing or approval occurred.",
     "Save a dated project copy in the sheet’s subject folder, following the existing project layout and revision rules. Preserve earlier issued revisions. Send b-project-manager a short update with the exact file/revision, unresolved decisions and agreed next step; b-project-manager updates the master plan.",
-    "Check current official sources and actual recipient requirements when used. Record what you actually read, dates and limitations. If a source is inaccessible, report that and leave the dependent requirement unverified. These references do not grant permission to copy paid standards or upload confidential invention information.",
+    "Check current official sources and actual recipient requirements when used. Record what you actually read, dates and limitations. If a source is inaccessible, report that and leave the dependent requirement unverified. These references do not grant permission to copy paid standards.",
     "Use go, revise, hold or stop at a project review, with the person’s decision, evidence and remaining conditions. A project decision is separate from regulatory clearance, retailer acceptance, legal review or test validation. Do not send, apply, file, buy or publish without the person’s authorization."
   ],
   "record_fields": [
@@ -238,7 +238,7 @@
         {
           "id": "IP-02",
           "question": "Exactly what do you believe is new?",
-          "evidence": "Explain the technical problem, mechanism/process, alternatives, differences, drawings and versions. Identify what may be functional, ornamental, branding or confidential know-how; do not turn a vague idea into a patentability conclusion."
+          "evidence": "Explain the technical problem, mechanism/process, alternatives, differences, drawings and versions. Identify what may be functional, ornamental, or branding; do not turn a vague idea into a patentability conclusion."
         },
         {
           "id": "IP-03",
@@ -253,7 +253,7 @@
         {
           "id": "IP-05",
           "question": "What has already been disclosed or offered for sale?",
-          "evidence": "Exact dates, material/revision, audience, confidentiality terms, public demos, crowdfunding, online posts, offers and sales. Have relevant filing options assessed before further disclosure; do not assume a worldwide grace period."
+          "evidence": "Exact dates, material/revision, audience, public demos, crowdfunding, online posts, offers and sales. Have relevant filing options assessed before further disclosure; do not assume a worldwide grace period."
         },
         {
           "id": "IP-06",
@@ -425,7 +425,7 @@
         {
           "id": "PRODUCTION-04",
           "question": "Who owns tooling, data and changes?",
-          "evidence": "Tool ownership, custody, maintenance and transfer access; drawings/IP/confidentiality, approved substitutions and who can authorize changes."
+          "evidence": "Tool ownership, custody, maintenance and transfer access; drawings and IP, approved substitutions and who can authorize changes."
         },
         {
           "id": "PRODUCTION-05",
@@ -505,7 +505,7 @@
         {
           "id": "FUNDING-08",
           "question": "Is this ready to share with this recipient?",
-          "evidence": "Current requested format/documents, consistent numbers and revisions, confidentiality/public-disclosure implications, unanswered questions, proposed next step and human authorization. No guarantee of funding or invented valuation/terms."
+          "evidence": "Current requested format/documents, consistent numbers and revisions, public-disclosure implications, unanswered questions, proposed next step and human authorization. No guarantee of funding or invented valuation/terms."
         }
       ],
       "sources": [
@@ -550,7 +550,7 @@
         {
           "id": "LAUNCH-03",
           "question": "What claims can we support?",
-          "evidence": "Claim-to-evidence list, demonstrations, endorsements/disclosures, product photos and instructions; the legal role reviews disclosure/IP concerns before publishing confidential details."
+          "evidence": "Claim-to-evidence list, demonstrations, endorsements/disclosures, product photos and instructions; the legal role reviews disclosure/IP concerns before publishing."
         },
         {
           "id": "LAUNCH-04",

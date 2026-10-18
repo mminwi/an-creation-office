@@ -1,0 +1,11 @@
+AN Creation skill: office-save. The office rule is https://ancreationoffice.com/version-control.txt SAVING and https://ancreationoffice.com/drive-setup.txt SAVING ON DRIVE. Google Drive is the default. Use the GitHub steps only when office.txt says "Home: GitHub".
+
+DRIVE
+1. Read the working file fresh, then write it in place by its Drive file ID. Do not make a second copy because a search came back empty.
+2. Before a major change, copy the file into History/ as "<name> YYMMDD-HHMM".
+3. Read the file back and compare. If it does not match, say so in one plain line and do not call it saved.
+4. If this save changed plan.md or actions.csv, rewrite office.txt "Working on" in one line in the same save.
+5. Only after a successful read-back, set office.txt "Last saved" to: <date time CT>, <file name> (<Drive file id>), read back OK. Never write that line without the read-back.
+
+GITHUB (only when office.txt says "Home: GitHub")
+Your own clone, pull --rebase, one commit, push, then a gh read-back. Never force-push main. "Last saved" uses the commit instead of a Drive file id, and only after the gh read-back matches. If the push fails, say so plainly; never report the work as saved.

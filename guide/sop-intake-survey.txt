@@ -13,13 +13,11 @@ THE ROUND TRIP (office)
    - Save it as received (never edited once saved).
    - Put the answered facts where they belong: office.txt (key facts), plan.md (decisions, open items), actions.csv (anything someone must do), the compliance or test matrix where the office keeps one.
    - List the gaps: rows answered "unknown", "conflicting", or low confidence. Ask the owner only those, a few at a time, most important first.
-   - Rows marked "controlled": record only that the answer is controlled and where it lives. Never ask for the content.
 5. Repeat later: as the project moves, the owner can re-run the survey; compare with the last one, say in a few lines what changed, and update the records.
 
 THE SURVEY FILE (office)
-Columns: id, section, question, why (why it matters), answer, source (document number and revision, or "owner"), confidence (high, medium, low), status (answered, unknown, conflicting, controlled, not applicable).
+Columns: id, section, question, why (why it matters), answer, source (document number and revision, or "owner"), confidence (high, medium, low), status (answered, unknown, conflicting, not applicable).
 Add your own rows when a project needs more; keep ids unique.
 
 NEVER (office)
-- Never accept controlled technical data back into this office (export-controlled, customer confidential). The fill-in instructions tell the other AI to answer at project level and mark the rest "controlled"; if something slips through, say so in one line and don't save it.
 - Never treat a survey answer as more certain than its source; low-confidence answers stay open questions.

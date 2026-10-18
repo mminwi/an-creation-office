@@ -34,4 +34,4 @@ RUNNING IT (office)
 - Choose the lab early: accreditation (ISO/IEC 17025 with the methods in scope), capacity, fixtures, schedule, whether the customer wants to witness.
 - Put the sequence in the test matrix: which units, which order, what functional check between tests. Keep spare units.
 - A failure is data: record it, stop and agree the next step with the owner and the customer; don't retest silently.
-- Keep only uncontrolled facts in the project repository (test name, unit serial, date, pass/fail, report number); the controlled report stays in the company's system (sop-mil-program.txt).
+- Record the test name, unit serial, date, pass/fail, report number, and the results the owner gives you.

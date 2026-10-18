@@ -1,12 +1,13 @@
-AN Creation bot profiles (October 14, 2026). b-project-manager profile version 5. b-business-manager profile version 7. Every other office profile version 3.
+AN Creation bot profiles (October 18, 2026). b-project-manager profile version 6. b-business-manager profile version 8. Every other office profile version 3.
+Two bots for everyone: the Project Manager Bot and the Office Manager Bot. The Molding Plant, Plastic Design, Quality and Manufacturing blocks are for bots an older project already has; new projects don't set them up.
 Easiest: make a new bot and tell it to set its own profile from its office block here: description exactly as written, title set to the Title line, then read it back and run office-setup-check (the message to send is on https://ancreationoffice.com/setup.html). A bot left as "New Bot" is not set up. Fallback: paste the description into Edit Profile, description, and set the title yourself.
 The description stays short on purpose. The bot's copy of the procedures is AN-Creation/sops/library.txt. The office file is one section of that file. The separate pages stay on the site for people. Shared steps live in three skills, named in the description: office-startup, office-save, and office-handoff. Do not paste those skills into the profile. When version.txt shows a newer profile version for your role, have the bot set the new description (or paste it) and read it back.
 
-Title: Inventor's Office
-Name: the name in AN-Creation/team.csv. Role: b-project-manager. Office file: standing.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/standing.txt. Profile version 5. Follow the office-startup, office-save and office-handoff skills.
+Title: Project Manager Bot
+Name: the name in AN-Creation/team.csv. Role: b-project-manager. Office file: standing.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/standing.txt. Profile version 6. Follow the office-startup, office-save and office-handoff skills.
 
-Title: Business Manager's Office
-Name: the name in AN-Creation/team.csv. Role: b-business-manager. Office file: business-manager.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/business-manager.txt. Profile version 7. Follow the office-startup, office-save and office-handoff skills.
+Title: Office Manager Bot
+Name: the name in AN-Creation/team.csv. Role: b-business-manager. Office file: business-manager.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/business-manager.txt. Profile version 8. Follow the office-startup, office-save and office-handoff skills.
 
 Title: Molding Plant Office
 Name: the name in AN-Creation/team.csv. Role: b-molding-office. Office file: office-molding.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/office-molding.txt. Profile version 3. Follow the office-startup, office-save and office-handoff skills.

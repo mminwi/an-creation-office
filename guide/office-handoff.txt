@@ -1,0 +1,7 @@
+AN Creation skill: office-handoff. The office rule is https://ancreationoffice.com/sop-team.txt HAND-OFFS.
+
+1. Add one line to AN-Creation/handoffs/for-<their role>.txt:
+   <date time CT> | from <your role> | <one line of the work> | open
+2. Send a SendToAgent ping to that bot. If you cannot ping it, tell the owner the line and the bot's name. If they don't have that bot, say so once and keep the item on your own plan.
+3. When a line is on your plan, change its last word from open to taken. When the work is finished, change it to done.
+4. Never delete a line.

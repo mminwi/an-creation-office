@@ -88,7 +88,7 @@ https://wisconsinsbdc.org/
 Group: business-planning. Type: learning_resource.
 Roles: project, funding, marketing roles. Wisconsin business feasibility, planning, finance and education through a statewide university-based network.
 Check: Use when Wisconsin is the relevant location; confirm center, eligibility, current service terms and course fees separately.
-Access: Regional option; publisher describes no-cost confidential consulting. Education may have separate terms.
+Access: Regional option; publisher describes no-cost consulting. Education may have separate terms.
 Checked: 2026-09-30. Source: Regional: Wisconsin SBDC.
 
 wedc-wisconsin | Regional: WEDC — Wisconsin business development programs
@@ -103,6 +103,6 @@ wmep-wisconsin | Regional: WMEP — Wisconsin Manufacturing Solutions
 https://wmep.org/
 Group: business-planning. Type: learning_resource.
 Roles: manufacturing, engineering, project roles. Wisconsin manufacturing improvement and consulting; a local complement to the existing national NIST MEP directory.
-Check: Confirm geography, capabilities, scope, fees and confidentiality before inquiries or sharing designs. Funding announcements do not establish free client services.
+Check: Confirm geography, capabilities, scope, fees before inquiries or sharing designs. Funding announcements do not establish free client services.
 Access: Regional consulting source; service fees and availability need direct confirmation.
 Checked: 2026-09-30. Source: Regional: WMEP.

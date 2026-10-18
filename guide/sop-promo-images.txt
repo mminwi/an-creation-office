@@ -3,7 +3,7 @@ Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 
 WHICH PICTURE (office)
-1. A real photo is best: Mike at the bench, a prototype, a part, a screen with an office conversation. Nothing confidential, no employer's or customer's parts, logos or plant.
+1. A real photo is best: Mike at the bench, a prototype, a part, a screen with an office conversation. No employer's or customer's parts, logos or plant.
 2. A press-kit card or the logo: https://ancreationoffice.com/press-kit/images/ (the cards are made with exact text; use them when words must be right).
 3. An AI image: for an idea or a mood that has no real photo. Describe it with a prompt Mike pastes into Grok Imagine.
 

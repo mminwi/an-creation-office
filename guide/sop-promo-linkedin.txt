@@ -25,7 +25,7 @@ A page for Advance Now LLC with logo, tagline, website and the boilerplate. It g
 
 POST FORMATS (office; published: LinkedIn Help; marketing studies, directional)
 - Text post, 120 to 250 words, a strong first two lines (the part above "see more"), short paragraphs, one idea. The everyday format.
-- Text with one image: a real photo from Mike's bench or shop (no confidential parts), a press-kit card, or a clearly AI-made illustration.
+- Text with one image: a real photo from Mike's bench or shop, a press-kit card, or a clearly AI-made illustration.
 - Document (PDF) post: 5 to 10 pages, one point per page, big type, like a short slide deck: "How a molder finds the cause of short shots", "Six stages from idea to launch". Studies often rank these at the top for engagement.
 - Native video: under about 90 seconds, captions on, the point in the first few seconds. A screen recording of an office conversation, or Mike at the bench explaining one thing.
 - Polls: rarely, and only when Mike wants the answer.

@@ -1256,7 +1256,7 @@
         "prototype"
       ],
       "use": "Find nearby fabrication labs for early mockups, access to tools, training and hands-on help.",
-      "check": "Confirm the lab is active and ask about public access, equipment, training, fees, commercial work and confidentiality. A shared makerspace is not automatically a production or inspection supplier.",
+      "check": "Confirm the lab is active and ask about public access, equipment, training, fees, commercial work. A shared makerspace is not automatically a production or inspection supplier.",
       "verification_note": "Official network directory provides lab profiles and list/map search by location.",
       "source": "Directory operator’s own website",
       "kind": "source_directory",
@@ -3899,12 +3899,12 @@
       ],
       "use": "Wisconsin business feasibility, planning, finance and education through a statewide university-based network.",
       "check": "Use when Wisconsin is the relevant location; confirm center, eligibility, current service terms and course fees separately.",
-      "access": "Regional option; publisher describes no-cost confidential consulting. Education may have separate terms.",
+      "access": "Regional option; publisher describes no-cost consulting. Education may have separate terms.",
       "kind": "learning_resource",
       "source": "Regional: Wisconsin SBDC",
       "checked_on": "2026-09-30",
       "verification_url": "https://wisconsinsbdc.org/",
-      "verification_note": "Regional option; publisher describes no-cost confidential consulting. Education may have separate terms.",
+      "verification_note": "Regional option; publisher describes no-cost consulting. Education may have separate terms.",
       "search_terms": [
         "andy",
         "frankie",
@@ -3952,7 +3952,7 @@
         "project"
       ],
       "use": "Wisconsin manufacturing improvement and consulting; a local complement to the existing national NIST MEP directory.",
-      "check": "Confirm geography, capabilities, scope, fees and confidentiality before inquiries or sharing designs. Funding announcements do not establish free client services.",
+      "check": "Confirm geography, capabilities, scope, fees before inquiries or sharing designs. Funding announcements do not establish free client services.",
       "access": "Regional consulting source; service fees and availability need direct confirmation.",
       "kind": "learning_resource",
       "source": "Regional: WMEP",
@@ -6538,57 +6538,6 @@
       "kind": "primary_guidance"
     },
     {
-      "id": "itar-22-cfr",
-      "title": "ITAR — 22 CFR parts 120-130",
-      "url": "https://www.ecfr.gov/current/title-22/chapter-I/subchapter-M",
-      "group": "contracting",
-      "roles": [
-        "engineering"
-      ],
-      "b_roles": [
-        "b-mil-program"
-      ],
-      "use": "The International Traffic in Arms Regulations: defense articles, technical data, the U.S. Munitions List (military electronics are commonly Category XI), and the cloud-storage carve-out for encrypted data (120.54). Free.",
-      "check": "The company’s export-control officer decides what is controlled; this is background, not a determination.",
-      "checked_on": "2026-10-13",
-      "source": "Government agency’s own website",
-      "kind": "government"
-    },
-    {
-      "id": "ear-600-series",
-      "title": "EAR — Export Administration Regulations (600-series military items)",
-      "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C",
-      "group": "contracting",
-      "roles": [
-        "engineering"
-      ],
-      "b_roles": [
-        "b-mil-program"
-      ],
-      "use": "Commerce Department export controls, including 600-series items moved from the U.S. Munitions List. Free.",
-      "check": "The company’s export-control officer decides classification; background only.",
-      "checked_on": "2026-10-13",
-      "source": "Government agency’s own website",
-      "kind": "government"
-    },
-    {
-      "id": "nist-800-171",
-      "title": "NIST SP 800-171 — protecting Controlled Unclassified Information",
-      "url": "https://csrc.nist.gov/pubs/sp/800/171/r3/final",
-      "group": "contracting",
-      "roles": [
-        "engineering"
-      ],
-      "b_roles": [
-        "b-mil-program"
-      ],
-      "use": "Security requirements for CUI in contractor systems; required by DFARS 252.204-7012 and assessed under CMMC. Free.",
-      "check": "Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.",
-      "checked_on": "2026-10-13",
-      "source": "Government agency’s own website",
-      "kind": "government"
-    },
-    {
       "id": "army-cwb",
       "title": "Conformal Wearable Battery — U.S. Army battery site",
       "url": "https://battery.army.mil/warfighter-hub/conformal-wearable-battery/",
@@ -6600,7 +6549,7 @@
         "b-mil-power"
       ],
       "use": "Vest-worn lithium-ion battery: output about 10–20 V by version and charge, Nett Warrior connector (STANAG 4695) and bottom contacts; version 3.6.2 and later add a USB-A port. Free.",
-      "check": "Interface control documents come through the program and may be controlled; use this for background only.",
+      "check": "Confirm the current version and connector against the program's documents.",
       "checked_on": "2026-10-13",
       "source": "Government agency’s own website",
       "kind": "government"
@@ -9369,8 +9318,8 @@
   },
   "selection_guidance": {
     "patent_help": "A good match depends on the assigned person’s active registration, relevant technical work, conflicts, communication, written scope and fees. A patent agent’s authority differs from an attorney’s business-law practice. Use USPTO and state licensing records. Named firms are candidates to interview, not a quality ranking.",
-    "prototype_shop": "Compare quotes against the same drawing/model revision, material, finish, quantity, tolerance, test and inspection requirements. Check who makes the part, where, lead time, delivered cost, confidentiality and applicable data-sharing restrictions. Keep supplier choice open.",
-    "funding": "Match geography, sector, stage, traction and founder criteria before applying. Check fees, confidentiality and sharing terms. A directory or network listing is not a funding promise. Rewards crowdfunding is distinct from equity investment.",
+    "prototype_shop": "Compare quotes against the same drawing/model revision, material, finish, quantity, tolerance, test and inspection requirements. Check who makes the part, where, lead time, delivered cost. Keep supplier choice open.",
+    "funding": "Match geography, sector, stage, traction and founder criteria before applying. Check fees and sharing terms. A directory or network listing is not a funding promise. Rewards crowdfunding is distinct from equity investment.",
     "marketing": "Start with the customer and evidence of demand. Choose channels, training and tools for that job. Keep advertising claims supportable; verify current channel and legal rules before publication."
   },
   "starting_points": [

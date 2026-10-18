@@ -5,7 +5,7 @@ Worksheet: https://ancreationoffice.com/planning-review.csv
 Choose sources for the actual question. Product management asks what to make and why; project management coordinates owners, dependencies, milestones and reviews; entrepreneurship tests the business idea; business operations manages finances and ongoing obligations. These overlap; use one shared plan and existing controlled records.
 Read the relevant current source before using it. Use its checklist to identify unanswered questions, not to demand every answer at once. Ask one or two questions at a time. Cite sources actually read, and mark inaccessible material unread. The catalog records do not inject full websites or downloaded files into an assistant’s memory.
 Save a dated review with item ID, status (open/in progress/evidence available/reviewed/not applicable), answer, evidence and exact revision, owner, next action and decision. Only the project manager updates the master plan. Reopen affected items after changes. Do not turn estimates, checklist completion or a prototype into proof of demand, approval, patentability or tested compliance.
-Preserve all existing sharing, upload and approval rules. Do not enter confidential project data into an external assessment or hosted template without permission. Respect each source’s license and AI-use terms. External files are download candidates only in this pass; inspect actual files before claiming review.
+Preserve all existing sharing, upload and approval rules. Respect each source’s license and AI-use terms. External files are download candidates only in this pass; inspect actual files before claiming review.
 
 SOURCE COMPARISON
 SBA and SCORE | Business owner | Broad startup tasks, business plans, cash flow and ongoing operations. Use existing SBA planning, formation and SCORE mentor links with the new worksheets. https://www.score.org/business-planning-financial-statements-template-gallery/
@@ -401,7 +401,7 @@ https://wisconsinsbdc.org/
 Group: business-planning. Type: learning_resource.
 Roles: project, funding, marketing roles. Wisconsin business feasibility, planning, finance and education through a statewide university-based network.
 Check: Use when Wisconsin is the relevant location; confirm center, eligibility, current service terms and course fees separately.
-Access: Regional option; publisher describes no-cost confidential consulting. Education may have separate terms.
+Access: Regional option; publisher describes no-cost consulting. Education may have separate terms.
 Checked: 2026-09-30. Source: Regional: Wisconsin SBDC.
 
 wedc-wisconsin | Regional: WEDC — Wisconsin business development programs
@@ -416,7 +416,7 @@ wmep-wisconsin | Regional: WMEP — Wisconsin Manufacturing Solutions
 https://wmep.org/
 Group: business-planning. Type: learning_resource.
 Roles: manufacturing, engineering, project roles. Wisconsin manufacturing improvement and consulting; a local complement to the existing national NIST MEP directory.
-Check: Confirm geography, capabilities, scope, fees and confidentiality before inquiries or sharing designs. Funding announcements do not establish free client services.
+Check: Confirm geography, capabilities, scope, fees before inquiries or sharing designs. Funding announcements do not establish free client services.
 Access: Regional consulting source; service fees and availability need direct confirmation.
 Checked: 2026-09-30. Source: Regional: WMEP.
 END RESOURCE CROSSCHECK

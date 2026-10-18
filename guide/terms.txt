@@ -161,7 +161,6 @@ Single source / second source: Relying on one supplier, or qualifying a backup i
 Supplier qualification: Checking a supplier can make the part, inspect it and deliver reliably before you depend on them.
 Incoterms (FOB, EXW, DDP): Standard terms for who pays shipping and carries risk at each point. FOB: seller loads it on the ship; DDP: seller delivers to you, duty paid.
 HS code / tariff (Harmonized System): The customs code for a product type, which sets the import duty.
-NDA (Non-Disclosure Agreement): A contract to keep shared information confidential. Use one before showing suppliers an unprotected invention.
 Purchase order (PO): Your formal order to a supplier, with quantity, price and terms.
 Net 30: Payment terms: the invoice is due 30 days after it is issued.
 

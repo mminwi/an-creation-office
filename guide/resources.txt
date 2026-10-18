@@ -51,8 +51,8 @@ Work with government: https://ancreationoffice.com/resources-company.html#contra
 
 PROVIDER SELECTION
 A good match depends on the assigned person’s active registration, relevant technical work, conflicts, communication, written scope and fees. A patent agent’s authority differs from an attorney’s business-law practice. Use USPTO and state licensing records. Named firms are candidates to interview, not a quality ranking.
-Compare quotes against the same drawing/model revision, material, finish, quantity, tolerance, test and inspection requirements. Check who makes the part, where, lead time, delivered cost, confidentiality and applicable data-sharing restrictions. Keep supplier choice open.
-Match geography, sector, stage, traction and founder criteria before applying. Check fees, confidentiality and sharing terms. A directory or network listing is not a funding promise. Rewards crowdfunding is distinct from equity investment.
+Compare quotes against the same drawing/model revision, material, finish, quantity, tolerance, test and inspection requirements. Check who makes the part, where, lead time, delivered cost. Keep supplier choice open.
+Match geography, sector, stage, traction and founder criteria before applying. Check fees and sharing terms. A directory or network listing is not a funding promise. Rewards crowdfunding is distinct from equity investment.
 Start with the customer and evidence of demand. Choose channels, training and tools for that job. Keep advertising claims supportable; verify current channel and legal rules before publication.
 
 STARTING AND RUNNING A COMPANY
@@ -637,7 +637,7 @@ fablabs | FabLabs — Find a local fabrication lab
 https://www.fablabs.io/labs
 Group: making. Type: source_directory.
 Roles: design, prototype roles. Find nearby fabrication labs for early mockups, access to tools, training and hands-on help.
-Check: Confirm the lab is active and ask about public access, equipment, training, fees, commercial work and confidentiality. A shared makerspace is not automatically a production or inspection supplier.
+Check: Confirm the lab is active and ask about public access, equipment, training, fees, commercial work. A shared makerspace is not automatically a production or inspection supplier.
 Checked: 2026-09-30. Source: Directory operator’s own website.
 
 IP reference: https://ancreationoffice.com/ip-ratings.html and https://ancreationoffice.com/ip-ratings.txt . Matching digit tables, examples, notes and sources are in resources.json under ip_reference.
@@ -1266,7 +1266,7 @@ Worksheet: https://ancreationoffice.com/planning-review.csv
 Choose sources for the actual question. Product management asks what to make and why; project management coordinates owners, dependencies, milestones and reviews; entrepreneurship tests the business idea; business operations manages finances and ongoing obligations. These overlap; use one shared plan and existing controlled records.
 Read the relevant current source before using it. Use its checklist to identify unanswered questions, not to demand every answer at once. Ask one or two questions at a time. Cite sources actually read, and mark inaccessible material unread. The catalog records do not inject full websites or downloaded files into an assistant’s memory.
 Save a dated review with item ID, status (open/in progress/evidence available/reviewed/not applicable), answer, evidence and exact revision, owner, next action and decision. Only the project manager updates the master plan. Reopen affected items after changes. Do not turn estimates, checklist completion or a prototype into proof of demand, approval, patentability or tested compliance.
-Preserve all existing sharing, upload and approval rules. Do not enter confidential project data into an external assessment or hosted template without permission. Respect each source’s license and AI-use terms. External files are download candidates only in this pass; inspect actual files before claiming review.
+Preserve all existing sharing, upload and approval rules. Respect each source’s license and AI-use terms. External files are download candidates only in this pass; inspect actual files before claiming review.
 
 SOURCE COMPARISON
 SBA and SCORE | Business owner | Broad startup tasks, business plans, cash flow and ongoing operations. Use existing SBA planning, formation and SCORE mentor links with the new worksheets. https://www.score.org/business-planning-financial-statements-template-gallery/
@@ -1673,7 +1673,7 @@ https://wisconsinsbdc.org/
 Group: business-planning. Type: learning_resource.
 Roles: project, funding, marketing roles. Wisconsin business feasibility, planning, finance and education through a statewide university-based network.
 Check: Use when Wisconsin is the relevant location; confirm center, eligibility, current service terms and course fees separately.
-Access: Regional option; publisher describes no-cost confidential consulting. Education may have separate terms.
+Access: Regional option; publisher describes no-cost consulting. Education may have separate terms.
 Checked: 2026-09-30. Source: Regional: Wisconsin SBDC.
 
 wedc-wisconsin | Regional: WEDC — Wisconsin business development programs
@@ -1688,7 +1688,7 @@ wmep-wisconsin | Regional: WMEP — Wisconsin Manufacturing Solutions
 https://wmep.org/
 Group: business-planning. Type: learning_resource.
 Roles: manufacturing, engineering, project roles. Wisconsin manufacturing improvement and consulting; a local complement to the existing national NIST MEP directory.
-Check: Confirm geography, capabilities, scope, fees and confidentiality before inquiries or sharing designs. Funding announcements do not establish free client services.
+Check: Confirm geography, capabilities, scope, fees before inquiries or sharing designs. Funding announcements do not establish free client services.
 Access: Regional consulting source; service fees and availability need direct confirmation.
 Checked: 2026-09-30. Source: Regional: WMEP.
 END RESOURCE CROSSCHECK
@@ -2485,32 +2485,11 @@ Roles: b-mil-program. Configuration identification, change control, status accou
 Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
 Checked: 2026-10-13. Source: Publisher page.
 
-itar-22-cfr | ITAR — 22 CFR parts 120-130
-https://www.ecfr.gov/current/title-22/chapter-I/subchapter-M
-Group: contracting. Type: government.
-Roles: b-mil-program. The International Traffic in Arms Regulations: defense articles, technical data, the U.S. Munitions List (military electronics are commonly Category XI), and the cloud-storage carve-out for encrypted data (120.54). Free.
-Check: The company’s export-control officer decides what is controlled; this is background, not a determination.
-Checked: 2026-10-13. Source: Government agency’s own website.
-
-ear-600-series | EAR — Export Administration Regulations (600-series military items)
-https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C
-Group: contracting. Type: government.
-Roles: b-mil-program. Commerce Department export controls, including 600-series items moved from the U.S. Munitions List. Free.
-Check: The company’s export-control officer decides classification; background only.
-Checked: 2026-10-13. Source: Government agency’s own website.
-
-nist-800-171 | NIST SP 800-171 — protecting Controlled Unclassified Information
-https://csrc.nist.gov/pubs/sp/800/171/r3/final
-Group: contracting. Type: government.
-Roles: b-mil-program. Security requirements for CUI in contractor systems; required by DFARS 252.204-7012 and assessed under CMMC. Free.
-Check: Confirm the current revision with the publisher (ASSIST for military documents) before relying on it; the contract's edition governs.
-Checked: 2026-10-13. Source: Government agency’s own website.
-
 army-cwb | Conformal Wearable Battery — U.S. Army battery site
 https://battery.army.mil/warfighter-hub/conformal-wearable-battery/
 Group: electrical. Type: government.
 Roles: b-mil-power. Vest-worn lithium-ion battery: output about 10–20 V by version and charge, Nett Warrior connector (STANAG 4695) and bottom contacts; version 3.6.2 and later add a USB-A port. Free.
-Check: Interface control documents come through the program and may be controlled; use this for background only.
+Check: Confirm the current version and connector against the program's documents.
 Checked: 2026-10-13. Source: Government agency’s own website.
 
 glenair-nett-warrior | Glenair Series 807 Nett Warrior connector

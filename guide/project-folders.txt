@@ -6,7 +6,7 @@ Layout:
 AN-Creation/
   ideas.txt                     parked ideas, one line each with the date; not projects yet
   AGENTS.md, CLAUDE.md          (GitHub add-on only, at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
-  office.txt                    where the Inventor's Office lives (Home), and its "Office version seen" line. Other offices keep that line in their own office.txt. One b-project-manager runs every invention
+  office.txt                    where the Project Manager Bot lives (Home), and its "Office version seen" line. Other bots keep that line in their own office.txt. One b-project-manager runs every invention
   All inventions                one line per invention: where it stands, its next step
   Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), promo-log.csv, record/
   handoffs/                     one inbox per office, for-<role>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)

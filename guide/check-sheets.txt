@@ -8,7 +8,7 @@ WORK INSTRUCTIONS
 2. Listen to the idea first. Select the sheet for the next decision and ask one or two useful questions at a time. Reuse answers already in project records; do not make a new inventor complete the whole library.
 3. For each applicable item record the answer, the explanation, status (unknown, estimate, evidence recorded, reviewed, or not applicable with reason), evidence file and revision or source URL/date, owner, next action and reviewer. The answer is the short form field. The explanation keeps how it was reached and the inventor's words, for the next sheet to read. Do not recite the explanation back unless the person asks. A filled box is not evidence that a test, search, filing or approval occurred. Before asking the inventor, follow https://ancreationoffice.com/sop-checklists.txt so known answers are carried forward.
 4. Save a dated project copy in the sheet’s subject folder, following the existing project layout and revision rules. Preserve earlier issued revisions. Give b-project-manager a short update with the exact file/revision, unresolved decisions and agreed next step; b-project-manager updates the master plan.
-5. Check current official sources and actual recipient requirements when used. Record what you actually read, dates and limitations. If a source is inaccessible, report that and leave the dependent requirement unverified. These references do not grant permission to copy paid standards or upload confidential invention information.
+5. Check current official sources and actual recipient requirements when used. Record what you actually read, dates and limitations. If a source is inaccessible, report that and leave the dependent requirement unverified. These references do not grant permission to copy paid standards.
 6. Use go, revise, hold or stop at a project review, with the person’s decision, evidence and remaining conditions. A project decision is separate from regulatory clearance, retailer acceptance, legal review or test validation. Do not send, apply, file, buy or publish without the person’s authorization.
 
 RECORD FIELDS
@@ -128,7 +128,7 @@ IP-01 What business outcome do you want from protection?
 Evidence to record: Exclude copying of a useful mechanism, protect appearance/brand, license, sell rights, attract investment, keep know-how secret or deliberately publish. Record markets, time horizon and budget.
 
 IP-02 Exactly what do you believe is new?
-Evidence to record: Explain the technical problem, mechanism/process, alternatives, differences, drawings and versions. Identify what may be functional, ornamental, branding or confidential know-how; do not turn a vague idea into a patentability conclusion.
+Evidence to record: Explain the technical problem, mechanism/process, alternatives, differences, drawings and versions. Identify what may be functional, ornamental, or branding; do not turn a vague idea into a patentability conclusion.
 
 IP-03 What related products and publications are known?
 Evidence to record: Dated searches, terms, jurisdictions/classes, relevant documents/claims and unanswered questions. An initial search is not proof of novelty or completeness.
@@ -137,7 +137,7 @@ IP-04 Who contributed, owns rights or has contractual interests?
 Evidence to record: Contributors and what they contributed; employment, assignments, contractor terms, university/sponsor interests and agreements. Inventorship, patent ownership, company shares and project access are different.
 
 IP-05 What has already been disclosed or offered for sale?
-Evidence to record: Exact dates, material/revision, audience, confidentiality terms, public demos, crowdfunding, online posts, offers and sales. Have relevant filing options assessed before further disclosure; do not assume a worldwide grace period.
+Evidence to record: Exact dates, material/revision, audience, public demos, crowdfunding, online posts, offers and sales. Have relevant filing options assessed before further disclosure; do not assume a worldwide grace period.
 
 IP-06 Which protection route fits the objective?
 Evidence to record: Utility patent versus design patent, trademark or trade secret as applicable; costs, territories, timing, discoverability/reverse engineering and practical secrecy measures. A provisional is not an issued patent and does not cover design inventions.
@@ -231,7 +231,7 @@ PRODUCTION-03 What are the real costs and commitments?
 Evidence to record: Unit prices at realistic volumes, tooling/NRE, MOQ, lead times, payment/deposit terms, currency, freight/trade terms, duties, scrap, quote expiry and cancellation/change terms.
 
 PRODUCTION-04 Who owns tooling, data and changes?
-Evidence to record: Tool ownership, custody, maintenance and transfer access; drawings/IP/confidentiality, approved substitutions and who can authorize changes.
+Evidence to record: Tool ownership, custody, maintenance and transfer access; drawings and IP, approved substitutions and who can authorize changes.
 
 PRODUCTION-05 How will we accept incoming parts and production output?
 Evidence to record: First-article/pilot evidence, critical characteristics, sampling rationale, measurement methods, traceability, nonconformance/rework and corrective actions.
@@ -277,7 +277,7 @@ FUNDING-07 What will a grant or crowdfunding route need?
 Evidence to record: For a grant: current open solicitation, fit, eligibility, registrations, work plan, deliverables, budget/allowable costs and deadlines. For rewards: prototype, production/fulfillment budget, delivery assumptions and rewards. Securities crowdfunding is a different regulated route.
 
 FUNDING-08 Is this ready to share with this recipient?
-Evidence to record: Current requested format/documents, consistent numbers and revisions, confidentiality/public-disclosure implications, unanswered questions, proposed next step and human authorization. No guarantee of funding or invented valuation/terms.
+Evidence to record: Current requested format/documents, consistent numbers and revisions, public-disclosure implications, unanswered questions, proposed next step and human authorization. No guarantee of funding or invented valuation/terms.
 
 Sources: sba, sba-lender, sec-ready, grants-search, kickstarter-handbook, sec-early-investors, sba-grants, sequoia-plan
 
@@ -295,7 +295,7 @@ LAUNCH-02 Which offer and price have we tested?
 Evidence to record: Actual experiment, audience, price, offer, budget, duration and success measure. Separate paid conversion and repeat use from views/likes or expressions of interest.
 
 LAUNCH-03 What claims can we support?
-Evidence to record: Claim-to-evidence list, demonstrations, endorsements/disclosures, product photos and instructions; the legal role reviews disclosure/IP concerns before publishing confidential details.
+Evidence to record: Claim-to-evidence list, demonstrations, endorsements/disclosures, product photos and instructions; the legal role reviews disclosure/IP concerns before publishing.
 
 LAUNCH-04 Which channel fits customer and economics?
 Evidence to record: Direct web sales, marketplace, retail wholesale, distributors, licensing or combinations; buyer behavior, net receipts, acquisition cost, fulfillment and cash implications.

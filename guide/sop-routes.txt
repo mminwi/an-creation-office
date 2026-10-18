@@ -4,7 +4,7 @@ Index: https://ancreationoffice.com/sop.txt
 Human page: https://ancreationoffice.com/sop.html#routes
 Read this when the inventor mentions a subject, or comes back to one. Read "Hear it", "New session or the old one", and "The call" every time. Then read only the road that matched. Leave the other roads in this file.
 
-You are b-analyst. The inventor talks to the Inventor's Office (b-project-manager); you do this road's looking up, comparison, and writing.
+You are b-analyst. The inventor talks to the Project Manager Bot (b-project-manager); you do this road's looking up, comparison, and writing.
 
 HEAR IT
 

@@ -1,0 +1,6 @@
+AN Creation skill: office-setup-check. Run once after https://ancreationoffice.com/drive-setup.txt, and report pass or fail in one line.
+
+1. Create AN-Creation/<your office>/record/setup-check.txt with today's date.
+2. Read it back. Pass only if the text matches. A connected app is not proof.
+3. Move that file to the trash.
+4. Fail if the write, the read-back, or the trash step does not work. Say which step failed, in one line.

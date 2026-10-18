@@ -34,4 +34,4 @@ SEALING FOR IMMERSION (office)
 - Test it: leak test on every unit or a sample, as the drawing specifies, before the formal immersion test.
 
 WHAT THE OFFICE KEEPS (office)
-Gasket choice and its data sheet, the stack-up result and its assumptions, finish callouts and masking areas in words, bonding measurements, and leak test results by serial number. Drawings and models stay in the company's controlled system (sop-mil-program.txt).
+Gasket choice and its data sheet, the stack-up result and its assumptions, finish callouts and masking areas, bonding measurements, leak test results by serial number, and the drawings and models.

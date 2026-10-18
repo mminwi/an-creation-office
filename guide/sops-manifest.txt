@@ -1,4 +1,4 @@
-261015.1
+261018.2
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -30,6 +30,7 @@ ip-ratings.txt
 manufacturing.txt
 office-automation-machine.txt
 office-charger-board.txt
+office-handoff.txt
 office-manufacturing.txt
 office-mil-battery.txt
 office-molding.txt
@@ -38,7 +39,10 @@ office-pneumatic-fixture.txt
 office-promotion.txt
 office-quality.txt
 office-rugged-enclosure.txt
+office-save.txt
+office-setup-check.txt
 office-spacex.txt
+office-startup.txt
 office-version-history.txt
 plan-template.txt
 planning-resources.json

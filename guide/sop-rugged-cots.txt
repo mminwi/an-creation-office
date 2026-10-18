@@ -8,7 +8,7 @@ An existing commercial product's circuit board moves from its own commercial hou
 PIN DOWN THE REQUIREMENT, INCLUDING WHAT ISN'T WRITTEN (office)
 - Get the environments in writing: which MIL-STD-810 methods and levels, or an IP rating, or both. "Doesn't need to be watertight" usually changes once washdown, rain, immersion and storage are discussed; ask now, in writing, because the enclosure choice depends on it.
 - An IP rating and a MIL-STD-810 test are different things. IP67 (IEC 60529) is temporary immersion, commonly 1 m for 30 minutes at room temperature; MIL-STD-810 Method 512 immersion can use a temperature difference (the item hotter than the water, so cooling pulls water in) and the depth the contract sets. Washdown is a jet test (IPX5/IPX6, or IPX9K for high-pressure hot water under ISO 20653). Be clear which one the customer means.
-- Ask about export control and the customer's quality requirements early (https://ancreationoffice.com/sop-mil-program.txt): a military version of a commercial product may change its export classification.
+- Ask about the customer's quality requirements early (https://ancreationoffice.com/sop-mil-program.txt).
 
 THE PRODUCT'S OWN APPROVALS (published: IEC 61010-1 safety of electrical measuring equipment, with IEC 61010-2-030 for measuring circuits and measurement categories CAT II, III, IV; FCC/CE EMC; confirm what the product holds today)
 - A power logger measures mains voltage. Its safety approval depends on the housing as well as the board: creepage and clearance distances, insulation, accessible parts, and the connectors carrying measured voltage (their voltage and measurement-category rating). A new enclosure and new connectors can void that approval.

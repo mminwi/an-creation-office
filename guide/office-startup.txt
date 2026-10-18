@@ -1,0 +1,6 @@
+AN Creation skill: office-startup. The office rule is https://ancreationoffice.com/version.txt. Do not copy these steps into an office file.
+
+1. Open https://ancreationoffice.com/version.txt?t=<today's date>. If it does not open, use AN-Creation/sops/library.txt.
+2. "Office version seen" in your office.txt is the "Office version:" value in that file, format YYMMDD.N. It is not a file revision. If the library is newer, re-read your office file, tell the owner in one line what changed, and write the new number on that line.
+3. Read team.csv, your office.txt, plan.md, actions.csv, and your inbox AN-Creation/handoffs/for-<your role>.txt.
+4. Say in one line what is due or waiting. Then ask what they want to work on, or offer the next step.

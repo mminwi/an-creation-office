@@ -1153,12 +1153,12 @@
       ],
       "use": "Wisconsin business feasibility, planning, finance and education through a statewide university-based network.",
       "check": "Use when Wisconsin is the relevant location; confirm center, eligibility, current service terms and course fees separately.",
-      "access": "Regional option; publisher describes no-cost confidential consulting. Education may have separate terms.",
+      "access": "Regional option; publisher describes no-cost consulting. Education may have separate terms.",
       "kind": "learning_resource",
       "source": "Regional: Wisconsin SBDC",
       "checked_on": "2026-09-30",
       "verification_url": "https://wisconsinsbdc.org/",
-      "verification_note": "Regional option; publisher describes no-cost confidential consulting. Education may have separate terms.",
+      "verification_note": "Regional option; publisher describes no-cost consulting. Education may have separate terms.",
       "search_terms": [
         "andy",
         "frankie",
@@ -1206,7 +1206,7 @@
         "project"
       ],
       "use": "Wisconsin manufacturing improvement and consulting; a local complement to the existing national NIST MEP directory.",
-      "check": "Confirm geography, capabilities, scope, fees and confidentiality before inquiries or sharing designs. Funding announcements do not establish free client services.",
+      "check": "Confirm geography, capabilities, scope, fees before inquiries or sharing designs. Funding announcements do not establish free client services.",
       "access": "Regional consulting source; service fees and availability need direct confirmation.",
       "kind": "learning_resource",
       "source": "Regional: WMEP",
