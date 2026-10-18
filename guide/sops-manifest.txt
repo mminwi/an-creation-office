@@ -1,4 +1,4 @@
-261018.25
+261018.26
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -91,6 +91,7 @@ plan-template.txt
 planning-resources.json
 planning-resources.txt
 planning-review.csv
+playbook-design-to-freeze.txt
 playbook-first-tooling-quote.txt
 playbooks.txt
 press-kit/PROMO-INSTRUCTIONS.txt

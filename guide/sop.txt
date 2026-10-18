@@ -1,4 +1,4 @@
-AN Creation standard operating procedures. Revision 26 — October 18, 2026.
+AN Creation standard operating procedures. Revision 27 — October 18, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
@@ -54,7 +54,7 @@ FOR b-project-manager
 1c. The source check, both bots: every spec traces to an actual document, never AI memory, and is checked against it when it goes into a sheet; when no procedure covers something, write the project's procedure from the authoritative source in the library. https://ancreationoffice.com/sop-source-check.txt (principle: https://ancreationoffice.com/principle-trace-to-source.txt ; checker: https://ancreationoffice.com/check-sources.py)
 1d. Living and parked documents, both bots: which documents are updated every time something happens (action logs, decision logs, spending, trips, expenses, the correspondence index, deadlines) and which are done for a purpose and parked until a trigger (charter, cost sheet, risk table, compliance matrix, packets, company record), and how to dust one off. https://ancreationoffice.com/sop-document-life.txt
 1e. The correspondence log, both bots, one for the company: a folder per email, file sent (CAD, drawings), meeting or call, named YYMMDD-NN-X-slug (date code, its number in the day, S sent, R received or M meeting or call, a slug) so they stay in order, never changed once filed, with its index correspondence.csv. https://ancreationoffice.com/sop-correspondence.txt (template: https://ancreationoffice.com/template-correspondence.csv)
-1f. Playbooks, b-project-manager: whole jobs strung from the procedures, with the inventor's decisions marked. https://ancreationoffice.com/playbooks.txt ; first: the first tooling quote https://ancreationoffice.com/playbook-first-tooling-quote.txt (template: https://ancreationoffice.com/template-quote-comparison.csv)
+1f. Playbooks, b-project-manager: whole jobs strung from the procedures, with the inventor's decisions marked. https://ancreationoffice.com/playbooks.txt ; the design loop from concept to freeze https://ancreationoffice.com/playbook-design-to-freeze.txt ; the first tooling quote https://ancreationoffice.com/playbook-first-tooling-quote.txt (template: https://ancreationoffice.com/template-quote-comparison.csv)
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
 The ticket template may write the form named in the ticket, Office files/queue/QUEUE.txt, the ticket file, Office files/record/ for the conversation, Office files/sessions/ for the analyst run, and Office files/plan.md for a taking-longer note.

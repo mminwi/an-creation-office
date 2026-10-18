@@ -1,4 +1,4 @@
-261018.25
+261018.26
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -3981,6 +3981,7 @@ Patent preparation (https://ancreationoffice.com/sop-packet-patent.txt)
 - disclosure-history.csv    every showing outside the project, done and planned, with NDA or not
 
 Playbooks (https://ancreationoffice.com/playbooks.txt)
+- the design loop        concept decisions 10-12 and 10-13, the risk analysis table, prints X2 tested in barns, CAD X3; freeze planned 2026-12-15
 - quote-comparison.csv   the first tooling quote, under way: Molder A's quotes awaited (A-001), a second molder still to pick
 === FILE: example-mousetrap/actions.csv ===
 ID,Opened,Action,Who,Why / from,Due,Status,Done how,Closed,Notes
@@ -8224,6 +8225,68 @@ PLAN-09,"Who owns each next task, what does finished mean, and what must happen 
 PLAN-10,"Which risks could stop the project, and who is reducing them?","b-project-manager, the engineering role, b-project-manager","asana-risk-register,design-risk-guide",open,,,,,
 PLAN-11,"What evidence justifies go, revise, hold or stop at the next review?",b-project-manager,"stagegate-discovery-launch,atlassian-decision",open,,,,,
 PLAN-12,"What did the last milestone teach us, and which records need revision?","b-project-manager, the prototype role, b-project-manager",atlassian-retrospective,open,,,,,
+=== FILE: playbook-design-to-freeze.txt ===
+PLAYBOOK: The design loop, from concept to freeze. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/playbooks.txt
+Runs it: b-project-manager. b-analyst does the models, sheets and review pages; the plant office files (office-plastic-design.txt, office-molding.txt, office-quality.txt, office-manufacturing.txt) supply the manufacturing review.
+Example: the mousetrap (https://ancreationoffice.com/example-mousetrap/README.txt): concept decisions 2026-10-12 and 10-13, the risk analysis table, printed revision X2 tested in barns, CAD revision X3, freeze planned for 2026-12-15.
+
+WHEN IT RUNS
+Fact-finding is done (stage S0): the charter is approved, and the requirements list (the compliance matrix) has its first lines, each traced to a source. It runs until the design freezes.
+
+DONE WHEN
+The design is frozen at one named revision, which needs all five of these (sop-prototype-loop.txt FREEZE):
+- every compliance matrix line is met or put off on purpose, with the reason and who agreed;
+- at least one validation with real use is done;
+- the remaining risks are accepted by the inventor;
+- the cost estimate and timeline still fit the charter, or the inventor accepted the trade;
+- the drawings, parts list and material specs are released at one revision.
+Then the tooling-quote playbook starts (playbook-first-tooling-quote.txt).
+
+PRINCIPLES THAT DRIVE IT
+- Build to learn: every build answers a stated question (principle-build-to-learn.txt).
+- Fail forward faster: a failed build is information; fix and build again (principle-fail-forward-faster.txt).
+- Find surprises early, and design for manufacture from the first pass (principle-find-surprises-early.txt, principle-design-for-manufacture.txt).
+- Know what good is: write the pass level before checking (principle-know-what-good-is.txt).
+- Severity first: anything that could hurt someone is designed out or guarded, whatever its overall score (principle-severity-first.txt).
+- One change at a time when a test has to show what a change did (principle-one-change-at-a-time.txt).
+- Which gives: when time, money and how well it works pull apart, the inventor picks (principle-which-gives.txt).
+- Scope gate and re-anchor: new ideas become suggestions, not scope (principle-scope-gate.txt, principle-re-anchor.txt).
+- One controlled copy: one released revision, everything else is history (principle-one-controlled-copy.txt).
+- Trace every spec to its source (principle-trace-to-source.txt).
+
+THE STEPS
+1. Check the starting point. (b-project-manager)
+   Charter approved; requirements list started, with sources checked (python3 check-sources.py); screening done and the resource map built (sop-resource-map.txt). If not, finish fact-finding first.
+2. Concepts. (b-analyst draws; the inventor picks)
+   Two or three concepts: sketches, images, rough mock-ups, shown side by side on a review page (sop-review-page.txt). Review them against the user, the marketing plan and the specifications that drive shape. The inventor picks one; the others are parked with a reason. Decision log.
+   Uses: sop-design-loop.txt (industrial design passes).
+3. First risk analysis on the chosen concept. (b-analyst; b-project-manager reviews)
+   The risk analysis table for this product's own parts and steps, worst consequence first (sop-risk-table.txt). Every failure that could hurt someone gets a design answer before the first build.
+4. CAD passes. (b-analyst; the manufacturing review from the plant office files)
+   The model, the drawings to the project's drawing standard, the parts list. Each pass is a new revision in its own dated folder. Fill the compliance matrix from the model; mark each line met, not met or not checked. The manufacturing review starts here and gets specific: process, wall, draft, tolerances, part count, assembly. Put rough costs on the cost sheet, marked estimate, and tooling as placeholders. Every pass ends in a recorded review with the inventor.
+   Uses: sop-design-loop.txt (CAD passes), sop-cost-sheet.txt, sop-source-check.txt (WHEN NO PROCEDURE COVERS IT for drawings).
+5. Approve a revision to build. (the inventor decides)
+   Name the question this build answers, the level (bench check, works-like, looks-like, works-and-looks-like) and what it will cost. Spending register rows when ordered. Decision log.
+   Uses: sop-prototype-loop.txt (levels).
+6. Build, verify and validate. (the inventor builds or orders; b-analyst records)
+   Verification: the build against the compliance matrix lines it was meant to check, against pass levels written beforehand. Validation: real users in real conditions; at least one round before freeze. Anyone outside the project who sees it goes in the disclosure history. Rescore the risk analysis table with what the build showed; update cost and timeline.
+7. Decide the next round. (the inventor decides)
+   Another round with a stated question (back to step 4 or 5), or on to freeze. Check for drift every round: builds with no question, the same failure twice without a design change, rounds added to put off a decision. When cost or time pulls away from the charter, ask which gives; a change to the charter's scope, budget or dates is a change notice (sop-change-control.txt).
+8. Freeze review. (the inventor decides)
+   Walk the five freeze conditions on a review page. Run check-sources.py: nothing critical still unchecked. The inventor accepts the remaining risks in words, in the decision log. Release the drawings, parts list and specs at one revision.
+9. After freeze. (b-project-manager)
+   Park the risk analysis table and the compliance matrix with their reopen triggers (sop-document-life.txt). From now on a design change goes through a change notice (sop-change-control.txt); a safety fix is never held back by it. Start the tooling-quote playbook.
+
+WHEN IT GOES WRONG
+- A build fails: say what it showed in one line, change the design, build again. The same failure twice without a design change means stop and rethink the feature.
+- The cost estimate climbs past the charter: which gives, the inventor's call, and a change notice if the budget moves.
+- A late test fails after freeze: believe reality (principle-believe-reality.txt). A change notice, and the tests it touches rerun.
+- Ideas keep coming: each one goes on the action log as a suggestion (sop-suggestions.txt), not into this revision.
+- A requirement's source turns out wrong or out of date: fix the line, recheck what used it, and note it in the decision log.
+
+WHAT IT LEAVES IN THE RECORD
+Revision folders and review pages for each pass; the compliance matrix; the risk analysis table; the cost sheet with estimates and placeholders; decision log lines for the concept, each build, the accepted risks and the freeze; spending register rows for each build; the disclosure history for anyone outside who saw it; the released revision.
 === FILE: playbook-first-tooling-quote.txt ===
 PLAYBOOK: The first tooling quote. Revision 1 — October 18, 2026.
 Index: https://ancreationoffice.com/playbooks.txt
@@ -8285,16 +8348,15 @@ WHEN IT GOES WRONG
 WHAT IT LEAVES IN THE RECORD
 quote-comparison.csv; the quotes in the correspondence log; updated cost-sheet.csv; decision-log.csv lines for steps 2 and 10; action log rows for each finding; deadlines for quote expiry; spending register and a change notice if tooling is ordered.
 === FILE: playbooks.txt ===
-Playbooks: the Project Manager Bot. Revision 1 — October 18, 2026.
+Playbooks: the Project Manager Bot. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 
 A playbook strings procedures together into one job that comes up again and again: when it runs, what done looks like, the principles that drive it, the steps with who does each and which procedure each uses, the inventor's decisions, what to do when it goes wrong, and what it leaves in the record. When a job matches a playbook, follow the playbook; open each procedure it names when that step comes up.
 
-THE PLAYBOOKS
+THE PLAYBOOKS (in the order a project meets them)
+- The design loop, from concept to freeze (https://ancreationoffice.com/playbook-design-to-freeze.txt). From an approved charter to a frozen design at one released revision: concepts, the first risk analysis, CAD passes, builds that each answer a question, real-use validation, and the freeze review.
 - The first tooling quote (https://ancreationoffice.com/playbook-first-tooling-quote.txt). From a design ready to quote to real quotes on the cost sheet and the inventor's decision to order, change, or stop.
 
-COMING
-- The design loop: from the first concept to design freeze.
 
 How a playbook relates to the rest: principles (principles-pm.txt) say how to decide; a playbook says what to do, in what order, for a whole job; a procedure (sop-*.txt) says how to do one step; a template and the mousetrap example show the result.
 === FILE: press-kit/PROMO-INSTRUCTIONS.txt ===
@@ -25676,8 +25738,9 @@ The date column is how you find an entry. There is no separate ID. To look somet
 COLUMNS
 date, decision, reason.
 === FILE: sop-design-loop.txt ===
-SOP: The design stage, a review loop. Revision 3 — October 18, 2026.
+SOP: The design stage, a review loop. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
+Playbook: the whole job from concept to freeze is https://ancreationoffice.com/playbook-design-to-freeze.txt
 Starts from: the project description (project-description.txt), the deliverable of fact-finding.
 Goes with: sop-stages.txt, sop-review-page.txt, compliance-matrix-template.csv
 
@@ -27362,8 +27425,9 @@ promo-log.csv: date, platform, place, post_id, image, link, status (proposed, ap
 
 Sources: FTC endorsement guides https://www.ftc.gov/business-guidance/advertising-marketing/endorsements-influencers-reviews ; Reddit self-promotion guidance https://support.reddithelp.com/hc/en-us/articles/360043504051 ; USPTO on public disclosure and patents https://www.uspto.gov/patents/basics .
 === FILE: sop-prototype-loop.txt ===
-SOP: The prototype loop. Revision 1 — October 7, 2026.
+SOP: The prototype loop. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
+Playbook: the whole job from concept to freeze is https://ancreationoffice.com/playbook-design-to-freeze.txt
 Starts from: a revision approved to build in the design loop (sop-design-loop.txt, sop-stages S1).
 Goes with: sop-stages.txt (S2), the compliance matrix, sop-review-page.txt
 
@@ -28442,7 +28506,7 @@ Search Console and Bing: pages found vs. pages in the sitemap, any new errors (a
 
 Sources: Google Search Console start https://support.google.com/webmasters/answer/9128668 ; sitemaps https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview ; SEO starter guide https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; Bing Webmaster https://www.bing.com/webmasters ; GitHub Pages https://docs.github.com/en/pages .
 === FILE: sop.txt ===
-AN Creation standard operating procedures. Revision 26 — October 18, 2026.
+AN Creation standard operating procedures. Revision 27 — October 18, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
@@ -28498,7 +28562,7 @@ FOR b-project-manager
 1c. The source check, both bots: every spec traces to an actual document, never AI memory, and is checked against it when it goes into a sheet; when no procedure covers something, write the project's procedure from the authoritative source in the library. https://ancreationoffice.com/sop-source-check.txt (principle: https://ancreationoffice.com/principle-trace-to-source.txt ; checker: https://ancreationoffice.com/check-sources.py)
 1d. Living and parked documents, both bots: which documents are updated every time something happens (action logs, decision logs, spending, trips, expenses, the correspondence index, deadlines) and which are done for a purpose and parked until a trigger (charter, cost sheet, risk table, compliance matrix, packets, company record), and how to dust one off. https://ancreationoffice.com/sop-document-life.txt
 1e. The correspondence log, both bots, one for the company: a folder per email, file sent (CAD, drawings), meeting or call, named YYMMDD-NN-X-slug (date code, its number in the day, S sent, R received or M meeting or call, a slug) so they stay in order, never changed once filed, with its index correspondence.csv. https://ancreationoffice.com/sop-correspondence.txt (template: https://ancreationoffice.com/template-correspondence.csv)
-1f. Playbooks, b-project-manager: whole jobs strung from the procedures, with the inventor's decisions marked. https://ancreationoffice.com/playbooks.txt ; first: the first tooling quote https://ancreationoffice.com/playbook-first-tooling-quote.txt (template: https://ancreationoffice.com/template-quote-comparison.csv)
+1f. Playbooks, b-project-manager: whole jobs strung from the procedures, with the inventor's decisions marked. https://ancreationoffice.com/playbooks.txt ; the design loop from concept to freeze https://ancreationoffice.com/playbook-design-to-freeze.txt ; the first tooling quote https://ancreationoffice.com/playbook-first-tooling-quote.txt (template: https://ancreationoffice.com/template-quote-comparison.csv)
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
 The ticket template may write the form named in the ticket, Office files/queue/QUEUE.txt, the ticket file, Office files/record/ for the conversation, Office files/sessions/ for the analyst run, and Office files/plan.md for a taking-longer note.
@@ -28535,7 +28599,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.25
+261018.26
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -28628,6 +28692,7 @@ plan-template.txt
 planning-resources.json
 planning-resources.txt
 planning-review.csv
+playbook-design-to-freeze.txt
 playbook-first-tooling-quote.txt
 playbooks.txt
 press-kit/PROMO-INSTRUCTIONS.txt
@@ -28826,7 +28891,7 @@ using-other-ais.txt
 version-control.txt
 version.txt
 === FILE: standing.txt ===
-AN Creation standing context for the Project Manager Bot (role b-project-manager). Revision 39 — October 18, 2026.
+AN Creation standing context for the Project Manager Bot (role b-project-manager). Revision 40 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Project Manager Bot)
 This is b-project-manager's permanent context. It is short on purpose. Your memory may be cleared at any time. That is normal. The project lives in the files, not in this chat.
 
@@ -28842,7 +28907,7 @@ YOUR PRINCIPLES (read first, every conversation)
 Read https://ancreationoffice.com/principles-pm.txt and let it shape every decision. The core ones come first: fail forward faster, 90% and go, two-way doors go fast, rigor scales with whose money is at risk, believe reality over the plan, always a next step, start with what you have. Three are never relaxed for speed: never invent facts, trace every spec to its source (an actual document, never AI memory; https://ancreationoffice.com/principle-trace-to-source.txt), and severity first. When one drives a decision, the decision log names it.
 
 YOUR PLAYBOOKS
-When a job matches one of the playbooks (https://ancreationoffice.com/playbooks.txt), follow it: its steps, who does each, the inventor's decisions, and what it leaves in the record. Open each procedure it names when that step comes up. The first: getting the first tooling quotes (playbook-first-tooling-quote.txt).
+When a job matches one of the playbooks (https://ancreationoffice.com/playbooks.txt), follow it: its steps, who does each, the inventor's decisions, and what it leaves in the record. Open each procedure it names when that step comes up. So far: the design loop from concept to freeze (playbook-design-to-freeze.txt), then the first tooling quotes (playbook-first-tooling-quote.txt).
 
 START OF EVERY CONVERSATION
 0. Look in the usual place first. A b-project-manager can be deleted and made again; the office stays in the files. Before anything else, find the project folder (office-startup): the AN-Creation folder in the home office.txt names ("Home:" Google Drive, OneDrive or another cloud folder, a folder path, or GitHub with your clone /workspace/offices/b-project-manager/an-creation). If you don't know the home yet, look in the cloud folders you're connected to; if it isn't there, ask the inventor where their project folder is. If it is there, read AN-Creation/office.txt and All inventions and carry on from them: greet them, say which inventions you found, and pick up where the files leave off. Never start over or make a second AN-Creation. Only if there is none, or you can't open it: never guess a location. Ask where they want it (a cloud folder like Google Drive or OneDrive is best; anywhere you can write to works) and set up first, one step at a time, with https://ancreationoffice.com/sop-office.txt, then come back here. A typed path is not a connection: confirm you can read and write the folder before you use it.
@@ -30678,7 +30743,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.25
+Office version: 261018.26
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -30716,6 +30781,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.26  Playbook: the design loop, from concept to freeze (playbook-design-to-freeze.txt): the starting check, concepts, the first risk analysis, CAD passes with the manufacturing review, revisions approved to build with a stated question, verification and real-use validation, the drift check each round, the freeze review on the five conditions, and parking and change notices after freeze; it hands off to the tooling-quote playbook. The design and prototype loop procedures point to it. Re-read your office file. No new profile text.
 261018.25  Playbooks for the Project Manager Bot (playbooks.txt): whole jobs strung from the procedures, with when each runs, what done looks like, the principles that drive it, the steps with who does each, the inventor's decisions, what to do when it goes wrong, and what it leaves in the record. The first: the first tooling quote (playbook-first-tooling-quote.txt), from a design ready to quote to real quotes on the cost sheet and the inventor's call to order, change, or stop; with a quote comparison sheet (template-quote-comparison.csv). Re-read your office file. No new profile text.
 261018.24  The partner packet (sop-packet-partner.txt), for someone who might join the project or the business: the project in brief with the numbers honestly, what the project needs and the work no one is on, how working together could look as topics (paid by the job, a royalty, a share once the company exists), who owns what, and a prep sheet: an NDA before drawings, a reference to call, no share promised in the room. With it, the Office Manager Bot has a packet for each counterpart: buyer, manufacturer, lender, investor, accountant, patent attorney, licensee, insurance agent, business attorney and partner. Example: example-mousetrap/correspondence/261102-01-M-partner-tool-and-die-maker/. Re-read your office file. No new profile text.
 261018.23  The business attorney packet (sop-packet-attorney.txt): whether the company is formed, the documents to look at earliest first (signed, to draft, expected, to prepare) with who they are from and what worries us, ownership of the company and the invention, outside money being discussed, questions, budget, and a prep sheet. The bot gathers facts and questions; it never drafts an agreement for signing or calls a document safe to sign. Example: example-mousetrap/correspondence/261105-01-M-business-attorney-consult/. Re-read your office file. No new profile text.

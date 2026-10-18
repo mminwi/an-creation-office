@@ -1,5 +1,6 @@
-SOP: The prototype loop. Revision 1 — October 7, 2026.
+SOP: The prototype loop. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
+Playbook: the whole job from concept to freeze is https://ancreationoffice.com/playbook-design-to-freeze.txt
 Starts from: a revision approved to build in the design loop (sop-design-loop.txt, sop-stages S1).
 Goes with: sop-stages.txt (S2), the compliance matrix, sop-review-page.txt
 

@@ -1,0 +1,61 @@
+PLAYBOOK: The design loop, from concept to freeze. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/playbooks.txt
+Runs it: b-project-manager. b-analyst does the models, sheets and review pages; the plant office files (office-plastic-design.txt, office-molding.txt, office-quality.txt, office-manufacturing.txt) supply the manufacturing review.
+Example: the mousetrap (https://ancreationoffice.com/example-mousetrap/README.txt): concept decisions 2026-10-12 and 10-13, the risk analysis table, printed revision X2 tested in barns, CAD revision X3, freeze planned for 2026-12-15.
+
+WHEN IT RUNS
+Fact-finding is done (stage S0): the charter is approved, and the requirements list (the compliance matrix) has its first lines, each traced to a source. It runs until the design freezes.
+
+DONE WHEN
+The design is frozen at one named revision, which needs all five of these (sop-prototype-loop.txt FREEZE):
+- every compliance matrix line is met or put off on purpose, with the reason and who agreed;
+- at least one validation with real use is done;
+- the remaining risks are accepted by the inventor;
+- the cost estimate and timeline still fit the charter, or the inventor accepted the trade;
+- the drawings, parts list and material specs are released at one revision.
+Then the tooling-quote playbook starts (playbook-first-tooling-quote.txt).
+
+PRINCIPLES THAT DRIVE IT
+- Build to learn: every build answers a stated question (principle-build-to-learn.txt).
+- Fail forward faster: a failed build is information; fix and build again (principle-fail-forward-faster.txt).
+- Find surprises early, and design for manufacture from the first pass (principle-find-surprises-early.txt, principle-design-for-manufacture.txt).
+- Know what good is: write the pass level before checking (principle-know-what-good-is.txt).
+- Severity first: anything that could hurt someone is designed out or guarded, whatever its overall score (principle-severity-first.txt).
+- One change at a time when a test has to show what a change did (principle-one-change-at-a-time.txt).
+- Which gives: when time, money and how well it works pull apart, the inventor picks (principle-which-gives.txt).
+- Scope gate and re-anchor: new ideas become suggestions, not scope (principle-scope-gate.txt, principle-re-anchor.txt).
+- One controlled copy: one released revision, everything else is history (principle-one-controlled-copy.txt).
+- Trace every spec to its source (principle-trace-to-source.txt).
+
+THE STEPS
+1. Check the starting point. (b-project-manager)
+   Charter approved; requirements list started, with sources checked (python3 check-sources.py); screening done and the resource map built (sop-resource-map.txt). If not, finish fact-finding first.
+2. Concepts. (b-analyst draws; the inventor picks)
+   Two or three concepts: sketches, images, rough mock-ups, shown side by side on a review page (sop-review-page.txt). Review them against the user, the marketing plan and the specifications that drive shape. The inventor picks one; the others are parked with a reason. Decision log.
+   Uses: sop-design-loop.txt (industrial design passes).
+3. First risk analysis on the chosen concept. (b-analyst; b-project-manager reviews)
+   The risk analysis table for this product's own parts and steps, worst consequence first (sop-risk-table.txt). Every failure that could hurt someone gets a design answer before the first build.
+4. CAD passes. (b-analyst; the manufacturing review from the plant office files)
+   The model, the drawings to the project's drawing standard, the parts list. Each pass is a new revision in its own dated folder. Fill the compliance matrix from the model; mark each line met, not met or not checked. The manufacturing review starts here and gets specific: process, wall, draft, tolerances, part count, assembly. Put rough costs on the cost sheet, marked estimate, and tooling as placeholders. Every pass ends in a recorded review with the inventor.
+   Uses: sop-design-loop.txt (CAD passes), sop-cost-sheet.txt, sop-source-check.txt (WHEN NO PROCEDURE COVERS IT for drawings).
+5. Approve a revision to build. (the inventor decides)
+   Name the question this build answers, the level (bench check, works-like, looks-like, works-and-looks-like) and what it will cost. Spending register rows when ordered. Decision log.
+   Uses: sop-prototype-loop.txt (levels).
+6. Build, verify and validate. (the inventor builds or orders; b-analyst records)
+   Verification: the build against the compliance matrix lines it was meant to check, against pass levels written beforehand. Validation: real users in real conditions; at least one round before freeze. Anyone outside the project who sees it goes in the disclosure history. Rescore the risk analysis table with what the build showed; update cost and timeline.
+7. Decide the next round. (the inventor decides)
+   Another round with a stated question (back to step 4 or 5), or on to freeze. Check for drift every round: builds with no question, the same failure twice without a design change, rounds added to put off a decision. When cost or time pulls away from the charter, ask which gives; a change to the charter's scope, budget or dates is a change notice (sop-change-control.txt).
+8. Freeze review. (the inventor decides)
+   Walk the five freeze conditions on a review page. Run check-sources.py: nothing critical still unchecked. The inventor accepts the remaining risks in words, in the decision log. Release the drawings, parts list and specs at one revision.
+9. After freeze. (b-project-manager)
+   Park the risk analysis table and the compliance matrix with their reopen triggers (sop-document-life.txt). From now on a design change goes through a change notice (sop-change-control.txt); a safety fix is never held back by it. Start the tooling-quote playbook.
+
+WHEN IT GOES WRONG
+- A build fails: say what it showed in one line, change the design, build again. The same failure twice without a design change means stop and rethink the feature.
+- The cost estimate climbs past the charter: which gives, the inventor's call, and a change notice if the budget moves.
+- A late test fails after freeze: believe reality (principle-believe-reality.txt). A change notice, and the tests it touches rerun.
+- Ideas keep coming: each one goes on the action log as a suggestion (sop-suggestions.txt), not into this revision.
+- A requirement's source turns out wrong or out of date: fix the line, recheck what used it, and note it in the decision log.
+
+WHAT IT LEAVES IN THE RECORD
+Revision folders and review pages for each pass; the compliance matrix; the risk analysis table; the cost sheet with estimates and placeholders; decision log lines for the concept, each build, the accepted risks and the freeze; spending register rows for each build; the disclosure history for anyone outside who saw it; the released revision.
