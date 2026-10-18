@@ -1,4 +1,4 @@
-261018.40
+261018.41
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -3958,6 +3958,293 @@ NEVER
 Never type a password or code. Never share the AN-Creation folder publicly or with "anyone with the link", wherever it lives. Never put passwords, keys, an SSN, or bank or card numbers in a file. Never turn on billing for them.
 
 Sources: Google Drive help https://support.google.com/drive ; OneDrive help https://support.microsoft.com/onedrive ; version history https://support.google.com/drive/answer/2409045 .
+=== FILE: example-lawn-service/README.txt ===
+Example business record: Maple Hollow Lawn & Snow LLC. A fictional one-owner business in Wisconsin, in its first season, with no invention. Illustrative; numbers marked illustrative are not real quotes, fees or rates.
+These are the files the Entrepreneur's Office Manager (the Office Manager Bot, https://ancreationoffice.com/entrepreneur.html) keeps in the business folder for a business that sells a service. The other worked example, the snap mousetrap (https://ancreationoffice.com/example-mousetrap/), is an invention.
+Readable copies of every sheet: views/index.html
+
+The one-page plan
+- business-plan.csv     what it sells, to whom, the price ($45 a visit), cost per visit, fixed costs, break-even (5 visits a month), the one number (sop-business-plan.txt)
+
+Customers and money
+- pipeline.csv          ten weekly lawn customers won, one lost on price, a townhome association's snow contract quoted, three driveway leads (sop-sales.txt)
+- invoices.csv          monthly invoices May to September, Net 15; invoice 1041 is overdue and a reminder is drafted (sop-sales.txt)
+- monthly.csv           the monthly close, March to September: sales, spending, cash, months of cash, what's owed; every figure computed from invoices.csv and expenses.csv (sop-monthly-money.txt)
+- weekly.csv            the last three weekly reviews (sop-weekly-review.txt)
+
+People and the calendar
+- people.csv            the summer helper: the facts pointed toward employee, the accountant agreed, a payroll service handled pay (sop-contractors-and-hiring.txt; the call is in correspondence/260706-01-M-accountant-call-helper)
+- deadlines.csv         the compliance calendar: whether Wisconsin taxes lawn and snow service (to find), estimated tax, the LLC's annual report, the payroll year-end, the insurance renewal, the business license (sop-compliance-calendar.txt)
+
+The business record (sop-business-record.txt)
+- company.csv, business-decision-log.csv, actions.csv, contacts.csv, market-evidence.csv, expenses.csv (the one tax record), trips.csv
+- correspondence/ and correspondence.csv: the accountant call, the snow quote sent to the association, and the lender meeting
+
+A packet for a meeting
+- correspondence/261110-01-M-community-lender-equipment-loan/lender-packet.html: an $8,000 equipment loan for a plow, built from the business plan and the season's record with no invention and no cost sheet (funding.csv carries cost_per_sale and monthly_fixed; cash-flow.csv the projection). It shows the loan covered by driveway work alone, with the association's contract as extra (meeting-packet.py, sop-packet-lender.txt).
+- funding.csv, cash-flow.csv, business-risks.csv: what the packet reads
+
+Rebuild: python3 meeting-packet.py example-lawn-service/correspondence/261110-01-M-community-lender-equipment-loan lender ; python3 record-view.py example-lawn-service example-lawn-service/views
+=== FILE: example-lawn-service/actions.csv ===
+ID,Opened,Action,Who,Why / from,Due,Status,Done how,Closed,Notes
+A-001,2026-10-02,Follow up the HOA snow quote,You,Pipeline P-012,2026-10-24,open,,,
+A-002,2026-10-17,Send the friendly reminder for invoice 1041 (drafted),You,Invoice 1041 overdue since 10-16,2026-10-20,open,,,The bot drafted it; the owner sends it
+A-003,2026-10-06,Find whether Wisconsin taxes lawn and snow services; register if it does,"Office Manager Bot, then you",deadlines.csv,2026-10-25,open,,,From the Department of Revenue's own pages
+A-004,2026-10-12,Get two written plow quotes,You,Decision 2026-09-15,2026-10-31,open,,,
+A-005,2026-10-14,Lender packet ready to review,Office Manager Bot,Meeting 2026-11-10,2026-11-06,open,,,
+=== FILE: example-lawn-service/business-decision-log.csv ===
+date,decision,reason,status
+2026-03-18,Form a single-member LLC before buying equipment,Working with equipment on other people's property; the LLC and insurance keep the business apart from the household (principle: rigor scales with money),accepted
+2026-04-05,"Price $45 a visit, weekly, invoiced monthly",Three local prices found ran $40 to $55 (market-evidence.csv); monthly invoices are less work than paying each visit,accepted
+2026-07-06,"Treat the summer helper as an employee, through a payroll service","The facts (owner's schedule and route, owner's equipment, paid by the hour, the core work of the business) point toward employee under the IRS's contractor-or-employee guidance; the accountant agreed on a call (correspondence 260706-01-M)",accepted
+2026-09-15,"Add snow work for December to March, if a plow pays for itself",Fixed costs continue all winter with no lawn income (business risk B1),accepted
+2026-10-14,"Ask a community lender about an $8,000 equipment loan before ordering a plow","Keep the owner's $2,000 as a cushion; the season's invoices show what the business makes",accepted
+=== FILE: example-lawn-service/business-plan.csv ===
+key,value,source,note
+business,Maple Hollow Lawn & Snow LLC. A fictional example (illustrative figures are marked),company.csv,Fictional
+what_you_sell,"Weekly lawn care in summer and driveway and lot plowing in winter, for homes and small associations",first conversation 2026-03-12,
+who_buys,Homeowners within 10 minutes of town who'd rather not mow; small townhome associations for snow,pipeline.csv,
+problem,"No time, or no longer able, to keep up the yard and the driveway; the big companies won't take small lots",first conversation,"In their words: ""I just want it done every week without calling"""
+price,45,decision 2026-04-05,"Per visit, invoiced monthly"
+unit,visit,,
+cost_per_sale,6,expenses.csv,"Fuel, blades and trimmer line per visit; the owner's time is in the price"
+how_they_find_you,Neighbors' word of mouth; door hangers; the town's community page,pipeline.csv,
+monthly_fixed,200,expenses.csv,"Insurance, phone, storage, invoicing software"
+owner_funds,6130,monthly.csv,"Put in so far; $2,000 more available for winter"
+first_goal,10 weekly lawn customers by July; snow contracts covering December to March,decision 2026-04-05,Reached 10 in August
+one_number,Weekly customers (summer); contracted snow accounts (winter),decision 2026-04-05,
+one_number_now,10 weekly customers; 0 snow accounts yet (1 quote out),pipeline.csv,
+break_even,5 visits a month,computed,$200 / ($45 - $6)
+biggest_risk,"Winter: no snow income without a plow and contracts, while fixed costs continue",business-risks.csv B1,Shows early in whether the HOA signs by November 1
+next_step,Follow up the HOA snow quote; get two plow quotes; meet the lender on 11-10,actions.csv,
+updated,2026-10-16,,
+=== FILE: example-lawn-service/business-risks.csv ===
+id,risk,category,likelihood,impact,mitigation,owner,due,status,source
+B1,No winter income while fixed costs continue,Cash,4,4,"Snow contracts and a plow, financed so the owner keeps a cushion",Owner,2026-11-15,open,monthly.csv
+B2,A customer doesn't pay,Cash,2,2,"Monthly invoices, Net 15, reminders on schedule (sop-sales.txt)",Office Manager Bot,,open,invoices.csv
+B3,Injury or damage on a customer's property,Liability,2,5,General liability insurance; workers' comp when there's a helper,Owner,2027-04-01,open,company.csv
+=== FILE: example-lawn-service/cash-flow.csv ===
+month,owner in,loan in,units sold,other cash in,tooling,other spending,note
+2026-11,0,8000,20,0,8000,200,Fall cleanups; loan funds the plow and spreader (illustrative)
+2026-12,0,0,40,1800,0,350,"Driveway pushes, plus the HOA contract if it signs (other cash in); salt"
+2027-01,0,0,48,1800,0,350,Illustrative snow month
+2027-02,0,0,40,1800,0,350,Illustrative snow month
+2027-03,0,0,24,1800,0,300,Last snow month; spring cleanups start
+2027-04,0,0,30,0,0,200,Spring cleanups
+2027-05,0,0,48,0,0,200,12 weekly customers (goal)
+2027-06,0,0,48,0,0,200,
+2027-07,0,0,48,0,0,200,
+2027-08,0,0,48,0,0,200,
+2027-09,0,0,36,0,0,200,Every other week
+2027-10,0,0,36,0,0,200,
+=== FILE: example-lawn-service/company.csv ===
+key,value,status,note
+Legal name,Maple Hollow Lawn & Snow LLC,ready,Fictional
+Entity,"Single-member LLC, Wisconsin",ready,Formed 2026-03-20
+Tax ID (EIN),On file,ready,Never written here in full
+Business bank account,"Open, debit card",ready,Opened 2026-03-25
+Insurance,General liability and commercial auto,ready,Renews 2027-04-01 (deadlines.csv)
+Business license,Town general business license,ready,2026-04-02
+Seller's permit,Whether lawn and snow services are taxable here,in progress,deadlines.csv: to find
+Employer registration,Through the payroll service for the summer helper,ready,2026-07-07
+Workers' compensation,Added to the policy for the helper,ready,2026-07-06; check before hiring again
+=== FILE: example-lawn-service/contacts.csv ===
+name,organization,type,status,last contact,next step,next date,notes
+Board treasurer,Townhome association (24 units),customer,quoted,2026-10-02,Follow up the snow quote,2026-10-24,Illustrative
+Insurance agent,Local independent agency,insurance,active,2026-07-06,Renewal review,2027-03-01,Illustrative
+Accountant,Local CPA,accountant,active,2026-07-06,Year-end packet,2027-01-20,Illustrative
+Loan officer,Community lender,lender,meeting set,2026-10-14,Equipment loan meeting,2026-11-10,Illustrative
+Payroll service,Online payroll service,vendor,paused,2026-08-31,W-2 for the helper,2027-01-15,Illustrative
+=== FILE: example-lawn-service/correspondence.csv ===
+date,folder,direction,with,organization,subject,what was conveyed,sent or received,promised or next,next date,invention,trip,logged on
+2026-07-06,260706-01-M-accountant-call-helper,call,Accountant,Local CPA,Contractor or employee for the summer helper,The facts point toward employee; use a payroll service,Notes,Payroll service set up,2026-07-07,,,2026-07-06
+2026-10-02,261002-01-S-hoa-snow-quote,sent,Board treasurer,Townhome association,"Snow quote, December to March","$1,800 a month: lot and walks plowed and salted after 2 inches",hoa-snow-quote.pdf,Board decides by November 1,2026-10-24,,,2026-10-02
+2026-11-10,261110-01-M-community-lender-equipment-loan,meeting,Loan officer,Community lender,Equipment loan for a plow,(prep built; notes after the meeting),lender-packet.html to hand over,,,,,2026-10-16
+=== FILE: example-lawn-service/correspondence/260706-01-M-accountant-call-helper/notes.txt ===
+Call with the accountant, 2026-07-06 (illustrative).
+Asked: contractor or employee for a summer helper who works the owner's route, on the owner's schedule, with the owner's equipment, paid $18 an hour.
+The facts were laid out against the IRS's contractor-or-employee guidance before the call. The accountant agreed they point toward employee, and suggested a payroll service for the withholding, deposits and the W-2.
+Next: payroll service set up 2026-07-07; workers' comp added to the policy (insurance agent, 2026-07-06); I-9 and W-4 on the first day.
+=== FILE: example-lawn-service/correspondence/261002-01-S-hoa-snow-quote/quote.txt ===
+Maple Hollow Lawn & Snow LLC — Snow quote for the townhome association, sent 2026-10-02 (illustrative; the sent PDF would be filed here).
+Included: the lot and the walks plowed after 2 inches of snow, and salted, December 1 to March 31.
+Price: $1,800 a month, invoiced on the 1st, Net 15.
+Not included: snow hauling; roofs.
+Holds until November 1, 2026.
+=== FILE: example-lawn-service/correspondence/261110-01-M-community-lender-equipment-loan/meeting.csv ===
+key,value,note
+type,lender,
+who,"Loan officer, community lender",Illustrative
+date,2026-11-10,
+record,../..,
+goal,"An $8,000 equipment loan for a plow and spreader, secured by the equipment",
+loan_amount,8000,funding.csv uses
+rate_pct,9,Illustrative
+term_months,36,Illustrative
+collateral,The plow and spreader,
+personal_guarantee,Expected for a young company,
+stage_fit,"With a season of invoices behind it, an equipment loan secured by the equipment fits: a community lender or credit union, or an SBA microloan through a local intermediary.",
+ask,"The rate, the term, and whether the HOA contract changes the answer",
+walk_away,No loan if the payment needs the HOA contract to be covered; no lien on the house,
+q,How long have you been in business?,"Since March 2026: one summer season, ten weekly customers (invoices.csv)."
+q,What did the season make?,"The monthly close shows each month: sales, spending and cash (monthly.csv)."
+q,What if the HOA doesn't sign?,Driveway pushes alone cover the payment in the projection; the HOA contract is extra.
+q,What's your collateral?,The plow and spreader; a personal guarantee is expected.
+q,What do you pay yourself?,"A draw from what is left after the bills and the payment: about $1,000 a month in season, less in winter (illustrative). The projection shows cash before the draw."
+leave_behind,This packet and the one-page plan,
+=== FILE: example-lawn-service/deadlines.csv ===
+due,what,why it matters,Source,Edition or date,Clause or page,Source text,Source status,Checked on,remind on,who,status
+to find,"Whether lawn care and snow removal are taxable services in Wisconsin, and if so a seller's permit before the next taxable sale","Sales tax not collected when it was due becomes the business's own cost, with penalties",Wisconsin Department of Revenue (library: wi-dor-btr),,,,to find,,2026-10-25,"Office Manager Bot, then Owner",open
+to find,Estimated tax payment for the 2026 tax year,The business has made money; a missed payment can bring a penalty,IRS estimated taxes (library: irs-estimated-taxes),,,,to find,,2026-12-15,"Owner, with the accountant",open
+to find,The LLC's annual report,A company that misses it can lose good standing,Wisconsin Department of Financial Institutions (library: wi-dfi),,,,to find,,2027-01-15,Owner,open
+to find,The helper's W-2 and the year's payroll returns,Filed by the payroll service; confirm they were,The payroll service's year-end notice; IRS employer guides (Publication 15),,,,to find,,2027-01-10,Payroll service; Owner checks,open
+2027-04-01,Insurance renewal,Lapsed liability coverage on a customer's property is the one risk that can end the business,The policy (record/260401-01-R-insurance-policy),2026-04-01,Declarations page,Policy period 04/01/2026 to 04/01/2027 (illustrative),checked,2026-04-01,2027-03-01,Owner,open
+done,Town general business license,Required before starting work,Town clerk; SBA licenses and permits (library: sba-licenses-permits),2026,The license itself,Issued 2026-04-02 (illustrative),checked,2026-04-02,,Owner,done 2026-04-02
+=== FILE: example-lawn-service/expenses.csv ===
+date,paid to,what it was,business purpose,invention,tax category,amount,paid with,paid from,receipt file,trip,correspondence,on spending register,logged on,notes
+2026-03-20,Wisconsin DFI,LLC filing fee,Form the company,,Licenses and fees,130.00,Owner's personal card,Owner,,,,,2026-03-20,Fee from the DFI page at the time; illustrative; Illustrative
+2026-04-02,Town clerk,General business license,Required before starting (deadlines.csv),,Licenses and fees,50.00,Business debit card,Business,,,,,2026-04-02,Illustrative
+2026-04-05,Insurance agency,"General liability and commercial auto, monthly",Keeping the business open,,Insurance,95.00,Business debit card,Business,,,,,2026-04-05,Illustrative
+2026-04-05,Phone company,Business phone line,Keeping the business open,,Utilities,40.00,Business debit card,Business,,,,,2026-04-05,Illustrative
+2026-04-05,Self-storage,Trailer and equipment storage,Keeping the business open,,Rent,50.00,Business debit card,Business,,,,,2026-04-05,Illustrative
+2026-04-05,Invoicing software,Invoices and payments,Keeping the business open,,Software,15.00,Business debit card,Business,,,,,2026-04-05,Illustrative
+2026-04-08,Equipment dealer,Used commercial mower,The main equipment,,Equipment,2800.00,Business debit card,Business,,,,,2026-04-08,Ask the accountant: expense or depreciate; Illustrative
+2026-04-08,Equipment dealer,Trimmer and blower,Equipment,,Equipment,420.00,Business debit card,Business,,,,,2026-04-08,Illustrative
+2026-04-15,Trailer dealer,Used 5x10 utility trailer,Carry the mower,,Equipment,1200.00,Business debit card,Business,,,,,2026-04-15,Illustrative
+2026-05-05,Insurance agency,"General liability and commercial auto, monthly",Keeping the business open,,Insurance,95.00,Business debit card,Business,,,,,2026-05-05,Illustrative
+2026-05-05,Phone company,Business phone line,Keeping the business open,,Utilities,40.00,Business debit card,Business,,,,,2026-05-05,Illustrative
+2026-05-05,Self-storage,Trailer and equipment storage,Keeping the business open,,Rent,50.00,Business debit card,Business,,,,,2026-05-05,Illustrative
+2026-05-05,Invoicing software,Invoices and payments,Keeping the business open,,Software,15.00,Business debit card,Business,,,,,2026-05-05,Illustrative
+2026-05-31,Gas station and farm store,"Fuel, blades and trimmer line for 20 visits",Cost of each visit,,Supplies,120.00,Business debit card,Business,record/260531-01-R-supplies-receipts,,,,2026-05-31,Illustrative
+2026-06-05,Insurance agency,"General liability and commercial auto, monthly",Keeping the business open,,Insurance,95.00,Business debit card,Business,,,,,2026-06-05,Illustrative
+2026-06-05,Phone company,Business phone line,Keeping the business open,,Utilities,40.00,Business debit card,Business,,,,,2026-06-05,Illustrative
+2026-06-05,Self-storage,Trailer and equipment storage,Keeping the business open,,Rent,50.00,Business debit card,Business,,,,,2026-06-05,Illustrative
+2026-06-05,Invoicing software,Invoices and payments,Keeping the business open,,Software,15.00,Business debit card,Business,,,,,2026-06-05,Illustrative
+2026-06-30,Gas station and farm store,"Fuel, blades and trimmer line for 28 visits",Cost of each visit,,Supplies,168.00,Business debit card,Business,record/260630-01-R-supplies-receipts,,,,2026-06-30,Illustrative
+2026-07-05,Insurance agency,"General liability and commercial auto, monthly",Keeping the business open,,Insurance,95.00,Business debit card,Business,,,,,2026-07-05,Illustrative
+2026-07-05,Phone company,Business phone line,Keeping the business open,,Utilities,40.00,Business debit card,Business,,,,,2026-07-05,Illustrative
+2026-07-05,Self-storage,Trailer and equipment storage,Keeping the business open,,Rent,50.00,Business debit card,Business,,,,,2026-07-05,Illustrative
+2026-07-05,Invoicing software,Invoices and payments,Keeping the business open,,Software,15.00,Business debit card,Business,,,,,2026-07-05,Illustrative
+2026-07-31,Gas station and farm store,"Fuel, blades and trimmer line for 36 visits",Cost of each visit,,Supplies,216.00,Business debit card,Business,record/260731-01-R-supplies-receipts,,,,2026-07-31,Illustrative
+2026-07-31,Payroll service,"Helper's pay for July, with payroll taxes handled by the service",Summer helper (people.csv),,Wages,576.00,Business account,Business,,,,,2026-07-31,32 hours at $18; gross pay; Illustrative
+2026-07-31,Payroll service,Payroll service fee,Summer helper,,Payroll service,45.00,Business account,Business,,,,,2026-07-31,Illustrative
+2026-08-05,Insurance agency,"General liability and commercial auto, monthly",Keeping the business open,,Insurance,95.00,Business debit card,Business,,,,,2026-08-05,Illustrative
+2026-08-05,Phone company,Business phone line,Keeping the business open,,Utilities,40.00,Business debit card,Business,,,,,2026-08-05,Illustrative
+2026-08-05,Self-storage,Trailer and equipment storage,Keeping the business open,,Rent,50.00,Business debit card,Business,,,,,2026-08-05,Illustrative
+2026-08-05,Invoicing software,Invoices and payments,Keeping the business open,,Software,15.00,Business debit card,Business,,,,,2026-08-05,Illustrative
+2026-08-31,Gas station and farm store,"Fuel, blades and trimmer line for 40 visits",Cost of each visit,,Supplies,240.00,Business debit card,Business,record/260831-01-R-supplies-receipts,,,,2026-08-31,Illustrative
+2026-08-31,Payroll service,Helper's pay for August,Summer helper (people.csv),,Wages,720.00,Business account,Business,,,,,2026-08-31,40 hours at $18; gross pay; Illustrative
+2026-08-31,Payroll service,Payroll service fee,Summer helper,,Payroll service,45.00,Business account,Business,,,,,2026-08-31,Illustrative
+2026-09-05,Insurance agency,"General liability and commercial auto, monthly",Keeping the business open,,Insurance,95.00,Business debit card,Business,,,,,2026-09-05,Illustrative
+2026-09-05,Phone company,Business phone line,Keeping the business open,,Utilities,40.00,Business debit card,Business,,,,,2026-09-05,Illustrative
+2026-09-05,Self-storage,Trailer and equipment storage,Keeping the business open,,Rent,50.00,Business debit card,Business,,,,,2026-09-05,Illustrative
+2026-09-05,Invoicing software,Invoices and payments,Keeping the business open,,Software,15.00,Business debit card,Business,,,,,2026-09-05,Illustrative
+2026-09-30,Gas station and farm store,"Fuel, blades and trimmer line for 30 visits",Cost of each visit,,Supplies,180.00,Business debit card,Business,record/260930-01-R-supplies-receipts,,,,2026-09-30,Illustrative
+=== FILE: example-lawn-service/funding.csv ===
+key,value,source,note
+product,Maple Hollow Lawn & Snow LLC,company.csv,Fictional
+prepared,2026-10-16,,
+unit,visit,business-plan.csv,
+price,45,business-plan.csv,
+price_note,"per visit, invoiced monthly",,
+cost_per_sale,6,business-plan.csv,"Fuel, blades and line per visit"
+monthly_fixed,200,business-plan.csv,
+annual_units,1800,illustrative,About 150 visits a month across the year
+years,1,,
+owner_funds,2000,business-plan.csv,Available for winter
+use:Used plow and mount,6500,illustrative,Middle of the two quotes due 10-31 (A-004)
+use:Salt spreader,1500,illustrative,To be quoted
+milestone:HOA decides on the snow contract,2026-11-01,pipeline P-012,
+milestone:Plow ordered and mounted,2026-11-20,illustrative,
+milestone:First snow month billed,2026-12-31,illustrative,
+=== FILE: example-lawn-service/invoices.csv ===
+invoice,date,customer,for,amount,sales tax,total,terms,due,paid on,paid amount,status,file,notes
+1001,2026-05-31,Residential customer 1,"Lawn care, 4 visits in May",180.00,0.00,180.00,Net 15,2026-06-15,2026-06-07,180.00,paid,invoices/1001.pdf,Sales tax: whether Wisconsin taxes lawn service is a row on the calendar (to find)
+1002,2026-05-31,Residential customer 2,"Lawn care, 4 visits in May",180.00,0.00,180.00,Net 15,2026-06-15,2026-06-08,180.00,paid,invoices/1002.pdf,
+1003,2026-05-31,Residential customer 3,"Lawn care, 4 visits in May",180.00,0.00,180.00,Net 15,2026-06-15,2026-06-09,180.00,paid,invoices/1003.pdf,
+1004,2026-05-31,Residential customer 4,"Lawn care, 4 visits in May",180.00,0.00,180.00,Net 15,2026-06-15,2026-06-10,180.00,paid,invoices/1004.pdf,
+1005,2026-05-31,Residential customer 5,"Lawn care, 4 visits in May",180.00,0.00,180.00,Net 15,2026-06-15,2026-06-11,180.00,paid,invoices/1005.pdf,
+1006,2026-06-30,Residential customer 1,"Lawn care, 4 visits in June",180.00,0.00,180.00,Net 15,2026-07-15,2026-07-07,180.00,paid,invoices/1006.pdf,
+1007,2026-06-30,Residential customer 2,"Lawn care, 4 visits in June",180.00,0.00,180.00,Net 15,2026-07-15,2026-07-08,180.00,paid,invoices/1007.pdf,
+1008,2026-06-30,Residential customer 3,"Lawn care, 4 visits in June",180.00,0.00,180.00,Net 15,2026-07-15,2026-07-09,180.00,paid,invoices/1008.pdf,
+1009,2026-06-30,Residential customer 4,"Lawn care, 4 visits in June",180.00,0.00,180.00,Net 15,2026-07-15,2026-07-10,180.00,paid,invoices/1009.pdf,
+1010,2026-06-30,Residential customer 5,"Lawn care, 4 visits in June",180.00,0.00,180.00,Net 15,2026-07-15,2026-07-11,180.00,paid,invoices/1010.pdf,
+1011,2026-06-30,Residential customer 6,"Lawn care, 4 visits in June",180.00,0.00,180.00,Net 15,2026-07-15,2026-07-12,180.00,paid,invoices/1011.pdf,
+1012,2026-06-30,Residential customer 7,"Lawn care, 4 visits in June",180.00,0.00,180.00,Net 15,2026-07-15,2026-07-06,180.00,paid,invoices/1012.pdf,
+1013,2026-07-31,Residential customer 1,"Lawn care, 4 visits in July",180.00,0.00,180.00,Net 15,2026-08-15,2026-08-07,180.00,paid,invoices/1013.pdf,
+1014,2026-07-31,Residential customer 2,"Lawn care, 4 visits in July",180.00,0.00,180.00,Net 15,2026-08-15,2026-08-08,180.00,paid,invoices/1014.pdf,
+1015,2026-07-31,Residential customer 3,"Lawn care, 4 visits in July",180.00,0.00,180.00,Net 15,2026-08-15,2026-08-09,180.00,paid,invoices/1015.pdf,
+1016,2026-07-31,Residential customer 4,"Lawn care, 4 visits in July",180.00,0.00,180.00,Net 15,2026-08-15,2026-08-10,180.00,paid,invoices/1016.pdf,
+1017,2026-07-31,Residential customer 5,"Lawn care, 4 visits in July",180.00,0.00,180.00,Net 15,2026-08-15,2026-08-11,180.00,paid,invoices/1017.pdf,
+1018,2026-07-31,Residential customer 6,"Lawn care, 4 visits in July",180.00,0.00,180.00,Net 15,2026-08-15,2026-08-12,180.00,paid,invoices/1018.pdf,
+1019,2026-07-31,Residential customer 7,"Lawn care, 4 visits in July",180.00,0.00,180.00,Net 15,2026-08-15,2026-08-06,180.00,paid,invoices/1019.pdf,
+1020,2026-07-31,Residential customer 8,"Lawn care, 4 visits in July",180.00,0.00,180.00,Net 15,2026-08-15,2026-08-07,180.00,paid,invoices/1020.pdf,
+1021,2026-07-31,Residential customer 9,"Lawn care, 4 visits in July",180.00,0.00,180.00,Net 15,2026-08-15,2026-08-08,180.00,paid,invoices/1021.pdf,
+1022,2026-08-31,Residential customer 1,"Lawn care, 4 visits in August",180.00,0.00,180.00,Net 15,2026-09-15,2026-09-07,180.00,paid,invoices/1022.pdf,
+1023,2026-08-31,Residential customer 2,"Lawn care, 4 visits in August",180.00,0.00,180.00,Net 15,2026-09-15,2026-09-08,180.00,paid,invoices/1023.pdf,
+1024,2026-08-31,Residential customer 3,"Lawn care, 4 visits in August",180.00,0.00,180.00,Net 15,2026-09-15,2026-09-09,180.00,paid,invoices/1024.pdf,
+1025,2026-08-31,Residential customer 4,"Lawn care, 4 visits in August",180.00,0.00,180.00,Net 15,2026-09-15,2026-09-10,180.00,paid,invoices/1025.pdf,
+1026,2026-08-31,Residential customer 5,"Lawn care, 4 visits in August",180.00,0.00,180.00,Net 15,2026-09-15,2026-09-11,180.00,paid,invoices/1026.pdf,
+1027,2026-08-31,Residential customer 6,"Lawn care, 4 visits in August",180.00,0.00,180.00,Net 15,2026-09-15,2026-09-12,180.00,paid,invoices/1027.pdf,
+1028,2026-08-31,Residential customer 7,"Lawn care, 4 visits in August",180.00,0.00,180.00,Net 15,2026-09-15,2026-09-06,180.00,paid,invoices/1028.pdf,
+1029,2026-08-31,Residential customer 8,"Lawn care, 4 visits in August",180.00,0.00,180.00,Net 15,2026-09-15,2026-09-07,180.00,paid,invoices/1029.pdf,
+1030,2026-08-31,Residential customer 9,"Lawn care, 4 visits in August",180.00,0.00,180.00,Net 15,2026-09-15,2026-09-08,180.00,paid,invoices/1030.pdf,
+1031,2026-08-31,Residential customer 10,"Lawn care, 4 visits in August",180.00,0.00,180.00,Net 15,2026-09-15,2026-09-09,180.00,paid,invoices/1031.pdf,
+1032,2026-09-30,Residential customer 1,"Lawn care, 3 visits in September",135.00,0.00,135.00,Net 15,2026-10-15,2026-10-07,135.00,paid,invoices/1032.pdf,
+1033,2026-09-30,Residential customer 2,"Lawn care, 3 visits in September",135.00,0.00,135.00,Net 15,2026-10-15,2026-10-08,135.00,paid,invoices/1033.pdf,
+1034,2026-09-30,Residential customer 3,"Lawn care, 3 visits in September",135.00,0.00,135.00,Net 15,2026-10-15,2026-10-09,135.00,paid,invoices/1034.pdf,
+1035,2026-09-30,Residential customer 4,"Lawn care, 3 visits in September",135.00,0.00,135.00,Net 15,2026-10-15,2026-10-10,135.00,paid,invoices/1035.pdf,
+1036,2026-09-30,Residential customer 5,"Lawn care, 3 visits in September",135.00,0.00,135.00,Net 15,2026-10-15,2026-10-11,135.00,paid,invoices/1036.pdf,
+1037,2026-09-30,Residential customer 6,"Lawn care, 3 visits in September",135.00,0.00,135.00,Net 15,2026-10-15,2026-10-12,135.00,paid,invoices/1037.pdf,
+1038,2026-09-30,Residential customer 7,"Lawn care, 3 visits in September",135.00,0.00,135.00,Net 15,2026-10-15,2026-10-06,135.00,paid,invoices/1038.pdf,
+1039,2026-09-30,Residential customer 8,"Lawn care, 3 visits in September",135.00,0.00,135.00,Net 15,2026-10-15,2026-10-07,135.00,paid,invoices/1039.pdf,
+1040,2026-09-30,Residential customer 9,"Lawn care, 3 visits in September",135.00,0.00,135.00,Net 15,2026-10-15,2026-10-08,135.00,paid,invoices/1040.pdf,
+1041,2026-09-30,Residential customer 10,"Lawn care, 3 visits in September",135.00,0.00,135.00,Net 15,2026-10-15,,,overdue,invoices/1041.pdf,
+=== FILE: example-lawn-service/market-evidence.csv ===
+date,who,what they saw,what they said,what they did or would pay,strength,source
+2026-04-03,Two local lawn services,Their flyers,Weekly mowing,$40 and $55 a visit,medium,record/260403-01-R-competitor-flyers
+2026-04-04,A neighbor,Asked what she pays,Weekly service from a larger company,"$50 a visit, but they skip small lots in busy weeks",medium,Owner's notes
+2026-06-02,A lead,Our price,Too high,Would pay $35,weak,pipeline P-011
+2026-09-28,Townhome association treasurer,Our snow quote,Their current plower charged more last winter,"$2,100 a month last winter",medium,correspondence 261002-01-S
+=== FILE: example-lawn-service/monthly.csv ===
+month,sales,cost of sales,other spending,owner in,loans in,cash at month end,months of cash,unpaid invoices,sales tax held,basis,note
+2026-03,0.00,0.00,130.00,130.00,0.00,0.00,0.0,0.00,0.00,invoice,"Company formed; the filing fee was paid on the owner's card, so it counts as owner money in. Illustrative"
+2026-04,0.00,0.00,4670.00,6000.00,0.00,1330.00,0.6,0.00,0.00,invoice,"Equipment bought with the owner's $6,000; no sales yet. Illustrative"
+2026-05,900.00,120.00,200.00,0.00,0.00,1010.00,0.6,900.00,0.00,invoice,Illustrative
+2026-06,1260.00,168.00,200.00,0.00,0.00,1542.00,0.9,1260.00,0.00,invoice,Illustrative
+2026-07,1620.00,216.00,821.00,0.00,0.00,1765.00,3.1,1620.00,0.00,invoice,Summer helper started (people.csv). Illustrative
+2026-08,1800.00,240.00,965.00,0.00,0.00,2180.00,2.5,1800.00,0.00,invoice,Helper's last month. Illustrative
+2026-09,1350.00,180.00,200.00,0.00,0.00,3600.00,4.1,1350.00,0.00,invoice,Fall: visits every other week. Illustrative
+=== FILE: example-lawn-service/people.csv ===
+name,what they do,contractor or employee,decided on,decision log,start,agreement,tax form on file,paid how,paid this year,year-end form,status,notes
+Summer helper,Trimming and blowing on the owner's route,employee,2026-07-06,business-decision-log 2026-07-06,2026-07-08,"Written offer: hours, pay, start date; signed 2026-07-07","yes (W-4, state form, I-9)","Payroll service, every two weeks",1296.00,W-2 from the payroll service (deadlines.csv),ended 2026-08-29,Back to school. Illustrative
+=== FILE: example-lawn-service/pipeline.csv ===
+id,opened,customer,contact,what they want,value,stage,next step,next date,how they found us,closed on,outcome or reason,notes
+P-001,2026-04-20,Residential customer 1,In contacts,Weekly mowing and trimming,180,won,,,Word of mouth,2026-04-20,"Weekly lawn care, invoiced monthly",Value is per month in summer
+P-002,2026-04-22,Residential customer 2,In contacts,Weekly mowing and trimming,180,won,,,Door hanger,2026-04-22,"Weekly lawn care, invoiced monthly",Value is per month in summer
+P-003,2026-04-25,Residential customer 3,In contacts,Weekly mowing and trimming,180,won,,,Word of mouth,2026-04-25,"Weekly lawn care, invoiced monthly",Value is per month in summer
+P-004,2026-04-28,Residential customer 4,In contacts,Weekly mowing and trimming,180,won,,,Door hanger,2026-04-28,"Weekly lawn care, invoiced monthly",Value is per month in summer
+P-005,2026-04-30,Residential customer 5,In contacts,Weekly mowing and trimming,180,won,,,Word of mouth,2026-04-30,"Weekly lawn care, invoiced monthly",Value is per month in summer
+P-006,2026-05-18,Residential customer 6,In contacts,Weekly mowing and trimming,180,won,,,Door hanger,2026-05-18,"Weekly lawn care, invoiced monthly",Value is per month in summer
+P-007,2026-05-25,Residential customer 7,In contacts,Weekly mowing and trimming,180,won,,,Word of mouth,2026-05-25,"Weekly lawn care, invoiced monthly",Value is per month in summer
+P-008,2026-06-15,Residential customer 8,In contacts,Weekly mowing and trimming,180,won,,,Door hanger,2026-06-15,"Weekly lawn care, invoiced monthly",Value is per month in summer
+P-009,2026-06-22,Residential customer 9,In contacts,Weekly mowing and trimming,180,won,,,Word of mouth,2026-06-22,"Weekly lawn care, invoiced monthly",Value is per month in summer
+P-010,2026-07-20,Residential customer 10,In contacts,Weekly mowing and trimming,180,won,,,Door hanger,2026-07-20,"Weekly lawn care, invoiced monthly",Value is per month in summer
+P-011,2026-06-02,Residential lead,,Weekly mowing,140,lost,,,Door hanger,2026-06-05,Price: wanted $35 a visit,
+P-012,2026-09-28,Townhome association (24 units),Board treasurer (contacts),"Plowing and salting the lot and walks, December to March",7200,quoted,Follow up the quote,2026-10-24,A customer is on the board,,,"$1,800 a month for 4 months (correspondence 261002-01-S)"
+P-013,2026-10-06,Three lawn customers,,Driveway plowing this winter,,talking,Price per push once the plow is decided,2026-11-05,Existing customers,,,
+=== FILE: example-lawn-service/trips.csv ===
+trip,date,from,to (place and address),who or what,business purpose,correspondence,start odometer,end odometer,business miles,parking and tolls,logged on,notes
+ODO-2026,2026-04-01,,,Odometer when the truck was first used for the business,,,61204,,,,2026-04-01,Illustrative
+T-001,2026-04-08,Home,Equipment dealer (address in contacts),Mower pickup,Buy the mower,,61210,61262,52,,2026-04-08,Illustrative
+T-102,2026-09-29,Home,Lawn route (customers 1 to 10),Route,Lawn visits,,64880,64921,41,,2026-09-29,Every route day is logged; September's last week shown here. Illustrative
+T-103,2026-10-06,Home,Lawn route (customers 1 to 10),Route,Lawn visits,,64990,65033,43,,2026-10-06,Illustrative
+T-104,2026-10-12,Home,Two plow dealers,Plow quotes,Quotes for the winter,,65080,65148,68,,2026-10-12,Illustrative
+=== FILE: example-lawn-service/weekly.csv ===
+week,one number,new leads,quotes out,won,invoices sent,paid,overdue,cash,done,slipped,next three,notes
+2026-09-28,10 weekly customers; 0 snow accounts,1,1,0,10,0,0,,HOA snow quote sent; September invoices out,Door hangers for snow (rain),HOA follow-up date; plow research; door hangers,
+2026-10-05,10 weekly customers; 0 snow accounts,3,0,0,0,8,0,,Three customers asked about plowing,Plow research,Plow quotes; price per driveway push; door hangers,
+2026-10-12,10 weekly customers; 0 snow accounts,0,0,0,0,1,1,,Two plow dealers visited; asked the lender for a meeting,Door hangers again,Lender packet; HOA follow-up 10-24; sales tax question answered,Invoice 1041 overdue since 10-16: reminder drafted (A-002)
 === FILE: example-mousetrap/README.txt ===
 Example project record: a plastic-base snap mousetrap. Illustrative; numbers marked placeholder or illustrative are not real quotes.
 These are the files a project keeps in Office files/ (https://ancreationoffice.com/sop-project-record.txt), filled in for one product.
@@ -5445,6 +5732,14 @@ brisks = sheet("business-risks.csv")
 actions = sheet("actions.csv")
 spending = sheet("spending.csv")
 cashflow = sheet("cash-flow.csv")
+monthly = sheet("monthly.csv")
+
+
+def owner_money_in():
+    """What the owner has put in: the invention's spending register, or with no invention the monthly close."""
+    if spending:
+        return sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    return sum(num(r.get("owner in")) for r in monthly)
 evidence = sheet("market-evidence.csv")
 expenses = sheet("expenses.csv")
 trips = sheet("trips.csv")
@@ -5647,7 +5942,7 @@ if KIND == "lender":
     rate = num(M.get("rate_pct")) / 100 / 12
     n = int(num(M.get("term_months")) or 60)
     payment = amount * rate / (1 - (1 + rate) ** -n) if rate else amount / n
-    owner_spent = sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    owner_spent = owner_money_in()
     owner_funds = num(first(funding, "owner_funds"))
     price = num(first(funding, "price"))
     uses = [[esc(k[4:]), money(num(r["value"]), False), esc(r["note"])] for k, v in funding.items() if k.startswith("use:") for r in v]
@@ -5715,7 +6010,7 @@ if KIND == "investor":
     price_to_close = piece + (tooling / plan_units if plan_units else 0)
     carry = max(clears, 0) * plan_units
     closes = payback_units <= plan_units
-    owner_spent = sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    owner_spent = owner_money_in()
     owner_funds = num(first(funding, "owner_funds"))
     uses = [[esc(r["key"][4:]), money(num(r["value"]), False), esc(r["note"])] for r in meeting if r["key"].startswith("use:")]
     use_total = sum(num(r["value"]) for r in meeting if r["key"].startswith("use:"))
@@ -6054,7 +6349,7 @@ if KIND == "partner":
     clears = price - piece
     payback_units = tooling / clears if clears > 0 else float("inf")
     closes = payback_units <= plan_units
-    owner_spent = sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    owner_spent = owner_money_in()
     owner_funds = num(first(funding, "owner_funds"))
     ms = sorted((r for k, v in funding.items() if k.startswith("milestone:") for r in v), key=lambda r: r["value"])
     upcoming = [r for r in ms if r["value"] >= M.get("date", "")][:4]
@@ -10867,6 +11162,11 @@ def main(argv):
     if charter_file.exists():
         first = charter_file.read_text(encoding="utf-8").splitlines()[0]
         project = first.replace("Project charter.", "").strip() or project
+    elif (src / "business-plan.csv").exists():
+        # a business with no invention: its name from the one-page plan
+        with open(src / "business-plan.csv", newline="", encoding="utf-8-sig") as fh:
+            name = next((r.get("value", "") for r in csv.DictReader(fh) if r.get("key") == "business"), "")
+        project = name or project
     note = "Readable copy built by record-view.py from the sheet of the same name. The sheet is the record."
     made = []
     for name, (title, kind, cols, right) in SHEETS.items():
@@ -25895,11 +26195,11 @@ NEVER (office)
 
 SOURCES (published; ids in your library): SOLIDWORKS API Help for your version (solidworks-api-help); recording and editing macros (solidworks-macros); CodeStack examples (codestack); xCAD.NET (xcad-net); community MCP servers (solidworks-mcp-servers); Model Context Protocol (mcp-protocol); Claude Code docs (claude-code-docs); Codex docs (openai-codex-docs); CadQuery (cadquery); build123d (build123d); KiCad docs (kicad-docs).
 === FILE: sop-business-plan.txt ===
-SOP: The one-page business plan, and pricing. Revision 1 — October 18, 2026.
+SOP: The one-page business plan, and pricing. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. May write: business-plan.csv in the business folder (template-business-plan.csv), its readable copy in Your files/Business record/, funding.csv (price, unit, cost_per_sale, monthly_fixed, owner_funds), and rows on the action log.
 Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-sales.txt
-Example: https://ancreationoffice.com/example-mousetrap/business-plan.csv
+Example: https://ancreationoffice.com/example-mousetrap/business-plan.csv . A small service business with no invention: https://ancreationoffice.com/example-lawn-service/business-plan.csv
 Read this in the first conversation about a business, and whenever the price, the customer or the costs change.
 
 WHY THIS EXISTS
@@ -26157,11 +26457,11 @@ Sources: SBA business guide https://www.sba.gov/business-guide ; choosing a stru
 MEETING AN ATTORNEY
 For forming the company with an attorney, or any agreement before it is signed, build the business attorney packet (https://ancreationoffice.com/sop-packet-attorney.txt).
 === FILE: sop-compliance-calendar.txt ===
-SOP: The compliance calendar: licenses, permits, reports and taxes. Revision 1 — October 18, 2026.
+SOP: The compliance calendar: licenses, permits, reports and taxes. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst finds the sources. May write: rows in deadlines.csv (template-deadlines.csv), company.csv (registrations and their status), and rows on the action log.
 Goes with: https://ancreationoffice.com/principle-watch-the-calendar.txt , https://ancreationoffice.com/principle-trace-to-source.txt , https://ancreationoffice.com/sop-company.txt , https://ancreationoffice.com/sop-business-record.txt (deadlines)
-Example: https://ancreationoffice.com/example-mousetrap/deadlines.csv
+Example: https://ancreationoffice.com/example-mousetrap/deadlines.csv . A small service business with no invention: https://ancreationoffice.com/example-lawn-service/deadlines.csv
 Read this once the business, its state and its type of company are known, when it forms or changes form, when it starts selling, and at the start of each year.
 
 WHY THIS EXISTS
@@ -26190,10 +26490,11 @@ KEEPING IT
 DONE WHEN
 Every federal, state, local and trade requirement that applies to this business is a row with a source, or a row marked "to find" with a date to find it.
 === FILE: sop-contractors-and-hiring.txt ===
-SOP: Contractors and first hires. Revision 1 — October 18, 2026.
+SOP: Contractors and first hires. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst finds the sources and drafts. May write: people.csv in the business folder (template-people.csv), its readable copy in Your files/Business record/, a draft agreement in the correspondence log once it goes out, rows in deadlines.csv, company.csv and the action log, and hand-off lines to b-project-manager.
 Goes with: https://ancreationoffice.com/principle-trace-to-source.txt , https://ancreationoffice.com/principle-rigor-scales-with-money.txt , https://ancreationoffice.com/sop-compliance-calendar.txt , https://ancreationoffice.com/sop-packet-attorney.txt , https://ancreationoffice.com/sop-packet-accountant.txt
+Example: A small service business with no invention: https://ancreationoffice.com/example-lawn-service/people.csv
 Templates: https://ancreationoffice.com/template-people.csv , https://ancreationoffice.com/template-contractor-terms.txt
 Read this when the owner is about to pay someone to do work for the business: a freelancer, a CAD designer, a bookkeeper, a helper, a first employee.
 
@@ -27556,11 +27857,11 @@ A troubleshooting record per defect, in its own dated folder: the defect with ph
 HANDS OFF
 Resin maker's technical service (material-specific defects), tool shop and hot runner maker, press service, electrician (outlets), dryer service.
 === FILE: sop-monthly-money.txt ===
-SOP: Money each month: the monthly close, cash and runway. Revision 1 — October 18, 2026.
+SOP: Money each month: the monthly close, cash and runway. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst totals the month. May write: monthly.csv in the business folder (template-monthly.csv), its readable copy in Your files/Business record/, and rows on the action log.
 Goes with: https://ancreationoffice.com/sop-business-record.txt (the expense ledger), https://ancreationoffice.com/sop-sales.txt (invoices), https://ancreationoffice.com/sop-business-plan.txt
-Example: https://ancreationoffice.com/example-mousetrap/monthly.csv
+Example: https://ancreationoffice.com/example-mousetrap/monthly.csv . A small service business with no invention: https://ancreationoffice.com/example-lawn-service/monthly.csv
 Read this in the first conversation of each new month, and whenever cash comes up.
 
 WHY THIS EXISTS
@@ -28710,11 +29011,11 @@ Launch. Marketing group, for the channel they named. ftc-advertising when a publ
 
 Done when the subject is a resumed session, a new open row, an intern, or a recorded no. The inventor heard one question. Every closed chunk is still closed, and its sources were not opened.
 === FILE: sop-sales.txt ===
-SOP: Customers and sales: the pipeline, quotes, invoices and getting paid. Revision 1 — October 18, 2026.
+SOP: Customers and sales: the pipeline, quotes, invoices and getting paid. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. May write: pipeline.csv and invoices.csv in the business folder (template-pipeline.csv, template-invoices.csv), quote and invoice files in the correspondence log, their readable copies in Your files/Business record/, contacts.csv, and rows on the action log.
 Goes with: https://ancreationoffice.com/sop-business-plan.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-correspondence.txt
-Example: https://ancreationoffice.com/example-mousetrap/pipeline.csv
+Example: https://ancreationoffice.com/example-mousetrap/pipeline.csv . A small service business with no invention: https://ancreationoffice.com/example-lawn-service/invoices.csv
 Read this when a possible customer comes up, a quote or an invoice is needed, or a payment is late.
 
 WHY THIS EXISTS
@@ -29388,11 +29689,11 @@ Search Console and Bing: pages found vs. pages in the sitemap, any new errors (a
 
 Sources: Google Search Console start https://support.google.com/webmasters/answer/9128668 ; sitemaps https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview ; SEO starter guide https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; Bing Webmaster https://www.bing.com/webmasters ; GitHub Pages https://docs.github.com/en/pages .
 === FILE: sop-weekly-review.txt ===
-SOP: The weekly review. Revision 1 — October 18, 2026.
+SOP: The weekly review. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, for the business. May write: weekly.csv in the business folder (template-weekly.csv), its readable copy in Your files/Business record/, and rows on the action log.
 Goes with: https://ancreationoffice.com/sop-business-plan.txt (the one number), https://ancreationoffice.com/sop-sales.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-compliance-calendar.txt , https://ancreationoffice.com/sop-action-log.txt
-Example: https://ancreationoffice.com/example-mousetrap/weekly.csv
+Example: https://ancreationoffice.com/example-mousetrap/weekly.csv . A small service business with no invention: https://ancreationoffice.com/example-lawn-service/weekly.csv
 Read this once a week, on the owner's day.
 
 WHY THIS EXISTS
@@ -29516,7 +29817,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.40
+261018.41
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -29541,6 +29842,28 @@ design-principles.txt
 design-review.txt
 design-risk.txt
 drive-setup.txt
+example-lawn-service/README.txt
+example-lawn-service/actions.csv
+example-lawn-service/business-decision-log.csv
+example-lawn-service/business-plan.csv
+example-lawn-service/business-risks.csv
+example-lawn-service/cash-flow.csv
+example-lawn-service/company.csv
+example-lawn-service/contacts.csv
+example-lawn-service/correspondence.csv
+example-lawn-service/correspondence/260706-01-M-accountant-call-helper/notes.txt
+example-lawn-service/correspondence/261002-01-S-hoa-snow-quote/quote.txt
+example-lawn-service/correspondence/261110-01-M-community-lender-equipment-loan/meeting.csv
+example-lawn-service/deadlines.csv
+example-lawn-service/expenses.csv
+example-lawn-service/funding.csv
+example-lawn-service/invoices.csv
+example-lawn-service/market-evidence.csv
+example-lawn-service/monthly.csv
+example-lawn-service/people.csv
+example-lawn-service/pipeline.csv
+example-lawn-service/trips.csv
+example-lawn-service/weekly.csv
 example-mousetrap/README.txt
 example-mousetrap/actions.csv
 example-mousetrap/business-decision-log.csv
@@ -31743,7 +32066,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.40
+Office version: 261018.41
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -31781,6 +32104,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.41  A second worked example, a fictional one-owner lawn and snow business with no invention (example-lawn-service/): a one-page plan, a season of invoices and the monthly close computed from them, weekly reviews, a summer helper treated as an employee, a compliance calendar, and a lender packet for an equipment loan. With no invention, the packets now take the owner's money from the monthly close, and record-view.py names the business from its plan. The entrepreneur procedures point to it. Re-read your office file. No new profile text.
 261018.40  The Office Manager Bot: contractors and first hires (sop-contractors-and-hiring.txt: contractor or employee laid out from the sources and never decided for the owner, the agreement from template-contractor-terms.txt, tax forms on file but never in a sheet, year-end and payroll dates on the calendar; people.csv) and the weekly review on the owner's day (sop-weekly-review.txt, weekly.csv). Templates and mousetrap examples. Re-read your office file. No new profile text.
 261018.39  Two products, each with its own page and campaign: the Inventor's Project Manager (inventor.html) and the Entrepreneur's Office Manager (entrepreneur.html). The press kit has each product's own one-pager, press release and campaign (inventor-campaign.txt, entrepreneur-campaign.txt), and PROMO-INSTRUCTIONS.txt runs the two campaigns separately. No change to how the bots work. No new profile text.
 261018.38  The Office Manager Bot works for any business, with or without an invention. New: the one-page business plan and pricing (sop-business-plan.txt), customers and sales with invoices (sop-sales.txt), money each month (sop-monthly-money.txt) and the compliance calendar (sop-compliance-calendar.txt), with templates and mousetrap examples. With no invention, the lender, investor and partner packets work from the business plan (cost_per_sale and monthly_fixed in funding.csv) and show break-even. meeting-packet.py runs on Python 3.11 again. Re-read your office file. No new profile text.

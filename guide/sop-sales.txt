@@ -1,8 +1,8 @@
-SOP: Customers and sales: the pipeline, quotes, invoices and getting paid. Revision 1 — October 18, 2026.
+SOP: Customers and sales: the pipeline, quotes, invoices and getting paid. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. May write: pipeline.csv and invoices.csv in the business folder (template-pipeline.csv, template-invoices.csv), quote and invoice files in the correspondence log, their readable copies in Your files/Business record/, contacts.csv, and rows on the action log.
 Goes with: https://ancreationoffice.com/sop-business-plan.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-correspondence.txt
-Example: https://ancreationoffice.com/example-mousetrap/pipeline.csv
+Example: https://ancreationoffice.com/example-mousetrap/pipeline.csv . A small service business with no invention: https://ancreationoffice.com/example-lawn-service/invoices.csv
 Read this when a possible customer comes up, a quote or an invoice is needed, or a payment is late.
 
 WHY THIS EXISTS

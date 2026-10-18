@@ -128,6 +128,11 @@ def main(argv):
     if charter_file.exists():
         first = charter_file.read_text(encoding="utf-8").splitlines()[0]
         project = first.replace("Project charter.", "").strip() or project
+    elif (src / "business-plan.csv").exists():
+        # a business with no invention: its name from the one-page plan
+        with open(src / "business-plan.csv", newline="", encoding="utf-8-sig") as fh:
+            name = next((r.get("value", "") for r in csv.DictReader(fh) if r.get("key") == "business"), "")
+        project = name or project
     note = "Readable copy built by record-view.py from the sheet of the same name. The sheet is the record."
     made = []
     for name, (title, kind, cols, right) in SHEETS.items():

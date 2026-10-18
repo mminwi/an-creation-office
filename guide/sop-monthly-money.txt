@@ -1,8 +1,8 @@
-SOP: Money each month: the monthly close, cash and runway. Revision 1 — October 18, 2026.
+SOP: Money each month: the monthly close, cash and runway. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst totals the month. May write: monthly.csv in the business folder (template-monthly.csv), its readable copy in Your files/Business record/, and rows on the action log.
 Goes with: https://ancreationoffice.com/sop-business-record.txt (the expense ledger), https://ancreationoffice.com/sop-sales.txt (invoices), https://ancreationoffice.com/sop-business-plan.txt
-Example: https://ancreationoffice.com/example-mousetrap/monthly.csv
+Example: https://ancreationoffice.com/example-mousetrap/monthly.csv . A small service business with no invention: https://ancreationoffice.com/example-lawn-service/monthly.csv
 Read this in the first conversation of each new month, and whenever cash comes up.
 
 WHY THIS EXISTS

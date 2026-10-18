@@ -1,8 +1,8 @@
-SOP: The compliance calendar: licenses, permits, reports and taxes. Revision 1 — October 18, 2026.
+SOP: The compliance calendar: licenses, permits, reports and taxes. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst finds the sources. May write: rows in deadlines.csv (template-deadlines.csv), company.csv (registrations and their status), and rows on the action log.
 Goes with: https://ancreationoffice.com/principle-watch-the-calendar.txt , https://ancreationoffice.com/principle-trace-to-source.txt , https://ancreationoffice.com/sop-company.txt , https://ancreationoffice.com/sop-business-record.txt (deadlines)
-Example: https://ancreationoffice.com/example-mousetrap/deadlines.csv
+Example: https://ancreationoffice.com/example-mousetrap/deadlines.csv . A small service business with no invention: https://ancreationoffice.com/example-lawn-service/deadlines.csv
 Read this once the business, its state and its type of company are known, when it forms or changes form, when it starts selling, and at the start of each year.
 
 WHY THIS EXISTS

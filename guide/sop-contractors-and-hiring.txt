@@ -1,7 +1,8 @@
-SOP: Contractors and first hires. Revision 1 — October 18, 2026.
+SOP: Contractors and first hires. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst finds the sources and drafts. May write: people.csv in the business folder (template-people.csv), its readable copy in Your files/Business record/, a draft agreement in the correspondence log once it goes out, rows in deadlines.csv, company.csv and the action log, and hand-off lines to b-project-manager.
 Goes with: https://ancreationoffice.com/principle-trace-to-source.txt , https://ancreationoffice.com/principle-rigor-scales-with-money.txt , https://ancreationoffice.com/sop-compliance-calendar.txt , https://ancreationoffice.com/sop-packet-attorney.txt , https://ancreationoffice.com/sop-packet-accountant.txt
+Example: A small service business with no invention: https://ancreationoffice.com/example-lawn-service/people.csv
 Templates: https://ancreationoffice.com/template-people.csv , https://ancreationoffice.com/template-contractor-terms.txt
 Read this when the owner is about to pay someone to do work for the business: a freelancer, a CAD designer, a bookkeeper, a helper, a first employee.
 

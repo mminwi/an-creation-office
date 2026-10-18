@@ -107,6 +107,14 @@ brisks = sheet("business-risks.csv")
 actions = sheet("actions.csv")
 spending = sheet("spending.csv")
 cashflow = sheet("cash-flow.csv")
+monthly = sheet("monthly.csv")
+
+
+def owner_money_in():
+    """What the owner has put in: the invention's spending register, or with no invention the monthly close."""
+    if spending:
+        return sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    return sum(num(r.get("owner in")) for r in monthly)
 evidence = sheet("market-evidence.csv")
 expenses = sheet("expenses.csv")
 trips = sheet("trips.csv")
@@ -309,7 +317,7 @@ if KIND == "lender":
     rate = num(M.get("rate_pct")) / 100 / 12
     n = int(num(M.get("term_months")) or 60)
     payment = amount * rate / (1 - (1 + rate) ** -n) if rate else amount / n
-    owner_spent = sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    owner_spent = owner_money_in()
     owner_funds = num(first(funding, "owner_funds"))
     price = num(first(funding, "price"))
     uses = [[esc(k[4:]), money(num(r["value"]), False), esc(r["note"])] for k, v in funding.items() if k.startswith("use:") for r in v]
@@ -377,7 +385,7 @@ if KIND == "investor":
     price_to_close = piece + (tooling / plan_units if plan_units else 0)
     carry = max(clears, 0) * plan_units
     closes = payback_units <= plan_units
-    owner_spent = sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    owner_spent = owner_money_in()
     owner_funds = num(first(funding, "owner_funds"))
     uses = [[esc(r["key"][4:]), money(num(r["value"]), False), esc(r["note"])] for r in meeting if r["key"].startswith("use:")]
     use_total = sum(num(r["value"]) for r in meeting if r["key"].startswith("use:"))
@@ -716,7 +724,7 @@ if KIND == "partner":
     clears = price - piece
     payback_units = tooling / clears if clears > 0 else float("inf")
     closes = payback_units <= plan_units
-    owner_spent = sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    owner_spent = owner_money_in()
     owner_funds = num(first(funding, "owner_funds"))
     ms = sorted((r for k, v in funding.items() if k.startswith("milestone:") for r in v), key=lambda r: r["value"])
     upcoming = [r for r in ms if r["value"] >= M.get("date", "")][:4]
