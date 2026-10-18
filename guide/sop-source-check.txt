@@ -1,0 +1,48 @@
+SOP: The source check. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: both bots. b-analyst does the second-pass check and runs check-sources.py.
+May write: the source columns of any sheet that carries specs or rules (the compliance matrix, deadlines.csv, resource-map.csv, and any sheet that has the columns), and project procedures in procedures/ of the invention or Business folder.
+Principle: https://ancreationoffice.com/principle-trace-to-source.txt
+Checker: https://ancreationoffice.com/check-sources.py . Goes with: https://ancreationoffice.com/sop-resource-map.txt (which sources apply), https://ancreationoffice.com/screening-questions.csv (the early questions that find them)
+
+WHY THIS EXISTS
+An AI can state a test level, a tolerance rule, a tax rule or a fee with total confidence and be wrong, or right for an older edition. A wrong spec is found late and found expensive: at the lab, at the molder, at the auditor. So a spec in this office is never written from memory. It comes from a document someone opened, it says which one, and before anyone relies on it, it is checked against that document a second time.
+
+THE SOURCE COLUMNS (any sheet that holds specs or rules)
+- Source: the document. "IEC 60529", "Customer spec ACME-114", "Supplier datasheet, Celanese Celcon M90", "USPTO fee schedule", "Inventor, 261012 conversation".
+- Edition or date: the edition, revision or date of the copy read ("2013+A2:2019", "Rev C", "page dated 2026-10-01"). An undated web page gets the date it was read.
+- Clause or page: where in it ("section 14.2.7", "table 3", "page 4").
+- Source text: the few words the value comes from, quoted. Short: enough to compare, never a copy of a paid standard.
+- Source status: one of the words below.
+- Checked on: the date of the second-pass check, and who did it.
+
+SOURCE STATUS
+- checked: the value was compared with the document a second time and matches. Only this status, or measured, quote or inventor said, may be built, bought, tested or filed on.
+- measured: our own test or measurement; the source is the dated report or record file.
+- quote: a supplier's written quote; the source is the quote file.
+- inventor said: the inventor's own requirement or decision (a design spec, a target price); the source is the conversation or decision log line.
+- from source, not checked: entered from the document, waiting for the second pass.
+- from a summary: taken from a free overview, a datasheet summary or a lab's explainer, not the standard itself. Fine for planning; anything critical waits for the real document.
+- to find: a placeholder. The Source column says where it will come from.
+Never a status, never a source: "AI", "memory", "general knowledge", "typical", "standard practice", "commonly". If that is all there is, the status is to find.
+
+THE STEPS
+1. Find the source before the value. When a requirement comes up (a rating, a test, a label, a material property, a fee, a filing rule, a tax rule), open the library first (https://ancreationoffice.com/resources.json), then the official body named there. A search result is a lead; follow it to the official page or document.
+2. Read the current copy. Record the edition or date, the clause, and quote the line. For a paid standard nobody has bought yet: record its title, edition and where to buy it, and use the publisher's or a test lab's free summary marked "from a summary".
+3. Enter the value with all six columns, status "from source, not checked".
+4. Second pass, before the value is used: a separate step (b-analyst, or a fresh session) opens the document again, finds the clause, and compares the value and the quoted text. Match: status checked, with the date. Mismatch: correct it, note what was wrong in the decision log if anything had already used it.
+5. Run the checker on the folder before any review, packet, quote request, test plan or filing: python3 check-sources.py <folder>. It lists every row without a source, with a memory-type source, still not checked, or marked critical and not checked. Nothing critical goes out until its rows are checked.
+6. Re-check when the source changes: a new edition, a new customer spec revision, a new tax year. The row goes back to "from source, not checked".
+
+WHEN NO PROCEDURE COVERS IT
+The office's procedures cover the common work. Everything else (good drawings, a test method, a label, a packaging rule, a government form) has an authoritative source already written by the people whose job it is. Use it instead of improvising.
+1. Name the subject in plain words ("production drawings a molder can quote from").
+2. Look in the library for the authoritative source: the standards body, the agency, the publisher. Example: drawings follow the ASME Y14 series: Y14.100 for drawing practices, Y14.5 for dimensioning and tolerancing, Y14.41 for 3D model-based definitions.
+3. Not in the library: search the official bodies (.gov, .mil, the standards body, the test lab) and add it to resource-map.csv as "found, not yet checked" with the date (sop-resource-map.txt step 4).
+4. Write the project's own short procedure from it in procedures/<subject>.txt in the invention's folder (or Business/procedures/): each step names the source, edition and clause it comes from. Mark the procedure "from <source>, <edition>". Steps you could not trace are marked "to find".
+5. Tell the inventor in one line, and if the subject will come up for other inventors, send Mike a note so it can join the office's procedures.
+
+RULES
+- Never relaxed for speed (principle-trace-to-source.txt, principle-never-invent-facts.txt).
+- The library is pointers, not copies; never store a paid standard's text beyond the short quote.
+- Tax and legal rules are sources too: the IRS publication or the state's page for that year, quoted, with the year. The bot points to them; the inventor's accountant or the agency is the authority (principle-rigor-scales-with-money.txt).

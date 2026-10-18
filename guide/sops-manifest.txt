@@ -1,4 +1,4 @@
-261018.8
+261018.9
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -13,6 +13,7 @@ business-manager.txt
 check-sheets.csv
 check-sheets.json
 check-sheets.txt
+check-sources.py
 compliance-matrix-template.csv
 control-plan.csv
 critical-quality.csv
@@ -24,14 +25,19 @@ design-risk.txt
 drive-setup.txt
 example-mousetrap/README.txt
 example-mousetrap/actions.csv
+example-mousetrap/business-decision-log.csv
 example-mousetrap/business-risks.csv
 example-mousetrap/cash-flow.csv
 example-mousetrap/company.csv
+example-mousetrap/compliance-matrix.csv
 example-mousetrap/contacts.csv
+example-mousetrap/conversations.csv
 example-mousetrap/cost-sheet.csv
+example-mousetrap/deadlines.csv
 example-mousetrap/decision-log.csv
 example-mousetrap/ecn-log.csv
 example-mousetrap/ecn/261017-ECN-001-tooling-budget.txt
+example-mousetrap/expenses.csv
 example-mousetrap/funding.csv
 example-mousetrap/intake-001.csv
 example-mousetrap/market-evidence.csv
@@ -42,6 +48,8 @@ example-mousetrap/pricing-terms.csv
 example-mousetrap/project-charter.txt
 example-mousetrap/risk-table.csv
 example-mousetrap/spending.csv
+example-mousetrap/tax-year-2026.txt
+example-mousetrap/trips.csv
 forms-catalog.csv
 funding-packet.py
 github-setup.txt
@@ -111,6 +119,7 @@ principle-rigor-scales-with-money.txt
 principle-scope-gate.txt
 principle-severity-first.txt
 principle-start-with-what-you-have.txt
+principle-trace-to-source.txt
 principle-two-way-doors.txt
 principle-unit-economics-first.txt
 principle-walk-away-number.txt
@@ -144,6 +153,7 @@ robots.txt
 screening-questions.csv
 sop-action-log.txt
 sop-ai-cad.txt
+sop-business-record.txt
 sop-business-risks.txt
 sop-change-control.txt
 sop-checklists.txt
@@ -189,6 +199,7 @@ sop-risk-table.txt
 sop-routes.txt
 sop-scientific-molding.txt
 sop-six-sigma.txt
+sop-source-check.txt
 sop-spending-register.txt
 sop-stages.txt
 sop-suggestions.txt
@@ -201,17 +212,22 @@ sops-manifest.txt
 standing.txt
 start-on-your-phone.txt
 status-template.txt
+tax-year.py
 template-a3.txt
 template-action-log.csv
 template-apqp-file.csv
+template-business-decision-log.csv
 template-business-risks.csv
 template-cash-flow.csv
 template-change-record.txt
 template-company.csv
 template-contacts.csv
+template-conversations.csv
 template-cost-sheet.csv
+template-deadlines.csv
 template-decision-log.csv
 template-ecn-log.csv
+template-expenses.csv
 template-fai-report.csv
 template-funding.csv
 template-market-evidence.csv
@@ -224,6 +240,7 @@ template-risk-table.csv
 template-spending-register.csv
 template-team.csv
 template-trial-log.txt
+template-trips.csv
 terms.txt
 test-matrix.csv
 test-plan-template.txt

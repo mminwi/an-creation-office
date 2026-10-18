@@ -1,4 +1,4 @@
-SOP: The spending register. Revision 1 — October 18, 2026.
+SOP: The spending register. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention. b-analyst adds the rows. Template: https://ancreationoffice.com/template-spending-register.csv
 May write: Office files/spending.csv and its readable copy in Your files/Project record/.
@@ -16,5 +16,6 @@ date, stage (S0 to S5), what it was, category (Prototype, Tooling, Testing, Fees
 RULES
 - A row the same turn a receipt, invoice, order or accepted quote comes in. A quote not yet accepted is not spending; it goes on the cost sheet.
 - Only real amounts. Never estimate a row (principle-never-invent-facts.txt). Hours are optional and go in notes.
+- Every row also goes to b-business-manager's expense ledger, the business's one tax record (https://ancreationoffice.com/sop-business-record.txt MONEY, ONCE): send a hand-off line with the date, who was paid, what, the amount and the receipt file. A cost b-business-manager hears of first comes the other way. Same amount, same receipt.
 - At each gate, and whenever asked, say in one line: spent so far, how much was the owner's, and what is left in the charter's budget through the next gate.
 - When the money stops being only the owner's, say it in one line and follow principle-rigor-scales-with-money.txt.

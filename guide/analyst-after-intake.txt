@@ -4,7 +4,7 @@ Paths: you run in the invention folder. Your project files live under "Office fi
 Read https://ancreationoffice.com/analyst.txt first and follow it.
 Read: Office files/plan.md (if present), Office files/forms/intake-001.csv (answers and explanations; the explanation holds the inventor's words), and any decisions already recorded.
 Read the current pages of these as needed, by link only, do not download them:
-- https://ancreationoffice.com/screening-questions.csv (the 25 screening questions and what each pulls in)
+- https://ancreationoffice.com/screening-questions.csv (the 26 screening questions and what each pulls in)
 - https://ancreationoffice.com/resources.json (the library; pointers to official sources)
 - https://ancreationoffice.com/sop-focus.txt (how risks become questions, decisions, Now and Later)
 

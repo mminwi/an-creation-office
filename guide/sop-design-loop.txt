@@ -1,4 +1,4 @@
-SOP: The design stage, a review loop. Revision 2 — October 13, 2026.
+SOP: The design stage, a review loop. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Starts from: the project description (project-description.txt), the deliverable of fact-finding.
 Goes with: sop-stages.txt, sop-review-page.txt, compliance-matrix-template.csv
@@ -86,7 +86,8 @@ THE COMPLIANCE MATRIX (data sheet and check sheet in one)
 One list per project, built from the project description. One line per requirement, from every source: each standard that applies, the design specifications, the marketing specifications, and the risks that need a design answer.
 Columns (compliance-matrix-template.csv):
 - ID: a short number so drawings, tests and changes can point to the line.
-- Source: where it came from (a standard and its clause, the spec, the marketing plan, an FMEA line).
+- Source: where it came from (a standard, the spec, the marketing plan, an FMEA line, the inventor). Never AI memory.
+- Edition or date, Clause or page, Source text (the few words quoted), Source status, Checked on: the trace back to the document, and the second-pass check against it (https://ancreationoffice.com/sop-source-check.txt). No line is built, tested or quoted on until its source status is checked, measured, quote or inventor said.
 - Requirement: what it asks, in plain words.
 - Kind: submittal (information a regulator or lab needs), test, or design (something to build in).
 - Data to collect: the facts this line needs. This is the data sheet half.

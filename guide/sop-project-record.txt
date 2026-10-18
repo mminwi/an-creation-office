@@ -1,4 +1,4 @@
-SOP: The project record. Revision 1 — October 18, 2026.
+SOP: The project record. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one set per invention. b-analyst fills and updates them.
 May write: the files named below in Office files/, and their readable copies in Your files/Project record/.
@@ -30,12 +30,14 @@ WHEN EACH STARTS
 
 THE HARD LINES
 - They always exist and are always current. A change is written in the same turn it happens, not "later".
+- Specs trace to their source. A requirement, rating, tolerance, material property or test level on any sheet carries its source, edition, clause, quoted text and source status, and is checked against the document before it is built, bought or tested on (https://ancreationoffice.com/sop-source-check.txt, principle-trace-to-source.txt). Run check-sources.py before every review and every quote package.
 - They are done for real. No pasted standard FMEA, no copied BOM from another product, no round-number cost guesses presented as figures (https://ancreationoffice.com/principle-never-invent-facts.txt).
 - The inventor can see all seven at any time: b-analyst keeps a readable copy of each in Your files/Project record/, in the format the inventor chose, and the review page links them. The inventor is the decision-maker; they review what the bot has thought through.
 - A document the inventor has not seen yet is mentioned in one line when it first exists: "Your risk table is up: nine ways it could fail, two worth working now."
 - Other working documents (control plan, compliance matrix, test plans, the resource map) are kept as the stages call for them. These seven are the minimum.
 
 FOR b-business-manager
+b-business-manager keeps the business's own seven (https://ancreationoffice.com/sop-business-record.txt), including the expense ledger every spending row is copied to.
 The funding packet copies the charter's milestones, the cost sheet, the risk table, the decision log and the action log (https://ancreationoffice.com/sop-funding-packet.txt). The spending register shows what the owner has already put in.
 
 EXAMPLE

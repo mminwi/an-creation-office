@@ -1,0 +1,45 @@
+SOP: The business record. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, one set for the business (all inventions). b-analyst fills and updates them, and runs tax-year.py.
+May write: the files named below in AN-Creation/Business/, their readable copies in Your files/Business record/, and hand-off lines to b-project-manager.
+Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-project-record.txt (the Project Manager Bot's seven)
+Builder: https://ancreationoffice.com/tax-year.py . Example: https://ancreationoffice.com/example-mousetrap/ (expenses.csv, trips.csv, conversations.csv, deadlines.csv, business-decision-log.csv)
+
+WHY THIS EXISTS
+A business is judged on its records: by the accountant at tax time, by a lender, by an investor, by an auditor, by the inventor a year from now trying to remember who said what. Most inventors keep these in their heads and a shoebox of receipts, and rebuild them in April. The bot is in the conversation when things happen, so it writes them down when they happen. Tax time becomes a sort, not a hunt.
+
+THE SEVEN (the business has all of them from the first conversation; none is optional)
+1. Company record: the company, its papers, accounts, insurance and registrations, each with its honest status. business.txt and company.csv (template-company.csv). Never full tax IDs, account numbers or passwords.
+2. Decision log: every business call, dated, with the reason. business-decision-log.csv (template-business-decision-log.csv; same rules as https://ancreationoffice.com/sop-decision-log.txt).
+3. Action log: who owes what, by when; suggestions until they get an owner or expire. actions.csv (https://ancreationoffice.com/sop-action-log.txt).
+4. Contacts and conversations: everyone the business deals with (contacts.csv), and every conversation that matters: who, when, how, what they said, what was promised, the next step (conversations.csv, template-conversations.csv).
+5. Trip log: every business trip: date, where (place and address), who or what, the business purpose, odometer or miles, parking and tolls; plus an odometer row for each vehicle at the start of each year and when it is first used for the business. trips.csv (template-trips.csv).
+6. Expense ledger: every dollar the business spends, whichever bot hears of it: date, who was paid, what, the business purpose, the invention, the tax category, amount, how it was paid, whose money, the receipt file, the trip or meeting it belongs to. expenses.csv (template-expenses.csv).
+7. Deadlines: every date that cannot be missed (patent, trademark, company reports, taxes, contract notices, quotes), each traced to its source (https://ancreationoffice.com/principle-watch-the-calendar.txt). deadlines.csv (template-deadlines.csv).
+Working files alongside them: market-evidence.csv, promo-log.csv, meetings/, funding/, record/.
+
+BE INSISTENT (the part that makes it work)
+The record is only as good as what the bot is told, so the bot asks, every time, without waiting to be asked:
+- A trip, a visit, a show, a meeting, a call, a purchase, an order, a fee, a decision mentioned in passing ("I ran out to the molder yesterday", "I bought filament", "the banker said no"): stop and capture it in the same turn. Ask for what is missing, one thing at a time: the date, the miles or odometer, the amount, the receipt (a photo is fine), the business purpose, who was there. Then carry on with what the inventor wanted.
+- Start of every conversation, after the version check: "Anything since last time I should log: trips, calls, meetings, anything you paid for?" One line. Every time.
+- After every meeting from sop-meeting-prep.txt: the conversation row, the trip row, and any costs, before the meeting is closed.
+- A receipt missing after a week, a trip without miles, a cost without a purpose: ask again at the start of the next conversation, briefly, until it is closed or the inventor says it is gone (then the row says so).
+- Month end (the first conversation of a new month): a two-line close: what was logged last month, what is still missing.
+- Insistent is not nagging: one short question at a time, never a lecture, and the inventor can say "later". Later goes on the action log with a date.
+Write it the same day. A log written at the time is worth far more to the accountant than one rebuilt months later; the logged on column shows when each row was written.
+
+MONEY, ONCE
+The expense ledger is the business's one tax record. A cost for an invention also goes on that invention's spending register (b-project-manager's, sop-spending-register.txt): whichever bot hears of it writes its own row and sends a hand-off line to the other, with the same amount from the same receipt. The ledger's "on spending register" column says yes. The amount always comes from the receipt or invoice, never from memory.
+
+TAX TIME
+- Categories: use the category names in that year's IRS instructions for the inventor's return (for a single owner, usually Schedule C), or the accountant's own list once there is one. Read them from the form's instructions for that year; until they are read, the category is "ask accountant". Never a category from memory (principle-trace-to-source.txt).
+- Mileage: the trip log keeps the miles. The rate is that year's IRS standard mileage rate, read from the IRS notice for that year, or actual costs if the accountant chooses; tax-year.py only applies a rate given with its source.
+- What the records need: the IRS publications are the source (Publication 463 for travel and car expenses, Publication 583 for business records, both in the library). The trip log's columns follow what they and the accountant ask for; check them against the current publication each year.
+- At year end: python3 tax-year.py AN-Creation/Business <year>. It writes tax-year-<year>.txt: totals by category and by whose money, business miles, and every gap (no receipt, no purpose, no category, logged late). Close the gaps, then the inventor takes the summary, the ledger, the trip log and the receipts folder to their accountant or tax software.
+- The bot sorts and checks; it does not decide what is deductible. On the inventor's own money, doing their own return is their call; once there is real income, an employee, outside money or a company, an accountant is worth the fee (principle-rigor-scales-with-money.txt).
+
+THE HARD LINES
+- They always exist and are always current; a change is written the turn it happens.
+- Never invent an amount, a mile, a date or a purpose. A missing fact stays missing and is asked for.
+- Never store full tax IDs, account or card numbers, or passwords. "Owner's personal card" is enough.
+- The inventor can see all seven at any time: b-analyst keeps a readable copy in Your files/Business record/.

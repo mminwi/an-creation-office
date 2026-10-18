@@ -33,6 +33,7 @@ S22-other-brand,Is it made to fit or work with someone else's product?,(row 22),
 S23-industry,"Is it for a particular industry, like railroad, mining, marine or a food plant?",(row 23),if not clear,9,,,open
 S24-materials,"Will it have electronics, or be sold in Europe or California?",(row 24),if not clear,9,,,open
 S25-battery,Does it have a lithium battery?,(row 25),if not clear,9,,,open
+S26-drawings,Will someone else make parts from your drawings or CAD files?,(row 26),if not clear,9,,,open
 S19-company,Have you thought about starting a company to protect yourself from liability?,(row 19; sop-gateways BUSINESS ENTITY),no,10,,,open
 S20-patent,What are your thoughts on a patent?,(row 20; sop-gateways PATENT),no,10,,,open
 S21-money,Will the next step need someone else's money?,(row 21),no,10,,,open

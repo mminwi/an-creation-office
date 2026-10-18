@@ -1,4 +1,4 @@
-SOP: Map the resources to this project. Revision 3 — October 8, 2026.
+SOP: Map the resources to this project. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Library: https://ancreationoffice.com/resources.json (about 470 sources in 18 groups; specialist sources carry b_roles naming the specialist roles that use them)
 Goes with: sop-gateways.txt (the questions), sop-focus.txt (what goes on the list)
@@ -29,6 +29,7 @@ From what the inventor already said, fill this short profile. Answer what you ca
 - Where it will be sold: friends, online, big stores, marketplaces, outside the U.S.?
 - Industry and setting: is it sold into a particular industry (railroad, mining, marine, oil and gas, food plant, hospital) or used somewhere unusual (washdown, hazardous area)?
 - Materials: electronics, or sold in Europe or California (restricted substances)? Lithium battery?
+- Drawings: will a shop make parts from drawings or CAD files?
 - Business roads: company, patent, outside money (these are the gateways in sop-gateways.txt).
 Show the inventor the filled profile. Ask them to fix what is wrong and answer only the "unsure" lines that change which shelves open, one at a time.
 
@@ -75,6 +76,7 @@ The library is pointers, not copies. Do not download or store the source. For ea
 - the risks or questions it raises.
 Next time, open the link again. The page may have changed.
 Those questions go through sop-focus.txt: asked as a question, decided, on Now or Later, or dropped. A source does not dump its whole checklist into the project.
+Any value taken from a source into a sheet carries the source columns and gets the second-pass check against the document before it is used (https://ancreationoffice.com/sop-source-check.txt). Never a value from memory.
 For a paid standard, record the title, edition and where to get it. Do not copy it. Use the free summary or the official overview until the inventor decides to buy it.
 
 Every "found, not yet checked" source gets its official address, the open question of whether it applies, and a dated check before it is used for design, testing or showing anyone. A search result is a lead, not a source.

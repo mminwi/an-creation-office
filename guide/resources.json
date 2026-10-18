@@ -766,6 +766,21 @@
       "verification_note": "IRS publication covers starting a business, recordkeeping and tax records."
     },
     {
+      "id": "irs-pub-463",
+      "title": "IRS Publication 463 — Travel, gift and car expenses",
+      "url": "https://www.irs.gov/publications/p463",
+      "group": "business",
+      "roles": [
+        "funding",
+        "project"
+      ],
+      "use": "The IRS's own guide to travel and car expenses and the records they need: the source for what the trip log and expense ledger must hold (sop-business-record.txt).",
+      "check": "Added 2026-10-18; irs.gov could not be opened from the office's build machine that day, so the page was not read. Open the current year's edition before relying on any rule in it; the rules and the mileage rate change by tax year.",
+      "checked_on": "2026-10-18",
+      "source": "Government agency’s own website (address not yet opened)",
+      "kind": "government"
+    },
+    {
       "id": "fincen-boi",
       "title": "FinCEN — Check current beneficial ownership rules",
       "url": "https://www.fincen.gov/boi",
@@ -4746,6 +4761,26 @@
       "check": "Read via Perplexity on 2026-10-12; the office did not open the page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard.",
       "checked_on": "2026-10-12",
       "source": "Publisher page as read via Perplexity",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "asme-y14-100",
+      "title": "ASME Y14.100 — engineering drawing practices",
+      "url": "https://www.asme.org/codes-standards/find-codes-standards/y14-100-engineering-drawing-practices",
+      "group": "quality",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "design"
+      ],
+      "b_roles": [
+        "b-tolerance-gdt"
+      ],
+      "use": "The baseline requirements for preparing and revising engineering drawings and their associated lists: the starting point for drawings a shop can quote and make from. Used with Y14.24, Y14.34, Y14.35, Y14.41 and Y14.5. Paid.",
+      "edition": "ASME Y14.100-2017 (publisher page, as found by web search on 2026-10-18; earlier editions marked historical on the ANSI webstore)",
+      "check": "Found through a web search on 2026-10-18; the office did not open the publisher's page itself. Confirm the current edition on the publisher's page before relying on it; a catalog page is not the full standard. Until it is bought, drawing rules taken from summaries are marked 'from a summary' (sop-source-check.txt).",
+      "checked_on": "2026-10-18",
+      "source": "Publisher page as found by web search",
       "kind": "primary_guidance"
     },
     {
