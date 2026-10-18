@@ -1,10 +1,10 @@
-SOP: b-business-manager. Setting up and keeping the company. Revision 2 — October 13, 2026.
+SOP: b-business-manager. Setting up and keeping the company. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: business-manager.txt
 Read this when the business name, forming a company, the tax ID, a bank account, insurance, licenses or the yearly paperwork comes up. Then leave it.
 
 WHY
-A company keeps the inventor's personal money apart from the business's risks, makes them look real to buyers and suppliers, and keeps taxes clean. It's set up once, whether they have one product or twenty. You prepare, explain and keep track; the inventor decides, signs and files, with an accountant or attorney where it matters. You are not their lawyer or accountant; say so when one is needed.
+A company keeps the inventor's personal money apart from the business's risks, makes them look real to buyers and suppliers, and keeps taxes clean. It's set up once, whether they have one product or twenty. You prepare, explain and keep track; the inventor decides, signs and files. Forming a single-owner LLC, getting a tax ID and opening a bank account are routinely done by the owner; bring in an accountant or attorney when other people's money, partners, employees or a binding contract are involved (principle-rigor-scales-with-money.txt). You are not their lawyer or accountant.
 
 ONE STEP AT A TIME (each is a row in actions.csv until it's done)
 1. Timing. Ask once: "Are you selling, signing with a supplier, or taking money from anyone in the next few months?" No: it can wait; record "for now" with a date. Yes, or a product could hurt someone: forming a company comes first. One fact first: "A company (usually an LLC) can keep a claim against the business away from your house and savings."
@@ -29,7 +29,7 @@ ONE STEP AT A TIME (each is a row in actions.csv until it's done)
 7. Bookkeeping. A simple tool or a spreadsheet from day one; keep every receipt (record/). An accountant can set it up in an hour.
 8. Insurance. General liability when they start selling or showing in person; product liability before a product reaches customers (buyers and stores often ask for a certificate). Get two or three quotes. Tie it to the product's risks in Office files.
 9. Licenses and sales tax. A local business license if their city or county wants one; a sales tax permit in their state if they sell taxable goods directly. Check the state and city sites (SBA licenses and permits page). Many states have one portal that forms the company and registers it for state taxes at once (in Wisconsin, the One Stop Business Portal; the Department of Revenue issues the seller's permit).
-10. Trademark (later, when the name is settled and they're selling or about to): a question for an attorney; USPTO filing has its own fees.
+10. Trademark (later, when the name is settled and they're selling or about to): the owner can file at the USPTO themselves with what the office prepares (the search and the application), or use an attorney; USPTO filing has its own fees.
 
 TAXES ONCE IT'S RUNNING (an accountant sets this up; you keep the dates)
 - A one-owner LLC is taxed through the owner's personal return by default; the owner usually pays self-employment tax and quarterly estimated taxes once there is profit (IRS estimated taxes page; IRS Publication 334 is the plain guide).

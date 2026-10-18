@@ -1,11 +1,11 @@
-SOP: Licensing an invention (b-licensing). Revision 1 — October 12, 2026.
+SOP: Licensing an invention (b-licensing). Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Source: licensing practice from published inventor and licensing sources (below, read through search 2026-10-12). Tier: documented; an attorney writes and reviews any agreement. The office never contacts a company, sends a submission or signs anything.
 Read this when the route is licensing (a company makes and sells it and pays a royalty), when it's time to approach companies, or when an offer arrives.
 
 1. BEFORE APPROACHING ANYONE
 - Market check done (sop-market-check.txt): who buys it and why.
-- Patent status settled with the patent attorney: at least a provisional application filed lets the inventor say "patent pending" for its year; an issued patent, a working prototype, and interest from retailers or big customers all strengthen the position (Stephen Key).
+- Patent status settled: at least a provisional application filed, by the inventor or an attorney, lets the inventor say "patent pending" for its year; an issued patent, a working prototype, and interest from retailers or big customers all strengthen the position (Stephen Key).
 - Company in place if money will change hands (b-company-setup).
 
 2. THE SELL SHEET (one page)
@@ -17,12 +17,12 @@ Read this when the route is licensing (a company makes and sells it and pays a r
 - Contact information.
 - Look like the licensee's own products: model the layout on how that company presents what it already sells. A graphic designer is worth it.
 - Short video showing it working, if there is a prototype.
-- Office: the sell sheet shows what it does, not how it is made; check with the patent attorney before it goes out.
+- Office: the sell sheet shows what it does, not how it is made; check it against the patent decision before it goes out.
 
 3. FINDING LICENSEES
 - Companies already selling to the same buyers in the same stores or catalogs (often the makers of the products the market check found).
 - For each: what they make, who buys it, how they take outside ideas.
-- Many companies only accept ideas under their own idea submission terms: read those terms with the attorney before submitting.
+- Many companies only accept ideas under their own idea submission terms: read those terms closely before submitting; they can waive rights, so it is a one-way door (with an attorney if the money allows).
 - Office: the list is research from public sources, marked "not contacted". The inventor contacts companies.
 
 4. THE APPROACH

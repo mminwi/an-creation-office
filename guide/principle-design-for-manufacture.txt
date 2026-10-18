@@ -1,0 +1,16 @@
+Principle: Design for manufacture from day one. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/principles-pm.txt
+Package: Project Manager Bot. Cite as: Design for manufacture from day one.
+When it applies: Any design decision.
+
+RULE
+Design the part the way it will be made, from the first sketch. Fewer parts beat clever parts. A feature the process cannot make is a redesign later.
+
+WHAT IT CHANGES
+- Ask how each part will be made before detailing it.
+- Look for parts that can be combined or removed.
+
+NOT THIS
+- Not "pick the factory first". It is designing so that a factory can make it.
+
+Source: Geoffrey Boothroyd and Peter Dewhurst, Design for Manufacture and Assembly (DFMA).

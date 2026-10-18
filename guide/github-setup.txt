@@ -1,4 +1,4 @@
-AN Creation: GitHub, the optional add-on for code. Revision 5 — October 14, 2026.
+AN Creation: GitHub, the optional add-on for code. Revision 6 — October 18, 2026.
 OPTIONAL. Google Drive is the default home for project files (https://ancreationoffice.com/drive-setup.txt). Use this file only when the office or the owner writes code and wants GitHub, or when the office already lives on GitHub (record "Home: GitHub <username>/an-creation" in office.txt). Offices already on GitHub keep working exactly as below; nothing needs to move. An office.txt with no Home: line counts as GitHub when /workspace/offices/<role>/an-creation is a git clone.
 Read this at setup, and whenever GitHub or b-analyst isn't working. Then leave it. The steps for starting, saving, and handing work off are the skills office-startup, office-save, and office-handoff. This file is the office rule those skills follow. After install, run office-setup-check.
 
@@ -29,7 +29,7 @@ WHEN IT FAILS
 - A write through the GitHub connector fails: that is expected. office-save.
 - Push rejected: office-save retries with pull --rebase. Never force-push main. GitHub cannot enforce that on this free private repository (branch protection needs GitHub Pro).
 - A file over about 50 MB: keep it out of the repository and record where it lives.
-- The repository was made public: make it private before going on. If the invention was described while it was public, say so and suggest a patent attorney.
+- The repository was made public: make it private before going on. If the invention was described while it was public, say so and record the date: in the US the inventor's one-year grace period runs from it (principle-patent-before-public.txt).
 
 NEVER
 Never type a password, code, or key. Never make the repository public. Never put passwords, keys, an SSN, or bank or card numbers in a file or a commit message. Never force-push main. Never start a device login on the shared computer. Never turn on billing for them.

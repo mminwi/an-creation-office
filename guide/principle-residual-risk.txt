@@ -1,6 +1,7 @@
-Principle: Residual risk. Revision 8 — October 18, 2026.
-Index: https://ancreationoffice.com/sop.txt
-Cite as: Residual risk.
+Principle: Residual risk: work the 80%. Revision 9 — October 18, 2026.
+Index: https://ancreationoffice.com/principles-pm.txt
+Package: Project Manager Bot. Cite as: Residual risk: work the 80%.
+When it applies: Building or reviewing a risk table.
 
 RULE
 When a sheet is filled in, do the exercise for real: find the failures that belong to the design, score the proposal, and take actions that lower S, O, or D until a lower score is not honestly available.
@@ -10,3 +11,5 @@ Add every residual RPN. That sum is the total risk. Work the issues whose scores
 Driving a score lower eventually costs more money, or the part takes longer to make. Time is money, so both come back to dollars: how much extra to reduce the risk further. Accepting a residual means this is as much as will be spent to lower that issue.
 A failure with severity 9 or 10 is the exception to the 80% line: it gets an action whatever its score (https://ancreationoffice.com/sop-risk-table.txt SEVERITY FIRST).
 Once the accepted issues cover 80% of the risk, the ones left are not significant. A person may still work them. An obvious fix that does not raise the cost of the product is worth doing. Spending more to chase one of them, while a higher score is still open, is not.
+
+Source: Joseph Juran's vital few (the Pareto principle); the Bravo trial.

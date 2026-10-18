@@ -48,7 +48,7 @@ K6. b-business-manager: the business risk register. https://ancreationoffice.com
 
 FOR b-project-manager
 1a. The project sheets: cost sheet https://ancreationoffice.com/sop-cost-sheet.txt ; risk table https://ancreationoffice.com/sop-risk-table.txt ; decision log https://ancreationoffice.com/sop-decision-log.txt ; suggestions https://ancreationoffice.com/sop-suggestions.txt
-1b. Principles: re-anchor https://ancreationoffice.com/principle-re-anchor.txt ; scope gate https://ancreationoffice.com/principle-scope-gate.txt ; context window https://ancreationoffice.com/principle-context-window.txt ; residual risk https://ancreationoffice.com/principle-residual-risk.txt
+1b. Principles, read first every conversation: https://ancreationoffice.com/principles-pm.txt (b-project-manager) and https://ancreationoffice.com/principles-bm.txt (b-business-manager). One file per principle, listed there.
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
 The ticket template may write the form named in the ticket, Office files/queue/QUEUE.txt, the ticket file, Office files/record/ for the conversation, Office files/sessions/ for the analyst run, and Office files/plan.md for a taking-longer note.

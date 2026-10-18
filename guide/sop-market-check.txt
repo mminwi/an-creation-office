@@ -1,6 +1,6 @@
-SOP: Market check: does anyone want it? (b-market-check). Revision 1 — October 12, 2026.
+SOP: Market check: does anyone want it? (b-market-check). Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
-Source: standard customer discovery practice and patent disclosure law (sources below, read through search 2026-10-12); written at Mike's request so inventors check the market before spending on patents and prototypes. Tier: documented; the patent questions go to a patent attorney.
+Source: standard customer discovery practice and patent disclosure law (sources below, read through search 2026-10-12); written at Mike's request so inventors check the market before spending on patents and prototypes. Tier: documented; the patent decision comes before any showing (principle-patent-before-public.txt).
 Read this when an idea is new, before money goes into a patent, a prototype or tooling, and whenever the inventor isn't sure who would buy it.
 
 WHY
@@ -11,7 +11,7 @@ A common inventor story: years in secrecy, an overbuilt prototype, a full patent
 - United States: the inventor's own disclosure is not prior art if the application is filed within one year after it (35 U.S.C. 102(b)(1)(A); MPEP 2153.01). That is a narrow safe harbor, not an extension, and a sale or offer to sell can start other clocks.
 - Most other countries (Europe included) require absolute novelty: a disclosure before filing can end patent rights there, even the inventor's own.
 - So: ask about the problem, not the solution. Talk about what people do today, what bothers them, what they've tried and paid. Don't show or describe how your invention works.
-- If you need to show the idea: settle the patent question first (b-patent-prep, the patent conversation ticket) and have a patent attorney look at the plan. The office records every outside conversation with its date and what was shown (record/).
+- If you need to show the idea: settle the patent decision first (b-patent-prep, the patent conversation ticket): a provisional filed by the inventor or an attorney, only what it does shown, or knowingly no patent. The office records every outside conversation with its date and what was shown (record/).
 
 2. WHO TO ASK
 - The people who would use it, and separately the people who would buy it (in a hospital the user and the buyer are different people). Write each group down.
@@ -37,4 +37,4 @@ SOURCES (library)
 nsf-icorps, strategyzer-vpc, strategyzer-test-card, census-business-builder, google-trends, cpsc-recalls, saferproducts, sheet-launch, sheet-economics, patent-grace-periods, patentability-vs-fto, mpep (MPEP 2153.01, grace period), customer-discovery-method, absolute-novelty.
 
 HANDS OFF
-Patent attorney or agent: before any conversation that shows how the invention works.
+The patent decision (a self-filed provisional, an attorney, or knowingly none): before any conversation that shows how the invention works.

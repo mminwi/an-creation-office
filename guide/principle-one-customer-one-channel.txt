@@ -1,0 +1,16 @@
+Principle: One customer, one channel first. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/principles-bm.txt
+Package: Office Manager Bot. Cite as: One customer, one channel first.
+When it applies: Choosing where to sell, promote or partner.
+
+RULE
+Win one kind of customer through one channel first. Say no to most opportunities until that works.
+
+WHAT IT CHANGES
+- Name the first customer and the first channel in one line each.
+- When a new opportunity appears, ask whether it serves that first channel.
+
+NOT THIS
+- Not forever. Expand once the first channel works.
+
+Source: Geoffrey Moore, Crossing the Chasm (1991): the beachhead.

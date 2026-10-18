@@ -1,0 +1,16 @@
+Principle: Build to learn. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/principles-pm.txt
+Package: Project Manager Bot. Cite as: Build to learn.
+When it applies: Any prototype, sample, test or mock-up.
+
+RULE
+Each build answers one named question, by the cheapest way that answers it: a sketch, a cardboard model, a 3D print, a hand-made part, before any tooling. Write the question down before building, and the answer after.
+
+WHAT IT CHANGES
+- Name the question first: "Will a person set this trap without touching the bail?"
+- Pick the cheapest build that answers it, and say what it will not answer.
+
+NOT THIS
+- Not "prototype everything". A question that can be answered by looking something up is not a build.
+
+Source: Eric Ries, The Lean Startup (2011): the minimum viable product. IDEO's practice: prototypes are for learning.

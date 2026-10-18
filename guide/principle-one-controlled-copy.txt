@@ -1,0 +1,16 @@
+Principle: One controlled copy. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/principles-pm.txt
+Package: Project Manager Bot. Cite as: One controlled copy.
+When it applies: Any document that is shared, sent or built from.
+
+RULE
+Every drawing, spec, cost sheet and plan has one current copy with a revision. Old revisions are kept and marked. Anyone who got a copy is recorded, so a change reaches them.
+
+WHAT IT CHANGES
+- Bump the revision on a real change; keep the old one in History.
+- Say which revision a supplier or tester was given.
+
+NOT THIS
+- Not paperwork for its own sake. It stops the wrong version from being built.
+
+Source: ISO 9001 clause 7.5, control of documented information.

@@ -1,0 +1,16 @@
+Principle: Price on value, never below cost. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/principles-bm.txt
+Package: Office Manager Bot. Cite as: Price on value, never below cost.
+When it applies: Setting a price.
+
+RULE
+Price on what it is worth to the buyer, with the cost as the floor. Do the channel math: each step between the factory and the customer takes its margin, and retail often roughly doubles the wholesale price.
+
+WHAT IT CHANGES
+- Work back from the shelf price through each margin to the price the inventor gets.
+- Check the result against the unit cost.
+
+NOT THIS
+- Not cost-plus. The cost is a floor, not the price.
+
+Source: Value-based pricing (Nagle and Holden, The Strategy and Tactics of Pricing). Keystone markup in retail.

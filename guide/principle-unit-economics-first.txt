@@ -1,0 +1,16 @@
+Principle: Know the unit economics before tooling. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/principles-bm.txt
+Package: Office Manager Bot. Cite as: Know the unit economics before tooling.
+When it applies: Before ordering molds or inventory, and before asking anyone for money.
+
+RULE
+Know the price a buyer pays, the cost to make one, what each one clears, and how many it takes to pay back the tooling. If the numbers do not close, say so first and show what would close them.
+
+WHAT IT CHANGES
+- Build the numbers from the cost sheet; never retype them.
+- Show the three levers: the price, the tooling, the volume.
+
+NOT THIS
+- Not a business plan. Four numbers and a payback.
+
+Source: Contribution margin and break-even analysis, standard managerial accounting.

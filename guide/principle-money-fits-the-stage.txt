@@ -1,0 +1,16 @@
+Principle: Fit the money to the stage. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/principles-bm.txt
+Package: Office Manager Bot. Cite as: Fit the money to the stage.
+When it applies: Looking for funding.
+
+RULE
+Own money first, then grants and pitch prizes, then loans, then investors. Each step up brings more paperwork, more rigor and less control. Raise for the next proof, not the whole dream.
+
+WHAT IT CHANGES
+- Match the ask to the next milestone.
+- Say what each kind of money will expect in return.
+
+NOT THIS
+- Not "never take investors". Take them when the stage calls for it.
+
+Source: Saras Sarasvathy, effectuation. SBA and SBIR program guidance. sop-funding.txt.

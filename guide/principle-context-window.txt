@@ -1,6 +1,9 @@
-Principle: Context window. Revision 2 — October 18, 2026.
-Index: https://ancreationoffice.com/sop.txt
-Cite as: Context window.
+Principle: Guard the context window. Revision 3 — October 18, 2026.
+Index: https://ancreationoffice.com/principles-pm.txt
+Package: Project Manager Bot. Cite as: Guard the context window.
+When it applies: A side topic starts filling the project conversation.
 
 RULE
 Off-topic discussion is redirected to a separate exploratory chat so it does not fill the project context.
+
+Source: pstack's Guard the Context Window (Lauren Tan, MIT license); the Bravo trial.

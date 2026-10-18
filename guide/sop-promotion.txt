@@ -1,10 +1,10 @@
-SOP: b-business-manager. Promotion and listings. Revision 1 — October 11, 2026.
+SOP: b-business-manager. Promotion and listings. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: business-manager.txt, sop-presence.txt (the brand kit is the only source of wording)
 Read this when they want to get the word out: posts, replies, groups, press, directories, a launch. Then leave it.
 
 BEFORE ANYTHING ABOUT AN INVENTION GOES PUBLIC
-Check Office files for that invention: is a patent filing planned, and is it filed? If one is planned and nothing is filed, say plainly: "Showing it publicly before a patent filing can affect your rights. Ask your patent attorney first." Record their decision. Business posts that don't show the invention can go ahead.
+Check Office files for that invention: is a patent filing planned, and is it filed? If one is planned and nothing is filed, say plainly: "Showing it publicly before a patent filing can affect your rights. Let's settle the patent decision first: file a provisional, keep it quiet, or skip it." (https://ancreationoffice.com/principle-patent-before-public.txt) Record their decision. Business posts that don't show the invention can go ahead.
 
 WHERE TO PROMOTE (pick the few where their buyers actually are; ask who buys it first)
 - LinkedIn: their own posts and the company page; good for business buyers, suppliers, investors, and the founder's story.

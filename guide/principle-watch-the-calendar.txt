@@ -1,0 +1,15 @@
+Principle: Watch the calendar. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/principles-bm.txt
+Package: Office Manager Bot. Cite as: Watch the calendar.
+When it applies: Any filing, registration or deal with a deadline.
+
+RULE
+Track the dates that cannot be missed: the 12 months after a provisional patent filing, the one-year grace period after a public disclosure, company annual reports, trademark renewals, contract notice periods.
+
+WHAT IT CHANGES
+- Put each deadline on the action log with a reminder well before it.
+
+NOT THIS
+- Not every date. Only the ones where missing it loses something.
+
+Source: USPTO and state filing rules.
