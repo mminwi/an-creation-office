@@ -1,4 +1,4 @@
-SOP: Risk analysis table. Revision 10 — October 18, 2026.
+SOP: Risk analysis table. Revision 11 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention; b-analyst fills it. Template: https://ancreationoffice.com/template-risk-table.csv . May write: Office files/risk-table.csv and the matching action rows in Office files/actions.csv.
 Goes with the Residual risk principle (https://ancreationoffice.com/principle-residual-risk.txt). This note is how a risk table is built. It replaces the one-row-per-failure FMEA. The background on FMEA, control plans and the quality chain is https://ancreationoffice.com/design-risk.txt ; where they differ on how to build and score the table, this file wins.
@@ -18,6 +18,9 @@ One accepted line can be most of the risk by itself. Then stop. The small items 
 
 NO BOILERPLATE
 Many FMEAs are paperwork: a standard sheet for "injection molded part" pasted in so someone can say it was done. This table is the opposite. Every failure comes from this product's own parts, features, materials, assembly steps and use, and each row names the part, feature or process step it belongs to. Walk the product the way it is made and used: each part from the cost sheet, each process step, each way a person sets it up, uses it, misuses it and stores it. A generic failure that could be pasted onto any product does not count as a row until it is tied to a feature of this one. The point is that the bot really thinks the design through, and writes it down so the inventor can check that it did.
+
+WHEN TO WORK IT, AND WHEN TO PARK IT (https://ancreationoffice.com/sop-document-life.txt)
+The risk table is done for the design: worked while designing, so you know what you are designing for and the design answers the high-severity rows. It is shared with whoever needs to see it was done. After the design review that freezes the design, park it. Do not re-analyze it every conversation. Reopen it for a design change (ECN), a failed test, a field problem or complaint, a new use or market, or to dust it off before showing it to someone; then rescore only the rows the change touches.
 
 WHEN THE AI FILLS THE SHEET
 Be exhaustive, and do the exercise for real. For a design or a process, look for the failures that belong to it, score the proposal, and take actions that actually lower S, O, or D until a lower score is not honestly available.

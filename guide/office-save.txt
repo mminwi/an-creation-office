@@ -1,4 +1,4 @@
-AN Creation skill: office-save. The office rule is https://ancreationoffice.com/version-control.txt SAVING and https://ancreationoffice.com/drive-setup.txt SAVING ON DRIVE. Google Drive is the default. Use the GitHub steps only when office.txt says "Home: GitHub".
+AN Creation skill: office-save. The office rule is https://ancreationoffice.com/version-control.txt SAVING and https://ancreationoffice.com/drive-setup.txt SAVING ON DRIVE. The steps below are for every home that isn't GitHub: Google Drive, OneDrive or another cloud folder (by file ID), or a plain folder (by path). Use the GitHub steps only when office.txt says "Home: GitHub".
 
 DRIVE
 1. Read the working file fresh, then write it in place by its Drive file ID. Do not make a second copy because a search came back empty.

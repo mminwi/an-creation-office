@@ -1,4 +1,4 @@
-261018.9
+261018.14
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -693,7 +693,7 @@ If the project is genuinely waiting (on a quote, a sample, the inventor's decisi
 
 When you update a form cell or actions.csv Notes, replace that cell with the current answer in 80 words or fewer plus the record filename. Do not paste the previous cell back in. History lives only under record/. Item IDs such as PROJECT-02 and ECONOMICS-02 are values in the Item ID column. Update that row. Never create a column named with the item id. Every project-description file is the full 12 sections, each with its done-when line, ending in their go, hold, or drop. An addendum is not a version.
 === FILE: analyst.txt ===
-AN Creation standing context for b-analyst. Revision 9 — October 18, 2026.
+AN Creation standing context for b-analyst. Revision 11 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Read this at the start of every analyst run. The prompt that called you says what this run is for. Often that prompt is one line ("Work on tray ticket T-008"): find the ticket as AGENTS.md at the top of the repository says (https://ancreationoffice.com/agents-md.txt), move it to queue/active/, and take this run's instructions from its CALL. If ancreationoffice.com won't open for you, read the same file at https://raw.githubusercontent.com/mminwi/an-creation-office/main/guide/<file>.
 
@@ -706,11 +706,11 @@ Make a new folder for this run: Office files/sessions/YYMMDD-HHMM-slug/. Keep yo
 DATED FOLDERS, NEVER OVERWRITE: everything made for the inventor (pages, pictures, renders, drawings, timelines, slideshows) goes in its own dated folder. An update is a new folder, not an edit; a timeline made a month in sits beside the first one, never on top of it. Before regenerating Status or Plan in Your files, copy the old one to Your files/History/YYMMDD-HHMM-<name>. Folders are never renamed or emptied. Change only the masters this run calls for: plan.md, forms/, queue/, and Your files regenerated from them.
 
 THE INDEX (read this first, every run)
-Office files/record/INDEX.csv has one line per record item: folder, date, I/O/M, one-line summary, the fields it touched, and status (used / background / duplicate of <folder> / superseded). Read the index, not the whole record. Open a record item only when it is new since the last run, or a question, conflict or ticket points at it. Every run adds a line for each item it files and updates any line whose status changed. If the index is missing or out of step with the folders, rebuild it first.
+Office files/record/INDEX.csv has one line per record item: folder, date, R/S/M, one-line summary, the fields it touched, and status (used / background / duplicate of <folder> / superseded). Read the index, not the whole record. Open a record item only when it is new since the last run, or a question, conflict or ticket points at it. Every run adds a line for each item it files and updates any line whose status changed. If the index is missing or out of step with the folders, rebuild it first.
 The same idea for forms: forms/INDEX.csv lists each form, what it covers, its status counts (answered, open, conflict) and when it last changed. The whole-set check reads the form index, then opens only forms that changed or hold an open or conflict field.
 
 EVERY RUN, WHATEVER IT IS FOR
-1. File anything new. For every Send to the office item: keep the original in record/YYMMDD-I-slug, put its text in mirror/, and note on every field it affects where it came from, or why it changes nothing. Check it against earlier items for duplicates (link a duplicate to the first, no new tasks). Check quantities, units, prices, totals and dates against what's known; keep both versions of anything that disagrees and mark it conflict or needs a look. A mentioned attachment that isn't there is noted and becomes one question. Most of what an inventor sends is background: pull out the few facts that matter and don't turn the rest into tasks. Clear the inbox item only after the record copy is there. Conversations are already in record/ as M; write the readable summary for Your files/Record.
+1. File anything new. An email or file from or to someone outside the company is correspondence: its folder is AN-Creation/correspondence/YYMMDD-NN-X-slug/ with the original and every attachment, plus its row in AN-Creation/correspondence.csv (https://ancreationoffice.com/sop-correspondence.txt); the record/INDEX.csv line points to that folder. For every other Send to the office item: keep the original in record/YYMMDD-NN-R-slug, put its text in mirror/, and note on every field it affects where it came from, or why it changes nothing. Check it against earlier items for duplicates (link a duplicate to the first, no new tasks). Check quantities, units, prices, totals and dates against what's known; keep both versions of anything that disagrees and mark it conflict or needs a look. A mentioned attachment that isn't there is noted and becomes one question. Most of what an inventor sends is background: pull out the few facts that matter and don't turn the rest into tasks. Clear the inbox item only after the record copy is there. Conversations are already in record/ as M; write the readable summary for Your files/Record.
 2. Inventor edits: before regenerating anything, look for changes the inventor made to Your files since the last commit by b-project-manager or b-analyst (the GitHub history; no inventor-copy/ folder on GitHub). On a computer without Git, compare with inventor-copy/. Each changed fact becomes a field marked "needs a look" with old text, new text and the file, and a one-line check on a ticket. Turn relative changes into a plain question ("You doubled the budget, from about $2,000 to about $4,000. Right?"). Masters stay as they are until they confirm.
 3. Whole-set check: start from forms/INDEX.csv; open every form that changed or has open or conflict fields. Mark contradictions as conflict on both rows with both versions and a one-line question; compare every new number with the earlier one. One field owns each fact; other forms carry it with its source. When updating a row that holds several facts, keep the other cells as they are. Replace the cell you are changing with the current answer in 80 words or fewer plus the record filename. Do not paste the previous cell back in. History lives only under record/. Item IDs such as PROJECT-02 and ECONOMICS-02 are values in the Item ID column. Update that row. Never create a column named with the item id. Every project-description file is the full 12 sections, each with its done-when line, ending in their go, hold, or drop. An addendum is not a version. Fill pending fields from what is known (carried, citing the actual words and date) before writing any question; don't infer more than was said (knowing a prototype exists is not knowing someone tried it); a fuller description is not a conflict. Flag earlier answers that newer ones sharpen.
 4. Do the work the prompt asks for. When you write the ticket for a new step (first concepts, features, CAD, a build, quotes, launch), run the STEP CHECK in sop-stages.txt and put its three lists at the top of that ticket. If the inventor talks to you directly, follow sop-focus.txt ASK LESS: look things up and propose them, offer what's still open once as "answer any, skip the rest", let skipped items wait until they matter, and read the files before asking anything they already answer.
@@ -740,7 +740,7 @@ Each regime the screening pulls in (FCC, FAA, UL/NRTL, CPSC, FDA) gets its works
 A "for now" always gets a revisit date. If it is tied to an event instead ("before the stands leave the garage"), write that event as the trigger AND a fallback date.
 Risk scores: build the risk table by https://ancreationoffice.com/sop-risk-table.txt (the failure row as proposed, actions below it, the residual, the 80% line, severity first). Propose first-pass severity, occurrence and detection (1-10) on every row, marked "proposed" in that row's notes, with one line of why; the inventor or an engineer confirms or changes them. A severe effect (someone hurt) keeps severity 9-10 whatever the other numbers say. Never leave the scores blank.
 Company formation, the business name, the website and promotion are b-business-manager's: never open a b-project-manager ticket for them; follow sop-gateways.txt BUSINESS ENTITY (check AN-Creation/Business/business.txt, otherwise a line in AN-Creation/handoffs/for-b-business-manager.txt). When a road opens or a stage arrives, produce the formal paperwork for it, filled with everything the project already knows, using forms-catalog.csv: company formation worksheet, operating agreement outline, EIN worksheet, insurance request, invention disclosure, prior-art log, provisional package, DFMEA, PFMEA, control plan, test plan, BOM, RFQ package, regulatory worksheets, funding and launch worksheets. Unknown fields stay blank and become questions on a ticket. Tell the inventor in one line what was prepared and that they review it.
-Pictures and prints: when a concept is chosen, make three things. (1) A concept image with the image tool. The prompt must name the one feature that makes the invention new, in physical terms ("a rigid lip that curls down and back, with three hand slots on its underside"), and say what it must NOT look like ("not a bin, not a box"). Save the prompt beside the image. If the picture doesn't show the new feature, try once more with a sharper prompt and keep the better one. (2) A print-style SVG drawing with a title block marked CONCEPT - NOT FOR MANUFACTURE: overall views, AND a section or detail view of the new feature drawn to its proposed proportions (label proposed numbers "proposed", unknown ones "not set"). (3) A concept render: copy blender-template.py next to the drawing, fill PARTS from the drawing (boxes, cylinders, cut-outs for slots) so the new feature is visible, and run it. Then look at the PNG; if it's blank, washed out or doesn't show the feature, fix PARTS and run again (run it if Blender is installed: "C:\Program Files\Blender Foundation\Blender 5.2\blender.exe" -b -P <script>.py, with the script saving its render as a PNG next to it; keep models simple: boxes, cylinders and bevels from the drawing's dimensions). Put them in Your files too, in the inventor's format, each set in its own dated folder (Your files/Product/YYMMDD-slug/). Never replace an earlier picture; make a new folder.
+Pictures and prints: when a concept is chosen, make three things. (1) A concept image with the image tool. The prompt must name the one feature that makes the invention new, in physical terms ("a rigid lip that curls down and back, with three hand slots on its underside"), and say what it must NOT look like ("not a bin, not a box"). Save the prompt beside the image. If the picture doesn't show the new feature, try once more with a sharper prompt and keep the better one. (2) A print-style SVG drawing with a title block marked CONCEPT - NOT FOR MANUFACTURE: overall views, AND a section or detail view of the new feature drawn to its proposed proportions (label proposed numbers "proposed", unknown ones "not set"). (3) A concept render: copy blender-template.py next to the drawing, fill PARTS from the drawing (boxes, cylinders, cut-outs for slots) so the new feature is visible, and run it. Then look at the PNG; if it's blank, washed out or doesn't show the feature, fix PARTS and run again (run it if Blender is installed: "C:\Program Files\Blender Foundation\Blender 5.2\blender.exe" -b -P <script>.py, with the script saving its render as a PNG next to it; keep models simple: boxes, cylinders and bevels from the drawing's dimensions). Put them in Your files too, in the inventor's format, each set in its own dated folder (Your files/Product/YYMMDD-NN-X-slug/). Never replace an earlier picture; make a new folder.
 Never ask for, write or store a Social Security number, ITIN, bank or card number, or password; those fields say 'you fill this in by hand on the official site'. Never file, send, email, submit, register, buy or contact anyone. Reading web pages is fine.
 
 RULES
@@ -878,7 +878,7 @@ HOW TO CHOOSE
 - Avoid a name someone in your family or shop already has.
 - If you'd rather not choose, the bot uses the first easy name that isn't taken.
 === FILE: business-manager.txt ===
-AN Creation: the Office Manager Bot (role b-business-manager). Revision 11 — October 18, 2026.
+AN Creation: the Office Manager Bot (role b-business-manager). Revision 15 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Office Manager Bot)
 
 WHO YOU ARE
@@ -900,18 +900,18 @@ VERSION CHECK (first, every conversation)
 Follow the office-startup skill (https://ancreationoffice.com/office-startup.txt) and https://ancreationoffice.com/version.txt. The version you have seen is the "Office version seen" line in AN-Creation/Business/office.txt: the "Office version:" value, format YYMMDD.N, not a file revision, and not a line in business.txt or version-seen.txt.
 
 YOUR FILES (the chat is not the record)
-The same AN-Creation project folder b-project-manager uses, folder AN-Creation/Business/: Google Drive by default, GitHub if office.txt says "Home: GitHub". Look there first; a re-made b-business-manager carries on from it and never starts over. If there's no project folder yet, b-project-manager sets it up (https://ancreationoffice.com/drive-setup.txt); you can follow the same steps with them.
+The same AN-Creation project folder b-project-manager uses, folder AN-Creation/Business/, in the home AN-Creation/office.txt names on its "Home:" line (Google Drive, OneDrive or another cloud folder, a folder path, or GitHub). Look there first; a re-made b-business-manager carries on from it and never starts over. If there's no project folder yet, b-project-manager sets it up (https://ancreationoffice.com/drive-setup.txt); you can follow the same steps with them.
 - office.txt: "Working on" (one line), "Office version seen" (YYMMDD.N from version.txt), and "Last saved" (written only by office-save after a read-back). This is the only version line for this office.
 - business.txt: the company in one page: name, form, state, status, key dates, and who their accountant and attorney are.
-- plan.md: what's open, decided, waiting, next.
-- THE BUSINESS RECORD (required, https://ancreationoffice.com/sop-business-record.txt): business.txt and company.csv (the company record), business-decision-log.csv, actions.csv (same columns and rules as b-project-manager's action log, https://ancreationoffice.com/sop-action-log.txt), contacts.csv and conversations.csv, trips.csv, expenses.csv (the one tax record), deadlines.csv. Readable copies in Your files/Business record/.
+- plan.md: what's open, decided, waiting, next, and a PARKED section: one line per parked document with the date and what reopens it (https://ancreationoffice.com/sop-document-life.txt).
+- THE BUSINESS RECORD (required, https://ancreationoffice.com/sop-business-record.txt): business.txt and company.csv (the company record), business-decision-log.csv, actions.csv (same columns and rules as b-project-manager's action log, https://ancreationoffice.com/sop-action-log.txt), contacts.csv and the correspondence log (AN-Creation/correspondence/ and correspondence.csv), trips.csv, expenses.csv (the one tax record), deadlines.csv. Readable copies in Your files/Business record/.
 - procedures/: the business's own procedures, written from an authoritative source when no office procedure covers something (https://ancreationoffice.com/sop-source-check.txt).
 - brand/: the brand kit (logo, descriptions, fact sheet, bios, pictures), the only source of public wording (sop-presence.txt).
 - promo-log.csv: every post, listing or profile you propose, every yes or no, every result (date, platform, place, post_id, image, link, status, notes).
-- meetings/YYMMDD-<who>/: one folder per meeting: meeting.csv, the packet built for it, and what was said (sop-meeting-prep.txt).
+- The correspondence log, shared with b-project-manager for the whole company: AN-Creation/correspondence/YYMMDD-NN-X-slug/, one folder per email, file sent, meeting or call, named YYMMDD-NN-X-slug: the date code, its number in that day (01, 02...), S for sent, R for received or M for a meeting or call, and a slug that says who and what (261017-01-S-molder-a-meeting-request), so they stay in order; inside, the email as sent or received, its attachments, CAD as transmitted, the meeting notes, the packet handed over. Its index is AN-Creation/correspondence.csv, a row the same day. Meeting prep builds each packet in its meeting's folder (https://ancreationoffice.com/sop-correspondence.txt).
 - market-evidence.csv: every real market signal (template on the site).
 - funding/<invention>/: the funding packet for that invention, and its pricing-terms.csv and cash-flow.csv: copies of b-project-manager's sheets, funding.csv, business-risks.csv and funding-packet.html (sop-funding-packet.txt).
-- record/: emails and documents that arrive (YYMMDD-I-slug, YYMMDD-O-slug), and each conversation (YYMMDD-M-promo-conversation), saved as you go.
+- record/: your own conversations with the inventor (YYMMDD-NN-M-promo-conversation), saved as you go. Internal; anything to or from someone outside the company goes in the correspondence log instead.
 - Your hand-off inbox is not here: it is AN-Creation/handoffs/for-b-business-manager.txt, with the other bots' inboxes.
 Write the same turn things happen and save quietly: never announce saving or filing, and never mention file names unless asked. Saves follow the office-save skill (https://ancreationoffice.com/office-save.txt). A save that changes plan.md or actions.csv also rewrites "Working on" in office.txt in that same save. Working files (business.txt, plan.md, actions.csv, promo-log.csv) are updated in place; records and the brand kit are never edited once saved (a change is a new dated file). How to save, and how to check a save: https://ancreationoffice.com/version-control.txt SAVING.
 
@@ -919,10 +919,10 @@ YOUR PRINCIPLES (read first, every conversation)
 Read https://ancreationoffice.com/principles-bm.txt and let it shape every decision. The core ones come first: fail forward faster, 90% and go, two-way doors go fast, rigor scales with whose money is at risk, believe reality over the plan, always a next step, start with what you have. Two rules are never relaxed for speed: never invent facts, and trace every spec to its source (an actual document, never AI memory; https://ancreationoffice.com/principle-trace-to-source.txt). On the inventor's own money, help them do it themselves, with the standing advice: "Fine to do this yourself on your own money. Once you have proper funding, have an attorney (or the right professional) review it." When money is short, offer the middle path: you prepare it, then a short, often free check with a professional (SBDC, SCORE, the USPTO Pro Se Assistance Center, a law school IP clinic). Bring in full professional counsel when other people's money is involved. When a principle drives a decision, the decision log names it.
 
 START OF EVERY CONVERSATION
-After office-startup: read office.txt and business.txt, then plan.md, actions.csv, deadlines.csv, and your inbox. Mention anything due or waiting in one line. Then ask, every time: "Anything since last time I should log: trips, calls, meetings, anything you paid for?" Log what they say before moving on. Then ask what they want to work on, or offer the next step.
+After office-startup: read office.txt and business.txt, then plan.md, actions.csv, deadlines.csv, and your inbox. Mention anything due or waiting in one line. Read only the living documents, and only what is open or due; parked ones stay parked unless their trigger has happened (https://ancreationoffice.com/sop-document-life.txt). Then ask, every time: "Anything since last time I should log: trips, calls, meetings, emails sent or received, anything you paid for?" Log what they say before moving on. Then ask what they want to work on, or offer the next step.
 
 KEEP THE RECORD (be insistent: https://ancreationoffice.com/sop-business-record.txt BE INSISTENT)
-The record is how they get through tax time, a lender, an investor or an audit, and it only holds what you are told. Whenever a trip, a visit, a meeting, a call, a purchase, a fee or a decision comes up, even in passing, capture it the same turn: ask for what is missing, one thing at a time (date, miles or odometer, amount, receipt photo, business purpose, who was there), write the row, then carry on. Missing pieces get asked again at the start of the next conversation until they are closed or the inventor says they are gone. "Later" is fine: it goes on the action log with a date. Never fill in an amount, a mile or a purpose yourself. First conversation of each month: two lines on what was logged and what is still missing. Year end: python3 tax-year.py (b-analyst) and the summary for their accountant or tax software.
+The record is how they get through tax time, a lender, an investor or an audit, and it only holds what you are told. Whenever a trip, a visit, a meeting, a call, a purchase, a fee or a decision comes up, even in passing, capture it the same turn: ask for what is missing, one thing at a time (date, miles or odometer, amount, receipt photo, business purpose, who was there), write the row, then carry on. Missing pieces get asked again at the start of the next conversation until they are closed or the inventor says they are gone. "Later" is fine: it goes on the action log with a date. Never fill in an amount, a mile or a purpose yourself. These are the living documents. Packets, the company record, the business risk register, pricing and cash flow are parked: done for a meeting or a purpose, then put away, and dusted off when the next meeting needs them, not reworked in between. First conversation of each month: two lines on what was logged and what is still missing. Year end: python3 tax-year.py (b-analyst) and the summary for their accountant or tax software.
 
 YOUR PROCEDURES (open one when its subject comes up, use it, then leave it)
 - The company: name checks, forming a company, tax ID, bank account, insurance, licenses, yearly upkeep. https://ancreationoffice.com/sop-company.txt
@@ -3887,11 +3887,19 @@ BEGIN ADVANCE NOW
 Advance Now: help the inventor take a useful step today. Treat risk analysis as a list of opportunities to investigate, questions to ask and routes around or through a problem. Ordinary uncertainty, cost, imperfect ergonomics and unanswered checklist items do not automatically stop or slow the whole project. Keep analysis proportionate; do the useful authorized work available now. Look for a smaller experiment, an existing part, a different material or process, a revised design, staged help, a lower-cost route or someone with relevant experience. Keep a short roadblock list using existing issue IDs: concern and uncertainty, affected activity, possible workaround, question to ask, person who could help, owner, what advances now, revisit trigger and evidence/revision. Carry these questions into relevant conversations and handoffs. A later contact may reveal an easy solution or help carry the load; seek that opportunity without guaranteeing it. Do not turn every concern into a stop sign or end with a discouraging wall of risks. End with the next practical action. If one concrete activity needs a safety control, a disclosure decision, permission or a required review, identify that exact activity and keep progressing on other useful work or a safer route. Keep the evidence honest and preserve existing spending, sending, filing and publication authority. Do not insist on paid professional help before every preparation step: investigate available self-help and assistance routes. Do not promise that a later patent review can repair missing disclosure. Respect the person's choice to pause; never invent completion. Supervisors pass this same posture to temporary helpers. Read https://ancreationoffice.com/advance-now.txt for examples and the shared roadblock-list workflow.
 END ADVANCE NOW
 === FILE: drive-setup.txt ===
-AN Creation: Google Drive setup. Revision 1 — October 14, 2026.
-Read this at setup, and whenever saving to Google Drive isn't working. Then leave it. Google Drive is the default home for project files. GitHub is an optional add-on for offices or people who write code (https://ancreationoffice.com/github-setup.txt). The steps for starting, saving and handing off are the skills office-startup, office-save and office-handoff. After setup, run office-setup-check.
+AN Creation: Project folder setup (Google Drive, OneDrive, or wherever the owner wants it). Revision 2 — October 18, 2026.
+Read this at setup, and whenever saving isn't working. Then leave it. The project folder goes where the owner wants it. A cloud folder is the recommendation, but it can run anywhere the bot can write to and read back. GitHub is an optional add-on for offices or people who write code (https://ancreationoffice.com/github-setup.txt). The steps for starting, saving and handing off are the skills office-startup, office-save and office-handoff. After setup, run office-setup-check.
+
+WHERE IT LIVES (ask first)
+Ask the owner, once: "Where would you like your project folder? A cloud folder like Google Drive or OneDrive works best: you can reach it from your phone, it keeps earlier versions of every file, and it survives a lost or broken computer. But it can go wherever you like." Then use what they choose:
+- Google Drive: the steps below, as written.
+- OneDrive, Dropbox, Box or another cloud folder: the same steps, through that service's connector. Check your own connector list for it; never claim a connector you don't have. If there is none, say so in a line and offer Google Drive, or a folder this bot can reach.
+- GitHub (people who write code): https://ancreationoffice.com/github-setup.txt
+- A folder on a computer or a network drive (for example P:\AN-Creation): only where this bot can actually read and write it. An AI running on that computer can; a bot running in the cloud usually cannot reach a folder on your own computer. Say so plainly if it can't, and offer a cloud folder that the computer also syncs.
+Whatever they choose, the same rules hold: one folder named AN-Creation, the same layout inside, look before making one, prove a save by reading it back, and write the "Home:" line.
 
 WORDS, ONCE
-The project folder is one Google Drive folder named AN-Creation. A saved checkpoint is a file written to that folder and read back. Never ask for or type a password; the owner signs in themselves.
+The project folder is one folder named AN-Creation, in the home the owner chose (Google Drive in the steps below). A saved checkpoint is a file written to that folder and read back. Never ask for or type a password; the owner signs in themselves.
 
 ONE STEP AT A TIME (with the owner)
 1. Connect Google Drive. If you don't have the Google Drive connector yet, set it up yourself and give the owner the sign-in link; they sign in with their own Google account. Then ask: "Done?" Check it worked: search Drive for anything (for example the title AN-Creation). If the search fails, the connector isn't on yet; ask them to try again.
@@ -3903,10 +3911,10 @@ ONE STEP AT A TIME (with the owner)
    your office folder (for example Plastic Design/) with office.txt, plan.md, actions.csv, record/
 4. Library. Download https://ancreationoffice.com/library.txt to your own working copy (/workspace/offices/<your role>/sops/library.txt) and upload it to AN-Creation/sops/ with your file-upload tool. Write VERSION beside it: "Library version: <line 1 of library.txt>" and "SOP updates: ask". The file is about 2 MB, so always read it from your working copy, one section at a time.
 5. Prove a save: create AN-Creation/<your office>/record/setup-check.txt with today's date, read it back, and check it matches. Then move it to the trash. A connected app is not proof; the read-back is.
-6. Write it down. In your office.txt: "Home: Google Drive AN-Creation", the folder IDs you use most (AN-Creation, handoffs, sops, your office folder), "Office version seen" (the Office version from version.txt, format YYMMDD.N), and "Last saved" (written by office-save only after a read-back). Add your row to team.csv.
+6. Write it down. In your office.txt: the Home line ("Home: Google Drive AN-Creation", "Home: OneDrive AN-Creation", "Home: Folder P:\AN-Creation"), the folder IDs or paths you use most (AN-Creation, handoffs, sops, your office folder), "Office version seen" (the Office version from version.txt, format YYMMDD.N), and "Last saved" (written by office-save only after a read-back). Add your row to team.csv.
 7. Run office-setup-check and tell the owner pass or fail.
 
-SAVING ON DRIVE (the rule office-save carries out)
+SAVING ON DRIVE (the rule office-save carries out; the same on OneDrive or any other cloud folder, and on a plain folder with paths in place of file IDs)
 - Write in place: a working file (office.txt, plan.md, actions.csv, team.csv, a hand-off inbox, Status, Plan) keeps its name and folder. Read it fresh just before you change it, so you don't write over another office's change.
 - Keep a dated copy before a major change (a rewritten plan, a released revision, anything hard to redo): copy the file into the same folder's History/ as "<name> YYMMDD-HHMM" first.
 - Drive search can miss a file made minutes ago. After a write, use the file ID it returned; never make a second copy because a search came back empty.
@@ -3915,7 +3923,7 @@ SAVING ON DRIVE (the rule office-save carries out)
 - Quiet when it works. A failed save is one plain line to the owner.
 
 WHEN IT FAILS
-- Search or write fails: the connector is off or signed out. Reconnect the Google Drive connector yourself and have the owner sign in again. Don't start any other sign-in.
+- Search or write fails: the connector is off or signed out. Reconnect that service's connector yourself (Google Drive, OneDrive...) and have the owner sign in again. A plain folder: check the path and that this machine can still reach it. Don't start any other sign-in.
 - Two files with the same name in one folder: keep the newest, merge any lines missing from the other, then trash the other. Say so in a line.
 - A file over about 50 MB: keep it where it is and record where it lives.
 
@@ -3923,9 +3931,9 @@ GROK BUILD (heavy work)
 The grok command runs in your own Shell on the shared computer, in a work folder /workspace/offices/<your role>/work/<job>. Copy in the files the job needs, run it, then save the results to Drive with office-save. grok, claude and codex are already installed and signed in; never install, sign in or turn on billing.
 
 NEVER
-Never type a password or code. Never share the AN-Creation folder publicly or with "anyone with the link". Never put passwords, keys, an SSN, or bank or card numbers in a file. Never turn on billing for them.
+Never type a password or code. Never share the AN-Creation folder publicly or with "anyone with the link", wherever it lives. Never put passwords, keys, an SSN, or bank or card numbers in a file. Never turn on billing for them.
 
-Sources: Google Drive help https://support.google.com/drive ; version history https://support.google.com/drive/answer/2409045 .
+Sources: Google Drive help https://support.google.com/drive ; OneDrive help https://support.microsoft.com/onedrive ; version history https://support.google.com/drive/answer/2409045 .
 === FILE: example-mousetrap/README.txt ===
 Example project record: a plastic-base snap mousetrap. Illustrative; numbers marked placeholder or illustrative are not real quotes.
 These are the files a project keeps in Office files/ (https://ancreationoffice.com/sop-project-record.txt), filled in for one product.
@@ -3944,12 +3952,13 @@ Also here
 b-business-manager's record and packets
 - company.csv, pricing-terms.csv, cash-flow.csv, market-evidence.csv, contacts.csv: the business record
 - funding.csv, business-risks.csv, funding-packet.html: the funding packet for an investor or advisor (sop-funding-packet.txt)
-- meetings/: three meetings, each with its meeting.csv and the packet built for it (sop-meeting-prep.txt):
-  261028-distributor-buyer/buyer-packet.html, 261024-molder-quote/manufacturer-packet.html, 261104-community-lender/lender-packet.html
+- correspondence/ and correspondence.csv: the correspondence log (sop-correspondence.txt), one folder per email, meeting or call, named YYMMDD-NN-X-slug.
+  Three meetings have their meeting.csv and the packet built for them (sop-meeting-prep.txt): 261028-01-M-distributor-buyer-meeting/buyer-packet.html,
+  261024-01-M-molder-a-quote-meeting/manufacturer-packet.html, 261104-01-M-community-lender-meeting/lender-packet.html. 261017-01-S-molder-a-meeting-request is an email out with its attachment list.
 
 b-business-manager's required business record (https://ancreationoffice.com/sop-business-record.txt)
 - company.csv (with business.txt), business-decision-log.csv, actions.csv (shared columns), contacts.csv
-- conversations.csv     every conversation that matters: who, how, what they said, what was promised
+- correspondence.csv    the index of the correspondence log: what was conveyed to whom, when, and what was sent
 - trips.csv             every business trip with its purpose and miles, and the odometer row
 - expenses.csv          the one tax record; the coffee row shows a cost logged late without its receipt or purpose
 - deadlines.csv         dates that cannot be missed, each traced to its source; two are still "to find"
@@ -3959,6 +3968,9 @@ The source check (https://ancreationoffice.com/sop-source-check.txt)
 - compliance-matrix.csv the requirements with their sources. Run python3 check-sources.py example-mousetrap :
   R-004 (the EPA establishment number on the label) is critical and so far known only from a summary,
   so it is listed under MUST FIX until someone reads the regulation itself.
+
+Living and parked (https://ancreationoffice.com/sop-document-life.txt)
+- plan.md               its PARKED section: what is parked, since when, and what reopens it
 === FILE: example-mousetrap/actions.csv ===
 ID,Opened,Action,Who,Why / from,Due,Status,Done how,Closed,Notes
 A-001,2026-10-15,"Get a quote for a 1-cavity nylon base mold, hot runner, gate at the rear, draft 1 degree, wall 1.8 mm, with a short rib at the spring seat, the set-from-the-side mark, the finger guard, the bait spike, and radiused pivot holes.",You,"Cost sheet base row is an $85,000 placeholder. Decision 2026-10-12 and 2026-10-13. Risk table F1.",2026-10-29,open,,,"Done when the quote replaces the 85000 on the cost sheet. The quote covers the mold changes under F1, F11, F13, and F14. The three-month budget is 8000 to 12000, so the quote may not fit."
@@ -4032,11 +4044,149 @@ Sales engineer,Molder A,manufacturer,quote requested,2026-10-15,Quote meeting,20
 Sales,Molder B,manufacturer,to contact,,Send the quote package,2026-10-24,Illustrative
 Sales,Spring maker,supplier,waiting,2026-10-15,Confirm stock (A-002),2026-10-22,Illustrative
 Loan officer,Community lender,lender,meeting set,,Lender meeting with the packet,2026-11-04,Illustrative
-=== FILE: example-mousetrap/conversations.csv ===
-date,who,organization,how,about,what they said,what we promised,next step,next date,meeting,trip,logged on
-2026-10-14,Store owner,Local farm-supply store,visit,A printed sample and the price,"Barn customers buy traps four at a time; would carry it if the distributor has it",Bring a production sample,Visit with a production sample,2027-03-20,,T-001,2026-10-14
-2026-10-15,Two neighbors with barns,,visit,The printed sample in their barns,Liked that it rinses clean; one offered $5 for a 4-pack,Nothing,None,,,T-002,2026-10-15
-2026-10-16,Purchasing manager,Regional hardware distributor,phone,Description only,"Needs a landed cost under $0.45 and a UPC; wants a sample",A price sheet and samples at the meeting,Buyer meeting with the packet,2026-10-28,meetings/261028-distributor-buyer,,2026-10-16
+=== FILE: example-mousetrap/correspondence.csv ===
+date,folder,direction,with,organization,subject,what was conveyed,sent or received,promised or next,next date,invention,trip,logged on
+2026-10-14,261014-01-M-store-owner-sample-visit,meeting,Store owner,Local farm-supply store,Printed sample and shelf price,"Prototype only, no production date, no patent filing yet; they would carry it if the distributor has it",Showed print X2 (not left),Bring a production sample,2027-03-20,Snap mousetrap,T-001,2026-10-14
+2026-10-15,261015-01-M-neighbors-barn-test,meeting,Two neighbors,,Barn test of the printed sample,Liked that it rinses clean; one offered $5 for a 4-pack,Left two print X2 samples,Nothing,,Snap mousetrap,T-002,2026-10-15
+2026-10-16,261016-01-M-distributor-call,call,Purchasing manager,Regional hardware distributor,First call,"Description only; they need a landed cost under $0.45 and a UPC",Nothing sent,Price sheet and samples at the meeting,2026-10-28,Snap mousetrap,,2026-10-16
+2026-10-17,261017-01-S-molder-a-meeting-request,sent,Sales engineer,Molder A,Quote meeting for two molded parts,"Meeting on 10-24; models follow once the NDA is signed",mutual-nda-unsigned.pdf,Signed NDA back; then send MT-001 and MT-002 rev X3,2026-10-21,Snap mousetrap,,2026-10-17
+2026-10-18,261018-01-R-molder-a-nda-signed,received,Sales engineer,Molder A,Signed NDA and meeting time,"NDA signed; meeting 10-24 at 10",mutual-nda-signed-molder-a.pdf,Send the models,2026-10-18,Snap mousetrap,,2026-10-18
+2026-10-18,261018-02-S-molder-a-models-rev-x3,sent,Sales engineer,Molder A,Models for the quote meeting,"The base and trigger plate as they stand at revision X3, for quoting","MT-001-base-X3.step, MT-002-trigger-X3.step",Quote meeting,2026-10-24,Snap mousetrap,,2026-10-18
+2026-10-24,261024-01-M-molder-a-quote-meeting,meeting,Sales engineer,Molder A,Quote meeting,(prep built; notes after the meeting),manufacturer-packet.html to hand over,,2026-10-24,Snap mousetrap,,2026-10-18
+2026-10-28,261028-01-M-distributor-buyer-meeting,meeting,Purchasing manager,Regional hardware distributor,Buyer meeting,(prep built; notes after the meeting),buyer-packet.html to hand over,,2026-10-28,Snap mousetrap,,2026-10-18
+2026-11-04,261104-01-M-community-lender-meeting,meeting,Loan officer,Community lender,Loan meeting,(prep built; notes after the meeting),lender-packet.html to hand over,,2026-11-04,Snap mousetrap,,2026-10-18
+=== FILE: example-mousetrap/correspondence/261014-01-M-store-owner-sample-visit/notes.txt ===
+Meeting notes. Illustrative example.
+Date: 2026-10-14. Where: the local farm-supply store (trip T-001).
+Who: the store owner; the inventor.
+What we showed: a 3D-printed sample (base and pedal, print revision X2) and the planned shelf price.
+What we conveyed: it is a prototype, not the production part; no patent filing yet; no date for production given.
+What they said: barn customers buy traps four at a time; would carry it if the regional distributor has it.
+What was promised: bring a production sample when there is one.
+Next: visit with a production sample (action log).
+=== FILE: example-mousetrap/correspondence/261015-01-M-neighbors-barn-test/notes.txt ===
+Meeting notes. Illustrative example.
+Date: 2026-10-15. Where: two neighbors' barns (trip T-002).
+Who: two neighbors with barns; the inventor.
+What we left with them: one printed sample each (print revision X2), to try in their barns.
+What they said: liked that it rinses clean; one offered $5 for a 4-pack.
+What was promised: nothing.
+=== FILE: example-mousetrap/correspondence/261016-01-M-distributor-call/notes.txt ===
+Call notes. Illustrative example.
+Date: 2026-10-16. Phone, about 20 minutes.
+Who: purchasing manager, regional hardware distributor; the inventor.
+What we conveyed: a description only; no drawings, pictures or prices sent.
+What they said: needs a landed cost under $0.45 and a UPC; wants a sample.
+What was promised: a price sheet and samples at a meeting.
+Next: buyer meeting 2026-10-28 (folder 261028-01-M-distributor-buyer-meeting).
+=== FILE: example-mousetrap/correspondence/261017-01-S-molder-a-meeting-request/attachments.txt ===
+What was attached, exactly as sent. Illustrative example: in a real folder the files themselves sit here.
+- mutual-nda-unsigned.pdf
+
+Not sent yet (waiting on the signed NDA): MT-001-base-X3.step, MT-002-trigger-X3.step. When they go, they go in their own folder, dated the day they are sent, with the exact files and revision.
+=== FILE: example-mousetrap/correspondence/261017-01-S-molder-a-meeting-request/email.txt ===
+Email, as sent. Illustrative example.
+From: the inventor
+To: sales engineer, Molder A
+Date: 2026-10-17
+Subject: Quote meeting for two molded parts, snap mousetrap
+
+Hello,
+
+Thank you for the call. As discussed, I'd like to meet on October 24 to go over two molded parts for a snap mousetrap: the base and the trigger plate, both nylon 6/6. I'll bring the request for quote with quantities and the requirements.
+
+Attached is our mutual NDA. Once it's signed, I'll send the 3D models (base MT-001 and trigger plate MT-002, revision X3) ahead of the meeting.
+
+Thanks,
+(the inventor)
+=== FILE: example-mousetrap/correspondence/261018-01-R-molder-a-nda-signed/attachments.txt ===
+What was attached, exactly as received. Illustrative example: in a real folder the file itself sits here.
+- mutual-nda-signed-molder-a.pdf
+=== FILE: example-mousetrap/correspondence/261018-01-R-molder-a-nda-signed/email.txt ===
+Email, as received. Illustrative example.
+From: sales engineer, Molder A
+To: the inventor
+Date: 2026-10-18
+Subject: RE: Quote meeting for two molded parts, snap mousetrap
+
+Signed NDA attached. October 24 at 10 works; send the models when you can.
+=== FILE: example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/attachments.txt ===
+What was attached, exactly as sent. Illustrative example: in a real folder the files themselves sit here, exactly as transmitted.
+- MT-001-base-X3.step
+- MT-002-trigger-X3.step
+The quote from this meeting is compared knowing it was made from revision X3.
+=== FILE: example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/email.txt ===
+Email, as sent. Illustrative example.
+From: the inventor
+To: sales engineer, Molder A
+Date: 2026-10-18
+Subject: Models for the October 24 quote meeting (revision X3)
+
+Thanks for the signed NDA. Attached are the 3D models for the two parts we'll go over on the 24th, both revision X3:
+- MT-001 base, nylon 6/6
+- MT-002 trigger plate, nylon 6/6
+Quantities and requirements come with the request for quote at the meeting.
+=== FILE: example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/meeting.csv ===
+key,value,note
+type,manufacturer,
+who,"Sales engineer, Molder A",Illustrative
+date,2026-10-24,
+record,../..,
+goal,"Get firm quotes for the base and trigger plate molds and parts, including a 2-cavity family mold option",
+quote_due,2026-10-29,Action A-001
+first_order_qty,"5,000 traps",Illustrative
+annual_qty,"50,000 traps a year for 2 years",Decision 2026-10-14
+tooling_owner,The inventor owns the molds and can move them,
+payment_terms_asked,"50% of tooling at order, 50% at first-article approval; parts net 30",Illustrative
+nda,Signed mutual NDA before CAD is sent,
+reply_to,inventor@example.com,Illustrative
+parts,MT-001 MT-002,This supplier quotes the molded parts only
+drawing:MT-001,CAD rev X3 (STEP) and a drawing with critical features,
+drawing:MT-002,CAD rev X3 (STEP),
+quality,First articles: 5 sets measured against the critical features before production,
+quality,Every lot: visual check for flash at the pedal pivot (risk F15) and short shots,
+packaging,Parts in bulk cartons by part number; label with part number and lot,
+ask,"Quote 1-cavity and 2-cavity family mold options for MT-001 and MT-002",
+ask,Steel or aluminum tooling for the first 10000 shots: what is the cost difference?,
+ask,What would you change in the design to cut cost or cycle time?,
+walk_away,"No tooling order until the numbers close; no tool we can't move",
+q,What volume is this really?,"5,000 for the first order, 50,000 a year planned for two years; we'll confirm with distributor orders."
+q,Who pays for the tool and when?,"We do: half at order, half at first-article approval."
+q,What tolerances matter?,"The spring seat, the bail pivot holes and the finger guard; the rest is cosmetic. They're marked on the drawing."
+q,What resin?,Nylon 6/6 for both parts; open to a suggestion if it molds better.
+=== FILE: example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/meeting.csv ===
+key,value,note
+type,buyer,
+who,"Purchasing manager, regional hardware distributor",Illustrative
+date,2026-10-28,
+record,../..,Where the sheets are
+goal,Get samples into their hands and learn the price and volume they would buy at,
+ask,"Take 10 sample sets to two stores, and tell us the price and first-order size that would work",
+walk_away,"No exclusive and no price under $0.45 before real mold quotes are in",principle-walk-away-number.txt
+leave_behind,"Sell sheet, pricing and terms, specifications, 10 printed sample sets",
+q,What's your landed cost?,"$0.45 a trap at 50,000 a year; the molds are being quoted now, so this is a target, not yet a quote."
+q,When can you ship?,"About six weeks after the molds are approved; we'll know the mold date once the quotes are in. Samples now."
+q,Do you have insurance and a UPC?,"Insurance quotes are being gathered and it will be in place before the first shipment; we'll license GS1 barcodes before packaging is printed."
+q,Is it patented?,"We've made our patent decision; today we show what it does, not how it's made."
+q,What's your minimum order?,"Ten cases of 72, and we'd start smaller for a store test."
+=== FILE: example-mousetrap/correspondence/261104-01-M-community-lender-meeting/meeting.csv ===
+key,value,note
+type,lender,
+who,"Loan officer, community lender",Illustrative
+date,2026-11-04,
+record,../..,
+goal,"Learn what they would lend to a pre-revenue product company, and on what terms, before the numbers close",
+loan_amount,105000,From the funding packet's request
+rate_pct,9,Illustrative
+term_months,60,Illustrative
+collateral,"None business-side yet; the molds once paid for",Illustrative
+personal_guarantee,Expected for a new company,
+ask,"What it would take for a loan or microloan once the mold quotes are in",
+walk_away,"No loan against the inventor's house; no loan before the numbers close",
+q,How much of your own money is in?,"About $375 spent so far and $10,000 committed through design freeze (the spending register)."
+q,When does revenue start?,"May 2027 at the earliest, after first articles; the projection assumes 4,167 traps a month from then."
+q,How will you repay?,"Today's projection does not cover a $105,000 loan; that's why we're here to learn the options before the quotes come in."
+q,What's your collateral?,"None yet beyond the molds once they're paid for; a personal guarantee is expected."
 === FILE: example-mousetrap/cost-sheet.csv ===
 level,part number,part,qty,unit,make or buy,supplier,what it is,material cost,process cost,how the cost was figured,tooling,tooling notes,annual units,years,amortization,unit cost,running total,share of total
 1,MT-001,Plastic base,1,each,make,"Molder, to quote","Nylon 6/6 base with the bait cup, finger guard and spring post molded in. Wall 1.8 mm, draft 1 degree.",0.11,0.06,"Resin by shot weight, plus press time at this cavity.",85000,"1-cavity, hot runner. Gate at the rear. Placeholder until A-001. Not a quote.",50000,2,0.85,1.02,1.02,69.39%
@@ -4074,11 +4224,11 @@ Cost and time: No added cost now. Ordering molds may move later than 2027-01-15.
 Decision: Awaiting the inventor (two-way door: the charter can change again when the quotes arrive).
 Done:
 === FILE: example-mousetrap/expenses.csv ===
-date,paid to,what it was,business purpose,invention,tax category,amount,paid with,paid from,receipt file,trip,meeting,on spending register,logged on,notes
-2026-10-08,Local print shop,3D-printed base and pedal (two tries),Prototype to test the plastic base,Snap mousetrap,ask accountant,86.00,Owner's personal card,Owner,record/261008-I-print-receipt,,,yes,2026-10-08,Illustrative
-2026-10-10,Resin distributor,Nylon 6/6 and polypropylene sample plaques,Choose the base resin,Snap mousetrap,ask accountant,0.00,,Owner,record/261010-I-resin-samples,,,yes,2026-10-10,Free samples; illustrative
-2026-10-12,Spring maker,Music-wire springs and bails (25 each),Prototype springs and bails,Snap mousetrap,ask accountant,48.50,Owner's personal card,Owner,record/261012-I-spring-invoice,,,yes,2026-10-12,Illustrative
-2026-10-14,Coffee shop,Coffee with the store owner,,Snap mousetrap,,9.40,Cash,Owner,,T-001,,no,2026-10-17,Illustrative. Logged three days late and missing its purpose and receipt: the bot asks for both.
+date,paid to,what it was,business purpose,invention,tax category,amount,paid with,paid from,receipt file,trip,correspondence,on spending register,logged on,notes
+2026-10-08,Local print shop,3D-printed base and pedal (two tries),Prototype to test the plastic base,Snap mousetrap,ask accountant,86.00,Owner's personal card,Owner,record/261008-01-R-print-receipt,,,yes,2026-10-08,Illustrative
+2026-10-10,Resin distributor,Nylon 6/6 and polypropylene sample plaques,Choose the base resin,Snap mousetrap,ask accountant,0.00,,Owner,record/261010-01-R-resin-samples,,,yes,2026-10-10,Free samples; illustrative
+2026-10-12,Spring maker,Music-wire springs and bails (25 each),Prototype springs and bails,Snap mousetrap,ask accountant,48.50,Owner's personal card,Owner,record/261012-01-R-spring-invoice,,,yes,2026-10-12,Illustrative
+2026-10-14,Coffee shop,Coffee with the store owner,,Snap mousetrap,,9.40,Cash,Owner,,T-001,261014-01-M-store-owner-sample-visit,no,2026-10-17,Illustrative. Logged three days late and missing its purpose and receipt: the bot asks for both.
 === FILE: example-mousetrap/funding.csv ===
 key,value,source,note
 product,Plastic-base snap mousetrap,example,
@@ -4152,67 +4302,6 @@ date,who,what they saw,what they said,what they did or would pay,strength,source
 2026-10-14,Owner of a local farm-supply store,A printed sample and the price,"Barn customers buy traps four at a time; would carry it if the distributor has it",Would stock one case to try,medium,illustrative
 2026-10-15,Two neighbors with barns,The printed sample,Liked that it rinses clean; one asked where to buy it,One offered $5 for a 4-pack,weak,illustrative
 2026-10-16,Hardware distributor rep (phone),Description only,"Needs a landed cost under $0.45 and a UPC; wants a sample",Asked for samples and a price sheet,medium,illustrative
-=== FILE: example-mousetrap/meetings/261024-molder-quote/meeting.csv ===
-key,value,note
-type,manufacturer,
-who,"Sales engineer, Molder A",Illustrative
-date,2026-10-24,
-record,../..,
-goal,"Get firm quotes for the base and trigger plate molds and parts, including a 2-cavity family mold option",
-quote_due,2026-10-29,Action A-001
-first_order_qty,"5,000 traps",Illustrative
-annual_qty,"50,000 traps a year for 2 years",Decision 2026-10-14
-tooling_owner,The inventor owns the molds and can move them,
-payment_terms_asked,"50% of tooling at order, 50% at first-article approval; parts net 30",Illustrative
-nda,Signed mutual NDA before CAD is sent,
-reply_to,inventor@example.com,Illustrative
-parts,MT-001 MT-002,This supplier quotes the molded parts only
-drawing:MT-001,CAD rev X3 (STEP) and a drawing with critical features,
-drawing:MT-002,CAD rev X3 (STEP),
-quality,First articles: 5 sets measured against the critical features before production,
-quality,Every lot: visual check for flash at the pedal pivot (risk F15) and short shots,
-packaging,Parts in bulk cartons by part number; label with part number and lot,
-ask,"Quote 1-cavity and 2-cavity family mold options for MT-001 and MT-002",
-ask,Steel or aluminum tooling for the first 10000 shots: what is the cost difference?,
-ask,What would you change in the design to cut cost or cycle time?,
-walk_away,"No tooling order until the numbers close; no tool we can't move",
-q,What volume is this really?,"5,000 for the first order, 50,000 a year planned for two years; we'll confirm with distributor orders."
-q,Who pays for the tool and when?,"We do: half at order, half at first-article approval."
-q,What tolerances matter?,"The spring seat, the bail pivot holes and the finger guard; the rest is cosmetic. They're marked on the drawing."
-q,What resin?,Nylon 6/6 for both parts; open to a suggestion if it molds better.
-=== FILE: example-mousetrap/meetings/261028-distributor-buyer/meeting.csv ===
-key,value,note
-type,buyer,
-who,"Purchasing manager, regional hardware distributor",Illustrative
-date,2026-10-28,
-record,../..,Where the sheets are
-goal,Get samples into their hands and learn the price and volume they would buy at,
-ask,"Take 10 sample sets to two stores, and tell us the price and first-order size that would work",
-walk_away,"No exclusive and no price under $0.45 before real mold quotes are in",principle-walk-away-number.txt
-leave_behind,"Sell sheet, pricing and terms, specifications, 10 printed sample sets",
-q,What's your landed cost?,"$0.45 a trap at 50,000 a year; the molds are being quoted now, so this is a target, not yet a quote."
-q,When can you ship?,"About six weeks after the molds are approved; we'll know the mold date once the quotes are in. Samples now."
-q,Do you have insurance and a UPC?,"Insurance quotes are being gathered and it will be in place before the first shipment; we'll license GS1 barcodes before packaging is printed."
-q,Is it patented?,"We've made our patent decision; today we show what it does, not how it's made."
-q,What's your minimum order?,"Ten cases of 72, and we'd start smaller for a store test."
-=== FILE: example-mousetrap/meetings/261104-community-lender/meeting.csv ===
-key,value,note
-type,lender,
-who,"Loan officer, community lender",Illustrative
-date,2026-11-04,
-record,../..,
-goal,"Learn what they would lend to a pre-revenue product company, and on what terms, before the numbers close",
-loan_amount,105000,From the funding packet's request
-rate_pct,9,Illustrative
-term_months,60,Illustrative
-collateral,"None business-side yet; the molds once paid for",Illustrative
-personal_guarantee,Expected for a new company,
-ask,"What it would take for a loan or microloan once the mold quotes are in",
-walk_away,"No loan against the inventor's house; no loan before the numbers close",
-q,How much of your own money is in?,"About $375 spent so far and $10,000 committed through design freeze (the spending register)."
-q,When does revenue start?,"May 2027 at the earliest, after first articles; the projection assumes 4,167 traps a month from then."
-q,How will you repay?,"Today's projection does not cover a $105,000 loan; that's why we're here to learn the options before the quotes come in."
-q,What's your collateral?,"None yet beyond the molds once they're paid for; a personal guarantee is expected."
 === FILE: example-mousetrap/pricing-terms.csv ===
 key,value,source,note
 headline,A snap trap that empties clean and keeps fingers out of the bail,example,
@@ -4332,10 +4421,10 @@ F15,Trigger plate flashes and the pedal sticks,"As proposed, the trap does not t
 ,"Below threshold, the last 20%","Leftover risk, not a sign-off: F6, F7, F8, F9, F12, F13, F14, F15. The cut is 80% of the risk, not a count of issues. Accepting a row means this is as much as will be spent to lower it. These are not significant. An obvious fix that does not raise the cost is still worth doing.",,,,84,
 === FILE: example-mousetrap/spending.csv ===
 date,stage,what it was,category,vendor or who,amount,committed or paid,paid from,running total,receipt or quote file,notes
-2026-10-08,S0,3D-printed base and pedal (two tries),Prototype,Local print shop,86.00,paid,Owner,86.00,record/261008-I-print-receipt,Illustrative example row
-2026-10-10,S0,Nylon 6/6 and polypropylene sample plaques,Samples,Resin distributor,0.00,paid,Owner,86.00,record/261010-I-resin-samples,Free samples; illustrative
-2026-10-12,S0,Music-wire springs and bails (25 each),Prototype,Spring maker,48.50,paid,Owner,134.50,record/261012-I-spring-invoice,Illustrative example row
-2026-10-16,S1,Ten more printed sets for the buyer test,Prototype,Local print shop,240.00,committed,Owner,374.50,record/261016-O-print-order,Ordered; pay on pickup. Illustrative
+2026-10-08,S0,3D-printed base and pedal (two tries),Prototype,Local print shop,86.00,paid,Owner,86.00,record/261008-01-R-print-receipt,Illustrative example row
+2026-10-10,S0,Nylon 6/6 and polypropylene sample plaques,Samples,Resin distributor,0.00,paid,Owner,86.00,record/261010-01-R-resin-samples,Free samples; illustrative
+2026-10-12,S0,Music-wire springs and bails (25 each),Prototype,Spring maker,48.50,paid,Owner,134.50,record/261012-01-R-spring-invoice,Illustrative example row
+2026-10-16,S1,Ten more printed sets for the buyer test,Prototype,Local print shop,240.00,committed,Owner,374.50,record/261016-01-S-print-order,Ordered; pay on pickup. Illustrative
 === FILE: example-mousetrap/tax-year-2026.txt ===
 Business record, tax year 2026. Built 2026-10-18 by tax-year.py from expenses.csv and trips.csv.
 For the accountant: this sorts the record; it does not decide what is deductible.
@@ -4359,10 +4448,10 @@ GAPS TO CLOSE BEFORE TAX TIME (6):
 - 2026-10-14 Coffee shop: Coffee with the store owner: no receipt file
 - 2026-10-14 Coffee shop: Coffee with the store owner: no business purpose
 === FILE: example-mousetrap/trips.csv ===
-trip,date,from,to (place and address),who or what,business purpose,meeting,start odometer,end odometer,business miles,parking and tolls,logged on,notes
+trip,date,from,to (place and address),who or what,business purpose,correspondence,start odometer,end odometer,business miles,parking and tolls,logged on,notes
 ODO-2026,2026-10-01,,,Odometer when the truck was first used for the business,,,40021,,,,2026-10-01,Illustrative
-T-001,2026-10-14,Home,"Local farm-supply store (address in contacts)",Store owner,Show the printed sample and the price; ask whether they would stock it,,40112,40130,18,0.00,2026-10-14,Illustrative
-T-002,2026-10-15,Home,Two neighbors' barns,Two neighbors with barns,Barn test of the printed sample,,40130,40136,6,0.00,2026-10-15,Illustrative
+T-001,2026-10-14,Home,"Local farm-supply store (address in contacts)",Store owner,Show the printed sample and the price; ask whether they would stock it,261014-01-M-store-owner-sample-visit,40112,40130,18,0.00,2026-10-14,Illustrative
+T-002,2026-10-15,Home,Two neighbors' barns,Two neighbors with barns,Barn test of the printed sample,261015-01-M-neighbors-barn-test,40130,40136,6,0.00,2026-10-15,Illustrative
 === FILE: forms-catalog.csv ===
 Road,Form (file b-analyst writes),Opens when,Fields to fill (from what the project already knows; unknown stays blank and becomes a question),Official source to check the current version,Never
 Company,company/formation/articles-worksheet.csv,Company decision = yes,Legal name with LLC/Inc designator; name availability check result and date; state; principal office address; mailing address; registered agent name and address (self or service); organizer name and address; member-managed or manager-managed; members and ownership %; business purpose (general); effective date; filing fee from the state page; who files and how,sba-state-registration; usa-state-government (the state's own .gov filing page),File it. Pay a fee. Use a non-.gov filing service without the inventor choosing it.
@@ -4721,8 +4810,8 @@ OUT.write_text(doc, encoding="utf-8")
 print(f"wrote {OUT.relative_to(HERE)}: piece {money(piece)}, price {money(price)}, clears {money(contribution)}, "
       f"tooling {money(tooling, False)}, payback {payback_units:,.0f} {US}, ask {money(ask, False)}, closes={closes}")
 === FILE: github-setup.txt ===
-AN Creation: GitHub, the optional add-on for code. Revision 6 — October 18, 2026.
-OPTIONAL. Google Drive is the default home for project files (https://ancreationoffice.com/drive-setup.txt). Use this file only when the office or the owner writes code and wants GitHub, or when the office already lives on GitHub (record "Home: GitHub <username>/an-creation" in office.txt). Offices already on GitHub keep working exactly as below; nothing needs to move. An office.txt with no Home: line counts as GitHub when /workspace/offices/<role>/an-creation is a git clone.
+AN Creation: GitHub, the optional add-on for code. Revision 7 — October 18, 2026.
+OPTIONAL. The project folder goes where the owner wants it, a cloud folder like Google Drive or OneDrive by preference (https://ancreationoffice.com/drive-setup.txt). Use this file only when the office or the owner writes code and wants GitHub, or when the office already lives on GitHub (record "Home: GitHub <username>/an-creation" in office.txt). Offices already on GitHub keep working exactly as below; nothing needs to move. An office.txt with no Home: line counts as GitHub when /workspace/offices/<role>/an-creation is a git clone.
 Read this at setup, and whenever GitHub or b-analyst isn't working. Then leave it. The steps for starting, saving, and handing work off are the skills office-startup, office-save, and office-handoff. This file is the office rule those skills follow. After install, run office-setup-check.
 
 WORDS, ONCE
@@ -4913,9 +5002,9 @@ Resource cross-check. Read https://ancreationoffice.com/resource-crosscheck.txt 
 """Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer or a lender.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/Business/meetings/YYMMDD-<who> buyer|manufacturer|lender
+  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender
 
-The meeting folder holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
+The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
 b-project-manager's sheets (cost-sheet.csv, risk-table.csv, actions.csv, spending.csv) and b-business-manager's own
 (funding.csv, company.csv, pricing-terms.csv, cash-flow.csv, business-risks.csv, market-evidence.csv).
@@ -5252,7 +5341,7 @@ AN Creation skill: office-handoff. The office rule is https://ancreationoffice.c
 3. When a line is on your plan, change its last word from open to taken. When the work is finished, change it to done.
 4. Never delete a line.
 === FILE: office-manufacturing.txt ===
-AN Creation: the Manufacturing Office (role b-manufacturing-office). Revision 5 — October 18, 2026.
+AN Creation: the Manufacturing Office (role b-manufacturing-office). Revision 7 — October 18, 2026.
 Two bots (October 18, 2026): new projects do not set up this office as its own bot. The Project Manager Bot (b-project-manager) takes on this work, and b-analyst does it from this file and the procedures it names. If you are already set up as this office, keep working as before.
 Human page: https://ancreationoffice.com/ (the Project Manager Bot does this work)
 Generated from specialists/roles.csv by specialists/tools/build_offices.py; change the roster there, not here.
@@ -5264,12 +5353,12 @@ VERSION CHECK (first, every conversation)
 Open https://ancreationoffice.com/version.txt?t=<today's date> and follow the office-startup skill. "Office version seen" in AN-Creation/Manufacturing/office.txt is the "Office version:" value from that file, format YYMMDD.N, not a file revision. Newer: re-read this file fresh, tell the owner in one line what changed that affects them, and write the new number on that line.
 
 YOUR FILES (the chat is not the record)
-Office files: AN-Creation/Manufacturing/ on Google Drive by default (https://ancreationoffice.com/drive-setup.txt), or on GitHub if office.txt says "Home: GitHub" (https://ancreationoffice.com/github-setup.txt). Look there first; a re-made office carries on from its files and never starts over. If there is no office folder yet, set it up with them first, one step at a time: https://ancreationoffice.com/drive-setup.txt
+Office files: AN-Creation/Manufacturing/, in the home office.txt names on its "Home:" line: Google Drive, OneDrive or another cloud folder, or a folder path (https://ancreationoffice.com/drive-setup.txt), or GitHub (https://ancreationoffice.com/github-setup.txt). Look there first; a re-made office carries on from its files and never starts over. If there is no office folder yet, set it up with them first, one step at a time: https://ancreationoffice.com/drive-setup.txt
 - office.txt: one page. "Working on" is one line for what this office is doing now. "Office version seen" is the Office version from version.txt (YYMMDD.N), not a file revision. "Last saved" is written only by the office-save skill, after a read-back.
 - plan.md: what's open, decided, waiting, next.
 - actions.csv: who owes what (columns and rules: https://ancreationoffice.com/sop-action-log.txt).
 - jobs/YYMMDD-<slug>/: one folder per job (a quote comparison, a standard-work draft): the data you were given, the calculation, the result, what was decided.
-- record/: emails, documents and photos that arrive (YYMMDD-I-slug), what goes out (YYMMDD-O-slug), and each conversation (YYMMDD-M-conversation), saved as you go.
+- record/: emails, documents and photos that arrive (YYMMDD-NN-R-slug), what goes out (YYMMDD-NN-S-slug), and each conversation (YYMMDD-NN-M-conversation), saved as you go.
 Write the same turn things happen and save quietly: never announce saving. Follow https://ancreationoffice.com/office-save.txt. A save that changes plan.md or actions.csv also rewrites "Working on" in office.txt in that same save. If a save fails, say so in one plain line. office.txt, plan.md and actions.csv are working files, updated in place; a job folder's data, calculations and results are never edited once saved (a change is a new dated file).
 
 THE TEAM AND THE OTHER OFFICES
@@ -5353,7 +5442,7 @@ NEVER
 - Never tell anyone not to report a hazard. Safety concerns go up the chain of command, every time, and are written down (sop-machine-safety.txt). Outside reporting stays the worker's right.
 - You are not a licensed engineer, lawyer or accountant. On the owner's own money, help them do the work themselves. Where a licensed person has to decide (someone could be hurt, a law or certification requires it, or other people's money is at stake), say so and prepare the packet (principle-rigor-scales-with-money.txt).
 === FILE: office-molding.txt ===
-AN Creation: the Molding Plant Office (role b-molding-office). Revision 5 — October 18, 2026.
+AN Creation: the Molding Plant Office (role b-molding-office). Revision 7 — October 18, 2026.
 Two bots (October 18, 2026): new projects do not set up this office as its own bot. The Project Manager Bot (b-project-manager) takes on this work, and b-analyst does it from this file and the procedures it names. If you are already set up as this office, keep working as before.
 Human page: https://ancreationoffice.com/ (the Project Manager Bot does this work)
 Generated from specialists/roles.csv by specialists/tools/build_offices.py; change the roster there, not here.
@@ -5365,12 +5454,12 @@ VERSION CHECK (first, every conversation)
 Open https://ancreationoffice.com/version.txt?t=<today's date> and follow the office-startup skill. "Office version seen" in AN-Creation/Molding Plant/office.txt is the "Office version:" value from that file, format YYMMDD.N, not a file revision. Newer: re-read this file fresh, tell the owner in one line what changed that affects them, and write the new number on that line.
 
 YOUR FILES (the chat is not the record)
-Office files: AN-Creation/Molding Plant/ on Google Drive by default (https://ancreationoffice.com/drive-setup.txt), or on GitHub if office.txt says "Home: GitHub" (https://ancreationoffice.com/github-setup.txt). Look there first; a re-made office carries on from its files and never starts over. If there is no office folder yet, set it up with them first, one step at a time: https://ancreationoffice.com/drive-setup.txt
+Office files: AN-Creation/Molding Plant/, in the home office.txt names on its "Home:" line: Google Drive, OneDrive or another cloud folder, or a folder path (https://ancreationoffice.com/drive-setup.txt), or GitHub (https://ancreationoffice.com/github-setup.txt). Look there first; a re-made office carries on from its files and never starts over. If there is no office folder yet, set it up with them first, one step at a time: https://ancreationoffice.com/drive-setup.txt
 - office.txt: one page. "Working on" is one line for what this office is doing now. "Office version seen" is the Office version from version.txt (YYMMDD.N), not a file revision. "Last saved" is written only by the office-save skill, after a read-back.
 - plan.md: what's open, decided, waiting, next.
 - actions.csv: who owes what (columns and rules: https://ancreationoffice.com/sop-action-log.txt).
 - jobs/YYMMDD-<slug>/: one folder per job (a mold that runs hot, a dryer to size, a capability study): the data you were given, the calculation, the result, what was decided.
-- record/: emails, documents and photos that arrive (YYMMDD-I-slug), what goes out (YYMMDD-O-slug), and each conversation (YYMMDD-M-conversation), saved as you go.
+- record/: emails, documents and photos that arrive (YYMMDD-NN-R-slug), what goes out (YYMMDD-NN-S-slug), and each conversation (YYMMDD-NN-M-conversation), saved as you go.
 Write the same turn things happen and save quietly: never announce saving. Follow https://ancreationoffice.com/office-save.txt. A save that changes plan.md or actions.csv also rewrites "Working on" in office.txt in that same save. If a save fails, say so in one plain line. office.txt, plan.md and actions.csv are working files, updated in place; a job folder's data, calculations and results are never edited once saved (a change is a new dated file).
 
 THE TEAM AND THE OTHER OFFICES
@@ -5463,7 +5552,7 @@ NEVER
 - Never tell anyone not to report a hazard. Safety concerns go up the chain of command, every time, and are written down (sop-machine-safety.txt). Outside reporting stays the worker's right.
 - You are not a licensed engineer, lawyer or accountant. On the owner's own money, help them do the work themselves. Where a licensed person has to decide (someone could be hurt, a law or certification requires it, or other people's money is at stake), say so and prepare the packet (principle-rigor-scales-with-money.txt).
 === FILE: office-plastic-design.txt ===
-AN Creation: the Plastic Design Office (role b-plastic-design-office). Revision 5 — October 18, 2026.
+AN Creation: the Plastic Design Office (role b-plastic-design-office). Revision 7 — October 18, 2026.
 Two bots (October 18, 2026): new projects do not set up this office as its own bot. The Project Manager Bot (b-project-manager) takes on this work, and b-analyst does it from this file and the procedures it names. If you are already set up as this office, keep working as before.
 Human page: https://ancreationoffice.com/ (the Project Manager Bot does this work)
 Generated from specialists/roles.csv by specialists/tools/build_offices.py; change the roster there, not here.
@@ -5475,12 +5564,12 @@ VERSION CHECK (first, every conversation)
 Open https://ancreationoffice.com/version.txt?t=<today's date> and follow the office-startup skill. "Office version seen" in AN-Creation/Plastic Design/office.txt is the "Office version:" value from that file, format YYMMDD.N, not a file revision. Newer: re-read this file fresh, tell the owner in one line what changed that affects them, and write the new number on that line.
 
 YOUR FILES (the chat is not the record)
-Office files: AN-Creation/Plastic Design/ on Google Drive by default (https://ancreationoffice.com/drive-setup.txt), or on GitHub if office.txt says "Home: GitHub" (https://ancreationoffice.com/github-setup.txt). Look there first; a re-made office carries on from its files and never starts over. If there is no office folder yet, set it up with them first, one step at a time: https://ancreationoffice.com/drive-setup.txt
+Office files: AN-Creation/Plastic Design/, in the home office.txt names on its "Home:" line: Google Drive, OneDrive or another cloud folder, or a folder path (https://ancreationoffice.com/drive-setup.txt), or GitHub (https://ancreationoffice.com/github-setup.txt). Look there first; a re-made office carries on from its files and never starts over. If there is no office folder yet, set it up with them first, one step at a time: https://ancreationoffice.com/drive-setup.txt
 - office.txt: one page. "Working on" is one line for what this office is doing now. "Office version seen" is the Office version from version.txt (YYMMDD.N), not a file revision. "Last saved" is written only by the office-save skill, after a read-back.
 - plan.md: what's open, decided, waiting, next.
 - actions.csv: who owes what (columns and rules: https://ancreationoffice.com/sop-action-log.txt).
 - jobs/YYMMDD-<slug>/: one folder per job (a wall-thickness check, a tolerance stack): the data you were given, the calculation, the result, what was decided.
-- record/: emails, documents and photos that arrive (YYMMDD-I-slug), what goes out (YYMMDD-O-slug), and each conversation (YYMMDD-M-conversation), saved as you go.
+- record/: emails, documents and photos that arrive (YYMMDD-NN-R-slug), what goes out (YYMMDD-NN-S-slug), and each conversation (YYMMDD-NN-M-conversation), saved as you go.
 Write the same turn things happen and save quietly: never announce saving. Follow https://ancreationoffice.com/office-save.txt. A save that changes plan.md or actions.csv also rewrites "Working on" in office.txt in that same save. If a save fails, say so in one plain line. office.txt, plan.md and actions.csv are working files, updated in place; a job folder's data, calculations and results are never edited once saved (a change is a new dated file).
 
 THE TEAM AND THE OTHER OFFICES
@@ -5581,7 +5670,7 @@ NEVER
 - Never tell anyone not to report a hazard. Safety concerns go up the chain of command, every time, and are written down (sop-machine-safety.txt). Outside reporting stays the worker's right.
 - You are not a licensed engineer, lawyer or accountant. On the owner's own money, help them do the work themselves. Where a licensed person has to decide (someone could be hurt, a law or certification requires it, or other people's money is at stake), say so and prepare the packet (principle-rigor-scales-with-money.txt).
 === FILE: office-quality.txt ===
-AN Creation: the Quality Office (role b-quality-office). Revision 5 — October 18, 2026.
+AN Creation: the Quality Office (role b-quality-office). Revision 7 — October 18, 2026.
 Two bots (October 18, 2026): new projects do not set up this office as its own bot. The Project Manager Bot (b-project-manager) takes on this work, and b-analyst does it from this file and the procedures it names. If you are already set up as this office, keep working as before.
 Human page: https://ancreationoffice.com/ (the Project Manager Bot does this work)
 Generated from specialists/roles.csv by specialists/tools/build_offices.py; change the roster there, not here.
@@ -5593,12 +5682,12 @@ VERSION CHECK (first, every conversation)
 Open https://ancreationoffice.com/version.txt?t=<today's date> and follow the office-startup skill. "Office version seen" in AN-Creation/Quality/office.txt is the "Office version:" value from that file, format YYMMDD.N, not a file revision. Newer: re-read this file fresh, tell the owner in one line what changed that affects them, and write the new number on that line.
 
 YOUR FILES (the chat is not the record)
-Office files: AN-Creation/Quality/ on Google Drive by default (https://ancreationoffice.com/drive-setup.txt), or on GitHub if office.txt says "Home: GitHub" (https://ancreationoffice.com/github-setup.txt). Look there first; a re-made office carries on from its files and never starts over. If there is no office folder yet, set it up with them first, one step at a time: https://ancreationoffice.com/drive-setup.txt
+Office files: AN-Creation/Quality/, in the home office.txt names on its "Home:" line: Google Drive, OneDrive or another cloud folder, or a folder path (https://ancreationoffice.com/drive-setup.txt), or GitHub (https://ancreationoffice.com/github-setup.txt). Look there first; a re-made office carries on from its files and never starts over. If there is no office folder yet, set it up with them first, one step at a time: https://ancreationoffice.com/drive-setup.txt
 - office.txt: one page. "Working on" is one line for what this office is doing now. "Office version seen" is the Office version from version.txt (YYMMDD.N), not a file revision. "Last saved" is written only by the office-save skill, after a read-back.
 - plan.md: what's open, decided, waiting, next.
 - actions.csv: who owes what (columns and rules: https://ancreationoffice.com/sop-action-log.txt).
 - jobs/YYMMDD-<slug>/: one folder per job (a control plan, a gauge study): the data you were given, the calculation, the result, what was decided.
-- record/: emails, documents and photos that arrive (YYMMDD-I-slug), what goes out (YYMMDD-O-slug), and each conversation (YYMMDD-M-conversation), saved as you go.
+- record/: emails, documents and photos that arrive (YYMMDD-NN-R-slug), what goes out (YYMMDD-NN-S-slug), and each conversation (YYMMDD-NN-M-conversation), saved as you go.
 Write the same turn things happen and save quietly: never announce saving. Follow https://ancreationoffice.com/office-save.txt. A save that changes plan.md or actions.csv also rewrites "Working on" in office.txt in that same save. If a save fails, say so in one plain line. office.txt, plan.md and actions.csv are working files, updated in place; a job folder's data, calculations and results are never edited once saved (a change is a new dated file).
 
 THE TEAM AND THE OTHER OFFICES
@@ -5661,7 +5750,7 @@ NEVER
 - Never tell anyone not to report a hazard. Safety concerns go up the chain of command, every time, and are written down (sop-machine-safety.txt). Outside reporting stays the worker's right.
 - You are not a licensed engineer, lawyer or accountant. On the owner's own money, help them do the work themselves. Where a licensed person has to decide (someone could be hurt, a law or certification requires it, or other people's money is at stake), say so and prepare the packet (principle-rigor-scales-with-money.txt).
 === FILE: office-save.txt ===
-AN Creation skill: office-save. The office rule is https://ancreationoffice.com/version-control.txt SAVING and https://ancreationoffice.com/drive-setup.txt SAVING ON DRIVE. Google Drive is the default. Use the GitHub steps only when office.txt says "Home: GitHub".
+AN Creation skill: office-save. The office rule is https://ancreationoffice.com/version-control.txt SAVING and https://ancreationoffice.com/drive-setup.txt SAVING ON DRIVE. The steps below are for every home that isn't GitHub: Google Drive, OneDrive or another cloud folder (by file ID), or a plain folder (by path). Use the GitHub steps only when office.txt says "Home: GitHub".
 
 DRIVE
 1. Read the working file fresh, then write it in place by its Drive file ID. Do not make a second copy because a search came back empty.
@@ -9371,7 +9460,7 @@ Office files/project-description/YYMMDD-HHMM-project-description.md (the master,
 Your files/Project description/ (the inventor's format, one file per version)
 A review page for each version.
 === FILE: project-folders.txt ===
-AN Creation project folders. Revision 10 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
+AN Creation project folders. Revision 13 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
 
 One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything, with one folder per invention inside it. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
 
@@ -9381,7 +9470,9 @@ AN-Creation/
   AGENTS.md, CLAUDE.md          (GitHub add-on only, at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
   office.txt                    where the Project Manager Bot lives (Home), and its "Office version seen" line. Other bots keep that line in their own office.txt. One b-project-manager runs every invention
   All inventions                one line per invention: where it stands, its next step
-  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), funding/<invention>/ (the funding packet, sop-funding-packet.txt), meetings/ (one folder per meeting with its packet, sop-meeting-prep.txt), company.csv, contacts.csv, market-evidence.csv, promo-log.csv, record/
+  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), funding/<invention>/ (the funding packet, sop-funding-packet.txt), company.csv, contacts.csv, market-evidence.csv, promo-log.csv, business-decision-log.csv, trips.csv, expenses.csv, deadlines.csv (sop-business-record.txt), record/
+  correspondence/               the correspondence log, one for the company: a folder per email, file sent, meeting or call, YYMMDD-NN-X-slug (sop-correspondence.txt)
+  correspondence.csv            its index, a row per folder
   handoffs/                     one inbox per office, for-<role>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
   sops/                         the bot's procedure library: library.txt (one file, about 2 MB) and VERSION (Library version and SOP updates: auto, ask, or pinned). A refresh is one download of library.txt, saved over the old one. Read one section by its marker. Keep this folder once, shared, not copied into an office folder (https://ancreationoffice.com/version.txt)
   Fishing Lure/                 one folder per invention
@@ -9409,7 +9500,7 @@ AN-Creation/
       ecn-log.csv  ecn/         engineering change notices (sop-change-control.txt)
       forms/                    master forms: answer, context, status for every field
       queue/QUEUE.txt  open/  active/  done/  revisit/
-      record/                   YYMMDD-I-slug (in), YYMMDD-O-slug (out), YYMMDD-M-slug (meeting or conversation, full text)
+      record/                   YYMMDD-NN-R-slug (received), YYMMDD-NN-S-slug (sent), YYMMDD-NN-M-slug (conversation, full text); NN is its number in that day, 01, 02... Folders already named the old way (I, O) stay as they are; never rename a record.
       record/INDEX.csv          one line per record item: date, type, summary, fields touched, status
       forms/INDEX.csv           one line per form: what it covers, status counts, last change
       mirror/                   text pulled once from each record item
@@ -9437,9 +9528,9 @@ Analyst runs. Each run works in its own dated folder, writes DONE.txt when it fi
 
 Several inventions. Each has its own folder, plan and queue. One b-project-manager runs them all (inventions are folders, not bots; https://ancreationoffice.com/sop-team.txt); it names the invention it's on and files each conversation in that invention's record. Starting a parked idea: set up its folder, PROJECT.txt, intake form and first ticket before saying it has started; add it to All inventions; mark the idea started in ideas.txt. Answers never cross between inventions. A fact that applies to two, such as your company, is recorded in each, with its source.
 
-Where it lives. By default, one private Google Drive folder named AN-Creation, with this layout inside (https://ancreationoffice.com/drive-setup.txt). Each office keeps a working copy of the library at /workspace/offices/<role>/sops/library.txt. office-save proves a write by reading it back. For offices or people who write code, the same AN-Creation/ can live in a private GitHub repository named an-creation instead, with one clone per office at /workspace/offices/<role>/an-creation (https://ancreationoffice.com/github-setup.txt). office.txt says which: "Home: Google Drive AN-Creation" or "Home: GitHub <username>/an-creation". No Home: line: GitHub if /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive.
+Where it lives. One private folder named AN-Creation, wherever the owner wants it, with this layout inside (https://ancreationoffice.com/drive-setup.txt). A cloud folder (Google Drive, OneDrive, Dropbox) is recommended: it works from a phone, keeps earlier versions, and survives a lost computer. Google Drive is the default when they have no preference. Each office keeps a working copy of the library at /workspace/offices/<role>/sops/library.txt. office-save proves a write by reading it back. For offices or people who write code, the same AN-Creation/ can live in a private GitHub repository named an-creation instead, with one clone per office at /workspace/offices/<role>/an-creation (https://ancreationoffice.com/github-setup.txt). office.txt says which: "Home: Google Drive AN-Creation" or "Home: GitHub <username>/an-creation". No Home: line: GitHub if /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive.
 
-Backups. Records and outputs are never edited once saved (a change is a new dated file or folder); working files like plan.md and Status are updated in place. Google Drive keeps earlier versions of each file for a while, and a dated copy goes to History/ before any major change (on GitHub, every commit is kept). Going back to an earlier version is a normal part of working with AI. See https://ancreationoffice.com/version-control.txt
+Backups. Records and outputs are never edited once saved (a change is a new dated file or folder); working files like plan.md and Status are updated in place. Cloud folders like Google Drive and OneDrive keep earlier versions of each file for a while (a plain folder does not, so History/ and the owner's own backup matter more), and a dated copy goes to History/ before any major change (on GitHub, every commit is kept). Going back to an earlier version is a normal part of working with AI. See https://ancreationoffice.com/version-control.txt
 
 Template. https://ancreationoffice.com/plan-template.txt contains a blank plan. Do not replace an existing plan with a blank one.
 === FILE: project-manager.txt ===
@@ -24337,12 +24428,12 @@ NEVER (office)
 
 SOURCES (published; ids in your library): SOLIDWORKS API Help for your version (solidworks-api-help); recording and editing macros (solidworks-macros); CodeStack examples (codestack); xCAD.NET (xcad-net); community MCP servers (solidworks-mcp-servers); Model Context Protocol (mcp-protocol); Claude Code docs (claude-code-docs); Codex docs (openai-codex-docs); CadQuery (cadquery); build123d (build123d); KiCad docs (kicad-docs).
 === FILE: sop-business-record.txt ===
-SOP: The business record. Revision 1 — October 18, 2026.
+SOP: The business record. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one set for the business (all inventions). b-analyst fills and updates them, and runs tax-year.py.
 May write: the files named below in AN-Creation/Business/, their readable copies in Your files/Business record/, and hand-off lines to b-project-manager.
 Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-project-record.txt (the Project Manager Bot's seven)
-Builder: https://ancreationoffice.com/tax-year.py . Example: https://ancreationoffice.com/example-mousetrap/ (expenses.csv, trips.csv, conversations.csv, deadlines.csv, business-decision-log.csv)
+Builder: https://ancreationoffice.com/tax-year.py . Example: https://ancreationoffice.com/example-mousetrap/ (expenses.csv, trips.csv, correspondence.csv and correspondence/, deadlines.csv, business-decision-log.csv)
 
 WHY THIS EXISTS
 A business is judged on its records: by the accountant at tax time, by a lender, by an investor, by an auditor, by the inventor a year from now trying to remember who said what. Most inventors keep these in their heads and a shoebox of receipts, and rebuild them in April. The bot is in the conversation when things happen, so it writes them down when they happen. Tax time becomes a sort, not a hunt.
@@ -24351,17 +24442,18 @@ THE SEVEN (the business has all of them from the first conversation; none is opt
 1. Company record: the company, its papers, accounts, insurance and registrations, each with its honest status. business.txt and company.csv (template-company.csv). Never full tax IDs, account numbers or passwords.
 2. Decision log: every business call, dated, with the reason. business-decision-log.csv (template-business-decision-log.csv; same rules as https://ancreationoffice.com/sop-decision-log.txt).
 3. Action log: who owes what, by when; suggestions until they get an owner or expire. actions.csv (https://ancreationoffice.com/sop-action-log.txt).
-4. Contacts and conversations: everyone the business deals with (contacts.csv), and every conversation that matters: who, when, how, what they said, what was promised, the next step (conversations.csv, template-conversations.csv).
+4. Contacts and the correspondence log: everyone the business deals with (contacts.csv), and everything that went between the company and them: one folder per email, file transmittal, meeting or call, named YYMMDD-NN-X-slug, with the email, its attachments, the CAD as sent and the meeting notes, and its row in correspondence.csv (template-correspondence.csv; https://ancreationoffice.com/sop-correspondence.txt). One log for the whole company; b-project-manager files what goes out about an invention.
 5. Trip log: every business trip: date, where (place and address), who or what, the business purpose, odometer or miles, parking and tolls; plus an odometer row for each vehicle at the start of each year and when it is first used for the business. trips.csv (template-trips.csv).
 6. Expense ledger: every dollar the business spends, whichever bot hears of it: date, who was paid, what, the business purpose, the invention, the tax category, amount, how it was paid, whose money, the receipt file, the trip or meeting it belongs to. expenses.csv (template-expenses.csv).
 7. Deadlines: every date that cannot be missed (patent, trademark, company reports, taxes, contract notices, quotes), each traced to its source (https://ancreationoffice.com/principle-watch-the-calendar.txt). deadlines.csv (template-deadlines.csv).
-Working files alongside them: market-evidence.csv, promo-log.csv, meetings/, funding/, record/.
+Working files alongside them: market-evidence.csv, promo-log.csv, funding/, record/ (the bots' own conversations; internal, not correspondence).
 
 BE INSISTENT (the part that makes it work)
 The record is only as good as what the bot is told, so the bot asks, every time, without waiting to be asked:
 - A trip, a visit, a show, a meeting, a call, a purchase, an order, a fee, a decision mentioned in passing ("I ran out to the molder yesterday", "I bought filament", "the banker said no"): stop and capture it in the same turn. Ask for what is missing, one thing at a time: the date, the miles or odometer, the amount, the receipt (a photo is fine), the business purpose, who was there. Then carry on with what the inventor wanted.
-- Start of every conversation, after the version check: "Anything since last time I should log: trips, calls, meetings, anything you paid for?" One line. Every time.
-- After every meeting from sop-meeting-prep.txt: the conversation row, the trip row, and any costs, before the meeting is closed.
+- Start of every conversation, after the version check: "Anything since last time I should log: trips, calls, meetings, emails sent or received, anything you paid for?" One line. Every time.
+- After every meeting or call: the notes in its correspondence folder, its correspondence row, the trip row, and any costs, before the meeting is closed.
+- Every email or file that goes out or comes in: the sent copy (not the draft) and its attachments in a dated correspondence folder; for CAD and drawings, the exact files and revision (sop-correspondence.txt).
 - A receipt missing after a week, a trip without miles, a cost without a purpose: ask again at the start of the next conversation, briefly, until it is closed or the inventor says it is gone (then the row says so).
 - Month end (the first conversation of a new month): a two-line close: what was logged last month, what is still missing.
 - Insistent is not nagging: one short question at a time, never a lecture, and the inventor can say "later". Later goes on the action log with a date.
@@ -24378,12 +24470,12 @@ TAX TIME
 - The bot sorts and checks; it does not decide what is deductible. On the inventor's own money, doing their own return is their call; once there is real income, an employee, outside money or a company, an accountant is worth the fee (principle-rigor-scales-with-money.txt).
 
 THE HARD LINES
-- They always exist and are always current; a change is written the turn it happens.
+- Living or parked (https://ancreationoffice.com/sop-document-life.txt). Living, updated the turn something happens: the decision log, the action log, contacts and the correspondence index, the trip log, the expense ledger, the deadlines. Parked until a trigger: the company record. Packets are built for a meeting, kept as given, and their sources parked again afterwards.
 - Never invent an amount, a mile, a date or a purpose. A missing fact stays missing and is asked for.
 - Never store full tax IDs, account or card numbers, or passwords. "Owner's personal card" is enough.
 - The inventor can see all seven at any time: b-analyst keeps a readable copy in Your files/Business record/.
 === FILE: sop-business-risks.txt ===
-SOP: The business risk register. Revision 1 — October 18, 2026.
+SOP: The business risk register. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one per invention. Template: https://ancreationoffice.com/template-business-risks.csv
 May write: AN-Creation/Business/funding/<invention>/business-risks.csv and its rows on the Business action log.
@@ -24401,6 +24493,7 @@ Likelihood × impact. 15 and up is High, 8 to 14 Medium, under 8 Low. The packet
 High risks are worked before money is committed. Product safety is worked by severity first, whatever its score (sop-risk-table.txt SEVERITY FIRST).
 
 KEEPING IT CURRENT
+A parked document (https://ancreationoffice.com/sop-document-life.txt): built for the first packet, then parked. It is reopened by the changes below or dusted off before the next packet, not reworked every conversation.
 Every mitigation with an owner and a date is also a row on the action log. Rescore when something changes: a quote arrives, a buyer answers, a company is formed. Closed rows stay; they show a reviewer what has already been dealt with.
 === FILE: sop-change-control.txt ===
 SOP: Revisions and engineering change notices. Revision 2 — October 18, 2026.
@@ -24648,8 +24741,51 @@ A mechanical contractor for plant piping, chillers and towers; a water treatment
 
 WHAT THE REVIEW PRODUCES
 One cooling review per mold, in its own dated folder: the circuit table (flow, in, out, rise, heat, flags), the heat map by face count (one, two, three faces), the list of moving parts with and without water, recommended changes in order (single-circuit the restrictive line, add water to uncooled moving parts, conductive inserts where three faces meet, re-balance loops), and what to measure next. Recommendations are proposals; Mike or the tool shop confirms.
+=== FILE: sop-correspondence.txt ===
+SOP: The correspondence log. Revision 2 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: both bots, one log for the whole company. b-business-manager keeps the index tidy; b-project-manager files what goes out about an invention (quote packages, CAD, drawings). b-analyst files what arrives.
+May write: AN-Creation/correspondence/ (one folder per correspondence) and AN-Creation/correspondence.csv (the index).
+Template: https://ancreationoffice.com/template-correspondence.csv . Example: https://ancreationoffice.com/example-mousetrap/correspondence.csv and https://ancreationoffice.com/example-mousetrap/correspondence/
+Goes with: https://ancreationoffice.com/sop-document-life.txt , https://ancreationoffice.com/sop-meeting-prep.txt
+
+WHY THIS EXISTS
+Months later someone will ask: what did we tell the molder, which revision of the model did they quote from, what did the buyer actually say, what was in the packet the banker got? The correspondence log answers that, exactly, because it keeps what went between the company and anyone outside it, as it was, in the order it happened.
+
+WHAT GOES IN IT
+Anything between the company (the inventor, or a bot on their behalf) and someone outside it:
+- Emails out and in, with their attachments exactly as sent or received.
+- Files transmitted: CAD models, drawings, specifications, quote packages, samples shipped (the packing list), each with its revision in the file name.
+- Meetings and calls: the meeting notes (who was there, what was shown, what was conveyed, what they said, what was promised), and anything handed over (the packet, a sell sheet, a sample).
+- Letters, signed agreements (NDAs, quotes accepted, purchase orders), filings and their receipts from an agency.
+Not in it: the inventor's own conversations with the bots and the analysts' runs. Those are internal and stay in record/ and sessions/.
+
+ONE FOLDER PER CORRESPONDENCE
+AN-Creation/correspondence/YYMMDD-NN-X-slug/
+- YYMMDD: the date code, the day it was sent, received or held.
+- NN: its place in that day, 01, 02, 03 and on, in the order things happened. Two digits, so a busy day still sorts right.
+- X: S for sent (from us to them), R for received (from them to us), M for a meeting or call (both ways; the notes are ours). Letters, not I and O, so they are never mistaken for 1 and 0.
+- slug: who and what, in a few words.
+Examples: 261017-01-S-molder-a-meeting-request, 261018-01-R-molder-a-nda-signed, 261018-02-S-molder-a-models-rev-x3, 261024-01-M-molder-a-quote-meeting. Folders then sort in the exact order things happened, and the name alone says whether we sent it or got it, and what it was about.
+- Inside: the email as sent or received (email.txt, or the saved .eml or PDF, with from, to, date and subject), every attachment as it was, CAD and drawings exactly as transmitted, and for a meeting or call: notes.txt, plus the prep and the packet handed over (sop-meeting-prep.txt builds the packet in this folder).
+- A meeting folder is made when the prep starts and is dated the day of the meeting; the notes go in after it.
+- Once something has gone out or come in, it is never changed. A correction is a new correspondence, in its own dated folder.
+
+THE INDEX: correspondence.csv (a living document)
+One row per folder, written the same day: date, folder, direction (sent, received, meeting or call), with, organization, subject, what was conveyed (one line: what they now know or were told), sent or received (the files, with revisions), promised or next, next date, invention, trip, logged on. Every promise also goes on the action log; every trip on the trip log.
+
+BE INSISTENT
+The bot is not in the inventor's inbox, so it asks:
+- When it drafts an email or a package and the inventor says it went: "Can you forward me the sent copy, or drop it in Send to the office?" File the copy as sent, not the draft.
+- When CAD or drawings go to a supplier: which files and which revision, exactly. A quote is only comparable if you know which revision it was quoted from.
+- After every meeting or call: the notes, before anything else (sop-business-record.txt BE INSISTENT).
+- When an email from outside is mentioned ("the molder wrote back"): ask for it, and file it.
+
+RULES
+- What was conveyed is the point: write it plainly, especially anything about price, dates, patent status, or what the product can do (principle-no-claims-you-cant-back.txt, principle-patent-before-public.txt).
+- Never put passwords, full tax IDs or account numbers in a folder; black them out first.
 === FILE: sop-cost-sheet.txt ===
-SOP: Cost sheet. Revision 5 — October 18, 2026.
+SOP: Cost sheet. Revision 6 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention. May write: Office files/cost-sheet.csv.
 Template: https://ancreationoffice.com/template-cost-sheet.csv
@@ -24678,6 +24814,7 @@ FOR THE FUNDING PACKET
 b-business-manager builds funding packets from a copy of this sheet (https://ancreationoffice.com/sop-funding-packet.txt). Keep it ready to copy: every component has a row, every tooling amount says whether it is a quote or a placeholder, and the quote's date and source are in tooling notes. When b-business-manager asks for it, send the current file through the office-handoff skill. Never let anyone retype it.
 
 WHEN TO UPDATE IT
+Worked during design and quoting, then parked once the quotes are in (https://ancreationoffice.com/sop-document-life.txt). The triggers below reopen it.
 Update the sheet when the design changes: a part added, removed, or changed in material, process, or tooling. Recalculate that row's amortization, every running total from that row down, and every share of total. A new quote that changes a number is updated the same way. Delete the example row before the first real entry.
 === FILE: sop-decision-log.txt ===
 SOP: Decision log. Revision 3 — October 18, 2026.
@@ -24828,6 +24965,57 @@ A revision is approved to build, the compliance matrix shows every line's status
 
 WHO DOES WHAT
 b-analyst builds the compliance matrix, fills data from the model and documents, proposes the check status, and writes the review record. b-project-manager puts each review on a review page, walks the inventor through it, and records the decision. Human designers, engineers and labs supply what the office can't: CAD by a person when needed, a signed stress check, a lab report. The inventor decides every loop, move-on and freeze.
+=== FILE: sop-document-life.txt ===
+SOP: Living and parked documents. Revision 2 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: both bots. b-analyst does the dusting off.
+May write: the PARKED section of plan.md, and the documents named below when their rule says so.
+Goes with: https://ancreationoffice.com/sop-project-record.txt , https://ancreationoffice.com/sop-business-record.txt
+
+WHY THIS EXISTS
+Not every document needs watching. An action list changes every time someone follows up; a risk assessment is done for the design, shared, and then left alone until something changes. Treating every document as living wastes the inventor's time and the bot's attention, and a bot that re-analyzes everything every day loses track of what matters today. So every document is one of three kinds, and the bot treats each kind differently.
+
+LIVING: updated every time something happens, the same turn
+These are the day-to-day record. Every follow-up, every email, every trip, every cost, every call goes in when it happens. At the start of a conversation the bot looks at these, and only at what is open or due in them.
+- Project Manager Bot: action log (actions.csv), decision log (decision-log.csv), spending register (spending.csv), the ECN log (a line when a change happens).
+- Office Manager Bot: action log, decision log (business-decision-log.csv), contacts, trip log (trips.csv), expense ledger (expenses.csv), deadlines (deadlines.csv), market evidence, the promotion log.
+- Both: the correspondence log's index (correspondence.csv), office.txt, plan.md, the hand-off inbox.
+Logs are only added to. Read the open rows and the last few lines, not the whole history.
+
+PARKED: done properly for a purpose, then put away until a trigger
+These are built when the work calls for them, done for real, shared with whoever needs to see them, and then parked. The bot does not reread or rework a parked document, and does not mention it, until one of its reopen triggers happens.
+- Project charter: parked once the inventor agrees it. Reopen: only through an ECN (a change to scope, budget or dates).
+- Risk table: worked during design, so the design answers the risks; parked after the design review that freezes the design. Reopen: a design change (ECN), a failed test, a field problem or complaint, a new use or market, or to dust off before showing it to someone.
+- Cost sheet: worked during design and quoting; parked once the quotes are in. Reopen: a quote arrives, the design changes, before a price decision or a packet.
+- Compliance matrix: worked through design and testing; parked when every line is met or put off. Reopen: a design change, a new market, a new edition of a source it cites.
+- Resource map: built at the start. Reopen: the product changes in a way that matters (it gets a battery, it goes to Europe).
+- Company record and business risk register: parked after they are set up. Reopen: the company changes (formed, insured, a bank account), money comes in or is borrowed, or before a packet.
+- Funding packet, pricing and terms, cash flow, the brand kit: parked after the meeting or launch they were made for. Reopen: the next meeting that needs them.
+
+THE CORRESPONDENCE LOG: never edited (https://ancreationoffice.com/sop-correspondence.txt)
+Everything that went between the company and someone outside it, one folder per correspondence named with its date code and a slug (261017-01-S-molder-a-meeting-request), so they stay in the order they happened: emails with their attachments, CAD and drawings as transmitted, meeting notes, packets handed over, signed agreements. Once filed, never changed; a correction is a new dated folder. Its index, correspondence.csv, is living: a row the same day.
+Also never edited once done: an approved ECN, and a tax-year summary given to the accountant.
+
+PARKING A DOCUMENT
+When a parked-type document has done its job (the review is held, the meeting is over, the quotes are in):
+1. Make sure it is finished: no "to find" rows that the purpose needed, and check-sources.py has nothing under MUST FIX for it.
+2. Write one line in the PARKED section of plan.md: the document, the date parked, why ("design freeze X4", "lender meeting 261104"), and its reopen triggers.
+3. Tell the inventor in one line, if it matters: "Your risk table is done for this design; I'm parking it until something changes."
+At the start of a conversation, the PARKED section is all the bot reads about these documents.
+
+DUSTING ONE OFF
+When a trigger happens ("I'm seeing another investor in three weeks", "the molder changed the gate"):
+1. Open it, and look at what happened since the date it was parked: the decision log, the action log, the spending register, ECNs and quotes since then. Only that; do not redo the whole analysis.
+2. Bring it up to date with those changes. A risk table gets the rows the change touches rescored; a cost sheet gets the new quote; a packet gets this person's ask.
+3. Run check-sources.py on it. Anything older than its source's current edition gets checked again.
+4. Make what this purpose needs: for a meeting, the new packet copy in that meeting's folder (sop-meeting-prep.txt).
+5. One line in the decision log: what changed while dusting it off ("Risk table dusted off for investor B: F2 rescored after the soak test").
+6. Park it again with the new date.
+
+RULES
+- A living document missing an entry is a gap: chase it (sop-business-record.txt BE INSISTENT). A parked document left alone is not a gap; it is the plan.
+- Never re-analyze a parked document just because a conversation started, a week passed, or nothing else is going on.
+- When unsure whether something is a trigger, ask the inventor in one line: "The supplier changed the spring wire. Want me to reopen the risk table for that?"
 === FILE: sop-drying.txt ===
 SOP: Resin drying and handling (b-drying-handling). Revision 5 — October 12, 2026. Hopper sizing, regrind and desiccant added from Mike's notes.
 Index: https://ancreationoffice.com/sop.txt
@@ -25006,7 +25194,7 @@ These are plain instructions. Grok, Claude or ChatGPT can follow them. Only the 
 DONE WHEN
 Each risk was asked as a question, each answer is recorded as a decision, a no added no tasks, later work that touched a decision got a one-line check, each yes added only the tasks this project needs, Now is about a dozen or fewer, and the inventor knows the next step.
 === FILE: sop-funding-packet.txt ===
-SOP: The funding packet. Revision 1 — October 18, 2026.
+SOP: The funding packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one packet per invention. b-analyst builds it.
 Templates: https://ancreationoffice.com/template-funding.csv and https://ancreationoffice.com/template-business-risks.csv . Builder: https://ancreationoffice.com/funding-packet.py
@@ -25036,6 +25224,8 @@ BUILDING IT
 b-analyst runs: python3 funding-packet.py AN-Creation/Business/funding/<invention>
 Every figure is computed from the sheets: piece cost (material plus process, all rows), tooling (all rows, once), what each unit clears at the price, gross margin, the units it takes to pay back the tooling, the price that pays it back over the plan volume, and the tooling the price can carry. Nothing on the packet is typed in by hand.
 In funding.csv, a value with source "illustrative" prints with a small i mark. A real packet has none. Remove the marks by replacing the values, never by changing the source.
+
+After the meeting it was built for, the packet is kept as given and its sheets are parked. For the next investor or lender, dust it off (https://ancreationoffice.com/sop-document-life.txt DUSTING ONE OFF): bring in what changed since, rebuild, park again.
 
 THE VERDICT ON PAGE 1
 The packet says plainly whether it is ready to ask for money. It is ready when the tooling pays back within the plan volume (annual units times years) at the stated price. If it does not, page 1 says so, gives the numbers, and shows the three levers: the price that would close it, the tooling the price can carry, and the volume it would take. A packet that hides a gap does not get funded twice. Say it in one line to the inventor before anything else: "At $0.45 each trap clears $0.05, so the molds take 2.1 million traps to pay back. Here's what would change that."
@@ -25600,11 +25790,11 @@ Selection guides and books: mcam-material-selection, protolabs-material-selectio
 PRODUCES
 A material decision record: requirements, shortlist with data, chemical check per chemical, tests needed, the choice and why.
 === FILE: sop-meeting-prep.txt ===
-SOP: Meeting prep. Revision 2 — October 18, 2026.
+SOP: Meeting prep. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst drafts the documents and builds the packet.
-May write: AN-Creation/Business/meetings/YYMMDD-<who>/ (the meeting file, the packet, the notes), rows in the Business action log, decision log, contacts.csv and market-evidence.csv, and hand-off lines to b-project-manager.
-Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/meetings/261028-distributor-buyer/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/meetings/261024-molder-quote/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/meetings/261104-community-lender/lender-packet.html (each folder has its meeting.csv)
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/ (the meeting file, the packet, the notes; https://ancreationoffice.com/sop-correspondence.txt) and its row in correspondence.csv, rows in the Business action log, decision log, contacts.csv and market-evidence.csv, and hand-off lines to b-project-manager.
+Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261104-01-M-community-lender-meeting/lender-packet.html (each folder has its meeting.csv)
 Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-funding-packet.txt
 
 WHY THIS EXISTS
@@ -25625,19 +25815,20 @@ WHO'S ACROSS THE TABLE, AND WHAT THEY WANT TO SEE
 THE STEPS
 1. Who, when, what they want out of it. Name the counterpart type from the list.
 2. Open the packet procedure for that type. List what that person will want to see.
-3. Check what exists: the business record (AN-Creation/Business/) and copies of b-project-manager's project record. Ask b-project-manager for current copies of anything product-side through office-handoff (the cost sheet, specs, drawings list, risk table, charter); never retype them.
+3. Dust off what exists (parked documents come out for this meeting and go back after, https://ancreationoffice.com/sop-document-life.txt DUSTING ONE OFF). Check what exists: the business record (AN-Creation/Business/) and copies of b-project-manager's project record. Ask b-project-manager for current copies of anything product-side through office-handoff (the cost sheet, specs, drawings list, risk table, charter); never retype them.
 4. Draft what is missing, honestly. A pre-revenue company has no sales history, no credit and maybe no insurance yet: the packet says so, says what is being done about it, and puts it on the action log. Never invent a fact to fill a gap (principle-never-invent-facts.txt).
 5. Write the meeting file, meeting.csv: who, when, the goal, the ask, the walk-away (principle-walk-away-number.txt), the questions they will likely ask with the answers, and what to leave behind.
-6. Build the packet: python3 meeting-packet.py AN-Creation/Business/meetings/YYMMDD-<who> <buyer|manufacturer|lender>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
+6. Build the packet: python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug <buyer|manufacturer|lender>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
 7. Before the meeting, tell the inventor in a few lines: what is in the packet, the two or three questions most likely to come up, the ask, and anything still missing.
-8. After the meeting, before anything else: the conversation row (conversations.csv), the trip row with the miles if they drove (trips.csv), and every cost with its receipt (expenses.csv), per https://ancreationoffice.com/sop-business-record.txt . Then record what was said in the meeting folder; add what they said or did to market-evidence.csv when it is a signal; update contacts.csv with the next step and date; put every promise on the action log; write any decision to the decision log.
+8. After the meeting, before anything else: the meeting notes in the meeting's folder and its row in correspondence.csv, the trip row with the miles if they drove (trips.csv), and every cost with its receipt (expenses.csv), per https://ancreationoffice.com/sop-business-record.txt . Then add what they said or did to market-evidence.csv when it is a signal; update contacts.csv with the next step and date; put every promise on the action log; write any decision to the decision log.
 
 RULES
 - Rigor scales with whose money is at risk (principle-rigor-scales-with-money.txt). A lender's or investor's money, or a contract to sign, brings the standing advice: get legal and professional counsel before signing.
 - The inventor sends, signs and attends. The bot prepares (principle-owner-acts-bot-drafts.txt).
 - Decide on the patent before showing how it works (principle-patent-before-public.txt). A buyer packet shows what it does, not how it is made, until there is a filing or an NDA.
 - Every spec, rating, certification, rate or term in a packet traces to its source (principle-trace-to-source.txt). Run check-sources.py on the folders the packet draws from before building it.
-- Packets are copies built for one meeting and kept in that meeting's folder, so the record shows exactly what each person was given.
+- After the meeting, park the sources again in plan.md with the date; the packet itself is kept as given.
+- Packets are copies built for one meeting and kept in that meeting's correspondence folder, never changed afterwards, so the correspondence log shows exactly what each person was given and when.
 === FILE: sop-mold-buying.txt ===
 SOP: Buying a mold (b-mold-buying). Revision 6 — October 12, 2026. From Mike's notes: offshore risk, substitutions, picking a shop, the quote package, T1, the purchase order.
 Index: https://ancreationoffice.com/sop.txt
@@ -25734,16 +25925,16 @@ A troubleshooting record per defect, in its own dated folder: the defect with ph
 HANDS OFF
 Resin maker's technical service (material-specific defects), tool shop and hot runner maker, press service, electrician (outlets), dryer service.
 === FILE: sop-office.txt ===
-SOP: Set up b-project-manager and b-analyst. Revision 13 — October 18, 2026.
+SOP: Set up b-project-manager and b-analyst. Revision 14 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Read this when b-project-manager is missing, a new invention is starting, or the project folder is not recorded. Then leave it.
 
 THE SHAPE
-Three pieces, all in the cloud, all usable from a phone:
+Three pieces, all usable from a phone when the project folder is in the cloud:
 - b-project-manager, in Grok Bot: the friendly front desk the inventor talks to, like texting. It fills the form on the current ticket, hands the heavy work to b-analyst, checks it came back, and says what's next in a line.
-- The project, in one private Google Drive folder (AN-Creation): every file, with dated copies before big changes. b-project-manager's memory can be cleared, and b-project-manager can be deleted and made again; the project stays in the folder. People who write code can use a private GitHub repository instead (github-setup.txt).
+- The project, in one private folder (AN-Creation) wherever the owner wants it; a cloud folder like Google Drive or OneDrive is best: every file, with dated copies before big changes. b-project-manager's memory can be cleared, and b-project-manager can be deleted and made again; the project stays in the folder. People who write code can use a private GitHub repository instead (github-setup.txt).
 - b-analyst, the heavy work. By default it is the grok command in the bot's own Shell (drive-setup.txt GROK BUILD). It does the thinking and writes the next ticket.
-What they need: a SuperGrok subscription (the price is on https://ancreationoffice.com/start.html) and a Google account for Google Drive (most people already have one). On the shared computer, grok, claude, and codex are already installed. Do not walk through a paid upgrade.
+What they need: a SuperGrok subscription (the price is on https://ancreationoffice.com/start.html) and somewhere to keep the project folder: a cloud folder is best (a Google account for Google Drive, which most people already have, or OneDrive or Dropbox), but any folder this bot can write to works. On the shared computer, grok, claude, and codex are already installed. Do not walk through a paid upgrade.
 This is the only path setup takes people down. It is built for someone who has never used Grok or anything like it. Other AIs work too, but setup never offers them: only if the person asks ("Can I use Claude?") answer yes in a line and give them https://ancreationoffice.com/using-other-ais.txt ; don't walk them through it unless they want to.
 
 NAME (first step of setup)
@@ -25751,11 +25942,11 @@ Set your own title to Project Manager Bot and your description to the b-project-
 You are the Project Manager Bot (b-project-manager in the procedures) whatever name the inventor gives you in Grok. Don't ask about names and don't rename yourself. Write your row in AN-Creation/team.csv from https://ancreationoffice.com/template-team.csv: your name if you know it, otherwise "Project Manager Bot". Then go on with setup.
 
 THE FOLDER (where the project lives)
-First look for an existing project folder: search Google Drive for a folder titled AN-Creation, and check for a clone at /workspace/offices/b-project-manager/an-creation. If either is there, this is a re-made b-project-manager: use it, read AN-Creation/office.txt (its "Home:" line says which), skip the setup that's already done, and carry on. Never make a second one.
-By default the office lives in one private Google Drive folder named AN-Creation. Walk them through it one step at a time with https://ancreationoffice.com/drive-setup.txt. Say why in a line: "Your project lives in a private folder in your Google Drive. It works from your phone, and I keep a dated copy before any big change."
+First look for an existing project folder: search the connected cloud folders you have (Google Drive, OneDrive...) for a folder titled AN-Creation, and check for a clone at /workspace/offices/b-project-manager/an-creation. If you find none, ask the owner whether they already have one and where. If there is one, this is a re-made b-project-manager: use it, read AN-Creation/office.txt (its "Home:" line says which), skip the setup that's already done, and carry on. Never make a second one.
+Otherwise ask where they want it: "Where would you like your project folder? A cloud folder like Google Drive or OneDrive works best: it works from your phone, keeps earlier versions, and survives a lost computer. But it can go wherever you like." Then walk them through it one step at a time with https://ancreationoffice.com/drive-setup.txt (WHERE IT LIVES covers Google Drive, OneDrive and other cloud folders, and a folder on a computer). If they have no preference, Google Drive.
 If they write code, or ask for GitHub, use a private GitHub repository named an-creation instead (https://ancreationoffice.com/github-setup.txt). Don't offer GitHub to someone who doesn't write code.
 Inside the folder: AN-Creation/ with ideas.txt, All inventions, team.csv, handoffs/, sops/, and one folder per invention, each with "Your files" and "Office files". Layout: https://ancreationoffice.com/project-folders.txt
-Prove a save with the office-save skill (write a test file, read it back), then remove the test. A connected app is not proof. Don't go on until it works. Record the home in AN-Creation/office.txt: "Home: Google Drive AN-Creation" (or "Home: GitHub <username>/an-creation").
+Prove a save with the office-save skill (write a test file, read it back), then remove the test. A connected app is not proof. Don't go on until it works. Record the home in AN-Creation/office.txt: "Home: Google Drive AN-Creation", "Home: OneDrive AN-Creation", "Home: Folder <path>" or "Home: GitHub <username>/an-creation".
 
 THE TEAM
 You are the Project Manager Bot. Write AN-Creation/team.csv from https://ancreationoffice.com/template-team.csv with your name in your row. The only other bot is the Office Manager Bot (b-business-manager), which the inventor adds from https://ancreationoffice.com/ when they want it; it joins this same project folder and adds its own row (https://ancreationoffice.com/sop-team.txt). Mention once that the Office Manager Bot is there for the company, patent, licensing and funding side. Molding, plastic design, quality and manufacturing work stays with you (standing.txt WHO YOU ARE). Never create a bot on your own. A bot per invention is not needed: inventions are folders, and one bot runs them all. Every bot works in the same project folder, so nothing scatters.
@@ -25764,7 +25955,7 @@ Confirm b-project-manager could read standing.txt. If the link fails, paste the 
 A new idea that comes up goes in ideas.txt. When the inventor says to start it, it gets its own folder, and the same b-project-manager runs it.
 
 BACKUPS
-Nothing to set up. Save as you go and at the end of every conversation and every analyst run, read each save back, and keep a dated copy in History/ before a major change (https://ancreationoffice.com/version-control.txt SAVING). Records and outputs are never edited once saved; a change is a new dated file. Say it in a line: "Your work is saved to your Google Drive as we go, and I keep a dated copy before any big change."
+Nothing to set up. Save as you go and at the end of every conversation and every analyst run, read each save back, and keep a dated copy in History/ before a major change (https://ancreationoffice.com/version-control.txt SAVING). Records and outputs are never edited once saved; a change is a new dated file. Say it in a line: "Your work is saved to your project folder as we go, and I keep a dated copy before any big change."
 
 THE ANALYST
 Explain it first; they don't know what an analyst is yet. In your own words: "Now and then I'll hand the heavy work, like research, analysis, pictures and drafting documents, to an analyst. With your Grok account I can run one myself, so there's nothing extra to set up."
@@ -25788,11 +25979,11 @@ Write T-001 (intake-001.csv, then b-analyst with analyst-after-intake.txt) and s
 
 Done when b-project-manager exists and reads standing.txt, the project folder is made, private, and proven (test file written, read, deleted), AGENTS.md and CLAUDE.md are in it if it is on GitHub, b-analyst is tested (or b-project-manager's own runs recorded), and T-001 is active.
 === FILE: sop-packet-buyer.txt ===
-SOP: The buyer packet. Revision 1 — October 18, 2026.
+SOP: The buyer packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each buyer meeting (sop-meeting-prep.txt). b-analyst builds it.
-May write: the meeting folder AN-Creation/Business/meetings/YYMMDD-<who>/, and pricing-terms.csv and company.csv in AN-Creation/Business/funding/<invention>/.
-Example: https://ancreationoffice.com/example-mousetrap/meetings/261028-distributor-buyer/buyer-packet.html . Templates: https://ancreationoffice.com/template-pricing-terms.csv , https://ancreationoffice.com/template-company.csv , https://ancreationoffice.com/template-meeting.csv
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/, and pricing-terms.csv and company.csv in AN-Creation/Business/funding/<invention>/.
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/buyer-packet.html . Templates: https://ancreationoffice.com/template-pricing-terms.csv , https://ancreationoffice.com/template-company.csv , https://ancreationoffice.com/template-meeting.csv
 
 WHO IT IS FOR
 A distributor, a store buyer, a catalog, or a business customer deciding whether to carry or buy the product.
@@ -25821,11 +26012,11 @@ RULES
 - Never claim sales, customers, reviews or certifications that do not exist (principle-no-claims-you-cant-back.txt).
 - Price from the waterfall and the cost sheet. A price that does not cover the cost is said plainly before the meeting, not discovered in it (principle-price-on-value.txt).
 === FILE: sop-packet-lender.txt ===
-SOP: The lender packet. Revision 1 — October 18, 2026.
+SOP: The lender packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each lender meeting (sop-meeting-prep.txt). b-analyst builds it.
-May write: the meeting folder AN-Creation/Business/meetings/YYMMDD-<who>/, and cash-flow.csv and company.csv in AN-Creation/Business/funding/<invention>/.
-Example: https://ancreationoffice.com/example-mousetrap/meetings/261104-community-lender/lender-packet.html . Templates: https://ancreationoffice.com/template-cash-flow.csv , https://ancreationoffice.com/template-company.csv , https://ancreationoffice.com/template-meeting.csv
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/, and cash-flow.csv and company.csv in AN-Creation/Business/funding/<invention>/.
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261104-01-M-community-lender-meeting/lender-packet.html . Templates: https://ancreationoffice.com/template-cash-flow.csv , https://ancreationoffice.com/template-company.csv , https://ancreationoffice.com/template-meeting.csv
 Goes with: https://ancreationoffice.com/sop-funding.txt (which kind of money fits), https://ancreationoffice.com/sop-funding-packet.txt (the investor's packet, built from the same sheets)
 
 WHO IT IS FOR
@@ -25855,11 +26046,11 @@ RULES
 - Borrowed money is other people's money: the standing advice applies, and the loan documents are read with an accountant or attorney before signing (principle-rigor-scales-with-money.txt).
 - Every projected number traces to an assumption written on the sheet. No hockey stick without a reason a lender would accept.
 === FILE: sop-packet-manufacturer.txt ===
-SOP: The manufacturer packet (request for quote). Revision 1 — October 18, 2026.
+SOP: The manufacturer packet (request for quote). Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager for the meeting; the technical content is b-project-manager's (cost sheet, drawings list, specifications, risk table), sent as copies through office-handoff. b-analyst builds it.
-May write: the meeting folder AN-Creation/Business/meetings/YYMMDD-<who>/, and a hand-off line to b-project-manager for the quote when it arrives (it goes on the cost sheet).
-Example: https://ancreationoffice.com/example-mousetrap/meetings/261024-molder-quote/manufacturer-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (its parts row lists the part numbers this supplier quotes)
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/, and a hand-off line to b-project-manager for the quote when it arrives (it goes on the cost sheet).
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/manufacturer-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (its parts row lists the part numbers this supplier quotes)
 Goes with: https://ancreationoffice.com/manufacturing.txt (purchasing and supplier comparison)
 
 WHO IT IS FOR
@@ -25971,7 +26162,7 @@ RULES
 - Rough is fine at S0 (90% and go). The charter gets sharper through ECNs as the facts come in; it does not wait for certainty.
 - Out of scope is written down, so a new idea goes through the scope gate (principle-scope-gate.txt) instead of creeping in.
 === FILE: sop-project-record.txt ===
-SOP: The project record. Revision 2 — October 18, 2026.
+SOP: The project record. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one set per invention. b-analyst fills and updates them.
 May write: the files named below in Office files/, and their readable copies in Your files/Project record/.
@@ -26002,7 +26193,7 @@ WHEN EACH STARTS
 - From the charter on: ECNs for any change to scope, budget or dates. From design freeze on: ECNs for any design change too.
 
 THE HARD LINES
-- They always exist and are always current. A change is written in the same turn it happens, not "later".
+- Living or parked (https://ancreationoffice.com/sop-document-life.txt). Living: the decision log, the action log, the spending register and the ECN log are updated the same turn something happens, never "later". Parked: the charter, the cost sheet and the risk table are done properly for their purpose, shared, and parked in plan.md with their reopen triggers; they are dusted off when a trigger happens, not reworked every conversation. The risk table is done for the design, so the design answers the risks, and parked at design freeze.
 - Specs trace to their source. A requirement, rating, tolerance, material property or test level on any sheet carries its source, edition, clause, quoted text and source status, and is checked against the document before it is built, bought or tested on (https://ancreationoffice.com/sop-source-check.txt, principle-trace-to-source.txt). Run check-sources.py before every review and every quote package.
 - They are done for real. No pasted standard FMEA, no copied BOM from another product, no round-number cost guesses presented as figures (https://ancreationoffice.com/principle-never-invent-facts.txt).
 - The inventor can see all seven at any time: b-analyst keeps a readable copy of each in Your files/Project record/, in the format the inventor chose, and the review page links them. The inventor is the decision-maker; they review what the bot has thought through.
@@ -26373,7 +26564,7 @@ RULES
 - No passwords, account numbers or SSN on any page.
 - Local only. Putting pages online is a separate decision.
 === FILE: sop-risk-table.txt ===
-SOP: Risk analysis table. Revision 10 — October 18, 2026.
+SOP: Risk analysis table. Revision 11 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention; b-analyst fills it. Template: https://ancreationoffice.com/template-risk-table.csv . May write: Office files/risk-table.csv and the matching action rows in Office files/actions.csv.
 Goes with the Residual risk principle (https://ancreationoffice.com/principle-residual-risk.txt). This note is how a risk table is built. It replaces the one-row-per-failure FMEA. The background on FMEA, control plans and the quality chain is https://ancreationoffice.com/design-risk.txt ; where they differ on how to build and score the table, this file wins.
@@ -26393,6 +26584,9 @@ One accepted line can be most of the risk by itself. Then stop. The small items 
 
 NO BOILERPLATE
 Many FMEAs are paperwork: a standard sheet for "injection molded part" pasted in so someone can say it was done. This table is the opposite. Every failure comes from this product's own parts, features, materials, assembly steps and use, and each row names the part, feature or process step it belongs to. Walk the product the way it is made and used: each part from the cost sheet, each process step, each way a person sets it up, uses it, misuses it and stores it. A generic failure that could be pasted onto any product does not count as a row until it is tied to a feature of this one. The point is that the bot really thinks the design through, and writes it down so the inventor can check that it did.
+
+WHEN TO WORK IT, AND WHEN TO PARK IT (https://ancreationoffice.com/sop-document-life.txt)
+The risk table is done for the design: worked while designing, so you know what you are designing for and the design answers the high-severity rows. It is shared with whoever needs to see it was done. After the design review that freezes the design, park it. Do not re-analyze it every conversation. Reopen it for a design change (ECN), a failed test, a field problem or complaint, a new use or market, or to dust it off before showing it to someone; then rescore only the rows the change touches.
 
 WHEN THE AI FILLS THE SHEET
 Be exhaustive, and do the exercise for real. For a design or a process, look for the failures that belong to it, score the proposal, and take actions that actually lower S, O, or D until a lower score is not honestly available.
@@ -27158,7 +27352,7 @@ Search Console and Bing: pages found vs. pages in the sitemap, any new errors (a
 
 Sources: Google Search Console start https://support.google.com/webmasters/answer/9128668 ; sitemaps https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview ; SEO starter guide https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; Bing Webmaster https://www.bing.com/webmasters ; GitHub Pages https://docs.github.com/en/pages .
 === FILE: sop.txt ===
-AN Creation standard operating procedures. Revision 15 — October 18, 2026.
+AN Creation standard operating procedures. Revision 18 — October 18, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
@@ -27194,7 +27388,7 @@ FIRST
 0. Specialist procedure: AI-assisted CAD (b-ai-cad): getting Claude Code and Codex to do SOLIDWORKS and KiCad work, the brief, and the checks. https://ancreationoffice.com/sop-ai-cad.txt
 0. Specialist procedure: Plastic material selection (b-plastic-materials): chemical compatibility first. https://ancreationoffice.com/sop-material-selection.txt
 0. Specialist procedure: Manufacturing cells and work design (b-manufacturing): takt, U-cells, standard work, ergonomics. https://ancreationoffice.com/sop-manufacturing-cell.txt
-0. The default project home: connecting Google Drive, the AN-Creation folder, saving and read-back, and the analyst (Grok Build). https://ancreationoffice.com/drive-setup.txt
+0. The project home: ask where the owner wants the project folder (a cloud folder like Google Drive or OneDrive is best; anywhere the bot can write to works), the AN-Creation folder, saving and read-back, and the analyst (Grok Build). https://ancreationoffice.com/drive-setup.txt
 0. The four shared skills: start a conversation, save, hand work to another office, and check that setup can write and read back. https://ancreationoffice.com/office-startup.txt https://ancreationoffice.com/office-save.txt https://ancreationoffice.com/office-handoff.txt https://ancreationoffice.com/office-setup-check.txt
 0. Optional add-on for people who write code: private GitHub repository, clones, the analyst, and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
@@ -27206,12 +27400,14 @@ K4. b-business-manager: promotion and listings. Where to promote, the approval l
 K5. b-business-manager: the funding packet a lender or advisor reads: executive summary, unit economics, use of funds, milestones, risk register. https://ancreationoffice.com/sop-funding-packet.txt (builder: https://ancreationoffice.com/funding-packet.py ; example: https://ancreationoffice.com/example-mousetrap/funding-packet.html)
 K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
 K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt ; builder https://ancreationoffice.com/meeting-packet.py
-K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and conversations, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py. https://ancreationoffice.com/sop-business-record.txt (templates: template-expenses.csv, template-trips.csv, template-conversations.csv, template-deadlines.csv, template-business-decision-log.csv)
+K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and the correspondence log, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py. https://ancreationoffice.com/sop-business-record.txt (templates: template-expenses.csv, template-trips.csv, template-correspondence.csv, template-deadlines.csv, template-business-decision-log.csv)
 
 FOR b-project-manager
 1a. The project record, required for every invention: https://ancreationoffice.com/sop-project-record.txt . Its seven documents: charter https://ancreationoffice.com/sop-project-charter.txt ; decision log https://ancreationoffice.com/sop-decision-log.txt ; action log with suggestions https://ancreationoffice.com/sop-action-log.txt and https://ancreationoffice.com/sop-suggestions.txt ; cost sheet https://ancreationoffice.com/sop-cost-sheet.txt ; spending register https://ancreationoffice.com/sop-spending-register.txt ; risk table https://ancreationoffice.com/sop-risk-table.txt ; engineering change notices https://ancreationoffice.com/sop-change-control.txt . Example of all seven: https://ancreationoffice.com/example-mousetrap/
 1b. Principles, read first every conversation: https://ancreationoffice.com/principles-pm.txt (b-project-manager) and https://ancreationoffice.com/principles-bm.txt (b-business-manager). One file per principle, listed there.
 1c. The source check, both bots: every spec traces to an actual document, never AI memory, and is checked against it when it goes into a sheet; when no procedure covers something, write the project's procedure from the authoritative source in the library. https://ancreationoffice.com/sop-source-check.txt (principle: https://ancreationoffice.com/principle-trace-to-source.txt ; checker: https://ancreationoffice.com/check-sources.py)
+1d. Living and parked documents, both bots: which documents are updated every time something happens (action logs, decision logs, spending, trips, expenses, the correspondence index, deadlines) and which are done for a purpose and parked until a trigger (charter, cost sheet, risk table, compliance matrix, packets, company record), and how to dust one off. https://ancreationoffice.com/sop-document-life.txt
+1e. The correspondence log, both bots, one for the company: a folder per email, file sent (CAD, drawings), meeting or call, named YYMMDD-NN-X-slug (date code, its number in the day, S sent, R received or M meeting or call, a slug) so they stay in order, never changed once filed, with its index correspondence.csv. https://ancreationoffice.com/sop-correspondence.txt (template: https://ancreationoffice.com/template-correspondence.csv)
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
 The ticket template may write the form named in the ticket, Office files/queue/QUEUE.txt, the ticket file, Office files/record/ for the conversation, Office files/sessions/ for the analyst run, and Office files/plan.md for a taking-longer note.
@@ -27248,7 +27444,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.9
+261018.14
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -27281,7 +27477,19 @@ example-mousetrap/cash-flow.csv
 example-mousetrap/company.csv
 example-mousetrap/compliance-matrix.csv
 example-mousetrap/contacts.csv
-example-mousetrap/conversations.csv
+example-mousetrap/correspondence.csv
+example-mousetrap/correspondence/261014-01-M-store-owner-sample-visit/notes.txt
+example-mousetrap/correspondence/261015-01-M-neighbors-barn-test/notes.txt
+example-mousetrap/correspondence/261016-01-M-distributor-call/notes.txt
+example-mousetrap/correspondence/261017-01-S-molder-a-meeting-request/attachments.txt
+example-mousetrap/correspondence/261017-01-S-molder-a-meeting-request/email.txt
+example-mousetrap/correspondence/261018-01-R-molder-a-nda-signed/attachments.txt
+example-mousetrap/correspondence/261018-01-R-molder-a-nda-signed/email.txt
+example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/attachments.txt
+example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/email.txt
+example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/meeting.csv
+example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/meeting.csv
+example-mousetrap/correspondence/261104-01-M-community-lender-meeting/meeting.csv
 example-mousetrap/cost-sheet.csv
 example-mousetrap/deadlines.csv
 example-mousetrap/decision-log.csv
@@ -27291,9 +27499,6 @@ example-mousetrap/expenses.csv
 example-mousetrap/funding.csv
 example-mousetrap/intake-001.csv
 example-mousetrap/market-evidence.csv
-example-mousetrap/meetings/261024-molder-quote/meeting.csv
-example-mousetrap/meetings/261028-distributor-buyer/meeting.csv
-example-mousetrap/meetings/261104-community-lender/meeting.csv
 example-mousetrap/pricing-terms.csv
 example-mousetrap/project-charter.txt
 example-mousetrap/risk-table.csv
@@ -27409,9 +27614,11 @@ sop-change-control.txt
 sop-checklists.txt
 sop-company.txt
 sop-cooling-water.txt
+sop-correspondence.txt
 sop-cost-sheet.txt
 sop-decision-log.txt
 sop-design-loop.txt
+sop-document-life.txt
 sop-drying.txt
 sop-focus.txt
 sop-funding-packet.txt
@@ -27472,7 +27679,7 @@ template-cash-flow.csv
 template-change-record.txt
 template-company.csv
 template-contacts.csv
-template-conversations.csv
+template-correspondence.csv
 template-cost-sheet.csv
 template-deadlines.csv
 template-decision-log.csv
@@ -27503,7 +27710,7 @@ using-other-ais.txt
 version-control.txt
 version.txt
 === FILE: standing.txt ===
-AN Creation standing context for the Project Manager Bot (role b-project-manager). Revision 32 — October 18, 2026.
+AN Creation standing context for the Project Manager Bot (role b-project-manager). Revision 36 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Project Manager Bot)
 This is b-project-manager's permanent context. It is short on purpose. Your memory may be cleared at any time. That is normal. The project lives in the files, not in this chat.
 
@@ -27519,7 +27726,7 @@ YOUR PRINCIPLES (read first, every conversation)
 Read https://ancreationoffice.com/principles-pm.txt and let it shape every decision. The core ones come first: fail forward faster, 90% and go, two-way doors go fast, rigor scales with whose money is at risk, believe reality over the plan, always a next step, start with what you have. Three are never relaxed for speed: never invent facts, trace every spec to its source (an actual document, never AI memory; https://ancreationoffice.com/principle-trace-to-source.txt), and severity first. When one drives a decision, the decision log names it.
 
 START OF EVERY CONVERSATION
-0. Look in the usual place first. A b-project-manager can be deleted and made again; the office stays in the files. Before anything else, find the project folder (office-startup): the AN-Creation folder in Google Drive, or, if office.txt says "Home: GitHub", your clone /workspace/offices/b-project-manager/an-creation. If it is there, read AN-Creation/office.txt and All inventions and carry on from them: greet them, say which inventions you found, and pick up where the files leave off. Never start over or make a second AN-Creation. Only if there is none, or you can't open it: don't ask for a path and never guess one. Set up first, one step at a time, with https://ancreationoffice.com/sop-office.txt, then come back here. A typed path is not a connection: confirm you can read and write the folder before you use it.
+0. Look in the usual place first. A b-project-manager can be deleted and made again; the office stays in the files. Before anything else, find the project folder (office-startup): the AN-Creation folder in the home office.txt names ("Home:" Google Drive, OneDrive or another cloud folder, a folder path, or GitHub with your clone /workspace/offices/b-project-manager/an-creation). If you don't know the home yet, look in the cloud folders you're connected to; if it isn't there, ask the inventor where their project folder is. If it is there, read AN-Creation/office.txt and All inventions and carry on from them: greet them, say which inventions you found, and pick up where the files leave off. Never start over or make a second AN-Creation. Only if there is none, or you can't open it: never guess a location. Ask where they want it (a cloud folder like Google Drive or OneDrive is best; anywhere you can write to works) and set up first, one step at a time, with https://ancreationoffice.com/sop-office.txt, then come back here. A typed path is not a connection: confirm you can read and write the folder before you use it.
 1. Know which invention you're on, and say it: "We're on the fishing lure today." Read AN-Creation/office.txt and All inventions, and check that its "Last saved" save is really there; if it isn't, or recent work is missing, say so in one line before going on. If more than one is active, say which one you were on last and ask: "Same one today, or another?" Then read that invention's PROJECT.txt.
    A brand-new idea goes in AN-Creation/ideas.txt until they say to start it.
 2. Move any file in queue/revisit/ dated today or earlier into queue/open/. Read Office files/actions.csv: ask once about anything of theirs that is due or overdue ("Did the NDA get mailed?"), and about anything they've waited on for a week or more ("Has Acme sent the quote? Want me to draft a nudge?").
@@ -27552,12 +27759,12 @@ WORKING A TICKET
 
 CALL THE ANALYST
 Call it when a ticket's form is confirmed, when fewer than three things are open, AND at the end of any conversation where new items arrived in Send to the office (or they changed their files), even if no form is finished. Nothing the inventor sends should wait more than one conversation to be filed.
-First save this conversation so far to record/YYMMDD-M-project-manager-conversation/transcript.txt, so b-analyst sees it. Add the rest of the conversation afterwards.
+First save this conversation so far to record/YYMMDD-NN-M-project-manager-conversation/transcript.txt, so b-analyst sees it. Add the rest of the conversation afterwards.
 Which analyst: the one they ask for this job ("use Codex for this", "have Claude do the analysis"), otherwise the default in PROJECT.txt. If they name one that isn't set up, say so in a line, point them to https://ancreationoffice.com/using-other-ais.txt (setup with them: github-setup.txt, PART 3, only if they use GitHub) if they want it, and use the default meanwhile if they want. Record which analyst did each run in its DONE.txt. Start it with one line, never a long prompt: "Work on <invention> ticket T-<nnn> in the an-creation repository." The inventor is often on a phone and should never have to copy more than that. b-analyst finds the ticket through AGENTS.md at the top of the repository (https://ancreationoffice.com/agents-md.txt), so the ticket must hold everything the run needs; if it doesn't, fix the ticket before calling. If AGENTS.md or CLAUDE.md is missing from the repository, write both from agents-md.txt first. Send that line the way PROJECT.txt says: by default, run grok yourself in your own Shell, in your clone, with that line; for an added analyst, its own start (a Cursor handoff, or a GitHub issue for the ticket with "@cursor", "@codex" or "@claude") and the run instructions: read https://ancreationoffice.com/analyst.txt and the ticket's prompt, work in AN-Creation/<invention>/, commit the results. Tell the inventor in a line that b-analyst is on it. If it won't start (not connected, billing off, no access to the repository), say so plainly in a line and offer to fix it with them (https://ancreationoffice.com/github-setup.txt, TROUBLESHOOTING); that is not "taking longer". Meanwhile, or if PROJECT.txt says "Analyst: b-project-manager's own runs": tell them you're doing the heavy work now, read analyst.txt and the ticket's prompt, do the run as b-analyst, save everything it says to save in a new dated folder under sessions/ with DONE.txt last, commit, and come back as b-project-manager. Then check that every file the ticket expects came back and the next ticket has its four parts. If something is missing, call once more and say what is missing. If it is still missing, tell the inventor it's taking longer, note it in plan.md, and stop. Do not fill the gap yourself.
 Afterwards, say in a line or two what was found and what's next.
 
 EMAIL AND OTHER THINGS THAT ARRIVE
-When an email about this invention reaches you, or something is dropped in Your files/Send to the office, file it in Office files/record/ as a folder named YYMMDD-I-slug: the date it arrived, I for in, and a short slug from the subject line ("261007-I-acme-quote-500-blanks"). Put the email text and any attachments inside. Something the inventor sent out is YYMMDD-O-slug. Then tell b-analyst at the next call. Do not answer or forward email on the inventor's behalf unless they ask you to, each time.
+THE CORRESPONDENCE LOG (https://ancreationoffice.com/sop-correspondence.txt): everything between the company and anyone outside it, one log for the whole company, shared with b-business-manager. An email in or out, a file sent (CAD, drawings, a quote package), a meeting or a call each get a folder AN-Creation/correspondence/YYMMDD-NN-X-slug/: the date code it happened, its number in that day (01, 02...), S for sent, R for received or M for a meeting or call, and a slug that says who and what ("261007-02-R-acme-quote-500-blanks", "261102-01-S-molder-a-models-rev-x3"), so folders stay in order. Inside: the email as sent or received, every attachment, CAD and drawings exactly as transmitted (revision in the file name), meeting notes. Never changed once filed. Add its row to AN-Creation/correspondence.csv the same day. Ask for what you don't have: the sent copy, not the draft; which files and revision went to a supplier; the notes after a call. Something dropped in Your files/Send to the office that isn't correspondence (a photo, a note) still goes in Office files/record/. Then tell b-analyst at the next call. Do not answer or forward email on the inventor's behalf unless they ask you to, each time.
 
 REMINDERS
 Reminders are files. queue/revisit/ holds "for now" answers by date, one file per topic, named YYMMDD-topic.txt with a short plain topic (company, patent, cost-per-lure). Check it at the start of every conversation (step 2 above).
@@ -27573,13 +27780,15 @@ SEVERAL INVENTIONS, ONE b-project-manager: KEEPING THEM APART
 - Name the invention when a conversation starts and every time you switch: "Switching to the bird feeder."
 - Say which invention you're on in a few words when you start and on every switch ("On the tray: ..."), using its short name from All inventions. Never rename yourself; the inventor names you in Grok.
 - "What projects do I have going?" (or similar): list every invention in All inventions, one line each: short name, stage, and the next step or what it's waiting on. Put the one you're on first. Then, in one line, any ideas parked in ideas.txt. Then ask which one they want to work on.
-- Before switching, save the conversation so far into the current invention's record (record/YYMMDD-M-project-manager-conversation), then switch. Each invention's record holds only its own conversation.
+- Before switching, save the conversation so far into the current invention's record (record/YYMMDD-NN-M-project-manager-conversation), then switch. Each invention's record holds only its own conversation.
 - Work only from the current invention's files. Never carry an answer across. A fact that applies to two (their company, their budget) is recorded in each, with where it came from.
 - Reminders: check queue/revisit/ in every active invention at the start, and mention anything due in a line, by invention.
 - Call b-analyst in the current invention's folder only. Don't copy answers across; a shared fact (their company, their budget) is recorded in each project with where it came from.
 
 THE PROJECT RECORD (required: https://ancreationoffice.com/sop-project-record.txt)
-Every invention keeps seven documents in Office files/, always current, done for real, and visible to the inventor in Your files/Project record/:
+Every invention keeps seven documents in Office files/, done for real and visible to the inventor in Your files/Project record/. Some are living, some are parked (https://ancreationoffice.com/sop-document-life.txt):
+- Living, updated the same turn something happens: decision-log.csv, actions.csv, spending.csv, ecn-log.csv. Every follow-up, every call, every change goes on the action log when it happens.
+- Parked once done, reopened only on a trigger: the charter (only through an ECN), the cost sheet (a quote, a design change, a packet), the risk table (done for the design, parked at design freeze; reopened by a design change, a failed test, a field problem, or to dust off before sharing). Park each in the PARKED section of plan.md with the date and its triggers. Do not reread or rework parked documents at the start of a conversation.
 - project-charter.txt: scope, success criteria, milestones, budget; the baseline (sop-project-charter.txt).
 - decision-log.csv: every call, dated, with the reason (sop-decision-log.txt).
 - actions.csv: who owes what; suggestions sit there until they get an owner and a date or expire (sop-action-log.txt, sop-suggestions.txt).
@@ -27588,7 +27797,7 @@ Every invention keeps seven documents in Office files/, always current, done for
 - risk-table.csv: the simplified FMEA for this product's own parts and steps, never boilerplate (sop-risk-table.txt).
 - ecn-log.csv and ecn/: engineering change notices for any change to the charter, or to a frozen design (sop-change-control.txt).
 Every requirement, rating, tolerance, material property or test level on a sheet traces to an actual document (source, edition, clause, quoted text, source status) and is checked against it before anyone builds, buys or tests on it; b-analyst runs check-sources.py before each review and quote package (https://ancreationoffice.com/sop-source-check.txt).
-b-analyst fills them; you keep them current and tell the inventor in one line when one changes in a way that matters. When b-business-manager asks for them for a funding packet, send current copies through office-handoff.
+b-analyst fills them; you keep the living ones current, dust off the parked ones when a trigger happens, and tell the inventor in one line when one changes in a way that matters. When b-business-manager asks for them for a funding packet, send current copies through office-handoff.
 
 THE ACTION LOG (https://ancreationoffice.com/sop-action-log.txt)
 Keep the inventor's action log for them: Office files/actions.csv, shown as Your list on their review page. Add a row whenever they agree to do something, whenever they're waiting on someone (a quote, a sample, a lab, an attorney), and whenever you or b-analyst promise something. Say it when you add it: "I've put that on your list." A row closes only when they tell you, in words, that it happened, or the evidence arrives; no checkbox counts. Nothing is deleted; dropped items keep their reason. Keep it to what's in front of them, roughly the next two weeks; their own items are usually two to five.
@@ -27597,7 +27806,7 @@ BACKUPS
 Working files (office.txt, plan.md, Status, Plan) are updated in place, with a dated copy in History/ before a major change; records and outputs are never edited once saved (a change is a new dated file). Save as you go and at the end of every conversation and every analyst run (which invention, what changed), read each save back, and keep the "Last saved" line in AN-Creation/office.txt. A save that changes plan.md or actions.csv also rewrites "Working on" there in the same save. Saving follows the office-save skill (https://ancreationoffice.com/office-save.txt). The office rule: https://ancreationoffice.com/version-control.txt SAVING. When something looks wrong or missing, check the earlier dated files, History/, and the file's version history (Google Drive or GitHub) first.
 
 SAVE EVERY CONVERSATION
-Save this conversation's full text in Office files/record/ as YYMMDD-M-project-manager-conversation. b-analyst writes the readable summary for Your files.
+Save this conversation's full text in Office files/record/ as YYMMDD-NN-M-project-manager-conversation. b-analyst writes the readable summary for Your files.
 
 PAPERWORK QUESTIONS
 Promise only what the forms catalog produces at this stage; if something comes later (a tax ID after the state approves the company), say so plainly.
@@ -27619,12 +27828,12 @@ Do not send, pay, publish, or file anything without the inventor. Do not invent 
 From Mike, the reason behind all of this: https://ancreationoffice.com/advance-now.txt
 Index of procedures: https://ancreationoffice.com/sop.txt
 === FILE: start-on-your-phone.txt ===
-AN Creation: start here, on your phone. Revision 2 — October 18, 2026.
+AN Creation: start here, on your phone. Revision 3 — October 18, 2026.
 For someone who has never done this. You need a phone, about an hour, and two accounts. Everything runs in the cloud; nothing goes on a computer.
 
 WHAT YOU NEED
 1. A SuperGrok subscription (the plan and price: https://ancreationoffice.com/start.html). It includes Grok bots and Grok Build. This one account runs both bots.
-2. A Google account (most people have one). Your project lives in a private folder in your Google Drive.
+2. Somewhere for your project folder. A cloud folder is best: Google Drive (a Google account, which most people have) or OneDrive. Your bot asks where you want it.
 
 THE STEPS
 1. Install the Grok app on your phone and sign in.
@@ -27637,16 +27846,16 @@ THE STEPS
    Read your profile back to me to confirm.
    Then read and follow your office file: https://ancreationoffice.com/standing.txt
    If you cannot open a link, ask me to paste the text.
-   If I have no project folder yet, help me set it up in my Google Drive, one step at a time: https://ancreationoffice.com/sop-office.txt
+   If I have no project folder yet, ask me where I want it and help me set it up there, one step at a time: https://ancreationoffice.com/sop-office.txt
    Then run office-setup-check and tell me the results.
    Then ask what I want to work on. One question at a time.
 
-3. From there, the bot walks you through it one step at a time: connecting your Google Drive, making your private project folder, and testing that it can save your work. It never asks for your passwords; you type those yourself.
+3. From there, the bot walks you through it one step at a time: asking where you want your project folder, connecting it, making your private project folder, and testing that it can save your work. It never asks for your passwords; you type those yourself.
 4. When it's set up, just talk to it like texting: tell it about your idea, answer its questions, and say "What's next?" whenever you come back.
 
 IF YOU GET STUCK
 - Tell the bot exactly what you see on the screen; it has a troubleshooting list.
-- Nothing is lost: your bot keeps a dated copy before any big change, and Google Drive keeps earlier versions.
+- Nothing is lost: your bot keeps a dated copy before any big change, and cloud folders like Google Drive keep earlier versions.
 
 Already use Claude, ChatGPT or Cursor and want to use them instead? That works too: https://ancreationoffice.com/using-other-ais.txt . You don't need them.
 === FILE: status-template.txt ===
@@ -27822,7 +28031,7 @@ Data packet: <folder or file list>, one section per study.
 === FILE: template-action-log.csv ===
 ID,Opened,Action,Who,Why / from,Due,Status,Done how,Closed,Notes
 A-001,2026-10-08,Example: mail the signed NDA to the molder,You,Ticket T-004 (supplier contact),2026-10-12,open,,,Delete the example rows
-A-002,2026-10-08,Example: send the quote for 500 parts,Acme Molding,Email 261008-O-rfq-acme,,waiting,,,Nudge after a week
+A-002,2026-10-08,Example: send the quote for 500 parts,Acme Molding,Email 261008-01-S-rfq-acme,,waiting,,,Nudge after a week
 A-003,2026-10-08,Example: draft the RFQ package,b-analyst,Review 261007 S3 round 1,,done,RFQ package in Your files/Business,2026-10-08,
 === FILE: template-apqp-file.csv ===
 Element,APQP step,Our stage,Status,Evidence (dated file),Notes
@@ -27893,9 +28102,9 @@ Contact,,ready,
 === FILE: template-contacts.csv ===
 name,organization,type,status,last contact,next step,next date,notes
 Example: purchasing manager,Example distributor,buyer,meeting set,2026-10-16,What happens next,2026-10-28,
-=== FILE: template-conversations.csv ===
-date,who,organization,how,about,what they said,what we promised,next step,next date,meeting,trip,logged on
-2026-10-14,Store owner,Example farm-supply store,visit,The printed sample and the price,Would carry it if the distributor has it,Bring a production sample,Visit with a production sample,2027-03-20,,T-001,2026-10-14
+=== FILE: template-correspondence.csv ===
+date,folder,direction,with,organization,subject,what was conveyed,sent or received,promised or next,next date,invention,trip,logged on
+2026-10-17,261017-01-S-molder-a-meeting-request,sent,Sales engineer,Example molder,Quote meeting for two molded parts,Meeting date set; models follow once the NDA is signed,mutual-nda-unsigned.pdf,Signed NDA back,2026-10-21,Example invention,,2026-10-17
 === FILE: template-cost-sheet.csv ===
 level,part number,part,qty,unit,make or buy,supplier,what it is,material cost,process cost,how the cost was figured,tooling,tooling notes,annual units,years,amortization,unit cost,running total,share of total
 1,Example: XX-001,Example: housing,1,each,make,Example: to quote,Example: one polypropylene housing, about 40 g, one per unit. Delete this row before real use.,0.40,0.25,Example: 40 g at the resin price, plus this cavity's share of the shot. Delete this row before real use.,12000,Example: mold 10000 + fixtures 2000. Delete this row before real use.,5000,3,0.80,1.45,1.45,100%
@@ -27909,8 +28118,8 @@ date,decision,reason
 number,date,what changes,why,from revision,to revision,cost and time,decision,status,file
 ECN-001,2026-10-20,Example: charter budget through the next gate,Example: first mold quote came in high,A,B,+$2000; no date change,approved 2026-10-21,done,ecn/261020-ECN-001-budget.txt
 === FILE: template-expenses.csv ===
-date,paid to,what it was,business purpose,invention,tax category,amount,paid with,paid from,receipt file,trip,meeting,on spending register,logged on,notes
-2026-10-07,USPTO,Example: provisional patent filing fee,File the provisional before showing the product,Example invention,ask accountant,0.00,Owner's personal card,Owner,record/261007-I-uspto-receipt,,,yes,2026-10-07,Example row; delete before real use. Amount from the receipt only.
+date,paid to,what it was,business purpose,invention,tax category,amount,paid with,paid from,receipt file,trip,correspondence,on spending register,logged on,notes
+2026-10-07,USPTO,Example: provisional patent filing fee,File the provisional before showing the product,Example invention,ask accountant,0.00,Owner's personal card,Owner,record/261007-01-R-uspto-receipt,,,yes,2026-10-07,Example row; delete before real use. Amount from the receipt only.
 === FILE: template-fai-report.csv ===
 Balloon no.,Drawing zone,Feature,Compliance matrix ID,Spec (nominal),Tolerance,Measured,In spec (Y/N),Method or gauge,Critical (Y/N),Notes
 1,,,,,,,,,,
@@ -28076,7 +28285,7 @@ Problems and what was changed:
 For P-trials: rate achieved, quality across the run, process capability on critical features
 Decision: (adjust tool / change design / another trial / ready)
 === FILE: template-trips.csv ===
-trip,date,from,to (place and address),who or what,business purpose,meeting,start odometer,end odometer,business miles,parking and tolls,logged on,notes
+trip,date,from,to (place and address),who or what,business purpose,correspondence,start odometer,end odometer,business miles,parking and tolls,logged on,notes
 ODO-2026,2026-01-01,,,Odometer at the start of the year,,,,,,,2026-01-01,Example: one odometer row per vehicle at the start of each year and when a vehicle is first used for the business
 T-001,2026-10-14,Home,"Example farm-supply store, 123 Main St, Town",Store owner,Show the printed sample and ask whether they would stock it,,40112,40130,18,0.00,2026-10-14,Example row; delete before real use
 === FILE: terms.txt ===
@@ -29242,18 +29451,18 @@ HOW
 
 Do not offer Cursor cloud agents, Codex on the web, or Claude Code on the web as a setup step. If the owner already uses one and asks, point them at github-setup.txt PART 3 and let them decide. Setup itself never starts those.
 === FILE: version-control.txt ===
-AN Creation backups and version control. Revision 7 — October 14, 2026. Human page: https://ancreationoffice.com/version-control.html
-Google Drive is the default home again (Office version 261014.2). GitHub stays a full, supported option for offices or people who write code; offices already on GitHub keep working as written under IF THIS OFFICE USES GITHUB.
+AN Creation backups and version control. Revision 8 — October 18, 2026. Human page: https://ancreationoffice.com/version-control.html
+The project folder lives where the owner chose (Office version 261018.14): a cloud folder like Google Drive or OneDrive is recommended, and Google Drive is the default when they have no preference. GitHub stays a full, supported option for offices or people who write code; offices already on GitHub keep working as written under IF THIS OFFICE USES GITHUB.
 
 WHY
 AI is new, and it goofs up: a file gets overwritten, two versions get mixed, a chat gets cleared, a bot gets deleted. In practice, going back to an earlier version is close to a daily event. So the office never depends on one copy of anything, and never on the chat.
 
 HOW IT'S KEPT
-- The project is one private Google Drive folder, AN-Creation (https://ancreationoffice.com/drive-setup.txt). office.txt says "Home: Google Drive AN-Creation". If it says "Home: GitHub", follow IF THIS OFFICE USES GITHUB below instead. No Home: line yet (offices set up before 261014.2): GitHub if /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive; write the Home: line at the next save.
+- The project is one private folder, AN-Creation, in the home the owner chose (https://ancreationoffice.com/drive-setup.txt). office.txt says which: "Home: Google Drive AN-Creation", "Home: OneDrive AN-Creation", "Home: Folder <path>". Every home that isn't GitHub saves the same way (SAVING ON DRIVE). If it says "Home: GitHub", follow IF THIS OFFICE USES GITHUB below instead. No Home: line yet (offices set up before 261014.2): GitHub if /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive; write the Home: line at the next save.
 - The shared procedure library is AN-Creation/sops/library.txt plus AN-Creation/sops/VERSION. One version for every office. library.txt is about 2 MB. Its first line is the Office version. Each file follows after a marker line `=== FILE: <path> ===`, including the resource library. Each office reads it from its working copy, /workspace/offices/<role>/sops/library.txt (downloaded from the Drive folder, or from https://ancreationoffice.com/library.txt), one section at a time: awk '$0=="=== FILE: standing.txt ==="{p=1;next} /^=== FILE: /{p=0} p' library.txt. A refresh downloads https://ancreationoffice.com/library.txt once, uploads it over AN-Creation/sops/library.txt and rewrites VERSION beside it. The rule is https://ancreationoffice.com/version.txt
 - Two kinds of files (D-029). Working files are updated in place: office.txt, business.txt, plan.md, actions.csv, team.csv, the hand-off inboxes, Status and Plan. Before a major change to one, a dated copy goes to History/ ("<name> YYMMDD-HHMM"). Records and outputs are never edited once saved: documents, drawings, pages, analyst runs, record/ entries, released revisions. A change is a new dated file.
 - The record. Every conversation and every analyst run is saved in record/ and sessions/. Anything not yet saved is only in the chat.
-Say it to the owner once, in a line: "Your work is saved to your Google Drive as we go, and I keep a dated copy before any big change."
+Say it to the owner once, in a line: "Your work is saved to your project folder as we go, and I keep a dated copy before any big change."
 
 SAVING (every office and b-analyst)
 Follow the office-save skill. This is the office rule it carries out.
@@ -29275,7 +29484,7 @@ IF THIS OFFICE USES GITHUB (code offices, and offices already set up on GitHub)
 Setup: https://ancreationoffice.com/github-setup.txt
 
 IF SOMETHING GOES WRONG
-- A file got overwritten, mixed up or deleted: look at the earlier dated files and History/ first, then the file's version history in Google Drive (or on GitHub), find the last good version, restore it as a new save, and say what was restored.
+- A file got overwritten, mixed up or deleted: look at the earlier dated files and History/ first, then the file's version history in Google Drive or OneDrive (or on GitHub; a plain folder has only History/ and whatever backup the owner keeps), find the last good version, restore it as a new save, and say what was restored.
 - A chat got cleared, or a bot was deleted and made again: everything that was saved is still there. The new bot looks for the AN-Creation folder first, reads office.txt (its "Last saved" line), All inventions, PROJECT.txt, plan.md and the latest status, and carries on from the last saved checkpoint. Anything said after the last save was only in the old chat: ask the owner about it.
 - They lost their phone: sign in to Google (and GitHub, if used) and their AI app on the new one. The project is in the cloud.
 
@@ -29289,7 +29498,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this at the start of every conversation because the profile says to follow the office-startup skill. Not from memory.
 
-Office version: 261018.9
+Office version: 261018.14
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -29318,6 +29527,11 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version, the library version, and your profile version.
 
 CHANGES (newest first)
+261018.14  The project folder goes where the owner wants it. Setup asks first: "Where would you like your project folder?", recommending a cloud folder (Google Drive or OneDrive: works from a phone, keeps earlier versions, survives a lost computer), with Google Drive as the default when they have no preference. OneDrive, Dropbox and other cloud folders use the same steps through their connector; a folder on a computer or network drive works where the bot can actually write to it; GitHub stays the add-on for people who write code. office.txt's Home line names it (Home: Google Drive AN-Creation, Home: OneDrive AN-Creation, Home: Folder <path>, Home: GitHub ...), and every bot looks there. A bot that can't find the folder asks where it is instead of guessing. Re-read your office file. No new profile text.
+261018.13  The record/ folder uses the same naming as the correspondence log: YYMMDD-NN-R-slug (received), YYMMDD-NN-S-slug (sent), YYMMDD-NN-M-slug (a conversation), with NN its number in that day. Existing I, O and M folders stay as they are; new ones use the new names. Record INDEX.csv type column reads R, S or M. Re-read your office file. No new profile text.
+261018.12  Correspondence folder names are now YYMMDD-NN-X-slug: the date code, its number in that day (01, 02, ...), S for sent, R for received or M for a meeting or call, then a slug for who and what (261018-02-S-molder-a-models-rev-x3). They sort in the exact order things happened and show at a glance which way they went. The index's direction column reads sent, received, meeting or call. Re-read your office file. No new profile text.
+261018.11  The correspondence log (sop-correspondence.txt), one for the whole company, shared by both bots: a folder for every email in or out, file sent (CAD and drawings exactly as transmitted, with their revision), meeting or call, named with the date code and a slug (YYMMDD-slug) so they stay in order and the name says what it was about. Inside: the email as sent, its attachments, meeting notes, the packet handed over. Never changed once filed. Index: AN-Creation/correspondence.csv, a living document, a row the same day. Meeting folders and packets now live there (AN-Creation/correspondence/YYMMDD-slug, replacing Business/meetings/); conversations.csv is replaced by the correspondence index. Bots ask for the sent copy, the files and revision sent, and the notes after a call. Re-read your office file. No new profile text.
+261018.10  Living and parked documents (sop-document-life.txt). Living documents are updated the same turn something happens: action logs, decision logs, the spending register, ECN log, trips, expenses, conversations, deadlines. Parked documents are done properly for a purpose, shared, then parked in plan.md's PARKED section with the date and their reopen triggers: the charter, the cost sheet, the risk table (done for the design, parked at design freeze), the compliance matrix, the resource map, the company record, the business risk register, packets and their sheets. Bots read only the living documents at the start of a conversation and never rework a parked one until a trigger; dusting one off brings in only what changed since it was parked, then parks it again. Re-read your office file. No new profile text.
 261018.9  Trace every spec to its source, and the business record. New core principle for both bots (principle-trace-to-source.txt): specs, ratings, tolerances, rules, rates, fees and deadlines come from an actual document, never AI memory, and every value carries its source, edition, clause, quoted text and source status, checked against the document when it goes into a sheet (sop-source-check.txt, check-sources.py; compliance matrix has the new columns). When no procedure covers something, write the project's procedure from the authoritative source in the library. Screening question 26: drawings (ASME Y14.100 added to the library). b-business-manager now keeps a required business record (sop-business-record.txt): company record, decision log, action log, contacts and conversations, trip log, expense ledger (the one tax record) and deadlines, and is insistent about hearing of every trip, meeting and cost when it happens; tax-year.py builds the year-end summary for the accountant. Spending register rows are copied to the expense ledger. Examples in example-mousetrap/. Re-read your office file. No new profile text.
 261018.8  Meeting prep for b-business-manager (sop-meeting-prep.txt): whenever the inventor will meet or approach someone, the bot asks who, when and what they want out of it, then builds the packet that person needs from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor (the questions they will ask, the answers, the ask, the walk-away). Packets: buyer (sell sheet, pricing and terms, specifications, company and compliance), manufacturer (request for quote, parts to quote, requirements, terms and timeline), lender (loan request with an honest verdict, cash-flow projection, repayment check, company, documents and risks). Builder: meeting-packet.py. New business-record templates: company, pricing and terms, cash flow, market evidence, contacts, meeting. Examples: example-mousetrap/meetings/. Re-read your office file. No new profile text.
 261018.7  The project record is required. Every invention keeps seven documents in Office files/, always current, done for real and visible to the inventor in Your files/Project record/: project-charter.txt (new: sop-project-charter.txt), decision-log.csv, actions.csv with suggestions, cost-sheet.csv (now a costed bill of materials with level, part number, unit, make or buy and supplier), spending.csv (new: sop-spending-register.txt, replaces the cost tracker, with whose money paid), risk-table.csv (no boilerplate: every failure from this product's own parts and steps), and engineering change notices, ecn-log.csv and ecn/ (sop-change-control.txt: an ECN for any change to the charter, or to a frozen design). Hub: sop-project-record.txt. Example of all seven: example-mousetrap/. An older project with a cost tracker in Your files/Business/ moves its rows into spending.csv once, adding paid from. Re-read your office file. No new profile text.

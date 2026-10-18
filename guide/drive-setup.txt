@@ -1,8 +1,16 @@
-AN Creation: Google Drive setup. Revision 1 — October 14, 2026.
-Read this at setup, and whenever saving to Google Drive isn't working. Then leave it. Google Drive is the default home for project files. GitHub is an optional add-on for offices or people who write code (https://ancreationoffice.com/github-setup.txt). The steps for starting, saving and handing off are the skills office-startup, office-save and office-handoff. After setup, run office-setup-check.
+AN Creation: Project folder setup (Google Drive, OneDrive, or wherever the owner wants it). Revision 2 — October 18, 2026.
+Read this at setup, and whenever saving isn't working. Then leave it. The project folder goes where the owner wants it. A cloud folder is the recommendation, but it can run anywhere the bot can write to and read back. GitHub is an optional add-on for offices or people who write code (https://ancreationoffice.com/github-setup.txt). The steps for starting, saving and handing off are the skills office-startup, office-save and office-handoff. After setup, run office-setup-check.
+
+WHERE IT LIVES (ask first)
+Ask the owner, once: "Where would you like your project folder? A cloud folder like Google Drive or OneDrive works best: you can reach it from your phone, it keeps earlier versions of every file, and it survives a lost or broken computer. But it can go wherever you like." Then use what they choose:
+- Google Drive: the steps below, as written.
+- OneDrive, Dropbox, Box or another cloud folder: the same steps, through that service's connector. Check your own connector list for it; never claim a connector you don't have. If there is none, say so in a line and offer Google Drive, or a folder this bot can reach.
+- GitHub (people who write code): https://ancreationoffice.com/github-setup.txt
+- A folder on a computer or a network drive (for example P:\AN-Creation): only where this bot can actually read and write it. An AI running on that computer can; a bot running in the cloud usually cannot reach a folder on your own computer. Say so plainly if it can't, and offer a cloud folder that the computer also syncs.
+Whatever they choose, the same rules hold: one folder named AN-Creation, the same layout inside, look before making one, prove a save by reading it back, and write the "Home:" line.
 
 WORDS, ONCE
-The project folder is one Google Drive folder named AN-Creation. A saved checkpoint is a file written to that folder and read back. Never ask for or type a password; the owner signs in themselves.
+The project folder is one folder named AN-Creation, in the home the owner chose (Google Drive in the steps below). A saved checkpoint is a file written to that folder and read back. Never ask for or type a password; the owner signs in themselves.
 
 ONE STEP AT A TIME (with the owner)
 1. Connect Google Drive. If you don't have the Google Drive connector yet, set it up yourself and give the owner the sign-in link; they sign in with their own Google account. Then ask: "Done?" Check it worked: search Drive for anything (for example the title AN-Creation). If the search fails, the connector isn't on yet; ask them to try again.
@@ -14,10 +22,10 @@ ONE STEP AT A TIME (with the owner)
    your office folder (for example Plastic Design/) with office.txt, plan.md, actions.csv, record/
 4. Library. Download https://ancreationoffice.com/library.txt to your own working copy (/workspace/offices/<your role>/sops/library.txt) and upload it to AN-Creation/sops/ with your file-upload tool. Write VERSION beside it: "Library version: <line 1 of library.txt>" and "SOP updates: ask". The file is about 2 MB, so always read it from your working copy, one section at a time.
 5. Prove a save: create AN-Creation/<your office>/record/setup-check.txt with today's date, read it back, and check it matches. Then move it to the trash. A connected app is not proof; the read-back is.
-6. Write it down. In your office.txt: "Home: Google Drive AN-Creation", the folder IDs you use most (AN-Creation, handoffs, sops, your office folder), "Office version seen" (the Office version from version.txt, format YYMMDD.N), and "Last saved" (written by office-save only after a read-back). Add your row to team.csv.
+6. Write it down. In your office.txt: the Home line ("Home: Google Drive AN-Creation", "Home: OneDrive AN-Creation", "Home: Folder P:\AN-Creation"), the folder IDs or paths you use most (AN-Creation, handoffs, sops, your office folder), "Office version seen" (the Office version from version.txt, format YYMMDD.N), and "Last saved" (written by office-save only after a read-back). Add your row to team.csv.
 7. Run office-setup-check and tell the owner pass or fail.
 
-SAVING ON DRIVE (the rule office-save carries out)
+SAVING ON DRIVE (the rule office-save carries out; the same on OneDrive or any other cloud folder, and on a plain folder with paths in place of file IDs)
 - Write in place: a working file (office.txt, plan.md, actions.csv, team.csv, a hand-off inbox, Status, Plan) keeps its name and folder. Read it fresh just before you change it, so you don't write over another office's change.
 - Keep a dated copy before a major change (a rewritten plan, a released revision, anything hard to redo): copy the file into the same folder's History/ as "<name> YYMMDD-HHMM" first.
 - Drive search can miss a file made minutes ago. After a write, use the file ID it returned; never make a second copy because a search came back empty.
@@ -26,7 +34,7 @@ SAVING ON DRIVE (the rule office-save carries out)
 - Quiet when it works. A failed save is one plain line to the owner.
 
 WHEN IT FAILS
-- Search or write fails: the connector is off or signed out. Reconnect the Google Drive connector yourself and have the owner sign in again. Don't start any other sign-in.
+- Search or write fails: the connector is off or signed out. Reconnect that service's connector yourself (Google Drive, OneDrive...) and have the owner sign in again. A plain folder: check the path and that this machine can still reach it. Don't start any other sign-in.
 - Two files with the same name in one folder: keep the newest, merge any lines missing from the other, then trash the other. Say so in a line.
 - A file over about 50 MB: keep it where it is and record where it lives.
 
@@ -34,6 +42,6 @@ GROK BUILD (heavy work)
 The grok command runs in your own Shell on the shared computer, in a work folder /workspace/offices/<your role>/work/<job>. Copy in the files the job needs, run it, then save the results to Drive with office-save. grok, claude and codex are already installed and signed in; never install, sign in or turn on billing.
 
 NEVER
-Never type a password or code. Never share the AN-Creation folder publicly or with "anyone with the link". Never put passwords, keys, an SSN, or bank or card numbers in a file. Never turn on billing for them.
+Never type a password or code. Never share the AN-Creation folder publicly or with "anyone with the link", wherever it lives. Never put passwords, keys, an SSN, or bank or card numbers in a file. Never turn on billing for them.
 
-Sources: Google Drive help https://support.google.com/drive ; version history https://support.google.com/drive/answer/2409045 .
+Sources: Google Drive help https://support.google.com/drive ; OneDrive help https://support.microsoft.com/onedrive ; version history https://support.google.com/drive/answer/2409045 .

@@ -1,4 +1,4 @@
-SOP: Cost sheet. Revision 5 — October 18, 2026.
+SOP: Cost sheet. Revision 6 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention. May write: Office files/cost-sheet.csv.
 Template: https://ancreationoffice.com/template-cost-sheet.csv
@@ -27,4 +27,5 @@ FOR THE FUNDING PACKET
 b-business-manager builds funding packets from a copy of this sheet (https://ancreationoffice.com/sop-funding-packet.txt). Keep it ready to copy: every component has a row, every tooling amount says whether it is a quote or a placeholder, and the quote's date and source are in tooling notes. When b-business-manager asks for it, send the current file through the office-handoff skill. Never let anyone retype it.
 
 WHEN TO UPDATE IT
+Worked during design and quoting, then parked once the quotes are in (https://ancreationoffice.com/sop-document-life.txt). The triggers below reopen it.
 Update the sheet when the design changes: a part added, removed, or changed in material, process, or tooling. Recalculate that row's amortization, every running total from that row down, and every share of total. A new quote that changes a number is updated the same way. Delete the example row before the first real entry.

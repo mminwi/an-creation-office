@@ -1,9 +1,9 @@
-AN Creation: start here, on your phone. Revision 2 — October 18, 2026.
+AN Creation: start here, on your phone. Revision 3 — October 18, 2026.
 For someone who has never done this. You need a phone, about an hour, and two accounts. Everything runs in the cloud; nothing goes on a computer.
 
 WHAT YOU NEED
 1. A SuperGrok subscription (the plan and price: https://ancreationoffice.com/start.html). It includes Grok bots and Grok Build. This one account runs both bots.
-2. A Google account (most people have one). Your project lives in a private folder in your Google Drive.
+2. Somewhere for your project folder. A cloud folder is best: Google Drive (a Google account, which most people have) or OneDrive. Your bot asks where you want it.
 
 THE STEPS
 1. Install the Grok app on your phone and sign in.
@@ -16,15 +16,15 @@ THE STEPS
    Read your profile back to me to confirm.
    Then read and follow your office file: https://ancreationoffice.com/standing.txt
    If you cannot open a link, ask me to paste the text.
-   If I have no project folder yet, help me set it up in my Google Drive, one step at a time: https://ancreationoffice.com/sop-office.txt
+   If I have no project folder yet, ask me where I want it and help me set it up there, one step at a time: https://ancreationoffice.com/sop-office.txt
    Then run office-setup-check and tell me the results.
    Then ask what I want to work on. One question at a time.
 
-3. From there, the bot walks you through it one step at a time: connecting your Google Drive, making your private project folder, and testing that it can save your work. It never asks for your passwords; you type those yourself.
+3. From there, the bot walks you through it one step at a time: asking where you want your project folder, connecting it, making your private project folder, and testing that it can save your work. It never asks for your passwords; you type those yourself.
 4. When it's set up, just talk to it like texting: tell it about your idea, answer its questions, and say "What's next?" whenever you come back.
 
 IF YOU GET STUCK
 - Tell the bot exactly what you see on the screen; it has a troubleshooting list.
-- Nothing is lost: your bot keeps a dated copy before any big change, and Google Drive keeps earlier versions.
+- Nothing is lost: your bot keeps a dated copy before any big change, and cloud folders like Google Drive keep earlier versions.
 
 Already use Claude, ChatGPT or Cursor and want to use them instead? That works too: https://ancreationoffice.com/using-other-ais.txt . You don't need them.

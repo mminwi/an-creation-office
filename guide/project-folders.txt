@@ -1,4 +1,4 @@
-AN Creation project folders. Revision 10 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
+AN Creation project folders. Revision 13 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
 
 One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything, with one folder per invention inside it. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
 
@@ -8,7 +8,9 @@ AN-Creation/
   AGENTS.md, CLAUDE.md          (GitHub add-on only, at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
   office.txt                    where the Project Manager Bot lives (Home), and its "Office version seen" line. Other bots keep that line in their own office.txt. One b-project-manager runs every invention
   All inventions                one line per invention: where it stands, its next step
-  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), funding/<invention>/ (the funding packet, sop-funding-packet.txt), meetings/ (one folder per meeting with its packet, sop-meeting-prep.txt), company.csv, contacts.csv, market-evidence.csv, promo-log.csv, record/
+  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), funding/<invention>/ (the funding packet, sop-funding-packet.txt), company.csv, contacts.csv, market-evidence.csv, promo-log.csv, business-decision-log.csv, trips.csv, expenses.csv, deadlines.csv (sop-business-record.txt), record/
+  correspondence/               the correspondence log, one for the company: a folder per email, file sent, meeting or call, YYMMDD-NN-X-slug (sop-correspondence.txt)
+  correspondence.csv            its index, a row per folder
   handoffs/                     one inbox per office, for-<role>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
   sops/                         the bot's procedure library: library.txt (one file, about 2 MB) and VERSION (Library version and SOP updates: auto, ask, or pinned). A refresh is one download of library.txt, saved over the old one. Read one section by its marker. Keep this folder once, shared, not copied into an office folder (https://ancreationoffice.com/version.txt)
   Fishing Lure/                 one folder per invention
@@ -36,7 +38,7 @@ AN-Creation/
       ecn-log.csv  ecn/         engineering change notices (sop-change-control.txt)
       forms/                    master forms: answer, context, status for every field
       queue/QUEUE.txt  open/  active/  done/  revisit/
-      record/                   YYMMDD-I-slug (in), YYMMDD-O-slug (out), YYMMDD-M-slug (meeting or conversation, full text)
+      record/                   YYMMDD-NN-R-slug (received), YYMMDD-NN-S-slug (sent), YYMMDD-NN-M-slug (conversation, full text); NN is its number in that day, 01, 02... Folders already named the old way (I, O) stay as they are; never rename a record.
       record/INDEX.csv          one line per record item: date, type, summary, fields touched, status
       forms/INDEX.csv           one line per form: what it covers, status counts, last change
       mirror/                   text pulled once from each record item
@@ -64,8 +66,8 @@ Analyst runs. Each run works in its own dated folder, writes DONE.txt when it fi
 
 Several inventions. Each has its own folder, plan and queue. One b-project-manager runs them all (inventions are folders, not bots; https://ancreationoffice.com/sop-team.txt); it names the invention it's on and files each conversation in that invention's record. Starting a parked idea: set up its folder, PROJECT.txt, intake form and first ticket before saying it has started; add it to All inventions; mark the idea started in ideas.txt. Answers never cross between inventions. A fact that applies to two, such as your company, is recorded in each, with its source.
 
-Where it lives. By default, one private Google Drive folder named AN-Creation, with this layout inside (https://ancreationoffice.com/drive-setup.txt). Each office keeps a working copy of the library at /workspace/offices/<role>/sops/library.txt. office-save proves a write by reading it back. For offices or people who write code, the same AN-Creation/ can live in a private GitHub repository named an-creation instead, with one clone per office at /workspace/offices/<role>/an-creation (https://ancreationoffice.com/github-setup.txt). office.txt says which: "Home: Google Drive AN-Creation" or "Home: GitHub <username>/an-creation". No Home: line: GitHub if /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive.
+Where it lives. One private folder named AN-Creation, wherever the owner wants it, with this layout inside (https://ancreationoffice.com/drive-setup.txt). A cloud folder (Google Drive, OneDrive, Dropbox) is recommended: it works from a phone, keeps earlier versions, and survives a lost computer. Google Drive is the default when they have no preference. Each office keeps a working copy of the library at /workspace/offices/<role>/sops/library.txt. office-save proves a write by reading it back. For offices or people who write code, the same AN-Creation/ can live in a private GitHub repository named an-creation instead, with one clone per office at /workspace/offices/<role>/an-creation (https://ancreationoffice.com/github-setup.txt). office.txt says which: "Home: Google Drive AN-Creation" or "Home: GitHub <username>/an-creation". No Home: line: GitHub if /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive.
 
-Backups. Records and outputs are never edited once saved (a change is a new dated file or folder); working files like plan.md and Status are updated in place. Google Drive keeps earlier versions of each file for a while, and a dated copy goes to History/ before any major change (on GitHub, every commit is kept). Going back to an earlier version is a normal part of working with AI. See https://ancreationoffice.com/version-control.txt
+Backups. Records and outputs are never edited once saved (a change is a new dated file or folder); working files like plan.md and Status are updated in place. Cloud folders like Google Drive and OneDrive keep earlier versions of each file for a while (a plain folder does not, so History/ and the owner's own backup matter more), and a dated copy goes to History/ before any major change (on GitHub, every commit is kept). Going back to an earlier version is a normal part of working with AI. See https://ancreationoffice.com/version-control.txt
 
 Template. https://ancreationoffice.com/plan-template.txt contains a blank plan. Do not replace an existing plan with a blank one.

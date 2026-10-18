@@ -1,4 +1,4 @@
-261018.9
+261018.14
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -31,7 +31,19 @@ example-mousetrap/cash-flow.csv
 example-mousetrap/company.csv
 example-mousetrap/compliance-matrix.csv
 example-mousetrap/contacts.csv
-example-mousetrap/conversations.csv
+example-mousetrap/correspondence.csv
+example-mousetrap/correspondence/261014-01-M-store-owner-sample-visit/notes.txt
+example-mousetrap/correspondence/261015-01-M-neighbors-barn-test/notes.txt
+example-mousetrap/correspondence/261016-01-M-distributor-call/notes.txt
+example-mousetrap/correspondence/261017-01-S-molder-a-meeting-request/attachments.txt
+example-mousetrap/correspondence/261017-01-S-molder-a-meeting-request/email.txt
+example-mousetrap/correspondence/261018-01-R-molder-a-nda-signed/attachments.txt
+example-mousetrap/correspondence/261018-01-R-molder-a-nda-signed/email.txt
+example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/attachments.txt
+example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/email.txt
+example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/meeting.csv
+example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/meeting.csv
+example-mousetrap/correspondence/261104-01-M-community-lender-meeting/meeting.csv
 example-mousetrap/cost-sheet.csv
 example-mousetrap/deadlines.csv
 example-mousetrap/decision-log.csv
@@ -41,9 +53,6 @@ example-mousetrap/expenses.csv
 example-mousetrap/funding.csv
 example-mousetrap/intake-001.csv
 example-mousetrap/market-evidence.csv
-example-mousetrap/meetings/261024-molder-quote/meeting.csv
-example-mousetrap/meetings/261028-distributor-buyer/meeting.csv
-example-mousetrap/meetings/261104-community-lender/meeting.csv
 example-mousetrap/pricing-terms.csv
 example-mousetrap/project-charter.txt
 example-mousetrap/risk-table.csv
@@ -159,9 +168,11 @@ sop-change-control.txt
 sop-checklists.txt
 sop-company.txt
 sop-cooling-water.txt
+sop-correspondence.txt
 sop-cost-sheet.txt
 sop-decision-log.txt
 sop-design-loop.txt
+sop-document-life.txt
 sop-drying.txt
 sop-focus.txt
 sop-funding-packet.txt
@@ -222,7 +233,7 @@ template-cash-flow.csv
 template-change-record.txt
 template-company.csv
 template-contacts.csv
-template-conversations.csv
+template-correspondence.csv
 template-cost-sheet.csv
 template-deadlines.csv
 template-decision-log.csv

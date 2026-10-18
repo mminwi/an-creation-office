@@ -1,4 +1,4 @@
-SOP: The project record. Revision 2 — October 18, 2026.
+SOP: The project record. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one set per invention. b-analyst fills and updates them.
 May write: the files named below in Office files/, and their readable copies in Your files/Project record/.
@@ -29,7 +29,7 @@ WHEN EACH STARTS
 - From the charter on: ECNs for any change to scope, budget or dates. From design freeze on: ECNs for any design change too.
 
 THE HARD LINES
-- They always exist and are always current. A change is written in the same turn it happens, not "later".
+- Living or parked (https://ancreationoffice.com/sop-document-life.txt). Living: the decision log, the action log, the spending register and the ECN log are updated the same turn something happens, never "later". Parked: the charter, the cost sheet and the risk table are done properly for their purpose, shared, and parked in plan.md with their reopen triggers; they are dusted off when a trigger happens, not reworked every conversation. The risk table is done for the design, so the design answers the risks, and parked at design freeze.
 - Specs trace to their source. A requirement, rating, tolerance, material property or test level on any sheet carries its source, edition, clause, quoted text and source status, and is checked against the document before it is built, bought or tested on (https://ancreationoffice.com/sop-source-check.txt, principle-trace-to-source.txt). Run check-sources.py before every review and every quote package.
 - They are done for real. No pasted standard FMEA, no copied BOM from another product, no round-number cost guesses presented as figures (https://ancreationoffice.com/principle-never-invent-facts.txt).
 - The inventor can see all seven at any time: b-analyst keeps a readable copy of each in Your files/Project record/, in the format the inventor chose, and the review page links them. The inventor is the decision-maker; they review what the bot has thought through.

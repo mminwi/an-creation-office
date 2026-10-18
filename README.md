@@ -75,7 +75,7 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`sop-ai-cad.txt`](guide/sop-ai-cad.txt) | Specialist procedure: AI-assisted CAD (b-ai-cad): getting Claude Code and Codex to do SOLIDWORKS and KiCad work, the brief, and the checks | [live](https://ancreationoffice.com/sop-ai-cad.txt) |
 | [`sop-material-selection.txt`](guide/sop-material-selection.txt) | Specialist procedure: Plastic material selection (b-plastic-materials): chemical compatibility first | [live](https://ancreationoffice.com/sop-material-selection.txt) |
 | [`sop-manufacturing-cell.txt`](guide/sop-manufacturing-cell.txt) | Specialist procedure: Manufacturing cells and work design (b-manufacturing): takt, U-cells, standard work, ergonomics | [live](https://ancreationoffice.com/sop-manufacturing-cell.txt) |
-| [`drive-setup.txt`](guide/drive-setup.txt) | The default project home: connecting Google Drive, the AN-Creation folder, saving and read-back, and the analyst (Grok Build) | [live](https://ancreationoffice.com/drive-setup.txt) |
+| [`drive-setup.txt`](guide/drive-setup.txt) | The project home: ask where the owner wants the project folder (a cloud folder like Google Drive or OneDrive is best; anywhere the bot can write to works), the AN-Creation folder, saving and read-back, and the analyst (Grok Build) | [live](https://ancreationoffice.com/drive-setup.txt) |
 | [`office-startup.txt`](guide/office-startup.txt) | The four shared skills: start a conversation, save, hand work to another office, and check that setup can write and read back | [live](https://ancreationoffice.com/office-startup.txt) |
 | [`github-setup.txt`](guide/github-setup.txt) | Optional add-on for people who write code: private GitHub repository, clones, the analyst, and troubleshooting | [live](https://ancreationoffice.com/github-setup.txt) |
 | [`sop-company.txt`](guide/sop-company.txt) | K1. b-business-manager: the company. Name checks, forming an LLC, tax ID, bank account, insurance, licenses, yearly upkeep | [live](https://ancreationoffice.com/sop-company.txt) |
@@ -87,7 +87,7 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`sop-meeting-prep.txt`](guide/sop-meeting-prep.txt) | K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet | [live](https://ancreationoffice.com/sop-meeting-prep.txt) |
 | [`sop-packet-buyer.txt`](guide/sop-packet-buyer.txt) | K7. b-business-manager: packets: buyer | [live](https://ancreationoffice.com/sop-packet-buyer.txt) |
 | [`meeting-packet.py`](guide/meeting-packet.py) | K7. b-business-manager: builder | [live](https://ancreationoffice.com/meeting-packet.py) |
-| [`sop-business-record.txt`](guide/sop-business-record.txt) | K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and conversations, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py | [live](https://ancreationoffice.com/sop-business-record.txt) |
+| [`sop-business-record.txt`](guide/sop-business-record.txt) | K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and the correspondence log, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py | [live](https://ancreationoffice.com/sop-business-record.txt) |
 | [`sop-project-record.txt`](guide/sop-project-record.txt) | The project record, required for every invention | [live](https://ancreationoffice.com/sop-project-record.txt) |
 | [`sop-decision-log.txt`](guide/sop-decision-log.txt) | decision log | [live](https://ancreationoffice.com/sop-decision-log.txt) |
 | [`sop-action-log.txt`](guide/sop-action-log.txt) | action log with suggestions | [live](https://ancreationoffice.com/sop-action-log.txt) |
@@ -98,6 +98,8 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`principles-pm.txt`](guide/principles-pm.txt) | Principles, read first every conversation | [live](https://ancreationoffice.com/principles-pm.txt) |
 | [`sop-source-check.txt`](guide/sop-source-check.txt) | The source check, both bots: every spec traces to an actual document, never AI memory, and is checked against it when it goes into a sheet; when no procedure covers something, write the project's procedure from the authoritative source in the library | [live](https://ancreationoffice.com/sop-source-check.txt) |
 | [`check-sources.py`](guide/check-sources.py) | The source check, both bots: checker | [live](https://ancreationoffice.com/check-sources.py) |
+| [`sop-document-life.txt`](guide/sop-document-life.txt) | Living and parked documents, both bots: which documents are updated every time something happens (action logs, decision logs, spending, trips, expenses, the correspondence index, deadlines) and which are done for a purpose and parked until a trigger (charter, cost sheet, risk table, compliance matrix, packets, company record), and how to dust one off | [live](https://ancreationoffice.com/sop-document-life.txt) |
+| [`sop-correspondence.txt`](guide/sop-correspondence.txt) | The correspondence log, both bots, one for the company: a folder per email, file sent (CAD, drawings), meeting or call, named YYMMDD-NN-X-slug (date code, its number in the day, S sent, R received or M meeting or call, a slug) so they stay in order, never changed once filed, with its index correspondence.csv | [live](https://ancreationoffice.com/sop-correspondence.txt) |
 | [`sop-focus.txt`](guide/sop-focus.txt) | Keep the project focused: risks as questions, decisions, "for now" and circling back | [live](https://ancreationoffice.com/sop-focus.txt) |
 | [`ticket-template.txt`](guide/ticket-template.txt) | The ticket format b-project-manager runs | [live](https://ancreationoffice.com/ticket-template.txt) |
 | [`agents-md.txt`](guide/agents-md.txt) | AGENTS.md for the inventor's repository: how any AI finds its ticket from one line | [live](https://ancreationoffice.com/agents-md.txt) |
@@ -153,7 +155,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`funding-packet.py`](guide/funding-packet.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/funding-packet.py) |
 | [`handoff-log.csv`](guide/handoff-log.csv) | Worksheet / table (CSV): handoff_id, sent_date, sender, recipient... | [live](https://ancreationoffice.com/handoff-log.csv) |
 | [`ip-ratings.txt`](guide/ip-ratings.txt) | IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and  | [live](https://ancreationoffice.com/ip-ratings.txt) |
-| [`library.txt`](guide/library.txt) | 261018.9 | [live](https://ancreationoffice.com/library.txt) |
+| [`library.txt`](guide/library.txt) | 261018.14 | [live](https://ancreationoffice.com/library.txt) |
 | [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The | [live](https://ancreationoffice.com/manufacturing.txt) |
 | [`office-handoff.txt`](guide/office-handoff.txt) | AN Creation skill: office-handoff. The office rule is https://ancreationoffice.com/sop-team.txt HAND-OFFS. | [live](https://ancreationoffice.com/office-handoff.txt) |
 | [`office-save.txt`](guide/office-save.txt) | AN Creation skill: office-save. The office rule is https://ancreationoffice.com/version-control.txt SAVING and | [live](https://ancreationoffice.com/office-save.txt) |
@@ -212,13 +214,13 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`robots.txt`](guide/robots.txt) | User-agent: * | [live](https://ancreationoffice.com/robots.txt) |
 | [`sop-hats.txt`](guide/sop-hats.txt) | SOP: Form, record, and call a session. Revision 3 — October 1, 2026. | [live](https://ancreationoffice.com/sop-hats.txt) |
 | [`sop-interns.txt`](guide/sop-interns.txt) | SOP: Use an intern. Revision 1 — October 1, 2026. | [live](https://ancreationoffice.com/sop-interns.txt) |
-| [`sop-office.txt`](guide/sop-office.txt) | SOP: Set up b-project-manager and b-analyst. Revision 13 — October 18, 2026. | [live](https://ancreationoffice.com/sop-office.txt) |
-| [`sop-packet-lender.txt`](guide/sop-packet-lender.txt) | SOP: The lender packet. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-lender.txt) |
-| [`sop-packet-manufacturer.txt`](guide/sop-packet-manufacturer.txt) | SOP: The manufacturer packet (request for quote). Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-manufacturer.txt) |
+| [`sop-office.txt`](guide/sop-office.txt) | SOP: Set up b-project-manager and b-analyst. Revision 14 — October 18, 2026. | [live](https://ancreationoffice.com/sop-office.txt) |
+| [`sop-packet-lender.txt`](guide/sop-packet-lender.txt) | SOP: The lender packet. Revision 2 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-lender.txt) |
+| [`sop-packet-manufacturer.txt`](guide/sop-packet-manufacturer.txt) | SOP: The manufacturer packet (request for quote). Revision 2 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-manufacturer.txt) |
 | [`sop-project-charter.txt`](guide/sop-project-charter.txt) | SOP: The project charter. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-project-charter.txt) |
 | [`sop-suggestions.txt`](guide/sop-suggestions.txt) | SOP: Suggestions and actions. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/sop-suggestions.txt) |
-| [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 15 — October 18, 2026. | [live](https://ancreationoffice.com/sop.txt) |
-| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.9 | [live](https://ancreationoffice.com/sops-manifest.txt) |
+| [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 18 — October 18, 2026. | [live](https://ancreationoffice.com/sop.txt) |
+| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.14 | [live](https://ancreationoffice.com/sops-manifest.txt) |
 | [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's form | [live](https://ancreationoffice.com/status-template.txt) |
 | [`tax-year.py`](guide/tax-year.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/tax-year.py) |
 | [`template-a3.txt`](guide/template-a3.txt) | One-page project summary (A3). Template, from Mike's practice (sop-six-sigma.txt section 6). Copy into the pro | [live](https://ancreationoffice.com/template-a3.txt) |
@@ -228,7 +230,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`template-cash-flow.csv`](guide/template-cash-flow.csv) | Worksheet / table (CSV): month, owner in, loan in, units sold... | [live](https://ancreationoffice.com/template-cash-flow.csv) |
 | [`template-company.csv`](guide/template-company.csv) | Worksheet / table (CSV): key, value, status, note... | [live](https://ancreationoffice.com/template-company.csv) |
 | [`template-contacts.csv`](guide/template-contacts.csv) | Worksheet / table (CSV): name, organization, type, status... | [live](https://ancreationoffice.com/template-contacts.csv) |
-| [`template-conversations.csv`](guide/template-conversations.csv) | Worksheet / table (CSV): date, who, organization, how... | [live](https://ancreationoffice.com/template-conversations.csv) |
+| [`template-correspondence.csv`](guide/template-correspondence.csv) | Worksheet / table (CSV): date, folder, direction, with... | [live](https://ancreationoffice.com/template-correspondence.csv) |
 | [`template-cost-sheet.csv`](guide/template-cost-sheet.csv) | Worksheet / table (CSV): level, part number, part, qty... | [live](https://ancreationoffice.com/template-cost-sheet.csv) |
 | [`template-deadlines.csv`](guide/template-deadlines.csv) | Worksheet / table (CSV): due, what, why it matters, Source... | [live](https://ancreationoffice.com/template-deadlines.csv) |
 | [`template-decision-log.csv`](guide/template-decision-log.csv) | Worksheet / table (CSV): date, decision, reason... | [live](https://ancreationoffice.com/template-decision-log.csv) |
@@ -249,7 +251,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`test-planning.txt`](guide/test-planning.txt) | Plan the test before the build — REV 1 — 2026-09-30 | [live](https://ancreationoffice.com/test-planning.txt) |
 | [`test-report-template.txt`](guide/test-report-template.txt) | AN CREATION — TEST REPORT TEMPLATE — REV 1 | [live](https://ancreationoffice.com/test-report-template.txt) |
 | [`using-other-ais.txt`](guide/using-other-ais.txt) | AN Creation: using Claude, ChatGPT (Codex), Cursor, or another AI. Revision 2 — October 14, 2026. | [live](https://ancreationoffice.com/using-other-ais.txt) |
-| [`version-control.txt`](guide/version-control.txt) | AN Creation backups and version control. Revision 7 — October 14, 2026. Human page: https://ancreationoffice.c | [live](https://ancreationoffice.com/version-control.txt) |
+| [`version-control.txt`](guide/version-control.txt) | AN Creation backups and version control. Revision 8 — October 18, 2026. Human page: https://ancreationoffice.c | [live](https://ancreationoffice.com/version-control.txt) |
 
 ## The specialists
 

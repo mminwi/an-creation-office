@@ -1,4 +1,4 @@
-SOP: The business risk register. Revision 1 — October 18, 2026.
+SOP: The business risk register. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one per invention. Template: https://ancreationoffice.com/template-business-risks.csv
 May write: AN-Creation/Business/funding/<invention>/business-risks.csv and its rows on the Business action log.
@@ -16,4 +16,5 @@ Likelihood × impact. 15 and up is High, 8 to 14 Medium, under 8 Low. The packet
 High risks are worked before money is committed. Product safety is worked by severity first, whatever its score (sop-risk-table.txt SEVERITY FIRST).
 
 KEEPING IT CURRENT
+A parked document (https://ancreationoffice.com/sop-document-life.txt): built for the first packet, then parked. It is reopened by the changes below or dusted off before the next packet, not reworked every conversation.
 Every mitigation with an owner and a date is also a row on the action log. Rescore when something changes: a quote arrives, a buyer answers, a company is formed. Closed rows stay; they show a reviewer what has already been dealt with.

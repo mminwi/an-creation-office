@@ -1,15 +1,15 @@
-AN Creation backups and version control. Revision 7 — October 14, 2026. Human page: https://ancreationoffice.com/version-control.html
-Google Drive is the default home again (Office version 261014.2). GitHub stays a full, supported option for offices or people who write code; offices already on GitHub keep working as written under IF THIS OFFICE USES GITHUB.
+AN Creation backups and version control. Revision 8 — October 18, 2026. Human page: https://ancreationoffice.com/version-control.html
+The project folder lives where the owner chose (Office version 261018.14): a cloud folder like Google Drive or OneDrive is recommended, and Google Drive is the default when they have no preference. GitHub stays a full, supported option for offices or people who write code; offices already on GitHub keep working as written under IF THIS OFFICE USES GITHUB.
 
 WHY
 AI is new, and it goofs up: a file gets overwritten, two versions get mixed, a chat gets cleared, a bot gets deleted. In practice, going back to an earlier version is close to a daily event. So the office never depends on one copy of anything, and never on the chat.
 
 HOW IT'S KEPT
-- The project is one private Google Drive folder, AN-Creation (https://ancreationoffice.com/drive-setup.txt). office.txt says "Home: Google Drive AN-Creation". If it says "Home: GitHub", follow IF THIS OFFICE USES GITHUB below instead. No Home: line yet (offices set up before 261014.2): GitHub if /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive; write the Home: line at the next save.
+- The project is one private folder, AN-Creation, in the home the owner chose (https://ancreationoffice.com/drive-setup.txt). office.txt says which: "Home: Google Drive AN-Creation", "Home: OneDrive AN-Creation", "Home: Folder <path>". Every home that isn't GitHub saves the same way (SAVING ON DRIVE). If it says "Home: GitHub", follow IF THIS OFFICE USES GITHUB below instead. No Home: line yet (offices set up before 261014.2): GitHub if /workspace/offices/<role>/an-creation is a git clone, otherwise Google Drive; write the Home: line at the next save.
 - The shared procedure library is AN-Creation/sops/library.txt plus AN-Creation/sops/VERSION. One version for every office. library.txt is about 2 MB. Its first line is the Office version. Each file follows after a marker line `=== FILE: <path> ===`, including the resource library. Each office reads it from its working copy, /workspace/offices/<role>/sops/library.txt (downloaded from the Drive folder, or from https://ancreationoffice.com/library.txt), one section at a time: awk '$0=="=== FILE: standing.txt ==="{p=1;next} /^=== FILE: /{p=0} p' library.txt. A refresh downloads https://ancreationoffice.com/library.txt once, uploads it over AN-Creation/sops/library.txt and rewrites VERSION beside it. The rule is https://ancreationoffice.com/version.txt
 - Two kinds of files (D-029). Working files are updated in place: office.txt, business.txt, plan.md, actions.csv, team.csv, the hand-off inboxes, Status and Plan. Before a major change to one, a dated copy goes to History/ ("<name> YYMMDD-HHMM"). Records and outputs are never edited once saved: documents, drawings, pages, analyst runs, record/ entries, released revisions. A change is a new dated file.
 - The record. Every conversation and every analyst run is saved in record/ and sessions/. Anything not yet saved is only in the chat.
-Say it to the owner once, in a line: "Your work is saved to your Google Drive as we go, and I keep a dated copy before any big change."
+Say it to the owner once, in a line: "Your work is saved to your project folder as we go, and I keep a dated copy before any big change."
 
 SAVING (every office and b-analyst)
 Follow the office-save skill. This is the office rule it carries out.
@@ -31,7 +31,7 @@ IF THIS OFFICE USES GITHUB (code offices, and offices already set up on GitHub)
 Setup: https://ancreationoffice.com/github-setup.txt
 
 IF SOMETHING GOES WRONG
-- A file got overwritten, mixed up or deleted: look at the earlier dated files and History/ first, then the file's version history in Google Drive (or on GitHub), find the last good version, restore it as a new save, and say what was restored.
+- A file got overwritten, mixed up or deleted: look at the earlier dated files and History/ first, then the file's version history in Google Drive or OneDrive (or on GitHub; a plain folder has only History/ and whatever backup the owner keeps), find the last good version, restore it as a new save, and say what was restored.
 - A chat got cleared, or a bot was deleted and made again: everything that was saved is still there. The new bot looks for the AN-Creation folder first, reads office.txt (its "Last saved" line), All inventions, PROJECT.txt, plan.md and the latest status, and carries on from the last saved checkpoint. Anything said after the last save was only in the old chat: ask the owner about it.
 - They lost their phone: sign in to Google (and GitHub, if used) and their AI app on the new one. The project is in the cloud.
 

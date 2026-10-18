@@ -1,4 +1,4 @@
-SOP: The funding packet. Revision 1 — October 18, 2026.
+SOP: The funding packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one packet per invention. b-analyst builds it.
 Templates: https://ancreationoffice.com/template-funding.csv and https://ancreationoffice.com/template-business-risks.csv . Builder: https://ancreationoffice.com/funding-packet.py
@@ -28,6 +28,8 @@ BUILDING IT
 b-analyst runs: python3 funding-packet.py AN-Creation/Business/funding/<invention>
 Every figure is computed from the sheets: piece cost (material plus process, all rows), tooling (all rows, once), what each unit clears at the price, gross margin, the units it takes to pay back the tooling, the price that pays it back over the plan volume, and the tooling the price can carry. Nothing on the packet is typed in by hand.
 In funding.csv, a value with source "illustrative" prints with a small i mark. A real packet has none. Remove the marks by replacing the values, never by changing the source.
+
+After the meeting it was built for, the packet is kept as given and its sheets are parked. For the next investor or lender, dust it off (https://ancreationoffice.com/sop-document-life.txt DUSTING ONE OFF): bring in what changed since, rebuild, park again.
 
 THE VERDICT ON PAGE 1
 The packet says plainly whether it is ready to ask for money. It is ready when the tooling pays back within the plan volume (annual units times years) at the stated price. If it does not, page 1 says so, gives the numbers, and shows the three levers: the price that would close it, the tooling the price can carry, and the volume it would take. A packet that hides a gap does not get funded twice. Say it in one line to the inventor before anything else: "At $0.45 each trap clears $0.05, so the molds take 2.1 million traps to pay back. Here's what would change that."

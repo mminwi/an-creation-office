@@ -1,5 +1,5 @@
-AN Creation: GitHub, the optional add-on for code. Revision 6 — October 18, 2026.
-OPTIONAL. Google Drive is the default home for project files (https://ancreationoffice.com/drive-setup.txt). Use this file only when the office or the owner writes code and wants GitHub, or when the office already lives on GitHub (record "Home: GitHub <username>/an-creation" in office.txt). Offices already on GitHub keep working exactly as below; nothing needs to move. An office.txt with no Home: line counts as GitHub when /workspace/offices/<role>/an-creation is a git clone.
+AN Creation: GitHub, the optional add-on for code. Revision 7 — October 18, 2026.
+OPTIONAL. The project folder goes where the owner wants it, a cloud folder like Google Drive or OneDrive by preference (https://ancreationoffice.com/drive-setup.txt). Use this file only when the office or the owner writes code and wants GitHub, or when the office already lives on GitHub (record "Home: GitHub <username>/an-creation" in office.txt). Offices already on GitHub keep working exactly as below; nothing needs to move. An office.txt with no Home: line counts as GitHub when /workspace/offices/<role>/an-creation is a git clone.
 Read this at setup, and whenever GitHub or b-analyst isn't working. Then leave it. The steps for starting, saving, and handing work off are the skills office-startup, office-save, and office-handoff. This file is the office rule those skills follow. After install, run office-setup-check.
 
 WORDS, ONCE

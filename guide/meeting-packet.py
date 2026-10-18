@@ -1,9 +1,9 @@
 """Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer or a lender.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/Business/meetings/YYMMDD-<who> buyer|manufacturer|lender
+  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender
 
-The meeting folder holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
+The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
 b-project-manager's sheets (cost-sheet.csv, risk-table.csv, actions.csv, spending.csv) and b-business-manager's own
 (funding.csv, company.csv, pricing-terms.csv, cash-flow.csv, business-risks.csv, market-evidence.csv).

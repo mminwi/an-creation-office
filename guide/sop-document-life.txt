@@ -1,0 +1,50 @@
+SOP: Living and parked documents. Revision 2 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: both bots. b-analyst does the dusting off.
+May write: the PARKED section of plan.md, and the documents named below when their rule says so.
+Goes with: https://ancreationoffice.com/sop-project-record.txt , https://ancreationoffice.com/sop-business-record.txt
+
+WHY THIS EXISTS
+Not every document needs watching. An action list changes every time someone follows up; a risk assessment is done for the design, shared, and then left alone until something changes. Treating every document as living wastes the inventor's time and the bot's attention, and a bot that re-analyzes everything every day loses track of what matters today. So every document is one of three kinds, and the bot treats each kind differently.
+
+LIVING: updated every time something happens, the same turn
+These are the day-to-day record. Every follow-up, every email, every trip, every cost, every call goes in when it happens. At the start of a conversation the bot looks at these, and only at what is open or due in them.
+- Project Manager Bot: action log (actions.csv), decision log (decision-log.csv), spending register (spending.csv), the ECN log (a line when a change happens).
+- Office Manager Bot: action log, decision log (business-decision-log.csv), contacts, trip log (trips.csv), expense ledger (expenses.csv), deadlines (deadlines.csv), market evidence, the promotion log.
+- Both: the correspondence log's index (correspondence.csv), office.txt, plan.md, the hand-off inbox.
+Logs are only added to. Read the open rows and the last few lines, not the whole history.
+
+PARKED: done properly for a purpose, then put away until a trigger
+These are built when the work calls for them, done for real, shared with whoever needs to see them, and then parked. The bot does not reread or rework a parked document, and does not mention it, until one of its reopen triggers happens.
+- Project charter: parked once the inventor agrees it. Reopen: only through an ECN (a change to scope, budget or dates).
+- Risk table: worked during design, so the design answers the risks; parked after the design review that freezes the design. Reopen: a design change (ECN), a failed test, a field problem or complaint, a new use or market, or to dust off before showing it to someone.
+- Cost sheet: worked during design and quoting; parked once the quotes are in. Reopen: a quote arrives, the design changes, before a price decision or a packet.
+- Compliance matrix: worked through design and testing; parked when every line is met or put off. Reopen: a design change, a new market, a new edition of a source it cites.
+- Resource map: built at the start. Reopen: the product changes in a way that matters (it gets a battery, it goes to Europe).
+- Company record and business risk register: parked after they are set up. Reopen: the company changes (formed, insured, a bank account), money comes in or is borrowed, or before a packet.
+- Funding packet, pricing and terms, cash flow, the brand kit: parked after the meeting or launch they were made for. Reopen: the next meeting that needs them.
+
+THE CORRESPONDENCE LOG: never edited (https://ancreationoffice.com/sop-correspondence.txt)
+Everything that went between the company and someone outside it, one folder per correspondence named with its date code and a slug (261017-01-S-molder-a-meeting-request), so they stay in the order they happened: emails with their attachments, CAD and drawings as transmitted, meeting notes, packets handed over, signed agreements. Once filed, never changed; a correction is a new dated folder. Its index, correspondence.csv, is living: a row the same day.
+Also never edited once done: an approved ECN, and a tax-year summary given to the accountant.
+
+PARKING A DOCUMENT
+When a parked-type document has done its job (the review is held, the meeting is over, the quotes are in):
+1. Make sure it is finished: no "to find" rows that the purpose needed, and check-sources.py has nothing under MUST FIX for it.
+2. Write one line in the PARKED section of plan.md: the document, the date parked, why ("design freeze X4", "lender meeting 261104"), and its reopen triggers.
+3. Tell the inventor in one line, if it matters: "Your risk table is done for this design; I'm parking it until something changes."
+At the start of a conversation, the PARKED section is all the bot reads about these documents.
+
+DUSTING ONE OFF
+When a trigger happens ("I'm seeing another investor in three weeks", "the molder changed the gate"):
+1. Open it, and look at what happened since the date it was parked: the decision log, the action log, the spending register, ECNs and quotes since then. Only that; do not redo the whole analysis.
+2. Bring it up to date with those changes. A risk table gets the rows the change touches rescored; a cost sheet gets the new quote; a packet gets this person's ask.
+3. Run check-sources.py on it. Anything older than its source's current edition gets checked again.
+4. Make what this purpose needs: for a meeting, the new packet copy in that meeting's folder (sop-meeting-prep.txt).
+5. One line in the decision log: what changed while dusting it off ("Risk table dusted off for investor B: F2 rescored after the soak test").
+6. Park it again with the new date.
+
+RULES
+- A living document missing an entry is a gap: chase it (sop-business-record.txt BE INSISTENT). A parked document left alone is not a gap; it is the plan.
+- Never re-analyze a parked document just because a conversation started, a week passed, or nothing else is going on.
+- When unsure whether something is a trigger, ask the inventor in one line: "The supplier changed the spring wire. Want me to reopen the risk table for that?"
