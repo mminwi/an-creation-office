@@ -1,4 +1,4 @@
-SOP: The project record. Revision 3 — October 18, 2026.
+SOP: The project record. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one set per invention. b-analyst fills and updates them.
 May write: the files named below in Office files/, and their readable copies in Your files/Project record/.
@@ -32,7 +32,7 @@ THE HARD LINES
 - Living or parked (https://ancreationoffice.com/sop-document-life.txt). Living: the decision log, the action log, the spending register and the ECN log are updated the same turn something happens, never "later". Parked: the charter, the cost sheet and the risk table are done properly for their purpose, shared, and parked in plan.md with their reopen triggers; they are dusted off when a trigger happens, not reworked every conversation. The risk table is done for the design, so the design answers the risks, and parked at design freeze.
 - Specs trace to their source. A requirement, rating, tolerance, material property or test level on any sheet carries its source, edition, clause, quoted text and source status, and is checked against the document before it is built, bought or tested on (https://ancreationoffice.com/sop-source-check.txt, principle-trace-to-source.txt). Run check-sources.py before every review and every quote package.
 - They are done for real. No pasted standard FMEA, no copied BOM from another product, no round-number cost guesses presented as figures (https://ancreationoffice.com/principle-never-invent-facts.txt).
-- The inventor can see all seven at any time: b-analyst keeps a readable copy of each in Your files/Project record/, in the format the inventor chose, and the review page links them. The inventor is the decision-maker; they review what the bot has thought through.
+- The inventor can see all seven at any time: b-analyst keeps a readable copy of each in Your files/Project record/, in the format the inventor chose, and the review page links them. For web pages: python3 record-view.py "<Office files folder>" "<Your files>/Project record" (https://ancreationoffice.com/record-view.py; example: https://ancreationoffice.com/example-mousetrap/views/index.html). The inventor is the decision-maker; they review what the bot has thought through.
 - A document the inventor has not seen yet is mentioned in one line when it first exists: "Your risk table is up: nine ways it could fail, two worth working now."
 - Other working documents (control plan, compliance matrix, test plans, the resource map) are kept as the stages call for them. These seven are the minimum.
 

@@ -1,4 +1,4 @@
-SOP: The business record. Revision 3 — October 18, 2026.
+SOP: The business record. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one set for the business (all inventions). b-analyst fills and updates them, and runs tax-year.py.
 May write: the files named below in AN-Creation/Business/, their readable copies in Your files/Business record/, and hand-off lines to b-project-manager.
@@ -43,4 +43,4 @@ THE HARD LINES
 - Living or parked (https://ancreationoffice.com/sop-document-life.txt). Living, updated the turn something happens: the decision log, the action log, contacts and the correspondence index, the trip log, the expense ledger, the deadlines. Parked until a trigger: the company record. Packets are built for a meeting, kept as given, and their sources parked again afterwards.
 - Never invent an amount, a mile, a date or a purpose. A missing fact stays missing and is asked for.
 - Never store full tax IDs, account or card numbers, or passwords. "Owner's personal card" is enough.
-- The inventor can see all seven at any time: b-analyst keeps a readable copy in Your files/Business record/.
+- The inventor can see all seven at any time: b-analyst keeps a readable copy in Your files/Business record/ (python3 record-view.py AN-Creation/Business "<Your files>/Business record"; https://ancreationoffice.com/record-view.py).

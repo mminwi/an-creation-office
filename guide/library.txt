@@ -1,4 +1,4 @@
-261018.15
+261018.16
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -9544,6 +9544,150 @@ b-project-manager's working instructions are https://ancreationoffice.com/standi
 b-analyst's are https://ancreationoffice.com/analyst.txt . All procedures: https://ancreationoffice.com/sop.txt
 Design, legal, engineering, prototype, manufacturing, funding and marketing are roles. One bot can cover all of them, or the inventor can split them across bots in AN-Creation/team.csv (https://ancreationoffice.com/sop-team.txt).
 Notes for the manufacturing role: https://ancreationoffice.com/manufacturing.txt
+=== FILE: record-view.py ===
+#!/usr/bin/env python3
+"""record-view.py: readable, printable copies of the project and business record.
+
+Usage: python3 record-view.py <folder> [<output folder>]
+
+Reads the record sheets it knows in <folder> (cost sheet, risk table, action log,
+decision log, charter, compliance matrix, spending register, expense ledger,
+trip log, correspondence index) and writes one HTML page per sheet, plus
+index.html, into <output folder> (default: <folder>/views). The inventor reads
+these; the CSV files stay the record. Procedures:
+https://ancreationoffice.com/sop-project-record.txt and
+https://ancreationoffice.com/sop-business-record.txt
+"""
+import csv
+import html
+import pathlib
+import re
+import sys
+
+# file: (title, which record, columns to show (None = all), right-aligned columns)
+SHEETS = {
+    "project-charter.txt": ("Project charter", "Project record", None, ()),
+    "cost-sheet.csv": ("Cost sheet: the costed bill of materials", "Project record",
+                       ["part number", "part", "qty", "make or buy", "what it is", "material cost", "process cost",
+                        "tooling", "amortization", "unit cost", "running total", "share of total"],
+                       ("qty", "material cost", "process cost", "tooling", "amortization", "unit cost", "running total", "share of total")),
+    "risk-table.csv": ("Risk table: simplified FMEA, severity first", "Project record", None, ("S", "O", "D", "RPN")),
+    "actions.csv": ("Action log", "Project record", ["ID", "Opened", "Action", "Who", "Due", "Status"], ()),
+    "decision-log.csv": ("Decision log", "Project record", None, ()),
+    "spending.csv": ("Spending register", "Project record", ["date", "stage", "what it was", "vendor or who", "amount", "committed or paid", "paid from", "running total"], ("amount", "running total")),
+    "compliance-matrix.csv": ("Requirements, traced to their sources", "Project record",
+                              ["ID", "Requirement", "Source", "Source status", "Pass level", "Status", "Critical"], ()),
+    "expenses.csv": ("Expense ledger", "Business record", ["date", "paid to", "what it was", "business purpose", "tax category", "amount", "paid from", "receipt file"], ("amount",)),
+    "trips.csv": ("Trip and mileage log", "Business record", ["trip", "date", "to (place and address)", "who or what", "business purpose", "start odometer", "end odometer", "business miles"], ("start odometer", "end odometer", "business miles")),
+    "correspondence.csv": ("Correspondence log", "Business record", ["date", "folder", "direction", "with", "organization", "what was conveyed", "sent or received"], ()),
+}
+
+CSS = """
+:root { color-scheme: light; }
+body { margin: 0; background: #e9e6df; font: 14px/1.45 "Inter", "Segoe UI", Arial, sans-serif; color: #1d2427; }
+.page { max-width: 1180px; margin: 24px auto; background: #fff; border: 1px solid #d7d2c6; border-radius: 6px; padding: 28px 32px 36px; }
+.top { display: flex; justify-content: space-between; gap: 16px; border-bottom: 3px solid #315f5c; padding-bottom: 10px; margin-bottom: 14px; }
+.top b { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #315f5c; }
+.top span { font-size: 12px; color: #6b7275; text-align: right; }
+h1 { font-size: 22px; margin: 0 0 4px; }
+.sub { color: #5b6467; margin: 0 0 16px; }
+table { border-collapse: collapse; width: 100%; font-size: 12.5px; }
+th { background: #f1eee6; text-align: left; font-weight: 650; border: 1px solid #d9d4c8; padding: 6px 7px; vertical-align: bottom; }
+td { border: 1px solid #e1ddd3; padding: 6px 7px; vertical-align: top; }
+tr:nth-child(even) td { background: #fbfaf7; }
+td.n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+td.nw { white-space: nowrap; }
+tr.action td:first-child { border-top-color: transparent; }
+tr.action td:nth-child(2) { padding-left: 22px; color: #3e4a4d; }
+td.hi { background: #f6dcd3 !important; font-weight: 700; }
+.foot { margin-top: 14px; font-size: 12px; color: #6b7275; }
+.charter h2 { font-size: 15px; margin: 18px 0 4px; color: #315f5c; }
+.charter p { margin: 0 0 6px; }
+ul.idx li { margin: 4px 0; }
+@media print { body { background: #fff; } .page { border: 0; margin: 0; max-width: none; } }
+"""
+
+
+def page(title, kind, project, body, note):
+    return (f"<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
+            f"<title>{html.escape(title)}</title><style>{CSS}</style></head><body><div class='page'>"
+            f"<div class='top'><b>AN Creation Office · {html.escape(kind)}</b><span>{html.escape(project)}</span></div>"
+            f"<h1>{html.escape(title)}</h1>{body}<p class='foot'>{note}</p></div></body></html>")
+
+
+def table(rows, cols, right, risk=False):
+    head = rows[0]
+    idx = [head.index(c) for c in (cols or head) if c in head]
+    out = ["<table><thead><tr>" + "".join(f"<th>{html.escape(head[i])}</th>" for i in idx) + "</tr></thead><tbody>"]
+    for r in rows[1:]:
+        if not any(x.strip() for x in r):
+            continue
+        cls = " class='action'" if risk and not r[0].strip() else ""
+        cells = []
+        for i in idx:
+            v = r[i] if i < len(r) else ""
+            c = []
+            if head[i] in right:
+                c.append("n")
+            elif re.fullmatch(r"\d{4}-\d\d-\d\d|[A-Z]+-\d+|T-\d+|ODO-\d+", v.strip()):
+                c.append("nw")
+            if risk and head[i] == "S" and v.strip().isdigit() and int(v) >= 8:
+                c.append("hi")
+            cells.append(f"<td{' class=' + repr(' '.join(c)) if c else ''}>{html.escape(v)}</td>")
+        out.append(f"<tr{cls}>" + "".join(cells) + "</tr>")
+    return "".join(out) + "</tbody></table>"
+
+
+def charter(text):
+    lines = text.strip().splitlines()
+    out = [f"<p class='sub'>{html.escape(lines[1]) if len(lines) > 1 else ''}</p><div class='charter'>"]
+    for line in lines[2:]:
+        if not line.strip():
+            continue
+        if re.match(r"^\d+\. [A-Z][A-Z ,&/-]+$", line.strip()):
+            out.append(f"<h2>{html.escape(line.strip())}</h2>")
+        else:
+            out.append(f"<p>{html.escape(line)}</p>")
+    return "".join(out) + "</div>"
+
+
+def main(argv):
+    if not argv:
+        print(__doc__)
+        return 2
+    src = pathlib.Path(argv[0])
+    dst = pathlib.Path(argv[1]) if len(argv) > 1 else src / "views"
+    dst.mkdir(parents=True, exist_ok=True)
+    project = src.resolve().name
+    charter_file = src / "project-charter.txt"
+    if charter_file.exists():
+        first = charter_file.read_text(encoding="utf-8").splitlines()[0]
+        project = first.replace("Project charter.", "").strip() or project
+    note = "Readable copy built by record-view.py from the sheet of the same name. The sheet is the record."
+    made = []
+    for name, (title, kind, cols, right) in SHEETS.items():
+        f = src / name
+        if not f.exists():
+            continue
+        if name.endswith(".txt"):
+            body = charter(f.read_text(encoding="utf-8"))
+        else:
+            with open(f, newline="", encoding="utf-8-sig") as fh:
+                rows = list(csv.reader(fh))
+            body = table(rows, cols, right, risk=name == "risk-table.csv")
+            if name == "risk-table.csv":
+                body = "<p class='sub'>Each failure mode with its first scores; indented lines are the actions taken and the new scores. Severity 8 and up is shaded.</p>" + body
+        out = dst / (pathlib.Path(name).stem + ".html")
+        out.write_text(page(title, kind, project, body, note), encoding="utf-8")
+        made.append((out.name, title, kind))
+    links = "".join(f"<li><a href='{n}'>{html.escape(t)}</a> ({html.escape(k)})</li>" for n, t, k in made)
+    (dst / "index.html").write_text(page("The record, readable", "Record", project, f"<ul class='idx'>{links}</ul>", note), encoding="utf-8")
+    print(f"wrote {len(made)} pages and index.html to {dst}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
 === FILE: resource-crosscheck.json ===
 {
   "checked_on": "2026-09-30",
@@ -24433,7 +24577,7 @@ NEVER (office)
 
 SOURCES (published; ids in your library): SOLIDWORKS API Help for your version (solidworks-api-help); recording and editing macros (solidworks-macros); CodeStack examples (codestack); xCAD.NET (xcad-net); community MCP servers (solidworks-mcp-servers); Model Context Protocol (mcp-protocol); Claude Code docs (claude-code-docs); Codex docs (openai-codex-docs); CadQuery (cadquery); build123d (build123d); KiCad docs (kicad-docs).
 === FILE: sop-business-record.txt ===
-SOP: The business record. Revision 3 — October 18, 2026.
+SOP: The business record. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one set for the business (all inventions). b-analyst fills and updates them, and runs tax-year.py.
 May write: the files named below in AN-Creation/Business/, their readable copies in Your files/Business record/, and hand-off lines to b-project-manager.
@@ -24478,7 +24622,7 @@ THE HARD LINES
 - Living or parked (https://ancreationoffice.com/sop-document-life.txt). Living, updated the turn something happens: the decision log, the action log, contacts and the correspondence index, the trip log, the expense ledger, the deadlines. Parked until a trigger: the company record. Packets are built for a meeting, kept as given, and their sources parked again afterwards.
 - Never invent an amount, a mile, a date or a purpose. A missing fact stays missing and is asked for.
 - Never store full tax IDs, account or card numbers, or passwords. "Owner's personal card" is enough.
-- The inventor can see all seven at any time: b-analyst keeps a readable copy in Your files/Business record/.
+- The inventor can see all seven at any time: b-analyst keeps a readable copy in Your files/Business record/ (python3 record-view.py AN-Creation/Business "<Your files>/Business record"; https://ancreationoffice.com/record-view.py).
 === FILE: sop-business-risks.txt ===
 SOP: The business risk register. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
@@ -26167,7 +26311,7 @@ RULES
 - Rough is fine at S0 (90% and go). The charter gets sharper through ECNs as the facts come in; it does not wait for certainty.
 - Out of scope is written down, so a new idea goes through the scope gate (principle-scope-gate.txt) instead of creeping in.
 === FILE: sop-project-record.txt ===
-SOP: The project record. Revision 3 — October 18, 2026.
+SOP: The project record. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one set per invention. b-analyst fills and updates them.
 May write: the files named below in Office files/, and their readable copies in Your files/Project record/.
@@ -26201,7 +26345,7 @@ THE HARD LINES
 - Living or parked (https://ancreationoffice.com/sop-document-life.txt). Living: the decision log, the action log, the spending register and the ECN log are updated the same turn something happens, never "later". Parked: the charter, the cost sheet and the risk table are done properly for their purpose, shared, and parked in plan.md with their reopen triggers; they are dusted off when a trigger happens, not reworked every conversation. The risk table is done for the design, so the design answers the risks, and parked at design freeze.
 - Specs trace to their source. A requirement, rating, tolerance, material property or test level on any sheet carries its source, edition, clause, quoted text and source status, and is checked against the document before it is built, bought or tested on (https://ancreationoffice.com/sop-source-check.txt, principle-trace-to-source.txt). Run check-sources.py before every review and every quote package.
 - They are done for real. No pasted standard FMEA, no copied BOM from another product, no round-number cost guesses presented as figures (https://ancreationoffice.com/principle-never-invent-facts.txt).
-- The inventor can see all seven at any time: b-analyst keeps a readable copy of each in Your files/Project record/, in the format the inventor chose, and the review page links them. The inventor is the decision-maker; they review what the bot has thought through.
+- The inventor can see all seven at any time: b-analyst keeps a readable copy of each in Your files/Project record/, in the format the inventor chose, and the review page links them. For web pages: python3 record-view.py "<Office files folder>" "<Your files>/Project record" (https://ancreationoffice.com/record-view.py; example: https://ancreationoffice.com/example-mousetrap/views/index.html). The inventor is the decision-maker; they review what the bot has thought through.
 - A document the inventor has not seen yet is mentioned in one line when it first exists: "Your risk table is up: nine ways it could fail, two worth working now."
 - Other working documents (control plan, compliance matrix, test plans, the resource map) are kept as the stages call for them. These seven are the minimum.
 
@@ -27449,7 +27593,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.15
+261018.16
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -27592,6 +27736,7 @@ profile.txt
 project-description.txt
 project-folders.txt
 project-manager.txt
+record-view.py
 resource-crosscheck.json
 resource-crosscheck.txt
 resources-company.html
@@ -29506,7 +29651,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this at the start of every conversation because the profile says to follow the office-startup skill. Not from memory.
 
-Office version: 261018.15
+Office version: 261018.16
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -29535,6 +29680,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version, the library version, and your profile version.
 
 CHANGES (newest first)
+261018.16  record-view.py builds readable, printable pages of the record (charter, cost sheet, risk table, action log, decision log, spending register, compliance matrix, expense ledger, trip log, correspondence index) for Your files; the project and business record procedures name it. Example: example-mousetrap/views/. Re-read your office file. No new profile text.
 261018.15  It's AI: both bots say once, in the first conversation, that they work from good procedures and sources but AI can get things wrong, that the inventor checks and rechecks, and that making sure it's right before filing, signing, ordering or spending stays with them; then one line before anything that matters goes out. Before handing over a patent filing package, the bot says it's the inventor's filing, it can't say the package is adequate, and a review before filing is how to know (sop-routes.txt). Full statement: license.html#your-responsibility. Re-read your office file. No new profile text.
 261018.14  The project folder goes where the owner wants it. Setup asks first: "Where would you like your project folder?", recommending a cloud folder (Google Drive or OneDrive: works from a phone, keeps earlier versions, survives a lost computer), with Google Drive as the default when they have no preference. OneDrive, Dropbox and other cloud folders use the same steps through their connector; a folder on a computer or network drive works where the bot can actually write to it; GitHub stays the add-on for people who write code. office.txt's Home line names it (Home: Google Drive AN-Creation, Home: OneDrive AN-Creation, Home: Folder <path>, Home: GitHub ...), and every bot looks there. A bot that can't find the folder asks where it is instead of guessing. Re-read your office file. No new profile text.
 261018.13  The record/ folder uses the same naming as the correspondence log: YYMMDD-NN-R-slug (received), YYMMDD-NN-S-slug (sent), YYMMDD-NN-M-slug (a conversation), with NN its number in that day. Existing I, O and M folders stay as they are; new ones use the new names. Record INDEX.csv type column reads R, S or M. Re-read your office file. No new profile text.
