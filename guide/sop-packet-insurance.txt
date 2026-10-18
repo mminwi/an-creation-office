@@ -1,0 +1,31 @@
+SOP: The insurance packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with an insurance agent or broker (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; company.csv (the insurance line) after the meeting.
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/insurance-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Insurance only)
+Goes with: https://ancreationoffice.com/sop-company.txt (8. Insurance), https://ancreationoffice.com/sop-risk-table.txt , https://ancreationoffice.com/sop-packet-buyer.txt (what buyers ask for)
+
+WHO IT IS FOR
+An independent insurance agent or broker quoting product liability and general liability for a small product business. Usually needed before the first shipment, because buyers ask for a certificate.
+
+WHAT WORRIES THEM
+- What is the product, who uses it, and how could it hurt someone?
+- What has been done about those risks, and what standards and labels apply?
+- How much will sell, where, and through whom? Who makes it?
+- What is the business, and is there any claims history?
+
+WHAT GOES IN IT (meeting-packet.py builds it: insurance)
+1. For the insurance agent: new business, no sales, no claims; the first shipment date, planned first-year sales (plan volume times price, from funding.csv), where it will be sold, how many failure modes could hurt someone; what we ask; what buyers require and where that comes from; the business.
+2. The product and how it is used: what it is, who uses it and where, how it is sold, the parts and who makes each (cost sheet), instructions and warnings.
+3. Risks, and what has been done: from b-project-manager's risk analysis table, every failure that could hurt someone (severity 8 and up, or an effect that says someone can be hurt), what was done, and the severity before and after; the requirements and standards with their source status (compliance matrix); recalls and incidents on similar products; claims history.
+4. Questions for the agent, each with what the record shows.
+5. Prep sheet for the inventor.
+The product sheets (cost sheet, risk table, compliance matrix) are b-project-manager's: ask for current copies through office-handoff; never retype them.
+
+RULES
+- Questions, not assumptions: the packet never states what a policy covers, a limit, a price or a legal requirement for coverage. What a policy covers is in its wording: ask for the wording, not only the quote.
+- A buyer's requirement (a limit, being named as additional insured) comes from that buyer's own vendor terms, with the source in the note.
+- Every risk the agent sees is the real analysis, including the ones not yet closed (principle-never-invent-facts.txt). Hiding a known risk from an insurer is never an option.
+- Run the recall and incident search on similar products before the meeting (library: cpsc-recalls, saferproducts) and record what it found, or that it found nothing, with the date.
+- Get two or three quotes and the policy wording before buying; don't buy in the room (principle-walk-away-number.txt).
+- After the meeting: the quote goes in the meeting's folder; the company record's insurance line gets its status; the cost goes on the spending register and the expense ledger when it is paid; the renewal date goes in deadlines.csv.

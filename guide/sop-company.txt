@@ -1,4 +1,4 @@
-SOP: b-business-manager. Setting up and keeping the company. Revision 3 — October 18, 2026.
+SOP: b-business-manager. Setting up and keeping the company. Revision 5 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: business-manager.txt
 Read this when the business name, forming a company, the tax ID, a bank account, insurance, licenses or the yearly paperwork comes up. Then leave it.
@@ -27,7 +27,7 @@ ONE STEP AT A TIME (each is a row in actions.csv until it's done)
 5. The tax ID (EIN). Free from the IRS in minutes, https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online . They apply themselves; it's needed for the bank account. Never pay a site for an EIN.
 6. A business bank account, in the company's name, with the EIN and formation papers. All business money goes through it, never mixed with personal money (mixing can undo the protection). Compare two or three: a local bank or credit union (often helpful later for a loan), and an online bank. Check fees, minimum balances, how deposits and transfers work, and that it is FDIC- or NCUA-insured (FDIC BankFind, NCUA locator; an app is often a front end for a partner bank). A business credit card from the same bank keeps business spending separate and builds the company's credit.
 7. Bookkeeping. A simple tool or a spreadsheet from day one; keep every receipt (record/). An accountant can set it up in an hour.
-8. Insurance. General liability when they start selling or showing in person; product liability before a product reaches customers (buyers and stores often ask for a certificate). Get two or three quotes. Tie it to the product's risks in Office files.
+8. Insurance. General liability when they start selling or showing in person; product liability before a product reaches customers (buyers and stores often ask for a certificate). Get two or three quotes. Tie it to the product's risks in Office files. For the meeting with an agent, build the insurance packet (https://ancreationoffice.com/sop-packet-insurance.txt).
 9. Licenses and sales tax. A local business license if their city or county wants one; a sales tax permit in their state if they sell taxable goods directly. Check the state and city sites (SBA licenses and permits page). Many states have one portal that forms the company and registers it for state taxes at once (in Wisconsin, the One Stop Business Portal; the Department of Revenue issues the seller's permit).
 10. Trademark (later, when the name is settled and they're selling or about to): the owner can file at the USPTO themselves with what the office prepares (the search and the application), or use an attorney; USPTO filing has its own fees.
 
@@ -50,3 +50,6 @@ RECORD
 business.txt: the company in one page: legal name, form, state, date formed, EIN (last four digits only, never the full number), registered agent, bank (name only), accountant, attorney, insurance carrier and renewal date. Never store full ID numbers, account numbers or passwords.
 
 Sources: SBA business guide https://www.sba.gov/business-guide ; choosing a structure https://www.sba.gov/business-guide/launch-your-business/choose-business-structure ; registering https://www.sba.gov/business-guide/launch-your-business/register-your-business ; EIN https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online ; trademark search https://tmsearch.uspto.gov/ ; free mentoring: SCORE https://www.score.org , Small Business Development Centers https://americassbdc.org , Women's Business Centers and Veterans Business Outreach Centers (SBA resource partners); banking: FDIC BankFind https://banks.data.fdic.gov/bankfind-suite/bankfind ; taxes: IRS small business center https://www.irs.gov/businesses/small-businesses-self-employed ; Wisconsin: One Stop Business Portal https://openforbusiness.wi.gov/ . Library ids: sba-bank-account, fdic-bankfind, ncua-locator, sba-licenses-permits, irs-sbse-center, irs-pub-334, irs-estimated-taxes, sba-hire-employees, uscis-i9, duns-number, sam-registration, wi-onestop, wi-dfi, wi-dor-btr.
+
+MEETING AN ATTORNEY
+For forming the company with an attorney, or any agreement before it is signed, build the business attorney packet (https://ancreationoffice.com/sop-packet-attorney.txt).

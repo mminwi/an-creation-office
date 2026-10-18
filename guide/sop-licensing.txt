@@ -1,4 +1,4 @@
-SOP: Licensing an invention (b-licensing). Revision 2 — October 18, 2026.
+SOP: Licensing an invention (b-licensing). Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Source: licensing practice from published inventor and licensing sources (below, read through search 2026-10-12). Tier: documented; an attorney writes and reviews any agreement. The office never contacts a company, sends a submission or signs anything.
 Read this when the route is licensing (a company makes and sells it and pays a royalty), when it's time to approach companies, or when an offer arrives.
@@ -27,7 +27,8 @@ Read this when the route is licensing (a company makes and sells it and pays a r
 
 4. THE APPROACH
 - A short note or email: who you are, why this company, the one-line benefit, the sell sheet attached, and a follow-up date.
-- Keep a log: company, contact, date, what was sent, the reply, next step (actions.csv).
+- Keep a log: company, contact, date, what was sent, the reply, next step (actions.csv, and the correspondence log).
+- For a meeting with a company, build the licensee packet: https://ancreationoffice.com/sop-packet-licensee.txt
 
 5. THE DEAL (with an attorney)
 - Royalty: a percentage of net sales is common; Stephen Key reports about 5% of net sales as the standard he has seen, and rates vary widely by industry and how significant the invention is. Never promise a rate; it is negotiated.

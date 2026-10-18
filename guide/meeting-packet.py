@@ -1,7 +1,7 @@
-"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor, an accountant or a patent attorney.
+"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor, an accountant, a patent attorney, a licensee, an insurance agent or a business attorney.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent
+  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
@@ -16,8 +16,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
-if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant", "patent"):
-    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant|patent")
+if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant", "patent", "licensee", "insurance", "attorney"):
+    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney")
 MEET = Path(sys.argv[1]).resolve()
 KIND = sys.argv[2]
 
@@ -95,13 +95,14 @@ deadlines = sheet("deadlines.csv")
 disclosure = kv("invention-disclosure.csv")
 priorart = sheet("prior-art.csv")
 shown = sheet("disclosure-history.csv")
+compliance = sheet("compliance-matrix.csv")
 
 PRODUCT = first(funding, "product", "This product")
 U = first(funding, "unit", "unit")
 US = first(funding, "units", U + "s")
 piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
 tooling = sum(num(r["tooling"]) for r in cost)
-TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet"}[KIND]
+TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet", "licensee": "Licensee packet", "insurance": "Insurance packet", "attorney": "Business attorney packet"}[KIND]
 
 
 def table(head, body, cls=""):
@@ -525,6 +526,130 @@ if KIND == "patent":
 <h2>Budget and scope</h2><p>{esc(M.get('budget'))}</p>
 <h2>The company</h2>{table(['', '', 'Status'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), pill(r['status'])] for r in company if r['key'].lower() in ('legal name', 'entity', 'owner')], 'compact')}""", "Page 5"))
     pages.append(prep_sheet(show_open=False, top="<p class='small'>Check the person's registration in the USPTO's practitioner search before the meeting, and watch for invention-promotion pitches (library: patent-practitioners, uspto-scam-prevention).</p>"))
+
+# ---------------- licensee ----------------
+if KIND == "licensee":
+    filed = first(disclosure, "filed", "Nothing yet")
+    is_filed = filed.strip().lower() not in ("", "nothing yet", "none")
+    shelf = num(first(pricing, "shelf_price"))
+    benefits = "".join(f"<li>{esc(r['value'])}</li>" for r in pricing.get("benefit", []))
+    pages.append(page(first(disclosure, "title", PRODUCT), f"""
+<p class="lede-big">{esc(first(pricing, 'headline'))}</p>
+<h2>The problem</h2><p>{esc(first(disclosure, 'problem'))}</p>
+<h2>Who it's for</h2><p>{esc(first(pricing, 'who_for'))}</p>
+<h2>Why people want it</h2><ul class="levers">{benefits}</ul>
+<div class="stats">{stat('Suggested shelf price', money(shelf))}{stat('Case pack', esc(first(pricing, 'case_pack')))}{stat('Development', esc(M.get('development_short', 'Prototype')))}{stat('Patent status', 'Patent pending' if is_filed else 'Not filed')}</div>
+<p class="small">{esc(M.get('picture_note', 'A picture of the prototype goes here.'))}</p>
+<p>Contact: {esc(M.get('contact', first(funding, 'contact')))}</p>""", "Sell sheet"))
+    alts = [[esc(r["value"]), esc(r["note"])] for r in MULTI.get("alternative", [])]
+    ev = [[fdate(r["date"]), esc(r["who"]), esc(r["what they said"]), esc(r["what they did or would pay"])] for r in evidence]
+    pages.append(page("Why it sells", f"""
+<h2>What people use now</h2>{table(['Alternative', 'Where this one is different'], alts, 'compact')}
+<h2>What buyers and users have said</h2>{table(['Date', 'Who', 'Said', 'Did or would pay'], ev, 'compact')}
+<h2>Cost to make, as estimated so far</h2><p>{money(piece)} a {U} in parts, molding and assembly, from our cost sheet, with {money(tooling, False)} of tooling estimated (placeholders until quotes arrive). Your own costs will differ.</p>""", "Page 2"))
+    terms = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("term", [])]
+    pages.append(page("Where it stands, and what we'd like to discuss", f"""
+<h2>Development</h2><p>{esc(M.get('development'))}</p>
+<h2>Patent status</h2><p>{esc(M.get('patent_status', ('Patent pending: ' + filed) if is_filed else 'No application filed yet.'))}</p>
+<h2>What we would like to discuss</h2>{table(['', ''], terms, 'kv')}
+<p class="small">Nothing here is an offer to sign. Any agreement is written and reviewed by attorneys for both sides.</p>""", "Page 3"))
+    rate = num(M.get("royalty_pct_example")) / 100
+    net = num(M.get("licensee_net_price_example"))
+    units = num(M.get("licensee_units_example"))
+    royalty_html = ""
+    if rate and net:
+        per = rate * net
+        royalty_html = (f"<h2>What a royalty could mean (illustrative)</h2><p>At {rate*100:.1f}% of a net sales price of {money(net)} a {U}, each {U} pays {(f"${per:.4f}".rstrip("0") if per < 0.10 else money(per))}."
+                        + (f" At {units:,.0f} {US} a year, that is {money(per * units, False)} a year." if units else "")
+                        + f" {esc(M.get('royalty_note'))}</p>")
+    warn = ""
+    if not is_filed:
+        warn = "<div class='verdict warn'><strong>Nothing is filed.</strong> The licensing procedure says to settle the patent before approaching a company (sop-licensing.txt 1). Show what it does, not how it is made, and read their idea submission terms before sending anything: they can waive rights.</div>"
+    pages.append(prep_sheet(royalty_html, warn))
+
+# ---------------- insurance agent ----------------
+if KIND == "insurance":
+    price = num(first(funding, "price"))
+    annual = num(first(funding, "annual_units"))
+    first_ship = first(funding, "milestone:First shipment to a distributor")
+    # failure modes, each with its actions; keep the ones that could hurt someone
+    modes, cur = [], None
+    for r in risk:
+        if r.get("id", "").startswith("F"):
+            cur = {"row": r, "actions": []}
+            modes.append(cur)
+        elif cur is not None and r.get("Failure mode / actions"):
+            cur["actions"].append(r)
+    hurt = [m for m in modes if int(m["row"].get("S") or 0) >= 8 or "hurt" in m["row"].get("effect", "").lower() or "injur" in m["row"].get("effect", "").lower()]
+    rows_ = []
+    for m in hurt:
+        last = m["actions"][-1] if m["actions"] else m["row"]
+        rows_.append([esc(m["row"]["id"]), esc(m["row"]["Failure mode / actions"]), esc(m["row"]["effect"]),
+                      "; ".join(esc(a["Failure mode / actions"]) for a in m["actions"]) or "None yet",
+                      f"{esc(m['row'].get('S'))} → {esc(last.get('S'))}", esc(last.get("status")) or "open"])
+    keep = ("legal name", "entity", "product liability insurance", "years in business", "owner", "rules that apply")
+    co = [r for r in company if r["key"].lower() in keep] or company
+    pages.append(page("For the insurance agent", f"""
+<div class="verdict warn"><strong>New business, no sales yet, no claims.</strong> {esc(M.get('situation'))}</div>
+<div class="stats">{stat('First shipment planned', fdate(first_ship) if first_ship else 'Not set')}{stat('Planned sales, first year', money(annual * price, False), f'{annual:,.0f} {US} at {money(price)}')}{stat('Sold in', esc(M.get('territory', 'Not set')))}{stat('Risks that could hurt someone', str(len(hurt)), f'of {len(modes)} failure modes analyzed')}</div>
+<h2>What we are asking for</h2><ul class="levers">{''.join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get('ask', []))}</ul>
+<h2>What buyers are asking for</h2>{table(['Requirement', 'From'], [[esc(r['value']), esc(r['note'])] for r in MULTI.get('requirement', [])], 'compact')}
+<h2>The business</h2>{table(['', '', 'Status'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), pill(r['status'])] for r in co], 'compact')}""", "Page 1"))
+    parts = [[esc(r.get("part number")), esc(r["part"]), esc(r["what it is"]), esc(r.get("make or buy")), esc(r.get("supplier"))] for r in cost]
+    pages.append(page("The product and how it is used", f"""
+<h2>What it is</h2><p>{esc(first(disclosure, 'how_it_works') or first(pricing, 'headline'))}</p>
+<h2>Who uses it, and where</h2><p>{esc(first(pricing, 'who_for'))}</p>
+<h2>How it is sold</h2><p>{esc(M.get('sales_path'))}</p>
+<h2>What it is made of, and who makes it</h2>{table(['Part no.', 'Part', 'What it is', 'Make or buy', 'Supplier'], parts, 'compact')}
+<h2>Instructions and warnings</h2><p>{esc(M.get('instructions'))}</p>""", "Page 2"))
+    comp = [[esc(r["ID"]), esc(r["Requirement"]), esc(r["Source"]), esc(r["Source status"]), esc(r["Status"])] for r in compliance]
+    pages.append(page("Risks, and what has been done", f"""
+<p>From the product's risk analysis: the ways it could fail that could hurt someone, what was done about each, and the severity before and after (1 to 10).</p>
+{table(['', 'Failure', 'Effect', 'What was done', 'Severity', 'Status'], rows_, 'compact')}
+<h2>Requirements and standards</h2>{table(['', 'Requirement', 'Source', 'Source status', 'Met?'], comp, 'compact')}
+<h2>Similar products</h2><p>{esc(M.get('incidents', 'Recall and incident search not run yet (library: cpsc-recalls, saferproducts).'))}</p>
+<h2>Claims history</h2><p>{esc(M.get('claims', 'None. New business.'))}</p>""", "Page 3"))
+    qs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("question", [])]
+    pages.append(page("Questions for you", f"""
+{table(['Question', 'What the record shows'], qs, 'compact')}
+<p class="small">These are questions, not assumptions about coverage. What a policy covers is in the policy itself: ask for the policy wording, not only the quote.</p>""", "Page 4"))
+    pages.append(prep_sheet())
+
+# ---------------- business attorney ----------------
+if KIND == "attorney":
+    docs = MULTI.get("document", [])
+    def by(r):
+        return r.get("by", "") or "9999"
+    open_docs = [r for r in docs if r.get("status", "") != "signed"]
+    nxt = sorted([r for r in open_docs if r.get("by")], key=by)
+    formed = next((r for r in company if r["key"].lower() == "legal name"), None)
+    is_formed = formed is not None and formed["status"] == "ready"
+    legal = [b for b in brisks if b.get("category", "").lower() == "legal" and b["status"] != "closed"]
+    keep = ("legal name", "entity", "tax id (ein)", "owner", "years in business")
+    co = [r for r in company if r["key"].lower() in keep] or company
+    pages.append(page("For the business attorney", f"""
+<div class="verdict warn"><strong>{'The company is formed.' if is_formed else 'No company formed yet.'}</strong> {esc(M.get('situation'))}</div>
+<div class="stats">{stat('Company', 'Formed' if is_formed else 'Not formed')}{stat('Documents to look at', str(len(open_docs)), f'{len(docs) - len(open_docs)} already signed')}{stat('Owners of the invention', str(len(disclosure.get('owner', []))) or 'Not recorded')}{stat('First date that matters', fdate(nxt[0]['by']) if nxt else 'None set')}</div>
+<h2>What we are asking for</h2><ul class="levers">{''.join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get('ask', []))}</ul>
+<h2>The business</h2>{table(['', '', 'Status'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), pill(r['status'])] for r in co], 'compact')}
+<h2>Legal risks on the business risk register</h2>{table(['', 'Risk', 'What is being done'], [[esc(b['id']), esc(b['risk']), esc(b['mitigation'])] for b in legal], 'compact')}""", "Page 1"))
+    drows = [[f"<strong>{esc(r['value'])}</strong>", esc(r.get("from", "")), esc(r["note"]), fdate(r["by"]) if r.get("by") else "", esc(r.get("status", ""))] for r in sorted(docs, key=by)]
+    pages.append(page("Documents", f"""
+<p>Each agreement or form that needs your eyes, the earliest first, and the ones already signed. The documents themselves are in the correspondence log, in the folder for the day each one arrived or was sent.</p>
+{table(['Document', 'From', 'What it is and what worries us', 'By', 'Status'], drows, 'compact')}
+<p class="small">Nothing here has been signed except where it says signed. The bot drafts no agreement for signing; it gathers the facts and the questions.</p>""", "Page 2"))
+    inv = [[esc(r["value"]), esc(r["note"])] for r in disclosure.get("inventor", [])]
+    money_rows = [[esc(r["value"]), esc(r["note"])] for r in MULTI.get("outside_money", [])]
+    pages.append(page("Ownership", f"""
+<h2>Who invented it</h2>{table(['Inventor', 'Contribution'], inv, 'compact') if inv else '<p>Not recorded yet.</p>'}
+<h2>Who owns the invention today</h2><p>{esc(first(disclosure, 'owner', 'Not recorded yet'))}. {esc(disclosure.get('owner', [{'note': ''}])[0]['note'])}</p>
+<h2>Patent filings</h2><p>{esc(first(disclosure, 'filed', 'Nothing yet'))}.</p>
+<h2>Outside money being discussed</h2>{table(['', ''], money_rows, 'kv') if money_rows else '<p>None.</p>'}""", "Page 3"))
+    qs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("question", [])]
+    pages.append(page("Questions for you", f"""
+{table(['Question', 'What the record shows'], qs, 'compact')}
+<h2>Budget</h2><p>{esc(M.get('budget'))}</p>""", "Page 4"))
+    pages.append(prep_sheet(show_open=False))
 
 css = CSS
 doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: {TITLE.lower()}</title>

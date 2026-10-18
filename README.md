@@ -155,7 +155,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`funding-packet.py`](guide/funding-packet.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/funding-packet.py) |
 | [`handoff-log.csv`](guide/handoff-log.csv) | Worksheet / table (CSV): handoff_id, sent_date, sender, recipient... | [live](https://ancreationoffice.com/handoff-log.csv) |
 | [`ip-ratings.txt`](guide/ip-ratings.txt) | IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and  | [live](https://ancreationoffice.com/ip-ratings.txt) |
-| [`library.txt`](guide/library.txt) | 261018.20 | [live](https://ancreationoffice.com/library.txt) |
+| [`library.txt`](guide/library.txt) | 261018.23 | [live](https://ancreationoffice.com/library.txt) |
 | [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The | [live](https://ancreationoffice.com/manufacturing.txt) |
 | [`office-handoff.txt`](guide/office-handoff.txt) | AN Creation skill: office-handoff. The office rule is https://ancreationoffice.com/sop-team.txt HAND-OFFS. | [live](https://ancreationoffice.com/office-handoff.txt) |
 | [`office-save.txt`](guide/office-save.txt) | AN Creation skill: office-save. The office rule is https://ancreationoffice.com/version-control.txt SAVING and | [live](https://ancreationoffice.com/office-save.txt) |
@@ -217,14 +217,17 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`sop-interns.txt`](guide/sop-interns.txt) | SOP: Use an intern. Revision 1 — October 1, 2026. | [live](https://ancreationoffice.com/sop-interns.txt) |
 | [`sop-office.txt`](guide/sop-office.txt) | SOP: Set up b-project-manager and b-analyst. Revision 14 — October 18, 2026. | [live](https://ancreationoffice.com/sop-office.txt) |
 | [`sop-packet-accountant.txt`](guide/sop-packet-accountant.txt) | SOP: The accountant packet. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-accountant.txt) |
+| [`sop-packet-attorney.txt`](guide/sop-packet-attorney.txt) | SOP: The business attorney packet. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-attorney.txt) |
+| [`sop-packet-insurance.txt`](guide/sop-packet-insurance.txt) | SOP: The insurance packet. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-insurance.txt) |
 | [`sop-packet-investor.txt`](guide/sop-packet-investor.txt) | SOP: The investor packet. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-investor.txt) |
 | [`sop-packet-lender.txt`](guide/sop-packet-lender.txt) | SOP: The lender packet. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-lender.txt) |
+| [`sop-packet-licensee.txt`](guide/sop-packet-licensee.txt) | SOP: The licensee packet. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-licensee.txt) |
 | [`sop-packet-manufacturer.txt`](guide/sop-packet-manufacturer.txt) | SOP: The manufacturer packet (request for quote). Revision 2 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-manufacturer.txt) |
 | [`sop-packet-patent.txt`](guide/sop-packet-patent.txt) | SOP: The patent attorney packet. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-patent.txt) |
 | [`sop-project-charter.txt`](guide/sop-project-charter.txt) | SOP: The project charter. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-project-charter.txt) |
 | [`sop-suggestions.txt`](guide/sop-suggestions.txt) | SOP: Suggestions and actions. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/sop-suggestions.txt) |
-| [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 21 — October 18, 2026. | [live](https://ancreationoffice.com/sop.txt) |
-| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.20 | [live](https://ancreationoffice.com/sops-manifest.txt) |
+| [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 24 — October 18, 2026. | [live](https://ancreationoffice.com/sop.txt) |
+| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.23 | [live](https://ancreationoffice.com/sops-manifest.txt) |
 | [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's form | [live](https://ancreationoffice.com/status-template.txt) |
 | [`tax-year.py`](guide/tax-year.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/tax-year.py) |
 | [`template-a3.txt`](guide/template-a3.txt) | One-page project summary (A3). Template, from Mike's practice (sop-six-sigma.txt section 6). Copy into the pro | [live](https://ancreationoffice.com/template-a3.txt) |

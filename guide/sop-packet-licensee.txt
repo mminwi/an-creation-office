@@ -1,0 +1,33 @@
+SOP: The licensee packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with a company that might license the invention (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; a planned row in disclosure-history.csv as soon as the meeting is set.
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261119-01-M-pest-control-company-licensing/licensee-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Licensee only)
+Goes with: https://ancreationoffice.com/sop-licensing.txt (the licensing route: before approaching anyone, the sell sheet, finding licensees, the approach, the deal), https://ancreationoffice.com/sop-packet-patent.txt (the patent sheets this packet reads)
+
+WHO IT IS FOR
+A company that already makes and sells to the same buyers, deciding whether to make and sell the invention and pay the inventor a royalty.
+
+WHAT WORRIES THEM
+- Will it sell, and does it fit what we already sell?
+- Can we own it? Is there a patent filed, and is anything already out there?
+- What will it cost us to make, and is it ready?
+- Is this inventor reasonable to deal with?
+
+WHAT GOES IN IT (meeting-packet.py builds it: licensee)
+1. Sell sheet: the headline, the problem, who it is for, why people want it, the suggested shelf price, the case pack, how far along it is, the patent status, a picture of the prototype, the contact. It shows what it does, not how it is made (sop-licensing.txt 2).
+2. Why it sells: what people use now, what buyers and users have said, and the cost to make as estimated so far (placeholders say so).
+3. Where it stands, and what we'd like to discuss: development, patent status, and the terms to talk about (exclusive or not, royalty, minimums, advance, patent costs, improvements, term) as topics, not offers.
+4. Prep sheet, for the inventor only: a warning when nothing is filed, the goal, the ask, the walk-away, their likely questions, an illustrative royalty calculation, and what is still open.
+
+THE ROYALTY CALCULATION
+An illustration for the inventor, never shown to the company: a rate, a net price and a volume, each marked illustrative, and the yearly royalty they make. Its purpose is to set expectations before the meeting: licensing usually pays a small share of each sale. The rate comes from a cited source (sop-licensing.txt 5), never from memory, and is never quoted or agreed in the room.
+
+RULES
+- Patent first: "Patent pending" appears only when an application is filed (invention-disclosure.csv). When nothing is filed, the packet says "Not filed" and the prep sheet warns, per sop-licensing.txt 1.
+- Read the company's idea submission terms before sending anything; they can waive rights. Signing them is a one-way door, with an attorney if the money allows.
+- Nothing in the packet is an offer. Any agreement is written and reviewed by an attorney before the inventor signs (principle-rigor-scales-with-money.txt).
+- Never claim sales, a patent or a market that does not exist (principle-no-claims-you-cant-back.txt).
+- Avoid invention-promotion companies that charge to "license" an idea (library: uspto-scam-prevention, ftc-invention-marketing).
+- The inventor sends, signs and attends. The bot prepares.
+- After the meeting: the notes in the meeting's folder, what they said in market-evidence.csv, the showing marked done in disclosure-history.csv, the next step on the action log.

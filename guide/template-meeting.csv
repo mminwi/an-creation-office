@@ -1,5 +1,5 @@
 key,value,note
-type,buyer,"buyer, manufacturer, lender, investor, accountant or patent"
+type,buyer,"buyer, manufacturer, lender, investor, accountant, patent, licensee, insurance or attorney"
 who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
 date,2026-10-28,YYYY-MM-DD
 record,../../funding/<invention>,Folder with the sheets; relative to this meeting folder
@@ -37,4 +37,21 @@ exit,,"Investor only: how an investor could get money back, including if it fail
 market,,"Investor only, optional: a market size, only with its source in the note"
 tax_year,2026,Accountant only: the year the packet covers
 question,A question for the accountant,Accountant only: one row each; the note says what the record shows
-budget,,"Patent only: what the inventor will spend now, and on what"
+budget,,"Patent and attorney: what the inventor will spend now, and on what"
+development_short,Prototype,Licensee only: a few words for the sell sheet
+development,,Licensee only: how far along it is
+picture_note,,Licensee only: what picture goes on the sell sheet
+contact,,Licensee only
+royalty_pct_example,,"Licensee only: an illustrative rate, with its source in the note"
+licensee_net_price_example,,Licensee only: illustrative
+licensee_units_example,,Licensee only: illustrative
+royalty_note,,Licensee only
+situation,,"Insurance and attorney: the business in a sentence"
+territory,United States,Insurance only: where it will be sold
+requirement,,Insurance only: one row per buyer requirement; the note names the buyer's terms
+sales_path,,Insurance only: how it reaches the user
+instructions,,"Insurance only: the instructions and warning labels, and their status"
+incidents,,"Insurance only: what the recall and incident search found, with the date"
+claims,None. New business.,Insurance only
+document,Name of the agreement or form,"Attorney only: one row each; for an attorney meeting, meeting.csv adds columns from, by and status"
+outside_money,,Attorney only: any outside money being discussed; the note says how much and on what terms

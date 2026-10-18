@@ -1,0 +1,32 @@
+SOP: The business attorney packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with a business attorney (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv.
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261105-01-M-business-attorney-consult/attorney-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Attorney only; this meeting.csv has three more columns: from, by, status)
+Goes with: https://ancreationoffice.com/sop-company.txt (forming and keeping the company), https://ancreationoffice.com/principle-rigor-scales-with-money.txt
+
+WHO IT IS FOR
+A business attorney: forming the company and writing its operating agreement, and reading agreements before the inventor signs them (an investor's terms, a buyer's vendor agreement, a license, a company's idea submission form, a supplier's contract). A patent question goes to the patent attorney packet (sop-packet-patent.txt).
+
+WHAT WORRIES THEM
+- What exactly needs their eyes, and by when?
+- Who owns what: the company, the invention, any share promised to someone?
+- What has already been signed, and what is about to be?
+- What is the budget, and is it a flat fee or hourly?
+
+WHAT GOES IN IT (meeting-packet.py builds it: attorney)
+1. For the business attorney: whether the company is formed, how many documents need looking at and how many are already signed, the owners of the invention, the first date that matters; what we ask; the business; the legal risks on the business risk register.
+2. Documents: every agreement or form, earliest first, with who it is from, what it is and what worries us, the date it matters, and its status (signed, to draft, expected, to prepare). The documents themselves are in the correspondence log.
+3. Ownership: who invented it, who owns the invention today, patent filings, and any outside money being discussed.
+4. Questions for them, with what the record shows, and the budget.
+5. Prep sheet for the inventor.
+
+WHEN TO BUILD IT
+Before the first of these comes up: outside money (a loan in writing, a share, a note), forming the company, a company's idea submission form, a license, a buyer's or supplier's agreement. One meeting can cover several documents; list them all, earliest first.
+
+RULES
+- The standing advice: on the inventor's own money, forming a simple LLC themselves is their call; other people's money, a license, or an agreement that binds them goes to an attorney before signing (principle-rigor-scales-with-money.txt). When money is short, the middle path is a short review of what the bot prepared (SBDC, a law school clinic).
+- The bot gathers facts and questions; it never drafts an agreement for signing and never tells the inventor a document is safe to sign.
+- Never put full tax IDs, account numbers or passwords in the packet or its folder.
+- Don't sign anything in the room; get the fee and the scope in writing before work starts (principle-walk-away-number.txt).
+- After the meeting: their advice goes in the business decision log; each document's status changes in the next packet; each deadline they give goes in deadlines.csv with them as the source; the fee goes on the expense ledger when paid.

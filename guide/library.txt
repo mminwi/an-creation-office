@@ -1,4 +1,4 @@
-261018.20
+261018.23
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -878,7 +878,7 @@ HOW TO CHOOSE
 - Avoid a name someone in your family or shop already has.
 - If you'd rather not choose, the bot uses the first easy name that isn't taken.
 === FILE: business-manager.txt ===
-AN Creation: the Office Manager Bot (role b-business-manager). Revision 20 — October 18, 2026.
+AN Creation: the Office Manager Bot (role b-business-manager). Revision 23 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Office Manager Bot)
 
 WHO YOU ARE
@@ -932,7 +932,7 @@ YOUR PROCEDURES (open one when its subject comes up, use it, then leave it)
 - Domain, website, business email, Google Search Console and Bing. https://ancreationoffice.com/sop-website.txt
 - The brand kit and profiles (LinkedIn, X and others). https://ancreationoffice.com/sop-presence.txt
 - Listings and the website: https://ancreationoffice.com/sop-website.txt . Posts, replies, listings and the approval loop: https://ancreationoffice.com/sop-promotion.txt
-- Meetings: whenever the inventor is going to meet or approach someone (a buyer, a manufacturer, a lender, an investor), follow https://ancreationoffice.com/sop-meeting-prep.txt : who, when, what they want out of it; then the packet that person needs, built from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor. Packets so far: buyer (sop-packet-buyer.txt), manufacturer (sop-packet-manufacturer.txt), lender (sop-packet-lender.txt), investor (sop-packet-investor.txt), accountant (sop-packet-accountant.txt), patent attorney or agent (sop-packet-patent.txt, with the invention disclosure, prior-art log and disclosure history kept during patent preparation); an advisor or grant reviewer gets the funding packet.
+- Meetings: whenever the inventor is going to meet or approach someone (a buyer, a manufacturer, a lender, an investor), follow https://ancreationoffice.com/sop-meeting-prep.txt : who, when, what they want out of it; then the packet that person needs, built from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor. Packets so far: buyer (sop-packet-buyer.txt), manufacturer (sop-packet-manufacturer.txt), lender (sop-packet-lender.txt), investor (sop-packet-investor.txt), accountant (sop-packet-accountant.txt), patent attorney or agent (sop-packet-patent.txt, with the invention disclosure, prior-art log and disclosure history kept during patent preparation), licensee (sop-packet-licensee.txt), insurance agent (sop-packet-insurance.txt), business attorney (sop-packet-attorney.txt); an advisor or grant reviewer gets the funding packet.
 - Funding: which kind of money fits, https://ancreationoffice.com/sop-funding.txt ; the funding packet a lender or advisor reads, https://ancreationoffice.com/sop-funding-packet.txt ; the business risk register, https://ancreationoffice.com/sop-business-risks.txt . The product numbers in a packet are b-project-manager's: ask for current copies through office-handoff, never retype them.
 - The business record and tax time: https://ancreationoffice.com/sop-business-record.txt . A cost for an invention goes on the expense ledger and, by hand-off, on that invention's spending register; never two different amounts.
 - Specs, rules, rates, fees and deadlines: from the actual document, checked when they go into a sheet (https://ancreationoffice.com/sop-source-check.txt). When no procedure covers something, find the authoritative source in the library and write the business's procedure from it.
@@ -3957,7 +3957,7 @@ b-business-manager's record and packets
 - funding.csv, business-risks.csv, funding-packet.html: the funding packet for an investor or advisor (sop-funding-packet.txt)
 - correspondence/ and correspondence.csv: the correspondence log (sop-correspondence.txt), one folder per email, meeting or call, named YYMMDD-NN-X-slug.
   Three meetings have their meeting.csv and the packet built for them (sop-meeting-prep.txt): 261028-01-M-distributor-buyer-meeting/buyer-packet.html,
-  261024-01-M-molder-a-quote-meeting/manufacturer-packet.html, 261104-01-M-community-lender-meeting/lender-packet.html, and an investor meeting with family: 261112-01-M-family-investor-meeting/investor-packet.html, and a year-end meeting with an accountant: 261208-01-M-accountant-year-end/accountant-packet.html, and a consult with a patent agent: 261023-01-M-patent-agent-consult/patent-packet.html. 261017-01-S-molder-a-meeting-request is an email out with its attachment list.
+  261024-01-M-molder-a-quote-meeting/manufacturer-packet.html, 261104-01-M-community-lender-meeting/lender-packet.html, and an investor meeting with family: 261112-01-M-family-investor-meeting/investor-packet.html, and a year-end meeting with an accountant: 261208-01-M-accountant-year-end/accountant-packet.html, and a consult with a patent agent: 261023-01-M-patent-agent-consult/patent-packet.html, and a licensing meeting with a pest-control company: 261119-01-M-pest-control-company-licensing/licensee-packet.html, and a quote meeting with an insurance agent: 261109-01-M-insurance-agent-quote/insurance-packet.html, and a first consult with a business attorney: 261105-01-M-business-attorney-consult/attorney-packet.html. 261017-01-S-molder-a-meeting-request is an email out with its attachment list.
 
 b-business-manager's required business record (https://ancreationoffice.com/sop-business-record.txt)
 - company.csv (with business.txt), business-decision-log.csv, actions.csv (shared columns), contacts.csv
@@ -4064,7 +4064,10 @@ date,folder,direction,with,organization,subject,what was conveyed,sent or receiv
 2026-10-24,261024-01-M-molder-a-quote-meeting,meeting,Sales engineer,Molder A,Quote meeting,(prep built; notes after the meeting),manufacturer-packet.html to hand over,,2026-10-24,Snap mousetrap,,2026-10-18
 2026-10-28,261028-01-M-distributor-buyer-meeting,meeting,Purchasing manager,Regional hardware distributor,Buyer meeting,(prep built; notes after the meeting),buyer-packet.html to hand over,,2026-10-28,Snap mousetrap,,2026-10-18
 2026-11-04,261104-01-M-community-lender-meeting,meeting,Loan officer,Community lender,Loan meeting,(prep built; notes after the meeting),lender-packet.html to hand over,,2026-11-04,Snap mousetrap,,2026-10-18
+2026-11-05,261105-01-M-business-attorney-consult,meeting,A small-business attorney,,First consult,(prep built; notes after the meeting),attorney-packet.html to hand over,,2026-11-05,Snap mousetrap,,2026-10-18
+2026-11-09,261109-01-M-insurance-agent-quote,meeting,An independent insurance agent,,Product liability quote,(prep built; notes after the meeting),insurance-packet.html to hand over,,2026-11-09,Snap mousetrap,,2026-10-18
 2026-11-12,261112-01-M-family-investor-meeting,meeting,A family member and a friend,,Investor meeting,(prep built; notes after the meeting),investor-packet.html to hand over,,2026-11-12,Snap mousetrap,,2026-10-18
+2026-11-19,261119-01-M-pest-control-company-licensing,meeting,Product development manager,A pest-control products company,Licensing meeting,(prep built; notes after the meeting),licensee-packet.html to hand over,,2026-11-19,Snap mousetrap,,2026-10-18
 2026-12-08,261208-01-M-accountant-year-end,meeting,A local CPA,,Year-end planning,(prep built; notes after the meeting),accountant-packet.html to hand over,,2026-12-08,Snap mousetrap,,2026-10-18
 === FILE: example-mousetrap/correspondence/261014-01-M-store-owner-sample-visit/notes.txt ===
 Meeting notes. Illustrative example.
@@ -4220,6 +4223,60 @@ q,How much of your own money is in?,"About $375 spent so far and $10,000 committ
 q,When does revenue start?,"May 2027 at the earliest, after first articles; the projection assumes 4,167 traps a month from then."
 q,How will you repay?,"Today's projection does not cover a $105,000 loan; that's why we're here to learn the options before the quotes come in."
 q,What's your collateral?,"None yet beyond the molds once they're paid for; a personal guarantee is expected."
+=== FILE: example-mousetrap/correspondence/261105-01-M-business-attorney-consult/meeting.csv ===
+key,value,note,from,by,status
+type,attorney,,,,
+who,"A small-business attorney, flat-fee first consult",Illustrative,,,
+date,2026-11-05,,,,
+record,../..,Where the sheets are,,,
+goal,"Know which documents need a lawyer before the family money, the licensing meeting and the first order, and what forming the company would cost",,,,
+situation,"A single inventor with a snap mousetrap, no sales yet. Family money, a licensing meeting and a first order are all coming in the next few months.",,,,
+ask,"Your read on the documents on page 2, earliest first",,,,
+ask,A flat-fee quote to form the LLC and write the operating agreement,,,,
+document,Mutual NDA with Molder A,"Already signed. For the file, and whether it covers the CAD sent on 10-18 (correspondence 261018-01-R and 261018-02-S).",Molder A,2026-10-18,signed
+document,Family investment terms,"A loan in writing or a share once the LLC is formed; not decided (investor packet). In writing before any money changes hands (the investor packet's walk-away).",Family member and friend,2026-11-12,to draft
+document,Idea submission terms,"The pest-control company may ask for these before it looks at the trap. They can waive rights (sop-licensing.txt 3).",Pest-control company,2026-11-19,expected
+document,Vendor agreement and terms,"Expected after the 10-28 buyer meeting: insurance, returns, payment terms and liability.",Regional distributor,2027-01-15,expected
+document,LLC articles and operating agreement,"Single owner now; may need room for a family member's share.",,2027-01-15,to prepare
+outside_money,Family investment,"$12,000 discussed for the next step; a loan or a share, decided with you (investor packet, 11-12). Illustrative."
+question,"When should I form the LLC, and in which state?","Single owner. The decision on 10-17 was to wait until the first order or the lender meeting (business decision log)."
+question,Should the invention be assigned to the LLC once it exists?,"Owner today: the inventor (invention disclosure). Nothing filed yet."
+question,What does the operating agreement need if family money comes in as a share?,"Investor meeting 11-12; the form is not decided."
+question,Is the NDA with Molder A enough to reuse with other suppliers?,"Signed 10-18 with Molder A. Other molders will be asked to quote."
+question,What should I watch for in an idea submission form?,The pest-control company may ask for one before 11-19.
+question,What would each piece cost: flat fee or hourly?,Budget below.
+budget,"Up to $1,500 now: forming the LLC, the operating agreement and a review of the family terms. Contract reviews as they come. Illustrative.",,,,
+q,Who owns the invention?,"The inventor alone; no employer or partner agreement (company record)."
+q,Have you signed anything?,"Only the mutual NDA with Molder A, on 10-18."
+q,Any outside money yet?,"No. Family money is being discussed for 11-12."
+walk_away,"Don't sign anything in the room. Get the fee and the scope in writing before work starts.",,,,
+leave_behind,Pages 1 to 4. Not this prep sheet.,,,,
+=== FILE: example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/meeting.csv ===
+key,value,note
+type,insurance,
+who,An independent insurance agent who writes product liability for small manufacturers,Illustrative
+date,2026-11-09,
+record,../..,Where the sheets are
+goal,"Know what product liability coverage would cost, and what it takes, before a buyer asks for the certificate",
+situation,"A snap mousetrap from a home-based inventor. The first order is planned for April 2027, and buyers will ask for a certificate before then.",
+territory,United States,
+ask,Quotes for product liability insurance before the first shipment,
+ask,What it would take to name a distributor as an additional insured,
+ask,Whether coverage can start under the inventor and move to the LLC later,
+requirement,"A certificate of product liability insurance, often $1 million or more, naming the buyer","Buyer packet and the distributor's own vendor terms, which will give the exact figure. Illustrative."
+sales_path,"To hardware and farm-supply distributors, who sell to stores. No direct sales to consumers (project charter, scope).",
+instructions,"A warning label on the card, and a molded set-from-the-side mark on the base (risk table F8 and F11). The label text is not written yet.",
+question,Does a policy cover a product made by a molder and assembled at home?,"Molded by Molder A (to quote); assembled by hand in house (cost sheet MT-900)."
+question,"What limits and deductible fit a product this size, and what would it cost?",Planned first-year sales are on page 1.
+question,Can it start under the inventor and move to the LLC when it is formed?,No company yet (company record).
+question,What would you need to see about the risks?,"Page 3: the risk analysis and the requirements, with their sources."
+question,Does a homeowner's policy cover any of this?,"The trap is assembled at home. Ask; don't assume."
+question,When does it have to be in place?,"Before the first shipment, planned for April 30, 2027, and before any buyer asks for the certificate."
+q,What are your annual sales?,None yet. The plan is on page 1.
+q,Any claims?,None. New business.
+q,Who makes it?,Page 2.
+walk_away,"Don't buy a policy in the room. Get the policy wording and two or three quotes, then compare.",
+leave_behind,Pages 1 to 4. Not this prep sheet.,
 === FILE: example-mousetrap/correspondence/261112-01-M-family-investor-meeting/meeting.csv ===
 key,value,note
 type,investor,
@@ -4252,6 +4309,38 @@ q,How much of your own money is in?,"What the spending register shows, plus $10,
 q,When do I get paid back?,"Only from sales. The first shipment is planned for April 2027, if the numbers close."
 q,Why not a bank?,"A bank lends against sales, and there are none yet. The lender packet shows the numbers."
 leave_behind,"Pages 1 to 5. Not this prep sheet.",
+=== FILE: example-mousetrap/correspondence/261119-01-M-pest-control-company-licensing/meeting.csv ===
+key,value,note
+type,licensee,
+who,Product development manager at a pest-control products company,Illustrative
+date,2026-11-19,
+record,../..,Where the sheets are
+goal,"Find out whether they would take the trap on under a license, and what they would need to see first",
+contact,inventor@example.com,Illustrative
+development_short,"Prototype, rev X3",
+development,"Printed prototypes from revision X3 CAD, tested in barns by two users. A molder is quoting the base and trigger plate molds, and three distributors are giving feedback.",
+picture_note,"A photo of the printed prototype goes here (the sell sheet shows what it does, not how it is made).",
+alternative,Classic wooden snap trap,"Splits, soaks up mess and is hard to clean; it can catch a finger. This one rinses clean and sets from the side."
+alternative,Enclosed and electronic traps,"Cost more per trap. This one sells against the wooden trap on price (to check on the shelf)."
+term,Exclusive or not,"Open to an exclusive license in North America, with yearly performance minimums"
+term,Royalty,"A percentage of net sales, to be negotiated"
+term,Minimums,A yearly minimum royalty to keep the license exclusive
+term,Advance,An upfront payment against future royalties
+term,Patent costs,Who files and pays for the patent from here on
+term,Improvements,Who owns improvements that either side makes
+term,Term,"How long it runs, and how it ends"
+royalty_pct_example,5,"Illustrative: Stephen Key reports about 5% of net sales as the standard he has seen; rates vary widely (sop-licensing.txt 5)"
+licensee_net_price_example,0.45,Illustrative: the distributor price from the pricing sheet
+licensee_units_example,50000,Illustrative: the plan volume
+royalty_note,"Illustrative only. Rates vary widely by industry; never quote or agree a rate in the room.",
+ask,Would you look at it under your submission terms or an NDA?,
+ask,What would you need to see to take it forward?,
+walk_away,"Don't sign their idea submission form in the room: read it first, with an attorney if the money allows. Don't agree a royalty rate in the meeting.",
+q,Is it patented?,"Not yet. Say so plainly: the patent decision is with a patent agent (consult on 10-23)."
+q,What would it cost to make?,"Page 2: about $0.40 a trap estimated; tooling figures are placeholders."
+q,Has anyone bought it?,"No sales yet. What buyers and users said is on page 2."
+q,Why not make it yourself?,Not decided. This meeting tests licensing as the route.
+leave_behind,Pages 1 to 3. Not this prep sheet.,
 === FILE: example-mousetrap/correspondence/261208-01-M-accountant-year-end/meeting.csv ===
 key,value,note
 type,accountant,
@@ -4302,6 +4391,7 @@ date,to whom,what was shown,revision,under NDA,setting,correspondence,status,not
 2026-10-18,Sales engineer at Molder A,"3D models of the base and trigger plate",X3,yes,Email after the signed NDA,261018-02-S-molder-a-models-rev-x3,done,
 2026-10-24,Sales engineer at Molder A,The request for quote and the drawings,X3,yes,Meeting,261024-01-M-molder-a-quote-meeting,planned,
 2026-10-28,Purchasing manager at a regional distributor,"What it does, the price and samples; not how it is made",X3,no,Meeting,261028-01-M-distributor-buyer-meeting,planned,The buyer packet shows what it does only (sop-packet-buyer.txt)
+2026-11-19,Product development manager at a pest-control products company,"What it does, the price, the sell sheet; not how it is made",X3,no,Meeting,261119-01-M-pest-control-company-licensing,planned,"Read their idea submission terms first (sop-licensing.txt 3)"
 === FILE: example-mousetrap/ecn-log.csv ===
 number,date,what changes,why,from revision,to revision,cost and time,decision,status,file
 ECN-001,2026-10-17,"Charter budget and milestones: molds come out of the funded plan until the numbers close; next-gate budget stays $8,000-$12,000","The $107,000 mold placeholder is far above the budget and the trap clears only $0.05 at $0.45 (risk B1)",A,B,No change to the next-gate budget; molds date moves from fixed to only if the numbers close,awaiting the inventor,open,ecn/261017-ECN-001-tooling-budget.txt
@@ -5115,10 +5205,10 @@ END PLANNING RESOURCE REVIEW
 
 Resource cross-check. Read https://ancreationoffice.com/resource-crosscheck.txt for the additional filing, safety, search, launch and regional sources. Use matched sources only. Wisconsin resources are regional; follow source automation restrictions and existing disclosure/approval rules.
 === FILE: meeting-packet.py ===
-"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor, an accountant or a patent attorney.
+"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor, an accountant, a patent attorney, a licensee, an insurance agent or a business attorney.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent
+  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
@@ -5133,8 +5223,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
-if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant", "patent"):
-    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant|patent")
+if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant", "patent", "licensee", "insurance", "attorney"):
+    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney")
 MEET = Path(sys.argv[1]).resolve()
 KIND = sys.argv[2]
 
@@ -5212,13 +5302,14 @@ deadlines = sheet("deadlines.csv")
 disclosure = kv("invention-disclosure.csv")
 priorart = sheet("prior-art.csv")
 shown = sheet("disclosure-history.csv")
+compliance = sheet("compliance-matrix.csv")
 
 PRODUCT = first(funding, "product", "This product")
 U = first(funding, "unit", "unit")
 US = first(funding, "units", U + "s")
 piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
 tooling = sum(num(r["tooling"]) for r in cost)
-TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet"}[KIND]
+TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet", "licensee": "Licensee packet", "insurance": "Insurance packet", "attorney": "Business attorney packet"}[KIND]
 
 
 def table(head, body, cls=""):
@@ -5642,6 +5733,130 @@ if KIND == "patent":
 <h2>Budget and scope</h2><p>{esc(M.get('budget'))}</p>
 <h2>The company</h2>{table(['', '', 'Status'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), pill(r['status'])] for r in company if r['key'].lower() in ('legal name', 'entity', 'owner')], 'compact')}""", "Page 5"))
     pages.append(prep_sheet(show_open=False, top="<p class='small'>Check the person's registration in the USPTO's practitioner search before the meeting, and watch for invention-promotion pitches (library: patent-practitioners, uspto-scam-prevention).</p>"))
+
+# ---------------- licensee ----------------
+if KIND == "licensee":
+    filed = first(disclosure, "filed", "Nothing yet")
+    is_filed = filed.strip().lower() not in ("", "nothing yet", "none")
+    shelf = num(first(pricing, "shelf_price"))
+    benefits = "".join(f"<li>{esc(r['value'])}</li>" for r in pricing.get("benefit", []))
+    pages.append(page(first(disclosure, "title", PRODUCT), f"""
+<p class="lede-big">{esc(first(pricing, 'headline'))}</p>
+<h2>The problem</h2><p>{esc(first(disclosure, 'problem'))}</p>
+<h2>Who it's for</h2><p>{esc(first(pricing, 'who_for'))}</p>
+<h2>Why people want it</h2><ul class="levers">{benefits}</ul>
+<div class="stats">{stat('Suggested shelf price', money(shelf))}{stat('Case pack', esc(first(pricing, 'case_pack')))}{stat('Development', esc(M.get('development_short', 'Prototype')))}{stat('Patent status', 'Patent pending' if is_filed else 'Not filed')}</div>
+<p class="small">{esc(M.get('picture_note', 'A picture of the prototype goes here.'))}</p>
+<p>Contact: {esc(M.get('contact', first(funding, 'contact')))}</p>""", "Sell sheet"))
+    alts = [[esc(r["value"]), esc(r["note"])] for r in MULTI.get("alternative", [])]
+    ev = [[fdate(r["date"]), esc(r["who"]), esc(r["what they said"]), esc(r["what they did or would pay"])] for r in evidence]
+    pages.append(page("Why it sells", f"""
+<h2>What people use now</h2>{table(['Alternative', 'Where this one is different'], alts, 'compact')}
+<h2>What buyers and users have said</h2>{table(['Date', 'Who', 'Said', 'Did or would pay'], ev, 'compact')}
+<h2>Cost to make, as estimated so far</h2><p>{money(piece)} a {U} in parts, molding and assembly, from our cost sheet, with {money(tooling, False)} of tooling estimated (placeholders until quotes arrive). Your own costs will differ.</p>""", "Page 2"))
+    terms = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("term", [])]
+    pages.append(page("Where it stands, and what we'd like to discuss", f"""
+<h2>Development</h2><p>{esc(M.get('development'))}</p>
+<h2>Patent status</h2><p>{esc(M.get('patent_status', ('Patent pending: ' + filed) if is_filed else 'No application filed yet.'))}</p>
+<h2>What we would like to discuss</h2>{table(['', ''], terms, 'kv')}
+<p class="small">Nothing here is an offer to sign. Any agreement is written and reviewed by attorneys for both sides.</p>""", "Page 3"))
+    rate = num(M.get("royalty_pct_example")) / 100
+    net = num(M.get("licensee_net_price_example"))
+    units = num(M.get("licensee_units_example"))
+    royalty_html = ""
+    if rate and net:
+        per = rate * net
+        royalty_html = (f"<h2>What a royalty could mean (illustrative)</h2><p>At {rate*100:.1f}% of a net sales price of {money(net)} a {U}, each {U} pays {(f"${per:.4f}".rstrip("0") if per < 0.10 else money(per))}."
+                        + (f" At {units:,.0f} {US} a year, that is {money(per * units, False)} a year." if units else "")
+                        + f" {esc(M.get('royalty_note'))}</p>")
+    warn = ""
+    if not is_filed:
+        warn = "<div class='verdict warn'><strong>Nothing is filed.</strong> The licensing procedure says to settle the patent before approaching a company (sop-licensing.txt 1). Show what it does, not how it is made, and read their idea submission terms before sending anything: they can waive rights.</div>"
+    pages.append(prep_sheet(royalty_html, warn))
+
+# ---------------- insurance agent ----------------
+if KIND == "insurance":
+    price = num(first(funding, "price"))
+    annual = num(first(funding, "annual_units"))
+    first_ship = first(funding, "milestone:First shipment to a distributor")
+    # failure modes, each with its actions; keep the ones that could hurt someone
+    modes, cur = [], None
+    for r in risk:
+        if r.get("id", "").startswith("F"):
+            cur = {"row": r, "actions": []}
+            modes.append(cur)
+        elif cur is not None and r.get("Failure mode / actions"):
+            cur["actions"].append(r)
+    hurt = [m for m in modes if int(m["row"].get("S") or 0) >= 8 or "hurt" in m["row"].get("effect", "").lower() or "injur" in m["row"].get("effect", "").lower()]
+    rows_ = []
+    for m in hurt:
+        last = m["actions"][-1] if m["actions"] else m["row"]
+        rows_.append([esc(m["row"]["id"]), esc(m["row"]["Failure mode / actions"]), esc(m["row"]["effect"]),
+                      "; ".join(esc(a["Failure mode / actions"]) for a in m["actions"]) or "None yet",
+                      f"{esc(m['row'].get('S'))} → {esc(last.get('S'))}", esc(last.get("status")) or "open"])
+    keep = ("legal name", "entity", "product liability insurance", "years in business", "owner", "rules that apply")
+    co = [r for r in company if r["key"].lower() in keep] or company
+    pages.append(page("For the insurance agent", f"""
+<div class="verdict warn"><strong>New business, no sales yet, no claims.</strong> {esc(M.get('situation'))}</div>
+<div class="stats">{stat('First shipment planned', fdate(first_ship) if first_ship else 'Not set')}{stat('Planned sales, first year', money(annual * price, False), f'{annual:,.0f} {US} at {money(price)}')}{stat('Sold in', esc(M.get('territory', 'Not set')))}{stat('Risks that could hurt someone', str(len(hurt)), f'of {len(modes)} failure modes analyzed')}</div>
+<h2>What we are asking for</h2><ul class="levers">{''.join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get('ask', []))}</ul>
+<h2>What buyers are asking for</h2>{table(['Requirement', 'From'], [[esc(r['value']), esc(r['note'])] for r in MULTI.get('requirement', [])], 'compact')}
+<h2>The business</h2>{table(['', '', 'Status'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), pill(r['status'])] for r in co], 'compact')}""", "Page 1"))
+    parts = [[esc(r.get("part number")), esc(r["part"]), esc(r["what it is"]), esc(r.get("make or buy")), esc(r.get("supplier"))] for r in cost]
+    pages.append(page("The product and how it is used", f"""
+<h2>What it is</h2><p>{esc(first(disclosure, 'how_it_works') or first(pricing, 'headline'))}</p>
+<h2>Who uses it, and where</h2><p>{esc(first(pricing, 'who_for'))}</p>
+<h2>How it is sold</h2><p>{esc(M.get('sales_path'))}</p>
+<h2>What it is made of, and who makes it</h2>{table(['Part no.', 'Part', 'What it is', 'Make or buy', 'Supplier'], parts, 'compact')}
+<h2>Instructions and warnings</h2><p>{esc(M.get('instructions'))}</p>""", "Page 2"))
+    comp = [[esc(r["ID"]), esc(r["Requirement"]), esc(r["Source"]), esc(r["Source status"]), esc(r["Status"])] for r in compliance]
+    pages.append(page("Risks, and what has been done", f"""
+<p>From the product's risk analysis: the ways it could fail that could hurt someone, what was done about each, and the severity before and after (1 to 10).</p>
+{table(['', 'Failure', 'Effect', 'What was done', 'Severity', 'Status'], rows_, 'compact')}
+<h2>Requirements and standards</h2>{table(['', 'Requirement', 'Source', 'Source status', 'Met?'], comp, 'compact')}
+<h2>Similar products</h2><p>{esc(M.get('incidents', 'Recall and incident search not run yet (library: cpsc-recalls, saferproducts).'))}</p>
+<h2>Claims history</h2><p>{esc(M.get('claims', 'None. New business.'))}</p>""", "Page 3"))
+    qs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("question", [])]
+    pages.append(page("Questions for you", f"""
+{table(['Question', 'What the record shows'], qs, 'compact')}
+<p class="small">These are questions, not assumptions about coverage. What a policy covers is in the policy itself: ask for the policy wording, not only the quote.</p>""", "Page 4"))
+    pages.append(prep_sheet())
+
+# ---------------- business attorney ----------------
+if KIND == "attorney":
+    docs = MULTI.get("document", [])
+    def by(r):
+        return r.get("by", "") or "9999"
+    open_docs = [r for r in docs if r.get("status", "") != "signed"]
+    nxt = sorted([r for r in open_docs if r.get("by")], key=by)
+    formed = next((r for r in company if r["key"].lower() == "legal name"), None)
+    is_formed = formed is not None and formed["status"] == "ready"
+    legal = [b for b in brisks if b.get("category", "").lower() == "legal" and b["status"] != "closed"]
+    keep = ("legal name", "entity", "tax id (ein)", "owner", "years in business")
+    co = [r for r in company if r["key"].lower() in keep] or company
+    pages.append(page("For the business attorney", f"""
+<div class="verdict warn"><strong>{'The company is formed.' if is_formed else 'No company formed yet.'}</strong> {esc(M.get('situation'))}</div>
+<div class="stats">{stat('Company', 'Formed' if is_formed else 'Not formed')}{stat('Documents to look at', str(len(open_docs)), f'{len(docs) - len(open_docs)} already signed')}{stat('Owners of the invention', str(len(disclosure.get('owner', []))) or 'Not recorded')}{stat('First date that matters', fdate(nxt[0]['by']) if nxt else 'None set')}</div>
+<h2>What we are asking for</h2><ul class="levers">{''.join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get('ask', []))}</ul>
+<h2>The business</h2>{table(['', '', 'Status'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), pill(r['status'])] for r in co], 'compact')}
+<h2>Legal risks on the business risk register</h2>{table(['', 'Risk', 'What is being done'], [[esc(b['id']), esc(b['risk']), esc(b['mitigation'])] for b in legal], 'compact')}""", "Page 1"))
+    drows = [[f"<strong>{esc(r['value'])}</strong>", esc(r.get("from", "")), esc(r["note"]), fdate(r["by"]) if r.get("by") else "", esc(r.get("status", ""))] for r in sorted(docs, key=by)]
+    pages.append(page("Documents", f"""
+<p>Each agreement or form that needs your eyes, the earliest first, and the ones already signed. The documents themselves are in the correspondence log, in the folder for the day each one arrived or was sent.</p>
+{table(['Document', 'From', 'What it is and what worries us', 'By', 'Status'], drows, 'compact')}
+<p class="small">Nothing here has been signed except where it says signed. The bot drafts no agreement for signing; it gathers the facts and the questions.</p>""", "Page 2"))
+    inv = [[esc(r["value"]), esc(r["note"])] for r in disclosure.get("inventor", [])]
+    money_rows = [[esc(r["value"]), esc(r["note"])] for r in MULTI.get("outside_money", [])]
+    pages.append(page("Ownership", f"""
+<h2>Who invented it</h2>{table(['Inventor', 'Contribution'], inv, 'compact') if inv else '<p>Not recorded yet.</p>'}
+<h2>Who owns the invention today</h2><p>{esc(first(disclosure, 'owner', 'Not recorded yet'))}. {esc(disclosure.get('owner', [{'note': ''}])[0]['note'])}</p>
+<h2>Patent filings</h2><p>{esc(first(disclosure, 'filed', 'Nothing yet'))}.</p>
+<h2>Outside money being discussed</h2>{table(['', ''], money_rows, 'kv') if money_rows else '<p>None.</p>'}""", "Page 3"))
+    qs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("question", [])]
+    pages.append(page("Questions for you", f"""
+{table(['Question', 'What the record shows'], qs, 'compact')}
+<h2>Budget</h2><p>{esc(M.get('budget'))}</p>""", "Page 4"))
+    pages.append(prep_sheet(show_open=False))
 
 css = CSS
 doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: {TITLE.lower()}</title>
@@ -25059,7 +25274,7 @@ If the same sheet will be revised for weeks, the owning hat keeps it. The intern
 
 Done when the filled copy exists, both fields are written on every carried or answered row, and the inventor has been asked only what the project could not answer.
 === FILE: sop-company.txt ===
-SOP: b-business-manager. Setting up and keeping the company. Revision 3 — October 18, 2026.
+SOP: b-business-manager. Setting up and keeping the company. Revision 5 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: business-manager.txt
 Read this when the business name, forming a company, the tax ID, a bank account, insurance, licenses or the yearly paperwork comes up. Then leave it.
@@ -25088,7 +25303,7 @@ ONE STEP AT A TIME (each is a row in actions.csv until it's done)
 5. The tax ID (EIN). Free from the IRS in minutes, https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online . They apply themselves; it's needed for the bank account. Never pay a site for an EIN.
 6. A business bank account, in the company's name, with the EIN and formation papers. All business money goes through it, never mixed with personal money (mixing can undo the protection). Compare two or three: a local bank or credit union (often helpful later for a loan), and an online bank. Check fees, minimum balances, how deposits and transfers work, and that it is FDIC- or NCUA-insured (FDIC BankFind, NCUA locator; an app is often a front end for a partner bank). A business credit card from the same bank keeps business spending separate and builds the company's credit.
 7. Bookkeeping. A simple tool or a spreadsheet from day one; keep every receipt (record/). An accountant can set it up in an hour.
-8. Insurance. General liability when they start selling or showing in person; product liability before a product reaches customers (buyers and stores often ask for a certificate). Get two or three quotes. Tie it to the product's risks in Office files.
+8. Insurance. General liability when they start selling or showing in person; product liability before a product reaches customers (buyers and stores often ask for a certificate). Get two or three quotes. Tie it to the product's risks in Office files. For the meeting with an agent, build the insurance packet (https://ancreationoffice.com/sop-packet-insurance.txt).
 9. Licenses and sales tax. A local business license if their city or county wants one; a sales tax permit in their state if they sell taxable goods directly. Check the state and city sites (SBA licenses and permits page). Many states have one portal that forms the company and registers it for state taxes at once (in Wisconsin, the One Stop Business Portal; the Department of Revenue issues the seller's permit).
 10. Trademark (later, when the name is settled and they're selling or about to): the owner can file at the USPTO themselves with what the office prepares (the search and the application), or use an attorney; USPTO filing has its own fees.
 
@@ -25111,6 +25326,9 @@ RECORD
 business.txt: the company in one page: legal name, form, state, date formed, EIN (last four digits only, never the full number), registered agent, bank (name only), accountant, attorney, insurance carrier and renewal date. Never store full ID numbers, account numbers or passwords.
 
 Sources: SBA business guide https://www.sba.gov/business-guide ; choosing a structure https://www.sba.gov/business-guide/launch-your-business/choose-business-structure ; registering https://www.sba.gov/business-guide/launch-your-business/register-your-business ; EIN https://www.irs.gov/businesses/small-businesses-self-employed/apply-for-an-employer-identification-number-ein-online ; trademark search https://tmsearch.uspto.gov/ ; free mentoring: SCORE https://www.score.org , Small Business Development Centers https://americassbdc.org , Women's Business Centers and Veterans Business Outreach Centers (SBA resource partners); banking: FDIC BankFind https://banks.data.fdic.gov/bankfind-suite/bankfind ; taxes: IRS small business center https://www.irs.gov/businesses/small-businesses-self-employed ; Wisconsin: One Stop Business Portal https://openforbusiness.wi.gov/ . Library ids: sba-bank-account, fdic-bankfind, ncua-locator, sba-licenses-permits, irs-sbse-center, irs-pub-334, irs-estimated-taxes, sba-hire-employees, uscis-i9, duns-number, sam-registration, wi-onestop, wi-dfi, wi-dor-btr.
+
+MEETING AN ATTORNEY
+For forming the company with an attorney, or any agreement before it is signed, build the business attorney packet (https://ancreationoffice.com/sop-packet-attorney.txt).
 === FILE: sop-cooling-water.txt ===
 SOP: Mold cooling water (b-cooling-water). Revision 9 — October 12, 2026. Plant sizing, the looped header, and towers and outdoor units added from Mike's notes; hydraulic and feed throat allowances from published chiller-maker guidance.
 Index: https://ancreationoffice.com/sop.txt
@@ -26089,7 +26307,7 @@ If a problem could seriously hurt someone, say so plainly and point to the repor
 WHO DOES WHAT
 b-analyst prepares the launch paperwork and checks it against the released revision and the certifications. b-project-manager walks the inventor through it and records the decisions. The office never places orders, contacts customers, issues refunds, or files reports on the inventor's behalf.
 === FILE: sop-licensing.txt ===
-SOP: Licensing an invention (b-licensing). Revision 2 — October 18, 2026.
+SOP: Licensing an invention (b-licensing). Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Source: licensing practice from published inventor and licensing sources (below, read through search 2026-10-12). Tier: documented; an attorney writes and reviews any agreement. The office never contacts a company, sends a submission or signs anything.
 Read this when the route is licensing (a company makes and sells it and pays a royalty), when it's time to approach companies, or when an offer arrives.
@@ -26118,7 +26336,8 @@ Read this when the route is licensing (a company makes and sells it and pays a r
 
 4. THE APPROACH
 - A short note or email: who you are, why this company, the one-line benefit, the sell sheet attached, and a follow-up date.
-- Keep a log: company, contact, date, what was sent, the reply, next step (actions.csv).
+- Keep a log: company, contact, date, what was sent, the reply, next step (actions.csv, and the correspondence log).
+- For a meeting with a company, build the licensee packet: https://ancreationoffice.com/sop-packet-licensee.txt
 
 5. THE DEAL (with an attorney)
 - Royalty: a percentage of net sales is common; Stephen Key reports about 5% of net sales as the standard he has seen, and rates vary widely by industry and how significant the invention is. Never promise a rate; it is negotiated.
@@ -26257,11 +26476,11 @@ Selection guides and books: mcam-material-selection, protolabs-material-selectio
 PRODUCES
 A material decision record: requirements, shortlist with data, chemical check per chemical, tests needed, the choice and why.
 === FILE: sop-meeting-prep.txt ===
-SOP: Meeting prep. Revision 7 — October 18, 2026.
+SOP: Meeting prep. Revision 10 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst drafts the documents and builds the packet.
 May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/ (the meeting file, the packet, the notes; https://ancreationoffice.com/sop-correspondence.txt) and its row in correspondence.csv, rows in the Business action log, decision log, contacts.csv and market-evidence.csv, and hand-off lines to b-project-manager.
-Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261104-01-M-community-lender-meeting/lender-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261112-01-M-family-investor-meeting/investor-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261208-01-M-accountant-year-end/accountant-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261023-01-M-patent-agent-consult/patent-packet.html (each folder has its meeting.csv)
+Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261104-01-M-community-lender-meeting/lender-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261112-01-M-family-investor-meeting/investor-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261208-01-M-accountant-year-end/accountant-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261023-01-M-patent-agent-consult/patent-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261119-01-M-pest-control-company-licensing/licensee-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/insurance-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261105-01-M-business-attorney-consult/attorney-packet.html (each folder has its meeting.csv)
 Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-funding-packet.txt
 
 WHY THIS EXISTS
@@ -26276,10 +26495,12 @@ WHO'S ACROSS THE TABLE, AND WHAT THEY WANT TO SEE
 - Banker or lender. Worries: can you repay, what if you can't, how much of your own money is in. Packet: https://ancreationoffice.com/sop-packet-lender.txt
 - Investor (friends and family, an angel, crowdfunding backers). Worries: is it worth it, will you see it through, what happens to my money. Packet: https://ancreationoffice.com/sop-packet-investor.txt
 - Grant reviewer, pitch competition or advisor. Worries: is it new, is the plan credible. Packet: the funding packet (https://ancreationoffice.com/sop-funding-packet.txt) plus the program's own form (sop-funding.txt).
-- Licensee. Worries: does it sell, can they own it. Packet: the sell sheet and patent status (sop-licensing.txt).
+- Licensee. Worries: does it sell, can they own it, what will it cost to make. Packet: https://ancreationoffice.com/sop-packet-licensee.txt
 - Accountant, tax preparer or bookkeeper. Worries: are the records complete, is business money kept apart, what will they have to answer. Packet: https://ancreationoffice.com/sop-packet-accountant.txt
 - Patent attorney or agent, a patent clinic or the USPTO's free help. Worries: what exactly is new, what is out there, who has seen it and when, who owns it. Packet: https://ancreationoffice.com/sop-packet-patent.txt
-- Business attorney, insurance agent, partner. Packets for these come later; until then, build the meeting file below with the documents the record already has.
+- Insurance agent or broker. Worries: how could it hurt someone, what has been done about it, how much will sell and through whom. Packet: https://ancreationoffice.com/sop-packet-insurance.txt
+- Business attorney. Worries: what needs their eyes and by when, who owns what, what has been signed. Packet: https://ancreationoffice.com/sop-packet-attorney.txt
+- Partner. A packet for this comes later; until then, build the meeting file below with the documents the record already has.
 
 THE STEPS
 1. Who, when, what they want out of it. Name the counterpart type from the list.
@@ -26287,7 +26508,7 @@ THE STEPS
 3. Dust off what exists (parked documents come out for this meeting and go back after, https://ancreationoffice.com/sop-document-life.txt DUSTING ONE OFF). Check what exists: the business record (AN-Creation/Business/) and copies of b-project-manager's project record. Ask b-project-manager for current copies of anything product-side through office-handoff (the cost sheet, specs, drawings list, risk table, charter); never retype them.
 4. Draft what is missing, honestly. A pre-revenue company has no sales history, no credit and maybe no insurance yet: the packet says so, says what is being done about it, and puts it on the action log. Never invent a fact to fill a gap (principle-never-invent-facts.txt).
 5. Write the meeting file, meeting.csv: who, when, the goal, the ask, the walk-away (principle-walk-away-number.txt), the questions they will likely ask with the answers, and what to leave behind.
-6. Build the packet: python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug <buyer|manufacturer|lender|investor|accountant|patent>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
+6. Build the packet: python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug <buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
 7. Before the meeting, tell the inventor in a few lines: what is in the packet, the two or three questions most likely to come up, the ask, and anything still missing.
 8. After the meeting, before anything else: the meeting notes in the meeting's folder and its row in correspondence.csv, the trip row with the miles if they drove (trips.csv), and every cost with its receipt (expenses.csv), per https://ancreationoffice.com/sop-business-record.txt . Then add what they said or did to market-evidence.csv when it is a signal; update contacts.csv with the next step and date; put every promise on the action log; write any decision to the decision log.
 
@@ -26481,6 +26702,39 @@ RULES
 - Never put full tax IDs, account or card numbers, or passwords in the packet or its folder.
 - Don't sign an engagement letter in the room: take the scope and the fee home and compare (principle-walk-away-number.txt).
 - After the meeting: the accountant's answers go in the decision log; the categories they choose go into the ledger; any deadline they give goes in deadlines.csv with them as its source.
+=== FILE: sop-packet-attorney.txt ===
+SOP: The business attorney packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with a business attorney (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv.
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261105-01-M-business-attorney-consult/attorney-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Attorney only; this meeting.csv has three more columns: from, by, status)
+Goes with: https://ancreationoffice.com/sop-company.txt (forming and keeping the company), https://ancreationoffice.com/principle-rigor-scales-with-money.txt
+
+WHO IT IS FOR
+A business attorney: forming the company and writing its operating agreement, and reading agreements before the inventor signs them (an investor's terms, a buyer's vendor agreement, a license, a company's idea submission form, a supplier's contract). A patent question goes to the patent attorney packet (sop-packet-patent.txt).
+
+WHAT WORRIES THEM
+- What exactly needs their eyes, and by when?
+- Who owns what: the company, the invention, any share promised to someone?
+- What has already been signed, and what is about to be?
+- What is the budget, and is it a flat fee or hourly?
+
+WHAT GOES IN IT (meeting-packet.py builds it: attorney)
+1. For the business attorney: whether the company is formed, how many documents need looking at and how many are already signed, the owners of the invention, the first date that matters; what we ask; the business; the legal risks on the business risk register.
+2. Documents: every agreement or form, earliest first, with who it is from, what it is and what worries us, the date it matters, and its status (signed, to draft, expected, to prepare). The documents themselves are in the correspondence log.
+3. Ownership: who invented it, who owns the invention today, patent filings, and any outside money being discussed.
+4. Questions for them, with what the record shows, and the budget.
+5. Prep sheet for the inventor.
+
+WHEN TO BUILD IT
+Before the first of these comes up: outside money (a loan in writing, a share, a note), forming the company, a company's idea submission form, a license, a buyer's or supplier's agreement. One meeting can cover several documents; list them all, earliest first.
+
+RULES
+- The standing advice: on the inventor's own money, forming a simple LLC themselves is their call; other people's money, a license, or an agreement that binds them goes to an attorney before signing (principle-rigor-scales-with-money.txt). When money is short, the middle path is a short review of what the bot prepared (SBDC, a law school clinic).
+- The bot gathers facts and questions; it never drafts an agreement for signing and never tells the inventor a document is safe to sign.
+- Never put full tax IDs, account numbers or passwords in the packet or its folder.
+- Don't sign anything in the room; get the fee and the scope in writing before work starts (principle-walk-away-number.txt).
+- After the meeting: their advice goes in the business decision log; each document's status changes in the next packet; each deadline they give goes in deadlines.csv with them as the source; the fee goes on the expense ledger when paid.
 === FILE: sop-packet-buyer.txt ===
 SOP: The buyer packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
@@ -26514,6 +26768,38 @@ RULES
 - Show what it does, not how it is made, until the patent decision is made (principle-patent-before-public.txt).
 - Never claim sales, customers, reviews or certifications that do not exist (principle-no-claims-you-cant-back.txt).
 - Price from the waterfall and the cost sheet. A price that does not cover the cost is said plainly before the meeting, not discovered in it (principle-price-on-value.txt).
+=== FILE: sop-packet-insurance.txt ===
+SOP: The insurance packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with an insurance agent or broker (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; company.csv (the insurance line) after the meeting.
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/insurance-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Insurance only)
+Goes with: https://ancreationoffice.com/sop-company.txt (8. Insurance), https://ancreationoffice.com/sop-risk-table.txt , https://ancreationoffice.com/sop-packet-buyer.txt (what buyers ask for)
+
+WHO IT IS FOR
+An independent insurance agent or broker quoting product liability and general liability for a small product business. Usually needed before the first shipment, because buyers ask for a certificate.
+
+WHAT WORRIES THEM
+- What is the product, who uses it, and how could it hurt someone?
+- What has been done about those risks, and what standards and labels apply?
+- How much will sell, where, and through whom? Who makes it?
+- What is the business, and is there any claims history?
+
+WHAT GOES IN IT (meeting-packet.py builds it: insurance)
+1. For the insurance agent: new business, no sales, no claims; the first shipment date, planned first-year sales (plan volume times price, from funding.csv), where it will be sold, how many failure modes could hurt someone; what we ask; what buyers require and where that comes from; the business.
+2. The product and how it is used: what it is, who uses it and where, how it is sold, the parts and who makes each (cost sheet), instructions and warnings.
+3. Risks, and what has been done: from b-project-manager's risk analysis table, every failure that could hurt someone (severity 8 and up, or an effect that says someone can be hurt), what was done, and the severity before and after; the requirements and standards with their source status (compliance matrix); recalls and incidents on similar products; claims history.
+4. Questions for the agent, each with what the record shows.
+5. Prep sheet for the inventor.
+The product sheets (cost sheet, risk table, compliance matrix) are b-project-manager's: ask for current copies through office-handoff; never retype them.
+
+RULES
+- Questions, not assumptions: the packet never states what a policy covers, a limit, a price or a legal requirement for coverage. What a policy covers is in its wording: ask for the wording, not only the quote.
+- A buyer's requirement (a limit, being named as additional insured) comes from that buyer's own vendor terms, with the source in the note.
+- Every risk the agent sees is the real analysis, including the ones not yet closed (principle-never-invent-facts.txt). Hiding a known risk from an insurer is never an option.
+- Run the recall and incident search on similar products before the meeting (library: cpsc-recalls, saferproducts) and record what it found, or that it found nothing, with the date.
+- Get two or three quotes and the policy wording before buying; don't buy in the room (principle-walk-away-number.txt).
+- After the meeting: the quote goes in the meeting's folder; the company record's insurance line gets its status; the cost goes on the spending register and the expense ledger when it is paid; the renewal date goes in deadlines.csv.
 === FILE: sop-packet-investor.txt ===
 SOP: The investor packet. Revision 1 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
@@ -26588,6 +26874,40 @@ A business plan (the one-page plan and this packet), personal and business tax r
 RULES
 - Borrowed money is other people's money: the standing advice applies, and the loan documents are read with an accountant or attorney before signing (principle-rigor-scales-with-money.txt).
 - Every projected number traces to an assumption written on the sheet. No hockey stick without a reason a lender would accept.
+=== FILE: sop-packet-licensee.txt ===
+SOP: The licensee packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with a company that might license the invention (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; a planned row in disclosure-history.csv as soon as the meeting is set.
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261119-01-M-pest-control-company-licensing/licensee-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (rows marked Licensee only)
+Goes with: https://ancreationoffice.com/sop-licensing.txt (the licensing route: before approaching anyone, the sell sheet, finding licensees, the approach, the deal), https://ancreationoffice.com/sop-packet-patent.txt (the patent sheets this packet reads)
+
+WHO IT IS FOR
+A company that already makes and sells to the same buyers, deciding whether to make and sell the invention and pay the inventor a royalty.
+
+WHAT WORRIES THEM
+- Will it sell, and does it fit what we already sell?
+- Can we own it? Is there a patent filed, and is anything already out there?
+- What will it cost us to make, and is it ready?
+- Is this inventor reasonable to deal with?
+
+WHAT GOES IN IT (meeting-packet.py builds it: licensee)
+1. Sell sheet: the headline, the problem, who it is for, why people want it, the suggested shelf price, the case pack, how far along it is, the patent status, a picture of the prototype, the contact. It shows what it does, not how it is made (sop-licensing.txt 2).
+2. Why it sells: what people use now, what buyers and users have said, and the cost to make as estimated so far (placeholders say so).
+3. Where it stands, and what we'd like to discuss: development, patent status, and the terms to talk about (exclusive or not, royalty, minimums, advance, patent costs, improvements, term) as topics, not offers.
+4. Prep sheet, for the inventor only: a warning when nothing is filed, the goal, the ask, the walk-away, their likely questions, an illustrative royalty calculation, and what is still open.
+
+THE ROYALTY CALCULATION
+An illustration for the inventor, never shown to the company: a rate, a net price and a volume, each marked illustrative, and the yearly royalty they make. Its purpose is to set expectations before the meeting: licensing usually pays a small share of each sale. The rate comes from a cited source (sop-licensing.txt 5), never from memory, and is never quoted or agreed in the room.
+
+RULES
+- Patent first: "Patent pending" appears only when an application is filed (invention-disclosure.csv). When nothing is filed, the packet says "Not filed" and the prep sheet warns, per sop-licensing.txt 1.
+- Read the company's idea submission terms before sending anything; they can waive rights. Signing them is a one-way door, with an attorney if the money allows.
+- Nothing in the packet is an offer. Any agreement is written and reviewed by an attorney before the inventor signs (principle-rigor-scales-with-money.txt).
+- Never claim sales, a patent or a market that does not exist (principle-no-claims-you-cant-back.txt).
+- Avoid invention-promotion companies that charge to "license" an idea (library: uspto-scam-prevention, ftc-invention-marketing).
+- The inventor sends, signs and attends. The bot prepares.
+- After the meeting: the notes in the meeting's folder, what they said in market-evidence.csv, the showing marked done in disclosure-history.csv, the next step on the action log.
 === FILE: sop-packet-manufacturer.txt ===
 SOP: The manufacturer packet (request for quote). Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
@@ -27934,7 +28254,7 @@ Search Console and Bing: pages found vs. pages in the sitemap, any new errors (a
 
 Sources: Google Search Console start https://support.google.com/webmasters/answer/9128668 ; sitemaps https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview ; SEO starter guide https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; Bing Webmaster https://www.bing.com/webmasters ; GitHub Pages https://docs.github.com/en/pages .
 === FILE: sop.txt ===
-AN Creation standard operating procedures. Revision 21 — October 18, 2026.
+AN Creation standard operating procedures. Revision 24 — October 18, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
@@ -27981,7 +28301,7 @@ K3. b-business-manager: the brand kit and profiles. Logo, descriptions, fact she
 K4. b-business-manager: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories. https://ancreationoffice.com/sop-promotion.txt
 K5. b-business-manager: the funding packet a lender or advisor reads: executive summary, unit economics, use of funds, milestones, risk register. https://ancreationoffice.com/sop-funding-packet.txt (builder: https://ancreationoffice.com/funding-packet.py ; example: https://ancreationoffice.com/example-mousetrap/funding-packet.html)
 K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
-K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt , accountant https://ancreationoffice.com/sop-packet-accountant.txt , patent attorney https://ancreationoffice.com/sop-packet-patent.txt ; builder https://ancreationoffice.com/meeting-packet.py
+K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt , accountant https://ancreationoffice.com/sop-packet-accountant.txt , patent attorney https://ancreationoffice.com/sop-packet-patent.txt , licensee https://ancreationoffice.com/sop-packet-licensee.txt , insurance agent https://ancreationoffice.com/sop-packet-insurance.txt , business attorney https://ancreationoffice.com/sop-packet-attorney.txt ; builder https://ancreationoffice.com/meeting-packet.py
 K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and the correspondence log, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py. https://ancreationoffice.com/sop-business-record.txt (templates: template-expenses.csv, template-trips.csv, template-correspondence.csv, template-deadlines.csv, template-business-decision-log.csv)
 
 FOR b-project-manager
@@ -28026,7 +28346,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.20
+261018.23
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -28073,7 +28393,10 @@ example-mousetrap/correspondence/261023-01-M-patent-agent-consult/meeting.csv
 example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/meeting.csv
 example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/meeting.csv
 example-mousetrap/correspondence/261104-01-M-community-lender-meeting/meeting.csv
+example-mousetrap/correspondence/261105-01-M-business-attorney-consult/meeting.csv
+example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/meeting.csv
 example-mousetrap/correspondence/261112-01-M-family-investor-meeting/meeting.csv
+example-mousetrap/correspondence/261119-01-M-pest-control-company-licensing/meeting.csv
 example-mousetrap/correspondence/261208-01-M-accountant-year-end/meeting.csv
 example-mousetrap/cost-sheet.csv
 example-mousetrap/deadlines.csv
@@ -28228,9 +28551,12 @@ sop-mold-buying.txt
 sop-molding-defects.txt
 sop-office.txt
 sop-packet-accountant.txt
+sop-packet-attorney.txt
 sop-packet-buyer.txt
+sop-packet-insurance.txt
 sop-packet-investor.txt
 sop-packet-lender.txt
+sop-packet-licensee.txt
 sop-packet-manufacturer.txt
 sop-packet-patent.txt
 sop-phases.txt
@@ -28758,7 +29084,7 @@ date,who,what they saw,what they said,what they did or would pay,strength,source
 2026-10-14,Example: owner of a local store,A sample and the price,What they said,What they did or would pay,medium,where it is recorded
 === FILE: template-meeting.csv ===
 key,value,note
-type,buyer,"buyer, manufacturer, lender, investor, accountant or patent"
+type,buyer,"buyer, manufacturer, lender, investor, accountant, patent, licensee, insurance or attorney"
 who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
 date,2026-10-28,YYYY-MM-DD
 record,../../funding/<invention>,Folder with the sheets; relative to this meeting folder
@@ -28796,7 +29122,24 @@ exit,,"Investor only: how an investor could get money back, including if it fail
 market,,"Investor only, optional: a market size, only with its source in the note"
 tax_year,2026,Accountant only: the year the packet covers
 question,A question for the accountant,Accountant only: one row each; the note says what the record shows
-budget,,"Patent only: what the inventor will spend now, and on what"
+budget,,"Patent and attorney: what the inventor will spend now, and on what"
+development_short,Prototype,Licensee only: a few words for the sell sheet
+development,,Licensee only: how far along it is
+picture_note,,Licensee only: what picture goes on the sell sheet
+contact,,Licensee only
+royalty_pct_example,,"Licensee only: an illustrative rate, with its source in the note"
+licensee_net_price_example,,Licensee only: illustrative
+licensee_units_example,,Licensee only: illustrative
+royalty_note,,Licensee only
+situation,,"Insurance and attorney: the business in a sentence"
+territory,United States,Insurance only: where it will be sold
+requirement,,Insurance only: one row per buyer requirement; the note names the buyer's terms
+sales_path,,Insurance only: how it reaches the user
+instructions,,"Insurance only: the instructions and warning labels, and their status"
+incidents,,"Insurance only: what the recall and incident search found, with the date"
+claims,None. New business.,Insurance only
+document,Name of the agreement or form,"Attorney only: one row each; for an attorney meeting, meeting.csv adds columns from, by and status"
+outside_money,,Attorney only: any outside money being discussed; the note says how much and on what terms
 === FILE: template-pricing-terms.csv ===
 key,value,source,note
 headline,,,The product in one line a buyer remembers
@@ -30128,7 +30471,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.20
+Office version: 261018.23
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -30166,6 +30509,9 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.23  The business attorney packet (sop-packet-attorney.txt): whether the company is formed, the documents to look at earliest first (signed, to draft, expected, to prepare) with who they are from and what worries us, ownership of the company and the invention, outside money being discussed, questions, budget, and a prep sheet. The bot gathers facts and questions; it never drafts an agreement for signing or calls a document safe to sign. Example: example-mousetrap/correspondence/261105-01-M-business-attorney-consult/. Re-read your office file. No new profile text.
+261018.22  The insurance packet (sop-packet-insurance.txt), for an insurance agent or broker: new business, planned first-year sales, where and how it sells, what buyers require; the product, its parts and who makes each, instructions and warnings; every failure from the risk analysis that could hurt someone with what was done and the severity before and after, the requirements with their source status, recalls on similar products, claims history; questions for the agent; and a prep sheet. Questions, never assumptions about coverage. Example: example-mousetrap/correspondence/261109-01-M-insurance-agent-quote/. Re-read your office file. No new profile text.
+261018.21  The licensee packet (sop-packet-licensee.txt), for a company that might license the invention: a sell sheet that shows what it does and not how it is made, why it sells, where it stands and the terms to discuss as topics, and a prep sheet with an illustrative royalty calculation (a cited rate, never quoted in the room) and a warning when nothing is filed. "Patent pending" only when an application exists. Example: example-mousetrap/correspondence/261119-01-M-pest-control-company-licensing/. Re-read your office file. No new profile text.
 261018.20  The patent attorney packet (sop-packet-patent.txt), for a patent attorney or agent, a clinic or the USPTO's free help: what is filed, the first and the next showing without an NDA, the invention disclosure, the prior art found, who has seen it (done and planned), questions, budget, and a prep sheet. Three sheets are kept from the first patent session on: invention-disclosure.csv, prior-art.csv (never a document number not found in a real search; claims not read are "from a summary"), disclosure-history.csv (a row the same day, and a planned row as soon as a meeting is set). The bot records facts and never says a showing did or did not start a clock. Example: example-mousetrap/correspondence/261023-01-M-patent-agent-consult/. Re-read your office file. No new profile text.
 261018.19  The accountant packet (sop-packet-accountant.txt), for a CPA, tax preparer or bookkeeper: the year's totals and gaps, expenses by category and by whose money with the whole ledger, trips and mileage with odometer readings, the inventor's questions with what the record shows, the tax deadlines with their source status, and a prep sheet. Built from the business record by meeting-packet.py (accountant). The bot sorts and asks; it never decides what is deductible or states a tax rule it has not read from the source. Example: example-mousetrap/correspondence/261208-01-M-accountant-year-end/. Re-read your office file. No new profile text.
 261018.18  The investor packet (sop-packet-investor.txt), for family and friends, an angel or crowdfunding backers: investment summary with an honest verdict, the product and the evidence, the numbers, the plan and the risks, the terms and what to know (including that a share, a note or a SAFE is a security and the terms are set with an attorney before any money changes hands), and a prep sheet. meeting-packet.py builds it (investor). When the numbers don't close, the ask is for the step that shows whether they can, not production molds. The funding packet stays for advisors and grant reviewers. Example: example-mousetrap/correspondence/261112-01-M-family-investor-meeting/. Re-read your office file. No new profile text.
