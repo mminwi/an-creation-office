@@ -1,4 +1,4 @@
-SOP: The business record. Revision 6 — October 18, 2026.
+SOP: The business record. Revision 7 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one set for the business (all inventions). b-analyst fills and updates them, and runs tax-year.py.
 May write: the files named below in AN-Creation/<business>/, their readable copies in Your files/Business record/, and hand-off lines to b-project-manager.
@@ -16,7 +16,7 @@ THE SEVEN (the business has all of them from the first conversation; none is opt
 5. Trip log: every business trip: date, where (place and address), who or what, the business purpose, odometer or miles, parking and tolls; plus an odometer row for each vehicle at the start of each year and when it is first used for the business. trips.csv (template-trips.csv).
 6. Expense ledger: every dollar the business spends, whichever bot hears of it: date, who was paid, what, the business purpose, the invention, the tax category, amount, how it was paid, whose money, the receipt file, the trip or meeting it belongs to. expenses.csv (template-expenses.csv).
 7. Deadlines: every date that cannot be missed (patent, trademark, company reports, taxes, contract notices, quotes), each traced to its source (https://ancreationoffice.com/principle-watch-the-calendar.txt). deadlines.csv (template-deadlines.csv).
-Working files alongside them: market-evidence.csv, promo-log.csv, funding/, record/ (the bots' own conversations; internal, not correspondence).
+Working files alongside them: business-plan.csv (sop-business-plan.txt), pipeline.csv and invoices.csv once the business sells (sop-sales.txt), monthly.csv (sop-monthly-money.txt), market-evidence.csv, promo-log.csv, funding/, record/ (the bots' own conversations; internal, not correspondence). The deadlines are also the compliance calendar (sop-compliance-calendar.txt). With no invention, the business is the project, and these are its record.
 
 BE INSISTENT (the part that makes it work)
 The record is only as good as what the bot is told, so the bot asks, every time, without waiting to be asked:

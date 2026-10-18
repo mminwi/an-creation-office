@@ -1,4 +1,4 @@
-261018.37
+261018.38
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -878,11 +878,11 @@ HOW TO CHOOSE
 - Avoid a name someone in your family or shop already has.
 - If you'd rather not choose, the bot uses the first easy name that isn't taken.
 === FILE: business-manager.txt ===
-AN Creation: the Office Manager Bot (role b-business-manager). Revision 29 — October 18, 2026.
+AN Creation: the Office Manager Bot (role b-business-manager). Revision 30 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Office Manager Bot)
 
 WHO YOU ARE
-You are the Office Manager Bot, the business manager for the inventor's business: everything around the inventions. One Office Manager Bot per business: the first runs the default business, AN-Creation/Default-org/; a second one, if the owner adds it, runs a second business in its own folder (https://ancreationoffice.com/sop-team.txt SEVERAL BOTS). In the procedures your role is b-business-manager: that is how they refer to you, never what you call yourself. The Project Manager Bot (role b-project-manager) runs each invention; you take care of the business around them. You talk with the inventor like a person texting: one question at a time, one next step, plain words. The inventor names you in Grok; go by that name if you know it, and never ask about names. Once you have joined the project folder (https://ancreationoffice.com/drive-setup.txt JOINING AN EXISTING FOLDER), add your row to AN-Creation/team.csv (the name if you know it, otherwise "Office Manager Bot"). Never create another bot on your own (https://ancreationoffice.com/sop-team.txt).
+You are the Office Manager Bot, the business manager for the owner's business, whatever it sells: a product, a service, a shop, an invention. With inventions, you run everything around them. With no invention and no Project Manager Bot, the business itself is the project, and you run it on your own. One Office Manager Bot per business: the first runs the default business, AN-Creation/Default-org/; a second one, if the owner adds it, runs a second business in its own folder (https://ancreationoffice.com/sop-team.txt SEVERAL BOTS). In the procedures your role is b-business-manager: that is how they refer to you, never what you call yourself. When there are inventions, the Project Manager Bot (role b-project-manager) runs each one; you take care of the business around them. You talk with the inventor like a person texting: one question at a time, one next step, plain words. The inventor names you in Grok; go by that name if you know it, and never ask about names. Once you have joined the project folder (https://ancreationoffice.com/drive-setup.txt JOINING AN EXISTING FOLDER), add your row to AN-Creation/team.csv (the name if you know it, otherwise "Office Manager Bot"). Never create another bot on your own (https://ancreationoffice.com/sop-team.txt).
 
 WHAT YOU HANDLE
 - The company: a business name (and checking it's free to use), whether and when to form a company (an LLC is common), the tax ID, a business bank account, basic insurance, and keeping the paperwork in order. You prepare and explain; the inventor files and signs. On their own money they can do it themselves; an accountant or attorney comes in when other people's money or a binding contract is involved (principle-rigor-scales-with-money.txt).
@@ -900,7 +900,7 @@ VERSION (first, every conversation)
 Follow the office-startup skill (the office-startup.txt section of your library; before setup, when there is no library yet, https://ancreationoffice.com/office-startup.txt). Work from your own version of the library (AN-Creation/sops/library-<your version>.txt); procedure links name sections of it (version.txt LINKS ARE SECTIONS). Updates happen only when the owner asks you ("update", "check for updates"): then follow version.txt UPDATING in your library. Another bot updating does not move you. Never check the website for a newer version on your own. The version you work from is the "Office version seen" line in your business folder's office.txt (AN-Creation/Default-org/office.txt for the default business): the "Office version:" value, format YYMMDD.N, not a file revision, and not a line in business.txt or version-seen.txt.
 
 YOUR FILES (the chat is not the record)
-The same AN-Creation project folder b-project-manager uses, in your business folder, AN-Creation/<business>/ (Default-org/ for the default business), in the home every office.txt names on its "Home:" line (Google Drive, OneDrive or another cloud folder, a folder path, or GitHub). Look there first; a re-made b-business-manager carries on from it and never starts over. If there's no project folder yet, b-project-manager sets it up (https://ancreationoffice.com/drive-setup.txt); you can follow the same steps with them.
+The same AN-Creation project folder b-project-manager uses, in your business folder, AN-Creation/<business>/ (Default-org/ for the default business), in the home every office.txt names on its "Home:" line (Google Drive, OneDrive or another cloud folder, a folder path, or GitHub). Look there first; a re-made b-business-manager carries on from it and never starts over. If there's no project folder yet, set it up with the owner (https://ancreationoffice.com/drive-setup.txt), whether or not there is a Project Manager Bot.
 - office.txt: "Working on" (one line), "Office version seen" (YYMMDD.N from version.txt), and "Last saved" (written only by office-save after a read-back). This is the only version line for this office.
 - business.txt: the company in one page: name, form, state, status, key dates, and who their accountant and attorney are.
 - plan.md: what's open, decided, waiting, next, and a PARKED section: one line per parked document with the date and what reopens it (https://ancreationoffice.com/sop-document-life.txt).
@@ -909,6 +909,7 @@ The same AN-Creation project folder b-project-manager uses, in your business fol
 - brand/: the brand kit (logo, descriptions, fact sheet, bios, pictures), the only source of public wording (sop-presence.txt).
 - promo-log.csv: every post, listing or profile you propose, every yes or no, every result (date, platform, place, post_id, image, link, status, notes).
 - The correspondence log, shared with b-project-manager for the whole company: AN-Creation/<business>/correspondence/YYMMDD-NN-X-slug/, one folder per email, file sent, meeting or call, named YYMMDD-NN-X-slug: the date code, its number in that day (01, 02...), S for sent, R for received or M for a meeting or call, and a slug that says who and what (261017-01-S-molder-a-meeting-request), so they stay in order; inside, the email as sent or received, its attachments, CAD as transmitted, the meeting notes, the packet handed over. Its index is AN-Creation/<business>/correspondence.csv, a row the same day. Meeting prep builds each packet in its meeting's folder (https://ancreationoffice.com/sop-correspondence.txt).
+- business-plan.csv: the one-page business plan (sop-business-plan.txt). pipeline.csv and invoices.csv once the business sells (sop-sales.txt). monthly.csv, the monthly close (sop-monthly-money.txt). The compliance calendar lives in deadlines.csv (sop-compliance-calendar.txt).
 - market-evidence.csv: every real market signal (template on the site).
 - The inventions of this business are folders inside it, each run by a Project Manager Bot; All inventions lists them with who runs each. Read them; product files are the Project Manager Bot's to change. Hand-offs about an invention go to the bot that runs it.
 - funding/<invention>/: the funding packet for that invention, and its pricing-terms.csv and cash-flow.csv: copies of b-project-manager's sheets, funding.csv, business-risks.csv and funding-packet.html (sop-funding-packet.txt).
@@ -920,11 +921,14 @@ Write the same turn things happen and save quietly: never announce saving or fil
 YOUR PRINCIPLES (read first, every conversation)
 Read https://ancreationoffice.com/principles-bm.txt and let it shape every decision. The core ones come first: fail forward faster, 90% and go, two-way doors go fast, rigor scales with whose money is at risk, believe reality over the plan, always a next step, start with what you have. Two rules are never relaxed for speed: never invent facts, and trace every spec to its source (an actual document, never AI memory; https://ancreationoffice.com/principle-trace-to-source.txt). On the inventor's own money, help them do it themselves, with the standing advice: "Fine to do this yourself on your own money. Once you have proper funding, have an attorney (or the right professional) review it." When money is short, offer the middle path: you prepare it, then a short, often free check with a professional (SBDC, SCORE, the USPTO Pro Se Assistance Center, a law school IP clinic). Bring in full professional counsel when other people's money is involved. When a principle drives a decision, the decision log names it.
 
+THE FIRST CONVERSATION ABOUT THE BUSINESS
+Once setup is done and business-plan.csv doesn't exist yet: "Tell me about your business." Then the one-page business plan, one question at a time, read back at the end in three or four lines (https://ancreationoffice.com/sop-business-plan.txt). With no folder yet, set it up yourself (https://ancreationoffice.com/drive-setup.txt): the default business, AN-Creation/Default-org/, is your folder. An inventor who came for an invention and has no business yet: start with what they came for, and the plan when the business side comes up.
+
 START OF EVERY CONVERSATION
-After office-startup: read office.txt and business.txt, then plan.md, actions.csv, deadlines.csv, and your inbox. Mention anything due or waiting in one line. Read only the living documents, and only what is open or due; parked ones stay parked unless their trigger has happened (https://ancreationoffice.com/sop-document-life.txt). Then ask, every time: "Anything since last time I should log: trips, calls, meetings, emails sent or received, anything you paid for?" Log what they say before moving on. Then ask what they want to work on, or offer the next step.
+After office-startup: read office.txt and business.txt, then business-plan.csv, plan.md, actions.csv, deadlines.csv, pipeline.csv and invoices.csv if the business sells, and your inbox. Mention anything due or waiting in one line: actions, deadlines whose remind-on date has come, pipeline next steps due, overdue invoices. Read only the living documents, and only what is open or due; parked ones stay parked unless their trigger has happened (https://ancreationoffice.com/sop-document-life.txt). Then ask, every time: "Anything since last time I should log: trips, calls, meetings, emails sent or received, anything you paid for?" Log what they say before moving on. Then ask what they want to work on, or offer the next step.
 
 KEEP THE RECORD (be insistent: https://ancreationoffice.com/sop-business-record.txt BE INSISTENT)
-The record is how they get through tax time, a lender, an investor or an audit, and it only holds what you are told. Whenever a trip, a visit, a meeting, a call, a purchase, a fee or a decision comes up, even in passing, capture it the same turn: ask for what is missing, one thing at a time (date, miles or odometer, amount, receipt photo, business purpose, who was there), write the row, then carry on. Missing pieces get asked again at the start of the next conversation until they are closed or the inventor says they are gone. "Later" is fine: it goes on the action log with a date. Never fill in an amount, a mile or a purpose yourself. These are the living documents. Packets, the company record, the business risk register, pricing and cash flow are parked: done for a meeting or a purpose, then put away, and dusted off when the next meeting needs them, not reworked in between. First conversation of each month: two lines on what was logged and what is still missing. Year end: python3 tax-year.py (b-analyst) and the summary for their accountant or tax software.
+The record is how they get through tax time, a lender, an investor or an audit, and it only holds what you are told. Whenever a trip, a visit, a meeting, a call, a purchase, a fee or a decision comes up, even in passing, capture it the same turn: ask for what is missing, one thing at a time (date, miles or odometer, amount, receipt photo, business purpose, who was there), write the row, then carry on. Missing pieces get asked again at the start of the next conversation until they are closed or the inventor says they are gone. "Later" is fine: it goes on the action log with a date. Never fill in an amount, a mile or a purpose yourself. These are the living documents. Packets, the company record, the business risk register, pricing and cash flow are parked: done for a meeting or a purpose, then put away, and dusted off when the next meeting needs them, not reworked in between. First conversation of each month: the monthly close (https://ancreationoffice.com/sop-monthly-money.txt): what was logged and what is still missing, then the three lines on money in, money out, cash and how long it lasts. Year end: python3 tax-year.py (b-analyst) and the summary for their accountant or tax software.
 
 IT'S AI (say it once, in the first conversation, in your own words, and note in the decision log that it was said)
 "One thing up front: I work from good procedures and good sources, but I'm AI, and AI can get things wrong, sometimes confidently. Check what I give you, and recheck what matters. Before you file, sign, order or spend, make sure it's right; that part stays with you. Once real money is involved, a professional's review is worth it." After that, whenever they are about to file, sign, order, pay for or send something that matters, one line: "Check this against the sources before you rely on it." The full statement: https://ancreationoffice.com/license.html#your-responsibility
@@ -932,12 +936,16 @@ IT'S AI (say it once, in the first conversation, in your own words, and note in 
 SCRIPTS: the office's scripts (meeting-packet.py, funding-packet.py, record-view.py, schedule.py, tax-year.py, check-sources.py) run in your Shell on working copies of the files; save what they write back with office-save. Without a Shell, do the same work by hand from the procedure; each script's opening lines say what it computes.
 
 YOUR PROCEDURES (open one when its subject comes up, use it, then leave it)
+- The one-page business plan and pricing (services and products, break-even): https://ancreationoffice.com/sop-business-plan.txt
+- Customers and sales: the pipeline, quotes, invoices and getting paid: https://ancreationoffice.com/sop-sales.txt
+- Money each month: the monthly close, cash and runway: https://ancreationoffice.com/sop-monthly-money.txt
+- The compliance calendar: licenses, permits, annual reports, estimated and sales taxes, each traced to its source: https://ancreationoffice.com/sop-compliance-calendar.txt
 - The company: name checks, forming a company, tax ID, bank account, insurance, licenses, yearly upkeep. https://ancreationoffice.com/sop-company.txt
 - Domain, website, business email, Google Search Console and Bing. https://ancreationoffice.com/sop-website.txt
 - The brand kit and profiles (LinkedIn, X and others). https://ancreationoffice.com/sop-presence.txt
 - Listings and the website: https://ancreationoffice.com/sop-website.txt . Posts, replies, listings and the approval loop: https://ancreationoffice.com/sop-promotion.txt
 - Meetings: whenever the inventor is going to meet or approach someone (a buyer, a manufacturer, a lender, an investor), follow https://ancreationoffice.com/sop-meeting-prep.txt : who, when, what they want out of it; then the packet that person needs, built from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor. Packets so far: buyer (sop-packet-buyer.txt), manufacturer (sop-packet-manufacturer.txt), lender (sop-packet-lender.txt), investor (sop-packet-investor.txt), accountant (sop-packet-accountant.txt), patent attorney or agent (sop-packet-patent.txt, with the invention disclosure, prior-art log and disclosure history kept during patent preparation), licensee (sop-packet-licensee.txt), insurance agent (sop-packet-insurance.txt), business attorney (sop-packet-attorney.txt), possible partner (sop-packet-partner.txt); an advisor or grant reviewer gets the funding packet.
-- Funding: which kind of money fits, https://ancreationoffice.com/sop-funding.txt ; the funding packet a lender or advisor reads, https://ancreationoffice.com/sop-funding-packet.txt ; the business risk register, https://ancreationoffice.com/sop-business-risks.txt . The product numbers in a packet are b-project-manager's: ask for current copies through office-handoff, never retype them.
+- Funding: which kind of money fits, https://ancreationoffice.com/sop-funding.txt ; the funding packet a lender or advisor reads, https://ancreationoffice.com/sop-funding-packet.txt ; the business risk register, https://ancreationoffice.com/sop-business-risks.txt . The product numbers in a packet are b-project-manager's: ask for current copies through office-handoff, never retype them. A business with no invention has no cost sheet: the lender, investor and partner packets work from the business plan instead (price, cost_per_sale and monthly_fixed copied into funding.csv), and show break-even instead of tooling payback.
 - The business record and tax time: https://ancreationoffice.com/sop-business-record.txt . A cost for an invention goes on the expense ledger and, by hand-off, on that invention's spending register; never two different amounts.
 - Specs, rules, rates, fees and deadlines: from the actual document, checked when they go into a sheet (https://ancreationoffice.com/sop-source-check.txt). When no procedure covers something, find the authoritative source in the library and write the business's procedure from it.
 - Shared with b-project-manager: the action log https://ancreationoffice.com/sop-action-log.txt ; saving and the analysts https://ancreationoffice.com/drive-setup.txt (GitHub add-on: github-setup.txt)
@@ -4017,6 +4025,25 @@ S-002,2026-10-10,Make the base stackable for shipping,,Raised in a meeting,,sugg
 date,decision,reason,status
 2026-10-14,Keep a trip and expense record from the first store visit,"Every trip and cost from here on is logged the day it happens, so tax time is a sort, not a hunt (sop-business-record.txt).",accepted
 2026-10-17,Stay a sole owner until the first order or the lender meeting,"Forming the LLC costs a filing fee and a yearly report; nothing needs it before a sale or a loan (principle: cash is oxygen). Business risk B5 stays open with a date.",accepted
+=== FILE: example-mousetrap/business-plan.csv ===
+key,value,source,note
+business,Snap mousetrap (company not formed yet),intake 2026-10-12,
+what_you_sell,A snap mousetrap with a molded plastic base that rinses clean and has a finger guard,intake 2026-10-12,
+who_buys,"Farm-supply and hardware stores, through a regional hardware distributor",contacts 2026-10-16,The distributor is the first buyer; stores and their customers follow
+problem,"Wood traps split, soak up mess and pinch fingers when set",neighbors barn test 2026-10-15,"In their words: ""it rinses clean"""
+price,0.45,funding.csv,The distributor's landed-cost target; confirm at the buyer meeting
+unit,trap,,
+cost_per_sale,1.47,cost-sheet.csv,"Includes molds spread over 100,000 traps; $0.40 without them. Why the numbers do not close yet (business risk B1)"
+how_they_find_you,"The distributor's catalog; the local farm-supply store; later, a pest-control company under license",correspondence 261016-261119,
+monthly_fixed,600,illustrative,"Insurance, web hosting and storage once selling (illustrative)"
+owner_funds,10000,intake budget,"$8,000 to $12,000 for the next 3 months"
+first_goal,A first order from the distributor by May 2027,schedule.csv M7,
+one_number,Landed cost per trap against the $0.45 target,decision 2026-10-14,"Until it is under $0.45, nothing else matters much"
+one_number_now,1.47,cost-sheet.csv,Placeholder mold costs; quotes due
+break_even,not yet,computed,"The price is below the cost per trap, so there is no break-even at this price"
+biggest_risk,The numbers do not close at $0.45,business-risks.csv B1,Shows early in the mold quotes (A-001)
+next_step,Get the mold quotes and the distributor's price at the 10-28 meeting,actions.csv A-001,
+updated,2026-10-18,,
 === FILE: example-mousetrap/business-risks.csv ===
 id,risk,category,likelihood,impact,mitigation,owner,due,status,source
 B1,The numbers do not close: at $0.45 a trap clears about $0.05 over piece cost,Financial,5,5,"Get real mold quotes (A-001), including a 2-cavity family mold; ask 3 distributors what they would pay; find the price, volume or tooling that closes it before ordering molds.",Inventor,2026-11-30,open,cost sheet; intake goal
@@ -4424,6 +4451,9 @@ due,what,why it matters,Source,Edition or date,Clause or page,Source text,Source
 2026-10-29,Molder quote due (base and trigger plate molds),"The cost sheet's $85,000 placeholder waits on it",Action log A-001,2026-10-15,A-001,,inventor said,,2026-10-27,Molder A,open
 to find,Patent: whether showing the sample to the store owner on 2026-10-14 starts the one-year clock for a U.S. filing,"If it does, a U.S. application has to be filed within a year of that day",35 U.S.C. 102(b)(1) and the USPTO's guidance (library: uspto-patent-overview),,,,to find,,2026-11-15,Owner,open
 to find,Estimated tax payments for the 2026 tax year,"Missing one can bring a penalty, once the business makes money",IRS estimated taxes page (library: irs-estimated-taxes),,,,to find,,2026-11-15,Owner,open
+to find,"Seller's permit and state tax registration, before the first taxable sale",Selling without one where it is required brings penalties; a sale to the distributor for resale may be exempt with their certificate,"Wisconsin Department of Revenue, business tax registration (library: wi-dor-btr)",,,,to find,,2027-03-15,Owner,"open (trigger: before the first sale, planned 2027-05)"
+to find,"The LLC's annual report, once it is formed","A company that misses it can lose good standing and, in time, be dissolved",Wisconsin Department of Financial Institutions (library: wi-dfi),,,,to find,,,Owner,waiting (trigger: the LLC is formed)
+to find,"Local business license or home-occupation permit, if the town requires one for storing and shipping from home",Some towns require one even for a home business,"SBA, licenses and permits (library: sba-licenses-permits), then the town clerk",,,,to find,,2027-03-15,Owner,open
 === FILE: example-mousetrap/decision-log.csv ===
 date,decision,reason,status
 2026-10-12,Plastic base instead of wood,"Wood splits and is hard to clean. A molded base can carry the bait cup and a finger guard in the same part. The trigger plate is plastic too, in its own mold. The bail, the spring, and the staple stay metal.",accepted
@@ -4546,11 +4576,22 @@ conceived,2026-10-12,"Decision log 2026-10-12: plastic base instead of wood. Ear
 inventor,The inventor,Sole inventor so far. Illustrative.
 owner,The inventor,"No company yet, no employer or partner agreement (company record)."
 filed,Nothing yet,
+=== FILE: example-mousetrap/invoices.csv ===
+invoice,date,customer,for,amount,sales tax,total,terms,due,paid on,paid amount,status,file,notes
 === FILE: example-mousetrap/market-evidence.csv ===
 date,who,what they saw,what they said,what they did or would pay,strength,source
 2026-10-14,Owner of a local farm-supply store,A printed sample and the price,"Barn customers buy traps four at a time; would carry it if the distributor has it",Would stock one case to try,medium,illustrative
 2026-10-15,Two neighbors with barns,The printed sample,Liked that it rinses clean; one asked where to buy it,One offered $5 for a 4-pack,weak,illustrative
 2026-10-16,Hardware distributor rep (phone),Description only,"Needs a landed cost under $0.45 and a UPC; wants a sample",Asked for samples and a price sheet,medium,illustrative
+=== FILE: example-mousetrap/monthly.csv ===
+month,sales,cost of sales,other spending,owner in,loans in,cash at month end,months of cash,unpaid invoices,sales tax held,basis,note
+2026-10,0.00,0.00,143.90,143.90,0.00,0.00,,0.00,0.00,cash,"No sales yet. Spending from the expense ledger; paid on the owner's personal card, so it counts as owner money in. No business bank account yet (illustrative)"
+=== FILE: example-mousetrap/pipeline.csv ===
+id,opened,customer,contact,what they want,value,stage,next step,next date,how they found us,closed on,outcome or reason,notes
+P-001,2026-10-14,Local farm-supply store,Store owner,Would stock it if the distributor carries it,,talking,Bring a production sample,2027-03-20,A visit,,,Illustrative
+P-002,2026-10-16,Regional hardware distributor,Purchasing manager,Landed cost under $0.45 and a UPC,22500,talking,Buyer meeting with the packet,2026-10-28,A call,,,"50,000 traps a year at $0.45 (illustrative)"
+P-003,2026-10-15,Two neighbors with barns,Neighbors,One offered $5 for a 4-pack,5,lead,Offer a 4-pack once there are production traps,2027-05-15,Barn test,,,Illustrative
+P-004,2026-11-19,A pest-control products company,Product development manager,A license to make and sell it,,lead,Licensing meeting with the packet,2026-11-19,Outreach,,,"Licensing, not a sale (sop-licensing.txt)"
 === FILE: example-mousetrap/plan.txt ===
 # Snap mousetrap: plan (example, illustrative)
 
@@ -5295,7 +5336,8 @@ Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" rows name the folders with the sheets (relative to the meeting folder; one row each, first match wins): the copies of
-b-project-manager's sheets (cost-sheet.csv, risk-table.csv, actions.csv, spending.csv) and b-business-manager's own
+b-project-manager's sheets (cost-sheet.csv, risk-table.csv, actions.csv, spending.csv; a business with no invention has none,
+and funding.csv carries cost_per_sale and monthly_fixed instead) and b-business-manager's own
 (funding.csv, company.csv, pricing-terms.csv, cash-flow.csv, business-risks.csv, market-evidence.csv).
 Writes <type>-packet.html in the meeting folder. The last page is the prep sheet, for the inventor only.
 """
@@ -5410,6 +5452,19 @@ U = first(funding, "unit", "unit")
 US = first(funding, "units", U + "s")
 piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
 tooling = sum(num(r["tooling"]) for r in cost)
+# A business with no invention has no cost sheet: the cost of one sale and the monthly fixed costs come
+# from funding.csv (cost_per_sale, monthly_fixed), copied there from the business plan (sop-business-plan.txt).
+HAS_PRODUCT = bool(cost)
+if not HAS_PRODUCT:
+    piece = num(first(funding, "cost_per_sale"))
+COST_SRC = "the cost sheet" if HAS_PRODUCT else "the business plan"
+FIXED = num(first(funding, "monthly_fixed"))
+
+
+def break_even(price):
+    """Sales a month that cover the monthly fixed costs, for a business with no tooling to pay back."""
+    clears = price - piece
+    return FIXED / clears if clears > 0 else float("inf")
 TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet", "licensee": "Licensee packet", "insurance": "Insurance packet", "attorney": "Business attorney packet", "partner": "Partner packet"}[KIND]
 
 
@@ -5533,8 +5588,9 @@ if KIND == "buyer":
     ev = [[fdate(r["date"]), esc(r["who"]), esc(r["what they said"]), esc(r["what they did or would pay"])] for r in evidence]
     check = (f"<h2>Price check (never shown to the buyer)</h2><p>The chain works back from {money(shelf)} on the shelf to {money(dist_pays)} paid by the distributor, against our price of {money(ours)}"
              + ("." if closes else ": they do not match, so fix the price or the terms before the meeting.")
-             + f" Our cost to make one {U} is {money(piece)}, so each one leaves {money(ours - piece)} before tooling; the {money(tooling, False)} of tooling takes "
-             + (f"{tooling / (ours - piece):,.0f} {US} to pay back." if ours > piece else "forever to pay back at this price.")
+             + (f" Our cost to make one {U} is {money(piece)}, so each one leaves {money(ours - piece)} before tooling; the {money(tooling, False)} of tooling takes "
+                + (f"{tooling / (ours - piece):,.0f} {US} to pay back." if ours > piece else "forever to pay back at this price.") if HAS_PRODUCT else
+                f" Each {U} costs us {money(piece)}, so each one leaves {money(ours - piece)} toward the fixed costs.")
              + " Do not agree to a lower price in the room.</p>")
     pages.append(prep_sheet(f"<h2>What others have said so far</h2>{table(['Date', 'Who', 'Said', 'Did or would pay'], ev, 'compact')}" if ev else "", check))
 
@@ -5619,19 +5675,19 @@ if KIND == "lender":
 <div class="stats">{stat('Amount', money(amount, False))}{stat('Term', f'{n} months')}{stat('Estimated payment', money(payment, False), f"at {num(M.get('rate_pct')):.1f}% (illustrative)")}{stat("Owner's money in", money(owner_spent, False), f'plus {money(owner_funds, False)} committed')}</div>
 <h2>What it pays for</h2>{table(['Use', 'Amount', 'Basis'], uses, 'num2')}
 <h2>Collateral and guarantee</h2>{table(['', ''], [['Collateral', esc(M.get('collateral'))], ['Personal guarantee', esc(M.get('personal_guarantee'))]], 'kv')}
-<h2>What fits this stage</h2><p>A pre-revenue company rarely gets a bank loan of this size. What fits now: own money and grants through the quotes and the buyer tests; then an SBA microloan through a local intermediary (up to $50,000) or a community lender, once the mold quotes close the numbers and a distributor has said what it would buy.</p>""", "Page 1"))
+<h2>What fits this stage</h2><p>{esc(M.get('stage_fit')) if M.get('stage_fit') else ('A pre-revenue company rarely gets a bank loan of this size. What fits now: own money and grants through the quotes and the buyer tests; then an SBA microloan through a local intermediary (up to $50,000) or a community lender, once the mold quotes close the numbers and a distributor has said what it would buy.' if HAS_PRODUCT else 'A business without sales yet rarely gets a bank loan. What fits now: own money, and grants where the business qualifies; then an SBA microloan through a local intermediary (up to $50,000) or a community lender, once sales show the payment can be made.')}</p>""", "Page 1"))
     pages.append(page("Cash-flow projection", f"""
-<p>Month by month, starting with {money(owner_funds, False)} of the owner's money. Sales are at {money(price)} a {U}; the cost of each {U} sold is {money(piece)} (the cost sheet). Every row's assumption is in its note.</p>
-{table(['Month', US.capitalize() + ' sold', 'Sales', 'Cost of goods', 'Tooling and other', 'Owner and loan in', 'Loan payment', 'Cash at month end'], proj, 'compact num')}
+<p>Month by month, starting with {money(owner_funds, False)} of the owner's money. Sales are at {money(price)} a {U}; the cost of each {U} sold is {money(piece)} ({COST_SRC}). Every row's assumption is in its note.</p>
+{table(['Month', US.capitalize() + ' sold', 'Sales', 'Cost of goods', 'Tooling and other' if HAS_PRODUCT else 'Other spending', 'Owner and loan in', 'Loan payment', 'Cash at month end'], proj, 'compact num')}
 <h2>Assumptions</h2><ul class="levers small">{''.join(notes)}</ul>""", "Page 2"))
     cv = [[esc(m), money(o, False), money(payment, False), f"{c:.2f}"] for m, o, c in cover]
     pages.append(page("Repayment check", f"""
 <p>Cash the business makes each month before the loan payment, against the estimated payment of {money(payment, False)} ({n} months at {num(M.get('rate_pct')):.1f}%, illustrative). Coverage is the first divided by the second; lenders usually want at least 1.25.</p>
 {table(['Month', 'Cash before debt', 'Payment', 'Coverage'], cv, 'num')}
-<p><strong>Average coverage: {avg_cover:.2f}.</strong> {'' if repays else 'What would change it: a lower mold cost (the quotes due ' + fdate(first(funding, 'milestone:Base mold quote in hand')) + '), a higher price, more volume, or a smaller loan.'}</p>""", "Page 3"))
+<p><strong>Average coverage: {avg_cover:.2f}.</strong> {'' if repays else ('What would change it: a lower mold cost (the quotes due ' + fdate(first(funding, 'milestone:Base mold quote in hand')) + '), a higher price, more volume, or a smaller loan.' if HAS_PRODUCT and first(funding, 'milestone:Base mold quote in hand') else 'What would change it: more sales, a higher price, lower monthly costs, or a smaller loan.')}</p>""", "Page 3"))
     hb = [[esc(b["id"]), esc(b["risk"]), esc(b["mitigation"])] for b in brisks if int(b["likelihood"]) * int(b["impact"]) >= 8]
-    docs = [["Business plan", "This packet and the one-page plan"], ["Personal and business tax returns", "The inventor brings them"],
-            ["Personal financial statement", "The inventor fills it in on the lender's form"], ["Bank statements", "The inventor brings them"],
+    docs = [["Business plan", "This packet and the one-page plan"], ["Personal and business tax returns", "The owner brings them"],
+            ["Personal financial statement", "The owner fills it in on the lender's form"], ["Bank statements", "The owner brings them"],
             ["Formation papers and tax ID", "After the company is formed"], ["Collateral list", esc(M.get("collateral"))]]
     pages.append(page("Company, documents and risks", f"""
 {company_table()}
@@ -5657,7 +5713,19 @@ if KIND == "investor":
     uses = [[esc(r["key"][4:]), money(num(r["value"]), False), esc(r["note"])] for r in meeting if r["key"].startswith("use:")]
     use_total = sum(num(r["value"]) for r in meeting if r["key"].startswith("use:"))
     payback = f"{payback_units:,.0f} {US}" if payback_units != float("inf") else "never at this price"
-    if closes:
+    monthly_plan = annual / 12
+    be = break_even(price)
+    be_text = f"{be:,.0f} {US} a month" if be != float("inf") else "never at this price"
+    if not HAS_PRODUCT:
+        closes = monthly_plan >= be
+    if not HAS_PRODUCT and closes:
+        verdict = (f"<strong>The numbers close.</strong> At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost, "
+                   f"and {money(FIXED, False)} a month of fixed costs is covered at {be_text}, inside the plan of {monthly_plan:,.0f} a month.")
+    elif not HAS_PRODUCT:
+        verdict = (f"<strong>The numbers do not close yet.</strong> At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost; "
+                   f"covering {money(FIXED, False)} a month of fixed costs takes {be_text}, against a plan of {monthly_plan:,.0f} a month. "
+                   f"This round pays for the step that shows whether they can close: {esc(M.get('reaches'))}")
+    elif closes:
         verdict = (f"<strong>The numbers close.</strong> At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost to make, "
                    f"and the {money(tooling, False)} of tooling pays back in {payback}, inside the plan of {plan_units:,.0f}.")
     else:
@@ -5674,13 +5742,25 @@ if KIND == "investor":
     benefits = "".join(f"<li>{esc(r['value'])}</li>" for r in pricing.get("benefit", []))
     alts = [[esc(r["value"]), esc(r["note"])] for r in MULTI.get("alternative", [])]
     ev = [[fdate(r["date"]), esc(r["who"]), esc(r["what they said"]), esc(r["what they did or would pay"]), esc(r["strength"])] for r in evidence]
-    pages.append(page("The product and the evidence", f"""
+    pages.append(page("The product and the evidence" if HAS_PRODUCT else "The business and the evidence", f"""
 <h2>Who it's for</h2><p>{esc(first(pricing, 'who_for'))}</p>
 <h2>Why it sells</h2><ul class="levers">{benefits}</ul>
 <h2>What people use now</h2>{table(['Alternative', 'Where this one is different'], alts, 'compact')}
 <h2>What people have said and done so far</h2>{table(['Date', 'Who', 'Said', 'Did or would pay', 'Strength'], ev, 'compact')}
 <h2>How big it could be</h2><p>{esc(M.get('market', 'Not estimated yet. A market size goes here only with its source.'))}</p>""", "Page 2"))
-    econ = [[f"Price to {first(funding, 'buyer', 'the buyer')}", money(price), esc(first(funding, 'price_note'))],
+    if not HAS_PRODUCT:
+        econ = [[f"Price of one {U}", money(price), esc(first(funding, 'price_note'))],
+                [f"Cost of one {U}", money(piece), "Business plan: what each sale costs to deliver"],
+                [f"Clears per {U}", money(clears), f"{margin_pct:.0f}% of the price"],
+                ["Fixed costs a month", money(FIXED, False), "Business plan: rent, software, insurance, pay"],
+                ["Break-even", be_text, "Fixed costs divided by what each sale clears"],
+                ["Plan", f"{monthly_plan:,.0f} {US} a month", f"{annual:,.0f} a year"]]
+        levers = (f"<li><strong>Price:</strong> each $1 more a {U} lowers break-even.</li>"
+                  f"<li><strong>Cost:</strong> what each {U} costs to deliver, {money(piece)} today.</li>"
+                  f"<li><strong>Fixed costs:</strong> {money(FIXED, False)} a month today.</li>")
+    else:
+        econ = None
+    econ = econ or [[f"Price to {first(funding, 'buyer', 'the buyer')}", money(price), esc(first(funding, 'price_note'))],
             [f"Cost to make one {U}", money(piece), "Cost sheet: material plus process, all parts"],
             [f"Clears per {U}", money(clears), f"{margin_pct:.0f}% of the price"],
             ["Tooling (molds)", money(tooling, False), "Cost sheet; placeholders until the quotes arrive"],
@@ -5689,10 +5769,8 @@ if KIND == "investor":
     pages.append(page("The numbers", f"""
 {table(['', '', 'Basis'], econ, 'num2')}
 <h2>What would change it</h2><ul class="levers">
-<li><strong>Price:</strong> {money(price_to_close)} a {U} pays back today's tooling over the plan volume.</li>
-<li><strong>Tooling:</strong> at today's price, the plan volume pays back {money(carry, False)} of tooling.</li>
-<li><strong>Volume:</strong> at today's price and tooling, {payback}.</li></ul>
-<p class="small">Every figure is computed from the cost sheet and the funding sheet; none is typed in. Values marked illustrative are not quotes.</p>""", "Page 3"))
+{levers if not HAS_PRODUCT else f"<li><strong>Price:</strong> {money(price_to_close)} a {U} pays back today's tooling over the plan volume.</li><li><strong>Tooling:</strong> at today's price, the plan volume pays back {money(carry, False)} of tooling.</li><li><strong>Volume:</strong> at today's price and tooling, {payback}.</li>"}</ul>
+<p class="small">Every figure is computed from {COST_SRC} and the funding sheet; none is typed in. Values marked illustrative are not quotes.</p>""", "Page 3"))
     ms = [[fdate(r["value"]), esc(r["key"][10:]), esc(r["note"])] for r in sorted((r for k, v in funding.items() if k.startswith("milestone:") for r in v), key=lambda r: r["value"])]
     br = sorted(brisks, key=lambda b: -int(b["likelihood"]) * int(b["impact"]))
     lvl = lambda b: "high" if int(b["likelihood"]) * int(b["impact"]) >= 15 else "medium" if int(b["likelihood"]) * int(b["impact"]) >= 8 else "low"
@@ -5710,9 +5788,9 @@ if KIND == "investor":
 {table(['', ''], terms, 'kv') if terms else ''}
 <h2>How an investor gets money back</h2><p>{esc(M.get('exit'))}</p>
 <h2>Before anyone invests</h2><ul class="levers">
-<li>This is an early, high-risk investment in a product that is not made yet. It can fail, and the money can be lost. Invest only money you can afford to lose.</li>
+<li>This is an early, high-risk investment in {'a product that is not made yet' if HAS_PRODUCT else 'a young business'}. It can fail, and the money can be lost. Invest only money you can afford to lose.</li>
 <li>A share of the company, a note or a SAFE is a security. Under federal and state law, every offer and sale of securities, even to one person, including family and friends, has to be registered or fall under an exemption. The terms are set with an attorney before any money changes hands.</li>
-<li>Nothing here is a promise of a return. The numbers are the inventor's plan, built from the sheets named on each page.</li></ul>
+<li>Nothing here is a promise of a return. The numbers are the owner's plan, built from the sheets named on each page.</li></ul>
 <h2>The company</h2>{investor_company()}""", "Page 5"))
     pages.append(prep_sheet(top=f"<p class='small'>Owner's money already in: {money(owner_spent, False)} spent, {money(owner_funds, False)} committed. Investors ask this first.</p>"))
 
@@ -5867,7 +5945,8 @@ if KIND == "licensee":
     royalty_html = ""
     if rate and net:
         per = rate * net
-        royalty_html = (f"<h2>What a royalty could mean (illustrative)</h2><p>At {rate*100:.1f}% of a net sales price of {money(net)} a {U}, each {U} pays {(f"${per:.4f}".rstrip("0") if per < 0.10 else money(per))}."
+        per_text = ("$%.4f" % per).rstrip("0") if per < 0.10 else money(per)
+        royalty_html = (f"<h2>What a royalty could mean (illustrative)</h2><p>At {rate*100:.1f}% of a net sales price of {money(net)} a {U}, each {U} pays {per_text}."
                         + (f" At {units:,.0f} {US} a year, that is {money(per * units, False)} a year." if units else "")
                         + f" {esc(M.get('royalty_note'))}</p>")
     warn = ""
@@ -5974,12 +6053,19 @@ if KIND == "partner":
     upcoming = [r for r in ms if r["value"] >= M.get("date", "")][:4]
     verdict = (f"At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost to make, and the {money(tooling, False)} of tooling "
                + (f"pays back within the plan of {plan_units:,.0f} {US}." if closes else f"would take {payback_units:,.0f} {US} to pay back, against a plan of {plan_units:,.0f}. The numbers do not close yet; that is the work in front of the project."))
+    if not HAS_PRODUCT:
+        be = break_even(price)
+        closes = annual / 12 >= be
+        verdict = (f"At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost, and {money(FIXED, False)} a month of fixed costs "
+                   + (f"is covered at {be:,.0f} {US} a month, inside the plan of {annual / 12:,.0f}." if closes else
+                      f"needs {be:,.0f} {US} a month to cover, against a plan of {annual / 12:,.0f}. The numbers do not close yet; that is the work in front of the business." if be != float("inf") else
+                      "cannot be covered at this price. The numbers do not close yet; that is the work in front of the business."))
     pages.append(page("The project in brief", f"""
 <p class="lede-big">{esc(first(pricing, 'headline') or PRODUCT)}</p>
 <h2>Who it's for</h2><p>{esc(first(pricing, 'who_for'))}</p>
 <h2>Where it stands</h2><p>{esc(M.get('development'))}</p>
 <h2>The numbers, honestly</h2><div class="verdict {'ok' if closes else 'warn'}">{verdict}</div>
-<div class="stats">{stat("Owner's money in", money(owner_spent, False), f'plus {money(owner_funds, False)} committed')}{stat(f'Clears per {U}', money(clears))}{stat('Tooling', money(tooling, False), 'placeholders until quoted')}{stat('Sales so far', esc(M.get('sales', 'None yet')))}</div>
+<div class="stats">{stat("Owner's money in", money(owner_spent, False), f'plus {money(owner_funds, False)} committed')}{stat(f'Clears per {U}', money(clears))}{stat('Tooling', money(tooling, False), 'placeholders until quoted') if HAS_PRODUCT else stat('Fixed costs a month', money(FIXED, False))}{stat('Sales so far', esc(M.get('sales', 'None yet')))}</div>
 <h2>Coming up</h2>{table(['By', 'Milestone'], [[fdate(r['value']), esc(r['key'][10:])] for r in upcoming], 'compact')}""", "Page 1"))
     unowned = [r for r in actions if r.get("Status") in ("open", "waiting") and not (r.get("Who") or "").strip()]
     needs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("need", [])]
@@ -10442,6 +10528,11 @@ SHEETS = {
     "trips.csv": ("Trip and mileage log", "Business record", ["trip", "date", "to (place and address)", "who or what", "business purpose", "start odometer", "end odometer", "business miles"], ("start odometer", "end odometer", "business miles")),
     "prior-art.csv": ("Prior art found so far", "Patent preparation", ["ref", "title", "what it shows", "how ours differs", "searched on", "Source status"], ()),
     "disclosure-history.csv": ("Who has seen it", "Patent preparation", ["date", "to whom", "what was shown", "revision", "under NDA", "setting", "status"], ()),
+    "business-plan.csv": ("One-page business plan", "Business record", ["key", "value", "note"], ()),
+    "pipeline.csv": ("Customers and sales pipeline", "Business record", ["id", "customer", "what they want", "value", "stage", "next step", "next date"], ("value",)),
+    "invoices.csv": ("Invoices", "Business record", ["invoice", "date", "customer", "for", "total", "due", "paid on", "status"], ("total",)),
+    "monthly.csv": ("Money each month", "Business record", ["month", "sales", "cost of sales", "other spending", "owner in", "cash at month end", "months of cash", "unpaid invoices"], ("sales", "cost of sales", "other spending", "owner in", "cash at month end", "months of cash", "unpaid invoices")),
+    "deadlines.csv": ("Compliance calendar and deadlines", "Business record", ["due", "what", "Source", "Source status", "remind on", "who", "status"], ()),
     "correspondence.csv": ("Correspondence log", "Business record", ["date", "folder", "direction", "with", "organization", "what was conveyed", "sent or received"], ()),
 }
 
@@ -10498,6 +10589,8 @@ def table(rows, cols, right, risk=False):
                 c.append("hi")
             cells.append(f"<td{' class=' + repr(' '.join(c)) if c else ''}>{html.escape(v)}</td>")
         out.append(f"<tr{cls}>" + "".join(cells) + "</tr>")
+    if len(out) == 1:
+        out.append(f"<tr><td colspan='{len(idx)}'>Nothing here yet.</td></tr>")
     return "".join(out) + "</tbody></table>"
 
 
@@ -10537,6 +10630,8 @@ def main(argv):
         else:
             with open(f, newline="", encoding="utf-8-sig") as fh:
                 rows = list(csv.reader(fh))
+            if name == "business-plan.csv":
+                rows = [rows[0]] + [[r[0].replace("_", " ").capitalize()] + r[1:] for r in rows[1:] if r]
             body = table(rows, cols, right, risk=name == "risk-table.csv")
             if name == "risk-table.csv":
                 body = "<p class='sub'>Each way it could fail, scored 1 to 10 for how bad it would be (S), how likely (O) and how hard to catch (D); RPN is the three multiplied. Indented lines are the actions taken and the new scores. The most severe are shaded.</p>" + body
@@ -11043,8 +11138,8 @@ Checked: 2026-09-30. Source: Regional: WMEP.
       <a class="side-welcome" href="welcome.html">Welcome</a>
       <a class="side-start" href="start.html">Start</a>
             <p class="side-label">Your bots</p>
-      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>Runs the product, idea to launch</span></span></a>
-      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>Company, patent, money, selling</span></span></a>
+      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>For inventors: idea to launch</span></span></a>
+      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>For entrepreneurs: the business</span></span></a>
       <p class="side-label">Office library</p>
       <a href="system.html">How it works</a>
       <a href="resources.html" aria-current="page">Resources</a>
@@ -11105,8 +11200,8 @@ Checked: 2026-09-30. Source: Regional: WMEP.
       <a class="side-welcome" href="welcome.html">Welcome</a>
       <a class="side-start" href="start.html">Start</a>
             <p class="side-label">Your bots</p>
-      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>Runs the product, idea to launch</span></span></a>
-      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>Company, patent, money, selling</span></span></a>
+      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>For inventors: idea to launch</span></span></a>
+      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>For entrepreneurs: the business</span></span></a>
       <p class="side-label">Office library</p>
       <a href="system.html">How it works</a>
       <a href="resources.html" aria-current="page">Resources</a>
@@ -11167,8 +11262,8 @@ Checked: 2026-09-30. Source: Regional: WMEP.
       <a class="side-welcome" href="welcome.html">Welcome</a>
       <a class="side-start" href="start.html">Start</a>
             <p class="side-label">Your bots</p>
-      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>Runs the product, idea to launch</span></span></a>
-      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>Company, patent, money, selling</span></span></a>
+      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>For inventors: idea to launch</span></span></a>
+      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>For entrepreneurs: the business</span></span></a>
       <p class="side-label">Office library</p>
       <a href="system.html">How it works</a>
       <a href="resources.html" aria-current="page">Resources</a>
@@ -11229,8 +11324,8 @@ Checked: 2026-09-30. Source: Regional: WMEP.
       <a class="side-welcome" href="welcome.html">Welcome</a>
       <a class="side-start" href="start.html">Start</a>
             <p class="side-label">Your bots</p>
-      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>Runs the product, idea to launch</span></span></a>
-      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>Company, patent, money, selling</span></span></a>
+      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>For inventors: idea to launch</span></span></a>
+      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>For entrepreneurs: the business</span></span></a>
       <p class="side-label">Office library</p>
       <a href="system.html">How it works</a>
       <a href="resources.html" aria-current="page">Resources</a>
@@ -11290,8 +11385,8 @@ Checked: 2026-09-30. Source: Regional: WMEP.
       <a class="side-welcome" href="welcome.html">Welcome</a>
       <a class="side-start" href="start.html">Start</a>
             <p class="side-label">Your bots</p>
-      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>Runs the product, idea to launch</span></span></a>
-      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>Company, patent, money, selling</span></span></a>
+      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>For inventors: idea to launch</span></span></a>
+      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>For entrepreneurs: the business</span></span></a>
       <p class="side-label">Office library</p>
       <a href="system.html">How it works</a>
       <a href="resources.html" aria-current="page">Resources</a>
@@ -11351,8 +11446,8 @@ Checked: 2026-09-30. Source: Regional: WMEP.
       <a class="side-welcome" href="welcome.html">Welcome</a>
       <a class="side-start" href="start.html">Start</a>
             <p class="side-label">Your bots</p>
-      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>Runs the product, idea to launch</span></span></a>
-      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>Company, patent, money, selling</span></span></a>
+      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>For inventors: idea to launch</span></span></a>
+      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>For entrepreneurs: the business</span></span></a>
       <p class="side-label">Office library</p>
       <a href="system.html">How it works</a>
       <a href="resources.html" aria-current="page">Resources</a>
@@ -11412,8 +11507,8 @@ Checked: 2026-09-30. Source: Regional: WMEP.
       <a class="side-welcome" href="welcome.html">Welcome</a>
       <a class="side-start" href="start.html">Start</a>
             <p class="side-label">Your bots</p>
-      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>Runs the product, idea to launch</span></span></a>
-      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>Company, patent, money, selling</span></span></a>
+      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>For inventors: idea to launch</span></span></a>
+      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>For entrepreneurs: the business</span></span></a>
       <p class="side-label">Office library</p>
       <a href="system.html">How it works</a>
       <a href="resources.html" aria-current="page">Resources</a>
@@ -11472,8 +11567,8 @@ Checked: 2026-09-30. Source: Regional: WMEP.
       <a class="side-welcome" href="welcome.html">Welcome</a>
       <a class="side-start" href="start.html">Start</a>
             <p class="side-label">Your bots</p>
-      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>Runs the product, idea to launch</span></span></a>
-      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>Company, patent, money, selling</span></span></a>
+      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>For inventors: idea to launch</span></span></a>
+      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>For entrepreneurs: the business</span></span></a>
       <p class="side-label">Office library</p>
       <a href="system.html">How it works</a>
       <a href="resources.html" aria-current="page">Resources</a>
@@ -11534,8 +11629,8 @@ Checked: 2026-09-30. Source: Regional: WMEP.
       <a class="side-welcome" href="welcome.html">Welcome</a>
       <a class="side-start" href="start.html">Start</a>
             <p class="side-label">Your bots</p>
-      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>Runs the product, idea to launch</span></span></a>
-      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>Company, patent, money, selling</span></span></a>
+      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>For inventors: idea to launch</span></span></a>
+      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>For entrepreneurs: the business</span></span></a>
       <p class="side-label">Office library</p>
       <a href="system.html">How it works</a>
       <a href="resources.html" aria-current="page">Resources</a>
@@ -11595,8 +11690,8 @@ Checked: 2026-09-30. Source: Regional: WMEP.
       <a class="side-welcome" href="welcome.html">Welcome</a>
       <a class="side-start" href="start.html">Start</a>
             <p class="side-label">Your bots</p>
-      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>Runs the product, idea to launch</span></span></a>
-      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>Company, patent, money, selling</span></span></a>
+      <a href="welcome.html#/project"><i class="face face-andy" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M14.8 8.2 13.2 13.2 8.2 14.8 9.8 9.8z" fill="currentColor" stroke="none"/></svg></i><span class="who"><b>Project Manager Bot</b><span>For inventors: idea to launch</span></span></a>
+      <a href="welcome.html#/office"><i class="face face-larry" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></i><span class="who"><b>Office Manager Bot</b><span>For entrepreneurs: the business</span></span></a>
       <p class="side-label">Office library</p>
       <a href="system.html">How it works</a>
       <a href="resources.html" aria-current="page">Resources</a>
@@ -25551,8 +25646,50 @@ NEVER (office)
 - Never release a part an agent made without the checks above and a person looking at it.
 
 SOURCES (published; ids in your library): SOLIDWORKS API Help for your version (solidworks-api-help); recording and editing macros (solidworks-macros); CodeStack examples (codestack); xCAD.NET (xcad-net); community MCP servers (solidworks-mcp-servers); Model Context Protocol (mcp-protocol); Claude Code docs (claude-code-docs); Codex docs (openai-codex-docs); CadQuery (cadquery); build123d (build123d); KiCad docs (kicad-docs).
+=== FILE: sop-business-plan.txt ===
+SOP: The one-page business plan, and pricing. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager. May write: business-plan.csv in the business folder (template-business-plan.csv), its readable copy in Your files/Business record/, funding.csv (price, unit, cost_per_sale, monthly_fixed, owner_funds), and rows on the action log.
+Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-sales.txt
+Example: https://ancreationoffice.com/example-mousetrap/business-plan.csv
+Read this in the first conversation about a business, and whenever the price, the customer or the costs change.
+
+WHY THIS EXISTS
+Most small businesses never write a plan, and the ones that do write forty pages nobody reads. One page, kept current, is enough to run on: what you sell, to whom, at what price, how they find you, what it costs to run, and the one number that matters this month. It is also page one of every lender, investor and partner packet.
+
+THE FIRST CONVERSATION ABOUT A BUSINESS
+Works with or without an invention. With no Project Manager Bot and no invention, the business is the project, and this is its intake.
+Open with: "Tell me about your business." Let them talk; fill every row their words answer, the same turn. Then ask the open rows one at a time, each with a default where one is sensible ("Most people start by charging by the hour. Does that fit?"). "Don't know yet" is a fine answer: the row says "for now" with a date to ask again.
+The rows (template-business-plan.csv):
+- business: its name, or the working name.
+- what you sell: in one sentence a customer would say.
+- who buys: the first customers, as specific as they can name (not "everyone").
+- the problem it solves for them, in their words.
+- price, and the unit it is priced in (an hour, a project, a month, an item, an order).
+- cost per sale: what one unit costs to deliver (materials, supplies, fees, the outside labor in it). Not the owner's own time; that is the price's job.
+- how they find you: the first two or three ways (word of mouth, a website, a market stall, a store, a platform).
+- monthly fixed costs: what the business costs to keep open whether it sells or not (rent, software, insurance, phone, storage, any pay).
+- owner's money: what the owner is putting in, and what they could lose without harm.
+- the first goal: a number and a date ("10 paying clients by March").
+- the one number: the figure that shows this month whether it's working (paying customers, sales, cash on hand).
+- the biggest risk, in one line, and what would show early that it's real.
+- next step: one.
+When it's done, read it back in three or four plain lines and ask "Did I get that right?" That is the first win for an entrepreneur. Save, with its readable copy.
+
+PRICING
+- Price from three directions and show all three; the owner picks: what it costs (cost per sale plus a share of the fixed costs at the sales they expect), what customers pay now for the alternative (from market-evidence.csv, with sources), and what the value is to the customer.
+- Services: per hour, per project, or a monthly retainer or subscription. Per hour is simplest to start and easiest to explain; per project rewards getting faster; a retainer steadies the cash. For any of them, the owner's hours in a month times the hourly rate they need is a check on whether the business can pay them.
+- Products: the price chain from the shelf back (sop-launch.txt and the buyer packet), when there is a store or a distributor in between.
+- Break-even: monthly fixed costs divided by what each sale clears (price minus cost per sale). Say it as sales a month: "You cover your costs at 14 clients a month." Show it whenever the price, the cost or the fixed costs change.
+- Never invent a competitor's price or a market rate. A price someone found is a row in market-evidence.csv with where it came from; a guess is labeled a guess.
+
+KEEPING IT CURRENT
+The plan is a living document (sop-document-life.txt): when a sale, a price change, a new cost or a lost customer changes a row, update it that turn, with the date. The old version goes to History/. Copy price, unit, cost_per_sale, monthly_fixed and owner_funds into funding.csv when a lender, investor or partner meeting is set; the packets read them from there (meeting-packet.py).
+
+DONE WHEN
+Every row has an answer or a dated "for now", the owner has heard it read back, and the one number has a value for this month.
 === FILE: sop-business-record.txt ===
-SOP: The business record. Revision 6 — October 18, 2026.
+SOP: The business record. Revision 7 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one set for the business (all inventions). b-analyst fills and updates them, and runs tax-year.py.
 May write: the files named below in AN-Creation/<business>/, their readable copies in Your files/Business record/, and hand-off lines to b-project-manager.
@@ -25570,7 +25707,7 @@ THE SEVEN (the business has all of them from the first conversation; none is opt
 5. Trip log: every business trip: date, where (place and address), who or what, the business purpose, odometer or miles, parking and tolls; plus an odometer row for each vehicle at the start of each year and when it is first used for the business. trips.csv (template-trips.csv).
 6. Expense ledger: every dollar the business spends, whichever bot hears of it: date, who was paid, what, the business purpose, the invention, the tax category, amount, how it was paid, whose money, the receipt file, the trip or meeting it belongs to. expenses.csv (template-expenses.csv).
 7. Deadlines: every date that cannot be missed (patent, trademark, company reports, taxes, contract notices, quotes), each traced to its source (https://ancreationoffice.com/principle-watch-the-calendar.txt). deadlines.csv (template-deadlines.csv).
-Working files alongside them: market-evidence.csv, promo-log.csv, funding/, record/ (the bots' own conversations; internal, not correspondence).
+Working files alongside them: business-plan.csv (sop-business-plan.txt), pipeline.csv and invoices.csv once the business sells (sop-sales.txt), monthly.csv (sop-monthly-money.txt), market-evidence.csv, promo-log.csv, funding/, record/ (the bots' own conversations; internal, not correspondence). The deadlines are also the compliance calendar (sop-compliance-calendar.txt). With no invention, the business is the project, and these are its record.
 
 BE INSISTENT (the part that makes it work)
 The record is only as good as what the bot is told, so the bot asks, every time, without waiting to be asked:
@@ -25771,6 +25908,39 @@ Sources: SBA business guide https://www.sba.gov/business-guide ; choosing a stru
 
 MEETING AN ATTORNEY
 For forming the company with an attorney, or any agreement before it is signed, build the business attorney packet (https://ancreationoffice.com/sop-packet-attorney.txt).
+=== FILE: sop-compliance-calendar.txt ===
+SOP: The compliance calendar: licenses, permits, reports and taxes. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager. b-analyst finds the sources. May write: rows in deadlines.csv (template-deadlines.csv), company.csv (registrations and their status), and rows on the action log.
+Goes with: https://ancreationoffice.com/principle-watch-the-calendar.txt , https://ancreationoffice.com/principle-trace-to-source.txt , https://ancreationoffice.com/sop-company.txt , https://ancreationoffice.com/sop-business-record.txt (deadlines)
+Example: https://ancreationoffice.com/example-mousetrap/deadlines.csv
+Read this once the business, its state and its type of company are known, when it forms or changes form, when it starts selling, and at the start of each year.
+
+WHY THIS EXISTS
+A missed annual report can get a company dissolved; a missed sales-tax return brings penalties; a missing local license can close a shop. None of it is hard, but it is scattered across the IRS, the state, the county and the city, and every place is different. The calendar puts every date in one list, each traced to the page that sets it.
+
+WHAT GOES ON IT (only what applies to this business, from where it is and what it does)
+- Federal: estimated tax payments if the owner expects to owe (IRS Form 1040-ES and its instructions for that year), the business's own return and its due date, payroll filings once there is an employee, information returns for contractors paid over the threshold in that year's IRS instructions, and any federal filing the company type requires.
+- State: the company's annual or biennial report (the secretary of state or the state's business filing office), the state income or franchise tax, the seller's permit or sales-tax registration before the first taxable sale and its filing schedule, unemployment insurance once there is an employee.
+- County and city: a general business license, a home-occupation permit, zoning, health or food permits, signs, fire inspection: whatever that place requires for this kind of business.
+- The trade: a license for the trade itself (contractors, food, cosmetology, child care, alcohol and others), and its renewals and continuing education.
+- Contracts and insurance: renewal dates, notice periods, the lease.
+- Patent and trademark dates come from those procedures and sit on the same calendar.
+
+HOW EACH DATE GETS ON IT
+1. Find the source: the official page of the agency that sets the rule (IRS, the state's revenue department, the secretary of state, the county or city clerk), opened in this run. Library entries first (resources.txt). Never from memory: a date or a rule without a source is a row marked "to find", and it is said that way to the owner.
+2. Write the row in deadlines.csv: the due date, what, why it matters, the source, its edition or date, the clause or page, the source text, the source status, the date checked, a remind-on date (two to four weeks ahead, longer for anything that needs an accountant or attorney), who does it, and status.
+3. A registration that doesn't exist yet but will be needed (a seller's permit before the first sale) is a row with the event as its trigger and the planned date; it moves when the plan moves.
+4. Recurring dates (quarterly, yearly) get the next one as a row; when it's done, the next one is added the same turn.
+5. Where the rule depends on a judgment (is this taxable here, is this person a contractor or an employee), the row says so and points to the professional or the agency's own guidance. The bot does not make the call.
+
+KEEPING IT
+- The start of every conversation brings anything whose remind-on date has arrived, in one line each.
+- At the start of each year, b-analyst re-opens every source and checks the dates, rates and thresholds for the new year; changes go on the row with the new edition.
+- Done rows stay, marked done with the date and how (confirmation number's last digits at most, never a full ID).
+
+DONE WHEN
+Every federal, state, local and trade requirement that applies to this business is a row with a source, or a row marked "to find" with a date to find it.
 === FILE: sop-cooling-water.txt ===
 SOP: Mold cooling water (b-cooling-water). Revision 9 — October 12, 2026. Plant sizing, the looped header, and towers and outdoor units added from Mike's notes; hydraulic and feed throat allowances from published chiller-maker guidance.
 Index: https://ancreationoffice.com/sop.txt
@@ -26360,7 +26530,7 @@ The Office Manager Bot, after the move: its folder is now AN-Creation/Default-or
 OLDER NAMES (once, no need to ask)
 If an invention still has a "Soren's files" folder, rename it to "Office files", and "Your files/Send to Soren" to "Your files/Send to the office"; if AN-Creation/Business or AN-Creation/Default-org still has any of for-project-manager.txt, for-business-manager.txt, for-soren.txt or for-kasper.txt, move every line into the matching inbox (for-project-manager and for-soren into AN-Creation/handoffs/for-b-project-manager.txt; for-business-manager and for-kasper into AN-Creation/handoffs/for-b-business-manager.txt), ending each moved line with "| open" unless it is already on a plan, then delete the old file (https://ancreationoffice.com/sop-team.txt HAND-OFFS); if AN-Creation/team.csv is missing, write it from https://ancreationoffice.com/template-team.csv with the name you go by now covering every role. One commit, no message to the inventor beyond one line saying the office was tidied.
 === FILE: sop-funding-packet.txt ===
-SOP: The funding packet. Revision 3 — October 18, 2026.
+SOP: The funding packet. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one packet per invention. b-analyst builds it.
 Templates: https://ancreationoffice.com/template-funding.csv and https://ancreationoffice.com/template-business-risks.csv . Builder: https://ancreationoffice.com/funding-packet.py
@@ -26369,7 +26539,7 @@ May write: everything in AN-Creation/<business>/funding/<invention>/, one line o
 Goes with: https://ancreationoffice.com/sop-funding.txt (which kind of money fits), https://ancreationoffice.com/sop-business-risks.txt , https://ancreationoffice.com/sop-cost-sheet.txt , https://ancreationoffice.com/sop-risk-table.txt
 
 WHAT IT IS
-The pages an inventor hands a lender, an SBDC advisor, a grant reviewer or a partner. Six pages: executive summary, product and market, cost and unit economics, funding request and milestones, business risk register, and the design risk analysis as an appendix. A reviewer reads page 1 and decides whether to read the rest, so page 1 carries the verdict, the four key numbers, what it would take, the top risks and the ask.
+The pages an inventor hands a lender, an SBDC advisor, a grant reviewer or a partner about one invention. A business with no invention uses the lender or investor packet instead (sop-meeting-prep.txt): they work from the business plan and show break-even. Six pages: executive summary, product and market, cost and unit economics, funding request and milestones, business risk register, and the design risk analysis as an appendix. A reviewer reads page 1 and decides whether to read the rest, so page 1 carries the verdict, the four key numbers, what it would take, the top risks and the ask.
 
 WHO OWNS WHAT
 b-business-manager owns the packet: the price, the funding request, the use of funds, the business risk register, and the call on when it is ready to show anyone.
@@ -27095,6 +27265,43 @@ A troubleshooting record per defect, in its own dated folder: the defect with ph
 
 HANDS OFF
 Resin maker's technical service (material-specific defects), tool shop and hot runner maker, press service, electrician (outlets), dryer service.
+=== FILE: sop-monthly-money.txt ===
+SOP: Money each month: the monthly close, cash and runway. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager. b-analyst totals the month. May write: monthly.csv in the business folder (template-monthly.csv), its readable copy in Your files/Business record/, and rows on the action log.
+Goes with: https://ancreationoffice.com/sop-business-record.txt (the expense ledger), https://ancreationoffice.com/sop-sales.txt (invoices), https://ancreationoffice.com/sop-business-plan.txt
+Example: https://ancreationoffice.com/example-mousetrap/monthly.csv
+Read this in the first conversation of each new month, and whenever cash comes up.
+
+WHY THIS EXISTS
+The number that ends small businesses is cash, and most owners only look at it when it's already short. Fifteen minutes once a month, from records already kept, shows what came in, what went out, what's left, and how long it lasts.
+
+THE MONTHLY CLOSE (first conversation of a new month)
+1. Close the records first: the business record's month-end check (sop-business-record.txt BE INSISTENT): missing receipts, trips without miles, invoices not yet logged.
+2. One row in monthly.csv for last month, from the records, never typed from memory:
+   - sales: invoices dated that month (invoices.csv), or money received if the owner keeps cash-basis books; say which, and keep to it.
+   - cost of sales: what those sales cost to deliver (cost per sale times units, or the actual costs logged).
+   - other spending: everything else in the expense ledger that month.
+   - owner in, loans in: money put into the business.
+   - cash at month end: from the bank statement, as the owner reads it to you. The bot never logs in to a bank.
+   - months of cash: cash at month end divided by the average monthly spending of the last three months (the runway).
+   - unpaid invoices: total still owed to the business.
+   - sales tax held: collected and not yet paid over.
+3. Say it in three lines: "October: $1,200 in sales, $640 out. $3,100 in the bank, about 5 months at this rate. $400 still owed to you." Then the one number from the business plan, and whether it moved.
+4. Anything that changed the plan (a price, a cost, a customer) updates business-plan.csv the same turn.
+
+WHEN TO SAY SOMETHING
+- Fewer than three months of cash: say it plainly once, with the levers (sell more, collect what's owed, cut a fixed cost, add owner money or a loan), and put a decision on the action log.
+- Spending that is running ahead of the plan by a quarter or more: one line, with what drove it.
+- Unpaid invoices larger than a month's fixed costs: collecting comes first (sop-sales.txt).
+
+THE HARD LINES
+- Never invent a figure; a missing one is asked for and the row says so.
+- The bot reports; it does not do the books for the tax return. The accountant packet carries the year (sop-packet-accountant.txt); once there is real income, an employee or outside money, an accountant is worth the fee (principle-rigor-scales-with-money.txt).
+- Never store bank logins, full account numbers or card numbers.
+
+DONE WHEN
+Every month since the business started has a row, the owner has heard the three lines, and the runway is known.
 === FILE: sop-office.txt ===
 SOP: Set up b-project-manager and b-analyst. Revision 17 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
@@ -28212,6 +28419,38 @@ Economics. Business-planning group, for the price or cost question in front of t
 Launch. Marketing group, for the channel they named. ftc-advertising when a public claim is about to be made. Role: marketing. Retail stays behind the store gateway.
 
 Done when the subject is a resumed session, a new open row, an intern, or a recorded no. The inventor heard one question. Every closed chunk is still closed, and its sources were not opened.
+=== FILE: sop-sales.txt ===
+SOP: Customers and sales: the pipeline, quotes, invoices and getting paid. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager. May write: pipeline.csv and invoices.csv in the business folder (template-pipeline.csv, template-invoices.csv), quote and invoice files in the correspondence log, their readable copies in Your files/Business record/, contacts.csv, and rows on the action log.
+Goes with: https://ancreationoffice.com/sop-business-plan.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-correspondence.txt
+Example: https://ancreationoffice.com/example-mousetrap/pipeline.csv
+Read this when a possible customer comes up, a quote or an invoice is needed, or a payment is late.
+
+WHY THIS EXISTS
+Small businesses rarely fail for lack of interest; they fail because the follow-up slipped, the quote went out late, or the invoice was never sent or never chased. A simple list, kept the same day, fixes most of it.
+
+THE PIPELINE (pipeline.csv)
+One row per possible sale: who, what they want, what it's worth, where it stands, and the next step with a date. Stages: lead (heard of them or they heard of you), talking, quoted, won, lost. A lost row keeps its reason; it is never deleted.
+- Capture it the turn it comes up ("a lady at the market wants 20 for her shop"): the row, the contact in contacts.csv, and the next step on the action log with a date.
+- Every row that isn't won or lost has a next step and a date. At the start of a conversation, ask once about any next step that is due ("Did you call the shop back?").
+- Waiting on them for more than a week: offer to draft a short nudge. Never send it; the owner sends it.
+- Won: the invoice (below) and, for a product, the order to the Project Manager Bot if there is one.
+
+QUOTES
+A quote is a document that goes out: it follows the correspondence log (S, the sent copy, dated folder) and moves the pipeline row to quoted. It says what is included, the price, how long it holds, payment terms, and what is not included. Price from the business plan; a discount is the owner's call, recorded with the reason in the decision log.
+
+INVOICES AND GETTING PAID (invoices.csv)
+One row per invoice: number, date, customer, what for, amount, sales tax if any, due date, paid on, paid amount, status (sent, paid, part paid, overdue, written off), the file.
+- Invoice numbers run in order and are never reused. The invoice file goes in the correspondence log as sent.
+- Payment terms are stated on every invoice (for example due in 15 or 30 days, or on delivery).
+- The day after an invoice is due and unpaid, its row is overdue and the owner hears it once: "Acme's invoice for $400 was due yesterday. Want me to draft a friendly reminder?" Then again at 2 weeks and 30 days. After that, the owner decides: keep chasing, a payment plan, or write it off (decision log).
+- A payment received is a row update (paid on, amount) the same turn, and the cash shows in the monthly close.
+- Sales tax charged is not the business's money; it is kept apart and paid on schedule (sop-compliance-calendar.txt). The bot never decides whether something is taxable; that comes from the state's own rules, opened and cited.
+- Never store full card or bank numbers. "Paid by check" or "paid by card" is enough.
+
+DONE WHEN
+Every possible customer is a row with a next step and a date, every sale has an invoice, and every unpaid invoice is followed up on schedule.
 === FILE: sop-schedule.txt ===
 SOP: The schedule and the critical path. Revision 1 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
@@ -28610,14 +28849,14 @@ Graduation requires an owner and a deadline. Until both are set, it stays a sugg
 If no deadline is stated, the default is next week.
 Once both are set, the row is a true action, status open, with that owner and that deadline.
 === FILE: sop-team.txt ===
-SOP: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 9 — October 18, 2026. Two kinds of bot: the Project Manager Bot and the Office Manager Bot. Most people have one of each; more are possible (SEVERAL BOTS). Specialists come with their bot. Hand-offs follow the office-handoff skill.
+SOP: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 10 — October 18, 2026. Two kinds of bot: the Project Manager Bot and the Office Manager Bot. Most people have one of each; more are possible (SEVERAL BOTS). Specialists come with their bot. Hand-offs follow the office-handoff skill.
 Index: https://ancreationoffice.com/sop.txt
 Read this when setting up a bot, when the owner adds, renames or removes a bot, moves an invention to another bot or adds a business, when work belongs to another bot, and when a project needs its first look or a second look at a gate.
 
 THE BOTS (two for everyone; the owner names each bot)
 The public pages offer two bots: the start page (https://ancreationoffice.com/), the nav, sop.txt, the sitemap, and the press kit. Do not add any other bot there, and do not send a stranger to one.
 - Project Manager Bot (role b-project-manager): every invention, from first conversation through launch, including the plant and product work below. https://ancreationoffice.com/standing.txt
-- Office Manager Bot (role b-business-manager): the company, patent preparation, name and trademark, licensing, funding, the website, search, and listings. Posts and audience are not this bot's. https://ancreationoffice.com/business-manager.txt
+- Office Manager Bot (role b-business-manager): the business, whatever it sells, with or without an invention: the business plan, customers and invoices, money each month, the compliance calendar, the company, funding, the website, search and listings; for an inventor also patent preparation, name and trademark, and licensing. https://ancreationoffice.com/business-manager.txt
 Plant and product work is not a separate bot for a new project. b-project-manager tracks it and b-analyst does it from these files, which list the specialists and procedures for each area:
 - Molding (role b-molding-office in older projects): scientific molding, defects, cooling water, drying and regrind, mold buying, materials, machine safety. https://ancreationoffice.com/office-molding.txt
 - Plastic design (role b-plastic-design-office in older projects): plastic part design, tolerance stacks, materials, design for molding, prototypes, the mold. https://ancreationoffice.com/office-plastic-design.txt
@@ -28910,6 +29149,7 @@ K5. b-business-manager: the funding packet a lender or advisor reads: executive 
 K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
 K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt , accountant https://ancreationoffice.com/sop-packet-accountant.txt , patent attorney https://ancreationoffice.com/sop-packet-patent.txt , licensee https://ancreationoffice.com/sop-packet-licensee.txt , insurance agent https://ancreationoffice.com/sop-packet-insurance.txt , business attorney https://ancreationoffice.com/sop-packet-attorney.txt , partner https://ancreationoffice.com/sop-packet-partner.txt ; builder https://ancreationoffice.com/meeting-packet.py
 K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and the correspondence log, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py. https://ancreationoffice.com/sop-business-record.txt (templates: template-expenses.csv, template-trips.csv, template-correspondence.csv, template-deadlines.csv, template-business-decision-log.csv)
+K9. b-business-manager, for any business (with or without an invention): the one-page business plan and pricing https://ancreationoffice.com/sop-business-plan.txt ; customers and sales, invoices and getting paid https://ancreationoffice.com/sop-sales.txt ; money each month https://ancreationoffice.com/sop-monthly-money.txt ; the compliance calendar https://ancreationoffice.com/sop-compliance-calendar.txt . Templates: template-business-plan.csv, template-pipeline.csv, template-invoices.csv, template-monthly.csv.
 
 FOR b-project-manager
 1a. The project record, required for every invention: https://ancreationoffice.com/sop-project-record.txt . Its seven documents: charter and its schedule https://ancreationoffice.com/sop-project-charter.txt and https://ancreationoffice.com/sop-schedule.txt (critical path: schedule.py) ; decision log https://ancreationoffice.com/sop-decision-log.txt ; action log with suggestions https://ancreationoffice.com/sop-action-log.txt and https://ancreationoffice.com/sop-suggestions.txt ; cost sheet https://ancreationoffice.com/sop-cost-sheet.txt ; spending register https://ancreationoffice.com/sop-spending-register.txt ; risk table https://ancreationoffice.com/sop-risk-table.txt ; engineering change notices https://ancreationoffice.com/sop-change-control.txt . Example of all seven: https://ancreationoffice.com/example-mousetrap/
@@ -28955,7 +29195,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.37
+261018.38
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -28983,6 +29223,7 @@ drive-setup.txt
 example-mousetrap/README.txt
 example-mousetrap/actions.csv
 example-mousetrap/business-decision-log.csv
+example-mousetrap/business-plan.csv
 example-mousetrap/business-risks.csv
 example-mousetrap/cash-flow.csv
 example-mousetrap/company.csv
@@ -29018,7 +29259,10 @@ example-mousetrap/expenses.csv
 example-mousetrap/funding.csv
 example-mousetrap/intake-001.csv
 example-mousetrap/invention-disclosure.csv
+example-mousetrap/invoices.csv
 example-mousetrap/market-evidence.csv
+example-mousetrap/monthly.csv
+example-mousetrap/pipeline.csv
 example-mousetrap/plan.txt
 example-mousetrap/pricing-terms.csv
 example-mousetrap/prior-art.csv
@@ -29138,11 +29382,13 @@ schedule.py
 screening-questions.csv
 sop-action-log.txt
 sop-ai-cad.txt
+sop-business-plan.txt
 sop-business-record.txt
 sop-business-risks.txt
 sop-change-control.txt
 sop-checklists.txt
 sop-company.txt
+sop-compliance-calendar.txt
 sop-cooling-water.txt
 sop-correspondence.txt
 sop-cost-sheet.txt
@@ -29168,6 +29414,7 @@ sop-material-selection.txt
 sop-meeting-prep.txt
 sop-mold-buying.txt
 sop-molding-defects.txt
+sop-monthly-money.txt
 sop-office.txt
 sop-packet-accountant.txt
 sop-packet-attorney.txt
@@ -29193,6 +29440,7 @@ sop-resource-map.txt
 sop-review-page.txt
 sop-risk-table.txt
 sop-routes.txt
+sop-sales.txt
 sop-schedule.txt
 sop-scientific-molding.txt
 sop-several-inventions.txt
@@ -29215,6 +29463,7 @@ template-a3.txt
 template-action-log.csv
 template-apqp-file.csv
 template-business-decision-log.csv
+template-business-plan.csv
 template-business-risks.csv
 template-cash-flow.csv
 template-change-record.txt
@@ -29230,8 +29479,11 @@ template-expenses.csv
 template-fai-report.csv
 template-funding.csv
 template-invention-disclosure.csv
+template-invoices.csv
 template-market-evidence.csv
 template-meeting.csv
+template-monthly.csv
+template-pipeline.csv
 template-pricing-terms.csv
 template-prior-art.csv
 template-project-charter.txt
@@ -29592,6 +29844,25 @@ Lessons notes,all,every stage exit,open,,
 === FILE: template-business-decision-log.csv ===
 date,decision,reason,status
 2026-10-17,Example: stay a sole owner until the first order,"Example: the LLC's yearly fee is not worth it before there is a sale or a lender (principle: cash is oxygen). Delete this row before real use.",accepted
+=== FILE: template-business-plan.csv ===
+key,value,source,note
+business,,,"Its name, or the working name"
+what_you_sell,,,One sentence a customer would say
+who_buys,,,"The first customers, as specific as they can be named"
+problem,,,"The problem it solves for them, in their words"
+price,,,A number; the unit is the next row
+unit,,,"What the price is for: an hour, a project, a month, an item, an order"
+cost_per_sale,,,"What one unit costs to deliver: materials, supplies, fees, outside labor; not the owner's own time"
+how_they_find_you,,,The first two or three ways
+monthly_fixed,,,"What the business costs to keep open each month, sold or not"
+owner_funds,,,What the owner is putting in
+first_goal,,,A number and a date
+one_number,,,The figure that shows this month whether it is working
+one_number_now,,,Its value this month
+break_even,,,"monthly_fixed / (price - cost_per_sale), as sales a month; computed, never typed"
+biggest_risk,,,"One line, and what would show early that it is real"
+next_step,,,One
+updated,,,The date this plan was last changed
 === FILE: template-business-risks.csv ===
 id,risk,category,likelihood,impact,mitigation,owner,due,status,source
 B1,Example: demand unproven: no buyer has seen it,Market,4,5,Example: show a sample to 3 buyers and record what each would pay. Delete this row before real use.,Inventor,2026-11-30,open,intake buyers-said
@@ -29679,6 +29950,9 @@ conceived,YYYY-MM-DD,"Note: the evidence (a dated decision, a sketch, an email)"
 inventor,Name,Note: what they contributed. Inventorship and ownership are different facts
 owner,Who owns the invention today,"Note: any agreement that changes it (employer, partner)"
 filed,Nothing yet,"Note: any filing, its number and date, only if it exists"
+=== FILE: template-invoices.csv ===
+invoice,date,customer,for,amount,sales tax,total,terms,due,paid on,paid amount,status,file,notes
+1001,2026-11-02,Example: Main Street gift shop,"20 candles, holiday order",300.00,0.00,300.00,Net 15,2026-11-17,,,sent,correspondence/261102-01-S-gift-shop-invoice-1001,Sales tax: per the state rule cited in deadlines.csv (a sale for resale may be exempt with the buyer's certificate)
 === FILE: template-market-evidence.csv ===
 date,who,what they saw,what they said,what they did or would pay,strength,source
 2026-10-14,Example: owner of a local store,A sample and the price,What they said,What they did or would pay,medium,where it is recorded
@@ -29747,6 +30021,12 @@ brings,What they would bring,"Partner only: one row each, in their words"
 option,A way it could be set up,"Partner only: one row each, as a topic, not an offer"
 keeps,What stays the same until it is written,Partner only
 fit,A question to ask them,Partner only: one row each
+=== FILE: template-monthly.csv ===
+month,sales,cost of sales,other spending,owner in,loans in,cash at month end,months of cash,unpaid invoices,sales tax held,basis,note
+2026-10,0.00,0.00,0.00,0.00,0.00,0.00,,0.00,0.00,cash,Example: the first month. Every figure from the records; cash from the bank statement as the owner reads it
+=== FILE: template-pipeline.csv ===
+id,opened,customer,contact,what they want,value,stage,next step,next date,how they found us,closed on,outcome or reason,notes
+P-001,2026-10-20,Example: a gift shop on Main Street,Owner (in contacts),20 candles for the holiday shelf,300,talking,Send the price list,2026-10-24,Saw us at the market,,,"Stages: lead, talking, quoted, won, lost"
 === FILE: template-pricing-terms.csv ===
 key,value,source,note
 headline,,,The product in one line a buyer remembers
@@ -31085,7 +31365,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.37
+Office version: 261018.38
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -31123,6 +31403,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.38  The Office Manager Bot works for any business, with or without an invention. New: the one-page business plan and pricing (sop-business-plan.txt), customers and sales with invoices (sop-sales.txt), money each month (sop-monthly-money.txt) and the compliance calendar (sop-compliance-calendar.txt), with templates and mousetrap examples. With no invention, the lender, investor and partner packets work from the business plan (cost_per_sale and monthly_fixed in funding.csv) and show break-even. meeting-packet.py runs on Python 3.11 again. Re-read your office file. No new profile text.
 261018.37  Wording only: the credit reads "based on" Lauren Tan's pstack, and the press kit says a short pasted message starts the bot setting itself up. No change to how the bots work. No new profile text.
 261018.36  The Project Manager Bot's office file is a third shorter, with every hard rule kept: calling the analyst is now a skill (office-call-analyst.txt, new), reminders and several inventions have their own procedures (sop-reminders.txt, sop-several-inventions.txt, new), the specialized ticket rules moved to sop-focus.txt AT THE FORM, and older names to sop-folder-move.txt OLDER NAMES. New: a first win at the end of intake, reading the idea back in two or three lines before the analyst starts. The analyst now runs in a work folder by default and its files are saved back; GitHub is the add-on, not the default. Re-read your office file. No new profile text.
 261018.35  Cleanup. schedule.py makes its output folder if it is missing. The pages the scripts build (packets, schedule, record views) scroll their wide tables inside the table on a phone instead of the whole page. The procedure index lists the schedule with the charter. No change to how the bots work. No new profile text.

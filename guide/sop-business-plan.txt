@@ -1,0 +1,41 @@
+SOP: The one-page business plan, and pricing. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager. May write: business-plan.csv in the business folder (template-business-plan.csv), its readable copy in Your files/Business record/, funding.csv (price, unit, cost_per_sale, monthly_fixed, owner_funds), and rows on the action log.
+Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-sales.txt
+Example: https://ancreationoffice.com/example-mousetrap/business-plan.csv
+Read this in the first conversation about a business, and whenever the price, the customer or the costs change.
+
+WHY THIS EXISTS
+Most small businesses never write a plan, and the ones that do write forty pages nobody reads. One page, kept current, is enough to run on: what you sell, to whom, at what price, how they find you, what it costs to run, and the one number that matters this month. It is also page one of every lender, investor and partner packet.
+
+THE FIRST CONVERSATION ABOUT A BUSINESS
+Works with or without an invention. With no Project Manager Bot and no invention, the business is the project, and this is its intake.
+Open with: "Tell me about your business." Let them talk; fill every row their words answer, the same turn. Then ask the open rows one at a time, each with a default where one is sensible ("Most people start by charging by the hour. Does that fit?"). "Don't know yet" is a fine answer: the row says "for now" with a date to ask again.
+The rows (template-business-plan.csv):
+- business: its name, or the working name.
+- what you sell: in one sentence a customer would say.
+- who buys: the first customers, as specific as they can name (not "everyone").
+- the problem it solves for them, in their words.
+- price, and the unit it is priced in (an hour, a project, a month, an item, an order).
+- cost per sale: what one unit costs to deliver (materials, supplies, fees, the outside labor in it). Not the owner's own time; that is the price's job.
+- how they find you: the first two or three ways (word of mouth, a website, a market stall, a store, a platform).
+- monthly fixed costs: what the business costs to keep open whether it sells or not (rent, software, insurance, phone, storage, any pay).
+- owner's money: what the owner is putting in, and what they could lose without harm.
+- the first goal: a number and a date ("10 paying clients by March").
+- the one number: the figure that shows this month whether it's working (paying customers, sales, cash on hand).
+- the biggest risk, in one line, and what would show early that it's real.
+- next step: one.
+When it's done, read it back in three or four plain lines and ask "Did I get that right?" That is the first win for an entrepreneur. Save, with its readable copy.
+
+PRICING
+- Price from three directions and show all three; the owner picks: what it costs (cost per sale plus a share of the fixed costs at the sales they expect), what customers pay now for the alternative (from market-evidence.csv, with sources), and what the value is to the customer.
+- Services: per hour, per project, or a monthly retainer or subscription. Per hour is simplest to start and easiest to explain; per project rewards getting faster; a retainer steadies the cash. For any of them, the owner's hours in a month times the hourly rate they need is a check on whether the business can pay them.
+- Products: the price chain from the shelf back (sop-launch.txt and the buyer packet), when there is a store or a distributor in between.
+- Break-even: monthly fixed costs divided by what each sale clears (price minus cost per sale). Say it as sales a month: "You cover your costs at 14 clients a month." Show it whenever the price, the cost or the fixed costs change.
+- Never invent a competitor's price or a market rate. A price someone found is a row in market-evidence.csv with where it came from; a guess is labeled a guess.
+
+KEEPING IT CURRENT
+The plan is a living document (sop-document-life.txt): when a sale, a price change, a new cost or a lost customer changes a row, update it that turn, with the date. The old version goes to History/. Copy price, unit, cost_per_sale, monthly_fixed and owner_funds into funding.csv when a lender, investor or partner meeting is set; the packets read them from there (meeting-packet.py).
+
+DONE WHEN
+Every row has an answer or a dated "for now", the owner has heard it read back, and the one number has a value for this month.

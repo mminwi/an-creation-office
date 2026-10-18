@@ -1,0 +1,31 @@
+SOP: Customers and sales: the pipeline, quotes, invoices and getting paid. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager. May write: pipeline.csv and invoices.csv in the business folder (template-pipeline.csv, template-invoices.csv), quote and invoice files in the correspondence log, their readable copies in Your files/Business record/, contacts.csv, and rows on the action log.
+Goes with: https://ancreationoffice.com/sop-business-plan.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-correspondence.txt
+Example: https://ancreationoffice.com/example-mousetrap/pipeline.csv
+Read this when a possible customer comes up, a quote or an invoice is needed, or a payment is late.
+
+WHY THIS EXISTS
+Small businesses rarely fail for lack of interest; they fail because the follow-up slipped, the quote went out late, or the invoice was never sent or never chased. A simple list, kept the same day, fixes most of it.
+
+THE PIPELINE (pipeline.csv)
+One row per possible sale: who, what they want, what it's worth, where it stands, and the next step with a date. Stages: lead (heard of them or they heard of you), talking, quoted, won, lost. A lost row keeps its reason; it is never deleted.
+- Capture it the turn it comes up ("a lady at the market wants 20 for her shop"): the row, the contact in contacts.csv, and the next step on the action log with a date.
+- Every row that isn't won or lost has a next step and a date. At the start of a conversation, ask once about any next step that is due ("Did you call the shop back?").
+- Waiting on them for more than a week: offer to draft a short nudge. Never send it; the owner sends it.
+- Won: the invoice (below) and, for a product, the order to the Project Manager Bot if there is one.
+
+QUOTES
+A quote is a document that goes out: it follows the correspondence log (S, the sent copy, dated folder) and moves the pipeline row to quoted. It says what is included, the price, how long it holds, payment terms, and what is not included. Price from the business plan; a discount is the owner's call, recorded with the reason in the decision log.
+
+INVOICES AND GETTING PAID (invoices.csv)
+One row per invoice: number, date, customer, what for, amount, sales tax if any, due date, paid on, paid amount, status (sent, paid, part paid, overdue, written off), the file.
+- Invoice numbers run in order and are never reused. The invoice file goes in the correspondence log as sent.
+- Payment terms are stated on every invoice (for example due in 15 or 30 days, or on delivery).
+- The day after an invoice is due and unpaid, its row is overdue and the owner hears it once: "Acme's invoice for $400 was due yesterday. Want me to draft a friendly reminder?" Then again at 2 weeks and 30 days. After that, the owner decides: keep chasing, a payment plan, or write it off (decision log).
+- A payment received is a row update (paid on, amount) the same turn, and the cash shows in the monthly close.
+- Sales tax charged is not the business's money; it is kept apart and paid on schedule (sop-compliance-calendar.txt). The bot never decides whether something is taxable; that comes from the state's own rules, opened and cited.
+- Never store full card or bank numbers. "Paid by check" or "paid by card" is enough.
+
+DONE WHEN
+Every possible customer is a row with a next step and a date, every sale has an invoice, and every unpaid invoice is followed up on schedule.

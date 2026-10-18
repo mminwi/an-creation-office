@@ -1,11 +1,11 @@
-SOP: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 9 — October 18, 2026. Two kinds of bot: the Project Manager Bot and the Office Manager Bot. Most people have one of each; more are possible (SEVERAL BOTS). Specialists come with their bot. Hand-offs follow the office-handoff skill.
+SOP: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 10 — October 18, 2026. Two kinds of bot: the Project Manager Bot and the Office Manager Bot. Most people have one of each; more are possible (SEVERAL BOTS). Specialists come with their bot. Hand-offs follow the office-handoff skill.
 Index: https://ancreationoffice.com/sop.txt
 Read this when setting up a bot, when the owner adds, renames or removes a bot, moves an invention to another bot or adds a business, when work belongs to another bot, and when a project needs its first look or a second look at a gate.
 
 THE BOTS (two for everyone; the owner names each bot)
 The public pages offer two bots: the start page (https://ancreationoffice.com/), the nav, sop.txt, the sitemap, and the press kit. Do not add any other bot there, and do not send a stranger to one.
 - Project Manager Bot (role b-project-manager): every invention, from first conversation through launch, including the plant and product work below. https://ancreationoffice.com/standing.txt
-- Office Manager Bot (role b-business-manager): the company, patent preparation, name and trademark, licensing, funding, the website, search, and listings. Posts and audience are not this bot's. https://ancreationoffice.com/business-manager.txt
+- Office Manager Bot (role b-business-manager): the business, whatever it sells, with or without an invention: the business plan, customers and invoices, money each month, the compliance calendar, the company, funding, the website, search and listings; for an inventor also patent preparation, name and trademark, and licensing. https://ancreationoffice.com/business-manager.txt
 Plant and product work is not a separate bot for a new project. b-project-manager tracks it and b-analyst does it from these files, which list the specialists and procedures for each area:
 - Molding (role b-molding-office in older projects): scientific molding, defects, cooling water, drying and regrind, mold buying, materials, machine safety. https://ancreationoffice.com/office-molding.txt
 - Plastic design (role b-plastic-design-office in older projects): plastic part design, tolerance stacks, materials, design for molding, prototypes, the mold. https://ancreationoffice.com/office-plastic-design.txt

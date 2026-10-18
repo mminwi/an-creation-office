@@ -1,0 +1,2 @@
+invoice,date,customer,for,amount,sales tax,total,terms,due,paid on,paid amount,status,file,notes
+1001,2026-11-02,Example: Main Street gift shop,"20 candles, holiday order",300.00,0.00,300.00,Net 15,2026-11-17,,,sent,correspondence/261102-01-S-gift-shop-invoice-1001,Sales tax: per the state rule cited in deadlines.csv (a sale for resale may be exempt with the buyer's certificate)

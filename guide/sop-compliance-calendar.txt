@@ -1,0 +1,32 @@
+SOP: The compliance calendar: licenses, permits, reports and taxes. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager. b-analyst finds the sources. May write: rows in deadlines.csv (template-deadlines.csv), company.csv (registrations and their status), and rows on the action log.
+Goes with: https://ancreationoffice.com/principle-watch-the-calendar.txt , https://ancreationoffice.com/principle-trace-to-source.txt , https://ancreationoffice.com/sop-company.txt , https://ancreationoffice.com/sop-business-record.txt (deadlines)
+Example: https://ancreationoffice.com/example-mousetrap/deadlines.csv
+Read this once the business, its state and its type of company are known, when it forms or changes form, when it starts selling, and at the start of each year.
+
+WHY THIS EXISTS
+A missed annual report can get a company dissolved; a missed sales-tax return brings penalties; a missing local license can close a shop. None of it is hard, but it is scattered across the IRS, the state, the county and the city, and every place is different. The calendar puts every date in one list, each traced to the page that sets it.
+
+WHAT GOES ON IT (only what applies to this business, from where it is and what it does)
+- Federal: estimated tax payments if the owner expects to owe (IRS Form 1040-ES and its instructions for that year), the business's own return and its due date, payroll filings once there is an employee, information returns for contractors paid over the threshold in that year's IRS instructions, and any federal filing the company type requires.
+- State: the company's annual or biennial report (the secretary of state or the state's business filing office), the state income or franchise tax, the seller's permit or sales-tax registration before the first taxable sale and its filing schedule, unemployment insurance once there is an employee.
+- County and city: a general business license, a home-occupation permit, zoning, health or food permits, signs, fire inspection: whatever that place requires for this kind of business.
+- The trade: a license for the trade itself (contractors, food, cosmetology, child care, alcohol and others), and its renewals and continuing education.
+- Contracts and insurance: renewal dates, notice periods, the lease.
+- Patent and trademark dates come from those procedures and sit on the same calendar.
+
+HOW EACH DATE GETS ON IT
+1. Find the source: the official page of the agency that sets the rule (IRS, the state's revenue department, the secretary of state, the county or city clerk), opened in this run. Library entries first (resources.txt). Never from memory: a date or a rule without a source is a row marked "to find", and it is said that way to the owner.
+2. Write the row in deadlines.csv: the due date, what, why it matters, the source, its edition or date, the clause or page, the source text, the source status, the date checked, a remind-on date (two to four weeks ahead, longer for anything that needs an accountant or attorney), who does it, and status.
+3. A registration that doesn't exist yet but will be needed (a seller's permit before the first sale) is a row with the event as its trigger and the planned date; it moves when the plan moves.
+4. Recurring dates (quarterly, yearly) get the next one as a row; when it's done, the next one is added the same turn.
+5. Where the rule depends on a judgment (is this taxable here, is this person a contractor or an employee), the row says so and points to the professional or the agency's own guidance. The bot does not make the call.
+
+KEEPING IT
+- The start of every conversation brings anything whose remind-on date has arrived, in one line each.
+- At the start of each year, b-analyst re-opens every source and checks the dates, rates and thresholds for the new year; changes go on the row with the new edition.
+- Done rows stay, marked done with the date and how (confirmation number's last digits at most, never a full ID).
+
+DONE WHEN
+Every federal, state, local and trade requirement that applies to this business is a row with a source, or a row marked "to find" with a date to find it.

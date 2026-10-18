@@ -1,4 +1,4 @@
-261018.37
+261018.38
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -26,6 +26,7 @@ drive-setup.txt
 example-mousetrap/README.txt
 example-mousetrap/actions.csv
 example-mousetrap/business-decision-log.csv
+example-mousetrap/business-plan.csv
 example-mousetrap/business-risks.csv
 example-mousetrap/cash-flow.csv
 example-mousetrap/company.csv
@@ -61,7 +62,10 @@ example-mousetrap/expenses.csv
 example-mousetrap/funding.csv
 example-mousetrap/intake-001.csv
 example-mousetrap/invention-disclosure.csv
+example-mousetrap/invoices.csv
 example-mousetrap/market-evidence.csv
+example-mousetrap/monthly.csv
+example-mousetrap/pipeline.csv
 example-mousetrap/plan.txt
 example-mousetrap/pricing-terms.csv
 example-mousetrap/prior-art.csv
@@ -181,11 +185,13 @@ schedule.py
 screening-questions.csv
 sop-action-log.txt
 sop-ai-cad.txt
+sop-business-plan.txt
 sop-business-record.txt
 sop-business-risks.txt
 sop-change-control.txt
 sop-checklists.txt
 sop-company.txt
+sop-compliance-calendar.txt
 sop-cooling-water.txt
 sop-correspondence.txt
 sop-cost-sheet.txt
@@ -211,6 +217,7 @@ sop-material-selection.txt
 sop-meeting-prep.txt
 sop-mold-buying.txt
 sop-molding-defects.txt
+sop-monthly-money.txt
 sop-office.txt
 sop-packet-accountant.txt
 sop-packet-attorney.txt
@@ -236,6 +243,7 @@ sop-resource-map.txt
 sop-review-page.txt
 sop-risk-table.txt
 sop-routes.txt
+sop-sales.txt
 sop-schedule.txt
 sop-scientific-molding.txt
 sop-several-inventions.txt
@@ -258,6 +266,7 @@ template-a3.txt
 template-action-log.csv
 template-apqp-file.csv
 template-business-decision-log.csv
+template-business-plan.csv
 template-business-risks.csv
 template-cash-flow.csv
 template-change-record.txt
@@ -273,8 +282,11 @@ template-expenses.csv
 template-fai-report.csv
 template-funding.csv
 template-invention-disclosure.csv
+template-invoices.csv
 template-market-evidence.csv
 template-meeting.csv
+template-monthly.csv
+template-pipeline.csv
 template-pricing-terms.csv
 template-prior-art.csv
 template-project-charter.txt

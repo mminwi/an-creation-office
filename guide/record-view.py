@@ -35,6 +35,11 @@ SHEETS = {
     "trips.csv": ("Trip and mileage log", "Business record", ["trip", "date", "to (place and address)", "who or what", "business purpose", "start odometer", "end odometer", "business miles"], ("start odometer", "end odometer", "business miles")),
     "prior-art.csv": ("Prior art found so far", "Patent preparation", ["ref", "title", "what it shows", "how ours differs", "searched on", "Source status"], ()),
     "disclosure-history.csv": ("Who has seen it", "Patent preparation", ["date", "to whom", "what was shown", "revision", "under NDA", "setting", "status"], ()),
+    "business-plan.csv": ("One-page business plan", "Business record", ["key", "value", "note"], ()),
+    "pipeline.csv": ("Customers and sales pipeline", "Business record", ["id", "customer", "what they want", "value", "stage", "next step", "next date"], ("value",)),
+    "invoices.csv": ("Invoices", "Business record", ["invoice", "date", "customer", "for", "total", "due", "paid on", "status"], ("total",)),
+    "monthly.csv": ("Money each month", "Business record", ["month", "sales", "cost of sales", "other spending", "owner in", "cash at month end", "months of cash", "unpaid invoices"], ("sales", "cost of sales", "other spending", "owner in", "cash at month end", "months of cash", "unpaid invoices")),
+    "deadlines.csv": ("Compliance calendar and deadlines", "Business record", ["due", "what", "Source", "Source status", "remind on", "who", "status"], ()),
     "correspondence.csv": ("Correspondence log", "Business record", ["date", "folder", "direction", "with", "organization", "what was conveyed", "sent or received"], ()),
 }
 
@@ -91,6 +96,8 @@ def table(rows, cols, right, risk=False):
                 c.append("hi")
             cells.append(f"<td{' class=' + repr(' '.join(c)) if c else ''}>{html.escape(v)}</td>")
         out.append(f"<tr{cls}>" + "".join(cells) + "</tr>")
+    if len(out) == 1:
+        out.append(f"<tr><td colspan='{len(idx)}'>Nothing here yet.</td></tr>")
     return "".join(out) + "</tbody></table>"
 
 
@@ -130,6 +137,8 @@ def main(argv):
         else:
             with open(f, newline="", encoding="utf-8-sig") as fh:
                 rows = list(csv.reader(fh))
+            if name == "business-plan.csv":
+                rows = [rows[0]] + [[r[0].replace("_", " ").capitalize()] + r[1:] for r in rows[1:] if r]
             body = table(rows, cols, right, risk=name == "risk-table.csv")
             if name == "risk-table.csv":
                 body = "<p class='sub'>Each way it could fail, scored 1 to 10 for how bad it would be (S), how likely (O) and how hard to catch (D); RPN is the three multiplied. Indented lines are the actions taken and the new scores. The most severe are shaded.</p>" + body

@@ -1,0 +1,18 @@
+key,value,source,note
+business,,,"Its name, or the working name"
+what_you_sell,,,One sentence a customer would say
+who_buys,,,"The first customers, as specific as they can be named"
+problem,,,"The problem it solves for them, in their words"
+price,,,A number; the unit is the next row
+unit,,,"What the price is for: an hour, a project, a month, an item, an order"
+cost_per_sale,,,"What one unit costs to deliver: materials, supplies, fees, outside labor; not the owner's own time"
+how_they_find_you,,,The first two or three ways
+monthly_fixed,,,"What the business costs to keep open each month, sold or not"
+owner_funds,,,What the owner is putting in
+first_goal,,,A number and a date
+one_number,,,The figure that shows this month whether it is working
+one_number_now,,,Its value this month
+break_even,,,"monthly_fixed / (price - cost_per_sale), as sales a month; computed, never typed"
+biggest_risk,,,"One line, and what would show early that it is real"
+next_step,,,One
+updated,,,The date this plan was last changed

@@ -1,4 +1,4 @@
-SOP: The funding packet. Revision 3 — October 18, 2026.
+SOP: The funding packet. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one packet per invention. b-analyst builds it.
 Templates: https://ancreationoffice.com/template-funding.csv and https://ancreationoffice.com/template-business-risks.csv . Builder: https://ancreationoffice.com/funding-packet.py
@@ -7,7 +7,7 @@ May write: everything in AN-Creation/<business>/funding/<invention>/, one line o
 Goes with: https://ancreationoffice.com/sop-funding.txt (which kind of money fits), https://ancreationoffice.com/sop-business-risks.txt , https://ancreationoffice.com/sop-cost-sheet.txt , https://ancreationoffice.com/sop-risk-table.txt
 
 WHAT IT IS
-The pages an inventor hands a lender, an SBDC advisor, a grant reviewer or a partner. Six pages: executive summary, product and market, cost and unit economics, funding request and milestones, business risk register, and the design risk analysis as an appendix. A reviewer reads page 1 and decides whether to read the rest, so page 1 carries the verdict, the four key numbers, what it would take, the top risks and the ask.
+The pages an inventor hands a lender, an SBDC advisor, a grant reviewer or a partner about one invention. A business with no invention uses the lender or investor packet instead (sop-meeting-prep.txt): they work from the business plan and show break-even. Six pages: executive summary, product and market, cost and unit economics, funding request and milestones, business risk register, and the design risk analysis as an appendix. A reviewer reads page 1 and decides whether to read the rest, so page 1 carries the verdict, the four key numbers, what it would take, the top risks and the ask.
 
 WHO OWNS WHAT
 b-business-manager owns the packet: the price, the funding request, the use of funds, the business risk register, and the call on when it is ready to show anyone.

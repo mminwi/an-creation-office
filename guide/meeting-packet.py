@@ -5,7 +5,8 @@ Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" rows name the folders with the sheets (relative to the meeting folder; one row each, first match wins): the copies of
-b-project-manager's sheets (cost-sheet.csv, risk-table.csv, actions.csv, spending.csv) and b-business-manager's own
+b-project-manager's sheets (cost-sheet.csv, risk-table.csv, actions.csv, spending.csv; a business with no invention has none,
+and funding.csv carries cost_per_sale and monthly_fixed instead) and b-business-manager's own
 (funding.csv, company.csv, pricing-terms.csv, cash-flow.csv, business-risks.csv, market-evidence.csv).
 Writes <type>-packet.html in the meeting folder. The last page is the prep sheet, for the inventor only.
 """
@@ -120,6 +121,19 @@ U = first(funding, "unit", "unit")
 US = first(funding, "units", U + "s")
 piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
 tooling = sum(num(r["tooling"]) for r in cost)
+# A business with no invention has no cost sheet: the cost of one sale and the monthly fixed costs come
+# from funding.csv (cost_per_sale, monthly_fixed), copied there from the business plan (sop-business-plan.txt).
+HAS_PRODUCT = bool(cost)
+if not HAS_PRODUCT:
+    piece = num(first(funding, "cost_per_sale"))
+COST_SRC = "the cost sheet" if HAS_PRODUCT else "the business plan"
+FIXED = num(first(funding, "monthly_fixed"))
+
+
+def break_even(price):
+    """Sales a month that cover the monthly fixed costs, for a business with no tooling to pay back."""
+    clears = price - piece
+    return FIXED / clears if clears > 0 else float("inf")
 TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet", "licensee": "Licensee packet", "insurance": "Insurance packet", "attorney": "Business attorney packet", "partner": "Partner packet"}[KIND]
 
 
@@ -243,8 +257,9 @@ if KIND == "buyer":
     ev = [[fdate(r["date"]), esc(r["who"]), esc(r["what they said"]), esc(r["what they did or would pay"])] for r in evidence]
     check = (f"<h2>Price check (never shown to the buyer)</h2><p>The chain works back from {money(shelf)} on the shelf to {money(dist_pays)} paid by the distributor, against our price of {money(ours)}"
              + ("." if closes else ": they do not match, so fix the price or the terms before the meeting.")
-             + f" Our cost to make one {U} is {money(piece)}, so each one leaves {money(ours - piece)} before tooling; the {money(tooling, False)} of tooling takes "
-             + (f"{tooling / (ours - piece):,.0f} {US} to pay back." if ours > piece else "forever to pay back at this price.")
+             + (f" Our cost to make one {U} is {money(piece)}, so each one leaves {money(ours - piece)} before tooling; the {money(tooling, False)} of tooling takes "
+                + (f"{tooling / (ours - piece):,.0f} {US} to pay back." if ours > piece else "forever to pay back at this price.") if HAS_PRODUCT else
+                f" Each {U} costs us {money(piece)}, so each one leaves {money(ours - piece)} toward the fixed costs.")
              + " Do not agree to a lower price in the room.</p>")
     pages.append(prep_sheet(f"<h2>What others have said so far</h2>{table(['Date', 'Who', 'Said', 'Did or would pay'], ev, 'compact')}" if ev else "", check))
 
@@ -329,19 +344,19 @@ if KIND == "lender":
 <div class="stats">{stat('Amount', money(amount, False))}{stat('Term', f'{n} months')}{stat('Estimated payment', money(payment, False), f"at {num(M.get('rate_pct')):.1f}% (illustrative)")}{stat("Owner's money in", money(owner_spent, False), f'plus {money(owner_funds, False)} committed')}</div>
 <h2>What it pays for</h2>{table(['Use', 'Amount', 'Basis'], uses, 'num2')}
 <h2>Collateral and guarantee</h2>{table(['', ''], [['Collateral', esc(M.get('collateral'))], ['Personal guarantee', esc(M.get('personal_guarantee'))]], 'kv')}
-<h2>What fits this stage</h2><p>A pre-revenue company rarely gets a bank loan of this size. What fits now: own money and grants through the quotes and the buyer tests; then an SBA microloan through a local intermediary (up to $50,000) or a community lender, once the mold quotes close the numbers and a distributor has said what it would buy.</p>""", "Page 1"))
+<h2>What fits this stage</h2><p>{esc(M.get('stage_fit')) if M.get('stage_fit') else ('A pre-revenue company rarely gets a bank loan of this size. What fits now: own money and grants through the quotes and the buyer tests; then an SBA microloan through a local intermediary (up to $50,000) or a community lender, once the mold quotes close the numbers and a distributor has said what it would buy.' if HAS_PRODUCT else 'A business without sales yet rarely gets a bank loan. What fits now: own money, and grants where the business qualifies; then an SBA microloan through a local intermediary (up to $50,000) or a community lender, once sales show the payment can be made.')}</p>""", "Page 1"))
     pages.append(page("Cash-flow projection", f"""
-<p>Month by month, starting with {money(owner_funds, False)} of the owner's money. Sales are at {money(price)} a {U}; the cost of each {U} sold is {money(piece)} (the cost sheet). Every row's assumption is in its note.</p>
-{table(['Month', US.capitalize() + ' sold', 'Sales', 'Cost of goods', 'Tooling and other', 'Owner and loan in', 'Loan payment', 'Cash at month end'], proj, 'compact num')}
+<p>Month by month, starting with {money(owner_funds, False)} of the owner's money. Sales are at {money(price)} a {U}; the cost of each {U} sold is {money(piece)} ({COST_SRC}). Every row's assumption is in its note.</p>
+{table(['Month', US.capitalize() + ' sold', 'Sales', 'Cost of goods', 'Tooling and other' if HAS_PRODUCT else 'Other spending', 'Owner and loan in', 'Loan payment', 'Cash at month end'], proj, 'compact num')}
 <h2>Assumptions</h2><ul class="levers small">{''.join(notes)}</ul>""", "Page 2"))
     cv = [[esc(m), money(o, False), money(payment, False), f"{c:.2f}"] for m, o, c in cover]
     pages.append(page("Repayment check", f"""
 <p>Cash the business makes each month before the loan payment, against the estimated payment of {money(payment, False)} ({n} months at {num(M.get('rate_pct')):.1f}%, illustrative). Coverage is the first divided by the second; lenders usually want at least 1.25.</p>
 {table(['Month', 'Cash before debt', 'Payment', 'Coverage'], cv, 'num')}
-<p><strong>Average coverage: {avg_cover:.2f}.</strong> {'' if repays else 'What would change it: a lower mold cost (the quotes due ' + fdate(first(funding, 'milestone:Base mold quote in hand')) + '), a higher price, more volume, or a smaller loan.'}</p>""", "Page 3"))
+<p><strong>Average coverage: {avg_cover:.2f}.</strong> {'' if repays else ('What would change it: a lower mold cost (the quotes due ' + fdate(first(funding, 'milestone:Base mold quote in hand')) + '), a higher price, more volume, or a smaller loan.' if HAS_PRODUCT and first(funding, 'milestone:Base mold quote in hand') else 'What would change it: more sales, a higher price, lower monthly costs, or a smaller loan.')}</p>""", "Page 3"))
     hb = [[esc(b["id"]), esc(b["risk"]), esc(b["mitigation"])] for b in brisks if int(b["likelihood"]) * int(b["impact"]) >= 8]
-    docs = [["Business plan", "This packet and the one-page plan"], ["Personal and business tax returns", "The inventor brings them"],
-            ["Personal financial statement", "The inventor fills it in on the lender's form"], ["Bank statements", "The inventor brings them"],
+    docs = [["Business plan", "This packet and the one-page plan"], ["Personal and business tax returns", "The owner brings them"],
+            ["Personal financial statement", "The owner fills it in on the lender's form"], ["Bank statements", "The owner brings them"],
             ["Formation papers and tax ID", "After the company is formed"], ["Collateral list", esc(M.get("collateral"))]]
     pages.append(page("Company, documents and risks", f"""
 {company_table()}
@@ -367,7 +382,19 @@ if KIND == "investor":
     uses = [[esc(r["key"][4:]), money(num(r["value"]), False), esc(r["note"])] for r in meeting if r["key"].startswith("use:")]
     use_total = sum(num(r["value"]) for r in meeting if r["key"].startswith("use:"))
     payback = f"{payback_units:,.0f} {US}" if payback_units != float("inf") else "never at this price"
-    if closes:
+    monthly_plan = annual / 12
+    be = break_even(price)
+    be_text = f"{be:,.0f} {US} a month" if be != float("inf") else "never at this price"
+    if not HAS_PRODUCT:
+        closes = monthly_plan >= be
+    if not HAS_PRODUCT and closes:
+        verdict = (f"<strong>The numbers close.</strong> At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost, "
+                   f"and {money(FIXED, False)} a month of fixed costs is covered at {be_text}, inside the plan of {monthly_plan:,.0f} a month.")
+    elif not HAS_PRODUCT:
+        verdict = (f"<strong>The numbers do not close yet.</strong> At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost; "
+                   f"covering {money(FIXED, False)} a month of fixed costs takes {be_text}, against a plan of {monthly_plan:,.0f} a month. "
+                   f"This round pays for the step that shows whether they can close: {esc(M.get('reaches'))}")
+    elif closes:
         verdict = (f"<strong>The numbers close.</strong> At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost to make, "
                    f"and the {money(tooling, False)} of tooling pays back in {payback}, inside the plan of {plan_units:,.0f}.")
     else:
@@ -384,13 +411,25 @@ if KIND == "investor":
     benefits = "".join(f"<li>{esc(r['value'])}</li>" for r in pricing.get("benefit", []))
     alts = [[esc(r["value"]), esc(r["note"])] for r in MULTI.get("alternative", [])]
     ev = [[fdate(r["date"]), esc(r["who"]), esc(r["what they said"]), esc(r["what they did or would pay"]), esc(r["strength"])] for r in evidence]
-    pages.append(page("The product and the evidence", f"""
+    pages.append(page("The product and the evidence" if HAS_PRODUCT else "The business and the evidence", f"""
 <h2>Who it's for</h2><p>{esc(first(pricing, 'who_for'))}</p>
 <h2>Why it sells</h2><ul class="levers">{benefits}</ul>
 <h2>What people use now</h2>{table(['Alternative', 'Where this one is different'], alts, 'compact')}
 <h2>What people have said and done so far</h2>{table(['Date', 'Who', 'Said', 'Did or would pay', 'Strength'], ev, 'compact')}
 <h2>How big it could be</h2><p>{esc(M.get('market', 'Not estimated yet. A market size goes here only with its source.'))}</p>""", "Page 2"))
-    econ = [[f"Price to {first(funding, 'buyer', 'the buyer')}", money(price), esc(first(funding, 'price_note'))],
+    if not HAS_PRODUCT:
+        econ = [[f"Price of one {U}", money(price), esc(first(funding, 'price_note'))],
+                [f"Cost of one {U}", money(piece), "Business plan: what each sale costs to deliver"],
+                [f"Clears per {U}", money(clears), f"{margin_pct:.0f}% of the price"],
+                ["Fixed costs a month", money(FIXED, False), "Business plan: rent, software, insurance, pay"],
+                ["Break-even", be_text, "Fixed costs divided by what each sale clears"],
+                ["Plan", f"{monthly_plan:,.0f} {US} a month", f"{annual:,.0f} a year"]]
+        levers = (f"<li><strong>Price:</strong> each $1 more a {U} lowers break-even.</li>"
+                  f"<li><strong>Cost:</strong> what each {U} costs to deliver, {money(piece)} today.</li>"
+                  f"<li><strong>Fixed costs:</strong> {money(FIXED, False)} a month today.</li>")
+    else:
+        econ = None
+    econ = econ or [[f"Price to {first(funding, 'buyer', 'the buyer')}", money(price), esc(first(funding, 'price_note'))],
             [f"Cost to make one {U}", money(piece), "Cost sheet: material plus process, all parts"],
             [f"Clears per {U}", money(clears), f"{margin_pct:.0f}% of the price"],
             ["Tooling (molds)", money(tooling, False), "Cost sheet; placeholders until the quotes arrive"],
@@ -399,10 +438,8 @@ if KIND == "investor":
     pages.append(page("The numbers", f"""
 {table(['', '', 'Basis'], econ, 'num2')}
 <h2>What would change it</h2><ul class="levers">
-<li><strong>Price:</strong> {money(price_to_close)} a {U} pays back today's tooling over the plan volume.</li>
-<li><strong>Tooling:</strong> at today's price, the plan volume pays back {money(carry, False)} of tooling.</li>
-<li><strong>Volume:</strong> at today's price and tooling, {payback}.</li></ul>
-<p class="small">Every figure is computed from the cost sheet and the funding sheet; none is typed in. Values marked illustrative are not quotes.</p>""", "Page 3"))
+{levers if not HAS_PRODUCT else f"<li><strong>Price:</strong> {money(price_to_close)} a {U} pays back today's tooling over the plan volume.</li><li><strong>Tooling:</strong> at today's price, the plan volume pays back {money(carry, False)} of tooling.</li><li><strong>Volume:</strong> at today's price and tooling, {payback}.</li>"}</ul>
+<p class="small">Every figure is computed from {COST_SRC} and the funding sheet; none is typed in. Values marked illustrative are not quotes.</p>""", "Page 3"))
     ms = [[fdate(r["value"]), esc(r["key"][10:]), esc(r["note"])] for r in sorted((r for k, v in funding.items() if k.startswith("milestone:") for r in v), key=lambda r: r["value"])]
     br = sorted(brisks, key=lambda b: -int(b["likelihood"]) * int(b["impact"]))
     lvl = lambda b: "high" if int(b["likelihood"]) * int(b["impact"]) >= 15 else "medium" if int(b["likelihood"]) * int(b["impact"]) >= 8 else "low"
@@ -420,9 +457,9 @@ if KIND == "investor":
 {table(['', ''], terms, 'kv') if terms else ''}
 <h2>How an investor gets money back</h2><p>{esc(M.get('exit'))}</p>
 <h2>Before anyone invests</h2><ul class="levers">
-<li>This is an early, high-risk investment in a product that is not made yet. It can fail, and the money can be lost. Invest only money you can afford to lose.</li>
+<li>This is an early, high-risk investment in {'a product that is not made yet' if HAS_PRODUCT else 'a young business'}. It can fail, and the money can be lost. Invest only money you can afford to lose.</li>
 <li>A share of the company, a note or a SAFE is a security. Under federal and state law, every offer and sale of securities, even to one person, including family and friends, has to be registered or fall under an exemption. The terms are set with an attorney before any money changes hands.</li>
-<li>Nothing here is a promise of a return. The numbers are the inventor's plan, built from the sheets named on each page.</li></ul>
+<li>Nothing here is a promise of a return. The numbers are the owner's plan, built from the sheets named on each page.</li></ul>
 <h2>The company</h2>{investor_company()}""", "Page 5"))
     pages.append(prep_sheet(top=f"<p class='small'>Owner's money already in: {money(owner_spent, False)} spent, {money(owner_funds, False)} committed. Investors ask this first.</p>"))
 
@@ -577,7 +614,8 @@ if KIND == "licensee":
     royalty_html = ""
     if rate and net:
         per = rate * net
-        royalty_html = (f"<h2>What a royalty could mean (illustrative)</h2><p>At {rate*100:.1f}% of a net sales price of {money(net)} a {U}, each {U} pays {(f"${per:.4f}".rstrip("0") if per < 0.10 else money(per))}."
+        per_text = ("$%.4f" % per).rstrip("0") if per < 0.10 else money(per)
+        royalty_html = (f"<h2>What a royalty could mean (illustrative)</h2><p>At {rate*100:.1f}% of a net sales price of {money(net)} a {U}, each {U} pays {per_text}."
                         + (f" At {units:,.0f} {US} a year, that is {money(per * units, False)} a year." if units else "")
                         + f" {esc(M.get('royalty_note'))}</p>")
     warn = ""
@@ -684,12 +722,19 @@ if KIND == "partner":
     upcoming = [r for r in ms if r["value"] >= M.get("date", "")][:4]
     verdict = (f"At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost to make, and the {money(tooling, False)} of tooling "
                + (f"pays back within the plan of {plan_units:,.0f} {US}." if closes else f"would take {payback_units:,.0f} {US} to pay back, against a plan of {plan_units:,.0f}. The numbers do not close yet; that is the work in front of the project."))
+    if not HAS_PRODUCT:
+        be = break_even(price)
+        closes = annual / 12 >= be
+        verdict = (f"At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost, and {money(FIXED, False)} a month of fixed costs "
+                   + (f"is covered at {be:,.0f} {US} a month, inside the plan of {annual / 12:,.0f}." if closes else
+                      f"needs {be:,.0f} {US} a month to cover, against a plan of {annual / 12:,.0f}. The numbers do not close yet; that is the work in front of the business." if be != float("inf") else
+                      "cannot be covered at this price. The numbers do not close yet; that is the work in front of the business."))
     pages.append(page("The project in brief", f"""
 <p class="lede-big">{esc(first(pricing, 'headline') or PRODUCT)}</p>
 <h2>Who it's for</h2><p>{esc(first(pricing, 'who_for'))}</p>
 <h2>Where it stands</h2><p>{esc(M.get('development'))}</p>
 <h2>The numbers, honestly</h2><div class="verdict {'ok' if closes else 'warn'}">{verdict}</div>
-<div class="stats">{stat("Owner's money in", money(owner_spent, False), f'plus {money(owner_funds, False)} committed')}{stat(f'Clears per {U}', money(clears))}{stat('Tooling', money(tooling, False), 'placeholders until quoted')}{stat('Sales so far', esc(M.get('sales', 'None yet')))}</div>
+<div class="stats">{stat("Owner's money in", money(owner_spent, False), f'plus {money(owner_funds, False)} committed')}{stat(f'Clears per {U}', money(clears))}{stat('Tooling', money(tooling, False), 'placeholders until quoted') if HAS_PRODUCT else stat('Fixed costs a month', money(FIXED, False))}{stat('Sales so far', esc(M.get('sales', 'None yet')))}</div>
 <h2>Coming up</h2>{table(['By', 'Milestone'], [[fdate(r['value']), esc(r['key'][10:])] for r in upcoming], 'compact')}""", "Page 1"))
     unowned = [r for r in actions if r.get("Status") in ("open", "waiting") and not (r.get("Who") or "").strip()]
     needs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("need", [])]
