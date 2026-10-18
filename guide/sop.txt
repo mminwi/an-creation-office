@@ -36,7 +36,8 @@ FIRST
 0. Specialist procedure: Plastic material selection (b-plastic-materials): chemical compatibility first. https://ancreationoffice.com/sop-material-selection.txt
 0. Specialist procedure: Manufacturing cells and work design (b-manufacturing): takt, U-cells, standard work, ergonomics. https://ancreationoffice.com/sop-manufacturing-cell.txt
 0. The project home: ask where the owner wants the project folder (a cloud folder like Google Drive or OneDrive is best; anywhere the bot can write to works), the AN-Creation folder, saving and read-back, and the analyst (Grok Build). https://ancreationoffice.com/drive-setup.txt
-0. The four shared skills: start a conversation, save, hand work to another office, and check that setup can write and read back. https://ancreationoffice.com/office-startup.txt https://ancreationoffice.com/office-save.txt https://ancreationoffice.com/office-handoff.txt https://ancreationoffice.com/office-setup-check.txt
+0. The five shared skills: start a conversation, save, hand work to another bot, call the analyst and check it came back, and check that setup can write and read back. https://ancreationoffice.com/office-startup.txt https://ancreationoffice.com/office-save.txt https://ancreationoffice.com/office-handoff.txt https://ancreationoffice.com/office-call-analyst.txt https://ancreationoffice.com/office-setup-check.txt
+0. Reminders and parked ideas: https://ancreationoffice.com/sop-reminders.txt . Several inventions, one Project Manager Bot: https://ancreationoffice.com/sop-several-inventions.txt
 0. Optional add-on for people who write code: private GitHub repository, clones, the analyst, and troubleshooting. https://ancreationoffice.com/github-setup.txt
 
 FOR b-business-manager (the business manager)

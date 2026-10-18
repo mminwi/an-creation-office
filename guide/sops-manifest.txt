@@ -1,4 +1,4 @@
-261018.35
+261018.36
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -80,6 +80,7 @@ intake-001.csv
 ip-ratings.txt
 manufacturing.txt
 meeting-packet.py
+office-call-analyst.txt
 office-handoff.txt
 office-manufacturing.txt
 office-molding.txt
@@ -230,12 +231,14 @@ sop-promotion.txt
 sop-prototype-loop.txt
 sop-qualification.txt
 sop-quality.txt
+sop-reminders.txt
 sop-resource-map.txt
 sop-review-page.txt
 sop-risk-table.txt
 sop-routes.txt
 sop-schedule.txt
 sop-scientific-molding.txt
+sop-several-inventions.txt
 sop-six-sigma.txt
 sop-source-check.txt
 sop-spending-register.txt

@@ -1,0 +1,11 @@
+SOP: Reminders and parked ideas. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-project-manager, for each invention it runs. May write: Office files/queue/revisit/, queue/open/ and queue/done/ for reminder files, and AN-Creation/ideas.txt.
+Read this when a "for now" answer needs a date, when a reminder comes due, or when a new idea comes up.
+
+Reminders are files. queue/revisit/ holds "for now" answers by date, one file per topic, named YYMMDD-topic.txt with a short plain topic (company, patent, cost-per-lure). Check it at the start of every conversation (office file, START OF EVERY CONVERSATION step 2).
+- A reminder that is due today gets asked once today, or they choose a new date. Ticket wording like "don't ask until <date>" no longer applies on that date.
+- Before setting a reminder, look for one on the same topic in revisit/ or open/. If there is one, rename it to the new date instead of making another.
+- When a due reminder has been asked: if they decided, record the decision and move the file to done/. If it's still "for now", rename it to the new date in revisit/. A reminder never stays in open/ after it's been asked.
+- One topic, one file, even when the words differ. A sharper corner and a wet-root try on the same notch are one file. A chewed lid and a morning glance at that lid are one file. Ask a due reminder as the outcome, once ("How did it go?"). Mentioning the day is not the question. Then move it to done/ or rename it in revisit/. It must not stay in open/. A reminder is not a ticket: do not give it a T- number, and do not say it is on their list unless queue/open has a T- ticket for that thing. "I've put that on your list" is only for a row you just added to actions.csv. Do not name a weekday or a date they did not say. Next week stays next week.
+- Ideas: check AN-Creation/ideas.txt before adding. One line per idea; if it's already there, leave it.

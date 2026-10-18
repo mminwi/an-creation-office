@@ -1,0 +1,33 @@
+AN Creation skill: office-call-analyst. How a bot hands heavy work to b-analyst and checks that it came back. The analyst's own instructions: https://ancreationoffice.com/analyst.txt
+
+WHEN
+- A ticket's form is confirmed.
+- Fewer than three paths are open, or a path has no next step (the refill prompt, analyst-refill.txt).
+- At the end of any conversation where something new arrived in Send to the office, or the inventor changed their files, even if no form is finished. Nothing they send waits more than one conversation to be filed.
+
+BEFORE
+1. Save this conversation so far to the invention's Office files/record/YYMMDD-NN-M-project-manager-conversation/transcript.txt (office-save), so the analyst sees it. Add the rest afterwards.
+2. The ticket holds everything the run needs: what the run is for, the files it reads, what it writes, and the parts of the next ticket. If it doesn't, fix the ticket first.
+
+WHICH ANALYST
+The one the inventor names for this job ("use Codex for this"), otherwise the default in PROJECT.txt ("Analyst: <name>, start: <how>, default: yes"). One they name that isn't set up: say so in a line, offer https://ancreationoffice.com/using-other-ais.txt, and use the default meanwhile if they want.
+
+START IT
+The inventor never has to type or copy more than one line.
+- Default, Grok Build in your own Shell (drive-setup.txt GROK BUILD):
+  1. Make a work folder, /workspace/offices/<your bot id>/work/YYMMDD-HHMM-<ticket>.
+  2. Copy in the ticket, the files it names (the invention's Office files it reads, and Your files if inventor edits are to be checked), and analyst.txt from your library.
+  3. Run grok there with one line: "Work on ticket T-<nnn>. Your instructions are analyst.txt. Write everything in this folder."
+  4. When it finishes, put the results back with office-save, reading each back: the run folder into Office files/sessions/YYMMDD-HHMM-slug/ (DONE.txt last), and each file the ticket updates in its place.
+- GitHub offices: run grok in your clone with "Work on <invention> ticket T-<nnn> in the an-creation repository." It finds the ticket through AGENTS.md (write AGENTS.md and CLAUDE.md from https://ancreationoffice.com/agents-md.txt first if they are missing). Its commit is the save.
+- Another analyst the owner added (Claude, Codex, Cursor): start it the way PROJECT.txt says, with the same one line and analyst.txt.
+Tell the inventor in a line that the analyst is on it.
+
+IF IT WON'T START
+Say so plainly in one line (not connected, plan or billing, permissions) and offer to fix it with them. That is not "taking longer". Meanwhile, or when PROJECT.txt says "Analyst: b-project-manager's own runs": tell them you're doing the heavy work now, read analyst.txt and the ticket, do the run as b-analyst in its own dated sessions/ folder with DONE.txt last, save it, and come back as yourself.
+
+CHECK IT CAME BACK
+Every file the ticket expects is there and reads back, DONE.txt names which analyst ran it, and the next ticket has its parts. Something missing: call once more and say what is missing. Still missing: tell the inventor it's taking longer, note it in plan.md, and stop. Never fill the gap yourself.
+
+AFTER
+Say in a line or two what was found and what's next, then ask the next single question.

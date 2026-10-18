@@ -1,4 +1,4 @@
-SOP: Set up b-project-manager and b-analyst. Revision 16 — October 18, 2026.
+SOP: Set up b-project-manager and b-analyst. Revision 17 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Read this when b-project-manager is missing, a new invention is starting, or the project folder is not recorded. Then leave it.
 
@@ -35,8 +35,8 @@ Default: the grok command in your Shell, in a work folder (drive-setup.txt GROK 
 GitHub offices only: write AGENTS.md and CLAUDE.md at the top of the repository from https://ancreationoffice.com/agents-md.txt (word for word) and commit them: that is how any analyst, Grok Build included, finds its ticket when the inventor only says "work on ticket 8".
 Other AIs (Cursor, Claude Code, Codex): never offered at setup. Only if they ask: yes, it works; https://ancreationoffice.com/using-other-ais.txt ; set it up with them (github-setup.txt, PART 3) only if they want.
 Record in PROJECT.txt, one line each: "Analyst: <name>, start: <how>, default: yes/no". Grok Build is the default unless they pick another.
-How you start it: grok in the work folder with the ticket file copied in, and one line ("Work on ticket T-008"). On GitHub: grok in your clone ("Work on ticket T-008 in the an-creation repository"). claude or codex only when they ask, the same way. Do not set up a paid cloud agent during setup.
-If no analyst works yet (plan, billing, or permissions), don't stall: record "Analyst: b-project-manager's own runs" and do the runs yourself (standing.txt, CALL THE ANALYST) until it's fixed.
+How you start it, every time: the office-call-analyst skill (https://ancreationoffice.com/office-call-analyst.txt): grok in a work folder with the ticket, its files and analyst.txt copied in, and one line ("Work on ticket T-008"), then the results saved back. On GitHub: grok in your clone ("Work on ticket T-008 in the an-creation repository"). claude or codex only when they ask, the same way. Do not set up a paid cloud agent during setup.
+If no analyst works yet (plan, billing, or permissions), don't stall: record "Analyst: b-project-manager's own runs" and do the runs yourself (office-call-analyst.txt IF IT WON'T START) until it's fixed.
 The only procedures in the project folder are in AN-Creation/sops/: one file per installed version, each bot on its own version until the owner tells that bot to update (version.txt UPDATING). Never write procedures, prompts or b-project-manager's behavior anywhere else in the folder; the rest of it holds only the project. Two more exceptions: on GitHub, AGENTS.md and CLAUDE.md at the top of the repository, written word for word from https://ancreationoffice.com/agents-md.txt during setup, so any analyst can find its ticket from one line. And templates: a form or plan copied in to be filled out becomes a project file. Note the date it was copied, save it, and never copy a newer template over it. A newer template is used for the next new form.
 
 FIRST QUESTIONS AT SETUP

@@ -1,4 +1,4 @@
-SOP: Move an older project folder to the business layout. Revision 1 — October 18, 2026.
+SOP: Move an older project folder to the business layout. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Read this once, when office-startup finds the older layout: an AN-Creation/office.txt at the top, or invention folders, correspondence/, correspondence.csv or All inventions at the top of AN-Creation/. The layout it moves to: https://ancreationoffice.com/project-folders.txt
 Done by: the Project Manager Bot b-project-manager (an Office Manager Bot that finds it first hands it over through office-handoff and works with the folders where they are meanwhile). May write: the folders and files named below, one line in each moved invention's decision-log.csv, one line in Default-org/business-decision-log.csv.
@@ -25,3 +25,6 @@ OLD POINTERS
 Records are never edited, so older records, meeting files and INDEX.csv lines still say AN-Creation/correspondence/..., AN-Creation/<invention>/... or ../../Business/funding/.... Read them as the same folders under AN-Creation/Default-org/ (AN-Creation/Business/... is AN-Creation/Default-org/...). meeting-packet.py finds the moved folders on its own. Nothing is rewritten to change a path.
 
 The Office Manager Bot, after the move: its folder is now AN-Creation/Default-org/, with its office.txt and everything else inside, unchanged. It reads the new paths at its next conversation; send it a hand-off line saying the folder was renamed.
+
+OLDER NAMES (once, no need to ask)
+If an invention still has a "Soren's files" folder, rename it to "Office files", and "Your files/Send to Soren" to "Your files/Send to the office"; if AN-Creation/Business or AN-Creation/Default-org still has any of for-project-manager.txt, for-business-manager.txt, for-soren.txt or for-kasper.txt, move every line into the matching inbox (for-project-manager and for-soren into AN-Creation/handoffs/for-b-project-manager.txt; for-business-manager and for-kasper into AN-Creation/handoffs/for-b-business-manager.txt), ending each moved line with "| open" unless it is already on a plan, then delete the old file (https://ancreationoffice.com/sop-team.txt HAND-OFFS); if AN-Creation/team.csv is missing, write it from https://ancreationoffice.com/template-team.csv with the name you go by now covering every role. One commit, no message to the inventor beyond one line saying the office was tidied.

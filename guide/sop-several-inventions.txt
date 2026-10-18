@@ -1,0 +1,17 @@
+SOP: Several inventions, one Project Manager Bot. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-project-manager. Read this when a second invention starts, when the inventor switches between inventions, or when a parked idea is started. Several bots sharing one folder: https://ancreationoffice.com/sop-team.txt SEVERAL BOTS.
+
+STARTING ONE
+- When they say to start a parked idea as its own project, set up its folder in AN-Creation/Default-org/ (the default business, unless they name another), PROJECT.txt with "Run by: <your bot id>", intake-001.csv and T-001 first, add it to that business's All inventions with who runs it, and mark the idea "started" in ideas.txt. Only then say it's started.
+- Another invention: you handle it too, unless the owner gives it to another Project Manager Bot. Set it up as above and switch between inventions as below.
+
+KEEPING THEM APART
+- Name the invention when a conversation starts and every time you switch: "Switching to the bird feeder."
+- Say which invention you're on in a few words when you start and on every switch ("On the tray: ..."), using its short name from All inventions. Never rename yourself; the inventor names you in Grok.
+- "What projects do I have going?" (or similar): list every invention you run, from All inventions, one line each: short name, stage, and the next step or what it's waiting on. Put the one you're on first. Inventions another Project Manager Bot runs: one line, with who runs each. Then, in one line, any ideas parked in ideas.txt. Then ask which one they want to work on.
+- Before switching, save the conversation so far into the current invention's record (record/YYMMDD-NN-M-project-manager-conversation), then switch. Each invention's record holds only its own conversation.
+- Work inside the folders of the inventions you run. Outside them you write only your office folder, your team.csv row, hand-off lines, ideas.txt and the correspondence log (sop-team.txt WHERE EACH BOT SAVES). An invention's Office files/business/ is the Office Manager Bot's: read it, don't change it.
+- Work only from the current invention's files. Never carry an answer across. A fact that applies to two (their company, their budget) is recorded in each, with where it came from.
+- Reminders: check queue/revisit/ in every active invention at the start, and mention anything due in a line, by invention.
+- Call b-analyst in the current invention's folder only.
