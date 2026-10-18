@@ -1,4 +1,4 @@
-AN Creation: Project folder setup (Google Drive, OneDrive, or wherever the owner wants it). Revision 2 — October 18, 2026.
+AN Creation: Project folder setup (Google Drive, OneDrive, or wherever the owner wants it). Revision 4 — October 18, 2026.
 Read this at setup, and whenever saving isn't working. Then leave it. The project folder goes where the owner wants it. A cloud folder is the recommendation, but it can run anywhere the bot can write to and read back. GitHub is an optional add-on for offices or people who write code (https://ancreationoffice.com/github-setup.txt). The steps for starting, saving and handing off are the skills office-startup, office-save and office-handoff. After setup, run office-setup-check.
 
 WHERE IT LIVES (ask first)
@@ -13,17 +13,22 @@ WORDS, ONCE
 The project folder is one folder named AN-Creation, in the home the owner chose (Google Drive in the steps below). A saved checkpoint is a file written to that folder and read back. Never ask for or type a password; the owner signs in themselves.
 
 ONE STEP AT A TIME (with the owner)
-1. Connect Google Drive. If you don't have the Google Drive connector yet, set it up yourself and give the owner the sign-in link; they sign in with their own Google account. Then ask: "Done?" Check it worked: search Drive for anything (for example the title AN-Creation). If the search fails, the connector isn't on yet; ask them to try again.
-2. Look first. Search Drive for a folder titled AN-Creation that the owner owns. If there is one, use it: never make a second. A re-made office carries on from its files.
-3. If there is none, create it: a folder titled AN-Creation in My Drive. Inside it, create the same layout every office uses (https://ancreationoffice.com/project-folders.txt):
-   team.csv (from https://ancreationoffice.com/template-team.csv)
-   handoffs/ with for-<your role>.txt
-   sops/ with library.txt and VERSION
-   your office folder (for example Plastic Design/) with office.txt, plan.md, actions.csv, record/
-4. Library. Download https://ancreationoffice.com/library.txt to your own working copy (/workspace/offices/<your role>/sops/library.txt) and upload it to AN-Creation/sops/ with your file-upload tool. Write VERSION beside it: "Library version: <line 1 of library.txt>" and "Updates: only when the owner asks". The file is about 2 MB, so always read it from your working copy, one section at a time.
-5. Prove a save: create AN-Creation/<your office>/record/setup-check.txt with today's date, read it back, and check it matches. Then move it to the trash. A connected app is not proof; the read-back is.
-6. Write it down. In your office.txt: the Home line ("Home: Google Drive AN-Creation", "Home: OneDrive AN-Creation", "Home: Folder P:\AN-Creation"), the folder IDs or paths you use most (AN-Creation, handoffs, sops, your office folder), "Office version seen" (the Office version from version.txt, format YYMMDD.N), and "Last saved" (written by office-save only after a read-back). Add your row to team.csv.
-7. Run office-setup-check and tell the owner pass or fail.
+Your office folder: b-project-manager uses AN-Creation/ itself; b-business-manager uses AN-Creation/Business/; an older plant office uses its own folder (for example AN-Creation/Quality/).
+1. Connect Google Drive. If you can connect it yourself, do, and give the owner the sign-in link; they sign in with their own Google account. If you can't, ask the owner to turn on the Google Drive connector for you in their Grok settings and sign in. Then ask: "Done?" Check it worked: search Drive for anything (for example the title AN-Creation). If the search fails, the connector isn't on yet; try again together.
+2. Look first. Search Drive for a folder titled AN-Creation that the owner owns. If there is one, use it: never make a second. A re-made office carries on from its files; the second bot follows JOINING AN EXISTING FOLDER below.
+3. If there is none, create it: a folder titled AN-Creation in My Drive, with this inside (the full layout: https://ancreationoffice.com/project-folders.txt):
+   office.txt, ideas.txt, All inventions, team.csv (from https://ancreationoffice.com/template-team.csv), handoffs/ with for-<your role>.txt, sops/, correspondence/ and correspondence.csv. Each invention gets its own folder when it starts.
+4. Library. The procedures go in AN-Creation/sops/: library-<version>.txt (about 3 MB; the version is its line 1), the same file as library.txt, and VERSION beside them ("Newest version in this folder: <version>" and "Updates: only when the owner asks, one bot at a time"). Every version installed later is kept beside it, never written over. If you have a Shell: download https://ancreationoffice.com/library.txt to your working copy (/workspace/offices/<your role>/sops/library.txt) and upload it to AN-Creation/sops/ with your file tool. If you can't download or upload a file that size, ask the owner to save https://ancreationoffice.com/library.txt into AN-Creation/sops/ from a computer, or carry on reading the procedure pages from the website and say so once; do the library when you can. Always read it from your working copy, one section at a time.
+5. Write it down. In your office.txt: the Home line ("Home: Google Drive AN-Creation", "Home: OneDrive AN-Creation", "Home: Folder P:\AN-Creation"), the folder IDs or paths you use most (AN-Creation, handoffs, sops, your office folder), "Office version seen" (line 1 of library.txt, format YYMMDD.N), and "Last saved" (written by office-save only after a read-back). Add your row to team.csv.
+6. Run office-setup-check and tell the owner pass or fail. That is the one save test; don't run another.
+
+JOINING AN EXISTING FOLDER (the second bot, or a re-made bot)
+The project folder is already there; never make a second.
+1. Connect to the same place (step 1 above, or the service named on the Home line of AN-Creation/office.txt).
+2. Find AN-Creation and read AN-Creation/office.txt and team.csv.
+3. Make your office folder if it isn't there (b-business-manager: AN-Creation/Business/) with your office.txt, and your inbox AN-Creation/handoffs/for-<your role>.txt.
+4. Copy the newest library-<version>.txt from AN-Creation/sops/ to your working copy (step 4 above); that version is yours from now on. Don't download another one from the website.
+5. Write your office.txt (step 5), add your row to team.csv, run office-setup-check.
 
 SAVING ON DRIVE (the rule office-save carries out; the same on OneDrive or any other cloud folder, and on a plain folder with paths in place of file IDs)
 - Write in place: a working file (office.txt, plan.md, actions.csv, team.csv, a hand-off inbox, Status, Plan) keeps its name and folder. Read it fresh just before you change it, so you don't write over another office's change.

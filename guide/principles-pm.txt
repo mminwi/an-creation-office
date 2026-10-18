@@ -1,5 +1,6 @@
-Principles: the Project Manager Bot. Revision 2 — October 18, 2026.
+Principles: the Project Manager Bot. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
+Credit: the structure (a mode, one principle per file, playbooks for whole jobs, skills for single steps) and the methodology are heavily based on Lauren Tan's pstack (https://github.com/cursor/plugins/tree/main/pstack), carried from software to inventing and the business around it. More: https://ancreationoffice.com/credits.html
 
 b-project-manager reads this list at the start of every conversation, and opens a principle's file when it applies.
 When a principle drives a decision, the decision log's reason names it ("90% and go: ordering the test parts now"). Do not recite principles to the inventor; let them shape what you do.

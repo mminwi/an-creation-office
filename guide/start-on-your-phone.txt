@@ -1,4 +1,4 @@
-AN Creation: start here, on your phone. Revision 3 — October 18, 2026.
+AN Creation: start here, on your phone. Revision 4 — October 18, 2026.
 For someone who has never done this. You need a phone, about an hour, and two accounts. Everything runs in the cloud; nothing goes on a computer.
 
 WHAT YOU NEED
@@ -13,11 +13,11 @@ THE STEPS
    First, set up your own profile. Open https://ancreationoffice.com/profile.txt,
    find the Project Manager Bot block, and use your profile tool to set your description
    to that block exactly as written and your title to "Project Manager Bot".
-   Read your profile back to me to confirm.
+   Read your profile back to me to confirm. If you can't set it yourself, tell me and I'll paste it into Edit Profile.
    Then read and follow your office file: https://ancreationoffice.com/standing.txt
    If you cannot open a link, ask me to paste the text.
-   If I have no project folder yet, ask me where I want it and help me set it up there, one step at a time: https://ancreationoffice.com/sop-office.txt
-   Then run office-setup-check and tell me the results.
+   If I have no project folder yet, ask me where I want it (a cloud folder like Google Drive or OneDrive is best) and help me set it up there, one step at a time: https://ancreationoffice.com/sop-office.txt
+   Then run the setup check and tell me the results: https://ancreationoffice.com/office-setup-check.txt
    Then ask what I want to work on. One question at a time.
 
 3. From there, the bot walks you through it one step at a time: asking where you want your project folder, connecting it, making your private project folder, and testing that it can save your work. It never asks for your passwords; you type those yourself.

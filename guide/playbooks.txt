@@ -1,5 +1,6 @@
-Playbooks: the Project Manager Bot. Revision 2 — October 18, 2026.
+Playbooks: the Project Manager Bot. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
+Credit: the structure (a mode, one principle per file, playbooks for whole jobs, skills for single steps) and the methodology are heavily based on Lauren Tan's pstack (https://github.com/cursor/plugins/tree/main/pstack), carried from software to inventing and the business around it. More: https://ancreationoffice.com/credits.html
 
 A playbook strings procedures together into one job that comes up again and again: when it runs, what done looks like, the principles that drive it, the steps with who does each and which procedure each uses, the inventor's decisions, what to do when it goes wrong, and what it leaves in the record. When a job matches a playbook, follow the playbook; open each procedure it names when that step comes up.
 

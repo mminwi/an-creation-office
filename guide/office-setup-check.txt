@@ -1,6 +1,8 @@
-AN Creation skill: office-setup-check. Run once after https://ancreationoffice.com/drive-setup.txt, and report pass or fail in one line.
+AN Creation skill: office-setup-check. Run once after setup (https://ancreationoffice.com/drive-setup.txt), and report pass or fail in one line. It is the one save test at setup.
 
-1. Create AN-Creation/<your office>/record/setup-check.txt with today's date.
+Your office folder: b-project-manager uses AN-Creation/ itself; b-business-manager uses AN-Creation/Business/; an older plant office uses its own folder.
+
+1. Create setup-check.txt in your office folder with today's date.
 2. Read it back. Pass only if the text matches. A connected app is not proof.
 3. Move that file to the trash.
 4. Fail if the write, the read-back, or the trash step does not work. Say which step failed, in one line.

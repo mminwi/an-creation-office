@@ -2,7 +2,8 @@ key,value,note
 type,buyer,"buyer, manufacturer, lender, investor, accountant, patent, licensee, insurance, attorney or partner"
 who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
 date,2026-10-28,YYYY-MM-DD
-record,../../funding/<invention>,Folder with the sheets; relative to this meeting folder
+record,../../Business/funding/<invention>,"Folders with the sheets, relative to this meeting folder (AN-Creation/correspondence/<slug>/): the funding folder"
+record,../../<invention>/Office files,"and the invention's Office files (cost sheet, risk table, actions, schedule); one row each"
 goal,What the inventor wants out of the meeting,
 ask,What we ask them for,One row per ask
 walk_away,The line we will not cross in the room,principle-walk-away-number.txt

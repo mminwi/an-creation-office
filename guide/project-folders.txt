@@ -1,4 +1,4 @@
-AN Creation project folders. Revision 14 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
+AN Creation project folders. Revision 16 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
 
 One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything, with one folder per invention inside it. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
 
@@ -12,17 +12,17 @@ AN-Creation/
   correspondence/               the correspondence log, one for the company: a folder per email, file sent, meeting or call, YYMMDD-NN-X-slug (sop-correspondence.txt)
   correspondence.csv            its index, a row per folder
   handoffs/                     one inbox per office, for-<role>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
-  sops/                         the bot's procedure library: library.txt (one file, about 2 MB) and VERSION (Library version). It is updated only when the owner asks a bot to update (version.txt UPDATING): one download of library.txt, saved over the old one. Read one section by its marker. Keep this folder once, shared, not copied into an office folder (https://ancreationoffice.com/version.txt)
+  sops/                         the procedure library: one file per installed version, library-<version>.txt (about 3 MB each, never written over), library.txt (a copy of the newest) and VERSION. Each bot works from the version its office.txt names and moves only when the owner tells that bot to update (https://ancreationoffice.com/version.txt UPDATING). Keep this folder once, shared, not copied into an office folder
   Fishing Lure/                 one folder per invention
     Your files/                 yours to open, read and change
       READ ME FIRST
       Status                    one page: where it stands, this week, decisions, money, documents, what's coming
       To-do                     three or four paths with a next step on each; you pick
-      Project record/           readable copies of the seven required documents: charter, decisions, actions, cost sheet, spending, risks, change notices (sop-project-record.txt)
+      Project record/           readable copies of the seven required documents: charter and schedule, decisions, actions, cost sheet, spending, risks, change notices (sop-project-record.txt)
       Action log                who owes what: your actions and what you're waiting on from others (also on your review page as Your list)
       Plan                      where it stands, decisions, what's next
       Forms/                    filled forms
-      Record/                   dated history: emails, documents, meeting summaries
+      Record/                   readable copies of the conversations with the bots; emails, files sent and meeting notes are in AN-Creation/correspondence/
       Product/  CAD/  Business/  Company/
       Send to the office/            drop anything here: emails, quotes, photos, notes
       Review/                   web pages for this invention: index.html lists every page, picture and document ever shown; one dated folder per page, never changed
@@ -34,11 +34,12 @@ AN-Creation/
       risk-table.csv            how it could fail, scored down to the residual (sop-risk-table.txt)
       decision-log.csv          everyday calls, dated, with the reason (sop-decision-log.txt)
       project-charter.txt       scope, success criteria, milestones, budget; changed only by ECN (sop-project-charter.txt)
+      schedule.csv  schedule.html   the charter's dates, forecasts and slips, and the critical path (sop-schedule.txt)
       spending.csv              what the project has spent, and whose money (sop-spending-register.txt)
       ecn-log.csv  ecn/         engineering change notices (sop-change-control.txt)
       forms/                    master forms: answer, context, status for every field
       queue/QUEUE.txt  open/  active/  done/  revisit/
-      record/                   YYMMDD-NN-R-slug (received), YYMMDD-NN-S-slug (sent), YYMMDD-NN-M-slug (conversation, full text); NN is its number in that day, 01, 02... Folders already named the old way (I, O) stay as they are; never rename a record.
+      record/                   the bots' conversations and items dropped in Send to the office that are not correspondence: YYMMDD-NN-R-slug (received), YYMMDD-NN-S-slug (sent), YYMMDD-NN-M-slug (conversation, full text); anything to or from someone outside the company goes in AN-Creation/correspondence/; NN is its number in that day, 01, 02... Folders already named the old way (I, O) stay as they are; never rename a record.
       record/INDEX.csv          one line per record item: date, type, summary, fields touched, status
       forms/INDEX.csv           one line per form: what it covers, status counts, last change
       mirror/                   text pulled once from each record item
@@ -46,7 +47,7 @@ AN-Creation/
       (no inventor-copy/: Drive version history, or GitHub history, shows what the inventor changed)
       archive/
 
-Only the project lives here. How b-project-manager and b-analyst work (procedures, prompts, instructions) stays on the website and is read from there every time; none of it is copied into this folder. A template copied in to be filled out (a form, the plan) is a project file from then on: dated, and never overwritten by a newer template.
+Only the project lives here, plus the procedures: sops/, one file per installed version, each bot on its own until the owner tells it to update (version.txt UPDATING). The bots read their procedures from it, not from the website. A template copied in to be filled out (a form, the plan) is a project file from then on: dated, and never overwritten by a newer template.
 
 Source of truth: Office files plan.md, forms/ and record/. Your files are produced from them, so they can be rebuilt at any time. Nothing you change or delete there is lost.
 

@@ -4,7 +4,7 @@ Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager
   python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent|licensee|insurance|attorney|partner
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
-they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
+they will ask). Its "record" rows name the folders with the sheets (relative to the meeting folder; one row each, first match wins): the copies of
 b-project-manager's sheets (cost-sheet.csv, risk-table.csv, actions.csv, spending.csv) and b-business-manager's own
 (funding.csv, company.csv, pricing-terms.csv, cash-flow.csv, business-risks.csv, market-evidence.csv).
 Writes <type>-packet.html in the meeting folder. The last page is the prep sheet, for the inventor only.
@@ -35,11 +35,17 @@ MULTI = {}
 for r in meeting:
     M.setdefault(r["key"], r["value"])
     MULTI.setdefault(r["key"], []).append(r)
-REC = (MEET / M.get("record", ".")).resolve()
+# "record" rows name the folders that hold the sheets, relative to the meeting folder; one row each
+# (in a real project: ../../Business/funding/<invention> and ../../<invention>/Office files). First match wins.
+RECS = [(MEET / r["value"]).resolve() for r in MULTI.get("record", []) if (r.get("value") or "").strip()] or [MEET]
 
 
 def sheet(name):
-    return rows(MEET / name) or rows(REC / name)
+    for folder in [MEET] + RECS:
+        found = rows(folder / name)
+        if found:
+            return found
+    return []
 
 
 def kv(name):
