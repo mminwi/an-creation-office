@@ -1,4 +1,4 @@
-SOP: Contractors and first hires. Revision 2 — October 18, 2026.
+SOP: Contractors and first hires. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst finds the sources and drafts. May write: people.csv in the business folder (template-people.csv), its readable copy in Your files/Business record/, a draft agreement in the correspondence log once it goes out, rows in deadlines.csv, company.csv and the action log, and hand-off lines to b-project-manager.
 Goes with: https://ancreationoffice.com/principle-trace-to-source.txt , https://ancreationoffice.com/principle-rigor-scales-with-money.txt , https://ancreationoffice.com/sop-compliance-calendar.txt , https://ancreationoffice.com/sop-packet-attorney.txt , https://ancreationoffice.com/sop-packet-accountant.txt
@@ -10,23 +10,23 @@ WHY THIS EXISTS
 The first person a small business pays is often where the paperwork goes wrong: no signed agreement, no tax form collected, a "contractor" who is really an employee, or, for an inventor, a CAD designer who still owns the drawings. Each is cheap to get right before the work starts and expensive after.
 
 CONTRACTOR OR EMPLOYEE (the bot never decides it)
-Whether someone is a contractor or an employee is not the owner's choice or the bot's; it follows from how the work is actually done. The sources are the IRS's guidance on independent contractor or employee (behavioral control, financial control, the relationship), IRS Form SS-8 when it is unclear, the U.S. Department of Labor's guidance under the Fair Labor Standards Act, and the state's own rules, which can be stricter. Open the current page of each before relying on it (sop-source-check.txt); none of it is quoted from memory.
+Whether someone is a contractor or an employee is not the owner's choice or the bot's; it follows from how the work is actually done. The sources are the IRS's guidance on independent contractor or employee (behavioral control, financial control, the type of relationship; library: irs-contractor-or-employee, and Publication 15-A section 2, library: irs-pub-15a), IRS Form SS-8 when it is unclear (library: irs-form-ss-8), the U.S. Department of Labor's guidance under the Fair Labor Standards Act (dol.gov, Wage and Hour Division, misclassification; not yet in the library: its site refused the office's check on 2026-10-18), and the state's own rules, which can be stricter. Open the current page of each before relying on it (sop-source-check.txt); none of it is quoted from memory.
 - Ask the plain facts, one at a time: who decides how and when the work is done, whose tools and place, paid by the job or by the hour, do they work for others too, is it ongoing or one project, is it the core work of the business.
 - Lay the facts next to the sources and say what they point to, in plain words, with the source. When they point both ways, say so, and say who can answer: the accountant, the SBDC, an employment attorney, or the IRS through Form SS-8.
 - Record the facts, the sources and the owner's decision in the business decision log.
 
 HIRING A CONTRACTOR
 1. The agreement first, before work starts. Draft it from the terms checklist (template-contractor-terms.txt): the work and what's delivered, the price and when it's paid, the dates, who owns what's made (for drawings, CAD, code, designs, photos and text: assigned to the business in writing), confidentiality, that they are independent (their tools, their schedule, their taxes), and how it ends. On the owner's own money, a plain agreement both sign is the start; where the work matters to the business (the product's design, its brand, its code) or real money is involved, the draft goes to an attorney (sop-packet-attorney.txt) before signing. Say so once, plainly.
-2. Their tax form before the first payment: in the U.S., Form W-9 (their name, tax ID and type of business), kept in the business folder's private records. Never copy the tax ID into a sheet: people.csv only says "W-9 on file".
+2. Their tax form before the first payment: in the U.S., Form W-9 (their name, tax ID and type of business; library: irs-form-w-9), kept in the business folder's private records. Never copy the tax ID into a sheet: people.csv only says "W-9 on file".
 3. Pay against invoices, logged in the expense ledger with the person on each row, so the year's total is known.
-4. At year end, the information return that applies (Form 1099-NEC for nonemployee pay above that year's threshold, from that year's IRS instructions) goes on the compliance calendar with its due date and source (sop-compliance-calendar.txt). The bot totals each person's payments for the accountant; it does not file.
+4. At year end, the information return that applies (Form 1099-NEC for nonemployee pay above that year's threshold, from that year's Instructions for Forms 1099-MISC and 1099-NEC; library: irs-form-1099-nec) goes on the compliance calendar with its due date and source (sop-compliance-calendar.txt). The bot totals each person's payments for the accountant; it does not file.
 5. For an inventor: anything the contractor makes for the invention (drawings, CAD, prototypes, test results) is assigned to the business in the agreement, and the disclosure history notes what they were shown (sop-packet-patent.txt). b-project-manager gets a hand-off line so the project record knows who did the work.
 
 THE FIRST EMPLOYEE
 An employee brings a set of one-time and recurring obligations; most are where they are because of the state. Start from the SBA's guide to hiring (library: sba-hire-employees) and the state's own pages, and put each on the compliance calendar with its source:
 - before the first day: an employer identification number if there isn't one, state employer registration and withholding, workers' compensation insurance as the state requires, unemployment insurance registration.
-- on the first days: Form W-4 and the state's withholding form, Form I-9 (library: uscis-i9), state new-hire reporting.
-- every pay day and quarter: payroll, withholding and deposits, payroll tax returns (the IRS's employer guides, Publication 15 and 15-A, for that year).
+- on the first days: Form W-4 (library: irs-form-w-4) and the state's withholding form, Form I-9 (library: uscis-i9), state new-hire reporting.
+- every pay day and quarter: payroll, withholding and deposits, payroll tax returns (the IRS's employer guides for that year: Publication 15, Circular E, library: irs-pub-15, and Publication 15-A, library: irs-pub-15a).
 Payroll is where a payroll service or an accountant earns its fee: say so once, and offer the accountant packet (sop-packet-accountant.txt). The bot never runs payroll or holds bank access.
 
 THE RECORD (people.csv)

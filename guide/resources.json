@@ -8696,9 +8696,9 @@
       "b_roles": [
         "b-company-setup"
       ],
-      "use": "Who pays quarterly estimated tax (most owners of a profitable LLC), the due dates, and how to pay. Free.",
-      "check": "Programs, amounts and rules change; read the current page before relying on it.",
-      "checked_on": "2026-10-13",
+      "use": "“Individuals, including sole proprietors, partners, and S corporation shareholders, generally have to make estimated tax payments if they expect to owe tax of $1,000 or more when their return is filed”; corporations at $500. The due dates and how to pay. Free.",
+      "check": "The amounts are the page’s, read 2026-10-18; check again each year. Page last reviewed 25-Sep-2026.",
+      "checked_on": "2026-10-18",
       "kind": "government",
       "source": "Government agency’s own website"
     },
@@ -8733,6 +8733,134 @@
       "use": "Employment eligibility verification required for every employee hired in the US. Free.",
       "check": "Programs, amounts and rules change; read the current page before relying on it.",
       "checked_on": "2026-10-13",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "irs-contractor-or-employee",
+      "title": "IRS — Independent contractor (self-employed) or employee?",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup",
+        "b-business-manager"
+      ],
+      "use": "The IRS’s common-law rules: “all information that provides evidence of the degree of control and independence must be considered,” in three categories: behavioral, financial, and the type of relationship. Points to Form SS-8 when it stays unclear. Free.",
+      "check": "Federal taxes only: the Labor Department and the state can apply their own tests. Page last reviewed 19-May-2026.",
+      "checked_on": "2026-10-18",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "irs-form-ss-8",
+      "title": "IRS — Form SS-8, Determination of Worker Status",
+      "url": "https://www.irs.gov/forms-pubs/about-form-ss-8",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup",
+        "b-business-manager"
+      ],
+      "use": "“Firms and workers file Form SS-8 to request a determination of the status of a worker for purposes of federal employment taxes and income tax withholding.” Free.",
+      "check": "A determination takes time; ask the accountant first. Page last reviewed 30-Mar-2026.",
+      "checked_on": "2026-10-18",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "irs-form-w-9",
+      "title": "IRS — Form W-9, Request for Taxpayer Identification Number and Certification",
+      "url": "https://www.irs.gov/forms-pubs/about-form-w-9",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup",
+        "b-business-manager"
+      ],
+      "use": "What a contractor gives the business before the first payment: “your correct Taxpayer Identification Number (TIN) to the person who is required to file an information return with the IRS,” such as Form 1099-NEC. Free.",
+      "check": "Keep the form on file; never copy the number into a sheet. Page last reviewed 27-Jun-2026.",
+      "checked_on": "2026-10-18",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "irs-form-1099-nec",
+      "title": "IRS — Form 1099-NEC, Nonemployee Compensation",
+      "url": "https://www.irs.gov/forms-pubs/about-form-1099-nec",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup",
+        "b-business-manager"
+      ],
+      "use": "“Use Form 1099-NEC to report nonemployee compensation”: the year-end form for contractors paid above that year’s threshold. Free.",
+      "check": "The threshold and due dates are in that year’s Instructions for Forms 1099-MISC and 1099-NEC, linked from the page. Page last reviewed 07-Jun-2026.",
+      "checked_on": "2026-10-18",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "irs-form-w-4",
+      "title": "IRS — Form W-4, Employee’s Withholding Certificate",
+      "url": "https://www.irs.gov/forms-pubs/about-form-w-4",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup",
+        "b-business-manager"
+      ],
+      "use": "What an employee fills in on the first day: “Complete Form W-4 so that your employer can withhold the correct federal income tax from your pay.” The state has its own form. Free.",
+      "check": "Use the current revision from the page. Page last reviewed 10-Sep-2026.",
+      "checked_on": "2026-10-18",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "irs-pub-15",
+      "title": "IRS — Publication 15 (Circular E), Employer’s Tax Guide",
+      "url": "https://www.irs.gov/publications/p15",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup",
+        "b-business-manager"
+      ],
+      "use": "The employer’s federal guide: it “explains the requirements for withholding, depositing, reporting, paying, and correcting employment taxes.” Free.",
+      "edition": "2026, for use in 2026",
+      "check": "A new edition each year; use that year’s. Page last reviewed 30-Apr-2026.",
+      "checked_on": "2026-10-18",
+      "kind": "government",
+      "source": "Government agency’s own website"
+    },
+    {
+      "id": "irs-pub-15a",
+      "title": "IRS — Publication 15-A, Employer’s Supplemental Tax Guide",
+      "url": "https://www.irs.gov/publications/p15a",
+      "group": "business",
+      "roles": [
+        "business"
+      ],
+      "b_roles": [
+        "b-company-setup",
+        "b-business-manager"
+      ],
+      "use": "“This publication supplements Pub. 15”; its section 2, Employee or Independent Contractor?, sets out the common-law rules (behavioral control, financial control, relationship) with examples. Free.",
+      "edition": "2026",
+      "check": "A new edition each year; use that year’s. Page last reviewed 30-Apr-2026.",
+      "checked_on": "2026-10-18",
       "kind": "government",
       "source": "Government agency’s own website"
     },
