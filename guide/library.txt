@@ -1,4 +1,4 @@
-261018.26
+261018.27
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -3943,6 +3943,8 @@ These are the files a project keeps in Office files/ (https://ancreationoffice.c
 
 The seven required documents (b-project-manager)
 - project-charter.txt   the project charter: scope, success criteria, milestones, budget (sop-project-charter.txt)
+- schedule.csv          the charter's dates, forecasts and slips; schedule.html shows the critical path (sop-schedule.txt).
+                        Buyer feedback is two weeks late, and that moves first shipment a week past the charter's date.
 - decision-log.csv      every call, dated, with the reason (sop-decision-log.txt)
 - actions.csv           who owes what; S- rows are suggestions waiting for an owner and a date (sop-action-log.txt, sop-suggestions.txt)
 - cost-sheet.csv        the costed bill of materials: cost to manufacture one packed trap, tooling amortized (sop-cost-sheet.txt)
@@ -4666,6 +4668,15 @@ F15,Trigger plate flashes and the pedal sticks,"As proposed, the trap does not t
 ,Sum of residual RPNs,,,,,465,
 ,"Accepted, the first 80%",Ranked by residual score. The running total first passes 372 on F10.,,,,381,
 ,"Below threshold, the last 20%","Leftover risk, not a sign-off: F6, F7, F8, F9, F12, F13, F14, F15. The cut is 80% of the risk, not a count of issues. Accepting a row means this is as much as will be spent to lower it. These are not significant. An obvious fix that does not raise the cost is still worth doing.",,,,84,
+=== FILE: example-mousetrap/schedule.csv ===
+id,milestone,depends on,days after,planned,forecast,actual,owner,source,notes
+M1,Spring supplier confirmed,,,2026-10-22,2026-10-22,,Spring maker,Action A-002,Waiting on the supplier
+M2,Base mold quote in hand,,,2026-10-29,2026-10-29,,Molder A,Action A-001,Due from Molder A
+M3,Buyer feedback from 3 distributors,,,2026-11-30,2026-12-15,,Inventor,Charter,"Illustrative: only one buyer meeting is set so far (10-28); two more distributors to approach"
+M4,Design frozen (risk actions in the CAD),M1 M2 M3,14,2026-12-15,2026-12-29,,Inventor,Charter,Two weeks after the last input to fold in the quotes and the buyer feedback. Illustrative.
+M5,Molds ordered (only if the numbers close),M4,31,2027-01-15,2027-01-29,,Inventor,Charter,"Quote comparison, the numbers rerun, the decision and the order. Illustrative."
+M6,First articles approved,M5,56,2027-03-15,2027-03-26,,Molder A,Charter,Eight weeks for the molds and the first parts. Illustrative.
+M7,First shipment to a distributor,M6,42,2027-04-30,2027-05-07,,Inventor,Charter,Six weeks for the first run and packing. Illustrative.
 === FILE: example-mousetrap/spending.csv ===
 date,stage,what it was,category,vendor or who,amount,committed or paid,paid from,running total,receipt or quote file,notes
 2026-10-08,S0,3D-printed base and pedal (two tries),Prototype,Local print shop,86.00,paid,Owner,86.00,record/261008-01-R-print-receipt,Illustrative example row
@@ -8226,7 +8237,7 @@ PLAN-10,"Which risks could stop the project, and who is reducing them?","b-proje
 PLAN-11,"What evidence justifies go, revise, hold or stop at the next review?",b-project-manager,"stagegate-discovery-launch,atlassian-decision",open,,,,,
 PLAN-12,"What did the last milestone teach us, and which records need revision?","b-project-manager, the prototype role, b-project-manager",atlassian-retrospective,open,,,,,
 === FILE: playbook-design-to-freeze.txt ===
-PLAYBOOK: The design loop, from concept to freeze. Revision 1 — October 18, 2026.
+PLAYBOOK: The design loop, from concept to freeze. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/playbooks.txt
 Runs it: b-project-manager. b-analyst does the models, sheets and review pages; the plant office files (office-plastic-design.txt, office-molding.txt, office-quality.txt, office-manufacturing.txt) supply the manufacturing review.
 Example: the mousetrap (https://ancreationoffice.com/example-mousetrap/README.txt): concept decisions 2026-10-12 and 10-13, the risk analysis table, printed revision X2 tested in barns, CAD revision X3, freeze planned for 2026-12-15.
@@ -8272,7 +8283,7 @@ THE STEPS
 6. Build, verify and validate. (the inventor builds or orders; b-analyst records)
    Verification: the build against the compliance matrix lines it was meant to check, against pass levels written beforehand. Validation: real users in real conditions; at least one round before freeze. Anyone outside the project who sees it goes in the disclosure history. Rescore the risk analysis table with what the build showed; update cost and timeline.
 7. Decide the next round. (the inventor decides)
-   Another round with a stated question (back to step 4 or 5), or on to freeze. Check for drift every round: builds with no question, the same failure twice without a design change, rounds added to put off a decision. When cost or time pulls away from the charter, ask which gives; a change to the charter's scope, budget or dates is a change notice (sop-change-control.txt).
+   Another round with a stated question (back to step 4 or 5), or on to freeze. Check for drift every round: builds with no question, the same failure twice without a design change, rounds added to put off a decision. Update the schedule's forecasts and run schedule.py; a slip on the critical path is said in one line. When cost or time pulls away from the charter, ask which gives; a change to the charter's scope, budget or dates is a change notice (sop-change-control.txt).
 8. Freeze review. (the inventor decides)
    Walk the five freeze conditions on a review page. Run check-sources.py: nothing critical still unchecked. The inventor accepts the remaining risks in words, in the decision log. Release the drawings, parts list and specs at one revision.
 9. After freeze. (b-project-manager)
@@ -8288,7 +8299,7 @@ WHEN IT GOES WRONG
 WHAT IT LEAVES IN THE RECORD
 Revision folders and review pages for each pass; the compliance matrix; the risk analysis table; the cost sheet with estimates and placeholders; decision log lines for the concept, each build, the accepted risks and the freeze; spending register rows for each build; the disclosure history for anyone outside who saw it; the released revision.
 === FILE: playbook-first-tooling-quote.txt ===
-PLAYBOOK: The first tooling quote. Revision 1 — October 18, 2026.
+PLAYBOOK: The first tooling quote. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/playbooks.txt
 Runs it: b-project-manager. b-business-manager prepares the supplier meeting and the money side; b-analyst does the sheets.
 Example: the mousetrap (https://ancreationoffice.com/example-mousetrap/README.txt): action A-001, the request for quote to Molder A, quote-comparison.csv.
@@ -8325,7 +8336,7 @@ THE STEPS
 6. The tooling review. (the inventor attends; b-project-manager takes the findings)
    Ask what they would change to make it cheaper or more reliable to mold. Their findings go in the meeting's notes; each one that changes the design goes on the action log and, after freeze, through a change notice (sop-change-control.txt). A finding that changes a risk goes on the risk analysis table.
 7. Log each quote as it arrives. (b-analyst)
-   The quote itself in its dated R folder. One row per part per supplier on quote-comparison.csv (template-quote-comparison.csv): tooling cost and type, cavities, tool life, piece price at the first order and at volume, lead times, what is included, payment terms, tool ownership, how long the quote is valid. A quote that leaves something out gets a question back, not a guess. Its expiry goes in deadlines.csv.
+   The quote itself in its dated R folder. One row per part per supplier on quote-comparison.csv (template-quote-comparison.csv): tooling cost and type, cavities, tool life, piece price at the first order and at volume, lead times, what is included, payment terms, tool ownership, how long the quote is valid. A quote that leaves something out gets a question back, not a guess. Its expiry goes in deadlines.csv; its tool and parts lead times go into the schedule's days after (sop-schedule.txt), and schedule.py shows whether they move the first shipment.
 8. Put the chosen basis on the cost sheet. (b-project-manager)
    Replace each placeholder with the quote's figure; "how the cost was figured" names the quote and its date. Recalculate amortization and the cost to make one. Hand the new cost sheet to b-business-manager.
 9. Rerun the numbers. (b-business-manager)
@@ -25183,6 +25194,117 @@ User-agent: *
 Allow: /
 
 Sitemap: https://ancreationoffice.com/sitemap.xml
+=== FILE: schedule.py ===
+#!/usr/bin/env python3
+"""schedule.py: the schedule and its critical path, for the AN Creation office.
+
+Usage: python3 schedule.py <folder with schedule.csv> [<output folder>]
+
+schedule.csv has one row per milestone: id, milestone, depends on (ids,
+space-separated), days after (how long it needs after the last thing it
+depends on), planned (the charter's date), forecast (today's best date),
+actual (when it happened), owner, source, notes.
+
+It works out, for each milestone, the earliest date its dependencies allow,
+which dependency drives it, and the critical path: the chain of drivers that
+sets the last milestone's date. It flags a forecast earlier than its
+dependencies allow, every slip, and every slip on the critical path, and
+writes schedule.html (readable) next to the sheet. It changes no dates; the
+bot updates the forecasts. Procedure: https://ancreationoffice.com/sop-schedule.txt
+"""
+import csv
+import html
+import pathlib
+import sys
+from datetime import date, timedelta
+
+
+def d(text):
+    try:
+        return date.fromisoformat((text or "").strip())
+    except ValueError:
+        return None
+
+
+def main(argv):
+    if not argv:
+        print(__doc__)
+        return 2
+    src = pathlib.Path(argv[0])
+    out = pathlib.Path(argv[1]) if len(argv) > 1 else src
+    with open(src / "schedule.csv", newline="", encoding="utf-8-sig") as f:
+        rows = [r for r in csv.DictReader(f) if (r.get("id") or "").strip()]
+    by = {r["id"].strip(): r for r in rows}
+    for r in rows:
+        r["_deps"] = [x for x in (r.get("depends on") or "").replace(",", " ").split() if x]
+        r["_when"] = d(r.get("actual")) or d(r.get("forecast")) or d(r.get("planned"))
+    problems = []
+    for r in rows:
+        for x in r["_deps"]:
+            if x not in by:
+                problems.append(f"{r['id']} depends on {x}, which is not on the schedule")
+    # earliest each dependency allows, and the driver
+    for r in rows:
+        lag = int(float(r.get("days after") or 0))
+        best, driver = None, None
+        for x in r["_deps"]:
+            p = by.get(x)
+            if p and p["_when"]:
+                e = p["_when"] + timedelta(days=lag)
+                if best is None or e > best:
+                    best, driver = e, x
+        r["_earliest"], r["_driver"] = best, driver
+    # critical path: from the last milestone back through its drivers
+    ends = [r for r in rows if r["_when"] and not any(r["id"] in o["_deps"] for o in rows)]
+    last = max(ends, key=lambda r: r["_when"]) if ends else None
+    crit, cur = [], last
+    while cur is not None:
+        crit.append(cur["id"])
+        cur = by.get(cur["_driver"]) if cur["_driver"] else None
+    crit.reverse()
+    lines = []
+    for r in rows:
+        planned, when = d(r.get("planned")), r["_when"]
+        r["_slip"] = (when - planned).days if planned and when else None
+        r["_crit"] = r["id"] in crit
+        if r["_earliest"] and not d(r.get("actual")) and d(r.get("forecast")) and d(r.get("forecast")) < r["_earliest"]:
+            problems.append(f"{r['id']} {r['milestone']}: forecast {r['forecast']} is earlier than {r['_driver']} allows ({r['_earliest']}); move the forecast or the dependency")
+        if r["_slip"] and r["_slip"] > 0:
+            lines.append(f"{'CRITICAL ' if r['_crit'] else ''}{r['id']} {r['milestone']}: {r['_slip']} days late against the charter ({r.get('planned')} → {when})")
+    # report
+    print("Critical path: " + " → ".join(f"{i} {by[i]['milestone']}" for i in crit) if crit else "No critical path: no dated milestones")
+    if last is not None and last["_slip"] and last["_slip"] > 0:
+        print(f"The end moves: {last['milestone']} is forecast {last['_slip']} days after the charter's date. Recover on the critical path, or a change notice for the charter's dates (sop-change-control.txt).")
+    print("\n".join(lines) or "Nothing is slipping.")
+    if problems:
+        print("\nTO FIX:\n" + "\n".join("- " + p for p in problems))
+    e = lambda t: html.escape(str(t or ""))
+    body = "".join(
+        f"<tr class='{'crit' if r['_crit'] else ''}'><td>{e(r['id'])}</td><td>{e(r['milestone'])}</td><td>{e(' '.join(r['_deps']))}</td>"
+        f"<td class='n'>{e(r.get('days after'))}</td><td class='d'>{e(r.get('planned'))}</td><td class='d'>{e(r.get('forecast'))}</td><td class='d'>{e(r.get('actual'))}</td>"
+        f"<td class='n {'late' if (r['_slip'] or 0) > 0 else ''}'>{'' if r['_slip'] is None else ('+' if r['_slip'] > 0 else '') + str(r['_slip'])}</td>"
+        f"<td>{'yes' if r['_crit'] else ''}</td><td>{e(r.get('notes'))}</td></tr>" for r in rows)
+    summary = "<p><strong>Critical path:</strong> " + e(" → ".join(by[i]["milestone"] for i in crit)) + ".</p>"
+    if last is not None and last["_slip"] and last["_slip"] > 0:
+        summary += f"<p class='end'><strong>The end moves:</strong> {e(last['milestone'])} is forecast {last['_slip']} days after the charter's date. Recover time on the critical path, or the inventor accepts the new date through a change notice.</p>"
+    if lines:
+        summary += "<ul>" + "".join(f"<li>{e(x)}</li>" for x in lines) + "</ul>"
+    if problems:
+        summary += "<p><strong>To fix:</strong></p><ul>" + "".join(f"<li>{e(x)}</li>" for x in problems) + "</ul>"
+    page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Schedule</title>
+<style>body{{margin:0;background:#e9e6df;font:14px/1.45 Inter,"Segoe UI",Arial,sans-serif;color:#1d2427}}.page{{max-width:1180px;margin:24px auto;background:#fff;border:1px solid #d7d2c6;border-radius:6px;padding:28px 32px 36px}}
+.top{{border-bottom:3px solid #315f5c;padding-bottom:10px;margin-bottom:14px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#315f5c;font-weight:700}}h1{{font-size:22px;margin:0 0 8px}}
+table{{border-collapse:collapse;width:100%;font-size:12.5px;margin-top:10px}}th{{background:#f1eee6;text-align:left;border:1px solid #d9d4c8;padding:6px 7px}}td{{border:1px solid #e1ddd3;padding:6px 7px;vertical-align:top}}td.n{{text-align:right;white-space:nowrap}}
+tr.crit td{{background:#f4f8f6;font-weight:600}}td.late{{color:#9a2b1b;font-weight:700}}.foot{{margin-top:14px;font-size:12px;color:#6b7275}}td.d{{white-space:nowrap}}.end{{background:#fdf3e1;border-left:4px solid #c9862b;padding:8px 10px}}</style></head><body><div class="page">
+<div class="top">AN Creation Office · Project record</div><h1>Schedule</h1>{summary}
+<table><thead><tr><th>ID</th><th>Milestone</th><th>Depends on</th><th>Days after</th><th>Planned (charter)</th><th>Forecast</th><th>Actual</th><th>Slip, days</th><th>Critical</th><th>Notes</th></tr></thead><tbody>{body}</tbody></table>
+<p class="foot">Built by schedule.py from schedule.csv. Shaded rows are the critical path: the chain that sets the last date. A slip there moves the end; a slip elsewhere only uses up spare time.</p></div></body></html>"""
+    (out / "schedule.html").write_text(page, encoding="utf-8")
+    return 1 if problems else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
 === FILE: screening-questions.csv ===
 #,Question (plain words),The one fact to say first,Yes pulls in (resources.json ids),No leaves out,If unsure ask,What it adds to the framework
 1,"What is it, who uses it, and where?",,,,,Feeds every line below. Answer as many of 2-21 as you can from this before asking any.
@@ -25868,7 +25990,7 @@ A revision is approved to build, the compliance matrix shows every line's status
 WHO DOES WHAT
 b-analyst builds the compliance matrix, fills data from the model and documents, proposes the check status, and writes the review record. b-project-manager puts each review on a review page, walks the inventor through it, and records the decision. Human designers, engineers and labs supply what the office can't: CAD by a person when needed, a signed stress check, a lab report. The inventor decides every loop, move-on and freeze.
 === FILE: sop-document-life.txt ===
-SOP: Living and parked documents. Revision 2 — October 18, 2026.
+SOP: Living and parked documents. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: both bots. b-analyst does the dusting off.
 May write: the PARKED section of plan.md, and the documents named below when their rule says so.
@@ -25879,7 +26001,7 @@ Not every document needs watching. An action list changes every time someone fol
 
 LIVING: updated every time something happens, the same turn
 These are the day-to-day record. Every follow-up, every email, every trip, every cost, every call goes in when it happens. At the start of a conversation the bot looks at these, and only at what is open or due in them.
-- Project Manager Bot: action log (actions.csv), decision log (decision-log.csv), spending register (spending.csv), the ECN log (a line when a change happens).
+- Project Manager Bot: action log (actions.csv), decision log (decision-log.csv), spending register (spending.csv), the schedule's forecasts (schedule.csv), the ECN log (a line when a change happens).
 - Office Manager Bot: action log, decision log (business-decision-log.csv), contacts, trip log (trips.csv), expense ledger (expenses.csv), deadlines (deadlines.csv), market evidence, the promotion log.
 - Both: the correspondence log's index (correspondence.csv), office.txt, plan.md, the hand-off inbox.
 Logs are only added to. Read the open rows and the last few lines, not the whole history.
@@ -27284,7 +27406,7 @@ Their voice, always clear it's them. Never create accounts or accept terms for t
 
 Sources: LinkedIn pages help https://www.linkedin.com/help/linkedin/topics/6227/6228 ; X help https://help.x.com ; Google Business Profile https://support.google.com/business .
 === FILE: sop-project-charter.txt ===
-SOP: The project charter. Revision 1 — October 18, 2026.
+SOP: The project charter. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention. b-analyst drafts it; the inventor approves it.
 Template: https://ancreationoffice.com/template-project-charter.txt . Example: https://ancreationoffice.com/example-mousetrap/project-charter.txt
@@ -27303,7 +27425,7 @@ SECTIONS (keep each short; a line or a short list)
 3. In scope / out of scope: two short lists. Out of scope is as important as in.
 4. Success criteria: the few measurable things that mean done (cost per unit, a test passed, a date, a first order).
 5. Deliverables by stage: what comes out of each stage the project will run (S0 to S5, sop-stages.txt).
-6. Milestones: dated, the same dates as the action log and the funding packet.
+6. Milestones: dated, the same dates as the action log and the funding packet. They are the planned dates on the schedule (schedule.csv, https://ancreationoffice.com/sop-schedule.txt), where the forecasts and the critical path are kept.
 7. Budget: what may be spent in total and through the next gate, and whose money it is (the spending register tracks against it).
 8. Assumptions and constraints: what is being taken as true (volume, material, channel) and what limits the project (money, time, tools).
 9. Top risks: the three that could sink it, from the risk table.
@@ -27315,7 +27437,7 @@ RULES
 - Rough is fine at S0 (90% and go). The charter gets sharper through ECNs as the facts come in; it does not wait for certainty.
 - Out of scope is written down, so a new idea goes through the scope gate (principle-scope-gate.txt) instead of creeping in.
 === FILE: sop-project-record.txt ===
-SOP: The project record. Revision 4 — October 18, 2026.
+SOP: The project record. Revision 5 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one set per invention. b-analyst fills and updates them.
 May write: the files named below in Office files/, and their readable copies in Your files/Project record/.
@@ -27325,8 +27447,8 @@ WHY THIS EXISTS
 These are the traditional project management tools, and they are required. Engineers often fill them in after the fact, or paste a standard one, so they can say they did it. An AI has no reason to skip them: it can do the analysis for real and write it down in a form a person can check. Filling them in is how the bot shows it has thought the project through, and how the inventor sees that it has.
 
 THE SEVEN (every invention has all of them; none is optional)
-1. Project charter: what the project is, what is in and out, what done looks like, the budget and the milestones. The baseline everything else is measured against.
-   Office files/project-charter.txt . Skill: https://ancreationoffice.com/sop-project-charter.txt
+1. Project charter and its schedule: what the project is, what is in and out, what done looks like, the budget and the milestones. The baseline everything else is measured against. The schedule keeps the charter's dates, today's forecasts and the slips, with the critical path.
+   Office files/project-charter.txt and schedule.csv . Skills: https://ancreationoffice.com/sop-project-charter.txt and https://ancreationoffice.com/sop-schedule.txt
 2. Decision log: every call, dated, with the reason.
    Office files/decision-log.csv . Skill: https://ancreationoffice.com/sop-decision-log.txt
 3. Action log: who owes what, by when; suggestions sit on it with status suggestion until they get an owner and a date or expire.
@@ -27937,6 +28059,38 @@ Economics. Business-planning group, for the price or cost question in front of t
 Launch. Marketing group, for the channel they named. ftc-advertising when a public claim is about to be made. Role: marketing. Retail stays behind the store gateway.
 
 Done when the subject is a resumed session, a new open row, an intern, or a recorded no. The inventor heard one question. Every closed chunk is still closed, and its sources were not opened.
+=== FILE: sop-schedule.txt ===
+SOP: The schedule and the critical path. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-project-manager, one per invention. b-analyst runs schedule.py.
+May write: Office files/schedule.csv and schedule.html, and the readable copy in Your files/Project record/.
+Template: https://ancreationoffice.com/template-schedule.csv . Checker: https://ancreationoffice.com/schedule.py . Example: https://ancreationoffice.com/example-mousetrap/schedule.csv and https://ancreationoffice.com/example-mousetrap/schedule.html
+Goes with: https://ancreationoffice.com/sop-project-charter.txt (the milestones), https://ancreationoffice.com/sop-change-control.txt , https://ancreationoffice.com/principle-which-gives.txt
+
+WHY THIS EXISTS
+The charter sets the dates. Things move: a quote is late, a buyer meeting slips, a test fails. Some slips don't matter, because there is spare time after them; some move the end date, because everything after them waits. The schedule keeps the charter's dates, today's forecast and the slip side by side, and the critical path shows which slips move the end.
+
+THE SHEET: schedule.csv (one row per milestone)
+- id, milestone: the charter's milestones, plus any step the project waits on that the charter leaves out (a field test, a lab slot).
+- depends on: the ids it cannot happen before, space-separated. Leave empty when it waits on nothing in the schedule.
+- days after: how long it needs after the last thing it depends on. An estimate, marked as one in the notes until a supplier or a test gives a real number (principle-trace-to-source.txt).
+- planned: the charter's date. It changes only through a change notice.
+- forecast: today's best date. A living field: update it the same turn something moves (sop-document-life.txt).
+- actual: the date it happened.
+- owner, source, notes: who it waits on, where the date comes from (an action, a quote, the charter), and why the forecast moved.
+
+THE CRITICAL PATH
+python3 schedule.py "<Office files>": for each milestone it works out the earliest date its dependencies allow and which dependency drives it; the chain of drivers back from the last milestone is the critical path. It prints the path, every slip (marked CRITICAL when on the path), whether the end has moved, and any forecast that is earlier than its dependencies allow, and writes schedule.html. It changes no dates.
+
+WHAT THE BOT DOES WITH IT
+- When something moves (a quote's lead time, a missed due date on the action log, a failed test), update the forecast that turn, run schedule.py, and fix any forecast it says is too early.
+- A slip on the critical path: say it in one line with what it moves ("The buyer feedback is two weeks late, and that moves first shipment a week past the charter's date"). Then ask which gives (principle-which-gives.txt): recover time on the critical path (run things side by side, cut a step, spend to speed up), or accept the new date.
+- When the last milestone moves past the charter's date and the inventor accepts it: a change notice for the charter's dates (sop-change-control.txt); planned dates change only then.
+- A slip off the critical path: note it in the forecast; no alarm, it uses up spare time.
+- Keep it light: the charter's milestones and the few steps between them, not every task. Tasks are the action log's.
+
+WHEN IT STARTS
+With the charter, at the end of fact-finding. Living from then on; parked only when the product has shipped.
 === FILE: sop-scientific-molding.txt ===
 SOP: Scientific molding: setting a robust process (b-scientific-molding). Revision 7 — October 12, 2026. Cavity balance, process sheet, gate seal step-down, speed limits and DOE added from Mike's notes.
 Index: https://ancreationoffice.com/sop.txt
@@ -28506,7 +28660,7 @@ Search Console and Bing: pages found vs. pages in the sitemap, any new errors (a
 
 Sources: Google Search Console start https://support.google.com/webmasters/answer/9128668 ; sitemaps https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview ; SEO starter guide https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; Bing Webmaster https://www.bing.com/webmasters ; GitHub Pages https://docs.github.com/en/pages .
 === FILE: sop.txt ===
-AN Creation standard operating procedures. Revision 27 — October 18, 2026.
+AN Creation standard operating procedures. Revision 28 — October 18, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
@@ -28563,6 +28717,7 @@ FOR b-project-manager
 1d. Living and parked documents, both bots: which documents are updated every time something happens (action logs, decision logs, spending, trips, expenses, the correspondence index, deadlines) and which are done for a purpose and parked until a trigger (charter, cost sheet, risk table, compliance matrix, packets, company record), and how to dust one off. https://ancreationoffice.com/sop-document-life.txt
 1e. The correspondence log, both bots, one for the company: a folder per email, file sent (CAD, drawings), meeting or call, named YYMMDD-NN-X-slug (date code, its number in the day, S sent, R received or M meeting or call, a slug) so they stay in order, never changed once filed, with its index correspondence.csv. https://ancreationoffice.com/sop-correspondence.txt (template: https://ancreationoffice.com/template-correspondence.csv)
 1f. Playbooks, b-project-manager: whole jobs strung from the procedures, with the inventor's decisions marked. https://ancreationoffice.com/playbooks.txt ; the design loop from concept to freeze https://ancreationoffice.com/playbook-design-to-freeze.txt ; the first tooling quote https://ancreationoffice.com/playbook-first-tooling-quote.txt (template: https://ancreationoffice.com/template-quote-comparison.csv)
+1g. The schedule and the critical path, b-project-manager: the charter's dates, forecasts and slips, and which slips move the end. https://ancreationoffice.com/sop-schedule.txt (template: https://ancreationoffice.com/template-schedule.csv ; checker: https://ancreationoffice.com/schedule.py)
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
 The ticket template may write the form named in the ticket, Office files/queue/QUEUE.txt, the ticket file, Office files/record/ for the conversation, Office files/sessions/ for the analyst run, and Office files/plan.md for a taking-longer note.
@@ -28599,7 +28754,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.26
+261018.27
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -28668,6 +28823,7 @@ example-mousetrap/prior-art.csv
 example-mousetrap/project-charter.txt
 example-mousetrap/quote-comparison.csv
 example-mousetrap/risk-table.csv
+example-mousetrap/schedule.csv
 example-mousetrap/spending.csv
 example-mousetrap/tax-year-2026.txt
 example-mousetrap/trips.csv
@@ -28775,6 +28931,7 @@ review.py
 revision-log.csv
 revisions.txt
 robots.txt
+schedule.py
 screening-questions.csv
 sop-action-log.txt
 sop-ai-cad.txt
@@ -28831,6 +28988,7 @@ sop-resource-map.txt
 sop-review-page.txt
 sop-risk-table.txt
 sop-routes.txt
+sop-schedule.txt
 sop-scientific-molding.txt
 sop-six-sigma.txt
 sop-source-check.txt
@@ -28875,6 +29033,7 @@ template-prototype-control-plan.txt
 template-quote-comparison.csv
 template-review-record.txt
 template-risk-table.csv
+template-schedule.csv
 template-spending-register.csv
 template-team.csv
 template-trial-log.txt
@@ -28891,7 +29050,7 @@ using-other-ais.txt
 version-control.txt
 version.txt
 === FILE: standing.txt ===
-AN Creation standing context for the Project Manager Bot (role b-project-manager). Revision 40 — October 18, 2026.
+AN Creation standing context for the Project Manager Bot (role b-project-manager). Revision 41 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Project Manager Bot)
 This is b-project-manager's permanent context. It is short on purpose. Your memory may be cleared at any time. That is normal. The project lives in the files, not in this chat.
 
@@ -28977,6 +29136,7 @@ Every invention keeps seven documents in Office files/, done for real and visibl
 - Living, updated the same turn something happens: decision-log.csv, actions.csv, spending.csv, ecn-log.csv. Every follow-up, every call, every change goes on the action log when it happens.
 - Parked once done, reopened only on a trigger: the charter (only through an ECN), the cost sheet (a quote, a design change, a packet), the risk table (done for the design, parked at design freeze; reopened by a design change, a failed test, a field problem, or to dust off before sharing). Park each in the PARKED section of plan.md with the date and its triggers. Do not reread or rework parked documents at the start of a conversation.
 - project-charter.txt: scope, success criteria, milestones, budget; the baseline (sop-project-charter.txt).
+- schedule.csv: the charter's dates, today's forecasts and the slips, with the critical path (sop-schedule.txt; python3 schedule.py). Update the forecast the same turn something moves; a slip on the critical path is said in one line with what it moves.
 - decision-log.csv: every call, dated, with the reason (sop-decision-log.txt).
 - actions.csv: who owes what; suggestions sit there until they get an owner and a date or expire (sop-action-log.txt, sop-suggestions.txt).
 - cost-sheet.csv: the costed bill of materials and the cost to manufacture (sop-cost-sheet.txt).
@@ -29508,6 +29668,10 @@ Reason, in the inventor's words:
 id,Failure mode / actions,effect,S,O,D,RPN,status
 F1,Example: base cracks at the spring seat,"Example: as proposed, the product fails. Delete these rows before real use.",8,4,5,,
 ,Example: add a short rib at the spring seat,Example: a crack is less likely.,7,3,5,105,
+=== FILE: template-schedule.csv ===
+id,milestone,depends on,days after,planned,forecast,actual,owner,source,notes
+M1,Example: quote in hand,,,2026-10-29,2026-10-29,,Supplier,Action A-001,Planned dates are the charter's; only a change notice moves them
+M2,Example: design frozen,M1,14,2026-11-15,2026-11-15,,Inventor,Charter,Needs 14 days after the quote to fold in the toolmaker's changes
 === FILE: template-spending-register.csv ===
 date,stage,what it was,category,vendor or who,amount,committed or paid,paid from,running total,receipt or quote file,notes
 2026-10-07,S0,Example: provisional patent filing fee,Fees,USPTO,65.00,paid,Owner,65.00,,Example row; delete before real use
@@ -30743,7 +30907,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.26
+Office version: 261018.27
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -30781,6 +30945,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.27  The schedule and the critical path (sop-schedule.txt): schedule.csv keeps the charter's planned dates, today's forecasts and actuals, what each milestone depends on and how long it needs after; schedule.py works out the critical path, flags every slip (CRITICAL when on the path), whether the end has moved, and any forecast earlier than its dependencies allow, and writes schedule.html. Forecasts are living; planned dates change only through a change notice. Part of the project record with the charter. Both playbooks update it. Re-read your office file. No new profile text.
 261018.26  Playbook: the design loop, from concept to freeze (playbook-design-to-freeze.txt): the starting check, concepts, the first risk analysis, CAD passes with the manufacturing review, revisions approved to build with a stated question, verification and real-use validation, the drift check each round, the freeze review on the five conditions, and parking and change notices after freeze; it hands off to the tooling-quote playbook. The design and prototype loop procedures point to it. Re-read your office file. No new profile text.
 261018.25  Playbooks for the Project Manager Bot (playbooks.txt): whole jobs strung from the procedures, with when each runs, what done looks like, the principles that drive it, the steps with who does each, the inventor's decisions, what to do when it goes wrong, and what it leaves in the record. The first: the first tooling quote (playbook-first-tooling-quote.txt), from a design ready to quote to real quotes on the cost sheet and the inventor's call to order, change, or stop; with a quote comparison sheet (template-quote-comparison.csv). Re-read your office file. No new profile text.
 261018.24  The partner packet (sop-packet-partner.txt), for someone who might join the project or the business: the project in brief with the numbers honestly, what the project needs and the work no one is on, how working together could look as topics (paid by the job, a royalty, a share once the company exists), who owns what, and a prep sheet: an NDA before drawings, a reference to call, no share promised in the room. With it, the Office Manager Bot has a packet for each counterpart: buyer, manufacturer, lender, investor, accountant, patent attorney, licensee, insurance agent, business attorney and partner. Example: example-mousetrap/correspondence/261102-01-M-partner-tool-and-die-maker/. Re-read your office file. No new profile text.

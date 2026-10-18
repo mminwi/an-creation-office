@@ -1,4 +1,4 @@
-SOP: The project record. Revision 4 — October 18, 2026.
+SOP: The project record. Revision 5 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one set per invention. b-analyst fills and updates them.
 May write: the files named below in Office files/, and their readable copies in Your files/Project record/.
@@ -8,8 +8,8 @@ WHY THIS EXISTS
 These are the traditional project management tools, and they are required. Engineers often fill them in after the fact, or paste a standard one, so they can say they did it. An AI has no reason to skip them: it can do the analysis for real and write it down in a form a person can check. Filling them in is how the bot shows it has thought the project through, and how the inventor sees that it has.
 
 THE SEVEN (every invention has all of them; none is optional)
-1. Project charter: what the project is, what is in and out, what done looks like, the budget and the milestones. The baseline everything else is measured against.
-   Office files/project-charter.txt . Skill: https://ancreationoffice.com/sop-project-charter.txt
+1. Project charter and its schedule: what the project is, what is in and out, what done looks like, the budget and the milestones. The baseline everything else is measured against. The schedule keeps the charter's dates, today's forecasts and the slips, with the critical path.
+   Office files/project-charter.txt and schedule.csv . Skills: https://ancreationoffice.com/sop-project-charter.txt and https://ancreationoffice.com/sop-schedule.txt
 2. Decision log: every call, dated, with the reason.
    Office files/decision-log.csv . Skill: https://ancreationoffice.com/sop-decision-log.txt
 3. Action log: who owes what, by when; suggestions sit on it with status suggestion until they get an owner and a date or expire.

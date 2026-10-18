@@ -1,0 +1,31 @@
+SOP: The schedule and the critical path. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-project-manager, one per invention. b-analyst runs schedule.py.
+May write: Office files/schedule.csv and schedule.html, and the readable copy in Your files/Project record/.
+Template: https://ancreationoffice.com/template-schedule.csv . Checker: https://ancreationoffice.com/schedule.py . Example: https://ancreationoffice.com/example-mousetrap/schedule.csv and https://ancreationoffice.com/example-mousetrap/schedule.html
+Goes with: https://ancreationoffice.com/sop-project-charter.txt (the milestones), https://ancreationoffice.com/sop-change-control.txt , https://ancreationoffice.com/principle-which-gives.txt
+
+WHY THIS EXISTS
+The charter sets the dates. Things move: a quote is late, a buyer meeting slips, a test fails. Some slips don't matter, because there is spare time after them; some move the end date, because everything after them waits. The schedule keeps the charter's dates, today's forecast and the slip side by side, and the critical path shows which slips move the end.
+
+THE SHEET: schedule.csv (one row per milestone)
+- id, milestone: the charter's milestones, plus any step the project waits on that the charter leaves out (a field test, a lab slot).
+- depends on: the ids it cannot happen before, space-separated. Leave empty when it waits on nothing in the schedule.
+- days after: how long it needs after the last thing it depends on. An estimate, marked as one in the notes until a supplier or a test gives a real number (principle-trace-to-source.txt).
+- planned: the charter's date. It changes only through a change notice.
+- forecast: today's best date. A living field: update it the same turn something moves (sop-document-life.txt).
+- actual: the date it happened.
+- owner, source, notes: who it waits on, where the date comes from (an action, a quote, the charter), and why the forecast moved.
+
+THE CRITICAL PATH
+python3 schedule.py "<Office files>": for each milestone it works out the earliest date its dependencies allow and which dependency drives it; the chain of drivers back from the last milestone is the critical path. It prints the path, every slip (marked CRITICAL when on the path), whether the end has moved, and any forecast that is earlier than its dependencies allow, and writes schedule.html. It changes no dates.
+
+WHAT THE BOT DOES WITH IT
+- When something moves (a quote's lead time, a missed due date on the action log, a failed test), update the forecast that turn, run schedule.py, and fix any forecast it says is too early.
+- A slip on the critical path: say it in one line with what it moves ("The buyer feedback is two weeks late, and that moves first shipment a week past the charter's date"). Then ask which gives (principle-which-gives.txt): recover time on the critical path (run things side by side, cut a step, spend to speed up), or accept the new date.
+- When the last milestone moves past the charter's date and the inventor accepts it: a change notice for the charter's dates (sop-change-control.txt); planned dates change only then.
+- A slip off the critical path: note it in the forecast; no alarm, it uses up spare time.
+- Keep it light: the charter's milestones and the few steps between them, not every task. Tasks are the action log's.
+
+WHEN IT STARTS
+With the charter, at the end of fact-finding. Living from then on; parked only when the product has shipped.

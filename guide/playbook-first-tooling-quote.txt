@@ -1,4 +1,4 @@
-PLAYBOOK: The first tooling quote. Revision 1 — October 18, 2026.
+PLAYBOOK: The first tooling quote. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/playbooks.txt
 Runs it: b-project-manager. b-business-manager prepares the supplier meeting and the money side; b-analyst does the sheets.
 Example: the mousetrap (https://ancreationoffice.com/example-mousetrap/README.txt): action A-001, the request for quote to Molder A, quote-comparison.csv.
@@ -35,7 +35,7 @@ THE STEPS
 6. The tooling review. (the inventor attends; b-project-manager takes the findings)
    Ask what they would change to make it cheaper or more reliable to mold. Their findings go in the meeting's notes; each one that changes the design goes on the action log and, after freeze, through a change notice (sop-change-control.txt). A finding that changes a risk goes on the risk analysis table.
 7. Log each quote as it arrives. (b-analyst)
-   The quote itself in its dated R folder. One row per part per supplier on quote-comparison.csv (template-quote-comparison.csv): tooling cost and type, cavities, tool life, piece price at the first order and at volume, lead times, what is included, payment terms, tool ownership, how long the quote is valid. A quote that leaves something out gets a question back, not a guess. Its expiry goes in deadlines.csv.
+   The quote itself in its dated R folder. One row per part per supplier on quote-comparison.csv (template-quote-comparison.csv): tooling cost and type, cavities, tool life, piece price at the first order and at volume, lead times, what is included, payment terms, tool ownership, how long the quote is valid. A quote that leaves something out gets a question back, not a guess. Its expiry goes in deadlines.csv; its tool and parts lead times go into the schedule's days after (sop-schedule.txt), and schedule.py shows whether they move the first shipment.
 8. Put the chosen basis on the cost sheet. (b-project-manager)
    Replace each placeholder with the quote's figure; "how the cost was figured" names the quote and its date. Recalculate amortization and the cost to make one. Hand the new cost sheet to b-business-manager.
 9. Rerun the numbers. (b-business-manager)

@@ -1,4 +1,4 @@
-PLAYBOOK: The design loop, from concept to freeze. Revision 1 — October 18, 2026.
+PLAYBOOK: The design loop, from concept to freeze. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/playbooks.txt
 Runs it: b-project-manager. b-analyst does the models, sheets and review pages; the plant office files (office-plastic-design.txt, office-molding.txt, office-quality.txt, office-manufacturing.txt) supply the manufacturing review.
 Example: the mousetrap (https://ancreationoffice.com/example-mousetrap/README.txt): concept decisions 2026-10-12 and 10-13, the risk analysis table, printed revision X2 tested in barns, CAD revision X3, freeze planned for 2026-12-15.
@@ -44,7 +44,7 @@ THE STEPS
 6. Build, verify and validate. (the inventor builds or orders; b-analyst records)
    Verification: the build against the compliance matrix lines it was meant to check, against pass levels written beforehand. Validation: real users in real conditions; at least one round before freeze. Anyone outside the project who sees it goes in the disclosure history. Rescore the risk analysis table with what the build showed; update cost and timeline.
 7. Decide the next round. (the inventor decides)
-   Another round with a stated question (back to step 4 or 5), or on to freeze. Check for drift every round: builds with no question, the same failure twice without a design change, rounds added to put off a decision. When cost or time pulls away from the charter, ask which gives; a change to the charter's scope, budget or dates is a change notice (sop-change-control.txt).
+   Another round with a stated question (back to step 4 or 5), or on to freeze. Check for drift every round: builds with no question, the same failure twice without a design change, rounds added to put off a decision. Update the schedule's forecasts and run schedule.py; a slip on the critical path is said in one line. When cost or time pulls away from the charter, ask which gives; a change to the charter's scope, budget or dates is a change notice (sop-change-control.txt).
 8. Freeze review. (the inventor decides)
    Walk the five freeze conditions on a review page. Run check-sources.py: nothing critical still unchecked. The inventor accepts the remaining risks in words, in the decision log. Release the drawings, parts list and specs at one revision.
 9. After freeze. (b-project-manager)

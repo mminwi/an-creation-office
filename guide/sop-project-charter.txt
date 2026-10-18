@@ -1,4 +1,4 @@
-SOP: The project charter. Revision 1 — October 18, 2026.
+SOP: The project charter. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention. b-analyst drafts it; the inventor approves it.
 Template: https://ancreationoffice.com/template-project-charter.txt . Example: https://ancreationoffice.com/example-mousetrap/project-charter.txt
@@ -17,7 +17,7 @@ SECTIONS (keep each short; a line or a short list)
 3. In scope / out of scope: two short lists. Out of scope is as important as in.
 4. Success criteria: the few measurable things that mean done (cost per unit, a test passed, a date, a first order).
 5. Deliverables by stage: what comes out of each stage the project will run (S0 to S5, sop-stages.txt).
-6. Milestones: dated, the same dates as the action log and the funding packet.
+6. Milestones: dated, the same dates as the action log and the funding packet. They are the planned dates on the schedule (schedule.csv, https://ancreationoffice.com/sop-schedule.txt), where the forecasts and the critical path are kept.
 7. Budget: what may be spent in total and through the next gate, and whose money it is (the spending register tracks against it).
 8. Assumptions and constraints: what is being taken as true (volume, material, channel) and what limits the project (money, time, tools).
 9. Top risks: the three that could sink it, from the risk table.

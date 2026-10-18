@@ -1,4 +1,4 @@
-SOP: Living and parked documents. Revision 2 — October 18, 2026.
+SOP: Living and parked documents. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: both bots. b-analyst does the dusting off.
 May write: the PARKED section of plan.md, and the documents named below when their rule says so.
@@ -9,7 +9,7 @@ Not every document needs watching. An action list changes every time someone fol
 
 LIVING: updated every time something happens, the same turn
 These are the day-to-day record. Every follow-up, every email, every trip, every cost, every call goes in when it happens. At the start of a conversation the bot looks at these, and only at what is open or due in them.
-- Project Manager Bot: action log (actions.csv), decision log (decision-log.csv), spending register (spending.csv), the ECN log (a line when a change happens).
+- Project Manager Bot: action log (actions.csv), decision log (decision-log.csv), spending register (spending.csv), the schedule's forecasts (schedule.csv), the ECN log (a line when a change happens).
 - Office Manager Bot: action log, decision log (business-decision-log.csv), contacts, trip log (trips.csv), expense ledger (expenses.csv), deadlines (deadlines.csv), market evidence, the promotion log.
 - Both: the correspondence log's index (correspondence.csv), office.txt, plan.md, the hand-off inbox.
 Logs are only added to. Read the open rows and the last few lines, not the whole history.
