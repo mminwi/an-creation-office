@@ -1,5 +1,5 @@
 key,value,note
-type,buyer,"buyer, manufacturer, lender or investor"
+type,buyer,"buyer, manufacturer, lender, investor or accountant"
 who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
 date,2026-10-28,YYYY-MM-DD
 record,../../funding/<invention>,Folder with the sheets; relative to this meeting folder
@@ -35,3 +35,5 @@ alternative,What people use now,Investor only: one row each; the note says where
 term,,Investor only: one row per term; the note is the detail
 exit,,"Investor only: how an investor could get money back, including if it fails"
 market,,"Investor only, optional: a market size, only with its source in the note"
+tax_year,2026,Accountant only: the year the packet covers
+question,A question for the accountant,Accountant only: one row each; the note says what the record shows

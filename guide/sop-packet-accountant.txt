@@ -1,0 +1,33 @@
+SOP: The accountant packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with an accountant, a tax preparer or a bookkeeper (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; nothing in the ledger, the trip log or the company record (the packet reads them; the gaps are closed in the record itself).
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261208-01-M-accountant-year-end/accountant-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (the rows marked Accountant only)
+Goes with: https://ancreationoffice.com/sop-business-record.txt (the ledger, trip log, deadlines and TAX TIME), https://ancreationoffice.com/tax-year.py
+
+WHO IT IS FOR
+A CPA, an enrolled agent, a tax preparer or a bookkeeper: the first meeting, to set up how records are kept before the first sale, and the year-end meeting.
+
+WHAT WORRIES THEM
+- Are the records complete? Every cost with its receipt and purpose, every trip with its miles, logged when it happened.
+- Is business money kept apart from personal money?
+- What is the business, legally, and when did it start? The entity, the tax ID, the first sale.
+- What questions will they have to answer, and how much work is it?
+
+WHAT GOES IN IT (meeting-packet.py builds these pages from the business record and meeting.csv)
+1. For the accountant: the tax year, the gaps still open, the totals (expenses, rows, business miles, categories waiting for their call), the business in brief from the company record, and what we ask of them.
+2. Expenses: totals by tax category and by whose money, and the whole year's ledger with each row's purpose, category and whether its receipt is on file.
+3. Trips and mileage: every trip with its odometer readings and miles, how many were logged the day they happened, and the year's odometer readings. No mileage rate is applied: that is the accountant's call (standard rate or actual costs).
+4. Questions for you: the questions the inventor wants answered (question rows), with what the record shows for each; the "ask accountant" categories listed first; and the tax deadlines from deadlines.csv with their source status.
+5. Prep sheet, for the inventor only: the goal, the ask, the walk-away, what they will likely ask, the gaps to close before the meeting, and what is still open in the company record.
+
+BEFORE THE MEETING
+- Run python3 tax-year.py AN-Creation/Business <year> and close what it lists: find the receipt (a photo is fine), write the purpose, or mark the row "receipt lost" in its notes. The packet shows the same gaps.
+- The ledger, the trip log and the receipts folder go with the packet as files if the accountant wants them.
+
+RULES
+- The bot sorts and asks; it does not decide what is deductible, which category a cost belongs in, or how the business should be taxed. Those are the accountant's calls, written into the decision log when made.
+- Questions are asked as questions. The packet never states a tax rule, a rate, a threshold or a deadline as fact unless it was read from the source for that year (principle-trace-to-source.txt).
+- Never put full tax IDs, account or card numbers, or passwords in the packet or its folder.
+- Don't sign an engagement letter in the room: take the scope and the fee home and compare (principle-walk-away-number.txt).
+- After the meeting: the accountant's answers go in the decision log; the categories they choose go into the ledger; any deadline they give goes in deadlines.csv with them as its source.

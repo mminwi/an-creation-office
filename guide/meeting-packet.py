@@ -1,7 +1,7 @@
-"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender or an investor.
+"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor or an accountant.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor
+  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
@@ -16,8 +16,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
-if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor"):
-    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor")
+if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant"):
+    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant")
 MEET = Path(sys.argv[1]).resolve()
 KIND = sys.argv[2]
 
@@ -89,13 +89,16 @@ actions = sheet("actions.csv")
 spending = sheet("spending.csv")
 cashflow = sheet("cash-flow.csv")
 evidence = sheet("market-evidence.csv")
+expenses = sheet("expenses.csv")
+trips = sheet("trips.csv")
+deadlines = sheet("deadlines.csv")
 
 PRODUCT = first(funding, "product", "This product")
 U = first(funding, "unit", "unit")
 US = first(funding, "units", U + "s")
 piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
 tooling = sum(num(r["tooling"]) for r in cost)
-TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet"}[KIND]
+TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet"}[KIND]
 
 
 def table(head, body, cls=""):
@@ -399,6 +402,72 @@ if KIND == "investor":
 <li>Nothing here is a promise of a return. The numbers are the inventor's plan, built from the sheets named on each page.</li></ul>
 <h2>The company</h2>{investor_company()}""", "Page 5"))
     pages.append(prep_sheet(top=f"<p class='small'>Owner's money already in: {money(owner_spent, False)} spent, {money(owner_funds, False)} committed. Investors ask this first.</p>"))
+
+# ---------------- accountant ----------------
+if KIND == "accountant":
+    year = M.get("tax_year", M.get("date", "")[:4])
+    ex = [r for r in expenses if r.get("date", "").startswith(year)]
+    tr = [r for r in trips if r.get("date", "").startswith(year)]
+    odo = [r for r in tr if r.get("trip", "").upper().startswith("ODO")]
+    tr = [r for r in tr if r not in odo]
+    total = sum(num(r["amount"]) for r in ex)
+    miles = sum(num(r["business miles"]) for r in tr)
+    tolls = sum(num(r.get("parking and tolls")) for r in tr)
+    by_cat, by_from = {}, {}
+    for r in ex:
+        c = (r.get("tax category") or "").strip() or "no category yet"
+        by_cat[c] = by_cat.get(c, 0) + num(r["amount"])
+        w = (r.get("paid from") or "").strip() or "not said"
+        by_from[w] = by_from.get(w, 0) + num(r["amount"])
+    gaps = []
+    for r in ex:
+        lab = f"{fdate(r['date'])}, {esc(r['paid to'])}: {esc(r['what it was'])}"
+        if not (r.get("receipt file") or "").strip():
+            gaps.append(lab + ": no receipt")
+        if not (r.get("business purpose") or "").strip():
+            gaps.append(lab + ": no business purpose")
+        if (r.get("tax category") or "").strip() == "":
+            gaps.append(lab + ": no category")
+    for r in tr:
+        if not num(r.get("business miles")):
+            gaps.append(f"{fdate(r['date'])}, trip {esc(r['trip'])}: no miles")
+    if tr and not odo:
+        gaps.append(f"No odometer reading for {year}")
+    ask_acct = [r for r in ex if (r.get("tax category") or "").strip().lower() == "ask accountant"]
+    ready = not gaps
+    keep = ("legal name", "entity", "tax id (ein)", "business bank account", "years in business", "owner")
+    co = [r for r in company if r["key"].lower() in keep] or company
+    pages.append(page(f"For the accountant: tax year {year}", f"""
+<div class="verdict {'ok' if ready else 'warn'}"><strong>{'The records are complete for this year.' if ready else f'{len(gaps)} gaps to close before the meeting.'}</strong> Everything here comes from the business record, kept as things happened: the expense ledger, the trip log and the company record. It sorts the year; it does not decide what is deductible.</div>
+<div class="stats">{stat('Expenses this year', money(total))}{stat('Rows in the ledger', str(len(ex)))}{stat('Business miles', f'{miles:,.0f}', f'{len(tr)} trips')}{stat('Categories to decide', str(len(ask_acct)), money(sum(num(r["amount"]) for r in ask_acct)))}</div>
+<h2>The business</h2>{table(['', '', 'Status'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), pill(r['status'])] for r in co], 'compact')}
+<h2>What we are asking for</h2><ul class="levers">{''.join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get('ask', []))}</ul>""", "Page 1"))
+    cat = [[esc(k), money(v)] for k, v in sorted(by_cat.items())]
+    frm = [[esc(k), money(v)] for k, v in sorted(by_from.items())]
+    led = [[fdate(r["date"]), esc(r["paid to"]), esc(r["what it was"]), esc(r.get("business purpose")) or "<em>missing</em>",
+            esc(r.get("tax category")) or "<em>none</em>", money(num(r["amount"])), "yes" if (r.get("receipt file") or "").strip() else "<em>missing</em>"] for r in ex]
+    pages.append(page("Expenses", f"""
+<div class="riskhead"><div style="flex:1">{table(['By tax category', 'Total'], cat, 'num2')}</div><div style="flex:1">{table(["By whose money", 'Total'], frm, 'num2')}</div></div>
+<p class="small">"ask accountant" means the category waits for your call. Category names follow that year's IRS instructions or your own list once you give it to us.</p>
+<h2>The ledger</h2>{table(['Date', 'Paid to', 'What it was', 'Business purpose', 'Category', 'Amount', 'Receipt'], led, 'compact')}""", "Page 2"))
+    trows = [[fdate(r["date"]), esc(r["trip"]), esc(r.get("to (place and address)")), esc(r.get("business purpose")), esc(r.get("start odometer")), esc(r.get("end odometer")), f"{num(r['business miles']):,.0f}"] for r in tr]
+    orows = [[fdate(r["date"]), esc(r.get("who or what")), esc(r.get("start odometer") or r.get("end odometer"))] for r in odo]
+    same_day = sum(1 for r in tr if (r.get("logged on") or "").strip() == r.get("date", "").strip())
+    pages.append(page("Trips and mileage", f"""
+{table(['Date', 'Trip', 'To', 'Business purpose', 'Odometer start', 'Odometer end', 'Miles'], trows, 'compact')}
+<p><strong>{miles:,.0f} business miles</strong>{f', plus {money(tolls)} in parking and tolls' if tolls else ''}. {same_day} of {len(tr)} trips were logged on the day they happened (the logged on column in the trip log).</p>
+<h2>Odometer readings</h2>{table(['Date', 'What', 'Odometer'], orows, 'compact')}
+<p class="small">No mileage rate is applied here: the rate is that year's IRS standard mileage rate, or actual costs if you choose that method.</p>""", "Page 3"))
+    qs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("question", [])]
+    if ask_acct:
+        qs.insert(0, ["<strong>Which category for each \"ask accountant\" row?</strong>", f"{len(ask_acct)} rows, {money(sum(num(r['amount']) for r in ask_acct))}: " + "; ".join(esc(r["what it was"]) for r in ask_acct)])
+    dl = [[esc(r["due"]), esc(r["what"]), esc(r["Source"]), esc(r["Source status"])] for r in deadlines if any(w in (r.get("what", "") + r.get("why it matters", "")).lower() for w in ("tax", "irs", "1099", "estimated"))]
+    pages.append(page("Questions for you", f"""
+{table(['Question', 'What the record shows'], qs, 'compact')}
+<h2>Tax deadlines we are tracking</h2>{table(['Due', 'What', 'Source', 'Source status'], dl, 'compact') if dl else '<p>None recorded yet.</p>'}
+<p class="small">A deadline marked "to find" has no date yet because nobody has read it from the source. We would like you to confirm each one.</p>""", "Page 4"))
+    gl = "".join(f"<li>{g}</li>" for g in gaps) or "<li>None.</li>"
+    pages.append(prep_sheet(f"<h2>Gaps to close before the meeting</h2><ul class='levers small'>{gl}</ul><p class='small'>Find the receipt (a photo is fine), write the purpose, or mark the row \"receipt lost\" in its notes. tax-year.py lists the same gaps.</p>"))
 
 css = CSS
 doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: {TITLE.lower()}</title>

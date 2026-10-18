@@ -1,4 +1,4 @@
-261018.18
+261018.19
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -878,7 +878,7 @@ HOW TO CHOOSE
 - Avoid a name someone in your family or shop already has.
 - If you'd rather not choose, the bot uses the first easy name that isn't taken.
 === FILE: business-manager.txt ===
-AN Creation: the Office Manager Bot (role b-business-manager). Revision 18 — October 18, 2026.
+AN Creation: the Office Manager Bot (role b-business-manager). Revision 19 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Office Manager Bot)
 
 WHO YOU ARE
@@ -932,7 +932,7 @@ YOUR PROCEDURES (open one when its subject comes up, use it, then leave it)
 - Domain, website, business email, Google Search Console and Bing. https://ancreationoffice.com/sop-website.txt
 - The brand kit and profiles (LinkedIn, X and others). https://ancreationoffice.com/sop-presence.txt
 - Listings and the website: https://ancreationoffice.com/sop-website.txt . Posts, replies, listings and the approval loop: https://ancreationoffice.com/sop-promotion.txt
-- Meetings: whenever the inventor is going to meet or approach someone (a buyer, a manufacturer, a lender, an investor), follow https://ancreationoffice.com/sop-meeting-prep.txt : who, when, what they want out of it; then the packet that person needs, built from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor. Packets so far: buyer (sop-packet-buyer.txt), manufacturer (sop-packet-manufacturer.txt), lender (sop-packet-lender.txt), investor (sop-packet-investor.txt); an advisor or grant reviewer gets the funding packet.
+- Meetings: whenever the inventor is going to meet or approach someone (a buyer, a manufacturer, a lender, an investor), follow https://ancreationoffice.com/sop-meeting-prep.txt : who, when, what they want out of it; then the packet that person needs, built from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor. Packets so far: buyer (sop-packet-buyer.txt), manufacturer (sop-packet-manufacturer.txt), lender (sop-packet-lender.txt), investor (sop-packet-investor.txt), accountant (sop-packet-accountant.txt); an advisor or grant reviewer gets the funding packet.
 - Funding: which kind of money fits, https://ancreationoffice.com/sop-funding.txt ; the funding packet a lender or advisor reads, https://ancreationoffice.com/sop-funding-packet.txt ; the business risk register, https://ancreationoffice.com/sop-business-risks.txt . The product numbers in a packet are b-project-manager's: ask for current copies through office-handoff, never retype them.
 - The business record and tax time: https://ancreationoffice.com/sop-business-record.txt . A cost for an invention goes on the expense ledger and, by hand-off, on that invention's spending register; never two different amounts.
 - Specs, rules, rates, fees and deadlines: from the actual document, checked when they go into a sheet (https://ancreationoffice.com/sop-source-check.txt). When no procedure covers something, find the authoritative source in the library and write the business's procedure from it.
@@ -3957,7 +3957,7 @@ b-business-manager's record and packets
 - funding.csv, business-risks.csv, funding-packet.html: the funding packet for an investor or advisor (sop-funding-packet.txt)
 - correspondence/ and correspondence.csv: the correspondence log (sop-correspondence.txt), one folder per email, meeting or call, named YYMMDD-NN-X-slug.
   Three meetings have their meeting.csv and the packet built for them (sop-meeting-prep.txt): 261028-01-M-distributor-buyer-meeting/buyer-packet.html,
-  261024-01-M-molder-a-quote-meeting/manufacturer-packet.html, 261104-01-M-community-lender-meeting/lender-packet.html, and an investor meeting with family: 261112-01-M-family-investor-meeting/investor-packet.html. 261017-01-S-molder-a-meeting-request is an email out with its attachment list.
+  261024-01-M-molder-a-quote-meeting/manufacturer-packet.html, 261104-01-M-community-lender-meeting/lender-packet.html, and an investor meeting with family: 261112-01-M-family-investor-meeting/investor-packet.html, and a year-end meeting with an accountant: 261208-01-M-accountant-year-end/accountant-packet.html. 261017-01-S-molder-a-meeting-request is an email out with its attachment list.
 
 b-business-manager's required business record (https://ancreationoffice.com/sop-business-record.txt)
 - company.csv (with business.txt), business-decision-log.csv, actions.csv (shared columns), contacts.csv
@@ -4059,6 +4059,7 @@ date,folder,direction,with,organization,subject,what was conveyed,sent or receiv
 2026-10-28,261028-01-M-distributor-buyer-meeting,meeting,Purchasing manager,Regional hardware distributor,Buyer meeting,(prep built; notes after the meeting),buyer-packet.html to hand over,,2026-10-28,Snap mousetrap,,2026-10-18
 2026-11-04,261104-01-M-community-lender-meeting,meeting,Loan officer,Community lender,Loan meeting,(prep built; notes after the meeting),lender-packet.html to hand over,,2026-11-04,Snap mousetrap,,2026-10-18
 2026-11-12,261112-01-M-family-investor-meeting,meeting,A family member and a friend,,Investor meeting,(prep built; notes after the meeting),investor-packet.html to hand over,,2026-11-12,Snap mousetrap,,2026-10-18
+2026-12-08,261208-01-M-accountant-year-end,meeting,A local CPA,,Year-end planning,(prep built; notes after the meeting),accountant-packet.html to hand over,,2026-12-08,Snap mousetrap,,2026-10-18
 === FILE: example-mousetrap/correspondence/261014-01-M-store-owner-sample-visit/notes.txt ===
 Meeting notes. Illustrative example.
 Date: 2026-10-14. Where: the local farm-supply store (trip T-001).
@@ -4223,6 +4224,27 @@ q,How much of your own money is in?,"What the spending register shows, plus $10,
 q,When do I get paid back?,"Only from sales. The first shipment is planned for April 2027, if the numbers close."
 q,Why not a bank?,"A bank lends against sales, and there are none yet. The lender packet shows the numbers."
 leave_behind,"Pages 1 to 5. Not this prep sheet.",
+=== FILE: example-mousetrap/correspondence/261208-01-M-accountant-year-end/meeting.csv ===
+key,value,note
+type,accountant,
+who,"A local CPA, found through the SBDC",Illustrative
+date,2026-12-08,
+record,../..,Where the sheets are
+tax_year,2026,
+goal,"Set the records up the way the accountant wants them before the first sale, and get the open tax questions answered",
+ask,Your read on the questions on page 4,
+ask,"What you need from us each year, in what form, and your fee for it",
+question,"Should I form the LLC before the first sale, and how would it be taxed?","Single owner. The company is not formed yet (company record); decision 2026-10-17 was to wait until the first order or the lender meeting."
+question,How are the costs from before the business started treated?,"Every cost so far came before any sale: printed prototypes, resin samples, springs and bails, a coffee with a store owner."
+question,Do the prototype and testing costs count as research costs for tax purposes?,"Two rounds of printed prototypes and a barn test are in the ledger, each with its purpose."
+question,"Do I need to make estimated tax payments in 2027, and when?","No income yet. The first sales are planned for April 2027 (deadlines: still to find)."
+question,Mileage: the standard rate or actual costs?,"One truck, odometer logged from 2026-10-01 when it was first used for the business."
+question,"Which records do you want, in what form, and how often?","The ledger, the trip log and the receipts folder can come to you as files each month or at year end."
+q,Is the business money kept separate from your own?,"Not yet: no company and no business account. Costs are on the owner's personal card, and each one is in the ledger with its receipt."
+q,Any income this year?,No sales yet.
+q,Did you pay anyone who isn't an employee?,"No individuals so far; the ledger shows businesses only."
+walk_away,"Don't sign an engagement letter in the room: take the scope and the fee home and compare.",
+leave_behind,"Pages 1 to 4, and the ledger, trip log and receipts as files if they want them.",
 === FILE: example-mousetrap/cost-sheet.csv ===
 level,part number,part,qty,unit,make or buy,supplier,what it is,material cost,process cost,how the cost was figured,tooling,tooling notes,annual units,years,amortization,unit cost,running total,share of total
 1,MT-001,Plastic base,1,each,make,"Molder, to quote","Nylon 6/6 base with the bait cup, finger guard and spring post molded in. Wall 1.8 mm, draft 1 degree.",0.11,0.06,"Resin by shot weight, plus press time at this cavity.",85000,"1-cavity, hot runner. Gate at the rear. Placeholder until A-001. Not a quote.",50000,2,0.85,1.02,1.02,69.39%
@@ -5035,10 +5057,10 @@ END PLANNING RESOURCE REVIEW
 
 Resource cross-check. Read https://ancreationoffice.com/resource-crosscheck.txt for the additional filing, safety, search, launch and regional sources. Use matched sources only. Wisconsin resources are regional; follow source automation restrictions and existing disclosure/approval rules.
 === FILE: meeting-packet.py ===
-"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender or an investor.
+"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor or an accountant.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor
+  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
@@ -5053,8 +5075,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
-if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor"):
-    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor")
+if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant"):
+    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant")
 MEET = Path(sys.argv[1]).resolve()
 KIND = sys.argv[2]
 
@@ -5126,13 +5148,16 @@ actions = sheet("actions.csv")
 spending = sheet("spending.csv")
 cashflow = sheet("cash-flow.csv")
 evidence = sheet("market-evidence.csv")
+expenses = sheet("expenses.csv")
+trips = sheet("trips.csv")
+deadlines = sheet("deadlines.csv")
 
 PRODUCT = first(funding, "product", "This product")
 U = first(funding, "unit", "unit")
 US = first(funding, "units", U + "s")
 piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
 tooling = sum(num(r["tooling"]) for r in cost)
-TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet"}[KIND]
+TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet"}[KIND]
 
 
 def table(head, body, cls=""):
@@ -5436,6 +5461,72 @@ if KIND == "investor":
 <li>Nothing here is a promise of a return. The numbers are the inventor's plan, built from the sheets named on each page.</li></ul>
 <h2>The company</h2>{investor_company()}""", "Page 5"))
     pages.append(prep_sheet(top=f"<p class='small'>Owner's money already in: {money(owner_spent, False)} spent, {money(owner_funds, False)} committed. Investors ask this first.</p>"))
+
+# ---------------- accountant ----------------
+if KIND == "accountant":
+    year = M.get("tax_year", M.get("date", "")[:4])
+    ex = [r for r in expenses if r.get("date", "").startswith(year)]
+    tr = [r for r in trips if r.get("date", "").startswith(year)]
+    odo = [r for r in tr if r.get("trip", "").upper().startswith("ODO")]
+    tr = [r for r in tr if r not in odo]
+    total = sum(num(r["amount"]) for r in ex)
+    miles = sum(num(r["business miles"]) for r in tr)
+    tolls = sum(num(r.get("parking and tolls")) for r in tr)
+    by_cat, by_from = {}, {}
+    for r in ex:
+        c = (r.get("tax category") or "").strip() or "no category yet"
+        by_cat[c] = by_cat.get(c, 0) + num(r["amount"])
+        w = (r.get("paid from") or "").strip() or "not said"
+        by_from[w] = by_from.get(w, 0) + num(r["amount"])
+    gaps = []
+    for r in ex:
+        lab = f"{fdate(r['date'])}, {esc(r['paid to'])}: {esc(r['what it was'])}"
+        if not (r.get("receipt file") or "").strip():
+            gaps.append(lab + ": no receipt")
+        if not (r.get("business purpose") or "").strip():
+            gaps.append(lab + ": no business purpose")
+        if (r.get("tax category") or "").strip() == "":
+            gaps.append(lab + ": no category")
+    for r in tr:
+        if not num(r.get("business miles")):
+            gaps.append(f"{fdate(r['date'])}, trip {esc(r['trip'])}: no miles")
+    if tr and not odo:
+        gaps.append(f"No odometer reading for {year}")
+    ask_acct = [r for r in ex if (r.get("tax category") or "").strip().lower() == "ask accountant"]
+    ready = not gaps
+    keep = ("legal name", "entity", "tax id (ein)", "business bank account", "years in business", "owner")
+    co = [r for r in company if r["key"].lower() in keep] or company
+    pages.append(page(f"For the accountant: tax year {year}", f"""
+<div class="verdict {'ok' if ready else 'warn'}"><strong>{'The records are complete for this year.' if ready else f'{len(gaps)} gaps to close before the meeting.'}</strong> Everything here comes from the business record, kept as things happened: the expense ledger, the trip log and the company record. It sorts the year; it does not decide what is deductible.</div>
+<div class="stats">{stat('Expenses this year', money(total))}{stat('Rows in the ledger', str(len(ex)))}{stat('Business miles', f'{miles:,.0f}', f'{len(tr)} trips')}{stat('Categories to decide', str(len(ask_acct)), money(sum(num(r["amount"]) for r in ask_acct)))}</div>
+<h2>The business</h2>{table(['', '', 'Status'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), pill(r['status'])] for r in co], 'compact')}
+<h2>What we are asking for</h2><ul class="levers">{''.join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get('ask', []))}</ul>""", "Page 1"))
+    cat = [[esc(k), money(v)] for k, v in sorted(by_cat.items())]
+    frm = [[esc(k), money(v)] for k, v in sorted(by_from.items())]
+    led = [[fdate(r["date"]), esc(r["paid to"]), esc(r["what it was"]), esc(r.get("business purpose")) or "<em>missing</em>",
+            esc(r.get("tax category")) or "<em>none</em>", money(num(r["amount"])), "yes" if (r.get("receipt file") or "").strip() else "<em>missing</em>"] for r in ex]
+    pages.append(page("Expenses", f"""
+<div class="riskhead"><div style="flex:1">{table(['By tax category', 'Total'], cat, 'num2')}</div><div style="flex:1">{table(["By whose money", 'Total'], frm, 'num2')}</div></div>
+<p class="small">"ask accountant" means the category waits for your call. Category names follow that year's IRS instructions or your own list once you give it to us.</p>
+<h2>The ledger</h2>{table(['Date', 'Paid to', 'What it was', 'Business purpose', 'Category', 'Amount', 'Receipt'], led, 'compact')}""", "Page 2"))
+    trows = [[fdate(r["date"]), esc(r["trip"]), esc(r.get("to (place and address)")), esc(r.get("business purpose")), esc(r.get("start odometer")), esc(r.get("end odometer")), f"{num(r['business miles']):,.0f}"] for r in tr]
+    orows = [[fdate(r["date"]), esc(r.get("who or what")), esc(r.get("start odometer") or r.get("end odometer"))] for r in odo]
+    same_day = sum(1 for r in tr if (r.get("logged on") or "").strip() == r.get("date", "").strip())
+    pages.append(page("Trips and mileage", f"""
+{table(['Date', 'Trip', 'To', 'Business purpose', 'Odometer start', 'Odometer end', 'Miles'], trows, 'compact')}
+<p><strong>{miles:,.0f} business miles</strong>{f', plus {money(tolls)} in parking and tolls' if tolls else ''}. {same_day} of {len(tr)} trips were logged on the day they happened (the logged on column in the trip log).</p>
+<h2>Odometer readings</h2>{table(['Date', 'What', 'Odometer'], orows, 'compact')}
+<p class="small">No mileage rate is applied here: the rate is that year's IRS standard mileage rate, or actual costs if you choose that method.</p>""", "Page 3"))
+    qs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("question", [])]
+    if ask_acct:
+        qs.insert(0, ["<strong>Which category for each \"ask accountant\" row?</strong>", f"{len(ask_acct)} rows, {money(sum(num(r['amount']) for r in ask_acct))}: " + "; ".join(esc(r["what it was"]) for r in ask_acct)])
+    dl = [[esc(r["due"]), esc(r["what"]), esc(r["Source"]), esc(r["Source status"])] for r in deadlines if any(w in (r.get("what", "") + r.get("why it matters", "")).lower() for w in ("tax", "irs", "1099", "estimated"))]
+    pages.append(page("Questions for you", f"""
+{table(['Question', 'What the record shows'], qs, 'compact')}
+<h2>Tax deadlines we are tracking</h2>{table(['Due', 'What', 'Source', 'Source status'], dl, 'compact') if dl else '<p>None recorded yet.</p>'}
+<p class="small">A deadline marked "to find" has no date yet because nobody has read it from the source. We would like you to confirm each one.</p>""", "Page 4"))
+    gl = "".join(f"<li>{g}</li>" for g in gaps) or "<li>None.</li>"
+    pages.append(prep_sheet(f"<h2>Gaps to close before the meeting</h2><ul class='levers small'>{gl}</ul><p class='small'>Find the receipt (a photo is fine), write the purpose, or mark the row \"receipt lost\" in its notes. tax-year.py lists the same gaps.</p>"))
 
 css = CSS
 doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: {TITLE.lower()}</title>
@@ -24687,7 +24778,7 @@ NEVER (office)
 
 SOURCES (published; ids in your library): SOLIDWORKS API Help for your version (solidworks-api-help); recording and editing macros (solidworks-macros); CodeStack examples (codestack); xCAD.NET (xcad-net); community MCP servers (solidworks-mcp-servers); Model Context Protocol (mcp-protocol); Claude Code docs (claude-code-docs); Codex docs (openai-codex-docs); CadQuery (cadquery); build123d (build123d); KiCad docs (kicad-docs).
 === FILE: sop-business-record.txt ===
-SOP: The business record. Revision 4 — October 18, 2026.
+SOP: The business record. Revision 5 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one set for the business (all inventions). b-analyst fills and updates them, and runs tax-year.py.
 May write: the files named below in AN-Creation/Business/, their readable copies in Your files/Business record/, and hand-off lines to b-project-manager.
@@ -24725,7 +24816,7 @@ TAX TIME
 - Categories: use the category names in that year's IRS instructions for the inventor's return (for a single owner, usually Schedule C), or the accountant's own list once there is one. Read them from the form's instructions for that year; until they are read, the category is "ask accountant". Never a category from memory (principle-trace-to-source.txt).
 - Mileage: the trip log keeps the miles. The rate is that year's IRS standard mileage rate, read from the IRS notice for that year, or actual costs if the accountant chooses; tax-year.py only applies a rate given with its source.
 - What the records need: the IRS publications are the source (Publication 463 for travel and car expenses, Publication 583 for business records, both in the library). The trip log's columns follow what they and the accountant ask for; check them against the current publication each year.
-- At year end: python3 tax-year.py AN-Creation/Business <year>. It writes tax-year-<year>.txt: totals by category and by whose money, business miles, and every gap (no receipt, no purpose, no category, logged late). Close the gaps, then the inventor takes the summary, the ledger, the trip log and the receipts folder to their accountant or tax software.
+- At year end: python3 tax-year.py AN-Creation/Business <year>. It writes tax-year-<year>.txt: totals by category and by whose money, business miles, and every gap (no receipt, no purpose, no category, logged late). Close the gaps, then the inventor takes the summary, the ledger, the trip log and the receipts folder to their accountant or tax software. For a meeting with an accountant, build the accountant packet (https://ancreationoffice.com/sop-packet-accountant.txt).
 - The bot sorts and checks; it does not decide what is deductible. On the inventor's own money, doing their own return is their call; once there is real income, an employee, outside money or a company, an accountant is worth the fee (principle-rigor-scales-with-money.txt).
 
 THE HARD LINES
@@ -26049,11 +26140,11 @@ Selection guides and books: mcam-material-selection, protolabs-material-selectio
 PRODUCES
 A material decision record: requirements, shortlist with data, chemical check per chemical, tests needed, the choice and why.
 === FILE: sop-meeting-prep.txt ===
-SOP: Meeting prep. Revision 5 — October 18, 2026.
+SOP: Meeting prep. Revision 6 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst drafts the documents and builds the packet.
 May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/ (the meeting file, the packet, the notes; https://ancreationoffice.com/sop-correspondence.txt) and its row in correspondence.csv, rows in the Business action log, decision log, contacts.csv and market-evidence.csv, and hand-off lines to b-project-manager.
-Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261104-01-M-community-lender-meeting/lender-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261112-01-M-family-investor-meeting/investor-packet.html (each folder has its meeting.csv)
+Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261104-01-M-community-lender-meeting/lender-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261112-01-M-family-investor-meeting/investor-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261208-01-M-accountant-year-end/accountant-packet.html (each folder has its meeting.csv)
 Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-funding-packet.txt
 
 WHY THIS EXISTS
@@ -26069,7 +26160,8 @@ WHO'S ACROSS THE TABLE, AND WHAT THEY WANT TO SEE
 - Investor (friends and family, an angel, crowdfunding backers). Worries: is it worth it, will you see it through, what happens to my money. Packet: https://ancreationoffice.com/sop-packet-investor.txt
 - Grant reviewer, pitch competition or advisor. Worries: is it new, is the plan credible. Packet: the funding packet (https://ancreationoffice.com/sop-funding-packet.txt) plus the program's own form (sop-funding.txt).
 - Licensee. Worries: does it sell, can they own it. Packet: the sell sheet and patent status (sop-licensing.txt).
-- Patent attorney or agent, business attorney, accountant, insurance agent, partner. Packets for these come later; until then, build the meeting file below with the documents the record already has.
+- Accountant, tax preparer or bookkeeper. Worries: are the records complete, is business money kept apart, what will they have to answer. Packet: https://ancreationoffice.com/sop-packet-accountant.txt
+- Patent attorney or agent, business attorney, insurance agent, partner. Packets for these come later; until then, build the meeting file below with the documents the record already has.
 
 THE STEPS
 1. Who, when, what they want out of it. Name the counterpart type from the list.
@@ -26077,7 +26169,7 @@ THE STEPS
 3. Dust off what exists (parked documents come out for this meeting and go back after, https://ancreationoffice.com/sop-document-life.txt DUSTING ONE OFF). Check what exists: the business record (AN-Creation/Business/) and copies of b-project-manager's project record. Ask b-project-manager for current copies of anything product-side through office-handoff (the cost sheet, specs, drawings list, risk table, charter); never retype them.
 4. Draft what is missing, honestly. A pre-revenue company has no sales history, no credit and maybe no insurance yet: the packet says so, says what is being done about it, and puts it on the action log. Never invent a fact to fill a gap (principle-never-invent-facts.txt).
 5. Write the meeting file, meeting.csv: who, when, the goal, the ask, the walk-away (principle-walk-away-number.txt), the questions they will likely ask with the answers, and what to leave behind.
-6. Build the packet: python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug <buyer|manufacturer|lender|investor>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
+6. Build the packet: python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug <buyer|manufacturer|lender|investor|accountant>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
 7. Before the meeting, tell the inventor in a few lines: what is in the packet, the two or three questions most likely to come up, the ask, and anything still missing.
 8. After the meeting, before anything else: the meeting notes in the meeting's folder and its row in correspondence.csv, the trip row with the miles if they drove (trips.csv), and every cost with its receipt (expenses.csv), per https://ancreationoffice.com/sop-business-record.txt . Then add what they said or did to market-evidence.csv when it is a signal; update contacts.csv with the next step and date; put every promise on the action log; write any decision to the decision log.
 
@@ -26237,6 +26329,40 @@ Then run office-setup-check and tell them pass or fail.
 Write T-001 (intake-001.csv, then b-analyst with analyst-after-intake.txt) and start: "Tell me about your invention."
 
 Done when b-project-manager exists and reads standing.txt, the project folder is made, private, and proven (test file written, read, deleted), AGENTS.md and CLAUDE.md are in it if it is on GitHub, b-analyst is tested (or b-project-manager's own runs recorded), and T-001 is active.
+=== FILE: sop-packet-accountant.txt ===
+SOP: The accountant packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with an accountant, a tax preparer or a bookkeeper (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; nothing in the ledger, the trip log or the company record (the packet reads them; the gaps are closed in the record itself).
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261208-01-M-accountant-year-end/accountant-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (the rows marked Accountant only)
+Goes with: https://ancreationoffice.com/sop-business-record.txt (the ledger, trip log, deadlines and TAX TIME), https://ancreationoffice.com/tax-year.py
+
+WHO IT IS FOR
+A CPA, an enrolled agent, a tax preparer or a bookkeeper: the first meeting, to set up how records are kept before the first sale, and the year-end meeting.
+
+WHAT WORRIES THEM
+- Are the records complete? Every cost with its receipt and purpose, every trip with its miles, logged when it happened.
+- Is business money kept apart from personal money?
+- What is the business, legally, and when did it start? The entity, the tax ID, the first sale.
+- What questions will they have to answer, and how much work is it?
+
+WHAT GOES IN IT (meeting-packet.py builds these pages from the business record and meeting.csv)
+1. For the accountant: the tax year, the gaps still open, the totals (expenses, rows, business miles, categories waiting for their call), the business in brief from the company record, and what we ask of them.
+2. Expenses: totals by tax category and by whose money, and the whole year's ledger with each row's purpose, category and whether its receipt is on file.
+3. Trips and mileage: every trip with its odometer readings and miles, how many were logged the day they happened, and the year's odometer readings. No mileage rate is applied: that is the accountant's call (standard rate or actual costs).
+4. Questions for you: the questions the inventor wants answered (question rows), with what the record shows for each; the "ask accountant" categories listed first; and the tax deadlines from deadlines.csv with their source status.
+5. Prep sheet, for the inventor only: the goal, the ask, the walk-away, what they will likely ask, the gaps to close before the meeting, and what is still open in the company record.
+
+BEFORE THE MEETING
+- Run python3 tax-year.py AN-Creation/Business <year> and close what it lists: find the receipt (a photo is fine), write the purpose, or mark the row "receipt lost" in its notes. The packet shows the same gaps.
+- The ledger, the trip log and the receipts folder go with the packet as files if the accountant wants them.
+
+RULES
+- The bot sorts and asks; it does not decide what is deductible, which category a cost belongs in, or how the business should be taxed. Those are the accountant's calls, written into the decision log when made.
+- Questions are asked as questions. The packet never states a tax rule, a rate, a threshold or a deadline as fact unless it was read from the source for that year (principle-trace-to-source.txt).
+- Never put full tax IDs, account or card numbers, or passwords in the packet or its folder.
+- Don't sign an engagement letter in the room: take the scope and the fee home and compare (principle-walk-away-number.txt).
+- After the meeting: the accountant's answers go in the decision log; the categories they choose go into the ledger; any deadline they give goes in deadlines.csv with them as its source.
 === FILE: sop-packet-buyer.txt ===
 SOP: The buyer packet. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
@@ -27651,7 +27777,7 @@ Search Console and Bing: pages found vs. pages in the sitemap, any new errors (a
 
 Sources: Google Search Console start https://support.google.com/webmasters/answer/9128668 ; sitemaps https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview ; SEO starter guide https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; Bing Webmaster https://www.bing.com/webmasters ; GitHub Pages https://docs.github.com/en/pages .
 === FILE: sop.txt ===
-AN Creation standard operating procedures. Revision 19 — October 18, 2026.
+AN Creation standard operating procedures. Revision 20 — October 18, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
@@ -27698,7 +27824,7 @@ K3. b-business-manager: the brand kit and profiles. Logo, descriptions, fact she
 K4. b-business-manager: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories. https://ancreationoffice.com/sop-promotion.txt
 K5. b-business-manager: the funding packet a lender or advisor reads: executive summary, unit economics, use of funds, milestones, risk register. https://ancreationoffice.com/sop-funding-packet.txt (builder: https://ancreationoffice.com/funding-packet.py ; example: https://ancreationoffice.com/example-mousetrap/funding-packet.html)
 K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
-K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt ; builder https://ancreationoffice.com/meeting-packet.py
+K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt , accountant https://ancreationoffice.com/sop-packet-accountant.txt ; builder https://ancreationoffice.com/meeting-packet.py
 K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and the correspondence log, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py. https://ancreationoffice.com/sop-business-record.txt (templates: template-expenses.csv, template-trips.csv, template-correspondence.csv, template-deadlines.csv, template-business-decision-log.csv)
 
 FOR b-project-manager
@@ -27743,7 +27869,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.18
+261018.19
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -27790,6 +27916,7 @@ example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/meeting.csv
 example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/meeting.csv
 example-mousetrap/correspondence/261104-01-M-community-lender-meeting/meeting.csv
 example-mousetrap/correspondence/261112-01-M-family-investor-meeting/meeting.csv
+example-mousetrap/correspondence/261208-01-M-accountant-year-end/meeting.csv
 example-mousetrap/cost-sheet.csv
 example-mousetrap/deadlines.csv
 example-mousetrap/decision-log.csv
@@ -27939,6 +28066,7 @@ sop-meeting-prep.txt
 sop-mold-buying.txt
 sop-molding-defects.txt
 sop-office.txt
+sop-packet-accountant.txt
 sop-packet-buyer.txt
 sop-packet-investor.txt
 sop-packet-lender.txt
@@ -28450,7 +28578,7 @@ date,who,what they saw,what they said,what they did or would pay,strength,source
 2026-10-14,Example: owner of a local store,A sample and the price,What they said,What they did or would pay,medium,where it is recorded
 === FILE: template-meeting.csv ===
 key,value,note
-type,buyer,"buyer, manufacturer, lender or investor"
+type,buyer,"buyer, manufacturer, lender, investor or accountant"
 who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
 date,2026-10-28,YYYY-MM-DD
 record,../../funding/<invention>,Folder with the sheets; relative to this meeting folder
@@ -28486,6 +28614,8 @@ alternative,What people use now,Investor only: one row each; the note says where
 term,,Investor only: one row per term; the note is the detail
 exit,,"Investor only: how an investor could get money back, including if it fails"
 market,,"Investor only, optional: a market size, only with its source in the note"
+tax_year,2026,Accountant only: the year the packet covers
+question,A question for the accountant,Accountant only: one row each; the note says what the record shows
 === FILE: template-pricing-terms.csv ===
 key,value,source,note
 headline,,,The product in one line a buyer remembers
@@ -29814,7 +29944,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.18
+Office version: 261018.19
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -29852,6 +29982,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.19  The accountant packet (sop-packet-accountant.txt), for a CPA, tax preparer or bookkeeper: the year's totals and gaps, expenses by category and by whose money with the whole ledger, trips and mileage with odometer readings, the inventor's questions with what the record shows, the tax deadlines with their source status, and a prep sheet. Built from the business record by meeting-packet.py (accountant). The bot sorts and asks; it never decides what is deductible or states a tax rule it has not read from the source. Example: example-mousetrap/correspondence/261208-01-M-accountant-year-end/. Re-read your office file. No new profile text.
 261018.18  The investor packet (sop-packet-investor.txt), for family and friends, an angel or crowdfunding backers: investment summary with an honest verdict, the product and the evidence, the numbers, the plan and the risks, the terms and what to know (including that a share, a note or a SAFE is a security and the terms are set with an attorney before any money changes hands), and a prep sheet. meeting-packet.py builds it (investor). When the numbers don't close, the ask is for the step that shows whether they can, not production molds. The funding packet stays for advisors and grant reviewers. Example: example-mousetrap/correspondence/261112-01-M-family-investor-meeting/. Re-read your office file. No new profile text.
 261018.17  Bots no longer update on their own. Each bot works from its project's library (AN-Creation/sops/library.txt) and does not check the website at the start of a conversation. When the owner says "update" or "check for updates", the bot checks the site, says what's new, and updates (version.txt UPDATING). Links in procedures name sections of library.txt. The SOP updates line (auto, ask, pinned) is retired. This is the last version a bot picks up without being asked. Re-read your office file. No new profile text.
 261018.16  record-view.py builds readable, printable pages of the record (charter, cost sheet, risk table, action log, decision log, spending register, compliance matrix, expense ledger, trip log, correspondence index) for Your files; the project and business record procedures name it. Example: example-mousetrap/views/. Re-read your office file. No new profile text.

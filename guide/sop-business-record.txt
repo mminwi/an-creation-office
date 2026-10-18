@@ -1,4 +1,4 @@
-SOP: The business record. Revision 4 — October 18, 2026.
+SOP: The business record. Revision 5 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one set for the business (all inventions). b-analyst fills and updates them, and runs tax-year.py.
 May write: the files named below in AN-Creation/Business/, their readable copies in Your files/Business record/, and hand-off lines to b-project-manager.
@@ -36,7 +36,7 @@ TAX TIME
 - Categories: use the category names in that year's IRS instructions for the inventor's return (for a single owner, usually Schedule C), or the accountant's own list once there is one. Read them from the form's instructions for that year; until they are read, the category is "ask accountant". Never a category from memory (principle-trace-to-source.txt).
 - Mileage: the trip log keeps the miles. The rate is that year's IRS standard mileage rate, read from the IRS notice for that year, or actual costs if the accountant chooses; tax-year.py only applies a rate given with its source.
 - What the records need: the IRS publications are the source (Publication 463 for travel and car expenses, Publication 583 for business records, both in the library). The trip log's columns follow what they and the accountant ask for; check them against the current publication each year.
-- At year end: python3 tax-year.py AN-Creation/Business <year>. It writes tax-year-<year>.txt: totals by category and by whose money, business miles, and every gap (no receipt, no purpose, no category, logged late). Close the gaps, then the inventor takes the summary, the ledger, the trip log and the receipts folder to their accountant or tax software.
+- At year end: python3 tax-year.py AN-Creation/Business <year>. It writes tax-year-<year>.txt: totals by category and by whose money, business miles, and every gap (no receipt, no purpose, no category, logged late). Close the gaps, then the inventor takes the summary, the ledger, the trip log and the receipts folder to their accountant or tax software. For a meeting with an accountant, build the accountant packet (https://ancreationoffice.com/sop-packet-accountant.txt).
 - The bot sorts and checks; it does not decide what is deductible. On the inventor's own money, doing their own return is their call; once there is real income, an employee, outside money or a company, an accountant is worth the fee (principle-rigor-scales-with-money.txt).
 
 THE HARD LINES
