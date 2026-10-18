@@ -1,4 +1,4 @@
-SOP: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 8 — October 18, 2026. Two kinds of bot: the Project Manager Bot and the Office Manager Bot. Most people have one of each; more are possible (SEVERAL BOTS). Specialists come with their bot. Hand-offs follow the office-handoff skill.
+SOP: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 9 — October 18, 2026. Two kinds of bot: the Project Manager Bot and the Office Manager Bot. Most people have one of each; more are possible (SEVERAL BOTS). Specialists come with their bot. Hand-offs follow the office-handoff skill.
 Index: https://ancreationoffice.com/sop.txt
 Read this when setting up a bot, when the owner adds, renames or removes a bot, moves an invention to another bot or adds a business, when work belongs to another bot, and when a project needs its first look or a second look at a gate.
 
@@ -54,7 +54,15 @@ The owner may run more than one Project Manager Bot, for example one for garden 
 - Shared by every bot: sops/ (each bot on its own version), team.csv, handoffs/, ideas.txt. Shared within a business: its correspondence log and its business record.
 - Who runs which invention: team.csv runs, the "Run by: <bot id>" line in the invention's PROJECT.txt, and its line in All inventions. They agree; if they don't, PROJECT.txt wins and the bot fixes the other two in one save. A PROJECT.txt with no Run by line belongs to b-project-manager.
 - A Project Manager Bot changes only its own inventions. It can read any other ("That one is run by your Marine Project Manager Bot; it's in prototype, waiting on parts."), and sends anything for it through office-handoff. "What projects do I have going?" lists its own first, then the others in one line with who runs each.
-- An Office Manager Bot changes only its own business folder. Work for another business goes to that business's Office Manager Bot.
+- An Office Manager Bot changes only its own business folder and the business side of that business's inventions (below). Work for another business goes to that business's Office Manager Bot.
+
+WHERE EACH BOT SAVES
+- A Project Manager Bot works inside the folders of the inventions it runs. Outside them it writes only its own office folder, its row in team.csv, hand-off lines, ideas.txt, and the business's correspondence log when an email, file or meeting about its invention goes in or out (one log per business, sop-correspondence.txt).
+- An Office Manager Bot works at two levels and saves at the level the work is about:
+  - The business: anything for the whole company (the company record, money, trips, contacts, the brand kit, promotion, a meeting about the company) goes in the business folder.
+  - One invention: anything about one invention only (a note on its name or market, a licensing list for it, a business question about it) goes in that invention's Office files/business/, with readable copies in its Your files/Business/. That folder is the Office Manager Bot's; the Project Manager Bot reads it but doesn't change it, and the Office Manager Bot changes nothing else in the invention's folder.
+  - The packets that join the two stay in the business folder by invention: funding/<invention>/ and patent/<invention>/, because they draw on the company record as well.
+  - Not sure which: if it would still matter with that invention dropped, it's the business's.
 
 ADDING A BOT
 Only the owner adds a bot; never create one. The new bot follows drive-setup.txt JOINING AN EXISTING FOLDER: it asks the owner for its short word if a bot of its kind already exists, takes its bot id, makes its office folder and inbox, and adds its row to team.csv.

@@ -95,13 +95,14 @@ def main(argv):
     if problems:
         summary += "<p><strong>To fix:</strong></p><ul>" + "".join(f"<li>{e(x)}</li>" for x in problems) + "</ul>"
     page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Schedule</title>
-<style>body{{margin:0;background:#e9e6df;font:14px/1.45 Inter,"Segoe UI",Arial,sans-serif;color:#1d2427}}.page{{max-width:1180px;margin:24px auto;background:#fff;border:1px solid #d7d2c6;border-radius:6px;padding:28px 32px 36px}}
+<style>@media screen and (max-width:760px){{table{{display:block;overflow-x:auto;max-width:100%}}}}body{{margin:0;background:#e9e6df;font:14px/1.45 Inter,"Segoe UI",Arial,sans-serif;color:#1d2427}}.page{{max-width:1180px;margin:24px auto;background:#fff;border:1px solid #d7d2c6;border-radius:6px;padding:28px 32px 36px}}
 .top{{border-bottom:3px solid #315f5c;padding-bottom:10px;margin-bottom:14px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#315f5c;font-weight:700}}h1{{font-size:22px;margin:0 0 8px}}
 table{{border-collapse:collapse;width:100%;font-size:12.5px;margin-top:10px}}th{{background:#f1eee6;text-align:left;border:1px solid #d9d4c8;padding:6px 7px}}td{{border:1px solid #e1ddd3;padding:6px 7px;vertical-align:top}}td.n{{text-align:right;white-space:nowrap}}
 tr.crit td{{background:#f4f8f6;font-weight:600}}td.late{{color:#9a2b1b;font-weight:700}}.foot{{margin-top:14px;font-size:12px;color:#6b7275}}td.d{{white-space:nowrap}}.end{{background:#fdf3e1;border-left:4px solid #c9862b;padding:8px 10px}}</style></head><body><div class="page">
 <div class="top">AN Creation Office · Project record</div><h1>Schedule</h1>{summary}
 <table><thead><tr><th>ID</th><th>Milestone</th><th>Depends on</th><th>Days after</th><th>Planned (charter)</th><th>Forecast</th><th>Actual</th><th>Slip, days</th><th>Critical</th><th>Notes</th></tr></thead><tbody>{body}</tbody></table>
 <p class="foot">Built by schedule.py from schedule.csv. Shaded rows are the critical path: the chain that sets the last date. A slip there moves the end; a slip elsewhere only uses up spare time.</p></div></body></html>"""
+    out.mkdir(parents=True, exist_ok=True)
     (out / "schedule.html").write_text(page, encoding="utf-8")
     return 1 if problems else 0
 

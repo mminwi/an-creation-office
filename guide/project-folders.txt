@@ -1,4 +1,4 @@
-AN Creation project folders. Revision 17 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
+AN Creation project folders. Revision 18 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
 
 One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything. Inside it, one folder per business, and inside each business, one folder per invention. Everyone starts with one, the default business (Default-org/); an invention not assigned to another business goes there. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
 
@@ -49,6 +49,7 @@ AN-Creation/                    shared by every bot
         sessions/YYMMDD-HHMM-slug/   one per analyst run: prompt, notes, result, DONE.txt
         (no inventor-copy/: Drive version history, or GitHub history, shows what the inventor changed)
         archive/
+        business/                 the Office Manager Bot's notes and work about this invention only; readable copies in Your files/Business/ (sop-team.txt WHERE EACH BOT SAVES)
 
 Only the project lives here, plus the procedures: sops/, one file per installed version, each bot on its own until the owner tells it to update (version.txt UPDATING). The bots read their procedures from it, not from the website. A template copied in to be filled out (a form, the plan) is a project file from then on: dated, and never overwritten by a newer template.
 

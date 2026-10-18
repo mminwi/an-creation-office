@@ -1,4 +1,4 @@
-261018.33
+261018.35
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -62,6 +62,7 @@ example-mousetrap/funding.csv
 example-mousetrap/intake-001.csv
 example-mousetrap/invention-disclosure.csv
 example-mousetrap/market-evidence.csv
+example-mousetrap/plan.txt
 example-mousetrap/pricing-terms.csv
 example-mousetrap/prior-art.csv
 example-mousetrap/project-charter.txt

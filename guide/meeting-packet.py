@@ -711,7 +711,7 @@ if KIND == "partner":
 
 css = CSS
 doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: {TITLE.lower()}</title>
-<style>{css.replace('PRODUCT_NAME', esc(PRODUCT)).replace('PACKET_NAME', TITLE.lower())}
+<style>{css.replace('PRODUCT_NAME', esc(PRODUCT)).replace('PACKET_NAME', TITLE.lower())}@media screen and (max-width:760px){{table{{display:block;overflow-x:auto;max-width:100%}}}}
 table.num td:first-child {{ white-space: nowrap; }}
 .lede-big {{ font-size: 13pt; color: #1f3b4d; font-weight: bold; margin: 2pt 0 8pt; }}</style></head><body>{''.join(pages)}</body></html>"""
 out = MEET / f"{KIND}-packet.html"

@@ -66,7 +66,7 @@ ul.idx li { margin: 4px 0; }
 
 def page(title, kind, project, body, note):
     return (f"<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>"
-            f"<title>{html.escape(title)}</title><style>{CSS}</style></head><body><div class='page'>"
+            f"<title>{html.escape(title)}</title><style>{CSS}@media screen and (max-width:760px){{table{{display:block;overflow-x:auto;max-width:100%}}}}</style></head><body><div class='page'>"
             f"<div class='top'><b>AN Creation Office · {html.escape(kind)}</b><span>{html.escape(project)}</span></div>"
             f"<h1>{html.escape(title)}</h1>{body}<p class='foot'>{note}</p></div></body></html>")
 

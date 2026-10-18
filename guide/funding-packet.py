@@ -285,6 +285,7 @@ pages.append(page("Appendix A: design risk analysis", f"""
 
 doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: funding packet</title>
 <style>
+@media screen and (max-width:760px){{table{{display:block;overflow-x:auto;max-width:100%}}}}
 @page {{ size: letter; margin: 0.55in 0.65in 0.6in;
   @bottom-left {{ content: "{esc(PRODUCT)} · funding packet · draft for review"; font: 7.5pt Arial, sans-serif; color: #777; }}
   @bottom-right {{ content: "Page " counter(page) " of " counter(pages); font: 7.5pt Arial, sans-serif; color: #777; }} }}
