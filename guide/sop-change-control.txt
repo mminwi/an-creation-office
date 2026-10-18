@@ -1,4 +1,5 @@
-SOP: Revisions and change control. Revision 1 — October 7, 2026.
+SOP: Revisions and engineering change notices. Revision 2 — October 18, 2026.
+One of the seven required documents (https://ancreationoffice.com/sop-project-record.txt). May write: Office files/ecn-log.csv, Office files/ecn/, and the readable copy of the log in Your files/Project record/.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: sop-stages.txt, the loops, the compliance matrix, project-folders.txt (dated folders)
 
@@ -15,9 +16,16 @@ At an elevated documentation level, follow the buyer's or program's scheme if it
 BEFORE FREEZE (C and X revisions)
 Change freely; that's what the loops are for. Each round's review record says what changed and why, and the CAD update makes the next revision. No separate change record needed.
 
+ENGINEERING CHANGE NOTICES (ECNs)
+An ECN is the change record. Each one is a numbered file, Office files/ecn/YYMMDD-ECN-<number>-<slug>.txt (template https://ancreationoffice.com/template-change-record.txt), and one row in Office files/ecn-log.csv (template https://ancreationoffice.com/template-ecn-log.csv): number, date, what changes, why, from and to revision, cost and time, decision, status (open, approved, rejected, done). The log is what the inventor reads; the file has the detail.
+An ECN is required for:
+- Any change to the project charter's scope, budget, milestones or success criteria, from the day the charter is approved (sop-project-charter.txt). The charter's revision letter goes up when the ECN is approved.
+- Any change to a frozen design (below).
+Before freeze, design changes inside the loops need no ECN; the review records cover them.
+
 AFTER FREEZE (released revisions)
-Every change gets a change record, in its own dated file:
-- Number and date (CR-001, CR-002).
+Every change gets an ECN, in its own dated file:
+- Number and date (ECN-001, ECN-002; older projects may have CR- numbers, which stay as they are).
 - What changes: the part, drawing, process, supplier, tool, fixture, gauge, or label.
 - Why: the reason, the test or report that started it (link to the test, report or complaint).
 - What it touches: compliance matrix lines, FMEA lines, critical features, control plan checks, certifications, tooling, stock on hand.
@@ -37,4 +45,4 @@ SAFETY
 A safety fix is never held back by paperwork. Make the fix and contain the risk first; complete the change record right after.
 
 WHO DOES WHAT
-b-analyst writes the change record, works out what it touches and what must be re-checked, and tracks it to done. b-project-manager shows it to the inventor in plain words and records the decision. The inventor approves; the office never approves for them or tells a supplier or lab without them.
+b-analyst writes the ECN and its log row, works out what it touches and what must be re-checked, and tracks it to done. b-project-manager shows it to the inventor in plain words and records the decision. The inventor approves; the office never approves for them or tells a supplier or lab without them.

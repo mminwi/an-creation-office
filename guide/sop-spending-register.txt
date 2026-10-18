@@ -1,0 +1,20 @@
+SOP: The spending register. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-project-manager, one per invention. b-analyst adds the rows. Template: https://ancreationoffice.com/template-spending-register.csv
+May write: Office files/spending.csv and its readable copy in Your files/Project record/.
+Goes with: https://ancreationoffice.com/sop-project-record.txt , https://ancreationoffice.com/sop-cost-sheet.txt (what one unit should cost; this register is what the project has actually spent)
+
+WHY THIS EXISTS
+A basic accounting register for the project: how much has gone out, on what, and whose money it was. Inventors lose track of what they have put in, and a lender, an investor or a tax preparer will ask. It is not the company's books (the Office Manager Bot keeps those with the owner's accountant); it is the project's spending, kept as it happens.
+
+COLUMNS
+date, stage (S0 to S5), what it was, category (Prototype, Tooling, Testing, Fees, Samples, Services, Travel, Other), vendor or who, amount, committed or paid, paid from, running total, receipt or quote file, notes.
+- paid from: Owner (the inventor's own money), or the other party by name: a grant, a loan, an investor, a partner. This is how the register shows out-of-pocket against other people's money.
+- committed: an order placed or a quote accepted but not yet paid. It counts toward the budget now.
+- running total: the sum of every amount so far, paid and committed.
+
+RULES
+- A row the same turn a receipt, invoice, order or accepted quote comes in. A quote not yet accepted is not spending; it goes on the cost sheet.
+- Only real amounts. Never estimate a row (principle-never-invent-facts.txt). Hours are optional and go in notes.
+- At each gate, and whenever asked, say in one line: spent so far, how much was the owner's, and what is left in the charter's budget through the next gate.
+- When the money stops being only the owner's, say it in one line and follow principle-rigor-scales-with-money.txt.

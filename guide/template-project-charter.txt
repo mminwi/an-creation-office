@@ -1,0 +1,46 @@
+Project charter. Template. Office files/project-charter.txt. Replace every line in brackets; delete what does not apply.
+Revision: A, [YYYY-MM-DD], approved by [the inventor] (decision log [date])
+
+1. PRODUCT
+[What it is and the problem it solves, in two sentences.]
+
+2. OBJECTIVE
+This project delivers: [the end state, e.g. a molded, tested product ready for first orders].
+Left for later: [what this project does not try to finish].
+
+3. SCOPE
+In: [short list]
+Out: [short list]
+
+4. SUCCESS CRITERIA (measurable)
+- [Cost per unit at or under $__ at __ units a year]
+- [Passes __ test]
+- [First order or first sale by __]
+
+5. DELIVERABLES BY STAGE
+- S0 Fact-finding: [project description, charter, first cost sheet and risk table]
+- S1 Design: [...]
+- S2 Prototype: [...]
+- S3 Tooling: [...]
+- S4 Qualification: [...]
+- S5 Launch: [...]
+
+6. MILESTONES
+- [YYYY-MM-DD] [milestone]
+
+7. BUDGET
+Total to launch: $[__] ([estimate or quotes]). Through the next gate: $[__].
+Whose money: [the owner's own / a grant / a loan / an investor]. Tracked in the spending register.
+
+8. ASSUMPTIONS AND CONSTRAINTS
+- [Volume, material, channel taken as true]
+- [Limits: money, time, tools]
+
+9. TOP RISKS (from the risk table)
+- [F_] [risk] [what is being done]
+
+10. DECISION-MAKER AND APPROVALS
+[Who decides; what needs whose yes.]
+
+11. REVISIONS
+A [date] first issue.

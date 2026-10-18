@@ -84,10 +84,13 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`sop-promotion.txt`](guide/sop-promotion.txt) | K4. b-business-manager: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories | [live](https://ancreationoffice.com/sop-promotion.txt) |
 | [`sop-funding-packet.txt`](guide/sop-funding-packet.txt) | K5. b-business-manager: the funding packet a lender or advisor reads: executive summary, unit economics, use of funds, milestones, risk register | [live](https://ancreationoffice.com/sop-funding-packet.txt) |
 | [`sop-business-risks.txt`](guide/sop-business-risks.txt) | K6. b-business-manager: the business risk register | [live](https://ancreationoffice.com/sop-business-risks.txt) |
-| [`sop-cost-sheet.txt`](guide/sop-cost-sheet.txt) | The project sheets: cost sheet | [live](https://ancreationoffice.com/sop-cost-sheet.txt) |
-| [`sop-risk-table.txt`](guide/sop-risk-table.txt) | The project sheets: risk table | [live](https://ancreationoffice.com/sop-risk-table.txt) |
-| [`sop-decision-log.txt`](guide/sop-decision-log.txt) | The project sheets: decision log | [live](https://ancreationoffice.com/sop-decision-log.txt) |
-| [`sop-suggestions.txt`](guide/sop-suggestions.txt) | The project sheets: suggestions | [live](https://ancreationoffice.com/sop-suggestions.txt) |
+| [`sop-project-record.txt`](guide/sop-project-record.txt) | The project record, required for every invention | [live](https://ancreationoffice.com/sop-project-record.txt) |
+| [`sop-decision-log.txt`](guide/sop-decision-log.txt) | decision log | [live](https://ancreationoffice.com/sop-decision-log.txt) |
+| [`sop-action-log.txt`](guide/sop-action-log.txt) | action log with suggestions | [live](https://ancreationoffice.com/sop-action-log.txt) |
+| [`sop-cost-sheet.txt`](guide/sop-cost-sheet.txt) | cost sheet | [live](https://ancreationoffice.com/sop-cost-sheet.txt) |
+| [`sop-spending-register.txt`](guide/sop-spending-register.txt) | spending register | [live](https://ancreationoffice.com/sop-spending-register.txt) |
+| [`sop-risk-table.txt`](guide/sop-risk-table.txt) | risk table | [live](https://ancreationoffice.com/sop-risk-table.txt) |
+| [`sop-change-control.txt`](guide/sop-change-control.txt) | engineering change notices | [live](https://ancreationoffice.com/sop-change-control.txt) |
 | [`principles-pm.txt`](guide/principles-pm.txt) | Principles, read first every conversation | [live](https://ancreationoffice.com/principles-pm.txt) |
 | [`sop-focus.txt`](guide/sop-focus.txt) | Keep the project focused: risks as questions, decisions, "for now" and circling back | [live](https://ancreationoffice.com/sop-focus.txt) |
 | [`ticket-template.txt`](guide/ticket-template.txt) | The ticket format b-project-manager runs | [live](https://ancreationoffice.com/ticket-template.txt) |
@@ -104,14 +107,12 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`sop-tooling-loop.txt`](guide/sop-tooling-loop.txt) | The tooling loop: tool trials, design changes for tooling, final specs from measured parts and the stack-up | [live](https://ancreationoffice.com/sop-tooling-loop.txt) |
 | [`sop-qualification.txt`](guide/sop-qualification.txt) | Qualification and production approval: first article, process trials, qualifying what's needed, the approval package | [live](https://ancreationoffice.com/sop-qualification.txt) |
 | [`sop-launch.txt`](guide/sop-launch.txt) | Launch: first order, packaging and labels, the buyer packet, honest listings | [live](https://ancreationoffice.com/sop-launch.txt) |
-| [`sop-change-control.txt`](guide/sop-change-control.txt) | Revisions and change control: C, X and A/B/C revision names; the change record and what a change must re-check | [live](https://ancreationoffice.com/sop-change-control.txt) |
 | [`template-apqp-file.csv`](guide/template-apqp-file.csv) | Templates b-analyst fills: APQP file | [live](https://ancreationoffice.com/template-apqp-file.csv) |
 | [`template-review-record.txt`](guide/template-review-record.txt) | Templates b-analyst fills: review record | [live](https://ancreationoffice.com/template-review-record.txt) |
 | [`template-prototype-control-plan.txt`](guide/template-prototype-control-plan.txt) | Templates b-analyst fills: prototype control plan | [live](https://ancreationoffice.com/template-prototype-control-plan.txt) |
 | [`template-trial-log.txt`](guide/template-trial-log.txt) | Templates b-analyst fills: trial log | [live](https://ancreationoffice.com/template-trial-log.txt) |
 | [`template-fai-report.csv`](guide/template-fai-report.csv) | Templates b-analyst fills: first article report | [live](https://ancreationoffice.com/template-fai-report.csv) |
 | [`template-change-record.txt`](guide/template-change-record.txt) | Templates b-analyst fills: change record | [live](https://ancreationoffice.com/template-change-record.txt) |
-| [`template-cost-tracker.csv`](guide/template-cost-tracker.csv) | Templates b-analyst fills: cost and time tracker | [live](https://ancreationoffice.com/template-cost-tracker.csv) |
 | [`sop-quality.txt`](guide/sop-quality.txt) | The quality chain | [live](https://ancreationoffice.com/sop-quality.txt) |
 | [`sop-checklists.txt`](guide/sop-checklists.txt) | Fill a form from what is already known | [live](https://ancreationoffice.com/sop-checklists.txt) |
 | [`sop-routes.txt`](guide/sop-routes.txt) | Roads in detail: patent, funding, company, standards, power, stores | [live](https://ancreationoffice.com/sop-routes.txt) |
@@ -121,7 +122,6 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`project-folders.txt`](guide/project-folders.txt) | The project folders: Your files and Office files. Dated folders; records are never edited once saved | [live](https://ancreationoffice.com/project-folders.txt) |
 | [`sop-review-page.txt`](guide/sop-review-page.txt) | Review pages: a local web page per invention for timelines, risks, pictures, documents and short walkthroughs | [live](https://ancreationoffice.com/sop-review-page.txt) |
 | [`terms.txt`](guide/terms.txt) | Terms: the plain-language glossary to explain terms from (about 200, with read-more links) | [live](https://ancreationoffice.com/terms.txt) |
-| [`sop-action-log.txt`](guide/sop-action-log.txt) | The action log: who owes what, kept for the inventor and shown as Your list on the review page | [live](https://ancreationoffice.com/sop-action-log.txt) |
 
 ## Reference files, templates and data
 
@@ -147,7 +147,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`funding-packet.py`](guide/funding-packet.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/funding-packet.py) |
 | [`handoff-log.csv`](guide/handoff-log.csv) | Worksheet / table (CSV): handoff_id, sent_date, sender, recipient... | [live](https://ancreationoffice.com/handoff-log.csv) |
 | [`ip-ratings.txt`](guide/ip-ratings.txt) | IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and  | [live](https://ancreationoffice.com/ip-ratings.txt) |
-| [`library.txt`](guide/library.txt) | 261018.6 | [live](https://ancreationoffice.com/library.txt) |
+| [`library.txt`](guide/library.txt) | 261018.7 | [live](https://ancreationoffice.com/library.txt) |
 | [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The | [live](https://ancreationoffice.com/manufacturing.txt) |
 | [`office-handoff.txt`](guide/office-handoff.txt) | AN Creation skill: office-handoff. The office rule is https://ancreationoffice.com/sop-team.txt HAND-OFFS. | [live](https://ancreationoffice.com/office-handoff.txt) |
 | [`office-save.txt`](guide/office-save.txt) | AN Creation skill: office-save. The office rule is https://ancreationoffice.com/version-control.txt SAVING and | [live](https://ancreationoffice.com/office-save.txt) |
@@ -206,16 +206,21 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`sop-hats.txt`](guide/sop-hats.txt) | SOP: Form, record, and call a session. Revision 3 — October 1, 2026. | [live](https://ancreationoffice.com/sop-hats.txt) |
 | [`sop-interns.txt`](guide/sop-interns.txt) | SOP: Use an intern. Revision 1 — October 1, 2026. | [live](https://ancreationoffice.com/sop-interns.txt) |
 | [`sop-office.txt`](guide/sop-office.txt) | SOP: Set up b-project-manager and b-analyst. Revision 13 — October 18, 2026. | [live](https://ancreationoffice.com/sop-office.txt) |
+| [`sop-project-charter.txt`](guide/sop-project-charter.txt) | SOP: The project charter. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-project-charter.txt) |
+| [`sop-suggestions.txt`](guide/sop-suggestions.txt) | SOP: Suggestions and actions. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/sop-suggestions.txt) |
 | [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 14 — October 18, 2026. | [live](https://ancreationoffice.com/sop.txt) |
-| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.6 | [live](https://ancreationoffice.com/sops-manifest.txt) |
+| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.7 | [live](https://ancreationoffice.com/sops-manifest.txt) |
 | [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's form | [live](https://ancreationoffice.com/status-template.txt) |
 | [`template-a3.txt`](guide/template-a3.txt) | One-page project summary (A3). Template, from Mike's practice (sop-six-sigma.txt section 6). Copy into the pro | [live](https://ancreationoffice.com/template-a3.txt) |
 | [`template-action-log.csv`](guide/template-action-log.csv) | Worksheet / table (CSV): ID, Opened, Action, Who... | [live](https://ancreationoffice.com/template-action-log.csv) |
 | [`template-business-risks.csv`](guide/template-business-risks.csv) | Worksheet / table (CSV): id, risk, category, likelihood... | [live](https://ancreationoffice.com/template-business-risks.csv) |
-| [`template-cost-sheet.csv`](guide/template-cost-sheet.csv) | Worksheet / table (CSV): part, qty, what it is, material cost... | [live](https://ancreationoffice.com/template-cost-sheet.csv) |
+| [`template-cost-sheet.csv`](guide/template-cost-sheet.csv) | Worksheet / table (CSV): level, part number, part, qty... | [live](https://ancreationoffice.com/template-cost-sheet.csv) |
 | [`template-decision-log.csv`](guide/template-decision-log.csv) | Worksheet / table (CSV): date, decision, reason... | [live](https://ancreationoffice.com/template-decision-log.csv) |
+| [`template-ecn-log.csv`](guide/template-ecn-log.csv) | Worksheet / table (CSV): number, date, what changes, why... | [live](https://ancreationoffice.com/template-ecn-log.csv) |
 | [`template-funding.csv`](guide/template-funding.csv) | Worksheet / table (CSV): key, value, source, note... | [live](https://ancreationoffice.com/template-funding.csv) |
+| [`template-project-charter.txt`](guide/template-project-charter.txt) | Project charter. Template. Office files/project-charter.txt. Replace every line in brackets; delete what does  | [live](https://ancreationoffice.com/template-project-charter.txt) |
 | [`template-risk-table.csv`](guide/template-risk-table.csv) | Worksheet / table (CSV): id, Failure mode / actions, effect, S... | [live](https://ancreationoffice.com/template-risk-table.csv) |
+| [`template-spending-register.csv`](guide/template-spending-register.csv) | Worksheet / table (CSV): date, stage, what it was, category... | [live](https://ancreationoffice.com/template-spending-register.csv) |
 | [`template-team.csv`](guide/template-team.csv) | Worksheet / table (CSV): name, covers, reports_to, platform... | [live](https://ancreationoffice.com/template-team.csv) |
 | [`test-matrix.csv`](guide/test-matrix.csv) | Worksheet / table (CSV): Project, Plan ID / revision, Test ID, Requirement / CTQ / risk IDs... | [live](https://ancreationoffice.com/test-matrix.csv) |
 | [`test-plan-template.txt`](guide/test-plan-template.txt) | AN CREATION — TEST PLAN TEMPLATE — REV 1 | [live](https://ancreationoffice.com/test-plan-template.txt) |

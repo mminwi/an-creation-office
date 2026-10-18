@@ -36,7 +36,7 @@ At every stage exit, whatever else its gate asks:
 
 SPENT SO FAR (D-053)
 Every round also records actual spending against the budget: "spent so far vs budget", from the receipts, invoices and quotes the inventor sends in. Estimates say where it is heading; this says where it is.
-The cost and time tracker (D-058): from fact-finding on, every project keeps a simple spreadsheet in Your files/Business/, in the inventor's format (usually Excel): date, stage, what it was, category, vendor, estimated, actual, paid, receipt file, and optional hours. Template: https://ancreationoffice.com/template-cost-tracker.csv. b-analyst adds a row for every receipt, invoice or quote that comes in and every cost the inventor mentions, totals it by stage and category, and shows spent so far against the budget at each review. Hours are optional: most inventors don't care how much time they've put in, but it helps if they ever pay someone or price their own time.
+The spending register (D-058): from the first conversation, every project keeps Office files/spending.csv, with a readable copy in Your files/Project record/: every dollar spent or committed, and whose money it was (https://ancreationoffice.com/sop-spending-register.txt). b-analyst adds a row for every receipt, invoice, order or accepted quote, and shows spent so far, the owner's share, and what is left of the charter's budget at each review. Quotes not yet accepted go on the cost sheet (https://ancreationoffice.com/sop-cost-sheet.txt). It is one of the seven required documents (https://ancreationoffice.com/sop-project-record.txt).
 
 WHEN A PERSON HAS TO SIGN OFF (D-053)
 The office prepares; some things need a person who signs the work.

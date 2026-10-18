@@ -1,7 +1,7 @@
-Change record. Template. After freeze only. Save as YYMMDD-CR-<number>-<slug>.
-Change no.: CR-
+Engineering change notice (ECN). Template. For a change to the charter's scope, budget or dates, or to a frozen design. Save as Office files/ecn/YYMMDD-ECN-<number>-<slug>.txt and add its row to Office files/ecn-log.csv.
+ECN no.: ECN-
 Date:
-What changes: (part, drawing, process, supplier, tool, fixture, gauge, label)
+What changes: (charter scope, budget or dates; part, drawing, process, supplier, tool, fixture, gauge, label)
 From revision: To revision:
 Why: (reason, and the test, report or complaint that started it)
 What it touches: (compliance matrix IDs, FMEA lines, critical features, control plan checks, certifications, tooling, stock on hand)

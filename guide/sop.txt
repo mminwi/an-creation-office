@@ -47,7 +47,7 @@ K5. b-business-manager: the funding packet a lender or advisor reads: executive 
 K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
 
 FOR b-project-manager
-1a. The project sheets: cost sheet https://ancreationoffice.com/sop-cost-sheet.txt ; risk table https://ancreationoffice.com/sop-risk-table.txt ; decision log https://ancreationoffice.com/sop-decision-log.txt ; suggestions https://ancreationoffice.com/sop-suggestions.txt
+1a. The project record, required for every invention: https://ancreationoffice.com/sop-project-record.txt . Its seven documents: charter https://ancreationoffice.com/sop-project-charter.txt ; decision log https://ancreationoffice.com/sop-decision-log.txt ; action log with suggestions https://ancreationoffice.com/sop-action-log.txt and https://ancreationoffice.com/sop-suggestions.txt ; cost sheet https://ancreationoffice.com/sop-cost-sheet.txt ; spending register https://ancreationoffice.com/sop-spending-register.txt ; risk table https://ancreationoffice.com/sop-risk-table.txt ; engineering change notices https://ancreationoffice.com/sop-change-control.txt . Example of all seven: https://ancreationoffice.com/example-mousetrap/
 1b. Principles, read first every conversation: https://ancreationoffice.com/principles-pm.txt (b-project-manager) and https://ancreationoffice.com/principles-bm.txt (b-business-manager). One file per principle, listed there.
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
@@ -68,7 +68,7 @@ FOR THE ANALYST
 8d. Qualification and production approval: first article, process trials, qualifying what's needed, the approval package. https://ancreationoffice.com/sop-qualification.txt
 8e. Launch: first order, packaging and labels, the buyer packet, honest listings. https://ancreationoffice.com/sop-launch.txt
 8f. Revisions and change control: C, X and A/B/C revision names; the change record and what a change must re-check. https://ancreationoffice.com/sop-change-control.txt
-8g. Templates b-analyst fills: APQP file https://ancreationoffice.com/template-apqp-file.csv ; review record https://ancreationoffice.com/template-review-record.txt ; prototype control plan https://ancreationoffice.com/template-prototype-control-plan.txt ; trial log https://ancreationoffice.com/template-trial-log.txt ; first article report https://ancreationoffice.com/template-fai-report.csv ; change record https://ancreationoffice.com/template-change-record.txt ; cost and time tracker https://ancreationoffice.com/template-cost-tracker.csv
+8g. Templates b-analyst fills: APQP file https://ancreationoffice.com/template-apqp-file.csv ; review record https://ancreationoffice.com/template-review-record.txt ; prototype control plan https://ancreationoffice.com/template-prototype-control-plan.txt ; trial log https://ancreationoffice.com/template-trial-log.txt ; first article report https://ancreationoffice.com/template-fai-report.csv ; change record https://ancreationoffice.com/template-change-record.txt ; cost and time tracker https://ancreationoffice.com/sop-cost-sheet.txt
 9. The quality chain. https://ancreationoffice.com/sop-quality.txt
 10. Fill a form from what is already known. https://ancreationoffice.com/sop-checklists.txt
 11. Roads in detail: patent, funding, company, standards, power, stores. https://ancreationoffice.com/sop-routes.txt

@@ -1,0 +1,30 @@
+SOP: The project charter. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-project-manager, one per invention. b-analyst drafts it; the inventor approves it.
+Template: https://ancreationoffice.com/template-project-charter.txt . Example: https://ancreationoffice.com/example-mousetrap/project-charter.txt
+May write: Office files/project-charter.txt, its readable copy in Your files/Project record/, and a decision-log row when it is approved.
+Goes with: https://ancreationoffice.com/sop-project-record.txt , https://ancreationoffice.com/project-description.txt (the long description it summarizes), https://ancreationoffice.com/sop-change-control.txt
+
+WHAT IT IS
+A one- or two-page statement of work: what this project will deliver, what it will not, what done looks like, what it may spend, and by when. It is the baseline. Everything after is measured against it, and changing it takes an engineering change notice (ECN). It is not a business plan and not a sales pitch.
+
+WHEN
+Drafted at the end of fact-finding (S0), from the project description and the intake. Approved by the inventor: one decision-log row, "Charter rev A approved". Revised only through an ECN, which raises its revision (A, B, C).
+
+SECTIONS (keep each short; a line or a short list)
+1. Product: what it is and the problem it solves, in two sentences.
+2. Objective: what this project delivers (for example, "a molded, tested trap ready for first orders"), and what it leaves for later.
+3. In scope / out of scope: two short lists. Out of scope is as important as in.
+4. Success criteria: the few measurable things that mean done (cost per unit, a test passed, a date, a first order).
+5. Deliverables by stage: what comes out of each stage the project will run (S0 to S5, sop-stages.txt).
+6. Milestones: dated, the same dates as the action log and the funding packet.
+7. Budget: what may be spent in total and through the next gate, and whose money it is (the spending register tracks against it).
+8. Assumptions and constraints: what is being taken as true (volume, material, channel) and what limits the project (money, time, tools).
+9. Top risks: the three that could sink it, from the risk table.
+10. Decision-maker and approvals: who decides (usually the inventor alone), and what needs whose yes.
+11. Revision: letter, date, and the ECN that made it.
+
+RULES
+- Every number is a figure from the files or marked estimate (principle-never-invent-facts.txt).
+- Rough is fine at S0 (90% and go). The charter gets sharper through ECNs as the facts come in; it does not wait for certainty.
+- Out of scope is written down, so a new idea goes through the scope gate (principle-scope-gate.txt) instead of creeping in.

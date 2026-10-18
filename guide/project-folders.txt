@@ -16,6 +16,7 @@ AN-Creation/
       READ ME FIRST
       Status                    one page: where it stands, this week, decisions, money, documents, what's coming
       To-do                     three or four paths with a next step on each; you pick
+      Project record/           readable copies of the seven required documents: charter, decisions, actions, cost sheet, spending, risks, change notices (sop-project-record.txt)
       Action log                who owes what: your actions and what you're waiting on from others (also on your review page as Your list)
       Plan                      where it stands, decisions, what's next
       Forms/                    filled forms
@@ -30,6 +31,9 @@ AN-Creation/
       cost-sheet.csv            what one unit should cost, every component, tooling separate (sop-cost-sheet.txt)
       risk-table.csv            how it could fail, scored down to the residual (sop-risk-table.txt)
       decision-log.csv          everyday calls, dated, with the reason (sop-decision-log.txt)
+      project-charter.txt       scope, success criteria, milestones, budget; changed only by ECN (sop-project-charter.txt)
+      spending.csv              what the project has spent, and whose money (sop-spending-register.txt)
+      ecn-log.csv  ecn/         engineering change notices (sop-change-control.txt)
       forms/                    master forms: answer, context, status for every field
       queue/QUEUE.txt  open/  active/  done/  revisit/
       record/                   YYMMDD-I-slug (in), YYMMDD-O-slug (out), YYMMDD-M-slug (meeting or conversation, full text)

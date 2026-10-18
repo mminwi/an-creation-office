@@ -1,4 +1,4 @@
-261018.6
+261018.7
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -3813,6 +3813,22 @@ NEVER
 Never type a password or code. Never share the AN-Creation folder publicly or with "anyone with the link". Never put passwords, keys, an SSN, or bank or card numbers in a file. Never turn on billing for them.
 
 Sources: Google Drive help https://support.google.com/drive ; version history https://support.google.com/drive/answer/2409045 .
+=== FILE: example-mousetrap/README.txt ===
+Example project record: a plastic-base snap mousetrap. Illustrative; numbers marked placeholder or illustrative are not real quotes.
+These are the files a project keeps in Office files/ (https://ancreationoffice.com/sop-project-record.txt), filled in for one product.
+
+The seven required documents (b-project-manager)
+- project-charter.txt   the project charter: scope, success criteria, milestones, budget (sop-project-charter.txt)
+- decision-log.csv      every call, dated, with the reason (sop-decision-log.txt)
+- actions.csv           who owes what; S- rows are suggestions waiting for an owner and a date (sop-action-log.txt, sop-suggestions.txt)
+- cost-sheet.csv        the costed bill of materials: cost to manufacture one packed trap, tooling amortized (sop-cost-sheet.txt)
+- spending.csv          what the project has spent, and whose money (sop-spending-register.txt)
+- risk-table.csv        the simplified FMEA, for this trap's own parts and steps (sop-risk-table.txt)
+- ecn-log.csv and ecn/  engineering change notices; ECN-001 proposes a charter change (sop-change-control.txt)
+
+Also here
+- intake-001.csv        the first form: the invention and the screening questions
+- funding.csv, business-risks.csv, funding-packet.html: b-business-manager's funding packet, built from copies of the sheets above (sop-funding-packet.txt)
 === FILE: example-mousetrap/actions.csv ===
 ID,Opened,Action,Who,Why / from,Due,Status,Done how,Closed,Notes
 A-001,2026-10-15,"Get a quote for a 1-cavity nylon base mold, hot runner, gate at the rear, draft 1 degree, wall 1.8 mm, with a short rib at the spring seat, the set-from-the-side mark, the finger guard, the bait spike, and radiused pivot holes.",You,"Cost sheet base row is an $85,000 placeholder. Decision 2026-10-12 and 2026-10-13. Risk table F1.",2026-10-29,open,,,"Done when the quote replaces the 85000 on the cost sheet. The quote covers the mold changes under F1, F11, F13, and F14. The three-month budget is 8000 to 12000, so the quote may not fit."
@@ -3841,20 +3857,36 @@ B6,Patent position unknown,Legal,3,3,Search for similar traps; decide with a pat
 B7,Single supplier for the classic spring,Supply,2,4,"Confirm stock (A-002); identify a second music-wire spring maker.",Inventor,2026-10-22,waiting,action A-002
 B8,Nylon swells in damp barns and parts stop fitting,Product,3,3,Accepted as designed (design risk F2); include in field testing.,Inventor,2027-02-28,accepted,design risk F2
 === FILE: example-mousetrap/cost-sheet.csv ===
-part,qty,what it is,material cost,process cost,how the cost was figured,tooling,tooling notes,annual units,years,amortization,unit cost,running total,share of total
-Plastic base,1,"Nylon 6/6 base with the bait cup, finger guard and spring post molded in. Wall 1.8 mm, draft 1 degree.",0.11,0.06,"Resin by shot weight, plus press time at this cavity.",85000,"1-cavity, hot runner. Gate at the rear. Placeholder until A-001. Not a quote.",50000,2,0.85,1.02,1.02,69.39%
-Trigger plate,1,Nylon 6/6 pedal with the bait spike molded on. Its own small mold.,0.03,0.02,"Resin by shot weight, plus press time.",22000,"Simple open-and-shut mold. Same resin as the base. Placeholder, not a quote.",50000,2,0.22,0.27,1.29,18.37%
-Wire bail,1,"Music wire kill bar, the classic shape. Purchased.",0.04,0.01,"Supplier price per piece, plus handling.",0,Purchased. Classic shape. No new tool.,50000,2,0.00,0.05,1.34,3.40%
-Spring,1,"Music wire torsion spring, classic size. Purchased.",0.03,0.01,"Supplier price per piece, plus handling.",0,Purchased. Classic size. Confirm the supplier still stocks it (A-002).,50000,2,0.00,0.04,1.38,2.72%
-Staple,1,Steel staple that holds the spring to the base. Pressed in at assembly.,0.01,0,Supplier price per piece.,0,Purchased. Pressed in during assembly. Not a molded part.,50000,2,0.00,0.01,1.39,0.68%
-Assembly,1,"Hand assembly, 12 seconds, staple pressed in.",0,0.03,12 seconds at $9 an hour.,0,"No tool. Hand assembly, 12 seconds.",50000,2,0.00,0.03,1.42,2.04%
-Packaging,1,Card and blister for one trap.,0.04,0.01,"Card and blister prices, plus loading.",0,No tool on this sheet.,50000,2,0.00,0.05,1.47,3.40%
+level,part number,part,qty,unit,make or buy,supplier,what it is,material cost,process cost,how the cost was figured,tooling,tooling notes,annual units,years,amortization,unit cost,running total,share of total
+1,MT-001,Plastic base,1,each,make,"Molder, to quote","Nylon 6/6 base with the bait cup, finger guard and spring post molded in. Wall 1.8 mm, draft 1 degree.",0.11,0.06,"Resin by shot weight, plus press time at this cavity.",85000,"1-cavity, hot runner. Gate at the rear. Placeholder until A-001. Not a quote.",50000,2,0.85,1.02,1.02,69.39%
+1,MT-002,Trigger plate,1,each,make,"Molder, to quote",Nylon 6/6 pedal with the bait spike molded on. Its own small mold.,0.03,0.02,"Resin by shot weight, plus press time.",22000,"Simple open-and-shut mold. Same resin as the base. Placeholder, not a quote.",50000,2,0.22,0.27,1.29,18.37%
+1,MT-003,Wire bail,1,each,buy,"Wire-form supplier, to quote","Music wire kill bar, the classic shape. Purchased.",0.04,0.01,"Supplier price per piece, plus handling.",0,Purchased. Classic shape. No new tool.,50000,2,0.00,0.05,1.34,3.40%
+1,MT-004,Spring,1,each,buy,"Spring maker, to confirm (A-002)","Music wire torsion spring, classic size. Purchased.",0.03,0.01,"Supplier price per piece, plus handling.",0,Purchased. Classic size. Confirm the supplier still stocks it (A-002).,50000,2,0.00,0.04,1.38,2.72%
+1,MT-005,Staple,1,each,buy,Fastener distributor,Steel staple that holds the spring to the base. Pressed in at assembly.,0.01,0,Supplier price per piece.,0,Purchased. Pressed in during assembly. Not a molded part.,50000,2,0.00,0.01,1.39,0.68%
+1,MT-900,Assembly,1,each,make,In house,"Hand assembly, 12 seconds, staple pressed in.",0,0.03,12 seconds at $9 an hour.,0,"No tool. Hand assembly, 12 seconds.",50000,2,0.00,0.03,1.42,2.04%
+1,MT-950,Packaging,1,each,buy,"Packaging supplier, to quote",Card and blister for one trap.,0.04,0.01,"Card and blister prices, plus loading.",0,No tool on this sheet.,50000,2,0.00,0.05,1.47,3.40%
 === FILE: example-mousetrap/decision-log.csv ===
 date,decision,reason,status
 2026-10-12,Plastic base instead of wood,"Wood splits and is hard to clean. A molded base can carry the bait cup and a finger guard in the same part. The trigger plate is plastic too, in its own mold. The bail, the spring, and the staple stay metal.",accepted
 2026-10-13,Nylon 6/6 for the base and the trigger plate,"Better impact and moisture resistance than polypropylene for barn use. Both plastic parts use this resin. The base mold and the trigger mold on the cost sheet are this call. Risk table F2 is the swell, accepted on one line.",accepted
 2026-10-14,"Amortize tooling over 2 years and 100,000 traps","50,000 a year for 2 years is 100,000. The inventor wants to see the per-trap cost before committing to a 3-year spread, and wants that number under $0.40. Accepted means the cost sheet uses 100,000. It does not mean the $1.47 result is approved. The base mold alone is $0.85 a trap at this volume.",accepted
 2026-10-15,"Keep the classic wire bail, spring, and steel staple",Existing suppliers already make this bail. A new shape would need a new spring tool. The spring and the staple stay music wire and steel. They are purchased. They are not molded. The staple is pressed in during assembly.,accepted
+2026-10-15,"Approve the project charter, revision A","Fact-finding is done: the charter sets the scope, the $0.45 landed-cost target, the milestones and the $8,000-$12,000 budget through design freeze. The molds are in the plan but not funded; ECN-001 proposes making them conditional.",accepted
+=== FILE: example-mousetrap/ecn-log.csv ===
+number,date,what changes,why,from revision,to revision,cost and time,decision,status,file
+ECN-001,2026-10-17,"Charter budget and milestones: molds come out of the funded plan until the numbers close; next-gate budget stays $8,000-$12,000","The $107,000 mold placeholder is far above the budget and the trap clears only $0.05 at $0.45 (risk B1)",A,B,No change to the next-gate budget; molds date moves from fixed to only if the numbers close,awaiting the inventor,open,ecn/261017-ECN-001-tooling-budget.txt
+=== FILE: example-mousetrap/ecn/261017-ECN-001-tooling-budget.txt ===
+Engineering change notice (ECN). Plastic-base snap mousetrap. Example.
+ECN no.: ECN-001
+Date: 2026-10-17
+What changes: Project charter, sections 6 (milestones) and 7 (budget).
+From revision: A  To revision: B
+Why: The base mold placeholder is $85,000 and the trigger mold $22,000, against a three-month budget of $8,000 to $12,000. At $0.45 to the distributor each trap clears $0.05, so the molds would take 2,140,000 traps to pay back (business risk B1, funding packet page 1).
+What it touches: Charter milestone "Molds ordered" becomes conditional on the numbers closing; the funding request is shown but not made; actions A-001 (real quotes, including a 2-cavity family mold) and a buyer-price check move ahead of any tooling.
+What must be re-checked: The cost sheet and the funding packet when the quotes arrive.
+Cost and time: No added cost now. Ordering molds may move later than 2027-01-15.
+Decision: Awaiting the inventor (two-way door: the charter can change again when the quotes arrive).
+Done:
 === FILE: example-mousetrap/funding.csv ===
 key,value,source,note
 product,Plastic-base snap mousetrap,example,
@@ -3922,6 +3954,63 @@ S19-company,Have you thought about starting a company to protect yourself from l
 S20-patent,What are your thoughts on a patent?,,no,10,,Not said in this example.,open
 S21-money,Will the next step need someone else's money?,,no,10,"Not said. The next three months are their own $8,000 to $12,000. The placeholder mold prices are above that.",Cost sheet and budget row.,answered
 other,Anything else you want to talk about on this? Just bring it up.,,no,11,,Not said in this example.,open
+=== FILE: example-mousetrap/project-charter.txt ===
+Project charter. Plastic-base snap mousetrap. Example (illustrative figures are marked).
+Revision: A, 2026-10-15, approved by the inventor (decision log 2026-10-15). Change pending: ECN-001.
+
+1. PRODUCT
+A snap mousetrap with a molded nylon base that is easier to empty and less likely to snap fingers. Wood splits, is hard to clean, and the classic trap can catch a finger.
+
+2. OBJECTIVE
+This project delivers: a molded, tested trap, packed on a card, ready for first orders from hardware and farm-supply distributors.
+Left for later: a stackable base, a glow-in-the-dark bait cup (suggestions S-001, S-002), retail packaging for big-box stores.
+
+3. SCOPE
+In: base and trigger plate design and molds; the classic wire bail, spring and staple (bought); hand assembly; card and blister pack; a field test in barns; first-article approval.
+Out: a new spring or bail shape (decision 2026-10-15); automated assembly; selling direct to consumers.
+
+4. SUCCESS CRITERIA
+- Landed cost per packed trap at or under $0.45 at 50,000 a year (the distributor's target). Today: $0.40 to make plus $1.07 of tooling = $1.47. Not met (risk B1).
+- Sets without a finger in the bail's path (risk F11).
+- Survives a damp barn for a season without swelling out of fit (risk F2), shown in the field test.
+- First order from a distributor by 2027-04-30.
+
+5. DELIVERABLES BY STAGE
+- S0 Fact-finding: project description, this charter, first cost sheet and risk table. Done.
+- S1 Design: CAD with the risk actions in it; quote package for the base mold.
+- S2 Prototype: 3D-printed sets for the buyer and barn tests.
+- S3 Tooling: base and trigger molds, after the numbers close.
+- S4 Qualification: first articles, the field test report.
+- S5 Launch: first distributor order.
+
+6. MILESTONES
+- 2026-10-22 Spring supplier confirmed (A-002)
+- 2026-10-29 Base mold quote in hand (A-001)
+- 2026-11-30 Buyer feedback from 3 distributors (illustrative)
+- 2026-12-15 Design frozen (illustrative)
+- 2027-01-15 Molds ordered, only if the numbers close (illustrative)
+- 2027-03-15 First articles approved (illustrative)
+- 2027-04-30 First shipment (illustrative)
+
+7. BUDGET
+Through the next gate (design frozen): $8,000 to $12,000 for quotes, samples and tests, the owner's own money.
+Total to launch: about $115,000 (illustrative), most of it the two molds ($107,000, placeholders until quoted). Not funded. See ECN-001.
+Tracked in the spending register.
+
+8. ASSUMPTIONS AND CONSTRAINTS
+- 50,000 traps a year for 2 years; nylon 6/6; the classic bail and spring.
+- The owner's money only, until the numbers close. One person doing the work.
+
+9. TOP RISKS
+- B1 The numbers do not close at $0.45 (business risk register): real mold quotes and buyer prices first.
+- F11 A finger in the bail's path (risk table): finger guard and set-from-the-side mark molded in.
+- F2 Nylon swells in a damp barn: accepted as designed; field test.
+
+10. DECISION-MAKER AND APPROVALS
+The inventor decides everything. A distributor's approval is needed only for its own packaging and labeling rules.
+
+11. REVISIONS
+A 2026-10-15 first issue.
 === FILE: example-mousetrap/risk-table.csv ===
 id,Failure mode / actions,effect,S,O,D,RPN,status
 F1,Base cracks at the spring seat,"As proposed, the trap fails. A user can be hurt.",8,4,5,,
@@ -3958,6 +4047,12 @@ F15,Trigger plate flashes and the pedal sticks,"As proposed, the trap does not t
 ,Sum of residual RPNs,,,,,465,
 ,"Accepted, the first 80%",Ranked by residual score. The running total first passes 372 on F10.,,,,381,
 ,"Below threshold, the last 20%","Leftover risk, not a sign-off: F6, F7, F8, F9, F12, F13, F14, F15. The cut is 80% of the risk, not a count of issues. Accepting a row means this is as much as will be spent to lower it. These are not significant. An obvious fix that does not raise the cost is still worth doing.",,,,84,
+=== FILE: example-mousetrap/spending.csv ===
+date,stage,what it was,category,vendor or who,amount,committed or paid,paid from,running total,receipt or quote file,notes
+2026-10-08,S0,3D-printed base and pedal (two tries),Prototype,Local print shop,86.00,paid,Owner,86.00,record/261008-I-print-receipt,Illustrative example row
+2026-10-10,S0,Nylon 6/6 and polypropylene sample plaques,Samples,Resin distributor,0.00,paid,Owner,86.00,record/261010-I-resin-samples,Free samples; illustrative
+2026-10-12,S0,Music-wire springs and bails (25 each),Prototype,Spring maker,48.50,paid,Owner,134.50,record/261012-I-spring-invoice,Illustrative example row
+2026-10-16,S1,Ten more printed sets for the buyer test,Prototype,Local print shop,240.00,committed,Owner,374.50,record/261016-O-print-order,Ordered; pay on pickup. Illustrative
 === FILE: forms-catalog.csv ===
 Road,Form (file b-analyst writes),Opens when,Fields to fill (from what the project already knows; unknown stays blank and becomes a question),Official source to check the current version,Never
 Company,company/formation/articles-worksheet.csv,Company decision = yes,Legal name with LLC/Inc designator; name availability check result and date; state; principal office address; mailing address; registered agent name and address (self or service); organizer name and address; member-managed or manager-managed; members and ownership %; business purpose (general); effective date; filing fee from the state page; who files and how,sba-state-registration; usa-state-government (the state's own .gov filing page),File it. Pay a fee. Use a non-.gov filing service without the inventor choosing it.
@@ -4543,8 +4638,8 @@ After the version check: check your "Last saved" save is in the project folder (
 
 YOUR SPECIALISTS (open the procedure when its subject comes up, use it, then leave it)
 - Manufacturing (b-manufacturing): Process flow, PFMEA, work instructions, line balance, layout, launch. Procedures: https://ancreationoffice.com/sop-manufacturing-cell.txt ; https://ancreationoffice.com/manufacturing.txt ; https://ancreationoffice.com/sop-launch.txt ; https://ancreationoffice.com/sop-qualification.txt ; https://ancreationoffice.com/sop-tooling-loop.txt ; https://ancreationoffice.com/control-plan.csv ; https://ancreationoffice.com/toolbox-improvement.txt
-- Purchasing (b-purchasing): Quote packages, supplier comparison, terms, delivered cost. Hands off to: suppliers. Procedures: https://ancreationoffice.com/manufacturing.txt ; https://ancreationoffice.com/forms-catalog.csv ; https://ancreationoffice.com/template-cost-tracker.csv
-- Cost and BOM (b-cost-bom): Should-cost, molded part cost from cycle, rate and resin, the BOM. Procedures: https://ancreationoffice.com/template-cost-tracker.csv ; https://ancreationoffice.com/forms-catalog.csv
+- Purchasing (b-purchasing): Quote packages, supplier comparison, terms, delivered cost. Hands off to: suppliers. Procedures: https://ancreationoffice.com/manufacturing.txt ; https://ancreationoffice.com/forms-catalog.csv ; https://ancreationoffice.com/sop-cost-sheet.txt
+- Cost and BOM (b-cost-bom): Should-cost, molded part cost from cycle, rate and resin, the BOM. Procedures: https://ancreationoffice.com/sop-cost-sheet.txt ; https://ancreationoffice.com/forms-catalog.csv
 - Automation and Auxiliaries (b-automation): Robots, conveyors, end-of-arm tooling, specified for a quote. Hands off to: integrator. Procedures: https://ancreationoffice.com/manufacturing.txt
 - Machine Safety and Guarding (b-machine-safety): Risk assessment draft, guarding, lockout, safety circuits. Hands off to: safety engineer. Procedures: https://ancreationoffice.com/sop-machine-safety.txt
 - Lean Six Sigma (b-six-sigma): DMAIC projects: scrap, OEE, changeover time, capability. Procedures: https://ancreationoffice.com/sop-six-sigma.txt ; https://ancreationoffice.com/template-a3.txt ; https://github.com/mminwi/an-creation-office/blob/main/specialists/calcs/six_sigma.py ; https://ancreationoffice.com/toolbox-improvement.txt
@@ -8627,6 +8722,7 @@ AN-Creation/
       READ ME FIRST
       Status                    one page: where it stands, this week, decisions, money, documents, what's coming
       To-do                     three or four paths with a next step on each; you pick
+      Project record/           readable copies of the seven required documents: charter, decisions, actions, cost sheet, spending, risks, change notices (sop-project-record.txt)
       Action log                who owes what: your actions and what you're waiting on from others (also on your review page as Your list)
       Plan                      where it stands, decisions, what's next
       Forms/                    filled forms
@@ -8641,6 +8737,9 @@ AN-Creation/
       cost-sheet.csv            what one unit should cost, every component, tooling separate (sop-cost-sheet.txt)
       risk-table.csv            how it could fail, scored down to the residual (sop-risk-table.txt)
       decision-log.csv          everyday calls, dated, with the reason (sop-decision-log.txt)
+      project-charter.txt       scope, success criteria, milestones, budget; changed only by ECN (sop-project-charter.txt)
+      spending.csv              what the project has spent, and whose money (sop-spending-register.txt)
+      ecn-log.csv  ecn/         engineering change notices (sop-change-control.txt)
       forms/                    master forms: answer, context, status for every field
       queue/QUEUE.txt  open/  active/  done/  revisit/
       record/                   YYMMDD-I-slug (in), YYMMDD-O-slug (out), YYMMDD-M-slug (meeting or conversation, full text)
@@ -23540,7 +23639,8 @@ High risks are worked before money is committed. Product safety is worked by sev
 KEEPING IT CURRENT
 Every mitigation with an owner and a date is also a row on the action log. Rescore when something changes: a quote arrives, a buyer answers, a company is formed. Closed rows stay; they show a reviewer what has already been dealt with.
 === FILE: sop-change-control.txt ===
-SOP: Revisions and change control. Revision 1 — October 7, 2026.
+SOP: Revisions and engineering change notices. Revision 2 — October 18, 2026.
+One of the seven required documents (https://ancreationoffice.com/sop-project-record.txt). May write: Office files/ecn-log.csv, Office files/ecn/, and the readable copy of the log in Your files/Project record/.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: sop-stages.txt, the loops, the compliance matrix, project-folders.txt (dated folders)
 
@@ -23557,9 +23657,16 @@ At an elevated documentation level, follow the buyer's or program's scheme if it
 BEFORE FREEZE (C and X revisions)
 Change freely; that's what the loops are for. Each round's review record says what changed and why, and the CAD update makes the next revision. No separate change record needed.
 
+ENGINEERING CHANGE NOTICES (ECNs)
+An ECN is the change record. Each one is a numbered file, Office files/ecn/YYMMDD-ECN-<number>-<slug>.txt (template https://ancreationoffice.com/template-change-record.txt), and one row in Office files/ecn-log.csv (template https://ancreationoffice.com/template-ecn-log.csv): number, date, what changes, why, from and to revision, cost and time, decision, status (open, approved, rejected, done). The log is what the inventor reads; the file has the detail.
+An ECN is required for:
+- Any change to the project charter's scope, budget, milestones or success criteria, from the day the charter is approved (sop-project-charter.txt). The charter's revision letter goes up when the ECN is approved.
+- Any change to a frozen design (below).
+Before freeze, design changes inside the loops need no ECN; the review records cover them.
+
 AFTER FREEZE (released revisions)
-Every change gets a change record, in its own dated file:
-- Number and date (CR-001, CR-002).
+Every change gets an ECN, in its own dated file:
+- Number and date (ECN-001, ECN-002; older projects may have CR- numbers, which stay as they are).
 - What changes: the part, drawing, process, supplier, tool, fixture, gauge, or label.
 - Why: the reason, the test or report that started it (link to the test, report or complaint).
 - What it touches: compliance matrix lines, FMEA lines, critical features, control plan checks, certifications, tooling, stock on hand.
@@ -23579,7 +23686,7 @@ SAFETY
 A safety fix is never held back by paperwork. Make the fix and contain the risk first; complete the change record right after.
 
 WHO DOES WHAT
-b-analyst writes the change record, works out what it touches and what must be re-checked, and tracks it to done. b-project-manager shows it to the inventor in plain words and records the decision. The inventor approves; the office never approves for them or tells a supplier or lab without them.
+b-analyst writes the ECN and its log row, works out what it touches and what must be re-checked, and tracks it to done. b-project-manager shows it to the inventor in plain words and records the decision. The inventor approves; the office never approves for them or tells a supplier or lab without them.
 === FILE: sop-checklists.txt ===
 SOP: Fill a checklist from what is already known. Revision 1 — October 1, 2026.
 NOTE, October 6, 2026: this procedure was written when b-project-manager did the work itself. It is now read by b-analyst. Where it says b-project-manager takes a role, calls or forms a Grok Build session, or writes the sheets, read: b-analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
@@ -23778,18 +23885,18 @@ A mechanical contractor for plant piping, chillers and towers; a water treatment
 WHAT THE REVIEW PRODUCES
 One cooling review per mold, in its own dated folder: the circuit table (flow, in, out, rise, heat, flags), the heat map by face count (one, two, three faces), the list of moving parts with and without water, recommended changes in order (single-circuit the restrictive line, add water to uncooled moving parts, conductive inserts where three faces meet, re-balance loops), and what to measure next. Recommendations are proposals; Mike or the tool shop confirms.
 === FILE: sop-cost-sheet.txt ===
-SOP: Cost sheet. Revision 4 — October 18, 2026.
+SOP: Cost sheet. Revision 5 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention. May write: Office files/cost-sheet.csv.
 Template: https://ancreationoffice.com/template-cost-sheet.csv
-Goes with the cost tracker (https://ancreationoffice.com/template-cost-tracker.csv), which records what was actually spent. This sheet is the glorified bill of materials: what one unit should cost.
+Goes with the spending register (https://ancreationoffice.com/sop-spending-register.txt), which records what was actually spent. One of the seven required documents (https://ancreationoffice.com/sop-project-record.txt). This sheet is the costed bill of materials, laid out the way it would go into an MRP system: every item, how many, made or bought, and what each costs in material, process and tooling. Its bottom line is the cost to manufacture one unit, with the tooling amortized over the volume.
 
 WHY THIS EXISTS
 A part has three kinds of money: the material in it, the process that makes it, and the tooling you pay once. Mixing the tooling into the part price hides it. Leaving it off makes the part look cheaper than it is.
 
 COLUMNS
-part, qty, what it is, material cost, process cost, how the cost was figured, tooling, tooling notes, annual units, years, amortization, unit cost, running total, share of total.
-Qty is how many of that part are in one product. What it is names the part so a person who was not in the room can tell it from the next row: material, rough size, and the job it does. How the cost was figured shows the arithmetic behind material cost and process cost. Tooling notes is where the tooling line splits into mold plus fixtures. Write the amounts there, such as "mold 10000 + fixtures 2000". A tool shared by more than one part is written on one row only, so it is counted once. Say on the other row that the tool is already counted.
+level, part number, part, qty, unit, make or buy, supplier, what it is, material cost, process cost, how the cost was figured, tooling, tooling notes, annual units, years, amortization, unit cost, running total, share of total.
+Level is the item's place in the bill: 1 for what goes straight into the product, 2 for what goes into a level-1 subassembly. The finished product itself is the sheet, not a row, so nothing is counted twice; a subassembly row carries only its own assembly cost, and its parts carry theirs. Part number is the inventor's own (MT-001, MT-002) until a supplier's number exists. Unit is how qty is counted: each, grams, inches, feet. Make or buy says whether it is molded or built for the project, or bought ready-made, and supplier names who makes or sells it (or "to quote"). Qty is how many of that part, in that unit, are in one product. What it is names the part so a person who was not in the room can tell it from the next row: material, rough size, and the job it does. How the cost was figured shows the arithmetic behind material cost and process cost. Tooling notes is where the tooling line splits into mold plus fixtures. Write the amounts there, such as "mold 10000 + fixtures 2000". A tool shared by more than one part is written on one row only, so it is counted once. Say on the other row that the tool is already counted.
 
 ONE ROW PER COMPONENT
 Every component gets a row. A product is not costed when the first part has a number and the rest are blank. Pins, latches, labels, and springs are components. A feature molded into another part, such as a spike on a pedal, does not get its own row; name it in that part's description so it is not mistaken for a missing line. Packaging is a different sheet unless the call was to cost the packed unit.
@@ -24929,6 +25036,80 @@ RULES
 Their voice, always clear it's them. Never create accounts or accept terms for them. No fake followers, reviews or likes. A profile that would show an unfiled invention: the patent check first (sop-promotion.txt).
 
 Sources: LinkedIn pages help https://www.linkedin.com/help/linkedin/topics/6227/6228 ; X help https://help.x.com ; Google Business Profile https://support.google.com/business .
+=== FILE: sop-project-charter.txt ===
+SOP: The project charter. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-project-manager, one per invention. b-analyst drafts it; the inventor approves it.
+Template: https://ancreationoffice.com/template-project-charter.txt . Example: https://ancreationoffice.com/example-mousetrap/project-charter.txt
+May write: Office files/project-charter.txt, its readable copy in Your files/Project record/, and a decision-log row when it is approved.
+Goes with: https://ancreationoffice.com/sop-project-record.txt , https://ancreationoffice.com/project-description.txt (the long description it summarizes), https://ancreationoffice.com/sop-change-control.txt
+
+WHAT IT IS
+A one- or two-page statement of work: what this project will deliver, what it will not, what done looks like, what it may spend, and by when. It is the baseline. Everything after is measured against it, and changing it takes an engineering change notice (ECN). It is not a business plan and not a sales pitch.
+
+WHEN
+Drafted at the end of fact-finding (S0), from the project description and the intake. Approved by the inventor: one decision-log row, "Charter rev A approved". Revised only through an ECN, which raises its revision (A, B, C).
+
+SECTIONS (keep each short; a line or a short list)
+1. Product: what it is and the problem it solves, in two sentences.
+2. Objective: what this project delivers (for example, "a molded, tested trap ready for first orders"), and what it leaves for later.
+3. In scope / out of scope: two short lists. Out of scope is as important as in.
+4. Success criteria: the few measurable things that mean done (cost per unit, a test passed, a date, a first order).
+5. Deliverables by stage: what comes out of each stage the project will run (S0 to S5, sop-stages.txt).
+6. Milestones: dated, the same dates as the action log and the funding packet.
+7. Budget: what may be spent in total and through the next gate, and whose money it is (the spending register tracks against it).
+8. Assumptions and constraints: what is being taken as true (volume, material, channel) and what limits the project (money, time, tools).
+9. Top risks: the three that could sink it, from the risk table.
+10. Decision-maker and approvals: who decides (usually the inventor alone), and what needs whose yes.
+11. Revision: letter, date, and the ECN that made it.
+
+RULES
+- Every number is a figure from the files or marked estimate (principle-never-invent-facts.txt).
+- Rough is fine at S0 (90% and go). The charter gets sharper through ECNs as the facts come in; it does not wait for certainty.
+- Out of scope is written down, so a new idea goes through the scope gate (principle-scope-gate.txt) instead of creeping in.
+=== FILE: sop-project-record.txt ===
+SOP: The project record. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-project-manager, one set per invention. b-analyst fills and updates them.
+May write: the files named below in Office files/, and their readable copies in Your files/Project record/.
+Goes with: https://ancreationoffice.com/principles-pm.txt
+
+WHY THIS EXISTS
+These are the traditional project management tools, and they are required. Engineers often fill them in after the fact, or paste a standard one, so they can say they did it. An AI has no reason to skip them: it can do the analysis for real and write it down in a form a person can check. Filling them in is how the bot shows it has thought the project through, and how the inventor sees that it has.
+
+THE SEVEN (every invention has all of them; none is optional)
+1. Project charter: what the project is, what is in and out, what done looks like, the budget and the milestones. The baseline everything else is measured against.
+   Office files/project-charter.txt . Skill: https://ancreationoffice.com/sop-project-charter.txt
+2. Decision log: every call, dated, with the reason.
+   Office files/decision-log.csv . Skill: https://ancreationoffice.com/sop-decision-log.txt
+3. Action log: who owes what, by when; suggestions sit on it with status suggestion until they get an owner and a date or expire.
+   Office files/actions.csv . Skills: https://ancreationoffice.com/sop-action-log.txt and https://ancreationoffice.com/sop-suggestions.txt
+4. Cost sheet: the bill of materials with material, process and tooling for every item, the cost to manufacture, and the tooling amortized over the volume.
+   Office files/cost-sheet.csv . Skill: https://ancreationoffice.com/sop-cost-sheet.txt
+5. Spending register: every dollar spent or committed on the project, and whose money it was.
+   Office files/spending.csv . Skill: https://ancreationoffice.com/sop-spending-register.txt
+6. Risk table: the simplified FMEA, done for real for this product and its processes.
+   Office files/risk-table.csv . Skill: https://ancreationoffice.com/sop-risk-table.txt
+7. Engineering change notices: every change to the charter's scope, budget or dates, and every change to a frozen design, as a numbered ECN with its log.
+   Office files/ecn-log.csv and Office files/ecn/ . Skill: https://ancreationoffice.com/sop-change-control.txt
+
+WHEN EACH STARTS
+- First conversation: decision log, action log, spending register (even if the only line is "nothing spent yet").
+- End of fact-finding (S0): project charter, first cost sheet (rough is fine, marked estimate), first risk table.
+- From the charter on: ECNs for any change to scope, budget or dates. From design freeze on: ECNs for any design change too.
+
+THE HARD LINES
+- They always exist and are always current. A change is written in the same turn it happens, not "later".
+- They are done for real. No pasted standard FMEA, no copied BOM from another product, no round-number cost guesses presented as figures (https://ancreationoffice.com/principle-never-invent-facts.txt).
+- The inventor can see all seven at any time: b-analyst keeps a readable copy of each in Your files/Project record/, in the format the inventor chose, and the review page links them. The inventor is the decision-maker; they review what the bot has thought through.
+- A document the inventor has not seen yet is mentioned in one line when it first exists: "Your risk table is up: nine ways it could fail, two worth working now."
+- Other working documents (control plan, compliance matrix, test plans, the resource map) are kept as the stages call for them. These seven are the minimum.
+
+FOR b-business-manager
+The funding packet copies the charter's milestones, the cost sheet, the risk table, the decision log and the action log (https://ancreationoffice.com/sop-funding-packet.txt). The spending register shows what the owner has already put in.
+
+EXAMPLE
+All seven, filled in for one product: https://ancreationoffice.com/example-mousetrap/
 === FILE: sop-promotion.txt ===
 SOP: b-business-manager. Promotion and listings. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
@@ -25285,7 +25466,7 @@ RULES
 - No passwords, account numbers or SSN on any page.
 - Local only. Putting pages online is a separate decision.
 === FILE: sop-risk-table.txt ===
-SOP: Risk analysis table. Revision 9 — October 18, 2026.
+SOP: Risk analysis table. Revision 10 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention; b-analyst fills it. Template: https://ancreationoffice.com/template-risk-table.csv . May write: Office files/risk-table.csv and the matching action rows in Office files/actions.csv.
 Goes with the Residual risk principle (https://ancreationoffice.com/principle-residual-risk.txt). This note is how a risk table is built. It replaces the one-row-per-failure FMEA. The background on FMEA, control plans and the quality chain is https://ancreationoffice.com/design-risk.txt ; where they differ on how to build and score the table, this file wins.
@@ -25302,6 +25483,9 @@ The id (F1, F2, and so on) is the failure mode. Score S, O, and D for what is al
 NO ACTION
 The person can accept that score as it is. The sheet for that failure is one line. Write the RPN on that line and mark it accepted. There is no row under it.
 One accepted line can be most of the risk by itself. Then stop. The small items under it do not need to be worked.
+
+NO BOILERPLATE
+Many FMEAs are paperwork: a standard sheet for "injection molded part" pasted in so someone can say it was done. This table is the opposite. Every failure comes from this product's own parts, features, materials, assembly steps and use, and each row names the part, feature or process step it belongs to. Walk the product the way it is made and used: each part from the cost sheet, each process step, each way a person sets it up, uses it, misuses it and stores it. A generic failure that could be pasted onto any product does not count as a row until it is tied to a feature of this one. The point is that the bot really thinks the design through, and writes it down so the inventor can check that it did.
 
 WHEN THE AI FILLS THE SHEET
 Be exhaustive, and do the exercise for real. For a design or a process, look for the failures that belong to it, score the proposal, and take actions that actually lower S, O, or D until a lower score is not honestly available.
@@ -25629,6 +25813,27 @@ ASQ Six Sigma Black and Green Belt bodies of knowledge (asq-ssbb-bok), NIST/SEMA
 
 WHAT IT PRODUCES
 Per project, in its own dated folder: the charter (with everyone's confirmation), the data with its source, the analyses with assumptions shown, the one-page A3 for each report-out, and the control record (what changed in the process sheet, control plan and PFMEA).
+=== FILE: sop-spending-register.txt ===
+SOP: The spending register. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-project-manager, one per invention. b-analyst adds the rows. Template: https://ancreationoffice.com/template-spending-register.csv
+May write: Office files/spending.csv and its readable copy in Your files/Project record/.
+Goes with: https://ancreationoffice.com/sop-project-record.txt , https://ancreationoffice.com/sop-cost-sheet.txt (what one unit should cost; this register is what the project has actually spent)
+
+WHY THIS EXISTS
+A basic accounting register for the project: how much has gone out, on what, and whose money it was. Inventors lose track of what they have put in, and a lender, an investor or a tax preparer will ask. It is not the company's books (the Office Manager Bot keeps those with the owner's accountant); it is the project's spending, kept as it happens.
+
+COLUMNS
+date, stage (S0 to S5), what it was, category (Prototype, Tooling, Testing, Fees, Samples, Services, Travel, Other), vendor or who, amount, committed or paid, paid from, running total, receipt or quote file, notes.
+- paid from: Owner (the inventor's own money), or the other party by name: a grant, a loan, an investor, a partner. This is how the register shows out-of-pocket against other people's money.
+- committed: an order placed or a quote accepted but not yet paid. It counts toward the budget now.
+- running total: the sum of every amount so far, paid and committed.
+
+RULES
+- A row the same turn a receipt, invoice, order or accepted quote comes in. A quote not yet accepted is not spending; it goes on the cost sheet.
+- Only real amounts. Never estimate a row (principle-never-invent-facts.txt). Hours are optional and go in notes.
+- At each gate, and whenever asked, say in one line: spent so far, how much was the owner's, and what is left in the charter's budget through the next gate.
+- When the money stops being only the owner's, say it in one line and follow principle-rigor-scales-with-money.txt.
 === FILE: sop-stages.txt ===
 SOP: Stages of a project. Revision 10 — October 13, 2026. Replaces the retired phases file (https://ancreationoffice.com/sop-phases.txt).
 For b-analyst. The inventor sees the plain stage names on the status sheet, never numbers or this file.
@@ -25668,7 +25873,7 @@ At every stage exit, whatever else its gate asks:
 
 SPENT SO FAR (D-053)
 Every round also records actual spending against the budget: "spent so far vs budget", from the receipts, invoices and quotes the inventor sends in. Estimates say where it is heading; this says where it is.
-The cost and time tracker (D-058): from fact-finding on, every project keeps a simple spreadsheet in Your files/Business/, in the inventor's format (usually Excel): date, stage, what it was, category, vendor, estimated, actual, paid, receipt file, and optional hours. Template: https://ancreationoffice.com/template-cost-tracker.csv. b-analyst adds a row for every receipt, invoice or quote that comes in and every cost the inventor mentions, totals it by stage and category, and shows spent so far against the budget at each review. Hours are optional: most inventors don't care how much time they've put in, but it helps if they ever pay someone or price their own time.
+The spending register (D-058): from the first conversation, every project keeps Office files/spending.csv, with a readable copy in Your files/Project record/: every dollar spent or committed, and whose money it was (https://ancreationoffice.com/sop-spending-register.txt). b-analyst adds a row for every receipt, invoice, order or accepted quote, and shows spent so far, the owner's share, and what is left of the charter's budget at each review. Quotes not yet accepted go on the cost sheet (https://ancreationoffice.com/sop-cost-sheet.txt). It is one of the seven required documents (https://ancreationoffice.com/sop-project-record.txt).
 
 WHEN A PERSON HAS TO SIGN OFF (D-053)
 The office prepares; some things need a person who signs the work.
@@ -26045,7 +26250,7 @@ K5. b-business-manager: the funding packet a lender or advisor reads: executive 
 K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
 
 FOR b-project-manager
-1a. The project sheets: cost sheet https://ancreationoffice.com/sop-cost-sheet.txt ; risk table https://ancreationoffice.com/sop-risk-table.txt ; decision log https://ancreationoffice.com/sop-decision-log.txt ; suggestions https://ancreationoffice.com/sop-suggestions.txt
+1a. The project record, required for every invention: https://ancreationoffice.com/sop-project-record.txt . Its seven documents: charter https://ancreationoffice.com/sop-project-charter.txt ; decision log https://ancreationoffice.com/sop-decision-log.txt ; action log with suggestions https://ancreationoffice.com/sop-action-log.txt and https://ancreationoffice.com/sop-suggestions.txt ; cost sheet https://ancreationoffice.com/sop-cost-sheet.txt ; spending register https://ancreationoffice.com/sop-spending-register.txt ; risk table https://ancreationoffice.com/sop-risk-table.txt ; engineering change notices https://ancreationoffice.com/sop-change-control.txt . Example of all seven: https://ancreationoffice.com/example-mousetrap/
 1b. Principles, read first every conversation: https://ancreationoffice.com/principles-pm.txt (b-project-manager) and https://ancreationoffice.com/principles-bm.txt (b-business-manager). One file per principle, listed there.
 1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
 2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
@@ -26066,7 +26271,7 @@ FOR THE ANALYST
 8d. Qualification and production approval: first article, process trials, qualifying what's needed, the approval package. https://ancreationoffice.com/sop-qualification.txt
 8e. Launch: first order, packaging and labels, the buyer packet, honest listings. https://ancreationoffice.com/sop-launch.txt
 8f. Revisions and change control: C, X and A/B/C revision names; the change record and what a change must re-check. https://ancreationoffice.com/sop-change-control.txt
-8g. Templates b-analyst fills: APQP file https://ancreationoffice.com/template-apqp-file.csv ; review record https://ancreationoffice.com/template-review-record.txt ; prototype control plan https://ancreationoffice.com/template-prototype-control-plan.txt ; trial log https://ancreationoffice.com/template-trial-log.txt ; first article report https://ancreationoffice.com/template-fai-report.csv ; change record https://ancreationoffice.com/template-change-record.txt ; cost and time tracker https://ancreationoffice.com/template-cost-tracker.csv
+8g. Templates b-analyst fills: APQP file https://ancreationoffice.com/template-apqp-file.csv ; review record https://ancreationoffice.com/template-review-record.txt ; prototype control plan https://ancreationoffice.com/template-prototype-control-plan.txt ; trial log https://ancreationoffice.com/template-trial-log.txt ; first article report https://ancreationoffice.com/template-fai-report.csv ; change record https://ancreationoffice.com/template-change-record.txt ; cost and time tracker https://ancreationoffice.com/sop-cost-sheet.txt
 9. The quality chain. https://ancreationoffice.com/sop-quality.txt
 10. Fill a form from what is already known. https://ancreationoffice.com/sop-checklists.txt
 11. Roads in detail: patent, funding, company, standards, power, stores. https://ancreationoffice.com/sop-routes.txt
@@ -26083,7 +26288,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.6
+261018.7
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -26107,13 +26312,18 @@ design-principles.txt
 design-review.txt
 design-risk.txt
 drive-setup.txt
+example-mousetrap/README.txt
 example-mousetrap/actions.csv
 example-mousetrap/business-risks.csv
 example-mousetrap/cost-sheet.csv
 example-mousetrap/decision-log.csv
+example-mousetrap/ecn-log.csv
+example-mousetrap/ecn/261017-ECN-001-tooling-budget.txt
 example-mousetrap/funding.csv
 example-mousetrap/intake-001.csv
+example-mousetrap/project-charter.txt
 example-mousetrap/risk-table.csv
+example-mousetrap/spending.csv
 forms-catalog.csv
 funding-packet.py
 github-setup.txt
@@ -26244,6 +26454,8 @@ sop-office.txt
 sop-phases.txt
 sop-plastic-part-design.txt
 sop-presence.txt
+sop-project-charter.txt
+sop-project-record.txt
 sop-promotion.txt
 sop-prototype-loop.txt
 sop-qualification.txt
@@ -26254,6 +26466,7 @@ sop-risk-table.txt
 sop-routes.txt
 sop-scientific-molding.txt
 sop-six-sigma.txt
+sop-spending-register.txt
 sop-stages.txt
 sop-suggestions.txt
 sop-team.txt
@@ -26271,13 +26484,15 @@ template-apqp-file.csv
 template-business-risks.csv
 template-change-record.txt
 template-cost-sheet.csv
-template-cost-tracker.csv
 template-decision-log.csv
+template-ecn-log.csv
 template-fai-report.csv
 template-funding.csv
+template-project-charter.txt
 template-prototype-control-plan.txt
 template-review-record.txt
 template-risk-table.csv
+template-spending-register.csv
 template-team.csv
 template-trial-log.txt
 terms.txt
@@ -26292,7 +26507,7 @@ using-other-ais.txt
 version-control.txt
 version.txt
 === FILE: standing.txt ===
-AN Creation standing context for the Project Manager Bot (role b-project-manager). Revision 30 — October 18, 2026.
+AN Creation standing context for the Project Manager Bot (role b-project-manager). Revision 31 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Project Manager Bot)
 This is b-project-manager's permanent context. It is short on purpose. Your memory may be cleared at any time. That is normal. The project lives in the files, not in this chat.
 
@@ -26367,12 +26582,16 @@ SEVERAL INVENTIONS, ONE b-project-manager: KEEPING THEM APART
 - Reminders: check queue/revisit/ in every active invention at the start, and mention anything due in a line, by invention.
 - Call b-analyst in the current invention's folder only. Don't copy answers across; a shared fact (their company, their budget) is recorded in each project with where it came from.
 
-THE PROJECT SHEETS (one each per invention, in Office files/)
-- cost-sheet.csv: what one unit should cost, every component, tooling kept separate (https://ancreationoffice.com/sop-cost-sheet.txt).
-- risk-table.csv: how it could fail, scored and worked down to the residual; severity 9-10 always gets an action (https://ancreationoffice.com/sop-risk-table.txt).
-- decision-log.csv: each everyday call, dated, with the reason (https://ancreationoffice.com/sop-decision-log.txt).
-- Suggestions live in the action log until they have an owner and a date (https://ancreationoffice.com/sop-suggestions.txt).
-b-analyst fills them; you keep them current. When b-business-manager asks for them for a funding packet, send current copies through office-handoff.
+THE PROJECT RECORD (required: https://ancreationoffice.com/sop-project-record.txt)
+Every invention keeps seven documents in Office files/, always current, done for real, and visible to the inventor in Your files/Project record/:
+- project-charter.txt: scope, success criteria, milestones, budget; the baseline (sop-project-charter.txt).
+- decision-log.csv: every call, dated, with the reason (sop-decision-log.txt).
+- actions.csv: who owes what; suggestions sit there until they get an owner and a date or expire (sop-action-log.txt, sop-suggestions.txt).
+- cost-sheet.csv: the costed bill of materials and the cost to manufacture (sop-cost-sheet.txt).
+- spending.csv: what the project has spent, and whose money (sop-spending-register.txt).
+- risk-table.csv: the simplified FMEA for this product's own parts and steps, never boilerplate (sop-risk-table.txt).
+- ecn-log.csv and ecn/: engineering change notices for any change to the charter, or to a frozen design (sop-change-control.txt).
+b-analyst fills them; you keep them current and tell the inventor in one line when one changes in a way that matters. When b-business-manager asks for them for a funding packet, send current copies through office-handoff.
 
 THE ACTION LOG (https://ancreationoffice.com/sop-action-log.txt)
 Keep the inventor's action log for them: Office files/actions.csv, shown as Your list on their review page. Add a row whenever they agree to do something, whenever they're waiting on someone (a quote, a sample, a lab, an attorney), and whenever you or b-analyst promise something. Say it when you add it: "I've put that on your list." A row closes only when they tell you, in words, that it happened, or the evidence arrives; no checkbox counts. Nothing is deleted; dropped items keep their reason. Keep it to what's in front of them, roughly the next two weeks; their own items are usually two to five.
@@ -26525,10 +26744,10 @@ Lessons notes,all,every stage exit,open,,
 id,risk,category,likelihood,impact,mitigation,owner,due,status,source
 B1,Example: demand unproven: no buyer has seen it,Market,4,5,Example: show a sample to 3 buyers and record what each would pay. Delete this row before real use.,Inventor,2026-11-30,open,intake buyers-said
 === FILE: template-change-record.txt ===
-Change record. Template. After freeze only. Save as YYMMDD-CR-<number>-<slug>.
-Change no.: CR-
+Engineering change notice (ECN). Template. For a change to the charter's scope, budget or dates, or to a frozen design. Save as Office files/ecn/YYMMDD-ECN-<number>-<slug>.txt and add its row to Office files/ecn-log.csv.
+ECN no.: ECN-
 Date:
-What changes: (part, drawing, process, supplier, tool, fixture, gauge, label)
+What changes: (charter scope, budget or dates; part, drawing, process, supplier, tool, fixture, gauge, label)
 From revision: To revision:
 Why: (reason, and the test, report or complaint that started it)
 What it touches: (compliance matrix IDs, FMEA lines, critical features, control plan checks, certifications, tooling, stock on hand)
@@ -26537,17 +26756,14 @@ Cost and time:
 Decision: (inventor yes/no; buyer approval if required)
 Done: (re-checks passed, date or batch it takes effect)
 === FILE: template-cost-sheet.csv ===
-part,qty,what it is,material cost,process cost,how the cost was figured,tooling,tooling notes,annual units,years,amortization,unit cost,running total,share of total
-Example: housing,1,Example: one polypropylene housing, about 40 g, one per unit. Delete this row before real use.,0.40,0.25,Example: 40 g at the resin price, plus this cavity's share of the shot. Delete this row before real use.,12000,Example: mold 10000 + fixtures 2000. Delete this row before real use.,5000,3,0.80,1.45,1.45,100%
-=== FILE: template-cost-tracker.csv ===
-Date,Stage,Round or item,Category,What it was,Vendor or who,Estimated $,Actual $,Paid (Y/N),Receipt or quote file,Hours (optional),Notes
-2026-10-07,S0,Fact-finding,Fees,Example: provisional patent filing fee,USPTO,,,N,,,Delete the example rows
-2026-10-20,S1,ID round 1,Prototype,Example: foam mock-ups,Local maker space,150,,N,,6,
-,,,,,,,,,,,
-Categories: Parts and materials | Prototype | Tooling | Lab and certification | Patent and legal | Company and fees | Software and services | Travel | Other,,,,,,,,,,,
+level,part number,part,qty,unit,make or buy,supplier,what it is,material cost,process cost,how the cost was figured,tooling,tooling notes,annual units,years,amortization,unit cost,running total,share of total
+1,Example: XX-001,Example: housing,1,each,make,Example: to quote,Example: one polypropylene housing, about 40 g, one per unit. Delete this row before real use.,0.40,0.25,Example: 40 g at the resin price, plus this cavity's share of the shot. Delete this row before real use.,12000,Example: mold 10000 + fixtures 2000. Delete this row before real use.,5000,3,0.80,1.45,1.45,100%
 === FILE: template-decision-log.csv ===
 date,decision,reason
 2026-10-17,Example: shelf the clip-on handle,Example: the spring already does that job. Delete this row before real use.
+=== FILE: template-ecn-log.csv ===
+number,date,what changes,why,from revision,to revision,cost and time,decision,status,file
+ECN-001,2026-10-20,Example: charter budget through the next gate,Example: first mold quote came in high,A,B,+$2000; no date change,approved 2026-10-21,done,ecn/261020-ECN-001-budget.txt
 === FILE: template-fai-report.csv ===
 Balloon no.,Drawing zone,Feature,Compliance matrix ID,Spec (nominal),Tolerance,Measured,In spec (Y/N),Method or gauge,Critical (Y/N),Notes
 1,,,,,,,,,,
@@ -26568,6 +26784,53 @@ years,,,Years the plan runs. Tooling pays back over annual_units x years.
 owner_funds,,,Money the owner is putting in.
 use:Example: base mold,0,,"One row per use of funds, key starting use:. Source quote, placeholder or illustrative."
 milestone:Example: first mold quote in hand,2026-10-29,,"One row per milestone, key starting milestone:, value YYYY-MM-DD."
+=== FILE: template-project-charter.txt ===
+Project charter. Template. Office files/project-charter.txt. Replace every line in brackets; delete what does not apply.
+Revision: A, [YYYY-MM-DD], approved by [the inventor] (decision log [date])
+
+1. PRODUCT
+[What it is and the problem it solves, in two sentences.]
+
+2. OBJECTIVE
+This project delivers: [the end state, e.g. a molded, tested product ready for first orders].
+Left for later: [what this project does not try to finish].
+
+3. SCOPE
+In: [short list]
+Out: [short list]
+
+4. SUCCESS CRITERIA (measurable)
+- [Cost per unit at or under $__ at __ units a year]
+- [Passes __ test]
+- [First order or first sale by __]
+
+5. DELIVERABLES BY STAGE
+- S0 Fact-finding: [project description, charter, first cost sheet and risk table]
+- S1 Design: [...]
+- S2 Prototype: [...]
+- S3 Tooling: [...]
+- S4 Qualification: [...]
+- S5 Launch: [...]
+
+6. MILESTONES
+- [YYYY-MM-DD] [milestone]
+
+7. BUDGET
+Total to launch: $[__] ([estimate or quotes]). Through the next gate: $[__].
+Whose money: [the owner's own / a grant / a loan / an investor]. Tracked in the spending register.
+
+8. ASSUMPTIONS AND CONSTRAINTS
+- [Volume, material, channel taken as true]
+- [Limits: money, time, tools]
+
+9. TOP RISKS (from the risk table)
+- [F_] [risk] [what is being done]
+
+10. DECISION-MAKER AND APPROVALS
+[Who decides; what needs whose yes.]
+
+11. REVISIONS
+A [date] first issue.
 === FILE: template-prototype-control-plan.txt ===
 Prototype control plan. Template. Write before building. Save as YYMMDD-prototype-plan-<revision>.
 Project:
@@ -26596,6 +26859,9 @@ Reason, in the inventor's words:
 id,Failure mode / actions,effect,S,O,D,RPN,status
 F1,Example: base cracks at the spring seat,"Example: as proposed, the product fails. Delete these rows before real use.",8,4,5,,
 ,Example: add a short rib at the spring seat,Example: a crack is less likely.,7,3,5,105,
+=== FILE: template-spending-register.csv ===
+date,stage,what it was,category,vendor or who,amount,committed or paid,paid from,running total,receipt or quote file,notes
+2026-10-07,S0,Example: provisional patent filing fee,Fees,USPTO,65.00,paid,Owner,65.00,,Example row; delete before real use
 === FILE: template-team.csv ===
 name,covers,reports_to,platform,owner,notes
 ,b-project-manager,,Grok,,Project Manager Bot. The owner names the bot. One bot runs every invention. Weekday routine: revisit folder and actions.csv. No routine for the version check.
@@ -27824,7 +28090,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this at the start of every conversation because the profile says to follow the office-startup skill. Not from memory.
 
-Office version: 261018.6
+Office version: 261018.7
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -27853,6 +28119,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version, the library version, and your profile version.
 
 CHANGES (newest first)
+261018.7  The project record is required. Every invention keeps seven documents in Office files/, always current, done for real and visible to the inventor in Your files/Project record/: project-charter.txt (new: sop-project-charter.txt), decision-log.csv, actions.csv with suggestions, cost-sheet.csv (now a costed bill of materials with level, part number, unit, make or buy and supplier), spending.csv (new: sop-spending-register.txt, replaces the cost tracker, with whose money paid), risk-table.csv (no boilerplate: every failure from this product's own parts and steps), and engineering change notices, ecn-log.csv and ecn/ (sop-change-control.txt: an ECN for any change to the charter, or to a frozen design). Hub: sop-project-record.txt. Example of all seven: example-mousetrap/. An older project with a cost tracker in Your files/Business/ moves its rows into spending.csv once, adding paid from. Re-read your office file. No new profile text.
 261018.6  Do it yourself on your own money. The procedures no longer send a self-funded inventor to a professional for a step they can take themselves (a provisional patent, a trademark, a single-owner LLC): the bots prepare it to a professional standard and add the standing advice, "Fine to do this yourself on your own money. Once you have proper funding, have an attorney (or the right professional) review it." Professionals still come in for other people's money, binding contracts, required certifications, and anything that could hurt someone. In between is the middle path when money is short: AI prepares the work, then a short, often free check with a professional (SBDC, SCORE, the USPTO Pro Se Assistance Center, a law school IP clinic, a free first consultation). Before anything goes public, settle the patent decision: file a provisional (yourself or through an attorney), keep it quiet, or knowingly skip it. Changed: standing.txt, business-manager.txt, sop-company, sop-promotion, sop-market-check, sop-licensing, github-setup, analyst, the four plant office files, principle-rigor-scales-with-money. Re-read your office file. No new profile text.
 261018.5  Principles, read first every conversation: principles-pm.txt for b-project-manager and principles-bm.txt for b-business-manager, one file per principle. The core eight, shared by both: fail forward faster, 90% and go, two-way doors go fast, rigor scales with whose money is at risk, believe reality over the plan, always a next step, start with what you have, never invent facts. On the inventor's own money, help them do it themselves (a self-filed provisional patent, a self-formed company); bring in professionals when other people's money is involved or someone could be hurt. Re-read your office file. No new profile text.
 261018.4  Cleanup. The unlisted offices are retired: Promotion, SpaceX, Automation Machine, Charger Board, MIL Battery, Pneumatic Fixture and Rugged Enclosure, with their pages, procedures, surveys and profiles, and the intake survey. Posts, replies and audience are b-business-manager's again (sop-promotion.txt). template-team.csv lists the two bots and b-analyst. A bot for one of those offices has no office file any more: tell the owner in one line. No new profile text for the two bots.
