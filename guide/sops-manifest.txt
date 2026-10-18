@@ -1,4 +1,4 @@
-261018.38
+261018.39
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -104,10 +104,16 @@ playbooks.txt
 press-kit/PROMO-INSTRUCTIONS.txt
 press-kit/backgrounder.txt
 press-kit/boilerplate.txt
+press-kit/entrepreneur-campaign.txt
+press-kit/entrepreneur-one-pager.txt
+press-kit/entrepreneur-press-release.txt
 press-kit/fact-sheet.txt
 press-kit/founder-bio.txt
 press-kit/images/images.txt
 press-kit/images/make_article_cover.py
+press-kit/inventor-campaign.txt
+press-kit/inventor-one-pager.txt
+press-kit/inventor-press-release.txt
 press-kit/key-messages.txt
 press-kit/one-pager.txt
 press-kit/posts/linkedin.txt
