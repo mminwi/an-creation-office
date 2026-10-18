@@ -1,4 +1,4 @@
-SOP: The schedule and the critical path. Revision 1 — October 18, 2026.
+Procedure: The schedule and the critical path. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention. b-analyst runs schedule.py.
 May write: Office files/schedule.csv and schedule.html, and the readable copy in Your files/Project record/.

@@ -1,0 +1,2 @@
+name,what they do,contractor or employee,decided on,decision log,start,agreement,tax form on file,paid how,paid this year,year-end form,status,notes
+Example: Jordan (freelance CAD designer),CAD for the base and trigger plate,contractor,2026-11-02,business-decision-log 2026-11-02,2026-11-04,correspondence/261103-01-S-cad-designer-agreement (signed 2026-11-03),yes (W-9),"by invoice, net 15",0.00,1099-NEC if over that year's threshold (deadlines.csv),active,Drawings assigned to the business in the agreement

@@ -1,4 +1,4 @@
-SOP: Meeting prep. Revision 13 — October 18, 2026.
+Procedure: Meeting prep. Revision 14 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst drafts the documents and builds the packet.
 May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-X-slug/ (the meeting file, the packet, the notes; https://ancreationoffice.com/sop-correspondence.txt) and its row in correspondence.csv, rows in the Business action log, decision log, contacts.csv and market-evidence.csv, and hand-off lines to b-project-manager.

@@ -1,4 +1,4 @@
-SOP: The manufacturer packet (request for quote). Revision 4 — October 18, 2026.
+Procedure: The manufacturer packet (request for quote). Revision 5 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager for the meeting; the technical content is b-project-manager's (cost sheet, drawings list, specifications, risk table), sent as copies through office-handoff. b-analyst builds it.
 May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-X-slug/, and a hand-off line to b-project-manager for the quote when it arrives (it goes on the cost sheet).

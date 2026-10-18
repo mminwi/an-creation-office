@@ -1,4 +1,4 @@
-SOP: Which form opens next. The flowchart (a graph). Revision 4 — October 1, 2026.
+Procedure: Which form opens next. The flowchart (a graph). Revision 5 — October 18, 2026.
 NOTE, October 6, 2026: this procedure was written when b-project-manager did the work itself. It is now read by b-analyst. Where it says b-project-manager takes a role, calls or forms a Grok Build session, or writes the sheets, read: b-analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
 Human page: https://ancreationoffice.com/sop.html#graph

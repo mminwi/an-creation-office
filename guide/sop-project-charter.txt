@@ -1,4 +1,4 @@
-SOP: The project charter. Revision 2 — October 18, 2026.
+Procedure: The project charter. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention. b-analyst drafts it; the inventor approves it.
 Template: https://ancreationoffice.com/template-project-charter.txt . Example: https://ancreationoffice.com/example-mousetrap/project-charter.txt

@@ -1,0 +1,2 @@
+check,what is checked,result,turn,evidence (the bot's words),note
+C1,Example: asks one question per turn,pass,3-21,"Turn 7: ""Which one today, or something else on your mind?""","Example row; results are pass, fail, not reached, or needs the owner, and a pass always has a quote"

@@ -1,4 +1,4 @@
-SOP: Quality-planning series. Revision 2 — October 1, 2026.
+Procedure: Quality-planning series. Revision 3 — October 18, 2026.
 NOTE, October 6, 2026: this procedure was written when b-project-manager did the work itself. It is now read by b-analyst. Where it says b-project-manager takes a role, calls or forms a Grok Build session, or writes the sheets, read: b-analyst does it in its own run. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
 Read this when the work is customer desires, a specification, failure modes, a control plan, or a test plan. The role is engineering. b-project-manager keeps the inventor conversation and calls the sessions.

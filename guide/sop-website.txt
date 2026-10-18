@@ -1,4 +1,4 @@
-SOP: b-business-manager. Domain, website, email and search. Revision 1 — October 11, 2026.
+Procedure: b-business-manager. Domain, website, email and search. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: business-manager.txt, sop-presence.txt
 Read this when the domain, a website, a business email, or being found on Google and Bing comes up. Then leave it.

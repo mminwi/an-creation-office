@@ -1,0 +1,227 @@
+AN Creation — Design risk and troubleshooting. Revision 2 — October 18, 2026.
+Same guidance as https://ancreationoffice.com/design-risk.html with layout removed. Examples are illustrative, not verified project results.
+How the project's risk table is built and scored (one failure per id, actions below it, the residual, the 80% line, severity first): https://ancreationoffice.com/sop-risk-table.txt . Where this page and that file differ, that file wins.
+
+b-project-manager handles the quality-planning paperwork
+
+You should be able to say, “I’m worried this cover could come loose,” and have b-project-manager take it from there. You do not need to learn the names of all the forms. b-project-manager's job is to capture the concern, coordinate the relevant assistants, prepare the records and carry them into the package. He explains the few decisions that need your input in ordinary language.
+
+The usual chain is customer and team concerns → critical quality points → requirements and failure analysis → control plan → work/inspection instructions and the manufacturing package. Feedback flows back through the chain when tests or manufacturing reveal something new. This is the working method the assistants should follow with the project files and tools available to them.
+
+Start with the things that must be right
+
+A critical-to-quality characteristic, often shortened to CTQ, is something the product or process must get right for the customer or the product’s intended function. Capture safety and regulatory requirements too, even if a customer never mentions them. Keep the original concern, who raised it, its source and revision, and a stable ID. Distinguish a proposed priority from a formally designated safety or special characteristic.
+
+b-project-manager starts the list from existing conversations and records. The design role and the marketing role help clarify customer needs; the engineering role defines the engineering characteristic and justified acceptance limit; b-project-manager adds supplier/process concerns; the prototype role supplies test evidence. If the target is unknown, the document says so. b-project-manager asks “How much weight will it need to hold?” instead of asking the person to fill out a CTQ form.
+
+Turn the failure analysis into controls
+
+A control plan says what keeps the important characteristics right during making and assembly, what gets checked, and what happens if a check fails. The process flow and process FMEA help identify where controls belong. See ASQ’s quality-plan guidance (https://asq.org/quality-resources/quality-plans) and AIAG’s explanation of the connected quality tools (https://www.aiag.org/expertise-areas/quality/quality-core-tools). Automotive formats are useful references, not mandatory paperwork for every small invention.
+
+For each control, record the process step, linked CTQ/requirement and FMEA IDs, characteristic, approved limit and its source, prevention method, inspection/test method, suitable measuring equipment, sample size and frequency, owner, result record and reaction plan. Include the plan’s stage and exact product/process revisions. A design qualification test and a routine production check are different activities; specify both where needed.
+
+Example chain: proposed records, not completed approvalInput | Quality point / FMEA | Control-plan response | 
+
+“The cover might come loose.” | CTQ-01: latch retention. FMEA-01: latch fails to engage; cover detaches. | CP-01: control latch geometry and assembly engagement; define the retention requirement and production check. Limits, method and frequency await engineering/supplier review. | 
+
+Supplier: “This core may deflect.” | CTQ-02: molded feature position/size. FMEA-02: tooling movement produces an unacceptable interface. | CP-02: review core design and process prevention; plan measurement of the affected feature with justified sampling. Recheck tooling or process changes. | 
+
+A concern is logged immediately and carried to a linked action or proposed control. It may first require redesign, analysis or a test; copying it into a control plan does not resolve it. Keep unresolved items visible, with an owner and next step.
+
+Say what happens when a check fails
+
+“Inspect it” is incomplete. The reaction plan identifies who stops or holds the affected work, how suspect units are identified and contained, who is notified, how the cause is investigated, what is rechecked, and who may authorize restart or release. Inspection records need unit/lot identification and the actual result. The plan describes intended work; records show what happened.
+
+Do not invent tolerances, sampling frequencies, capability results or inspection evidence. Even a proposed 100% check needs a suitable method and does not guarantee zero escapes. Where statistical process control is used, process control limits and product specification limits serve different purposes; use actual process data and qualified interpretation.
+
+Prepare the package and keep it current
+
+b-project-manager prepares a linked package: critical quality list, requirements, FMEA and actions, control plan, matching drawings, work/inspection instructions, actual evidence and an open-issues list. Its manifest identifies each document, revision, owner and review/release status. Keep one authoritative copy of each record. A review package can include clearly marked proposals; a production release must not present unresolved acceptance criteria as approved.
+
+b-project-manager drafts and maintains these records without making the inventor request each form. b-analyst checks the technical content, and the responsible people make the required decisions. It prepares the recipient-specific package for the agreed handoff, preserves source permissions and follows the project’s existing authority for sending it. Nothing here claims that a document has been sent or a test performed.
+
+When a customer comment, supplier substitution, failed test, drawing revision or process change affects a quality point, b-project-manager coordinates updates to all linked records and flags any superseded package. The person gets a short update: what was captured, what is being handled, and any decision or blocker. Control-plan template (CSV) (https://ancreationoffice.com/control-plan.csv) · Critical quality list (CSV) (https://ancreationoffice.com/critical-quality.csv).
+
+A few tools that help the work carry through
+
+Start small. For a simple product, a one- or two-page review can capture the main functions, likely failures, fit checks and actions. Add detail when complexity or possible harm calls for it. The purpose is to find and fix problems while changes are still manageable. A completed form alone does not make a product safe or establish legal protection.
+
+Choose the tool for the questionQuestion | Useful tool | 
+
+Did we carry the customer’s needs into the design? | Feature/requirements matrix; QFD when tradeoffs become complicated. | 
+
+How could it fail, and what would happen? | Failure mode and effects analysis (FMEA). | 
+
+Why did this particular unit fail? | Evidence-based troubleshooting and root cause analysis. | 
+
+Will real parts fit and work together? | Tolerance stack-up, suitable GD&T and assembly trials. | 
+
+Can it be made and assembled correctly? | Design for manufacture/assembly (DFM/DFA) and mistake-proofing. | 
+
+Save the short design-review worksheet (https://ancreationoffice.com/design-review.txt) · Read this guide as plain text (https://ancreationoffice.com/design-risk.txt). The examples below are teaching examples, not approved dimensions or completed tests for your product. Sources checked September 30, 2026.
+
+Carry the customer’s needs into the design
+
+“Easy to open” is a useful customer input, but it does not yet tell a designer what to build or a tester what to check. Keep the customer’s words, agree on the intended users and conditions, and translate the need into an observable requirement. Record unknown targets rather than inventing numbers.
+
+A feature matrix compares features across concepts or competing products. To show that customer needs are actually met, extend it into a requirements traceability matrix: each need has an ID, source, agreed target, design response, verification method and evidence. A feature’s presence is not proof that it works. NASA’s verification-matrix guidance (https://www.nasa.gov/reference/appendix-d-requirements-verification-matrix/) explains the underlying practice; a small project can use a small table.
+
+Example: a small enclosure; all results still pendingNeed / source | Design response | How we will check | 
+
+R1: “Open it with gloves,” user interview. | Larger latch surface; agree glove type and opening-force target. | Measured force plus a trial with representative users. Target and result pending. | 
+
+R2: “The cover must stay on if dropped,” customer. | Retained latch; agree drop height, surface, orientation and acceptance criteria. | Controlled test of the specified revision. Not tested. | 
+
+R3: “No sharp edges where I grip it,” user. | Specified edge treatment and flash/burr limits. | Drawing/inspection checks and safe handling review. Criteria pending. | 
+
+Resolve conflicting requests openly. Mark each input accepted, deferred, rejected with a reason, or still unresolved; do not silently lose one. Customer preferences cannot override applicable safety obligations. On a change, revisit affected requirements, drawings and tests. Verification asks whether the agreed specification is met; validation asks whether the product works for its intended users and use. Both matter. See NASA’s explanation of verification and its relationship to validation (https://www.nasa.gov/reference/5-3-product-verification/).
+
+House of Quality: see the tradeoffs
+
+Quality function deployment (QFD) translates customer needs into technical characteristics. Its familiar House of Quality puts customer needs down the left, engineering characteristics across the top, and relationships in the middle. Customer importance helps prioritize work. The “roof” compares technical characteristics with one another to expose conflicts and helpful relationships. See ASQ’s QFD introduction (https://asq.org/quality-resources/qfd-quality-function-deployment).
+
+A small relationship matrix, not a completed House of QualityCustomer need | Latch opening force | Grip size | Latch engagement | 
+
+Easy with gloves | Strong | Strong | Some | 
+
+Cover stays attached | Some | Weak | Strong | 
+
+For this example, more engagement might improve retention but increase opening force. That belongs in the roof as a potential conflict to investigate. Agree customer priorities and measurable targets; test the proposed relationship rather than treating the matrix as measured evidence. A simple feature/requirements table is often enough. Use the larger tool when several important needs compete, and keep the requirement-to-test record alongside it.
+
+FMEA: ask how it could fail before it does
+
+Failure mode and effects analysis separates the way something fails from its consequences and causes. A design FMEA examines the product’s functions and interfaces; a process FMEA examines how making or assembling it could introduce failures. Start early and revisit the analysis after changes, tests and field problems. See ASQ’s FMEA guide (https://asq.org/quality-resources/fmea).
+
+- Set the scope. Name the product/revision, intended use, boundaries and reviewers.
+
+- List functions. For each, record the failure mode, its effect on the user/system and possible causes.
+
+- Identify existing controls. Separate prevention from detection; distinguish proven controls from planned ones.
+
+- Prioritize. Consider severity, likelihood and whether the problem would escape detection.
+
+- Act and verify. Assign an owner and date, change the design/process, gather evidence and review the remaining risk.
+
+Include people who understand use, design, production and testing. On a small project these may be a few qualified reviewers. A worksheet is a living record of decisions and follow-through, not a one-time scoring exercise.
+
+A small example, written as one FMEA entry
+
+- Function: fit the enclosure cover in the correct orientation.
+
+- Failure mode: cover is fitted backwards.
+
+- Effect: an internal cable may be pinched; loss of function or an electrical hazard depends on the actual circuit.
+
+- Possible cause: the four mounting holes are symmetric.
+
+- Current control: an orientation arrow, with effectiveness not yet established.
+
+- Proposed prevention: an asymmetric locating feature that blocks incorrect assembly before the cable is trapped.
+
+- Action: the engineering role revises the geometry; the prototype role plans correct/incorrect-orientation trials; b-project-manager records the agreed due date.
+
+- Evidence and remaining risk: pending. Check permitted dimensional variation, cover flex and foreseeable assembly force. Reassess the cable route too. Do not mark the action effective before testing.
+
+Use ratings to focus attention
+
+Many FMEAs rate severity (S), occurrence (O) and detection (D), and calculate a risk priority number, RPN = S × O × D. With the usual convention, a higher detection score means the failure is harder to catch. Define the scale and its evidence; ratings are judgments, not measured failure probabilities. A NASA-hosted engineering-review study (https://ntrs.nasa.gov/api/citations/20040086890/downloads/20040086890.pdf) discusses this approach.
+
+For an informal first review, written severity, likelihood/uncertainty and detection judgments may be more useful than unsupported numbers. Use the method required by the customer or industry for formal work. Never let a low combined score hide a severe safety consequence. Detection improvements do not automatically reduce the severity of the harm. Set action priorities explicitly; there is no universal RPN that makes every product acceptable.
+
+For complex or hazardous systems, have a qualified reviewer decide whether fault-tree, hazard or other system-level analysis is also needed. FMEA alone may miss combinations and interactions. Follow through on identified hazards; see the product-liability and risk guidance (https://ancreationoffice.com/ (Project Manager Bot)#reducing-product-risk).
+
+Troubleshoot the actual failure
+
+FMEA anticipates trouble; troubleshooting investigates observed trouble. Feed verified findings back into the FMEA and requirements. A suggested cause is not a proven root cause. ASQ’s root cause analysis guidance (https://asq.org/quality-resources/root-cause-analysis) provides the broader method.
+
+- Contain the problem. Make the situation safe, identify affected units and preserve evidence. Containment limits exposure while investigation continues; it is not the permanent fix.
+
+- Describe it precisely. Record expected versus actual behavior, revision, serial/batch number, settings, environment, frequency and recent changes. Note where it does not happen too.
+
+- Check the measurement. Confirm units, instrument suitability, setup and repeatability before redesigning a part because of a bad reading.
+
+- Develop and test possible causes. Compare good and failed units, inspect interfaces and use controlled, safe tests. Record predictions and results; preserve the original condition where possible.
+
+- Correct and confirm. Verify the cause and the fix, repeat the relevant test, and check for new problems elsewhere. Update the drawing, process and inspection instructions; monitor recurrence.
+
+Five Whys asks why each contributing condition existed. Five is a prompt, not a required count or proof. “The operator made a mistake” usually leaves the design/process question unanswered. Ask why the incorrect action was possible and why it escaped detection, then test those explanations. See ASQ’s Five Whys guidance (https://asq.org/quality-resources/five-whys).
+
+A fishbone diagram groups hypotheses around materials, methods, equipment, people, measurement and environment. A check sheet captures failures consistently; a Pareto chart shows common contributors, but frequency must not bury a rare severe hazard. Planned experiments can explore interacting factors. These are tools within Lean and Six Sigma, not substitutes for evidence. ASQ’s tools directory (https://asq.org/quality-resources/quality-tools) explains where to go deeper.
+
+Tolerance stack-up: leave room for the next part
+
+A tolerance is an allowed range around a specified dimension or geometry. Parts do not all arrive at the nominal value on the drawing. Stack-up analysis asks what happens to the assembled fit when their variations combine. The NIST tolerance-synthesis reference (https://www.nist.gov/publications/tolerance-synthesis-scheme) explains the relationship between component tolerances and assembly requirements.
+
+Suppose parts A and B sit end-to-end inside a housing. A third part, C, must fit in the space left over. All dimensions below are invented for this example and are in millimeters.
+
+A simple one-dimensional stackDimension | Nominal and tolerance | Allowed range | 
+
+Housing space H | 30.50 ± 0.20 | 30.30 to 30.70 | 
+
+Part A | 10.00 ± 0.15 | 9.85 to 10.15 | 
+
+Part B | 20.00 ± 0.15 | 19.85 to 20.15 | 
+
+Space left: H − A − B | 0.50 nominal | 0.00 minimum; 1.00 maximum | 
+
+The tightest combination is 30.30 − 10.15 − 20.15 = 0.00 mm. Each part can pass its own drawing and still leave no room for C. If C needs 0.30 mm including its own size variation and assembly clearance, this design does not guarantee the fit. These figures assume rigid, aligned parts at the same reference temperature and ignore other geometric errors.
+
+Possible fixes include changing the nominal space, shortening the chain of dependent dimensions, using a controlled locating surface, allowing useful adjustment, or tightening selected dimensions the process can actually hold. Also check the loosest combination: too much room may cause rattle, leakage or poor retention.
+
+Start with worst-case limits for critical fits. Statistical methods require justified assumptions and process data; do not simply assume variations cancel. Real assemblies may also need allowance for position, angle, flatness, coatings, thermal expansion, moisture, wear and deformation. The engineer must choose the analysis that matches the actual interface.
+
+GD&T: define the window of acceptable geometry
+
+Geometric dimensioning and tolerancing (GD&T) describes allowed variation in form, orientation, position and profile. Think of a three-dimensional “window” in which a surface or feature must lie. Datum references establish the planes, axes or points used to locate and orient that window. See ASME Y14.5 (https://www.asme.org/codes-standards/find-codes-standards/y14-5-dimensioning-tolerancing) for the governing language; its catalog page is not the full standard.
+
+A pin and hole can each have an acceptable diameter yet fail to assemble if the hole is misplaced or tilted. A suitable position control, tied to the surfaces that actually locate the parts, addresses a different question from diameter alone. The windows on mating parts must be chosen together. Merely adding GD&T symbols does not guarantee clearance or function.
+
+General tolerances are useful defaults
+
+A drawing may specify general tolerances for dimensions that have no individual tolerance. State the units, applicable convention/standard and edition, and the scope of the default. Critical fits, seal surfaces, locating features and safety-related geometry often need explicit controls. Make those exceptions clear. A blanket note is not an assembly analysis.
+
+There is an art to tolerancing: allow as much variation as function permits, and control what actually matters. Tightening every dimension raises manufacturing and inspection difficulty. Choose achievable limits with the supplier and a measurement plan that can distinguish acceptable from unacceptable parts. Keep the model, drawing, datum scheme, stack-up and inspection method consistent. Process-specific variation matters; see Protolabs on molding tolerances (https://www.protolabs.com/resources/blog/injection-molding-tolerances/).
+
+Make correct assembly easier—and wrong assembly harder
+
+Mistake-proofing, often called poka-yoke, changes the product or process to prevent an error or detect it promptly. A physical constraint can be stronger than asking someone to remember an instruction. See ASQ’s mistake-proofing guide (https://asq.org/quality-resources/mistake-proofing).
+
+Schematic only, not a drilling template. An offset can remove rotational ambiguity; verify the actual mating geometry.
+
+In a square four-hole pattern, a cover may fit in several orientations. Offset one locating feature, add a key or use a shaped connector so the wrong orientation cannot fully engage. Check all relevant rotations and front/back reversals: one offset is not a universal solution to every reversal. The feature must stop the error before wires are pinched or damage occurs, despite allowed tolerances, flexibility and foreseeable assembly force.
+
+Other examples include a fixture that will not accept a reversed part, captive hardware, connectors that cannot be interchanged, and a checked presence sensor for a missing component. Labels and colors help, but are easier to overlook. A sensor or interlock can also fail or be bypassed; its safety role needs appropriate engineering. Test both correct assembly and plausible incorrect attempts.
+
+Small DFM details that prevent big problems
+
+Design for manufacture asks whether the chosen process can make the part consistently. Design for assembly asks whether people or equipment can put the parts together correctly. Review these details with the supplier before freezing the design.
+
+- Edges and radii: specify suitable edge breaks or radii where people handle the product, and control burrs and molding flash. Internal fillets can reduce stress concentration, but a radius must not block a mating part from seating.
+
+- Wall thickness: avoid abrupt thick-to-thin changes where practical. Coring out an unnecessarily thick mass can reduce material and molding problems; review the remaining walls, ribs and loads rather than simply making everything thin.
+
+- Core access and strength: a narrow deep recess in the product may require a long slender steel core in the mold. It must be manufacturable, supported, cooled where needed and able to release the part. Thin core steel can deflect or break. Allow room for the tooling, not just the plastic.
+
+- Draft: a slight taper on the surfaces in the withdrawal direction helps the molded part release without dragging or damage. Depth, texture, material and tooling affect the angle. Check what draft does to the opening and fit along its full depth.
+
+- Undercuts and access: a hook or reverse-facing ledge may trap the part unless the tool has a suitable release strategy. Also leave room for cutters, drivers, hands, connectors, inspection and later service.
+
+- Assembly sequence: confirm each part can actually be inserted in order, fasteners can be reached, cables have clearance and seals stay located. A collision-free final CAD view does not prove there is a workable assembly path.
+
+Useful supplier explanations: wall thickness and corners (https://www.protolabs.com/resources/design-tips/improving-part-design-with-uniform-wall-thickness/), thin slots and tooling features (https://www.protolabs.com/resources/design-tips/solving-wall-thickness-issues-in-molded-parts/), and draft and release (https://www.protolabs.com/resources/design-tips/improving-part-moldability-with-draft/). These are process-specific starting points, not universal dimensions. Ask the actual supplier about the selected material, geometry, finish, tooling and volume.
+
+Keep the record short, but close the loop
+
+For a simple product, start with the short worksheet (https://ancreationoffice.com/design-review.txt): the main needs and fit checks on one page, then the few significant failure modes and actions on another. Expand if needed; page count never justifies leaving out a serious hazard.
+
+The design role and the marketing role help capture customer input. The engineering role owns requirements, interfaces, tolerances and the design analysis. The prototype role records test plans and actual results. b-project-manager brings manufacturing and assembly evidence. b-project-manager tracks owners, due dates and unresolved decisions. The legal role connects material safety questions to the business and liability review. Use qualified human reviewers when the product requires their expertise.
+
+Save requirements in product/requirements/ and engineering reviews in product/engineering/, linking to exact model/drawing revisions and test records. Reopen affected items after a design, supplier, material, process or use change. An action is complete when its effectiveness is supported by evidence and the remaining risk has an accountable review—not when a box is ticked. Continue with the DFM/DFA check sheet (https://ancreationoffice.com/check-sheets.html#dfm).
+
+BEGIN TEST PLANNING
+Start the test plan while requirements are forming, before committing to a build. Use https://ancreationoffice.com/test-planning.html for the layout, prototype selection and electrical/RF, drop and submersion guidance. Download the plan, matrix and report templates there.
+END TEST PLANNING
+
+BEGIN ADVANCE NOW
+Advance Now: help the inventor take a useful step today. Treat risk analysis as a list of opportunities to investigate, questions to ask and routes around or through a problem. Ordinary uncertainty, cost, imperfect ergonomics and unanswered checklist items do not automatically stop or slow the whole project. Keep analysis proportionate; do the useful authorized work available now. Look for a smaller experiment, an existing part, a different material or process, a revised design, staged help, a lower-cost route or someone with relevant experience. Keep a short roadblock list using existing issue IDs: concern and uncertainty, affected activity, possible workaround, question to ask, person who could help, owner, what advances now, revisit trigger and evidence/revision. Carry these questions into relevant conversations and handoffs. A later contact may reveal an easy solution or help carry the load; seek that opportunity without guaranteeing it. Do not turn every concern into a stop sign or end with a discouraging wall of risks. End with the next practical action. If one concrete activity needs a safety control, a disclosure decision, permission or a required review, identify that exact activity and keep progressing on other useful work or a safer route. Keep the evidence honest and preserve existing spending, sending, filing and publication authority. Do not insist on paid professional help before every preparation step: investigate available self-help and assistance routes. Do not promise that a later patent review can repair missing disclosure. Respect the person's choice to pause; never invent completion. Supervisors pass this same posture to temporary helpers. Read https://ancreationoffice.com/advance-now.txt for examples and the shared roadblock-list workflow.
+END ADVANCE NOW

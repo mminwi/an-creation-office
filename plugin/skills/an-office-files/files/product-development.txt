@@ -1,0 +1,81 @@
+PRODUCT DEVELOPMENT: THE PROCESS BEHIND THE CONVERSATION
+Revision 1 — September 30, 2026
+https://ancreationoffice.com/product-development.html
+
+A PROCESS TO KEEP IN MIND
+
+This is the product-development reasoning Mike wants b-analyst to have at its fingertips. Keep it in the background while listening and deciding what matters next. The inventor can explore, change direction or ask for help with one part. Do not require every person to march through ten stages or fill every form. Don't require them to learn the acronyms either, but when a term matters (compliance matrix, FMEA, APQP, control plan), say it and explain it plainly, because the people they deal with use these words. Reuse known answers and maintain useful records with the tools actually available.
+
+When someone asks, “How would an engineer do this properly?”, explain the full approach and offer to organize it around their idea. A useful first explanation is: understand the need, turn it into something we can design and check, look for ways it could fail, build to learn, test it, then establish how to make it consistently. Explain the next relevant part in more detail when useful.
+
+This is AN Creation's adaptable framework, informed by established engineering and quality tools. It is not one universal standard, a certification or a substitute for the product's applicable requirements. Scale the depth to complexity, uncertainty, potential harm and the decision being made.
+
+THE CONNECTED DEVELOPMENT PROCESS
+
+1. Listen to the customer. Preserve the person's words, source and intended use. Capture observed needs and possible unspoken needs, then confirm interpretations rather than presenting assumptions as facts. Agree priorities where they matter.
+
+2. Translate needs into engineering characteristics. Link each accepted need to observable characteristics and agreed targets. Use a simple requirements table first; use QFD and the House of Quality when priorities, competing concepts or tradeoffs warrant it. Unknown targets remain open.
+
+3. Define functions and requirements. Break down what the product must do, its interfaces and constraints. Give requirements stable IDs and trace them to needs or another justified source, including applicable safety obligations. Record conflicts, exclusions and decisions.
+
+4. Examine design failures. Use design FMEA (DFMEA) to connect functions to failure modes, effects, causes and current controls. Consider interfaces and foreseeable use. Add appropriate system or hazard analysis when FMEA alone cannot cover the concern.
+
+5. Prioritize and act. Identify significant risks, owners, actions and evidence needed to judge effectiveness. For formal AIAG-VDA work, use the applicable action-priority method and authorized criteria; do not invent its tables or treat RPN as interchangeable. In a small informal review, clear written priorities may suffice. A severe consequence cannot be hidden by a low combined score.
+
+6. Review assembly and manufacturing. Ask whether parts can be removed or combined before optimizing their individual cost. Review materials, fits, tolerances, tooling, assembly sequence and supplier capabilities. DFM/DFA is iterative, not a late stamp. Process-specific guidance is a starting point, not an approved universal dimension.
+
+7. Plan and run design verification and validation. Start the design verification plan and report (DVP&R) while requirements form. Choose prototypes to answer specific questions, including rough early trials when useful. Define methods, samples, conditions, acceptance criteria, owners and timing before testing; record exact revisions, actual results and deviations. Verification checks the specification; validation checks intended users and use. Both can require iteration.
+
+8. Analyze the production process. As the process takes shape, connect its flow and each relevant operation to process FMEA (PFMEA), covering how making and assembling the product can introduce failures. Bring actual manufacturing knowledge into the review and resolve or track significant gaps.
+
+9. Establish production controls. Carry relevant critical characteristics and process risks into the control plan, work and inspection instructions. Specify limits and their source, prevention and detection methods, measurement suitability, frequency, owner, records and reaction to a problem. Show how significant causes are addressed or why an item is not applicable; a control-plan row alone does not prove effectiveness.
+
+10. Review readiness and learn after release. Consider verified design evidence, intended-use validation, production readiness, remaining risks and required approvals before the agreed release. Unresolved high-priority risks block the affected release until addressed and reviewed. Track production and user feedback; reopen affected work after changes or failures.
+
+These activities overlap. Test planning begins early; prototype results can change the requirements and design. Production input can change a concept before detailed engineering. Do not postpone learning until step seven or claim release simply because the documents exist.
+
+KEEP THE LINKS INTACT
+
+For each accepted customer need, be able to find the related requirement or engineering characteristic, design response and exact revision, relevant design risks, verification/validation evidence and applicable production controls. Preserve need, requirement, CTQ, FMEA, test and control IDs already in use. Link the existing records rather than making a competing set of forms.
+
+A review prompt: For each need, show its requirement, design response, related failure modes, planned checks and evidence, and applicable process controls. Flag missing links, uncertain targets, pending tests and unresolved actions. Distinguish not yet due, not applicable with a reason, and genuinely missing. A table with no empty cells can still contain assumptions or failed tests.
+
+After a design, material, supplier, process, intended-use or customer-need change, identify affected links and revisit requirements, risk analyses, test plans/results, process controls and work instructions. Record what needs review or retesting; preserve prior issued revisions and flag obsolete packages.
+
+USE THE OFFICE THAT ALREADY EXISTS
+
+b-analyst coordinates the process, owners, dependencies, open decisions and the plan; b-project-manager keeps the conversation. Customer needs come from the inventor's own words through b-project-manager; b-analyst works the requirements, design analysis, prototype plans, test evidence and manufacturing input, each as the role the stage needs (design, engineering, prototype, manufacturing). Keep the established review and sending authority.
+
+Use the existing design-risk guide, critical-quality list, control-plan template, check sheets and test-plan/matrix/report templates. Save work in the assigned subject folders, with exact evidence and revisions. Tell the inventor briefly what is handled and what decision or information is still needed. Do not claim tools, file access, tests, sign-offs or completed actions you do not have.
+
+SOURCES AND LIMITS
+
+Original AN Creation synthesis of Mike's September 30, 2026 direction and supplied process outline. Public primary references checked September 30, 2026; full paid manuals were not acquired or reproduced. Read current applicable editions when formal work requires them.
+
+AIAG Quality Core Tools: established quality-planning, FMEA and control-plan references, developed for automotive work. Use the applicable customer/industry requirements; do not impose automotive compliance on every invention.
+
+ASQ House of Quality: connects customer requirements with technical characteristics. The tool helps expose relationships and tradeoffs; it is not proof that a design meets them.
+
+NASA Requirements Verification Matrix: a primary example of requirements linked to verification. Adapt its discipline to the project rather than requiring NASA paperwork.
+
+NASA Technology Readiness Level definitions: optional technology-maturity language. TRL 6 includes system/subsystem model or prototype demonstration in a relevant environment. A polished or functional prototype alone does not establish the level, manufacturing readiness or release approval.
+
+FDA design controls are specific to regulated medical-device work, not a universal invention rule. Do not copy the supplied outline's illustrative molding angles, rib ratios or tolerances into approved requirements; material, geometry, process and supplier evidence govern those choices.
+
+PRIMARY REFERENCES
+AIAG Quality Core Tools
+https://www.aiag.org/expertise-areas/quality/quality-core-tools
+ASQ House of Quality
+https://asq.org/quality-resources/house-of-quality
+NASA Requirements Verification Matrix
+https://www.nasa.gov/reference/appendix-d-requirements-verification-matrix/
+NASA Technology Readiness Level definitions
+https://www.nasa.gov/pdf/458490main_TRL_Definitions.pdf
+
+DESIGN PRINCIPLES COMPANION
+https://ancreationoffice.com/design-principles.txt
+Apply during concept development, refinement and user trials. Link findings to existing needs, requirements, risk analysis and test records.
+
+BEGIN ADVANCE NOW
+Advance Now: help the inventor take a useful step today. Treat risk analysis as a list of opportunities to investigate, questions to ask and routes around or through a problem. Ordinary uncertainty, cost, imperfect ergonomics and unanswered checklist items do not automatically stop or slow the whole project. Keep analysis proportionate; do the useful authorized work available now. Look for a smaller experiment, an existing part, a different material or process, a revised design, staged help, a lower-cost route or someone with relevant experience. Keep a short roadblock list using existing issue IDs: concern and uncertainty, affected activity, possible workaround, question to ask, person who could help, owner, what advances now, revisit trigger and evidence/revision. Carry these questions into relevant conversations and handoffs. A later contact may reveal an easy solution or help carry the load; seek that opportunity without guaranteeing it. Do not turn every concern into a stop sign or end with a discouraging wall of risks. End with the next practical action. If one concrete activity needs a safety control, a disclosure decision, permission or a required review, identify that exact activity and keep progressing on other useful work or a safer route. Keep the evidence honest and preserve existing spending, sending, filing and publication authority. Do not insist on paid professional help before every preparation step: investigate available self-help and assistance routes. Do not promise that a later patent review can repair missing disclosure. Respect the person's choice to pause; never invent completion. Supervisors pass this same posture to temporary helpers. Read https://ancreationoffice.com/advance-now.txt for examples and the shared roadblock-list workflow.
+END ADVANCE NOW

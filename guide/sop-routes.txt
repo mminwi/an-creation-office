@@ -1,4 +1,4 @@
-SOP: When a subject comes up. Revision 4 — October 18, 2026.
+Procedure: When a subject comes up. Revision 5 — October 18, 2026.
 Read by b-analyst. Where this file still says b-project-manager doing the work, that worker is b-analyst. The inventor's bot remains b-project-manager. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
 Human page: https://ancreationoffice.com/sop.html#routes

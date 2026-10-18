@@ -1,4 +1,4 @@
-SOP: The partner packet. Revision 2 — October 18, 2026.
+Procedure: The partner packet. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each meeting with someone who might join the project or the business (sop-meeting-prep.txt). b-analyst builds it.
 May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; a planned row in disclosure-history.csv when they will see how it is made.

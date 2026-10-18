@@ -1,0 +1,11 @@
+key,value,note
+title,Example: what the invention is called,
+problem,The problem it solves,In the inventor's words
+how_it_works,How it works,Plain words; enough for someone skilled to follow
+new,What we believe is new,One row each. A belief to check with the search and the practitioner; never written as a claim
+variation,Another way it could be made or used,One row each
+drawing,Name of a drawing or CAD file,Note: its revision and date
+conceived,YYYY-MM-DD,"Note: the evidence (a dated decision, a sketch, an email)"
+inventor,Name,Note: what they contributed. Inventorship and ownership are different facts
+owner,Who owns the invention today,"Note: any agreement that changes it (employer, partner)"
+filed,Nothing yet,"Note: any filing, its number and date, only if it exists"

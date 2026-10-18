@@ -1,4 +1,4 @@
-SOP: The business risk register. Revision 3 — October 18, 2026.
+Procedure: The business risk register. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one per invention. Template: https://ancreationoffice.com/template-business-risks.csv
 May write: AN-Creation/<business>/funding/<invention>/business-risks.csv and its rows on the Business action log.

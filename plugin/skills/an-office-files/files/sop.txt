@@ -1,0 +1,96 @@
+The procedure index. Revision 29 — October 18, 2026.
+License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
+Human page: https://ancreationoffice.com/sop.html
+
+A procedure is a written way to do one job. A procedure opens only when a trigger or a ticket names it. The assistant uses that file, then leaves it. It is not loaded into every conversation. This index may write no project file.
+
+There are two bots, each with one short standing file; b-analyst does the heavier work.
+- The Project Manager Bot (b-project-manager), the chat the inventor talks to: https://ancreationoffice.com/standing.txt
+- The Office Manager Bot (b-business-manager): https://ancreationoffice.com/business-manager.txt
+- Plant and product work, done by the Project Manager Bot from these files (older projects may still have a bot for one): Molding Plant https://ancreationoffice.com/office-molding.txt ; Plastic Design https://ancreationoffice.com/office-plastic-design.txt ; Quality https://ancreationoffice.com/office-quality.txt ; Manufacturing https://ancreationoffice.com/office-manufacturing.txt
+- b-analyst, called by b-project-manager to do the thinking: https://ancreationoffice.com/analyst.txt
+
+The reason behind all of it, from Mike: https://ancreationoffice.com/advance-now.txt
+
+FIRST
+0. Version check, first in every conversation: https://ancreationoffice.com/version.txt . The short profile text saved in each bot: https://ancreationoffice.com/profile.txt
+0. The Office Manager Bot (b-business-manager): company, patent preparation, name and trademark, licensing, funding, website and promotion, getting into stores: https://ancreationoffice.com/business-manager.txt
+0. For a first-time user, on a phone: start here. https://ancreationoffice.com/start-on-your-phone.txt
+0. Set up the Project Manager Bot and b-analyst. Each one is its own bot (https://ancreationoffice.com/sop-team.txt). https://ancreationoffice.com/sop-office.txt
+0. The bots: roles, role names, the team file, hand-offs between bots, several bots and businesses in one folder, who tracks and who judges, and the first and second looks: https://ancreationoffice.com/sop-team.txt
+0. Moving an older project folder to the business layout, once, with the owner's yes: https://ancreationoffice.com/sop-folder-move.txt
+0. Specialist procedure: mold cooling water, b-cooling-water. https://ancreationoffice.com/sop-cooling-water.txt
+0. Specialist procedure: resin drying, b-drying-handling. https://ancreationoffice.com/sop-drying.txt
+0. Specialist procedure: scientific molding, b-scientific-molding. https://ancreationoffice.com/sop-scientific-molding.txt
+0. Specialist procedure: molding defect troubleshooting, b-molding-defects. https://ancreationoffice.com/sop-molding-defects.txt
+0. Specialist procedure: buying a mold, b-mold-buying (started). https://ancreationoffice.com/sop-mold-buying.txt
+0. Specialist procedure: machine safety, b-machine-safety. https://ancreationoffice.com/sop-machine-safety.txt
+0. Specialist procedure: Lean Six Sigma projects, b-six-sigma. https://ancreationoffice.com/sop-six-sigma.txt
+0. The improvement toolbox: Lean, 5S, Six Sigma and TPS tools, picked by the problem. https://ancreationoffice.com/toolbox-improvement.txt
+0. Specialist procedure: Market check (b-market-check): who would buy it, asked without disclosing the idea. https://ancreationoffice.com/sop-market-check.txt
+0. Specialist procedure: Licensing (b-licensing): sell sheet, licensees, the approach, the deal with an attorney. https://ancreationoffice.com/sop-licensing.txt
+0. Specialist procedure: Funding (b-funding): the options by fit, what each asks for, watch-outs. https://ancreationoffice.com/sop-funding.txt
+0. Specialist procedure: Plastic part design (b-plastic-part-design): from the resin makers' design guides. https://ancreationoffice.com/sop-plastic-part-design.txt
+0. Specialist procedure: Tolerance stacks and print review (b-tolerance-gdt): worst case, RSS, Monte Carlo. https://ancreationoffice.com/sop-tolerance-stack.txt
+0. Specialist procedure: AI-assisted CAD (b-ai-cad): getting Claude Code and Codex to do SOLIDWORKS and KiCad work, the brief, and the checks. https://ancreationoffice.com/sop-ai-cad.txt
+0. Specialist procedure: Plastic material selection (b-plastic-materials): chemical compatibility first. https://ancreationoffice.com/sop-material-selection.txt
+0. Specialist procedure: Manufacturing cells and work design (b-manufacturing): takt, U-cells, standard work, ergonomics. https://ancreationoffice.com/sop-manufacturing-cell.txt
+0. The project home: ask where the owner wants the project folder (a cloud folder like Google Drive or OneDrive is best; anywhere the bot can write to works), the AN-Creation folder, saving and read-back, and the analyst (Grok Build). https://ancreationoffice.com/drive-setup.txt
+0. The five shared skills: start a conversation, save, hand work to another bot, call the analyst and check it came back, and check that setup can write and read back. https://ancreationoffice.com/office-startup.txt https://ancreationoffice.com/office-save.txt https://ancreationoffice.com/office-handoff.txt https://ancreationoffice.com/office-call-analyst.txt https://ancreationoffice.com/office-setup-check.txt
+0. Reminders and parked ideas: https://ancreationoffice.com/sop-reminders.txt . Several inventions, one Project Manager Bot: https://ancreationoffice.com/sop-several-inventions.txt
+0. Optional add-on for people who write code: private GitHub repository, clones, the analyst, and troubleshooting. https://ancreationoffice.com/github-setup.txt
+
+FOR b-business-manager (the business manager)
+K1. b-business-manager: the company. Name checks, forming an LLC, tax ID, bank account, insurance, licenses, yearly upkeep. https://ancreationoffice.com/sop-company.txt
+K2. b-business-manager: domain, website, business email, Google Search Console and Bing, the weekly search check. https://ancreationoffice.com/sop-website.txt
+K3. b-business-manager: the brand kit and profiles. Logo, descriptions, fact sheet; LinkedIn, X, Facebook, YouTube and more. https://ancreationoffice.com/sop-presence.txt
+K4. b-business-manager: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories. https://ancreationoffice.com/sop-promotion.txt
+K5. b-business-manager: the funding packet a lender or advisor reads: executive summary, unit economics, use of funds, milestones, risk register. https://ancreationoffice.com/sop-funding-packet.txt (builder: https://ancreationoffice.com/funding-packet.py ; example: https://ancreationoffice.com/example-mousetrap/funding-packet.html)
+K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
+K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt , accountant https://ancreationoffice.com/sop-packet-accountant.txt , patent attorney https://ancreationoffice.com/sop-packet-patent.txt , licensee https://ancreationoffice.com/sop-packet-licensee.txt , insurance agent https://ancreationoffice.com/sop-packet-insurance.txt , business attorney https://ancreationoffice.com/sop-packet-attorney.txt , partner https://ancreationoffice.com/sop-packet-partner.txt ; builder https://ancreationoffice.com/meeting-packet.py
+K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and the correspondence log, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py. https://ancreationoffice.com/sop-business-record.txt (templates: template-expenses.csv, template-trips.csv, template-correspondence.csv, template-deadlines.csv, template-business-decision-log.csv)
+K9. b-business-manager, for any business (with or without an invention): the one-page business plan and pricing https://ancreationoffice.com/sop-business-plan.txt ; customers and sales, invoices and getting paid https://ancreationoffice.com/sop-sales.txt ; money each month https://ancreationoffice.com/sop-monthly-money.txt ; the compliance calendar https://ancreationoffice.com/sop-compliance-calendar.txt . Contractors and first hires https://ancreationoffice.com/sop-contractors-and-hiring.txt ; the weekly review https://ancreationoffice.com/sop-weekly-review.txt . Templates: template-business-plan.csv, template-pipeline.csv, template-invoices.csv, template-monthly.csv, template-people.csv, template-contractor-terms.txt, template-weekly.csv.
+
+FOR b-project-manager
+1a. The project record, required for every invention: https://ancreationoffice.com/sop-project-record.txt . Its seven documents: charter and its schedule https://ancreationoffice.com/sop-project-charter.txt and https://ancreationoffice.com/sop-schedule.txt (critical path: schedule.py) ; decision log https://ancreationoffice.com/sop-decision-log.txt ; action log with suggestions https://ancreationoffice.com/sop-action-log.txt and https://ancreationoffice.com/sop-suggestions.txt ; cost sheet https://ancreationoffice.com/sop-cost-sheet.txt ; spending register https://ancreationoffice.com/sop-spending-register.txt ; risk table https://ancreationoffice.com/sop-risk-table.txt ; engineering change notices https://ancreationoffice.com/sop-change-control.txt . Example of all seven: https://ancreationoffice.com/example-mousetrap/
+1b. Principles, read first every conversation: https://ancreationoffice.com/principles-pm.txt (b-project-manager) and https://ancreationoffice.com/principles-bm.txt (b-business-manager). One file per principle, listed there.
+1c. The source check, both bots: every spec traces to an actual document, never AI memory, and is checked against it when it goes into a sheet; when no procedure covers something, write the project's procedure from the authoritative source in the library. https://ancreationoffice.com/sop-source-check.txt (principle: https://ancreationoffice.com/principle-trace-to-source.txt ; checker: https://ancreationoffice.com/check-sources.py)
+1d. Living and parked documents, both bots: which documents are updated every time something happens (action logs, decision logs, spending, trips, expenses, the correspondence index, deadlines) and which are done for a purpose and parked until a trigger (charter, cost sheet, risk table, compliance matrix, packets, company record), and how to dust one off. https://ancreationoffice.com/sop-document-life.txt
+1e. The correspondence log, both bots, one for the company: a folder per email, file sent (CAD, drawings), meeting or call, named YYMMDD-NN-X-slug (date code, its number in the day, S sent, R received or M meeting or call, a slug) so they stay in order, never changed once filed, with its index correspondence.csv. https://ancreationoffice.com/sop-correspondence.txt (template: https://ancreationoffice.com/template-correspondence.csv)
+1f. Playbooks, b-project-manager: whole jobs strung from the procedures, with the inventor's decisions marked. https://ancreationoffice.com/playbooks.txt ; the design loop from concept to freeze https://ancreationoffice.com/playbook-design-to-freeze.txt ; the first tooling quote https://ancreationoffice.com/playbook-first-tooling-quote.txt (template: https://ancreationoffice.com/template-quote-comparison.csv)
+1g. The schedule and the critical path, b-project-manager: the charter's dates, forecasts and slips, and which slips move the end. https://ancreationoffice.com/sop-schedule.txt (template: https://ancreationoffice.com/template-schedule.csv ; checker: https://ancreationoffice.com/schedule.py)
+1. Keep the project focused: risks as questions, decisions, "for now" and circling back. https://ancreationoffice.com/sop-focus.txt
+2. The ticket format b-project-manager runs. https://ancreationoffice.com/ticket-template.txt
+The ticket template may write the form named in the ticket, Office files/queue/QUEUE.txt, the ticket file, Office files/record/ for the conversation, Office files/sessions/ for the analyst run, and Office files/plan.md for a taking-longer note.
+2a. AGENTS.md for the inventor's repository: how any AI finds its ticket from one line. https://ancreationoffice.com/agents-md.txt
+3. The first form, always: the invention and the screening questions. https://ancreationoffice.com/intake-001.csv
+
+FOR THE ANALYST
+4. Screening: 26 questions that narrow the standards to the few that matter. https://ancreationoffice.com/screening-questions.csv
+5. Map the library to this project: in, later, out, ask. https://ancreationoffice.com/sop-resource-map.txt
+6. Gateways: the one fact before each side road. https://ancreationoffice.com/sop-gateways.txt
+7. Which form opens next. The flowchart. https://ancreationoffice.com/sop-graph.txt
+7b. What fact-finding delivers: the project description, twelve sections, each with "done when". https://ancreationoffice.com/project-description.txt
+8. Stages and tracks: S0 fact-finding, S1 design loop, S2 prototype loop, S3 tooling loop, S4 qualification, S5 launch. Quality planning (APQP) sized to the product and its risks; every stage ends with go, hold or drop. https://ancreationoffice.com/sop-stages.txt
+8a. The design loop: industrial design then CAD, DFM from the first pass, the compliance matrix, recorded reviews. https://ancreationoffice.com/sop-design-loop.txt (compliance matrix template: https://ancreationoffice.com/compliance-matrix-template.csv)
+8b. The prototype loop: build, test, refine, at whatever prototype levels it needs, to design freeze. https://ancreationoffice.com/sop-prototype-loop.txt
+8c. The tooling loop: tool trials, design changes for tooling, final specs from measured parts and the stack-up. https://ancreationoffice.com/sop-tooling-loop.txt
+8d. Qualification and production approval: first article, process trials, qualifying what's needed, the approval package. https://ancreationoffice.com/sop-qualification.txt
+8e. Launch: first order, packaging and labels, the buyer packet, honest listings. https://ancreationoffice.com/sop-launch.txt
+8f. Revisions and change control: C, X and A/B/C revision names; the change record and what a change must re-check. https://ancreationoffice.com/sop-change-control.txt
+8g. Templates b-analyst fills: APQP file https://ancreationoffice.com/template-apqp-file.csv ; review record https://ancreationoffice.com/template-review-record.txt ; prototype control plan https://ancreationoffice.com/template-prototype-control-plan.txt ; trial log https://ancreationoffice.com/template-trial-log.txt ; first article report https://ancreationoffice.com/template-fai-report.csv ; change record https://ancreationoffice.com/template-change-record.txt ; cost and time tracker https://ancreationoffice.com/sop-cost-sheet.txt
+9. The quality chain. https://ancreationoffice.com/sop-quality.txt
+10. Fill a form from what is already known. https://ancreationoffice.com/sop-checklists.txt
+11. Roads in detail: patent, funding, company, standards, power, stores. https://ancreationoffice.com/sop-routes.txt
+12. Prepared prompts: after intake https://ancreationoffice.com/analyst-after-intake.txt ; refill the queue https://ancreationoffice.com/analyst-refill.txt
+
+12b. Formal forms and documents each road produces. https://ancreationoffice.com/forms-catalog.csv
+
+FOR BOTH
+13. The project folders: Your files and Office files. Dated folders; records are never edited once saved. https://ancreationoffice.com/project-folders.txt
+14. Review pages: a local web page per invention for timelines, risks, pictures, documents and short walkthroughs. https://ancreationoffice.com/sop-review-page.txt (tool: https://ancreationoffice.com/review.py)
+15. Terms: the plain-language glossary to explain terms from (about 200, with read-more links). https://ancreationoffice.com/terms.txt
+16. The action log: who owes what, kept for the inventor and shown as Your list on the review page. https://ancreationoffice.com/sop-action-log.txt (template: https://ancreationoffice.com/template-action-log.csv)
+The action log updates Office files/actions.csv. It may also write Your files/Action log, the previous copy in Your files/History/, and Your files/Review/index.html.
+
+If a link cannot be read, say so and ask for the text. Do not invent a procedure.

@@ -1,4 +1,4 @@
-SOP: The one-page business plan, and pricing. Revision 2 — October 18, 2026.
+Procedure: The one-page business plan, and pricing. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. May write: business-plan.csv in the business folder (template-business-plan.csv), its readable copy in Your files/Business record/, funding.csv (price, unit, cost_per_sale, monthly_fixed, owner_funds), and rows on the action log.
 Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-sales.txt

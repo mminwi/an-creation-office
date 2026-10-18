@@ -1,4 +1,4 @@
-SOP: Launch. Revision 1 — October 8, 2026.
+Procedure: Launch. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Starts from: production approved (sop-qualification.txt, sop-stages S4).
 Goes with: sop-stages.txt (S5), sop-change-control.txt, the compliance matrix, the production control plan

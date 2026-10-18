@@ -1,4 +1,4 @@
-SOP: Living and parked documents. Revision 3 — October 18, 2026.
+Procedure: Living and parked documents. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: both bots. b-analyst does the dusting off.
 May write: the PARKED section of plan.md, and the documents named below when their rule says so.

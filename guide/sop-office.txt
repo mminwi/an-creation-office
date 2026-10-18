@@ -1,4 +1,4 @@
-SOP: Set up b-project-manager and b-analyst. Revision 17 — October 18, 2026.
+Procedure: Set up b-project-manager and b-analyst. Revision 18 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Read this when b-project-manager is missing, a new invention is starting, or the project folder is not recorded. Then leave it.
 

@@ -1,4 +1,4 @@
-SOP: Review pages and dated folders. Revision 2 — October 18, 2026.
+Procedure: Review pages and dated folders. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Tool: review.py (Python standard library only)
 

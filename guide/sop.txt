@@ -1,8 +1,8 @@
-AN Creation standard operating procedures. Revision 28 — October 18, 2026.
+The procedure index. Revision 29 — October 18, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
-SOP means standard operating procedure: a written way to do one job. A procedure opens only when a trigger or a ticket names it. The assistant uses that file, then leaves it. It is not loaded into every conversation. This index may write no project file.
+A procedure is a written way to do one job. A procedure opens only when a trigger or a ticket names it. The assistant uses that file, then leaves it. It is not loaded into every conversation. This index may write no project file.
 
 There are two bots, each with one short standing file; b-analyst does the heavier work.
 - The Project Manager Bot (b-project-manager), the chat the inventor talks to: https://ancreationoffice.com/standing.txt

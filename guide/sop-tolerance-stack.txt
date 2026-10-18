@@ -1,4 +1,4 @@
-SOP: Tolerance stacks and print review (b-tolerance-gdt). Revision 1 — October 12, 2026.
+Procedure: Tolerance stacks and print review (b-tolerance-gdt). Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Source: standard practice (ASME Y14.5, stack methods); Mike: each part can be off by its own amount, independent of the others, and the parts must still assemble (Mike's notes, kept private). Calculation: https://github.com/mminwi/an-creation-office/blob/main/specialists/calcs/tolerance_stack.py. Tier: deep, book-based.
 Read this when parts must fit together, a fit problem shows up in assembly, or a print is being reviewed.

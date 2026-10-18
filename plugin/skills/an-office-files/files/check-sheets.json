@@ -1,0 +1,1250 @@
+{
+  "title": "Product development check sheets",
+  "revision": "1",
+  "checked_on": "2026-09-30",
+  "scope": "Original AN Creation working templates, informed by the linked primary sources. They are not official agency forms, a universal standard, or proof of approval. U.S. starting points; confirm product, jurisdiction, market and recipient before applying requirements.",
+  "instructions": [
+    "b-project-manager is the new-product-development project manager. It coordinates the work, dependencies, review decisions and next actions; each specialist owns the evidence in their subject area.",
+    "Listen to the idea first. Select the sheet for the next decision and ask one or two useful questions at a time. Reuse answers already in project records; do not make a new inventor complete the whole library.",
+    "For each applicable item record the answer, the explanation, status (unknown, estimate, evidence recorded, reviewed, or not applicable with reason), evidence file and revision or source URL/date, owner, next action and reviewer. The answer is the short form field. The explanation keeps how it was reached and the inventor's words, for the next sheet to read. Do not recite the explanation back unless the person asks. A filled box is not evidence that a test, search, filing or approval occurred.",
+    "Save a dated project copy in the sheet’s subject folder, following the existing project layout and revision rules. Preserve earlier issued revisions. Send b-project-manager a short update with the exact file/revision, unresolved decisions and agreed next step; b-project-manager updates the master plan.",
+    "Check current official sources and actual recipient requirements when used. Record what you actually read, dates and limitations. If a source is inaccessible, report that and leave the dependent requirement unverified. These references do not grant permission to copy paid standards.",
+    "Use go, revise, hold or stop at a project review, with the person’s decision, evidence and remaining conditions. A project decision is separate from regulatory clearance, retailer acceptance, legal review or test validation. Do not send, apply, file, buy or publish without the person’s authorization."
+  ],
+  "record_fields": [
+    "Project",
+    "Product revision",
+    "Sheet revision",
+    "Prepared by",
+    "Date",
+    "Target market / jurisdiction",
+    "Decision being prepared",
+    "Item ID",
+    "Answer / assumption",
+    "Explanation",
+    "Status",
+    "Evidence / exact revision / URL and date",
+    "Owner",
+    "Next action",
+    "Reviewer / review date",
+    "Not-applicable reason"
+  ],
+  "sheets": [
+    {
+      "id": "project",
+      "title": "New product development: the project review",
+      "lead": "b-project-manager",
+      "partners": [
+        "The design role",
+        "The funding role",
+        "The marketing role",
+        "The engineering role"
+      ],
+      "folder": "product/concept/; links and agreed work in root plan.md",
+      "when": "Start after hearing the idea; revisit before major spending, tooling, funding or launch.",
+      "output": "A concise project brief, assumptions, milestone plan and recorded review decision.",
+      "items": [
+        {
+          "id": "PROJECT-01",
+          "question": "Who will use it, who pays, and what problem is worth solving?",
+          "evidence": "Name the user, buyer, task, alternatives and evidence from actual conversations. Separate founder beliefs from observations."
+        },
+        {
+          "id": "PROJECT-02",
+          "question": "What are we making, and what is outside the first version?",
+          "evidence": "Concept revision, intended use, must-have outcomes, exclusions and measurable success criteria where known."
+        },
+        {
+          "id": "PROJECT-03",
+          "question": "How many might we sell, at what price, through which channel and by when?",
+          "evidence": "Low/base/high units by month or quarter, geography and channel. Show prospects × purchase rate × units or stores × units per store per week × weeks. Record assumptions and capacity limits; market size is not a sales forecast."
+        },
+        {
+          "id": "PROJECT-04",
+          "question": "What evidence says someone will buy it?",
+          "evidence": "Dated interviews, observed problems, price tests, pilots, orders or other evidence. Distinguish interest, nonbinding intent, paid orders and repeat sales."
+        },
+        {
+          "id": "PROJECT-05",
+          "question": "What must be learned before the next investment?",
+          "evidence": "Open customer, IP, safety, technical, cost and channel risks; one next experiment, owner, finish condition and capped budget."
+        },
+        {
+          "id": "PROJECT-06",
+          "question": "What are the milestones and dependencies?",
+          "evidence": "Concept review → feasibility and economics → prototype/user evidence → production readiness → launch → post-launch review. Tailor the sequence; do not imply every gate is already passed."
+        },
+        {
+          "id": "PROJECT-07",
+          "question": "Who owns each result and decision?",
+          "evidence": "Named responsible people/assistants, exact inputs and revisions, agreed review participants and dates only when agreed."
+        },
+        {
+          "id": "PROJECT-08",
+          "question": "Should we go, revise, hold or stop?",
+          "evidence": "Evidence reviewed, decision author/date, unresolved conditions, authorized next work and links to the exact released files. Revisit downstream sheets when an input changes."
+        }
+      ],
+      "sources": [
+        "nist-development",
+        "sba"
+      ],
+      "notes": []
+    },
+    {
+      "id": "economics",
+      "title": "Sales, price and the money left per unit",
+      "lead": "The funding role",
+      "partners": [
+        "b-project-manager",
+        "The marketing role",
+        "b-project-manager"
+      ],
+      "folder": "business/finance/",
+      "when": "Before choosing a price, requesting production quotes or committing to a sales channel.",
+      "output": "A channel-by-channel low/base/high unit-economics model and cash forecast.",
+      "items": [
+        {
+          "id": "ECONOMICS-01",
+          "question": "What will the customer pay, and what will we actually receive?",
+          "evidence": "Retail price excluding sales tax, discounts and refunds, and wholesale sell-in price. For marketplaces distinguish sales revenue from cash payouts after withheld fees; deduct those fees only once. Model direct, marketplace, retailer, distributor and licensing routes separately."
+        },
+        {
+          "id": "ECONOMICS-02",
+          "question": "How many will we sell over a stated period?",
+          "evidence": "Units by channel and timing, evidence, confidence and sensitivity. Reconcile production orders, inventory and returns with sell-through; unsold stock is not revenue."
+        },
+        {
+          "id": "ECONOMICS-03",
+          "question": "What does one acceptable unit cost at each realistic quantity?",
+          "evidence": "Dated quote versus estimate; materials, bought parts, assembly, packaging, inspection, scrap and yield. Keep one-time tooling separate; show any amortization assumption."
+        },
+        {
+          "id": "ECONOMICS-04",
+          "question": "What does it cost to get that unit ready to sell?",
+          "evidence": "Inbound freight, duty/tariff where applicable, broker fees and receiving. Define landed cost and included items consistently; record currency, trade terms and quote date."
+        },
+        {
+          "id": "ECONOMICS-05",
+          "question": "What other costs happen when we sell one?",
+          "evidence": "Channel fees, fulfillment/storage, outbound freight, sales commissions, promotion/advertising, payment fees, returns, warranty and chargebacks where applicable. Mark items already included to avoid double counting."
+        },
+        {
+          "id": "ECONOMICS-06",
+          "question": "What margin and contribution remain?",
+          "evidence": "Gross margin = (our net sales − consistently defined cost of goods sold) / our net sales. Contribution = our net sales − all variable costs. Markup = (selling price − cost) / cost. Name whose margin each number describes."
+        },
+        {
+          "id": "ECONOMICS-07",
+          "question": "How many units cover fixed costs, and when does cash run short?",
+          "evidence": "List period fixed costs such as rent, salaried/admin costs, insurance and fixed advertising/storage; split mixed costs into fixed and variable parts. Break-even units = period fixed costs / positive contribution per unit, rounded up; no finite break-even if contribution is zero or negative. Combined products/channels need an assumed sales mix. Track deposits, tooling, inventory, payment delays, taxes, debt service and reserve separately from accounting profit."
+        },
+        {
+          "id": "ECONOMICS-08",
+          "question": "Which assumptions could make this unattractive?",
+          "evidence": "Test lower realized price/volume, higher freight/returns/advertising and slower collections. Record minimum acceptable contribution, peak cash need and the next quote or customer test."
+        }
+      ],
+      "sources": [
+        "sba",
+        "amazon-pricing"
+      ],
+      "notes": [
+        "The 25% rule is a starting target, not a universal law: a factory cost of $0.25 against $1.00 retail leaves room for other parties and expenses, but does not establish your profit. Validate the actual channel economics.",
+        "Illustrative assumptions only: retail $1.00; retailer buys at $0.50. Retailer gross margin is 50%, while markup on its cost is 100%. You receive $0.50. Factory cost $0.25 plus inbound freight/duty/packaging $0.05 gives $0.30 landed cost. Your gross profit before other selling costs is $0.20 (40% of your revenue). Another $0.10 of variable selling/returns costs leaves $0.10 contribution before fixed overhead, financing and tax. If a distributor buys from you at $0.40 instead, the same costs leave zero contribution. All numbers are examples, not quoted terms.",
+        "At $0.10 contribution, $10,000 of period fixed costs takes 100,000 sold units to break even under those assumptions. Show tooling recovery separately if it is not included. A tiny selling price is illustrative; minimum fees and fixed handling costs can dominate actual low-price products."
+      ]
+    },
+    {
+      "id": "ergonomics",
+      "title": "People, use and ergonomic design",
+      "lead": "The design role",
+      "partners": [
+        "The engineering role",
+        "The prototype role"
+      ],
+      "folder": "product/concept/",
+      "when": "While comparing concepts and again with representative prototypes.",
+      "output": "Use scenarios, measurable user needs, observed trials and a design-change list.",
+      "items": [
+        {
+          "id": "ERGONOMICS-01",
+          "question": "Who uses it, and who may struggle with it?",
+          "evidence": "Actual intended ages, abilities, hand/body sizes, left/right-handed use, strength, gloves and assistive needs. Do not design only for the founder or an average body."
+        },
+        {
+          "id": "ERGONOMICS-02",
+          "question": "Where and how will people use, carry and store it?",
+          "evidence": "Lighting, wet/dirty use, temperature, clothing, workspace, reach, frequency, duration and one- versus two-handed tasks."
+        },
+        {
+          "id": "ERGONOMICS-03",
+          "question": "Can they grip, lift, reach and operate it comfortably?",
+          "evidence": "Observe posture, reach, grip span, contact pressure, weight, balance, repetition and required force. Measure relevant dimensions and effort; do not invent a universal comfortable force."
+        },
+        {
+          "id": "ERGONOMICS-04",
+          "question": "Can a first-time user understand controls and feedback?",
+          "evidence": "Setup, labels, visibility, tactile cues, mistakes, recovery and instructions; accessibility needs and actual observed misunderstandings."
+        },
+        {
+          "id": "ERGONOMICS-05",
+          "question": "What foreseeable misuse or contact could hurt someone?",
+          "evidence": "Pinch, cut, burn, tip, choke, electrical and other applicable hazards, including children/bystanders. Feed design changes and safety requirements to the engineering role."
+        },
+        {
+          "id": "ERGONOMICS-06",
+          "question": "Can it be cleaned, maintained and put away?",
+          "evidence": "Contact materials, residues, cleaning agents, disassembly, consumables, storage, service and disposal scenarios."
+        },
+        {
+          "id": "ERGONOMICS-07",
+          "question": "What did representative users actually do?",
+          "evidence": "Prototype revision, participants and relevant characteristics, tasks, consent, observations, errors, discomfort, completion measures and limits. Small trials are learning evidence, not population-wide proof."
+        },
+        {
+          "id": "ERGONOMICS-08",
+          "question": "Which design changes are required before the next prototype?",
+          "evidence": "Trace each requirement/change to an observation or stated need, owner and retest. Keep aesthetics, usability and engineering feasibility linked."
+        }
+      ],
+      "sources": [
+        "niosh-tools",
+        "cpsc-small-business",
+        "niosh-hand-tools"
+      ],
+      "notes": [
+        "NIOSH workplace and hand-tool guidance supplies screening questions. Adapt it to the intended users and task; hand-tool dimensions are not universal product limits."
+      ]
+    },
+    {
+      "id": "ip",
+      "title": "What to protect, and why",
+      "lead": "The legal role",
+      "partners": [
+        "b-project-manager",
+        "The design role",
+        "The marketing role"
+      ],
+      "folder": "company/intellectual-property/",
+      "when": "Before public disclosure, a supplier disclosure, investor sharing or a protection decision.",
+      "output": "An invention disclosure, dated disclosure history and focused professional-review brief.",
+      "items": [
+        {
+          "id": "IP-01",
+          "question": "What business outcome do you want from protection?",
+          "evidence": "Exclude copying of a useful mechanism, protect appearance/brand, license, sell rights, attract investment, keep know-how secret or deliberately publish. Record markets, time horizon and budget."
+        },
+        {
+          "id": "IP-02",
+          "question": "Exactly what do you believe is new?",
+          "evidence": "Explain the technical problem, mechanism/process, alternatives, differences, drawings and versions. Identify what may be functional, ornamental, or branding; do not turn a vague idea into a patentability conclusion."
+        },
+        {
+          "id": "IP-03",
+          "question": "What related products and publications are known?",
+          "evidence": "Dated searches, terms, jurisdictions/classes, relevant documents/claims and unanswered questions. An initial search is not proof of novelty or completeness."
+        },
+        {
+          "id": "IP-04",
+          "question": "Who contributed, owns rights or has contractual interests?",
+          "evidence": "Contributors and what they contributed; employment, assignments, contractor terms, university/sponsor interests and agreements. Inventorship, patent ownership, company shares and project access are different."
+        },
+        {
+          "id": "IP-05",
+          "question": "What has already been disclosed or offered for sale?",
+          "evidence": "Exact dates, material/revision, audience, public demos, crowdfunding, online posts, offers and sales. Have relevant filing options assessed before further disclosure; do not assume a worldwide grace period."
+        },
+        {
+          "id": "IP-06",
+          "question": "Which protection route fits the objective?",
+          "evidence": "Utility patent versus design patent, trademark or trade secret as applicable; costs, territories, timing, discoverability/reverse engineering and practical secrecy measures. A provisional is not an issued patent and does not cover design inventions."
+        },
+        {
+          "id": "IP-07",
+          "question": "Could making or selling it infringe someone else’s rights?",
+          "evidence": "Separate patentability research from freedom-to-operate review of relevant claims, territory, product and dates. A patent grants an exclusion right, not permission to manufacture or sell."
+        },
+        {
+          "id": "IP-08",
+          "question": "What is the decision, and what needs professional review?",
+          "evidence": "Exact questions, proposed protection/licensing approach, ownership gaps, disclosure urgency and dated decision. Record actual applications/receipts only if they exist; a draft or checklist is not a filing."
+        }
+      ],
+      "sources": [
+        "uspto-patent-overview",
+        "uspto-provisional",
+        "uspto-trade-secrets",
+        "trademark-basics",
+        "uspto-design"
+      ],
+      "notes": []
+    },
+    {
+      "id": "dfm",
+      "title": "Design for manufacture and assembly",
+      "lead": "The engineering role",
+      "partners": [
+        "The design role",
+        "b-project-manager",
+        "The prototype role"
+      ],
+      "folder": "product/engineering/; requirements in product/requirements/",
+      "when": "Before prototype quotes, tooling release and any production design change.",
+      "output": "A reviewed DFM/DFA record, requirements and matched manufacturing package.",
+      "items": [
+        {
+          "id": "DFM-01",
+          "question": "What performance and safety requirements drive the design?",
+          "evidence": "Intended use, loads, life, environment, interfaces, applicable market rules and acceptance criteria with sources."
+        },
+        {
+          "id": "DFM-02",
+          "question": "Does the process fit material, geometry and volume?",
+          "evidence": "Compare machining, molding, casting, sheet metal, additive or other processes against quantity, finish, lead time, tooling and total cost; identify process-specific risks."
+        },
+        {
+          "id": "DFM-03",
+          "question": "Are features realistic for the chosen process?",
+          "evidence": "For molding: walls, draft, ribs/bosses, undercuts, shrinkage and ejection. For machining: tool access, deep pockets and corner radii. For sheet metal: bends, radii and hole spacing. Obtain the actual supplier’s limits; no universal wall/draft number."
+        },
+        {
+          "id": "DFM-04",
+          "question": "Are tolerances functional and inspectable?",
+          "evidence": "Critical dimensions, datums, fits, tolerance stack-ups, finishes and inspection methods. Avoid needless tight tolerances; specify those required for function or safety."
+        },
+        {
+          "id": "DFM-05",
+          "question": "Can the parts be assembled consistently?",
+          "evidence": "Reduce unnecessary parts/fasteners, use standard components, access tools, orient and locate parts, prevent wrong assembly, protect wires/seals and test service/disassembly."
+        },
+        {
+          "id": "DFM-06",
+          "question": "Can material or supplier substitutions change performance?",
+          "evidence": "Material/grade, flame/contact/corrosion requirements, finishes, standard hardware and qualified equivalents. Preserve designer catalog references separately from purchasing sources."
+        },
+        {
+          "id": "DFM-07",
+          "question": "Are the files complete and at one revision?",
+          "evidence": "Bill of materials, STEP solid and dimensioned drawings where applicable, materials/finishes, critical characteristics, assembly notes, quantity breaks and inspection/acceptance requirements. A render is not a release package."
+        },
+        {
+          "id": "DFM-08",
+          "question": "What did the manufacturer flag, and who accepted changes?",
+          "evidence": "Dated supplier DFM feedback, disposition, affected requirements, cost/tooling impact, owner and verification/retest. Obtain review before releasing revised work."
+        }
+      ],
+      "sources": [
+        "protolabs-dfm",
+        "nist-development",
+        "cpsc-small-business",
+        "protolabs-walls"
+      ],
+      "notes": []
+    },
+    {
+      "id": "prototype",
+      "title": "What the prototype needs to prove",
+      "lead": "The prototype role",
+      "partners": [
+        "The engineering role",
+        "The design role"
+      ],
+      "folder": "product/prototypes/ and product/testing/",
+      "when": "Before each prototype build and before reporting a result.",
+      "output": "A test plan, build record and evidence-based test report.",
+      "items": [
+        {
+          "id": "PROTOTYPE-01",
+          "question": "Which question is this prototype answering?",
+          "evidence": "Appearance, usability, fit, mechanism, strength, life, process or customer acceptance; list what it cannot demonstrate."
+        },
+        {
+          "id": "PROTOTYPE-02",
+          "question": "What is the exact configuration?",
+          "evidence": "Model/drawing/BOM revision, materials, deviations from production, build method and sample identifiers."
+        },
+        {
+          "id": "PROTOTYPE-03",
+          "question": "How will we judge success before testing?",
+          "evidence": "Requirement ID, method, numerical/observable acceptance criterion, environment, equipment, calibration where needed and planned sample size rationale."
+        },
+        {
+          "id": "PROTOTYPE-04",
+          "question": "Is the test safe and representative?",
+          "evidence": "Foreseeable hazards, setup limits, operator competence, exposure safeguards, realistic users/conditions and specialist or lab involvement where needed."
+        },
+        {
+          "id": "PROTOTYPE-05",
+          "question": "What happened, including failures?",
+          "evidence": "Raw measurements, units, photos, observations, anomalies and deviation from method. Separate measured from simulated and predicted performance."
+        },
+        {
+          "id": "PROTOTYPE-06",
+          "question": "What can we conclude, and what remains unproven?",
+          "evidence": "Verification: meets specified requirements. Validation: serves intended users/use. State sample and prototype limits, owner of failures, required changes and retest before a release claim."
+        }
+      ],
+      "sources": [
+        "nasa-verification",
+        "cpsc-small-business",
+        "nasa-validation"
+      ],
+      "notes": [
+        "Start the test plan while requirements are forming, before committing to a build. Use https://ancreationoffice.com/test-planning.html for the layout, prototype selection and electrical/RF, drop and submersion guidance. Download the plan, matrix and report templates there."
+      ]
+    },
+    {
+      "id": "production",
+      "title": "Suppliers and production readiness",
+      "lead": "b-project-manager",
+      "partners": [
+        "The engineering role",
+        "The prototype role",
+        "The funding role"
+      ],
+      "folder": "business/suppliers/ and product/manufacturing/",
+      "when": "Before comparing quotes, placing production orders or scaling.",
+      "output": "Comparable quotes, supplier evaluation and a production-readiness review.",
+      "items": [
+        {
+          "id": "PRODUCTION-01",
+          "question": "Are all suppliers quoting the same thing?",
+          "evidence": "Exact revision/material/finish/quantities, inspection, packaging and acceptance requirements; assumptions and exclusions alongside each quote."
+        },
+        {
+          "id": "PRODUCTION-02",
+          "question": "Can the supplier actually make and inspect it?",
+          "evidence": "Relevant capabilities, process limits, capacity, sample evidence, quality system scope, references, subcontractors and production location. Directory membership alone is not qualification."
+        },
+        {
+          "id": "PRODUCTION-03",
+          "question": "What are the real costs and commitments?",
+          "evidence": "Unit prices at realistic volumes, tooling/NRE, MOQ, lead times, payment/deposit terms, currency, freight/trade terms, duties, scrap, quote expiry and cancellation/change terms."
+        },
+        {
+          "id": "PRODUCTION-04",
+          "question": "Who owns tooling, data and changes?",
+          "evidence": "Tool ownership, custody, maintenance and transfer access; drawings and IP, approved substitutions and who can authorize changes."
+        },
+        {
+          "id": "PRODUCTION-05",
+          "question": "How will we accept incoming parts and production output?",
+          "evidence": "First-article/pilot evidence, critical characteristics, sampling rationale, measurement methods, traceability, nonconformance/rework and corrective actions."
+        },
+        {
+          "id": "PRODUCTION-06",
+          "question": "Can we deliver and recover from interruption?",
+          "evidence": "Pilot quantity, ramp/capacity plan, long-lead parts, approved alternate sources, packaging/shipping trials, inventory and reorder points."
+        },
+        {
+          "id": "PRODUCTION-07",
+          "question": "What must be in place after sale?",
+          "evidence": "Warranty, spare parts, service, complaints, traceability and recall/incident process appropriate to product/market."
+        },
+        {
+          "id": "PRODUCTION-08",
+          "question": "Is the first production order ready?",
+          "evidence": "Close or explicitly disposition DFM/test gaps, confirm current file package and cash need with the funding role. Record the person’s release decision; never infer authorization to place an order."
+        }
+      ],
+      "sources": [
+        "nist-supplier",
+        "cpsc-small-business"
+      ],
+      "notes": []
+    },
+    {
+      "id": "funding",
+      "title": "Prepare for funding and finance conversations",
+      "lead": "The funding role",
+      "partners": [
+        "b-project-manager",
+        "The legal role",
+        "The marketing role"
+      ],
+      "folder": "business/funding/; supporting numbers in business/finance/",
+      "when": "When a defined milestone needs outside money; tailor to the actual lender, investor or program.",
+      "output": "A dated funding brief with linked evidence, financial model and recipient-specific document list.",
+      "items": [
+        {
+          "id": "FUNDING-01",
+          "question": "How much money is needed, for what milestone and by when?",
+          "evidence": "Use-of-funds line items, founder contribution, quotes/estimates, runway, contingency and measurable milestone. Separate startup spending, inventory and operating costs."
+        },
+        {
+          "id": "FUNDING-02",
+          "question": "Which funding route fits the business?",
+          "evidence": "Self-funding/revenue, loan, equity, eligible grant, licensing or rewards crowdfunding. Compare repayment, dilution/control, eligibility, restrictions, timing and ability to deliver."
+        },
+        {
+          "id": "FUNDING-03",
+          "question": "What evidence supports the commercial story?",
+          "evidence": "Problem, customer, product/demo, alternatives/competition, market assumptions, business model, channel economics, traction and team/gaps. Do not count interest as sales."
+        },
+        {
+          "id": "FUNDING-04",
+          "question": "Are the financials coherent?",
+          "evidence": "Actual financial statements if available; forecast income, balance sheet and monthly cash flow; unit economics, break-even, low/base/high scenarios, working capital and debt service where relevant. Clearly label pre-revenue estimates."
+        },
+        {
+          "id": "FUNDING-05",
+          "question": "What will a lender need?",
+          "evidence": "Recipient’s current checklist: business plan, purpose/amount, historical tax/financial records where applicable, forecasts, repayment source, ownership, relevant collateral/guarantee questions and contracts. Request sensitive records securely, not in public materials."
+        },
+        {
+          "id": "FUNDING-06",
+          "question": "What will an investor need?",
+          "evidence": "Investor fit by stage/sector; concise pitch, funding ask and milestone, market/traction evidence, cap table, team, entity/IP ownership records, contracts and financial model. Explain how investors might receive a return; review dilution and control with advisers. Organize controlled diligence access and unresolved issues."
+        },
+        {
+          "id": "FUNDING-07",
+          "question": "What will a grant or crowdfunding route need?",
+          "evidence": "For a grant: current open solicitation, fit, eligibility, registrations, work plan, deliverables, budget/allowable costs and deadlines. For rewards: prototype, production/fulfillment budget, delivery assumptions and rewards. Securities crowdfunding is a different regulated route."
+        },
+        {
+          "id": "FUNDING-08",
+          "question": "Is this ready to share with this recipient?",
+          "evidence": "Current requested format/documents, consistent numbers and revisions, public-disclosure implications, unanswered questions, proposed next step and human authorization. No guarantee of funding or invented valuation/terms."
+        }
+      ],
+      "sources": [
+        "sba",
+        "sba-lender",
+        "sec-ready",
+        "grants-search",
+        "kickstarter-handbook",
+        "sec-early-investors",
+        "sba-grants",
+        "sequoia-plan"
+      ],
+      "notes": [
+        "SBA does not provide general grants to start or expand an ordinary business. A research program or other grant requires a currently open, eligible solicitation.",
+        "Friends-and-family funding is not automatically exempt from securities rules. The legal role helps identify the legal route before an investment offer is shared."
+      ]
+    },
+    {
+      "id": "launch",
+      "title": "Customer evidence, marketing and launch",
+      "lead": "The marketing role",
+      "partners": [
+        "b-project-manager",
+        "The legal role",
+        "The funding role",
+        "b-project-manager"
+      ],
+      "folder": "business/marketing/",
+      "when": "While testing demand and before a campaign or launch commitment.",
+      "output": "A channel-specific launch plan, evidence-backed messaging and readiness decision.",
+      "items": [
+        {
+          "id": "LAUNCH-01",
+          "question": "Who is the first customer and why will they switch?",
+          "evidence": "Narrow segment, use case, alternatives, differentiated benefit and evidence from interviews/tests."
+        },
+        {
+          "id": "LAUNCH-02",
+          "question": "Which offer and price have we tested?",
+          "evidence": "Actual experiment, audience, price, offer, budget, duration and success measure. Separate paid conversion and repeat use from views/likes or expressions of interest."
+        },
+        {
+          "id": "LAUNCH-03",
+          "question": "What claims can we support?",
+          "evidence": "Claim-to-evidence list, demonstrations, endorsements/disclosures, product photos and instructions; the legal role reviews disclosure/IP concerns before publishing."
+        },
+        {
+          "id": "LAUNCH-04",
+          "question": "Which channel fits customer and economics?",
+          "evidence": "Direct web sales, marketplace, retail wholesale, distributors, licensing or combinations; buyer behavior, net receipts, acquisition cost, fulfillment and cash implications."
+        },
+        {
+          "id": "LAUNCH-05",
+          "question": "Are launch materials and operations ready?",
+          "evidence": "Product identifiers, packaging/dimensions, listing/sell sheet, images, substantiated copy, instructions, support, inventory, shipping/returns and applicable safety documentation."
+        },
+        {
+          "id": "LAUNCH-06",
+          "question": "What does a small launch have to prove?",
+          "evidence": "Pilot quantity/budget, target conversion, contribution, returns, reviews/complaints, stock availability, stop/adjust criteria and a scheduled review owner."
+        },
+        {
+          "id": "LAUNCH-07",
+          "question": "Who does what after launch?",
+          "evidence": "Customer support, returns/warranty, replenishment, marketing measurement, complaint escalation and decision to scale. Date the plan; confirm permissions before publishing."
+        }
+      ],
+      "sources": [
+        "ftc-advertising",
+        "sba",
+        "gs1-barcodes"
+      ],
+      "notes": []
+    },
+    {
+      "id": "retail",
+      "title": "Amazon, Walmart and Lowe’s: getting ready for buyers",
+      "lead": "The marketing role",
+      "partners": [
+        "The funding role",
+        "b-project-manager",
+        "The legal role",
+        "b-project-manager"
+      ],
+      "folder": "business/marketing/; costs in business/finance/",
+      "when": "After choosing a realistic channel and before applying, pitching or accepting terms.",
+      "output": "A buyer-ready sell sheet, channel economics and route-specific application checklist.",
+      "items": [
+        {
+          "id": "RETAIL-01",
+          "question": "Which route are we seeking?",
+          "evidence": "Record marketplace seller, retailer wholesale supplier, private-brand supplier or distributor route. Marketplace approval does not mean store placement, and an application is not a purchase order."
+        },
+        {
+          "id": "RETAIL-02",
+          "question": "Does the product fit this retailer’s customers and assortment?",
+          "evidence": "Comparable listings/shelf alternatives, differentiation, target retail price, evidence of demand, packaging and current assortment gap hypothesis."
+        },
+        {
+          "id": "RETAIL-03",
+          "question": "Can we give a buyer a concise commercial packet?",
+          "evidence": "Sell sheet with use/benefit, photos/demo, dimensions, identifiers, target retail and wholesale prices, retailer margin assumption, MOQ/case pack, lead time, capacity, origin, test/compliance evidence and contact. Samples must match the stated revision."
+        },
+        {
+          "id": "RETAIL-04",
+          "question": "Will each sale and payment schedule work for us?",
+          "evidence": "Get actual category fees, freight, fulfillment, allowances/promotions, broker commission, returns, damage, deductions/chargebacks, payment terms and inventory commitments. Model cash needed before payment; do not treat typical margins as an offer."
+        },
+        {
+          "id": "RETAIL-05",
+          "question": "Can we meet operations and compliance requirements?",
+          "evidence": "Verify current insurance, product safety/testing/labeling, GTIN/UPC or exemptions, package/case data, EDI/ASN if required, fulfillment/service metrics, returns and recall readiness with the retailer. These are categories to confirm, not universal terms."
+        },
+        {
+          "id": "RETAIL-06",
+          "question": "Would a representative or distributor help?",
+          "evidence": "A sales rep/broker typically helps sell for a fee or commission; a distributor may buy/resell and handle inventory. Verify category/account relationships and references. Negotiate territory, exclusivity, services, compensation trigger, expenses, stock/title risk, termination and conflicts. A claimed connection is not guaranteed shelf space."
+        },
+        {
+          "id": "RETAIL-07",
+          "question": "What is the smallest credible entry?",
+          "evidence": "Direct application, limited online/pilot assortment, regional opportunity, appropriate supplier event or an established channel partner. Start with the retailer’s official route; a solo founder can apply but still must meet capability and qualification requirements."
+        },
+        {
+          "id": "RETAIL-08",
+          "question": "What is still required before submission or commitment?",
+          "evidence": "Save current portal requirements/date, application status, buyer feedback, open terms and exact package revision. The person authorizes submissions and agreements. Never imply that a submitted profile, listing or verbal interest equals acceptance."
+        }
+      ],
+      "sources": [
+        "amazon-registration",
+        "amazon-pricing",
+        "walmart-suppliers",
+        "walmart-marketplace",
+        "lowes-suppliers",
+        "lowes-marketplace",
+        "gs1-barcodes",
+        "walmart-requirements",
+        "walmart-checklist",
+        "walmart-registration",
+        "walmart-open-call",
+        "lowes-seller-docs",
+        "trade-representatives"
+      ],
+      "notes": [],
+      "routes": [
+        {
+          "title": "Amazon: third-party selling",
+          "text": "Start with Seller Central registration, separate from wholesale Vendor Central. Prepare identity/business and bank verification, category/product approvals, identifiers or an allowed exemption, brand rights and listing materials. Choose merchant fulfillment or FBA using the actual packaged size/weight and current fee calculator. Recheck selling-plan, referral, fulfillment, storage and returns costs; Brand Registry is a separate eligible-brand program.",
+          "sources": [
+            "amazon-registration",
+            "amazon-pricing"
+          ]
+        },
+        {
+          "title": "Walmart: marketplace or retail supplier",
+          "text": "Marketplace is third-party online selling. Published qualifications include business verification (SSN is not accepted as the business identifier), prior eCommerce success, suitable identifiers/catalog and WFS or U.S. warehouse fulfillment with returns capability. Confirm current exceptions and new-seller payment holds. Store/wholesale supply uses the separate supplier application, requirements and official checklist. Open Call is another possible route for eligible U.S.-made, grown or assembled products when an application window is open. None guarantees shelf space.",
+          "sources": [
+            "walmart-marketplace",
+            "walmart-registration",
+            "walmart-suppliers",
+            "walmart-checklist",
+            "walmart-open-call"
+          ]
+        },
+        {
+          "title": "Lowe’s: branded, private-brand or marketplace",
+          "text": "The official supplier page directs branded retail proposals to RangeMe and private-brand sourcing to PROVIS. Lowe’s Marketplace is a separate curated third-party route; check home-improvement category fit, U.S. inventory/shipping and product-data requirements. Obtain actual commissions, payment/return terms and service rules during onboarding. Some vendor-only or forthcoming documents were unavailable in this public review; leave those terms unverified.",
+          "sources": [
+            "lowes-suppliers",
+            "lowes-marketplace",
+            "lowes-seller-docs"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "nist-development",
+      "title": "NIST MEP — Product design and development",
+      "url": "https://www.nist.gov/mep/product-design-and-development",
+      "group": "making",
+      "roles": [
+        "project",
+        "engineering",
+        "prototype"
+      ],
+      "use": "Find help with market validation, prototypes, materials, durability and commercialization.",
+      "check": "AN Creation’s project checkpoints are an original synthesis; NIST does not prescribe these forms.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "niosh-tools",
+      "title": "NIOSH — Ergonomic risk factors and checklists",
+      "url": "https://www.cdc.gov/niosh/ergonomics/ergo-programs/risk-factors.html",
+      "group": "making",
+      "roles": [
+        "design",
+        "engineering",
+        "prototype"
+      ],
+      "use": "Screen posture, force, repetition, handling and task conditions when preparing a user trial.",
+      "check": "Workplace guidance must be adapted to the task and intended users; it is not universal consumer-product clearance.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "niosh-hand-tools",
+      "title": "NIOSH — Non-powered hand-tool selection guide",
+      "url": "https://stacks.cdc.gov/view/cdc/5249",
+      "group": "making",
+      "roles": [
+        "design",
+        "engineering"
+      ],
+      "use": "Practical hand-tool ergonomics background for grip and task evaluation.",
+      "check": "Scope is non-powered hand tools; do not transfer its dimensions to every product.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "protolabs-dfm",
+      "title": "Protolabs — Process-specific design tips",
+      "url": "https://www.protolabs.com/resources/design-tips/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing",
+        "prototype"
+      ],
+      "use": "Start process-specific DFM research for machining, molding and other manufacturing methods.",
+      "check": "Supplier guidance depends on geometry, material and process. Confirm the selected manufacturer’s capabilities; automated DFM is not full design approval.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "protolabs-walls",
+      "title": "Protolabs — Uniform wall thickness in molded parts",
+      "url": "https://www.protolabs.com/resources/design-tips/improving-part-design-with-uniform-wall-thickness/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "manufacturing"
+      ],
+      "use": "Investigate molded-part walls, sink, warpage and geometry tradeoffs.",
+      "check": "Numerical examples are supplier/process guidance, not a universal specification.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "nasa-verification",
+      "title": "NASA — Requirements verification matrix",
+      "url": "https://www.nasa.gov/reference/appendix-d-requirements-verification-matrix/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "use": "A useful model for linking each requirement to a source and verification method.",
+      "check": "Adapt the evidence discipline to project scale; NASA procedures are not mandatory consumer-product certification.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "nasa-validation",
+      "title": "NASA — Product realization, verification and validation",
+      "url": "https://www.nasa.gov/reference/5-0-product-realization/",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "prototype"
+      ],
+      "use": "Understand checking specified requirements versus intended use.",
+      "check": "Record actual configuration, method, evidence and limits; a single prototype does not establish production consistency.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "nist-supplier",
+      "title": "NIST MEP — Supplier scouting inquiry fields",
+      "url": "https://meis.nist.gov/SupplierScouting/Submit",
+      "group": "making",
+      "roles": [
+        "manufacturing",
+        "engineering"
+      ],
+      "use": "Examples of technical and commercial information needed to identify manufacturing capability.",
+      "check": "The public form displayed an expired OMB date during this review. Use fields as preparation; confirm the current submission route with a local MEP center before submitting.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "uspto-patent-overview",
+      "title": "USPTO — Patent rights, ownership and infringement",
+      "url": "https://www.uspto.gov/patents/basics/manage",
+      "group": "legal",
+      "roles": [
+        "legal"
+      ],
+      "use": "Understand exclusion rights, ownership and the separate infringement question.",
+      "check": "Having a patent is not affirmative permission to make or sell a product. Seek a product/territory-specific analysis when freedom to operate matters.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "uspto-design",
+      "title": "USPTO — Design patents",
+      "url": "https://www.uspto.gov/patents/basics/apply/design-patent",
+      "group": "legal",
+      "roles": [
+        "legal",
+        "design"
+      ],
+      "use": "Compare ornamental-design protection with utility protection for function.",
+      "check": "Identify the actual subject matter and jurisdiction; do not infer patentability from a checklist.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "uspto-provisional",
+      "title": "USPTO — Provisional patent applications",
+      "url": "https://www.uspto.gov/patents/basics/apply/provisional-application",
+      "group": "legal",
+      "roles": [
+        "legal",
+        "project"
+      ],
+      "use": "Prepare disclosure and filing-timing questions for a patent practitioner.",
+      "check": "A provisional is not an issued patent, is not available for design inventions and normally needs a timely follow-on. Do not assume U.S. disclosure rules protect options abroad.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "uspto-trade-secrets",
+      "title": "USPTO — Trade secret toolkit",
+      "url": "https://www.uspto.gov/sites/default/files/documents/tradesecretsiptoolkit.pdf",
+      "group": "legal",
+      "roles": [
+        "legal"
+      ],
+      "use": "Consider secrecy, reasonable protection measures and business objectives.",
+      "check": "Account for independent development and lawful reverse engineering; simply calling information secret is insufficient.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "sba-lender",
+      "title": "SBA — Lender Match preparation",
+      "url": "https://www.sba.gov/loans/lender-match/",
+      "group": "funding",
+      "roles": [
+        "funding"
+      ],
+      "use": "Prepare a plan, funding purpose and evidence for a lender conversation.",
+      "check": "A match is neither an application nor loan approval. Get the actual lender’s current document and repayment requirements.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "sec-ready",
+      "title": "SEC — Ready to raise capital",
+      "url": "https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/ready-raise-capital",
+      "group": "funding",
+      "roles": [
+        "funding",
+        "legal"
+      ],
+      "use": "Assess financial, ownership, team and investor-readiness questions.",
+      "check": "Preparing a pitch is different from offering securities; establish the relevant legal route before solicitation.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "sec-early-investors",
+      "title": "SEC — Early-stage investors",
+      "url": "https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/early-stage-investors",
+      "group": "funding",
+      "roles": [
+        "funding",
+        "legal"
+      ],
+      "use": "Understand early investor types and capital-raising considerations.",
+      "check": "Calling a round friends and family does not itself establish a securities-law exemption.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "sba-grants",
+      "title": "SBA — Grants and limited funding opportunities",
+      "url": "https://www.sba.gov/loans/additional-funding-opportunities/grants/",
+      "group": "funding",
+      "roles": [
+        "funding"
+      ],
+      "use": "Find the scope of SBA-related grant assistance and research-program starting points.",
+      "check": "SBA does not provide general grants to start or expand an ordinary business. Verify a current open solicitation and eligibility.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "sequoia-plan",
+      "title": "Sequoia — Writing a business plan",
+      "url": "https://sequoiacap.com/article/writing-a-business-plan",
+      "group": "funding",
+      "roles": [
+        "funding",
+        "marketing"
+      ],
+      "use": "An investor’s presentation outline for problem, solution, market, model and team.",
+      "check": "An example of pitch structure, not a universal investment eligibility rule or funding promise.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "amazon-registration",
+      "title": "Amazon — Seller registration guide",
+      "url": "https://sell.amazon.com/sell/registration-guide",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "funding",
+        "manufacturing"
+      ],
+      "use": "Prepare for the third-party Seller Central route and account verification.",
+      "check": "Seller registration is separate from Amazon buying wholesale through Vendor Central. Check current identity, category, product and brand requirements.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "amazon-pricing",
+      "title": "Amazon — Selling fees and calculator",
+      "url": "https://sell.amazon.com/pricing",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "funding"
+      ],
+      "use": "Model selling-plan, referral and fulfillment costs for the actual product.",
+      "check": "Rates vary by category and fulfillment; use current dimensions/weight and fee schedules. Include returns, storage and advertising where relevant.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "walmart-suppliers",
+      "title": "Walmart — Apply to be a supplier",
+      "url": "https://corporate.walmart.com/suppliers/apply-to-be-a-supplier",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "manufacturing",
+        "funding"
+      ],
+      "use": "Start the wholesale supplier route and check the requested company/product package.",
+      "check": "Separate retailer supply from Marketplace. Registration is consideration, not an agreement or a store order.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "walmart-requirements",
+      "title": "Walmart — Supplier requirements",
+      "url": "https://corporate.walmart.com/suppliers/requirements",
+      "group": "retail",
+      "roles": [
+        "manufacturing",
+        "marketing",
+        "engineering"
+      ],
+      "use": "Check current supplier, product, insurance and operating requirements.",
+      "check": "Product and account-specific documents govern. Obtain actual requirements before accepting a purchase commitment.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "walmart-checklist",
+      "title": "Walmart — Supplier checklist",
+      "url": "https://corporate.walmart.com/content/dam/corporate/documents/suppliers/apply-to-be-a-supplier/supplier-checklist.pdf",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "manufacturing"
+      ],
+      "use": "Official checklist to compare against the proposed supplier packet.",
+      "check": "Check current applicability and revision with the supplier application; the AN Creation sheet does not replace this document.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "walmart-marketplace",
+      "title": "Walmart — Marketplace qualifications",
+      "url": "https://marketplace.walmart.com/about-walmart-marketplace/",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "funding",
+        "manufacturing"
+      ],
+      "use": "Check eligibility for third-party online selling.",
+      "check": "Public qualifications include prior eCommerce success and U.S. fulfillment/returns capability. Marketplace approval does not provide store shelf placement.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "walmart-registration",
+      "title": "Walmart — Marketplace registration and payments",
+      "url": "https://marketplace.walmart.com/seller-registration-guide/",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "funding"
+      ],
+      "use": "Prepare business verification and consider new-seller payment holds.",
+      "check": "Confirm current documents, onboarding and payment terms; account-specific conditions were not inspected.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "walmart-open-call",
+      "title": "Walmart — Supplier opportunities and Open Call",
+      "url": "https://corporate.walmart.com/suppliers",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "project"
+      ],
+      "use": "Look for current supplier opportunities, including eligible U.S.-made, grown or assembled products.",
+      "check": "Check the current Open Call window and criteria; no open event or acceptance is assumed.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "lowes-suppliers",
+      "title": "Lowe’s — Branded and private-brand supplier routes",
+      "url": "https://www.lowes.com/l/about/suppliers",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "manufacturing"
+      ],
+      "use": "Official routing: RangeMe for branded retail proposals; PROVIS for private-brand sourcing.",
+      "check": "Registration is consideration, not a guaranteed review or contract. Follow Lowe’s current links and product requirements.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "lowes-marketplace",
+      "title": "Lowe’s — Marketplace application and FAQs",
+      "url": "https://www.lowes.com/l/about/lowes-marketplace",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "manufacturing",
+        "funding"
+      ],
+      "use": "Separate curated third-party marketplace route for suitable home-improvement products.",
+      "check": "Check current selection, U.S. inventory/shipping, product data and category conditions. Obtain actual commission and service terms during onboarding.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "lowes-seller-docs",
+      "title": "Lowe’s — Marketplace seller documentation",
+      "url": "https://seller.lowes.com/mirakl-seller-documentation/",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "manufacturing"
+      ],
+      "use": "Starting point for operational seller documentation.",
+      "check": "Some legal documentation was marked forthcoming during research; vendor-only terms and contracts were not reviewed. Record missing requirements explicitly.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "gs1-barcodes",
+      "title": "GS1 US — Product identifiers and barcodes",
+      "url": "https://www.gs1us.org/upcs-barcodes-prefixes",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "manufacturing"
+      ],
+      "use": "Understand GTIN/UPC, product and packaging identifiers for retail data.",
+      "check": "Confirm the retailer’s identifier requirements and exemptions. A barcode is not a safety approval or sales authorization.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "trade-representatives",
+      "title": "Trade.gov — Evaluating representatives",
+      "url": "https://www.trade.gov/choosing-foreign-representative",
+      "group": "retail",
+      "roles": [
+        "marketing",
+        "funding"
+      ],
+      "use": "Due-diligence questions about experience, competing lines, service and references.",
+      "check": "The source addresses foreign representatives. Adapt these screening questions; do not present them as domestic retailer rules.",
+      "checked_on": "2026-09-30",
+      "source": "Primary publisher; public guidance reviewed",
+      "kind": "primary_guidance"
+    },
+    {
+      "id": "cpsc-small-business",
+      "title": "CPSC — Small business product-safety resources",
+      "url": "https://www.cpsc.gov/Business--Manufacturing/Small-Business-Resources",
+      "group": "making",
+      "roles": [
+        "engineering",
+        "prototype",
+        "manufacturing",
+        "legal"
+      ],
+      "use": "Starting guidance for consumer-product safety requirements and the Small Business Ombudsman.",
+      "check": "Identify product type and intended users before selecting rules, tests, certificates or labeling. Follow the applicable rule and actual evidence; do not assume one guide covers every product.",
+      "source": "Government agency’s own website",
+      "kind": "government",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.cpsc.gov/Business--Manufacturing/Small-Business-Resources",
+      "verification_note": "CPSC small-business page points to product-area guidance and the Small Business Ombudsman."
+    },
+    {
+      "id": "ftc-advertising",
+      "title": "FTC — Advertising and marketing guidance",
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing",
+      "group": "marketing",
+      "roles": [
+        "marketing",
+        "legal"
+      ],
+      "use": "Check product claims, endorsements, reviews, influencers, Made in USA statements and other advertising topics before publishing.",
+      "check": "Choose the guidance matching the product and channel. Keep evidence for claims and review relevant disclosure rules with the responsible specialist.",
+      "source": "Federal Trade Commission",
+      "kind": "government",
+      "verification_note": "Official FTC topic hub links advertising basics, endorsements, environmental/health claims, origin claims and online marketing guidance.",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.ftc.gov/business-guidance/advertising-marketing"
+    },
+    {
+      "id": "grants-search",
+      "title": "Grants.gov — Search federal funding opportunities",
+      "url": "https://www.grants.gov/search-grants",
+      "group": "funding",
+      "roles": [
+        "funding",
+        "project"
+      ],
+      "use": "Search the official federal grant opportunity directory by eligibility and subject.",
+      "check": "Confirm applicant type, purpose, dates and registrations in the actual notice. Not every grant accepts a for-profit startup. Ignore unsolicited messages claiming you have already won a grant.",
+      "source": "Government agency’s own website",
+      "kind": "government",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.grants.gov/search-grants",
+      "verification_note": "Official Grants.gov search and grant-fraud guidance; no claim any particular opportunity is open."
+    },
+    {
+      "id": "kickstarter-handbook",
+      "title": "Kickstarter — Creator Handbook",
+      "url": "https://www.kickstarter.com/help/handbook",
+      "group": "funding",
+      "roles": [
+        "funding",
+        "marketing",
+        "project",
+        "prototype"
+      ],
+      "use": "Plan a rewards-based crowdfunding campaign: tell the story, build rewards, promote it, communicate with backers and prepare fulfillment.",
+      "check": "Review current project eligibility, platform fees and delivery responsibilities before choosing crowdfunding. Budget manufacturing, shipping and campaign costs.",
+      "source": "Kickstarter",
+      "kind": "commercial_education",
+      "verification_note": "Official handbook provides sections on getting started, funding, fulfillment, story, promotion, rewards and backer communications.",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.kickstarter.com/help/handbook"
+    },
+    {
+      "id": "sba",
+      "title": "SBA — Business planning and market research",
+      "url": "https://www.sba.gov/counseling/plan-your-business/",
+      "group": "marketing",
+      "roles": [
+        "marketing",
+        "design",
+        "project",
+        "funding"
+      ],
+      "use": "Start with the market-research section: define customers, compare competing solutions and test demand, pricing and market size.",
+      "check": "Combine published data with interviews or other direct research. Record assumptions and sources before using market estimates in a funding plan.",
+      "checked_on": "2026-09-30",
+      "source": "U.S. Small Business Administration",
+      "kind": "government",
+      "verification_note": "Former business-guide market-research URL redirects to this current hub; it contains the full market research and competitive analysis section.",
+      "verification_url": "https://www.sba.gov/counseling/plan-your-business/"
+    },
+    {
+      "id": "trademark-basics",
+      "title": "USPTO — Trademark basics",
+      "url": "https://www.uspto.gov/trademarks/basics",
+      "group": "legal",
+      "roles": [
+        "legal",
+        "marketing"
+      ],
+      "use": "Start researching protection for a business name, product name, or logo and follow official registration guidance.",
+      "check": "Review name availability with the legal role before investing in branding; follow the official search and filing links and verify notices directly with USPTO.",
+      "source": "USPTO — official trademark guidance",
+      "kind": "source_directory",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.uspto.gov/trademarks/basics",
+      "verification_note": "Opened official trademark basics page with linked federal registration guidance."
+    }
+  ]
+}

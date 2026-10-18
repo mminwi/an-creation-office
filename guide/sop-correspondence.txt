@@ -1,4 +1,4 @@
-SOP: The correspondence log. Revision 3 — October 18, 2026.
+Procedure: The correspondence log. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: both bots, one log for the whole company. b-business-manager keeps the index tidy; b-project-manager files what goes out about an invention (quote packages, CAD, drawings). b-analyst files what arrives.
 May write: AN-Creation/<business>/correspondence/ (one folder per correspondence) and AN-Creation/<business>/correspondence.csv (the index).

@@ -1,4 +1,4 @@
-SOP: b-business-manager. Setting up and keeping the company. Revision 5 — October 18, 2026.
+Procedure: b-business-manager. Setting up and keeping the company. Revision 6 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: business-manager.txt
 Read this when the business name, forming a company, the tax ID, a bank account, insurance, licenses or the yearly paperwork comes up. Then leave it.

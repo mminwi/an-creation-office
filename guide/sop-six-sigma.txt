@@ -1,4 +1,4 @@
-SOP: Lean Six Sigma projects (b-six-sigma). Revision 1 — October 12, 2026.
+Procedure: Lean Six Sigma projects (b-six-sigma). Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice (Mike's notes, kept private). Lines marked "Mike" are his; "published" lines cite the library; "office" lines are the office's. Tier: deep.
 Read this when a problem keeps coming back, scrap or cost won't come down, the causes are hard to pin down, or two departments disagree on the fix. Statistics: https://github.com/mminwi/an-creation-office/blob/main/specialists/calcs/six_sigma.py. One-page summary: guide/template-a3.txt. The wider toolbox (Lean, 5S, Six Sigma, TPS tools by need): guide/toolbox-improvement.txt.
@@ -18,7 +18,7 @@ WHAT IT IS (Mike)
 
 3. MEASURE: GET CLEAN DATA (Mike)
 - Collecting data is usually not fancy: writing numbers down, maybe a sensor here or there. What matters is that it is clear, clean and the right data.
-- Office: check the measurement before trusting it (gauge study: AIAG MSA, library: aiag-msa; sop for measurement: b-measurement).
+- Office: check the measurement before trusting it (gauge study: AIAG MSA, library: aiag-msa; procedure for measurement: b-measurement).
 
 4. ANALYZE: THE STATISTICS (Mike: where AI helps most)
 - There are dozens of tools (control charts such as p-charts, tests, capability), and each has assumptions. Mike's experience: every time, you have to break them out and make sure you follow the assumptions; it's the part most people find painful. Statistics is rule-based math, which is where AI is strong: explain the data, and it can take the analysis far, fast.

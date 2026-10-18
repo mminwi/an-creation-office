@@ -1,4 +1,4 @@
-SOP: The action log. Revision 2 — October 18, 2026.
+Procedure: The action log. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Template: https://ancreationoffice.com/template-action-log.csv
 Goes with: standing.txt, analyst.txt, sop-review-page.txt, project-folders.txt

@@ -1,4 +1,4 @@
-SOP: The licensee packet. Revision 2 — October 18, 2026.
+Procedure: The licensee packet. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each meeting with a company that might license the invention (sop-meeting-prep.txt). b-analyst builds it.
 May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; a planned row in disclosure-history.csv as soon as the meeting is set.

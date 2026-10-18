@@ -1,0 +1,219 @@
+---
+name: an-stages
+description: "Use when planning or moving an invention through its stages and gates, and for fact-finding's project description."
+---
+
+# an-stages
+
+Sections: Stages of a project; The project description: what fact-finding delivers.
+
+## Stages of a project
+(procedure file: sop-stages.txt)
+
+Procedure: Stages of a project. Revision 11 — October 18, 2026. Replaces the retired phases file (`sop-phases.txt` (`an-office-files`)).
+For b-analyst. The inventor sees the plain stage names on the status sheet, never numbers or this file.
+
+WHY THIS MUCH PROCESS (from Mike, D-047)
+This is the basic process. An AI needs some structure to keep track of what has been touched, what hasn't, and how each spec traces to a good part, and the documentation that made this painful when people typed it all up is easy for the AI. The inventor sees plain words and makes the decisions; the structure lives in the files.
+
+THE OFFICE UNDERSTANDS APQP; THE OWNER SETS HOW FORMAL (Mike, replaces D-048)
+Formal APQP is not run on every project. The office understands APQP (Advanced Product Quality Planning) and uses its logic to keep the project straight:
+- Specifications first: the project description and the compliance matrix.
+- Through design and prototyping: each spec that matters is addressed in the design and the tests (and the design FMEA, when there is one).
+- The control plan: critical features get a check, and each check traces to a spec.
+- Into manufacturing: specs, control plan and gauges are checked into the tooling loop and qualification, and confirmed on real parts.
+- Assemblies too: every assembly, its parts and its stack-ups, not only single parts.
+How far the formal paperwork goes is the inventor's call, and what the product, its risks and its customer require: an automotive or medical customer may require the full formal set; a simple consumer product usually doesn't. Because it's AI, it will be as formal as the person wants the project to be. Offer the formal level once, in plain words, when it would help or when a customer or program requires it; don't impose it.
+- If the inventor wants the formal set: one living APQP file per project (Office files/apqp/) listing each APQP element, its status (done, open, not needed at this level, with the reason) and the evidence. Shown on a review page on request.
+Almost all of it can run without much human effort. People can just describe what they are doing, out loud or in a message, during trials, builds and reviews ("second shot, the boss on the left is short, we're bumping pressure"). The AI files it in the record, fills the APQP paperwork from it (trial logs, FMEA lines, control plan changes, inspection notes), and asks only the few questions needed to fill the holes.
+
+THE WHOLE PROCESS IN ONE PARAGRAPH, AND THE LEVELS ABOVE IT (D-049)
+Across every stage the AI runs the specifications and collects the test results that any certification, test or validation needs for the programs this product falls under. It sets up the level of quality the product calls for (electronics, medical, aviation, whatever it is), keeps track of all of it, and keeps the basic spec-to-part traceability. The base is that traceability and the stage loops: walk the design through the stages and iterate as many times as needed, with the timeline, budget and quality bar in view.
+Some programs raise the documentation. The screening and resource map tell the AI which; it then documents to that level and tells the inventor why, in plain words:
+- Medical (FDA design controls, ISO 13485): design inputs and outputs, every design review, verification and validation, and the reasons behind decisions and improvements: what was tried, what was found, what changed and why (the design history file). Risk management to ISO 14971. Usability records.
+- Aviation (AS9100, the aviation authority): configuration control on every revision, first article inspection to AS9102, traceability of parts and materials, the customer's flow-down requirements.
+- Automotive (IATF 16949): the full APQP and PPAP the customer asks for.
+- Military (named MIL-STDs in the contract): test plans and reports per standard, the contract's data deliverables.
+- Electronics with certifications (FCC, UL, CE): the test reports, the tested configuration, and a record that later changes don't break the certification.
+The elevated level adds records; it doesn't change the stages. Troubleshooting gets written up more fully (what failed, what was tried, the root cause, the fix, the check that it worked), and each decision carries its reason. People still just describe what they're doing; the AI writes it to the level required and asks for what's missing.
+
+COST AND TIMELINE EVERY ROUND (D-051)
+Every round of the design, prototype, tooling and qualification loops delivers a penciled-in BOM (parts list) with an estimated cost for each part, the estimated part cost, the estimated tooling cost, and an updated timeline. These are estimates, and it doesn't matter much how exact they are. Having something penciled in lets everyone start thinking about cost and timing much earlier. Like the timeline, the BOM is basic: if another iteration is added, the timeline is updated, because the project will likely run longer. Timing and cost get updated nearly every iteration so the inventor always knows roughly where it stands, against the budget and dates from fact-finding.
+
+EVERY STAGE ENDS THE SAME WAY (D-053)
+At every stage exit, whatever else its gate asks:
+- Go, hold or drop. The inventor decides with the current cost estimate, timeline and top risks in front of them, recorded with the date and their reason. It catches a project that should stop before tooling money is spent.
+- A short lessons note: what worked, what didn't, a supplier or method worth remembering, a design rule learned. It feeds the library and the supplier notes for the next project.
+- The stage's records (review records, APQP file, revision) are in their dated folders.
+
+SPENT SO FAR (D-053)
+Every round also records actual spending against the budget: "spent so far vs budget", from the receipts, invoices and quotes the inventor sends in. Estimates say where it is heading; this says where it is.
+The spending register (D-058): from the first conversation, every project keeps Office files/spending.csv, with a readable copy in Your files/Project record/: every dollar spent or committed, and whose money it was (`an-project-record` (The spending register)). b-analyst adds a row for every receipt, invoice, order or accepted quote, and shows spent so far, the owner's share, and what is left of the charter's budget at each review. Quotes not yet accepted go on the cost sheet (`an-cost-and-risk` (Cost sheet)). It is one of the seven required documents (`an-project-record` (The project record)).
+
+WHEN A PERSON HAS TO SIGN OFF (D-053)
+The office prepares; some things need a person who signs the work.
+- Basic level: a human with manufacturing or engineering experience looks at the design at freeze (end of S2) and at production approval (end of S4). A machinist, molder, contract manufacturer, or engineer; their comments go on the review record.
+- Any stage: an engineer for anything that could hurt someone; a test lab for any certification; a patent attorney or agent when the inventor chooses a reviewed or full-service filing; an attorney for contracts and disputes; a CPA for taxes; an insurance agent for what a policy covers.
+- Elevated levels: whatever the program requires (medical design reviews with an independent reviewer, aviation first article sign-off, a buyer's PPAP approval). The buyer's or regulator's rule wins.
+
+REVISIONS AND CHANGES
+Revision names and the change record: `an-cost-and-risk` (Revisions and engineering change notices) (C concepts, X working revisions, A/B/C released from freeze on).
+
+HOW IT WORKS
+1. Every project starts with FACT-FINDING. Nothing else is planned until it is done. Rough concepts (C sketches to react to, `an-cost-and-risk` (Revisions and engineering change notices)) are part of fact-finding when the inventor picks the product path; they help answer what it is, and they are not a design revision.
+2. At the end of fact-finding b-analyst writes plan-stages.md: which stages this project needs, on which tracks, in what order, each with its trigger, goal, paperwork and exit gate. It is built from the templates below, not invented. Stages that don't apply are left out with a one-line reason (no electronics: no FCC stage).
+3. Tracks run side by side. A stage starts when its trigger happens. The short list (paths the inventor picks, `an-focus-and-gateways` (Keep the project focused)) draws only from stages that are active now, plus rough concepts during fact-finding.
+   WITHIN a track, order matters: finish enough of one stage before starting the next (fact-finding before designing, a finished concept design before prototyping, testing before a mold). "Enough" is the gate, not perfection.
+   ACROSS tracks, stages are independent: the company can be forming while the design is being worked; protection can run alongside requirements. The only cross-track links are the ones listed under ORDER OF THINGS THAT COMMONLY CATCH PEOPLE; each is a "before" rule on one event, not a reason to stop a whole track.
+   Each stage in plan-stages.md lists "Needs before it starts" (stages in its own track, plus any named cross-track rule) and nothing else.
+4. Exit gate = good enough to move on, not perfect. Advance Now: about 90%. The inventor confirms "good enough". Whatever is left is written in the carry-forward note and comes along; it does not hold the next stage.
+5. At each gate b-analyst writes carry-forward/<stage>-<date>.md (one page: decided, still open and carried, risks carried, documents produced) and updates the status sheet's Stage line. The next stage starts from that note.
+6. A stage can be reopened by new evidence (a test fails, a buyer changes the need). Say so in one line; the inventor decides.
+
+STEP CHECK: BEFORE EACH NEW STEP, WHAT DO WE NEED TO KNOW? (D-106)
+Run it whenever the project is about to start a new step, not only at stage gates: first concept sketches, picking a concept and firming up features, CAD and drawings, a prototype build, choosing how it's made and getting quotes, launch. Fact-finding picked which check sheets apply (resource-map.csv); the step check goes through their open items, plus the open fields on the forms, and sorts each one for THIS step:
+- Needed now: the step can't be done properly without it. Look it up or propose a default first (`an-focus-and-gateways` (Keep the project focused) ASK LESS); what's left goes to the inventor as the focus of the ticket, and b-project-manager works to get those answered.
+- Nice to have: useful, not crucial. Asked once, together, as "any thoughts on these? Skip any you don't have." A skip is fine; it is not "for now" and gets no revisit date.
+- Later: doesn't matter for this step. Never asked as specific questions yet. Group it by topic (marketing, distribution and shipping, pricing, money, the business route) and, now and then, offer one open door per topic: "Any ideas on marketing you want to get down now? If you want to talk about it, we'll record it; if not, that's fine too." Let them spill as much or as little as they like; nothing is a fine answer and gets no revisit. Each topic names the step that brings it back. (D-107)
+Capture what they say: in the transcript, and on every check-sheet item and form field their words touch, marked "carried" with their words, the date and "early idea". When the step that needs a topic arrives, the analyst first fills that topic's items from everything already said, then asks only what's still empty.
+Write it at the top of the step's ticket as STEP CHECK with the three lists, and keep the Later list in plan.md under "Open questions by step". At the next step, run it again: some Later items become Needed now.
+What usually matters where (a guide, not a rule; the product decides):
+- First concept sketches: what it does, its size, how it's held and used, what goes on or in it, the hazards that shape its form, where it's used and how it's cleaned. Not buyers, price, quantities, shipping or marketing.
+- Picking a concept, firming up features: who uses it, must-haves for version 1 versus later, the standards that shape the design, a rough cost target if one exists.
+- CAD and drawings: dimensions, materials, the interfaces to other things (a robot hand, a cart, a charger), the design rules from the standards that apply.
+- A prototype build: what this build must prove, the quality bar for it, the money for it.
+- How it's made and quotes: how many, the price point, who buys it, where it ships, the budget.
+- Launch: buyers, channel, shipping, labels and certifications, the marketing plan.
+
+MAY WRITE
+During fact-finding, this procedure may write these project files.
+- intake-001
+- screening answers
+- framework.md
+- resource-map.csv
+- plan-stages.md
+- the status sheet
+- the baseline at the project's level
+- the first review page (`an-market-and-sources` (Review pages and dated folders))
+- the project description (`an-stages` (The project description: what fact-finding delivers))
+- Your files/Business/ for the cost tracker. Leave the hours column blank unless the inventor asks to record time.
+- carry-forward/<stage>-<date>.md at the fact-finding gate
+
+Leave the compliance matrix for the design stage. Do not create a stakeholder register.
+
+S0 FACT-FINDING ("Getting the facts")  ALWAYS
+Trigger: a new project.
+Goal: decide what level the project runs at. Which standards apply, the timeline, the quality planning and the testing, and the business route. Levels run from dead simple (a rolling toolbox: a one-page quality plan and a parking-lot test) to heavy (a medical device: a full quality system, lab and regulatory testing). Name the level, so every later stage is sized to it.
+Paperwork: intake-001, screening answers, framework.md, resource-map.csv, plan-stages.md, status sheet, the BASELINE below at the level's size, the first review page (`an-market-and-sources` (Review pages and dated folders)).
+Deliverable: the PROJECT DESCRIPTION (`an-stages` (The project description: what fact-finding delivers)). One plain description with twelve sections: the product, what makes it yours, specifications, standards and rules to meet, volume and cost, business plan, marketing plan, patent plan, timeline, quality and test plan, risks, open questions and the decision. Everything above feeds it.
+Gate: every section of the project description meets its "done when" (an honest "for now" with a date counts; a blank does not); the inventor has read it and the stage plan on a review page, and decided: go, hold, or drop (recorded with the date, in their words).
+
+BASELINE  ALWAYS, AT THE PROJECT'S LEVEL
+Every project gets these, whatever the screening says. The baseline never drops out; its size does. Light first versions here; the design loop, the prototype loop and the tooling loop grow them.
+- Timeline and the triangle. The inventor's dates (see it working, show it, talk to a buyer or supplier, sell it), a rough budget, and the quality bar for the first date. Time, cost and quality are always linked: change one and hold another, and the third goes the wrong way (faster at the same quality costs more; faster at the same price, quality suffers; cheaper at the same quality takes longer). Don't ask it up front. Each time a problem forces a trade-off, ask, in these words: "Something has to give here. Which do you keep: the date, the money, or how well it works?" (Not "hold": that word means go, hold or drop.) Then work backward: every "follow" source and every stage gets a lead time (lab test, filing, tooling, review) and a latest start date. A lead time that misses an inventor date is a risk on its own line. Show the trade: which corner moves if they hold the other two. Each timeline is its own dated review page; a later timeline never replaces the first.
+- Quality plan. Written specifications for the few things that must be right, a simple FMEA (what can fail, how bad, what we do about it) seeded from recalls on similar products, a rough parts list and process flow, the features that need the closest control, and a simple control plan (what we check, how, how often). Basic ISO 9001-style planning; a stricter system only if the screening pulled one.
+- Test plan. At least back-parking-lot testing: use it hard the way a real user would, and write down what was done and what broke. Pull the rolling toolbox over curbs for three days; drop it off the back of a truck. Lab or formal testing is added when a "follow" source needs it.
+- Business and marketing plan. What do they plan to do with it? Sell the idea (license it): what we would try to patent, and the patent options ladder. Make and sell it: route to market, who buys it, rough quantities, estimated manufacturing cost, the money to start making it, a marketing strategy. Both routes: have real buyers said they want it, and what already sells that does the same job; a quick look at existing patents and products (is it new, and is anyone's live patent in the way of selling it; our own patent does not clear us to sell; a full clearance search with an attorney comes before launch); liability (company or not, gateway BUSINESS ENTITY) and product liability insurance. Use the existing forms; this is a first draft, not a business school plan.
+- Project structure. Timeline, budget, quality bar, who does what, next dates. One page is fine.
+
+PRODUCT TRACK  ALWAYS
+S1 Design loop ("Designing it"). Trigger: gate S0. A loop, not a pass: design, collect data, check, recorded review, update the FMEA, cost and timeline, decide; repeat until the people who must be satisfied are. Usually industrial design passes first (concepts, renders, mock-ups; two or three rounds until one concept is picked), then CAD passes (model, drawings, parts list, materials, FEA paint). Design for manufacturing from the first pass, with someone with manufacturing in mind at every review. A round ends when the CAD is updated. A project can start at CAD; a CAD pass can send a feature back to industrial design. Goal: a design ready to build. Paperwork: compliance matrix, design FMEA, concept pictures, drawings and parts list at a named revision, critical feature list, review records, prototype control plan for the first build. Gate: the inventor approves a revision to build. Procedure: `an-design-and-prototype` (The design stage, a review loop).
+S2 Prototype loop ("Building and testing it"). Trigger: a revision approved to build. A loop: plan the build, build, test, review, refine the design from the test results; a round ends when the CAD is updated, then build again or freeze; two or three rounds, or a dozen. Builds come at levels as needed: bench check, works-like, looks-like, works-and-looks-like, engineering prototype, pre-production; the last ones are close to production. Goal: proof that the design meets its requirements and does the job for real users. Paperwork: prototype control plan per build, test results as evidence on compliance matrix lines, updated design FMEA, review records. Gate: design freeze. Procedure: `an-design-and-prototype` (The prototype loop).
+S3 Tooling loop ("Getting ready for a factory"). Trigger: design freeze (end of S2), or quantity past a few, a quote, tooling. A loop: the toolmaker or shop reviews the design for their process, the design changes for tooling, tool trials (T-trials, usually one or two) check out the tool and its sample parts are measured (first article inspection), the CAD is updated to match the accepted parts; a round ends when the CAD is updated. Final specs are set here from measured parts and the tolerance stack-up: tighten where the process holds it cheaply, widen where it is costly, keep the stack working. No hard tool (low volume): same loop on the production process. Goal: parts that match the drawings, made consistently, at the agreed specs. Paperwork: RFQ package and quote comparison, tooling review records, first article inspection, stack-up with measured data, process flow, PFMEA, production control plan, gauges, packaging and drop test, golden sample. Gate: ready to qualify. Procedure: `an-tooling-and-launch` (The tooling loop).
+S4 Qualification ("Approving production"). Trigger: the tooling loop is ready to qualify. First article inspection and testing on parts from the production setup, process trials (P-trials: run at rate, check quality) to show it holds the specs, and qualification of whatever the project level calls for: the vendor, a machine or process, a set of tooling, a manufacturing fixture, a measurement fixture or gauge. At the most basic level, the manufacturer is blessed to produce with what they have; at the heavy end, every element is qualified and signed. A buyer's requirements win. Goal: production approved. Paperwork: FAI report, first article test results, pilot-run measurements, qualification records, production control plan, golden sample, the production approval package (PPAP or lighter, sized to the project). Gate: production approved by the inventor, and by any buyer who requires it. Procedure: `an-tooling-and-launch` (Qualification and production approval).
+S5 Launch ("Putting it out there"). Trigger: production approved, and a price, a sale, a show or a store. First production order (the inventor places it), final packaging and labels matching the released revision and certifications, the buyer packet, true listings, the last disclosure check, final cost and timeline against the first estimates. Gate: first sale or showing done, first batch inspected per the control plan. Procedure: `an-tooling-and-launch` (Launch).
+
+BUSINESS TRACK  EACH STAGE ONLY IF ITS GATEWAY IS YES
+B1 Company setup ("Setting up the company"). Trigger: company = yes. Light touch (D-052): walk them through forming the LLC on their state's site and getting the EIN from the IRS, prepare the worksheets, then hand it over. Running the business is theirs; the office doesn't track business operations beyond setup. Goal: the company exists properly. Paperwork: articles worksheet, operating agreement outline, EIN worksheet (SSN blank), after-formation checklist, insurance request. Gate: the inventor has filed (they do it) and the EIN, bank and insurance steps are listed with dates. If company = no or for now: insurance request only, before the first sale.
+B2 Protection ("Protecting the idea"). Trigger: patent = yes or for now with a small step, or a disclosure coming. Talk them through it, what needs to be in the patent, and fill out the paperwork. They choose the route: a lawyer does it all, the office prepares it and a patent attorney reviews it for a few hours, or they file it themselves with what the office prepared (D-052). Goal: a protection decision before anyone outside sees it. Paperwork: invention disclosure, prior-art log, options ladder, provisional package if chosen. Gate: route chosen (attorney, clinic, file it yourself, or not filing) before the disclosure.
+B3 Money ("Paying for it"). Trigger: outside money = yes. Traditionally it comes in two rounds (D-059). Round 1, once the product is defined and has been through one or two industrial design rounds (concepts, usually no CAD yet): raise what it takes to design and prototype to some level, often two design loops and two prototype levels. Round 2, before the tooling loop: raise for tooling, initial inventory and materials. Another route: a manufacturer or tool shop as partner or investor, often an injection molder or shop with its own proprietary products, who can do the tooling cheaper. It appeals to them because the product can't easily move away from their tools, and tool-ownership terms often mean they own the tools, and in effect the product, after a time. That can be a good match if it fits their product lines; read the ownership terms closely and get them reviewed. Goal: the money for the next stretch, on terms the inventor understands. Paperwork: that deal's worksheet, the costed plan for what the round pays for (from the BOM, tooling estimate, timeline and cost tracker). Gate: the deal is closed or dropped.
+B4 Selling setup ("Getting set up to sell"). Trigger: a channel chosen. Goal: able to take an order. Paperwork: buyer packet, vendor registrations listed, W-9 (tax ID by hand), barcode, quote template. Gate: ready for the first order.
+
+REGULATORY TRACK  ONE STAGE PER REGIME THE SCREENING PULLED IN
+R-<regime> ("Meeting the <FCC / FAA / safety listing / children's product / medical> rules"). Trigger: screening says it applies. Goal: know the path, cost and timing, and plan the tests. Paperwork: that regime's worksheet, the lab or authority named but not contacted, tests added to the test plan. Gate: the path is chosen and on the plan; the actual certification happens inside S2, S3 or S4.
+
+ORDER OF THINGS THAT COMMONLY CATCH PEOPLE (the only cross-track rules; each guards one event)
+- Protection route chosen (B2 gate) before the first outside showing: crowdfunding page, show, supplier drawing, buyer, licensee. Showing, publishing, selling or offering to sell starts the U.S. one-year patent clock and can end rights at once in Europe, China and other absolute-novelty countries. Every "show it" or "talk to them" date on the timeline gets this check, plus an NDA for suppliers and buyers. Design and prototyping in private carry on meanwhile.
+- Company filed (B1 gate), or insurance in place, before the first sale when someone could be hurt. Design and building carry on meanwhile.
+- Each regulatory stage's path chosen during the design loop (S1), so its tests are in the plan before the prototype loop (S2) and the tooling loop (S3).
+- No mold or tooling money (S3) until the prototype loop (S2) has answered the big questions.
+
+## The project description: what fact-finding delivers
+(procedure file: project-description.txt)
+
+The project description: what fact-finding delivers. Revision 1 — October 7, 2026.
+Index: the procedure index in `an-office`
+Goes with: `an-stages` (Stages of a project) (S0 FACT-FINDING and BASELINE), `an-market-and-sources` (Map the resources to this project)
+
+WHAT IT IS
+One written description of the product and the project, in plain words, with the sections below. It is not a form to fill in. It reads like a description someone could hand to a partner, a supplier or a backer and they would understand what this is, what it has to meet, and what happens next.
+When every section meets its "done when", fact-finding is done. b-analyst writes it from the intake, screening, resource map, searches and baseline. The inventor reads it on a review page and decides go, hold or drop.
+
+Size it to the project's level. A simple product's description can be two pages. A medical device's will be much longer. Same sections either way.
+
+An honest gap counts as an answer. "Not decided yet, for now, we'll come back to it on <date>" meets "done when". A blank section does not.
+Before the first concept, b-analyst fills volume and cost, the business plan, the marketing plan, budget and the quality bar itself, with a proposed default or "after the first concept", and does not ask the inventor for them (`an-focus-and-gateways` (Keep the project focused) ASK LESS). That meets "done when". The go, hold or drop at the end can be given on a one-line description; it is not a test of how much they know yet.
+
+Each version is saved as its own dated file and review page. A later version never replaces an earlier one. Every file is the full 12 sections, each with its done-when line, ending in their go, hold, or drop. An addendum is not a version.
+
+THE SECTIONS
+
+1. THE PRODUCT
+What it is, what problem it solves, who uses it, where, and how it works, in a paragraph or two. The stage it's at (idea, sketch, model, working).
+Done when: someone who has never seen it could explain it back.
+
+2. WHAT MAKES IT YOURS
+The half-dozen things that make it this product: the mechanism, the user, the hard limit, what you came up with. Never write that it is new, unique, first or patentable. Write what the inventor came up with, and what a search found (similar products, and how theirs differs, in the inventor's words).
+Done when: the few "yours" items are listed and the similar products found so far are named.
+
+3. SPECIFICATIONS
+The few things that must be right: size, weight, strength, environment (wet, hot, dropped, vibration), performance, life, look. Proposed numbers are marked "proposed"; unknown ones "not set". The quality bar for the first date (looks right, works, or ready to sell).
+Done when: the must-be-right list exists, each with a number, "proposed" or "not set".
+
+4. STANDARDS AND RULES TO MEET
+The project level (simple, moderate, heavy) and why.
+Follow: each standard, rule or certification this product has to meet, with the answer that pulled it in, what it asks of this product (tests, records, labels), and its lead time.
+Recommend and mention: programs worth knowing about, a line each.
+Parked: what was left out, with the reason (no radio, so no FCC).
+The industry search and the recall search: what was searched, the date, what turned up.
+Done when: every follow item has a reason and a lead time, the parked list has reasons, and both searches are recorded.
+
+5. VOLUME AND COST
+How many: the first batch, the first year, and later if they have a guess. Estimated cost to make one at those quantities, from the rough parts list. The price they picture. The money needed to start making it, and where it would come from.
+Done when: each has a number, a range, or "not set" with what would set it.
+
+6. BUSINESS PLAN
+What they plan to do with it: sell the idea (license it) or make and sell it, or both. Company or not, and why (the liability question). Product liability insurance. Money: their own, or someone else's, and what that brings with it. Who does what.
+Done when: the route is chosen or marked "for now", and the company, insurance and money decisions are recorded in their words.
+
+7. MARKETING PLAN
+Who buys it and who uses it, if different. Whether real buyers have seen it or said they want it. What already sells that does the same job. Where it is sold first (friends, own site, marketplaces, stores, an industry buyer, outside the U.S.). How people will hear about it.
+Done when: the first buyer, the first channel and the competitors are named, and what buyers have actually said is recorded (or "nobody has seen it yet").
+
+8. PATENT PLAN
+The decision: file, don't file, or not decided yet. If filing, the route (package for an attorney, free help, file it yourself). What a quick search found: is anything close, and is anyone's live patent in the way of selling it. The disclosure check: every date it will be shown, published, offered or sold, and whether something is filed or an NDA is in place before then.
+Done when: there is a decision or a "for now" with a date, the quick search is recorded, and every disclosure date on the timeline has its check.
+
+9. TIMELINE
+The inventor's dates: see it working, show it, talk to a buyer or supplier, sell it. The rough budget. Don't ask up front which of date, money and quality to keep. Each time a problem forces a trade-off, ask, in these words: Something has to give here. Which do you keep: the date, the money, or how well it works? Record each answer with the problem it was for. Do not use the word hold for this. Hold already means go, hold, or drop. If another procedure says which to hold, ask this instead. Record the answer. A go, hold, or drop does not answer it. Working backward: each follow item and each next stage with its lead time and latest start. Any lead time that misses a date is flagged.
+Done when: the dates and that keep answer are recorded. If this was not asked, the timeline section is not done. Every follow item has a latest start date.
+
+10. QUALITY AND TEST PLAN
+The first quality plan at the project's level: the simple FMEA (what can fail, how bad, what we do about it, seeded from recalls on similar products), the features that need the closest control, and a simple control plan. The first test plan: at least back-parking-lot testing (use it hard, write down what broke), plus any lab or formal tests a follow item needs.
+Done when: both exist at the project's size, even if they're a page each.
+
+11. RISKS
+One line each: what could go wrong, what it would cost, when it would bite, and how much time is left to act. Product risks and business risks on the same list. Every follow item ends here, even if its line says "nothing to worry about".
+Done when: every follow item and every flagged timeline miss has a risk line.
+
+12. OPEN QUESTIONS AND THE DECISION
+What is still open, each with a revisit date or the event that will answer it. The resources offered for discussion and which ones they took up. Then the inventor's decision: go, hold, or drop, with the date and their reason in their words.
+Done when: the decision is recorded.
+
+WHO DOES WHAT
+b-analyst writes it, fills what is known, and turns gaps into questions on tickets. b-project-manager shows it on a review page, walks through any section they want, and records the decision. The inventor reads it and decides. Nothing in it is filed, sent or shown to anyone else without the inventor.
+
+FILES
+Office files/project-description/YYMMDD-HHMM-project-description.md (the master, one file per version)
+Your files/Project description/ (the inventor's format, one file per version)
+A review page for each version.

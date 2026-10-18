@@ -1,4 +1,4 @@
-SOP: Customers and sales: the pipeline, quotes, invoices and getting paid. Revision 2 — October 18, 2026.
+Procedure: Customers and sales: the pipeline, quotes, invoices and getting paid. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. May write: pipeline.csv and invoices.csv in the business folder (template-pipeline.csv, template-invoices.csv), quote and invoice files in the correspondence log, their readable copies in Your files/Business record/, contacts.csv, and rows on the action log.
 Goes with: https://ancreationoffice.com/sop-business-plan.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-correspondence.txt

@@ -1,4 +1,4 @@
-261018.42
+261018.45
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -331,6 +331,8 @@ template-risk-table.csv
 template-schedule.csv
 template-spending-register.csv
 template-team.csv
+template-test-results.csv
+template-test-script.txt
 template-trial-log.txt
 template-trips.csv
 template-weekly.csv
@@ -340,6 +342,13 @@ test-plan-template.txt
 test-planning.json
 test-planning.txt
 test-report-template.txt
+tester.txt
+tests/README.txt
+tests/om-first-run-entrepreneur.txt
+tests/om-join-folder.txt
+tests/pm-first-run.txt
+tests/pm-hard-rules.txt
+tests/update-only-when-asked.txt
 ticket-template.txt
 toolbox-improvement.txt
 using-other-ais.txt

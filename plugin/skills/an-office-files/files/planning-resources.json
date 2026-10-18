@@ -1,0 +1,1300 @@
+{
+  "checked_on": "2026-09-30",
+  "resources": [
+    {
+      "id": "uspto-inventor-hub",
+      "title": "USPTO — Inventor and entrepreneur resources",
+      "url": "https://www.uspto.gov/learning-and-resources/inventors-entrepreneurs-resources",
+      "group": "inventor",
+      "roles": [
+        "project",
+        "design",
+        "legal"
+      ],
+      "use": "A broad starting map for IP types, searches, training and inventor assistance.",
+      "check": "Identify the current question before selecting a patent, trademark or help route.",
+      "access": "Public government guidance; follow linked services for current eligibility.",
+      "checked_on": "2026-09-30",
+      "source": "USPTO",
+      "kind": "government",
+      "verification_url": "https://www.uspto.gov/learning-and-resources/inventors-entrepreneurs-resources",
+      "verification_note": "Public government guidance; follow linked services for current eligibility.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "ftc-invention-marketing",
+      "title": "FTC — Invention marketing scams",
+      "url": "https://consumer.ftc.gov/articles/invention-marketing-scams",
+      "group": "inventor",
+      "roles": [
+        "project",
+        "legal",
+        "marketing"
+      ],
+      "use": "Questions to ask before paying an invention promotion company.",
+      "check": "Check published outcomes, fees, written commitments and complaints before a commitment.",
+      "access": "Public government guidance.",
+      "checked_on": "2026-09-30",
+      "source": "FTC",
+      "kind": "government",
+      "verification_url": "https://consumer.ftc.gov/articles/invention-marketing-scams",
+      "verification_note": "Public government guidance.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "wipo-business",
+      "title": "WIPO — Intellectual property for business",
+      "url": "https://www.wipo.int/en/web/business/",
+      "group": "inventor",
+      "roles": [
+        "legal",
+        "project",
+        "funding"
+      ],
+      "use": "Connect invention protection with business strategy and commercialization.",
+      "check": "Choose the relevant rights and markets; keep inventorship, ownership and commercial strategy separate.",
+      "access": "Public guidance; linked publications and tools have their own terms.",
+      "checked_on": "2026-09-30",
+      "source": "WIPO",
+      "kind": "learning_resource",
+      "verification_url": "https://www.wipo.int/en/web/business/",
+      "verification_note": "Public guidance; linked publications and tools have their own terms.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "wipo-ip-checklist",
+      "title": "WIPO — IP strategy checklist for SMEs",
+      "url": "https://www.wipo.int/en/web/business/checklist",
+      "group": "inventor",
+      "roles": [
+        "legal",
+        "design",
+        "project"
+      ],
+      "use": "An explicit checklist from idea generation through market entry.",
+      "check": "Record unanswered ownership, disclosure, protection and commercialization questions for review.",
+      "access": "Public checklist; jurisdiction and professional review still matter.",
+      "checked_on": "2026-09-30",
+      "source": "WIPO",
+      "kind": "learning_resource",
+      "verification_url": "https://www.wipo.int/en/web/business/checklist",
+      "verification_note": "Public checklist; jurisdiction and professional review still matter.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "wipo-ip-diagnostics",
+      "title": "WIPO — IP Diagnostics",
+      "url": "https://www.wipo.int/en/web/wipo-ip-diagnostics",
+      "group": "inventor",
+      "roles": [
+        "legal",
+        "project"
+      ],
+      "use": "An interactive questionnaire that identifies possible business IP assets.",
+      "check": "Read the questions and terms; get permission before entering project information into the external tool.",
+      "access": "Free online assessment; reports depend on supplied answers.",
+      "checked_on": "2026-09-30",
+      "source": "WIPO",
+      "kind": "learning_resource",
+      "verification_url": "https://www.wipo.int/en/web/wipo-ip-diagnostics",
+      "verification_note": "Free online assessment; reports depend on supplied answers.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "score-startup-roadmap",
+      "title": "SCORE — Startup Roadmap",
+      "url": "https://academy.score.org/course/startup-roadmap",
+      "group": "startup",
+      "roles": [
+        "project",
+        "funding",
+        "marketing"
+      ],
+      "use": "A staged startup course with concrete tasks and mentor discussion points.",
+      "check": "Select only modules relevant to the current business; retain open tasks and completion evidence.",
+      "access": "Course access may require registration; verify current enrollment.",
+      "checked_on": "2026-09-30",
+      "source": "SCORE",
+      "kind": "learning_resource",
+      "verification_url": "https://academy.score.org/course/startup-roadmap",
+      "verification_note": "Course access may require registration; verify current enrollment.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "yc-startup-school",
+      "title": "Y Combinator — Startup School",
+      "url": "https://www.startupschool.org/",
+      "group": "startup",
+      "roles": [
+        "project",
+        "design",
+        "marketing",
+        "funding"
+      ],
+      "use": "Founder education on ideas, customer needs, early products and growth.",
+      "check": "Adapt startup advice to the inventor’s goals; a physical product still needs engineering and safety work.",
+      "access": "Public course overview; participation may require an account.",
+      "checked_on": "2026-09-30",
+      "source": "Y Combinator",
+      "kind": "learning_resource",
+      "verification_url": "https://www.startupschool.org/",
+      "verification_note": "Public course overview; participation may require an account.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "nsf-icorps",
+      "title": "NSF — I-Corps customer discovery",
+      "url": "https://www.nsf.gov/funding/initiatives/i-corps",
+      "group": "startup",
+      "roles": [
+        "project",
+        "design",
+        "marketing"
+      ],
+      "use": "Research commercialization through direct customer discovery.",
+      "check": "Separate customer-discovery methods from eligibility for a specific training or funding program.",
+      "access": "Public government overview; participation has eligibility and program requirements.",
+      "checked_on": "2026-09-30",
+      "source": "NSF",
+      "kind": "government",
+      "verification_url": "https://www.nsf.gov/funding/initiatives/i-corps",
+      "verification_note": "Public government overview; participation has eligibility and program requirements.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "strategyzer-library",
+      "title": "Strategyzer — Business and innovation tools",
+      "url": "https://www.strategyzer.com/library",
+      "group": "startup",
+      "roles": [
+        "project",
+        "design",
+        "marketing",
+        "funding"
+      ],
+      "use": "A library of tools for business models, customer value and experiments.",
+      "check": "Select a specific tool and distinguish free downloads from paid playbooks.",
+      "access": "Mixed public resources, free tools and paid offerings; check each item.",
+      "checked_on": "2026-09-30",
+      "source": "Strategyzer",
+      "kind": "learning_resource",
+      "verification_url": "https://www.strategyzer.com/library",
+      "verification_note": "Mixed public resources, free tools and paid offerings; check each item.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "strategyzer-bmc",
+      "title": "Strategyzer — Business Model Canvas",
+      "url": "https://www.strategyzer.com/library/the-business-model-canvas",
+      "group": "startup",
+      "roles": [
+        "project",
+        "funding",
+        "marketing"
+      ],
+      "use": "A one-page view of customers, delivery, resources, costs and revenues.",
+      "check": "Treat each block as an assumption until supported; date and revise the model.",
+      "access": "Official free template; check the downloaded asset’s attribution and license.",
+      "checked_on": "2026-09-30",
+      "source": "Strategyzer",
+      "kind": "learning_resource",
+      "verification_url": "https://www.strategyzer.com/library/the-business-model-canvas",
+      "verification_note": "Official free template; check the downloaded asset’s attribution and license.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "strategyzer-vpc",
+      "title": "Strategyzer — Value Proposition Canvas",
+      "url": "https://www.strategyzer.com/library/the-value-proposition-canvas",
+      "group": "startup",
+      "roles": [
+        "design",
+        "marketing"
+      ],
+      "use": "A worksheet to compare customer needs with the proposed offer.",
+      "check": "Use observed customer problems and existing alternatives; label untested claims.",
+      "access": "Official download route; inspect current access and reuse terms.",
+      "checked_on": "2026-09-30",
+      "source": "Strategyzer",
+      "kind": "learning_resource",
+      "verification_url": "https://www.strategyzer.com/library/the-value-proposition-canvas",
+      "verification_note": "Official download route; inspect current access and reuse terms.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "strategyzer-test-card",
+      "title": "Strategyzer — Test Card",
+      "url": "https://www.strategyzer.com/library/validate-your-ideas-with-the-test-card",
+      "group": "startup",
+      "roles": [
+        "project",
+        "design",
+        "marketing"
+      ],
+      "use": "A compact way to plan a business-assumption experiment.",
+      "check": "Set the hypothesis, method, measure and decision threshold before the experiment; record actual results separately.",
+      "access": "Public explanation with links to tools; business experiments are distinct from engineering verification.",
+      "checked_on": "2026-09-30",
+      "source": "Strategyzer",
+      "kind": "learning_resource",
+      "verification_url": "https://www.strategyzer.com/library/validate-your-ideas-with-the-test-card",
+      "verification_note": "Public explanation with links to tools; business experiments are distinct from engineering verification.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "score-planning-gallery",
+      "title": "SCORE — Business planning and financial templates",
+      "url": "https://www.score.org/business-planning-financial-statements-template-gallery/",
+      "group": "business-planning",
+      "roles": [
+        "project",
+        "funding"
+      ],
+      "use": "A collection of business-plan, startup-expense and financial-statement templates.",
+      "check": "Choose the smallest useful worksheet and preserve assumptions and formula provenance.",
+      "access": "Public gallery; download and access conditions vary by template.",
+      "checked_on": "2026-09-30",
+      "source": "SCORE",
+      "kind": "learning_resource",
+      "verification_url": "https://www.score.org/business-planning-financial-statements-template-gallery/",
+      "verification_note": "Public gallery; download and access conditions vary by template.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "score-checklists",
+      "title": "SCORE — Business checklists",
+      "url": "https://www.score.org/checklists/",
+      "group": "business-planning",
+      "roles": [
+        "project",
+        "funding",
+        "marketing",
+        "legal"
+      ],
+      "use": "A searchable collection of business, operations and marketing checklists.",
+      "check": "Filter by the current task; record applicability and explain skipped items.",
+      "access": "Public directory; linked checklists may have separate download conditions.",
+      "checked_on": "2026-09-30",
+      "source": "SCORE",
+      "kind": "learning_resource",
+      "verification_url": "https://www.score.org/checklists/",
+      "verification_note": "Public directory; linked checklists may have separate download conditions.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "score-financial-projections",
+      "title": "SCORE — Financial Projections Template",
+      "url": "https://www.score.org/templates/financial-projections-template/",
+      "group": "business-planning",
+      "roles": [
+        "funding",
+        "project"
+      ],
+      "use": "A downloadable workbook covering startup expenses, forecasts, cash flow and break-even.",
+      "check": "Separate estimates from actuals; inspect formulas and test low/base/high sales assumptions.",
+      "access": "Publisher describes a free downloadable template; workbook itself was not reviewed in this pass.",
+      "checked_on": "2026-09-30",
+      "source": "SCORE",
+      "kind": "learning_resource",
+      "verification_url": "https://www.score.org/templates/financial-projections-template/",
+      "verification_note": "Publisher describes a free downloadable template; workbook itself was not reviewed in this pass.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "score-startup-budget",
+      "title": "SCORE — Startup budget and projections",
+      "url": "https://www.score.org/startup-budget-projections/",
+      "group": "business-planning",
+      "roles": [
+        "funding",
+        "project"
+      ],
+      "use": "Guidance for startup spending, revenue assumptions and financial stress tests.",
+      "check": "Include one-time spending, recurring expenses, cash timing and an explicit funding gap.",
+      "access": "Public guidance with linked templates and mentoring.",
+      "checked_on": "2026-09-30",
+      "source": "SCORE",
+      "kind": "learning_resource",
+      "verification_url": "https://www.score.org/startup-budget-projections/",
+      "verification_note": "Public guidance with linked templates and mentoring.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "sba-manage-business",
+      "title": "SBA — Manage your business",
+      "url": "https://www.sba.gov/counseling/manage-your-business/",
+      "group": "business-planning",
+      "roles": [
+        "project",
+        "funding",
+        "legal",
+        "marketing"
+      ],
+      "use": "An operating-business roadmap for finances, employees, taxes, compliance and selling.",
+      "check": "Use the relevant section and verify actual obligations with the responsible agency.",
+      "access": "Public U.S. government guidance.",
+      "checked_on": "2026-09-30",
+      "source": "SBA",
+      "kind": "government",
+      "verification_url": "https://www.sba.gov/counseling/manage-your-business/",
+      "verification_note": "Public U.S. government guidance.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "bdc-startup-toolkit",
+      "title": "BDC — Start a business toolkit",
+      "url": "https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit/templates-business-guides/start-up-toolkit",
+      "group": "business-planning",
+      "roles": [
+        "project",
+        "funding"
+      ],
+      "use": "A broad entrepreneur toolkit with business-planning materials.",
+      "check": "Use planning structure as background; Canadian lending and legal details need local applicability checks.",
+      "access": "Public Canadian development-bank resources; downloads may request contact information.",
+      "checked_on": "2026-09-30",
+      "source": "BDC",
+      "kind": "learning_resource",
+      "verification_url": "https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit/templates-business-guides/start-up-toolkit",
+      "verification_note": "Public Canadian development-bank resources; downloads may request contact information.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "pdma",
+      "title": "PDMA — Product development knowledge and community",
+      "url": "https://www.pdma.org/",
+      "group": "product-management",
+      "roles": [
+        "project",
+        "design",
+        "engineering",
+        "manufacturing"
+      ],
+      "use": "An established professional association focused on new product development.",
+      "check": "Use its knowledge-hub routes for the specific development question; do not treat certification material as required startup paperwork.",
+      "access": "Public association directory verified in search; some learning material is member-only or paid. Direct browser retrieval was unavailable.",
+      "checked_on": "2026-09-30",
+      "source": "PDMA",
+      "kind": "learning_resource",
+      "verification_url": "https://www.pdma.org/",
+      "verification_note": "Public association directory verified in search; some learning material is member-only or paid. Direct browser retrieval was unavailable.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "stagegate-discovery-launch",
+      "title": "Stage-Gate — Discovery-to-launch process",
+      "url": "https://www.stage-gate.com/about/stage-gate-innovation-performance-framework/discovery-to-launch-process/",
+      "group": "product-management",
+      "roles": [
+        "project",
+        "design",
+        "engineering",
+        "manufacturing"
+      ],
+      "use": "A framework for organizing new products into stages and review decisions.",
+      "check": "Scale reviews to the project; decide what evidence justifies go, revise, hold or stop.",
+      "access": "Public process overview; detailed services and training are commercial.",
+      "checked_on": "2026-09-30",
+      "source": "Stage-Gate",
+      "kind": "learning_resource",
+      "verification_url": "https://www.stage-gate.com/about/stage-gate-innovation-performance-framework/discovery-to-launch-process/",
+      "verification_note": "Public process overview; detailed services and training are commercial.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "design-council-double-diamond",
+      "title": "Design Council — Double Diamond",
+      "url": "https://www.designcouncil.org.uk/resources/the-double-diamond/",
+      "group": "product-management",
+      "roles": [
+        "design",
+        "project",
+        "marketing"
+      ],
+      "use": "A simple discover, define, develop and deliver framework.",
+      "check": "Check that the problem has evidence before selecting a solution; keep learning and revisions visible.",
+      "access": "Public explanation; the linked Double Diamond is identified as CC BY 4.0.",
+      "checked_on": "2026-09-30",
+      "source": "Design Council",
+      "kind": "learning_resource",
+      "verification_url": "https://www.designcouncil.org.uk/resources/the-double-diamond/",
+      "verification_note": "Public explanation; the linked Double Diamond is identified as CC BY 4.0.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "atlassian-product-requirements",
+      "title": "Atlassian — Product requirements template",
+      "url": "https://www.atlassian.com/software/confluence/templates/product-requirements",
+      "group": "product-management",
+      "roles": [
+        "design",
+        "engineering",
+        "project"
+      ],
+      "use": "A starting structure for scope, requirements and product decisions.",
+      "check": "Adapt software examples to the physical product; add measurable requirements and sources.",
+      "access": "Public guidance; using the hosted template requires the publisher’s app/account.",
+      "checked_on": "2026-09-30",
+      "source": "Atlassian",
+      "kind": "learning_resource",
+      "verification_url": "https://www.atlassian.com/software/confluence/templates/product-requirements",
+      "verification_note": "Public guidance; using the hosted template requires the publisher’s app/account.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "atlassian-product-roadmap",
+      "title": "Atlassian — Product roadmap template",
+      "url": "https://www.atlassian.com/software/confluence/templates/product-roadmap",
+      "group": "product-management",
+      "roles": [
+        "project",
+        "design",
+        "marketing"
+      ],
+      "use": "A high-level product direction and priorities worksheet.",
+      "check": "Separate proposed features from agreed scope, and outcomes from task deadlines.",
+      "access": "Public guidance; hosted template requires app/account access.",
+      "checked_on": "2026-09-30",
+      "source": "Atlassian",
+      "kind": "learning_resource",
+      "verification_url": "https://www.atlassian.com/software/confluence/templates/product-roadmap",
+      "verification_note": "Public guidance; hosted template requires app/account access.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "smartsheet-product-requirements",
+      "title": "Smartsheet — Product requirements document templates",
+      "url": "https://www.smartsheet.com/content/free-product-requirements-document-template",
+      "group": "product-management",
+      "roles": [
+        "design",
+        "engineering"
+      ],
+      "use": "A collection of editable product-requirements layouts.",
+      "check": "Choose a simple format; maintain requirement IDs, sources, acceptance criteria and revisions.",
+      "access": "Public download collection; hosted Smartsheet use is separate. Files were not reviewed.",
+      "checked_on": "2026-09-30",
+      "source": "Smartsheet",
+      "kind": "learning_resource",
+      "verification_url": "https://www.smartsheet.com/content/free-product-requirements-document-template",
+      "verification_note": "Public download collection; hosted Smartsheet use is separate. Files were not reviewed.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "smartsheet-product-roadmaps",
+      "title": "Smartsheet — Product roadmap templates",
+      "url": "https://www.smartsheet.com/free-product-roadmap-templates-smartsheet",
+      "group": "product-management",
+      "roles": [
+        "project",
+        "design"
+      ],
+      "use": "A collection of product roadmap formats.",
+      "check": "Pick a horizon appropriate to the evidence; avoid treating tentative dates as commitments.",
+      "access": "Publisher page found in search; direct browser retrieval unavailable. Recheck download formats and access.",
+      "checked_on": "2026-09-30",
+      "source": "Smartsheet",
+      "kind": "learning_resource",
+      "verification_url": "https://www.smartsheet.com/free-product-roadmap-templates-smartsheet",
+      "verification_note": "Publisher page found in search; direct browser retrieval unavailable. Recheck download formats and access.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "pmi-tools",
+      "title": "PMI — Project management templates and tools",
+      "url": "https://www.pmi.org/insights",
+      "group": "project-management",
+      "roles": [
+        "project"
+      ],
+      "use": "A professional source of project-management tools, guides and templates.",
+      "check": "Select tools for scope, coordination or review; check current availability and access for each item.",
+      "access": "Mixed public templates and offerings; some tools have membership or subscription conditions.",
+      "checked_on": "2026-09-30",
+      "source": "PMI",
+      "kind": "learning_resource",
+      "verification_url": "https://www.pmi.org/insights",
+      "verification_note": "Mixed public templates and offerings; some tools have membership or subscription conditions.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "atlassian-project-templates",
+      "title": "Atlassian — Project management template library",
+      "url": "https://www.atlassian.com/project-management/templates",
+      "group": "project-management",
+      "roles": [
+        "project"
+      ],
+      "use": "Broad starting points for project goals, risks, budgets, decisions and team coordination.",
+      "check": "Match each template to an actual unanswered planning question.",
+      "access": "Public library; hosted templates generally require product/account access.",
+      "checked_on": "2026-09-30",
+      "source": "Atlassian",
+      "kind": "learning_resource",
+      "verification_url": "https://www.atlassian.com/project-management/templates",
+      "verification_note": "Public library; hosted templates generally require product/account access.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "atlassian-project-plan",
+      "title": "Atlassian — Project plan template",
+      "url": "https://www.atlassian.com/software/confluence/templates/project-plan",
+      "group": "project-management",
+      "roles": [
+        "project"
+      ],
+      "use": "A plan layout for objectives, scope, owners, milestones and reference links.",
+      "check": "Check exclusions, dependencies, finish conditions and agreed dates against the master plan.",
+      "access": "Public explanation; hosted template requires app/account access.",
+      "checked_on": "2026-09-30",
+      "source": "Atlassian",
+      "kind": "learning_resource",
+      "verification_url": "https://www.atlassian.com/software/confluence/templates/project-plan",
+      "verification_note": "Public explanation; hosted template requires app/account access.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "atlassian-decision",
+      "title": "Atlassian — DACI decision record",
+      "url": "https://www.atlassian.com/software/confluence/templates/decision/",
+      "group": "project-management",
+      "roles": [
+        "project",
+        "design",
+        "engineering"
+      ],
+      "use": "A record of options, decision responsibility, status and outcome.",
+      "check": "Keep alternatives and evidence; use actual agreed authority and attribution rather than changing team permissions.",
+      "access": "Public template explanation; app/account access needed for hosted use.",
+      "checked_on": "2026-09-30",
+      "source": "Atlassian",
+      "kind": "learning_resource",
+      "verification_url": "https://www.atlassian.com/software/confluence/templates/decision/",
+      "verification_note": "Public template explanation; app/account access needed for hosted use.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "atlassian-retrospective",
+      "title": "Atlassian — Retrospective template",
+      "url": "https://www.atlassian.com/software/confluence/templates/retrospective",
+      "group": "project-management",
+      "roles": [
+        "project",
+        "prototype",
+        "manufacturing"
+      ],
+      "use": "A way to review what worked and what should change after a milestone.",
+      "check": "Save actual lessons and assign agreed follow-ups without overwriting prior evidence.",
+      "access": "Public guidance; hosted use requires app/account access.",
+      "checked_on": "2026-09-30",
+      "source": "Atlassian",
+      "kind": "learning_resource",
+      "verification_url": "https://www.atlassian.com/software/confluence/templates/retrospective",
+      "verification_note": "Public guidance; hosted use requires app/account access.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "asana-risk-register",
+      "title": "Asana — Risk register template",
+      "url": "https://asana.com/templates/risk-register",
+      "group": "project-management",
+      "roles": [
+        "project",
+        "engineering",
+        "manufacturing"
+      ],
+      "use": "A risk-log structure for concerns, likelihood, consequences and response owners.",
+      "check": "Keep project risks distinct from technical FMEA; review actions as conditions change.",
+      "access": "Public explanation; creating the digital template requires signup.",
+      "checked_on": "2026-09-30",
+      "source": "Asana",
+      "kind": "learning_resource",
+      "verification_url": "https://asana.com/templates/risk-register",
+      "verification_note": "Public explanation; creating the digital template requires signup.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "asana-project-charter",
+      "title": "Asana — Project charter template",
+      "url": "https://asana.com/templates/project-charter",
+      "group": "project-management",
+      "roles": [
+        "project",
+        "design"
+      ],
+      "use": "A compact starting definition of project purpose, scope and responsibilities.",
+      "check": "Reconcile with the existing concept and plan; do not create a competing authority or approval record.",
+      "access": "Public explanation; hosted template requires signup.",
+      "checked_on": "2026-09-30",
+      "source": "Asana",
+      "kind": "learning_resource",
+      "verification_url": "https://asana.com/templates/project-charter",
+      "verification_note": "Public explanation; hosted template requires signup.",
+      "search_terms": [
+        "inventor",
+        "entrepreneur",
+        "product manager",
+        "business owner",
+        "project manager",
+        "checklist",
+        "planning"
+      ]
+    },
+    {
+      "id": "uspto-iac",
+      "title": "USPTO — Inventors Assistance Center and filing checklists",
+      "url": "https://www.uspto.gov/learning-and-resources/support-centers/inventors-assistance-center-iac",
+      "group": "inventor",
+      "roles": [
+        "legal",
+        "project"
+      ],
+      "use": "Procedural filing help, utility-application checklist, filing guides and common-mistake resources.",
+      "check": "Use the checklist for the intended application route and current USPTO instructions. Procedural assistance is separate from legal advice.",
+      "access": "Public government guidance and linked documents.",
+      "kind": "government",
+      "source": "USPTO",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.uspto.gov/learning-and-resources/support-centers/inventors-assistance-center-iac",
+      "verification_note": "Public government guidance and linked documents.",
+      "search_terms": [
+        "larry",
+        "andy",
+        "checklist",
+        "inventor",
+        "product launch"
+      ],
+      "related": [
+        {
+          "title": "USPTO utility patent filing checklist (PDF)",
+          "url": "https://www.uspto.gov/sites/default/files/inventors/Checklist_for_Filing_a_Nonprovisional_Utility.pdf"
+        },
+        {
+          "title": "Optional regional reference: LegalCORPS inventor resources",
+          "url": "https://legalcorps.org/inventor-resources/"
+        }
+      ]
+    },
+    {
+      "id": "uspto-scam-prevention",
+      "title": "USPTO — Invention promotion scam prevention",
+      "url": "https://www.uspto.gov/patents/basics/using-legal-services/scam-prevention",
+      "group": "inventor",
+      "roles": [
+        "legal",
+        "project"
+      ],
+      "use": "Official questions and complaint resources for assessing invention promotion services.",
+      "check": "Check written disclosures, fees, outcomes and complaints before a commitment; cross-reference the existing FTC warning.",
+      "access": "Public government guidance.",
+      "kind": "government",
+      "source": "USPTO",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.uspto.gov/patents/basics/using-legal-services/scam-prevention",
+      "verification_note": "Public government guidance.",
+      "search_terms": [
+        "larry",
+        "andy",
+        "checklist",
+        "inventor",
+        "product launch"
+      ],
+      "related": [
+        {
+          "title": "FTC invention-promotion enforcement background",
+          "url": "https://www.ftc.gov/enforcement/penalty-offenses/inventions"
+        }
+      ]
+    },
+    {
+      "id": "uia-inventors",
+      "title": "United Inventors Association — Education and inventor community",
+      "url": "https://uiausa.org/about/",
+      "group": "inventor",
+      "roles": [
+        "project",
+        "design",
+        "legal"
+      ],
+      "use": "A national nonprofit starting point for inventor education, community and commercialization resources.",
+      "check": "Check current groups, events and terms. Membership or a listing does not qualify a provider or prove commercial success.",
+      "access": "Publisher describes free membership and educational materials; follow current enrollment terms.",
+      "kind": "learning_resource",
+      "source": "United Inventors Association",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://uiausa.org/about/",
+      "verification_note": "Publisher describes free membership and educational materials; follow current enrollment terms.",
+      "search_terms": [
+        "andy",
+        "casey",
+        "larry",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "atlassian-launch-checklist",
+      "title": "Atlassian — Product launch checklist",
+      "url": "https://www.atlassian.com/agile/product-management/product-launch-checklist",
+      "group": "product-management",
+      "roles": [
+        "project",
+        "marketing",
+        "design"
+      ],
+      "use": "Launch preparation from market research and goals through customer feedback.",
+      "check": "Adapt to the product and sales channel; coordinate IP/disclosure decisions and product-specific testing before public claims.",
+      "access": "Public publisher guidance; product/app offers are separate.",
+      "kind": "learning_resource",
+      "source": "Atlassian",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.atlassian.com/agile/product-management/product-launch-checklist",
+      "verification_note": "Public publisher guidance; product/app offers are separate.",
+      "search_terms": [
+        "andy",
+        "maya",
+        "casey",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "product-school-launch",
+      "title": "Product School — Launch readiness checklists and template",
+      "url": "https://productschool.com/blog/product-marketing/product-launch-checklist-for-product-marketers",
+      "group": "product-management",
+      "roles": [
+        "project",
+        "marketing",
+        "design"
+      ],
+      "use": "Separate readiness checks for the product, operations, sales/support, launch and post-launch review.",
+      "check": "Adapt software-oriented items to physical products; retain actual evidence and decision owners. A filled checklist is not approval.",
+      "access": "Public commercial education article with editable-template links; actual downloaded file not examined.",
+      "kind": "learning_resource",
+      "source": "Product School",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://productschool.com/blog/product-marketing/product-launch-checklist-for-product-marketers",
+      "verification_note": "Public commercial education article with editable-template links; actual downloaded file not examined.",
+      "search_terms": [
+        "andy",
+        "maya",
+        "casey",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "cpsc-best-practices",
+      "title": "CPSC — Manufacturing best practices",
+      "url": "https://www.cpsc.gov/business--manufacturing/business-education/business-guidance/BestPractices",
+      "group": "product-management",
+      "roles": [
+        "engineering",
+        "prototype",
+        "manufacturing",
+        "project"
+      ],
+      "use": "Consumer-product safety planning covering hazards, design, suppliers, manufacturing, records and recalls.",
+      "check": "Start safety review during design, including foreseeable use and misuse. Match current rules to the actual product and market.",
+      "access": "Public U.S. government guidance; separate the overview from actual applicable rules and test evidence.",
+      "kind": "government",
+      "source": "CPSC",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.cpsc.gov/business--manufacturing/business-education/business-guidance/BestPractices",
+      "verification_note": "Public U.S. government guidance; separate the overview from actual applicable rules and test evidence.",
+      "search_terms": [
+        "ellis",
+        "peter",
+        "morgan",
+        "andy",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "cpsc-regulatory-robot",
+      "title": "CPSC — Regulatory Robot",
+      "url": "https://www.cpsc.gov/Business--Manufacturing/Regulatory-Robot/Safer-Products-Start-Here",
+      "group": "product-management",
+      "roles": [
+        "engineering",
+        "prototype",
+        "manufacturing"
+      ],
+      "use": "An official question-driven starting point for likely consumer-product safety requirements.",
+      "check": "Verify inputs, applicability and current rules; save the output and remaining questions. Do not treat the tool as certification.",
+      "access": "Public tool; business.cpsc.gov redirects here. Get permission before supplying private project information.",
+      "kind": "government",
+      "source": "CPSC",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.cpsc.gov/Business--Manufacturing/Regulatory-Robot/Safer-Products-Start-Here",
+      "verification_note": "Public tool; business.cpsc.gov redirects here. Get permission before supplying private project information.",
+      "search_terms": [
+        "ellis",
+        "peter",
+        "morgan",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "google-patents",
+      "title": "Google Patents — Patent and prior-art searching",
+      "url": "https://patents.google.com/",
+      "group": "inventor",
+      "roles": [
+        "legal",
+        "design"
+      ],
+      "use": "Search patent publications and related prior-art material across jurisdictions.",
+      "check": "Save queries, dated results and document IDs; verify legal status in official registers. A search is not a patentability or freedom-to-operate opinion.",
+      "access": "Public search tool; overview verified at Google Help, https://support.google.com/faqs/answer/6390996 .",
+      "kind": "learning_resource",
+      "source": "Google Patents",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://patents.google.com/",
+      "verification_note": "Public search tool; overview verified at Google Help, https://support.google.com/faqs/answer/6390996 .",
+      "search_terms": [
+        "larry",
+        "casey",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "epo-espacenet",
+      "title": "EPO — Espacenet patent search and guidance",
+      "url": "https://www.epo.org/en/searching-for-patents/technical/espacenet",
+      "group": "inventor",
+      "roles": [
+        "legal",
+        "design"
+      ],
+      "use": "Official EPO route to international patent publications, search guidance and translations.",
+      "check": "Document search scope and results; verify status in the relevant register. The EPO says Espacenet does not permit automated robot searches or bulk retrieval; use authorized OPS access for automation.",
+      "access": "Public official overview. Direct Espacenet app retrieval was unavailable; official EPO referral verified.",
+      "kind": "government",
+      "source": "EPO",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://www.epo.org/en/searching-for-patents/technical/espacenet",
+      "verification_note": "Public official overview. Direct Espacenet app retrieval was unavailable; official EPO referral verified.",
+      "search_terms": [
+        "larry",
+        "casey",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "wisconsin-sbdc",
+      "title": "Regional: Wisconsin SBDC — Business consulting and education",
+      "url": "https://wisconsinsbdc.org/",
+      "group": "business-planning",
+      "roles": [
+        "project",
+        "funding",
+        "marketing"
+      ],
+      "use": "Wisconsin business feasibility, planning, finance and education through a statewide university-based network.",
+      "check": "Use when Wisconsin is the relevant location; confirm center, eligibility, current service terms and course fees separately.",
+      "access": "Regional option; publisher describes no-cost consulting. Education may have separate terms.",
+      "kind": "learning_resource",
+      "source": "Regional: Wisconsin SBDC",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://wisconsinsbdc.org/",
+      "verification_note": "Regional option; publisher describes no-cost consulting. Education may have separate terms.",
+      "search_terms": [
+        "andy",
+        "frankie",
+        "maya",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "wedc-wisconsin",
+      "title": "Regional: WEDC — Wisconsin business development programs",
+      "url": "https://wedc.org/",
+      "group": "business-planning",
+      "roles": [
+        "project",
+        "funding",
+        "marketing"
+      ],
+      "use": "Wisconsin economic-development starting point for business programs and resources.",
+      "check": "Check the specific program, geography, eligibility, current availability and costs. Do not assume grant eligibility or free market-research access from the homepage.",
+      "access": "Regional agency resource; program terms vary.",
+      "kind": "learning_resource",
+      "source": "Regional: WEDC",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://wedc.org/",
+      "verification_note": "Regional agency resource; program terms vary.",
+      "search_terms": [
+        "andy",
+        "frankie",
+        "maya",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    },
+    {
+      "id": "wmep-wisconsin",
+      "title": "Regional: WMEP — Wisconsin Manufacturing Solutions",
+      "url": "https://wmep.org/",
+      "group": "business-planning",
+      "roles": [
+        "manufacturing",
+        "engineering",
+        "project"
+      ],
+      "use": "Wisconsin manufacturing improvement and consulting; a local complement to the existing national NIST MEP directory.",
+      "check": "Confirm geography, capabilities, scope, fees before inquiries or sharing designs. Funding announcements do not establish free client services.",
+      "access": "Regional consulting source; service fees and availability need direct confirmation.",
+      "kind": "learning_resource",
+      "source": "Regional: WMEP",
+      "checked_on": "2026-09-30",
+      "verification_url": "https://wmep.org/",
+      "verification_note": "Regional consulting source; service fees and availability need direct confirmation.",
+      "search_terms": [
+        "morgan",
+        "ellis",
+        "andy",
+        "checklist",
+        "inventor",
+        "product launch"
+      ]
+    }
+  ],
+  "reviews": [
+    [
+      "PLAN-01",
+      "Who has the problem, and what do they do today?",
+      "casey,maya",
+      "strategyzer-vpc,sba"
+    ],
+    [
+      "PLAN-02",
+      "What have we learned directly from prospective customers?",
+      "maya,casey",
+      "nsf-icorps,yc-startup-school"
+    ],
+    [
+      "PLAN-03",
+      "What assumptions are we testing next, and what result would change our decision?",
+      "andy,maya",
+      "strategyzer-test-card"
+    ],
+    [
+      "PLAN-04",
+      "Have we recorded contributors, ownership, prior work and disclosure questions?",
+      "larry",
+      "wipo-ip-checklist,patent-public-search"
+    ],
+    [
+      "PLAN-05",
+      "What must the first product do, and what is outside this version?",
+      "casey,ellis",
+      "atlassian-product-requirements,smartsheet-product-requirements"
+    ],
+    [
+      "PLAN-06",
+      "How will we prove each important requirement?",
+      "ellis,peter",
+      "test-planning-guide,sheet-prototype"
+    ],
+    [
+      "PLAN-07",
+      "What are the price, sales channel, unit costs and expected volume assumptions?",
+      "frankie,maya,morgan",
+      "strategyzer-bmc,sheet-economics"
+    ],
+    [
+      "PLAN-08",
+      "What startup spending, monthly costs and cash shortfall have we allowed for?",
+      "frankie",
+      "score-financial-projections,score-startup-budget"
+    ],
+    [
+      "PLAN-09",
+      "Who owns each next task, what does finished mean, and what must happen first?",
+      "andy",
+      "atlassian-project-plan,asana-project-charter"
+    ],
+    [
+      "PLAN-10",
+      "Which risks could stop the project, and who is reducing them?",
+      "andy,ellis,morgan",
+      "asana-risk-register,design-risk-guide"
+    ],
+    [
+      "PLAN-11",
+      "What evidence justifies go, revise, hold or stop at the next review?",
+      "andy",
+      "stagegate-discovery-launch,atlassian-decision"
+    ],
+    [
+      "PLAN-12",
+      "What did the last milestone teach us, and which records need revision?",
+      "andy,peter,morgan",
+      "atlassian-retrospective"
+    ]
+  ]
+}

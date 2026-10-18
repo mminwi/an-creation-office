@@ -1,0 +1,64 @@
+key,value,note
+type,buyer,"buyer, manufacturer, lender, investor, accountant, patent, licensee, insurance, attorney or partner"
+who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
+date,2026-10-28,YYYY-MM-DD
+record,../../funding/<invention>,"Folders with the sheets, relative to this meeting folder (AN-Creation/<business>/correspondence/<slug>/): the funding folder"
+record,../../<invention>/Office files,"and the invention's Office files (cost sheet, risk table, actions, schedule); one row each"
+goal,What the inventor wants out of the meeting,
+ask,What we ask them for,One row per ask
+walk_away,The line we will not cross in the room,principle-walk-away-number.txt
+leave_behind,What we hand over,
+q,A question they will likely ask,Its answer goes in the note
+parts,MT-001 MT-002,Manufacturer only: the part numbers this supplier quotes
+quote_due,2026-10-29,Manufacturer only
+first_order_qty,"5,000",Manufacturer only
+annual_qty,"50,000 a year",Manufacturer only
+tooling_owner,The inventor owns the tooling,Manufacturer only
+payment_terms_asked,,Manufacturer only
+nda,Signed mutual NDA before CAD is sent,Manufacturer only
+reply_to,,Manufacturer only
+drawing:MT-001,CAD rev and drawing,Manufacturer only: one row per part number
+quality,What inspection we expect,Manufacturer only; one row each
+packaging,How parts are packed and labeled,Manufacturer only
+loan_amount,,Lender only
+rate_pct,,Lender only; the lender's figure or marked illustrative
+term_months,,Lender only
+collateral,,Lender only
+personal_guarantee,,Lender only
+investor_type,friends and family,"Investor only: friends and family, angel, or crowdfunding"
+amount,,Investor only: the ask
+instrument_short,To be set,Investor only: a few words for page 1
+instrument,,"Investor only: what is offered, in plain words; set with an attorney"
+use:<what it pays for>,,"Investor only: one row per use, adding up to the amount"
+reaches,,Investor only: what this money gets to
+founder,,"Investor only: who is asking, in their own words"
+alternative,What people use now,Investor only: one row each; the note says where this one is different
+term,,Investor only: one row per term; the note is the detail
+exit,,"Investor only: how an investor could get money back, including if it fails"
+market,,"Investor only, optional: a market size, only with its source in the note"
+tax_year,2026,Accountant only: the year the packet covers
+question,A question for the accountant,Accountant only: one row each; the note says what the record shows
+budget,,"Patent and attorney: what the inventor will spend now, and on what"
+development_short,Prototype,Licensee only: a few words for the sell sheet
+development,,"Licensee and partner: how far along it is"
+picture_note,,Licensee only: what picture goes on the sell sheet
+contact,,Licensee only
+royalty_pct_example,,"Licensee only: an illustrative rate, with its source in the note"
+licensee_net_price_example,,Licensee only: illustrative
+licensee_units_example,,Licensee only: illustrative
+royalty_note,,Licensee only
+situation,,"Insurance and attorney: the business in a sentence"
+territory,United States,Insurance only: where it will be sold
+requirement,,Insurance only: one row per buyer requirement; the note names the buyer's terms
+sales_path,,Insurance only: how it reaches the user
+instructions,,"Insurance only: the instructions and warning labels, and their status"
+incidents,,"Insurance only: what the recall and incident search found, with the date"
+claims,None. New business.,Insurance only
+document,Name of the agreement or form,"Attorney only: one row each; for an attorney meeting, meeting.csv adds columns from, by and status"
+outside_money,,Attorney only: any outside money being discussed; the note says how much and on what terms
+sales,None yet,Partner only
+need,What the project needs,"Partner only: one row each; the note says why, from the record"
+brings,What they would bring,"Partner only: one row each, in their words"
+option,A way it could be set up,"Partner only: one row each, as a topic, not an offer"
+keeps,What stays the same until it is written,Partner only
+fit,A question to ask them,Partner only: one row each

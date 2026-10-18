@@ -1,4 +1,4 @@
-SOP: Risk analysis table. Revision 11 — October 18, 2026.
+Procedure: Risk analysis table. Revision 12 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention; b-analyst fills it. Template: https://ancreationoffice.com/template-risk-table.csv . May write: Office files/risk-table.csv and the matching action rows in Office files/actions.csv.
 Goes with the Residual risk principle (https://ancreationoffice.com/principle-residual-risk.txt). This note is how a risk table is built. It replaces the one-row-per-failure FMEA. The background on FMEA, control plans and the quality chain is https://ancreationoffice.com/design-risk.txt ; where they differ on how to build and score the table, this file wins.

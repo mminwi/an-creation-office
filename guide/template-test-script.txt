@@ -1,0 +1,41 @@
+AN Creation template: a test script for the Bot Tester. Revision 2 — October 18, 2026.
+Used by: https://ancreationoffice.com/tester.txt . Ready scripts for the AN Creation bots: https://ancreationoffice.com/tests/README.txt
+Copy this into /workspace/AN-Creation-Test/test-scripts/<name>.txt, or put it on a web page, and fill in each section. Keep it plain: the tester reads it top to bottom. Every fact the persona may say must be written here.
+
+NAME
+<a short name, used for the run folder: pm-first-run>
+
+BOT UNDER TEST
+<its name in Grok; a test copy, told: "This is a test bot. Use /workspace/AN-Creation-Test/ as your project folder, never /workspace/AN-Creation/.">
+
+BEFORE IT STARTS (preconditions)
+- <what must already be true: "Google Drive is connected for the bot under test", "/workspace/AN-Creation-Test/ is empty", "the pm-first-run test has been run first">
+
+START (the exact first message)
+<paste the message, word for word>
+
+PERSONA
+Who: <one or two lines: who the tester plays>
+Knows (only these facts):
+- <fact>
+- <fact>
+Doesn't know: <what the person can't answer, so the tester says "I'm not sure">
+How they talk: <short replies, a phone, not technical, a little impatient...>
+
+GOALS
+- <what the person is trying to get done in this run>
+
+SCRIPTED ANSWERS (optional)
+- When it asks <about what>, say: "<the answer>"
+- When it offers <an action>, say: "<the answer>"
+
+CHECKS (each one exact: what passes, what fails)
+C1 <the check>. Pass: <what the bot must say or do>. Fail: <what counts as failing>.
+C2 ...
+F1 (file check, after the run) <file> in /workspace/AN-Creation-Test/ exists and <holds what>.
+
+STOP
+- <when the run ends: "after it says what's next after the analyst", "after 40 turns", "when C3 fails">
+
+NOTES
+<anything else for the tester>

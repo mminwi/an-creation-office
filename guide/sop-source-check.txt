@@ -1,4 +1,4 @@
-SOP: The source check. Revision 2 — October 18, 2026.
+Procedure: The source check. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: both bots. b-analyst does the second-pass check and runs check-sources.py.
 May write: the source columns of any sheet that carries specs or rules (the compliance matrix, deadlines.csv, resource-map.csv, and any sheet that has the columns), and project procedures in procedures/ of the invention or Business folder.

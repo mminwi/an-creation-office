@@ -1,4 +1,4 @@
-SOP: Cost sheet. Revision 6 — October 18, 2026.
+Procedure: Cost sheet. Revision 7 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention. May write: Office files/cost-sheet.csv.
 Template: https://ancreationoffice.com/template-cost-sheet.csv

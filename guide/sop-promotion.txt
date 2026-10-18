@@ -1,4 +1,4 @@
-SOP: b-business-manager. Promotion and listings. Revision 2 — October 18, 2026.
+Procedure: b-business-manager. Promotion and listings. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: business-manager.txt, sop-presence.txt (the brand kit is the only source of wording)
 Read this when they want to get the word out: posts, replies, groups, press, directories, a launch. Then leave it.

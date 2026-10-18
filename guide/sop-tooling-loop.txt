@@ -1,4 +1,4 @@
-SOP: The tooling loop. Revision 1 — October 7, 2026.
+Procedure: The tooling loop. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Starts from: design freeze at the end of the prototype loop (sop-prototype-loop.txt, sop-stages S2).
 Goes with: sop-stages.txt (S3), the compliance matrix, sop-review-page.txt

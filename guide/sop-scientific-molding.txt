@@ -1,4 +1,4 @@
-SOP: Scientific molding: setting a robust process (b-scientific-molding). Revision 7 — October 12, 2026. Cavity balance, process sheet, gate seal step-down, speed limits and DOE added from Mike's notes.
+Procedure: Scientific molding: setting a robust process (b-scientific-molding). Revision 8 — October 18, 2026. Cavity balance, process sheet, gate seal step-down, speed limits and DOE added from Mike's notes.
 Index: https://ancreationoffice.com/sop.txt
 Source: Mike's practice (Mike's notes, kept private), with the published methods as background (specialists/research/261012-scientific-molding-search.md). Lines marked "Mike" are his practice; "published" lines cite their source; "office" lines are the office's. Tier: deep.
 Read this when a new mold is being sampled or qualified, a process drifts or makes scrap, parts crack or warp, a mold moves to another press, or someone wants to buy process monitoring. Calculations: https://github.com/mminwi/an-creation-office/blob/main/specialists/calcs/scientific_molding.py. Related: sop-cooling-water.txt (cooling, hot spots), sop-drying.txt (wet resin makes every study wrong).

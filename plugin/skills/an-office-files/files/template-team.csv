@@ -1,0 +1,4 @@
+name,covers,bot_id,business,runs,reports_to,platform,owner,notes
+,b-project-manager,b-project-manager,Default-org,all,,Grok,,Project Manager Bot. The owner names the bot. One bot can run every invention; a second one runs only the inventions listed in runs. Weekday routine: revisit folder and actions.csv. No routine for the version check.
+,b-business-manager,b-business-manager,Default-org,,,Grok,,Office Manager Bot for this business. One per business. Owns the company, patent preparation, name and trademark, licensing, funding, the website, search, and listings. Does not own posts or audience.
+,b-analyst,b-analyst,,,,Grok,,Helper either bot runs for heavy work: the grok command in that bot's Shell. Not an office and not a second bot.

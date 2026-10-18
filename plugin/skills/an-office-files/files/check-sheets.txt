@@ -1,0 +1,582 @@
+Product development check sheets — Revision 1 — 2026-09-30
+https://ancreationoffice.com/check-sheets.html
+
+Original AN Creation working templates, informed by the linked primary sources. They are not official agency forms, a universal standard, or proof of approval. U.S. starting points; confirm product, jurisdiction, market and recipient before applying requirements.
+
+WORK INSTRUCTIONS
+1. b-project-manager tracks the project. It takes one role at a time and coordinates the work, dependencies, review decisions and next actions. The role for a sheet is named on that sheet. A Grok Build session keeps the evidence for that subject. Do not create another named bot.
+2. Listen to the idea first. Select the sheet for the next decision and ask one or two useful questions at a time. Reuse answers already in project records; do not make a new inventor complete the whole library.
+3. For each applicable item record the answer, the explanation, status (unknown, estimate, evidence recorded, reviewed, or not applicable with reason), evidence file and revision or source URL/date, owner, next action and reviewer. The answer is the short form field. The explanation keeps how it was reached and the inventor's words, for the next sheet to read. Do not recite the explanation back unless the person asks. A filled box is not evidence that a test, search, filing or approval occurred. Before asking the inventor, follow https://ancreationoffice.com/sop-checklists.txt so known answers are carried forward.
+4. Save a dated project copy in the sheet’s subject folder, following the existing project layout and revision rules. Preserve earlier issued revisions. Give b-project-manager a short update with the exact file/revision, unresolved decisions and agreed next step; b-project-manager updates the master plan.
+5. Check current official sources and actual recipient requirements when used. Record what you actually read, dates and limitations. If a source is inaccessible, report that and leave the dependent requirement unverified. These references do not grant permission to copy paid standards.
+6. Use go, revise, hold or stop at a project review, with the person’s decision, evidence and remaining conditions. A project decision is separate from regulatory clearance, retailer acceptance, legal review or test validation. Do not send, apply, file, buy or publish without the person’s authorization.
+
+RECORD FIELDS
+Project; Product revision; Sheet revision; Prepared by; Date; Target market / jurisdiction; Decision being prepared; Item ID; Answer / assumption; Explanation; Status; Evidence / exact revision / URL and date; Owner; Next action; Reviewer / review date; Not-applicable reason
+
+Editable worksheet: https://ancreationoffice.com/check-sheets.csv
+
+PROJECT | New product development: the project review
+Role: project
+When: Start after hearing the idea; revisit before major spending, tooling, funding or launch.
+Output: A concise project brief, assumptions, milestone plan and recorded review decision.
+Save: product/concept/; links and agreed work in root plan.md
+
+
+PROJECT-01 Who will use it, who pays, and what problem is worth solving?
+Evidence to record: Name the user, buyer, task, alternatives and evidence from actual conversations. Separate founder beliefs from observations.
+
+PROJECT-02 What are we making, and what is outside the first version?
+Evidence to record: Concept revision, intended use, must-have outcomes, exclusions and measurable success criteria where known.
+
+PROJECT-03 How many might we sell, at what price, through which channel and by when?
+Evidence to record: Low/base/high units by month or quarter, geography and channel. Show prospects × purchase rate × units or stores × units per store per week × weeks. Record assumptions and capacity limits; market size is not a sales forecast.
+
+PROJECT-04 What evidence says someone will buy it?
+Evidence to record: Dated interviews, observed problems, price tests, pilots, orders or other evidence. Distinguish interest, nonbinding intent, paid orders and repeat sales.
+
+PROJECT-05 What must be learned before the next investment?
+Evidence to record: Open customer, IP, safety, technical, cost and channel risks; one next experiment, owner, finish condition and capped budget.
+
+PROJECT-06 What are the milestones and dependencies?
+Evidence to record: Concept review → feasibility and economics → prototype/user evidence → production readiness → launch → post-launch review. Tailor the sequence; do not imply every gate is already passed.
+
+PROJECT-07 Who owns each result and decision?
+Evidence to record: Named responsible people/assistants, exact inputs and revisions, agreed review participants and dates only when agreed.
+
+PROJECT-08 Should we go, revise, hold or stop?
+Evidence to record: Evidence reviewed, decision author/date, unresolved conditions, authorized next work and links to the exact released files. Revisit downstream sheets when an input changes.
+
+Sources: nist-development, sba
+
+ECONOMICS | Sales, price and the money left per unit
+Role: funding
+When: Before choosing a price, requesting production quotes or committing to a sales channel.
+Output: A channel-by-channel low/base/high unit-economics model and cash forecast.
+Save: business/finance/
+The 25% rule is a starting target, not a universal law: a factory cost of $0.25 against $1.00 retail leaves room for other parties and expenses, but does not establish your profit. Validate the actual channel economics.
+Illustrative assumptions only: retail $1.00; retailer buys at $0.50. Retailer gross margin is 50%, while markup on its cost is 100%. You receive $0.50. Factory cost $0.25 plus inbound freight/duty/packaging $0.05 gives $0.30 landed cost. Your gross profit before other selling costs is $0.20 (40% of your revenue). Another $0.10 of variable selling/returns costs leaves $0.10 contribution before fixed overhead, financing and tax. If a distributor buys from you at $0.40 instead, the same costs leave zero contribution. All numbers are examples, not quoted terms.
+At $0.10 contribution, $10,000 of period fixed costs takes 100,000 sold units to break even under those assumptions. Show tooling recovery separately if it is not included. A tiny selling price is illustrative; minimum fees and fixed handling costs can dominate actual low-price products.
+
+ECONOMICS-01 What will the customer pay, and what will we actually receive?
+Evidence to record: Retail price excluding sales tax, discounts and refunds, and wholesale sell-in price. For marketplaces distinguish sales revenue from cash payouts after withheld fees; deduct those fees only once. Model direct, marketplace, retailer, distributor and licensing routes separately.
+
+ECONOMICS-02 How many will we sell over a stated period?
+Evidence to record: Units by channel and timing, evidence, confidence and sensitivity. Reconcile production orders, inventory and returns with sell-through; unsold stock is not revenue.
+
+ECONOMICS-03 What does one acceptable unit cost at each realistic quantity?
+Evidence to record: Dated quote versus estimate; materials, bought parts, assembly, packaging, inspection, scrap and yield. Keep one-time tooling separate; show any amortization assumption.
+
+ECONOMICS-04 What does it cost to get that unit ready to sell?
+Evidence to record: Inbound freight, duty/tariff where applicable, broker fees and receiving. Define landed cost and included items consistently; record currency, trade terms and quote date.
+
+ECONOMICS-05 What other costs happen when we sell one?
+Evidence to record: Channel fees, fulfillment/storage, outbound freight, sales commissions, promotion/advertising, payment fees, returns, warranty and chargebacks where applicable. Mark items already included to avoid double counting.
+
+ECONOMICS-06 What margin and contribution remain?
+Evidence to record: Gross margin = (our net sales − consistently defined cost of goods sold) / our net sales. Contribution = our net sales − all variable costs. Markup = (selling price − cost) / cost. Name whose margin each number describes.
+
+ECONOMICS-07 How many units cover fixed costs, and when does cash run short?
+Evidence to record: List period fixed costs such as rent, salaried/admin costs, insurance and fixed advertising/storage; split mixed costs into fixed and variable parts. Break-even units = period fixed costs / positive contribution per unit, rounded up; no finite break-even if contribution is zero or negative. Combined products/channels need an assumed sales mix. Track deposits, tooling, inventory, payment delays, taxes, debt service and reserve separately from accounting profit.
+
+ECONOMICS-08 Which assumptions could make this unattractive?
+Evidence to record: Test lower realized price/volume, higher freight/returns/advertising and slower collections. Record minimum acceptable contribution, peak cash need and the next quote or customer test.
+
+Sources: sba, amazon-pricing
+
+ERGONOMICS | People, use and ergonomic design
+Role: design
+When: While comparing concepts and again with representative prototypes.
+Output: Use scenarios, measurable user needs, observed trials and a design-change list.
+Save: product/concept/
+NIOSH workplace and hand-tool guidance supplies screening questions. Adapt it to the intended users and task; hand-tool dimensions are not universal product limits.
+
+ERGONOMICS-01 Who uses it, and who may struggle with it?
+Evidence to record: Actual intended ages, abilities, hand/body sizes, left/right-handed use, strength, gloves and assistive needs. Do not design only for the founder or an average body.
+
+ERGONOMICS-02 Where and how will people use, carry and store it?
+Evidence to record: Lighting, wet/dirty use, temperature, clothing, workspace, reach, frequency, duration and one- versus two-handed tasks.
+
+ERGONOMICS-03 Can they grip, lift, reach and operate it comfortably?
+Evidence to record: Observe posture, reach, grip span, contact pressure, weight, balance, repetition and required force. Measure relevant dimensions and effort; do not invent a universal comfortable force.
+
+ERGONOMICS-04 Can a first-time user understand controls and feedback?
+Evidence to record: Setup, labels, visibility, tactile cues, mistakes, recovery and instructions; accessibility needs and actual observed misunderstandings.
+
+ERGONOMICS-05 What foreseeable misuse or contact could hurt someone?
+Evidence to record: Pinch, cut, burn, tip, choke, electrical and other applicable hazards, including children/bystanders. Feed design changes and safety requirements to the engineering role.
+
+ERGONOMICS-06 Can it be cleaned, maintained and put away?
+Evidence to record: Contact materials, residues, cleaning agents, disassembly, consumables, storage, service and disposal scenarios.
+
+ERGONOMICS-07 What did representative users actually do?
+Evidence to record: Prototype revision, participants and relevant characteristics, tasks, consent, observations, errors, discomfort, completion measures and limits. Small trials are learning evidence, not population-wide proof.
+
+ERGONOMICS-08 Which design changes are required before the next prototype?
+Evidence to record: Trace each requirement/change to an observation or stated need, owner and retest. Keep aesthetics, usability and engineering feasibility linked.
+
+Sources: niosh-tools, cpsc-small-business, niosh-hand-tools
+
+IP | What to protect, and why
+Role: legal
+When: Before public disclosure, a supplier disclosure, investor sharing or a protection decision.
+Output: An invention disclosure, dated disclosure history and focused professional-review brief.
+Save: company/intellectual-property/
+
+
+IP-01 What business outcome do you want from protection?
+Evidence to record: Exclude copying of a useful mechanism, protect appearance/brand, license, sell rights, attract investment, keep know-how secret or deliberately publish. Record markets, time horizon and budget.
+
+IP-02 Exactly what do you believe is new?
+Evidence to record: Explain the technical problem, mechanism/process, alternatives, differences, drawings and versions. Identify what may be functional, ornamental, or branding; do not turn a vague idea into a patentability conclusion.
+
+IP-03 What related products and publications are known?
+Evidence to record: Dated searches, terms, jurisdictions/classes, relevant documents/claims and unanswered questions. An initial search is not proof of novelty or completeness.
+
+IP-04 Who contributed, owns rights or has contractual interests?
+Evidence to record: Contributors and what they contributed; employment, assignments, contractor terms, university/sponsor interests and agreements. Inventorship, patent ownership, company shares and project access are different.
+
+IP-05 What has already been disclosed or offered for sale?
+Evidence to record: Exact dates, material/revision, audience, public demos, crowdfunding, online posts, offers and sales. Have relevant filing options assessed before further disclosure; do not assume a worldwide grace period.
+
+IP-06 Which protection route fits the objective?
+Evidence to record: Utility patent versus design patent, trademark or trade secret as applicable; costs, territories, timing, discoverability/reverse engineering and practical secrecy measures. A provisional is not an issued patent and does not cover design inventions.
+
+IP-07 Could making or selling it infringe someone else’s rights?
+Evidence to record: Separate patentability research from freedom-to-operate review of relevant claims, territory, product and dates. A patent grants an exclusion right, not permission to manufacture or sell.
+
+IP-08 What is the decision, and what needs professional review?
+Evidence to record: Exact questions, proposed protection/licensing approach, ownership gaps, disclosure urgency and dated decision. Record actual applications/receipts only if they exist; a draft or checklist is not a filing.
+
+Sources: uspto-patent-overview, uspto-provisional, uspto-trade-secrets, trademark-basics, uspto-design
+
+DFM | Design for manufacture and assembly
+Role: engineering
+When: Before prototype quotes, tooling release and any production design change.
+Output: A reviewed DFM/DFA record, requirements and matched manufacturing package.
+Save: product/engineering/; requirements in product/requirements/
+
+
+DFM-01 What performance and safety requirements drive the design?
+Evidence to record: Intended use, loads, life, environment, interfaces, applicable market rules and acceptance criteria with sources.
+
+DFM-02 Does the process fit material, geometry and volume?
+Evidence to record: Compare machining, molding, casting, sheet metal, additive or other processes against quantity, finish, lead time, tooling and total cost; identify process-specific risks.
+
+DFM-03 Are features realistic for the chosen process?
+Evidence to record: For molding: walls, draft, ribs/bosses, undercuts, shrinkage and ejection. For machining: tool access, deep pockets and corner radii. For sheet metal: bends, radii and hole spacing. Obtain the actual supplier’s limits; no universal wall/draft number.
+
+DFM-04 Are tolerances functional and inspectable?
+Evidence to record: Critical dimensions, datums, fits, tolerance stack-ups, finishes and inspection methods. Avoid needless tight tolerances; specify those required for function or safety.
+
+DFM-05 Can the parts be assembled consistently?
+Evidence to record: Reduce unnecessary parts/fasteners, use standard components, access tools, orient and locate parts, prevent wrong assembly, protect wires/seals and test service/disassembly.
+
+DFM-06 Can material or supplier substitutions change performance?
+Evidence to record: Material/grade, flame/contact/corrosion requirements, finishes, standard hardware and qualified equivalents. Preserve designer catalog references separately from purchasing sources.
+
+DFM-07 Are the files complete and at one revision?
+Evidence to record: Bill of materials, STEP solid and dimensioned drawings where applicable, materials/finishes, critical characteristics, assembly notes, quantity breaks and inspection/acceptance requirements. A render is not a release package.
+
+DFM-08 What did the manufacturer flag, and who accepted changes?
+Evidence to record: Dated supplier DFM feedback, disposition, affected requirements, cost/tooling impact, owner and verification/retest. Obtain review before releasing revised work.
+
+Sources: protolabs-dfm, nist-development, cpsc-small-business, protolabs-walls
+
+PROTOTYPE | What the prototype needs to prove
+Role: prototype
+When: Before each prototype build and before reporting a result.
+Output: A test plan, build record and evidence-based test report.
+Save: product/prototypes/ and product/testing/
+
+
+PROTOTYPE-01 Which question is this prototype answering?
+Evidence to record: Appearance, usability, fit, mechanism, strength, life, process or customer acceptance; list what it cannot demonstrate.
+
+PROTOTYPE-02 What is the exact configuration?
+Evidence to record: Model/drawing/BOM revision, materials, deviations from production, build method and sample identifiers.
+
+PROTOTYPE-03 How will we judge success before testing?
+Evidence to record: Requirement ID, method, numerical/observable acceptance criterion, environment, equipment, calibration where needed and planned sample size rationale.
+
+PROTOTYPE-04 Is the test safe and representative?
+Evidence to record: Foreseeable hazards, setup limits, operator competence, exposure safeguards, realistic users/conditions and specialist or lab involvement where needed.
+
+PROTOTYPE-05 What happened, including failures?
+Evidence to record: Raw measurements, units, photos, observations, anomalies and deviation from method. Separate measured from simulated and predicted performance.
+
+PROTOTYPE-06 What can we conclude, and what remains unproven?
+Evidence to record: Verification: meets specified requirements. Validation: serves intended users/use. State sample and prototype limits, owner of failures, required changes and retest before a release claim.
+
+Sources: nasa-verification, cpsc-small-business, nasa-validation
+
+BEGIN TEST PLANNING
+Start the test plan while requirements are forming, before committing to a build. Use https://ancreationoffice.com/test-planning.html for the layout, prototype selection and electrical/RF, drop and submersion guidance. Download the plan, matrix and report templates there.
+END TEST PLANNING
+
+PRODUCTION | Suppliers and production readiness
+Role: manufacturing
+When: Before comparing quotes, placing production orders or scaling.
+Output: Comparable quotes, supplier evaluation and a production-readiness review.
+Save: business/suppliers/ and product/manufacturing/
+
+
+PRODUCTION-01 Are all suppliers quoting the same thing?
+Evidence to record: Exact revision/material/finish/quantities, inspection, packaging and acceptance requirements; assumptions and exclusions alongside each quote.
+
+PRODUCTION-02 Can the supplier actually make and inspect it?
+Evidence to record: Relevant capabilities, process limits, capacity, sample evidence, quality system scope, references, subcontractors and production location. Directory membership alone is not qualification.
+
+PRODUCTION-03 What are the real costs and commitments?
+Evidence to record: Unit prices at realistic volumes, tooling/NRE, MOQ, lead times, payment/deposit terms, currency, freight/trade terms, duties, scrap, quote expiry and cancellation/change terms.
+
+PRODUCTION-04 Who owns tooling, data and changes?
+Evidence to record: Tool ownership, custody, maintenance and transfer access; drawings and IP, approved substitutions and who can authorize changes.
+
+PRODUCTION-05 How will we accept incoming parts and production output?
+Evidence to record: First-article/pilot evidence, critical characteristics, sampling rationale, measurement methods, traceability, nonconformance/rework and corrective actions.
+
+PRODUCTION-06 Can we deliver and recover from interruption?
+Evidence to record: Pilot quantity, ramp/capacity plan, long-lead parts, approved alternate sources, packaging/shipping trials, inventory and reorder points.
+
+PRODUCTION-07 What must be in place after sale?
+Evidence to record: Warranty, spare parts, service, complaints, traceability and recall/incident process appropriate to product/market.
+
+PRODUCTION-08 Is the first production order ready?
+Evidence to record: Close or explicitly disposition DFM/test gaps, confirm current file package and cash need with the funding role. Record the person’s release decision; never infer authorization to place an order.
+
+Sources: nist-supplier, cpsc-small-business
+
+FUNDING | Prepare for funding and finance conversations
+Role: funding
+When: When a defined milestone needs outside money; tailor to the actual lender, investor or program.
+Output: A dated funding brief with linked evidence, financial model and recipient-specific document list.
+Save: business/funding/; supporting numbers in business/finance/
+SBA does not provide general grants to start or expand an ordinary business. A research program or other grant requires a currently open, eligible solicitation.
+Friends-and-family funding is not automatically exempt from securities rules. The legal role helps identify the legal route before an investment offer is shared.
+
+FUNDING-01 How much money is needed, for what milestone and by when?
+Evidence to record: Use-of-funds line items, founder contribution, quotes/estimates, runway, contingency and measurable milestone. Separate startup spending, inventory and operating costs.
+
+FUNDING-02 Which funding route fits the business?
+Evidence to record: Self-funding/revenue, loan, equity, eligible grant, licensing or rewards crowdfunding. Compare repayment, dilution/control, eligibility, restrictions, timing and ability to deliver.
+
+FUNDING-03 What evidence supports the commercial story?
+Evidence to record: Problem, customer, product/demo, alternatives/competition, market assumptions, business model, channel economics, traction and team/gaps. Do not count interest as sales.
+
+FUNDING-04 Are the financials coherent?
+Evidence to record: Actual financial statements if available; forecast income, balance sheet and monthly cash flow; unit economics, break-even, low/base/high scenarios, working capital and debt service where relevant. Clearly label pre-revenue estimates.
+
+FUNDING-05 What will a lender need?
+Evidence to record: Recipient’s current checklist: business plan, purpose/amount, historical tax/financial records where applicable, forecasts, repayment source, ownership, relevant collateral/guarantee questions and contracts. Request sensitive records securely, not in public materials.
+
+FUNDING-06 What will an investor need?
+Evidence to record: Investor fit by stage/sector; concise pitch, funding ask and milestone, market/traction evidence, cap table, team, entity/IP ownership records, contracts and financial model. Explain how investors might receive a return; review dilution and control with advisers. Organize controlled diligence access and unresolved issues.
+
+FUNDING-07 What will a grant or crowdfunding route need?
+Evidence to record: For a grant: current open solicitation, fit, eligibility, registrations, work plan, deliverables, budget/allowable costs and deadlines. For rewards: prototype, production/fulfillment budget, delivery assumptions and rewards. Securities crowdfunding is a different regulated route.
+
+FUNDING-08 Is this ready to share with this recipient?
+Evidence to record: Current requested format/documents, consistent numbers and revisions, public-disclosure implications, unanswered questions, proposed next step and human authorization. No guarantee of funding or invented valuation/terms.
+
+Sources: sba, sba-lender, sec-ready, grants-search, kickstarter-handbook, sec-early-investors, sba-grants, sequoia-plan
+
+LAUNCH | Customer evidence, marketing and launch
+Role: marketing
+When: While testing demand and before a campaign or launch commitment.
+Output: A channel-specific launch plan, evidence-backed messaging and readiness decision.
+Save: business/marketing/
+
+
+LAUNCH-01 Who is the first customer and why will they switch?
+Evidence to record: Narrow segment, use case, alternatives, differentiated benefit and evidence from interviews/tests.
+
+LAUNCH-02 Which offer and price have we tested?
+Evidence to record: Actual experiment, audience, price, offer, budget, duration and success measure. Separate paid conversion and repeat use from views/likes or expressions of interest.
+
+LAUNCH-03 What claims can we support?
+Evidence to record: Claim-to-evidence list, demonstrations, endorsements/disclosures, product photos and instructions; the legal role reviews disclosure/IP concerns before publishing.
+
+LAUNCH-04 Which channel fits customer and economics?
+Evidence to record: Direct web sales, marketplace, retail wholesale, distributors, licensing or combinations; buyer behavior, net receipts, acquisition cost, fulfillment and cash implications.
+
+LAUNCH-05 Are launch materials and operations ready?
+Evidence to record: Product identifiers, packaging/dimensions, listing/sell sheet, images, substantiated copy, instructions, support, inventory, shipping/returns and applicable safety documentation.
+
+LAUNCH-06 What does a small launch have to prove?
+Evidence to record: Pilot quantity/budget, target conversion, contribution, returns, reviews/complaints, stock availability, stop/adjust criteria and a scheduled review owner.
+
+LAUNCH-07 Who does what after launch?
+Evidence to record: Customer support, returns/warranty, replenishment, marketing measurement, complaint escalation and decision to scale. Date the plan; confirm permissions before publishing.
+
+Sources: ftc-advertising, sba, gs1-barcodes
+
+RETAIL | Amazon, Walmart and Lowe’s: getting ready for buyers
+Role: marketing
+When: After choosing a realistic channel and before applying, pitching or accepting terms.
+Output: A buyer-ready sell sheet, channel economics and route-specific application checklist.
+Save: business/marketing/; costs in business/finance/
+
+
+RETAIL-01 Which route are we seeking?
+Evidence to record: Record marketplace seller, retailer wholesale supplier, private-brand supplier or distributor route. Marketplace approval does not mean store placement, and an application is not a purchase order.
+
+RETAIL-02 Does the product fit this retailer’s customers and assortment?
+Evidence to record: Comparable listings/shelf alternatives, differentiation, target retail price, evidence of demand, packaging and current assortment gap hypothesis.
+
+RETAIL-03 Can we give a buyer a concise commercial packet?
+Evidence to record: Sell sheet with use/benefit, photos/demo, dimensions, identifiers, target retail and wholesale prices, retailer margin assumption, MOQ/case pack, lead time, capacity, origin, test/compliance evidence and contact. Samples must match the stated revision.
+
+RETAIL-04 Will each sale and payment schedule work for us?
+Evidence to record: Get actual category fees, freight, fulfillment, allowances/promotions, broker commission, returns, damage, deductions/chargebacks, payment terms and inventory commitments. Model cash needed before payment; do not treat typical margins as an offer.
+
+RETAIL-05 Can we meet operations and compliance requirements?
+Evidence to record: Verify current insurance, product safety/testing/labeling, GTIN/UPC or exemptions, package/case data, EDI/ASN if required, fulfillment/service metrics, returns and recall readiness with the retailer. These are categories to confirm, not universal terms.
+
+RETAIL-06 Would a representative or distributor help?
+Evidence to record: A sales rep/broker typically helps sell for a fee or commission; a distributor may buy/resell and handle inventory. Verify category/account relationships and references. Negotiate territory, exclusivity, services, compensation trigger, expenses, stock/title risk, termination and conflicts. A claimed connection is not guaranteed shelf space.
+
+RETAIL-07 What is the smallest credible entry?
+Evidence to record: Direct application, limited online/pilot assortment, regional opportunity, appropriate supplier event or an established channel partner. Start with the retailer’s official route; a solo founder can apply but still must meet capability and qualification requirements.
+
+RETAIL-08 What is still required before submission or commitment?
+Evidence to record: Save current portal requirements/date, application status, buyer feedback, open terms and exact package revision. The person authorizes submissions and agreements. Never imply that a submitted profile, listing or verbal interest equals acceptance.
+
+Amazon: third-party selling
+Start with Seller Central registration, separate from wholesale Vendor Central. Prepare identity/business and bank verification, category/product approvals, identifiers or an allowed exemption, brand rights and listing materials. Choose merchant fulfillment or FBA using the actual packaged size/weight and current fee calculator. Recheck selling-plan, referral, fulfillment, storage and returns costs; Brand Registry is a separate eligible-brand program.
+Sources: https://sell.amazon.com/sell/registration-guide; https://sell.amazon.com/pricing
+
+Walmart: marketplace or retail supplier
+Marketplace is third-party online selling. Published qualifications include business verification (SSN is not accepted as the business identifier), prior eCommerce success, suitable identifiers/catalog and WFS or U.S. warehouse fulfillment with returns capability. Confirm current exceptions and new-seller payment holds. Store/wholesale supply uses the separate supplier application, requirements and official checklist. Open Call is another possible route for eligible U.S.-made, grown or assembled products when an application window is open. None guarantees shelf space.
+Sources: https://marketplace.walmart.com/about-walmart-marketplace/; https://marketplace.walmart.com/seller-registration-guide/; https://corporate.walmart.com/suppliers/apply-to-be-a-supplier; https://corporate.walmart.com/content/dam/corporate/documents/suppliers/apply-to-be-a-supplier/supplier-checklist.pdf; https://corporate.walmart.com/suppliers
+
+Lowe’s: branded, private-brand or marketplace
+The official supplier page directs branded retail proposals to RangeMe and private-brand sourcing to PROVIS. Lowe’s Marketplace is a separate curated third-party route; check home-improvement category fit, U.S. inventory/shipping and product-data requirements. Obtain actual commissions, payment/return terms and service rules during onboarding. Some vendor-only or forthcoming documents were unavailable in this public review; leave those terms unverified.
+Sources: https://www.lowes.com/l/about/suppliers; https://www.lowes.com/l/about/lowes-marketplace; https://seller.lowes.com/mirakl-seller-documentation/
+
+Sources: amazon-registration, amazon-pricing, walmart-suppliers, walmart-marketplace, lowes-suppliers, lowes-marketplace, gs1-barcodes, walmart-requirements, walmart-checklist, walmart-registration, walmart-open-call, lowes-seller-docs, trade-representatives
+
+SOURCE REGISTER — check current information and applicability at use. Public-source review only; private contracts and vendor portals were not inspected.
+
+nist-development | NIST MEP — Product design and development
+https://www.nist.gov/mep/product-design-and-development
+Checked: 2026-09-30
+Use: Find help with market validation, prototypes, materials, durability and commercialization.
+Limits: AN Creation’s project checkpoints are an original synthesis; NIST does not prescribe these forms.
+
+niosh-tools | NIOSH — Ergonomic risk factors and checklists
+https://www.cdc.gov/niosh/ergonomics/ergo-programs/risk-factors.html
+Checked: 2026-09-30
+Use: Screen posture, force, repetition, handling and task conditions when preparing a user trial.
+Limits: Workplace guidance must be adapted to the task and intended users; it is not universal consumer-product clearance.
+
+niosh-hand-tools | NIOSH — Non-powered hand-tool selection guide
+https://stacks.cdc.gov/view/cdc/5249
+Checked: 2026-09-30
+Use: Practical hand-tool ergonomics background for grip and task evaluation.
+Limits: Scope is non-powered hand tools; do not transfer its dimensions to every product.
+
+protolabs-dfm | Protolabs — Process-specific design tips
+https://www.protolabs.com/resources/design-tips/
+Checked: 2026-09-30
+Use: Start process-specific DFM research for machining, molding and other manufacturing methods.
+Limits: Supplier guidance depends on geometry, material and process. Confirm the selected manufacturer’s capabilities; automated DFM is not full design approval.
+
+protolabs-walls | Protolabs — Uniform wall thickness in molded parts
+https://www.protolabs.com/resources/design-tips/improving-part-design-with-uniform-wall-thickness/
+Checked: 2026-09-30
+Use: Investigate molded-part walls, sink, warpage and geometry tradeoffs.
+Limits: Numerical examples are supplier/process guidance, not a universal specification.
+
+nasa-verification | NASA — Requirements verification matrix
+https://www.nasa.gov/reference/appendix-d-requirements-verification-matrix/
+Checked: 2026-09-30
+Use: A useful model for linking each requirement to a source and verification method.
+Limits: Adapt the evidence discipline to project scale; NASA procedures are not mandatory consumer-product certification.
+
+nasa-validation | NASA — Product realization, verification and validation
+https://www.nasa.gov/reference/5-0-product-realization/
+Checked: 2026-09-30
+Use: Understand checking specified requirements versus intended use.
+Limits: Record actual configuration, method, evidence and limits; a single prototype does not establish production consistency.
+
+nist-supplier | NIST MEP — Supplier scouting inquiry fields
+https://meis.nist.gov/SupplierScouting/Submit
+Checked: 2026-09-30
+Use: Examples of technical and commercial information needed to identify manufacturing capability.
+Limits: The public form displayed an expired OMB date during this review. Use fields as preparation; confirm the current submission route with a local MEP center before submitting.
+
+uspto-patent-overview | USPTO — Patent rights, ownership and infringement
+https://www.uspto.gov/patents/basics/manage
+Checked: 2026-09-30
+Use: Understand exclusion rights, ownership and the separate infringement question.
+Limits: Having a patent is not affirmative permission to make or sell a product. Seek a product/territory-specific analysis when freedom to operate matters.
+
+uspto-design | USPTO — Design patents
+https://www.uspto.gov/patents/basics/apply/design-patent
+Checked: 2026-09-30
+Use: Compare ornamental-design protection with utility protection for function.
+Limits: Identify the actual subject matter and jurisdiction; do not infer patentability from a checklist.
+
+uspto-provisional | USPTO — Provisional patent applications
+https://www.uspto.gov/patents/basics/apply/provisional-application
+Checked: 2026-09-30
+Use: Prepare disclosure and filing-timing questions for a patent practitioner.
+Limits: A provisional is not an issued patent, is not available for design inventions and normally needs a timely follow-on. Do not assume U.S. disclosure rules protect options abroad.
+
+uspto-trade-secrets | USPTO — Trade secret toolkit
+https://www.uspto.gov/sites/default/files/documents/tradesecretsiptoolkit.pdf
+Checked: 2026-09-30
+Use: Consider secrecy, reasonable protection measures and business objectives.
+Limits: Account for independent development and lawful reverse engineering; simply calling information secret is insufficient.
+
+sba-lender | SBA — Lender Match preparation
+https://www.sba.gov/loans/lender-match/
+Checked: 2026-09-30
+Use: Prepare a plan, funding purpose and evidence for a lender conversation.
+Limits: A match is neither an application nor loan approval. Get the actual lender’s current document and repayment requirements.
+
+sec-ready | SEC — Ready to raise capital
+https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/ready-raise-capital
+Checked: 2026-09-30
+Use: Assess financial, ownership, team and investor-readiness questions.
+Limits: Preparing a pitch is different from offering securities; establish the relevant legal route before solicitation.
+
+sec-early-investors | SEC — Early-stage investors
+https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/early-stage-investors
+Checked: 2026-09-30
+Use: Understand early investor types and capital-raising considerations.
+Limits: Calling a round friends and family does not itself establish a securities-law exemption.
+
+sba-grants | SBA — Grants and limited funding opportunities
+https://www.sba.gov/loans/additional-funding-opportunities/grants/
+Checked: 2026-09-30
+Use: Find the scope of SBA-related grant assistance and research-program starting points.
+Limits: SBA does not provide general grants to start or expand an ordinary business. Verify a current open solicitation and eligibility.
+
+sequoia-plan | Sequoia — Writing a business plan
+https://sequoiacap.com/article/writing-a-business-plan
+Checked: 2026-09-30
+Use: An investor’s presentation outline for problem, solution, market, model and team.
+Limits: An example of pitch structure, not a universal investment eligibility rule or funding promise.
+
+amazon-registration | Amazon — Seller registration guide
+https://sell.amazon.com/sell/registration-guide
+Checked: 2026-09-30
+Use: Prepare for the third-party Seller Central route and account verification.
+Limits: Seller registration is separate from Amazon buying wholesale through Vendor Central. Check current identity, category, product and brand requirements.
+
+amazon-pricing | Amazon — Selling fees and calculator
+https://sell.amazon.com/pricing
+Checked: 2026-09-30
+Use: Model selling-plan, referral and fulfillment costs for the actual product.
+Limits: Rates vary by category and fulfillment; use current dimensions/weight and fee schedules. Include returns, storage and advertising where relevant.
+
+walmart-suppliers | Walmart — Apply to be a supplier
+https://corporate.walmart.com/suppliers/apply-to-be-a-supplier
+Checked: 2026-09-30
+Use: Start the wholesale supplier route and check the requested company/product package.
+Limits: Separate retailer supply from Marketplace. Registration is consideration, not an agreement or a store order.
+
+walmart-requirements | Walmart — Supplier requirements
+https://corporate.walmart.com/suppliers/requirements
+Checked: 2026-09-30
+Use: Check current supplier, product, insurance and operating requirements.
+Limits: Product and account-specific documents govern. Obtain actual requirements before accepting a purchase commitment.
+
+walmart-checklist | Walmart — Supplier checklist
+https://corporate.walmart.com/content/dam/corporate/documents/suppliers/apply-to-be-a-supplier/supplier-checklist.pdf
+Checked: 2026-09-30
+Use: Official checklist to compare against the proposed supplier packet.
+Limits: Check current applicability and revision with the supplier application; the AN Creation sheet does not replace this document.
+
+walmart-marketplace | Walmart — Marketplace qualifications
+https://marketplace.walmart.com/about-walmart-marketplace/
+Checked: 2026-09-30
+Use: Check eligibility for third-party online selling.
+Limits: Public qualifications include prior eCommerce success and U.S. fulfillment/returns capability. Marketplace approval does not provide store shelf placement.
+
+walmart-registration | Walmart — Marketplace registration and payments
+https://marketplace.walmart.com/seller-registration-guide/
+Checked: 2026-09-30
+Use: Prepare business verification and consider new-seller payment holds.
+Limits: Confirm current documents, onboarding and payment terms; account-specific conditions were not inspected.
+
+walmart-open-call | Walmart — Supplier opportunities and Open Call
+https://corporate.walmart.com/suppliers
+Checked: 2026-09-30
+Use: Look for current supplier opportunities, including eligible U.S.-made, grown or assembled products.
+Limits: Check the current Open Call window and criteria; no open event or acceptance is assumed.
+
+lowes-suppliers | Lowe’s — Branded and private-brand supplier routes
+https://www.lowes.com/l/about/suppliers
+Checked: 2026-09-30
+Use: Official routing: RangeMe for branded retail proposals; PROVIS for private-brand sourcing.
+Limits: Registration is consideration, not a guaranteed review or contract. Follow Lowe’s current links and product requirements.
+
+lowes-marketplace | Lowe’s — Marketplace application and FAQs
+https://www.lowes.com/l/about/lowes-marketplace
+Checked: 2026-09-30
+Use: Separate curated third-party marketplace route for suitable home-improvement products.
+Limits: Check current selection, U.S. inventory/shipping, product data and category conditions. Obtain actual commission and service terms during onboarding.
+
+lowes-seller-docs | Lowe’s — Marketplace seller documentation
+https://seller.lowes.com/mirakl-seller-documentation/
+Checked: 2026-09-30
+Use: Starting point for operational seller documentation.
+Limits: Some legal documentation was marked forthcoming during research; vendor-only terms and contracts were not reviewed. Record missing requirements explicitly.
+
+gs1-barcodes | GS1 US — Product identifiers and barcodes
+https://www.gs1us.org/upcs-barcodes-prefixes
+Checked: 2026-09-30
+Use: Understand GTIN/UPC, product and packaging identifiers for retail data.
+Limits: Confirm the retailer’s identifier requirements and exemptions. A barcode is not a safety approval or sales authorization.
+
+trade-representatives | Trade.gov — Evaluating representatives
+https://www.trade.gov/choosing-foreign-representative
+Checked: 2026-09-30
+Use: Due-diligence questions about experience, competing lines, service and references.
+Limits: The source addresses foreign representatives. Adapt these screening questions; do not present them as domestic retailer rules.
+
+cpsc-small-business | CPSC — Small business product-safety resources
+https://www.cpsc.gov/Business--Manufacturing/Small-Business-Resources
+Checked: 2026-09-30
+Use: Starting guidance for consumer-product safety requirements and the Small Business Ombudsman.
+Limits: Identify product type and intended users before selecting rules, tests, certificates or labeling. Follow the applicable rule and actual evidence; do not assume one guide covers every product.
+
+ftc-advertising | FTC — Advertising and marketing guidance
+https://www.ftc.gov/business-guidance/advertising-marketing
+Checked: 2026-09-30
+Use: Check product claims, endorsements, reviews, influencers, Made in USA statements and other advertising topics before publishing.
+Limits: Choose the guidance matching the product and channel. Keep evidence for claims and review relevant disclosure rules with the responsible specialist.
+
+grants-search | Grants.gov — Search federal funding opportunities
+https://www.grants.gov/search-grants
+Checked: 2026-09-30
+Use: Search the official federal grant opportunity directory by eligibility and subject.
+Limits: Confirm applicant type, purpose, dates and registrations in the actual notice. Not every grant accepts a for-profit startup. Ignore unsolicited messages claiming you have already won a grant.
+
+kickstarter-handbook | Kickstarter — Creator Handbook
+https://www.kickstarter.com/help/handbook
+Checked: 2026-09-30
+Use: Plan a rewards-based crowdfunding campaign: tell the story, build rewards, promote it, communicate with backers and prepare fulfillment.
+Limits: Review current project eligibility, platform fees and delivery responsibilities before choosing crowdfunding. Budget manufacturing, shipping and campaign costs.
+
+sba | SBA — Business planning and market research
+https://www.sba.gov/counseling/plan-your-business/
+Checked: 2026-09-30
+Use: Start with the market-research section: define customers, compare competing solutions and test demand, pricing and market size.
+Limits: Combine published data with interviews or other direct research. Record assumptions and sources before using market estimates in a funding plan.
+
+trademark-basics | USPTO — Trademark basics
+https://www.uspto.gov/trademarks/basics
+Checked: 2026-09-30
+Use: Start researching protection for a business name, product name, or logo and follow official registration guidance.
+Limits: Review name availability with the legal role before investing in branding; follow the official search and filing links and verify notices directly with USPTO.
+
+QUALITY-PLANNING WORKFLOW
+b-project-manager prepares and maintains the linked critical quality list, requirements, FMEA, control plan, instructions, evidence and revision manifest using the existing project facts and specialist input. The person need not ask for each form. Capture concerns with sources and IDs, leave unverified limits/status explicit, and track the controls through review and later changes. Read https://ancreationoffice.com/design-risk.txt . Templates: https://ancreationoffice.com/critical-quality.csv and https://ancreationoffice.com/control-plan.csv .
+
+BEGIN ADVANCE NOW
+Advance Now: help the inventor take a useful step today. Treat risk analysis as a list of opportunities to investigate, questions to ask and routes around or through a problem. Ordinary uncertainty, cost, imperfect ergonomics and unanswered checklist items do not automatically stop or slow the whole project. Keep analysis proportionate; do the useful authorized work available now. Look for a smaller experiment, an existing part, a different material or process, a revised design, staged help, a lower-cost route or someone with relevant experience. Keep a short roadblock list using existing issue IDs: concern and uncertainty, affected activity, possible workaround, question to ask, person who could help, owner, what advances now, revisit trigger and evidence/revision. Carry these questions into relevant conversations and handoffs. A later contact may reveal an easy solution or help carry the load; seek that opportunity without guaranteeing it. Do not turn every concern into a stop sign or end with a discouraging wall of risks. End with the next practical action. If one concrete activity needs a safety control, a disclosure decision, permission or a required review, identify that exact activity and keep progressing on other useful work or a safer route. Keep the evidence honest and preserve existing spending, sending, filing and publication authority. Do not insist on paid professional help before every preparation step: investigate available self-help and assistance routes. Do not promise that a later patent review can repair missing disclosure. Respect the person's choice to pause; never invent completion. Supervisors pass this same posture to temporary helpers. Read https://ancreationoffice.com/advance-now.txt for examples and the shared roadblock-list workflow.
+END ADVANCE NOW

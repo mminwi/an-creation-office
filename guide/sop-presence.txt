@@ -1,4 +1,4 @@
-SOP: b-business-manager. Profiles and the brand kit. Revision 2 — October 18, 2026.
+Procedure: b-business-manager. Profiles and the brand kit. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: business-manager.txt, sop-website.txt, sop-promotion.txt
 Read this when a LinkedIn page, an X account or another profile comes up, or when they need a logo, a tagline or a short description. Then leave it.

@@ -1,0 +1,17 @@
+key,value,source,note
+headline,,,The product in one line a buyer remembers
+who_for,,,
+benefit,,,One row per benefit; three or four
+shelf_price,,,"Check real shelves; mark illustrative until then"
+retailer_margin_pct,,,
+distributor_margin_pct,,,
+our_price,,,What the buyer pays us per unit
+case_pack,,,
+minimum_order,,,
+lead_time,,,
+payment_terms,,,
+shipping,,,
+returns,,,
+warranty,,,
+samples,,,
+spec:Size,,,One spec: row per specification; "to measure" until measured

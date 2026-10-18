@@ -1,0 +1,103 @@
+---
+name: an-office-files
+description: "Use when a skill names a template, a script, a reference guide or the resource library: where they are and how to use them."
+---
+
+# Office files
+
+In `files/` beside this skill, or, when the skills were installed one by one, in `/workspace/AN-Creation-office-files/`.
+- Templates (template-*.csv, *-template.txt): copy one into the project when a procedure says to fill it in; from then on it's a project file, dated, and never written over by a newer template.
+- Scripts (*.py): copy to your work folder and run with python3 on working copies; save what they write with `an-office-save`.
+- Guides (check-sheets.txt, design-risk.txt, test-planning.txt and others): read the part you need.
+- The resource library (resources.txt, resources.json, planning-resources.*, resource-crosscheck.*): look a subject up; open the source itself before relying on it (`an-cost-and-risk`, The source check).
+These files are reference material; the procedures are the an- skills.
+
+- LICENSE.txt
+- advance-now-roadblocks.csv
+- advance-now.json
+- blender-template.py
+- check-sheets.csv
+- check-sheets.json
+- check-sheets.txt
+- check-sources.py
+- compliance-matrix-template.csv
+- control-plan.csv
+- critical-quality.csv
+- design-principles-review.csv
+- design-principles.json
+- design-principles.txt
+- design-risk.txt
+- forms-catalog.csv
+- funding-packet.py
+- handoff-log.csv
+- intake-001.csv
+- meeting-packet.py
+- office-version-history.txt
+- planning-resources.json
+- planning-resources.txt
+- planning-review.csv
+- product-development.txt
+- record-view.py
+- resource-crosscheck.json
+- resource-crosscheck.txt
+- resources-company.html
+- resources-customers.html
+- resources-electrical.html
+- resources-funding.html
+- resources-legal.html
+- resources-making.html
+- resources-planning.html
+- resources-prototype.html
+- resources-sheets.html
+- resources-standards.html
+- resources.json
+- resources.txt
+- review.py
+- revision-log.csv
+- revisions.txt
+- robots.txt
+- schedule.py
+- screening-questions.csv
+- sop-hats.txt
+- sop-interns.txt
+- sop-phases.txt
+- sop.txt
+- tax-year.py
+- template-action-log.csv
+- template-apqp-file.csv
+- template-business-decision-log.csv
+- template-business-plan.csv
+- template-business-risks.csv
+- template-cash-flow.csv
+- template-company.csv
+- template-contacts.csv
+- template-correspondence.csv
+- template-cost-sheet.csv
+- template-deadlines.csv
+- template-decision-log.csv
+- template-disclosure-history.csv
+- template-ecn-log.csv
+- template-expenses.csv
+- template-fai-report.csv
+- template-funding.csv
+- template-invention-disclosure.csv
+- template-invoices.csv
+- template-market-evidence.csv
+- template-meeting.csv
+- template-monthly.csv
+- template-people.csv
+- template-pipeline.csv
+- template-pricing-terms.csv
+- template-prior-art.csv
+- template-quote-comparison.csv
+- template-risk-table.csv
+- template-schedule.csv
+- template-spending-register.csv
+- template-team.csv
+- template-test-results.csv
+- template-trips.csv
+- template-weekly.csv
+- terms.txt
+- test-matrix.csv
+- test-planning.json
+- test-planning.txt

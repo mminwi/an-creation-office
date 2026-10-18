@@ -1,0 +1,16 @@
+key,value,source,note
+product,Example: plastic-base snap mousetrap,,What the packet calls the product. Delete the Example values before real use.
+prepared,,,"Date of this packet, YYYY-MM-DD. Blank means today."
+unit,unit,,"What one is called on the packet: trap, clamp, unit."
+buyer,the buyer,,"Who pays the price: the distributor, the store, the end customer."
+channel,,,"Where it sells, as a phrase: to hardware and farm-supply distributors."
+company,,,"Company name, or Not formed yet."
+owner,,,
+contact,,,
+price,,,"Price per unit that the buyer pays. Never invent it: the inventor's figure or a buyer's, with the source."
+price_note,,,"One short line under the price, such as their landed-cost target."
+annual_units,,,Units a year in the plan.
+years,,,Years the plan runs. Tooling pays back over annual_units x years.
+owner_funds,,,Money the owner is putting in.
+use:Example: base mold,0,,"One row per use of funds, key starting use:. Source quote, placeholder or illustrative."
+milestone:Example: first mold quote in hand,2026-10-29,,"One row per milestone, key starting milestone:, value YYYY-MM-DD."

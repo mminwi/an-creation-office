@@ -1,0 +1,173 @@
+Plan the test before the build — REV 1 — 2026-09-30
+https://ancreationoffice.com/test-planning.html
+
+Decide what the next build must prove, how you will check it, and what result is acceptable before making or testing it. Start small, then add the detail the product and decision require.
+
+START WHILE THE REQUIREMENTS ARE TAKING SHAPE
+
+b-project-manager coordinates the plan with the engineering role and the prototype role as soon as important requirements and failure risks emerge. Do not wait for finished hardware. Early planning can change the enclosure, connectors, materials, power supply, mounting, test access and number of samples that need to be made.
+
+Identify the intended users, environment, target countries, product category, customer requirements and proposed claims. Link each important requirement and risk to an inspection, analysis, demonstration or test. Leave unresolved limits marked unknown, with an owner and action; never fill them with a plausible-looking number.
+
+Use the design-risk review, critical-quality sheet and control plan already in the project. A development test investigates the design; a production control plan describes repeat checks during manufacture. Link them without assuming they serve the same purpose.
+- Agree the next decision the evidence must support, the budget, sample availability, lead times and accountable reviewers.
+- Talk to the intended test laboratory before a design is difficult to change when formal electrical, radio or other compliance evidence will be needed.
+- Prepare a short plan for a simple product and a fuller one for complex or regulated work. The person should not need to know the name of a form to get this help.
+Sources: https://www.nasa.gov/reference/appendix-d-requirements-verification-matrix/; https://www.nasa.gov/reference/5-0-product-realization/; https://www.nasa.gov/reference/5-3-product-verification/
+
+CHOOSE THE SAMPLE FOR THE QUESTION
+
+A prototype can be exactly the right test article. Its suitability depends on what you want to learn and how faithfully it represents the features being tested. A pass only supports the configuration, conditions and question covered by the evidence.
+- Early learning: use a mockup, breadboard or prototype to compare grip, fit, a mechanism, a seal concept or likely interference. Label development screening and record the differences from the intended product.
+- Design verification and validation: use a defined, sufficiently representative configuration for the requirement or use being assessed. Verification asks whether requirements were met; validation asks whether the product serves its intended use. Record and justify remaining prototype differences.
+- Formal compliance or qualification: agree required samples and configuration with the applicable scheme and laboratory. Where relevant, represent final materials, manufacturing process, PCB, firmware, antenna, power supply, cables, seals and packaging. An early result or certified component does not automatically cover the final assembly.
+- Production acceptance: specify how actual units or lots will be checked, including sampling rationale, limits, records and the response to a failure. Do not treat a one-time design test as inspection of every manufactured unit.
+- Justify sample count, variants, repeats and sequence using the method, failure consequence, variability and strength of claim. One good sample does not establish reliability or population performance. A mandated count takes precedence over a convenient prototype budget.
+- Allocate destructive and nondestructive samples. Decide whether drop, aging and water exposure use separate samples or a justified combined sequence. Prior damage can change later results; new samples can conceal a cumulative-use weakness.
+Sources: https://www.nasa.gov/reference/5-0-product-realization/; https://www.ista.org/getting_started_with_design.php
+
+LAY OUT A TEST PLAN SOMEONE ELSE CAN FOLLOW
+
+Use the downloadable plan template as a working document and the test matrix as its index. A matrix names the tests; the plan and referenced procedures explain how to execute them. Keep proposed settings and criteria separate from approved values and actual results.
+- 1. Document control: project, plan ID/revision, date, author, reviewers, status, decision being supported, linked drawing/BOM/firmware revisions and change history.
+- 2. Purpose and scope: intended use, risks and claims being checked; exclusions; development, verification, validation, compliance or production-acceptance purpose.
+- 3. Requirements and methods: requirement/CTQ/risk IDs, source, agreed limit, standard identifier and edition, applicable clause/method and justified adaptations. Confirm market and contract requirements; the latest edition is not automatically the required edition.
+- 4. Test articles: serial/sample IDs, quantity and rationale, configuration, variants, manufacturing process, prototype deviations, conditioning, prior history and sample allocation.
+- 5. Setup and resources: laboratory/site, responsible operator, fixtures, diagrams/photos, instruments and software, range/resolution, calibration status/traceability, uncertainty where relevant, environmental conditions, supplies and schedule.
+- 6. Procedure for each test: prechecks and baseline, mounting/orientation, operating states and loads, settings and tolerances, exposure sequence/duration, measurements and logging frequency, recovery, postchecks and treatment of interruptions.
+- 7. Acceptance and decision rule: measurable functional, safety, structural and cosmetic criteria as applicable, when they are assessed, allowed changes/recovery and how measurement uncertainty affects a near-limit result. Set these before testing; no retrospective movement of the pass line.
+- 8. Safety and stop rules: hazards, competence, guarding/isolation/containment appropriate to the test, emergency response, who can stop and who can authorize restart. Hazardous electrical or battery tests and energized immersion require a suitably equipped, competent facility and reviewed procedure.
+- 9. Readiness and review: confirm applicable method access, approved plan, samples, instrumentation, fixtures, acceptance criteria, hazards and witnesses before running. An unknown critical prerequisite means the affected test is not ready.
+- 10. Results and disposition: expected record format, raw-data and photo locations, report owner, pass/fail/not-run/inconclusive status, deviations, failure investigation, correction, retest and final reviewer. Preserve the original result.
+Sources: https://www.nasa.gov/reference/appendix-d-requirements-verification-matrix/; https://www.nasa.gov/reference/5-0-product-realization/; https://www.nist.gov/nvlap/accreditation-vs-certification; https://www.nasa.gov/reference/system-engineering-handbook-appendix/
+
+ELECTRICAL SAFETY, EMC AND RADIO: SEPARATE QUESTIONS
+
+Electrical safety addresses hazards such as shock, fire, heat and stored energy. EMC emissions concern unwanted electromagnetic disturbance; immunity concerns how the product behaves when disturbed. Intentional-radio requirements and RF exposure introduce additional questions. A pass in one area is not a pass in the others.
+
+The engineering role records the product category, markets, power/charging arrangements, radio functions, installation and use, then asks a competent laboratory to confirm applicable requirements, editions and authorization/certification routes. Do not choose an electrical-safety standard or a radio rule just because its name is familiar.
+- Electrical-safety plan: describe rated supply and tolerances, loads, operating duty, accessible parts, temperatures, insulation/earthing where applicable, battery/charger and abnormal conditions required by the selected method. Record component approvals and the limits of their relevance to the final assembly.
+- EMC plan: document ports, cable types/lengths/routing, grounding/shielding, accessories, power supplies, loads, software and modes. For emissions identify representative or justified worst-case activity; for immunity define monitored functions and acceptable degradation/recovery. Keep setup photographs and configuration files.
+- Radio plan: identify bands, channels, antenna type/gain/location, radio/firmware version, output settings, modulation, simultaneous transmitters and intended separation from people. Have the laboratory determine relevant RF measurements, exposure assessment and authorization route; do not assume FCC covers all markets or all immunity needs.
+- Precompliance: screen prototypes early to find issues while layout, shielding, filtering, cables or enclosure can still change. Compare candidate fixes under repeatable conditions. This work helps development but is not regulatory authorization.
+- Before formal testing: agree the actual sample, exercised modes, approved radio test configuration, support equipment, setup, documents and lab recognition required for the specific scheme. A module’s authorization has conditions; changes to antenna, integration or host can require additional assessment.
+Sources: https://www.osha.gov/nationally-recognized-testing-laboratory-program; https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-A/section-15.31; https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-C/section-15.212; https://webstore.iec.ch/en/publication/68954; https://www.tek.com/en/documents/application-note/low-cost-emi-pre-compliance-testing-using-spectrum-analyzer; https://www.tuvsud.com/en-us/-/media/regions/us/pdf-files/whitepaper-report-e-books/final-emc-white-paper-2024.pdf
+
+DROP TESTING: THE PRODUCT OR THE SHIPPING PACKAGE?
+
+First choose the question: will a bare handheld product survive an accidental fall, will an installed assembly tolerate handling, or will the packaged shipment survive distribution? A shipping-package test does not automatically answer the bare-product question.
+
+Choose an applicable method with a reason. IEC rough-handling guidance and ASTM/ISTA transport-package methods address different situations. Public scope pages help select a method; obtain the authorized procedure before claiming testing to it.
+- Specify unpackaged versus packaged configuration, sample mass and contents, accessories, conditioning and prior use. For a shipment include the actual package design, materials, cushioning, closures and pack-out.
+- Define the release-height reference, surface or fixture, orientations/faces/edges/corners, number and order of events, operating state, recovery and pre/post checks from the selected requirement or justified experiment. There is no universal drop height or number of drops.
+- Set damage criteria before running: broken enclosure, unsafe exposure or loose parts, loss of function, unacceptable deformation, packaging failure and allowed cosmetic damage as applicable. Keep criteria connected to intended use and customer requirements.
+- Record each event, orientation, actual setup, observed damage, photos and functional checks. A specimen that survives one drop has not necessarily passed a repeated-handling or full distribution sequence.
+Sources: https://webstore.iec.ch/en/publication/516; https://store.astm.org/standards/d5276; https://www.ista.org/getting_started_with_design.php
+
+SUBMERSION, SPLASHES AND WATER JETS
+
+Define the real exposure and the claim first: rain, splashes, a jet, temporary accidental immersion, continuous underwater use, or another liquid. IEC 60529 provides enclosure IP classifications; it does not by itself establish every environmental or safety property.
+
+Do not substitute “one metre for thirty minutes” for a reviewed method. The applicable clause, enclosure size/reference points, intended use and claim determine the setup. Jet and immersion requirements differ; an immersion rating alone does not establish resistance to water jets.
+- Identify the exact enclosure/assembly revision, seals, fasteners/torque where specified, connectors, cable glands, caps, mounting and whether openings are closed as in use. A purchased enclosure’s rating does not automatically rate the assembled product.
+- Define water/liquid, temperature, conditioning, depth and its reference point, pressure where relevant, duration, orientation, operating state and sequence using the applicable method or an explicitly labeled development experiment. Record fixture and measurement details.
+- Define inspection, allowed ingress or harmful effects according to the actual requirement, post-exposure recovery and functional/safety checks. Distinguish a project requirement for no visible internal water from a standard’s particular acceptance criteria.
+- Specify safe isolation and inspection before power is restored to a wet specimen; energized testing needs an engineered laboratory procedure. Do not improvise mains-powered immersion tests.
+- Decide whether worn seals, thermal changes or prior drops matter to the use case and require additional testing. Salt water, cleaning chemicals, corrosion, UV, impact and long-term service are separate questions unless included by the selected requirements.
+Sources: https://webstore.iec.ch/en/publication/2452; https://www.tuvsud.com/en-us/services/testing/ingress-protection-testing
+
+EXAMPLE: TURN “IT MUST SURVIVE A FALL” INTO A PLAN
+
+Illustrative planning example only: a handheld enclosure is being considered. No height, number of specimens or pass result has been assumed. The open fields deliberately show what the team must resolve before a meaningful test.
+- Requirement REQ-DROP-01: survive the agreed accidental-handling exposure while retaining required function and avoiding the defined hazardous damage. Source: intended-use study and risk review; exposure and measurable limits still to be agreed.
+- Test TEST-DROP-01: proposed bare-product handling test. Sample: specified enclosure/PCB/battery or a justified inert equivalent at the intended mass. Label material, process, seal and fastening differences from production.
+- Open before test: justified method and edition; height/reference and surface; orientations, sequence and repeat count; sample count; power state; fixture and containment; baseline/postchecks; quantitative acceptance criteria and reviewer.
+- Plan status: not ready until those fields are resolved. An early screening trial can still be planned for a narrower question, with its own agreed conditions and explicit limits; it must not be reported as satisfying the unresolved product requirement.
+- Result record after execution: specimen and revision, actual settings, measurements and damage, raw data/photos, deviations, outcome, reviewer and corrective/retest action. Never prefill a pass.
+
+REVIEW FAILURES, CHANGES AND WHAT THE EVIDENCE SUPPORTS
+
+The prototype role preserves raw results and reports the tested configuration, method and limits. Record failed, interrupted, not-run and inconclusive tests as well as passes. A report is separate from the plan: planned work is not performed work.
+
+The engineering role reviews anomalies, changes and their effect on requirements. Trace corrective action to a repeat test and any necessary regression tests. A change in material, supplier/process, enclosure, PCB, firmware, antenna, cable, seal, packaging or intended use may affect prior evidence. Decide and record the retest scope; do not assume either that everything remains covered or that every test must be repeated.
+
+b-project-manager links the plan and reports to the quality records and next project decision. b-project-manager carries validated manufacturing/inspection needs into the control plan; the marketing role uses only claims supported by the actual scope of evidence. A laboratory report, accreditation or checked form alone is not approval for every market or product variant.
+- Keep one approved plan revision for each run and document deviations with review; never silently rewrite the plan to match the result.
+- For an external lab, confirm the exact method and accreditation/recognition scope, sample preparation/count, destructive tests, fixtures, lead time, cost, deliverables and treatment of failures before booking.
+Sources: https://www.nist.gov/nvlap/accreditation-vs-certification
+
+DOWNLOADS
+Test plan: https://ancreationoffice.com/test-plan-template.txt
+Matrix: https://ancreationoffice.com/test-matrix.csv
+Report: https://ancreationoffice.com/test-report-template.txt
+
+SOURCE ACCESS AND LIMITS
+Public guidance reviewed; paid standards were not purchased or reproduced. Confirm current applicable editions and authorized procedures.
+
+NASA — Requirements verification matrix
+https://www.nasa.gov/reference/appendix-d-requirements-verification-matrix/
+Adapt the evidence discipline to project scale; NASA procedures are not mandatory consumer-product certification. Checked 2026-09-30.
+
+NASA — Product realization, verification and validation
+https://www.nasa.gov/reference/5-0-product-realization/
+Record actual configuration, method, evidence and limits; a single prototype does not establish production consistency. Checked 2026-09-30.
+
+IEC 60529 — Enclosure protection (IP Code)
+https://webstore.iec.ch/en/publication/2452
+Use the full applicable standard and actual product test evidence for a rating claim. Read the IP quick guide for orientation; distinguish dust protection, jets and immersion. Checked 2026-09-30.
+
+NASA — Product verification planning
+https://www.nasa.gov/reference/5-3-product-verification/
+Adapt aerospace planning discipline to the product. It is not a mandatory consumer-product test program. Checked 2026-09-30.
+
+NASA — Verification and validation plan outline
+https://www.nasa.gov/reference/system-engineering-handbook-appendix/
+Use as a structure reference. The AN Creation template is an original, proportionate adaptation, not a NASA compliance claim. Checked 2026-09-30.
+
+ISTA — Getting started with design and testing
+https://www.ista.org/getting_started_with_design.php
+Public guidance reviewed. Obtain the actual selected procedure with authorized access; bare-product drops and packaged transport tests answer different questions. Checked 2026-09-30.
+
+ASTM D5276 — Loaded-container free-fall drop testing
+https://store.astm.org/standards/d5276
+Public catalog only; full paid procedure was not reviewed. Select applicable edition and method with the lab; do not derive heights or sequences from the abstract. Checked 2026-09-30.
+
+IEC 60068-2-31 — Rough handling shocks
+https://webstore.iec.ch/en/publication/516
+Public catalog only; full procedure was not reviewed. Scope differs from installed shock and packaged transport; no universal drop prescription. Checked 2026-09-30.
+
+NIST — Laboratory accreditation versus certification
+https://www.nist.gov/nvlap/accreditation-vs-certification
+Accreditation is not itself product certification or blanket competence for every test. Checked 2026-09-30.
+
+OSHA — Nationally Recognized Testing Laboratories
+https://www.osha.gov/nationally-recognized-testing-laboratory-program
+Applies to specified products and circumstances; not a statement that every consumer electrical product must carry UL certification. Checked 2026-09-30.
+
+eCFR — 47 CFR 15.31 measurement standards
+https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-A/section-15.31
+Government-maintained eCFR is authoritative but unofficial. Confirm applicability, current rules and incorporated methods with the lab; do not generalize settings to every product. Checked 2026-09-30.
+
+eCFR — 47 CFR 15.212 modular transmitters
+https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-C/section-15.212
+Module approval has conditions and does not automatically cover every host arrangement; confirm the finished-product route and any further testing. Checked 2026-09-30.
+
+IEC 61000-4-2:2025 — ESD immunity test method
+https://webstore.iec.ch/en/publication/68954
+Public catalog only; full paid procedure was not reviewed. The generic method does not select every product’s required severity, and publication does not imply adoption in every market. Checked 2026-09-30.
+
+Tektronix — EMI precompliance during development
+https://www.tek.com/en/documents/application-note/low-cost-emi-pre-compliance-testing-using-spectrum-analyzer
+Instrument-maker guidance, not a regulatory method or authorization. No unsafe bench procedure is reproduced. Checked 2026-09-30.
+
+TÜV SÜD — EMC test planning and laboratory preparation
+https://www.tuvsud.com/en-us/-/media/regions/us/pdf-files/whitepaper-report-e-books/final-emc-white-paper-2024.pdf
+Public 2024 paper; adapt planning fields only. Automotive test requirements and sample counts are not universal consumer-product requirements. Checked 2026-09-30.
+
+TÜV SÜD — Ingress-protection testing overview
+https://www.tuvsud.com/en-us/services/testing/ingress-protection-testing
+Public service overview, not a replacement for IEC 60529, its test procedure or an actual report. Checked 2026-09-30.
+
+BEGIN ADVANCE NOW
+Advance Now: help the inventor take a useful step today. Treat risk analysis as a list of opportunities to investigate, questions to ask and routes around or through a problem. Ordinary uncertainty, cost, imperfect ergonomics and unanswered checklist items do not automatically stop or slow the whole project. Keep analysis proportionate; do the useful authorized work available now. Look for a smaller experiment, an existing part, a different material or process, a revised design, staged help, a lower-cost route or someone with relevant experience. Keep a short roadblock list using existing issue IDs: concern and uncertainty, affected activity, possible workaround, question to ask, person who could help, owner, what advances now, revisit trigger and evidence/revision. Carry these questions into relevant conversations and handoffs. A later contact may reveal an easy solution or help carry the load; seek that opportunity without guaranteeing it. Do not turn every concern into a stop sign or end with a discouraging wall of risks. End with the next practical action. If one concrete activity needs a safety control, a disclosure decision, permission or a required review, identify that exact activity and keep progressing on other useful work or a safer route. Keep the evidence honest and preserve existing spending, sending, filing and publication authority. Do not insist on paid professional help before every preparation step: investigate available self-help and assistance routes. Do not promise that a later patent review can repair missing disclosure. Respect the person's choice to pause; never invent completion. Supervisors pass this same posture to temporary helpers. Read https://ancreationoffice.com/advance-now.txt for examples and the shared roadblock-list workflow.
+END ADVANCE NOW

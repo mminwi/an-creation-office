@@ -1,0 +1,257 @@
+AN CREATION GLOSSARY: TERMS AN INVENTOR WILL HEAR
+Revision 1 — October 8, 2026
+https://ancreationoffice.com/terms.html
+
+For b-project-manager and b-analyst: when a term matters, say it, give the plain explanation below in your own words, and offer the read-more link. Keep it to a line or two. If they want more, search the full name.
+
+PRODUCT DEVELOPMENT AND PROJECT TERMS
+
+APQP (Advanced Product Quality Planning): The auto industry's step-by-step way of planning a product so it comes out right: plan, design, design the process, validate, improve. This office runs every project this way behind the scenes. Read more: https://quality-one.com/apqp/
+Stage-gate: A way of splitting a project into stages with a decision point (a gate) between them: go, hold or drop. Our stages work this way. Read more: https://www.stage-gate.com/about/stage-gate-innovation-performance-framework/discovery-to-launch-process/
+Design review: A recorded meeting where the design is checked against its requirements and a decision is made about what happens next.
+Design freeze: The point where the design stops changing so tooling and formal testing can start. Changes after it go through change control.
+Iteration: One more round of design, build or test. Every iteration adds time and cost, so the timeline and budget get updated.
+Milestone: A dated point in the plan that marks something done, like a prototype finished or a tool approved.
+Critical path: The chain of tasks that sets the earliest finish date. If one of them slips, the whole project slips.
+Lead time: How long something takes from ordering to having it: a part, a tool, a lab test.
+Scope creep: The project quietly growing beyond what was agreed, usually one small addition at a time.
+Time, cost and quality triangle: The three are linked. Change one and hold another, and the third moves the wrong way: faster at the same quality costs more.
+Requirements: The list of what the product must do and meet. Each one should be specific enough to check.
+PRD (Product Requirements Document): A written description of what the product must do, for whom, and why. Our project description plays this role. Read more: https://www.atlassian.com/software/confluence/templates/product-requirements
+Specification (spec): A measurable requirement with a number and a limit: 'holds 50 lb', 'IP67', '120 x 80 mm plus or minus 0.5'.
+Voice of the customer: What real users say they need, in their words. The starting point for requirements.
+MVP (Minimum Viable Product): The simplest version that still does the job well enough to test with real customers.
+Proof of concept: A quick build that shows the core idea can work at all. Looks don't matter.
+Feasibility: Whether something can be done technically, at a cost and in a time that make sense.
+Action log (issue log, action items): One list of who owes what: each action, who it's on, when it's due, and whether it's done. b-project-manager keeps yours, and it shows on your review page.
+Risk register: A list of what could go wrong, how likely, how bad, and what is being done about it. Read more: https://asana.com/templates/risk-register
+Go / hold / drop: The decision at the end of every stage: keep going, pause, or stop the project.
+Lessons learned: A short note at the end of a stage on what worked and what didn't, so the next project goes better. Read more: https://www.atlassian.com/software/confluence/templates/retrospective
+Git: A free tool that keeps a saved history of the files in a folder, so you can see what changed and go back to an earlier version. It keeps only what was saved to it (committed); very large files are usually kept elsewhere and linked. It is traditionally used for software because it is so good at version control, and version control is exactly what project records need too. We very highly recommend it.
+Version control: Keeping track of every version of a file: what changed, when, by whom, and being able to go back. Git does this automatically.
+Repository (repo): A folder Git keeps history for. Your AN-Creation folder can be one.
+Commit (checkpoint): A saved snapshot of the files at one moment, with a short note about what changed.
+Push / clone: Push sends your commits to an online copy; clone makes a full copy of a repository somewhere else, like a new computer.
+GitHub: An online service that holds a copy of a Git repository. A private repository is an offsite copy that only you, the people you invite and the services you connect can see.
+
+DESIGN AND ENGINEERING TERMS
+
+Industrial design (ID): Designing how a product looks, feels and is used: form, ergonomics, color, finish. Usually the first design loops. Read more: https://www.idsa.org/about-idsa/advocacy/what-industrial-design/
+Concept: An early idea of the product, usually sketches or renders, before detailed engineering.
+Render: A realistic computer picture of a design that doesn't exist yet.
+Mock-up: A physical model that shows size and shape, often in foam or printed plastic. It doesn't work.
+CAD (Computer-Aided Design): Software for making exact 3D models and drawings of parts. The CAD is the master description of the design.
+STEP file: A common CAD file format that almost every CAD program and shop can open.
+Drawing (print): A 2D document with views, dimensions, tolerances, materials and notes. What a shop quotes and inspects against.
+Tolerance: How far a dimension may vary and still be acceptable: 10.0 plus or minus 0.1 mm. Read more: https://www.asme.org/codes-standards/find-codes-standards/y14-5-dimensioning-tolerancing
+GD&T (Geometric Dimensioning and Tolerancing): A standard symbol language on drawings for controlling shape, position and orientation, not just size. Read more: https://www.asme.org/codes-standards/find-codes-standards/y14-5-dimensioning-tolerancing
+Tolerance stack-up: Adding up how the tolerances of mating parts combine, to check the assembly still fits and works at the extremes. Read more: https://www.nist.gov/publications/tolerance-synthesis-scheme
+Datum: A reference surface or point that dimensions are measured from. Read more: https://www.asme.org/codes-standards/find-codes-standards/y14-5-dimensioning-tolerancing
+BOM (Bill of Materials): The list of every part and material in the product, with quantities, and in our case estimated costs.
+Revision: A version of a design. We use C1, C2 for concepts, X1, X2 for working revisions, and A, B, C once released.
+DFM (Design for Manufacturing): Designing a part so it is easy and cheap to make with the chosen process. We start it from the first sketch. Read more: https://www.protolabs.com/resources/design-tips/
+DFA (Design for Assembly): Designing so the product goes together quickly and correctly, with fewer parts and fewer ways to get it wrong.
+Draft angle: A slight taper on molded or cast walls so the part comes out of the tool. Read more: https://www.protolabs.com/resources/design-tips/improving-part-moldability-with-draft/
+Wall thickness: How thick a molded part's walls are. Uneven walls cause sink marks and warping. Read more: https://www.protolabs.com/resources/design-tips/improving-part-design-with-uniform-wall-thickness/
+Undercut: A feature that stops a part from coming straight out of a mold. Needs extra tool action, which adds cost.
+FEA (Finite Element Analysis): Computer simulation of stress, bending or heat in a part. A guide, not a guarantee; real tests confirm it.
+Ergonomics (human factors): Designing to fit the human body and how people actually use things. Read more: https://www.cdc.gov/niosh/ergonomics/about/index.html
+Usability: How easily people can use a product correctly the first time. Formal for medical devices. Read more: https://webstore.iec.ch/en/publication/21863
+Mechanism: The moving parts that make the product do its job.
+Enclosure: The case or housing around the inside parts, often what gets sealed against water and dust.
+
+QUALITY TERMS
+
+QMS (Quality Management System): A company's written system for making sure products come out right and problems get fixed.
+ISO 9001: The general international standard for quality management systems. The background for most quality work. Read more: https://www.iso.org/standard/9001
+ISO 13485: The quality management standard for medical devices. Read more: https://www.iso.org/standard/59752.html
+AS9100: The quality management standard for aviation, space and defense. Read more: https://iaqg.org/standards/
+IATF 16949: The quality management standard for automotive suppliers. Read more: https://www.iatfglobaloversight.org/iatf-169492016/about/
+Compliance matrix: One list of everything the product must meet, the data each item needs, how it is proven, and whether it is met. Also called a requirements or verification matrix. Read more: https://www.nasa.gov/reference/appendix-d-requirements-verification-matrix/
+FMEA (Failure Mode and Effects Analysis): A table of what could fail, how bad it would be, how likely, how it would be caught, and what is being done about it. Read more: https://asq.org/quality-resources/fmea
+DFMEA / PFMEA (Design FMEA / Process FMEA): A DFMEA looks at failures from the design; a PFMEA looks at failures from how the product is made. Read more: https://asq.org/quality-resources/fmea
+RPN (Risk Priority Number): Severity times occurrence times detection, each scored 1 to 10, used to rank FMEA rows. Severe safety items get attention whatever the number. Read more: https://asq.org/quality-resources/fmea
+Control plan: What gets checked during production, how, how often, and what happens when it is off. Read more: https://www.aiag.org/expertise-areas/quality/quality-core-tools
+Critical characteristic: A feature that matters most for safety, regulations or function, so it gets extra control: a defined check, how often, and what to do if it fails. The control plan sets the frequency; not every part is always checked. Also called special or key characteristic.
+CTQ (Critical to Quality): A feature the customer cares about enough that it must be controlled.
+DVP&R (Design Verification Plan and Report): The list of tests and checks for a design, with their results. Our compliance matrix covers it.
+Verification: Checking that the product was built to the spec: did we build it right? Read more: https://www.nasa.gov/reference/5-0-product-realization/
+Validation: Checking that the product does the job for real users in real conditions: did we build the right thing? Read more: https://www.nasa.gov/reference/5-0-product-realization/
+First article inspection (FAI): Measuring every dimension and note on the drawing on the first parts from a production setup, and recording the results.
+PPAP (Production Part Approval Process): The auto industry's package of evidence that production parts match the design and the process is stable. Sized to the project here. Read more: https://www.aiag.org/expertise-areas/quality/quality-core-tools
+Process capability (Cp, Cpk): Numbers that say how consistently a process holds a dimension within its tolerance. Higher is better; 1.33 is a common target.
+MSA / Gauge R&R (Measurement System Analysis / Gauge Repeatability and Reproducibility): Checking that the way you measure gives the same answer every time and from person to person.
+SPC (Statistical Process Control): Tracking measurements over time on charts to spot a process drifting before it makes bad parts. Read more: https://asq.org/quality-resources/quality-tools
+Poka-yoke (mistake-proofing): Designing a part or process so it can't be done wrong, like a plug that only fits one way. Read more: https://asq.org/quality-resources/mistake-proofing
+Root cause analysis: Finding the real reason something failed, not just the symptom. Read more: https://asq.org/quality-resources/root-cause-analysis
+Five whys: Asking 'why?' about five times in a row to dig from a symptom down to a root cause. Read more: https://asq.org/quality-resources/five-whys
+Corrective action: A fix for a problem that also stops it from happening again. CAPA in medical, 8D in automotive.
+Nonconformance: A part or product that doesn't meet its spec.
+Golden sample: An approved part kept as the physical reference for what good looks like.
+AQL (Acceptable Quality Limit): A sampling rule for inspecting a batch: check this many, accept the lot if no more than this many are bad.
+Traceability: Being able to tell which batch, material or machine a part came from. Required in aviation and medical.
+Design history file (DHF): The full record of how a design got where it is. Required for medical devices; useful for anyone.
+Change control: The rule that every change after freeze gets recorded, checked for what it affects, and approved.
+ECO / ECN (Engineering Change Order / Notice): The paperwork for a formal design change after release. Our change record does this job.
+
+TESTING AND CERTIFICATION TERMS
+
+Certification: A lab or authority confirming a product meets a standard. Often required before a product can be sold. Read more: https://www.nist.gov/nvlap/accreditation-vs-certification
+Listing (UL, ETL): A recognized test lab's mark showing a product was tested to a safety standard and is followed up in production. Read more: https://www.osha.gov/nationally-recognized-testing-laboratory-program
+NRTL (Nationally Recognized Testing Laboratory): A lab OSHA recognizes to test and certify products for safety in the U.S. UL, Intertek (ETL) and CSA are examples. Read more: https://www.osha.gov/nationally-recognized-testing-laboratory-program
+UL: A safety science organization whose standards and listing mark are widely required for electrical products in the U.S. Read more: https://www.shopulstandards.com/
+FCC (Federal Communications Commission): The U.S. agency whose rules cover anything that radiates radio energy, from Bluetooth to fast electronics. Read more: https://www.fcc.gov/engineering-technology/laboratory-division/general/equipment-authorization
+FCC Part 15: The FCC rules for devices that emit radio energy, intentionally (radios) or not (digital circuits). Read more: https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-A/section-15.31
+Pre-certified module: A radio module that already has FCC approval, which saves a lot of testing when it is used as approved. Read more: https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-15/subpart-C/section-15.212
+EMC / EMI (Electromagnetic Compatibility / Interference): Whether electronics give off radio noise or are upset by it. Read more: https://www.tuvsud.com/en-us/-/media/regions/us/pdf-files/whitepaper-report-e-books/final-emc-white-paper-2024.pdf
+Pre-compliance testing: A cheap early test before the formal lab, to find problems while they are still easy to fix. Read more: https://www.tek.com/en/documents/application-note/low-cost-emi-pre-compliance-testing-using-spectrum-analyzer
+CE marking: The mark showing a product meets the EU rules that apply to it. Required only for product types whose EU rules call for it (toys, electrical equipment, machinery and others); many products don't carry it. The rules for your product decide. Read more: https://europa.eu/youreurope/business/product-rules-compliance/general-product-compliance/ce-marking/index_en.htm
+RoHS (Restriction of Hazardous Substances): EU limits on lead, mercury, cadmium and similar substances in electronics. Read more: https://environment.ec.europa.eu/topics/waste-and-recycling/rohs-directive_en
+REACH: EU rules on chemicals in products, including substances of very high concern. Read more: https://echa.europa.eu/regulations/reach
+Prop 65 (California Proposition 65): California's rule requiring warnings on products that expose people to listed chemicals. Read more: https://www.p65warnings.ca.gov/businesses
+CPSC (Consumer Product Safety Commission): The U.S. agency for consumer product safety, including recalls and children's product rules. Read more: https://www.cpsc.gov/Business--Manufacturing/Small-Business-Resources
+CPSIA / Children's Product Certificate (Consumer Product Safety Improvement Act): U.S. rules for products for children 12 and under: third-party testing and a certificate. Read more: https://www.cpsc.gov/Business--Manufacturing/Business-Education/Childrens-Products
+FDA device class: Medical devices are Class I, II or III by risk. The class decides how heavy the FDA's path is. Read more: https://www.fda.gov/medical-devices/overview-device-regulation/classify-your-medical-device
+510(k): The most common FDA premarket submission, showing a device is substantially equivalent to one already sold. Read more: https://www.fda.gov/medical-devices/how-study-and-market-your-device/premarket-submissions-selecting-and-preparing-correct-submission
+IP rating (Ingress Protection): A two-digit code for protection against dust and water. IP67 means dust-tight and survives brief submersion. Read more: https://webstore.iec.ch/en/publication/2452
+NEMA rating: The U.S. enclosure rating system for protection against environments, used for electrical and industrial gear. Read more: https://webstore.ansi.org/standards/nema/ansinema2502020
+MIL-STD (Military Standard): U.S. defense standards. MIL-STD-810 covers environmental testing; MIL-STD-461 covers interference. Read more: https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=35978
+Drop test / ISTA (International Safe Transit Association): Tests that a packaged product survives shipping. ISTA publishes the common procedures. Read more: https://www.ista.org/getting_started_with_design.php
+ESD (Electrostatic Discharge): A static shock that can damage electronics. Products are tested for it. Read more: https://webstore.iec.ch/en/publication/68954
+UN 38.3: The test lithium batteries must pass before they can be shipped.
+Accredited lab: A test lab independently confirmed as competent for specific tests. Read more: https://www-s.nist.gov/niws/index.cfm?event=directory.search
+
+MANUFACTURING AND TOOLING TERMS
+
+Injection molding: Melting plastic and forcing it into a steel or aluminum mold. Expensive tools, very cheap parts at volume. Read more: https://www.protolabs.com/resources/design-tips/
+Tooling (tool, mold, die): The custom hardware that shapes parts in production. Usually the biggest up-front manufacturing cost.
+Soft tooling / hard tooling: Soft (aluminum or temporary) tools are cheaper and faster but wear out; hard (steel) tools cost more and last for a long run.
+Cavity: One part-shaped space in a mold. A four-cavity mold makes four parts per shot.
+Steel-safe: Designing so later tool changes remove steel rather than add it back. Removing is cheap; welding back is not.
+Mold-flow analysis: Simulation of how plastic fills a mold, to find problems before the tool is cut.
+T-trial (T0, T1) (Tool trial): Running a new tool to see if it makes the part. Usually one or two before the tool is right.
+P-trial (Process trial): Running the process at production rate to check quality holds, after the tool is right.
+Pilot run: A short production run to prove the process before full production.
+CNC machining (Computer Numerical Control): Cutting parts from solid metal or plastic with computer-controlled tools. Good for prototypes and low volume. Read more: https://www.xometry.com/
+Sheet metal: Parts cut and bent from flat metal sheet. Read more: https://sendcutsend.com/
+Casting: Pouring molten metal into a mold. Die casting uses steel molds for volume.
+3D printing (additive): Building parts layer by layer. Fast for prototypes; some processes are fine for low-volume production. Read more: https://jlc3dp.com/
+PCB / PCBA (Printed Circuit Board / Assembly): The board that holds and connects electronic parts. PCBA is the board with parts soldered on. Read more: https://jlcpcb.com/
+Contract manufacturer (CM): A company that builds your product for you to your design.
+OEM / ODM (Original Equipment / Design Manufacturer): An OEM makes a product under its own name or to a buyer's design; an ODM designs and makes products that others brand.
+Fixture / jig: A custom holder that locates a part the same way every time, for machining, assembly or measuring.
+Gauge: A tool or instrument for checking a dimension, from calipers to a custom go/no-go gauge.
+Cycle time: How long one production cycle takes, such as one mold shot. Drives part cost.
+Yield / scrap rate: The share of parts that come out good / the share that are thrown away.
+Work instructions: Step-by-step directions for assembling or making the product.
+Process flow: The ordered steps from raw material to boxed product.
+Packaging: The box, inserts and labels. It has to protect the product and meet store and shipping rules.
+
+SOURCING AND SUPPLY TERMS
+
+RFQ (Request for Quote): A package sent to suppliers asking them to price making your part: drawings, quantities, material, finish, delivery. Read more: https://meis.nist.gov/SupplierScouting/Submit
+Quote: A supplier's price and terms for a defined job. Compare quotes on the same revision and quantity.
+MOQ (Minimum Order Quantity): The smallest order a supplier will accept.
+Unit cost / part cost: What one finished product costs to make, from the BOM, labor and overhead.
+Landed cost: The full cost of getting a product to your door: price, shipping, duty, insurance.
+Tooling cost (NRE) (Non-Recurring Engineering): One-time costs like tools, fixtures and setup, paid once rather than per part.
+Make or buy: Deciding whether to make a part yourself or buy it, often off the shelf.
+Off-the-shelf / COTS (Commercial Off-The-Shelf): A standard part you can buy instead of designing a custom one. Read more: https://www.mcmaster.com/
+Single source / second source: Relying on one supplier, or qualifying a backup in case the first one fails.
+Supplier qualification: Checking a supplier can make the part, inspect it and deliver reliably before you depend on them.
+Incoterms (FOB, EXW, DDP): Standard terms for who pays shipping and carries risk at each point. FOB: seller loads it on the ship; DDP: seller delivers to you, duty paid.
+HS code / tariff (Harmonized System): The customs code for a product type, which sets the import duty.
+Purchase order (PO): Your formal order to a supplier, with quantity, price and terms.
+Net 30: Payment terms: the invoice is due 30 days after it is issued.
+
+PATENT AND LEGAL TERMS
+
+Patent: A government grant that lets you stop others from making, using or selling your invention for a limited time, in return for publishing how it works. Read more: https://www.uspto.gov/patents/basics
+Utility patent: The usual patent, covering how something works or is made. Lasts about 20 years from filing. Read more: https://www.uspto.gov/patents/basics
+Design patent: A patent on how a product looks, not how it works. Read more: https://www.uspto.gov/patents/basics/apply/design-patent
+Provisional patent application: A lower-cost U.S. filing that sets an early filing date, but only for what it actually describes. To keep that date you must file a full (non-provisional) application within 12 months. It is never examined and never becomes a patent by itself. Read more: https://www.uspto.gov/patents/basics/apply/provisional-application
+Non-provisional application: The full patent application that gets examined. Read more: https://www.uspto.gov/learning-and-resources/support-centers/inventors-assistance-center-iac
+Claims: The numbered sentences at the end of a patent that define exactly what is protected. The most important part.
+Prior art: Anything public before your filing date that shows the same idea: patents, products, articles, videos. Read more: https://patents.google.com/
+Prior-art search: Searching for prior art to judge whether an idea is new enough to patent. Read more: https://ppubs.uspto.gov/
+Freedom to operate (FTO): Whether you can sell your product without infringing someone else's live patent. Having your own patent doesn't answer this. Read more: https://www.mondaq.com/unitedstates/patent/1083228/patentability-versus-freedom-to-operate
+Patent pending: You may mark a product this way once an application is filed. It warns copiers but doesn't give enforceable rights yet.
+Grace period: In the U.S., you have one year to file after your own public disclosure. Many countries give no grace period. Read more: https://www.sternekessler.com/news-insights/insights/patent-grace-periods-and-public-disclosures-finding-saving-grace-period/
+Public disclosure: Showing, publishing, selling or offering to sell the invention. It starts the patent clock. Read more: https://www.sternekessler.com/news-insights/insights/patent-grace-periods-and-public-disclosures-finding-saving-grace-period/
+Patent attorney / patent agent: Professionals registered to file patents. Attorneys can also give legal advice and go to court. Read more: https://www.uspto.gov/learning-and-resources/patent-and-trademark-practitioners/finding-patent-practitioner
+Trademark: A protected brand name, logo or slogan. Read more: https://www.uspto.gov/trademarks/basics
+Copyright: Protection for creative works like manuals, photos and software code.
+Trade secret: Valuable information protected by keeping it secret, such as a formula or process. Read more: https://www.uspto.gov/sites/default/files/documents/tradesecretsiptoolkit.pdf
+License / royalty: Letting someone else make and sell your invention / the payment you get, often a percentage per unit.
+Infringement: Making, using or selling something covered by someone else's live patent or trademark without permission. Read more: https://www.uspto.gov/patents/basics/manage
+Product liability: Legal responsibility when a product hurts someone. Read more: https://www.sba.gov/business-guide/launch-your-business/get-business-insurance
+
+BUSINESS AND COMPANY TERMS
+
+Business plan: A written plan for how the product becomes a business: what you sell, to whom, how, what it costs, and how it makes money. Investors and lenders usually ask for one; a short version helps anyone decide what to do next. Read more: https://sequoiacap.com/article/writing-a-business-plan
+Business model: How the business makes money: sell product, license it, sell through stores, subscriptions. Read more: https://www.strategyzer.com/library/the-business-model-canvas
+Business Model Canvas: A one-page way to sketch a business model in nine boxes. Read more: https://www.strategyzer.com/library/the-business-model-canvas
+Value proposition: Why a customer would choose your product over what they use now, in a sentence. Read more: https://www.strategyzer.com/library/the-value-proposition-canvas
+LLC (Limited Liability Company): A simple company form that can put the business's liability on the company instead of on you, if set up and run properly. Read more: https://www.sba.gov/counseling/launch-your-business/
+Corporation (C-corp, S-corp): Other company forms. C-corps are common when raising investor money; S-corps are a tax election. Read more: https://www.sba.gov/counseling/launch-your-business/
+Sole proprietor: Doing business as yourself with no separate company. Simple, but the liability is yours. Read more: https://www.sba.gov/counseling/launch-your-business/
+EIN (Employer Identification Number): The IRS number that identifies a business, like a Social Security number for a company. Free from the IRS. Read more: https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number
+Articles of organization: The document filed with your state to form an LLC. Read more: https://www.sba.gov/counseling/launch-your-business/state-registration-lookup/
+Operating agreement: The LLC's internal rules: who owns what, who decides, what happens if someone leaves.
+Registered agent: The person or service that receives legal papers for your company in its state.
+Insurance: general and product liability: General liability covers injuries and damage from your business; product liability covers harm caused by your product. Stores often require proof. Read more: https://www.sba.gov/business-guide/launch-your-business/get-business-insurance
+W-9: The IRS form a business gives customers so they can report payments to it.
+COGS (Cost of Goods Sold): What it costs to make the products you sold.
+Gross margin: Price minus the cost to make it, as a share of price. It has to cover everything else and leave profit. Read more: https://ancreationoffice.com/check-sheets.html#economics
+Markup: How much is added to cost to set a price. Not the same as margin.
+Wholesale / retail / MSRP (Manufacturer's Suggested Retail Price): Wholesale is what a store pays you; retail is what the customer pays; MSRP is the price you suggest.
+Break-even: The number of units you must sell to cover all your costs.
+Cash flow: Money coming in and going out over time. Many young businesses fail from running out of cash, not from losing money.
+P&L (Profit and Loss statement): A summary of income, costs and profit over a period. Read more: https://www.score.org/templates/financial-projections-template/
+Balance sheet: A snapshot of what a business owns, what it owes, and what is left for the owners.
+Financial projections: Estimates of sales, costs and cash for the coming years. Lenders and investors ask for them. Read more: https://www.score.org/templates/financial-projections-template/
+SCORE / SBDC (Small Business Development Center): Free or low-cost business mentoring and help, supported by the SBA. Read more: https://www.score.org/find-mentor/request-mentor
+
+MONEY, FUNDING AND BANKING TERMS
+
+Bootstrapping: Paying for the project yourself, from savings or early sales, without outside investors.
+Friends and family round: Early money from people you know, often on simple terms. Put it in writing anyway.
+Angel investor: An individual who invests their own money in early companies, usually for equity. Read more: https://angelcapitalassociation.org/directory/
+Venture capital (VC): Firms that invest other people's money in companies they expect to grow very large.
+Seed round / Series A: The first sizable investment round / the next, larger round. Inventor products often raise one round for design and prototypes and another before tooling.
+Equity: Ownership. Selling equity means giving up part of the company in exchange for money.
+Dilution: Your share of ownership shrinking as new shares are sold to investors.
+Valuation (pre-money, post-money): What the company is agreed to be worth before / after new investment.
+Convertible note / SAFE (Simple Agreement for Future Equity): Early investment that turns into shares later, at the next priced round. Read more: https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/early-stage-investors
+Term sheet: A short, mostly non-binding summary of an investment deal's key terms.
+Due diligence: The checking investors or lenders do before committing: your plan, numbers, IP and legal setup.
+Pitch deck: A short slide presentation for investors: problem, product, market, business model, team, the ask.
+Use of funds: What the money you raise will pay for, item by item. Read more: https://ancreationoffice.com/check-sheets.html#funding
+Runway / burn rate: How many months your cash lasts / how fast you spend it each month.
+Crowdfunding: Raising money from many people, often as pre-orders (Kickstarter) or small investments (equity crowdfunding). Read more: https://www.kickstarter.com/help/handbook
+SBA loan: A bank loan partly guaranteed by the Small Business Administration, which makes lenders more willing. Read more: https://www.sba.gov/loans/lender-match/
+Line of credit: A loan you can draw on as needed up to a limit, paying interest only on what you use.
+Collateral / personal guarantee: Property pledged to secure a loan / your personal promise to repay if the business can't.
+Grant / SBIR (Small Business Innovation Research): Money that doesn't have to be repaid. SBIR is federal research funding for small businesses. Read more: https://www.sbir.gov/
+Strategic partner: A company that invests or helps for business reasons, such as a manufacturer or tool shop that does your tooling in exchange for a stake or the production work.
+ROI (Return on Investment): What you get back compared with what you put in.
+
+SALES, MARKETING AND RETAIL TERMS
+
+Go-to-market (GTM): The plan for how the product reaches customers: who, where, what price, how they hear about it.
+Marketing plan: Who the product is for, how you'll reach them, the message, the price and the budget. Read more: https://academy.hubspot.com/courses/digital-marketing
+Target market / customer persona: The specific group most likely to buy / a sketch of one typical buyer.
+TAM / SAM / SOM (Total / Serviceable / Obtainable Market): The whole market, the part you could serve, and the part you can realistically win.
+Channel: Where the product is sold: your own website, Amazon, stores, distributors, sales reps.
+Distributor / sales rep: A company that buys and resells your product / a person or firm who sells it for a commission. Read more: https://www.trade.gov/choosing-foreign-representative
+Sell sheet: A one-page summary of the product for buyers: what it does, photos, specs, price. Read more: https://ancreationoffice.com/check-sheets.html#retail
+Buyer packet: What a store or buyer asks for: spec sheet, certificates, insurance, tax form, vendor registration, quote.
+UPC / GTIN (Universal Product Code / Global Trade Item Number): The barcode number stores need. Bought through GS1. Read more: https://www.gs1us.org/upcs-barcodes-prefixes
+SKU (Stock Keeping Unit): Your own code for each product variant you stock.
+Marketplace: Selling through someone else's site, like Amazon or Walmart Marketplace, under their rules and fees. Read more: https://sell.amazon.com/sell/registration-guide
+Private label: A product made by one company and sold under another's brand.
+CAC (Customer Acquisition Cost): What it costs in marketing and sales to win one customer.
+Conversion rate: The share of people who take the next step, such as visitors who buy.
+SEO (Search Engine Optimization): Making your website easy for search engines to find and show. Read more: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+Pre-orders: Taking orders before the product is made. Proves demand and can help fund production. Read more: https://www.kickstarter.com/help/handbook
+Truth in advertising: Claims about your product must be true and backed by evidence. Read more: https://www.ftc.gov/business-guidance/advertising-marketing

@@ -1,0 +1,2 @@
+id,risk,category,likelihood,impact,mitigation,owner,due,status,source
+B1,Example: demand unproven: no buyer has seen it,Market,4,5,Example: show a sample to 3 buyers and record what each would pay. Delete this row before real use.,Inventor,2026-11-30,open,intake buyers-said

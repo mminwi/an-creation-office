@@ -1,4 +1,4 @@
-SOP: Move an older project folder to the business layout. Revision 2 — October 18, 2026.
+Procedure: Move an older project folder to the business layout. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Read this once, when office-startup finds the older layout: an AN-Creation/office.txt at the top, or invention folders, correspondence/, correspondence.csv or All inventions at the top of AN-Creation/. The layout it moves to: https://ancreationoffice.com/project-folders.txt
 Done by: the Project Manager Bot b-project-manager (an Office Manager Bot that finds it first hands it over through office-handoff and works with the folders where they are meanwhile). May write: the folders and files named below, one line in each moved invention's decision-log.csv, one line in Default-org/business-decision-log.csv.

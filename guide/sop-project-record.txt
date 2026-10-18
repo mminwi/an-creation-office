@@ -1,4 +1,4 @@
-SOP: The project record. Revision 5 — October 18, 2026.
+Procedure: The project record. Revision 6 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one set per invention. b-analyst fills and updates them.
 May write: the files named below in Office files/, and their readable copies in Your files/Project record/.

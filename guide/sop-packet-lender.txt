@@ -1,4 +1,4 @@
-SOP: The lender packet. Revision 4 — October 18, 2026.
+Procedure: The lender packet. Revision 5 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each lender meeting (sop-meeting-prep.txt). b-analyst builds it.
 May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-X-slug/, and cash-flow.csv and company.csv in AN-Creation/<business>/funding/<invention>/.

@@ -1,0 +1,426 @@
+Product, startup and project planning. Checked 2026-09-30.
+Human comparison and sources: https://ancreationoffice.com/resources-planning.html
+Worksheet: https://ancreationoffice.com/planning-review.csv
+
+Choose sources for the actual question. Product management asks what to make and why; project management coordinates owners, dependencies, milestones and reviews; entrepreneurship tests the business idea; business operations manages finances and ongoing obligations. These overlap; use one shared plan and existing controlled records.
+Read the relevant current source before using it. Use its checklist to identify unanswered questions, not to demand every answer at once. Ask one or two questions at a time. Cite sources actually read, and mark inaccessible material unread. The catalog records do not inject full websites or downloaded files into an assistant’s memory.
+Save a dated review with item ID, status (open/in progress/evidence available/reviewed/not applicable), answer, evidence and exact revision, owner, next action and decision. Only the project manager updates the master plan. Reopen affected items after changes. Do not turn estimates, checklist completion or a prototype into proof of demand, approval, patentability or tested compliance.
+Preserve all existing sharing, upload and approval rules. Respect each source’s license and AI-use terms. External files are download candidates only in this pass; inspect actual files before claiming review.
+
+SOURCE COMPARISON
+SBA and SCORE | Business owner | Broad startup tasks, business plans, cash flow and ongoing operations. Use existing SBA planning, formation and SCORE mentor links with the new worksheets. https://www.score.org/business-planning-financial-statements-template-gallery/
+USPTO and WIPO | Inventor | Protection questions, ownership, searches and commercialization. Complements existing patent sources; these guides do not establish patentability. https://www.wipo.int/en/web/business/checklist
+Startup School and NSF I-Corps | Entrepreneur | Customer discovery, learning from users and testing demand. Startup advice must be adapted to physical products; programs have their own access requirements. https://www.startupschool.org/
+Strategyzer | Entrepreneur and product manager | One-page business/customer models and assumption experiments. Keep hypotheses separate from observed evidence; paid playbooks are optional. https://www.strategyzer.com/library/the-business-model-canvas
+PDMA and Stage-Gate | Product manager | New-product development and evidence-based review decisions. Scale professional frameworks to the project; some material is paid or member-only. https://www.stage-gate.com/about/stage-gate-innovation-performance-framework/discovery-to-launch-process/
+Design Council | Inventor and product manager | Understand the problem, explore solutions and learn through trials. A framework needs project-specific requirements and tests alongside it. https://www.designcouncil.org.uk/resources/the-double-diamond/
+PMI | Project manager | Project-management tools and professional background. Check each tool’s current access; no certification is needed to begin. https://www.pmi.org/insights
+Atlassian, Smartsheet and Asana | Product and project manager | Requirements, roadmaps, plans, risk logs and decision records. Readable examples differ from downloadable files and hosted app templates. https://www.atlassian.com/project-management/templates
+
+REVIEW QUESTIONS
+PLAN-01 | Who has the problem, and what do they do today?
+Owner roles: the design role, the marketing role. Source IDs: strategyzer-vpc,sba.
+PLAN-02 | What have we learned directly from prospective customers?
+Owner roles: the marketing role, the design role. Source IDs: nsf-icorps,yc-startup-school.
+PLAN-03 | What assumptions are we testing next, and what result would change our decision?
+Owner roles: b-project-manager, the marketing role. Source IDs: strategyzer-test-card.
+PLAN-04 | Have we recorded contributors, ownership, prior work and disclosure questions?
+Owner roles: the legal role. Source IDs: wipo-ip-checklist,patent-public-search.
+PLAN-05 | What must the first product do, and what is outside this version?
+Owner roles: the design role, the engineering role. Source IDs: atlassian-product-requirements,smartsheet-product-requirements.
+PLAN-06 | How will we prove each important requirement?
+Owner roles: the engineering role, the prototype role. Source IDs: test-planning-guide,sheet-prototype.
+PLAN-07 | What are the price, sales channel, unit costs and expected volume assumptions?
+Owner roles: the funding role, the marketing role, b-project-manager. Source IDs: strategyzer-bmc,sheet-economics.
+PLAN-08 | What startup spending, monthly costs and cash shortfall have we allowed for?
+Owner roles: the funding role. Source IDs: score-financial-projections,score-startup-budget.
+PLAN-09 | Who owns each next task, what does finished mean, and what must happen first?
+Owner roles: b-project-manager. Source IDs: atlassian-project-plan,asana-project-charter.
+PLAN-10 | Which risks could stop the project, and who is reducing them?
+Owner roles: b-project-manager, the engineering role, b-project-manager. Source IDs: asana-risk-register,design-risk-guide.
+PLAN-11 | What evidence justifies go, revise, hold or stop at the next review?
+Owner roles: b-project-manager. Source IDs: stagegate-discovery-launch,atlassian-decision.
+PLAN-12 | What did the last milestone teach us, and which records need revision?
+Owner roles: b-project-manager, the prototype role, b-project-manager. Source IDs: atlassian-retrospective.
+
+DOWNLOAD CANDIDATES
+Business Model Canvas, Value Proposition Canvas, SCORE financial workbook, Smartsheet requirements layouts and relevant SCORE checklists. Save publisher, URL, date, version/license and location; verify actual content before assistant use. Files not downloaded in this pass.
+
+uspto-inventor-hub | USPTO — Inventor and entrepreneur resources
+https://www.uspto.gov/learning-and-resources/inventors-entrepreneurs-resources
+Group: inventor. Type: government.
+Roles: project, design, legal roles. A broad starting map for IP types, searches, training and inventor assistance.
+Check: Identify the current question before selecting a patent, trademark or help route.
+Access: Public government guidance; follow linked services for current eligibility.
+Checked: 2026-09-30. Source: USPTO.
+
+ftc-invention-marketing | FTC — Invention marketing scams
+https://consumer.ftc.gov/articles/invention-marketing-scams
+Group: inventor. Type: government.
+Roles: project, legal, marketing roles. Questions to ask before paying an invention promotion company.
+Check: Check published outcomes, fees, written commitments and complaints before a commitment.
+Access: Public government guidance.
+Checked: 2026-09-30. Source: FTC.
+
+wipo-business | WIPO — Intellectual property for business
+https://www.wipo.int/en/web/business/
+Group: inventor. Type: learning_resource.
+Roles: legal, project, funding roles. Connect invention protection with business strategy and commercialization.
+Check: Choose the relevant rights and markets; keep inventorship, ownership and commercial strategy separate.
+Access: Public guidance; linked publications and tools have their own terms.
+Checked: 2026-09-30. Source: WIPO.
+
+wipo-ip-checklist | WIPO — IP strategy checklist for SMEs
+https://www.wipo.int/en/web/business/checklist
+Group: inventor. Type: learning_resource.
+Roles: legal, design, project roles. An explicit checklist from idea generation through market entry.
+Check: Record unanswered ownership, disclosure, protection and commercialization questions for review.
+Access: Public checklist; jurisdiction and professional review still matter.
+Checked: 2026-09-30. Source: WIPO.
+
+wipo-ip-diagnostics | WIPO — IP Diagnostics
+https://www.wipo.int/en/web/wipo-ip-diagnostics
+Group: inventor. Type: learning_resource.
+Roles: legal, project roles. An interactive questionnaire that identifies possible business IP assets.
+Check: Read the questions and terms; get permission before entering project information into the external tool.
+Access: Free online assessment; reports depend on supplied answers.
+Checked: 2026-09-30. Source: WIPO.
+
+score-startup-roadmap | SCORE — Startup Roadmap
+https://academy.score.org/course/startup-roadmap
+Group: startup. Type: learning_resource.
+Roles: project, funding, marketing roles. A staged startup course with concrete tasks and mentor discussion points.
+Check: Select only modules relevant to the current business; retain open tasks and completion evidence.
+Access: Course access may require registration; verify current enrollment.
+Checked: 2026-09-30. Source: SCORE.
+
+yc-startup-school | Y Combinator — Startup School
+https://www.startupschool.org/
+Group: startup. Type: learning_resource.
+Roles: project, design, marketing, funding roles. Founder education on ideas, customer needs, early products and growth.
+Check: Adapt startup advice to the inventor’s goals; a physical product still needs engineering and safety work.
+Access: Public course overview; participation may require an account.
+Checked: 2026-09-30. Source: Y Combinator.
+
+nsf-icorps | NSF — I-Corps customer discovery
+https://www.nsf.gov/funding/initiatives/i-corps
+Group: startup. Type: government.
+Roles: project, design, marketing roles. Research commercialization through direct customer discovery.
+Check: Separate customer-discovery methods from eligibility for a specific training or funding program.
+Access: Public government overview; participation has eligibility and program requirements.
+Checked: 2026-09-30. Source: NSF.
+
+strategyzer-library | Strategyzer — Business and innovation tools
+https://www.strategyzer.com/library
+Group: startup. Type: learning_resource.
+Roles: project, design, marketing, funding roles. A library of tools for business models, customer value and experiments.
+Check: Select a specific tool and distinguish free downloads from paid playbooks.
+Access: Mixed public resources, free tools and paid offerings; check each item.
+Checked: 2026-09-30. Source: Strategyzer.
+
+strategyzer-bmc | Strategyzer — Business Model Canvas
+https://www.strategyzer.com/library/the-business-model-canvas
+Group: startup. Type: learning_resource.
+Roles: project, funding, marketing roles. A one-page view of customers, delivery, resources, costs and revenues.
+Check: Treat each block as an assumption until supported; date and revise the model.
+Access: Official free template; check the downloaded asset’s attribution and license.
+Checked: 2026-09-30. Source: Strategyzer.
+
+strategyzer-vpc | Strategyzer — Value Proposition Canvas
+https://www.strategyzer.com/library/the-value-proposition-canvas
+Group: startup. Type: learning_resource.
+Roles: design, marketing roles. A worksheet to compare customer needs with the proposed offer.
+Check: Use observed customer problems and existing alternatives; label untested claims.
+Access: Official download route; inspect current access and reuse terms.
+Checked: 2026-09-30. Source: Strategyzer.
+
+strategyzer-test-card | Strategyzer — Test Card
+https://www.strategyzer.com/library/validate-your-ideas-with-the-test-card
+Group: startup. Type: learning_resource.
+Roles: project, design, marketing roles. A compact way to plan a business-assumption experiment.
+Check: Set the hypothesis, method, measure and decision threshold before the experiment; record actual results separately.
+Access: Public explanation with links to tools; business experiments are distinct from engineering verification.
+Checked: 2026-09-30. Source: Strategyzer.
+
+score-planning-gallery | SCORE — Business planning and financial templates
+https://www.score.org/business-planning-financial-statements-template-gallery/
+Group: business-planning. Type: learning_resource.
+Roles: project, funding roles. A collection of business-plan, startup-expense and financial-statement templates.
+Check: Choose the smallest useful worksheet and preserve assumptions and formula provenance.
+Access: Public gallery; download and access conditions vary by template.
+Checked: 2026-09-30. Source: SCORE.
+
+score-checklists | SCORE — Business checklists
+https://www.score.org/checklists/
+Group: business-planning. Type: learning_resource.
+Roles: project, funding, marketing, legal roles. A searchable collection of business, operations and marketing checklists.
+Check: Filter by the current task; record applicability and explain skipped items.
+Access: Public directory; linked checklists may have separate download conditions.
+Checked: 2026-09-30. Source: SCORE.
+
+score-financial-projections | SCORE — Financial Projections Template
+https://www.score.org/templates/financial-projections-template/
+Group: business-planning. Type: learning_resource.
+Roles: funding, project roles. A downloadable workbook covering startup expenses, forecasts, cash flow and break-even.
+Check: Separate estimates from actuals; inspect formulas and test low/base/high sales assumptions.
+Access: Publisher describes a free downloadable template; workbook itself was not reviewed in this pass.
+Checked: 2026-09-30. Source: SCORE.
+
+score-startup-budget | SCORE — Startup budget and projections
+https://www.score.org/startup-budget-projections/
+Group: business-planning. Type: learning_resource.
+Roles: funding, project roles. Guidance for startup spending, revenue assumptions and financial stress tests.
+Check: Include one-time spending, recurring expenses, cash timing and an explicit funding gap.
+Access: Public guidance with linked templates and mentoring.
+Checked: 2026-09-30. Source: SCORE.
+
+sba-manage-business | SBA — Manage your business
+https://www.sba.gov/counseling/manage-your-business/
+Group: business-planning. Type: government.
+Roles: project, funding, legal, marketing roles. An operating-business roadmap for finances, employees, taxes, compliance and selling.
+Check: Use the relevant section and verify actual obligations with the responsible agency.
+Access: Public U.S. government guidance.
+Checked: 2026-09-30. Source: SBA.
+
+bdc-startup-toolkit | BDC — Start a business toolkit
+https://www.bdc.ca/en/articles-tools/entrepreneur-toolkit/templates-business-guides/start-up-toolkit
+Group: business-planning. Type: learning_resource.
+Roles: project, funding roles. A broad entrepreneur toolkit with business-planning materials.
+Check: Use planning structure as background; Canadian lending and legal details need local applicability checks.
+Access: Public Canadian development-bank resources; downloads may request contact information.
+Checked: 2026-09-30. Source: BDC.
+
+pdma | PDMA — Product development knowledge and community
+https://www.pdma.org/
+Group: product-management. Type: learning_resource.
+Roles: project, design, engineering, manufacturing roles. An established professional association focused on new product development.
+Check: Use its knowledge-hub routes for the specific development question; do not treat certification material as required startup paperwork.
+Access: Public association directory verified in search; some learning material is member-only or paid. Direct browser retrieval was unavailable.
+Checked: 2026-09-30. Source: PDMA.
+
+stagegate-discovery-launch | Stage-Gate — Discovery-to-launch process
+https://www.stage-gate.com/about/stage-gate-innovation-performance-framework/discovery-to-launch-process/
+Group: product-management. Type: learning_resource.
+Roles: project, design, engineering, manufacturing roles. A framework for organizing new products into stages and review decisions.
+Check: Scale reviews to the project; decide what evidence justifies go, revise, hold or stop.
+Access: Public process overview; detailed services and training are commercial.
+Checked: 2026-09-30. Source: Stage-Gate.
+
+design-council-double-diamond | Design Council — Double Diamond
+https://www.designcouncil.org.uk/resources/the-double-diamond/
+Group: product-management. Type: learning_resource.
+Roles: design, project, marketing roles. A simple discover, define, develop and deliver framework.
+Check: Check that the problem has evidence before selecting a solution; keep learning and revisions visible.
+Access: Public explanation; the linked Double Diamond is identified as CC BY 4.0.
+Checked: 2026-09-30. Source: Design Council.
+
+atlassian-product-requirements | Atlassian — Product requirements template
+https://www.atlassian.com/software/confluence/templates/product-requirements
+Group: product-management. Type: learning_resource.
+Roles: design, engineering, project roles. A starting structure for scope, requirements and product decisions.
+Check: Adapt software examples to the physical product; add measurable requirements and sources.
+Access: Public guidance; using the hosted template requires the publisher’s app/account.
+Checked: 2026-09-30. Source: Atlassian.
+
+atlassian-product-roadmap | Atlassian — Product roadmap template
+https://www.atlassian.com/software/confluence/templates/product-roadmap
+Group: product-management. Type: learning_resource.
+Roles: project, design, marketing roles. A high-level product direction and priorities worksheet.
+Check: Separate proposed features from agreed scope, and outcomes from task deadlines.
+Access: Public guidance; hosted template requires app/account access.
+Checked: 2026-09-30. Source: Atlassian.
+
+smartsheet-product-requirements | Smartsheet — Product requirements document templates
+https://www.smartsheet.com/content/free-product-requirements-document-template
+Group: product-management. Type: learning_resource.
+Roles: design, engineering roles. A collection of editable product-requirements layouts.
+Check: Choose a simple format; maintain requirement IDs, sources, acceptance criteria and revisions.
+Access: Public download collection; hosted Smartsheet use is separate. Files were not reviewed.
+Checked: 2026-09-30. Source: Smartsheet.
+
+smartsheet-product-roadmaps | Smartsheet — Product roadmap templates
+https://www.smartsheet.com/free-product-roadmap-templates-smartsheet
+Group: product-management. Type: learning_resource.
+Roles: project, design roles. A collection of product roadmap formats.
+Check: Pick a horizon appropriate to the evidence; avoid treating tentative dates as commitments.
+Access: Publisher page found in search; direct browser retrieval unavailable. Recheck download formats and access.
+Checked: 2026-09-30. Source: Smartsheet.
+
+pmi-tools | PMI — Project management templates and tools
+https://www.pmi.org/insights
+Group: project-management. Type: learning_resource.
+Roles: project role. A professional source of project-management tools, guides and templates.
+Check: Select tools for scope, coordination or review; check current availability and access for each item.
+Access: Mixed public templates and offerings; some tools have membership or subscription conditions.
+Checked: 2026-09-30. Source: PMI.
+
+atlassian-project-templates | Atlassian — Project management template library
+https://www.atlassian.com/project-management/templates
+Group: project-management. Type: learning_resource.
+Roles: project role. Broad starting points for project goals, risks, budgets, decisions and team coordination.
+Check: Match each template to an actual unanswered planning question.
+Access: Public library; hosted templates generally require product/account access.
+Checked: 2026-09-30. Source: Atlassian.
+
+atlassian-project-plan | Atlassian — Project plan template
+https://www.atlassian.com/software/confluence/templates/project-plan
+Group: project-management. Type: learning_resource.
+Roles: project role. A plan layout for objectives, scope, owners, milestones and reference links.
+Check: Check exclusions, dependencies, finish conditions and agreed dates against the master plan.
+Access: Public explanation; hosted template requires app/account access.
+Checked: 2026-09-30. Source: Atlassian.
+
+atlassian-decision | Atlassian — DACI decision record
+https://www.atlassian.com/software/confluence/templates/decision/
+Group: project-management. Type: learning_resource.
+Roles: project, design, engineering roles. A record of options, decision responsibility, status and outcome.
+Check: Keep alternatives and evidence; use actual agreed authority and attribution rather than changing team permissions.
+Access: Public template explanation; app/account access needed for hosted use.
+Checked: 2026-09-30. Source: Atlassian.
+
+atlassian-retrospective | Atlassian — Retrospective template
+https://www.atlassian.com/software/confluence/templates/retrospective
+Group: project-management. Type: learning_resource.
+Roles: project, prototype, manufacturing roles. A way to review what worked and what should change after a milestone.
+Check: Save actual lessons and assign agreed follow-ups without overwriting prior evidence.
+Access: Public guidance; hosted use requires app/account access.
+Checked: 2026-09-30. Source: Atlassian.
+
+asana-risk-register | Asana — Risk register template
+https://asana.com/templates/risk-register
+Group: project-management. Type: learning_resource.
+Roles: project, engineering, manufacturing roles. A risk-log structure for concerns, likelihood, consequences and response owners.
+Check: Keep project risks distinct from technical FMEA; review actions as conditions change.
+Access: Public explanation; creating the digital template requires signup.
+Checked: 2026-09-30. Source: Asana.
+
+asana-project-charter | Asana — Project charter template
+https://asana.com/templates/project-charter
+Group: project-management. Type: learning_resource.
+Roles: project, design roles. A compact starting definition of project purpose, scope and responsibilities.
+Check: Reconcile with the existing concept and plan; do not create a competing authority or approval record.
+Access: Public explanation; hosted template requires signup.
+Checked: 2026-09-30. Source: Asana.
+
+planning-review-sheet | AN Creation — Product and business planning review
+https://ancreationoffice.com/resources-planning.html#planning-review
+Group: project-management. Type: working_template.
+Roles: project, design, legal, engineering, prototype, manufacturing, funding, marketing roles. Twelve practical questions connecting the product, startup, business and project reviews.
+Check: Reuse existing answers; save status, evidence, exact revisions, owner and next action. An unanswered question stays open.
+Access: Original CSV worksheet; external resources remain links.
+Checked: 2026-09-30. Source: AN Creation original prompts with linked primary references.
+
+BEGIN RESOURCE CROSSCHECK
+Resource cross-check, September 30, 2026.
+The supplied research list was compared with the current resource catalog and original publisher pages.
+Existing coverage retained without duplicate entries: USPTO inventor hub, patent pro bono, clinics and patent libraries; SBA planning/counseling; SCORE mentoring; national NIST MEP and CPSC small-business resources; SBIR and FTC invention-marketing warnings.
+Added: USPTO IAC/checklist and scam prevention, United Inventors Association, two launch checklist sources, CPSC manufacturing practices and Regulatory Robot, Google Patents, EPO Espacenet, Wisconsin SBDC, WEDC and WMEP.
+Wisconsin entries are regional options, not universal starting requirements. LegalCORPS is an optional regional reference linked from IAC; confirm eligibility and current clinic arrangements.
+The USPTO checklist PDF is linked directly from its IAC page; actual PDF reviewed online. Other commercial template downloads were not obtained.
+The old PMI Product Lift-Off case study is historical context, not a universal eight-month launch rule. No population counts, club-absence claim or funding-announcement amounts are carried forward.
+Use current publisher pages before decisions. Do not automate Espacenet robot searches or bulk retrieval; EPO identifies OPS as its route for authorized automated access.
+A provisional application is an application route, not a separate IP right. Consider patents, trademarks, copyright and trade secrets as appropriate. Business formation and public launch depend on context and existing disclosure/approval rules. Plan safety and test evidence during definition, before expensive builds. A checklist does not grant permission to disclose, certify, file or spend.
+
+uspto-iac | USPTO — Inventors Assistance Center and filing checklists
+https://www.uspto.gov/learning-and-resources/support-centers/inventors-assistance-center-iac
+Group: inventor. Type: government.
+Roles: legal, project roles. Procedural filing help, utility-application checklist, filing guides and common-mistake resources.
+Check: Use the checklist for the intended application route and current USPTO instructions. Procedural assistance is separate from legal advice.
+Access: Public government guidance and linked documents.
+Checked: 2026-09-30. Source: USPTO.
+Related: USPTO utility patent filing checklist (PDF) — https://www.uspto.gov/sites/default/files/inventors/Checklist_for_Filing_a_Nonprovisional_Utility.pdf
+Related: Optional regional reference: LegalCORPS inventor resources — https://legalcorps.org/inventor-resources/
+
+uspto-scam-prevention | USPTO — Invention promotion scam prevention
+https://www.uspto.gov/patents/basics/using-legal-services/scam-prevention
+Group: inventor. Type: government.
+Roles: legal, project roles. Official questions and complaint resources for assessing invention promotion services.
+Check: Check written disclosures, fees, outcomes and complaints before a commitment; cross-reference the existing FTC warning.
+Access: Public government guidance.
+Checked: 2026-09-30. Source: USPTO.
+Related: FTC invention-promotion enforcement background — https://www.ftc.gov/enforcement/penalty-offenses/inventions
+
+uia-inventors | United Inventors Association — Education and inventor community
+https://uiausa.org/about/
+Group: inventor. Type: learning_resource.
+Roles: project, design, legal roles. A national nonprofit starting point for inventor education, community and commercialization resources.
+Check: Check current groups, events and terms. Membership or a listing does not qualify a provider or prove commercial success.
+Access: Publisher describes free membership and educational materials; follow current enrollment terms.
+Checked: 2026-09-30. Source: United Inventors Association.
+
+atlassian-launch-checklist | Atlassian — Product launch checklist
+https://www.atlassian.com/agile/product-management/product-launch-checklist
+Group: product-management. Type: learning_resource.
+Roles: project, marketing, design roles. Launch preparation from market research and goals through customer feedback.
+Check: Adapt to the product and sales channel; coordinate IP/disclosure decisions and product-specific testing before public claims.
+Access: Public publisher guidance; product/app offers are separate.
+Checked: 2026-09-30. Source: Atlassian.
+
+product-school-launch | Product School — Launch readiness checklists and template
+https://productschool.com/blog/product-marketing/product-launch-checklist-for-product-marketers
+Group: product-management. Type: learning_resource.
+Roles: project, marketing, design roles. Separate readiness checks for the product, operations, sales/support, launch and post-launch review.
+Check: Adapt software-oriented items to physical products; retain actual evidence and decision owners. A filled checklist is not approval.
+Access: Public commercial education article with editable-template links; actual downloaded file not examined.
+Checked: 2026-09-30. Source: Product School.
+
+cpsc-best-practices | CPSC — Manufacturing best practices
+https://www.cpsc.gov/business--manufacturing/business-education/business-guidance/BestPractices
+Group: product-management. Type: government.
+Roles: engineering, prototype, manufacturing, project roles. Consumer-product safety planning covering hazards, design, suppliers, manufacturing, records and recalls.
+Check: Start safety review during design, including foreseeable use and misuse. Match current rules to the actual product and market.
+Access: Public U.S. government guidance; separate the overview from actual applicable rules and test evidence.
+Checked: 2026-09-30. Source: CPSC.
+
+cpsc-regulatory-robot | CPSC — Regulatory Robot
+https://www.cpsc.gov/Business--Manufacturing/Regulatory-Robot/Safer-Products-Start-Here
+Group: product-management. Type: government.
+Roles: engineering, prototype, manufacturing roles. An official question-driven starting point for likely consumer-product safety requirements.
+Check: Verify inputs, applicability and current rules; save the output and remaining questions. Do not treat the tool as certification.
+Access: Public tool; business.cpsc.gov redirects here. Get permission before supplying private project information.
+Checked: 2026-09-30. Source: CPSC.
+
+google-patents | Google Patents — Patent and prior-art searching
+https://patents.google.com/
+Group: inventor. Type: learning_resource.
+Roles: legal, design roles. Search patent publications and related prior-art material across jurisdictions.
+Check: Save queries, dated results and document IDs; verify legal status in official registers. A search is not a patentability or freedom-to-operate opinion.
+Access: Public search tool; overview verified at Google Help, https://support.google.com/faqs/answer/6390996 .
+Checked: 2026-09-30. Source: Google Patents.
+
+epo-espacenet | EPO — Espacenet patent search and guidance
+https://www.epo.org/en/searching-for-patents/technical/espacenet
+Group: inventor. Type: government.
+Roles: legal, design roles. Official EPO route to international patent publications, search guidance and translations.
+Check: Document search scope and results; verify status in the relevant register. The EPO says Espacenet does not permit automated robot searches or bulk retrieval; use authorized OPS access for automation.
+Access: Public official overview. Direct Espacenet app retrieval was unavailable; official EPO referral verified.
+Checked: 2026-09-30. Source: EPO.
+
+wisconsin-sbdc | Regional: Wisconsin SBDC — Business consulting and education
+https://wisconsinsbdc.org/
+Group: business-planning. Type: learning_resource.
+Roles: project, funding, marketing roles. Wisconsin business feasibility, planning, finance and education through a statewide university-based network.
+Check: Use when Wisconsin is the relevant location; confirm center, eligibility, current service terms and course fees separately.
+Access: Regional option; publisher describes no-cost consulting. Education may have separate terms.
+Checked: 2026-09-30. Source: Regional: Wisconsin SBDC.
+
+wedc-wisconsin | Regional: WEDC — Wisconsin business development programs
+https://wedc.org/
+Group: business-planning. Type: learning_resource.
+Roles: project, funding, marketing roles. Wisconsin economic-development starting point for business programs and resources.
+Check: Check the specific program, geography, eligibility, current availability and costs. Do not assume grant eligibility or free market-research access from the homepage.
+Access: Regional agency resource; program terms vary.
+Checked: 2026-09-30. Source: Regional: WEDC.
+
+wmep-wisconsin | Regional: WMEP — Wisconsin Manufacturing Solutions
+https://wmep.org/
+Group: business-planning. Type: learning_resource.
+Roles: manufacturing, engineering, project roles. Wisconsin manufacturing improvement and consulting; a local complement to the existing national NIST MEP directory.
+Check: Confirm geography, capabilities, scope, fees before inquiries or sharing designs. Funding announcements do not establish free client services.
+Access: Regional consulting source; service fees and availability need direct confirmation.
+Checked: 2026-09-30. Source: Regional: WMEP.
+END RESOURCE CROSSCHECK
+
+BEGIN ADVANCE NOW
+Advance Now: help the inventor take a useful step today. Treat risk analysis as a list of opportunities to investigate, questions to ask and routes around or through a problem. Ordinary uncertainty, cost, imperfect ergonomics and unanswered checklist items do not automatically stop or slow the whole project. Keep analysis proportionate; do the useful authorized work available now. Look for a smaller experiment, an existing part, a different material or process, a revised design, staged help, a lower-cost route or someone with relevant experience. Keep a short roadblock list using existing issue IDs: concern and uncertainty, affected activity, possible workaround, question to ask, person who could help, owner, what advances now, revisit trigger and evidence/revision. Carry these questions into relevant conversations and handoffs. A later contact may reveal an easy solution or help carry the load; seek that opportunity without guaranteeing it. Do not turn every concern into a stop sign or end with a discouraging wall of risks. End with the next practical action. If one concrete activity needs a safety control, a disclosure decision, permission or a required review, identify that exact activity and keep progressing on other useful work or a safer route. Keep the evidence honest and preserve existing spending, sending, filing and publication authority. Do not insist on paid professional help before every preparation step: investigate available self-help and assistance routes. Do not promise that a later patent review can repair missing disclosure. Respect the person's choice to pause; never invent completion. Supervisors pass this same posture to temporary helpers. Read https://ancreationoffice.com/advance-now.txt for examples and the shared roadblock-list workflow.
+END ADVANCE NOW

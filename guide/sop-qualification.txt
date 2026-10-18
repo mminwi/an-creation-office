@@ -1,4 +1,4 @@
-SOP: Qualification and production approval. Revision 1 — October 7, 2026.
+Procedure: Qualification and production approval. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Starts from: the end of the tooling loop (sop-tooling-loop.txt, sop-stages S3): the tool or process makes parts that match the CAD, and final specs are agreed.
 Goes with: sop-stages.txt (S4), the compliance matrix, the production control plan

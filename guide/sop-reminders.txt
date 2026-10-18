@@ -1,4 +1,4 @@
-SOP: Reminders and parked ideas. Revision 1 — October 18, 2026.
+Procedure: Reminders and parked ideas. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, for each invention it runs. May write: Office files/queue/revisit/, queue/open/ and queue/done/ for reminder files, and AN-Creation/ideas.txt.
 Read this when a "for now" answer needs a date, when a reminder comes due, or when a new idea comes up.

@@ -1,4 +1,4 @@
-SOP: The design stage, a review loop. Revision 4 — October 18, 2026.
+Procedure: The design stage, a review loop. Revision 5 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Playbook: the whole job from concept to freeze is https://ancreationoffice.com/playbook-design-to-freeze.txt
 Starts from: the project description (project-description.txt), the deliverable of fact-finding.

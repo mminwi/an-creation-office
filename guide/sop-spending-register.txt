@@ -1,4 +1,4 @@
-SOP: The spending register. Revision 2 — October 18, 2026.
+Procedure: The spending register. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-project-manager, one per invention. b-analyst adds the rows. Template: https://ancreationoffice.com/template-spending-register.csv
 May write: Office files/spending.csv and its readable copy in Your files/Project record/.

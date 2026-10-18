@@ -1,4 +1,4 @@
-SOP: The buyer packet. Revision 3 — October 18, 2026.
+Procedure: The buyer packet. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each buyer meeting (sop-meeting-prep.txt). b-analyst builds it.
 May write: the meeting's correspondence folder AN-Creation/<business>/correspondence/YYMMDD-NN-X-slug/, and pricing-terms.csv and company.csv in AN-Creation/<business>/funding/<invention>/.

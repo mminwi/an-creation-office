@@ -1,4 +1,4 @@
-SOP: The weekly review. Revision 2 — October 18, 2026.
+Procedure: The weekly review. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, for the business. May write: weekly.csv in the business folder (template-weekly.csv), its readable copy in Your files/Business record/, and rows on the action log.
 Goes with: https://ancreationoffice.com/sop-business-plan.txt (the one number), https://ancreationoffice.com/sop-sales.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-compliance-calendar.txt , https://ancreationoffice.com/sop-action-log.txt

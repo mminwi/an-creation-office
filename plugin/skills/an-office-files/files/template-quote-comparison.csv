@@ -1,0 +1,2 @@
+supplier,quote ref,quote date,valid until,part number,part,tool type,cavities,tool life (shots),tooling cost,piece price at first order,first order qty,piece price at volume,annual qty,tool lead time,parts lead time,included,payment terms,tool owner,correspondence,notes
+Example: Molder A,Q-1234,2026-10-29,2026-12-29,MT-001,Plastic base,steel,1,to ask,0.00,0.00,5000,0.00,50000,to ask,to ask,"inspection, packaging; freight?",50% on order,inventor,261029-01-R-molder-a-quote,Example row; every figure from the quote itself

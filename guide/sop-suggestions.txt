@@ -1,4 +1,4 @@
-SOP: Suggestions and actions. Revision 3 — October 18, 2026.
+Procedure: Suggestions and actions. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept in: Office files/actions.csv, the same log as every action (https://ancreationoffice.com/sop-action-log.txt). May write: that file.
 Goes with the action log. A suggestion is not an action until it graduates.

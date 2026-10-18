@@ -1,12 +1,13 @@
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.42
+Office version: 261018.45
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
+b-tester profile version: 1 (Bot Tester; office file tester.txt; its own test folder /workspace/AN-Creation-Test/)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
 (the text saved in each bot's profile: the profile.txt section of AN-Creation/sops/library.txt, also https://ancreationoffice.com/profile.txt)
 
-The Office version is the pin for the whole SOP library. Every office uses that one version. There is no per-office pin. If some other page disagrees with this file, trust this file and tell the owner.
+The Office version is the pin for the whole procedure library. Every office uses that one version. There is no per-office pin. If some other page disagrees with this file, trust this file and tell the owner.
 
 HOW TO USE THIS (every bot)
 Follow the office-startup skill. This file is the office rule that skill carries out. Do not keep a second copy of the skill's steps here.
@@ -38,6 +39,9 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.45  A third free product, the Developer's Bot Tester (tester.html): a Grok bot that tests other Grok bots from a plain-text script. Its profile block is in profile.txt. tester.txt: it can test any Grok bot the owner builds, not only the AN Creation bots. The Project Manager and Office Manager Bots don't change. No new profile text for them.
+261018.44  The plugin's save skill: a text file made with create_file or UploadFile keeps its Drive ID when saved with update_file_content. Checked: two updates, a move and a read-back, and an uploaded text file. A PDF, a photo or a spreadsheet is still a new dated copy. No change to the website procedures. No new profile text.
+261018.43  Wording: the procedures say "procedure" where they said "SOP" (the file names are the same). The tester procedure now uses the plugin on this computer: the test folder is /workspace/AN-Creation-Test/, and a test bot is messaged by its ID. Re-read your office file. No new profile text.
 261018.42  Resource library: seven IRS sources checked and added for contractors and first hires (irs-contractor-or-employee, irs-form-ss-8, irs-form-w-9, irs-form-1099-nec, irs-form-w-4, irs-pub-15, irs-pub-15a), and irs-estimated-taxes rechecked with the page's own words. sop-contractors-and-hiring.txt cites them. The Labor Department's page could not be checked (its site refused). No change to how the bots work. No new profile text.
 261018.41  A second worked example, a fictional one-owner lawn and snow business with no invention (example-lawn-service/): a one-page plan, a season of invoices and the monthly close computed from them, weekly reviews, a summer helper treated as an employee, a compliance calendar, and a lender packet for an equipment loan. With no invention, the packets now take the owner's money from the monthly close, and record-view.py names the business from its plan. The entrepreneur procedures point to it. Re-read your office file. No new profile text.
 261018.40  The Office Manager Bot: contractors and first hires (sop-contractors-and-hiring.txt: contractor or employee laid out from the sources and never decided for the owner, the agreement from template-contractor-terms.txt, tax forms on file but never in a sheet, year-end and payroll dates on the calendar; people.csv) and the weekly review on the owner's day (sop-weekly-review.txt, weekly.csv). Templates and mousetrap examples. Re-read your office file. No new profile text.

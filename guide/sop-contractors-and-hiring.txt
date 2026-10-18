@@ -1,4 +1,4 @@
-SOP: Contractors and first hires. Revision 3 — October 18, 2026.
+Procedure: Contractors and first hires. Revision 4 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst finds the sources and drafts. May write: people.csv in the business folder (template-people.csv), its readable copy in Your files/Business record/, a draft agreement in the correspondence log once it goes out, rows in deadlines.csv, company.csv and the action log, and hand-off lines to b-project-manager.
 Goes with: https://ancreationoffice.com/principle-trace-to-source.txt , https://ancreationoffice.com/principle-rigor-scales-with-money.txt , https://ancreationoffice.com/sop-compliance-calendar.txt , https://ancreationoffice.com/sop-packet-attorney.txt , https://ancreationoffice.com/sop-packet-accountant.txt

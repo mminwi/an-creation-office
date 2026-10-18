@@ -1,4 +1,4 @@
-SOP: Use an intern. Revision 1 — October 1, 2026.
+Procedure: Use an intern. Revision 2 — October 18, 2026.
 Read by b-analyst. Where this file still says b-project-manager doing the work, that worker is b-analyst. The inventor's bot remains b-project-manager. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
 Read this for one contained job. When the result is saved and reviewed, leave this file. Do not add the intern to the session table.

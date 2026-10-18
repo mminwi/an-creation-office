@@ -1,4 +1,4 @@
-SOP: Revisions and engineering change notices. Revision 2 — October 18, 2026.
+Procedure: Revisions and engineering change notices. Revision 3 — October 18, 2026.
 One of the seven required documents (https://ancreationoffice.com/sop-project-record.txt). May write: Office files/ecn-log.csv, Office files/ecn/, and the readable copy of the log in Your files/Project record/.
 Index: https://ancreationoffice.com/sop.txt
 Goes with: sop-stages.txt, the loops, the compliance matrix, project-folders.txt (dated folders)
