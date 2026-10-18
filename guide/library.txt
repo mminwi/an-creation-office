@@ -1,4 +1,4 @@
-261018.36
+261018.37
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -8573,7 +8573,7 @@ It is that method, written down so an AI can run it. Two bots:
 
 When the product needs work in the plant, the Project Manager Bot brings it in itself: molding (work through a defect), plastic part design (review a part for molding), quality (draft a control plan from your requirements) and manufacturing (compare supplier quotes like for like).
 
-Each bot is a Grok bot the user sets up by pasting one message. It asks one question at a time. The first time, it asks where to keep the work and helps set up a private folder there (a cloud folder like Google Drive or OneDrive works best), checking each step. Then it asks what the user is working on. Heavier work, such as research, longer calculations and documents, goes to Grok Build as a separate step that the bot then checks.
+Each bot is a Grok bot. The user pastes a short message, and the bot sets itself up from there. It asks one question at a time. The first time, it asks where to keep the work and helps set up a private folder there (a cloud folder like Google Drive or OneDrive works best), checking each step. Then it asks what the user is working on. Heavier work, such as research, longer calculations and documents, goes to Grok Build as a separate step that the bot then checks.
 
 The two bots share one project folder and pass work to each other through it, each with its own inbox. The user can start with either bot; neither requires the other first.
 
@@ -8623,13 +8623,13 @@ Office: https://ancreationoffice.com · Advance Now: https://advancenowllc.com
 The AN Creation Office: free AI assistants for engineering and manufacturing work, set up in Grok. https://ancreationoffice.com
 
 ## 25 words
-The AN Creation Office is two free AI bots for getting a product made: one runs the product, one runs the business. Paste one message into Grok and start.
+The AN Creation Office is two free AI bots for getting a product made: one runs the product, one runs the business. Paste a short message into Grok and it starts setting itself up.
 
 ## 50 words
-The AN Creation Office is two free AI bots for getting a product made. The Project Manager Bot runs the product, from idea through molding, quality and manufacturing to launch. The Office Manager Bot runs the business around it. Paste one message into a Grok bot, and it walks you through the rest.
+The AN Creation Office is two free AI bots for getting a product made. The Project Manager Bot runs the product, from idea through molding, quality and manufacturing to launch. The Office Manager Bot runs the business around it. Paste a short message into a Grok bot, and it starts setting itself up, asking you questions as it goes.
 
 ## 100 words
-The AN Creation Office is two free AI bots for getting a product made, built by Mike Maier of Advance Now LLC from 30+ years in product development, injection molding, quality and plant management. The Project Manager Bot runs the product, bringing in molding, plastic part design, quality and manufacturing when needed; the Office Manager Bot runs the business around it. Each starts from one message pasted into Grok. It asks one question at a time, keeps your facts apart from its estimates, saves the work to a private folder you choose (Google Drive or OneDrive works best), and prepares it for your review. Any AI that reads web links can follow it.
+The AN Creation Office is two free AI bots for getting a product made, built by Mike Maier of Advance Now LLC from 30+ years in product development, injection molding, quality and plant management. The Project Manager Bot runs the product, bringing in molding, plastic part design, quality and manufacturing when needed; the Office Manager Bot runs the business around it. Each starts from a short message pasted into Grok, then sets itself up. It asks one question at a time, keeps your facts apart from its estimates, saves the work to a private folder you choose (Google Drive or OneDrive works best), and prepares it for your review. Any AI that reads web links can follow it.
 
 ## About Advance Now LLC
 Advance Now LLC integrates AI into engineering and manufacturing. It was founded by Mike Maier, and its first project is the AN Creation Office, two free AI bots for getting a product made. https://advancenowllc.com
@@ -8738,7 +8738,7 @@ im.save("card-article-cover-1500x600.png"); print("ok")
 
 1. **Who it's for.** Inventors and small product companies, and anyone taking a product from an idea to production, who could use organized help. Start with the bot that fits the work.
 2. **What it is.** The AN Creation Office: two free AI bots, set up in Grok. The Project Manager Bot runs the product, from the first idea to launch, and brings in molding, plastic part design, quality planning and manufacturing when the product needs them. The Office Manager Bot runs the business around it: the company, patent preparation, funding and selling.
-3. **How simple it is.** Pick a bot, make it in Grok, paste one message. It asks one question at a time, helps set up a private place to save the work, then asks what you're working on.
+3. **How simple it is.** Pick a bot, make it in Grok, paste a short message. It starts setting itself up and asks one question at a time, helps set up a private place to save the work, then asks what you're working on.
 4. **What it does for you.** It asks the questions that matter at each step, keeps the facts you give it apart from its estimates, writes down decisions and next steps, and prepares the work for your review. It brings risks up early, while there is still time to deal with them.
 5. **Why trust it.** It is built from Mike Maier's 30+ years in engineering and manufacturing: product development, injection molding, quality, plant management and automation. Every instruction is open to read.
 6. **Which AI.** It is written for Grok and Grok bots, so that is where it fits best. But it is plain written procedures, linked to each other, so any AI model that can read a web link can follow it.
@@ -8790,7 +8790,7 @@ im.save("card-article-cover-1500x600.png"); print("ok")
 
 # Two free AI bots for getting a product made.
 
-**The AN Creation Office is two free AI bots: one runs the product, one runs the business around it.** Pick the one that fits your work, make a bot in Grok, and paste one message from **ancreationoffice.com**. It asks one question at a time, helps you set up a private place to save the work, then asks what you're working on.
+**The AN Creation Office is two free AI bots: one runs the product, one runs the business around it.** Pick the one that fits your work, make a bot in Grok, and paste a short message from **ancreationoffice.com**. It starts setting itself up and asks one question at a time, helps you set up a private place to save the work, then asks what you're working on.
 
 ## Pick your bot
 
@@ -9193,7 +9193,7 @@ Now I'm putting it to work with AI. First project: the AN Creation Office, two f
 
 **The Project Manager Bot runs the product, from the first idea through molding, quality and manufacturing to launch. The Office Manager Bot runs the business around it. Each one starts from a single message pasted into a Grok bot.**
 
-Advance Now LLC has released the AN Creation Office (https://ancreationoffice.com), two free AI bots for engineering and manufacturing work. A user picks the bot that fits the job in front of them, makes a new bot in Grok, and pastes one message from the website. The bot asks one question at a time, helps set up a private place to save the work, then asks what the user is working on.
+Advance Now LLC has released the AN Creation Office (https://ancreationoffice.com), two free AI bots for engineering and manufacturing work. A user picks the bot that fits the job in front of them, makes a new bot in Grok, and pastes a short message from the website. The bot starts setting itself up and asks one question at a time, helps set up a private place to save the work, then asks what the user is working on.
 
 The Project Manager Bot takes an idea for a product from the first conversation toward launch. When the product needs work in the plant, it brings that in too: a molding defect, a plastic part review, a control plan, a like-for-like comparison of supplier quotes. The Office Manager Bot handles the business around the product: the company, patent preparation, funding and selling.
 
@@ -28955,7 +28955,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.36
+261018.37
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -31085,7 +31085,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.36
+Office version: 261018.37
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -31123,6 +31123,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.37  Wording only: the credit reads "based on" Lauren Tan's pstack, and the press kit says a short pasted message starts the bot setting itself up. No change to how the bots work. No new profile text.
 261018.36  The Project Manager Bot's office file is a third shorter, with every hard rule kept: calling the analyst is now a skill (office-call-analyst.txt, new), reminders and several inventions have their own procedures (sop-reminders.txt, sop-several-inventions.txt, new), the specialized ticket rules moved to sop-focus.txt AT THE FORM, and older names to sop-folder-move.txt OLDER NAMES. New: a first win at the end of intake, reading the idea back in two or three lines before the analyst starts. The analyst now runs in a work folder by default and its files are saved back; GitHub is the add-on, not the default. Re-read your office file. No new profile text.
 261018.35  Cleanup. schedule.py makes its output folder if it is missing. The pages the scripts build (packets, schedule, record views) scroll their wide tables inside the table on a phone instead of the whole page. The procedure index lists the schedule with the charter. No change to how the bots work. No new profile text.
 261018.34  Where each bot saves (sop-team.txt WHERE EACH BOT SAVES). A Project Manager Bot works inside its inventions' folders. The Office Manager Bot saves at the level the work is about: the whole company in the business folder, one invention only in that invention's Office files/business/ (new; readable copies in Your files/Business/). Re-read your office file. No new profile text.

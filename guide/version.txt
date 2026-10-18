@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.36
+Office version: 261018.37
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -38,6 +38,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.37  Wording only: the credit reads "based on" Lauren Tan's pstack, and the press kit says a short pasted message starts the bot setting itself up. No change to how the bots work. No new profile text.
 261018.36  The Project Manager Bot's office file is a third shorter, with every hard rule kept: calling the analyst is now a skill (office-call-analyst.txt, new), reminders and several inventions have their own procedures (sop-reminders.txt, sop-several-inventions.txt, new), the specialized ticket rules moved to sop-focus.txt AT THE FORM, and older names to sop-folder-move.txt OLDER NAMES. New: a first win at the end of intake, reading the idea back in two or three lines before the analyst starts. The analyst now runs in a work folder by default and its files are saved back; GitHub is the add-on, not the default. Re-read your office file. No new profile text.
 261018.35  Cleanup. schedule.py makes its output folder if it is missing. The pages the scripts build (packets, schedule, record views) scroll their wide tables inside the table on a phone instead of the whole page. The procedure index lists the schedule with the charter. No change to how the bots work. No new profile text.
 261018.34  Where each bot saves (sop-team.txt WHERE EACH BOT SAVES). A Project Manager Bot works inside its inventions' folders. The Office Manager Bot saves at the level the work is about: the whole company in the business folder, one invention only in that invention's Office files/business/ (new; readable copies in Your files/Business/). Re-read your office file. No new profile text.
