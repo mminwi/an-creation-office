@@ -1,0 +1,41 @@
+SOP: Contractors and first hires. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager. b-analyst finds the sources and drafts. May write: people.csv in the business folder (template-people.csv), its readable copy in Your files/Business record/, a draft agreement in the correspondence log once it goes out, rows in deadlines.csv, company.csv and the action log, and hand-off lines to b-project-manager.
+Goes with: https://ancreationoffice.com/principle-trace-to-source.txt , https://ancreationoffice.com/principle-rigor-scales-with-money.txt , https://ancreationoffice.com/sop-compliance-calendar.txt , https://ancreationoffice.com/sop-packet-attorney.txt , https://ancreationoffice.com/sop-packet-accountant.txt
+Templates: https://ancreationoffice.com/template-people.csv , https://ancreationoffice.com/template-contractor-terms.txt
+Read this when the owner is about to pay someone to do work for the business: a freelancer, a CAD designer, a bookkeeper, a helper, a first employee.
+
+WHY THIS EXISTS
+The first person a small business pays is often where the paperwork goes wrong: no signed agreement, no tax form collected, a "contractor" who is really an employee, or, for an inventor, a CAD designer who still owns the drawings. Each is cheap to get right before the work starts and expensive after.
+
+CONTRACTOR OR EMPLOYEE (the bot never decides it)
+Whether someone is a contractor or an employee is not the owner's choice or the bot's; it follows from how the work is actually done. The sources are the IRS's guidance on independent contractor or employee (behavioral control, financial control, the relationship), IRS Form SS-8 when it is unclear, the U.S. Department of Labor's guidance under the Fair Labor Standards Act, and the state's own rules, which can be stricter. Open the current page of each before relying on it (sop-source-check.txt); none of it is quoted from memory.
+- Ask the plain facts, one at a time: who decides how and when the work is done, whose tools and place, paid by the job or by the hour, do they work for others too, is it ongoing or one project, is it the core work of the business.
+- Lay the facts next to the sources and say what they point to, in plain words, with the source. When they point both ways, say so, and say who can answer: the accountant, the SBDC, an employment attorney, or the IRS through Form SS-8.
+- Record the facts, the sources and the owner's decision in the business decision log.
+
+HIRING A CONTRACTOR
+1. The agreement first, before work starts. Draft it from the terms checklist (template-contractor-terms.txt): the work and what's delivered, the price and when it's paid, the dates, who owns what's made (for drawings, CAD, code, designs, photos and text: assigned to the business in writing), confidentiality, that they are independent (their tools, their schedule, their taxes), and how it ends. On the owner's own money, a plain agreement both sign is the start; where the work matters to the business (the product's design, its brand, its code) or real money is involved, the draft goes to an attorney (sop-packet-attorney.txt) before signing. Say so once, plainly.
+2. Their tax form before the first payment: in the U.S., Form W-9 (their name, tax ID and type of business), kept in the business folder's private records. Never copy the tax ID into a sheet: people.csv only says "W-9 on file".
+3. Pay against invoices, logged in the expense ledger with the person on each row, so the year's total is known.
+4. At year end, the information return that applies (Form 1099-NEC for nonemployee pay above that year's threshold, from that year's IRS instructions) goes on the compliance calendar with its due date and source (sop-compliance-calendar.txt). The bot totals each person's payments for the accountant; it does not file.
+5. For an inventor: anything the contractor makes for the invention (drawings, CAD, prototypes, test results) is assigned to the business in the agreement, and the disclosure history notes what they were shown (sop-packet-patent.txt). b-project-manager gets a hand-off line so the project record knows who did the work.
+
+THE FIRST EMPLOYEE
+An employee brings a set of one-time and recurring obligations; most are where they are because of the state. Start from the SBA's guide to hiring (library: sba-hire-employees) and the state's own pages, and put each on the compliance calendar with its source:
+- before the first day: an employer identification number if there isn't one, state employer registration and withholding, workers' compensation insurance as the state requires, unemployment insurance registration.
+- on the first days: Form W-4 and the state's withholding form, Form I-9 (library: uscis-i9), state new-hire reporting.
+- every pay day and quarter: payroll, withholding and deposits, payroll tax returns (the IRS's employer guides, Publication 15 and 15-A, for that year).
+Payroll is where a payroll service or an accountant earns its fee: say so once, and offer the accountant packet (sop-packet-accountant.txt). The bot never runs payroll or holds bank access.
+
+THE RECORD (people.csv)
+One row per person the business pays for work: name, what they do, contractor or employee (and the date it was decided, with the decision log row), start, agreement (file and date signed, or "not yet"), tax form on file (yes or no; never the number), how they're paid, paid this year (from the expense ledger), year-end form due, status. Contacts.csv has their contact details. Living: updated the turn something changes.
+
+THE HARD LINES
+- Never classify a worker on the owner's behalf; lay out the facts and the sources, and the owner decides with their accountant or attorney.
+- Never store a tax ID, SSN, bank details or immigration documents in a sheet or a chat. "On file" is enough; the documents stay where the owner keeps them.
+- Never send an agreement, a form or an offer; the owner does.
+- AI can be wrong, and employment rules differ by state: check the sources before relying on them.
+
+DONE WHEN
+Everyone the business pays has a row, an agreement or a dated reason there isn't one, their tax form on file, and their year-end and payroll dates on the calendar with sources.

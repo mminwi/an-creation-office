@@ -1,0 +1,37 @@
+AN Creation template: contractor agreement terms checklist. Revision 1 — October 18, 2026.
+Used by: https://ancreationoffice.com/sop-contractors-and-hiring.txt
+This is a checklist of the terms an agreement with a contractor should settle, so b-business-manager can draft one in plain words. It is not legal text. On the owner's own money, a plain agreement both sign is the start; where the work matters to the business or real money is involved, an attorney reviews the draft before signing (sop-packet-attorney.txt). Rules differ by state.
+
+THE PARTIES
+- The business (its legal name, or the owner's name if not formed yet) and the contractor (their legal name or business name).
+
+THE WORK
+- What they will do, in plain words, and what they will hand over (files, formats, quantities).
+- When: start, milestones, the finish date.
+- How the work is accepted: who checks it, and what happens if it isn't right (one round of fixes, for example).
+
+THE MONEY
+- The price: fixed, by the hour with a cap, or by milestone.
+- Invoices: when they send them, and when they're paid (for example 15 or 30 days).
+- Expenses: which ones are covered, and only with approval in advance.
+
+WHO OWNS WHAT IS MADE
+- Everything made for the business under the agreement (drawings, CAD files, designs, code, photos, text, prototypes, test results) belongs to the business, assigned in writing, including any rights in it.
+- What the contractor brought with them stays theirs, with the business allowed to use it as part of the work.
+- For an invention: they tell the business about any idea for the product they come up with during the work, and it belongs to the business.
+
+CONFIDENTIALITY
+- What they learn about the business and the product stays confidential, during and after the work, with the usual exceptions (already public, already theirs).
+- If an NDA was signed earlier, say this agreement keeps it in force.
+
+INDEPENDENT CONTRACTOR
+- They decide how and when they do the work, use their own tools and place, may work for others, and pay their own taxes; no benefits.
+- These words do not make someone a contractor if the work is really done as an employee would do it (sop-contractors-and-hiring.txt CONTRACTOR OR EMPLOYEE).
+
+ENDING IT
+- Either side can end it with notice (for example 14 days), with payment for work done and the hand-over of everything made so far.
+
+THE REST
+- Which state's law applies.
+- How changes are made: in writing, signed by both.
+- Signatures and dates.

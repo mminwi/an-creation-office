@@ -1,4 +1,4 @@
-261018.39
+261018.40
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -65,6 +65,7 @@ example-mousetrap/invention-disclosure.csv
 example-mousetrap/invoices.csv
 example-mousetrap/market-evidence.csv
 example-mousetrap/monthly.csv
+example-mousetrap/people.csv
 example-mousetrap/pipeline.csv
 example-mousetrap/plan.txt
 example-mousetrap/pricing-terms.csv
@@ -76,6 +77,7 @@ example-mousetrap/schedule.csv
 example-mousetrap/spending.csv
 example-mousetrap/tax-year-2026.txt
 example-mousetrap/trips.csv
+example-mousetrap/weekly.csv
 forms-catalog.csv
 funding-packet.py
 github-setup.txt
@@ -198,6 +200,7 @@ sop-change-control.txt
 sop-checklists.txt
 sop-company.txt
 sop-compliance-calendar.txt
+sop-contractors-and-hiring.txt
 sop-cooling-water.txt
 sop-correspondence.txt
 sop-cost-sheet.txt
@@ -262,6 +265,7 @@ sop-team.txt
 sop-tolerance-stack.txt
 sop-tooling-loop.txt
 sop-website.txt
+sop-weekly-review.txt
 sop.txt
 sops-manifest.txt
 standing.txt
@@ -278,6 +282,7 @@ template-cash-flow.csv
 template-change-record.txt
 template-company.csv
 template-contacts.csv
+template-contractor-terms.txt
 template-correspondence.csv
 template-cost-sheet.csv
 template-deadlines.csv
@@ -292,6 +297,7 @@ template-invoices.csv
 template-market-evidence.csv
 template-meeting.csv
 template-monthly.csv
+template-people.csv
 template-pipeline.csv
 template-pricing-terms.csv
 template-prior-art.csv
@@ -305,6 +311,7 @@ template-spending-register.csv
 template-team.csv
 template-trial-log.txt
 template-trips.csv
+template-weekly.csv
 terms.txt
 test-matrix.csv
 test-plan-template.txt

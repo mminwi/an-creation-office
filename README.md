@@ -94,6 +94,7 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`sop-sales.txt`](guide/sop-sales.txt) | K9. b-business-manager, for any business (with or without an invention): customers and sales, invoices and getting paid | [live](https://ancreationoffice.com/sop-sales.txt) |
 | [`sop-monthly-money.txt`](guide/sop-monthly-money.txt) | K9. b-business-manager, for any business (with or without an invention): money each month | [live](https://ancreationoffice.com/sop-monthly-money.txt) |
 | [`sop-compliance-calendar.txt`](guide/sop-compliance-calendar.txt) | K9. b-business-manager, for any business (with or without an invention): the compliance calendar | [live](https://ancreationoffice.com/sop-compliance-calendar.txt) |
+| [`sop-weekly-review.txt`](guide/sop-weekly-review.txt) | K9. b-business-manager, for any business (with or without an invention): the weekly review | [live](https://ancreationoffice.com/sop-weekly-review.txt) |
 | [`sop-project-record.txt`](guide/sop-project-record.txt) | The project record, required for every invention | [live](https://ancreationoffice.com/sop-project-record.txt) |
 | [`sop-decision-log.txt`](guide/sop-decision-log.txt) | decision log | [live](https://ancreationoffice.com/sop-decision-log.txt) |
 | [`sop-action-log.txt`](guide/sop-action-log.txt) | action log with suggestions | [live](https://ancreationoffice.com/sop-action-log.txt) |
@@ -166,7 +167,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`funding-packet.py`](guide/funding-packet.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/funding-packet.py) |
 | [`handoff-log.csv`](guide/handoff-log.csv) | Worksheet / table (CSV): handoff_id, sent_date, sender, recipient... | [live](https://ancreationoffice.com/handoff-log.csv) |
 | [`ip-ratings.txt`](guide/ip-ratings.txt) | IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and  | [live](https://ancreationoffice.com/ip-ratings.txt) |
-| [`library.txt`](guide/library.txt) | 261018.39 | [live](https://ancreationoffice.com/library.txt) |
+| [`library.txt`](guide/library.txt) | 261018.40 | [live](https://ancreationoffice.com/library.txt) |
 | [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The | [live](https://ancreationoffice.com/manufacturing.txt) |
 | [`office-call-analyst.txt`](guide/office-call-analyst.txt) | AN Creation skill: office-call-analyst. How a bot hands heavy work to b-analyst and checks that it came back.  | [live](https://ancreationoffice.com/office-call-analyst.txt) |
 | [`office-handoff.txt`](guide/office-handoff.txt) | AN Creation skill: office-handoff. The office rule is https://ancreationoffice.com/sop-team.txt HAND-OFFS. | [live](https://ancreationoffice.com/office-handoff.txt) |
@@ -225,6 +226,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`revision-log.csv`](guide/revision-log.csv) | Worksheet / table (CSV): item_id, title, revision, previous_revision... | [live](https://ancreationoffice.com/revision-log.csv) |
 | [`revisions.txt`](guide/revisions.txt) | AN Creation revision control. Human lesson: https://ancreationoffice.com/revisions.html | [live](https://ancreationoffice.com/revisions.txt) |
 | [`robots.txt`](guide/robots.txt) | User-agent: * | [live](https://ancreationoffice.com/robots.txt) |
+| [`sop-contractors-and-hiring.txt`](guide/sop-contractors-and-hiring.txt) | SOP: Contractors and first hires. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-contractors-and-hiring.txt) |
 | [`sop-hats.txt`](guide/sop-hats.txt) | SOP: Form, record, and call a session. Revision 3 — October 1, 2026. | [live](https://ancreationoffice.com/sop-hats.txt) |
 | [`sop-interns.txt`](guide/sop-interns.txt) | SOP: Use an intern. Revision 1 — October 1, 2026. | [live](https://ancreationoffice.com/sop-interns.txt) |
 | [`sop-office.txt`](guide/sop-office.txt) | SOP: Set up b-project-manager and b-analyst. Revision 17 — October 18, 2026. | [live](https://ancreationoffice.com/sop-office.txt) |
@@ -241,7 +243,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`sop-several-inventions.txt`](guide/sop-several-inventions.txt) | SOP: Several inventions, one Project Manager Bot. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-several-inventions.txt) |
 | [`sop-suggestions.txt`](guide/sop-suggestions.txt) | SOP: Suggestions and actions. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/sop-suggestions.txt) |
 | [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 28 — October 18, 2026. | [live](https://ancreationoffice.com/sop.txt) |
-| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.39 | [live](https://ancreationoffice.com/sops-manifest.txt) |
+| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.40 | [live](https://ancreationoffice.com/sops-manifest.txt) |
 | [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's form | [live](https://ancreationoffice.com/status-template.txt) |
 | [`tax-year.py`](guide/tax-year.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/tax-year.py) |
 | [`template-a3.txt`](guide/template-a3.txt) | One-page project summary (A3). Template, from Mike's practice (sop-six-sigma.txt section 6). Copy into the pro | [live](https://ancreationoffice.com/template-a3.txt) |
@@ -252,6 +254,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`template-cash-flow.csv`](guide/template-cash-flow.csv) | Worksheet / table (CSV): month, owner in, loan in, units sold... | [live](https://ancreationoffice.com/template-cash-flow.csv) |
 | [`template-company.csv`](guide/template-company.csv) | Worksheet / table (CSV): key, value, status, note... | [live](https://ancreationoffice.com/template-company.csv) |
 | [`template-contacts.csv`](guide/template-contacts.csv) | Worksheet / table (CSV): name, organization, type, status... | [live](https://ancreationoffice.com/template-contacts.csv) |
+| [`template-contractor-terms.txt`](guide/template-contractor-terms.txt) | AN Creation template: contractor agreement terms checklist. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/template-contractor-terms.txt) |
 | [`template-correspondence.csv`](guide/template-correspondence.csv) | Worksheet / table (CSV): date, folder, direction, with... | [live](https://ancreationoffice.com/template-correspondence.csv) |
 | [`template-cost-sheet.csv`](guide/template-cost-sheet.csv) | Worksheet / table (CSV): level, part number, part, qty... | [live](https://ancreationoffice.com/template-cost-sheet.csv) |
 | [`template-deadlines.csv`](guide/template-deadlines.csv) | Worksheet / table (CSV): due, what, why it matters, Source... | [live](https://ancreationoffice.com/template-deadlines.csv) |
@@ -265,6 +268,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`template-market-evidence.csv`](guide/template-market-evidence.csv) | Worksheet / table (CSV): date, who, what they saw, what they said... | [live](https://ancreationoffice.com/template-market-evidence.csv) |
 | [`template-meeting.csv`](guide/template-meeting.csv) | Worksheet / table (CSV): key, value, note... | [live](https://ancreationoffice.com/template-meeting.csv) |
 | [`template-monthly.csv`](guide/template-monthly.csv) | Worksheet / table (CSV): month, sales, cost of sales, other spending... | [live](https://ancreationoffice.com/template-monthly.csv) |
+| [`template-people.csv`](guide/template-people.csv) | Worksheet / table (CSV): name, what they do, contractor or employee, decided on... | [live](https://ancreationoffice.com/template-people.csv) |
 | [`template-pipeline.csv`](guide/template-pipeline.csv) | Worksheet / table (CSV): id, opened, customer, contact... | [live](https://ancreationoffice.com/template-pipeline.csv) |
 | [`template-pricing-terms.csv`](guide/template-pricing-terms.csv) | Worksheet / table (CSV): key, value, source, note... | [live](https://ancreationoffice.com/template-pricing-terms.csv) |
 | [`template-prior-art.csv`](guide/template-prior-art.csv) | Worksheet / table (CSV): ref, title, date, owner or assignee... | [live](https://ancreationoffice.com/template-prior-art.csv) |
@@ -275,6 +279,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`template-spending-register.csv`](guide/template-spending-register.csv) | Worksheet / table (CSV): date, stage, what it was, category... | [live](https://ancreationoffice.com/template-spending-register.csv) |
 | [`template-team.csv`](guide/template-team.csv) | Worksheet / table (CSV): name, covers, bot_id, business... | [live](https://ancreationoffice.com/template-team.csv) |
 | [`template-trips.csv`](guide/template-trips.csv) | Worksheet / table (CSV): trip, date, from, to (place and address)... | [live](https://ancreationoffice.com/template-trips.csv) |
+| [`template-weekly.csv`](guide/template-weekly.csv) | Worksheet / table (CSV): week, one number, new leads, quotes out... | [live](https://ancreationoffice.com/template-weekly.csv) |
 | [`test-matrix.csv`](guide/test-matrix.csv) | Worksheet / table (CSV): Project, Plan ID / revision, Test ID, Requirement / CTQ / risk IDs... | [live](https://ancreationoffice.com/test-matrix.csv) |
 | [`test-plan-template.txt`](guide/test-plan-template.txt) | AN CREATION — TEST PLAN TEMPLATE — REV 1 | [live](https://ancreationoffice.com/test-plan-template.txt) |
 | [`test-planning.json`](guide/test-planning.json) | Data behind the test planning page (JSON) | [live](https://ancreationoffice.com/test-planning.json) |

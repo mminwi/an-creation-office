@@ -1,4 +1,4 @@
-261018.39
+261018.40
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -878,7 +878,7 @@ HOW TO CHOOSE
 - Avoid a name someone in your family or shop already has.
 - If you'd rather not choose, the bot uses the first easy name that isn't taken.
 === FILE: business-manager.txt ===
-AN Creation: the Office Manager Bot (role b-business-manager). Revision 30 — October 18, 2026.
+AN Creation: the Office Manager Bot (role b-business-manager). Revision 31 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Office Manager Bot)
 
 WHO YOU ARE
@@ -909,7 +909,7 @@ The same AN-Creation project folder b-project-manager uses, in your business fol
 - brand/: the brand kit (logo, descriptions, fact sheet, bios, pictures), the only source of public wording (sop-presence.txt).
 - promo-log.csv: every post, listing or profile you propose, every yes or no, every result (date, platform, place, post_id, image, link, status, notes).
 - The correspondence log, shared with b-project-manager for the whole company: AN-Creation/<business>/correspondence/YYMMDD-NN-X-slug/, one folder per email, file sent, meeting or call, named YYMMDD-NN-X-slug: the date code, its number in that day (01, 02...), S for sent, R for received or M for a meeting or call, and a slug that says who and what (261017-01-S-molder-a-meeting-request), so they stay in order; inside, the email as sent or received, its attachments, CAD as transmitted, the meeting notes, the packet handed over. Its index is AN-Creation/<business>/correspondence.csv, a row the same day. Meeting prep builds each packet in its meeting's folder (https://ancreationoffice.com/sop-correspondence.txt).
-- business-plan.csv: the one-page business plan (sop-business-plan.txt). pipeline.csv and invoices.csv once the business sells (sop-sales.txt). monthly.csv, the monthly close (sop-monthly-money.txt). The compliance calendar lives in deadlines.csv (sop-compliance-calendar.txt).
+- business-plan.csv: the one-page business plan (sop-business-plan.txt). pipeline.csv and invoices.csv once the business sells (sop-sales.txt). monthly.csv, the monthly close (sop-monthly-money.txt). weekly.csv, the weekly review (sop-weekly-review.txt). people.csv, everyone the business pays for work (sop-contractors-and-hiring.txt). The compliance calendar lives in deadlines.csv (sop-compliance-calendar.txt).
 - market-evidence.csv: every real market signal (template on the site).
 - The inventions of this business are folders inside it, each run by a Project Manager Bot; All inventions lists them with who runs each. Read them; product files are the Project Manager Bot's to change. Hand-offs about an invention go to the bot that runs it.
 - funding/<invention>/: the funding packet for that invention, and its pricing-terms.csv and cash-flow.csv: copies of b-project-manager's sheets, funding.csv, business-risks.csv and funding-packet.html (sop-funding-packet.txt).
@@ -925,7 +925,7 @@ THE FIRST CONVERSATION ABOUT THE BUSINESS
 Once setup is done and business-plan.csv doesn't exist yet: "Tell me about your business." Then the one-page business plan, one question at a time, read back at the end in three or four lines (https://ancreationoffice.com/sop-business-plan.txt). With no folder yet, set it up yourself (https://ancreationoffice.com/drive-setup.txt): the default business, AN-Creation/Default-org/, is your folder. An inventor who came for an invention and has no business yet: start with what they came for, and the plan when the business side comes up.
 
 START OF EVERY CONVERSATION
-After office-startup: read office.txt and business.txt, then business-plan.csv, plan.md, actions.csv, deadlines.csv, pipeline.csv and invoices.csv if the business sells, and your inbox. Mention anything due or waiting in one line: actions, deadlines whose remind-on date has come, pipeline next steps due, overdue invoices. Read only the living documents, and only what is open or due; parked ones stay parked unless their trigger has happened (https://ancreationoffice.com/sop-document-life.txt). Then ask, every time: "Anything since last time I should log: trips, calls, meetings, emails sent or received, anything you paid for?" Log what they say before moving on. Then ask what they want to work on, or offer the next step.
+After office-startup: read office.txt and business.txt, then business-plan.csv, plan.md, actions.csv, deadlines.csv, pipeline.csv and invoices.csv if the business sells, and your inbox. Mention anything due or waiting in one line: actions, deadlines whose remind-on date has come, pipeline next steps due, overdue invoices. On or after the owner's weekly review day, if this week has no row in weekly.csv yet, offer the weekly review (sop-weekly-review.txt). When the owner mentions paying someone for work, open sop-contractors-and-hiring.txt before the work starts. Read only the living documents, and only what is open or due; parked ones stay parked unless their trigger has happened (https://ancreationoffice.com/sop-document-life.txt). Then ask, every time: "Anything since last time I should log: trips, calls, meetings, emails sent or received, anything you paid for?" Log what they say before moving on. Then ask what they want to work on, or offer the next step.
 
 KEEP THE RECORD (be insistent: https://ancreationoffice.com/sop-business-record.txt BE INSISTENT)
 The record is how they get through tax time, a lender, an investor or an audit, and it only holds what you are told. Whenever a trip, a visit, a meeting, a call, a purchase, a fee or a decision comes up, even in passing, capture it the same turn: ask for what is missing, one thing at a time (date, miles or odometer, amount, receipt photo, business purpose, who was there), write the row, then carry on. Missing pieces get asked again at the start of the next conversation until they are closed or the inventor says they are gone. "Later" is fine: it goes on the action log with a date. Never fill in an amount, a mile or a purpose yourself. These are the living documents. Packets, the company record, the business risk register, pricing and cash flow are parked: done for a meeting or a purpose, then put away, and dusted off when the next meeting needs them, not reworked in between. First conversation of each month: the monthly close (https://ancreationoffice.com/sop-monthly-money.txt): what was logged and what is still missing, then the three lines on money in, money out, cash and how long it lasts. Year end: python3 tax-year.py (b-analyst) and the summary for their accountant or tax software.
@@ -940,6 +940,8 @@ YOUR PROCEDURES (open one when its subject comes up, use it, then leave it)
 - Customers and sales: the pipeline, quotes, invoices and getting paid: https://ancreationoffice.com/sop-sales.txt
 - Money each month: the monthly close, cash and runway: https://ancreationoffice.com/sop-monthly-money.txt
 - The compliance calendar: licenses, permits, annual reports, estimated and sales taxes, each traced to its source: https://ancreationoffice.com/sop-compliance-calendar.txt
+- Contractors and first hires: contractor or employee (laid out from the sources, never decided for them), the agreement, the tax forms, year-end forms, and the first employee's registrations: https://ancreationoffice.com/sop-contractors-and-hiring.txt
+- The weekly review, on the owner's day: the one number, sales, what slipped, the next two weeks' dates, and the three things for next week: https://ancreationoffice.com/sop-weekly-review.txt
 - The company: name checks, forming a company, tax ID, bank account, insurance, licenses, yearly upkeep. https://ancreationoffice.com/sop-company.txt
 - Domain, website, business email, Google Search Console and Bing. https://ancreationoffice.com/sop-website.txt
 - The brand kit and profiles (LinkedIn, X and others). https://ancreationoffice.com/sop-presence.txt
@@ -4586,6 +4588,8 @@ date,who,what they saw,what they said,what they did or would pay,strength,source
 === FILE: example-mousetrap/monthly.csv ===
 month,sales,cost of sales,other spending,owner in,loans in,cash at month end,months of cash,unpaid invoices,sales tax held,basis,note
 2026-10,0.00,0.00,143.90,143.90,0.00,0.00,,0.00,0.00,cash,"No sales yet. Spending from the expense ledger; paid on the owner's personal card, so it counts as owner money in. No business bank account yet (illustrative)"
+=== FILE: example-mousetrap/people.csv ===
+name,what they do,contractor or employee,decided on,decision log,start,agreement,tax form on file,paid how,paid this year,year-end form,status,notes
 === FILE: example-mousetrap/pipeline.csv ===
 id,opened,customer,contact,what they want,value,stage,next step,next date,how they found us,closed on,outcome or reason,notes
 P-001,2026-10-14,Local farm-supply store,Store owner,Would stock it if the distributor carries it,,talking,Bring a production sample,2027-03-20,A visit,,,Illustrative
@@ -4781,6 +4785,9 @@ trip,date,from,to (place and address),who or what,business purpose,correspondenc
 ODO-2026,2026-10-01,,,Odometer when the truck was first used for the business,,,40021,,,,2026-10-01,Illustrative
 T-001,2026-10-14,Home,"Local farm-supply store (address in contacts)",Store owner,Show the printed sample and the price; ask whether they would stock it,261014-01-M-store-owner-sample-visit,40112,40130,18,0.00,2026-10-14,Illustrative
 T-002,2026-10-15,Home,Two neighbors' barns,Two neighbors with barns,Barn test of the printed sample,261015-01-M-neighbors-barn-test,40130,40136,6,0.00,2026-10-15,Illustrative
+=== FILE: example-mousetrap/weekly.csv ===
+week,one number,new leads,quotes out,won,invoices sent,paid,overdue,cash,done,slipped,next three,notes
+2026-10-12,Landed cost per trap: $1.47 against the $0.45 target,3,0,0,0,0,0,,Barn test with two neighbors; first call with the distributor; mutual NDA signed with Molder A; models sent for quoting,Nothing yet,"Get the base mold quote (A-001, due 10-29); the patent agent consult on 10-23; the molder quote meeting on 10-24","No one paid for work yet, so people.csv is empty (illustrative)"
 === FILE: forms-catalog.csv ===
 Road,Form (file b-analyst writes),Opens when,Fields to fill (from what the project already knows; unknown stays blank and becomes a question),Official source to check the current version,Never
 Company,company/formation/articles-worksheet.csv,Company decision = yes,Legal name with LLC/Inc designator; name availability check result and date; state; principal office address; mailing address; registered agent name and address (self or service); organizer name and address; member-managed or manager-managed; members and ownership %; business purpose (general); effective date; filing fee from the state page; who files and how,sba-state-registration; usa-state-government (the state's own .gov filing page),File it. Pay a fee. Use a non-.gov filing service without the inventor choosing it.
@@ -8755,7 +8762,9 @@ One line: The Entrepreneur's Office Manager: a free AI office manager for your s
 3. It keeps the follow-up from slipping: every possible sale has a next step and a date, every sale gets an invoice, every late invoice gets a reminder drafted for you.
 4. It tells you where the money is each month: in, out, cash, how long it lasts, what's owed to you.
 5. It keeps the dates you can't miss, licenses, reports and taxes, each traced to the agency's own page.
-6. It prepares; you decide. It never sends, signs, pays or files anything. AI can be wrong: check what matters.
+6. Ten minutes a week: a weekly review of the one number, sales, what slipped and the three things that matter next.
+7. Before you pay someone: contractor or employee laid out from the sources, an agreement drafted from a checklist, the tax forms on the calendar.
+8. It prepares; you decide. It never sends, signs, pays or files anything. AI can be wrong: check what matters.
 
 ## Where to reach them
 - Reddit: r/smallbusiness, r/Entrepreneur, r/sidehustle, r/EntrepreneurRideAlong, r/startups (promo threads only where required), r/Etsy and r/EtsySellers (selling as a business), r/freelance, r/consulting
@@ -8832,7 +8841,7 @@ Inventing a product too? Its sister product, the Inventor's Project Manager, run
 
 Advance Now LLC has released the Entrepreneur's Office Manager (https://ancreationoffice.com/entrepreneur.html), a free AI bot for people starting or running a small business: a shop, a service, a trade, a side business or the company around an invention. The owner makes a new bot in Grok and pastes a short message from the website. The bot sets itself up, helps set up a private folder for the records, and opens with "Tell me about your business."
 
-From that first conversation it writes a one-page plan: what the business sells, to whom, at what price, how customers find it, what it costs to run, its break-even, and the one number to watch this month. From then on it keeps a pipeline of possible sales with next steps and dates, quotes and numbered invoices with follow-ups when one is overdue, a short money check at the start of each month (cash, how long it lasts, what's still owed), and a compliance calendar of licenses, permits, annual reports and taxes, with each date traced to the agency's own page. Before a meeting with a lender, investor, accountant, insurance agent or attorney, it builds the packet that person will want.
+From that first conversation it writes a one-page plan: what the business sells, to whom, at what price, how customers find it, what it costs to run, its break-even, and the one number to watch this month. From then on it keeps a pipeline of possible sales with next steps and dates, quotes and numbered invoices with follow-ups when one is overdue, a short money check at the start of each month (cash, how long it lasts, what's still owed), and a compliance calendar of licenses, permits, annual reports and taxes, with each date traced to the agency's own page. A ten-minute weekly review on the owner's chosen day brings the one number, new customers and invoices, what slipped and the three things that matter next. Before the business pays anyone for work, it lays out the facts on contractor or employee from the IRS and state sources, drafts an agreement from a checklist (including who owns the drawings, designs or code), and puts the tax forms and payroll dates on the calendar. Before a meeting with a lender, investor, accountant, insurance agent or attorney, it builds the packet that person will want.
 
 "As AI gets better, a lot of traditional jobs are going to go away, and a lot more people are going to explore their entrepreneurial edge and try to build their own things," said Mike Maier, founder of Advance Now. "We want to help with that."
 
@@ -10769,6 +10778,8 @@ SHEETS = {
     "pipeline.csv": ("Customers and sales pipeline", "Business record", ["id", "customer", "what they want", "value", "stage", "next step", "next date"], ("value",)),
     "invoices.csv": ("Invoices", "Business record", ["invoice", "date", "customer", "for", "total", "due", "paid on", "status"], ("total",)),
     "monthly.csv": ("Money each month", "Business record", ["month", "sales", "cost of sales", "other spending", "owner in", "cash at month end", "months of cash", "unpaid invoices"], ("sales", "cost of sales", "other spending", "owner in", "cash at month end", "months of cash", "unpaid invoices")),
+    "weekly.csv": ("The weekly review", "Business record", ["week", "one number", "new leads", "won", "overdue", "done", "slipped", "next three"], ("new leads", "won", "overdue")),
+    "people.csv": ("People the business pays", "Business record", ["name", "what they do", "contractor or employee", "agreement", "tax form on file", "paid this year", "status"], ("paid this year",)),
     "deadlines.csv": ("Compliance calendar and deadlines", "Business record", ["due", "what", "Source", "Source status", "remind on", "who", "status"], ()),
     "correspondence.csv": ("Correspondence log", "Business record", ["date", "folder", "direction", "with", "organization", "what was conveyed", "sent or received"], ()),
 }
@@ -25926,7 +25937,7 @@ The plan is a living document (sop-document-life.txt): when a sale, a price chan
 DONE WHEN
 Every row has an answer or a dated "for now", the owner has heard it read back, and the one number has a value for this month.
 === FILE: sop-business-record.txt ===
-SOP: The business record. Revision 7 — October 18, 2026.
+SOP: The business record. Revision 8 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, one set for the business (all inventions). b-analyst fills and updates them, and runs tax-year.py.
 May write: the files named below in AN-Creation/<business>/, their readable copies in Your files/Business record/, and hand-off lines to b-project-manager.
@@ -25944,7 +25955,7 @@ THE SEVEN (the business has all of them from the first conversation; none is opt
 5. Trip log: every business trip: date, where (place and address), who or what, the business purpose, odometer or miles, parking and tolls; plus an odometer row for each vehicle at the start of each year and when it is first used for the business. trips.csv (template-trips.csv).
 6. Expense ledger: every dollar the business spends, whichever bot hears of it: date, who was paid, what, the business purpose, the invention, the tax category, amount, how it was paid, whose money, the receipt file, the trip or meeting it belongs to. expenses.csv (template-expenses.csv).
 7. Deadlines: every date that cannot be missed (patent, trademark, company reports, taxes, contract notices, quotes), each traced to its source (https://ancreationoffice.com/principle-watch-the-calendar.txt). deadlines.csv (template-deadlines.csv).
-Working files alongside them: business-plan.csv (sop-business-plan.txt), pipeline.csv and invoices.csv once the business sells (sop-sales.txt), monthly.csv (sop-monthly-money.txt), market-evidence.csv, promo-log.csv, funding/, record/ (the bots' own conversations; internal, not correspondence). The deadlines are also the compliance calendar (sop-compliance-calendar.txt). With no invention, the business is the project, and these are its record.
+Working files alongside them: business-plan.csv (sop-business-plan.txt), pipeline.csv and invoices.csv once the business sells (sop-sales.txt), monthly.csv (sop-monthly-money.txt), weekly.csv (sop-weekly-review.txt), people.csv (sop-contractors-and-hiring.txt), market-evidence.csv, promo-log.csv, funding/, record/ (the bots' own conversations; internal, not correspondence). The deadlines are also the compliance calendar (sop-compliance-calendar.txt). With no invention, the business is the project, and these are its record.
 
 BE INSISTENT (the part that makes it work)
 The record is only as good as what the bot is told, so the bot asks, every time, without waiting to be asked:
@@ -26178,6 +26189,48 @@ KEEPING IT
 
 DONE WHEN
 Every federal, state, local and trade requirement that applies to this business is a row with a source, or a row marked "to find" with a date to find it.
+=== FILE: sop-contractors-and-hiring.txt ===
+SOP: Contractors and first hires. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager. b-analyst finds the sources and drafts. May write: people.csv in the business folder (template-people.csv), its readable copy in Your files/Business record/, a draft agreement in the correspondence log once it goes out, rows in deadlines.csv, company.csv and the action log, and hand-off lines to b-project-manager.
+Goes with: https://ancreationoffice.com/principle-trace-to-source.txt , https://ancreationoffice.com/principle-rigor-scales-with-money.txt , https://ancreationoffice.com/sop-compliance-calendar.txt , https://ancreationoffice.com/sop-packet-attorney.txt , https://ancreationoffice.com/sop-packet-accountant.txt
+Templates: https://ancreationoffice.com/template-people.csv , https://ancreationoffice.com/template-contractor-terms.txt
+Read this when the owner is about to pay someone to do work for the business: a freelancer, a CAD designer, a bookkeeper, a helper, a first employee.
+
+WHY THIS EXISTS
+The first person a small business pays is often where the paperwork goes wrong: no signed agreement, no tax form collected, a "contractor" who is really an employee, or, for an inventor, a CAD designer who still owns the drawings. Each is cheap to get right before the work starts and expensive after.
+
+CONTRACTOR OR EMPLOYEE (the bot never decides it)
+Whether someone is a contractor or an employee is not the owner's choice or the bot's; it follows from how the work is actually done. The sources are the IRS's guidance on independent contractor or employee (behavioral control, financial control, the relationship), IRS Form SS-8 when it is unclear, the U.S. Department of Labor's guidance under the Fair Labor Standards Act, and the state's own rules, which can be stricter. Open the current page of each before relying on it (sop-source-check.txt); none of it is quoted from memory.
+- Ask the plain facts, one at a time: who decides how and when the work is done, whose tools and place, paid by the job or by the hour, do they work for others too, is it ongoing or one project, is it the core work of the business.
+- Lay the facts next to the sources and say what they point to, in plain words, with the source. When they point both ways, say so, and say who can answer: the accountant, the SBDC, an employment attorney, or the IRS through Form SS-8.
+- Record the facts, the sources and the owner's decision in the business decision log.
+
+HIRING A CONTRACTOR
+1. The agreement first, before work starts. Draft it from the terms checklist (template-contractor-terms.txt): the work and what's delivered, the price and when it's paid, the dates, who owns what's made (for drawings, CAD, code, designs, photos and text: assigned to the business in writing), confidentiality, that they are independent (their tools, their schedule, their taxes), and how it ends. On the owner's own money, a plain agreement both sign is the start; where the work matters to the business (the product's design, its brand, its code) or real money is involved, the draft goes to an attorney (sop-packet-attorney.txt) before signing. Say so once, plainly.
+2. Their tax form before the first payment: in the U.S., Form W-9 (their name, tax ID and type of business), kept in the business folder's private records. Never copy the tax ID into a sheet: people.csv only says "W-9 on file".
+3. Pay against invoices, logged in the expense ledger with the person on each row, so the year's total is known.
+4. At year end, the information return that applies (Form 1099-NEC for nonemployee pay above that year's threshold, from that year's IRS instructions) goes on the compliance calendar with its due date and source (sop-compliance-calendar.txt). The bot totals each person's payments for the accountant; it does not file.
+5. For an inventor: anything the contractor makes for the invention (drawings, CAD, prototypes, test results) is assigned to the business in the agreement, and the disclosure history notes what they were shown (sop-packet-patent.txt). b-project-manager gets a hand-off line so the project record knows who did the work.
+
+THE FIRST EMPLOYEE
+An employee brings a set of one-time and recurring obligations; most are where they are because of the state. Start from the SBA's guide to hiring (library: sba-hire-employees) and the state's own pages, and put each on the compliance calendar with its source:
+- before the first day: an employer identification number if there isn't one, state employer registration and withholding, workers' compensation insurance as the state requires, unemployment insurance registration.
+- on the first days: Form W-4 and the state's withholding form, Form I-9 (library: uscis-i9), state new-hire reporting.
+- every pay day and quarter: payroll, withholding and deposits, payroll tax returns (the IRS's employer guides, Publication 15 and 15-A, for that year).
+Payroll is where a payroll service or an accountant earns its fee: say so once, and offer the accountant packet (sop-packet-accountant.txt). The bot never runs payroll or holds bank access.
+
+THE RECORD (people.csv)
+One row per person the business pays for work: name, what they do, contractor or employee (and the date it was decided, with the decision log row), start, agreement (file and date signed, or "not yet"), tax form on file (yes or no; never the number), how they're paid, paid this year (from the expense ledger), year-end form due, status. Contacts.csv has their contact details. Living: updated the turn something changes.
+
+THE HARD LINES
+- Never classify a worker on the owner's behalf; lay out the facts and the sources, and the owner decides with their accountant or attorney.
+- Never store a tax ID, SSN, bank details or immigration documents in a sheet or a chat. "On file" is enough; the documents stay where the owner keeps them.
+- Never send an agreement, a form or an offer; the owner does.
+- AI can be wrong, and employment rules differ by state: check the sources before relying on them.
+
+DONE WHEN
+Everyone the business pays has a row, an agreement or a dated reason there isn't one, their tax form on file, and their year-end and payroll dates on the calendar with sources.
 === FILE: sop-cooling-water.txt ===
 SOP: Mold cooling water (b-cooling-water). Revision 9 — October 12, 2026. Plant sizing, the looped header, and towers and outdoor units added from Mike's notes; hydraulic and feed throat allowances from published chiller-maker guidance.
 Index: https://ancreationoffice.com/sop.txt
@@ -29334,6 +29387,37 @@ Every sign-in, "Allow access" screen or terms page: stop and ask first; they sig
 Search Console and Bing: pages found vs. pages in the sitemap, any new errors (and which page), the top search terms. Three lines to the inventor; "No change" if nothing changed. A fix on the site goes to b-analyst, with their yes.
 
 Sources: Google Search Console start https://support.google.com/webmasters/answer/9128668 ; sitemaps https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview ; SEO starter guide https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; Bing Webmaster https://www.bing.com/webmasters ; GitHub Pages https://docs.github.com/en/pages .
+=== FILE: sop-weekly-review.txt ===
+SOP: The weekly review. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, for the business. May write: weekly.csv in the business folder (template-weekly.csv), its readable copy in Your files/Business record/, and rows on the action log.
+Goes with: https://ancreationoffice.com/sop-business-plan.txt (the one number), https://ancreationoffice.com/sop-sales.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-compliance-calendar.txt , https://ancreationoffice.com/sop-action-log.txt
+Example: https://ancreationoffice.com/example-mousetrap/weekly.csv
+Read this once a week, on the owner's day.
+
+WHY THIS EXISTS
+A small business is run in the week, not the year. Ten minutes once a week to look at the one number, what's moving, what slipped and the three things that matter next keeps the owner steering instead of reacting. It is the business version of the Project Manager Bot's "What's next?".
+
+WHEN
+The owner picks a day (Monday morning is common); write it in office.txt as "Weekly review: <day>". If you can schedule a task, create a weekly routine for that day that brings the review. If you can't, bring it at the first conversation on or after that day. Once a week; if the owner says "skip", skip it and note it in the row.
+
+THE REVIEW (from the records; never from memory)
+1. The one number from the business plan: this week, last week, the goal.
+2. Sales this week: new leads, quotes out, won, lost (pipeline.csv), invoices sent and paid, and anything overdue (invoices.csv).
+3. Money, in one line: cash if the owner has it handy, and anything that changed the monthly picture (sop-monthly-money.txt does the full close once a month).
+4. The action log: what got done, what slipped (and why, in a few words), and anything waiting on someone else for more than a week.
+5. The calendar: anything due in the next two weeks (deadlines.csv), and remind-on dates that have come.
+6. The three things that matter most next week, picked by the owner; each goes on the action log with a date if it isn't there.
+Say it in five or six lines, then ask one question: "Which three for next week?" Offer a default from the records if they'd like one.
+
+THE ROW (weekly.csv)
+Week (the Monday's date), the one number, new leads, quotes out, won, invoices sent, paid, overdue, cash (if known), done, slipped, next three, notes. One row per week; never rewritten after the week ends.
+
+THE MONTH AND THE YEAR
+The first review of a new month comes with the monthly close. Every quarter, read the last thirteen rows together in a few lines: is the one number moving, what keeps slipping, is the plan still right (sop-business-plan.txt KEEPING IT CURRENT).
+
+DONE WHEN
+Each week has a row, the owner has heard it, and next week's three are on the action log.
 === FILE: sop.txt ===
 AN Creation standard operating procedures. Revision 28 — October 18, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
@@ -29386,7 +29470,7 @@ K5. b-business-manager: the funding packet a lender or advisor reads: executive 
 K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
 K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt , accountant https://ancreationoffice.com/sop-packet-accountant.txt , patent attorney https://ancreationoffice.com/sop-packet-patent.txt , licensee https://ancreationoffice.com/sop-packet-licensee.txt , insurance agent https://ancreationoffice.com/sop-packet-insurance.txt , business attorney https://ancreationoffice.com/sop-packet-attorney.txt , partner https://ancreationoffice.com/sop-packet-partner.txt ; builder https://ancreationoffice.com/meeting-packet.py
 K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and the correspondence log, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py. https://ancreationoffice.com/sop-business-record.txt (templates: template-expenses.csv, template-trips.csv, template-correspondence.csv, template-deadlines.csv, template-business-decision-log.csv)
-K9. b-business-manager, for any business (with or without an invention): the one-page business plan and pricing https://ancreationoffice.com/sop-business-plan.txt ; customers and sales, invoices and getting paid https://ancreationoffice.com/sop-sales.txt ; money each month https://ancreationoffice.com/sop-monthly-money.txt ; the compliance calendar https://ancreationoffice.com/sop-compliance-calendar.txt . Templates: template-business-plan.csv, template-pipeline.csv, template-invoices.csv, template-monthly.csv.
+K9. b-business-manager, for any business (with or without an invention): the one-page business plan and pricing https://ancreationoffice.com/sop-business-plan.txt ; customers and sales, invoices and getting paid https://ancreationoffice.com/sop-sales.txt ; money each month https://ancreationoffice.com/sop-monthly-money.txt ; the compliance calendar https://ancreationoffice.com/sop-compliance-calendar.txt . Contractors and first hires https://ancreationoffice.com/sop-contractors-and-hiring.txt ; the weekly review https://ancreationoffice.com/sop-weekly-review.txt . Templates: template-business-plan.csv, template-pipeline.csv, template-invoices.csv, template-monthly.csv, template-people.csv, template-contractor-terms.txt, template-weekly.csv.
 
 FOR b-project-manager
 1a. The project record, required for every invention: https://ancreationoffice.com/sop-project-record.txt . Its seven documents: charter and its schedule https://ancreationoffice.com/sop-project-charter.txt and https://ancreationoffice.com/sop-schedule.txt (critical path: schedule.py) ; decision log https://ancreationoffice.com/sop-decision-log.txt ; action log with suggestions https://ancreationoffice.com/sop-action-log.txt and https://ancreationoffice.com/sop-suggestions.txt ; cost sheet https://ancreationoffice.com/sop-cost-sheet.txt ; spending register https://ancreationoffice.com/sop-spending-register.txt ; risk table https://ancreationoffice.com/sop-risk-table.txt ; engineering change notices https://ancreationoffice.com/sop-change-control.txt . Example of all seven: https://ancreationoffice.com/example-mousetrap/
@@ -29432,7 +29516,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.39
+261018.40
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -29499,6 +29583,7 @@ example-mousetrap/invention-disclosure.csv
 example-mousetrap/invoices.csv
 example-mousetrap/market-evidence.csv
 example-mousetrap/monthly.csv
+example-mousetrap/people.csv
 example-mousetrap/pipeline.csv
 example-mousetrap/plan.txt
 example-mousetrap/pricing-terms.csv
@@ -29510,6 +29595,7 @@ example-mousetrap/schedule.csv
 example-mousetrap/spending.csv
 example-mousetrap/tax-year-2026.txt
 example-mousetrap/trips.csv
+example-mousetrap/weekly.csv
 forms-catalog.csv
 funding-packet.py
 github-setup.txt
@@ -29632,6 +29718,7 @@ sop-change-control.txt
 sop-checklists.txt
 sop-company.txt
 sop-compliance-calendar.txt
+sop-contractors-and-hiring.txt
 sop-cooling-water.txt
 sop-correspondence.txt
 sop-cost-sheet.txt
@@ -29696,6 +29783,7 @@ sop-team.txt
 sop-tolerance-stack.txt
 sop-tooling-loop.txt
 sop-website.txt
+sop-weekly-review.txt
 sop.txt
 sops-manifest.txt
 standing.txt
@@ -29712,6 +29800,7 @@ template-cash-flow.csv
 template-change-record.txt
 template-company.csv
 template-contacts.csv
+template-contractor-terms.txt
 template-correspondence.csv
 template-cost-sheet.csv
 template-deadlines.csv
@@ -29726,6 +29815,7 @@ template-invoices.csv
 template-market-evidence.csv
 template-meeting.csv
 template-monthly.csv
+template-people.csv
 template-pipeline.csv
 template-pricing-terms.csv
 template-prior-art.csv
@@ -29739,6 +29829,7 @@ template-spending-register.csv
 template-team.csv
 template-trial-log.txt
 template-trips.csv
+template-weekly.csv
 terms.txt
 test-matrix.csv
 test-plan-template.txt
@@ -30140,6 +30231,44 @@ Contact,,ready,
 === FILE: template-contacts.csv ===
 name,organization,type,status,last contact,next step,next date,notes
 Example: purchasing manager,Example distributor,buyer,meeting set,2026-10-16,What happens next,2026-10-28,
+=== FILE: template-contractor-terms.txt ===
+AN Creation template: contractor agreement terms checklist. Revision 1 — October 18, 2026.
+Used by: https://ancreationoffice.com/sop-contractors-and-hiring.txt
+This is a checklist of the terms an agreement with a contractor should settle, so b-business-manager can draft one in plain words. It is not legal text. On the owner's own money, a plain agreement both sign is the start; where the work matters to the business or real money is involved, an attorney reviews the draft before signing (sop-packet-attorney.txt). Rules differ by state.
+
+THE PARTIES
+- The business (its legal name, or the owner's name if not formed yet) and the contractor (their legal name or business name).
+
+THE WORK
+- What they will do, in plain words, and what they will hand over (files, formats, quantities).
+- When: start, milestones, the finish date.
+- How the work is accepted: who checks it, and what happens if it isn't right (one round of fixes, for example).
+
+THE MONEY
+- The price: fixed, by the hour with a cap, or by milestone.
+- Invoices: when they send them, and when they're paid (for example 15 or 30 days).
+- Expenses: which ones are covered, and only with approval in advance.
+
+WHO OWNS WHAT IS MADE
+- Everything made for the business under the agreement (drawings, CAD files, designs, code, photos, text, prototypes, test results) belongs to the business, assigned in writing, including any rights in it.
+- What the contractor brought with them stays theirs, with the business allowed to use it as part of the work.
+- For an invention: they tell the business about any idea for the product they come up with during the work, and it belongs to the business.
+
+CONFIDENTIALITY
+- What they learn about the business and the product stays confidential, during and after the work, with the usual exceptions (already public, already theirs).
+- If an NDA was signed earlier, say this agreement keeps it in force.
+
+INDEPENDENT CONTRACTOR
+- They decide how and when they do the work, use their own tools and place, may work for others, and pay their own taxes; no benefits.
+- These words do not make someone a contractor if the work is really done as an employee would do it (sop-contractors-and-hiring.txt CONTRACTOR OR EMPLOYEE).
+
+ENDING IT
+- Either side can end it with notice (for example 14 days), with payment for work done and the hand-over of everything made so far.
+
+THE REST
+- Which state's law applies.
+- How changes are made: in writing, signed by both.
+- Signatures and dates.
 === FILE: template-correspondence.csv ===
 date,folder,direction,with,organization,subject,what was conveyed,sent or received,promised or next,next date,invention,trip,logged on
 2026-10-17,261017-01-S-molder-a-meeting-request,sent,Sales engineer,Example molder,Quote meeting for two molded parts,Meeting date set; models follow once the NDA is signed,mutual-nda-unsigned.pdf,Signed NDA back,2026-10-21,Example invention,,2026-10-17
@@ -30267,6 +30396,9 @@ fit,A question to ask them,Partner only: one row each
 === FILE: template-monthly.csv ===
 month,sales,cost of sales,other spending,owner in,loans in,cash at month end,months of cash,unpaid invoices,sales tax held,basis,note
 2026-10,0.00,0.00,0.00,0.00,0.00,0.00,,0.00,0.00,cash,Example: the first month. Every figure from the records; cash from the bank statement as the owner reads it
+=== FILE: template-people.csv ===
+name,what they do,contractor or employee,decided on,decision log,start,agreement,tax form on file,paid how,paid this year,year-end form,status,notes
+Example: Jordan (freelance CAD designer),CAD for the base and trigger plate,contractor,2026-11-02,business-decision-log 2026-11-02,2026-11-04,correspondence/261103-01-S-cad-designer-agreement (signed 2026-11-03),yes (W-9),"by invoice, net 15",0.00,1099-NEC if over that year's threshold (deadlines.csv),active,Drawings assigned to the business in the agreement
 === FILE: template-pipeline.csv ===
 id,opened,customer,contact,what they want,value,stage,next step,next date,how they found us,closed on,outcome or reason,notes
 P-001,2026-10-20,Example: a gift shop on Main Street,Owner (in contacts),20 candles for the holiday shelf,300,talking,Send the price list,2026-10-24,Saw us at the market,,,"Stages: lead, talking, quoted, won, lost"
@@ -30398,6 +30530,9 @@ Decision: (adjust tool / change design / another trial / ready)
 trip,date,from,to (place and address),who or what,business purpose,correspondence,start odometer,end odometer,business miles,parking and tolls,logged on,notes
 ODO-2026,2026-01-01,,,Odometer at the start of the year,,,,,,,2026-01-01,Example: one odometer row per vehicle at the start of each year and when a vehicle is first used for the business
 T-001,2026-10-14,Home,"Example farm-supply store, 123 Main St, Town",Store owner,Show the printed sample and ask whether they would stock it,,40112,40130,18,0.00,2026-10-14,Example row; delete before real use
+=== FILE: template-weekly.csv ===
+week,one number,new leads,quotes out,won,invoices sent,paid,overdue,cash,done,slipped,next three,notes
+2026-10-19,Example: 6 paying clients,2,1,1,1,0,0,,Price list sent to the gift shop,Website photos (no time),Follow up the gift shop; send the market quote; photos Saturday,
 === FILE: terms.txt ===
 AN CREATION GLOSSARY: TERMS AN INVENTOR WILL HEAR
 Revision 1 — October 8, 2026
@@ -31608,7 +31743,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.39
+Office version: 261018.40
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -31646,6 +31781,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.40  The Office Manager Bot: contractors and first hires (sop-contractors-and-hiring.txt: contractor or employee laid out from the sources and never decided for the owner, the agreement from template-contractor-terms.txt, tax forms on file but never in a sheet, year-end and payroll dates on the calendar; people.csv) and the weekly review on the owner's day (sop-weekly-review.txt, weekly.csv). Templates and mousetrap examples. Re-read your office file. No new profile text.
 261018.39  Two products, each with its own page and campaign: the Inventor's Project Manager (inventor.html) and the Entrepreneur's Office Manager (entrepreneur.html). The press kit has each product's own one-pager, press release and campaign (inventor-campaign.txt, entrepreneur-campaign.txt), and PROMO-INSTRUCTIONS.txt runs the two campaigns separately. No change to how the bots work. No new profile text.
 261018.38  The Office Manager Bot works for any business, with or without an invention. New: the one-page business plan and pricing (sop-business-plan.txt), customers and sales with invoices (sop-sales.txt), money each month (sop-monthly-money.txt) and the compliance calendar (sop-compliance-calendar.txt), with templates and mousetrap examples. With no invention, the lender, investor and partner packets work from the business plan (cost_per_sale and monthly_fixed in funding.csv) and show break-even. meeting-packet.py runs on Python 3.11 again. Re-read your office file. No new profile text.
 261018.37  Wording only: the credit reads "based on" Lauren Tan's pstack, and the press kit says a short pasted message starts the bot setting itself up. No change to how the bots work. No new profile text.

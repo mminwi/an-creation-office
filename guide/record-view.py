@@ -39,6 +39,8 @@ SHEETS = {
     "pipeline.csv": ("Customers and sales pipeline", "Business record", ["id", "customer", "what they want", "value", "stage", "next step", "next date"], ("value",)),
     "invoices.csv": ("Invoices", "Business record", ["invoice", "date", "customer", "for", "total", "due", "paid on", "status"], ("total",)),
     "monthly.csv": ("Money each month", "Business record", ["month", "sales", "cost of sales", "other spending", "owner in", "cash at month end", "months of cash", "unpaid invoices"], ("sales", "cost of sales", "other spending", "owner in", "cash at month end", "months of cash", "unpaid invoices")),
+    "weekly.csv": ("The weekly review", "Business record", ["week", "one number", "new leads", "won", "overdue", "done", "slipped", "next three"], ("new leads", "won", "overdue")),
+    "people.csv": ("People the business pays", "Business record", ["name", "what they do", "contractor or employee", "agreement", "tax form on file", "paid this year", "status"], ("paid this year",)),
     "deadlines.csv": ("Compliance calendar and deadlines", "Business record", ["due", "what", "Source", "Source status", "remind on", "who", "status"], ()),
     "correspondence.csv": ("Correspondence log", "Business record", ["date", "folder", "direction", "with", "organization", "what was conveyed", "sent or received"], ()),
 }

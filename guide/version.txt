@@ -1,6 +1,6 @@
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.39
+Office version: 261018.40
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -38,6 +38,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.40  The Office Manager Bot: contractors and first hires (sop-contractors-and-hiring.txt: contractor or employee laid out from the sources and never decided for the owner, the agreement from template-contractor-terms.txt, tax forms on file but never in a sheet, year-end and payroll dates on the calendar; people.csv) and the weekly review on the owner's day (sop-weekly-review.txt, weekly.csv). Templates and mousetrap examples. Re-read your office file. No new profile text.
 261018.39  Two products, each with its own page and campaign: the Inventor's Project Manager (inventor.html) and the Entrepreneur's Office Manager (entrepreneur.html). The press kit has each product's own one-pager, press release and campaign (inventor-campaign.txt, entrepreneur-campaign.txt), and PROMO-INSTRUCTIONS.txt runs the two campaigns separately. No change to how the bots work. No new profile text.
 261018.38  The Office Manager Bot works for any business, with or without an invention. New: the one-page business plan and pricing (sop-business-plan.txt), customers and sales with invoices (sop-sales.txt), money each month (sop-monthly-money.txt) and the compliance calendar (sop-compliance-calendar.txt), with templates and mousetrap examples. With no invention, the lender, investor and partner packets work from the business plan (cost_per_sale and monthly_fixed in funding.csv) and show break-even. meeting-packet.py runs on Python 3.11 again. Re-read your office file. No new profile text.
 261018.37  Wording only: the credit reads "based on" Lauren Tan's pstack, and the press kit says a short pasted message starts the bot setting itself up. No change to how the bots work. No new profile text.

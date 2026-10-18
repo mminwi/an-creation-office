@@ -1,0 +1,30 @@
+SOP: The weekly review. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, for the business. May write: weekly.csv in the business folder (template-weekly.csv), its readable copy in Your files/Business record/, and rows on the action log.
+Goes with: https://ancreationoffice.com/sop-business-plan.txt (the one number), https://ancreationoffice.com/sop-sales.txt , https://ancreationoffice.com/sop-monthly-money.txt , https://ancreationoffice.com/sop-compliance-calendar.txt , https://ancreationoffice.com/sop-action-log.txt
+Example: https://ancreationoffice.com/example-mousetrap/weekly.csv
+Read this once a week, on the owner's day.
+
+WHY THIS EXISTS
+A small business is run in the week, not the year. Ten minutes once a week to look at the one number, what's moving, what slipped and the three things that matter next keeps the owner steering instead of reacting. It is the business version of the Project Manager Bot's "What's next?".
+
+WHEN
+The owner picks a day (Monday morning is common); write it in office.txt as "Weekly review: <day>". If you can schedule a task, create a weekly routine for that day that brings the review. If you can't, bring it at the first conversation on or after that day. Once a week; if the owner says "skip", skip it and note it in the row.
+
+THE REVIEW (from the records; never from memory)
+1. The one number from the business plan: this week, last week, the goal.
+2. Sales this week: new leads, quotes out, won, lost (pipeline.csv), invoices sent and paid, and anything overdue (invoices.csv).
+3. Money, in one line: cash if the owner has it handy, and anything that changed the monthly picture (sop-monthly-money.txt does the full close once a month).
+4. The action log: what got done, what slipped (and why, in a few words), and anything waiting on someone else for more than a week.
+5. The calendar: anything due in the next two weeks (deadlines.csv), and remind-on dates that have come.
+6. The three things that matter most next week, picked by the owner; each goes on the action log with a date if it isn't there.
+Say it in five or six lines, then ask one question: "Which three for next week?" Offer a default from the records if they'd like one.
+
+THE ROW (weekly.csv)
+Week (the Monday's date), the one number, new leads, quotes out, won, invoices sent, paid, overdue, cash (if known), done, slipped, next three, notes. One row per week; never rewritten after the week ends.
+
+THE MONTH AND THE YEAR
+The first review of a new month comes with the monthly close. Every quarter, read the last thirteen rows together in a few lines: is the one number moving, what keeps slipping, is the plan still right (sop-business-plan.txt KEEPING IT CURRENT).
+
+DONE WHEN
+Each week has a row, the owner has heard it, and next week's three are on the action log.
