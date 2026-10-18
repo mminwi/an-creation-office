@@ -32,6 +32,8 @@ SHEETS = {
                               ["ID", "Requirement", "Source", "Source status", "Pass level", "Status", "Critical"], ()),
     "expenses.csv": ("Expense ledger", "Business record", ["date", "paid to", "what it was", "business purpose", "tax category", "amount", "paid from", "receipt file"], ("amount",)),
     "trips.csv": ("Trip and mileage log", "Business record", ["trip", "date", "to (place and address)", "who or what", "business purpose", "start odometer", "end odometer", "business miles"], ("start odometer", "end odometer", "business miles")),
+    "prior-art.csv": ("Prior art found so far", "Patent preparation", ["ref", "title", "what it shows", "how ours differs", "searched on", "Source status"], ()),
+    "disclosure-history.csv": ("Who has seen it", "Patent preparation", ["date", "to whom", "what was shown", "revision", "under NDA", "setting", "status"], ()),
     "correspondence.csv": ("Correspondence log", "Business record", ["date", "folder", "direction", "with", "organization", "what was conveyed", "sent or received"], ()),
 }
 

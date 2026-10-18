@@ -1,4 +1,4 @@
-261018.19
+261018.20
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -41,6 +41,7 @@ example-mousetrap/correspondence/261018-01-R-molder-a-nda-signed/attachments.txt
 example-mousetrap/correspondence/261018-01-R-molder-a-nda-signed/email.txt
 example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/attachments.txt
 example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/email.txt
+example-mousetrap/correspondence/261023-01-M-patent-agent-consult/meeting.csv
 example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/meeting.csv
 example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/meeting.csv
 example-mousetrap/correspondence/261104-01-M-community-lender-meeting/meeting.csv
@@ -49,13 +50,16 @@ example-mousetrap/correspondence/261208-01-M-accountant-year-end/meeting.csv
 example-mousetrap/cost-sheet.csv
 example-mousetrap/deadlines.csv
 example-mousetrap/decision-log.csv
+example-mousetrap/disclosure-history.csv
 example-mousetrap/ecn-log.csv
 example-mousetrap/ecn/261017-ECN-001-tooling-budget.txt
 example-mousetrap/expenses.csv
 example-mousetrap/funding.csv
 example-mousetrap/intake-001.csv
+example-mousetrap/invention-disclosure.csv
 example-mousetrap/market-evidence.csv
 example-mousetrap/pricing-terms.csv
+example-mousetrap/prior-art.csv
 example-mousetrap/project-charter.txt
 example-mousetrap/risk-table.csv
 example-mousetrap/spending.csv
@@ -200,6 +204,7 @@ sop-packet-buyer.txt
 sop-packet-investor.txt
 sop-packet-lender.txt
 sop-packet-manufacturer.txt
+sop-packet-patent.txt
 sop-phases.txt
 sop-plastic-part-design.txt
 sop-presence.txt
@@ -242,13 +247,16 @@ template-correspondence.csv
 template-cost-sheet.csv
 template-deadlines.csv
 template-decision-log.csv
+template-disclosure-history.csv
 template-ecn-log.csv
 template-expenses.csv
 template-fai-report.csv
 template-funding.csv
+template-invention-disclosure.csv
 template-market-evidence.csv
 template-meeting.csv
 template-pricing-terms.csv
+template-prior-art.csv
 template-project-charter.txt
 template-prototype-control-plan.txt
 template-review-record.txt

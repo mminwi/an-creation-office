@@ -1,7 +1,7 @@
-"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor or an accountant.
+"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor, an accountant or a patent attorney.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant
+  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
@@ -16,8 +16,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
-if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant"):
-    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant")
+if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant", "patent"):
+    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant|patent")
 MEET = Path(sys.argv[1]).resolve()
 KIND = sys.argv[2]
 
@@ -92,13 +92,16 @@ evidence = sheet("market-evidence.csv")
 expenses = sheet("expenses.csv")
 trips = sheet("trips.csv")
 deadlines = sheet("deadlines.csv")
+disclosure = kv("invention-disclosure.csv")
+priorart = sheet("prior-art.csv")
+shown = sheet("disclosure-history.csv")
 
 PRODUCT = first(funding, "product", "This product")
 U = first(funding, "unit", "unit")
 US = first(funding, "units", U + "s")
 piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
 tooling = sum(num(r["tooling"]) for r in cost)
-TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet"}[KIND]
+TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet"}[KIND]
 
 
 def table(head, body, cls=""):
@@ -128,17 +131,18 @@ def company_table():
     return table(["", "", "Status"], [[f"<strong>{esc(r['key'])}</strong>", esc(r["value"]), pill(r["status"])] for r in company], "compact")
 
 
-def prep_sheet(extra="", top=""):
+def prep_sheet(extra="", top="", show_open=True):
     qa = [[esc(r["value"]), esc(r["note"])] for r in MULTI.get("q", [])]
     asks = "".join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get("ask", []))
     gaps = [r for r in company if r["status"] != "ready"]
+    still_open = ("<h2>Still open (say so if asked)</h2>" + table(["", "Today", "Note"], [[f"<strong>{esc(r['key'])}</strong>", esc(r["value"]), esc(r["note"])] for r in gaps], "compact")) if show_open else ""
     body = f"""<div class="verdict warn"><strong>For the inventor only. Not handed over.</strong> {esc(M.get('who'))}, {fdate(M.get('date'))}.</div>
 {top}<h2>The goal</h2><p>{esc(M.get('goal'))}</p>
 <h2>What we ask for</h2><ul class="levers">{asks}</ul>
 <h2>Walk-away</h2><p>{esc(M.get('walk_away'))}</p>
 <h2>What they will likely ask</h2>{table(['Question', 'Answer'], qa, 'compact')}
 {extra}
-<h2>Still open (say so if asked)</h2>{table(['', 'Today', 'Note'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), esc(r['note'])] for r in gaps], 'compact')}
+{still_open}
 <h2>Leave behind</h2><p>{esc(M.get('leave_behind', 'This packet, minus this page.'))}</p>
 <h2>After the meeting</h2><p class="small">Record what was said in this folder; add any signal to market-evidence.csv; update contacts.csv with the next step and date; put every promise on the action log (sop-meeting-prep.txt step 8).</p>"""
     return page("Prep sheet", body, "Last page")
@@ -468,6 +472,59 @@ if KIND == "accountant":
 <p class="small">A deadline marked "to find" has no date yet because nobody has read it from the source. We would like you to confirm each one.</p>""", "Page 4"))
     gl = "".join(f"<li>{g}</li>" for g in gaps) or "<li>None.</li>"
     pages.append(prep_sheet(f"<h2>Gaps to close before the meeting</h2><ul class='levers small'>{gl}</ul><p class='small'>Find the receipt (a photo is fine), write the purpose, or mark the row \"receipt lost\" in its notes. tax-year.py lists the same gaps.</p>"))
+
+# ---------------- patent attorney or agent ----------------
+if KIND == "patent":
+    D = lambda k, d="": first(disclosure, k, d)
+    many = lambda k: disclosure.get(k, [])
+    done = sorted([r for r in shown if r.get("status") == "done"], key=lambda r: r["date"])
+    planned = sorted([r for r in shown if r.get("status") == "planned"], key=lambda r: r["date"])
+    no_nda = [r for r in done if r.get("under NDA", "").lower() != "yes"]
+    filed = D("filed", "Nothing yet")
+    first_out = no_nda[0] if no_nda else None
+    planned_open = [r for r in planned if r.get("under NDA", "").lower() != "yes"]
+    nxt = planned_open[0] if planned_open else None
+    lines = [f"<strong>Filed: {esc(filed)}.</strong>"]
+    if first_out:
+        lines.append(f"First showing outside the project without an NDA: {fdate(first_out['date'])} ({esc(first_out['to whom'])}).")
+    if nxt:
+        lines.append(f"Next planned showing without an NDA: {fdate(nxt['date'])} ({esc(nxt['to whom'])}).")
+    lines.append("Whether any of this starts a clock, and what to do before the next showing, is your call.")
+    inv = [[esc(r["value"]), esc(r["note"])] for r in many("inventor")]
+    pages.append(page("For the patent attorney or agent", f"""
+<div class="verdict warn">{' '.join(lines)}</div>
+<div class="stats">{stat('Filed', esc(filed))}{stat('Showings so far', str(len(done)), f'{len(no_nda)} without an NDA')}{stat('Prior art found', str(len(priorart)), 'a first look')}{stat('Next showing without an NDA', fdate(nxt['date']) if nxt else 'None planned')}</div>
+<h2>The invention</h2><p><strong>{esc(D('title', PRODUCT))}.</strong> {esc(D('problem'))}</p>
+<h2>What we are asking for</h2><ul class="levers">{''.join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get('ask', []))}</ul>
+<h2>Inventors and owner</h2>{table(['Inventor', 'Contribution'], inv, 'compact')}<p>Owner today: {esc(D('owner'))}. {esc(disclosure.get('owner', [{'note': ''}])[0]['note'])}</p>""", "Page 1"))
+    news = "".join(f"<li>{esc(r['value'])} <span class='small'>({esc(r['note'])})</span></li>" for r in many("new"))
+    vars_ = "".join(f"<li>{esc(r['value'])} <span class='small'>({esc(r['note'])})</span></li>" for r in many("variation"))
+    dr = [[esc(r["value"]), esc(r["note"])] for r in many("drawing")]
+    pages.append(page("Invention disclosure", f"""
+<h2>The problem</h2><p>{esc(D('problem'))}</p>
+<h2>How it works</h2><p>{esc(D('how_it_works'))}</p>
+<h2>What we believe is new</h2><ul class="levers">{news}</ul>
+<p class="small">These are the inventor's beliefs, to be checked against the prior art. Nothing here is a claim or an opinion that the invention is new or patentable.</p>
+<h2>Other ways it could be made or used</h2><ul class="levers">{vars_}</ul>
+<h2>Drawings and CAD</h2>{table(['File', 'Revision and where it has been'], dr, 'compact')}
+<h2>When it was conceived</h2><p>{fdate(D('conceived'))}. {esc(disclosure.get('conceived', [{'note': ''}])[0]['note'])}</p>""", "Page 2"))
+    pa = [[f"<span class='nw'>{esc(r['ref'])}</span>", esc(r["title"]), esc(r["what it shows"]), esc(r["how ours differs"]), esc(r["Source status"])] for r in priorart]
+    searches = sorted({(r.get("searched on", ""), r.get("found by", "")) for r in priorart})
+    pages.append(page("Prior art found so far", f"""
+{table(['Document', 'Title', 'What it shows', 'How ours may differ', 'Read?'], pa, 'compact')}
+<h2>Searches run</h2>{table(['Date', 'Where and what'], [[fdate(d), esc(w)] for d, w in searches], 'compact')}
+<p class="small">A first look, not a patentability opinion and not a freedom-to-operate review. "From a summary" means the document was found and summarized but its claims have not been read; dates and owners marked "to read" come from the document itself.</p>""", "Page 3"))
+    hist = [[fdate(r["date"]), esc(r["to whom"]), esc(r["what was shown"]), esc(r["revision"]), esc(r["under NDA"]), esc(r["setting"]), esc(r["status"])] for r in done + planned]
+    pages.append(page("Who has seen it", f"""
+<p>Every time the invention was shown or described outside the project, and every showing planned. The correspondence log holds what was sent and the notes of each meeting.</p>
+{table(['Date', 'To whom', 'What was shown', 'Rev.', 'NDA', 'Setting', 'Status'], hist, 'compact')}
+<p class="small">Recorded as facts. Whether a showing is a public disclosure, and what it means for filing in the U.S. or abroad, is for you to say.</p>""", "Page 4"))
+    qs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("question", [])]
+    pages.append(page("Questions for you", f"""
+{table(['Question', 'What the record shows'], qs, 'compact')}
+<h2>Budget and scope</h2><p>{esc(M.get('budget'))}</p>
+<h2>The company</h2>{table(['', '', 'Status'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), pill(r['status'])] for r in company if r['key'].lower() in ('legal name', 'entity', 'owner')], 'compact')}""", "Page 5"))
+    pages.append(prep_sheet(show_open=False, top="<p class='small'>Check the person's registration in the USPTO's practitioner search before the meeting, and watch for invention-promotion pitches (library: patent-practitioners, uspto-scam-prevention).</p>"))
 
 css = CSS
 doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: {TITLE.lower()}</title>

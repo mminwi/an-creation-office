@@ -155,7 +155,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`funding-packet.py`](guide/funding-packet.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/funding-packet.py) |
 | [`handoff-log.csv`](guide/handoff-log.csv) | Worksheet / table (CSV): handoff_id, sent_date, sender, recipient... | [live](https://ancreationoffice.com/handoff-log.csv) |
 | [`ip-ratings.txt`](guide/ip-ratings.txt) | IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and  | [live](https://ancreationoffice.com/ip-ratings.txt) |
-| [`library.txt`](guide/library.txt) | 261018.19 | [live](https://ancreationoffice.com/library.txt) |
+| [`library.txt`](guide/library.txt) | 261018.20 | [live](https://ancreationoffice.com/library.txt) |
 | [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The | [live](https://ancreationoffice.com/manufacturing.txt) |
 | [`office-handoff.txt`](guide/office-handoff.txt) | AN Creation skill: office-handoff. The office rule is https://ancreationoffice.com/sop-team.txt HAND-OFFS. | [live](https://ancreationoffice.com/office-handoff.txt) |
 | [`office-save.txt`](guide/office-save.txt) | AN Creation skill: office-save. The office rule is https://ancreationoffice.com/version-control.txt SAVING and | [live](https://ancreationoffice.com/office-save.txt) |
@@ -220,10 +220,11 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`sop-packet-investor.txt`](guide/sop-packet-investor.txt) | SOP: The investor packet. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-investor.txt) |
 | [`sop-packet-lender.txt`](guide/sop-packet-lender.txt) | SOP: The lender packet. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-lender.txt) |
 | [`sop-packet-manufacturer.txt`](guide/sop-packet-manufacturer.txt) | SOP: The manufacturer packet (request for quote). Revision 2 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-manufacturer.txt) |
+| [`sop-packet-patent.txt`](guide/sop-packet-patent.txt) | SOP: The patent attorney packet. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-patent.txt) |
 | [`sop-project-charter.txt`](guide/sop-project-charter.txt) | SOP: The project charter. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/sop-project-charter.txt) |
 | [`sop-suggestions.txt`](guide/sop-suggestions.txt) | SOP: Suggestions and actions. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/sop-suggestions.txt) |
-| [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 20 — October 18, 2026. | [live](https://ancreationoffice.com/sop.txt) |
-| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.19 | [live](https://ancreationoffice.com/sops-manifest.txt) |
+| [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 21 — October 18, 2026. | [live](https://ancreationoffice.com/sop.txt) |
+| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.20 | [live](https://ancreationoffice.com/sops-manifest.txt) |
 | [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's form | [live](https://ancreationoffice.com/status-template.txt) |
 | [`tax-year.py`](guide/tax-year.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/tax-year.py) |
 | [`template-a3.txt`](guide/template-a3.txt) | One-page project summary (A3). Template, from Mike's practice (sop-six-sigma.txt section 6). Copy into the pro | [live](https://ancreationoffice.com/template-a3.txt) |
@@ -237,12 +238,15 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`template-cost-sheet.csv`](guide/template-cost-sheet.csv) | Worksheet / table (CSV): level, part number, part, qty... | [live](https://ancreationoffice.com/template-cost-sheet.csv) |
 | [`template-deadlines.csv`](guide/template-deadlines.csv) | Worksheet / table (CSV): due, what, why it matters, Source... | [live](https://ancreationoffice.com/template-deadlines.csv) |
 | [`template-decision-log.csv`](guide/template-decision-log.csv) | Worksheet / table (CSV): date, decision, reason... | [live](https://ancreationoffice.com/template-decision-log.csv) |
+| [`template-disclosure-history.csv`](guide/template-disclosure-history.csv) | Worksheet / table (CSV): date, to whom, what was shown, revision... | [live](https://ancreationoffice.com/template-disclosure-history.csv) |
 | [`template-ecn-log.csv`](guide/template-ecn-log.csv) | Worksheet / table (CSV): number, date, what changes, why... | [live](https://ancreationoffice.com/template-ecn-log.csv) |
 | [`template-expenses.csv`](guide/template-expenses.csv) | Worksheet / table (CSV): date, paid to, what it was, business purpose... | [live](https://ancreationoffice.com/template-expenses.csv) |
 | [`template-funding.csv`](guide/template-funding.csv) | Worksheet / table (CSV): key, value, source, note... | [live](https://ancreationoffice.com/template-funding.csv) |
+| [`template-invention-disclosure.csv`](guide/template-invention-disclosure.csv) | Worksheet / table (CSV): key, value, note... | [live](https://ancreationoffice.com/template-invention-disclosure.csv) |
 | [`template-market-evidence.csv`](guide/template-market-evidence.csv) | Worksheet / table (CSV): date, who, what they saw, what they said... | [live](https://ancreationoffice.com/template-market-evidence.csv) |
 | [`template-meeting.csv`](guide/template-meeting.csv) | Worksheet / table (CSV): key, value, note... | [live](https://ancreationoffice.com/template-meeting.csv) |
 | [`template-pricing-terms.csv`](guide/template-pricing-terms.csv) | Worksheet / table (CSV): key, value, source, note... | [live](https://ancreationoffice.com/template-pricing-terms.csv) |
+| [`template-prior-art.csv`](guide/template-prior-art.csv) | Worksheet / table (CSV): ref, title, date, owner or assignee... | [live](https://ancreationoffice.com/template-prior-art.csv) |
 | [`template-project-charter.txt`](guide/template-project-charter.txt) | Project charter. Template. Office files/project-charter.txt. Replace every line in brackets; delete what does  | [live](https://ancreationoffice.com/template-project-charter.txt) |
 | [`template-risk-table.csv`](guide/template-risk-table.csv) | Worksheet / table (CSV): id, Failure mode / actions, effect, S... | [live](https://ancreationoffice.com/template-risk-table.csv) |
 | [`template-spending-register.csv`](guide/template-spending-register.csv) | Worksheet / table (CSV): date, stage, what it was, category... | [live](https://ancreationoffice.com/template-spending-register.csv) |

@@ -1,0 +1,38 @@
+SOP: The patent attorney packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with a patent attorney or agent, a law school clinic or the USPTO's free help (sop-meeting-prep.txt). b-analyst builds it.
+May write: AN-Creation/Business/patent/<invention>/ (invention-disclosure.csv, prior-art.csv, disclosure-history.csv), the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv.
+Templates: https://ancreationoffice.com/template-invention-disclosure.csv , https://ancreationoffice.com/template-prior-art.csv , https://ancreationoffice.com/template-disclosure-history.csv , https://ancreationoffice.com/template-meeting.csv (rows marked Patent only)
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261023-01-M-patent-agent-consult/patent-packet.html
+Goes with: https://ancreationoffice.com/sop-routes.txt (the patent road: what is new IP-02, what is already out there IP-03, who contributed IP-04, has it been shown IP-05), https://ancreationoffice.com/principle-patent-before-public.txt
+
+WHO IT IS FOR
+A registered patent attorney or agent, a law school patent clinic, the USPTO Pro Se Assistance Center, or a Patent and Trademark Resource Center: anyone the inventor asks about filing, before or after preparing a filing themselves.
+
+WHAT WORRIES THEM
+- What exactly is the invention, and what does the inventor believe is new?
+- What is already out there?
+- Who has seen it, when, and under what terms? Dates matter more than anything else here.
+- Who invented it, and who owns it?
+- What does the inventor want from them, and what is the budget?
+
+THE THREE SHEETS (kept during patent preparation, before any packet is needed)
+1. invention-disclosure.csv: the title, the problem, how it works, what the inventor believes is new (one row each, never written as a claim), other ways it could be made or used, the drawings and CAD with revisions, when it was conceived and the evidence, the inventors and what each contributed, the owner, and anything filed.
+2. prior-art.csv: every document found, with what it shows, how ours may differ (the inventor's belief), how it was found and when, and its source status. A document whose claims have not been read is "from a summary"; dates and owners not read from the document say "to read". Never a document number that was not found in a real search.
+3. disclosure-history.csv: every showing or description outside the project, done and planned: date, to whom, what was shown, which revision, NDA or not, the setting, the correspondence folder. Write a row the same day, like the correspondence log; add a planned row as soon as a meeting is set.
+
+WHAT GOES IN THE PACKET (meeting-packet.py builds it: patent)
+1. For the attorney or agent: what is filed (usually nothing yet), the first showing without an NDA, the next planned showing without an NDA, and that what any of it means is their call; the invention in brief, what we ask of them, inventors and owner.
+2. Invention disclosure: the problem, how it works, what we believe is new, other ways to make or use it, the drawings and CAD, when it was conceived.
+3. Prior art found so far, and the searches run.
+4. Who has seen it: the disclosure history, done and planned.
+5. Questions for them, the budget and scope, and the company.
+6. Prep sheet for the inventor: the goal, the ask, the walk-away, what they will likely ask.
+
+RULES
+- Never say the invention is new, patentable or protected, and never say a showing did or did not start a clock. Record the facts; the practitioner says what they mean (principle-trace-to-source.txt).
+- A search is a first look, not a patentability opinion and not a freedom-to-operate review.
+- Check the practitioner's registration in the USPTO practitioner search before the meeting (library: patent-practitioners), and watch for invention-promotion pitches (library: uspto-scam-prevention).
+- Drawings and CAD go to them only after they agree to keep them confidential; most practitioners do by default, so ask.
+- On the inventor's own money, preparing the filing themselves and having it reviewed is a sound path; once there is outside money, a practitioner files or reviews (principle-rigor-scales-with-money.txt). If the inventor files their own, the patent road's note is said before the package is handed over (sop-routes.txt).
+- After the meeting: what they advised goes in the decision log; any deadline they give goes in deadlines.csv with them as its source; any filing goes in invention-disclosure.csv (filed) with its number and date only once it exists.

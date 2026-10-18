@@ -1,4 +1,4 @@
-261018.19
+261018.20
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -878,7 +878,7 @@ HOW TO CHOOSE
 - Avoid a name someone in your family or shop already has.
 - If you'd rather not choose, the bot uses the first easy name that isn't taken.
 === FILE: business-manager.txt ===
-AN Creation: the Office Manager Bot (role b-business-manager). Revision 19 — October 18, 2026.
+AN Creation: the Office Manager Bot (role b-business-manager). Revision 20 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Office Manager Bot)
 
 WHO YOU ARE
@@ -932,7 +932,7 @@ YOUR PROCEDURES (open one when its subject comes up, use it, then leave it)
 - Domain, website, business email, Google Search Console and Bing. https://ancreationoffice.com/sop-website.txt
 - The brand kit and profiles (LinkedIn, X and others). https://ancreationoffice.com/sop-presence.txt
 - Listings and the website: https://ancreationoffice.com/sop-website.txt . Posts, replies, listings and the approval loop: https://ancreationoffice.com/sop-promotion.txt
-- Meetings: whenever the inventor is going to meet or approach someone (a buyer, a manufacturer, a lender, an investor), follow https://ancreationoffice.com/sop-meeting-prep.txt : who, when, what they want out of it; then the packet that person needs, built from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor. Packets so far: buyer (sop-packet-buyer.txt), manufacturer (sop-packet-manufacturer.txt), lender (sop-packet-lender.txt), investor (sop-packet-investor.txt), accountant (sop-packet-accountant.txt); an advisor or grant reviewer gets the funding packet.
+- Meetings: whenever the inventor is going to meet or approach someone (a buyer, a manufacturer, a lender, an investor), follow https://ancreationoffice.com/sop-meeting-prep.txt : who, when, what they want out of it; then the packet that person needs, built from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor. Packets so far: buyer (sop-packet-buyer.txt), manufacturer (sop-packet-manufacturer.txt), lender (sop-packet-lender.txt), investor (sop-packet-investor.txt), accountant (sop-packet-accountant.txt), patent attorney or agent (sop-packet-patent.txt, with the invention disclosure, prior-art log and disclosure history kept during patent preparation); an advisor or grant reviewer gets the funding packet.
 - Funding: which kind of money fits, https://ancreationoffice.com/sop-funding.txt ; the funding packet a lender or advisor reads, https://ancreationoffice.com/sop-funding-packet.txt ; the business risk register, https://ancreationoffice.com/sop-business-risks.txt . The product numbers in a packet are b-project-manager's: ask for current copies through office-handoff, never retype them.
 - The business record and tax time: https://ancreationoffice.com/sop-business-record.txt . A cost for an invention goes on the expense ledger and, by hand-off, on that invention's spending register; never two different amounts.
 - Specs, rules, rates, fees and deadlines: from the actual document, checked when they go into a sheet (https://ancreationoffice.com/sop-source-check.txt). When no procedure covers something, find the authoritative source in the library and write the business's procedure from it.
@@ -3957,7 +3957,7 @@ b-business-manager's record and packets
 - funding.csv, business-risks.csv, funding-packet.html: the funding packet for an investor or advisor (sop-funding-packet.txt)
 - correspondence/ and correspondence.csv: the correspondence log (sop-correspondence.txt), one folder per email, meeting or call, named YYMMDD-NN-X-slug.
   Three meetings have their meeting.csv and the packet built for them (sop-meeting-prep.txt): 261028-01-M-distributor-buyer-meeting/buyer-packet.html,
-  261024-01-M-molder-a-quote-meeting/manufacturer-packet.html, 261104-01-M-community-lender-meeting/lender-packet.html, and an investor meeting with family: 261112-01-M-family-investor-meeting/investor-packet.html, and a year-end meeting with an accountant: 261208-01-M-accountant-year-end/accountant-packet.html. 261017-01-S-molder-a-meeting-request is an email out with its attachment list.
+  261024-01-M-molder-a-quote-meeting/manufacturer-packet.html, 261104-01-M-community-lender-meeting/lender-packet.html, and an investor meeting with family: 261112-01-M-family-investor-meeting/investor-packet.html, and a year-end meeting with an accountant: 261208-01-M-accountant-year-end/accountant-packet.html, and a consult with a patent agent: 261023-01-M-patent-agent-consult/patent-packet.html. 261017-01-S-molder-a-meeting-request is an email out with its attachment list.
 
 b-business-manager's required business record (https://ancreationoffice.com/sop-business-record.txt)
 - company.csv (with business.txt), business-decision-log.csv, actions.csv (shared columns), contacts.csv
@@ -3974,6 +3974,11 @@ The source check (https://ancreationoffice.com/sop-source-check.txt)
 
 Living and parked (https://ancreationoffice.com/sop-document-life.txt)
 - plan.md               its PARKED section: what is parked, since when, and what reopens it
+
+Patent preparation (https://ancreationoffice.com/sop-packet-patent.txt)
+- invention-disclosure.csv  the invention, what the inventor believes is new, drawings, inventors, owner
+- prior-art.csv             documents found by a first search; claims not read yet, so "from a summary"
+- disclosure-history.csv    every showing outside the project, done and planned, with NDA or not
 === FILE: example-mousetrap/actions.csv ===
 ID,Opened,Action,Who,Why / from,Due,Status,Done how,Closed,Notes
 A-001,2026-10-15,"Get a quote for a 1-cavity nylon base mold, hot runner, gate at the rear, draft 1 degree, wall 1.8 mm, with a short rib at the spring seat, the set-from-the-side mark, the finger guard, the bait spike, and radiused pivot holes.",You,"Cost sheet base row is an $85,000 placeholder. Decision 2026-10-12 and 2026-10-13. Risk table F1.",2026-10-29,open,,,"Done when the quote replaces the 85000 on the cost sheet. The quote covers the mold changes under F1, F11, F13, and F14. The three-month budget is 8000 to 12000, so the quote may not fit."
@@ -4055,6 +4060,7 @@ date,folder,direction,with,organization,subject,what was conveyed,sent or receiv
 2026-10-17,261017-01-S-molder-a-meeting-request,sent,Sales engineer,Molder A,Quote meeting for two molded parts,"Meeting on 10-24; models follow once the NDA is signed",mutual-nda-unsigned.pdf,Signed NDA back; then send MT-001 and MT-002 rev X3,2026-10-21,Snap mousetrap,,2026-10-17
 2026-10-18,261018-01-R-molder-a-nda-signed,received,Sales engineer,Molder A,Signed NDA and meeting time,"NDA signed; meeting 10-24 at 10",mutual-nda-signed-molder-a.pdf,Send the models,2026-10-18,Snap mousetrap,,2026-10-18
 2026-10-18,261018-02-S-molder-a-models-rev-x3,sent,Sales engineer,Molder A,Models for the quote meeting,"The base and trigger plate as they stand at revision X3, for quoting","MT-001-base-X3.step, MT-002-trigger-X3.step",Quote meeting,2026-10-24,Snap mousetrap,,2026-10-18
+2026-10-23,261023-01-M-patent-agent-consult,meeting,A registered patent agent,,Free first consult,(prep built; notes after the meeting),patent-packet.html to hand over,,2026-10-23,Snap mousetrap,,2026-10-18
 2026-10-24,261024-01-M-molder-a-quote-meeting,meeting,Sales engineer,Molder A,Quote meeting,(prep built; notes after the meeting),manufacturer-packet.html to hand over,,2026-10-24,Snap mousetrap,,2026-10-18
 2026-10-28,261028-01-M-distributor-buyer-meeting,meeting,Purchasing manager,Regional hardware distributor,Buyer meeting,(prep built; notes after the meeting),buyer-packet.html to hand over,,2026-10-28,Snap mousetrap,,2026-10-18
 2026-11-04,261104-01-M-community-lender-meeting,meeting,Loan officer,Community lender,Loan meeting,(prep built; notes after the meeting),lender-packet.html to hand over,,2026-11-04,Snap mousetrap,,2026-10-18
@@ -4131,6 +4137,28 @@ Thanks for the signed NDA. Attached are the 3D models for the two parts we'll go
 - MT-001 base, nylon 6/6
 - MT-002 trigger plate, nylon 6/6
 Quantities and requirements come with the request for quote at the meeting.
+=== FILE: example-mousetrap/correspondence/261023-01-M-patent-agent-consult/meeting.csv ===
+key,value,note
+type,patent,
+who,"A registered patent agent, from the USPTO practitioner search; free first consult",Illustrative
+date,2026-10-23,"Before the molder meeting (10-24) and the buyer meeting (10-28)"
+record,../..,Where the sheets are
+goal,"Decide what to file, if anything, before the buyer meeting on 10-28, and what it would cost",
+ask,Your read on whether to file a provisional application before the 10-28 buyer meeting,
+ask,"A quote to review a provisional application the inventor prepares, and a quote to prepare one",
+ask,Whether the showings on 10-14 and 10-15 change anything,
+question,Do the store visit and the barn samples count as public disclosures?,"No NDA either time; the samples were left with the neighbors (who has seen it, page 4)."
+question,Is a provisional application the right first filing here?,"Nothing filed yet. The inventor can prepare the description, drawings and CAD (revision X3)."
+question,How close are the documents found so far?,"Four found by a first web search; claims not read (prior art, page 3)."
+question,Should the finger guard and the set-from-the-side mark be described in more than one way?,Variations are listed on page 2.
+question,What does it cost to review the inventor's draft versus to prepare it?,Budget below.
+question,What should be kept out of the 10-28 buyer meeting until something is filed?,The buyer packet already shows what it does and not how it is made.
+budget,"Up to $1,500 for a review of the inventor's draft now; a full application only once the numbers close (business risk B1). Illustrative.",
+q,What have you shown and to whom?,"Page 4: the store owner and two neighbors without an NDA, the distributor by phone, Molder A under NDA."
+q,Who invented it and who owns it?,"The inventor alone; no company, employer or partner agreement yet."
+q,What is your budget?,"Up to $1,500 now (illustrative). A full application only once the numbers close."
+walk_away,"Don't sign up for a full application in the room. No package deals from an invention-promotion company.",
+leave_behind,Pages 1 to 5. Drawings only after they agree to keep them confidential.,
 === FILE: example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/meeting.csv ===
 key,value,note
 type,manufacturer,
@@ -4266,6 +4294,14 @@ date,decision,reason,status
 2026-10-14,"Amortize tooling over 2 years and 100,000 traps","50,000 a year for 2 years is 100,000. The inventor wants to see the per-trap cost before committing to a 3-year spread, and wants that number under $0.40. Accepted means the cost sheet uses 100,000. It does not mean the $1.47 result is approved. The base mold alone is $0.85 a trap at this volume.",accepted
 2026-10-15,"Keep the classic wire bail, spring, and steel staple",Existing suppliers already make this bail. A new shape would need a new spring tool. The spring and the staple stay music wire and steel. They are purchased. They are not molded. The staple is pressed in during assembly.,accepted
 2026-10-15,"Approve the project charter, revision A","Fact-finding is done: the charter sets the scope, the $0.45 landed-cost target, the milestones and the $8,000-$12,000 budget through design freeze. The molds are in the plan but not funded; ECN-001 proposes making them conditional.",accepted
+=== FILE: example-mousetrap/disclosure-history.csv ===
+date,to whom,what was shown,revision,under NDA,setting,correspondence,status,note
+2026-10-14,Owner of a local farm-supply store,"A printed sample, how it sets, and the price",X2,no,Private visit at the store,261014-01-M-store-owner-sample-visit,done,Not left with them. Illustrative.
+2026-10-15,Two neighbors with barns,A printed sample each to use in their barns,X2,no,Left with them,261015-01-M-neighbors-barn-test,done,Illustrative
+2026-10-16,Purchasing manager at a regional distributor,"A description only, by phone",,no,Phone call,261016-01-M-distributor-call,done,No pictures or drawings sent
+2026-10-18,Sales engineer at Molder A,"3D models of the base and trigger plate",X3,yes,Email after the signed NDA,261018-02-S-molder-a-models-rev-x3,done,
+2026-10-24,Sales engineer at Molder A,The request for quote and the drawings,X3,yes,Meeting,261024-01-M-molder-a-quote-meeting,planned,
+2026-10-28,Purchasing manager at a regional distributor,"What it does, the price and samples; not how it is made",X3,no,Meeting,261028-01-M-distributor-buyer-meeting,planned,The buyer packet shows what it does only (sop-packet-buyer.txt)
 === FILE: example-mousetrap/ecn-log.csv ===
 number,date,what changes,why,from revision,to revision,cost and time,decision,status,file
 ECN-001,2026-10-17,"Charter budget and milestones: molds come out of the funded plan until the numbers close; next-gate budget stays $8,000-$12,000","The $107,000 mold placeholder is far above the budget and the trap clears only $0.05 at $0.45 (risk B1)",A,B,No change to the next-gate budget; molds date moves from fixed to only if the numbers close,awaiting the inventor,open,ecn/261017-ECN-001-tooling-budget.txt
@@ -4355,6 +4391,22 @@ S19-company,Have you thought about starting a company to protect yourself from l
 S20-patent,What are your thoughts on a patent?,,no,10,,Not said in this example.,open
 S21-money,Will the next step need someone else's money?,,no,10,"Not said. The next three months are their own $8,000 to $12,000. The placeholder mold prices are above that.",Cost sheet and budget row.,answered
 other,Anything else you want to talk about on this? Just bring it up.,,no,11,,Not said in this example.,open
+=== FILE: example-mousetrap/invention-disclosure.csv ===
+key,value,note
+title,Plastic-base snap mousetrap,
+problem,"The classic wooden snap trap splits, soaks up mess and is hard to clean, and setting it can put a finger in the bail's path.",Inventor's words (decision 2026-10-12). Illustrative.
+how_it_works,"A molded nylon base carries the bait cup, a finger guard and the spring post in one part. A molded trigger plate with a bait spike pivots on the base. The classic wire bail, music-wire spring and steel staple are kept. The trap is set from the side, with a molded mark showing where the hand goes, so no finger is in the bail's path.",Cost sheet MT-001 to MT-005; risk table F11.
+new,"A finger guard molded into the base, with a set-from-the-side mark",A belief to check (prior-art log; risk table F11)
+new,Bait cup and spring post molded into the same base,A belief to check
+new,Trigger plate with the bait spike molded on,A belief to check; close to US20110271582 (prior-art log)
+variation,Polypropylene instead of nylon for dry indoor use,Decision 2026-10-13 chose nylon for barns
+variation,A stackable base for shipping (suggestion S-002),Not designed yet
+drawing,MT-001 base CAD,"Revision X3, sent to Molder A under NDA on 2026-10-18"
+drawing,MT-002 trigger plate CAD,"Revision X3, sent to Molder A under NDA on 2026-10-18"
+conceived,2026-10-12,"Decision log 2026-10-12: plastic base instead of wood. Earlier sketches, if any, are the inventor's to add. Illustrative."
+inventor,The inventor,Sole inventor so far. Illustrative.
+owner,The inventor,"No company yet, no employer or partner agreement (company record)."
+filed,Nothing yet,
 === FILE: example-mousetrap/market-evidence.csv ===
 date,who,what they saw,what they said,what they did or would pay,strength,source
 2026-10-14,Owner of a local farm-supply store,A printed sample and the price,"Barn customers buy traps four at a time; would carry it if the distributor has it",Would stock one case to try,medium,illustrative
@@ -4384,6 +4436,12 @@ spec:Size,To measure from the CAD,placeholder,
 spec:Weight,To weigh from the first prototype set,placeholder,
 spec:In the pack,"One trap on a card with a clear blister, warning label",cost sheet,
 spec:Materials,"Nylon 6/6 base and pedal, music-wire bail and spring, steel staple",cost sheet,
+=== FILE: example-mousetrap/prior-art.csv ===
+ref,title,date,owner or assignee,what it shows,how ours differs,found by,searched on,Source,Source status
+US6125576,Mouse or rodent trap and method of assembling same,to read,to read (search summary names Kness Mfg.),"A trigger mechanism made of plastic that snaps into the housing's bottom wall",Ours keeps the classic wire bail and spring on a molded base with a finger guard (a belief to check),"Web search: snap mouse trap plastic base trigger",2026-10-18,https://patents.google.com/patent/US6125576,from a summary
+US20110271582 / EP2317843B1,Snap trap for mice,to read,to read,"A trigger part mounted on the base plate like a rocker, molded in one piece of plastic",Ours adds the molded finger guard and the set-from-the-side mark (a belief to check),"Web search: snap mouse trap plastic base trigger",2026-10-18,https://patents.justia.com/patent/20110271582,from a summary
+US7162832B2,Rodent snap trap device,to read,to read,"A two-part trigger: a rod and a catch",Ours uses a one-piece molded trigger plate (a belief to check),"Web search: snap mouse trap plastic base trigger",2026-10-18,https://patents.google.com/patent/US7162832,from a summary
+US11477979B2,Snap trap with set-prevent interference member and rodent orienting side walls,to read,to read,"A plastic clip-style trap with a base and pivoting lid, and a member that prevents setting it wrongly",Different form of trap; read for the set-prevent idea (a belief to check),"Web search: snap mouse trap plastic base trigger",2026-10-18,https://patents.google.com/patent/US11477979,from a summary
 === FILE: example-mousetrap/project-charter.txt ===
 Project charter. Plastic-base snap mousetrap. Example (illustrative figures are marked).
 Revision: A, 2026-10-15, approved by the inventor (decision log 2026-10-15). Change pending: ECN-001.
@@ -5057,10 +5115,10 @@ END PLANNING RESOURCE REVIEW
 
 Resource cross-check. Read https://ancreationoffice.com/resource-crosscheck.txt for the additional filing, safety, search, launch and regional sources. Use matched sources only. Wisconsin resources are regional; follow source automation restrictions and existing disclosure/approval rules.
 === FILE: meeting-packet.py ===
-"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor or an accountant.
+"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender, an investor, an accountant or a patent attorney.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant
+  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor|accountant|patent
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
@@ -5075,8 +5133,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
-if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant"):
-    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant")
+if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor", "accountant", "patent"):
+    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor|accountant|patent")
 MEET = Path(sys.argv[1]).resolve()
 KIND = sys.argv[2]
 
@@ -5151,13 +5209,16 @@ evidence = sheet("market-evidence.csv")
 expenses = sheet("expenses.csv")
 trips = sheet("trips.csv")
 deadlines = sheet("deadlines.csv")
+disclosure = kv("invention-disclosure.csv")
+priorart = sheet("prior-art.csv")
+shown = sheet("disclosure-history.csv")
 
 PRODUCT = first(funding, "product", "This product")
 U = first(funding, "unit", "unit")
 US = first(funding, "units", U + "s")
 piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
 tooling = sum(num(r["tooling"]) for r in cost)
-TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet"}[KIND]
+TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet", "accountant": "Accountant packet", "patent": "Patent attorney packet"}[KIND]
 
 
 def table(head, body, cls=""):
@@ -5187,17 +5248,18 @@ def company_table():
     return table(["", "", "Status"], [[f"<strong>{esc(r['key'])}</strong>", esc(r["value"]), pill(r["status"])] for r in company], "compact")
 
 
-def prep_sheet(extra="", top=""):
+def prep_sheet(extra="", top="", show_open=True):
     qa = [[esc(r["value"]), esc(r["note"])] for r in MULTI.get("q", [])]
     asks = "".join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get("ask", []))
     gaps = [r for r in company if r["status"] != "ready"]
+    still_open = ("<h2>Still open (say so if asked)</h2>" + table(["", "Today", "Note"], [[f"<strong>{esc(r['key'])}</strong>", esc(r["value"]), esc(r["note"])] for r in gaps], "compact")) if show_open else ""
     body = f"""<div class="verdict warn"><strong>For the inventor only. Not handed over.</strong> {esc(M.get('who'))}, {fdate(M.get('date'))}.</div>
 {top}<h2>The goal</h2><p>{esc(M.get('goal'))}</p>
 <h2>What we ask for</h2><ul class="levers">{asks}</ul>
 <h2>Walk-away</h2><p>{esc(M.get('walk_away'))}</p>
 <h2>What they will likely ask</h2>{table(['Question', 'Answer'], qa, 'compact')}
 {extra}
-<h2>Still open (say so if asked)</h2>{table(['', 'Today', 'Note'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), esc(r['note'])] for r in gaps], 'compact')}
+{still_open}
 <h2>Leave behind</h2><p>{esc(M.get('leave_behind', 'This packet, minus this page.'))}</p>
 <h2>After the meeting</h2><p class="small">Record what was said in this folder; add any signal to market-evidence.csv; update contacts.csv with the next step and date; put every promise on the action log (sop-meeting-prep.txt step 8).</p>"""
     return page("Prep sheet", body, "Last page")
@@ -5527,6 +5589,59 @@ if KIND == "accountant":
 <p class="small">A deadline marked "to find" has no date yet because nobody has read it from the source. We would like you to confirm each one.</p>""", "Page 4"))
     gl = "".join(f"<li>{g}</li>" for g in gaps) or "<li>None.</li>"
     pages.append(prep_sheet(f"<h2>Gaps to close before the meeting</h2><ul class='levers small'>{gl}</ul><p class='small'>Find the receipt (a photo is fine), write the purpose, or mark the row \"receipt lost\" in its notes. tax-year.py lists the same gaps.</p>"))
+
+# ---------------- patent attorney or agent ----------------
+if KIND == "patent":
+    D = lambda k, d="": first(disclosure, k, d)
+    many = lambda k: disclosure.get(k, [])
+    done = sorted([r for r in shown if r.get("status") == "done"], key=lambda r: r["date"])
+    planned = sorted([r for r in shown if r.get("status") == "planned"], key=lambda r: r["date"])
+    no_nda = [r for r in done if r.get("under NDA", "").lower() != "yes"]
+    filed = D("filed", "Nothing yet")
+    first_out = no_nda[0] if no_nda else None
+    planned_open = [r for r in planned if r.get("under NDA", "").lower() != "yes"]
+    nxt = planned_open[0] if planned_open else None
+    lines = [f"<strong>Filed: {esc(filed)}.</strong>"]
+    if first_out:
+        lines.append(f"First showing outside the project without an NDA: {fdate(first_out['date'])} ({esc(first_out['to whom'])}).")
+    if nxt:
+        lines.append(f"Next planned showing without an NDA: {fdate(nxt['date'])} ({esc(nxt['to whom'])}).")
+    lines.append("Whether any of this starts a clock, and what to do before the next showing, is your call.")
+    inv = [[esc(r["value"]), esc(r["note"])] for r in many("inventor")]
+    pages.append(page("For the patent attorney or agent", f"""
+<div class="verdict warn">{' '.join(lines)}</div>
+<div class="stats">{stat('Filed', esc(filed))}{stat('Showings so far', str(len(done)), f'{len(no_nda)} without an NDA')}{stat('Prior art found', str(len(priorart)), 'a first look')}{stat('Next showing without an NDA', fdate(nxt['date']) if nxt else 'None planned')}</div>
+<h2>The invention</h2><p><strong>{esc(D('title', PRODUCT))}.</strong> {esc(D('problem'))}</p>
+<h2>What we are asking for</h2><ul class="levers">{''.join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get('ask', []))}</ul>
+<h2>Inventors and owner</h2>{table(['Inventor', 'Contribution'], inv, 'compact')}<p>Owner today: {esc(D('owner'))}. {esc(disclosure.get('owner', [{'note': ''}])[0]['note'])}</p>""", "Page 1"))
+    news = "".join(f"<li>{esc(r['value'])} <span class='small'>({esc(r['note'])})</span></li>" for r in many("new"))
+    vars_ = "".join(f"<li>{esc(r['value'])} <span class='small'>({esc(r['note'])})</span></li>" for r in many("variation"))
+    dr = [[esc(r["value"]), esc(r["note"])] for r in many("drawing")]
+    pages.append(page("Invention disclosure", f"""
+<h2>The problem</h2><p>{esc(D('problem'))}</p>
+<h2>How it works</h2><p>{esc(D('how_it_works'))}</p>
+<h2>What we believe is new</h2><ul class="levers">{news}</ul>
+<p class="small">These are the inventor's beliefs, to be checked against the prior art. Nothing here is a claim or an opinion that the invention is new or patentable.</p>
+<h2>Other ways it could be made or used</h2><ul class="levers">{vars_}</ul>
+<h2>Drawings and CAD</h2>{table(['File', 'Revision and where it has been'], dr, 'compact')}
+<h2>When it was conceived</h2><p>{fdate(D('conceived'))}. {esc(disclosure.get('conceived', [{'note': ''}])[0]['note'])}</p>""", "Page 2"))
+    pa = [[f"<span class='nw'>{esc(r['ref'])}</span>", esc(r["title"]), esc(r["what it shows"]), esc(r["how ours differs"]), esc(r["Source status"])] for r in priorart]
+    searches = sorted({(r.get("searched on", ""), r.get("found by", "")) for r in priorart})
+    pages.append(page("Prior art found so far", f"""
+{table(['Document', 'Title', 'What it shows', 'How ours may differ', 'Read?'], pa, 'compact')}
+<h2>Searches run</h2>{table(['Date', 'Where and what'], [[fdate(d), esc(w)] for d, w in searches], 'compact')}
+<p class="small">A first look, not a patentability opinion and not a freedom-to-operate review. "From a summary" means the document was found and summarized but its claims have not been read; dates and owners marked "to read" come from the document itself.</p>""", "Page 3"))
+    hist = [[fdate(r["date"]), esc(r["to whom"]), esc(r["what was shown"]), esc(r["revision"]), esc(r["under NDA"]), esc(r["setting"]), esc(r["status"])] for r in done + planned]
+    pages.append(page("Who has seen it", f"""
+<p>Every time the invention was shown or described outside the project, and every showing planned. The correspondence log holds what was sent and the notes of each meeting.</p>
+{table(['Date', 'To whom', 'What was shown', 'Rev.', 'NDA', 'Setting', 'Status'], hist, 'compact')}
+<p class="small">Recorded as facts. Whether a showing is a public disclosure, and what it means for filing in the U.S. or abroad, is for you to say.</p>""", "Page 4"))
+    qs = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("question", [])]
+    pages.append(page("Questions for you", f"""
+{table(['Question', 'What the record shows'], qs, 'compact')}
+<h2>Budget and scope</h2><p>{esc(M.get('budget'))}</p>
+<h2>The company</h2>{table(['', '', 'Status'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), pill(r['status'])] for r in company if r['key'].lower() in ('legal name', 'entity', 'owner')], 'compact')}""", "Page 5"))
+    pages.append(prep_sheet(show_open=False, top="<p class='small'>Check the person's registration in the USPTO's practitioner search before the meeting, and watch for invention-promotion pitches (library: patent-practitioners, uspto-scam-prevention).</p>"))
 
 css = CSS
 doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: {TITLE.lower()}</title>
@@ -9780,6 +9895,8 @@ SHEETS = {
                               ["ID", "Requirement", "Source", "Source status", "Pass level", "Status", "Critical"], ()),
     "expenses.csv": ("Expense ledger", "Business record", ["date", "paid to", "what it was", "business purpose", "tax category", "amount", "paid from", "receipt file"], ("amount",)),
     "trips.csv": ("Trip and mileage log", "Business record", ["trip", "date", "to (place and address)", "who or what", "business purpose", "start odometer", "end odometer", "business miles"], ("start odometer", "end odometer", "business miles")),
+    "prior-art.csv": ("Prior art found so far", "Patent preparation", ["ref", "title", "what it shows", "how ours differs", "searched on", "Source status"], ()),
+    "disclosure-history.csv": ("Who has seen it", "Patent preparation", ["date", "to whom", "what was shown", "revision", "under NDA", "setting", "status"], ()),
     "correspondence.csv": ("Correspondence log", "Business record", ["date", "folder", "direction", "with", "organization", "what was conveyed", "sent or received"], ()),
 }
 
@@ -26140,11 +26257,11 @@ Selection guides and books: mcam-material-selection, protolabs-material-selectio
 PRODUCES
 A material decision record: requirements, shortlist with data, chemical check per chemical, tests needed, the choice and why.
 === FILE: sop-meeting-prep.txt ===
-SOP: Meeting prep. Revision 6 — October 18, 2026.
+SOP: Meeting prep. Revision 7 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager. b-analyst drafts the documents and builds the packet.
 May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/ (the meeting file, the packet, the notes; https://ancreationoffice.com/sop-correspondence.txt) and its row in correspondence.csv, rows in the Business action log, decision log, contacts.csv and market-evidence.csv, and hand-off lines to b-project-manager.
-Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261104-01-M-community-lender-meeting/lender-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261112-01-M-family-investor-meeting/investor-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261208-01-M-accountant-year-end/accountant-packet.html (each folder has its meeting.csv)
+Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261104-01-M-community-lender-meeting/lender-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261112-01-M-family-investor-meeting/investor-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261208-01-M-accountant-year-end/accountant-packet.html , https://ancreationoffice.com/example-mousetrap/correspondence/261023-01-M-patent-agent-consult/patent-packet.html (each folder has its meeting.csv)
 Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-funding-packet.txt
 
 WHY THIS EXISTS
@@ -26161,7 +26278,8 @@ WHO'S ACROSS THE TABLE, AND WHAT THEY WANT TO SEE
 - Grant reviewer, pitch competition or advisor. Worries: is it new, is the plan credible. Packet: the funding packet (https://ancreationoffice.com/sop-funding-packet.txt) plus the program's own form (sop-funding.txt).
 - Licensee. Worries: does it sell, can they own it. Packet: the sell sheet and patent status (sop-licensing.txt).
 - Accountant, tax preparer or bookkeeper. Worries: are the records complete, is business money kept apart, what will they have to answer. Packet: https://ancreationoffice.com/sop-packet-accountant.txt
-- Patent attorney or agent, business attorney, insurance agent, partner. Packets for these come later; until then, build the meeting file below with the documents the record already has.
+- Patent attorney or agent, a patent clinic or the USPTO's free help. Worries: what exactly is new, what is out there, who has seen it and when, who owns it. Packet: https://ancreationoffice.com/sop-packet-patent.txt
+- Business attorney, insurance agent, partner. Packets for these come later; until then, build the meeting file below with the documents the record already has.
 
 THE STEPS
 1. Who, when, what they want out of it. Name the counterpart type from the list.
@@ -26169,7 +26287,7 @@ THE STEPS
 3. Dust off what exists (parked documents come out for this meeting and go back after, https://ancreationoffice.com/sop-document-life.txt DUSTING ONE OFF). Check what exists: the business record (AN-Creation/Business/) and copies of b-project-manager's project record. Ask b-project-manager for current copies of anything product-side through office-handoff (the cost sheet, specs, drawings list, risk table, charter); never retype them.
 4. Draft what is missing, honestly. A pre-revenue company has no sales history, no credit and maybe no insurance yet: the packet says so, says what is being done about it, and puts it on the action log. Never invent a fact to fill a gap (principle-never-invent-facts.txt).
 5. Write the meeting file, meeting.csv: who, when, the goal, the ask, the walk-away (principle-walk-away-number.txt), the questions they will likely ask with the answers, and what to leave behind.
-6. Build the packet: python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug <buyer|manufacturer|lender|investor|accountant>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
+6. Build the packet: python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug <buyer|manufacturer|lender|investor|accountant|patent>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
 7. Before the meeting, tell the inventor in a few lines: what is in the packet, the two or three questions most likely to come up, the ask, and anything still missing.
 8. After the meeting, before anything else: the meeting notes in the meeting's folder and its row in correspondence.csv, the trip row with the miles if they drove (trips.csv), and every cost with its receipt (expenses.csv), per https://ancreationoffice.com/sop-business-record.txt . Then add what they said or did to market-evidence.csv when it is a signal; update contacts.csv with the next step and date; put every promise on the action log; write any decision to the decision log.
 
@@ -26502,6 +26620,45 @@ RULES
 - Quantities are the charter's and the funding plan's; never inflate them to get a better price.
 - The inventor owns the tooling they pay for; say so in the request and get it in writing in the purchase order.
 - Accepting a quote or placing a tooling order is a one-way door: it goes to the inventor with the comparison, and the spending register gets a committed row when they say yes.
+=== FILE: sop-packet-patent.txt ===
+SOP: The patent attorney packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each meeting with a patent attorney or agent, a law school clinic or the USPTO's free help (sop-meeting-prep.txt). b-analyst builds it.
+May write: AN-Creation/Business/patent/<invention>/ (invention-disclosure.csv, prior-art.csv, disclosure-history.csv), the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv.
+Templates: https://ancreationoffice.com/template-invention-disclosure.csv , https://ancreationoffice.com/template-prior-art.csv , https://ancreationoffice.com/template-disclosure-history.csv , https://ancreationoffice.com/template-meeting.csv (rows marked Patent only)
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261023-01-M-patent-agent-consult/patent-packet.html
+Goes with: https://ancreationoffice.com/sop-routes.txt (the patent road: what is new IP-02, what is already out there IP-03, who contributed IP-04, has it been shown IP-05), https://ancreationoffice.com/principle-patent-before-public.txt
+
+WHO IT IS FOR
+A registered patent attorney or agent, a law school patent clinic, the USPTO Pro Se Assistance Center, or a Patent and Trademark Resource Center: anyone the inventor asks about filing, before or after preparing a filing themselves.
+
+WHAT WORRIES THEM
+- What exactly is the invention, and what does the inventor believe is new?
+- What is already out there?
+- Who has seen it, when, and under what terms? Dates matter more than anything else here.
+- Who invented it, and who owns it?
+- What does the inventor want from them, and what is the budget?
+
+THE THREE SHEETS (kept during patent preparation, before any packet is needed)
+1. invention-disclosure.csv: the title, the problem, how it works, what the inventor believes is new (one row each, never written as a claim), other ways it could be made or used, the drawings and CAD with revisions, when it was conceived and the evidence, the inventors and what each contributed, the owner, and anything filed.
+2. prior-art.csv: every document found, with what it shows, how ours may differ (the inventor's belief), how it was found and when, and its source status. A document whose claims have not been read is "from a summary"; dates and owners not read from the document say "to read". Never a document number that was not found in a real search.
+3. disclosure-history.csv: every showing or description outside the project, done and planned: date, to whom, what was shown, which revision, NDA or not, the setting, the correspondence folder. Write a row the same day, like the correspondence log; add a planned row as soon as a meeting is set.
+
+WHAT GOES IN THE PACKET (meeting-packet.py builds it: patent)
+1. For the attorney or agent: what is filed (usually nothing yet), the first showing without an NDA, the next planned showing without an NDA, and that what any of it means is their call; the invention in brief, what we ask of them, inventors and owner.
+2. Invention disclosure: the problem, how it works, what we believe is new, other ways to make or use it, the drawings and CAD, when it was conceived.
+3. Prior art found so far, and the searches run.
+4. Who has seen it: the disclosure history, done and planned.
+5. Questions for them, the budget and scope, and the company.
+6. Prep sheet for the inventor: the goal, the ask, the walk-away, what they will likely ask.
+
+RULES
+- Never say the invention is new, patentable or protected, and never say a showing did or did not start a clock. Record the facts; the practitioner says what they mean (principle-trace-to-source.txt).
+- A search is a first look, not a patentability opinion and not a freedom-to-operate review.
+- Check the practitioner's registration in the USPTO practitioner search before the meeting (library: patent-practitioners), and watch for invention-promotion pitches (library: uspto-scam-prevention).
+- Drawings and CAD go to them only after they agree to keep them confidential; most practitioners do by default, so ask.
+- On the inventor's own money, preparing the filing themselves and having it reviewed is a sound path; once there is outside money, a practitioner files or reviews (principle-rigor-scales-with-money.txt). If the inventor files their own, the patent road's note is said before the package is handed over (sop-routes.txt).
+- After the meeting: what they advised goes in the decision log; any deadline they give goes in deadlines.csv with them as its source; any filing goes in invention-disclosure.csv (filed) with its number and date only once it exists.
 === FILE: sop-phases.txt ===
 SOP: Phases. Retired October 6, 2026.
 Replaced by stages and tracks: https://ancreationoffice.com/sop-stages.txt
@@ -27043,7 +27200,7 @@ b-business-manager's funding packet prints this table as an appendix with the be
 AT THE BOTTOM
 Show the sum of every residual RPN, the accepted portion (the first 80% of that sum), and the leftover.
 === FILE: sop-routes.txt ===
-SOP: When a subject comes up. Revision 3 — October 18, 2026.
+SOP: When a subject comes up. Revision 4 — October 18, 2026.
 Read by b-analyst. Where this file still says b-project-manager doing the work, that worker is b-analyst. The inventor's bot remains b-project-manager. Where it disagrees with https://ancreationoffice.com/analyst.txt, https://ancreationoffice.com/sop-focus.txt or https://ancreationoffice.com/sop-stages.txt, those win.
 Index: https://ancreationoffice.com/sop.txt
 Human page: https://ancreationoffice.com/sop.html#routes
@@ -27127,7 +27284,7 @@ Not sure: stay on this chunk.
 3. Who does the research and the filing?
 Ask when they want to file, or when a lawyer or the cost comes up.
 Say this before a no on hiring can stand: You can file it yourself. Preparing the description, the drawings, and the claims with this office is enough to put a date on file, and that preparation is further along than an inventor used to be able to get alone. It is your filing. It is not an issued patent. If something important is left out, a later attorney cannot add it back as if it had been there.
-They will hire a practitioner: session "Practitioner packet — [thing]". Source patent-practitioners. Pro bono or a clinic if the cost is why they are hesitating and they still want a practitioner: patent-pro-bono, patent-law-school-clinics. The firm candidates on the shelf wait until they ask who to interview. In the legal role, you prepare the disclosure and the questions. You do not engage anyone, and you do not file.
+They will hire a practitioner: session "Practitioner packet — [thing]", built as the patent attorney packet (https://ancreationoffice.com/sop-packet-patent.txt), with the three sheets kept from the first patent session on: invention-disclosure.csv, prior-art.csv, disclosure-history.csv. Source patent-practitioners. Pro bono or a clinic if the cost is why they are hesitating and they still want a practitioner: patent-pro-bono, patent-law-school-clinics. The firm candidates on the shelf wait until they ask who to interview. In the legal role, you prepare the disclosure and the questions. You do not engage anyone, and you do not file.
 They will not pay a practitioner, and they still want a date on file: session "Inventor filing — [thing]". The office helps them prepare. They file. Before handing over the package, say it once, in your own words: "This is prepared carefully from the USPTO's own guidance, but it's your filing, and I can't tell you it's adequate. Read it through, check it against the USPTO's requirements, and if you can, have it reviewed before you file: a registered patent attorney or agent, or a free check like the USPTO Pro Se Assistance Center or a law school clinic." Write in the decision log that it was said. Sources uspto-provisional for a utility that needs a date, patent-basics, and patent-public-search for a first look. patent-resource-centers if they want a person who can show the search tools. uspto-inventor-hub is the map of those routes. A first look is not a patentability opinion.
 Not sure: stay on this chunk. One session, not both.
 
@@ -27777,7 +27934,7 @@ Search Console and Bing: pages found vs. pages in the sitemap, any new errors (a
 
 Sources: Google Search Console start https://support.google.com/webmasters/answer/9128668 ; sitemaps https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview ; SEO starter guide https://developers.google.com/search/docs/fundamentals/seo-starter-guide ; Bing Webmaster https://www.bing.com/webmasters ; GitHub Pages https://docs.github.com/en/pages .
 === FILE: sop.txt ===
-AN Creation standard operating procedures. Revision 20 — October 18, 2026.
+AN Creation standard operating procedures. Revision 21 — October 18, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
@@ -27824,7 +27981,7 @@ K3. b-business-manager: the brand kit and profiles. Logo, descriptions, fact she
 K4. b-business-manager: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories. https://ancreationoffice.com/sop-promotion.txt
 K5. b-business-manager: the funding packet a lender or advisor reads: executive summary, unit economics, use of funds, milestones, risk register. https://ancreationoffice.com/sop-funding-packet.txt (builder: https://ancreationoffice.com/funding-packet.py ; example: https://ancreationoffice.com/example-mousetrap/funding-packet.html)
 K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
-K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt , accountant https://ancreationoffice.com/sop-packet-accountant.txt ; builder https://ancreationoffice.com/meeting-packet.py
+K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt , accountant https://ancreationoffice.com/sop-packet-accountant.txt , patent attorney https://ancreationoffice.com/sop-packet-patent.txt ; builder https://ancreationoffice.com/meeting-packet.py
 K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and the correspondence log, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py. https://ancreationoffice.com/sop-business-record.txt (templates: template-expenses.csv, template-trips.csv, template-correspondence.csv, template-deadlines.csv, template-business-decision-log.csv)
 
 FOR b-project-manager
@@ -27869,7 +28026,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.19
+261018.20
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -27912,6 +28069,7 @@ example-mousetrap/correspondence/261018-01-R-molder-a-nda-signed/attachments.txt
 example-mousetrap/correspondence/261018-01-R-molder-a-nda-signed/email.txt
 example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/attachments.txt
 example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/email.txt
+example-mousetrap/correspondence/261023-01-M-patent-agent-consult/meeting.csv
 example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/meeting.csv
 example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/meeting.csv
 example-mousetrap/correspondence/261104-01-M-community-lender-meeting/meeting.csv
@@ -27920,13 +28078,16 @@ example-mousetrap/correspondence/261208-01-M-accountant-year-end/meeting.csv
 example-mousetrap/cost-sheet.csv
 example-mousetrap/deadlines.csv
 example-mousetrap/decision-log.csv
+example-mousetrap/disclosure-history.csv
 example-mousetrap/ecn-log.csv
 example-mousetrap/ecn/261017-ECN-001-tooling-budget.txt
 example-mousetrap/expenses.csv
 example-mousetrap/funding.csv
 example-mousetrap/intake-001.csv
+example-mousetrap/invention-disclosure.csv
 example-mousetrap/market-evidence.csv
 example-mousetrap/pricing-terms.csv
+example-mousetrap/prior-art.csv
 example-mousetrap/project-charter.txt
 example-mousetrap/risk-table.csv
 example-mousetrap/spending.csv
@@ -28071,6 +28232,7 @@ sop-packet-buyer.txt
 sop-packet-investor.txt
 sop-packet-lender.txt
 sop-packet-manufacturer.txt
+sop-packet-patent.txt
 sop-phases.txt
 sop-plastic-part-design.txt
 sop-presence.txt
@@ -28113,13 +28275,16 @@ template-correspondence.csv
 template-cost-sheet.csv
 template-deadlines.csv
 template-decision-log.csv
+template-disclosure-history.csv
 template-ecn-log.csv
 template-expenses.csv
 template-fai-report.csv
 template-funding.csv
+template-invention-disclosure.csv
 template-market-evidence.csv
 template-meeting.csv
 template-pricing-terms.csv
+template-prior-art.csv
 template-project-charter.txt
 template-prototype-control-plan.txt
 template-review-record.txt
@@ -28547,6 +28712,9 @@ due,what,why it matters,Source,Edition or date,Clause or page,Source text,Source
 === FILE: template-decision-log.csv ===
 date,decision,reason
 2026-10-17,Example: shelf the clip-on handle,Example: the spring already does that job. Delete this row before real use.
+=== FILE: template-disclosure-history.csv ===
+date,to whom,what was shown,revision,under NDA,setting,correspondence,status,note
+2026-10-14,Example: owner of a local store,A printed sample and the price,X2,no,Private visit,261014-01-M-store-sample-visit,done,"Exact dates, audience and what they saw; whether it counts as a public disclosure is the practitioner's call"
 === FILE: template-ecn-log.csv ===
 number,date,what changes,why,from revision,to revision,cost and time,decision,status,file
 ECN-001,2026-10-20,Example: charter budget through the next gate,Example: first mold quote came in high,A,B,+$2000; no date change,approved 2026-10-21,done,ecn/261020-ECN-001-budget.txt
@@ -28573,12 +28741,24 @@ years,,,Years the plan runs. Tooling pays back over annual_units x years.
 owner_funds,,,Money the owner is putting in.
 use:Example: base mold,0,,"One row per use of funds, key starting use:. Source quote, placeholder or illustrative."
 milestone:Example: first mold quote in hand,2026-10-29,,"One row per milestone, key starting milestone:, value YYYY-MM-DD."
+=== FILE: template-invention-disclosure.csv ===
+key,value,note
+title,Example: what the invention is called,
+problem,The problem it solves,In the inventor's words
+how_it_works,How it works,Plain words; enough for someone skilled to follow
+new,What we believe is new,One row each. A belief to check with the search and the practitioner; never written as a claim
+variation,Another way it could be made or used,One row each
+drawing,Name of a drawing or CAD file,Note: its revision and date
+conceived,YYYY-MM-DD,"Note: the evidence (a dated decision, a sketch, an email)"
+inventor,Name,Note: what they contributed. Inventorship and ownership are different facts
+owner,Who owns the invention today,"Note: any agreement that changes it (employer, partner)"
+filed,Nothing yet,"Note: any filing, its number and date, only if it exists"
 === FILE: template-market-evidence.csv ===
 date,who,what they saw,what they said,what they did or would pay,strength,source
 2026-10-14,Example: owner of a local store,A sample and the price,What they said,What they did or would pay,medium,where it is recorded
 === FILE: template-meeting.csv ===
 key,value,note
-type,buyer,"buyer, manufacturer, lender, investor or accountant"
+type,buyer,"buyer, manufacturer, lender, investor, accountant or patent"
 who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
 date,2026-10-28,YYYY-MM-DD
 record,../../funding/<invention>,Folder with the sheets; relative to this meeting folder
@@ -28616,6 +28796,7 @@ exit,,"Investor only: how an investor could get money back, including if it fail
 market,,"Investor only, optional: a market size, only with its source in the note"
 tax_year,2026,Accountant only: the year the packet covers
 question,A question for the accountant,Accountant only: one row each; the note says what the record shows
+budget,,"Patent only: what the inventor will spend now, and on what"
 === FILE: template-pricing-terms.csv ===
 key,value,source,note
 headline,,,The product in one line a buyer remembers
@@ -28634,6 +28815,9 @@ returns,,,
 warranty,,,
 samples,,,
 spec:Size,,,One spec: row per specification; "to measure" until measured
+=== FILE: template-prior-art.csv ===
+ref,title,date,owner or assignee,what it shows,how ours differs,found by,searched on,Source,Source status
+Example: US1234567,Title as published,to read,to read,What the document shows that is close to ours,What the inventor believes is different (a belief to check),Search terms or where it was found,2026-10-18,Google Patents page for the number,to find
 === FILE: template-project-charter.txt ===
 Project charter. Template. Office files/project-charter.txt. Replace every line in brackets; delete what does not apply.
 Revision: A, [YYYY-MM-DD], approved by [the inventor] (decision log [date])
@@ -29944,7 +30128,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.19
+Office version: 261018.20
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -29982,6 +30166,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.20  The patent attorney packet (sop-packet-patent.txt), for a patent attorney or agent, a clinic or the USPTO's free help: what is filed, the first and the next showing without an NDA, the invention disclosure, the prior art found, who has seen it (done and planned), questions, budget, and a prep sheet. Three sheets are kept from the first patent session on: invention-disclosure.csv, prior-art.csv (never a document number not found in a real search; claims not read are "from a summary"), disclosure-history.csv (a row the same day, and a planned row as soon as a meeting is set). The bot records facts and never says a showing did or did not start a clock. Example: example-mousetrap/correspondence/261023-01-M-patent-agent-consult/. Re-read your office file. No new profile text.
 261018.19  The accountant packet (sop-packet-accountant.txt), for a CPA, tax preparer or bookkeeper: the year's totals and gaps, expenses by category and by whose money with the whole ledger, trips and mileage with odometer readings, the inventor's questions with what the record shows, the tax deadlines with their source status, and a prep sheet. Built from the business record by meeting-packet.py (accountant). The bot sorts and asks; it never decides what is deductible or states a tax rule it has not read from the source. Example: example-mousetrap/correspondence/261208-01-M-accountant-year-end/. Re-read your office file. No new profile text.
 261018.18  The investor packet (sop-packet-investor.txt), for family and friends, an angel or crowdfunding backers: investment summary with an honest verdict, the product and the evidence, the numbers, the plan and the risks, the terms and what to know (including that a share, a note or a SAFE is a security and the terms are set with an attorney before any money changes hands), and a prep sheet. meeting-packet.py builds it (investor). When the numbers don't close, the ask is for the step that shows whether they can, not production molds. The funding packet stays for advisors and grant reviewers. Example: example-mousetrap/correspondence/261112-01-M-family-investor-meeting/. Re-read your office file. No new profile text.
 261018.17  Bots no longer update on their own. Each bot works from its project's library (AN-Creation/sops/library.txt) and does not check the website at the start of a conversation. When the owner says "update" or "check for updates", the bot checks the site, says what's new, and updates (version.txt UPDATING). Links in procedures name sections of library.txt. The SOP updates line (auto, ask, pinned) is retired. This is the last version a bot picks up without being asked. Re-read your office file. No new profile text.

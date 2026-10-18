@@ -1,5 +1,5 @@
 key,value,note
-type,buyer,"buyer, manufacturer, lender, investor or accountant"
+type,buyer,"buyer, manufacturer, lender, investor, accountant or patent"
 who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
 date,2026-10-28,YYYY-MM-DD
 record,../../funding/<invention>,Folder with the sheets; relative to this meeting folder
@@ -37,3 +37,4 @@ exit,,"Investor only: how an investor could get money back, including if it fail
 market,,"Investor only, optional: a market size, only with its source in the note"
 tax_year,2026,Accountant only: the year the packet covers
 question,A question for the accountant,Accountant only: one row each; the note says what the record shows
+budget,,"Patent only: what the inventor will spend now, and on what"
