@@ -1,4 +1,4 @@
-AN Creation project folders. Revision 13 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
+AN Creation project folders. Revision 14 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
 
 One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything, with one folder per invention inside it. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
 
@@ -12,7 +12,7 @@ AN-Creation/
   correspondence/               the correspondence log, one for the company: a folder per email, file sent, meeting or call, YYMMDD-NN-X-slug (sop-correspondence.txt)
   correspondence.csv            its index, a row per folder
   handoffs/                     one inbox per office, for-<role>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
-  sops/                         the bot's procedure library: library.txt (one file, about 2 MB) and VERSION (Library version and SOP updates: auto, ask, or pinned). A refresh is one download of library.txt, saved over the old one. Read one section by its marker. Keep this folder once, shared, not copied into an office folder (https://ancreationoffice.com/version.txt)
+  sops/                         the bot's procedure library: library.txt (one file, about 2 MB) and VERSION (Library version). It is updated only when the owner asks a bot to update (version.txt UPDATING): one download of library.txt, saved over the old one. Read one section by its marker. Keep this folder once, shared, not copied into an office folder (https://ancreationoffice.com/version.txt)
   Fishing Lure/                 one folder per invention
     Your files/                 yours to open, read and change
       READ ME FIRST
