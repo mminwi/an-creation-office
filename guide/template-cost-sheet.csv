@@ -1,0 +1,2 @@
+part,qty,what it is,material cost,process cost,how the cost was figured,tooling,tooling notes,annual units,years,amortization,unit cost,running total,share of total
+Example: housing,1,Example: one polypropylene housing, about 40 g, one per unit. Delete this row before real use.,0.40,0.25,Example: 40 g at the resin price, plus this cavity's share of the shot. Delete this row before real use.,12000,Example: mold 10000 + fixtures 2000. Delete this row before real use.,5000,3,0.80,1.45,1.45,100%

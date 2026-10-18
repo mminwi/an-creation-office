@@ -82,6 +82,16 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`sop-website.txt`](guide/sop-website.txt) | K2. b-business-manager: domain, website, business email, Google Search Console and Bing, the weekly search check | [live](https://ancreationoffice.com/sop-website.txt) |
 | [`sop-presence.txt`](guide/sop-presence.txt) | K3. b-business-manager: the brand kit and profiles. Logo, descriptions, fact sheet; LinkedIn, X, Facebook, YouTube and more | [live](https://ancreationoffice.com/sop-presence.txt) |
 | [`sop-promotion.txt`](guide/sop-promotion.txt) | K4. b-business-manager: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories | [live](https://ancreationoffice.com/sop-promotion.txt) |
+| [`sop-funding-packet.txt`](guide/sop-funding-packet.txt) | K5. b-business-manager: the funding packet a lender or advisor reads: executive summary, unit economics, use of funds, milestones, risk register | [live](https://ancreationoffice.com/sop-funding-packet.txt) |
+| [`sop-business-risks.txt`](guide/sop-business-risks.txt) | K6. b-business-manager: the business risk register | [live](https://ancreationoffice.com/sop-business-risks.txt) |
+| [`sop-cost-sheet.txt`](guide/sop-cost-sheet.txt) | The project sheets: cost sheet | [live](https://ancreationoffice.com/sop-cost-sheet.txt) |
+| [`sop-risk-table.txt`](guide/sop-risk-table.txt) | The project sheets: risk table | [live](https://ancreationoffice.com/sop-risk-table.txt) |
+| [`sop-decision-log.txt`](guide/sop-decision-log.txt) | The project sheets: decision log | [live](https://ancreationoffice.com/sop-decision-log.txt) |
+| [`sop-suggestions.txt`](guide/sop-suggestions.txt) | The project sheets: suggestions | [live](https://ancreationoffice.com/sop-suggestions.txt) |
+| [`principle-re-anchor.txt`](guide/principle-re-anchor.txt) | Principles: re-anchor | [live](https://ancreationoffice.com/principle-re-anchor.txt) |
+| [`principle-scope-gate.txt`](guide/principle-scope-gate.txt) | Principles: scope gate | [live](https://ancreationoffice.com/principle-scope-gate.txt) |
+| [`principle-context-window.txt`](guide/principle-context-window.txt) | Principles: context window | [live](https://ancreationoffice.com/principle-context-window.txt) |
+| [`principle-residual-risk.txt`](guide/principle-residual-risk.txt) | Principles: residual risk | [live](https://ancreationoffice.com/principle-residual-risk.txt) |
 | [`sop-focus.txt`](guide/sop-focus.txt) | Keep the project focused: risks as questions, decisions, "for now" and circling back | [live](https://ancreationoffice.com/sop-focus.txt) |
 | [`ticket-template.txt`](guide/ticket-template.txt) | The ticket format b-project-manager runs | [live](https://ancreationoffice.com/ticket-template.txt) |
 | [`agents-md.txt`](guide/agents-md.txt) | AGENTS.md for the inventor's repository: how any AI finds its ticket from one line | [live](https://ancreationoffice.com/agents-md.txt) |
@@ -136,21 +146,15 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`design-principles.json`](guide/design-principles.json) | Data behind the design principles page (JSON) | [live](https://ancreationoffice.com/design-principles.json) |
 | [`design-principles.txt`](guide/design-principles.txt) | DESIGN PRINCIPLES: PEOPLE, FORM AND USE | [live](https://ancreationoffice.com/design-principles.txt) |
 | [`design-review.txt`](guide/design-review.txt) | AN CREATION — SHORT DESIGN AND FAILURE REVIEW — TEMPLATE REV 1 | [live](https://ancreationoffice.com/design-review.txt) |
-| [`design-risk.txt`](guide/design-risk.txt) | AN Creation — Design risk and troubleshooting. Revision 1, September 30, 2026. | [live](https://ancreationoffice.com/design-risk.txt) |
+| [`design-risk.txt`](guide/design-risk.txt) | AN Creation — Design risk and troubleshooting. Revision 2 — October 18, 2026. | [live](https://ancreationoffice.com/design-risk.txt) |
+| [`funding-packet.py`](guide/funding-packet.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/funding-packet.py) |
 | [`handoff-log.csv`](guide/handoff-log.csv) | Worksheet / table (CSV): handoff_id, sent_date, sender, recipient... | [live](https://ancreationoffice.com/handoff-log.csv) |
 | [`ip-ratings.txt`](guide/ip-ratings.txt) | IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and  | [live](https://ancreationoffice.com/ip-ratings.txt) |
-| [`library.txt`](guide/library.txt) | 261018.2 | [live](https://ancreationoffice.com/library.txt) |
+| [`library.txt`](guide/library.txt) | 261018.4 | [live](https://ancreationoffice.com/library.txt) |
 | [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The | [live](https://ancreationoffice.com/manufacturing.txt) |
-| [`office-automation-machine.txt`](guide/office-automation-machine.txt) | AN Creation: the Automation Machine Office (role b-automation-machine). Revision 4 — October 17, 2026. | [live](https://ancreationoffice.com/office-automation-machine.txt) |
-| [`office-charger-board.txt`](guide/office-charger-board.txt) | AN Creation: the Charger Board Office (role b-charger-board). Revision 4 — October 17, 2026. | [live](https://ancreationoffice.com/office-charger-board.txt) |
 | [`office-handoff.txt`](guide/office-handoff.txt) | AN Creation skill: office-handoff. The office rule is https://ancreationoffice.com/sop-team.txt HAND-OFFS. | [live](https://ancreationoffice.com/office-handoff.txt) |
-| [`office-mil-battery.txt`](guide/office-mil-battery.txt) | AN Creation: the MIL Battery Office (role b-mil-battery). Revision 4 — October 17, 2026. | [live](https://ancreationoffice.com/office-mil-battery.txt) |
-| [`office-pneumatic-fixture.txt`](guide/office-pneumatic-fixture.txt) | AN Creation: the Pneumatic Fixture Office (role b-pneumatic-fixture). Revision 4 — October 17, 2026. | [live](https://ancreationoffice.com/office-pneumatic-fixture.txt) |
-| [`office-promotion.txt`](guide/office-promotion.txt) | AN Creation: the Promotion Office (role b-promotion-office). Revision 4 — October 17, 2026. | [live](https://ancreationoffice.com/office-promotion.txt) |
-| [`office-rugged-enclosure.txt`](guide/office-rugged-enclosure.txt) | AN Creation: the Rugged Enclosure Office (role b-rugged-enclosure). Revision 4 — October 17, 2026. | [live](https://ancreationoffice.com/office-rugged-enclosure.txt) |
 | [`office-save.txt`](guide/office-save.txt) | AN Creation skill: office-save. The office rule is https://ancreationoffice.com/version-control.txt SAVING and | [live](https://ancreationoffice.com/office-save.txt) |
 | [`office-setup-check.txt`](guide/office-setup-check.txt) | AN Creation skill: office-setup-check. Run once after https://ancreationoffice.com/drive-setup.txt, and report | [live](https://ancreationoffice.com/office-setup-check.txt) |
-| [`office-spacex.txt`](guide/office-spacex.txt) | AN Creation: the SpaceX Office (role b-spacex-office). Revision 2 — October 14, 2026. | [live](https://ancreationoffice.com/office-spacex.txt) |
 | [`office-version-history.txt`](guide/office-version-history.txt) | AN Creation office version history, retired from the startup file on October 14, 2026. | [live](https://ancreationoffice.com/office-version-history.txt) |
 | [`plan-template.txt`](guide/plan-template.txt) | Project plan | [live](https://ancreationoffice.com/plan-template.txt) |
 | [`planning-resources.json`](guide/planning-resources.json) | Data behind the planning resources page (JSON) | [live](https://ancreationoffice.com/planning-resources.json) |
@@ -167,44 +171,19 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`revision-log.csv`](guide/revision-log.csv) | Worksheet / table (CSV): item_id, title, revision, previous_revision... | [live](https://ancreationoffice.com/revision-log.csv) |
 | [`revisions.txt`](guide/revisions.txt) | AN Creation revision control. Human lesson: https://ancreationoffice.com/revisions.html | [live](https://ancreationoffice.com/revisions.txt) |
 | [`robots.txt`](guide/robots.txt) | User-agent: * | [live](https://ancreationoffice.com/robots.txt) |
-| [`sop-automation-controls.txt`](guide/sop-automation-controls.txt) | SOP: Controls for an automation machine. PLC, servo motion, the control panel, machine states, networks. Revis | [live](https://ancreationoffice.com/sop-automation-controls.txt) |
-| [`sop-automation-handling.txt`](guide/sop-automation-handling.txt) | SOP: Moving and processing small parts on an automation machine. Air (tube) feeding, nests and the index wheel | [live](https://ancreationoffice.com/sop-automation-handling.txt) |
-| [`sop-automation-project.txt`](guide/sop-automation-project.txt) | SOP: Running a custom automation machine project, from specification to buy-off. Revision 1 — October 13, 2026 | [live](https://ancreationoffice.com/sop-automation-project.txt) |
-| [`sop-automation-vision.txt`](guide/sop-automation-vision.txt) | SOP: Machine vision for inspection and good/bad sorting. Revision 1 — October 13, 2026. | [live](https://ancreationoffice.com/sop-automation-vision.txt) |
-| [`sop-board-design.txt`](guide/sop-board-design.txt) | SOP: Designing a small circuit board with free tools. From the idea to a checked design ready for a prototype  | [live](https://ancreationoffice.com/sop-board-design.txt) |
-| [`sop-board-emi.txt`](guide/sop-board-emi.txt) | SOP: Clean power and low EMI on a small board with a switching converter. Layout rules, filtering, measuring r | [live](https://ancreationoffice.com/sop-board-emi.txt) |
-| [`sop-board-prototype.txt`](guide/sop-board-prototype.txt) | SOP: Getting prototype boards made from a free-tools design. What to send the shop, handing a KiCad design to  | [live](https://ancreationoffice.com/sop-board-prototype.txt) |
-| [`sop-charger-circuit.txt`](guide/sop-charger-circuit.txt) | SOP: A charger for power-tool lithium-ion battery packs, with USB-C power. How the circuit is set up, the deci | [live](https://ancreationoffice.com/sop-charger-circuit.txt) |
 | [`sop-hats.txt`](guide/sop-hats.txt) | SOP: Form, record, and call a session. Revision 3 — October 1, 2026. | [live](https://ancreationoffice.com/sop-hats.txt) |
-| [`sop-intake-survey.txt`](guide/sop-intake-survey.txt) | SOP: The intake survey. Collecting a large project's facts from its documents in one pass, instead of one ques | [live](https://ancreationoffice.com/sop-intake-survey.txt) |
 | [`sop-interns.txt`](guide/sop-interns.txt) | SOP: Use an intern. Revision 1 — October 1, 2026. | [live](https://ancreationoffice.com/sop-interns.txt) |
-| [`sop-mil-electronics-build.txt`](guide/sop-mil-electronics-build.txt) | SOP: Building military electronics. Workmanship classes, boards, conformal coating, cables and shielding. Revi | [live](https://ancreationoffice.com/sop-mil-electronics-build.txt) |
-| [`sop-mil-emi.txt`](guide/sop-mil-emi.txt) | SOP: Military EMI/EMC (MIL-STD-461) for a small soldier-worn power device. Revision 1 — October 13, 2026. | [live](https://ancreationoffice.com/sop-mil-emi.txt) |
-| [`sop-mil-enclosure.txt`](guide/sop-mil-enclosure.txt) | SOP: A sealed, shielded aluminum enclosure. Conductive gaskets, compression and stack-up, finishes, galvanic c | [live](https://ancreationoffice.com/sop-mil-enclosure.txt) |
-| [`sop-mil-environmental.txt`](guide/sop-mil-environmental.txt) | SOP: Military environmental testing (MIL-STD-810) for soldier-worn electronics. Revision 1 — October 13, 2026. | [live](https://ancreationoffice.com/sop-mil-environmental.txt) |
-| [`sop-mil-power.txt`](guide/sop-mil-power.txt) | SOP: Battery-powered electronics for the project manager. Lithium-ion charging, power paths, USB power, and th | [live](https://ancreationoffice.com/sop-mil-power.txt) |
-| [`sop-mil-program.txt`](guide/sop-mil-program.txt) | SOP: Running a defense hardware project. Program management, AS9100, configuration, first article, and qualifi | [live](https://ancreationoffice.com/sop-mil-program.txt) |
 | [`sop-office.txt`](guide/sop-office.txt) | SOP: Set up b-project-manager and b-analyst. Revision 13 — October 18, 2026. | [live](https://ancreationoffice.com/sop-office.txt) |
-| [`sop-pneumatic-fixture.txt`](guide/sop-pneumatic-fixture.txt) | SOP: A pneumatic assembly fixture with air-logic controls. Two-hand start, guard locking, cylinders, the fixtu | [live](https://ancreationoffice.com/sop-pneumatic-fixture.txt) |
-| [`sop-promo-audience.txt`](guide/sop-promo-audience.txt) | SOP: Building Mike's audience. Positioning, the topics he's known for, a weekly rhythm, the numbers to watch,  | [live](https://ancreationoffice.com/sop-promo-audience.txt) |
-| [`sop-promo-channels.txt`](guide/sop-promo-channels.txt) | SOP: Other ways to get the word out. Reddit, Hacker News, Product Hunt, YouTube, podcasts, press, newsletters, | [live](https://ancreationoffice.com/sop-promo-channels.txt) |
-| [`sop-promo-images.txt`](guide/sop-promo-images.txt) | SOP: Pictures for Mike's posts. Writing prompts for Grok Imagine (or another image AI), the house style, sizes | [live](https://ancreationoffice.com/sop-promo-images.txt) |
-| [`sop-promo-linkedin.txt`](guide/sop-promo-linkedin.txt) | SOP: LinkedIn for Mike. The profile, the company page, posts that get read, comments, the newsletter, and meas | [live](https://ancreationoffice.com/sop-promo-linkedin.txt) |
-| [`sop-promo-voice.txt`](guide/sop-promo-voice.txt) | SOP: Writing as Mike Maier. His voice, the rules about what to say and not say, and how to learn from his edit | [live](https://ancreationoffice.com/sop-promo-voice.txt) |
-| [`sop-promo-x.txt`](guide/sop-promo-x.txt) | SOP: X for Mike. How the feed picks posts, replies that build an audience, posts and threads, and using Grok's | [live](https://ancreationoffice.com/sop-promo-x.txt) |
-| [`sop-rugged-cots.txt`](guide/sop-rugged-cots.txt) | SOP: Ruggedizing a commercial electronic product for military use. An off-the-shelf enclosure and connectors,  | [live](https://ancreationoffice.com/sop-rugged-cots.txt) |
-| [`sop-spacex-practice.txt`](guide/sop-spacex-practice.txt) | SOP: Turning one finding into something Mike can use. Revision 1 — October 13, 2026. | [live](https://ancreationoffice.com/sop-spacex-practice.txt) |
-| [`sop-spacex-watch.txt`](guide/sop-spacex-watch.txt) | SOP: What the SpaceX Office watches. X first, then the official page a post points at. Revision 1 — October 13 | [live](https://ancreationoffice.com/sop-spacex-watch.txt) |
-| [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 13 — October 18, 2026. | [live](https://ancreationoffice.com/sop.txt) |
-| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.2 | [live](https://ancreationoffice.com/sops-manifest.txt) |
+| [`sop.txt`](guide/sop.txt) | AN Creation standard operating procedures. Revision 14 — October 18, 2026. | [live](https://ancreationoffice.com/sop.txt) |
+| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.4 | [live](https://ancreationoffice.com/sops-manifest.txt) |
 | [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's form | [live](https://ancreationoffice.com/status-template.txt) |
-| [`survey-automation-machine.csv`](guide/survey-automation-machine.csv) | Worksheet / table (CSV): id, section, question, why... | [live](https://ancreationoffice.com/survey-automation-machine.csv) |
-| [`survey-fill-instructions.txt`](guide/survey-fill-instructions.txt) | Instructions for the AI filling an AN Creation intake survey. Give these to the AI along with the survey file  | [live](https://ancreationoffice.com/survey-fill-instructions.txt) |
-| [`survey-mil-battery.csv`](guide/survey-mil-battery.csv) | Worksheet / table (CSV): id, section, question, why... | [live](https://ancreationoffice.com/survey-mil-battery.csv) |
-| [`survey-pneumatic-fixture.csv`](guide/survey-pneumatic-fixture.csv) | Worksheet / table (CSV): id, section, question, why... | [live](https://ancreationoffice.com/survey-pneumatic-fixture.csv) |
-| [`survey-rugged-enclosure.csv`](guide/survey-rugged-enclosure.csv) | Worksheet / table (CSV): id, section, question, why... | [live](https://ancreationoffice.com/survey-rugged-enclosure.csv) |
 | [`template-a3.txt`](guide/template-a3.txt) | One-page project summary (A3). Template, from Mike's practice (sop-six-sigma.txt section 6). Copy into the pro | [live](https://ancreationoffice.com/template-a3.txt) |
 | [`template-action-log.csv`](guide/template-action-log.csv) | Worksheet / table (CSV): ID, Opened, Action, Who... | [live](https://ancreationoffice.com/template-action-log.csv) |
+| [`template-business-risks.csv`](guide/template-business-risks.csv) | Worksheet / table (CSV): id, risk, category, likelihood... | [live](https://ancreationoffice.com/template-business-risks.csv) |
+| [`template-cost-sheet.csv`](guide/template-cost-sheet.csv) | Worksheet / table (CSV): part, qty, what it is, material cost... | [live](https://ancreationoffice.com/template-cost-sheet.csv) |
+| [`template-decision-log.csv`](guide/template-decision-log.csv) | Worksheet / table (CSV): date, decision, reason... | [live](https://ancreationoffice.com/template-decision-log.csv) |
+| [`template-funding.csv`](guide/template-funding.csv) | Worksheet / table (CSV): key, value, source, note... | [live](https://ancreationoffice.com/template-funding.csv) |
+| [`template-risk-table.csv`](guide/template-risk-table.csv) | Worksheet / table (CSV): id, Failure mode / actions, effect, S... | [live](https://ancreationoffice.com/template-risk-table.csv) |
 | [`template-team.csv`](guide/template-team.csv) | Worksheet / table (CSV): name, covers, reports_to, platform... | [live](https://ancreationoffice.com/template-team.csv) |
 | [`test-matrix.csv`](guide/test-matrix.csv) | Worksheet / table (CSV): Project, Plan ID / revision, Test ID, Requirement / CTQ / risk IDs... | [live](https://ancreationoffice.com/test-matrix.csv) |
 | [`test-plan-template.txt`](guide/test-plan-template.txt) | AN CREATION — TEST PLAN TEMPLATE — REV 1 | [live](https://ancreationoffice.com/test-plan-template.txt) |

@@ -1,0 +1,43 @@
+SOP: The funding packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, one packet per invention. b-analyst builds it.
+Templates: https://ancreationoffice.com/template-funding.csv and https://ancreationoffice.com/template-business-risks.csv . Builder: https://ancreationoffice.com/funding-packet.py
+Example: https://ancreationoffice.com/example-mousetrap/funding-packet.html (its sheets are in the same folder).
+May write: everything in AN-Creation/Business/funding/<invention>/, one line on the Business action log, and a hand-off line to b-project-manager.
+Goes with: https://ancreationoffice.com/sop-funding.txt (which kind of money fits), https://ancreationoffice.com/sop-business-risks.txt , https://ancreationoffice.com/sop-cost-sheet.txt , https://ancreationoffice.com/sop-risk-table.txt
+
+WHAT IT IS
+The pages an inventor hands a lender, an SBDC advisor, a grant reviewer or a partner. Six pages: executive summary, product and market, cost and unit economics, funding request and milestones, business risk register, and the design risk analysis as an appendix. A reviewer reads page 1 and decides whether to read the rest, so page 1 carries the verdict, the four key numbers, what it would take, the top risks and the ask.
+
+WHO OWNS WHAT
+b-business-manager owns the packet: the price, the funding request, the use of funds, the business risk register, and the call on when it is ready to show anyone.
+b-project-manager owns the product numbers: the cost sheet, the risk table, the decision log, the action log and the milestone dates. b-business-manager never retypes or edits them. It asks for current copies (office-handoff: one line in AN-Creation/handoffs/for-b-project-manager.txt, "copies of cost-sheet, risk-table, decision-log, actions and intake for the funding packet") and uses what comes back.
+
+THE FOLDER: AN-Creation/Business/funding/<invention>/
+  intake-001.csv      copy of the invention's intake form, from b-project-manager
+  cost-sheet.csv      copy, from b-project-manager
+  risk-table.csv      copy, from b-project-manager
+  decision-log.csv    copy, from b-project-manager
+  actions.csv         copy, from b-project-manager
+  funding.csv         b-business-manager's: product name, price, volumes, owner's money, uses of funds, milestones (template-funding.csv)
+  business-risks.csv  b-business-manager's: the business risk register (sop-business-risks.txt)
+  funding-packet.html the packet. Print it or save it as PDF. Each build replaces it; a packet that was sent to someone is copied to History/ with the date and who got it.
+The copies are dated by the hand-off line that brought them. Before a build, check that none is older than the last change b-project-manager logged; if one is, ask for it again.
+
+BUILDING IT
+b-analyst runs: python3 funding-packet.py AN-Creation/Business/funding/<invention>
+Every figure is computed from the sheets: piece cost (material plus process, all rows), tooling (all rows, once), what each unit clears at the price, gross margin, the units it takes to pay back the tooling, the price that pays it back over the plan volume, and the tooling the price can carry. Nothing on the packet is typed in by hand.
+In funding.csv, a value with source "illustrative" prints with a small i mark. A real packet has none. Remove the marks by replacing the values, never by changing the source.
+
+THE VERDICT ON PAGE 1
+The packet says plainly whether it is ready to ask for money. It is ready when the tooling pays back within the plan volume (annual units times years) at the stated price. If it does not, page 1 says so, gives the numbers, and shows the three levers: the price that would close it, the tooling the price can carry, and the volume it would take. A packet that hides a gap does not get funded twice. Say it in one line to the inventor before anything else: "At $0.45 each trap clears $0.05, so the molds take 2.1 million traps to pay back. Here's what would change that."
+
+HONESTY RULES
+- Never invent a price, a quote, a buyer, a sales figure or a test result. A number nobody has said is a placeholder: write it as one, with where the real number will come from.
+- Mold and tooling figures say quote or placeholder, and the quote's date.
+- "What buyers have said" is the inventor's words or "Not known yet."
+- No projections past what the sheets support: no five-year revenue curve from a guess.
+- The packet is prepared for review. b-business-manager never sends it. The inventor sends it, and the record says who got which version.
+
+WHEN TO REBUILD
+When a quote arrives, the price changes, a risk changes level, or a milestone date moves. Rebuild before every meeting where it will be shown.

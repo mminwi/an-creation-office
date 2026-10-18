@@ -1,0 +1,47 @@
+SOP: Risk analysis table. Revision 9 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-project-manager, one per invention; b-analyst fills it. Template: https://ancreationoffice.com/template-risk-table.csv . May write: Office files/risk-table.csv and the matching action rows in Office files/actions.csv.
+Goes with the Residual risk principle (https://ancreationoffice.com/principle-residual-risk.txt). This note is how a risk table is built. It replaces the one-row-per-failure FMEA. The background on FMEA, control plans and the quality chain is https://ancreationoffice.com/design-risk.txt ; where they differ on how to build and score the table, this file wins.
+
+THE TABLE GROWS DOWN
+One failure mode can take several rows: the starting condition, one or more mitigation ideas, and a final accepted residual row. Do not add columns for extra mitigations. Add another row.
+
+COLUMNS
+id, Failure mode / actions, effect, S, O, D, RPN, status.
+
+FIRST ROW OF A FAILURE
+The id (F1, F2, and so on) is the failure mode. Score S, O, and D for what is already proposed, including the equipment and the procedure as specified. An action under it is optional.
+
+NO ACTION
+The person can accept that score as it is. The sheet for that failure is one line. Write the RPN on that line and mark it accepted. There is no row under it.
+One accepted line can be most of the risk by itself. Then stop. The small items under it do not need to be worked.
+
+WHEN THE AI FILLS THE SHEET
+Be exhaustive, and do the exercise for real. For a design or a process, look for the failures that belong to it, score the proposal, and take actions that actually lower S, O, or D until a lower score is not honestly available.
+Stop when the risk is the reason for doing the thing, and the person has already accepted it. Skydiving is the case. The failure is that the parachute does not open. There may still be something to name, because the proposal already uses modern gear and the usual procedure, and that is what you score. Do not keep writing actions whose aim is to make the jump safe. The risk is why they are doing it. Accept the line and move on.
+
+ROWS UNDER THAT ID
+Use another line only when an action is taken. Leave the id blank. The action has to lower S, O, or D. Write the new scores on that row. Another action can follow if it lowers the score again. Stop when another action would not get a lower RPN. That last row is the residual. It carries the RPN, and status = accepted when the person signs off.
+A mitigation with no owner and no deadline is also a row on the action list, so it is not lost.
+
+STATUS
+Blank means still open. Accepted means the person has signed off that residual.
+Below threshold means the row is in the last 20% of the risk. It is logged. It is not a sign-off. Do not mark it accepted just because the score is small.
+A person is free to keep working a below-threshold row. An obvious fix that does not raise the cost of the product is worth doing. Spending more on one of those, while a higher score is still open, is not. Once 80% of the risk is accepted, the rest are not significant.
+
+SEVERITY FIRST
+A failure with severity 9 or 10 (someone can be hurt, or a law or safety rule is broken) gets an action whatever its RPN. It is never marked below threshold. Its residual can be accepted only after an action has lowered S, O, or D, or with the reason it cannot be lowered written on the residual row. Say it to the person in one line before asking them to accept it.
+
+SCORING
+RPN = S × O × D, on the residual row. Status says whether that residual was accepted or fell below the threshold.
+Add every residual RPN. That sum is the total risk. 80% of that sum is the line to work to.
+Rank the residual scores and add them from the top. The row that first carries the running total past 80% is still accepted. Everything after it is the leftover risk. Mark those below threshold, not accepted.
+The count of issues on either side of that line is whatever the scores produce. Do not aim for a fifth of the rows. A long list of small issues is easy to write, and the meeting starts to feel pointless. Work the issues that represent 80% of the risk.
+Driving a score lower eventually costs more money, or the part takes longer to make. Time is money. Accepting a residual means this is as much as will be spent to lower that issue.
+Ask "accept as-is or modify?" only on an open failure. Do not ask it on a row that is already accepted.
+
+FOR THE FUNDING PACKET
+b-business-manager's funding packet prints this table as an appendix with the before and after scores (https://ancreationoffice.com/sop-funding-packet.txt). Keep the first row of each failure as scored for the proposal, so the before score is never lost.
+
+AT THE BOTTOM
+Show the sum of every residual RPN, the accepted portion (the first 80% of that sum), and the leftover.

@@ -1,4 +1,4 @@
-AN Creation project folders. Revision 9 — October 14, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
+AN Creation project folders. Revision 10 — October 18, 2026. Human explanation: https://ancreationoffice.com/project-folders.html
 
 One person talks to the system: a solo inventor or entrepreneur. Partners may be involved, but their input comes through that person. One folder holds everything, with one folder per invention inside it. Each invention has two sides: Your files (the person's) and Office files (the assistants'). Built like a Unix system: files and folders do the work. A queue is a folder of ticket files.
 
@@ -8,7 +8,7 @@ AN-Creation/
   AGENTS.md, CLAUDE.md          (GitHub add-on only, at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
   office.txt                    where the Project Manager Bot lives (Home), and its "Office version seen" line. Other bots keep that line in their own office.txt. One b-project-manager runs every invention
   All inventions                one line per invention: where it stands, its next step
-  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), promo-log.csv, record/
+  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), funding/<invention>/ (the funding packet, sop-funding-packet.txt), promo-log.csv, record/
   handoffs/                     one inbox per office, for-<role>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
   sops/                         the bot's procedure library: library.txt (one file, about 2 MB) and VERSION (Library version and SOP updates: auto, ask, or pinned). A refresh is one download of library.txt, saved over the old one. Read one section by its marker. Keep this folder once, shared, not copied into an office folder (https://ancreationoffice.com/version.txt)
   Fishing Lure/                 one folder per invention
@@ -26,7 +26,10 @@ AN-Creation/
       History/                  earlier copies of Status and Plan, dated
     Office files/              the assistants' side. Please don't edit; tell b-project-manager instead.
       README.txt  PROJECT.txt  plan.md
-      actions.csv               the action log master: one row per action, never deleted (sop-action-log.txt)
+      actions.csv               the action log master: one row per action or suggestion, never deleted (sop-action-log.txt, sop-suggestions.txt)
+      cost-sheet.csv            what one unit should cost, every component, tooling separate (sop-cost-sheet.txt)
+      risk-table.csv            how it could fail, scored down to the residual (sop-risk-table.txt)
+      decision-log.csv          everyday calls, dated, with the reason (sop-decision-log.txt)
       forms/                    master forms: answer, context, status for every field
       queue/QUEUE.txt  open/  active/  done/  revisit/
       record/                   YYMMDD-I-slug (in), YYMMDD-O-slug (out), YYMMDD-M-slug (meeting or conversation, full text)

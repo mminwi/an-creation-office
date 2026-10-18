@@ -1,4 +1,4 @@
-SOP: Getting the most out of Claude and Codex on CAD work. Driving SOLIDWORKS (and KiCad) with an AI coding agent: the setup, the brief, and the checks. Revision 1 — October 13, 2026.
+SOP: Getting the most out of Claude and Codex on CAD work. Driving SOLIDWORKS (and KiCad) with an AI coding agent: the setup, the brief, and the checks. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Lines are marked "office" or "published" (with the source to check).
 
@@ -50,7 +50,7 @@ Stop it. Write down what was tried and what failed. Make the step smaller, or ha
 GOOD JOBS TO GIVE IT (office)
 Custom properties across a folder of parts; batch export of STEP, PDF and DXF; a configurator for a part family from a table; drawings from a template with standard views; renaming, copying and Pack and Go; checking a folder of parts for missing materials or properties; BOM export; simple plates, brackets, spacers and fixture blocks; a 3D-printed enclosure built around a circuit board's STEP model.
 
-CIRCUIT BOARDS (office; https://ancreationoffice.com/sop-board-design.txt)
+CIRCUIT BOARDS (office)
 KiCad's files are text, so agents can read them, and its command-line tool (kicad-cli) runs the electrical and design rule checks and every export from a script. Community MCP servers for KiCad exist too. Use the agent to check, export, compare against data sheets and document; keep the schematic's intent and the layout of the power parts under the owner's eye.
 
 NEVER (office)

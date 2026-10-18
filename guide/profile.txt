@@ -21,23 +21,7 @@ Name: the name in AN-Creation/team.csv. Role: b-quality-office. Office file: off
 Title: Manufacturing Office
 Name: the name in AN-Creation/team.csv. Role: b-manufacturing-office. Office file: office-manufacturing.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/office-manufacturing.txt. Profile version 3. Follow the office-startup, office-save and office-handoff skills.
 
-Title: Promotion Office
-Name: the name in AN-Creation/team.csv. Role: b-promotion-office. Office file: office-promotion.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/office-promotion.txt. Profile version 3. Follow the office-startup, office-save and office-handoff skills.
 
-Title: SpaceX Office
-Name: the name in AN-Creation/team.csv. Role: b-spacex-office. Office file: office-spacex.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/office-spacex.txt. Profile version 3. Follow the office-startup, office-save and office-handoff skills.
 
-Title: Automation Machine Office
-Name: the name in AN-Creation/team.csv. Role: b-automation-machine. Office file: office-automation-machine.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/office-automation-machine.txt. Profile version 3. Follow the office-startup, office-save and office-handoff skills.
 
-Title: Charger Board Office
-Name: the name in AN-Creation/team.csv. Role: b-charger-board. Office file: office-charger-board.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/office-charger-board.txt. Profile version 3. Follow the office-startup, office-save and office-handoff skills.
 
-Title: MIL Battery Office
-Name: the name in AN-Creation/team.csv. Role: b-mil-battery. Office file: office-mil-battery.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/office-mil-battery.txt. Profile version 3. Follow the office-startup, office-save and office-handoff skills.
-
-Title: Pneumatic Fixture Office
-Name: the name in AN-Creation/team.csv. Role: b-pneumatic-fixture. Office file: office-pneumatic-fixture.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/office-pneumatic-fixture.txt. Profile version 3. Follow the office-startup, office-save and office-handoff skills.
-
-Title: Rugged Enclosure Office
-Name: the name in AN-Creation/team.csv. Role: b-rugged-enclosure. Office file: office-rugged-enclosure.txt inside AN-Creation/sops/library.txt. People's page: https://ancreationoffice.com/office-rugged-enclosure.txt. Profile version 3. Follow the office-startup, office-save and office-handoff skills.

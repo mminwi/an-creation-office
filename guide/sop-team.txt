@@ -1,4 +1,4 @@
-SOP: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 6 — October 18, 2026. Two bots for everyone: the Project Manager Bot and the Office Manager Bot. Specialists come with their bot. Hand-offs follow the office-handoff skill.
+SOP: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 7 — October 18, 2026. Two bots for everyone: the Project Manager Bot and the Office Manager Bot. Specialists come with their bot. Hand-offs follow the office-handoff skill.
 Index: https://ancreationoffice.com/sop.txt
 Read this when setting up a bot, when the owner adds, renames or removes a bot, when work belongs to another bot, and when a project needs its first look or a second look at a gate.
 
@@ -12,23 +12,13 @@ Plant and product work is not a separate bot for a new project. b-project-manage
 - Quality (role b-quality-office in older projects): quality planning, measurement and inspection, Lean Six Sigma. https://ancreationoffice.com/office-quality.txt
 - Manufacturing (role b-manufacturing-office in older projects): cells and standard work, purchasing, cost and BOM, automation, machine safety. https://ancreationoffice.com/office-manufacturing.txt
 Older projects: a Molding Plant, Plastic Design, Quality or Manufacturing Office bot that is already in team.csv keeps working as before, with its own inbox. Hand its area to it. Do not suggest a new one.
-These offices are documented the same way and are not on those public pages:
-- Promotion Office (role b-promotion-office): posts, replies, and audience. https://ancreationoffice.com/office-promotion.txt
-- SpaceX Office (role b-spacex-office): the SpaceX watch. Scout is retired. https://ancreationoffice.com/office-spacex.txt
-- Automation Machine Office (role b-automation-machine). https://ancreationoffice.com/office-automation-machine.txt
-- Charger Board Office (role b-charger-board). https://ancreationoffice.com/office-charger-board.txt
-- MIL Battery Office (role b-mil-battery). https://ancreationoffice.com/office-mil-battery.txt
-- Pneumatic Fixture Office (role b-pneumatic-fixture). https://ancreationoffice.com/office-pneumatic-fixture.txt
-- Rugged Enclosure Office (role b-rugged-enclosure). https://ancreationoffice.com/office-rugged-enclosure.txt
-- b-analyst is not an office. It is the helper any office runs for heavy work, with the grok command in that office's Shell (github-setup.txt).
+- b-analyst is not a bot you talk to. It is the helper either bot runs for heavy work, with the grok command in that bot's Shell (github-setup.txt).
 The owner picks bots, not specialists. Never create a bot on your own.
 
 ONE OWNER
 The owner column of team.csv names one owner for a job.
-- Posts, replies, and audience: b-promotion-office.
-- Website, search, and listings: b-business-manager.
-- The SpaceX watch: b-spacex-office.
-Do not give one of those jobs to a second office.
+- Website, search, listings, posts, replies, and audience: b-business-manager.
+Do not give one of those jobs to the other bot.
 
 ROLE NAMES (every procedure)
 - A procedure never uses a personal name for a bot. It names the role: a small b, a dash, and what the role does, all lower case.
@@ -51,13 +41,6 @@ Every office has one inbox: AN-Creation/handoffs/for-<role>.txt
   Plastic Design Office (older) AN-Creation/handoffs/for-b-plastic-design-office.txt
   Quality Office (older)       AN-Creation/handoffs/for-b-quality-office.txt
   Manufacturing Office (older) AN-Creation/handoffs/for-b-manufacturing-office.txt
-  Promotion Office             AN-Creation/handoffs/for-b-promotion-office.txt
-  SpaceX Office                AN-Creation/handoffs/for-b-spacex-office.txt
-  Automation Machine Office    AN-Creation/handoffs/for-b-automation-machine.txt
-  Charger Board Office         AN-Creation/handoffs/for-b-charger-board.txt
-  MIL Battery Office           AN-Creation/handoffs/for-b-mil-battery.txt
-  Pneumatic Fixture Office     AN-Creation/handoffs/for-b-pneumatic-fixture.txt
-  Rugged Enclosure Office      AN-Creation/handoffs/for-b-rugged-enclosure.txt
 On the first conversation, if your inbox file is missing, create it (one header line, then the hand-off lines) and let office-save commit it.
 Sending is one inbox line plus a SendToAgent ping to that bot, so the work is not waiting until someone opens it. The receiving office marks the line taken when it is on the plan, and done when it is finished. Lines are never deleted. If you cannot ping that bot, tell the owner the line and the bot's name. If the owner doesn't have that bot, say so once and keep the item on your own plan. Plant and product work with no office bot in team.csv goes on b-project-manager's plan, not to an inbox.
 Receiving: office-startup reads your inbox. Put new lines on your plan and mark them.

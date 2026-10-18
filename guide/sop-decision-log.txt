@@ -1,0 +1,19 @@
+SOP: Decision log. Revision 3 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-project-manager, one per invention (b-business-manager keeps its own in AN-Creation/Business/). May write: Office files/decision-log.csv.
+Template: https://ancreationoffice.com/template-decision-log.csv
+Goes with the Decisions section of the project plan. The plan still holds the choice in the inventor's words. This log is the list you look up.
+
+WHY THIS EXISTS
+Everyday calls get made in conversation and then disappear: which material, which supplier, which idea to shelve. Write them down the day they are made.
+
+WHEN TO WRITE AN ENTRY
+Write one row the same day the call is made. Write a row for a material choice, a supplier pick, shelving an idea, or any other everyday call of that size. One row per call, in the person's words. A mention is not a call. A changed mind is a new row with a new date. Do not delete rows. Delete the example row before the first real entry.
+
+The reason has to stand without the meeting. Say what was chosen, what was set aside, and why. A few words that only repeat the decision are not a reason.
+
+DATE IS THE LOOKUP POINTER
+The date column is how you find an entry. There is no separate ID. To look something up, start with the date it was decided, then read the decision and the reason on that row. Write the date as YYYY-MM-DD. Add new rows at the bottom.
+
+COLUMNS
+date, decision, reason.

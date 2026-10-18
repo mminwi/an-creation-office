@@ -1,0 +1,16 @@
+SOP: Suggestions and actions. Revision 3 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept in: Office files/actions.csv, the same log as every action (https://ancreationoffice.com/sop-action-log.txt). May write: that file.
+Goes with the action log. A suggestion is not an action until it graduates.
+
+STATUS
+Suggestion is its own status. It is not a true action. The action statuses stay open, waiting, done, and dropped. Nothing is owed on a suggestion until it graduates.
+The action text says what the change actually is, and the notes say what done looks like. A title with no picture of the finished work is not a row.
+
+SOFT-DROP
+A suggestion survives the meeting it was raised in, plus one more meeting. If it is not raised again in that next meeting, it expires. The row stays on the log. Expired is the soft-drop.
+
+GRADUATION
+Graduation requires an owner and a deadline. Until both are set, it stays a suggestion.
+If no deadline is stated, the default is next week.
+Once both are set, the row is a true action, status open, with that owner and that deadline.

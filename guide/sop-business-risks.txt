@@ -1,0 +1,19 @@
+SOP: The business risk register. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, one per invention. Template: https://ancreationoffice.com/template-business-risks.csv
+May write: AN-Creation/Business/funding/<invention>/business-risks.csv and its rows on the Business action log.
+Goes with: https://ancreationoffice.com/sop-funding-packet.txt (page 5 of the packet). The product's own failure modes are b-project-manager's risk table (https://ancreationoffice.com/sop-risk-table.txt); this register is the risks to the business.
+
+WHAT GOES IN IT
+The risks a lender or partner asks about: Financial (the numbers do not close, the budget does not cover the tooling), Market (no buyer has said yes), Product liability (someone can be hurt), Legal (no company, no insurance, patent position), Supply (one supplier, long lead times), Schedule (a date that everything waits on), and Product (a design risk that also threatens the business; cite the risk-table row, do not copy it).
+Fill it from what is already known: the intake's open answers, the cost sheet, the action log, the risk table's severity 9-10 rows. Do not pad it. Eight real risks beat twenty generic ones.
+
+COLUMNS
+id (B1, B2...), risk (one plain sentence a lender understands), category, likelihood (1-5), impact (1-5), mitigation (what is being done, specific enough to check), owner, due, status (open, waiting, accepted, closed), source (where the risk came from).
+
+SCORING
+Likelihood × impact. 15 and up is High, 8 to 14 Medium, under 8 Low. The packet prints the levels and a 5×5 heat map.
+High risks are worked before money is committed. Product safety is worked by severity first, whatever its score (sop-risk-table.txt SEVERITY FIRST).
+
+KEEPING IT CURRENT
+Every mitigation with an owner and a date is also a row on the action log. Rescore when something changes: a quote arrives, a buyer answers, a company is formed. Closed rows stay; they show a reviewer what has already been dealt with.

@@ -1,4 +1,4 @@
-SOP: The action log. Revision 1 — October 8, 2026.
+SOP: The action log. Revision 2 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Template: https://ancreationoffice.com/template-action-log.csv
 Goes with: standing.txt, analyst.txt, sop-review-page.txt, project-folders.txt
@@ -21,7 +21,7 @@ Action: what has to happen, in plain words, specific enough to know when it's do
 Who: You (the inventor), b-project-manager, b-analyst, or a named outside party (the supplier, the lab, the attorney).
 Why / from: where it came from: a ticket, a review, a decision, a risk, an email (link the record item).
 Due: a date if one was agreed or a deadline exists; blank otherwise. Never invent one.
-Status: open, waiting (on someone else), done, or dropped.
+Status: open, waiting (on someone else), done, or dropped. A suggestion (an idea with no owner or no date yet) is also a row, status suggestion, and becomes an action when both are set (https://ancreationoffice.com/sop-suggestions.txt).
 Done how: in the inventor's words, how it got done ("dropped it at the post office Tuesday", "Acme sent the quote").
 Closed: date.
 Notes: anything else; follow-ups asked, with dates.
