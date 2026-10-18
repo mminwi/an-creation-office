@@ -1,7 +1,7 @@
-"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer or a lender.
+"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer, a lender or an investor.
 Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
 
-  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender
+  python3 meeting-packet.py AN-Creation/correspondence/YYMMDD-NN-X-slug buyer|manufacturer|lender|investor
 
 The meeting folder (its folder in the correspondence log, sop-correspondence.txt) holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
 they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
@@ -16,8 +16,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
-if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender"):
-    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender")
+if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender", "investor"):
+    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender|investor")
 MEET = Path(sys.argv[1]).resolve()
 KIND = sys.argv[2]
 
@@ -95,7 +95,7 @@ U = first(funding, "unit", "unit")
 US = first(funding, "units", U + "s")
 piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
 tooling = sum(num(r["tooling"]) for r in cost)
-TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet"}[KIND]
+TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet", "investor": "Investor packet"}[KIND]
 
 
 def table(head, body, cls=""):
@@ -322,6 +322,83 @@ if KIND == "lender":
 <h2>Documents a lender will ask for</h2>{table(['Document', 'Status'], docs, 'compact')}
 <h2>The risks, and what is being done</h2>{table(['', 'Risk', 'What is being done'], hb, 'compact')}""", "Page 4"))
     pages.append(prep_sheet())
+
+# ---------------- investor ----------------
+if KIND == "investor":
+    amount = num(M.get("amount"))
+    price = num(first(funding, "price"))
+    annual = num(first(funding, "annual_units"))
+    years = num(first(funding, "years")) or 1
+    plan_units = annual * years
+    clears = price - piece
+    margin_pct = clears / price * 100 if price else 0
+    payback_units = tooling / clears if clears > 0 else float("inf")
+    price_to_close = piece + (tooling / plan_units if plan_units else 0)
+    carry = max(clears, 0) * plan_units
+    closes = payback_units <= plan_units
+    owner_spent = sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    owner_funds = num(first(funding, "owner_funds"))
+    uses = [[esc(r["key"][4:]), money(num(r["value"]), False), esc(r["note"])] for r in meeting if r["key"].startswith("use:")]
+    use_total = sum(num(r["value"]) for r in meeting if r["key"].startswith("use:"))
+    payback = f"{payback_units:,.0f} {US}" if payback_units != float("inf") else "never at this price"
+    if closes:
+        verdict = (f"<strong>The numbers close.</strong> At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost to make, "
+                   f"and the {money(tooling, False)} of tooling pays back in {payback}, inside the plan of {plan_units:,.0f}.")
+    else:
+        verdict = (f"<strong>The numbers do not close yet.</strong> At {money(price)} a {U}, each one clears {money(clears)} over its {money(piece)} cost to make; "
+                   f"the {money(tooling, False)} of tooling would take {payback} to pay back, against a plan of {plan_units:,.0f}. "
+                   f"This round does not pay for production molds. It pays for the step that shows whether the numbers can close: {esc(M.get('reaches'))}")
+    pages.append(page("Investment summary", f"""
+<div class="verdict {'ok' if closes else 'warn'}">{verdict}</div>
+<p class="lede-big">{esc(first(pricing, 'headline') or PRODUCT)}</p>
+<div class="stats">{stat('The ask', money(amount, False))}{stat('Offered as', esc(M.get('instrument_short', 'To be set')))}{stat("Owner's money in", money(owner_spent, False), f'plus {money(owner_funds, False)} committed')}{stat(f'Clears per {U}', money(clears), f'{margin_pct:.0f}% of the price')}</div>
+<h2>What the money does</h2>{table(['Use', 'Amount', 'Basis'], uses + [['<strong>Total</strong>', '<strong>' + money(use_total, False) + '</strong>', '']], 'num2')}
+<h2>What it reaches</h2><p>{esc(M.get('reaches'))}</p>
+<h2>Who is asking</h2><p>{esc(M.get('founder'))}</p>""", "Page 1"))
+    benefits = "".join(f"<li>{esc(r['value'])}</li>" for r in pricing.get("benefit", []))
+    alts = [[esc(r["value"]), esc(r["note"])] for r in MULTI.get("alternative", [])]
+    ev = [[fdate(r["date"]), esc(r["who"]), esc(r["what they said"]), esc(r["what they did or would pay"]), esc(r["strength"])] for r in evidence]
+    pages.append(page("The product and the evidence", f"""
+<h2>Who it's for</h2><p>{esc(first(pricing, 'who_for'))}</p>
+<h2>Why it sells</h2><ul class="levers">{benefits}</ul>
+<h2>What people use now</h2>{table(['Alternative', 'Where this one is different'], alts, 'compact')}
+<h2>What people have said and done so far</h2>{table(['Date', 'Who', 'Said', 'Did or would pay', 'Strength'], ev, 'compact')}
+<h2>How big it could be</h2><p>{esc(M.get('market', 'Not estimated yet. A market size goes here only with its source.'))}</p>""", "Page 2"))
+    econ = [[f"Price to {first(funding, 'buyer', 'the buyer')}", money(price), esc(first(funding, 'price_note'))],
+            [f"Cost to make one {U}", money(piece), "Cost sheet: material plus process, all parts"],
+            [f"Clears per {U}", money(clears), f"{margin_pct:.0f}% of the price"],
+            ["Tooling (molds)", money(tooling, False), "Cost sheet; placeholders until the quotes arrive"],
+            ["Plan volume", f"{plan_units:,.0f} {US}", f"{annual:,.0f} a year for {years:,.0f} years"],
+            ["Units to pay back the tooling", payback, ""]]
+    pages.append(page("The numbers", f"""
+{table(['', '', 'Basis'], econ, 'num2')}
+<h2>What would change it</h2><ul class="levers">
+<li><strong>Price:</strong> {money(price_to_close)} a {U} pays back today's tooling over the plan volume.</li>
+<li><strong>Tooling:</strong> at today's price, the plan volume pays back {money(carry, False)} of tooling.</li>
+<li><strong>Volume:</strong> at today's price and tooling, {payback}.</li></ul>
+<p class="small">Every figure is computed from the cost sheet and the funding sheet; none is typed in. Values marked illustrative are not quotes.</p>""", "Page 3"))
+    ms = [[fdate(r["value"]), esc(r["key"][10:]), esc(r["note"])] for r in sorted((r for k, v in funding.items() if k.startswith("milestone:") for r in v), key=lambda r: r["value"])]
+    br = sorted(brisks, key=lambda b: -int(b["likelihood"]) * int(b["impact"]))
+    lvl = lambda b: "high" if int(b["likelihood"]) * int(b["impact"]) >= 15 else "medium" if int(b["likelihood"]) * int(b["impact"]) >= 8 else "low"
+    rk = [[esc(b["id"]), esc(b["risk"]), f'<span class="lvl {lvl(b)}">{lvl(b)}</span>', esc(b["mitigation"])] for b in br if b["status"] != "closed"]
+    pages.append(page("The plan and the risks", f"""
+<h2>Milestones</h2>{table(['By', 'Milestone', 'Basis'], ms, 'compact')}
+<h2>What could go wrong, and what is being done</h2>{table(['', 'Risk', 'Level', 'What is being done'], rk, 'compact')}""", "Page 4"))
+    def investor_company():
+        keep = ("legal name", "entity", "owner", "product liability insurance", "rules that apply", "years in business")
+        rows_ = [r for r in company if r["key"].lower() in keep] or company
+        return table(["", "", "Status"], [[f"<strong>{esc(r['key'])}</strong>", esc(r["value"]), pill(r["status"])] for r in rows_], "compact")
+    terms = [[f"<strong>{esc(r['value'])}</strong>", esc(r["note"])] for r in MULTI.get("term", [])]
+    pages.append(page("The terms, and what to know", f"""
+<h2>What is offered</h2><p>{esc(M.get('instrument'))}</p>
+{table(['', ''], terms, 'kv') if terms else ''}
+<h2>How an investor gets money back</h2><p>{esc(M.get('exit'))}</p>
+<h2>Before anyone invests</h2><ul class="levers">
+<li>This is an early, high-risk investment in a product that is not made yet. It can fail, and the money can be lost. Invest only money you can afford to lose.</li>
+<li>A share of the company, a note or a SAFE is a security. Under federal and state law, every offer and sale of securities, even to one person, including family and friends, has to be registered or fall under an exemption. The terms are set with an attorney before any money changes hands.</li>
+<li>Nothing here is a promise of a return. The numbers are the inventor's plan, built from the sheets named on each page.</li></ul>
+<h2>The company</h2>{investor_company()}""", "Page 5"))
+    pages.append(prep_sheet(top=f"<p class='small'>Owner's money already in: {money(owner_spent, False)} spent, {money(owner_funds, False)} committed. Investors ask this first.</p>"))
 
 css = CSS
 doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: {TITLE.lower()}</title>

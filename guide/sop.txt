@@ -1,4 +1,4 @@
-AN Creation standard operating procedures. Revision 18 — October 18, 2026.
+AN Creation standard operating procedures. Revision 19 — October 18, 2026.
 License: © 2026 Advance Now LLC, CC BY-NC-SA 4.0 (https://ancreationoffice.com/LICENSE.txt). Free to use for your own inventions, even ones you sell; not to sell or to build a paid program on.
 Human page: https://ancreationoffice.com/sop.html
 
@@ -45,7 +45,7 @@ K3. b-business-manager: the brand kit and profiles. Logo, descriptions, fact she
 K4. b-business-manager: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories. https://ancreationoffice.com/sop-promotion.txt
 K5. b-business-manager: the funding packet a lender or advisor reads: executive summary, unit economics, use of funds, milestones, risk register. https://ancreationoffice.com/sop-funding-packet.txt (builder: https://ancreationoffice.com/funding-packet.py ; example: https://ancreationoffice.com/example-mousetrap/funding-packet.html)
 K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
-K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt ; builder https://ancreationoffice.com/meeting-packet.py
+K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt , investor https://ancreationoffice.com/sop-packet-investor.txt ; builder https://ancreationoffice.com/meeting-packet.py
 K8. b-business-manager: the business record, required: company record, decision log, action log, contacts and the correspondence log, trip log, expense ledger (the tax record), deadlines. Insist on hearing about every trip, meeting and cost when it happens. Year end: tax-year.py. https://ancreationoffice.com/sop-business-record.txt (templates: template-expenses.csv, template-trips.csv, template-correspondence.csv, template-deadlines.csv, template-business-decision-log.csv)
 
 FOR b-project-manager

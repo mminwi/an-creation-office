@@ -1,4 +1,4 @@
-261018.17
+261018.18
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -44,6 +44,7 @@ example-mousetrap/correspondence/261018-02-S-molder-a-models-rev-x3/email.txt
 example-mousetrap/correspondence/261024-01-M-molder-a-quote-meeting/meeting.csv
 example-mousetrap/correspondence/261028-01-M-distributor-buyer-meeting/meeting.csv
 example-mousetrap/correspondence/261104-01-M-community-lender-meeting/meeting.csv
+example-mousetrap/correspondence/261112-01-M-family-investor-meeting/meeting.csv
 example-mousetrap/cost-sheet.csv
 example-mousetrap/deadlines.csv
 example-mousetrap/decision-log.csv
@@ -194,6 +195,7 @@ sop-mold-buying.txt
 sop-molding-defects.txt
 sop-office.txt
 sop-packet-buyer.txt
+sop-packet-investor.txt
 sop-packet-lender.txt
 sop-packet-manufacturer.txt
 sop-phases.txt

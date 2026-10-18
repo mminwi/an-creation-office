@@ -1,5 +1,5 @@
 key,value,note
-type,buyer,"buyer, manufacturer or lender"
+type,buyer,"buyer, manufacturer, lender or investor"
 who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
 date,2026-10-28,YYYY-MM-DD
 record,../../funding/<invention>,Folder with the sheets; relative to this meeting folder
@@ -24,3 +24,14 @@ rate_pct,,Lender only; the lender's figure or marked illustrative
 term_months,,Lender only
 collateral,,Lender only
 personal_guarantee,,Lender only
+investor_type,friends and family,"Investor only: friends and family, angel, or crowdfunding"
+amount,,Investor only: the ask
+instrument_short,To be set,Investor only: a few words for page 1
+instrument,,"Investor only: what is offered, in plain words; set with an attorney"
+use:<what it pays for>,,"Investor only: one row per use, adding up to the amount"
+reaches,,Investor only: what this money gets to
+founder,,"Investor only: who is asking, in their own words"
+alternative,What people use now,Investor only: one row each; the note says where this one is different
+term,,Investor only: one row per term; the note is the detail
+exit,,"Investor only: how an investor could get money back, including if it fails"
+market,,"Investor only, optional: a market size, only with its source in the note"

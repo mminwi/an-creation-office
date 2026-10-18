@@ -1,0 +1,39 @@
+SOP: The investor packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each investor meeting (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-M-slug/ and its row in correspondence.csv; funding.csv and company.csv in AN-Creation/Business/funding/<invention>/.
+Example: https://ancreationoffice.com/example-mousetrap/correspondence/261112-01-M-family-investor-meeting/investor-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (the rows marked Investor only)
+Goes with: https://ancreationoffice.com/sop-funding.txt (which kind of money fits), https://ancreationoffice.com/sop-funding-packet.txt (the packet for an advisor or a grant reviewer, built from the same sheets), https://ancreationoffice.com/principle-money-fits-the-stage.txt
+
+WHO IT IS FOR
+Someone who might put money in for a share of the outcome: family and friends, an angel investor or an angel group, or the backers of an equity crowdfunding campaign. A loan from a bank or a lender is the lender packet (sop-packet-lender.txt).
+
+WHAT WORRIES THEM
+- Is it worth it? Who buys it, what they have said and done so far, and whether each sale makes money.
+- Will you see it through? Who is asking, what they have already done, and how much of their own money is in.
+- What happens to my money? What it pays for, what it reaches, what they get, how they could get money back, and what happens if it fails.
+
+WHAT GOES IN IT (meeting-packet.py builds these pages from the sheets and meeting.csv)
+1. Investment summary: the verdict, the ask, how it is offered, the owner's money in, what each unit clears; what the money does (the use: rows, adding up to the ask); what it reaches; who is asking.
+2. The product and the evidence: who it is for, why it sells, what people use now (alternative rows), what people have said and done (market-evidence.csv), and how big it could be: a market size only with its source, otherwise "Not estimated yet".
+3. The numbers: price, cost to make one, what each clears, tooling, plan volume, units to pay back the tooling, and the three levers (price, tooling, volume). Computed from the cost sheet and funding.csv, the same math as the funding packet.
+4. The plan and the risks: the milestones in date order, and every open business risk with its level and what is being done.
+5. The terms and what to know: what is offered, the term rows, how an investor gets money back (in plain words, including the case where it fails), the standing statements below, and the company's status.
+6. Prep sheet, for the inventor only: the goal, the ask, the walk-away, the questions they will likely ask with answers, and what is still open.
+
+THE HONEST VERDICT
+Page 1 says whether the numbers close (the tooling pays back within the plan volume at the price). When they don't, the packet says so and the ask is for the step that shows whether they can: quotes, tests, buyer feedback, a prototype tool. Not the production molds. Money for production tooling is asked for once the numbers close (principle-money-fits-the-stage.txt, principle-unit-economics-first.txt).
+
+THE STANDING STATEMENTS (on page 5 of every investor packet)
+- This is an early, high-risk investment in a product that is not made yet. It can fail, and the money can be lost. Invest only money you can afford to lose.
+- A share of the company, a note or a SAFE is a security. Under federal and state law, every offer and sale of securities, even to one person, including family and friends, has to be registered or fall under an exemption. The terms are set with an attorney before any money changes hands.
+  Source: SEC, "Private Companies and the SEC" and "Ready to raise capital" (library: sec-ready, sec-early-investors; https://www.sec.gov/resources-small-businesses/capital-raising-building-blocks/private-companies-sec ). Source status: from a summary (search, 2026-10-18; sec.gov did not open from the office's build machine). Open the pages before relying on any detail; states have their own rules too.
+- Nothing here is a promise of a return.
+
+RULES
+- Other people's money: the standing advice is not optional here. Before any money changes hands, the terms are written and reviewed by an attorney, whatever the amount and however close the family (principle-rigor-scales-with-money.txt). The bot never drafts the investment agreement itself as final; it prepares the questions and the facts for the attorney.
+- The bot never chooses the instrument (loan, share, note, SAFE) or the valuation. It lays out the options in plain words and the inventor decides with the attorney.
+- Family and friends first: say plainly to the inventor that family money that is lost can cost more than money. Put everything in writing, and keep each investor's monthly update in the correspondence log.
+- Never claim sales, customers, a market size or a valuation that does not exist (principle-no-claims-you-cant-back.txt, principle-trace-to-source.txt).
+- Show what it does, not how it is made, until the patent decision is made (principle-patent-before-public.txt).
+- The inventor sends, signs and attends. The bot prepares (principle-owner-acts-bot-drafts.txt).

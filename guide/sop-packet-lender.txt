@@ -1,9 +1,9 @@
-SOP: The lender packet. Revision 2 — October 18, 2026.
+SOP: The lender packet. Revision 3 — October 18, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Kept by: b-business-manager, built for each lender meeting (sop-meeting-prep.txt). b-analyst builds it.
 May write: the meeting's correspondence folder AN-Creation/correspondence/YYMMDD-NN-X-slug/, and cash-flow.csv and company.csv in AN-Creation/Business/funding/<invention>/.
 Example: https://ancreationoffice.com/example-mousetrap/correspondence/261104-01-M-community-lender-meeting/lender-packet.html . Templates: https://ancreationoffice.com/template-cash-flow.csv , https://ancreationoffice.com/template-company.csv , https://ancreationoffice.com/template-meeting.csv
-Goes with: https://ancreationoffice.com/sop-funding.txt (which kind of money fits), https://ancreationoffice.com/sop-funding-packet.txt (the investor's packet, built from the same sheets)
+Goes with: https://ancreationoffice.com/sop-funding.txt (which kind of money fits), https://ancreationoffice.com/sop-packet-investor.txt (the investor's packet, built from the same sheets)
 
 WHO IT IS FOR
 A bank, a credit union, an SBA microlender, a community development lender (CDFI), or a state or local loan fund.
