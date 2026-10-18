@@ -1,0 +1,32 @@
+SOP: The buyer packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each buyer meeting (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting folder AN-Creation/Business/meetings/YYMMDD-<who>/, and pricing-terms.csv and company.csv in AN-Creation/Business/funding/<invention>/.
+Example: https://ancreationoffice.com/example-mousetrap/meetings/261028-distributor-buyer/buyer-packet.html . Templates: https://ancreationoffice.com/template-pricing-terms.csv , https://ancreationoffice.com/template-company.csv , https://ancreationoffice.com/template-meeting.csv
+
+WHO IT IS FOR
+A distributor, a store buyer, a catalog, or a business customer deciding whether to carry or buy the product.
+
+WHAT WORRIES THEM
+- Will it sell? Who buys it, at what shelf price, and why this one over what they already stock.
+- Can you deliver? Lead time, minimum order, case pack, capacity, a supplier behind you.
+- Will it cause trouble? Safety, labeling, returns, insurance, and a vendor they can set up.
+
+WHAT GOES IN IT (meeting-packet.py builds these pages from the sheets)
+1. Sell sheet: the product in one line, the problem, three or four benefits in the buyer's terms, who it is for, the shelf price, a picture.
+2. Pricing and terms: the price waterfall from the shelf price down to the inventor's price (never the inventor's own cost; that stays on the prep sheet), the buyer's margin, case pack, minimum order, lead time, payment terms, shipping terms, returns and warranty (pricing-terms.csv).
+3. Product specifications: materials, size and weight, what is in the pack, and how it is labeled. Facts from the cost sheet and the charter; a measurement nobody has taken says "to measure".
+4. Company and compliance: the company, the vendor paperwork they will ask for (W-9, insurance certificate, UPC/GTIN barcodes), certifications that apply, and the honest status of each, with the date it will be ready (company.csv, the action log).
+5. Prep sheet, for the inventor only: the goal, the ask, the walk-away, the questions they will likely ask with answers, what to leave behind (meeting.csv).
+
+WHAT BUYERS USUALLY ASK FOR, AND THE HONEST ANSWER WHEN IT IS NOT READY
+- A certificate of product liability insurance, often $1 million or more, naming them. "Quoting it now; it will be in place before the first shipment."
+- UPC or GTIN barcodes (GS1). "We'll license them before packaging is printed."
+- A W-9 and vendor setup forms. The company has to exist for these (sop-company.txt).
+- Samples. Say how many, when, and whether they are production or prototype.
+- Proof you can deliver: the supplier behind the product, the lead time, the first-order quantity you can fill.
+
+RULES
+- Show what it does, not how it is made, until the patent decision is made (principle-patent-before-public.txt).
+- Never claim sales, customers, reviews or certifications that do not exist (principle-no-claims-you-cant-back.txt).
+- Price from the waterfall and the cost sheet. A price that does not cover the cost is said plainly before the meeting, not discovered in it (principle-price-on-value.txt).

@@ -1,0 +1,31 @@
+SOP: The manufacturer packet (request for quote). Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager for the meeting; the technical content is b-project-manager's (cost sheet, drawings list, specifications, risk table), sent as copies through office-handoff. b-analyst builds it.
+May write: the meeting folder AN-Creation/Business/meetings/YYMMDD-<who>/, and a hand-off line to b-project-manager for the quote when it arrives (it goes on the cost sheet).
+Example: https://ancreationoffice.com/example-mousetrap/meetings/261024-molder-quote/manufacturer-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (its parts row lists the part numbers this supplier quotes)
+Goes with: https://ancreationoffice.com/manufacturing.txt (purchasing and supplier comparison)
+
+WHO IT IS FOR
+A molder, a toolmaker, a contract manufacturer, a wire-form or spring maker, a packaging supplier: anyone being asked to quote or make a part.
+
+WHAT WORRIES THEM
+- Is this real? A clear package and a real company make a supplier take the quote seriously; a vague one gets a high number or no answer.
+- Can you pay? Who pays for tooling, when, and on what terms.
+- Is the volume believable? A first order and an annual forecast, with what they are based on.
+- Are the drawings and requirements clear? What is critical, what is cosmetic, what tolerance, what material, what inspection.
+
+WHAT GOES IN IT (meeting-packet.py builds these pages from the sheets)
+1. Request for quote letter: who we are, what we want quoted, the quantities (first order and annual), when the quote is needed, and how to reply.
+2. Parts to quote: every make item from the cost sheet with part number, description, material, quantity per unit, the drawing or CAD file and its revision, and the tooling question (new tool, family mold, cavities).
+3. Requirements: the critical features (from the risk table's high-severity rows and the specifications), material and finish, quality expectations (first articles, inspection), packaging and labeling of parts.
+4. Commercial terms: tooling ownership (the inventor owns the tool), payment terms asked, NDA, the timeline.
+5. Prep sheet, for the inventor only: the goal, the questions the supplier will ask with answers, what to ask them, the walk-away, and how the quote will be compared like for like.
+
+COMPARING QUOTES
+Put every quote on the same basis before comparing: piece price at the same quantity, tooling, tooling life and ownership, lead time, terms, what is included (inspection, packaging, freight). Write each into the cost sheet as a quote with its date, replacing the placeholder (sop-cost-sheet.txt). Ask at least two or three suppliers for anything with tooling.
+
+RULES
+- An NDA before sending drawings that show how the invention works, unless the patent filing is in (principle-patent-before-public.txt).
+- Quantities are the charter's and the funding plan's; never inflate them to get a better price.
+- The inventor owns the tooling they pay for; say so in the request and get it in writing in the purchase order.
+- Accepting a quote or placing a tooling order is a one-way door: it goes to the inventor with the comparison, and the spending register gets a committed row when they say yes.

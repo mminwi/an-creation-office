@@ -8,7 +8,7 @@ AN-Creation/
   AGENTS.md, CLAUDE.md          (GitHub add-on only, at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
   office.txt                    where the Project Manager Bot lives (Home), and its "Office version seen" line. Other bots keep that line in their own office.txt. One b-project-manager runs every invention
   All inventions                one line per invention: where it stands, its next step
-  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), funding/<invention>/ (the funding packet, sop-funding-packet.txt), promo-log.csv, record/
+  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), funding/<invention>/ (the funding packet, sop-funding-packet.txt), meetings/ (one folder per meeting with its packet, sop-meeting-prep.txt), company.csv, contacts.csv, market-evidence.csv, promo-log.csv, record/
   handoffs/                     one inbox per office, for-<role>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
   sops/                         the bot's procedure library: library.txt (one file, about 2 MB) and VERSION (Library version and SOP updates: auto, ask, or pinned). A refresh is one download of library.txt, saved over the old one. Read one section by its marker. Keep this folder once, shared, not copied into an office folder (https://ancreationoffice.com/version.txt)
   Fishing Lure/                 one folder per invention

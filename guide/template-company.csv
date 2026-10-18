@@ -1,0 +1,12 @@
+key,value,status,note
+Legal name,,not yet,"status is ready, in progress or not yet"
+Entity,,not yet,
+Tax ID (EIN),,not yet,Never store the full number here; write "on file" when it exists
+W-9 for vendor setup,,not yet,
+Business bank account,,not yet,Bank name only; never account numbers
+Product liability insurance,,not yet,
+UPC / GTIN barcodes,,not yet,
+Rules that apply,,not yet,
+Years in business,,ready,
+Owner,,ready,
+Contact,,ready,

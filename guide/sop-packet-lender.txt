@@ -1,0 +1,33 @@
+SOP: The lender packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each lender meeting (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting folder AN-Creation/Business/meetings/YYMMDD-<who>/, and cash-flow.csv and company.csv in AN-Creation/Business/funding/<invention>/.
+Example: https://ancreationoffice.com/example-mousetrap/meetings/261104-community-lender/lender-packet.html . Templates: https://ancreationoffice.com/template-cash-flow.csv , https://ancreationoffice.com/template-company.csv , https://ancreationoffice.com/template-meeting.csv
+Goes with: https://ancreationoffice.com/sop-funding.txt (which kind of money fits), https://ancreationoffice.com/sop-funding-packet.txt (the investor's packet, built from the same sheets)
+
+WHO IT IS FOR
+A bank, a credit union, an SBA microlender, a community development lender (CDFI), or a state or local loan fund.
+
+WHAT WORRIES THEM
+- Can you repay? Lenders lend against cash flow: the money coming in each month has to cover the payment with room to spare. They often look for at least $1.25 of cash available for each $1 of payment.
+- What if you can't? Collateral, a personal guarantee, and the owner's own money already in.
+- Are you organized? A clear request, a use of funds, a projection with its assumptions, the company's papers.
+
+WHAT GOES IN IT (meeting-packet.py builds these pages from the sheets)
+1. Loan request: the amount, what it pays for (use of funds), the term asked, and how it will be repaid.
+2. Owner's investment: what the owner has already put in (the spending register's owner rows) and is putting in now. Lenders want the owner to have money at risk too.
+3. Cash-flow projection: 12 to 24 months, month by month, with every assumption stated (cash-flow.csv). Sales start when the product can ship, not before.
+4. Repayment check: the estimated monthly payment at the stated rate and term against the projected cash available, month by month, and the coverage ratio.
+5. Company and documents: the company, its papers, insurance, and the documents the lender will ask for (company.csv), each with its honest status.
+6. Risks and what is being done: the High and Medium rows of the business risk register.
+7. Prep sheet, for the inventor only: the goal, the ask, the walk-away, the questions a lender will ask with answers.
+
+THE HONEST VERDICT
+The packet's first page says whether the projection repays the loan. A pre-revenue company rarely gets a bank loan; say so plainly, and point to what fits the stage: an SBA microloan through a local intermediary (up to $50,000), a community lender, a state loan fund, or own money and grants first (principle-money-fits-the-stage.txt). A packet that shows the gap honestly, with the plan to close it, earns a second meeting; one that hides it does not.
+
+WHAT LENDERS USUALLY ASK FOR
+A business plan (the one-page plan and this packet), personal and business tax returns, a personal financial statement, bank statements, the company's formation papers and tax ID, any leases or contracts, and a list of collateral. The inventor fills in personal financial details themselves; the bot never stores account numbers, tax IDs in full or passwords.
+
+RULES
+- Borrowed money is other people's money: the standing advice applies, and the loan documents are read with an accountant or attorney before signing (principle-rigor-scales-with-money.txt).
+- Every projected number traces to an assumption written on the sheet. No hockey stick without a reason a lender would accept.

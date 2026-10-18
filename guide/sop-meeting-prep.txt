@@ -1,0 +1,37 @@
+SOP: Meeting prep. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager. b-analyst drafts the documents and builds the packet.
+May write: AN-Creation/Business/meetings/YYMMDD-<who>/ (the meeting file, the packet, the notes), rows in the Business action log, decision log, contacts.csv and market-evidence.csv, and hand-off lines to b-project-manager.
+Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/meetings/261028-distributor-buyer/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/meetings/261024-molder-quote/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/meetings/261104-community-lender/lender-packet.html (each folder has its meeting.csv)
+Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-funding-packet.txt
+
+WHY THIS EXISTS
+An inventor starting a business has to win over people who have seen many inventors before: a store buyer, a molder, a banker, an investor. Each one has worries, and each worry is answered by a document or an analysis the inventor has never had to make. The bot knows what each one will want to see, has the pieces ready, and sends the inventor in prepared.
+
+THE TRIGGER
+Any mention of a meeting, a call, a visit, an email to send, or a person to approach: "I'm seeing the farm-supply buyer Thursday." "The molder wants to talk." "Should I go to the bank?" Ask three things, one at a time if they are not already clear: who, when, and what the inventor wants out of it.
+
+WHO'S ACROSS THE TABLE, AND WHAT THEY WANT TO SEE
+- Buyer (distributor, store buyer, business customer). Worries: can you deliver, will it sell, will it cause trouble. Packet: https://ancreationoffice.com/sop-packet-buyer.txt
+- Manufacturer, toolmaker or supplier. Worries: is this real, can you pay, is the volume believable, are the drawings clear. Packet: https://ancreationoffice.com/sop-packet-manufacturer.txt
+- Banker or lender. Worries: can you repay, what if you can't, how much of your own money is in. Packet: https://ancreationoffice.com/sop-packet-lender.txt
+- Investor (friends and family, an angel, crowdfunding backers). Worries: is it worth it, will you see it through. Packet: the funding packet, https://ancreationoffice.com/sop-funding-packet.txt
+- Grant reviewer or pitch competition. Worries: is it new, is the plan credible. Packet: the funding packet plus the program's own form (sop-funding.txt).
+- Licensee. Worries: does it sell, can they own it. Packet: the sell sheet and patent status (sop-licensing.txt).
+- Patent attorney or agent, business attorney, accountant, insurance agent, partner. Packets for these come later; until then, build the meeting file below with the documents the record already has.
+
+THE STEPS
+1. Who, when, what they want out of it. Name the counterpart type from the list.
+2. Open the packet procedure for that type. List what that person will want to see.
+3. Check what exists: the business record (AN-Creation/Business/) and copies of b-project-manager's project record. Ask b-project-manager for current copies of anything product-side through office-handoff (the cost sheet, specs, drawings list, risk table, charter); never retype them.
+4. Draft what is missing, honestly. A pre-revenue company has no sales history, no credit and maybe no insurance yet: the packet says so, says what is being done about it, and puts it on the action log. Never invent a fact to fill a gap (principle-never-invent-facts.txt).
+5. Write the meeting file, meeting.csv: who, when, the goal, the ask, the walk-away (principle-walk-away-number.txt), the questions they will likely ask with the answers, and what to leave behind.
+6. Build the packet: python3 meeting-packet.py AN-Creation/Business/meetings/YYMMDD-<who> <buyer|manufacturer|lender>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
+7. Before the meeting, tell the inventor in a few lines: what is in the packet, the two or three questions most likely to come up, the ask, and anything still missing.
+8. After the meeting: record what was said in the meeting folder; add what they said or did to market-evidence.csv when it is a signal; update contacts.csv with the next step and date; put every promise on the action log; write any decision to the decision log.
+
+RULES
+- Rigor scales with whose money is at risk (principle-rigor-scales-with-money.txt). A lender's or investor's money, or a contract to sign, brings the standing advice: get legal and professional counsel before signing.
+- The inventor sends, signs and attends. The bot prepares (principle-owner-acts-bot-drafts.txt).
+- Decide on the patent before showing how it works (principle-patent-before-public.txt). A buyer packet shows what it does, not how it is made, until there is a filing or an NDA.
+- Packets are copies built for one meeting and kept in that meeting's folder, so the record shows exactly what each person was given.

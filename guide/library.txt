@@ -1,4 +1,4 @@
-261018.7
+261018.8
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -877,7 +877,7 @@ HOW TO CHOOSE
 - Avoid a name someone in your family or shop already has.
 - If you'd rather not choose, the bot uses the first easy name that isn't taken.
 === FILE: business-manager.txt ===
-AN Creation: the Office Manager Bot (role b-business-manager). Revision 9 — October 18, 2026.
+AN Creation: the Office Manager Bot (role b-business-manager). Revision 10 — October 18, 2026.
 Human page: https://ancreationoffice.com/ (Office Manager Bot)
 
 WHO YOU ARE
@@ -906,7 +906,9 @@ The same AN-Creation project folder b-project-manager uses, folder AN-Creation/B
 - actions.csv: who owes what (same columns and rules as b-project-manager's action log, https://ancreationoffice.com/sop-action-log.txt).
 - brand/: the brand kit (logo, descriptions, fact sheet, bios, pictures), the only source of public wording (sop-presence.txt).
 - promo-log.csv: every post, listing or profile you propose, every yes or no, every result (date, platform, place, post_id, image, link, status, notes).
-- funding/<invention>/: the funding packet for that invention: copies of b-project-manager's sheets, funding.csv, business-risks.csv and funding-packet.html (sop-funding-packet.txt).
+- meetings/YYMMDD-<who>/: one folder per meeting: meeting.csv, the packet built for it, and what was said (sop-meeting-prep.txt).
+- company.csv, contacts.csv, market-evidence.csv: the company record, every contact with the next step and date, every real market signal (templates on the site).
+- funding/<invention>/: the funding packet for that invention, and its pricing-terms.csv and cash-flow.csv: copies of b-project-manager's sheets, funding.csv, business-risks.csv and funding-packet.html (sop-funding-packet.txt).
 - record/: emails and documents that arrive (YYMMDD-I-slug, YYMMDD-O-slug), and each conversation (YYMMDD-M-promo-conversation), saved as you go.
 - Your hand-off inbox is not here: it is AN-Creation/handoffs/for-b-business-manager.txt, with the other bots' inboxes.
 Write the same turn things happen and save quietly: never announce saving or filing, and never mention file names unless asked. Saves follow the office-save skill (https://ancreationoffice.com/office-save.txt). A save that changes plan.md or actions.csv also rewrites "Working on" in office.txt in that same save. Working files (business.txt, plan.md, actions.csv, promo-log.csv) are updated in place; records and the brand kit are never edited once saved (a change is a new dated file). How to save, and how to check a save: https://ancreationoffice.com/version-control.txt SAVING.
@@ -922,6 +924,7 @@ YOUR PROCEDURES (open one when its subject comes up, use it, then leave it)
 - Domain, website, business email, Google Search Console and Bing. https://ancreationoffice.com/sop-website.txt
 - The brand kit and profiles (LinkedIn, X and others). https://ancreationoffice.com/sop-presence.txt
 - Listings and the website: https://ancreationoffice.com/sop-website.txt . Posts, replies, listings and the approval loop: https://ancreationoffice.com/sop-promotion.txt
+- Meetings: whenever the inventor is going to meet or approach someone (a buyer, a manufacturer, a lender, an investor), follow https://ancreationoffice.com/sop-meeting-prep.txt : who, when, what they want out of it; then the packet that person needs, built from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor. Packets so far: buyer (sop-packet-buyer.txt), manufacturer (sop-packet-manufacturer.txt), lender (sop-packet-lender.txt), investor (the funding packet).
 - Funding: which kind of money fits, https://ancreationoffice.com/sop-funding.txt ; the funding packet a lender or advisor reads, https://ancreationoffice.com/sop-funding-packet.txt ; the business risk register, https://ancreationoffice.com/sop-business-risks.txt . The product numbers in a packet are b-project-manager's: ask for current copies through office-handoff, never retype them.
 - Shared with b-project-manager: the action log https://ancreationoffice.com/sop-action-log.txt ; saving and the analysts https://ancreationoffice.com/drive-setup.txt (GitHub add-on: github-setup.txt)
 
@@ -3828,7 +3831,11 @@ The seven required documents (b-project-manager)
 
 Also here
 - intake-001.csv        the first form: the invention and the screening questions
-- funding.csv, business-risks.csv, funding-packet.html: b-business-manager's funding packet, built from copies of the sheets above (sop-funding-packet.txt)
+b-business-manager's record and packets
+- company.csv, pricing-terms.csv, cash-flow.csv, market-evidence.csv, contacts.csv: the business record
+- funding.csv, business-risks.csv, funding-packet.html: the funding packet for an investor or advisor (sop-funding-packet.txt)
+- meetings/: three meetings, each with its meeting.csv and the packet built for it (sop-meeting-prep.txt):
+  261028-distributor-buyer/buyer-packet.html, 261024-molder-quote/manufacturer-packet.html, 261104-community-lender/lender-packet.html
 === FILE: example-mousetrap/actions.csv ===
 ID,Opened,Action,Who,Why / from,Due,Status,Done how,Closed,Notes
 A-001,2026-10-15,"Get a quote for a 1-cavity nylon base mold, hot runner, gate at the rear, draft 1 degree, wall 1.8 mm, with a short rib at the spring seat, the set-from-the-side mark, the finger guard, the bait spike, and radiused pivot holes.",You,"Cost sheet base row is an $85,000 placeholder. Decision 2026-10-12 and 2026-10-13. Risk table F1.",2026-10-29,open,,,"Done when the quote replaces the 85000 on the cost sheet. The quote covers the mold changes under F1, F11, F13, and F14. The three-month budget is 8000 to 12000, so the quote may not fit."
@@ -3856,6 +3863,41 @@ B5,No company and no liability insurance yet,Legal,3,4,The Office Manager Bot wo
 B6,Patent position unknown,Legal,3,3,Search for similar traps; decide with a patent attorney before showing it publicly.,Office Manager Bot,2026-11-30,open,intake S20-patent
 B7,Single supplier for the classic spring,Supply,2,4,"Confirm stock (A-002); identify a second music-wire spring maker.",Inventor,2026-10-22,waiting,action A-002
 B8,Nylon swells in damp barns and parts stop fitting,Product,3,3,Accepted as designed (design risk F2); include in field testing.,Inventor,2027-02-28,accepted,design risk F2
+=== FILE: example-mousetrap/cash-flow.csv ===
+month,owner in,loan in,units sold,other cash in,tooling,other spending,note
+2027-01,0,105000,0,0,53500,1200,Loan funded; 50% of both molds at order (illustrative)
+2027-02,0,0,0,0,0,800,Samples and field test (illustrative)
+2027-03,0,0,0,0,53500,1500,Balance of molds at first articles; packaging art and UPCs (illustrative)
+2027-04,0,0,0,0,0,3000,"Insurance, UPC license, packaging setup (illustrative); parts are paid as they sell, in cost of goods"
+2027-05,0,0,4167,0,0,600,"Sales start: 50,000 a year spread evenly (illustrative)"
+2027-06,0,0,4167,0,0,600,
+2027-07,0,0,4167,0,0,600,
+2027-08,0,0,4167,0,0,600,
+2027-09,0,0,4167,0,0,600,
+2027-10,0,0,4167,0,0,600,
+2027-11,0,0,4167,0,0,600,
+2027-12,0,0,4167,0,0,600,
+=== FILE: example-mousetrap/company.csv ===
+key,value,status,note
+Legal name,Not formed yet,not yet,"Forming a single-owner LLC is with the Office Manager Bot (business risk B5)."
+Entity,Planned: single-owner LLC,not yet,
+Tax ID (EIN),Not yet,not yet,Needed for a W-9 and a business bank account. Free from the IRS once the LLC exists.
+W-9 for vendor setup,After the tax ID,not yet,
+Business bank account,Not yet,not yet,
+Product liability insurance,Quotes requested,in progress,Buyers often ask for a certificate of $1 million or more naming them. Illustrative.
+UPC / GTIN barcodes,Not yet,not yet,License from GS1 before packaging is printed. Illustrative.
+Rules that apply,To check: EPA rules for pest-control devices,in progress,"A mechanical trap is a pest-control device; check EPA labeling and establishment rules before the first shipment. Illustrative."
+Years in business,0,ready,Pre-revenue.
+Owner,"The inventor: product idea, CAD and prototypes so far",ready,Illustrative.
+Contact,inventor@example.com,ready,Illustrative.
+=== FILE: example-mousetrap/contacts.csv ===
+name,organization,type,status,last contact,next step,next date,notes
+Store owner,Local farm-supply store,buyer,warm,2026-10-14,Bring a production sample,2027-03-20,Illustrative
+Purchasing manager,Regional hardware distributor,buyer,meeting set,2026-10-16,Buyer meeting with the packet,2026-10-28,Illustrative
+Sales engineer,Molder A,manufacturer,quote requested,2026-10-15,Quote meeting,2026-10-24,Illustrative
+Sales,Molder B,manufacturer,to contact,,Send the quote package,2026-10-24,Illustrative
+Sales,Spring maker,supplier,waiting,2026-10-15,Confirm stock (A-002),2026-10-22,Illustrative
+Loan officer,Community lender,lender,meeting set,,Lender meeting with the packet,2026-11-04,Illustrative
 === FILE: example-mousetrap/cost-sheet.csv ===
 level,part number,part,qty,unit,make or buy,supplier,what it is,material cost,process cost,how the cost was figured,tooling,tooling notes,annual units,years,amortization,unit cost,running total,share of total
 1,MT-001,Plastic base,1,each,make,"Molder, to quote","Nylon 6/6 base with the bait cup, finger guard and spring post molded in. Wall 1.8 mm, draft 1 degree.",0.11,0.06,"Resin by shot weight, plus press time at this cavity.",85000,"1-cavity, hot runner. Gate at the rear. Placeholder until A-001. Not a quote.",50000,2,0.85,1.02,1.02,69.39%
@@ -3954,6 +3996,96 @@ S19-company,Have you thought about starting a company to protect yourself from l
 S20-patent,What are your thoughts on a patent?,,no,10,,Not said in this example.,open
 S21-money,Will the next step need someone else's money?,,no,10,"Not said. The next three months are their own $8,000 to $12,000. The placeholder mold prices are above that.",Cost sheet and budget row.,answered
 other,Anything else you want to talk about on this? Just bring it up.,,no,11,,Not said in this example.,open
+=== FILE: example-mousetrap/market-evidence.csv ===
+date,who,what they saw,what they said,what they did or would pay,strength,source
+2026-10-14,Owner of a local farm-supply store,A printed sample and the price,"Barn customers buy traps four at a time; would carry it if the distributor has it",Would stock one case to try,medium,illustrative
+2026-10-15,Two neighbors with barns,The printed sample,Liked that it rinses clean; one asked where to buy it,One offered $5 for a 4-pack,weak,illustrative
+2026-10-16,Hardware distributor rep (phone),Description only,"Needs a landed cost under $0.45 and a UPC; wants a sample",Asked for samples and a price sheet,medium,illustrative
+=== FILE: example-mousetrap/meetings/261024-molder-quote/meeting.csv ===
+key,value,note
+type,manufacturer,
+who,"Sales engineer, Molder A",Illustrative
+date,2026-10-24,
+record,../..,
+goal,"Get firm quotes for the base and trigger plate molds and parts, including a 2-cavity family mold option",
+quote_due,2026-10-29,Action A-001
+first_order_qty,"5,000 traps",Illustrative
+annual_qty,"50,000 traps a year for 2 years",Decision 2026-10-14
+tooling_owner,The inventor owns the molds and can move them,
+payment_terms_asked,"50% of tooling at order, 50% at first-article approval; parts net 30",Illustrative
+nda,Signed mutual NDA before CAD is sent,
+reply_to,inventor@example.com,Illustrative
+parts,MT-001 MT-002,This supplier quotes the molded parts only
+drawing:MT-001,CAD rev X3 (STEP) and a drawing with critical features,
+drawing:MT-002,CAD rev X3 (STEP),
+quality,First articles: 5 sets measured against the critical features before production,
+quality,Every lot: visual check for flash at the pedal pivot (risk F15) and short shots,
+packaging,Parts in bulk cartons by part number; label with part number and lot,
+ask,"Quote 1-cavity and 2-cavity family mold options for MT-001 and MT-002",
+ask,Steel or aluminum tooling for the first 10000 shots: what is the cost difference?,
+ask,What would you change in the design to cut cost or cycle time?,
+walk_away,"No tooling order until the numbers close; no tool we can't move",
+q,What volume is this really?,"5,000 for the first order, 50,000 a year planned for two years; we'll confirm with distributor orders."
+q,Who pays for the tool and when?,"We do: half at order, half at first-article approval."
+q,What tolerances matter?,"The spring seat, the bail pivot holes and the finger guard; the rest is cosmetic. They're marked on the drawing."
+q,What resin?,Nylon 6/6 for both parts; open to a suggestion if it molds better.
+=== FILE: example-mousetrap/meetings/261028-distributor-buyer/meeting.csv ===
+key,value,note
+type,buyer,
+who,"Purchasing manager, regional hardware distributor",Illustrative
+date,2026-10-28,
+record,../..,Where the sheets are
+goal,Get samples into their hands and learn the price and volume they would buy at,
+ask,"Take 10 sample sets to two stores, and tell us the price and first-order size that would work",
+walk_away,"No exclusive and no price under $0.45 before real mold quotes are in",principle-walk-away-number.txt
+leave_behind,"Sell sheet, pricing and terms, specifications, 10 printed sample sets",
+q,What's your landed cost?,"$0.45 a trap at 50,000 a year; the molds are being quoted now, so this is a target, not yet a quote."
+q,When can you ship?,"About six weeks after the molds are approved; we'll know the mold date once the quotes are in. Samples now."
+q,Do you have insurance and a UPC?,"Insurance quotes are being gathered and it will be in place before the first shipment; we'll license GS1 barcodes before packaging is printed."
+q,Is it patented?,"We've made our patent decision; today we show what it does, not how it's made."
+q,What's your minimum order?,"Ten cases of 72, and we'd start smaller for a store test."
+=== FILE: example-mousetrap/meetings/261104-community-lender/meeting.csv ===
+key,value,note
+type,lender,
+who,"Loan officer, community lender",Illustrative
+date,2026-11-04,
+record,../..,
+goal,"Learn what they would lend to a pre-revenue product company, and on what terms, before the numbers close",
+loan_amount,105000,From the funding packet's request
+rate_pct,9,Illustrative
+term_months,60,Illustrative
+collateral,"None business-side yet; the molds once paid for",Illustrative
+personal_guarantee,Expected for a new company,
+ask,"What it would take for a loan or microloan once the mold quotes are in",
+walk_away,"No loan against the inventor's house; no loan before the numbers close",
+q,How much of your own money is in?,"About $375 spent so far and $10,000 committed through design freeze (the spending register)."
+q,When does revenue start?,"May 2027 at the earliest, after first articles; the projection assumes 4,167 traps a month from then."
+q,How will you repay?,"Today's projection does not cover a $105,000 loan; that's why we're here to learn the options before the quotes come in."
+q,What's your collateral?,"None yet beyond the molds once they're paid for; a personal guarantee is expected."
+=== FILE: example-mousetrap/pricing-terms.csv ===
+key,value,source,note
+headline,A snap trap that empties clean and keeps fingers out of the bail,example,
+who_for,"Barns, garages and homes; sold through hardware and farm-supply stores",intake,
+benefit,"Molded nylon base: does not split or soak up mess like wood, and rinses clean",intake,
+benefit,"Finger guard and set-from-the-side mark: set it without a hand in the bail's path",design risk F11,
+benefit,"Built for damp barns: nylon chosen for moisture and impact",decision 2026-10-13,
+benefit,"Classic wire bail and spring: the kill action people already trust",decision 2026-10-15,
+shelf_price,1.19,illustrative,Single snap traps sell for roughly $1 to $2; check local shelves before quoting.
+retailer_margin_pct,50,illustrative,
+distributor_margin_pct,25,illustrative,
+our_price,0.45,intake goal,The distributor's landed-cost target.
+case_pack,72 carded traps,illustrative,
+minimum_order,10 cases (720 traps),illustrative,
+lead_time,6 weeks after the molds are approved,illustrative,First orders after first articles.
+payment_terms,Net 30,illustrative,
+shipping,"FOB our dock, buyer pays freight",illustrative,
+returns,Defective traps replaced free; no returns of unsold stock,illustrative,
+warranty,Replaced if it breaks in normal use within a year,illustrative,
+samples,"10 printed prototype sets now; production samples after first articles",spending register,
+spec:Size,To measure from the CAD,placeholder,
+spec:Weight,To weigh from the first prototype set,placeholder,
+spec:In the pack,"One trap on a card with a clear blister, warning label",cost sheet,
+spec:Materials,"Nylon 6/6 base and pedal, music-wire bail and spring, steel staple",cost sheet,
 === FILE: example-mousetrap/project-charter.txt ===
 Project charter. Plastic-base snap mousetrap. Example (illustrative figures are marked).
 Revision: A, 2026-10-15, approved by the inventor (decision log 2026-10-15). Change pending: ECN-001.
@@ -4598,6 +4730,340 @@ Use the review when production cost, suppliers or lead times change product or b
 END PLANNING RESOURCE REVIEW
 
 Resource cross-check. Read https://ancreationoffice.com/resource-crosscheck.txt for the additional filing, safety, search, launch and regional sources. Use matched sources only. Wisconsin resources are regional; follow source automation restrictions and existing disclosure/approval rules.
+=== FILE: meeting-packet.py ===
+"""Build a meeting packet: the pages an inventor takes into a meeting with a buyer, a manufacturer or a lender.
+Procedure: https://ancreationoffice.com/sop-meeting-prep.txt (b-business-manager owns it; b-analyst runs this).
+
+  python3 meeting-packet.py AN-Creation/Business/meetings/YYMMDD-<who> buyer|manufacturer|lender
+
+The meeting folder holds meeting.csv (key,value,note: who, when, the goal, the ask, the walk-away, the questions
+they will ask). Its "record" row names the folder with the sheets (relative to the meeting folder): the copies of
+b-project-manager's sheets (cost-sheet.csv, risk-table.csv, actions.csv, spending.csv) and b-business-manager's own
+(funding.csv, company.csv, pricing-terms.csv, cash-flow.csv, business-risks.csv, market-evidence.csv).
+Writes <type>-packet.html in the meeting folder. The last page is the prep sheet, for the inventor only.
+"""
+
+import csv
+import html
+import sys
+from datetime import date
+from pathlib import Path
+
+if len(sys.argv) != 3 or sys.argv[2] not in ("buyer", "manufacturer", "lender"):
+    sys.exit("usage: python3 meeting-packet.py <meeting folder> buyer|manufacturer|lender")
+MEET = Path(sys.argv[1]).resolve()
+KIND = sys.argv[2]
+
+
+def rows(path):
+    if not path.is_file():
+        return []
+    with open(path, newline="", encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+meeting = rows(MEET / "meeting.csv")
+M = {}
+MULTI = {}
+for r in meeting:
+    M.setdefault(r["key"], r["value"])
+    MULTI.setdefault(r["key"], []).append(r)
+REC = (MEET / M.get("record", ".")).resolve()
+
+
+def sheet(name):
+    return rows(MEET / name) or rows(REC / name)
+
+
+def kv(name):
+    out = {}
+    for r in sheet(name):
+        out.setdefault(r["key"], []).append(r)
+    return out
+
+
+def first(d, key, default=""):
+    return d.get(key, [{"value": default}])[0]["value"]
+
+
+def num(text):
+    text = (text or "").replace("$", "").replace(",", "").replace("%", "").strip()
+    try:
+        return float(text)
+    except ValueError:
+        return 0.0
+
+
+def money(v, cents=True):
+    sign = "−" if v < 0 else ""
+    v = abs(v)
+    return sign + (f"${v:,.2f}" if cents else f"${v:,.0f}")
+
+
+def esc(t):
+    return html.escape(str(t or ""))
+
+
+def fdate(t):
+    try:
+        y, m, d = (int(x) for x in t.split("-"))
+        return date(y, m, d).strftime("%b %d, %Y").replace(" 0", " ")
+    except Exception:
+        return esc(t)
+
+
+funding = kv("funding.csv")
+company = sheet("company.csv")
+pricing = kv("pricing-terms.csv")
+cost = [r for r in sheet("cost-sheet.csv") if r.get("part") and not r["part"].startswith("Example")]
+risk = sheet("risk-table.csv")
+brisks = sheet("business-risks.csv")
+actions = sheet("actions.csv")
+spending = sheet("spending.csv")
+cashflow = sheet("cash-flow.csv")
+evidence = sheet("market-evidence.csv")
+
+PRODUCT = first(funding, "product", "This product")
+U = first(funding, "unit", "unit")
+US = first(funding, "units", U + "s")
+piece = sum(num(r["material cost"]) + num(r["process cost"]) for r in cost)
+tooling = sum(num(r["tooling"]) for r in cost)
+TITLE = {"buyer": "Buyer packet", "manufacturer": "Request for quote", "lender": "Lender packet"}[KIND]
+
+
+def table(head, body, cls=""):
+    th = "".join(f"<th>{h}</th>" for h in head)
+    tr = "".join("<tr>" + "".join(f"<td>{c}</td>" for c in r) + "</tr>" for r in body)
+    return f'<table class="{cls}"><thead><tr>{th}</tr></thead><tbody>{tr}</tbody></table>'
+
+
+def page(title, body, kicker):
+    return (f'<section class="page"><header><div class="band"><span>{esc(PRODUCT)}</span>'
+            f'<span>{TITLE} · {fdate(M.get("date", ""))}</span></div><p class="kicker">{esc(kicker)}</p>'
+            f'<h1>{esc(title)}</h1></header>{body}</section>')
+
+
+def stat(label, value, note=""):
+    return (f'<div class="stat"><div class="v">{value}</div><div class="l">{esc(label)}</div>'
+            + (f'<div class="n">{esc(note)}</div>' if note else "") + "</div>")
+
+
+def pill(status):
+    s = (status or "").lower()
+    cls = "low" if s == "ready" else "medium" if s == "in progress" else "high"
+    return f'<span class="lvl {cls}">{esc(status)}</span>'
+
+
+def company_table():
+    return table(["", "", "Status"], [[f"<strong>{esc(r['key'])}</strong>", esc(r["value"]), pill(r["status"])] for r in company], "compact")
+
+
+def prep_sheet(extra="", top=""):
+    qa = [[esc(r["value"]), esc(r["note"])] for r in MULTI.get("q", [])]
+    asks = "".join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get("ask", []))
+    gaps = [r for r in company if r["status"] != "ready"]
+    body = f"""<div class="verdict warn"><strong>For the inventor only. Not handed over.</strong> {esc(M.get('who'))}, {fdate(M.get('date'))}.</div>
+{top}<h2>The goal</h2><p>{esc(M.get('goal'))}</p>
+<h2>What we ask for</h2><ul class="levers">{asks}</ul>
+<h2>Walk-away</h2><p>{esc(M.get('walk_away'))}</p>
+<h2>What they will likely ask</h2>{table(['Question', 'Answer'], qa, 'compact')}
+{extra}
+<h2>Still open (say so if asked)</h2>{table(['', 'Today', 'Note'], [[f"<strong>{esc(r['key'])}</strong>", esc(r['value']), esc(r['note'])] for r in gaps], 'compact')}
+<h2>Leave behind</h2><p>{esc(M.get('leave_behind', 'This packet, minus this page.'))}</p>
+<h2>After the meeting</h2><p class="small">Record what was said in this folder; add any signal to market-evidence.csv; update contacts.csv with the next step and date; put every promise on the action log (sop-meeting-prep.txt step 8).</p>"""
+    return page("Prep sheet", body, "Last page")
+
+
+CSS = """
+@page { size: letter; margin: 0.55in 0.65in 0.6in;
+  @bottom-left { content: "PRODUCT_NAME · PACKET_NAME"; font: 7.5pt Arial, sans-serif; color: #777; }
+  @bottom-right { content: "Page " counter(page) " of " counter(pages); font: 7.5pt Arial, sans-serif; color: #777; } }
+* { box-sizing: border-box; }
+body { margin: 0; font: 9.6pt/1.42 Arial, "Helvetica Neue", sans-serif; color: #1d2328; }
+.page { break-after: page; } .page:last-child { break-after: auto; }
+.band { display: flex; justify-content: space-between; background: #1f3b4d; color: #fff; font-size: 8pt; letter-spacing: .05em; text-transform: uppercase; padding: 6pt 9pt; border-radius: 3pt; }
+.kicker { margin: 12pt 0 0; font-size: 7.5pt; color: #6b7780; letter-spacing: .08em; text-transform: uppercase; }
+h1 { font-size: 19pt; margin: 2pt 0 10pt; color: #1f3b4d; }
+h2 { font-size: 10.5pt; color: #1f3b4d; margin: 13pt 0 5pt; padding-bottom: 2pt; border-bottom: 1.2pt solid #c9a35b; break-after: avoid; }
+p { margin: 0 0 6pt; } .small { font-size: 8pt; color: #5d6770; }
+table { width: 100%; border-collapse: collapse; margin: 2pt 0 6pt; break-inside: auto; }
+th { text-align: left; font-size: 7.6pt; text-transform: uppercase; letter-spacing: .04em; color: #4b5761; background: #eef2f4; padding: 4pt 5pt; }
+td { padding: 4pt 5pt; border-bottom: .5pt solid #d8dee2; vertical-align: top; } tr { break-inside: avoid; }
+table.bom td:nth-child(2) { font-size: 8pt; color: #4b5761; } table.num td:nth-child(n+3), table.num th:nth-child(n+3) { text-align: right; white-space: nowrap; }
+table.num2 td:nth-child(2), table.num2 th:nth-child(2) { text-align: right; white-space: nowrap; }
+table.kv td:first-child { width: 28%; } table.kv thead { display: none; }
+table.compact td { font-size: 8.6pt; } table.fmea td:nth-child(3), table.fmea td:nth-child(5) { white-space: nowrap; }
+table.reg td:nth-child(4), table.reg td:nth-child(8) { white-space: nowrap; }
+.verdict { padding: 8pt 10pt; border-radius: 3pt; margin-bottom: 4pt; } .verdict.warn { background: #fdf3e1; border-left: 4pt solid #c9862b; } .verdict.ok { background: #e8f4ec; border-left: 4pt solid #3d8a5a; }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6pt; margin: 4pt 1pt 6pt 0; } .stat { border: .7pt solid #d8dee2; border-radius: 3pt; padding: 6pt 7pt; }
+.stat .v { font-size: 14pt; font-weight: bold; color: #1f3b4d; } .stat .l { font-size: 7.8pt; color: #4b5761; } .stat .n { font-size: 7pt; color: #7b868f; }
+.levers { margin: 0 0 4pt; padding-left: 14pt; } .levers li { margin-bottom: 2pt; }
+.lvl { display: inline-block; font-size: 7pt; font-weight: bold; padding: 1pt 4pt; border-radius: 2pt; white-space: nowrap; }
+.lvl.high { background: #f6d5d0; color: #8a2a1c; } .lvl.medium { background: #fbe9c6; color: #7a5410; } .lvl.low { background: #dcefe2; color: #2e6b43; }
+sup.ill { font-size: 6pt; color: #fff; background: #9aa5ad; border-radius: 6pt; padding: 0 2.5pt; margin-left: 1pt; }
+.riskhead { display: flex; gap: 14pt; align-items: flex-start; margin-bottom: 6pt; }
+.heat { width: 2.1in; flex: none; } .heattitle { font-size: 7pt; color: #5d6770; margin-bottom: 2pt; }
+.grid { display: grid; grid-template-columns: 12pt repeat(5, 1fr); gap: 2pt; }
+.cell { height: 22pt; border-radius: 2pt; font-size: 7pt; font-weight: bold; display: flex; align-items: center; justify-content: center; }
+.cell.high { background: #f0c2ba; } .cell.medium { background: #f8e2b3; } .cell.low { background: #d3eadb; }
+.ax { font-size: 7pt; color: #5d6770; text-align: center; align-self: center; }
+.legend { font-size: 8.4pt; } .nw { white-space: nowrap; }
+.foot-note { font-size: 7.5pt; color: #6b7780; margin-top: 10pt; }
+"""
+
+pages = []
+
+# ---------------- buyer ----------------
+if KIND == "buyer":
+    shelf = num(first(pricing, "shelf_price"))
+    rm = num(first(pricing, "retailer_margin_pct")) / 100
+    dm = num(first(pricing, "distributor_margin_pct")) / 100
+    ours = num(first(pricing, "our_price"))
+    retailer_pays = shelf * (1 - rm)
+    dist_pays = retailer_pays * (1 - dm)
+    benefits = "".join(f"<li>{esc(r['value'])}</li>" for r in pricing.get("benefit", []))
+    pages.append(page(PRODUCT, f"""
+<p class="lede-big">{esc(first(pricing, 'headline'))}</p>
+<h2>Who it's for</h2><p>{esc(first(pricing, 'who_for'))}</p>
+<h2>Why it sells</h2><ul class="levers">{benefits}</ul>
+<div class="stats">{stat('Suggested shelf price', money(shelf))}{stat('Retailer margin', f'{rm*100:.0f}%')}{stat('Distributor margin', f'{dm*100:.0f}%')}{stat('Case pack', esc(first(pricing, 'case_pack')))}</div>
+<h2>Samples</h2><p>{esc(first(pricing, 'samples'))}</p>""", "Sell sheet"))
+    closes = abs(dist_pays - ours) < 0.02 or dist_pays >= ours
+    wf = [["Shelf price", money(shelf), "What the shopper pays"],
+          [f"Retailer pays (keeps {rm*100:.0f}%)", money(retailer_pays), ""],
+          [f"Distributor pays (keeps {dm*100:.0f}%)", money(dist_pays), ""],
+          [f"Our price per {U}", money(ours), ""]]
+    terms = [[esc(k.replace("_", " ").capitalize()), esc(first(pricing, k))] for k in
+             ("minimum_order", "lead_time", "payment_terms", "shipping", "returns", "warranty") if k in pricing]
+    pages.append(page("Pricing and terms", f"""
+<h2>From the shelf price to ours</h2>{table(['', 'Per ' + U, ''], wf, 'num2')}
+<h2>Terms</h2>{table(['', ''], terms, 'kv')}""", "Page 2"))
+    specs = [[esc(k[5:]), esc(r["value"])] for k, v in pricing.items() if k.startswith("spec:") for r in v]
+    parts = [[esc(r["part"]), esc(r["what it is"])] for r in cost]
+    pages.append(page("Product specifications", f"""
+{table(['', ''], specs, 'kv')}
+<h2>What's in it</h2>{table(['Part', 'What it is'], parts, 'compact')}
+<p class="small">A value that says "to measure" has not been measured yet and is not guessed.</p>""", "Page 3"))
+    pages.append(page("Company and compliance", f"""
+<p>Where each item a buyer usually asks for stands today, and when the open ones will be ready.</p>
+{company_table()}""", "Page 4"))
+    ev = [[fdate(r["date"]), esc(r["who"]), esc(r["what they said"]), esc(r["what they did or would pay"])] for r in evidence]
+    check = (f"<h2>Price check (never shown to the buyer)</h2><p>The chain works back from {money(shelf)} on the shelf to {money(dist_pays)} paid by the distributor, against our price of {money(ours)}"
+             + ("." if closes else ": they do not match, so fix the price or the terms before the meeting.")
+             + f" Our cost to make one {U} is {money(piece)}, so each one leaves {money(ours - piece)} before tooling; the {money(tooling, False)} of tooling takes "
+             + (f"{tooling / (ours - piece):,.0f} {US} to pay back." if ours > piece else "forever to pay back at this price.")
+             + " Do not agree to a lower price in the room.</p>")
+    pages.append(prep_sheet(f"<h2>What others have said so far</h2>{table(['Date', 'Who', 'Said', 'Did or would pay'], ev, 'compact')}" if ev else "", check))
+
+# ---------------- manufacturer ----------------
+if KIND == "manufacturer":
+    wanted = M.get("parts", "").replace(",", " ").split()
+    to_quote = [r for r in cost if r.get("part number") in wanted] if wanted else [r for r in cost if r.get("make or buy") == "make"]
+    pages.append(page("Request for quote", f"""
+<p>{fdate(M.get('date'))}</p>
+<p>To: {esc(M.get('who'))}</p>
+<p>We are developing the {esc(PRODUCT.lower())} and are asking a small number of suppliers to quote the parts below. The drawings and CAD files are attached under a mutual NDA.</p>
+<div class="stats">{stat('First order', esc(M.get('first_order_qty')))}{stat('Planned volume', esc(M.get('annual_qty')))}{stat('Quote needed by', fdate(M.get('quote_due')))}{stat('Parts to quote', str(len(to_quote)))}</div>
+<h2>Please quote</h2><ul class="levers">{''.join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get('ask', []))}</ul>
+<p>For each part: piece price at the first-order and annual quantities, tooling cost and type, cavities, tool life, lead time for tooling and for parts, and what is included (inspection, packaging, freight).</p>
+<p>Reply to {esc(M.get('reply_to'))}.</p>""", "Page 1"))
+    pq = [[esc(r.get("part number")), f"<strong>{esc(r['part'])}</strong>", esc(r["what it is"]), f"{esc(r['qty'])} {esc(r.get('unit', ''))}",
+           esc(M.get("drawing:" + r.get("part number", ""), "Description above")), esc(r.get("make or buy"))] for r in to_quote]
+    pages.append(page("Parts to quote", table(["Part no.", "Part", "What it is", "Per unit", "Drawing / CAD", "Make or buy"], pq, "compact"), "Page 2"))
+    crit = []
+    cur = None
+    for r in risk:
+        if r.get("id", "").startswith("F"):
+            cur = r
+            if int(r.get("S") or 0) >= 8:
+                crit.append([esc(r["id"]), esc(r["Failure mode / actions"]), "Severity " + esc(r["S"])])
+        elif cur and r.get("S") and int(cur.get("S") or 0) >= 8:
+            crit.append(["", esc(r["Failure mode / actions"]), "design feature to hold"])
+    q = "".join(f"<li>{esc(r['value'])}</li>" for r in MULTI.get("quality", []))
+    pages.append(page("Requirements", f"""
+<h2>Critical features (from the risk analysis)</h2>
+<p>These come from the failures that could hurt someone or stop the product working. They are marked on the drawings.</p>
+{table(['', 'Failure or feature', 'Why it matters'], crit, 'compact')}
+<h2>Quality</h2><ul class="levers">{q}</ul>
+<h2>Packaging of parts</h2><p>{esc(M.get('packaging'))}</p>""", "Page 3"))
+    ms = [[fdate(r["value"]), esc(r["key"][10:])] for k, v in funding.items() if k.startswith("milestone:") for r in v]
+    pages.append(page("Commercial terms and timeline", f"""
+{table(['', ''], [['Tooling ownership', esc(M.get('tooling_owner'))], ['Payment terms asked', esc(M.get('payment_terms_asked'))], ['Confidentiality', esc(M.get('nda'))]], 'kv')}
+<h2>Timeline</h2>{table(['By', 'Milestone'], sorted(ms), 'compact')}""", "Page 4"))
+    compare = [["Piece price at first order and at annual volume", ""], ["Tooling: cost, type (steel or aluminum), cavities, life in shots", ""],
+               ["Who owns the tool, and can it move", ""], ["Lead time: tooling, first articles, production", ""],
+               ["What's included: inspection, packaging, freight", ""], ["Payment terms", ""]]
+    pages.append(prep_sheet(f"<h2>Comparing the quotes like for like</h2>{table(['Line every quote up on', 'Molder A'], compare, 'compact')}<p class='small'>Each quote goes on the cost sheet as a quote with its date, replacing the placeholder (today's placeholder tooling: {money(tooling, False)}).</p>"))
+
+# ---------------- lender ----------------
+if KIND == "lender":
+    amount = num(M.get("loan_amount"))
+    rate = num(M.get("rate_pct")) / 100 / 12
+    n = int(num(M.get("term_months")) or 60)
+    payment = amount * rate / (1 - (1 + rate) ** -n) if rate else amount / n
+    owner_spent = sum(num(r["amount"]) for r in spending if r.get("paid from", "").lower() == "owner")
+    owner_funds = num(first(funding, "owner_funds"))
+    price = num(first(funding, "price"))
+    uses = [[esc(k[4:]), money(num(r["value"]), False), esc(r["note"])] for k, v in funding.items() if k.startswith("use:") for r in v]
+    # projection
+    cash = owner_funds
+    funded = False
+    proj, cover, notes = [], [], []
+    for r in cashflow:
+        units = num(r["units sold"])
+        rev = units * price
+        cogs = units * piece
+        cin = num(r["owner in"]) + num(r["loan in"]) + num(r["other cash in"]) + rev
+        funded = funded or num(r["loan in"]) > 0
+        pay = payment if funded and not num(r["loan in"]) else 0
+        out = cogs + num(r["tooling"]) + num(r["other spending"]) + pay
+        cash += cin - out
+        operating = rev - cogs - num(r["other spending"])
+        proj.append([esc(r["month"]), f"{units:,.0f}", money(rev, False), money(cogs, False), money(num(r["tooling"]) + num(r["other spending"]), False),
+                     money(num(r["owner in"]) + num(r["loan in"]), False), money(pay, False), money(cash, False)])
+        if r["note"]:
+            notes.append(f"<li><strong>{esc(r['month'])}:</strong> {esc(r['note'])}</li>")
+        if units:
+            cover.append((r["month"], operating, operating / payment if payment else 0))
+    avg_cover = sum(c for _, _, c in cover) / len(cover) if cover else 0
+    repays = avg_cover >= 1.25
+    avg_op = sum(o for _, o, _ in cover) / max(len(cover), 1)
+    makes = (f"makes about {money(avg_op, False)} a month before debt" if avg_op >= 0 else f"loses about {money(-avg_op, False)} a month even before debt")
+    verdict = ("The projection covers the payment with room to spare." if repays else
+               f"The projection does not repay this loan: once sales start, the business {makes}, against an estimated payment of {money(payment, False)}. Coverage is {avg_cover:.2f}; lenders usually look for 1.25 or more.")
+    pages.append(page("Loan request", f"""
+<div class="verdict {'ok' if repays else 'warn'}"><strong>{'Ready to request.' if repays else 'Not ready to borrow this yet.'}</strong> {verdict}</div>
+<div class="stats">{stat('Amount', money(amount, False))}{stat('Term', f'{n} months')}{stat('Estimated payment', money(payment, False), f"at {num(M.get('rate_pct')):.1f}% (illustrative)")}{stat("Owner's money in", money(owner_spent, False), f'plus {money(owner_funds, False)} committed')}</div>
+<h2>What it pays for</h2>{table(['Use', 'Amount', 'Basis'], uses, 'num2')}
+<h2>Collateral and guarantee</h2>{table(['', ''], [['Collateral', esc(M.get('collateral'))], ['Personal guarantee', esc(M.get('personal_guarantee'))]], 'kv')}
+<h2>What fits this stage</h2><p>A pre-revenue company rarely gets a bank loan of this size. What fits now: own money and grants through the quotes and the buyer tests; then an SBA microloan through a local intermediary (up to $50,000) or a community lender, once the mold quotes close the numbers and a distributor has said what it would buy.</p>""", "Page 1"))
+    pages.append(page("Cash-flow projection", f"""
+<p>Month by month, starting with {money(owner_funds, False)} of the owner's money. Sales are at {money(price)} a {U}; the cost of each {U} sold is {money(piece)} (the cost sheet). Every row's assumption is in its note.</p>
+{table(['Month', US.capitalize() + ' sold', 'Sales', 'Cost of goods', 'Tooling and other', 'Owner and loan in', 'Loan payment', 'Cash at month end'], proj, 'compact num')}
+<h2>Assumptions</h2><ul class="levers small">{''.join(notes)}</ul>""", "Page 2"))
+    cv = [[esc(m), money(o, False), money(payment, False), f"{c:.2f}"] for m, o, c in cover]
+    pages.append(page("Repayment check", f"""
+<p>Cash the business makes each month before the loan payment, against the estimated payment of {money(payment, False)} ({n} months at {num(M.get('rate_pct')):.1f}%, illustrative). Coverage is the first divided by the second; lenders usually want at least 1.25.</p>
+{table(['Month', 'Cash before debt', 'Payment', 'Coverage'], cv, 'num')}
+<p><strong>Average coverage: {avg_cover:.2f}.</strong> {'' if repays else 'What would change it: a lower mold cost (the quotes due ' + fdate(first(funding, 'milestone:Base mold quote in hand')) + '), a higher price, more volume, or a smaller loan.'}</p>""", "Page 3"))
+    hb = [[esc(b["id"]), esc(b["risk"]), esc(b["mitigation"])] for b in brisks if int(b["likelihood"]) * int(b["impact"]) >= 8]
+    docs = [["Business plan", "This packet and the one-page plan"], ["Personal and business tax returns", "The inventor brings them"],
+            ["Personal financial statement", "The inventor fills it in on the lender's form"], ["Bank statements", "The inventor brings them"],
+            ["Formation papers and tax ID", "After the company is formed"], ["Collateral list", esc(M.get("collateral"))]]
+    pages.append(page("Company, documents and risks", f"""
+{company_table()}
+<h2>Documents a lender will ask for</h2>{table(['Document', 'Status'], docs, 'compact')}
+<h2>The risks, and what is being done</h2>{table(['', 'Risk', 'What is being done'], hb, 'compact')}""", "Page 4"))
+    pages.append(prep_sheet())
+
+css = CSS
+doc = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{esc(PRODUCT)}: {TITLE.lower()}</title>
+<style>{css.replace('PRODUCT_NAME', esc(PRODUCT)).replace('PACKET_NAME', TITLE.lower())}
+table.num td:first-child {{ white-space: nowrap; }}
+.lede-big {{ font-size: 13pt; color: #1f3b4d; font-weight: bold; margin: 2pt 0 8pt; }}</style></head><body>{''.join(pages)}</body></html>"""
+out = MEET / f"{KIND}-packet.html"
+out.write_text(doc, encoding="utf-8")
+print(f"wrote {out.name}: {len(pages)} pages")
 === FILE: office-handoff.txt ===
 AN Creation skill: office-handoff. The office rule is https://ancreationoffice.com/sop-team.txt HAND-OFFS.
 
@@ -8714,7 +9180,7 @@ AN-Creation/
   AGENTS.md, CLAUDE.md          (GitHub add-on only, at the top of the repository) how any AI finds the ticket it was sent to work on, from one line; https://ancreationoffice.com/agents-md.txt
   office.txt                    where the Project Manager Bot lives (Home), and its "Office version seen" line. Other bots keep that line in their own office.txt. One b-project-manager runs every invention
   All inventions                one line per invention: where it stands, its next step
-  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), funding/<invention>/ (the funding packet, sop-funding-packet.txt), promo-log.csv, record/
+  Business/                     b-business-manager's side: the company, website, profiles, promotion (business-manager.txt). business.txt, plan.md, actions.csv, brand/ (the brand kit), funding/<invention>/ (the funding packet, sop-funding-packet.txt), meetings/ (one folder per meeting with its packet, sop-meeting-prep.txt), company.csv, contacts.csv, market-evidence.csv, promo-log.csv, record/
   handoffs/                     one inbox per office, for-<role>.txt. Sending follows the office-handoff skill (https://ancreationoffice.com/sop-team.txt HAND-OFFS)
   sops/                         the bot's procedure library: library.txt (one file, about 2 MB) and VERSION (Library version and SOP updates: auto, ask, or pinned). A refresh is one download of library.txt, saved over the old one. Read one section by its marker. Keep this folder once, shared, not copied into an office folder (https://ancreationoffice.com/version.txt)
   Fishing Lure/                 one folder per invention
@@ -24834,6 +25300,44 @@ Selection guides and books: mcam-material-selection, protolabs-material-selectio
 
 PRODUCES
 A material decision record: requirements, shortlist with data, chemical check per chemical, tests needed, the choice and why.
+=== FILE: sop-meeting-prep.txt ===
+SOP: Meeting prep. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager. b-analyst drafts the documents and builds the packet.
+May write: AN-Creation/Business/meetings/YYMMDD-<who>/ (the meeting file, the packet, the notes), rows in the Business action log, decision log, contacts.csv and market-evidence.csv, and hand-off lines to b-project-manager.
+Builder: https://ancreationoffice.com/meeting-packet.py . Examples: https://ancreationoffice.com/example-mousetrap/meetings/261028-distributor-buyer/buyer-packet.html , https://ancreationoffice.com/example-mousetrap/meetings/261024-molder-quote/manufacturer-packet.html , https://ancreationoffice.com/example-mousetrap/meetings/261104-community-lender/lender-packet.html (each folder has its meeting.csv)
+Goes with: https://ancreationoffice.com/principles-bm.txt , https://ancreationoffice.com/sop-funding-packet.txt
+
+WHY THIS EXISTS
+An inventor starting a business has to win over people who have seen many inventors before: a store buyer, a molder, a banker, an investor. Each one has worries, and each worry is answered by a document or an analysis the inventor has never had to make. The bot knows what each one will want to see, has the pieces ready, and sends the inventor in prepared.
+
+THE TRIGGER
+Any mention of a meeting, a call, a visit, an email to send, or a person to approach: "I'm seeing the farm-supply buyer Thursday." "The molder wants to talk." "Should I go to the bank?" Ask three things, one at a time if they are not already clear: who, when, and what the inventor wants out of it.
+
+WHO'S ACROSS THE TABLE, AND WHAT THEY WANT TO SEE
+- Buyer (distributor, store buyer, business customer). Worries: can you deliver, will it sell, will it cause trouble. Packet: https://ancreationoffice.com/sop-packet-buyer.txt
+- Manufacturer, toolmaker or supplier. Worries: is this real, can you pay, is the volume believable, are the drawings clear. Packet: https://ancreationoffice.com/sop-packet-manufacturer.txt
+- Banker or lender. Worries: can you repay, what if you can't, how much of your own money is in. Packet: https://ancreationoffice.com/sop-packet-lender.txt
+- Investor (friends and family, an angel, crowdfunding backers). Worries: is it worth it, will you see it through. Packet: the funding packet, https://ancreationoffice.com/sop-funding-packet.txt
+- Grant reviewer or pitch competition. Worries: is it new, is the plan credible. Packet: the funding packet plus the program's own form (sop-funding.txt).
+- Licensee. Worries: does it sell, can they own it. Packet: the sell sheet and patent status (sop-licensing.txt).
+- Patent attorney or agent, business attorney, accountant, insurance agent, partner. Packets for these come later; until then, build the meeting file below with the documents the record already has.
+
+THE STEPS
+1. Who, when, what they want out of it. Name the counterpart type from the list.
+2. Open the packet procedure for that type. List what that person will want to see.
+3. Check what exists: the business record (AN-Creation/Business/) and copies of b-project-manager's project record. Ask b-project-manager for current copies of anything product-side through office-handoff (the cost sheet, specs, drawings list, risk table, charter); never retype them.
+4. Draft what is missing, honestly. A pre-revenue company has no sales history, no credit and maybe no insurance yet: the packet says so, says what is being done about it, and puts it on the action log. Never invent a fact to fill a gap (principle-never-invent-facts.txt).
+5. Write the meeting file, meeting.csv: who, when, the goal, the ask, the walk-away (principle-walk-away-number.txt), the questions they will likely ask with the answers, and what to leave behind.
+6. Build the packet: python3 meeting-packet.py AN-Creation/Business/meetings/YYMMDD-<who> <buyer|manufacturer|lender>. The packet's last page is the prep sheet; it is for the inventor and is not handed over.
+7. Before the meeting, tell the inventor in a few lines: what is in the packet, the two or three questions most likely to come up, the ask, and anything still missing.
+8. After the meeting: record what was said in the meeting folder; add what they said or did to market-evidence.csv when it is a signal; update contacts.csv with the next step and date; put every promise on the action log; write any decision to the decision log.
+
+RULES
+- Rigor scales with whose money is at risk (principle-rigor-scales-with-money.txt). A lender's or investor's money, or a contract to sign, brings the standing advice: get legal and professional counsel before signing.
+- The inventor sends, signs and attends. The bot prepares (principle-owner-acts-bot-drafts.txt).
+- Decide on the patent before showing how it works (principle-patent-before-public.txt). A buyer packet shows what it does, not how it is made, until there is a filing or an NDA.
+- Packets are copies built for one meeting and kept in that meeting's folder, so the record shows exactly what each person was given.
 === FILE: sop-mold-buying.txt ===
 SOP: Buying a mold (b-mold-buying). Revision 6 — October 12, 2026. From Mike's notes: offshore risk, substitutions, picking a shop, the quote package, T1, the purchase order.
 Index: https://ancreationoffice.com/sop.txt
@@ -24983,6 +25487,105 @@ Then run office-setup-check and tell them pass or fail.
 Write T-001 (intake-001.csv, then b-analyst with analyst-after-intake.txt) and start: "Tell me about your invention."
 
 Done when b-project-manager exists and reads standing.txt, the project folder is made, private, and proven (test file written, read, deleted), AGENTS.md and CLAUDE.md are in it if it is on GitHub, b-analyst is tested (or b-project-manager's own runs recorded), and T-001 is active.
+=== FILE: sop-packet-buyer.txt ===
+SOP: The buyer packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each buyer meeting (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting folder AN-Creation/Business/meetings/YYMMDD-<who>/, and pricing-terms.csv and company.csv in AN-Creation/Business/funding/<invention>/.
+Example: https://ancreationoffice.com/example-mousetrap/meetings/261028-distributor-buyer/buyer-packet.html . Templates: https://ancreationoffice.com/template-pricing-terms.csv , https://ancreationoffice.com/template-company.csv , https://ancreationoffice.com/template-meeting.csv
+
+WHO IT IS FOR
+A distributor, a store buyer, a catalog, or a business customer deciding whether to carry or buy the product.
+
+WHAT WORRIES THEM
+- Will it sell? Who buys it, at what shelf price, and why this one over what they already stock.
+- Can you deliver? Lead time, minimum order, case pack, capacity, a supplier behind you.
+- Will it cause trouble? Safety, labeling, returns, insurance, and a vendor they can set up.
+
+WHAT GOES IN IT (meeting-packet.py builds these pages from the sheets)
+1. Sell sheet: the product in one line, the problem, three or four benefits in the buyer's terms, who it is for, the shelf price, a picture.
+2. Pricing and terms: the price waterfall from the shelf price down to the inventor's price (never the inventor's own cost; that stays on the prep sheet), the buyer's margin, case pack, minimum order, lead time, payment terms, shipping terms, returns and warranty (pricing-terms.csv).
+3. Product specifications: materials, size and weight, what is in the pack, and how it is labeled. Facts from the cost sheet and the charter; a measurement nobody has taken says "to measure".
+4. Company and compliance: the company, the vendor paperwork they will ask for (W-9, insurance certificate, UPC/GTIN barcodes), certifications that apply, and the honest status of each, with the date it will be ready (company.csv, the action log).
+5. Prep sheet, for the inventor only: the goal, the ask, the walk-away, the questions they will likely ask with answers, what to leave behind (meeting.csv).
+
+WHAT BUYERS USUALLY ASK FOR, AND THE HONEST ANSWER WHEN IT IS NOT READY
+- A certificate of product liability insurance, often $1 million or more, naming them. "Quoting it now; it will be in place before the first shipment."
+- UPC or GTIN barcodes (GS1). "We'll license them before packaging is printed."
+- A W-9 and vendor setup forms. The company has to exist for these (sop-company.txt).
+- Samples. Say how many, when, and whether they are production or prototype.
+- Proof you can deliver: the supplier behind the product, the lead time, the first-order quantity you can fill.
+
+RULES
+- Show what it does, not how it is made, until the patent decision is made (principle-patent-before-public.txt).
+- Never claim sales, customers, reviews or certifications that do not exist (principle-no-claims-you-cant-back.txt).
+- Price from the waterfall and the cost sheet. A price that does not cover the cost is said plainly before the meeting, not discovered in it (principle-price-on-value.txt).
+=== FILE: sop-packet-lender.txt ===
+SOP: The lender packet. Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager, built for each lender meeting (sop-meeting-prep.txt). b-analyst builds it.
+May write: the meeting folder AN-Creation/Business/meetings/YYMMDD-<who>/, and cash-flow.csv and company.csv in AN-Creation/Business/funding/<invention>/.
+Example: https://ancreationoffice.com/example-mousetrap/meetings/261104-community-lender/lender-packet.html . Templates: https://ancreationoffice.com/template-cash-flow.csv , https://ancreationoffice.com/template-company.csv , https://ancreationoffice.com/template-meeting.csv
+Goes with: https://ancreationoffice.com/sop-funding.txt (which kind of money fits), https://ancreationoffice.com/sop-funding-packet.txt (the investor's packet, built from the same sheets)
+
+WHO IT IS FOR
+A bank, a credit union, an SBA microlender, a community development lender (CDFI), or a state or local loan fund.
+
+WHAT WORRIES THEM
+- Can you repay? Lenders lend against cash flow: the money coming in each month has to cover the payment with room to spare. They often look for at least $1.25 of cash available for each $1 of payment.
+- What if you can't? Collateral, a personal guarantee, and the owner's own money already in.
+- Are you organized? A clear request, a use of funds, a projection with its assumptions, the company's papers.
+
+WHAT GOES IN IT (meeting-packet.py builds these pages from the sheets)
+1. Loan request: the amount, what it pays for (use of funds), the term asked, and how it will be repaid.
+2. Owner's investment: what the owner has already put in (the spending register's owner rows) and is putting in now. Lenders want the owner to have money at risk too.
+3. Cash-flow projection: 12 to 24 months, month by month, with every assumption stated (cash-flow.csv). Sales start when the product can ship, not before.
+4. Repayment check: the estimated monthly payment at the stated rate and term against the projected cash available, month by month, and the coverage ratio.
+5. Company and documents: the company, its papers, insurance, and the documents the lender will ask for (company.csv), each with its honest status.
+6. Risks and what is being done: the High and Medium rows of the business risk register.
+7. Prep sheet, for the inventor only: the goal, the ask, the walk-away, the questions a lender will ask with answers.
+
+THE HONEST VERDICT
+The packet's first page says whether the projection repays the loan. A pre-revenue company rarely gets a bank loan; say so plainly, and point to what fits the stage: an SBA microloan through a local intermediary (up to $50,000), a community lender, a state loan fund, or own money and grants first (principle-money-fits-the-stage.txt). A packet that shows the gap honestly, with the plan to close it, earns a second meeting; one that hides it does not.
+
+WHAT LENDERS USUALLY ASK FOR
+A business plan (the one-page plan and this packet), personal and business tax returns, a personal financial statement, bank statements, the company's formation papers and tax ID, any leases or contracts, and a list of collateral. The inventor fills in personal financial details themselves; the bot never stores account numbers, tax IDs in full or passwords.
+
+RULES
+- Borrowed money is other people's money: the standing advice applies, and the loan documents are read with an accountant or attorney before signing (principle-rigor-scales-with-money.txt).
+- Every projected number traces to an assumption written on the sheet. No hockey stick without a reason a lender would accept.
+=== FILE: sop-packet-manufacturer.txt ===
+SOP: The manufacturer packet (request for quote). Revision 1 — October 18, 2026.
+Index: https://ancreationoffice.com/sop.txt
+Kept by: b-business-manager for the meeting; the technical content is b-project-manager's (cost sheet, drawings list, specifications, risk table), sent as copies through office-handoff. b-analyst builds it.
+May write: the meeting folder AN-Creation/Business/meetings/YYMMDD-<who>/, and a hand-off line to b-project-manager for the quote when it arrives (it goes on the cost sheet).
+Example: https://ancreationoffice.com/example-mousetrap/meetings/261024-molder-quote/manufacturer-packet.html . Template: https://ancreationoffice.com/template-meeting.csv (its parts row lists the part numbers this supplier quotes)
+Goes with: https://ancreationoffice.com/manufacturing.txt (purchasing and supplier comparison)
+
+WHO IT IS FOR
+A molder, a toolmaker, a contract manufacturer, a wire-form or spring maker, a packaging supplier: anyone being asked to quote or make a part.
+
+WHAT WORRIES THEM
+- Is this real? A clear package and a real company make a supplier take the quote seriously; a vague one gets a high number or no answer.
+- Can you pay? Who pays for tooling, when, and on what terms.
+- Is the volume believable? A first order and an annual forecast, with what they are based on.
+- Are the drawings and requirements clear? What is critical, what is cosmetic, what tolerance, what material, what inspection.
+
+WHAT GOES IN IT (meeting-packet.py builds these pages from the sheets)
+1. Request for quote letter: who we are, what we want quoted, the quantities (first order and annual), when the quote is needed, and how to reply.
+2. Parts to quote: every make item from the cost sheet with part number, description, material, quantity per unit, the drawing or CAD file and its revision, and the tooling question (new tool, family mold, cavities).
+3. Requirements: the critical features (from the risk table's high-severity rows and the specifications), material and finish, quality expectations (first articles, inspection), packaging and labeling of parts.
+4. Commercial terms: tooling ownership (the inventor owns the tool), payment terms asked, NDA, the timeline.
+5. Prep sheet, for the inventor only: the goal, the questions the supplier will ask with answers, what to ask them, the walk-away, and how the quote will be compared like for like.
+
+COMPARING QUOTES
+Put every quote on the same basis before comparing: piece price at the same quantity, tooling, tooling life and ownership, lead time, terms, what is included (inspection, packaging, freight). Write each into the cost sheet as a quote with its date, replacing the placeholder (sop-cost-sheet.txt). Ask at least two or three suppliers for anything with tooling.
+
+RULES
+- An NDA before sending drawings that show how the invention works, unless the patent filing is in (principle-patent-before-public.txt).
+- Quantities are the charter's and the funding plan's; never inflate them to get a better price.
+- The inventor owns the tooling they pay for; say so in the request and get it in writing in the purchase order.
+- Accepting a quote or placing a tooling order is a one-way door: it goes to the inventor with the comparison, and the spending register gets a committed row when they say yes.
 === FILE: sop-phases.txt ===
 SOP: Phases. Retired October 6, 2026.
 Replaced by stages and tracks: https://ancreationoffice.com/sop-stages.txt
@@ -26248,6 +26851,7 @@ K3. b-business-manager: the brand kit and profiles. Logo, descriptions, fact she
 K4. b-business-manager: promotion and listings. Where to promote, the approval loop, pace and honesty, the patent check, directories. https://ancreationoffice.com/sop-promotion.txt
 K5. b-business-manager: the funding packet a lender or advisor reads: executive summary, unit economics, use of funds, milestones, risk register. https://ancreationoffice.com/sop-funding-packet.txt (builder: https://ancreationoffice.com/funding-packet.py ; example: https://ancreationoffice.com/example-mousetrap/funding-packet.html)
 K6. b-business-manager: the business risk register. https://ancreationoffice.com/sop-business-risks.txt
+K7. b-business-manager: meeting prep. Who is across the table, what they will want to see, the packet and a prep sheet. https://ancreationoffice.com/sop-meeting-prep.txt ; packets: buyer https://ancreationoffice.com/sop-packet-buyer.txt , manufacturer https://ancreationoffice.com/sop-packet-manufacturer.txt , lender https://ancreationoffice.com/sop-packet-lender.txt ; builder https://ancreationoffice.com/meeting-packet.py
 
 FOR b-project-manager
 1a. The project record, required for every invention: https://ancreationoffice.com/sop-project-record.txt . Its seven documents: charter https://ancreationoffice.com/sop-project-charter.txt ; decision log https://ancreationoffice.com/sop-decision-log.txt ; action log with suggestions https://ancreationoffice.com/sop-action-log.txt and https://ancreationoffice.com/sop-suggestions.txt ; cost sheet https://ancreationoffice.com/sop-cost-sheet.txt ; spending register https://ancreationoffice.com/sop-spending-register.txt ; risk table https://ancreationoffice.com/sop-risk-table.txt ; engineering change notices https://ancreationoffice.com/sop-change-control.txt . Example of all seven: https://ancreationoffice.com/example-mousetrap/
@@ -26288,7 +26892,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.7
+261018.8
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -26315,12 +26919,20 @@ drive-setup.txt
 example-mousetrap/README.txt
 example-mousetrap/actions.csv
 example-mousetrap/business-risks.csv
+example-mousetrap/cash-flow.csv
+example-mousetrap/company.csv
+example-mousetrap/contacts.csv
 example-mousetrap/cost-sheet.csv
 example-mousetrap/decision-log.csv
 example-mousetrap/ecn-log.csv
 example-mousetrap/ecn/261017-ECN-001-tooling-budget.txt
 example-mousetrap/funding.csv
 example-mousetrap/intake-001.csv
+example-mousetrap/market-evidence.csv
+example-mousetrap/meetings/261024-molder-quote/meeting.csv
+example-mousetrap/meetings/261028-distributor-buyer/meeting.csv
+example-mousetrap/meetings/261104-community-lender/meeting.csv
+example-mousetrap/pricing-terms.csv
 example-mousetrap/project-charter.txt
 example-mousetrap/risk-table.csv
 example-mousetrap/spending.csv
@@ -26331,6 +26943,7 @@ handoff-log.csv
 intake-001.csv
 ip-ratings.txt
 manufacturing.txt
+meeting-packet.py
 office-handoff.txt
 office-manufacturing.txt
 office-molding.txt
@@ -26448,9 +27061,13 @@ sop-machine-safety.txt
 sop-manufacturing-cell.txt
 sop-market-check.txt
 sop-material-selection.txt
+sop-meeting-prep.txt
 sop-mold-buying.txt
 sop-molding-defects.txt
 sop-office.txt
+sop-packet-buyer.txt
+sop-packet-lender.txt
+sop-packet-manufacturer.txt
 sop-phases.txt
 sop-plastic-part-design.txt
 sop-presence.txt
@@ -26482,12 +27099,18 @@ template-a3.txt
 template-action-log.csv
 template-apqp-file.csv
 template-business-risks.csv
+template-cash-flow.csv
 template-change-record.txt
+template-company.csv
+template-contacts.csv
 template-cost-sheet.csv
 template-decision-log.csv
 template-ecn-log.csv
 template-fai-report.csv
 template-funding.csv
+template-market-evidence.csv
+template-meeting.csv
+template-pricing-terms.csv
 template-project-charter.txt
 template-prototype-control-plan.txt
 template-review-record.txt
@@ -26743,6 +27366,9 @@ Lessons notes,all,every stage exit,open,,
 === FILE: template-business-risks.csv ===
 id,risk,category,likelihood,impact,mitigation,owner,due,status,source
 B1,Example: demand unproven: no buyer has seen it,Market,4,5,Example: show a sample to 3 buyers and record what each would pay. Delete this row before real use.,Inventor,2026-11-30,open,intake buyers-said
+=== FILE: template-cash-flow.csv ===
+month,owner in,loan in,units sold,other cash in,tooling,other spending,note
+2027-01,0,0,0,0,0,0,"Example: the assumption behind this month; delete before real use"
 === FILE: template-change-record.txt ===
 Engineering change notice (ECN). Template. For a change to the charter's scope, budget or dates, or to a frozen design. Save as Office files/ecn/YYMMDD-ECN-<number>-<slug>.txt and add its row to Office files/ecn-log.csv.
 ECN no.: ECN-
@@ -26755,6 +27381,22 @@ What must be re-checked: (tests, inspections, qualifications; tell a lab?)
 Cost and time:
 Decision: (inventor yes/no; buyer approval if required)
 Done: (re-checks passed, date or batch it takes effect)
+=== FILE: template-company.csv ===
+key,value,status,note
+Legal name,,not yet,"status is ready, in progress or not yet"
+Entity,,not yet,
+Tax ID (EIN),,not yet,Never store the full number here; write "on file" when it exists
+W-9 for vendor setup,,not yet,
+Business bank account,,not yet,Bank name only; never account numbers
+Product liability insurance,,not yet,
+UPC / GTIN barcodes,,not yet,
+Rules that apply,,not yet,
+Years in business,,ready,
+Owner,,ready,
+Contact,,ready,
+=== FILE: template-contacts.csv ===
+name,organization,type,status,last contact,next step,next date,notes
+Example: purchasing manager,Example distributor,buyer,meeting set,2026-10-16,What happens next,2026-10-28,
 === FILE: template-cost-sheet.csv ===
 level,part number,part,qty,unit,make or buy,supplier,what it is,material cost,process cost,how the cost was figured,tooling,tooling notes,annual units,years,amortization,unit cost,running total,share of total
 1,Example: XX-001,Example: housing,1,each,make,Example: to quote,Example: one polypropylene housing, about 40 g, one per unit. Delete this row before real use.,0.40,0.25,Example: 40 g at the resin price, plus this cavity's share of the shot. Delete this row before real use.,12000,Example: mold 10000 + fixtures 2000. Delete this row before real use.,5000,3,0.80,1.45,1.45,100%
@@ -26784,6 +27426,54 @@ years,,,Years the plan runs. Tooling pays back over annual_units x years.
 owner_funds,,,Money the owner is putting in.
 use:Example: base mold,0,,"One row per use of funds, key starting use:. Source quote, placeholder or illustrative."
 milestone:Example: first mold quote in hand,2026-10-29,,"One row per milestone, key starting milestone:, value YYYY-MM-DD."
+=== FILE: template-market-evidence.csv ===
+date,who,what they saw,what they said,what they did or would pay,strength,source
+2026-10-14,Example: owner of a local store,A sample and the price,What they said,What they did or would pay,medium,where it is recorded
+=== FILE: template-meeting.csv ===
+key,value,note
+type,buyer,"buyer, manufacturer or lender"
+who,Example: purchasing manager at a regional distributor,Delete the Example values before real use
+date,2026-10-28,YYYY-MM-DD
+record,../../funding/<invention>,Folder with the sheets; relative to this meeting folder
+goal,What the inventor wants out of the meeting,
+ask,What we ask them for,One row per ask
+walk_away,The line we will not cross in the room,principle-walk-away-number.txt
+leave_behind,What we hand over,
+q,A question they will likely ask,Its answer goes in the note
+parts,MT-001 MT-002,Manufacturer only: the part numbers this supplier quotes
+quote_due,2026-10-29,Manufacturer only
+first_order_qty,"5,000",Manufacturer only
+annual_qty,"50,000 a year",Manufacturer only
+tooling_owner,The inventor owns the tooling,Manufacturer only
+payment_terms_asked,,Manufacturer only
+nda,Signed mutual NDA before CAD is sent,Manufacturer only
+reply_to,,Manufacturer only
+drawing:MT-001,CAD rev and drawing,Manufacturer only: one row per part number
+quality,What inspection we expect,Manufacturer only; one row each
+packaging,How parts are packed and labeled,Manufacturer only
+loan_amount,,Lender only
+rate_pct,,Lender only; the lender's figure or marked illustrative
+term_months,,Lender only
+collateral,,Lender only
+personal_guarantee,,Lender only
+=== FILE: template-pricing-terms.csv ===
+key,value,source,note
+headline,,,The product in one line a buyer remembers
+who_for,,,
+benefit,,,One row per benefit; three or four
+shelf_price,,,"Check real shelves; mark illustrative until then"
+retailer_margin_pct,,,
+distributor_margin_pct,,,
+our_price,,,What the buyer pays us per unit
+case_pack,,,
+minimum_order,,,
+lead_time,,,
+payment_terms,,,
+shipping,,,
+returns,,,
+warranty,,,
+samples,,,
+spec:Size,,,One spec: row per specification; "to measure" until measured
 === FILE: template-project-charter.txt ===
 Project charter. Template. Office files/project-charter.txt. Replace every line in brackets; delete what does not apply.
 Revision: A, [YYYY-MM-DD], approved by [the inventor] (decision log [date])
@@ -28090,7 +28780,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this at the start of every conversation because the profile says to follow the office-startup skill. Not from memory.
 
-Office version: 261018.7
+Office version: 261018.8
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/office.txt)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/Business/office.txt)
 Profile version 3, each with "Office version seen" in its own office.txt (older projects only): b-molding-office, b-plastic-design-office, b-quality-office, b-manufacturing-office
@@ -28119,6 +28809,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version, the library version, and your profile version.
 
 CHANGES (newest first)
+261018.8  Meeting prep for b-business-manager (sop-meeting-prep.txt): whenever the inventor will meet or approach someone, the bot asks who, when and what they want out of it, then builds the packet that person needs from the business record and copies of b-project-manager's sheets, with a prep sheet for the inventor (the questions they will ask, the answers, the ask, the walk-away). Packets: buyer (sell sheet, pricing and terms, specifications, company and compliance), manufacturer (request for quote, parts to quote, requirements, terms and timeline), lender (loan request with an honest verdict, cash-flow projection, repayment check, company, documents and risks). Builder: meeting-packet.py. New business-record templates: company, pricing and terms, cash flow, market evidence, contacts, meeting. Examples: example-mousetrap/meetings/. Re-read your office file. No new profile text.
 261018.7  The project record is required. Every invention keeps seven documents in Office files/, always current, done for real and visible to the inventor in Your files/Project record/: project-charter.txt (new: sop-project-charter.txt), decision-log.csv, actions.csv with suggestions, cost-sheet.csv (now a costed bill of materials with level, part number, unit, make or buy and supplier), spending.csv (new: sop-spending-register.txt, replaces the cost tracker, with whose money paid), risk-table.csv (no boilerplate: every failure from this product's own parts and steps), and engineering change notices, ecn-log.csv and ecn/ (sop-change-control.txt: an ECN for any change to the charter, or to a frozen design). Hub: sop-project-record.txt. Example of all seven: example-mousetrap/. An older project with a cost tracker in Your files/Business/ moves its rows into spending.csv once, adding paid from. Re-read your office file. No new profile text.
 261018.6  Do it yourself on your own money. The procedures no longer send a self-funded inventor to a professional for a step they can take themselves (a provisional patent, a trademark, a single-owner LLC): the bots prepare it to a professional standard and add the standing advice, "Fine to do this yourself on your own money. Once you have proper funding, have an attorney (or the right professional) review it." Professionals still come in for other people's money, binding contracts, required certifications, and anything that could hurt someone. In between is the middle path when money is short: AI prepares the work, then a short, often free check with a professional (SBDC, SCORE, the USPTO Pro Se Assistance Center, a law school IP clinic, a free first consultation). Before anything goes public, settle the patent decision: file a provisional (yourself or through an attorney), keep it quiet, or knowingly skip it. Changed: standing.txt, business-manager.txt, sop-company, sop-promotion, sop-market-check, sop-licensing, github-setup, analyst, the four plant office files, principle-rigor-scales-with-money. Re-read your office file. No new profile text.
 261018.5  Principles, read first every conversation: principles-pm.txt for b-project-manager and principles-bm.txt for b-business-manager, one file per principle. The core eight, shared by both: fail forward faster, 90% and go, two-way doors go fast, rigor scales with whose money is at risk, believe reality over the plan, always a next step, start with what you have, never invent facts. On the inventor's own money, help them do it themselves (a self-filed provisional patent, a self-formed company); bring in professionals when other people's money is involved or someone could be hurt. Re-read your office file. No new profile text.
