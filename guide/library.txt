@@ -1,4 +1,4 @@
-261018.46
+261018.47
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -30133,7 +30133,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.46
+261018.47
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -32744,7 +32744,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.46
+Office version: 261018.47
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 b-tester profile version: 1 (Bot Tester; office file tester.txt; its own test folder /workspace/AN-Creation-Test/)
@@ -32783,6 +32783,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.47  The plugin's setup check trashes its test file in Drive instead of leaving it for the owner. Checked in a first install from the Project Manager Bot template (PM test 3): 40 skills installed, setup check passed. No new profile text.
 261018.46  The plugin, installed one skill at a time: each installed skill is now short and points to its full steps, copied with the office to /workspace/AN-Creation-office-skills/ (a bot can't retype 800 KB of skills). The website procedures don't change. No new profile text.
 261018.45  A third free product, the Developer's Bot Tester (tester.html): a Grok bot that tests other Grok bots from a plain-text script. Its profile block is in profile.txt. tester.txt: it can test any Grok bot the owner builds, not only the AN Creation bots. The Project Manager and Office Manager Bots don't change. No new profile text for them.
 261018.44  The plugin's save skill: a text file made with create_file or UploadFile keeps its Drive ID when saved with update_file_content. Checked: two updates, a move and a read-back, and an uploaded text file. A PDF, a photo or a spreadsheet is still a new dated copy. No change to the website procedures. No new profile text.
