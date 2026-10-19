@@ -310,4 +310,4 @@ The [`specialists/`](specialists/) folder (kept in this repository, not synced) 
 
 Synced from the live site by a script after each publish. If this copy and https://ancreationoffice.com/ ever differ, the live site is current.
 
-*Last synced October 18, 2026.*
+*Last synced October 19, 2026.*
