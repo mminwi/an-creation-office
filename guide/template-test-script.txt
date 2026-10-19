@@ -1,6 +1,6 @@
 AN Creation template: a test script for the Bot Tester. Revision 2 — October 18, 2026.
 Used by: https://ancreationoffice.com/tester.txt . Ready scripts for the AN Creation bots: https://ancreationoffice.com/tests/README.txt
-Copy this into /workspace/AN-Creation-Test/test-scripts/<name>.txt, or put it on a web page, and fill in each section. Keep it plain: the tester reads it top to bottom. Every fact the persona may say must be written here.
+Copy this into /workspace/AN-Creation-Test/test-scripts/<name>.txt, or put it on a web page, and fill in each section. Keep it plain: the tester reads it top to bottom. How to write each section, with examples: https://ancreationoffice.com/tester-guide.html Every fact the persona may say must be written here.
 
 NAME
 <a short name, used for the run folder: pm-first-run>

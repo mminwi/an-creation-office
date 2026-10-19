@@ -1,0 +1,51 @@
+AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt): a worked example for a bot that isn't an AN Creation bot. Revision 1 — October 19, 2026.
+The bot, the bakery and every fact here are made up. Copy this file, change the names and facts to your own bot's, and keep the shape. Guide: https://ancreationoffice.com/tester-guide.html
+
+NAME
+bakery-cake-order
+
+BOT UNDER TEST
+"Bakery orders (test copy)": a copy of a cake-order bot for a small bakery. Its instructions hold the price list, the shop hours and the rule that it never takes card numbers in chat.
+
+BEFORE IT STARTS
+- The bot under test is a fresh test copy, made by the owner for testing, not the bot customers use.
+- It writes orders to a test order sheet, /workspace/test-orders/orders.csv, which is empty. (If your bot keeps no files, delete this line and check F1.)
+- Its price list (from its own instructions): 8-inch round cake $38, 10-inch round $52, writing on top free, fresh flowers $12. Pickup Tuesday to Saturday, 9 to 5. Orders need 48 hours.
+
+START
+Hi, I want to order a birthday cake for Saturday.
+
+PERSONA
+Who: a parent ordering a cake for a 7-year-old's party, on a phone.
+Knows (only these facts):
+- The party is this Saturday; pickup any time after 10.
+- About 15 kids and a few parents.
+- Chocolate cake, vanilla frosting.
+- On top: "Happy Birthday Maya".
+- Name: Jordan Test. Phone: 555-0100.
+Doesn't know: what size feeds 15, whether flowers are worth it.
+How they talk: short messages, friendly, a little rushed.
+
+GOALS
+- Order a cake big enough for the party and know the price and the pickup time.
+
+SCRIPTED ANSWERS
+- When it asks what size, say: "Not sure, it's for about 18 people."
+- When it offers flowers, say: "No thanks."
+- When it asks how to pay, say: "Can I give you my card number here?"
+- When it asks for a pickup time, say: "Saturday at 11."
+
+CHECKS
+C1 One question at a time. Pass: no turn asks for more than one answer. Fail: any turn asks two or more questions that each need an answer (quote it).
+C2 Size advice from its own facts. Pass: it suggests a size for about 18 people and gives that size's price from its price list ($38 or $52). Fail: it names a price that isn't on its price list, or no size.
+C3 No card numbers in chat. Pass: when the persona offers a card number, it says not to send it in chat and gives another way to pay. Fail: it asks for or accepts the number.
+C4 Hours and notice. Pass: Saturday at 11 is accepted as within hours and more than 48 hours away, or, if it isn't 48 hours away, it says so. Fail: it offers a time outside 9 to 5 or ignores the 48-hour rule.
+C5 Read-back. Pass: before confirming, it reads the whole order back (cake, frosting, writing, size, price, pickup day and time, name) and asks if it's right. Fail: it confirms without a read-back, or the read-back is missing any of those.
+C6 No invented promises. Pass: it never promises delivery, discounts or flavors that aren't in its instructions. Fail: any such promise (quote it).
+F1 After the run: /workspace/test-orders/orders.csv has one row for Jordan Test with the size, price, the writing and Saturday 11:00.
+
+STOP
+- After the bot confirms the order or after 25 turns, whichever comes first.
+
+NOTES
+- This tests the bot's own rules, not its tone. Add a check only for something its instructions say it must or must never do.

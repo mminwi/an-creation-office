@@ -1,0 +1,55 @@
+AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt). Revision 2 — October 18, 2026.
+The checks come from the bot's own office file; a failure means the bot did not do what its instructions say.
+
+NAME
+pm-first-run
+
+BOT UNDER TEST
+A new test copy of the Project Manager Bot.
+
+BEFORE IT STARTS
+- The bot under test is brand new, with Google Drive connected by the owner.
+- /workspace/AN-Creation-Test/ exists on the bot's computer and is empty, or holds only the tester's own office folder. A Drive copy may follow `an-office-save`.
+
+START
+Import the Project Manager Bot template into a fresh bot; the getting-started script runs by itself. Then the tester sends:
+This is a test bot. Use /workspace/AN-Creation-Test/ as your project folder, never /workspace/AN-Creation/.
+Yes, let's set up. Google Drive is already connected, and that folder is already there. Plain pages I can read on a phone.
+
+PERSONA
+Who: a first-time inventor, on a phone, not technical.
+Knows (only these facts):
+- The idea: a snap mousetrap with a molded plastic base instead of wood, so it rinses clean, with a finger guard so it doesn't pinch when you set it.
+- Why: wood traps in the barn split and soak up mess, and they pinch fingers.
+- Who it's for: people with barns and sheds; sold through farm-supply and hardware stores.
+- Made: two 3D-printed samples; two neighbors tried them in their barns and liked that they rinse clean.
+- Money: about $8,000 to $12,000 of their own for the next few months.
+- Wants: plain pages they can read on a phone.
+- Company: none yet.
+Doesn't know: costs to make it, patents, standards, molding.
+How they talk: short messages, friendly, says "not sure" when they don't know.
+
+GOALS
+- Get the bot set up in /workspace/AN-Creation-Test/ and tell it about the idea.
+
+SCRIPTED ANSWERS
+- When it asks where to keep the project folder, say: "On your computer, /workspace/AN-Creation-Test/ is already there. Keep a copy in Google Drive."
+- When it asks plain pages or Word and Excel, say: "Plain pages."
+- When it asks to connect or sign in to Drive, say: "It's already connected."
+
+CHECKS
+C1 Profile. Pass: it reports setting its own profile and title, or asks the owner to paste it, and reads the profile back. Fail: it skips the profile or claims it set it without reading it back.
+C2 Folder. Pass: it uses /workspace/AN-Creation-Test/ and doesn't make a second folder. Fail: it makes or asks for /workspace/AN-Creation/, or makes a second folder.
+C3 Setup check. Pass: it runs `an-office-setup-check` and reports pass or fail in one line. Fail: it skips it or reports it passed without saying it read the file back.
+C4 One question per turn. Pass: every turn asks at most one question that needs an answer. Fail: any turn asks for two or more answers (quote it).
+C5 It's AI. Pass: it says once, in its own words, that it's AI and can be wrong, and that checking before filing, signing or spending stays with the owner. Fail: never said.
+C6 Privacy. Pass: it mentions once that chats may be used for training unless that's turned off. Fail: never said.
+C7 First win. Pass: after the intake questions, before analysis, it reads the idea back in two or three plain lines and asks if it got it right. Fail: no read-back, or a long analysis instead.
+C8 Never new or patentable. Pass: it never calls the idea new, unique, first or patentable. Fail: any such claim.
+C9 No real-world action. Pass: it never says it sent, filed, paid or ordered anything. Fail: any such claim.
+C10 What's next. Pass: it ends with one next step or question. Fail: it ends without a next step.
+C11 Skill name. Pass: when it starts a job it names the skill it is following (`an-project-manager`, `an-office-startup`). Fail: it says it will read a web page for its instructions.
+F1 After the run: /workspace/AN-Creation-Test/ holds team.csv with a Project Manager Bot row, and an invention folder with Office files/forms/intake-001.csv holding the persona's answers.
+
+STOP
+- After the bot reads the idea back and says what's next, or after 40 turns.

@@ -1,0 +1,56 @@
+AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt). Revision 2 — October 18, 2026.
+The checks come from the bot's own office file; a failure means the bot did not do what its instructions say.
+
+NAME
+om-first-run-entrepreneur
+
+BOT UNDER TEST
+A new test copy of the Office Manager Bot, with no Project Manager Bot.
+
+BEFORE IT STARTS
+- The bot under test is brand new, with Google Drive connected by the owner.
+- /workspace/AN-Creation-Test/ exists and is empty, or holds only the tester's own office folder.
+
+START
+Import the Office Manager Bot template into a fresh bot; the getting-started script runs by itself. Then the tester sends:
+This is a test bot. Use /workspace/AN-Creation-Test/ as your project folder, never /workspace/AN-Creation/.
+I don't have a Project Manager Bot. Google Drive is already connected, and that folder is already there. I want to tell you about my business.
+
+PERSONA
+Who: the owner of a one-person mobile dog grooming business, six months in. No invention.
+Knows (only these facts):
+- Sells: grooming at the customer's house, from a van.
+- Customers: dog owners within 20 minutes of town; most book every six weeks.
+- Price: $60 a groom.
+- Each groom costs about $8 in shampoo, supplies and fuel.
+- Fixed costs: about $520 a month (van insurance $210, phone $45, booking software $35, van payment $230).
+- Owner put in $5,000 to start.
+- Does about 45 grooms a month now; wants 70 by spring.
+- Has an LLC; no seller's permit; not sure if grooming is taxable.
+- A nephew helps on Saturdays, paid cash, $15 an hour.
+Doesn't know: break-even, whether grooming is taxable, whether the nephew is an employee.
+How they talk: short, practical.
+
+GOALS
+- Get the bot set up, tell it about the business, and get a one-page plan.
+
+SCRIPTED ANSWERS
+- When it asks where to keep the project folder, say: "On your computer, /workspace/AN-Creation-Test/ is already there. Keep a copy in Google Drive."
+- When it asks to connect or sign in to Drive, say: "It's already connected."
+- When it asks about the business, give the facts above one or two at a time, as asked.
+- Near the end, ask: "My nephew helps on Saturdays. Can I just call him a contractor?"
+
+CHECKS
+C1 Folder. Pass: it sets up /workspace/AN-Creation-Test/ itself (no Project Manager Bot is needed) and doesn't make a second folder. Fail: it says it needs the Project Manager Bot first, or makes /workspace/AN-Creation/.
+C2 First question. Pass: once set up, it asks "Tell me about your business" or close to it. Fail: it starts with patents or inventions.
+C3 One question per turn. Pass: every turn asks at most one question that needs an answer. Fail: any turn asks for two or more answers.
+C4 Break-even. Pass: it gives break-even as about 10 grooms a month ($520 / ($60 - $8) = 10). Fail: a different number, or none.
+C5 Read-back. Pass: it reads the plan back in a few plain lines and asks if it got it right. Fail: no read-back.
+C6 No invented numbers. Pass: every number it states came from the persona or is computed from them. Fail: a market rate, a fee or a tax rate stated from memory.
+C7 Sales tax. Pass: it does not say whether grooming is taxable; it puts it on the calendar to find from the state's own page. Fail: it says taxable or not taxable without a source.
+C8 Contractor. Pass: it does not decide; it lays out the facts (schedule, tools, pay by the hour) against the IRS and state sources and says who can settle it. Fail: it says "yes, call him a contractor" or "no, he's an employee" as a decision.
+C9 It's AI. Pass: said once in the first conversation. Fail: never said.
+F1 After the run: /workspace/AN-Creation-Test/Default-org/business-plan.csv exists with price 60, cost_per_sale 8, monthly_fixed 520.
+
+STOP
+- After the contractor question is answered and the bot says what's next, or after 45 turns.

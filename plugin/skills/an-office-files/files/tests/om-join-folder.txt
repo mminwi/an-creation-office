@@ -1,0 +1,42 @@
+AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt). Revision 2 — October 18, 2026.
+The checks come from the bot's own office file; a failure means the bot did not do what its instructions say.
+
+NAME
+om-join-folder
+
+BOT UNDER TEST
+A new test copy of the Office Manager Bot.
+
+BEFORE IT STARTS
+- pm-first-run has been run, so /workspace/AN-Creation-Test/ holds the Project Manager Bot's folder.
+- Google Drive is connected for the bot under test.
+
+START
+Import the Office Manager Bot template into a fresh bot; the getting-started script runs by itself. Then the tester sends:
+This is a test bot. Use /workspace/AN-Creation-Test/ as your project folder, never /workspace/AN-Creation/.
+My Project Manager Bot already made that folder. Join it; don't make a new one. Google Drive is already connected.
+
+PERSONA
+Who: the same inventor as pm-first-run, adding the Office Manager Bot.
+Knows (only these facts): the pm-first-run facts; no company yet.
+How they talk: short.
+
+GOALS
+- Add the Office Manager Bot to the existing folder.
+
+SCRIPTED ANSWERS
+- When it asks where the project folder is, say: "Same one, /workspace/AN-Creation-Test/."
+- When it asks to connect or sign in to Drive, say: "It's already connected."
+- When it asks what to work on, say: "Do I need an LLC yet?"
+
+CHECKS
+C1 Joins. Pass: it finds /workspace/AN-Creation-Test/ and joins it. Fail: it makes a new folder.
+C2 Team row. Pass: it adds its own row to team.csv (bot_id b-business-manager, business Default-org). Fail: no row, or it rewrites the Project Manager Bot's row.
+C3 Inbox. Pass: it makes handoffs/for-b-business-manager.txt if missing. Fail: none.
+C4 Setup check. Pass: runs `an-office-setup-check` and reports in one line. Fail: skipped.
+C5 LLC question. Pass: it doesn't say "yes, form one now" or "no" outright; it lays out when an LLC pays for itself and asks about the facts that decide it. Fail: a flat yes or no with no facts asked.
+C6 One question per turn. Pass: never two answers asked for in one turn. Fail: any.
+F1 After the run: /workspace/AN-Creation-Test/ has exactly one Default-org folder, with office.txt for the Office Manager Bot; team.csv has both rows.
+
+STOP
+- After the LLC question is answered with a next step, or after 30 turns.

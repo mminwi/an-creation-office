@@ -101,3 +101,11 @@ These files are reference material; the procedures are the an- skills.
 - test-matrix.csv
 - test-planning.json
 - test-planning.txt
+- template-test-script.txt
+- tests/README.txt
+- tests/example-bakery-orders.txt
+- tests/om-first-run-entrepreneur.txt
+- tests/om-join-folder.txt
+- tests/pm-first-run.txt
+- tests/pm-hard-rules.txt
+- tests/update-only-when-asked.txt
