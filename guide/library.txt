@@ -1,4 +1,4 @@
-261018.45
+261018.46
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -8853,7 +8853,7 @@ How a playbook relates to the rest: principles (principles-pm.txt) say how to de
 === FILE: press-kit/PROMO-INSTRUCTIONS.txt ===
 You are Advance Now's own Office Manager Bot (role b-business-manager; Mike may have given you any name). Everything general about that bot is in https://ancreationoffice.com/business-manager.txt ; read it too. This file adds Advance Now's specifics and wins where they differ (your files are AN-Creation/Business in the an-creation repository, like any Office Manager Bot). You are the business and promotion manager for Advance Now LLC, which integrates AI into engineering and manufacturing, and its first project, the AN Creation Office: two free AI bots for Grok Bot, marketed as two products: the Inventor's Project Manager (the Project Manager Bot) and the Entrepreneur's Office Manager (the Office Manager Bot), for inventors and for entrepreneurs (https://ancreationoffice.com), built by Mike Maier on the structure of Lauren Tan's pstack. You work for Mike. The Project Manager Bot runs inventions; you run the business side. What to say and never say: press-kit/key-messages.txt and fact-sheet.txt.
 
-TWO PRODUCTS, TWO CAMPAIGNS: the Inventor's Project Manager and the Entrepreneur's Office Manager are promoted as separate products, each with its own page (ancreationoffice.com/inventor.html, /entrepreneur.html), audience and posts: inventor-campaign.txt and entrepreneur-campaign.txt. Pick the product that fits each place, link its own page, and log the product on every promo-log.csv row. Don't post both to the same group; alternate campaigns week to week so each gets its own run. The office as a whole (both products) is for press, AI audiences and Advance Now's own pages.
+THREE PRODUCTS, THREE CAMPAIGNS: the Inventor's Project Manager, the Entrepreneur's Office Manager and the Developer's Bot Tester (a Grok bot that tests other Grok bots, for people who build them) are promoted as separate products, each with its own page (ancreationoffice.com/inventor.html, /entrepreneur.html, /tester.html), audience and posts: inventor-campaign.txt, entrepreneur-campaign.txt and developer-campaign.txt. Pick the product that fits each place, link its own page, and log the product on every promo-log.csv row. Don't post two of them to the same group; alternate campaigns week to week so each gets its own run. The office as a whole (both products) is for press, AI audiences and Advance Now's own pages.
 
 YOUR JOB (one bot for all of it)
 - Outreach: find conversations and articles where AN Creation genuinely helps and draft replies and posts (THE LOOP).
@@ -9025,6 +9025,9 @@ The AN Creation Office is two free AI bots for Grok. The Inventor's Project Mana
 ## 100 words
 The AN Creation Office is two free AI bots for Grok, built by Mike Maier of Advance Now LLC from 30+ years in product development, injection molding, quality and plant management, on the structure of Lauren Tan's pstack. The Inventor's Project Manager runs the product, bringing in molding, plastic part design, quality and manufacturing when needed; the Entrepreneur's Office Manager runs the business: the plan, customers and invoices, money each month and the compliance calendar. Each starts from a short message pasted into Grok, then sets itself up. It asks one question at a time, keeps your facts apart from its estimates, saves the work to a private folder you choose (Google Drive or OneDrive works best), and prepares it for your review. Any AI that reads web links can follow it.
 
+## The Developer's Bot Tester (the third product, for people who build Grok bots)
+The Developer's Bot Tester is a free Grok bot that tests your other Grok bots: it plays the user from a script, checks each reply, and records pass or fail. https://ancreationoffice.com/tester.html
+
 ## About Advance Now LLC
 Advance Now LLC integrates AI into engineering and manufacturing. It was founded by Mike Maier, and its first project is the AN Creation Office: the Inventor's Project Manager and the Entrepreneur's Office Manager, two free AI bots for Grok. https://advancenowllc.com
 
@@ -9036,6 +9039,123 @@ Mike Maier builds systems that work: people, machines, and AI. Over more than 30
 
 ## Press contact
 Mike Maier, Advance Now LLC: mike@advancenowllc.com
+=== FILE: press-kit/developer-campaign.txt ===
+# Campaign: the Developer's Bot Tester
+
+Its own audience, its own message. Link to https://ancreationoffice.com/tester.html (its own page), never the inventor or entrepreneur page. One-pager: developer-one-pager.txt (PDF: pdf/AN-Creation-Office_Developers-Bot-Tester.pdf). Press release: developer-press-release.txt. Every post waits for Mike's yes (PROMO-INSTRUCTIONS.txt); log it in promo-log.csv with product "developer".
+
+## Who it's for
+People who build Grok bots: developers, prompt and agent builders, people making bots for their own business or for clients, and the pstack crowd. They already write instructions for bots; what they don't have is a fast way to check that a bot still does what the instructions say after each change.
+
+## Boilerplate
+One line: The Developer's Bot Tester: a free Grok bot that tests your other Grok bots from a plain-text script. https://ancreationoffice.com/tester.html
+
+25 words: The Developer's Bot Tester is a free Grok bot that tests your other Grok bots: it plays the user from a script, checks each reply, and records pass or fail.
+
+50 words: The Developer's Bot Tester is a free Grok bot that tests the other Grok bots you build. Write a plain-text script: a persona, the first message, scripted answers and numbered checks. It plays the user, sends each turn, checks every reply, and writes a pass-or-fail record with a quote for each result.
+
+## Key messages (in this order)
+1. Bot instructions change all the time, and testing by hand means typing every turn yourself. This bot plays the user for you.
+2. A test is a plain-text script: who the user is, the facts they know, the first message, answers for the questions you expect, numbered checks, and when to stop.
+3. Every result has evidence: a pass or a fail quotes the turn and the bot's own words. No quote means "not reached", never a pass.
+4. It runs on its own: it messages the bot under test on your account and reads the full transcript afterwards. Where bot-to-bot messages aren't available, you carry the messages and it does the rest.
+5. A folder per run and an index, so a rerun says "was 8 of 12, now 11 of 12".
+6. Safe by design: it tests only the test copies you name, answers "Not now" to any real-world action, and never types real passwords or personal details.
+7. It was built to test the AN Creation Office's own two bots, and their five scripts come with it as worked examples.
+8. Free, and every instruction is public. AI can be wrong, a tester included: read the failures before you change a bot.
+
+## Facts to keep straight
+- Grok bots on the same account can message each other and read each other's transcripts; that's what makes the direct mode work. Whether it's available can depend on the account; the tester checks at setup.
+- No published run results yet. Don't quote scores or claim it has caught specific bugs until Mike has a real run to point to; then use that run's own numbers.
+- It doesn't grade style or "quality"; it checks the checks you wrote.
+
+## Where to reach them
+- X: Grok and xAI developer conversations, people posting Grok bots, pstack users (reply where someone asks how to test a bot; don't tag people unasked)
+- Reddit: r/grok, r/xAI, r/AI_Agents, r/PromptEngineering, r/LLMDevs, r/ChatGPTCoding (testing threads), r/QualityAssurance and r/softwaretesting (as a QA idea for chat bots); check each sub's self-promotion rules first
+- Hacker News: one "Show HN" post, plain, with the GitHub link
+- Discord: Grok and agent-builder servers, in the channel for showing projects
+- GitHub: the public repo's README (mminwi/an-creation-office) and the plugin folder
+- Search terms: "test grok bot", "grok bot testing", "chatbot regression test", "LLM agent test script", "AI agent QA"
+
+## Ready posts
+Drafts in Mike's voice: Mike checks each one says what he would say before it goes out.
+
+### X
+Testing a Grok bot by hand means typing every turn yourself. I made a free Grok bot that does it: write a plain-text script (persona, first message, numbered checks), and it plays the user, checks every reply, and records pass or fail with a quote. https://ancreationoffice.com/tester.html
+
+### Reddit (r/AI_Agents or r/grok style; check the sub's rules first)
+Title: I made a free Grok bot that tests my other Grok bots from a plain-text script
+Body: I build Grok bots for inventors and small businesses, and every change to their instructions meant typing a whole conversation again to see if anything broke. So I wrote a tester bot.
+
+You give it a plain-text script: who the user is, the only facts they know, the first message, answers for the questions you expect, numbered checks (each says what passes and what fails), and when to stop. It finds the bot under test on your account, sends each turn, waits for the reply, reads the full transcript afterwards, and writes results with a quote for every pass or fail. No quote means "not reached", never a pass. If bot-to-bot messages aren't available, you paste messages across and it does the rest.
+
+It tests only the test copies you name, and answers "Not now" if the bot under test offers to send, pay or publish anything. Free, and every instruction is public. The five scripts I use for my own two bots come with it as examples. I'd like to hear what it misses: https://ancreationoffice.com/tester.html
+
+### Show HN
+Title: Show HN: A Grok bot that tests other Grok bots from plain-text scripts
+Body: Free. You write a script (persona, first message, scripted answers, numbered pass/fail checks); it plays the user against a test copy of your bot, checks each reply, and writes a transcript, a results sheet with a quoted turn per result, and a summary. Instructions are plain text and public: https://github.com/mminwi/an-creation-office . Page: https://ancreationoffice.com/tester.html
+
+### LinkedIn
+If you build AI bots for clients or your own business, you know the problem: you change one line in the instructions and something three turns later breaks.
+
+I built a free Grok bot to catch that. You write a test script in plain text, a persona, the first message and numbered checks, and it plays the user against a test copy of your bot, checks every reply, and records pass or fail with a quote from the conversation. Run it again after each change and see the score move.
+
+Free: https://ancreationoffice.com/tester.html
+=== FILE: press-kit/developer-one-pager.txt ===
+![AN Creation](images/card-developer-1200x675.png)
+
+# The Developer's Bot Tester
+
+**A free Grok bot that tests your other Grok bots.** Make a bot in Grok, paste a short message from **ancreationoffice.com/tester.html**, and it sets itself up: its test folder, and the list of your bots it may test. Then: "Which test script should I run?"
+
+## What it does
+
+| | What you get |
+|---|---|
+| **Plays the user from your script** | A persona with only the facts you give it, how they talk, what they're trying to get done, and answers for the questions you expect. It never coaches the bot or breaks role. |
+| **Runs the conversation on its own** | It finds the bot under test on your account, sends each turn, waits for the reply, and reads the full transcript afterwards. Without bot-to-bot messages, you carry the messages and it does the rest. |
+| **Every result has evidence** | A pass or a fail quotes the turn and the bot's own words. No quote by the end means "not reached", never a pass. |
+| **A record of every run** | A folder per run with the transcript, a results sheet and a summary, and an index, so a rerun says "was 8 of 12, now 11 of 12". |
+| **Scripts in plain text** | Name, preconditions, first message, persona, goals, scripted answers, numbered checks and when to stop. In its folder or on a web page. |
+| **Safe by design** | Only the test copies you name, never your working bots. Any offer to send, pay, order, publish or share gets "Not now". No real passwords, card numbers or personal details. |
+
+## Where it came from
+
+It was built to test the AN Creation Office's own two bots, the Inventor's Project Manager and the Entrepreneur's Office Manager. Their five test scripts come with it, as worked examples for your own. It judges the checks you write, not style, and AI can be wrong, a tester included: read the failures before you change a bot.
+
+## Who built it, and what it costs
+
+**Mike Maier**, Advance Now LLC: 30+ years running plants, launching products and building the systems behind them. The office's structure and methodology are heavily based on Lauren Tan's pstack. **It's free.** You need at least a SuperGrok subscription. Every instruction is open on GitHub (mminwi/an-creation-office).
+
+**Start: https://ancreationoffice.com/tester.html** · Inquiries: mike@advancenowllc.com
+=== FILE: press-kit/developer-press-release.txt ===
+# FOR IMMEDIATE RELEASE
+
+## Advance Now releases the Developer's Bot Tester, a free Grok bot that tests other Grok bots
+
+**It plays the user from a plain-text test script, checks each reply against the script's checks, and records every pass or fail with a quote from the conversation.**
+
+Advance Now LLC has released the Developer's Bot Tester (https://ancreationoffice.com/tester.html), a free AI bot for people who build Grok bots. The developer makes a new bot in Grok and pastes a short message from the website. The bot sets itself up with a test folder, lists the bots it can see on the account, and asks which of them are test copies it may test.
+
+A test is a plain-text script: who the user is and the only facts they know, the first message, answers for the questions the developer expects, numbered checks that each say what passes and what fails, and when to stop. The tester finds the bot under test on the same account, sends each turn, waits for the reply, and afterwards reads the full transcript. It writes one folder per run, with the transcript, a results sheet and a summary, and adds a line to an index, so a rerun after a change to the bot's instructions shows the score moving. Where bot-to-bot messages aren't available, the developer carries each message across and the tester does the rest.
+
+### Evidence, not impressions
+
+Every pass and every fail quotes the turn and the bot's own words; a check with no quote by the end of the run is recorded as "not reached", never as a pass. The tester judges only the checks in the script, and keeps anything else worth knowing apart, under "also seen". It tests only the test copies the developer names, never working bots. When the bot under test offers to send, pay for, order, publish or share anything, the tester answers "Not now" and logs the offer, and it never types real passwords, card numbers or personal details.
+
+The Developer's Bot Tester was built to test the AN Creation Office's own two bots, the Inventor's Project Manager and the Entrepreneur's Office Manager, and their five test scripts come with it as worked examples. The office's structure and methodology are heavily based on pstack, the open set of principles, playbooks and skills for AI agents from Lauren Tan, one of Grok Bot's engineering leads (https://ancreationoffice.com/credits.html); the AN Creation Office is not affiliated with or endorsed by her.
+
+### Availability
+
+The Developer's Bot Tester is free under a Creative Commons BY-NC-SA 4.0 license. It is written for Grok and needs at least a SuperGrok subscription; its instructions and test scripts are open on GitHub (https://github.com/mminwi/an-creation-office). AI can make mistakes, a tester included; developers read the failures before they change a bot.
+
+### About Advance Now LLC
+
+Advance Now LLC integrates AI into engineering and manufacturing. It was founded by Mike Maier, who holds a B.S. in Mechanical Engineering from UW–Madison, is a Six Sigma Black Belt, and served in the U.S. Air Force. https://advancenowllc.com
+
+**Press contact:** Mike Maier, mike@advancenowllc.com
+
+###
 === FILE: press-kit/entrepreneur-campaign.txt ===
 # Campaign: the Entrepreneur's Office Manager
 
@@ -9216,9 +9336,10 @@ Mike Maier has spent more than 30 years in engineering and manufacturing: produc
 
 | File | Size | Use for |
 |------|------|---------|
-| card-hero-1200x675.png | 1200x675 | Both products. Press, AI audiences, Advance Now's own pages. |
+| card-hero-1200x675.png | 1200x675 | All three products. Press, AI audiences, Advance Now's own pages. |
 | card-inventor-1200x675.png | 1200x675 | The Inventor's Project Manager on its own: the inventor campaign, inventor.html. |
 | card-entrepreneur-1200x675.png | 1200x675 | The Entrepreneur's Office Manager on its own: the entrepreneur campaign, entrepreneur.html. |
+| card-developer-1200x675.png | 1200x675 | The Developer's Bot Tester on its own: the developer campaign, tester.html. |
 | card-stages-1200x675.png | 1200x675 | The Project Manager Bot's six stages (S0-S5). X-03. |
 | card-attorney-1200x675.png | 1200x675 | Walk into your patent attorney's office organized. LI-04. |
 | card-experts-1200x675.png | 1200x675 | The office does the groundwork; professionals make the calls. X-07, IG-02. |
@@ -9369,6 +9490,7 @@ Advance Now LLC integrates AI into engineering and manufacturing. It was founded
 ## Proof points (all public)
 
 - Two products, the Inventor's Project Manager and the Entrepreneur's Office Manager, each with its own page and short start message on ancreationoffice.com.
+- A third, for people who build Grok bots: the Developer's Bot Tester, which tests other Grok bots from a plain-text script (its own campaign: developer-campaign.txt).
 - The Entrepreneur's Office Manager works for any small business: a one-page plan, a sales pipeline and invoices, a monthly money check and a compliance calendar traced to the agencies' own pages.
 - More than 100 written procedures, check sheets and templates the bots work from, open on GitHub.
 - The Project Manager Bot works in six stages, from fact-finding to launch, each ending with the owner's own go, hold or drop.
@@ -9403,7 +9525,7 @@ Advance Now LLC integrates AI into engineering and manufacturing. It was founded
 
 # The Inventor's Project Manager and the Entrepreneur's Office Manager.
 
-**The AN Creation Office is two free AI bots for Grok: one takes an idea to a product that sells, one runs the business, whatever it sells.** Pick the one that fits your work, or use both, make a bot in Grok, and paste a short message from **ancreationoffice.com**. It starts setting itself up and asks one question at a time, helps you set up a private place to save the work, then asks what you're working on.
+**The AN Creation Office is two free AI bots for Grok: one takes an idea to a product that sells, one runs the business, whatever it sells.** Pick the one that fits your work, or use both, make a bot in Grok, and paste a short message from **ancreationoffice.com**. It starts setting itself up and asks one question at a time, helps you set up a private place to save the work, then asks what you're working on. A third bot, the Developer's Bot Tester, is for people who build Grok bots: it tests them from a script (ancreationoffice.com/tester.html).
 
 ## Pick one, or both
 
@@ -9950,7 +10072,7 @@ When Mike asks "how's promotion going": where it posted, what got replies or lik
 === FILE: press-kit/readme.txt ===
 # AN Creation Office press kit
 
-Everything needed to talk about the AN Creation Office and its two products, the Inventor's Project Manager and the Entrepreneur's Office Manager, and Advance Now in public, each product with its own campaign, already written, plus the promotion instructions for Advance Now's own Office Manager Bot, the Grok bot that finds places to post and brings every planned post to Mike for a yes first. fact-sheet.txt is the source of truth; everything else follows it.
+Everything needed to talk about the AN Creation Office and its three products, the Inventor's Project Manager, the Entrepreneur's Office Manager and the Developer's Bot Tester, and Advance Now in public, each product with its own campaign, already written, plus the promotion instructions for Advance Now's own Office Manager Bot, the Grok bot that finds places to post and brings every planned post to Mike for a yes first. fact-sheet.txt is the source of truth; everything else follows it.
 
 ## Set up promotion
 1. Use Advance Now's Office Manager Bot (its office file: https://ancreationoffice.com/business-manager.txt).
@@ -9963,8 +10085,10 @@ Everything needed to talk about the AN Creation Office and its two products, the
 |------|-----------|
 | inventor-campaign.txt | The Inventor's Project Manager on its own: audience, boilerplate, messages, where to post, ready posts. |
 | entrepreneur-campaign.txt | The Entrepreneur's Office Manager on its own: audience, boilerplate, messages, where to post, ready posts. |
+| developer-campaign.txt | The Developer's Bot Tester on its own: audience, boilerplate, messages, facts to keep straight, where to post, ready posts. |
 | inventor-one-pager.txt, inventor-press-release.txt | The Inventor's Project Manager's own one-pager and press release (PDFs in pdf/). |
 | entrepreneur-one-pager.txt, entrepreneur-press-release.txt | The Entrepreneur's Office Manager's own one-pager and press release (PDFs in pdf/). |
+| developer-one-pager.txt, developer-press-release.txt | The Developer's Bot Tester's own one-pager and press release (PDFs in pdf/). |
 | PROMO-INSTRUCTIONS.txt | Promotion instructions for Advance Now's Office Manager Bot. |
 | promo-playbook.txt | How the bot combines the pieces, attachment rules, the approval format, logging. |
 | key-messages.txt | The message, Mike's quotes, the never-say list. |
@@ -10047,7 +10171,7 @@ Don't reply. Log it.
 === FILE: press-kit/targets.txt ===
 # Where to post
 
-Two products, two campaigns, two audiences. Each has its own audience list, message and ready posts: inventor-campaign.txt (the Inventor's Project Manager) and entrepreneur-campaign.txt (the Entrepreneur's Office Manager). Link each to its own page (ancreationoffice.com/inventor.html or /entrepreneur.html). Post to an audience about the product that fits it; don't send the same group both. The tiers below: Tiers 1, 2 and 5 are the inventor campaign, Tier 3 the entrepreneur campaign, Tier 4 and the press can carry either or both.
+Three products, three campaigns, three audiences. Each has its own audience list, message and ready posts: inventor-campaign.txt (the Inventor's Project Manager), entrepreneur-campaign.txt (the Entrepreneur's Office Manager) and developer-campaign.txt (the Developer's Bot Tester, for people who build Grok bots: its places are in that file, not in the tiers below). Link each to its own page (ancreationoffice.com/inventor.html or /entrepreneur.html). Post to an audience about the product that fits it; don't send the same group both. The tiers below: Tiers 1, 2 and 5 are the inventor campaign, Tier 3 the entrepreneur campaign, Tier 4 and the press can carry either or both.
 
 Priority: places where people are **actually doing the work**: inventing, molding, designing plastic parts, running quality or production. Quality over quantity. Check each place's self-promotion rules before posting; skip it if links aren't welcome.
 
@@ -30009,7 +30133,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.45
+261018.46
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -30139,6 +30263,9 @@ playbooks.txt
 press-kit/PROMO-INSTRUCTIONS.txt
 press-kit/backgrounder.txt
 press-kit/boilerplate.txt
+press-kit/developer-campaign.txt
+press-kit/developer-one-pager.txt
+press-kit/developer-press-release.txt
 press-kit/entrepreneur-campaign.txt
 press-kit/entrepreneur-one-pager.txt
 press-kit/entrepreneur-press-release.txt
@@ -32617,7 +32744,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.45
+Office version: 261018.46
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 b-tester profile version: 1 (Bot Tester; office file tester.txt; its own test folder /workspace/AN-Creation-Test/)
@@ -32656,6 +32783,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.46  The plugin, installed one skill at a time: each installed skill is now short and points to its full steps, copied with the office to /workspace/AN-Creation-office-skills/ (a bot can't retype 800 KB of skills). The website procedures don't change. No new profile text.
 261018.45  A third free product, the Developer's Bot Tester (tester.html): a Grok bot that tests other Grok bots from a plain-text script. Its profile block is in profile.txt. tester.txt: it can test any Grok bot the owner builds, not only the AN Creation bots. The Project Manager and Office Manager Bots don't change. No new profile text for them.
 261018.44  The plugin's save skill: a text file made with create_file or UploadFile keeps its Drive ID when saved with update_file_content. Checked: two updates, a move and a read-back, and an uploaded text file. A PDF, a photo or a spreadsheet is still a new dated copy. No change to the website procedures. No new profile text.
 261018.43  Wording: the procedures say "procedure" where they said "SOP" (the file names are the same). The tester procedure now uses the plugin on this computer: the test folder is /workspace/AN-Creation-Test/, and a test bot is messaged by its ID. Re-read your office file. No new profile text.

@@ -5,7 +5,7 @@ description: "Use when a skill names a template, a script, a reference guide or 
 
 # Office files
 
-In `files/` beside this skill, or, when the skills were installed one by one, in `/workspace/AN-Creation-office-files/`.
+In `files/` beside this skill, or, when the skills were installed one by one, in `/workspace/AN-Creation-office-files/` (also in `/workspace/AN-Creation-office-skills/an-office-files/files/`).
 - Templates (template-*.csv, *-template.txt): copy one into the project when a procedure says to fill it in; from then on it's a project file, dated, and never written over by a newer template.
 - Scripts (*.py): copy to your work folder and run with python3 on working copies; save what they write with `an-office-save`.
 - Guides (check-sheets.txt, design-risk.txt, test-planning.txt and others): read the part you need.

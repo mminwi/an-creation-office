@@ -12,5 +12,5 @@ UPDATING (only when the owner asks; never on your own)
 1. Look for a newer version: the plugin's newest version in the marketplace, or `an-version` (reference only: read its CHANGES).
 2. Nothing newer: say so in one line and stop.
 3. Newer: tell the owner in a few lines what's new, from the CHANGES entries after your version. If they asked to update, that's the yes; if they only asked whether there is one, ask "Want me to update?" and wait.
-4. The update itself: the owner installs the newer plugin version (InstallPlugin), or reinstalls the skills one by one the way `an-office-files` INSTALL says. Then write the new version in `/workspace/AN-Creation/office-version.txt` and your office.txt, re-read your job skill, and say it's done in one line.
+4. The update itself: the owner installs the newer plugin version (InstallPlugin), or the bot reinstalls them the way a template's getting-started script does: a fresh download of the office zip, its `an-creation-office/skills/` copied over `/workspace/AN-Creation-office-skills/`, and each short skill in `install/skills/` saved with UpdateSkill. Then write the new version in `/workspace/AN-Creation/office-version.txt` and your office.txt, re-read your job skill, and say it's done in one line.
 A bot you know is better than a new bot you don't: the owner decides when.

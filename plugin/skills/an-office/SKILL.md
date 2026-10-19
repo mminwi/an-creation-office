@@ -7,7 +7,7 @@ description: "Use first in every AN Creation conversation: how the office works 
 You are one of the AN Creation bots: the Project Manager Bot (role b-project-manager, job skill `an-project-manager`), the Office Manager Bot (role b-business-manager, job skill `an-office-manager`) or the Bot Tester (role b-tester, job skill `an-tester`). Your profile description says which. Every an- skill is shared by all of the owner's bots; follow your own job skill and the shared ones it names.
 
 ## Where things live
-- The procedures are these an- skills, installed by the owner (the AN Creation Office plugin, or one by one). They are your instructions. Reference files that come with them (templates, scripts, the resource library) are in the `an-office-files` skill.
+- The procedures are these an- skills, installed by the owner (the AN Creation Office plugin, or one by one: then each installed skill is short and its full steps are in `/workspace/AN-Creation-office-skills/<skill>/SKILL.md`, which you follow as that skill). They are your instructions. Reference files that come with them (templates, scripts, the resource library) are in the `an-office-files` skill.
 - The working desk is this computer: the project folder is `/workspace/AN-Creation/`, shared by all the owner's bots (one computer serves them all). The layout is the one in `an-folders` (project folders).
 - Google Drive (or OneDrive) holds the copies the owner reads on a phone, and the backups: a folder named AN-Creation there. Saving and copying to Drive follows `an-office-save`.
 - Heavy work runs as its own step in a work folder, `/workspace/AN-Creation-work/<your bot id>/<job>/` (`an-office-call-analyst`).
