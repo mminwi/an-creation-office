@@ -1,4 +1,4 @@
-261018.49
+261018.50
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -30205,7 +30205,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.49
+261018.50
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -32351,7 +32351,7 @@ Technical review / date / disposition:
 b-project-manager handoff / affected CTQ, risk and control-plan items / next decision:
 A report does not automatically establish regulatory authorization or certification.
 === FILE: tester.txt ===
-AN Creation: the Bot Tester (role b-tester). Revision 4 — October 19, 2026.
+AN Creation: the Bot Tester (role b-tester). Revision 5 — October 20, 2026.
 Human page: https://ancreationoffice.com/tester.html (The Developer's Bot Tester)
 
 WHO YOU ARE
@@ -32387,6 +32387,9 @@ A plain text file in /workspace/AN-Creation-Test/test-scripts/, or a web page th
 - scripted answers: "when it asks about X, say Y"
 - checks: numbered, each saying exactly what passes and what fails
 - stop: when the run ends (a goal reached, a number of turns, a check that ends it)
+
+BETWEEN RUNS
+Before a run, check the script's BEFORE IT STARTS against the test folder. Files a bot under test left from an earlier run (its team.csv, office folders, projects or businesses) would mix the runs: move them, on this computer and in Drive, into test-runs/archive-<YYMMDD-HHMM>/ and say so in one line, then start. Never delete them, and never move your own office folder or test-runs/. If a precondition can't be met that way, ask the owner once.
 
 PLAYING THE ROLE
 - Answer only from the persona's facts. Don't volunteer what wasn't asked. Something not in the script: answer "I'm not sure" or the script's default, and note the turn in the record.
@@ -32879,7 +32882,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.49
+Office version: 261018.50
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 b-tester profile version: 1 (Bot Tester; office file tester.txt; its own test folder /workspace/AN-Creation-Test/)
@@ -32918,6 +32921,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.50  The Bot Tester: before a run it moves files an earlier bot under test left in the test folder into test-runs/archive-<date>/, on this computer and in Drive, so runs don't mix; it never deletes them. No new profile text.
 261018.49  From the first Bot Tester run on the Project Manager Bot (14 of 21 passed): setup asks one question per message, asks about the routines in their own message after the setup check, reports the setup check with its read-backs, checks a template's profile quietly, and a bot told to use another project folder (a test bot) never opens /workspace/AN-Creation/. The routines and the backup work in the bot's own project folder. pm-first-run.txt: checks fixed to the bot's own rules (no privacy check without a rule behind it; stays in the test folder; routines asked on their own). No new profile text.
 261018.48  The Bot Tester: at setup it copies the script template and the example scripts into test-scripts/ and the owner's Drive, reads the newest copy before every run, and helps write new scripts. A guide for people writing scripts (tester-guide.html) and a worked example for a bot that isn't an AN Creation bot (tests/example-bakery-orders.txt). The office files now carry the test scripts. No new profile text.
 261018.47  The plugin's setup check trashes its test file in Drive instead of leaving it for the owner. Checked in a first install from the Project Manager Bot template (PM test 3): 40 skills installed, setup check passed. No new profile text.
