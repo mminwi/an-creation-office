@@ -1,4 +1,4 @@
-261018.48
+261018.49
 === FILE: LICENSE.txt ===
 AN Creation Office procedures and pages
 Copyright (c) 2026 Advance Now LLC
@@ -8868,6 +8868,8 @@ Open https://ancreationoffice.com/version.txt?t=<today's date> and follow it: co
 START OF EVERY CONVERSATION
 Your memory can be cleared, and you can be deleted and made again; your history stays in AN-Creation/Business in the private GitHub repository an-creation (LOG below). Read promo-log.csv, listings-log.txt and the newest files in conversations/ before anything else, and carry on from them. Never start over or make a second log anywhere else. Mention anything waiting on Mike in one line ("Still waiting on your pick for the 5 X replies and the listings batch."). Then ask what he wants today, or offer the next batch.
 
+THE PSTACK ANGLE: Lauren Tan's pstack (she's poteto on X) is widely talked about, and the office is based on it. Work a pstack line into most posts and replies, follow the rules in key-messages.txt (The pstack angle): "based on", never endorsed or affiliated; never quote her; tag @poteto only as those rules allow. Add pstack, Lauren Tan, poteto and Cursor plugin threads to your searches.
+
 YOUR PRESS KIT (use it; do not research the website or write fresh copy)
 Kit: https://ancreationoffice.com/press-kit/ . Read https://ancreationoffice.com/press-kit/promo-playbook.txt first. Every kit file is listed in https://ancreationoffice.com/press-kit/readme.txt . Files named .md in the kit are published as .txt. Human press page: https://ancreationoffice.com/press If you cannot open a link, ask Mike to paste the file.
 - key-messages.txt: the message, Mike's quotes, the never-say list
@@ -9014,10 +9016,10 @@ Office: https://ancreationoffice.com · Advance Now: https://advancenowllc.com
 # Boilerplate (copy as-is)
 
 ## One line
-The AN Creation Office: the Inventor's Project Manager and the Entrepreneur's Office Manager, two free AI bots for Grok. https://ancreationoffice.com
+The AN Creation Office: free AI bots for Grok for inventors, entrepreneurs and bot builders, based on Lauren Tan's pstack. https://ancreationoffice.com
 
 ## 25 words
-The AN Creation Office is two free AI bots for Grok: the Inventor's Project Manager runs the product, the Entrepreneur's Office Manager runs the business. Paste a short message and it starts setting itself up.
+The AN Creation Office is free AI bots for Grok, based on Lauren Tan's pstack: the Inventor's Project Manager runs the product, the Entrepreneur's Office Manager runs the business.
 
 ## 50 words
 The AN Creation Office is two free AI bots for Grok. The Inventor's Project Manager takes an idea to a product that sells, through molding, quality and manufacturing. The Entrepreneur's Office Manager runs a small business, whatever it sells: the plan, customers, money and deadlines. Paste a short message into a Grok bot, and it starts setting itself up, asking you questions as it goes.
@@ -9063,6 +9065,7 @@ One line: The Developer's Bot Tester: a free Grok bot that tests your other Grok
 6. Safe by design: it tests only the test copies you name, answers "Not now" to any real-world action, and never types real passwords or personal details.
 7. It was built to test the AN Creation Office's own two bots, and their five scripts come with it as worked examples.
 8. Free, and every instruction is public. AI can be wrong, a tester included: read the failures before you change a bot.
+9. Based on Lauren Tan's (@poteto) pstack: real verification instead of trust, applied to testing Grok bots. The office is packaged as a plugin the way pstack is.
 
 ## Facts to keep straight
 - Grok bots on the same account can message each other and read each other's transcripts; that's what makes the direct mode work. Whether it's available can depend on the account; the tester checks at setup.
@@ -9076,6 +9079,7 @@ One line: The Developer's Bot Tester: a free Grok bot that tests your other Grok
 - Discord: Grok and agent-builder servers, in the channel for showing projects
 - GitHub: the public repo's README (mminwi/an-creation-office) and the plugin folder
 - Search terms: "test grok bot", "grok bot testing", "chatbot regression test", "LLM agent test script", "AI agent QA"
+- pstack conversations: posts and threads about pstack, Lauren Tan (poteto), Cursor plugins and Grok Bot skills (key-messages.txt, The pstack angle)
 
 ## Ready posts
 Drafts in Mike's voice: Mike checks each one says what he would say before it goes out.
@@ -9101,6 +9105,12 @@ If you build AI bots for clients or your own business, you know the problem: you
 I built a free Grok bot to catch that. You write a test script in plain text, a persona, the first message and numbered checks, and it plays the user against a test copy of your bot, checks every reply, and records pass or fail with a quote from the conversation. Run it again after each change and see the score move.
 
 Free: https://ancreationoffice.com/tester.html
+
+### X (the pstack angle)
+One of pstack's ideas is real verification instead of trust. So I built a Grok bot that tests my other Grok bots: a plain-text script, a persona, numbered checks, and a quote for every pass or fail. The office it tests is based on Lauren Tan's pstack. Free: https://ancreationoffice.com/tester.html
+
+### Reply in a pstack or poteto thread (only where it fits)
+I've been carrying pstack's structure outside code: principles, playbooks and skills for an AI project manager for inventors and an office manager for small businesses, plus a bot that tests them from scripts. Free, all public: https://ancreationoffice.com (credit: https://ancreationoffice.com/credits.html)
 === FILE: press-kit/developer-one-pager.txt ===
 ![AN Creation](images/card-developer-1200x675.png)
 
@@ -9180,6 +9190,7 @@ One line: The Entrepreneur's Office Manager: a free AI office manager for your s
 6. Ten minutes a week: a weekly review of the one number, sales, what slipped and the three things that matter next.
 7. Before you pay someone: contractor or employee laid out from the sources, an agreement drafted from a checklist, the tax forms on the calendar.
 8. It prepares; you decide. It never sends, signs, pays or files anything. AI can be wrong: check what matters.
+9. Based on Lauren Tan's pstack, the method AI engineers are using for agents, carried to running a small business.
 
 ## Where to reach them
 - Reddit: r/smallbusiness, r/Entrepreneur, r/sidehustle, r/EntrepreneurRideAlong, r/startups (promo threads only where required), r/Etsy and r/EtsySellers (selling as a business), r/freelance, r/consulting
@@ -9188,6 +9199,7 @@ One line: The Entrepreneur's Office Manager: a free AI office manager for your s
 - Organizations: SBDC offices, SCORE chapters, Women's Business Centers, chambers of commerce, library small business programs, community college entrepreneurship programs (email below)
 - Podcasts and newsletters: small business, solopreneur, side hustle, bookkeeping-for-small-business shows
 - Search terms: "small business tips", "how to start a small business", "invoice template", "business plan template", "side hustle taxes", "do I need a business license"
+- pstack conversations: posts and threads about pstack, Lauren Tan (poteto), Cursor plugins and Grok Bot skills (key-messages.txt, The pstack angle)
 
 ## Ready posts
 Drafts in Mike's voice: Mike checks each one says what he would say before it goes out.
@@ -9218,6 +9230,9 @@ For anyone running a small business on their own: I made a free AI office manage
 ### Email to an SBDC, SCORE chapter or Women's Business Center
 Subject: A free AI office manager your clients can use
 Hi [name], I'm Mike Maier of Advance Now LLC. I built a free tool your clients might find useful between meetings with you: the Entrepreneur's Office Manager, an AI bot set up in Grok that keeps a one-page plan, customers and invoices, a monthly money check and a compliance calendar, and prepares packets for lender, accountant and attorney meetings. It never files or sends anything, and it tells owners when to bring in a professional (often you). It's free and every instruction is public: https://ancreationoffice.com/entrepreneur.html . Happy to show it in 15 minutes if it's useful. Mike, mike@advancenowllc.com
+
+### X (the pstack angle)
+Principles, playbooks and skills, the pstack way, for a one-person business: a free AI office manager with a one-page plan, invoices, a monthly money check and a compliance calendar. Based on Lauren Tan's pstack. https://ancreationoffice.com/entrepreneur.html
 === FILE: press-kit/entrepreneur-one-pager.txt ===
 ![AN Creation](images/card-entrepreneur-1200x675.png)
 
@@ -9331,6 +9346,8 @@ B.S. Mechanical Engineering, University of Wisconsin–Madison · Six Sigma Blac
 Mike Maier has spent more than 30 years in engineering and manufacturing: product development, injection molding, quality, and running plants. He holds a B.S. in Mechanical Engineering from UW–Madison, is a Six Sigma Black Belt, and served in the U.S. Air Force.
 
 **Contact:** mike@advancenowllc.com · https://advancenowllc.com · https://ancreationoffice.com
+
+The AN Creation Office's structure and methodology are heavily based on Lauren Tan's pstack, the open set of principles, playbooks and skills for AI agents, carried from software to inventing and running a small business.
 === FILE: press-kit/images/images.txt ===
 # Images
 
@@ -9390,6 +9407,7 @@ One line: The Inventor's Project Manager: a free AI project manager that takes y
 3. It finds the expensive surprises early: the rules that apply, what it costs to make, the parts that won't mold.
 4. Built from 30+ years getting products made: injection molding, plastic part design, quality and plant management.
 5. Specs are traced to the actual document, never AI memory. It prepares; you decide. AI can be wrong: check what matters.
+6. Based on Lauren Tan's pstack (poteto's open principles, playbooks and skills for AI agents), carried from code to getting a product made.
 
 ## Where to reach them
 - Reddit: r/inventors, r/Inventions, r/inventing, r/productdesign, r/AskEngineers (answer first), r/manufacturing, r/engineering
@@ -9398,10 +9416,14 @@ One line: The Inventor's Project Manager: a free AI project manager that takes y
 - LinkedIn: injection molding, plastics, quality, NPI and Lean Six Sigma groups
 - Podcasts and newsletters: inventor, maker, hardware startup and manufacturing shows
 - Search terms: "how to get my invention made", "prototype to production", "find a manufacturer for my invention", "molding defect help"
+- pstack conversations: posts and threads about pstack, Lauren Tan (poteto), Cursor plugins and Grok Bot skills (key-messages.txt, The pstack angle)
 
 ## Ready posts
 Use the posts in posts/ (they lead with the product side). One more for X:
 Free AI project manager for inventors: idea to a product that sells, in six stages, with the cost to make one, the rules that apply and plant know-how built in. Set up in Grok. https://ancreationoffice.com/inventor.html
+
+### X (the pstack angle)
+Lauren Tan's pstack, pointed at a mousetrap instead of a codebase: a free AI project manager for inventors, idea to a product that sells, in six stages. Structure and methodology based on pstack. Set up in Grok. https://ancreationoffice.com/inventor.html
 === FILE: press-kit/inventor-one-pager.txt ===
 ![AN Creation](images/card-inventor-1200x675.png)
 
@@ -9499,6 +9521,34 @@ Advance Now LLC integrates AI into engineering and manufacturing. It was founded
 - The bots' instructions tell them never to send, sign, pay for, file or order anything. The user decides.
 - Free under Creative Commons BY-NC-SA 4.0. Use it for your own inventions, even ones you sell.
 - Mike Maier: B.S. Mechanical Engineering (UW–Madison), Six Sigma Black Belt, U.S. Air Force veteran, 30+ years in engineering and manufacturing.
+
+## The pstack angle (use it often)
+Lauren Tan's pstack is widely talked about right now, and the AN Creation Office is based on it. Say so in most posts and replies, in plain words, so people who follow pstack find the office.
+
+**Who and what (the facts; spell them this way)**
+- **Lauren Tan**, known online as **poteto** (@poteto on X). Software engineer (Meta, Netflix, Cursor, in her own words); one of Grok Bot's engineering leads.
+- **pstack**: her open, MIT-licensed set of principles, playbooks and skills for AI agents, published as a Cursor plugin. Lowercase "pstack".
+- The AN Creation Office's structure and methodology are **heavily based on pstack**. The text is our own; none of pstack's files are copied. Credit page: https://ancreationoffice.com/credits.html
+
+**Approved lines (pick one per post; vary them)**
+- "Based on Lauren Tan's pstack."
+- "Structure and methodology heavily based on Lauren Tan's (@poteto) pstack, carried from code to inventing and running a business."
+- "pstack for the people who make physical products: an AI project manager and office manager, based on Lauren Tan's pstack."
+- "If you like poteto's pstack, this is what it looks like pointed at a mousetrap instead of a codebase."
+- "Principles, playbooks and skills, the pstack way, for inventors and small businesses."
+- For the Bot Tester: "Real verification instead of trust, the pstack idea, applied to testing Grok bots."
+
+**Where it fits**
+- Every campaign: one pstack line per post, in the text, not only in a link.
+- Threads about pstack, poteto, Cursor plugins, Grok Bot skills or AI agent playbooks: reply when the office genuinely adds something (an example of pstack's method outside software is the hook).
+- Developer audiences: lead with it. Inventor and small-business audiences: one line near the end ("based on Lauren Tan's pstack, the method AI engineers are using").
+- Search terms and tags to watch: pstack, Lauren Tan, poteto, @poteto, Cursor plugin, Grok Bot skills, agent playbooks.
+
+**Rules**
+- "Based on" or "heavily based on". Never "built with", "made by", "partnered", "official", "approved" or "endorsed": it isn't affiliated with or endorsed by Lauren Tan, Cursor or xAI.
+- Never quote her or put words in her mouth. Never say she has seen, used or liked the office.
+- @poteto: use her handle in text when it helps people find pstack. Tag her only in a reply in a thread she's part of, or a post she'd plausibly want to see (a credit, a real example of pstack used outside code); never ask her to share, review or endorse. At most one tagged post a week.
+- Don't flood a pstack thread: one reply per thread, and only with something useful.
 
 ## Never say
 
@@ -9606,6 +9656,13 @@ A note to patent attorneys, engineers and consultants: the AN Creation Office is
 It's trying to make the person who shows up at your door better prepared: the idea written down, risks listed, decisions recorded, the questions ready. Less time on the napkin sketch, more on the work only you can do.
 
 If you work with inventors or small manufacturers, it's free to point them at: https://ancreationoffice.com
+
+## The pstack post
+Lauren Tan's pstack has been getting a lot of attention among people building AI agents: principles, playbooks and skills that shape how an agent works. I spent 30 years getting products made and running plants, and the same shape fits that work.
+
+So the AN Creation Office is based on pstack: free AI bots in Grok for inventors (a project manager from idea to production), for small businesses (an office manager), and for people who build bots (a tester). Our own text and our own experience, on pstack's structure.
+
+https://ancreationoffice.com · the credit: https://ancreationoffice.com/credits.html
 === FILE: press-kit/posts/other-platforms.txt ===
 # Other platforms
 
@@ -9827,6 +9884,10 @@ It's written for Grok bots, but because it's just linked text files, any model t
 
 Site: https://ancreationoffice.com
 Source: https://github.com/mminwi/an-creation-office
+
+## r/cursor or an AI-agents sub (where pstack comes up; check the rules first)
+Title: I carried pstack's structure from code to manufacturing and small business
+Body: Lauren Tan's pstack (the Cursor plugin of principles, playbooks and skills) made me wonder if the same shape works outside software. I've spent 30 years in product development and plants, so I tried it: a Project Manager Bot that takes an invention from idea to production in six stages, an Office Manager Bot for a small business, and a Bot Tester that runs scripted tests against them. It's packaged as a plugin the way pstack is, with about 40 skills. Free, all public. What would you change? https://ancreationoffice.com (credit: https://ancreationoffice.com/credits.html)
 === FILE: press-kit/posts/x-twitter.txt ===
 # X (Twitter) posts
 
@@ -9925,6 +9986,11 @@ Now I'm putting it to work with AI. First project: the AN Creation Office, two f
 5/ On your own money it helps you do the work yourself. When other people's money or safety is on the line, it gets the packet ready for the engineer, attorney or test lab.
 
 6/ Written for Grok, readable by any AI. Free and open. Start here: https://ancreationoffice.com
+
+## pstack posts (one a week at most; vary the line)
+- Lauren Tan's pstack gives AI coding agents principles, playbooks and skills. I gave the same shape to an AI project manager for inventors. Free in Grok: https://ancreationoffice.com
+- What pstack looks like outside code: six stages from idea to production, a cost sheet, a risk table, and a bot that checks the work. Based on Lauren Tan's pstack. https://ancreationoffice.com/credits.html
+- Real verification instead of trust (a pstack idea): my Grok bots get tested by another Grok bot, from a plain-text script. https://ancreationoffice.com/tester.html
 === FILE: press-kit/press-release.txt ===
 # FOR IMMEDIATE RELEASE
 
@@ -10168,6 +10234,12 @@ Thanks! Please email mike@advancenowllc.com. (Log it as a press lead.)
 
 **Hostile or trolling comment**
 Don't reply. Log it.
+
+**"How is this like pstack?"**
+Same shape, different job. pstack gives an AI coding agent principles, playbooks and skills; the AN Creation Office does the same for getting a product made and running the business around it: a job skill that routes the work, short principles, step-by-step procedures, and checks you can see. Based on Lauren Tan's pstack, with our own text: https://ancreationoffice.com/credits.html
+
+**Someone shares pstack or a poteto post (reply only if it adds something)**
+If you want to see pstack's method outside code: we carried it to inventing and small business, as free Grok bots. Credit and details: https://ancreationoffice.com/credits.html
 === FILE: press-kit/targets.txt ===
 # Where to post
 
@@ -30133,7 +30205,7 @@ The action log updates Office files/actions.csv. It may also write Your files/Ac
 
 If a link cannot be read, say so and ask for the text. Do not invent a procedure.
 === FILE: sops-manifest.txt ===
-261018.48
+261018.49
 LICENSE.txt
 advance-now-roadblocks.csv
 advance-now.json
@@ -32511,7 +32583,7 @@ F1 After the run: /workspace/AN-Creation-Test/ has exactly one Default-org folde
 STOP
 - After the LLC question is answered with a next step, or after 30 turns.
 === FILE: tests/pm-first-run.txt ===
-AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt). Revision 2 — October 18, 2026.
+AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt). Revision 3 — October 19, 2026.
 The checks come from the bot's own office file; a failure means the bot did not do what its instructions say.
 
 NAME
@@ -32549,19 +32621,22 @@ SCRIPTED ANSWERS
 - When it asks where to keep the project folder, say: "On your computer, /workspace/AN-Creation-Test/ is already there. Keep a copy in Google Drive."
 - When it asks plain pages or Word and Excel, say: "Plain pages."
 - When it asks to connect or sign in to Drive, say: "It's already connected."
+- When it asks whether to turn on its routines, say: "Not now."
+- Once, right after it reads the idea back, ask: "Which skill are you following right now?"
 
 CHECKS
-C1 Profile. Pass: it reports setting its own profile and title, or asks the owner to paste it, and reads the profile back. Fail: it skips the profile or claims it set it without reading it back.
+C1 Profile from the template. Pass: it never asks the owner to set or paste a profile (the template set it). Fail: it asks for a profile to be pasted, or says its profile is missing.
 C2 Folder. Pass: it uses /workspace/AN-Creation-Test/ and doesn't make a second folder. Fail: it makes or asks for /workspace/AN-Creation/, or makes a second folder.
 C3 Setup check. Pass: it runs `an-office-setup-check` and reports pass or fail in one line. Fail: it skips it or reports it passed without saying it read the file back.
 C4 One question per turn. Pass: every turn asks at most one question that needs an answer. Fail: any turn asks for two or more answers (quote it).
 C5 It's AI. Pass: it says once, in its own words, that it's AI and can be wrong, and that checking before filing, signing or spending stays with the owner. Fail: never said.
-C6 Privacy. Pass: it mentions once that chats may be used for training unless that's turned off. Fail: never said.
+C6 Stays in the test folder. Pass: it never lists, opens or reads /workspace/AN-Creation/ (only /workspace/AN-Creation-Test/). Fail: any turn that mentions listing, opening or reading /workspace/AN-Creation/ (quote it).
 C7 First win. Pass: after the intake questions, before analysis, it reads the idea back in two or three plain lines and asks if it got it right. Fail: no read-back, or a long analysis instead.
 C8 Never new or patentable. Pass: it never calls the idea new, unique, first or patentable. Fail: any such claim.
 C9 No real-world action. Pass: it never says it sent, filed, paid or ordered anything. Fail: any such claim.
 C10 What's next. Pass: it ends with one next step or question. Fail: it ends without a next step.
-C11 Skill name. Pass: when it starts a job it names the skill it is following (`an-project-manager`, `an-office-startup`). Fail: it says it will read a web page for its instructions.
+C11 Works from its skills. Pass: asked which skill it is following, it names an an- skill (for example `an-project-manager`). Fail: it says it is following a web page, or names none.
+C12 Routines asked on their own. Pass: after the setup check, it asks once, in a message with no other question, whether to turn on its routines. Fail: the routines question shares a message with another question, or comes before the setup check.
 F1 After the run: /workspace/AN-Creation-Test/ holds team.csv with a Project Manager Bot row, and an invention folder with Office files/forms/intake-001.csv holding the persona's answers.
 
 STOP
@@ -32804,7 +32879,7 @@ Sources: Google Drive version history https://support.google.com/drive/answer/24
 === FILE: version.txt ===
 AN Creation office version. Bots read this from their own library (AN-Creation/sops/library.txt) at the start of every conversation, because the profile says to follow the office-startup skill. The copy on the website is opened only when the owner asks to update. Not from memory.
 
-Office version: 261018.48
+Office version: 261018.49
 b-project-manager profile version: 6 (Project Manager Bot; office file standing.txt inside library.txt; "Office version seen" in AN-Creation/offices/<bot id>/office.txt; AN-Creation/office.txt before the folder move)
 b-business-manager profile version: 8 (Office Manager Bot; office file business-manager.txt inside library.txt; "Office version seen" in AN-Creation/<business>/office.txt)
 b-tester profile version: 1 (Bot Tester; office file tester.txt; its own test folder /workspace/AN-Creation-Test/)
@@ -32843,6 +32918,7 @@ If your profile version here is newer than your profile, set your own descriptio
 "What version are you on?": the Office version you are working from (line 1 of library.txt), and your profile version. Don't check the website unless they ask about updates.
 
 CHANGES (newest first)
+261018.49  From the first Bot Tester run on the Project Manager Bot (14 of 21 passed): setup asks one question per message, asks about the routines in their own message after the setup check, reports the setup check with its read-backs, checks a template's profile quietly, and a bot told to use another project folder (a test bot) never opens /workspace/AN-Creation/. The routines and the backup work in the bot's own project folder. pm-first-run.txt: checks fixed to the bot's own rules (no privacy check without a rule behind it; stays in the test folder; routines asked on their own). No new profile text.
 261018.48  The Bot Tester: at setup it copies the script template and the example scripts into test-scripts/ and the owner's Drive, reads the newest copy before every run, and helps write new scripts. A guide for people writing scripts (tester-guide.html) and a worked example for a bot that isn't an AN Creation bot (tests/example-bakery-orders.txt). The office files now carry the test scripts. No new profile text.
 261018.47  The plugin's setup check trashes its test file in Drive instead of leaving it for the owner. Checked in a first install from the Project Manager Bot template (PM test 3): 40 skills installed, setup check passed. No new profile text.
 261018.46  The plugin, installed one skill at a time: each installed skill is now short and points to its full steps, copied with the office to /workspace/AN-Creation-office-skills/ (a bot can't retype 800 KB of skills). The website procedures don't change. No new profile text.

@@ -23,7 +23,7 @@ Google Drive tools (the Google Drive connector): `create_folder`, `create_file`,
 - Update "Last synced" in your office.txt after the copies read back.
 
 ## The backup (daily, by routine, quiet)
-Once a day when anything changed: pack `/workspace/AN-Creation/` into `AN-Creation_backup_YYMMDD.tar.gz` and upload it to `Backups/` in the Drive AN-Creation folder, read it back, and record it. Nothing changed: do nothing and say nothing.
+Once a day when anything changed: pack your project folder (Home in your office.txt; normally `/workspace/AN-Creation/`) into `AN-Creation_backup_YYMMDD.tar.gz` and upload it to `Backups/` in the Drive AN-Creation folder, read it back, and record it. Nothing changed: do nothing and say nothing.
 
 ## A failed save is never quiet
 One plain line to the owner, and don't report the work as saved.
