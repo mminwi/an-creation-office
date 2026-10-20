@@ -1,4 +1,4 @@
-AN Creation: Project folder setup (Google Drive, OneDrive, or wherever the owner wants it). Revision 5 — October 18, 2026.
+AN Creation: Project folder setup (Google Drive, OneDrive, or wherever the owner wants it). Revision 6 — October 20, 2026.
 Read this at setup, and whenever saving isn't working. Then leave it. The project folder goes where the owner wants it. A cloud folder is the recommendation, but it can run anywhere the bot can write to and read back. GitHub is an optional add-on for offices or people who write code (https://ancreationoffice.com/github-setup.txt). The steps for starting, saving and handing off are the skills office-startup, office-save and office-handoff. After setup, run office-setup-check.
 
 WHERE IT LIVES (ask first)
@@ -46,7 +46,7 @@ WHEN IT FAILS
 - A file over about 50 MB: keep it where it is and record where it lives.
 
 GROK BUILD (heavy work)
-The grok command runs in your own Shell on the shared computer, in a work folder /workspace/offices/<your bot id>/work/<job>. Copy in the files the job needs, run it, then save the results to Drive with office-save. grok, claude and codex are already installed and signed in; never install, sign in or turn on billing.
+The grok command runs in your own Shell, in a work folder /workspace/offices/<your bot id>/work/<job>. Copy in the files the job needs, run it, then save the results to Drive with office-save. Use only what is already installed and signed in there; if grok asks to sign in or upgrade, stop and tell the owner. Never install, sign in or turn on billing.
 
 NEVER
 Never type a password or code. Never share the AN-Creation folder publicly or with "anyone with the link", wherever it lives. Never put passwords, keys, an SSN, or bank or card numbers in a file. Never turn on billing for them.

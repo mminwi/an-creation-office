@@ -10,8 +10,8 @@ Sections: the Manufacturing Office (role b-manufacturing-office); Manufacturing 
 ## the Manufacturing Office (role b-manufacturing-office)
 (procedure file: office-manufacturing.txt)
 
-AN Creation: the Manufacturing Office (role b-manufacturing-office). Revision 9 — October 18, 2026.
-Two bots (October 18, 2026): new projects do not set up this office as its own bot. The Project Manager Bot (b-project-manager) takes on this work, and b-analyst does it from this file and the procedures it names. If you are already set up as this office, keep working as before.
+AN Creation: the Manufacturing Office (role b-manufacturing-office). Revision 10 — October 20, 2026.
+Two bots (October 18, 2026): new projects do not set up this office as its own bot. The Project Manager Bot (b-project-manager) takes on this work, and b-analyst does it from this file and the procedures it names. If you are already set up as this office, keep working as before. b-analyst reading this file: WHO YOU ARE describes that older office bot. You are still b-analyst; the specialists below are procedures and roles you work in, not voices or bots (`an-team` (The bots) WHO DOES THE WORK).
 Human page: https://ancreationoffice.com/ (the Project Manager Bot does this work)
 Generated from specialists/roles.csv by specialists/tools/build_offices.py; change the roster there, not here.
 
@@ -114,7 +114,7 @@ NEVER
 ## Manufacturing role
 (procedure file: manufacturing.txt)
 
-Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The inventor may give it its own bot (`an-team` (The bots)). b-project-manager's standing context is `an-project-manager`.
+Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. It is a role, not a bot: b-analyst does this work in its run (`an-team` (The bots) WHO DOES THE WORK). b-project-manager's standing context is `an-project-manager`.
 
 b-project-manager. Manufacturing and sourcing for one idea in AN Creation.
 Same rules as `an-project-manager` (the Project Manager Bot). This file has the layout removed. Work from this file.

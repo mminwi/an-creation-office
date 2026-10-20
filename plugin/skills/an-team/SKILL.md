@@ -10,7 +10,7 @@ Sections: The bots; Several inventions, one Project Manager Bot; Names for your 
 ## The bots
 (procedure file: sop-team.txt)
 
-Procedure: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 12 — October 20, 2026. Two kinds of bot: the Project Manager Bot and the Office Manager Bot. Most people have one of each; more are possible (SEVERAL BOTS). Specialists come with their bot. Hand-offs follow the office-handoff skill.
+Procedure: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 13 — October 20, 2026. Two kinds of bot: the Project Manager Bot and the Office Manager Bot. Most people have one of each; more are possible (SEVERAL BOTS). Roles come with their bot (WHO DOES THE WORK). Hand-offs follow the office-handoff skill.
 Index: the procedure index in `an-office`
 Read this when setting up a bot, when the owner adds, renames or removes a bot, moves an invention to another bot or adds a business, when work belongs to another bot, and when a project needs its first look or a second look at a gate.
 
@@ -26,6 +26,15 @@ Plant and product work is not a separate bot for a new project. b-project-manage
 Older projects: a Molding Plant, Plastic Design, Quality or Manufacturing Office bot that is already in team.csv keeps working as before, with its own inbox. Hand its area to it. Do not suggest a new one.
 - b-analyst is not a bot you talk to. It is the helper either bot runs for heavy work, with the grok command in that bot's Shell (`an-setup-reference` (GitHub, the optional add-on for code)).
 The owner picks bots, not specialists. Never create a bot on your own.
+
+WHO DOES THE WORK (the one model; where any other file describes it differently, read that file through this one)
+- Bots: the two kinds the owner talks to, the Project Manager Bot and the Office Manager Bot. A bot is a continuing assistant: it keeps its job, its plan and its files from one conversation to the next. Only the owner adds a bot.
+- b-analyst: the helper a bot runs for one job at a time, on a written brief (`an-office-call-analyst`). Each run starts from the files, does the job, writes DONE.txt and ends; nothing carries over except what it saved. It is a role with its own instructions (`an-analyst` (standing context for b-analyst)), not a bot the owner talks to and not a second chat. Older procedures that say b-project-manager takes a role or calls a Grok Build session mean b-analyst doing it in its run.
+- Roles: the subject a piece of work belongs to, and the point of view that judges it: design, engineering, electrical, plastics, prototype, manufacturing, quality, legal, funding, marketing, and the first-look roles below. A role is not a bot, not an assistant and not a voice that takes turns in the chat. The bot or b-analyst doing the work wears the role and, when it helps, says which role made a call ("plastics: the wall is too thick to mold well"). Product roles come with the Project Manager Bot; business roles (legal, funding, marketing, and the company) with the Office Manager Bot.
+- Sessions and interns, in older procedures (`sop-hats.txt` (`an-office-files`), `sop-interns.txt` (`an-office-files`), `an-routes-and-flow` (When a subject comes up)): a session is b-analyst working one subject's run of documents; an intern is a helper b-analyst hands one contained job. Neither is a bot, and both work from and save to the files.
+- Specialist procedures: names such as b-cooling-water, b-six-sigma or b-market-check name a procedure and the sources it uses, so the right one opens. Opening one never adds a bot.
+- Older office bots: a Molding Plant, Plastic Design, Quality or Manufacturing Office bot exists only in projects set up before October 18, 2026. It keeps working if team.csv has one (above); never suggest one.
+- The Bot Tester is a separate product for testing bots. It is not part of an owner's office.
 
 ONE OWNER
 The owner column of team.csv names one owner for a job.

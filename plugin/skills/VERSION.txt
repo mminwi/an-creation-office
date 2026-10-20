@@ -1,0 +1,2 @@
+Office version: 261020.4
+The AN Creation Office skills in this folder are this version. Install and update write this file; don't edit it.

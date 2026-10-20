@@ -1,12 +1,12 @@
-AN Creation: using Claude, ChatGPT (Codex), Cursor, or another AI. Revision 3 — October 18, 2026.
-The office is built for Grok bots. Heavy work runs as `grok` (Grok Build) in the bot's own Shell. `claude` and `codex` are already installed beside it. Read https://ancreationoffice.com/github-setup.txt before you add anything.
+AN Creation: using Claude, ChatGPT (Codex), Cursor, or another AI. Revision 4 — October 20, 2026.
+The office is built for Grok bots. Heavy work runs as `grok` (Grok Build) in the bot's own Shell. `claude` and `codex` may be installed beside it. Read https://ancreationoffice.com/github-setup.txt before you add anything.
 
 WHY IT WORKS
 The project is plain files in the private repository an-creation, with AGENTS.md at the top. Any agent that can open that clone can read the same ticket and write the same files. The bot the owner talks to stays the office. The other tool does the job they named and pushes the result.
 
 HOW
 1. Set the office up the normal way first (github-setup.txt), so the clone exists at /workspace/offices/<bot id>/an-creation and AGENTS.md is in it.
-2. On the shared computer, `grok`, `claude`, and `codex` are in /usr/local/bin and signed in as mike.maier@gmail.com. Do not install them, do not sign in again, and do not walk through a paid upgrade or usage billing.
+2. Check what is already on the bot's computer (`command -v claude`, `command -v codex`). Use a tool only if it is installed and already signed in; never say or save which account it is signed in to. Do not install anything, do not sign in, and do not walk through a paid upgrade or usage billing. If a tool isn't there, the owner sets it up themselves, from that tool's own instructions.
 3. The Cursor GitHub connector is read-only. It is not how a save is made. Saves from any of these tools go through git and gh in that office's clone (version-control.txt SAVING).
 4. Give it one line: "Work on ticket T-008 in the an-creation repository." It works in the clone, commits once, pushes, and the office reads the result back.
 5. To make one of them the default analyst instead of `grok`, the owner says so. Record it in PROJECT.txt. Until they ask, `grok` stays the default.

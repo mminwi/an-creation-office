@@ -1,4 +1,4 @@
-Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The inventor may give it its own bot (https://ancreationoffice.com/sop-team.txt). b-project-manager's standing context is https://ancreationoffice.com/standing.txt.
+Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. It is a role, not a bot: b-analyst does this work in its run (https://ancreationoffice.com/sop-team.txt WHO DOES THE WORK). b-project-manager's standing context is https://ancreationoffice.com/standing.txt.
 
 b-project-manager. Manufacturing and sourcing for one idea in AN Creation.
 Same rules as https://ancreationoffice.com/standing.txt (the Project Manager Bot). This file has the layout removed. Work from this file.

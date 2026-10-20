@@ -10,7 +10,7 @@ Sections: Set up b-project-manager and b-analyst; Project folder setup (Google D
 ## Set up b-project-manager and b-analyst
 (procedure file: sop-office.txt)
 
-Procedure: Set up b-project-manager and b-analyst. Revision 18 — October 18, 2026.
+Procedure: Set up b-project-manager and b-analyst. Revision 19 — October 20, 2026.
 Index: the procedure index in `an-office`
 Read this when b-project-manager is missing, a new invention is starting, or the project folder is not recorded. Then leave it.
 
@@ -19,7 +19,7 @@ Three pieces, all usable from a phone when the project folder is in the cloud:
 - b-project-manager, in Grok Bot: the friendly front desk the inventor talks to, like texting. It fills the form on the current ticket, hands the heavy work to b-analyst, checks it came back, and says what's next in a line.
 - The project, in one private folder (AN-Creation) wherever the owner wants it; a cloud folder like Google Drive or OneDrive is best: every file, with dated copies before big changes. b-project-manager's memory can be cleared, and b-project-manager can be deleted and made again; the project stays in the folder. People who write code can use a private GitHub repository instead (`an-setup-reference` (GitHub, the optional add-on for code)).
 - b-analyst, the heavy work. By default it is the grok command in the bot's own Shell (`an-setup-reference` (Project folder setup (Google Drive, OneDrive, or wherever the owner wants it)) GROK BUILD). It does the thinking and writes the next ticket.
-What they need: at minimum a SuperGrok subscription (the price is on https://ancreationoffice.com/start.html; heavy use may call for a larger Grok plan) and somewhere to keep the project folder: a cloud folder is best (a Google account for Google Drive, which most people already have, or OneDrive or Dropbox), but any folder this bot can write to works. On the shared computer, grok, claude, and codex are already installed. Do not walk through a paid upgrade.
+What they need: at minimum a SuperGrok subscription (the price is on https://ancreationoffice.com/start.html; heavy use may call for a larger Grok plan) and somewhere to keep the project folder: a cloud folder is best (a Google account for Google Drive, which most people already have, or OneDrive or Dropbox), but any folder this bot can write to works. Grok Build (grok) comes with the plan. Use only what is already installed in the bot's Shell; do not install, sign in or walk through a paid upgrade.
 This is the only path setup takes people down. It is built for someone who has never used Grok or anything like it. Other AIs work too, but setup never offers them: only if the person asks ("Can I use Claude?") answer yes in a line and give them `an-setup-reference` (using Claude, ChatGPT (Codex), Cursor, or another AI) ; don't walk them through it unless they want to.
 
 NAME (first step of setup)
@@ -66,7 +66,7 @@ Done when b-project-manager exists and reads `an-project-manager`, the project f
 ## Project folder setup (Google Drive, OneDrive, or wherever the owner wants it)
 (procedure file: drive-setup.txt)
 
-AN Creation: Project folder setup (Google Drive, OneDrive, or wherever the owner wants it). Revision 5 — October 18, 2026.
+AN Creation: Project folder setup (Google Drive, OneDrive, or wherever the owner wants it). Revision 6 — October 20, 2026.
 Read this at setup, and whenever saving isn't working. Then leave it. The project folder goes where the owner wants it. A cloud folder is the recommendation, but it can run anywhere the bot can write to and read back. GitHub is an optional add-on for offices or people who write code (`an-setup-reference` (GitHub, the optional add-on for code)). The steps for starting, saving and handing off are the skills office-startup, office-save and office-handoff. After setup, run office-setup-check.
 
 WHERE IT LIVES (ask first)
@@ -114,7 +114,7 @@ WHEN IT FAILS
 - A file over about 50 MB: keep it where it is and record where it lives.
 
 GROK BUILD (heavy work)
-The grok command runs in your own Shell on the shared computer, in a work folder /workspace/offices/<your bot id>/work/<job>. Copy in the files the job needs, run it, then save the results to Drive with office-save. grok, claude and codex are already installed and signed in; never install, sign in or turn on billing.
+The grok command runs in your own Shell, in a work folder /workspace/offices/<your bot id>/work/<job>. Copy in the files the job needs, run it, then save the results to Drive with office-save. Use only what is already installed and signed in there; if grok asks to sign in or upgrade, stop and tell the owner. Never install, sign in or turn on billing.
 
 NEVER
 Never type a password or code. Never share the AN-Creation folder publicly or with "anyone with the link", wherever it lives. Never put passwords, keys, an SSN, or bank or card numbers in a file. Never turn on billing for them.
@@ -124,41 +124,41 @@ Sources: Google Drive help https://support.google.com/drive ; OneDrive help http
 ## GitHub, the optional add-on for code
 (procedure file: github-setup.txt)
 
-AN Creation: GitHub, the optional add-on for code. Revision 9 — October 18, 2026.
+AN Creation: GitHub, the optional add-on for code. Revision 10 — October 20, 2026.
 OPTIONAL. The project folder goes where the owner wants it, a cloud folder like Google Drive or OneDrive by preference (`an-setup-reference` (Project folder setup (Google Drive, OneDrive, or wherever the owner wants it))). Use this file only when the office or the owner writes code and wants GitHub, or when the office already lives on GitHub (record "Home: GitHub <username>/an-creation" in office.txt). Offices already on GitHub keep working exactly as below; nothing needs to move. An office.txt with no Home: line counts as GitHub when /workspace/offices/<bot id>/an-creation is a git clone.
 Read this at setup, and whenever GitHub or b-analyst isn't working. Then leave it. The steps for starting, saving, and handing work off are the skills office-startup, office-save, and office-handoff. This file is the office rule those skills follow. After install, run office-setup-check.
 
 WORDS, ONCE
-A repository is the project's online folder. A commit is a saved checkpoint. Private means only the people invited can see it. On the shared computer the tools are already installed and signed in. Do not start a device login, and do not walk through a paid upgrade.
+A repository is the project's online folder. A commit is a saved checkpoint. Private means only the people invited can see it. Your Shell is the computer your bots share. Some tools may already be installed and signed in there; check, never assume. You never sign anything in yourself, and you never walk through a paid upgrade.
 
 GITHUB
 The Cursor GitHub connector is read-only. The Grok GitHub connector is read-only. There is no GitHub-xai connector and no token-based GitHub plugin. Looking can use a connector. Saving cannot. Saves follow office-save (git and gh in the bot's own Shell).
-On the shared computer, git and gh are already logged in as mminwi. Hal did that once for the whole computer. Do not run gh auth login. You can see your own connectors; do not ask the owner to list them.
-An inventor who is not on this computer makes their own free account at https://github.com/signup and turns on two-step sign-in. Never ask for or type a password.
+Check with `gh auth status`. Signed in: use it, and say only "signed in" or "not signed in"; never repeat, save or send which account it shows, or anything else it prints. Not signed in: stop and tell the owner; the owner signs in themselves, in their own browser, following GitHub's own steps. Never run gh auth login or a device login yourself. You can see your own connectors; do not ask the owner to list them.
+An owner with no GitHub account makes their own free account at https://github.com/signup and turns on two-step sign-in. Never ask for or type a password.
 The repository is an-creation, Private, with a README. If it is missing, create it private. If it says Public, stop and make it private before anything else.
 One clone per office: /workspace/offices/<your bot id>/an-creation. Never /workspace/repo, and never another office's clone. office-startup uses that clone. office-save is how you prove a write. Record "Home: GitHub <username>/an-creation" and "Clone: /workspace/offices/<your bot id>/an-creation" in your office.txt.
 AGENTS.md at the top of the repository is `an-setup-reference` (AGENTS.md for an inventor's an-creation repository) (or AN-Creation/sops/agents-md.txt), plus a one-line CLAUDE.md: "Read AGENTS.md and follow it."
 The shared procedure library is AN-Creation/sops/library.txt in that same repository, plus VERSION. One copy, one version, every office. An update is one download and one commit. The rule is `an-version`. office-startup reads one section at a time.
 
 GROK BUILD
-Grok Build is the `grok` command, in the bot's own Shell, with the working directory set to that office's clone (Drive offices: a work folder, see `an-setup-reference` (Project folder setup (Google Drive, OneDrive, or wherever the owner wants it)) GROK BUILD). `grok`, `claude`, and `codex` are in /usr/local/bin and are already signed in as mike.maier@gmail.com. Do not install them again, do not sign in again, and do not turn on a paid upgrade or usage billing.
-`command -v grok` should print /usr/local/bin/grok. If `grok` asks to sign in or to upgrade, stop and tell the owner. Do not complete that prompt.
+Grok Build is the `grok` command, in the bot's own Shell, with the working directory set to that office's clone (Drive offices: a work folder, see `an-setup-reference` (Project folder setup (Google Drive, OneDrive, or wherever the owner wants it)) GROK BUILD). `claude` and `codex` may be installed beside it. Use only what is already installed and signed in; do not install anything, do not sign in, and do not turn on a paid upgrade or usage billing.
+`command -v grok` should print where it is installed. If `grok` asks to sign in or to upgrade, stop and tell the owner. Do not complete that prompt.
 Run a ticket from that clone: `grok` with one line, "Work on ticket T-008 in the an-creation repository." It reads AGENTS.md. The commit is office-save. Record in PROJECT.txt: "Analyst: Grok Build, start: grok in /workspace/offices/<bot id>/an-creation, default: yes".
 Docs if a command has changed: https://x.ai/cli . Don't fill command details from memory.
 
 CLAUDE AND CODEX
-`claude` and `codex` are the same kind of command, already signed in. Use one only when the owner asks for that job. Same clone, same office-save. Do not set up Cursor cloud agents, Codex on the web, or Claude Code on the web during setup, and do not turn on usage billing. Record "Analyst: <name>, start: <command> in /workspace/offices/<bot id>/an-creation, default: no" unless they make it the default.
+`claude` and `codex`, where they are installed and already signed in, are the same kind of command. Use one only when the owner asks for that job. Same clone, same office-save. Do not set up Cursor cloud agents, Codex on the web, or Claude Code on the web during setup, and do not turn on usage billing. Record "Analyst: <name>, start: <command> in /workspace/offices/<bot id>/an-creation, default: no" unless they make it the default.
 If `grok` will not run, say so and do the analyst run yourself until it is fixed. Don't send them to a paid setup.
 
 WHEN IT FAILS
-- git or gh is not logged in on the shared computer: stop. Tell the owner. Do not start a device login.
+- git or gh is not signed in: stop. Tell the owner. Do not start a sign-in or a device login.
 - A write through the GitHub connector fails: that is expected. office-save.
 - Push rejected: office-save retries with pull --rebase. Never force-push main. GitHub cannot enforce that on this free private repository (branch protection needs GitHub Pro).
 - A file over about 50 MB: keep it out of the repository and record where it lives.
 - The repository was made public: make it private before going on. If the invention was described while it was public, say so and record the date: in the US the inventor's one-year grace period runs from it (`an-principles-bm` (Decide on the patent before showing it publicly)).
 
 NEVER
-Never type a password, code, or key. Never make the repository public. Never put passwords, keys, an SSN, or bank or card numbers in a file or a commit message. Never force-push main. Never start a device login on the shared computer. Never turn on billing for them.
+Never type a password, code, or key. Never make the repository public. Never put passwords, keys, an SSN, or bank or card numbers in a file or a commit message. Never force-push main. Never start a sign-in or a device login yourself. Never put the computer's accounts, sign-ins or settings in a file, a commit or a reply. Never turn on billing for them.
 
 Sources: GitHub sign-up https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github ; two-factor https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa ; creating a repository https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository ; visibility https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility ; large files https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github ; Grok CLI https://x.ai/cli .
 
@@ -197,15 +197,15 @@ The owner will say something short, like "Work on tray ticket T-008" or just "ti
 ## using Claude, ChatGPT (Codex), Cursor, or another AI
 (procedure file: using-other-ais.txt)
 
-AN Creation: using Claude, ChatGPT (Codex), Cursor, or another AI. Revision 3 — October 18, 2026.
-The office is built for Grok bots. Heavy work runs as `grok` (Grok Build) in the bot's own Shell. `claude` and `codex` are already installed beside it. Read `an-setup-reference` (GitHub, the optional add-on for code) before you add anything.
+AN Creation: using Claude, ChatGPT (Codex), Cursor, or another AI. Revision 4 — October 20, 2026.
+The office is built for Grok bots. Heavy work runs as `grok` (Grok Build) in the bot's own Shell. `claude` and `codex` may be installed beside it. Read `an-setup-reference` (GitHub, the optional add-on for code) before you add anything.
 
 WHY IT WORKS
 The project is plain files in the private repository an-creation, with AGENTS.md at the top. Any agent that can open that clone can read the same ticket and write the same files. The bot the owner talks to stays the office. The other tool does the job they named and pushes the result.
 
 HOW
 1. Set the office up the normal way first (`an-setup-reference` (GitHub, the optional add-on for code)), so the clone exists at /workspace/offices/<bot id>/an-creation and AGENTS.md is in it.
-2. On the shared computer, `grok`, `claude`, and `codex` are in /usr/local/bin and signed in as mike.maier@gmail.com. Do not install them, do not sign in again, and do not walk through a paid upgrade or usage billing.
+2. Check what is already on the bot's computer (`command -v claude`, `command -v codex`). Use a tool only if it is installed and already signed in; never say or save which account it is signed in to. Do not install anything, do not sign in, and do not walk through a paid upgrade or usage billing. If a tool isn't there, the owner sets it up themselves, from that tool's own instructions.
 3. The Cursor GitHub connector is read-only. It is not how a save is made. Saves from any of these tools go through git and gh in that office's clone (`an-folders` (backups and version control) SAVING).
 4. Give it one line: "Work on ticket T-008 in the an-creation repository." It works in the clone, commits once, pushes, and the office reads the result back.
 5. To make one of them the default analyst instead of `grok`, the owner says so. Record it in PROJECT.txt. Until they ask, `grok` stays the default.

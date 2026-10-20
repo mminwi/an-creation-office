@@ -1,4 +1,4 @@
-Procedure: Set up b-project-manager and b-analyst. Revision 18 — October 18, 2026.
+Procedure: Set up b-project-manager and b-analyst. Revision 19 — October 20, 2026.
 Index: https://ancreationoffice.com/sop.txt
 Read this when b-project-manager is missing, a new invention is starting, or the project folder is not recorded. Then leave it.
 
@@ -7,7 +7,7 @@ Three pieces, all usable from a phone when the project folder is in the cloud:
 - b-project-manager, in Grok Bot: the friendly front desk the inventor talks to, like texting. It fills the form on the current ticket, hands the heavy work to b-analyst, checks it came back, and says what's next in a line.
 - The project, in one private folder (AN-Creation) wherever the owner wants it; a cloud folder like Google Drive or OneDrive is best: every file, with dated copies before big changes. b-project-manager's memory can be cleared, and b-project-manager can be deleted and made again; the project stays in the folder. People who write code can use a private GitHub repository instead (github-setup.txt).
 - b-analyst, the heavy work. By default it is the grok command in the bot's own Shell (drive-setup.txt GROK BUILD). It does the thinking and writes the next ticket.
-What they need: at minimum a SuperGrok subscription (the price is on https://ancreationoffice.com/start.html; heavy use may call for a larger Grok plan) and somewhere to keep the project folder: a cloud folder is best (a Google account for Google Drive, which most people already have, or OneDrive or Dropbox), but any folder this bot can write to works. On the shared computer, grok, claude, and codex are already installed. Do not walk through a paid upgrade.
+What they need: at minimum a SuperGrok subscription (the price is on https://ancreationoffice.com/start.html; heavy use may call for a larger Grok plan) and somewhere to keep the project folder: a cloud folder is best (a Google account for Google Drive, which most people already have, or OneDrive or Dropbox), but any folder this bot can write to works. Grok Build (grok) comes with the plan. Use only what is already installed in the bot's Shell; do not install, sign in or walk through a paid upgrade.
 This is the only path setup takes people down. It is built for someone who has never used Grok or anything like it. Other AIs work too, but setup never offers them: only if the person asks ("Can I use Claude?") answer yes in a line and give them https://ancreationoffice.com/using-other-ais.txt ; don't walk them through it unless they want to.
 
 NAME (first step of setup)

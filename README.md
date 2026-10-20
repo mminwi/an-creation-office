@@ -58,7 +58,7 @@ In the order of the procedure index ([`sop.txt`](guide/sop.txt)).
 | [`advance-now.txt`](guide/advance-now.txt) | The reason behind all of it, from Mike | [live](https://ancreationoffice.com/advance-now.txt) |
 | [`version.txt`](guide/version.txt) | Version check, first in every conversation | [live](https://ancreationoffice.com/version.txt) |
 | [`start-on-your-phone.txt`](guide/start-on-your-phone.txt) | For a first-time user, on a phone: start here | [live](https://ancreationoffice.com/start-on-your-phone.txt) |
-| [`sop-team.txt`](guide/sop-team.txt) | Set up the Project Manager Bot and b-analyst. Each one is its own bot | [live](https://ancreationoffice.com/sop-team.txt) |
+| [`sop-team.txt`](guide/sop-team.txt) | Set up the Project Manager Bot and the b-analyst helper it runs (not a bot of its own | [live](https://ancreationoffice.com/sop-team.txt) |
 | [`sop-folder-move.txt`](guide/sop-folder-move.txt) | Moving an older project folder to the business layout, once, with the owner's yes | [live](https://ancreationoffice.com/sop-folder-move.txt) |
 | [`sop-cooling-water.txt`](guide/sop-cooling-water.txt) | Specialist procedure: mold cooling water, b-cooling-water | [live](https://ancreationoffice.com/sop-cooling-water.txt) |
 | [`sop-drying.txt`](guide/sop-drying.txt) | Specialist procedure: resin drying, b-drying-handling | [live](https://ancreationoffice.com/sop-drying.txt) |
@@ -167,8 +167,8 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`funding-packet.py`](guide/funding-packet.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/funding-packet.py) |
 | [`handoff-log.csv`](guide/handoff-log.csv) | Worksheet / table (CSV): handoff_id, sent_date, sender, recipient... | [live](https://ancreationoffice.com/handoff-log.csv) |
 | [`ip-ratings.txt`](guide/ip-ratings.txt) | IP enclosure ratings. Basic orientation only; use IEC 60529 and the actual test evidence for requirements and  | [live](https://ancreationoffice.com/ip-ratings.txt) |
-| [`library.txt`](guide/library.txt) | 261018.51 | [live](https://ancreationoffice.com/library.txt) |
-| [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. The | [live](https://ancreationoffice.com/manufacturing.txt) |
+| [`library.txt`](guide/library.txt) | 261020.4 | [live](https://ancreationoffice.com/library.txt) |
+| [`manufacturing.txt`](guide/manufacturing.txt) | Manufacturing role. Reference for b-project-manager when the manufacturing role is the one in front of it. It  | [live](https://ancreationoffice.com/manufacturing.txt) |
 | [`office-call-analyst.txt`](guide/office-call-analyst.txt) | AN Creation skill: office-call-analyst. How a bot hands heavy work to b-analyst and checks that it came back.  | [live](https://ancreationoffice.com/office-call-analyst.txt) |
 | [`office-handoff.txt`](guide/office-handoff.txt) | AN Creation skill: office-handoff. The office rule is https://ancreationoffice.com/sop-team.txt HAND-OFFS. | [live](https://ancreationoffice.com/office-handoff.txt) |
 | [`office-save.txt`](guide/office-save.txt) | AN Creation skill: office-save. The office rule is https://ancreationoffice.com/version-control.txt SAVING and | [live](https://ancreationoffice.com/office-save.txt) |
@@ -186,24 +186,24 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`principle-cheapest-real-signal.txt`](guide/principle-cheapest-real-signal.txt) | Principle: Get the cheapest real signal. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-cheapest-real-signal.txt) |
 | [`principle-context-window.txt`](guide/principle-context-window.txt) | Principle: Guard the context window. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/principle-context-window.txt) |
 | [`principle-design-for-manufacture.txt`](guide/principle-design-for-manufacture.txt) | Principle: Design for manufacture from day one. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-design-for-manufacture.txt) |
-| [`principle-fail-forward-faster.txt`](guide/principle-fail-forward-faster.txt) | Principle: Fail forward faster. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-fail-forward-faster.txt) |
+| [`principle-fail-forward-faster.txt`](guide/principle-fail-forward-faster.txt) | Principle: Fail forward faster. Revision 2 — October 20, 2026. | [live](https://ancreationoffice.com/principle-fail-forward-faster.txt) |
 | [`principle-find-surprises-early.txt`](guide/principle-find-surprises-early.txt) | Principle: Find the expensive surprises early. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-find-surprises-early.txt) |
 | [`principle-know-what-good-is.txt`](guide/principle-know-what-good-is.txt) | Principle: Know what good is before designing. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-know-what-good-is.txt) |
 | [`principle-money-fits-the-stage.txt`](guide/principle-money-fits-the-stage.txt) | Principle: Fit the money to the stage. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-money-fits-the-stage.txt) |
 | [`principle-never-invent-facts.txt`](guide/principle-never-invent-facts.txt) | Principle: Never invent facts. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-never-invent-facts.txt) |
-| [`principle-ninety-percent-and-go.txt`](guide/principle-ninety-percent-and-go.txt) | Principle: 90% and go. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-ninety-percent-and-go.txt) |
+| [`principle-ninety-percent-and-go.txt`](guide/principle-ninety-percent-and-go.txt) | Principle: 90% and go. Revision 2 — October 20, 2026. | [live](https://ancreationoffice.com/principle-ninety-percent-and-go.txt) |
 | [`principle-no-claims-you-cant-back.txt`](guide/principle-no-claims-you-cant-back.txt) | Principle: No claims you can't back. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-no-claims-you-cant-back.txt) |
 | [`principle-one-change-at-a-time.txt`](guide/principle-one-change-at-a-time.txt) | Principle: One change at a time, to the root cause. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-one-change-at-a-time.txt) |
 | [`principle-one-controlled-copy.txt`](guide/principle-one-controlled-copy.txt) | Principle: One controlled copy. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-one-controlled-copy.txt) |
 | [`principle-one-customer-one-channel.txt`](guide/principle-one-customer-one-channel.txt) | Principle: One customer, one channel first. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-one-customer-one-channel.txt) |
-| [`principle-owner-acts-bot-drafts.txt`](guide/principle-owner-acts-bot-drafts.txt) | Principle: The owner acts; the bot drafts. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-owner-acts-bot-drafts.txt) |
+| [`principle-owner-acts-bot-drafts.txt`](guide/principle-owner-acts-bot-drafts.txt) | Principle: The owner acts; the bot drafts. Revision 2 — October 20, 2026. | [live](https://ancreationoffice.com/principle-owner-acts-bot-drafts.txt) |
 | [`principle-patent-before-public.txt`](guide/principle-patent-before-public.txt) | Principle: Decide on the patent before showing it publicly. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-patent-before-public.txt) |
 | [`principle-price-on-value.txt`](guide/principle-price-on-value.txt) | Principle: Price on value, never below cost. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-price-on-value.txt) |
 | [`principle-proof-over-estimate.txt`](guide/principle-proof-over-estimate.txt) | Principle: Proof over estimate. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-proof-over-estimate.txt) |
 | [`principle-propose-a-default.txt`](guide/principle-propose-a-default.txt) | Principle: Propose a default. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-propose-a-default.txt) |
 | [`principle-re-anchor.txt`](guide/principle-re-anchor.txt) | Principle: Re-anchor. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/principle-re-anchor.txt) |
 | [`principle-residual-risk.txt`](guide/principle-residual-risk.txt) | Principle: Residual risk: work the 80%. Revision 9 — October 18, 2026. | [live](https://ancreationoffice.com/principle-residual-risk.txt) |
-| [`principle-rigor-scales-with-money.txt`](guide/principle-rigor-scales-with-money.txt) | Principle: Rigor scales with whose money is at risk. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/principle-rigor-scales-with-money.txt) |
+| [`principle-rigor-scales-with-money.txt`](guide/principle-rigor-scales-with-money.txt) | Principle: Rigor scales with whose money is at risk. Revision 4 — October 20, 2026. | [live](https://ancreationoffice.com/principle-rigor-scales-with-money.txt) |
 | [`principle-scope-gate.txt`](guide/principle-scope-gate.txt) | Principle: Scope gate. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/principle-scope-gate.txt) |
 | [`principle-severity-first.txt`](guide/principle-severity-first.txt) | Principle: Severity first. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-severity-first.txt) |
 | [`principle-start-with-what-you-have.txt`](guide/principle-start-with-what-you-have.txt) | Principle: Start with what you have. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-start-with-what-you-have.txt) |
@@ -213,7 +213,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`principle-walk-away-number.txt`](guide/principle-walk-away-number.txt) | Principle: Know your walk-away number. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-walk-away-number.txt) |
 | [`principle-watch-the-calendar.txt`](guide/principle-watch-the-calendar.txt) | Principle: Watch the calendar. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-watch-the-calendar.txt) |
 | [`principle-which-gives.txt`](guide/principle-which-gives.txt) | Principle: When something has to give, ask which. Revision 1 — October 18, 2026. | [live](https://ancreationoffice.com/principle-which-gives.txt) |
-| [`principles-bm.txt`](guide/principles-bm.txt) | Principles: the Office Manager Bot. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/principles-bm.txt) |
+| [`principles-bm.txt`](guide/principles-bm.txt) | Principles: the Office Manager Bot. Revision 5 — October 20, 2026. | [live](https://ancreationoffice.com/principles-bm.txt) |
 | [`product-development.txt`](guide/product-development.txt) | PRODUCT DEVELOPMENT: THE PROCESS BEHIND THE CONVERSATION | [live](https://ancreationoffice.com/product-development.txt) |
 | [`profile.txt`](guide/profile.txt) | AN Creation bot profiles (October 18, 2026). b-project-manager profile version 6. b-business-manager profile v | [live](https://ancreationoffice.com/profile.txt) |
 | [`project-manager.txt`](guide/project-manager.txt) | b-project-manager: the project manager role for AN Creation. The inventor names the bot that covers it (https: | [live](https://ancreationoffice.com/project-manager.txt) |
@@ -229,7 +229,7 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`sop-contractors-and-hiring.txt`](guide/sop-contractors-and-hiring.txt) | Procedure: Contractors and first hires. Revision 4 — October 18, 2026. | [live](https://ancreationoffice.com/sop-contractors-and-hiring.txt) |
 | [`sop-hats.txt`](guide/sop-hats.txt) | Procedure: Form, record, and call a session. Revision 4 — October 18, 2026. | [live](https://ancreationoffice.com/sop-hats.txt) |
 | [`sop-interns.txt`](guide/sop-interns.txt) | Procedure: Use an intern. Revision 2 — October 18, 2026. | [live](https://ancreationoffice.com/sop-interns.txt) |
-| [`sop-office.txt`](guide/sop-office.txt) | Procedure: Set up b-project-manager and b-analyst. Revision 18 — October 18, 2026. | [live](https://ancreationoffice.com/sop-office.txt) |
+| [`sop-office.txt`](guide/sop-office.txt) | Procedure: Set up b-project-manager and b-analyst. Revision 19 — October 20, 2026. | [live](https://ancreationoffice.com/sop-office.txt) |
 | [`sop-packet-accountant.txt`](guide/sop-packet-accountant.txt) | Procedure: The accountant packet. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-accountant.txt) |
 | [`sop-packet-attorney.txt`](guide/sop-packet-attorney.txt) | Procedure: The business attorney packet. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-attorney.txt) |
 | [`sop-packet-insurance.txt`](guide/sop-packet-insurance.txt) | Procedure: The insurance packet. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/sop-packet-insurance.txt) |
@@ -242,8 +242,8 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`sop-project-charter.txt`](guide/sop-project-charter.txt) | Procedure: The project charter. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/sop-project-charter.txt) |
 | [`sop-several-inventions.txt`](guide/sop-several-inventions.txt) | Procedure: Several inventions, one Project Manager Bot. Revision 2 — October 18, 2026. | [live](https://ancreationoffice.com/sop-several-inventions.txt) |
 | [`sop-suggestions.txt`](guide/sop-suggestions.txt) | Procedure: Suggestions and actions. Revision 4 — October 18, 2026. | [live](https://ancreationoffice.com/sop-suggestions.txt) |
-| [`sop.txt`](guide/sop.txt) | The procedure index. Revision 29 — October 18, 2026. | [live](https://ancreationoffice.com/sop.txt) |
-| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261018.51 | [live](https://ancreationoffice.com/sops-manifest.txt) |
+| [`sop.txt`](guide/sop.txt) | The procedure index. Revision 30 — October 20, 2026. | [live](https://ancreationoffice.com/sop.txt) |
+| [`sops-manifest.txt`](guide/sops-manifest.txt) | 261020.4 | [live](https://ancreationoffice.com/sops-manifest.txt) |
 | [`status-template.txt`](guide/status-template.txt) | STATUS SHEET: one page, answers only. Rewritten by b-analyst every run as "Your files/Status" (inventor's form | [live](https://ancreationoffice.com/status-template.txt) |
 | [`tax-year.py`](guide/tax-year.py) | Tool / template script (Python) | [live](https://ancreationoffice.com/tax-year.py) |
 | [`template-a3.txt`](guide/template-a3.txt) | One-page project summary (A3). Template, from Mike's practice (sop-six-sigma.txt section 6). Copy into the pro | [live](https://ancreationoffice.com/template-a3.txt) |
@@ -287,8 +287,8 @@ Used by the procedures above: guides, worksheets, templates, and the resource li
 | [`test-planning.json`](guide/test-planning.json) | Data behind the test planning page (JSON) | [live](https://ancreationoffice.com/test-planning.json) |
 | [`test-planning.txt`](guide/test-planning.txt) | Plan the test before the build — REV 1 — 2026-09-30 | [live](https://ancreationoffice.com/test-planning.txt) |
 | [`test-report-template.txt`](guide/test-report-template.txt) | AN CREATION — TEST REPORT TEMPLATE — REV 1 | [live](https://ancreationoffice.com/test-report-template.txt) |
-| [`tester.txt`](guide/tester.txt) | AN Creation: the Bot Tester (role b-tester). Revision 6 — October 20, 2026. | [live](https://ancreationoffice.com/tester.txt) |
-| [`using-other-ais.txt`](guide/using-other-ais.txt) | AN Creation: using Claude, ChatGPT (Codex), Cursor, or another AI. Revision 3 — October 18, 2026. | [live](https://ancreationoffice.com/using-other-ais.txt) |
+| [`tester.txt`](guide/tester.txt) | AN Creation: the Bot Tester (role b-tester). Revision 8 — October 20, 2026. | [live](https://ancreationoffice.com/tester.txt) |
+| [`using-other-ais.txt`](guide/using-other-ais.txt) | AN Creation: using Claude, ChatGPT (Codex), Cursor, or another AI. Revision 4 — October 20, 2026. | [live](https://ancreationoffice.com/using-other-ais.txt) |
 | [`version-control.txt`](guide/version-control.txt) | AN Creation backups and version control. Revision 10 — October 18, 2026. Human page: https://ancreationoffice. | [live](https://ancreationoffice.com/version-control.txt) |
 
 ## The Grok plugin

@@ -1,37 +1,37 @@
-AN Creation: GitHub, the optional add-on for code. Revision 9 — October 18, 2026.
+AN Creation: GitHub, the optional add-on for code. Revision 10 — October 20, 2026.
 OPTIONAL. The project folder goes where the owner wants it, a cloud folder like Google Drive or OneDrive by preference (https://ancreationoffice.com/drive-setup.txt). Use this file only when the office or the owner writes code and wants GitHub, or when the office already lives on GitHub (record "Home: GitHub <username>/an-creation" in office.txt). Offices already on GitHub keep working exactly as below; nothing needs to move. An office.txt with no Home: line counts as GitHub when /workspace/offices/<bot id>/an-creation is a git clone.
 Read this at setup, and whenever GitHub or b-analyst isn't working. Then leave it. The steps for starting, saving, and handing work off are the skills office-startup, office-save, and office-handoff. This file is the office rule those skills follow. After install, run office-setup-check.
 
 WORDS, ONCE
-A repository is the project's online folder. A commit is a saved checkpoint. Private means only the people invited can see it. On the shared computer the tools are already installed and signed in. Do not start a device login, and do not walk through a paid upgrade.
+A repository is the project's online folder. A commit is a saved checkpoint. Private means only the people invited can see it. Your Shell is the computer your bots share. Some tools may already be installed and signed in there; check, never assume. You never sign anything in yourself, and you never walk through a paid upgrade.
 
 GITHUB
 The Cursor GitHub connector is read-only. The Grok GitHub connector is read-only. There is no GitHub-xai connector and no token-based GitHub plugin. Looking can use a connector. Saving cannot. Saves follow office-save (git and gh in the bot's own Shell).
-On the shared computer, git and gh are already logged in as mminwi. Hal did that once for the whole computer. Do not run gh auth login. You can see your own connectors; do not ask the owner to list them.
-An inventor who is not on this computer makes their own free account at https://github.com/signup and turns on two-step sign-in. Never ask for or type a password.
+Check with `gh auth status`. Signed in: use it, and say only "signed in" or "not signed in"; never repeat, save or send which account it shows, or anything else it prints. Not signed in: stop and tell the owner; the owner signs in themselves, in their own browser, following GitHub's own steps. Never run gh auth login or a device login yourself. You can see your own connectors; do not ask the owner to list them.
+An owner with no GitHub account makes their own free account at https://github.com/signup and turns on two-step sign-in. Never ask for or type a password.
 The repository is an-creation, Private, with a README. If it is missing, create it private. If it says Public, stop and make it private before anything else.
 One clone per office: /workspace/offices/<your bot id>/an-creation. Never /workspace/repo, and never another office's clone. office-startup uses that clone. office-save is how you prove a write. Record "Home: GitHub <username>/an-creation" and "Clone: /workspace/offices/<your bot id>/an-creation" in your office.txt.
 AGENTS.md at the top of the repository is https://ancreationoffice.com/agents-md.txt (or AN-Creation/sops/agents-md.txt), plus a one-line CLAUDE.md: "Read AGENTS.md and follow it."
 The shared procedure library is AN-Creation/sops/library.txt in that same repository, plus VERSION. One copy, one version, every office. An update is one download and one commit. The rule is https://ancreationoffice.com/version.txt. office-startup reads one section at a time.
 
 GROK BUILD
-Grok Build is the `grok` command, in the bot's own Shell, with the working directory set to that office's clone (Drive offices: a work folder, see drive-setup.txt GROK BUILD). `grok`, `claude`, and `codex` are in /usr/local/bin and are already signed in as mike.maier@gmail.com. Do not install them again, do not sign in again, and do not turn on a paid upgrade or usage billing.
-`command -v grok` should print /usr/local/bin/grok. If `grok` asks to sign in or to upgrade, stop and tell the owner. Do not complete that prompt.
+Grok Build is the `grok` command, in the bot's own Shell, with the working directory set to that office's clone (Drive offices: a work folder, see drive-setup.txt GROK BUILD). `claude` and `codex` may be installed beside it. Use only what is already installed and signed in; do not install anything, do not sign in, and do not turn on a paid upgrade or usage billing.
+`command -v grok` should print where it is installed. If `grok` asks to sign in or to upgrade, stop and tell the owner. Do not complete that prompt.
 Run a ticket from that clone: `grok` with one line, "Work on ticket T-008 in the an-creation repository." It reads AGENTS.md. The commit is office-save. Record in PROJECT.txt: "Analyst: Grok Build, start: grok in /workspace/offices/<bot id>/an-creation, default: yes".
 Docs if a command has changed: https://x.ai/cli . Don't fill command details from memory.
 
 CLAUDE AND CODEX
-`claude` and `codex` are the same kind of command, already signed in. Use one only when the owner asks for that job. Same clone, same office-save. Do not set up Cursor cloud agents, Codex on the web, or Claude Code on the web during setup, and do not turn on usage billing. Record "Analyst: <name>, start: <command> in /workspace/offices/<bot id>/an-creation, default: no" unless they make it the default.
+`claude` and `codex`, where they are installed and already signed in, are the same kind of command. Use one only when the owner asks for that job. Same clone, same office-save. Do not set up Cursor cloud agents, Codex on the web, or Claude Code on the web during setup, and do not turn on usage billing. Record "Analyst: <name>, start: <command> in /workspace/offices/<bot id>/an-creation, default: no" unless they make it the default.
 If `grok` will not run, say so and do the analyst run yourself until it is fixed. Don't send them to a paid setup.
 
 WHEN IT FAILS
-- git or gh is not logged in on the shared computer: stop. Tell the owner. Do not start a device login.
+- git or gh is not signed in: stop. Tell the owner. Do not start a sign-in or a device login.
 - A write through the GitHub connector fails: that is expected. office-save.
 - Push rejected: office-save retries with pull --rebase. Never force-push main. GitHub cannot enforce that on this free private repository (branch protection needs GitHub Pro).
 - A file over about 50 MB: keep it out of the repository and record where it lives.
 - The repository was made public: make it private before going on. If the invention was described while it was public, say so and record the date: in the US the inventor's one-year grace period runs from it (principle-patent-before-public.txt).
 
 NEVER
-Never type a password, code, or key. Never make the repository public. Never put passwords, keys, an SSN, or bank or card numbers in a file or a commit message. Never force-push main. Never start a device login on the shared computer. Never turn on billing for them.
+Never type a password, code, or key. Never make the repository public. Never put passwords, keys, an SSN, or bank or card numbers in a file or a commit message. Never force-push main. Never start a sign-in or a device login yourself. Never put the computer's accounts, sign-ins or settings in a file, a commit or a reply. Never turn on billing for them.
 
 Sources: GitHub sign-up https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github ; two-factor https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa ; creating a repository https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository ; visibility https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility ; large files https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github ; Grok CLI https://x.ai/cli .
