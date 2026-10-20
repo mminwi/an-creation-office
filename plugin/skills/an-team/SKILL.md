@@ -10,7 +10,7 @@ Sections: The bots; Several inventions, one Project Manager Bot; Names for your 
 ## The bots
 (procedure file: sop-team.txt)
 
-Procedure: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 11 — October 18, 2026. Two kinds of bot: the Project Manager Bot and the Office Manager Bot. Most people have one of each; more are possible (SEVERAL BOTS). Specialists come with their bot. Hand-offs follow the office-handoff skill.
+Procedure: The bots. Role names, the team file, how the bots work together, who tracks and who judges, and the first and second looks. Revision 12 — October 20, 2026. Two kinds of bot: the Project Manager Bot and the Office Manager Bot. Most people have one of each; more are possible (SEVERAL BOTS). Specialists come with their bot. Hand-offs follow the office-handoff skill.
 Index: the procedure index in `an-office`
 Read this when setting up a bot, when the owner adds, renames or removes a bot, moves an invention to another bot or adds a business, when work belongs to another bot, and when a project needs its first look or a second look at a gate.
 
@@ -55,6 +55,7 @@ Every bot has one inbox: AN-Creation/handoffs/for-<bot id>.txt. For the first bo
   Manufacturing Office (older) AN-Creation/handoffs/for-b-manufacturing-office.txt
 On the first conversation, if your inbox file is missing, create it (one header line, then the hand-off lines) and let office-save commit it.
 Sending is one inbox line plus a SendToAgent ping to that bot, so the work is not waiting until someone opens it. The receiving office marks the line taken when it is on the plan, and done when it is finished. Lines are never deleted. If you cannot ping that bot, tell the owner the line and the bot's name. If the owner doesn't have that bot, say so once and keep the item on your own plan. Plant and product work with no office bot in team.csv goes on b-project-manager's plan, not to an inbox.
+A reply to a bot that is waiting on you (it sent you a hand-off or a question, or it is a tester the owner set up) goes with SendToAgent at priority, so it wakes up. A reply sent without waking it can sit unread for hours.
 Receiving: office-startup reads your inbox. Put new lines on your plan and mark them.
 Legacy names, once, whichever office finds them first: for-project-manager.txt, for-business-manager.txt, for-soren.txt, and for-kasper.txt (those last two are legacy filenames). Move their lines into for-b-project-manager.txt or for-b-business-manager.txt, then delete the old file. One commit.
 

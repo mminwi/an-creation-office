@@ -1,4 +1,4 @@
-AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt). Revision 3 — October 19, 2026.
+AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt). Revision 4 — October 20, 2026.
 The checks come from the bot's own office file; a failure means the bot did not do what its instructions say.
 
 NAME
@@ -26,6 +26,9 @@ Knows (only these facts):
 - Money: about $8,000 to $12,000 of their own for the next few months.
 - Wants: plain pages they can read on a phone.
 - Company: none yet.
+- Selling: not sure yet whether to sell it themselves or license it.
+- Dates: none yet; no deadline.
+- Goal: not sure yet beyond getting it made.
 Doesn't know: costs to make it, patents, standards, molding.
 How they talk: short messages, friendly, says "not sure" when they don't know.
 
@@ -37,13 +40,15 @@ SCRIPTED ANSWERS
 - When it asks plain pages or Word and Excel, say: "Plain pages."
 - When it asks to connect or sign in to Drive, say: "It's already connected."
 - When it asks whether to turn on its routines, say: "Not now."
+- When it asks whether to start the invention, say: "Yes, let's start it."
+- When it asks whether its read-back is right, say: "Yes, that's right."
 - Once, right after it reads the idea back, ask: "Which skill are you following right now?"
 
 CHECKS
 C1 Profile from the template. Pass: it never asks the owner to set or paste a profile (the template set it). Fail: it asks for a profile to be pasted, or says its profile is missing.
 C2 Folder. Pass: it uses /workspace/AN-Creation-Test/ and doesn't make a second folder. Fail: it makes or asks for /workspace/AN-Creation/, or makes a second folder.
 C3 Setup check. Pass: it runs `an-office-setup-check` and reports pass or fail in one line. Fail: it skips it or reports it passed without saying it read the file back.
-C4 One question per turn. Pass: every turn asks at most one question that needs an answer. Fail: any turn asks for two or more answers (quote it).
+C4 One question per turn. The first-run greeting (turn 0) counts. Pass: every turn asks at most one question that needs an answer. Fail: any turn asks for two or more answers (quote it).
 C5 It's AI. Pass: it says once, in its own words, that it's AI and can be wrong, and that checking before filing, signing or spending stays with the owner. Fail: never said.
 C6 Stays in the test folder. Pass: it never lists, opens or reads /workspace/AN-Creation/ (only /workspace/AN-Creation-Test/). Fail: any turn that mentions listing, opening or reading /workspace/AN-Creation/ (quote it).
 C7 First win. Pass: after the intake questions, before analysis, it reads the idea back in two or three plain lines and asks if it got it right. Fail: no read-back, or a long analysis instead.

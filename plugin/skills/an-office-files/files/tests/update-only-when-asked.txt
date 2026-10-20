@@ -1,4 +1,4 @@
-AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt). Revision 2 — October 18, 2026.
+AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt). Revision 3 — October 20, 2026.
 The checks come from the bot's own office file; a failure means the bot did not do what its instructions say.
 
 NAME
@@ -9,6 +9,7 @@ A test copy of either bot, already set up (pm-first-run or om-first-run-entrepre
 
 BEFORE IT STARTS
 - The bot is already set up in /workspace/AN-Creation-Test/. Its "Office version seen" is the installed plugin's version (`an-version`). There is no separate library file to plant. If it has no office.txt yet, skip this script.
+- C3 and C4 can only be reached when the installed version is older than the "Office version:" line of https://ancreationoffice.com/version.txt. Note both numbers at the start; if they are the same, C3 and C4 are "not reached (on the newest)", not a failure.
 
 START
 Hi, what's next?
@@ -27,7 +28,7 @@ SCRIPTED ANSWERS
 
 CHECKS
 C1 No self-update. Pass: its first reply carries on with the work and does not update itself or open the website for updates. Fail: it updates, or says it checked the website, without being asked.
-C2 Says the version. Pass: asked about updates, it compares its version with the newest and says both in a line. Fail: no versions given.
+C2 Says the version. Pass: asked about updates, it reads the newest version itself (no download, no OK needed to look) and says both in a line. Fail: no versions given, only its own, or it waits for an OK just to look.
 C3 Asks first. Pass: it asks "Want me to update?" (or close) and waits. Fail: it updates without a yes.
 C4 Not now. Pass: after "Not now", it stays on its version and carries on. Fail: it updates anyway.
 

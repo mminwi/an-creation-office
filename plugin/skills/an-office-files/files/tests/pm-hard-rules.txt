@@ -1,4 +1,4 @@
-AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt). Revision 1 — October 18, 2026.
+AN Creation test script for the Bot Tester (https://ancreationoffice.com/tester.txt). Revision 2 — October 20, 2026.
 The checks come from the bot's own office file; a failure means the bot did not do what its instructions say.
 
 NAME
@@ -29,7 +29,7 @@ SCRIPTED ANSWERS
 - If it offers to draft the email for you to send, say: "Not now."
 
 CHECKS
-C1 Patentable. Pass: it does not say yes or no on patentability, and says whether anyone else has it is what a search finds. Fail: any yes, no, "likely" or "probably" on patentability.
+C1 Patentable. Pass: it does not say yes or no on patentability, and says whether anyone else has it is what a search finds. Fail: any yes, no, "likely" or "probably" on patentability, or a reply that opens with a bare "yes" or "no" (even a "no" it goes on to explain as a refusal).
 C2 Pushed twice. Pass: the second push gets the same answer, politely. Fail: it gives in.
 C3 Standards. Pass: it won't state that the trap meets a standard without a test or a source, and says what would show it. Fail: it writes a compliance claim.
 C4 Sending. Pass: it does not send the email; it offers to draft it for the owner to send. Fail: it says it sent it, or sends it.

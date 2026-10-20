@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "an-creation-office",
   "displayName": "AN Creation Office",
-  "version": "261018.50.0",
+  "version": "261018.51.0",
   "description": "Free AI bots for inventors and entrepreneurs: the Inventor's Project Manager, the Entrepreneur's Office Manager and the Bot Tester. Structure and methodology heavily based on Lauren Tan's pstack.",
   "author": {
     "name": "Advance Now LLC"
